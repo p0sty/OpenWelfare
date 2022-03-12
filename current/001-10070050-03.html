@@ -1,0 +1,1061 @@
+<!doctype html>
+ 
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+ 
+<head>
+
+	<!-- page specific -->
+	
+	<title>Investigating a connection failure 001-10070050</title>
+	
+	<!-- /page specific -->
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<meta name="DC.Coverage.jurisdiction" content="All" />
+	<meta name="DC.Creator" content="Department of Human Services" />
+	<meta name="DC.Format" scheme="IMT" content="text/html" />
+	<meta name="DC.Language" scheme="RFC3066" content="en_AU" />
+	<meta name="DC.Publisher" content="c=AU;o=Commonwealth of Australia;ou=Department of Human Services" />
+	
+	<meta name="format-detection" content="telephone=no" />
+
+	<meta name="googlebot" content="noindex, nofollow" />
+	<meta name="msnbot" content="noindex, nofollow" />
+	<meta name="Slurp" content="noindex, nofollow" />
+	
+	<!-- mobile -->
+	<meta name="HandheldFriendly" content="True" /> 
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- /mobile -->
+	
+	<!--  IM497477  Google Analytics  -->
+	<script type="text/javascript" src="/ruxitagentjs_ICA2Vfhjqrtux_10229211201102017.js" data-dtconfig="rid=RID_-1926002016|rpid=-1971386776|domain=ourblueprint.internal.dept.local|reportUrl=/rb_6de8e2e9-6719-45b3-86be-7effcb9f6525|app=1750e7944cf56d01|rcdec=1209600000|featureHash=ICA2Vfhjqrtux|vcv=2|rdnt=0|uxrgce=1|srmcrv=10|cuc=gpalpirq|mel=100000|md=mdcc1=a#O365_MainLink_Me ^rb div ^rb div ^rb span|lastModification=1646179133748|dtVersion=10229211201102017|srmcrl=1|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2Vfhjqrtux_10229211201102017.js"></script><script type="text/javascript" src="/ruxitagentjs_ICA2Vfhjqrtux_10225210924095553.js" data-dtconfig="rid=RID_-1926002016|rpid=-1820479021|domain=ourblueprint.internal.dept.local|reportUrl=/rb_6de8e2e9-6719-45b3-86be-7effcb9f6525|app=1750e7944cf56d01|rcdec=1209600000|featureHash=ICA2Vfhjqrtux|vcv=2|rdnt=0|uxrgce=1|srmcrv=10|cuc=gpalpirq|mel=100000|md=mdcc1=a#O365_MainLink_Me ^rb div ^rb div ^rb span|lastModification=1642457757181|dtVersion=10225210924095553|srmcrl=1|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2Vfhjqrtux_10225210924095553.js"></script><script type="text/javascript" src="/ruxitagentjs_ICA2SVfjqrtux_10199200831173248.js" data-dtconfig="rid=RID_-1609242589|rpid=-144845919|domain=ourblueprint.internal.dept.local|reportUrl=/rb_6de8e2e9-6719-45b3-86be-7effcb9f6525|app=1750e7944cf56d01|cuc=gpalpirq|featureHash=ICA2SVfjqrtux|lastModification=1601003412944|vcv=2|dtVersion=10199200831173248|tp=500,50,0,1|rdnt=0|uxrgce=1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA2SVfjqrtux_10199200831173248.js"></script><script type="text/javascript" src="/ruxitagentjs_ICA2SVfjqrtux_10185200219132536.js" data-dtconfig="rid=RID_-1926002016|rpid=336974500|domain=ourblueprint.internal.dept.local|reportUrl=/rb_6de8e2e9-6719-45b3-86be-7effcb9f6525|app=1750e7944cf56d01|srms=1,1,,,|uxrgcm=100,25,300,3;100,25,300,3|featureHash=ICA2SVfjqrtux|lastModification=1583959365873|dtVersion=10185200219132536|tp=500,50,0,1|rdnt=0|uxrgce=1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2SVfjqrtux_10185200219132536.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-145332323-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-145332323-3');
+	</script>
+
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="../../supportingContent/css/styles.css" media="screen" />
+	<link rel="stylesheet" href="../../supportingContent/css/print.css" media="print" />
+	
+	<script type="text/javascript" src="../../supportingContent/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../supportingContent/js/application.js"></script>
+		
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../supportingContent/js/html5shiv.js"></script>
+		<script type="text/javascript" src="../../supportingContent/js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../supportingContent/js/respond.js"></script>
+		<link rel="stylesheet" href="../../supportingContent/css/ie.css" />
+	<![endif]-->
+
+<title> 001-10070050</title></head>
+
+<body class="operational operational-home no-gutters">
+
+<div class="accessibility-hidden">
+	<a href="#navigation">Skip to navigation</a>
+	<a href="#content">Skip to content</a>
+</div>
+
+<!-- Begin Header section -->
+<div id="header">
+	<div id="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="threecol">
+					<a title="Services Australia" id="crest-top" href="http://www.servicesaustralia.gov.au/">
+						<img alt="Australian Government - Services Australia" src="../../supportingContent/images/crest-top-new.png"/>
+					</a>			
+				</div>			
+				<div class="ninecol last">
+<!--				
+				<div id="app-title">
+					<span>Operational Blueprint</span>
+				</div>
+-->
+					<div id="agency-nav">
+						<ul class="clearfix">
+							<li class="humanservices-gov-au"><a href="http://www.servicesaustralia.gov.au/">servicesaustralia.gov.au</a></li>
+						</ul>
+						<div id="top-stripe" class="colour-stripe">
+							<span class="le-1 first">&nbsp;</span>
+							<span class="le-2">&nbsp;</span>
+							<span class="le-3">&nbsp;</span>
+							<span class="le-4">&nbsp;</span>
+							<span class="le-5">&nbsp;</span>
+							<span class="le-6">&nbsp;</span>
+							<span class="le-7">&nbsp;</span>
+							<span class="le-8">&nbsp;</span>
+							<span class="le-9">&nbsp;</span>
+							<span class="le-10">&nbsp;</span>
+							<span class="le-11">&nbsp;</span>
+							<span class="le-12">&nbsp;</span>
+							<span class="le-13">&nbsp;</span>
+							<span class="le-14">&nbsp;</span>
+							<span class="le-15">&nbsp;</span>
+							<span class="le-16">&nbsp;</span>
+							<span class="le-17">&nbsp;</span>
+							<span class="le-18 last">&nbsp;</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="threecol">
+				<a title="Services Australia" id="crest-middle" href="http://www.servicesaustralia.gov.au/">
+					<img alt="Services Australia website" id="print-crest" src="../../supportingContent/images/print-crest.jpg"/>
+					<img alt="Services Australia website" id="screen-crest" src="../../supportingContent/images/crest-middle-new.png"/>
+				</a>
+			</div>		
+				
+			<div class="ninecol last">
+				<div class="global-nav-home clearfix" id="global-nav">
+					<img alt="Services Australia website" id="mobile-crest" src="../../supportingContent/images/crest-mobile-new.png"/>
+	
+					<div id="global-nav-menu">
+						<ul id="global-nav-links">
+							<li class="first"><a href="../../home.html" shape="">Home</a></li>
+							<li><a href="http://servicesaustralia.findnearest.com.au/" shape="">Find us</a></li>
+							<li class="last"><a href="http://www.servicesaustralia.gov.au/customer/contact-us/" shape="">Contact us</a></li>
+						</ul>
+						<div class="search">
+							<form method="get" action="/public/search/search.html"><input type="text" title="Search" onblur="if(this.value=='')this.value='search'" onfocus="if(this.value=='search')this.value=''" value="search" name="zoom_query" id="zoom_query"/><button type="submit" title="Search"><span>Search</span></button><input name='zoom_per_page' type="hidden" value="10" /></form>
+
+						</div>
+					</div>
+				</div>		
+			</div>		
+		</div>
+	</div>
+</div>	
+<!-- End Header section --> 
+<!-- start pageData -->
+<div class="container">
+	<div class="row content-area">
+		<div class="threecol">
+			<a title="Services Australia" id="crest-bottom" href="http://www.servicesaustralia.gov.au/">
+				<img alt="Australian Government - Services Australia" src="../../supportingContent/images/crest-bottom-new.png"/>
+			</a>
+			<!-- start pageDataNavLinks -->
+			<div class="navigation clearfix" id="navigation">
+				<ul>
+
+					<li><a href="http://www.servicesaustralia.gov.au"> servicesaustralia.gov.au</a></li>
+					<li><a href="../SiteMap/siteMap.html"> Site Map</a></li>
+					<hr>
+					<li><a href="../SiteMap/business-and-employers.html"> Business and employers</a></li>
+					<li><a href="../SiteMap/carers.html"> Carers</a></li>
+					<li><a href="../SiteMap/families.html"> Families</a></li>
+					<li><a href="../SiteMap/health-professionals.html"> Health professionals</a></li>
+					<li><a href="../SiteMap/help-in-an-emergency.html"> Help in an emergency</a></li>
+					<li><a href="../SiteMap/indigenous-australians.html"> Indigenous Australians</a></li>
+					<li><a href="../SiteMap/job-seekers.html"> Job seekers</a></li>
+					<li><a href="../SiteMap/migrants-refugees-and-visitors.html"> Migrants, refugees & visitors</a></li>
+					<li><a href="../SiteMap/older-australians.html"> Older Australians</a></li>
+					<li><a href="../SiteMap/people-with-disability.html"> People with disability</a></li>
+					<li><a href="../SiteMap/rural-and-remote-australians.html"> Remote & rural Australians</a></li>
+					<li><a href="../SiteMap/separated-parents.html"> Separated parents</a></li>
+					<li><a href="../SiteMap/students-and-trainees.html"> Students and trainees</a></li>
+					<li><a href="../SiteMap/your-health.html"> Your health</a></li>
+					<li><a href="../SiteMap/additional-products-and-services.html"> Additional products and services</a></li>
+					<li><a href="../SiteMap/australians-overseas.html"> Australians overseas</a></li>
+					<li><a href="../SiteMap/bereavement.html"> Bereavement</a></li>
+					<li><a href="../SiteMap/ongoing-contact.html"> Change of circumstances</a></li>
+					<li><a href="../SiteMap/compensation.html"> Compensation</a></li>
+					<li><a href="../SiteMap/complaints-privacy-and-foi.html"> Complaints, privacy and Freedom of Information</a></li>
+					<li><a href="../SiteMap/compliance-and-reviews.html"> Compliance & review</a></li>
+					<li><a href="../SiteMap/debts.html"> Debts</a></li>
+					<li><a href="../SiteMap/income-assests-and-rates-of-payment.html"> Income, assets and rates of payment</a></li>
+					<li><a href="../SiteMap/initial-contact-general.html"> Initial contact & POI</a></li>
+					<li><a href="../SiteMap/payment-delivery.html"> Payment delivery</a></li>
+					<li><a href="../SiteMap/review-of-decision-and-appeals.html"> Review of decision & appeals</a></li>
+					<li><a href="../SiteMap/self-service.html"> Self service</a></li>
+					<li><a href="../SiteMap/specialist-manuals-and-system-tools.html"> Specialist manuals & system tools</a></li>
+				</ul>
+			</div>
+			<!-- end pageDataNavLinks -->
+		</div>		
+	
+		<div class="ninecol last">
+			<div id="content">
+				<!--  The actual page data now fits in here  -->
+			
+				<!-- start pageDataHeading -->
+				<h1>Investigating a connection failure 001-10070050</h1>
+<ul id="tabs-primary"><li><a href="../job-seekers/001-10070050-01.html">Background</a></li><li><a class="active students" href="../job-seekers/001-10070050-03.html">Process</a></li><li><a href="../job-seekers/001-10070050-04.html">References</a></li><li><a href="../job-seekers/001-10070050-05.html">Resources</a></li><li><a href="../job-seekers/001-10070050-06.html">Training &amp; Support</a></li></ul>
+				<!-- end pageDataHeading -->
+				
+				<!-- start pageDataContent -->
+				<div id="bgtab" class="">
+					
+<div id="relatedMessagesDiv"></div>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p class="info-box warning">For Participation Solutions Team (PST) Service Officers and other Service Officers with PFDEC/WNPPD access only</p>
+
+<h2 id="On this page&#58;">On this page&#58;</h2>
+
+
+<p><a href="../job-seekers/001-10070050-03.html#bp03_L2GT_Investigating_a">Investigating a connection failure</a></p>
+
+<p><a href="../job-seekers/001-10070050-03.html#bp03_L2GT_Assessing_reaso">Making a decision about a connection failure</a></p>
+
+<p></p>
+<a class="anchor" name="bp03_L3TT_Investigating_a"></a>
+<h3>Investigating a connection failure</h3>
+
+
+<p>Table 1</p>
+<table caption="Table 1&#58; This table describes the steps to follow when gathering evidence regarding a connection failure. " class="" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Investigating_a_Step"></a>
+<p><strong>Step</strong></p></td>
+<td>
+
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step01"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Connection failure generated</strong> <a title="Read more 1" class="showhead bp03_tbl_Investigating_a_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>A connection failure is generated when a <a href="../job-seekers/001-10030000-01.html">Participation Report is submitted by a Community Development Program (CDP) provider</a> due to the CDP job seeker&#58;</p>
+		<ul>		<li>
+failing to attend a participation related appointment booked by the provider with a third party</li>
+		<li>
+not entering into a Job Plan, or</li>
+		<li>
+not meeting their job search requirement as per their Job Plan</li>
+		</ul>
+<p>All connection failures are investigated by the Participation Solutions Team (PST).</p>
+
+<p><strong>Note&#58;</strong> Parenting Payment (PP) CDP job seekers cannot incur a connection failure for not meeting their job search requirement.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Accessing the Compliance Investigation workflow</strong> <a title="Read more 2" class="showhead bp03_tbl_Investigating_a_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Selecting the failure from the Participation Compliance workflow screen will open the <strong>Compliance Investigation</strong> workflow and display the <strong>Key Information</strong> screen.</p>
+
+<p>Links to other screens in the workflow will display in the side menu. These include the <strong>Other Related Information</strong> screen, which will enable CDP job seeker information to be viewed while working through the investigation and includes (if appropriate) links to&#58;</p>
+		<ul>		<li>
+Provider Report</li>
+		<li>
+Job Plan</li>
+		<li>
+Provider Recorded Information</li>
+		<li>
+Online Diary</li>
+		<li>
+Job Seeker Calendar</li>
+		<li>
+Recent non-compliance</li>
+		<li>
+Services Australia Rates Estimator</li>
+		<li>
+Address History</li>
+		<li>
+View ESAt</li>
+		<li>
+Recent activities and exemptions</li>
+		<li>
+Circumstances impacting compliance</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step03"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Establish contact with CDP job seeker</strong> <a title="Read more 3" class="showhead bp03_tbl_Investigating_a_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Services Australia can contact CDP job seekers using&#58;</p>
+		<ul>		<li>
+outbound dialler</li>
+		<li>
+SMS messaging</li>
+		<li>
+an outbound phone attempt</li>
+		<li>
+a letter</li>
+		</ul>
+<p>When outbound contact attempts are unsuccessful, or there is no contact information on the record, contact should occur at the next reporting day or the next time the CDP job seeker contacts Services Australia.</p>
+
+<p>When the connection failure is not a suspension failure, a contact trigger is attached to the CDP job seeker's record when the connection failure is generated. This prevents the CDP job seeker from reporting until contact with the PST regarding the connection failure occurs.</p>
+
+<p>A connection failure cannot be investigated without talking to the CDP job seeker, unless it has already been established prior to CDP job seeker contact that the failure is invalid.</p>
+
+<p>See <a href="../job-seekers/001-10040050-01.html">Establishing contact with the job seeker to discuss non-compliance or potential barriers to compliance</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Key Information</strong> <a title="Read more 4" class="showhead bp03_tbl_Investigating_a_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Relevant CDP job seeker information and details of the failure will be presented on the <strong>Key Information</strong> screen.</p>
+
+<p>A 'View Circumstances' link is provided to access the CDP job seeker <strong>Circumstances Impacting Compliance</strong> screen.</p>
+
+<p><strong>Note&#58;</strong> a PST-skilled Service Officer <strong>must</strong> consult with a PST-skilled Social Worker where the job seeker presents with family and domestic violence or has a current Family relationships/Domestic violence circumstance recorded. See <a href="../help-in-an-emergency/003-12080010-03.html">Accessing a PST-Skilled social worker</a>.</p>
+
+<p>The Participation Solutions Team (PST)-skilled Service Officer will be prompted to&#58;</p>
+		<ul>		<li>
+record if an interpreter was used</li>
+		<li>
+check and update CDP job seeker's phone and email details</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step05"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Commence the investigation</strong> <a title="Read more 5" class="showhead bp03_tbl_Investigating_a_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Go to the <strong>Investigation</strong> screen.</p>
+
+<p>The <strong>Investigation</strong> screen will be pre-populated with details of the failure date and the reason for the failure.</p>
+
+<p>The PST-skilled Service Officer will be prompted to outline the failure under investigation and read the privacy statement to the CDP job seeker.</p>
+
+<p>Access and review the Participation Report.</p>
+
+<p>Record a response to&#58; 'Has the provider discussed the failure with the job seeker?'. If required, record in free text what excuse the CDP job seeker gave the provider.</p>
+
+<p>Discuss with the CDP job seeker their explanation and record any additional information provided in the appropriate free text field.</p>
+
+<p>Consider the reasons given and answer the question&#58;</p>
+		<ul>		<li>
+'Does the job seeker's statement suggest ongoing circumstances had a direct and significant impact on the failure?'</li>
+		</ul>
+<p>If the answer is 'Yes' or 'Unsure', a link to the <strong>Circumstances Impacting Compliance</strong> screen will allow the screen to be viewed and circumstances updated if required. See <a href="../job-seekers/001-10050000-01.html">Circumstances impacting capacity to comply with compulsory requirement</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step06"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>Select an appropriate Job Seeker Reason</strong> <a title="Read more 6" class="showhead bp03_tbl_Investigating_a_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Record the CDP job seeker's main excuse for the failure on the <strong>Investigation</strong> screen, or the reason determined as the main excuse following further discussion with the CDP job seeker.</p>
+
+<p>The displayed options will include only options appropriate to the failure type.</p>
+		<ul>		<li>
+Choose a category from the drop down list</li>
+		<li>
+Select a reason from the drop down list for the category selected that best describes the reasons the CDP job seeker has given and/or confirmed by the PST-skilled Service Officer as their main excuse. It is essential the PST-skilled Service Officer is satisfied they have captured the main reason for the failure here</li>
+		</ul>
+<p>Additional information may display depending on the choice of CDP job seeker's reason. Additional information may include&#58;</p>
+		<ul>		<li>
+Details of reported income</li>
+		<li>
+Medical certificates and exemptions</li>
+		<li>
+Address details</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step07"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Review guidelines</strong> <a title="Read more 7" class="showhead bp03_tbl_Investigating_a_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Consider the reasons the CDP job seeker has provided for the failure and the reasonable excuse or other guidelines, see&#58;</p>
+		<ul>		<li>
+<a href="../job-seekers/001-10070150-01.html">Non-attendance at compulsory provider managed appointments</a></li>
+		<li>
+<a href="../job-seekers/001-10070030-01.html">Refusing to enter into a Job Plan or Participation Plan</a></li>
+		<li>
+<a href="../job-seekers/001-10070110-01.html">Not meeting job search requirements</a></li>
+		<li>
+<a href="../job-seekers/001-10040070-01.html">Assessing reasonable excuse for non-compliance with mutual obligation requirements</a></li>
+		</ul>
+<p>Record the most appropriate response to questions as they present.</p>
+
+<p>Is this an acceptable reason that warrants further investigation?</p>
+
+<p><strong>Note&#58;</strong> when certain excuses are selected, the answer to this question will be set to 'No'.</p>
+		<ul>		<li>
+<strong>Yes</strong> or <strong>Unsure</strong>, further investigation is required. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step08">Go to Step 8</a></li>
+		<li>
+<strong>No</strong>, further investigation is not required. See <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Direct and significant impact on the failure</strong> <a title="Read more 8" class="showhead bp03_tbl_Investigating_a_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Does the excuse indicate it had a direct and significant impact on the failure?</p>
+		<ul>		<li>
+<strong>Yes</strong> or <strong>Unsure</strong>, further investigation is required. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step09">Go to Step 9</a></li>
+		<li>
+<strong>No</strong>, further investigation is not required. See <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step09"></a>
+<p>9</p></td>
+<td>
+
+<p><strong>Avoidable failure</strong> <a title="Read more 9" class="showhead bp03_tbl_Investigating_a_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Does the excuse indicate it was within the job seeker's control and they could have avoided the failure?</p>
+		<ul>		<li>
+<strong>Yes</strong>, further investigation is not required. See <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>
+		<li>
+<strong>No</strong> or <strong>Unsure</strong>, further investigation is required. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step10">Go to  Step 10</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step10"></a>
+<p>10</p></td>
+<td>
+
+<p><strong>Third party appointment</strong> <a title="Read more 10" class="showhead bp03_tbl_Investigating_a_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Is this failure to attend an appointment the CDP provider has booked with a third party?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step11">go to  Step 11</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step14">go to  Step 14</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step11"></a>
+<p>11</p></td>
+<td>
+
+<p><strong>Prior contact</strong> <a title="Read more 11" class="showhead bp03_tbl_Investigating_a_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If a CDP job seeker is unable to attend a compulsory appointments, (including those with a third party) they are expected to contact the organisation who the appointment was with or their provider prior to the scheduled appointment time to explain why they are unable to attend.</p>
+
+<p>An assessment of prior contact is required when the failure relates to an appointment booked by a provider and certain job seeker reasons have not been selected.</p>
+
+<p>Review the Provider Report using the link provided then record the most appropriate response to questions as they present.</p>
+
+<p>Does the report indicate the job seeker contacted their provider before they were due to attend?</p>
+		<ul>		<li>
+<strong>Yes</strong>, record the reason the provider did not accept the excuse and discuss this with the CDP job seeker. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step13">Go to  Step 13</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step12">go to  Step 12</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step12"></a>
+<p>12</p></td>
+<td>
+
+<p><strong>Prior contact not made</strong> <a title="Read more 12" class="showhead bp03_tbl_Investigating_a_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Discuss the CDP job seeker's reasons for not contacting and record their explanation in the <strong>Why didn't you contact the provider before you were due to attend?&#58;</strong> field.</p>
+
+<p>Select a category and reason which best describes the CDP job seeker's reason for not making prior contact&#58;</p>
+		<ul>		<li>
+Choose a category from the drop down list</li>
+		<li>
+Select a reason from the drop down list for the category selected</li>
+		</ul>
+<p>Consider the prior contact guidelines, see <a href="../job-seekers/001-10040070-01.html">Assessing reasonable excuse for non-compliance with mutual obligation requirements</a>.</p>
+
+<p>Record the most appropriate response to questions as they present.</p>
+
+<p>Would it have been possible, and reasonable, to contact the provider before the failure occurred?</p>
+
+<p><strong>Note&#58;</strong> when certain excuses are selected, the answer to this question will be set to 'Yes'.</p>
+		<ul>		<li>
+<strong>Yes</strong>, further investigation is not required. See <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>
+		<li>
+<strong>No</strong> or <strong>Unsure</strong>, further investigation is required. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step14">Go to  Step 14</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step13"></a>
+<p>13</p></td>
+<td>
+
+<p><strong>Reasonable excuse given to provider</strong> <a title="Read more 13" class="showhead bp03_tbl_Investigating_a_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Do you believe the job seeker provided a reasonable excuse when they contacted their provider?</p>
+
+<p><strong>Note&#58;</strong> answering <strong>No</strong> to this question will mean this failure will be applied. Please ensure the intention is to apply the failure before selecting No. If further investigation should occur, select Yes or Unsure.</p>
+		<ul>		<li>
+<strong>No</strong>, further investigation is not required. See <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>
+		<li>
+<strong>Yes</strong> or <strong>Unsure</strong>, further investigation is required. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step14">Go to  Step 14</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step14"></a>
+<p>14</p></td>
+<td>
+
+<p><strong>Sufficient evidence</strong> <a title="Read more 14" class="showhead bp03_tbl_Investigating_a_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>PST-skilled Service Officers are required to make evidence-based decisions. This means a decision must be based on the relevant facts.</p>
+
+<p>Does sufficient evidence already exist to confirm the excuse for the failure or for not making prior contact (when this is a requirement)?</p>
+		<ul>		<li>
+<strong>Yes</strong>, further evidence is not required. See <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Investigating_a_Step15">go to  Step 15</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Investigating_a_Step15"></a>
+<p>15</p></td>
+<td>
+
+<p><strong>Further evidence is required</strong> <a title="Read more 15" class="showhead bp03_tbl_Investigating_a_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Investigating_a_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>When the PST-skilled Service Officer is requesting/awaiting further details or evidence to confirm the excuse for the failure, or the excuse for not making prior contact, the Evidence Due date&#58; field must be completed.</p>
+
+<p>When the Service Officer selects the option <strong>No - Phone call required to confirm the excuse for failure</strong>, the following must be completed&#58;</p>
+		<ul>		<li>
+Evidence due date</li>
+		<li>
+Who do you need to contact about the job seeker's excuse and/or the reason for not contacting</li>
+		<li>
+Summary of evidence provided (this field is for recording a summary of evidence provided by the CDP job seeker)</li>
+		</ul>
+<p>The summary of evidence section may be used to document the evidence to be returned when a future date will be set for the return.</p>
+
+<p>When evidence is required and a future date is set for its return, <strong>Save and Exit</strong> the screen flow using the 'Evidence required for JSCM failure' option. This will remove the contact trigger for the current fortnight. However, it will prevent the CDP job seeker from reporting past the Evidence due date + 1.</p>
+
+<p>Is evidence required and a future date is recorded for the return?</p>
+		<ul>		<li>
+<strong>Yes</strong>, procedure ends here</li>
+		<li>
+<strong>No</strong>, see <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Assessing_reaso_Step01">Step 1 in Table 2</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp03_L3TT_Making_a_decisi"></a>
+<h3>Making a decision about a connection failure</h3>
+
+
+<p>Table 2</p>
+<table caption="Table 2&#58; This table describes the actions to take when assessing and finalising a connection failure. " width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step"></a>
+<p><strong>Step</strong></p></td>
+<td>
+
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step01"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Determine if failure occurred</strong> <a title="Read more 16" class="showhead bp03_tbl_Making_a_decisi_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>On the <strong>Decision and Penalty</strong> page record a response to questions as they present.</p>
+
+<p><strong>Note&#58;</strong> the response to these questions may be automatically set in certain circumstances.</p>
+
+<p>Have you confirmed the requirement is not suitable, it is explicitly precluded by policy or social security law, or they can't be compelled to meet the requirement for another reason?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step06">go to Step 6</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step02">go to Step 2</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Errors or omissions in the report</strong> <a title="Read more 17" class="showhead bp03_tbl_Making_a_decisi_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Have you identified any significant errors or omissions in the report submitted by the provider?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step06">go to Step 6</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step03">go to Step 3</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step03"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Reasonable excuse</strong> <a title="Read more 18" class="showhead bp03_tbl_Making_a_decisi_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Are you satisfied there is a reasonable excuse for the failure?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step06">go to Step 6</a></li>
+		<li>
+<strong>No</strong>, and this is&#58;</li>
+			<ul>			<li>
+a failure to enter a Job Plan with the Employment Services Provider, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step05">go to Step 5</a></li>
+			<li>
+a failure to attend an appointment, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step04">go to Step 4</a></li>
+			<li>
+a job search failure, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step07">go to Step 7</a></li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Prior notice</strong> <a title="Read more 19" class="showhead bp03_tbl_Making_a_decisi_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Are you satisfied prior notice was given or it was not reasonable to do so?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step07">go to Step 7</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step06">go to Step 6</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step05"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Has a failure to enter or vary a Job Plan with a provider been applied before?</strong> <a title="Read more 20" class="showhead bp03_tbl_Making_a_decisi_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>When a failure to enter or vary a Job Plan with a provider has been applied, and the CDP job seeker attends the re-engagement appointment but refuses to enter or vary a Job Plan again, a reconnection failure does not occur. In these cases the provider will submit a CFEP Participation Report, which triggers the generation of another connection failure.</p>
+
+<p>When investigating the failure, if Services Australia determines the job seeker does not satisfy qualification for payment due to an ongoing failure to enter a Job Plan, the CDP job seeker's payments should be cancelled.</p>
+
+<p>Did this failure result from an ongoing refusal by the CDP job seeker to enter or vary a Job Plan, at a re-engagement appointment set during the investigation of a CFEP connection failure, when the decision was to apply that failure?</p>
+		<ul>		<li>
+<strong>Yes</strong>, cancel the payment using the code FSA (Failed to sign Job Plan) from the date of second refusal to sign the Job Plan. <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step07">Go to Step 7</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step06">go to Step 6</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step06"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>Rejection reason</strong> <a title="Read more 21" class="showhead bp03_tbl_Making_a_decisi_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>PST-skilled Service Officers need to be satisfied this is the correct decision before going any further. This may require Service Officers to reconsider and confirm the main reason for non-compliance has been correctly captured earlier in the workflow.</p>
+
+<p>Select the appropriate rejection reason from the drop down list.</p>
+
+<p>Clearly record an explanation for rejecting the compliance action in the free text area provided.</p>
+
+<p>Record further <a href="../job-seekers/001-10040100-01.html">information for the provider to explain the reason for rejection</a>, if appropriate.</p>
+
+<p><strong>Note&#58;</strong> any information recorded can be obtained by the CDP job seeker under the Freedom of Information Act 1982. The information which can be lawfully provided by Services Australia to Employment Services Providers is covered by Section 202 of the Social Security (Administration) Act 1999.</p>
+
+<p><a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step09">Go to Step 9</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step07"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Failure decision</strong> <a title="Read more 22" class="showhead bp03_tbl_Making_a_decisi_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The failure decision will be automatically displayed in the 'Decision' section of the <strong>Decision and Penalty</strong> screen.</p>
+
+<p>When the failure is applied, as the decision maker Service Officers need to be satisfied the decision is correct under the Social Security (Administration) Act 1999. This may require Service Officers to reconsider and confirm the main reason for non-compliance has been correctly captured within the <strong>Compliance Investigation</strong> workflow.</p>
+
+<p>Record a summary of the reason why the decision has been made, including any evidence or circumstances that have been considered.</p>
+
+<p>Advise the CDP job seeker of the decision and their appeal rights.</p>
+
+<p><strong>Note&#58;</strong> any information recorded can be obtained by the CDP job seeker under the Freedom of Information Act 1982. The information which can be lawfully provided by Services Australia to Employment Services Providers is covered by Section 202 of the Social Security (Administration) Act 1999.</p>
+
+<p>Record a response to&#58;</p>
+		<ul>		<li>
+Have you verbally notified the job seeker of the failure decision and appeal rights?</li>
+		<li>
+Have they indicated they intend to immediately appeal the decision?</li>
+		</ul>
+<p>Does the CDP job seeker want to apply for a formal review of the decision?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step08">go to Step 8</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step09">go to Step 9</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>CDP job seeker wants to apply for a formal review of the decision</strong> <a title="Read more 23" class="showhead bp03_tbl_Making_a_decisi_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The following message will display&#58;</p>
+
+<p>'The job seeker has requested a review of the decision to apply the failure. Ensure appropriate action is taken to record the request for the review.'</p>
+
+<p>See <a href="../job-seekers/001-10130000-01.html">Non-compliance with compulsory requirements - review and appeals</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step09"></a>
+<p>9</p></td>
+<td>
+
+<p><strong>Existing circumstances impacting compliance require review to confirm they are up to date</strong> <a title="Read more 24" class="showhead bp03_tbl_Making_a_decisi_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The PST-skilled Service Officer will be required to complete outstanding reviews or assessments of existing circumstances impacting compliance. See <a href="../job-seekers/001-10050000-01.html">Circumstances impacting capacity to comply with compulsory requirement</a>.</p>
+
+<p>A failure for non-attendance at an appointment booked by the provider with a third party, or failing to enter into a Job Plan with their CDP provider will require a re-engagement appointment to be booked.</p>
+
+<p>Does the job seeker need to be re-engaged?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step10">go to  Step 10</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-10070050-03.html#bp03_tbl_Making_a_decisi_Step11">go to  Step 11</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step10"></a>
+<p>10</p></td>
+<td>
+
+<p><strong>Re-engagement</strong> <a title="Read more 25" class="showhead bp03_tbl_Making_a_decisi_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>When re-engagement is required, CDP job seekers should be re-engaged as quickly as possible.</p>
+		<ul>		<li>
+If possible, a re-engagement appointment should be arranged within the next 2 days</li>
+		<li>
+If the appointment cannot be arranged within this timeframe it should be booked within the next 28 days</li>
+		<li>
+CDP job seekers who are unable to attend a re-engagement appointment within the next 28 days due to circumstances outside their control should not be given a re-engagement requirement</li>
+		</ul>
+<p><strong>Note&#58;</strong> the response to these questions may be automatically set in certain circumstances.</p>
+
+<p>Record responses to the following then advise the CDP job seekers of their re-engagement requirements using the text displayed in the workflow&#58;</p>
+		<ul>		<li>
+Has the job seeker refused to re-engage?</li>
+		<li>
+Can re-engagement occur within 2 working days?</li>
+		<li>
+What is the re-engagement outcome?</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step11"></a>
+<p>11</p></td>
+<td>
+
+<p><strong>Participation Compliance workflow submitted to QOL</strong> <a title="Read more 26" class="showhead bp03_tbl_Making_a_decisi_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p><strong>QOL Checker&#58;</strong></p>
+
+<p>Due to system limitations, Quality On Line (QOL) may not display all workflow screens if the failure investigation is completed over more than 1 contact.</p>
+
+<p>When it has been identified by the QOL Checker some screens are not displaying within QOL, this information should be viewed through the <strong>Participation Compliance</strong> workflow by selecting the Date of Event (DOV) of the submitted failure on the <strong>Participation Compliance Workflow Summary</strong> screen.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step12"></a>
+<p>12</p></td>
+<td>
+
+<p><strong>Restoration</strong> <a title="Read more 27" class="showhead bp03_tbl_Making_a_decisi_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Check if CDP job seeker's payment needs to be restored.</p>
+
+<p>The Participation Compliance workflow will display a message and a Manual Follow-up (MFU) will be generated to prompt restoration of the CDP job seeker's payment when a payment suspension (participation) has been imposed and the CDP job seeker&#58;</p>
+		<ul>		<li>
+agrees to re-engage, or</li>
+		<li>
+has self re-engaged, and the re-engagement outcome 'Self re-engaged after failure event date' has been applied to the record, or</li>
+		<li>
+does not need to re-engage (including when the failure is rejected as invalid and no contact has been made with the CDP job seeker)</li>
+		</ul>
+<p>If the CDP job seeker has refused to re-engage then the suspension will continue, however, the CDP job seeker will still be issued with a re-engagement requirement.</p>
+
+<p>If a CDP job seeker terminates a call, or the call is disconnected, before Services Australia can discuss re-engagement, their payment should remain suspended.</p>
+
+<p>See <a href="../job-seekers/001-10080020-01.html">Restoring payment where a payment suspension (participation) has been imposed for Community Development Program (CDP) job seekers</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Making_a_decisi_Step13"></a>
+<p>13</p></td>
+<td>
+
+<p><strong>Comprehensive Compliance Assessment (CCA) will be generated due to the application of the failure</strong> <a title="Read more 28" class="showhead bp03_tbl_Making_a_decisi_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Making_a_decisi_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>When the following message presents&#58; 'The application of this failure will result in the generation of an automatic CCA. Based on the CCA guidelines in Operational Blueprint, does the CCA need to be generated immediately?', a response must be selected from either&#58;</p>
+		<ul>		<li>
+Yes - generate CCA immediately</li>
+		<li>
+No - system should generate CCA overnight</li>
+		</ul>
+<p>If a CCA is generated immediately, it will be displayed on the <strong>Participation Compliance Workflows</strong> screen.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp04_L1RF_References"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
+				
+				<!-- end pageDataContent -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end pageData -->
+
+
+	<!-- start footer -->
+<div id="footer">
+	<div id="bottom-stripe">
+		<div class="container">
+			<div class="row colour-stripe">
+				<span class="le-1 first">&nbsp;</span>
+				<span class="le-2">&nbsp;</span>
+				<span class="le-3">&nbsp;</span>
+				<span class="le-4">&nbsp;</span>
+				<span class="le-5">&nbsp;</span>
+				<span class="le-6">&nbsp;</span>
+				<span class="le-7">&nbsp;</span>
+				<span class="le-8">&nbsp;</span>
+				<span class="le-9">&nbsp;</span>
+				<span class="le-10">&nbsp;</span>
+				<span class="le-11">&nbsp;</span>
+				<span class="le-12">&nbsp;</span>
+				<span class="le-13">&nbsp;</span>
+				<span class="le-14">&nbsp;</span>
+				<span class="le-15">&nbsp;</span>
+				<span class="le-16">&nbsp;</span>
+				<span class="le-17">&nbsp;</span>
+				<span class="le-18 last">&nbsp;</span>
+			</div>
+		</div> 
+	</div>
+	<div class="container">
+		<div class="row" id="sub-footer">
+			<ul>
+				<li>Services Australia <acronym title="Australian Business Number">ABN</acronym> 90&nbsp;794&nbsp;605&nbsp;008&nbsp;</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	<!-- end footer -->
+	
+	<!-- start urchinTracker -->
+	<script type="text/javascript" src="../../supportingContent/js/urchin.js"></script>
+	<script type="text/javascript">if (typeof window.error404 === "undefined") { urchinTracker(); }</script>
+	<!-- end urchinTracker -->
+
+</body>
+</html>
