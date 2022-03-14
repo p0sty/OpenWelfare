@@ -4,7 +4,7 @@ Services Australia Operational Blueprint Freedom project
 
 Technical:
 
-The last Operational Blueprint text is saved nightly to "Current" folder, the previous nights saved "Previous"
+The last Operational Blueprint text is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
 
 The Operational Blueprint Freedom Report master report tab separated values file is:
 OpenWelfare-OperationalBlueprintFreedomReport.tsv
