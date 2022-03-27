@@ -1,0 +1,543 @@
+
+Goods and Services Tax (GST) adjustment processing for Veterans' Affairs Processing (VAP) 012-19061434
+
+-   Background
+-   Process
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+This page contains information for Veterans' Affairs Processing (VAP)
+Officers to check registration for Goods and Services Tax (GST) on
+Mainframe and prepare documentation to process GST back payments.
+
+On this Page:
+
+Check the provider's Australian Business Number (ABN) and GST status
+
+Process GST back payments
+
+Preparing a File fix to pay GST back payments
+
+Check the provider's Australian Business Number (ABN) and GST status
+
+Table 1: This table describes how VAP Officers check a provider’s ABN
+for validity and GST registration status.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Check provider's form for ABN     |
+|                                   | validity on Mainframe + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | On Mainframe, key control line    |
+|                                   | ABAA:                             |
+|                                   |                                   |
+|                                   | For provider number:              |
+|                                   |                                   |
+|                                   | -   Key 3 in the option field     |
+|                                   | -   Press Enter                   |
+|                                   | -   Key the first 7 characters of |
+|                                   |     the provider number in HIC    |
+|                                   |     Reference ID                  |
+|                                   | -   Key / against the program     |
+|                                   | -   You will be returned to ABAA  |
+|                                   |     with the ABN supplied         |
+|                                   |                                   |
+|                                   | For ABN:                          |
+|                                   |                                   |
+|                                   | -   key 2 in the option field     |
+|                                   | -   key provider’s ABN            |
+|                                   | -   press Enter                   |
+|                                   |                                   |
+|                                   | The ABEA screen will display.     |
++-----------------------------------+-----------------------------------+
+| 2                                 | Check the provider's GST status + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | The following fields should be    |
+|                                   | used to determine the provider’s  |
+|                                   | ABN and GST status:               |
+|                                   |                                   |
+|                                   | -   ABN Registration date         |
+|                                   | -   ABN End date                  |
+|                                   | -   Registered for GST            |
+|                                   | -   GST Status valid from         |
+|                                   | -   GST status valid to           |
++-----------------------------------+-----------------------------------+
+| 3                                 | Check the Program registration +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | From the ABEA screen, press Enter |
+|                                   |                                   |
+|                                   | Check the provider number for the |
+|                                   | adjustment is listed in the       |
+|                                   | Reference field.                  |
+|                                   |                                   |
+|                                   | Check that DVAAS and DVAMS are    |
+|                                   | listed in the Program column. If  |
+|                                   | the More field shows an M         |
+|                                   | additional programs can be viewed |
+|                                   | by keying / and pressing PF9.     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Check Date of Processing (DOP) of |
+|                                   | RCTI form + Read more ...         |
+|                                   |                                   |
+|                                   | To determine the date of          |
+|                                   | processing of the GST status for  |
+|                                   | the purposes of determining the   |
+|                                   | 60 day limit for backdating GST   |
+|                                   | adjustments:                      |
+|                                   |                                   |
+|                                   | -   From the ABAA screen          |
+|                                   | -   key 4 in the option field     |
+|                                   | -   key the first 7 characters of |
+|                                   |     the provider number in HIC    |
+|                                   |     Reference ID                  |
+|                                   | -   check the date in the DOP     |
+|                                   |     column against the required   |
+|                                   |     program, DVAAS or DVAMS       |
++-----------------------------------+-----------------------------------+
+
+Process GST back payments
+
+Table 2: This table describes how VAP Overpayments Officers and VAP
+Helpdesk staff prepare documentation to process a GST back payment.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Confirm provider details + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | The provider's written request is |
+|                                   | identified from an adjustment     |
+|                                   | fax/letter allocated in PaNDA or  |
+|                                   | emailed from the GST Programme,   |
+|                                   | Department of Veteran’s Affairs   |
+|                                   | (DVA), VAP Help Desk, Health      |
+|                                   | Professional Online Services      |
+|                                   | (HPOS) or from a Program Support  |
+|                                   | Officer (PSO).                    |
+|                                   |                                   |
+|                                   | Is the provider number linked to  |
+|                                   | an ABN and is it Yes to GST?      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, return the form to the    |
+|                                   |     provider with the covering    |
+|                                   |     letter. The Resources page    |
+|                                   |     contains a link to the VAP    |
+|                                   |     GST covering letter.          |
+|                                   |     Procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 2                                 | Send the Vendor Information       |
+|                                   | Request form to the provider +    |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | A provider must complete a Vendor |
+|                                   | Information Request form before a |
+|                                   | request for back payment of GST   |
+|                                   | is actioned by Veterans' Affairs  |
+|                                   | Processing.                       |
+|                                   |                                   |
+|                                   | Information on the form enables   |
+|                                   | an account to be created in SAP   |
+|                                   | GUI for the outstanding funds to  |
+|                                   | be deposited into the provider’s  |
+|                                   | bank account.                     |
+|                                   |                                   |
+|                                   | The Resources page contains a     |
+|                                   | link to the Vendor Information    |
+|                                   | Request form                      |
+|                                   |                                   |
+|                                   | -   Complete the details in the   |
+|                                   |     Contact officer please        |
+|                                   |     complete PRIOR to forwarding  |
+|                                   |     to vendor / vendor            |
+|                                   |     maintenance' section of the   |
+|                                   |     Vendor Information Request    |
+|                                   |     form                          |
+|                                   | -   From the GST mailbox email    |
+|                                   |     the form to the provider      |
+|                                   |                                   |
+|                                   | VAP Overpayments officers, go to  |
+|                                   | Step 5                            |
+|                                   |                                   |
+|                                   | VAP Helpdesk officers, go to Step |
+|                                   | 3                                 |
++-----------------------------------+-----------------------------------+
+| 3                                 | The Vender Information Request    |
+|                                   | form has been returned + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | For VAP Helpdesk staff only       |
+|                                   |                                   |
+|                                   | In SAP GUI:                       |
+|                                   |                                   |
+|                                   | -   Open the Display Vendor       |
+|                                   |     Account screen                |
+|                                   | -   In the transaction search box |
+|                                   |     key XK03                      |
+|                                   | -   Press Enter                   |
+|                                   |                                   |
+|                                   | The Display Vendor:Initial screen |
+|                                   | will display.                     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Search for the vendor on the      |
+|                                   | Display Vendor: Initial screen +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | For VAP Helpdesk staff only.      |
+|                                   |                                   |
+|                                   | Action the following information  |
+|                                   | in the following fields:          |
+|                                   |                                   |
+|                                   | Company Code - key HIC            |
+|                                   |                                   |
+|                                   | Purch. Organization - delete any  |
+|                                   | details                           |
+|                                   |                                   |
+|                                   | Select Vendor - the box will turn |
+|                                   | yellow                            |
+|                                   |                                   |
+|                                   | -   left click outside the Vendor |
+|                                   |     box to enable search for      |
+|                                   |     created vendor                |
+|                                   |                                   |
+|                                   | Select Standard Infolink Search   |
+|                                   | to search for Vendor by tax       |
+|                                   | information                       |
+|                                   |                                   |
+|                                   | Change Company Code to HIC and    |
+|                                   | enter the provider's ABN          |
+|                                   |                                   |
+|                                   | Note: vendor names will appear in |
+|                                   | alphabetical order                |
+|                                   |                                   |
+|                                   | -   Search for the vendor         |
+|                                   | -   Add the vendor number to the  |
+|                                   |     GST spreadsheet located on    |
+|                                   |     HPRM                          |
++-----------------------------------+-----------------------------------+
+| 5                                 | Create VCEI documents + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | For VAP Overpayment/Recoveries    |
+|                                   | Officers only.                    |
+|                                   |                                   |
+|                                   | Check the GST spreadsheet on HPRM |
+|                                   | regularly. When the vendor number |
+|                                   | has been added to the spreadsheet |
+|                                   | by the VAP Helpdesk the process   |
+|                                   | continues.                        |
+|                                   |                                   |
+|                                   | On Mainframe, locate the          |
+|                                   | provider's GST claims:            |
+|                                   |                                   |
+|                                   | -   Key the control line          |
+|                                   |                                   |
+|                                   | 'VCEI,provider#,ST/ALL,FR/DDMMYY' |
+|                                   |     Note: to populate DDMMYY use  |
+|                                   |     the date of GST notification  |
+|                                   |     of a GST status of YES, as    |
+|                                   |     per DOP field in ABAA on      |
+|                                   |     Mainframe                     |
+|                                   | -   Press Enter                   |
+|                                   |                                   |
+|                                   | A list of all provider claims and |
+|                                   | their status from the date range  |
+|                                   | will display                      |
+|                                   |                                   |
+|                                   | Copy and paste all lines          |
+|                                   | displayed onto a new word         |
+|                                   | document                          |
+|                                   |                                   |
+|                                   | Next to the claim details the     |
+|                                   | status will display:              |
+|                                   |                                   |
+|                                   | -   GST NOTPD, or                 |
+|                                   | -   GST PAID                      |
+|                                   |                                   |
+|                                   | Delete all claims with the status |
+|                                   | GST PAID from the word document.  |
+|                                   | These claims do not require       |
+|                                   | updating                          |
+|                                   |                                   |
+|                                   | Save the VCEI document with       |
+|                                   | naming convention 'Provider       |
+|                                   | number - Provider Surname - VCEI' |
+|                                   | in:                               |
+|                                   |                                   |
+|                                   | -   R:\SA\ADEL-209-Greenhill\VAP  |
+|                                   |     Operations\Cheque             |
+|                                   |     Recoveries\Adelaide\New       |
+|                                   |     Recoveries Doc - I Drive      |
+|                                   |     backup\EP ADD GST statements  |
++-----------------------------------+-----------------------------------+
+| 6                                 | Prepare VPSI document - manual    |
+|                                   | statement + Read more ...         |
+|                                   |                                   |
+|                                   | Create the VPSI document in       |
+|                                   | Courier New, size 10 font         |
+|                                   |                                   |
+|                                   | For each claim that requires      |
+|                                   | updating key the control line:    |
+|                                   |                                   |
+|                                   | 'V                                |
+|                                   | PSI,PROVIDER#,CLAIMID,DOL=DDMMYY' |
+|                                   |                                   |
+|                                   | Press Enter                       |
+|                                   |                                   |
+|                                   | Copy each statement and paste     |
+|                                   | into a single Word document       |
+|                                   | (VPSI)                            |
+|                                   |                                   |
+|                                   | Save the VPSI document with       |
+|                                   | naming convention 'Provider       |
+|                                   | number - Provider surname' with   |
+|                                   | all required statements included  |
+|                                   | in:                               |
+|                                   |                                   |
+|                                   | -   R:\SA\ADEL-209-Greenhill\VAP  |
+|                                   |     Operations\Cheque             |
+|                                   |     Recoveries\Adelaide\New       |
+|                                   |     Recoveries Doc - I Drive      |
+|                                   |     backup\EP ADD GST statements  |
++-----------------------------------+-----------------------------------+
+| 7                                 | Calculate GST components to be    |
+|                                   | back paid to the provider + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Using the VPSI document           |
+|                                   | calculate:                        |
+|                                   |                                   |
+|                                   | -   Which items require GST to be |
+|                                   |     applied                       |
+|                                   | -   How much GST is applied       |
+|                                   | -   Total for each claim          |
+|                                   | -   Total amount                  |
+|                                   |                                   |
+|                                   | On the VCEI document note the:    |
+|                                   |                                   |
+|                                   | -   Provider’s ABN                |
+|                                   | -   Date entered on to the ABAA   |
+|                                   |     screen                        |
+|                                   | -   ABN registered date           |
+|                                   | -   GST registered date           |
+|                                   | -   Total GST to be back paid and |
+|                                   |     against each claim line       |
+|                                   | -   Total for each claim, and     |
+|                                   | -   The date of the request       |
+|                                   |                                   |
+|                                   | Email all documents requesting a  |
+|                                   | file fix to the File Fix Officer  |
+|                                   | in the Service Officer's section. |
+|                                   | See Veterans' Affairs Processing  |
+|                                   | (VAP) for email addresses under   |
+|                                   | Internal contacts.                |
++-----------------------------------+-----------------------------------+
+
+Preparing a File fix to pay GST back payments
+
+Table 3: This table describes how File fix Officers prepare a file fix
+before processing GST back payment to a provider.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Does GST need to be added to the  |
+|                                   | provider's claim? + Read more ... |
+|                                   |                                   |
+|                                   | Does GST need to be added to the  |
+|                                   | claim because the provider is now |
+|                                   | registered for GST on the ABAA    |
+|                                   | screen?                           |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   Complete an Add GST file fix  |
+|                                   |     request through DVAMS         |
+|                                   | -   See the File fix request      |
+|                                   |     through DVAMS table on        |
+|                                   |     Request a file fix for claims |
+|                                   |     in Veterans' Affairs          |
+|                                   |     Processing (VAP)              |
+|                                   | -   Go to Step 3                  |
+|                                   |                                   |
+|                                   | No, go to Step 2                  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Does GST need to be removed from  |
+|                                   | the provider's claim? + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Does GST need to be removed from  |
+|                                   | the claim because the provider's  |
+|                                   | GST status has changed on the     |
+|                                   | ABAA screen?                      |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   Complete a Remove GST file    |
+|                                   |     fix request through DVAMS     |
+|                                   | -   See the File fix request      |
+|                                   |     through DVAMS table on        |
+|                                   |     Request a file fix for claims |
+|                                   |     in Veterans' Affairs          |
+|                                   |     Processing (VAP)              |
+|                                   |                                   |
+|                                   | No, procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 3                                 | When the file fix has been        |
+|                                   | completed - forward the           |
+|                                   | information + Read more ...       |
+|                                   |                                   |
+|                                   | When the file fix is returned     |
+|                                   | email the Overpayments/Recoveries |
+|                                   | Officers. See Veterans' Affairs   |
+|                                   | Processing (VAP) for email        |
+|                                   | addresses under Internal          |
+|                                   | contacts.                         |
+|                                   |                                   |
+|                                   | Include the following             |
+|                                   | information:                      |
+|                                   |                                   |
+|                                   | Claim details                     |
+|                                   |                                   |
+|                                   | Copy of new statements including  |
+|                                   | GST payment information. can be   |
+|                                   | accessed with control line        |
+|                                   | 'VPSI,provider#,claim             |
+|                                   | ID,DOL=DDMMYY'                    |
+|                                   |                                   |
+|                                   | -   Copy the VPSI document into a |
+|                                   |     new Word document in Courier  |
+|                                   |     New, size 10 font             |
+|                                   | -   Amend all lines to reflect    |
+|                                   |     the pre and post GST amounts  |
+|                                   | -   Total each claim and add the  |
+|                                   |     main total at the end         |
+|                                   | -   Save with the naming          |
+|                                   |     convention of 'amend' added,  |
+|                                   |     for example 123456B - Smith - |
+|                                   |     Amend to                      |
+|                                   |     R:\SA\ADEL-209-Greenhill\VAP  |
+|                                   |     Operations\Cheque             |
+|                                   |     Recoveries\Adelaide\New       |
+|                                   |     Recoveries Doc - I Drive      |
+|                                   |     backup\EP ADD GST statements  |
+|                                   |                                   |
+|                                   | Total amount owing                |
+|                                   |                                   |
+|                                   | Complete the approved EP GST      |
+|                                   | Letter to Provider template       |
+|                                   |                                   |
+|                                   | -   Save the letter with the      |
+|                                   |     naming convention 'letter'    |
+|                                   |     added, for example 123456B –  |
+|                                   |     Smith - Letter in             |
+|                                   |     R:\SA\ADEL-209-Greenhill\VAP  |
+|                                   |     Operations\Cheque             |
+|                                   |     Recoveries\Adelaide\New       |
+|                                   |     Recoveries Doc - I Drive      |
+|                                   |     backup\EP ADD GST statements  |
+|                                   |                                   |
+|                                   | Email address of each provider    |
+|                                   | requesting additional payment of  |
+|                                   | GST. Do not process claims for    |
+|                                   | GST payments on Mainframe         |
+|                                   |                                   |
+|                                   | Forward to VAP Helpdesk, they     |
+|                                   | will email Vendor Information     |
+|                                   | Request forms to the providers.   |
+|                                   | The Resources page contains a     |
+|                                   | link to the Vendor Information    |
+|                                   | Request form.                     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Overpayments/Recoveries Officers  |
+|                                   | check all documents provided by   |
+|                                   | the File Fix Officer + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Check all documents provided by   |
+|                                   | the File fix Officer including:   |
+|                                   |                                   |
+|                                   | -   All claims and calculations   |
+|                                   | -   Statements                    |
+|                                   | -   The VAP GST covering letter   |
+|                                   |                                   |
+|                                   | The Resources page contains a     |
+|                                   | link to the VAP GST covering      |
+|                                   | letter.                           |
+|                                   |                                   |
+|                                   | Send to VAP Helpdesk:             |
+|                                   |                                   |
+|                                   | -   The whole claim               |
+|                                   | -   Payment summary information   |
+|                                   |     (as per 'Providers - File     |
+|                                   |     fixed by VAP' tab on the GST  |
+|                                   |     Data Base Spreadsheet - HPRM  |
+|                                   |     (ER 13/126813), and           |
+|                                   | -   Provider email address        |
+|                                   |     (obtained in step 3)          |
++-----------------------------------+-----------------------------------+
+| 5                                 | The VAP Helpdesk prepares for GST |
+|                                   | portion payment + Read more ...   |
+|                                   |                                   |
+|                                   | For VAP Helpdesk staff only.      |
+|                                   |                                   |
+|                                   | -   Add details to upload file    |
+|                                   |     spreadsheet                   |
+|                                   | -   Obtain delegate approval for  |
+|                                   |     the request                   |
+|                                   | -   Forward separately to the     |
+|                                   |     Finance/Treasury Department   |
+|                                   |     and Accounts Payable Team     |
+|                                   |                                   |
+|                                   | Treasury will confirm the payment |
+|                                   | has been sent to the provider by  |
+|                                   | an email to the VAP Helpdesk.     |
+|                                   | When Helpdesk officers receive    |
+|                                   | this confirmation they:           |
+|                                   |                                   |
+|                                   | -   Contact the                   |
+|                                   |     Overpayment/Recoveries        |
+|                                   |     Officers by email             |
+|                                   | -   Provide authorisation for the |
+|                                   |     new statements and VAP GST    |
+|                                   |     covering letter to be posted  |
+|                                   |     to the provider. The          |
+|                                   |     Resources page contains a     |
+|                                   |     link to the VAP GST covering  |
+|                                   |     letter.                       |
+|                                   |                                   |
+|                                   | Procedure ends here               |
++-----------------------------------+-----------------------------------+
+| 6                                 | Contact the provider and record   |
+|                                   | the documents + Read more ...     |
+|                                   |                                   |
+|                                   | For VAP Overpayment/Recoveries    |
+|                                   | Officers only.                    |
+|                                   |                                   |
+|                                   | Print out amended statement       |
+|                                   | (VPSI) and VAP GST covering       |
+|                                   | letter                            |
+|                                   |                                   |
+|                                   | Mail statement and letter to the  |
+|                                   | provider                          |
+|                                   |                                   |
+|                                   | File all documents in the         |
+|                                   | relevant file, for example EP ADD |
+|                                   | GST complete Month Year in:       |
+|                                   |                                   |
+|                                   | -   R:\SA\ADEL-209-Greenhill\VAP  |
+|                                   |     Operations\Cheque             |
+|                                   |     Recoveries\Adelaide\New       |
+|                                   |     Recoveries Doc - I Drive      |
+|                                   |     backup\EP ADD GST statements  |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

@@ -1,0 +1,1175 @@
+
+Immediate payment by payment method Real Time Gross Settlement (RTGS) 003-10030040
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+On this page:
+
+Issuing immediate payments to customers by RTGS
+
+Reissuing an RTGS payment
+
+Issuing Farm Household Allowance (FHA) payments by RTGS
+
+Issuing Status Resolution Support Services (SRSS) payments by RTGS
+
+Issuing emergency payments by RTGS
+
+How to manually code an RTGS payment
+
+Issuing immediate payments to customers by RTGS
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Immediate payment to customer by  |
+|                                   | RTGS + Read more ...              |
+|                                   |                                   |
+|                                   | Customers requesting an urgent    |
+|                                   | payment should be referred to     |
+|                                   | Smart Centre Telephony. If the    |
+|                                   | customer is requesting a payment  |
+|                                   | due to exceptional and unforeseen |
+|                                   | circumstances, they can use the   |
+|                                   | IVR service or their Centrelink   |
+|                                   | online account.                   |
+|                                   |                                   |
+|                                   | In some circumstances, it will be |
+|                                   | appropriate for the urgent        |
+|                                   | payment request to be assessed at |
+|                                   | the service centre or by a        |
+|                                   | processing team.                  |
+|                                   |                                   |
+|                                   | RTGS is only used and made        |
+|                                   | available if the account is not   |
+|                                   | NPP reachable. When considering a |
+|                                   | payment by RTGS, remember:        |
+|                                   |                                   |
+|                                   | -   Immediate payments cannot be  |
+|                                   |     issued if the customer's      |
+|                                   |     record is in the I            |
+|                                   |     (International) environment   |
+|                                   | -   Urgent payments cannot be     |
+|                                   |     issued if the customer's      |
+|                                   |     payment type is an ineligible |
+|                                   |     payment. These payments       |
+|                                   |     include Family Tax Benefit    |
+|                                   |     (FTB) only, Pension Bonus     |
+|                                   |     Scheme and Advance payments.  |
+|                                   |     See Urgent payments due to    |
+|                                   |     exceptional and unforeseen or |
+|                                   |     extraordinary circumstances   |
+|                                   |     for a list of ineligible      |
+|                                   |     payments                      |
+|                                   | -   The customer must have        |
+|                                   |     already been approved for an  |
+|                                   |     urgent payment (the service   |
+|                                   |     officer must have already     |
+|                                   |     determined the customer is    |
+|                                   |     eligible for the urgent       |
+|                                   |     payment)                      |
+|                                   | -   The payment is to be made by  |
+|                                   |     RTGS to the customer's bank   |
+|                                   |     account. The Immediate        |
+|                                   |     Payment requests script       |
+|                                   |     should be used to code        |
+|                                   |     immediate payments unless the |
+|                                   |     customer is receiving Farm    |
+|                                   |     Household Allowance (FHA),    |
+|                                   |     Status Resolution Support     |
+|                                   |     Services (SRSS) or an         |
+|                                   |     emergency payment such as     |
+|                                   |     Australian Government         |
+|                                   |     Disaster Recovery Payment     |
+|                                   |     (AGDRP)                       |
++-----------------------------------+-----------------------------------+
+| 2                                 | Authenticating the customer +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Before assessing or issuing an    |
+|                                   | immediate payment, make sure the  |
+|                                   | customer record is the correct    |
+|                                   | one by asking authentication      |
+|                                   | questions to verify Proof of      |
+|                                   | Record Ownership (PORO). See      |
+|                                   | Authenticating a Centrelink       |
+|                                   | customer for a detailed process.  |
+|                                   |                                   |
+|                                   | If the customer contacts in       |
+|                                   | person they must be authenticated |
+|                                   | at application. It is preferable  |
+|                                   | the customer also provide at      |
+|                                   | least 1 photo identity document   |
+|                                   | for a manual-visual comparison.   |
+|                                   | If this is not available and the  |
+|                                   | Service Officer is in doubt they  |
+|                                   | are speaking with the customer,   |
+|                                   | they must ask more authentication |
+|                                   | questions.                        |
+|                                   |                                   |
+|                                   | Authentication questions must not |
+|                                   | be limited to details a           |
+|                                   | customer's friends and relatives  |
+|                                   | are aware of such as the          |
+|                                   | customer's date of birth or how   |
+|                                   | many children are in the family.  |
+|                                   | The questions must be searching,  |
+|                                   | but must not be so personal as to |
+|                                   | be intrusive. If appropriate, it  |
+|                                   | is important to explain to the    |
+|                                   | customer why they are being       |
+|                                   | asking these questions. See       |
+|                                   | Authenticating a Centrelink       |
+|                                   | customer for a detailed process.  |
++-----------------------------------+-----------------------------------+
+| 3                                 | Immediate payment request granted |
+|                                   | and customer wants to change      |
+|                                   | amount + Read more ...            |
+|                                   |                                   |
+|                                   | Has the customer already been     |
+|                                   | granted an immediate payment      |
+|                                   | today and wants to change the     |
+|                                   | amount of the payment?            |
+|                                   |                                   |
+|                                   | -   Yes, the customer is          |
+|                                   |     requesting a new urgent       |
+|                                   |     payment. As the customer has  |
+|                                   |     already had an urgent payment |
+|                                   |     granted, they cannot request  |
+|                                   |     another urgent payment on the |
+|                                   |     same day. Procedure ends here |
+|                                   | -   No, go to Step 4              |
++-----------------------------------+-----------------------------------+
+| 4                                 | Can the customer wait for the     |
+|                                   | payment? + Read more ...          |
+|                                   |                                   |
+|                                   | Can the customer wait for the     |
+|                                   | payment to be available on the    |
+|                                   | next working day or in 2 working  |
+|                                   | days (depending on the payment    |
+|                                   | type)?                            |
+|                                   |                                   |
+|                                   | -   Yes, issue the urgent payment |
+|                                   |     to the customer by direct     |
+|                                   |     credit. Procedure ends here   |
+|                                   | -   No, go to Step 5              |
++-----------------------------------+-----------------------------------+
+| 5                                 | Is it an appropriate account for  |
+|                                   | RTGS? + Read more ...             |
+|                                   |                                   |
+|                                   | An account cannot be used for     |
+|                                   | RTGS payment if the customer has  |
+|                                   | advised their payment destination |
+|                                   | account is:                       |
+|                                   |                                   |
+|                                   | -   closed                        |
+|                                   | -   a new payment destination     |
+|                                   | -   a passbook account            |
+|                                   |                                   |
+|                                   | If the customer advises the       |
+|                                   | account is overdrawn, it is the   |
+|                                   | customer's choice as to if the    |
+|                                   | payment is made to the account.   |
+|                                   |                                   |
+|                                   | The customer should be advised    |
+|                                   | that:                             |
+|                                   |                                   |
+|                                   | -   The financial institution may |
+|                                   |     retain some or all of the     |
+|                                   |     overdrawn amount; and         |
+|                                   | -   That it will take longer for  |
+|                                   |     the payment to be available   |
+|                                   |     as manual processing may be   |
+|                                   |     needed by the financial       |
+|                                   |     institution                   |
+|                                   |                                   |
+|                                   | Is RTGS an appropriate method of  |
+|                                   | payment?                          |
+|                                   |                                   |
+|                                   | Yes, go to Step 6                 |
+|                                   |                                   |
+|                                   | No, RTGS is not an appropriate    |
+|                                   | method of payment to be used in   |
+|                                   | this case:                        |
+|                                   |                                   |
+|                                   | -   Consider issuing the payment  |
+|                                   |     by Electronic Benefit         |
+|                                   |     Transfer (EBT) card           |
+|                                   | -   If the customer requests to   |
+|                                   |     change their payment          |
+|                                   |     destination details, this is  |
+|                                   |     to be done as a separate      |
+|                                   |     action to processing the      |
+|                                   |     urgent payment request and    |
+|                                   |     the payment should not be     |
+|                                   |     issued by RTGS                |
+|                                   | -   Procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 6                                 | Customer needs payment today, NPP |
+|                                   | is unavailable and RTGS is most   |
+|                                   | suitable payment option + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | The hours of operation for RTGS   |
+|                                   | are 8:00 am - 3:30 pm (NSW and    |
+|                                   | VIC time) weekdays. An urgent     |
+|                                   | payment by RTGS will not be       |
+|                                   | available on national or          |
+|                                   | concurrent public holidays in     |
+|                                   | Sydney and Melbourne or to bank   |
+|                                   | accounts that are not RTGS        |
+|                                   | enabled.                          |
+|                                   |                                   |
+|                                   | The Immediate Payment requests    |
+|                                   | script will automatically check   |
+|                                   | if RTGS is available before       |
+|                                   | displaying it as a method of      |
+|                                   | payment option.                   |
+|                                   |                                   |
+|                                   | RTGS can be selected as payment   |
+|                                   | method after 3:30 pm (NSW and VIC |
+|                                   | time) but the payment will not to |
+|                                   | be issued until the next business |
+|                                   | day. If the payment is being made |
+|                                   | to the smaller bank account and   |
+|                                   | Credit Unions, it may take up 2   |
+|                                   | working days to be received into  |
+|                                   | the customer's account.           |
+|                                   |                                   |
+|                                   | The customer should be warned     |
+|                                   | that fees or charges might be     |
+|                                   | applied by their financial        |
+|                                   | institution, depending on the     |
+|                                   | terms and conditions of their     |
+|                                   | account, to receive the RTGS      |
+|                                   | payment if a manual process is    |
+|                                   | used. As the account holder, the  |
+|                                   | customer will be liable for any   |
+|                                   | fees or charges.                  |
+|                                   |                                   |
+|                                   | Is RTGS available and does the    |
+|                                   | customer accept possible fees or  |
+|                                   | charges?                          |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 7             |
+|                                   | -   No, go to Step 10             |
++-----------------------------------+-----------------------------------+
+| 7                                 | Process payment by RTGS + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | -   For Farm Household Allowance  |
+|                                   |     (FHA) payments, staff must    |
+|                                   |     use the guided procedure. See |
+|                                   |     Table 3                       |
+|                                   | -   For Status Resolution Support |
+|                                   |     Services (SRSS) payment       |
+|                                   |     customers, the guided         |
+|                                   |     procedure must be used. See   |
+|                                   |     Go to the Table 4             |
+|                                   | -   For Australian Government     |
+|                                   |     Disaster Recovery Payment     |
+|                                   |     (AGDRP) or Disaster Recovery  |
+|                                   |     Payment for New Zealand       |
+|                                   |     Special Category              |
+|                                   |     (subclass 444) visa holders   |
+|                                   |     (NZ DRP), see Table 5         |
+|                                   | -   For Crisis payments, see How  |
+|                                   |     to manually code an RTGS      |
+|                                   |     payment                       |
+|                                   | -   For other payments, use the   |
+|                                   |     Immediate Payment requests    |
+|                                   |     script if it is available     |
+|                                   |                                   |
+|                                   | Is the Immediate Payment requests |
+|                                   | script available?                 |
+|                                   |                                   |
+|                                   | Yes, process payment by RTGS      |
+|                                   | using the script. The script will |
+|                                   | pause on the Issue Future Payment |
+|                                   | (IFP) screen for the correct      |
+|                                   | reason                            |
+|                                   |                                   |
+|                                   | -   Reason: for urgent payment    |
+|                                   |     and immediate payment grants  |
+|                                   |     use field help '?' to change  |
+|                                   |     the reason to:                |
+|                                   |     DEP-Departmental Delay        |
+|                                   |     ECI-Extraordinary             |
+|                                   |     Circumstances                 |
+|                                   |     EXC-Exceptional and           |
+|                                   |     Unforeseen                    |
+|                                   |     FNL-Funeral Expenses          |
+|                                   | -   For any payment reason that   |
+|                                   |     falls outside of the above,   |
+|                                   |     choose the most appropriate   |
+|                                   |     reason from the list          |
+|                                   |     available in the field help.  |
+|                                   |     More details about the        |
+|                                   |     appropriate code reasons is   |
+|                                   |     available on the Resources    |
+|                                   |     page                          |
+|                                   |                                   |
+|                                   | Press [Enter], then select OK on  |
+|                                   | the script                        |
+|                                   |                                   |
+|                                   | The script will complete the      |
+|                                   | activity and record a DOC         |
+|                                   | including:                        |
+|                                   |                                   |
+|                                   | -   the outcome and reason for    |
+|                                   |     the immediate payment request |
+|                                   | -   the documents or verifiable   |
+|                                   |     evidence provided by the      |
+|                                   |     customer (if needed)          |
+|                                   | -   the amount and method of      |
+|                                   |     payment Note: urgent payments |
+|                                   |     are limited to $200 for an    |
+|                                   |     urgent payment (this is early |
+|                                   |     payment of fortnightly        |
+|                                   |     entitlement), and $1,000 for  |
+|                                   |     an urgent payment due to      |
+|                                   |     Centrelink delay              |
+|                                   | -   any other assistance offered  |
+|                                   |     or referrals made             |
+|                                   | -   Note: a reference to SSAA     |
+|                                   |     1999 Section 55 (payment into |
+|                                   |     bank account etc.) can be     |
+|                                   |     included, but as payment      |
+|                                   |     delivery is not the           |
+|                                   |     significant decision, it is   |
+|                                   |     not compulsory                |
+|                                   |                                   |
+|                                   | Go to Step 9                      |
+|                                   |                                   |
+|                                   | No, see Table 6                   |
++-----------------------------------+-----------------------------------+
+| 8                                 | Activity selected by Quality On   |
+|                                   | Line (QOL) + Read more ...        |
+|                                   |                                   |
+|                                   | If the payment has been selected  |
+|                                   | by QOL, it is vital that the      |
+|                                   | activity is checked while the     |
+|                                   | customer is still in contact      |
+|                                   | (face-to-face or phone call).     |
+|                                   |                                   |
+|                                   | For an RTGS payment to be paid to |
+|                                   | the customer, the activity must   |
+|                                   | be finalised (this includes       |
+|                                   | completion of QOL) before 3:30 pm |
+|                                   | Canberra, Sydney or Melbourne     |
+|                                   | time or the payment will not be   |
+|                                   | issued until at least the next    |
+|                                   | business day.                     |
++-----------------------------------+-----------------------------------+
+| 9                                 | Outcome + Read more ...           |
+|                                   |                                   |
+|                                   | Once the activity has been        |
+|                                   | finalised, tell the customer:     |
+|                                   |                                   |
+|                                   | -   For an urgent payment from    |
+|                                   |     the customer's next           |
+|                                   |     entitlement, the amount       |
+|                                   |     issued will be deducted in    |
+|                                   |     full from the customer's next |
+|                                   |     payday                        |
+|                                   | -   For an urgent payment due to  |
+|                                   |     Centrelink delay or error,    |
+|                                   |     the remaining amount will be  |
+|                                   |     issued to their financial     |
+|                                   |     institution. Tell the         |
+|                                   |     customer when their next      |
+|                                   |     regular payment will be       |
+|                                   | -   The payment will be available |
+|                                   |     from the customer's account   |
+|                                   |     by close of business on the   |
+|                                   |     day of processing if          |
+|                                   |     processed before 3:30 pm      |
+|                                   |     (Sydney or Melbourne time) or |
+|                                   |     by 9 am the next working day  |
+|                                   |     for some credit unions and    |
+|                                   |     building societies)           |
+|                                   | -   If processed after 3:30 pm,   |
+|                                   |     the payment will not be       |
+|                                   |     available until the next      |
+|                                   |     business day or the following |
+|                                   |     business day for some credit  |
+|                                   |     unions or building societies  |
+|                                   | -   As the customer is the        |
+|                                   |     account holder, they will     |
+|                                   |     incur any fees and charges    |
+|                                   |     that may be associated with   |
+|                                   |     the RTGS transaction. Fees    |
+|                                   |     and charges will depend on    |
+|                                   |     the terms and conditions of   |
+|                                   |     their financial institution   |
+|                                   | -   If the funds are going to be  |
+|                                   |     withdrawn from an Automatic   |
+|                                   |     Teller Machine (ATM), the     |
+|                                   |     customer should use an ATM    |
+|                                   |     owned by the financial        |
+|                                   |     institution the account is    |
+|                                   |     held with. If any other ATM   |
+|                                   |     is used a fee will be charged |
+|                                   |     to the customer               |
+|                                   | -   Future urgent payment         |
+|                                   |     requests can be made by       |
+|                                   |     contacting Smart Centre       |
+|                                   |     Telephony directly            |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 10                                | RTGS facility not available +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | If the customer's bank does not   |
+|                                   | accept RTGS, discuss issuing the  |
+|                                   | payment to the customer by an     |
+|                                   | alternative payment method, such  |
+|                                   | as immediate payment by payment   |
+|                                   | method Electronic Benefits        |
+|                                   | Transfer (EBT) card.              |
++-----------------------------------+-----------------------------------+
+
+Reissuing an RTGS payment
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Customer advises payment not      |
+|                                   | received + Read more ...          |
+|                                   |                                   |
+|                                   | If the customer advises they have |
+|                                   | not received their Real Time      |
+|                                   | Gross Settlement (RTGS) payment,  |
+|                                   | check the Payment Summary (PS)    |
+|                                   | screen to make sure the payment   |
+|                                   | has been processed and issued.    |
+|                                   |                                   |
+|                                   | Has the payment been processed    |
+|                                   | and issued to the account on the  |
+|                                   | customer’s record?                |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, process the activity that |
+|                                   |     will issue the payment (for   |
+|                                   |     example, this may be a        |
+|                                   |     reporting activity,           |
+|                                   |     restoration form suspension   |
+|                                   |     or cancellation). Procedure   |
+|                                   |     ends here                     |
++-----------------------------------+-----------------------------------+
+| 2                                 | Has the payment been issued to    |
+|                                   | the customer’s account and is not |
+|                                   | showing as returned or            |
+|                                   | rejected? + Read more ...         |
+|                                   |                                   |
+|                                   | -   Yes, see Replacing direct     |
+|                                   |     credit, New Payment Platform  |
+|                                   |     (NPP) or Real Time Gross      |
+|                                   |     Settlement (RTGS) payments at |
+|                                   |     a customer’s request.         |
+|                                   |     Procedure ends here           |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Has the payment been returned     |
+|                                   | from the financial institution? + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Check the PS screen. A returned   |
+|                                   | payment is labelled as RTN        |
+|                                   | (returned).                       |
+|                                   |                                   |
+|                                   | -   Yes, see Replacing direct     |
+|                                   |     credit, NPP or RTGS payments  |
+|                                   |     returned from financial       |
+|                                   |     institution. Procedure ends   |
+|                                   |     here                          |
+|                                   | -   No, go to Step 4              |
++-----------------------------------+-----------------------------------+
+| 4                                 | Has the RTGS payment been         |
+|                                   | rejected by the financial         |
+|                                   | institution? + Read more ...      |
+|                                   |                                   |
+|                                   | Check the PS screen. A rejected   |
+|                                   | NPP or RTGS payment will show on  |
+|                                   | the PS screen, with:              |
+|                                   |                                   |
+|                                   | -   Type field either being Real  |
+|                                   |     Time Gross Settlement/RTGS    |
+|                                   | -   Sent to field will display    |
+|                                   |     Rejected Payment rather than  |
+|                                   |     Financial Institution account |
+|                                   |     details                       |
+|                                   |                                   |
+|                                   | Check the customer’s account      |
+|                                   | details are correct. If           |
+|                                   | incorrect, see Changing Payment   |
+|                                   | Destination.                      |
++-----------------------------------+-----------------------------------+
+| 5                                 | To reissue the rejected RTGS      |
+|                                   | payment + Read more ...           |
+|                                   |                                   |
+|                                   | A rejected RTGS payment must      |
+|                                   | first be reissued by Direct       |
+|                                   | Credit, and then if the customer  |
+|                                   | needs the funds urgently, the     |
+|                                   | payment can be issued by NPP or   |
+|                                   | EBT card.                         |
+|                                   |                                   |
+|                                   | To reissue the payment by Direct  |
+|                                   | Credit:                           |
+|                                   |                                   |
+|                                   | Go to the system that applies to  |
+|                                   | the payment to be reissued:       |
+|                                   |                                   |
+|                                   | -   PEN - Age Pension, Disability |
+|                                   |     Support Pension, Carer        |
+|                                   |     Payment, Parenting Payment    |
+|                                   |     Single                        |
+|                                   | -   NSS - JobSeeker Payment,      |
+|                                   |     Youth Allowance, Widow        |
+|                                   |     Allowance                     |
+|                                   | -   FAO - Family Tax Benefit      |
+|                                   |     (FTB)                         |
+|                                   | -   ISS - Dad and Partner Pay     |
+|                                   |     (DAP) - (code 'SVDAP' in the  |
+|                                   |     Next field to access the PS   |
+|                                   |     screen)                       |
+|                                   | -   ISS - Pensioner Education     |
+|                                   |     Supplement (PES) - (code      |
+|                                   |     'SVPES' in the Next field to  |
+|                                   |     access the PS screen)         |
+|                                   | -   PGA - Parenting Payment       |
+|                                   |     Partnered                     |
+|                                   |                                   |
+|                                   | Access the PS screen              |
+|                                   |                                   |
+|                                   | Select the payment that has been  |
+|                                   | rejected by typing R next to the  |
+|                                   | payment line and press [Enter]    |
+|                                   |                                   |
+|                                   | The Issue Payment Select (IPPRE)  |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | -   The system will automatically |
+|                                   |     'S'elect the Re-deliver       |
+|                                   |     Rejected Payment: field       |
+|                                   | -   The Default Destination:      |
+|                                   |     field will be Direct Credit   |
+|                                   | -   Press [Enter]                 |
+|                                   | -   The Re-Deliver Returned       |
+|                                   |     Payment (RDRP) screen will    |
+|                                   |     display                       |
+|                                   |                                   |
+|                                   | On the RDRP screen code the       |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   Using the next and back       |
+|                                   |     buttons, find the page that   |
+|                                   |     has the Reissue All field     |
+|                                   | -   Key 'Y' in the Reissue All    |
+|                                   |     (Y/N): field                  |
+|                                   | -   Finish the activity           |
+|                                   |                                   |
+|                                   | Payment will now display on the   |
+|                                   | PS screen as Immediate and will   |
+|                                   | be paid by direct credit.         |
+|                                   |                                   |
+|                                   | To issue the payment by NPP or    |
+|                                   | EBT card:                         |
+|                                   |                                   |
+|                                   | -   Access the PS screen          |
+|                                   | -   Select the payment that shows |
+|                                   |     as Immediate in the Delivery  |
+|                                   |     Date field, by coding R next  |
+|                                   |     to the payment line and press |
+|                                   |     [Enter]                       |
+|                                   | -   The IPPRE screen will display |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | The system will 'S'elect the      |
+|                                   | Immediate/Arrears Payment: field  |
+|                                   |                                   |
+|                                   | The Default Destination: field    |
+|                                   | will need to be changed to the    |
+|                                   | payment method needed. If NPP is  |
+|                                   | unavailable, the system will      |
+|                                   | advise this and will not allow    |
+|                                   | for it to be selected             |
+|                                   |                                   |
+|                                   | Press [Enter]                     |
+|                                   |                                   |
+|                                   | The Issue Future Payment (IFP)    |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | Complete the following fields     |
+|                                   |                                   |
+|                                   | -   Issue Amt: - this will be the |
+|                                   |     amount of the payment         |
+|                                   | -   Reason: - REJ                 |
+|                                   | -   Notes: - (why payment is      |
+|                                   |     being issued)                 |
+|                                   | -   Source: - (method the         |
+|                                   |     customer has used to contact) |
+|                                   | -   DOR: - (Date of Receipt)      |
+|                                   | -   Finished (Y/Q/N):             |
+|                                   |                                   |
+|                                   | DOC the record to advising        |
+|                                   | payment has been reissued.        |
+|                                   |                                   |
+|                                   | Note: a reference to SSAA 1999    |
+|                                   | Section 55 (payment into bank     |
+|                                   | account etc.) can be included,    |
+|                                   | but as payment delivery is not    |
+|                                   | the significant decision, it is   |
+|                                   | not compulsory.                   |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Issuing Farm Household Allowance (FHA) payments by RTGS
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Role needed + Read more ...       |
+|                                   |                                   |
+|                                   | Staff will need to have the       |
+|                                   | following specific role approved  |
+|                                   | in ESSentials:                    |
+|                                   |                                   |
+|                                   | -   Role name:                    |
+|                                   |     ZC.CF.FCC.PYMT.REIS           |
+|                                   | -   Description: FCC Reissue      |
+|                                   |     Payment                       |
++-----------------------------------+-----------------------------------+
+| 2                                 | Determine payment method + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | If the customer can wait one day  |
+|                                   | for payment, issue the urgent     |
+|                                   | payment by direct credit.         |
+|                                   | Procedure ends here               |
+|                                   |                                   |
+|                                   | If the customer has either had:   |
+|                                   |                                   |
+|                                   | the FHA claim granted and the     |
+|                                   | arrears are above the system      |
+|                                   | arrears limit?                    |
+|                                   |                                   |
+|                                   | FHA restored or has reported and  |
+|                                   | payment is needed today?          |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 3             |
+|                                   | -   No, the customer is not       |
+|                                   |     eligible for an immediate     |
+|                                   |     payment using RTGS and the    |
+|                                   |     payment will be paid by       |
+|                                   |     direct credit in the next     |
+|                                   |     payment strip. Procedure ends |
+|                                   |     here.                         |
++-----------------------------------+-----------------------------------+
+| 3                                 | Preparing payment for RTGS + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | After the payment has been        |
+|                                   | granted, restored or outstanding  |
+|                                   | reports have been completed; the  |
+|                                   | following action must be          |
+|                                   | completed before payment will be  |
+|                                   | available to issue by RTGS.       |
+|                                   |                                   |
+|                                   | From the Customer Summary page,   |
+|                                   | select:                           |
+|                                   |                                   |
+|                                   | -   Cases tab                     |
+|                                   | -   Farm Household Allowance      |
+|                                   |     Benefit Case                  |
+|                                   | -   Activities tab                |
+|                                   | -   Release EPED Action hyperlink |
+|                                   | -   Scheduled Actions tab         |
+|                                   | -   Execute hyperlink next to     |
+|                                   |     Release EPED Action. Note:    |
+|                                   |     this action may need to be    |
+|                                   |     completed twice for the       |
+|                                   |     status in the Executable      |
+|                                   |     column to update from 'Yes'   |
+|                                   |     to 'Done'                     |
+|                                   | -   Save                          |
+|                                   |                                   |
+|                                   | The payment can now be released   |
+|                                   | by RTGS. Go to Step 4             |
++-----------------------------------+-----------------------------------+
+| 4                                 | Process RTGS payment + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Run the Issue RTGS Payment guided |
+|                                   | procedure                         |
+|                                   |                                   |
+|                                   | Access the guided procedure by    |
+|                                   | Workspace > Financial Customer    |
+|                                   | Care                              |
+|                                   |                                   |
+|                                   | The guided procedure comprises 3  |
+|                                   | steps:                            |
+|                                   |                                   |
+|                                   | -   Select benefit type: Farm     |
+|                                   |     Household Allowance, then     |
+|                                   |     select Next                   |
+|                                   | -   Select payment for issue: a   |
+|                                   |     table showing due payments    |
+|                                   |     will display. Select a        |
+|                                   |     payment for issue by RTGS,    |
+|                                   |     then select Next              |
+|                                   | -   Issue RTGS payment: enter the |
+|                                   |     amount to be paid by RTGS for |
+|                                   |     the selected payment, then    |
+|                                   |     select Finish                 |
+|                                   | -   Record details of RTGS        |
+|                                   |     payment in a DOC using the    |
+|                                   |     FHA RTGS Paid Fast Note       |
+|                                   |     Note: a reference to SSAA     |
+|                                   |     1999 Section 55 (payment into |
+|                                   |     bank account etc.) can be     |
+|                                   |     included, but as payment      |
+|                                   |     delivery is not the           |
+|                                   |     significant decision, it is   |
+|                                   |     not compulsory                |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Issuing Status Resolution Support Services (SRSS) payments by RTGS
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Is the customer eligible for an   |
+|                                   | RTGS payment? + Read more ...     |
+|                                   |                                   |
+|                                   | Only SRSS customers who have not  |
+|                                   | received their regular            |
+|                                   | entitlement due to a Centrelink   |
+|                                   | delay or error and are in severe  |
+|                                   | financial hardship are eligible   |
+|                                   | for an immediate payment.         |
+|                                   |                                   |
+|                                   | SRSS customers are not to be      |
+|                                   | approved for an immediate payment |
+|                                   | when the customer has contributed |
+|                                   | to the delay in their regular     |
+|                                   | payment. For example, failing to: |
+|                                   |                                   |
+|                                   | -   attend an interview           |
+|                                   | -   lodge a form or medical       |
+|                                   |     certificate on the due date,  |
+|                                   |     unless prevented by the       |
+|                                   |     nature of their incapacity or |
+|                                   |     a medical condition           |
+|                                   | -   lodge a form personally       |
+|                                   | -   lodge a completed or signed   |
+|                                   |     form                          |
+|                                   | -   advise of a change of payment |
+|                                   |     destination, or               |
+|                                   | -   advise the agency of any      |
+|                                   |     change in their circumstances |
+|                                   |     needed by the Act             |
+|                                   |                                   |
+|                                   | Customer's regular entitlement    |
+|                                   | not received due to Centrelink    |
+|                                   | delay or error, customer in       |
+|                                   | severe financial hardship and     |
+|                                   | customer did not contribute to    |
+|                                   | the delay?                        |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, the customer is not       |
+|                                   |     eligible for an immediate     |
+|                                   |     payment by RTGS and the       |
+|                                   |     payment will be paid by       |
+|                                   |     direct credit in the next     |
+|                                   |     payment strip. Procedure ends |
+|                                   |     here                          |
++-----------------------------------+-----------------------------------+
+| 2                                 | Role needed + Read more ...       |
+|                                   |                                   |
+|                                   | Once the customer has been        |
+|                                   | approved for an immediate         |
+|                                   | payment, staff will need to have  |
+|                                   | the following specific role       |
+|                                   | approved in ESSentials:           |
+|                                   |                                   |
+|                                   | -   Role name:                    |
+|                                   |     ZC.CF.FCC.PYMT.REIS           |
+|                                   | -   Description: FCC Reissue      |
+|                                   |     Payment                       |
++-----------------------------------+-----------------------------------+
+| 3                                 | Customer needs payment today +    |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Run the Issue RTGS Payment guided |
+|                                   | procedure.                        |
+|                                   |                                   |
+|                                   | Access the guided procedure by    |
+|                                   | Workspace > Financial Customer    |
+|                                   | Care.                             |
+|                                   |                                   |
+|                                   | The guided procedure will only    |
+|                                   | display for staff with the        |
+|                                   | ZC.CF.FCC.PYMT.REIS role.         |
+|                                   |                                   |
+|                                   | The guided procedure comprises    |
+|                                   | steps:                            |
+|                                   |                                   |
+|                                   | Select benefit type: Status       |
+|                                   | Resolution Support Services, then |
+|                                   | select Next                       |
+|                                   |                                   |
+|                                   | Select payment for issue: a table |
+|                                   | showing due payments will         |
+|                                   | display. Select a payment for     |
+|                                   | issue by RTGS, then select Next   |
+|                                   |                                   |
+|                                   | Issue RTGS payment: enter the     |
+|                                   | amount to be paid by RTGS for the |
+|                                   | selected payment, then select     |
+|                                   | Finish                            |
+|                                   |                                   |
+|                                   | DOC the record with the outcome   |
+|                                   |                                   |
+|                                   | -   Note: a reference to SSAA     |
+|                                   |     1999 Section 55 (payment into |
+|                                   |     bank account etc.) can be     |
+|                                   |     included, but as payment      |
+|                                   |     delivery is not the           |
+|                                   |     significant decision, it is   |
+|                                   |     not compulsory                |
+|                                   |                                   |
+|                                   | Immediately escalate issues to    |
+|                                   | the SRSS Helpdesk.                |
++-----------------------------------+-----------------------------------+
+
+Issuing emergency payments by RTGS
+
+Table 5: Issuing emergency payments, including Australian Government
+Disaster Recovery Payments (AGDRP) and NZ DRP, Disaster Recovery
+Allowance (DRA) and NZ DRA.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Issue the emergency payment by    |
+|                                   | RTGS + Read more ...              |
+|                                   |                                   |
+|                                   | See Current emergency management  |
+|                                   | events for a list of emergency    |
+|                                   | payments and more details on how  |
+|                                   | to assess eligibility             |
+|                                   |                                   |
+|                                   | Note: while there is no payment   |
+|                                   | limit for emergency payments,     |
+|                                   | payments made by priority direct  |
+|                                   | credit (NPP and RTGS) are limited |
+|                                   | to a maximum of $3,000.           |
+|                                   |                                   |
+|                                   | Go to the FSP system (code        |
+|                                   | 'SVAAA' in the Next field and     |
+|                                   | make sure the system is ISS)      |
+|                                   |                                   |
+|                                   | If:                               |
+|                                   |                                   |
+|                                   | the customer has already been     |
+|                                   | granted an emergency payment to   |
+|                                   | be paid by direct credit, but     |
+|                                   | needs an immediate payment, go to |
+|                                   | Step 2                            |
+|                                   |                                   |
+|                                   | the emergency payment is a DRA or |
+|                                   | NZ DRA and has not yet been       |
+|                                   | granted, go to Step 2             |
+|                                   |                                   |
+|                                   | the emergency payment is an AGDRP |
+|                                   | or NZ DRP and has not yet been    |
+|                                   | granted:                          |
+|                                   |                                   |
+|                                   | -   run the Disaster Recovery     |
+|                                   |     workflow. See Processing      |
+|                                   |     AGDRP and NZ DRP claims in    |
+|                                   |     Customer First                |
+|                                   | -   on the Claim Decision screen  |
+|                                   |     of the workflow, choose Yes   |
+|                                   |     and Priority Direct Credit    |
+|                                   |     under 'Immediate Payments     |
+|                                   |     Options'. Enter the amount to |
+|                                   |     be delivered immediately      |
+|                                   | -   if the customer is not        |
+|                                   |     current on any other payment, |
+|                                   |     enter their bank details in   |
+|                                   |     the Immediate and             |
+|                                   |     Non-Immediate options         |
+|                                   | -   the system will issue the     |
+|                                   |     payment by NPP if the account |
+|                                   |     is NPP reachable, once the    |
+|                                   |     claim is finalised            |
+|                                   |                                   |
+|                                   | If the payment fails to deliver   |
+|                                   | by NPP, or the account is not NPP |
+|                                   | reachable, it will issue by RTGS. |
+|                                   | Check the Payment Summary (PS)    |
+|                                   | screen to confirm the method of   |
+|                                   | delivery.                         |
+|                                   |                                   |
+|                                   | If the payment has been delivered |
+|                                   | by RTGS, check the operating      |
+|                                   | times and tell the customer of    |
+|                                   | the expected delivery time of the |
+|                                   | payment. Warn the customer that   |
+|                                   | fees or charges might be applied  |
+|                                   | by their financial institution    |
+|                                   | (to receive the RTGS payment),    |
+|                                   | depending on the terms and        |
+|                                   | conditions of their account. As   |
+|                                   | the account holder, the customer  |
+|                                   | will be liable for any fees or    |
+|                                   | charges.                          |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Payment is DRA or NZ DRA, or      |
+|                                   | customer already granted an       |
+|                                   | emergency payment to be paid by   |
+|                                   | direct credit, but needs an       |
+|                                   | immediate payment + Read more ... |
+|                                   |                                   |
+|                                   | If the emergency payment is a DRA |
+|                                   | or NZ DRA, and has not yet been   |
+|                                   | granted, run the Disaster         |
+|                                   | Recovery workflow, see Recording  |
+|                                   | and coding DRA and NZ DRA claims. |
+|                                   |                                   |
+|                                   | After an emergency payment has    |
+|                                   | been granted, run the Issue       |
+|                                   | Emergency Payment workflow        |
+|                                   | accessed by Customer First -      |
+|                                   | Workspace.                        |
+|                                   |                                   |
+|                                   | -   Select the emergency payment. |
+|                                   |     RTGS will only display as a   |
+|                                   |     payment method option if the  |
+|                                   |     customer's account is not NPP |
+|                                   |     reachable                     |
+|                                   | -   Enter the amount to be issued |
+|                                   |     as an immediate payment       |
+|                                   | -   The payment will be reissued  |
+|                                   |     by RTGS on completion of the  |
+|                                   |     workflow                      |
+|                                   |                                   |
+|                                   | If the Issue Emergency Payment    |
+|                                   | Workflow is not available,        |
+|                                   | manually reissue the emergency    |
+|                                   | payment by an immediate payment   |
+|                                   | method:                           |
+|                                   |                                   |
+|                                   | Go to Payment Summary (PS) screen |
+|                                   |                                   |
+|                                   | Select the emergency payment by   |
+|                                   | typing 'R' next to the payment    |
+|                                   | line and press [Enter]            |
+|                                   |                                   |
+|                                   | The Issue Payment Select (IPPRE)  |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | -   The system will automatically |
+|                                   |     'S'elect the Early Payment    |
+|                                   |     from current Pay Period field |
+|                                   |     (or the most appropriate      |
+|                                   |     option) and the Default       |
+|                                   |     Destination will be direct    |
+|                                   |     credit                        |
+|                                   | -   update the Default            |
+|                                   |     Destination field to 'Real    |
+|                                   |     time Gross Settlement (RTGS)' |
+|                                   |     and select Continue           |
+|                                   |                                   |
+|                                   | The Issue Future Payment (IFP)    |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | The system will automatically     |
+|                                   | 'S'elect the Immediate/Arrears    |
+|                                   | Payment field                     |
+|                                   |                                   |
+|                                   | The Default Destination field     |
+|                                   | must be changed to the payment    |
+|                                   | method needed                     |
+|                                   |                                   |
+|                                   | Press [Enter]                     |
+|                                   |                                   |
+|                                   | The IFP screen will display       |
+|                                   |                                   |
+|                                   | Complete the following fields:    |
+|                                   |                                   |
+|                                   | -   Issue Amt: - this will be the |
+|                                   |     amount of the payment         |
+|                                   | -   Reason: - DEP (Departmental   |
+|                                   |     Delay)                        |
+|                                   | -   Notes: - (why payment is      |
+|                                   |     being issued)                 |
+|                                   | -   Source: - (method the         |
+|                                   |     customer has used to contact) |
+|                                   | -   DOR: - (Date of Receipt)      |
+|                                   | -   Finished (Y/Q/N):             |
+|                                   |                                   |
+|                                   | If the payment fails to deliver   |
+|                                   | by RTGS, check the operating      |
+|                                   | times and tell the customer of    |
+|                                   | the expected delivery time of the |
+|                                   | payment. The new claim activity   |
+|                                   | must be finalised and released    |
+|                                   | from Quality On Line (QOL) before |
+|                                   | 3:30 pm (NSW and VIC time) for    |
+|                                   | the customer to be paid the same  |
+|                                   | day. If the activity is finalised |
+|                                   | after 3:30 pm EST, the payment    |
+|                                   | will be delivered to the customer |
+|                                   | the next working (week) day.      |
+|                                   |                                   |
+|                                   | Warn the customer that fees or    |
+|                                   | charges might be applied by their |
+|                                   | financial institution (to receive |
+|                                   | the RTGS payment) depending on    |
+|                                   | the terms and conditions of their |
+|                                   | account. As the account holder,   |
+|                                   | the customer will be liable for   |
+|                                   | any fees or charges.              |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+How to manually code an RTGS payment
+
+Table 6: This only applies if the Immediate Payment requests script is
+not available. This process does not apply to payments made in the
+Customer First native (SAP) system.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Manual issue RTGS payment + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | These steps must only be          |
+|                                   | undertaken if the Immediate       |
+|                                   | Payment requests script is not    |
+|                                   | available or a Crisis Payment has |
+|                                   | been granted.                     |
+|                                   |                                   |
+|                                   | Go to the Payment Summary (PS)    |
+|                                   | screen                            |
+|                                   |                                   |
+|                                   | Select the payment that has not   |
+|                                   | been received by typing 'R' next  |
+|                                   | to the payment line and press     |
+|                                   | [Enter]                           |
+|                                   |                                   |
+|                                   | The Issue Payment Select (IPPRE)  |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | -   The system will automatically |
+|                                   |     'S'elect the Early Payment    |
+|                                   |     from current Pay Period:      |
+|                                   |     field and the Default         |
+|                                   |     Destination will be direct    |
+|                                   |     credit                        |
+|                                   | -   Update the Default            |
+|                                   |     Destination field to Real     |
+|                                   |     Time Gross Settlement (RTGS)  |
+|                                   |     and select Continue           |
+|                                   |                                   |
+|                                   | The Issue Future Payment (IFP)    |
+|                                   | screen will display               |
++-----------------------------------+-----------------------------------+
+| 2                                 | Complete coding on IFP screen +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | On the IFP screen, code the       |
+|                                   | following fields:                 |
+|                                   |                                   |
+|                                   | Issue amount: the amount of the   |
+|                                   | payment to be delivered           |
+|                                   |                                   |
+|                                   | Reason: for crisis payment and    |
+|                                   | urgent payment grants use field   |
+|                                   | help '?' to change the reason to: |
+|                                   |                                   |
+|                                   | -   DEP-Departmental Delay        |
+|                                   | -   ECI-Extraordinary             |
+|                                   |     Circumstances                 |
+|                                   | -   EXC-Exceptional and           |
+|                                   |     Unforeseen                    |
+|                                   | -   FNL-Funeral Expenses          |
+|                                   | -   CRI-Crisis Payment            |
+|                                   | -   For any payment reason that   |
+|                                   |     falls outside of the above,   |
+|                                   |     choose the most appropriate   |
+|                                   |     reason from the list          |
+|                                   |     available in the field help.  |
+|                                   |     More details about the        |
+|                                   |     appropriate code reasons is   |
+|                                   |     available on the Resources    |
+|                                   |     page                          |
+|                                   |                                   |
+|                                   | Finished (Y/Q/N):'Y'              |
+|                                   |                                   |
+|                                   | Notes: the reason for issue       |
+|                                   |                                   |
+|                                   | Source: and DOR: fields           |
+|                                   |                                   |
+|                                   | Select Continue to complete the   |
+|                                   | activity.                         |
+|                                   |                                   |
+|                                   | Record details of immediate       |
+|                                   | payment on a DOC.                 |
+|                                   |                                   |
+|                                   | Note: a reference to SSAA 1999    |
+|                                   | Section 55 (payment into bank     |
+|                                   | account etc.) can be included,    |
+|                                   | but as payment delivery is not    |
+|                                   | the significant decision, it is   |
+|                                   | not compulsory.                   |
+|                                   |                                   |
+|                                   | If the activity is selected by    |
+|                                   | Quality On Line (QOL), it is      |
+|                                   | vital that the activity is        |
+|                                   | checked while the customer is     |
+|                                   | still in contact (either face to  |
+|                                   | face or phone call). For an RTGS  |
+|                                   | payment to be paid to the         |
+|                                   | customer, the activity must be    |
+|                                   | finalised (this includes          |
+|                                   | completion of QOL) before 3:30 pm |
+|                                   | NSW and VIC time.                 |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 
