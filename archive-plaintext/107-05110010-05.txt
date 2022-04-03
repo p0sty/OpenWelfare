@@ -1,0 +1,161 @@
+
+Finalised 'no debt' (FND) or 'zeroing' debts that are not legally recoverable 107-05110010
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Valid reason codes
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Third party debts (TPD) + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | When a direct credit recall is    |
+|                                   | not successful and the debt       |
+|                                   | belongs to a third party:         |
+|                                   |                                   |
+|                                   | -   raise the debt on the third   |
+|                                   |     party record, and             |
+|                                   | -   finalise the undetermined     |
+|                                   |     debt on the customer as FND   |
++-----------------------------------+-----------------------------------+
+| 2                                 | Multiple debt activities (MUL) +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Finalise the extra debt           |
+|                                   | activities as 'no debt' where:    |
+|                                   |                                   |
+|                                   | -   multiple undetermined debts   |
+|                                   |     are combined into one debt    |
+|                                   |     only, or                      |
+|                                   | -   an internal transfer results  |
+|                                   |     in more than one debt         |
+|                                   |     activity (MUL)                |
++-----------------------------------+-----------------------------------+
+| 3                                 | FTB reconciliation, old SSA       |
+|                                   | family payment cases (FAM) + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | This does not include debts due   |
+|                                   | to adding a partner income        |
+|                                   | estimate as part of a             |
+|                                   | relationship status change.       |
+|                                   |                                   |
+|                                   | If a debt generates due to        |
+|                                   | increasing a customer's estimated |
+|                                   | income and/or maintenance income  |
+|                                   | for the purpose of receiving      |
+|                                   | Family Tax Benefit (FTB):         |
+|                                   |                                   |
+|                                   | -   finalise the debt as FND, and |
+|                                   | -   wait until reconciliation     |
+|                                   |     when the actual and/or        |
+|                                   |     maintenance income is known   |
++-----------------------------------+-----------------------------------+
+| 4                                 | Manual date of event (COD) + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Incorrect coding may result in a  |
+|                                   | debt activity. Correcting the     |
+|                                   | coding may show that there is no  |
+|                                   | debt.                             |
+|                                   |                                   |
+|                                   | COD (incorrect coding).           |
+|                                   |                                   |
+|                                   | This can include:                 |
+|                                   |                                   |
+|                                   | -   income incorrectly recorded.  |
+|                                   |     For example, coding $600      |
+|                                   |     instead of $60. When          |
+|                                   |     correcting the record to $60, |
+|                                   |     a legal debt will no longer   |
+|                                   |     exist as there is no          |
+|                                   |     overpayment                   |
+|                                   | -   not using the correct         |
+|                                   |     workflow or procedure. This   |
+|                                   |     may result in an incorrect    |
+|                                   |     reassessment of the record.   |
+|                                   |     After correcting the record,  |
+|                                   |     a legal debt will no longer   |
+|                                   |     exist as there is no          |
+|                                   |     overpayment                   |
++-----------------------------------+-----------------------------------+
+| 5                                 | Payment restored (PRS) + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Incorrectly cancelling or         |
+|                                   | suspending a payment that         |
+|                                   | generates a debt. After restoring |
+|                                   | the payment, finalise the debt as |
+|                                   | FND.                              |
++-----------------------------------+-----------------------------------+
+| 6                                 | Bulk reassessment (SYS) + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Finalise the debt as FND if the   |
+|                                   | debt is due to an incorrect bulk  |
+|                                   | reassessment error.               |
+|                                   |                                   |
+|                                   | This can include an error         |
+|                                   | occurring during a bulk:          |
+|                                   |                                   |
+|                                   | -   Consumer Price Index (CPI)    |
+|                                   |     update causing debts to       |
+|                                   |     generate on records           |
+|                                   |     incorrectly                   |
+|                                   | -   foreign pension exchange rate |
+|                                   |     generating debts instead of   |
+|                                   |     arrears                       |
+|                                   |                                   |
+|                                   | Note: only use FND reason SYS,    |
+|                                   | where the update was due to a     |
+|                                   | bulk reassessment activity, that  |
+|                                   | is, activities occurring across   |
+|                                   | multiple records in 'bulk'.       |
++-----------------------------------+-----------------------------------+
+| 7                                 | Notification handler (NOHL) date  |
+|                                   | of event (NHL) + Read more ...    |
+|                                   |                                   |
+|                                   | The NOHL incorrectly applies a    |
+|                                   | date in the past. The system may  |
+|                                   | still create a debt where an      |
+|                                   | event is advised and actioned     |
+|                                   | within the notification period.   |
+|                                   | In these cases, refer to the      |
+|                                   | rules on the notification         |
+|                                   | requirements for the specific     |
+|                                   | customer (statement or            |
+|                                   | notification reporter). See Using |
+|                                   | the correct date of effect when   |
+|                                   | raising debts.                    |
++-----------------------------------+-----------------------------------+
+| 8                                 | Excess payment (EXP) + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | When an excess payment exists but |
+|                                   | there is no legislation which     |
+|                                   | will allow for the raising and    |
+|                                   | recovery of the debt.             |
++-----------------------------------+-----------------------------------+
+| 9                                 | Direct credit recall (RTN) + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Where a direct credit recall      |
+|                                   | (including third parties and      |
+|                                   | deceased customers) returns a     |
+|                                   | payment.                          |
++-----------------------------------+-----------------------------------+
+
+Intranet links
+
+Staff Feedback Tool
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

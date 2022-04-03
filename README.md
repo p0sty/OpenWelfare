@@ -2,9 +2,13 @@
 Open Welfare: 
 Services Australia Operational Blueprint Freedom project
 
+Applications of the dataset:
+
+A ["blocked or not" search engine of the Operational Blueprint is available here](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=0).
+
 Technical:
 
-The last Operational Blueprint text is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
+The last [Operational Blueprint](https://operational.servicesaustralia.gov.au) text is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
 
 The Operational Blueprint Freedom Report master report tab separated values file is:
 OpenWelfare-OperationalBlueprintFreedomReport.tsv
