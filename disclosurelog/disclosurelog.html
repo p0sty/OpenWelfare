@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VgEPUlRQARAGXFlRBAYGUFw=",licenseKey:"NRJS-56afeaf32ee93d607b1",applicationID:"688337168"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(28),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(29),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(29),a=t(28);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(25),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(28),s=t(29),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(27),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],26:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(28),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(22),s=t("handle"),c=t(28),f=t("ee"),u=t(26),d=t(23),l=t(17),p=t(19),h=l.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},S=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:S,userAgent:u,disabled:b};if(!b){t(16),t(24),v[w]?(v[w]("DOMContentLoaded",o,p(!1)),m[w]("load",r,p(!1))):(v[g]("onreadystatechange",i),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(29),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js" ,"ga");</script>
+<link rel="canonical" href="https://www.servicesaustralia.gov.au/freedom-information-disclosure-log?context=1" />
+<meta name="description" content="The Freedom of Information (FOI) Disclosure Log lists information which we’ve released in response to an FOI access request. This is subject to exceptions." />
+<link rel="mask-icon" href="" />
+<link rel="icon" sizes="16x16" href="/themes/custom/dhs/images/icons/icon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/themes/custom/dhs/images/icons/icon-32x32.png" />
+<link rel="icon" sizes="96x96" href="/themes/custom/dhs/images/icons/icon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/themes/custom/dhs/images/icons/icon-192x192.png" />
+<link rel="apple-touch-icon" href="/themes/custom/dhs/images/icons/icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/themes/custom/dhs/images/icons/icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/themes/custom/dhs/images/icons/icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/themes/custom/dhs/images/icons/icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/themes/custom/dhs/images/icons/icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/dhs/images/icons/icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/dhs/images/icons/icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/dhs/images/icons/icon-180x180.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta property="og:image" content="https://www.servicesaustralia.gov.au/themes/custom/dhs/images/default-share-image.png" />
+<meta name="msvalidate.01" content="0ECE1A9CFEB091AC3CA8F5140BF7FD1A" />
+<meta name="facebook-domain-verification" content="a3dzyad0kj4oxe3xcjl2tl5awdefcm" />
+<meta name="google-site-verification" content="Y3ZnN27KzqZ5Y4W_b_47BhXAS1KWtyBuxYjVMH4nAcQ" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.servicesaustralia.gov.au/"
+                    }
+                ]
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "xpath": [
+                    "/html/head/meta[@name=\u0027description\u0027]/@content",
+                    "//[@id=\u0027block-dhs-block-short-description\u0027]/p"
+                ]
+            }
+        }
+    ]
+}</script>
+<link rel="icon" href="/themes/custom/dhs/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>Freedom of Information Disclosure Log - Services Australia</title>
+
+        <script type="text/javascript">document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_BbO6pcNIbst09ovV8btyVoXQFwz2pRP2zN-cUIY4A4E.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_02B_brqkHGCSIW4TU7KiPJVOGbuKP6TK2hp7bZ0rVRw.css" />
+
+    
+
+        <style type="text/css">.dhs-optimize-noflicker {opacity: 0 !important}</style>
+  </head>
+  <body class="dhs-body node--dhs_page nid--25566 dhs-layout--page-node">
+        <nav class="dhs-skip-link uikit-skip-link">
+      <a href="#main-content">
+        Skip to main content
+      </a>
+    </nav>
+    
+      <div class="dialog-off-canvas-main-canvas bg-white min-h-full flex flex-col items-stretch print:block" data-off-canvas-main-canvas>
+    
+<div id="ui-overlay">
+  
+    <div id="lit-ui-toolbar-container" class="hidden print:hidden">
+    <div id="lit-ui-toolbar" >
+        <div id="block-lit-ui-listen-widget">
+    
+        
+    <button class="lit-ui-toolbar-widget" data-lit-widget-name="listen">
+  <span class="widget-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="104" viewBox="0 0 100 104">
+  <path id="ReadSpeaker" d="M68.918,104,33.336,78.766V28.3L68.809,0h7.855V104ZM6.668,78A6.59,6.59,0,0,1,0,71.5V35.75a6.6,6.6,0,0,1,6.668-6.516H26.66V78Zm79.367-6.9a28.671,28.671,0,0,0,0-38.219l5.051-4.258a35.084,35.084,0,0,1,0,46.734Z" fill="currentColor"/>
+</svg></span>
+  <span class="widget-label">Listen</span>
+</button>
+
+  </div>
+
+    </div>
+    <div id="lit-ui-toolbar-area"></div>
+  </div>
+
+</div>
+
+
+
+<header class="bg-blue-60 print:bg-white justify-center">
+  <div id="banner" class="relative lg:flex flex-col print:flex-col print:items-start lg:flex-row flex-initial flex-shrink-0">
+
+    <div id="lit-header-logo" class="print:w-full lg:w-sm lg:mr-auto flex-shrink-0">
+                <a
+    href="/" rel="home"
+    class="flex flex-wrap lg:flex-no-wrap mr-2 overflow-hidden h-17 max-w-sm print:ml-0">
+    <img class="mr-4 hidden lg:block print:block" src="/themes/custom/dhs/images/logo-crest.svg" alt=""/>
+    <img src="/themes/custom/dhs/images/logo.svg" alt="Services Australia home page"/>
+    <img class="ml-4 py-1 hidden sm:block print:block" src="/themes/custom/dhs/images/logo-name.svg" alt=""/>
+  </a>
+
+
+  
+    </div>
+
+              <div class="lg:w-1/3 bg-blue-40 md:bg-transparent has-js:hidden lg:p-0 print:hidden z-50" data-drupal-selector="lit-search-bar" id="block-lit-search-search-bar">
+    
+        
+    <form action="/search" method="get" id="lit-search-bar" accept-charset="UTF-8">
+  <input data-drupal-selector="edit-search-page" type="hidden" name="search_page" value="/search" />
+<div class="search-form-container max-w-content trans flex js-form-wrapper form-wrapper" data-drupal-selector="edit-search-input" id="edit-search-input"><div class="ml-auto flex-1 js-form-item form-item js-form-type-search form-item-search js-form-item-search form-no-label">
+        <input class="search-box trans form-search" autocomplete="on" aria-label="Search content" required="required" data-drupal-selector="edit-search" type="search" id="edit-search" name="search" value="" size="60" maxlength="128" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><button class="search-button btn icon-a-search button js-form-submit form-submit" data-twig-suggestion="as_button" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" /><span>Search</span></button></div>
+</div>
+
+</form>
+
+  </div>
+
+  
+
+    <div id="lit-account-region" class="ml-3 ms-col-2 flex flex-col items-end print:hidden">
+                <div data-behaviour="vue" id="block-lit-logon">
+    
+        
+    <div class="flex lg:relative">
+  <button class="flex icon-mygov-black mygov-alttext flex md:w-64 h-17 w-auto cursor-pointer px-3 xs:px-5 icon-lg icon-a-caret-down font-normal rounded-l-sm border-2 border-black btn-base justify-self-end"
+      data-lit-signin-toggle
+      aria-controls="lit-logon-menu"
+      aria-expanded="false"
+      aria-haspopup="true">
+        <span class="hidden md:inline text-base">Individuals</span>
+  </button>
+
+  <a
+    class="h-17 btn btn-primary px-4 xs:px-8 border-l-0 rounded-l-none rounded-r-sm justify-center"
+    href="https://my.gov.au"
+    data-dhs-analytics-behavior="onclick"
+    data-dhs-analytics-category="sign_in_button"
+    data-dhs-analytics-action="link"
+    data-dhs-analytics-label="mygov">
+      Sign in
+  </a>
+
+    <ul id="lit-logon-menu"
+    role="menu"
+    aria-label="Select a service to sign in to."
+    class="hidden absolute overflow-hidden lg:top-full w-full lg:w-auto bg-full-w mt-3 lg:mx-0 lg:p-0 right-0 bg-white rounded-b shadow-md z-500">
+          <li role="none">
+                    <a class="bg-grey-light block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-8 lg:px-5 lg:m-0" role="menuitem" href="https://my.gov.au" data-dhs-analytics-label="mygov">
+                          <lit-logon-alert-list api-endpoint="/api/v1/alerts/active" :platform-tids="[371,376,381,386,391,396,401,466,569]" active-logon></lit-logon-alert-list>
+                        <div class="flex icon-mygov-black mygov-alttext">Individuals</div>
+                          <div class="font-light text-md mt-2">myGov is a simple and secure way to access online government services.</div>
+                      </a>
+      </li>
+          <li role="none">
+                    <a class="block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-8 lg:px-5 lg:m-0" role="menuitem" href="/proda-provider-digital-access" data-dhs-analytics-label="proda">
+                          <lit-logon-alert-list api-endpoint="/api/v1/alerts/active" :platform-tids="[351,356,361,558,567,568]" ></lit-logon-alert-list>
+                        <div>PRODA</div>
+                          <div class="font-light text-md mt-2">Log in to access HPOS, Business Hub, Aged Care Provider Portal and a range of other government online services.</div>
+                      </a>
+      </li>
+          <li role="none">
+                    <a class="block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-8 lg:px-5 lg:m-0" role="menuitem" href="https://business.centrelink.gov.au/" data-dhs-analytics-label="centrelink_business_online">
+                          <lit-logon-alert-list api-endpoint="/api/v1/alerts/active" :platform-tids="[565]" ></lit-logon-alert-list>
+                        <div>Centrelink Business Online</div>
+                      </a>
+      </li>
+          <li role="none">
+                    <a class="block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-8 lg:px-5 lg:m-0" role="menuitem" href="https://services.csa.gov.au/cleartrust/ct_logon.asp?CTAuthMode=BASIC&amp;amp%3Blanguage=en" data-dhs-analytics-label="child_support_business_online">
+                          <lit-logon-alert-list api-endpoint="/api/v1/alerts/active" :platform-tids="[566]" ></lit-logon-alert-list>
+                        <div>Child Support Business Online</div>
+                      </a>
+      </li>
+      </ul>
+
+</div>
+
+  </div>
+  <div id="block-lit-logon-links" class="ms-row-2">
+    
+        
+    <div class="flex justify-center mt-3">
+      <a
+      href="/create-online-account"
+      data-dhs-analytics-behavior="onclick"
+      data-dhs-analytics-category="sign_in_individuals"
+      data-dhs-analytics-action="link"
+      data-dhs-analytics-label="create">
+      Create account
+    </a>
+      <a
+      href="/help-for-mygov-online-accounts-and-mobile-apps"
+      data-dhs-analytics-behavior="onclick"
+      data-dhs-analytics-category="sign_in_individuals"
+      data-dhs-analytics-action="link"
+      data-dhs-analytics-label="help">
+      Help
+    </a>
+  </div>
+
+  </div>
+
+  
+    </div>
+
+    <div id="lit-header-utils" class="ms-row-2 print:hidden">
+      <button id="lit-menu-toggle" data-lit-nav-toggle class="font-normal uppercase btn-base px-5 text-md -ml-5 sm:text-base icon-a-menu">Menu</button>
+      <button id="lit-search-toggle" data-lit-search-toggle class="font-normal -mr-5 md:hidden btn-base justify-self-end icon-a-search">Search</button>
+    </div>
+  </div>
+</header>
+
+<div id="content" class="relative print:block xl:p-0 xl:w-full">
+
+  
+  <div id="navigation-bar" class="w-full lg:mb-10 print:hidden">
+            <nav aria-label="Main navigation" id="block-dhs-menu-main">
+        
+        <ul class="menu">
+                <li class="menu-item">
+                        <a href="/raising-kids" data-drupal-link-system-path="node/60000">          <span>Raising kids</span>
+        </a>
+
+        
+              </li>
+                <li class="menu-item">
+                        <a href="/living-arrangements" data-drupal-link-system-path="node/60022">          <span>Living arrangements</span>
+        </a>
+
+        
+              </li>
+                <li class="menu-item">
+                        <a href="/ageing" data-drupal-link-system-path="node/60043">          <span>Ageing</span>
+        </a>
+
+        
+              </li>
+                <li class="menu-item">
+                        <a href="/work" data-drupal-link-system-path="node/60058">          <span>Work</span>
+        </a>
+
+        
+              </li>
+                <li class="menu-item">
+                        <a href="/education" data-drupal-link-system-path="node/60076">          <span>Education</span>
+        </a>
+
+        
+              </li>
+                <li class="menu-item">
+                        <a href="/health-and-disability" data-drupal-link-system-path="node/60090">          <span>Health and disability</span>
+        </a>
+
+        
+              </li>
+        </ul>
+  
+
+
+  </nav>
+  <div data-behaviour="vue" id="block-lit-global-alerts">
+    
+        
+    <div><lit-global-alert-list api-endpoint="/api/v1/alerts/active" intro-text="We have scheduled multiple updates to our payments and services. Check if you&#039;re affected by any of these changes."></lit-global-alert-list>
+</div>
+
+  </div>
+
+  
+  </div>
+
+  <div id="dhs-sidebar-left" class="bg-white lg:max-w-full inset-0 z-100 print:hidden lg:relative lg:mr-10 md:pr-4 md:-ml-5 md:mr-6 flex-shrink-0 xl:ml-0">
+    <nav aria-label="Sections menu" class="dhs-sidebar--left lg:w-full">
+      <div class="w-full h-full bg-white">
+                  <div id="block-lit-navigation" class="lit-navigation">
+    
+        
+    <ul class="lit-navigation-items"><li class="lit-nav-item lit-navigation__parent"><a href="/freedom-information?context=1" class="p-4 flex icon-b-caret-left icon-lg icon-grey-4c">Freedom of information</a>
+</li><li class="lit-nav-item lit-navigation__sibling lit-navigation__current"><a class="lit-nav-link" href="/freedom-information-disclosure-log?context=1" aria-current="location">Freedom of Information Disclosure Log</a>
+</li><li class="lit-nav-item lit-navigation__sibling"><a class="lit-nav-link" href="/information-publication-scheme?context=1">Information Publication Scheme</a>
+</li></ul>
+  </div>
+
+  
+      </div>
+    </nav>
+  </div>
+
+  <div class="dhs-page-content__above order-first lg:order-none"><div id="block-lit-breadcrumb" class="lit-breadcrumb"><nav aria-label="You are here"><ol><li><a href="/">Home</a></li><li><a href="/about-us?context=1">About us</a></li><li><a href="/contact-and-feedback?context=1">Contact and feedback</a></li><li><a href="/access-to-information?context=1">Access to information</a></li><li><a href="/freedom-information?context=1">Freedom of information</a></li><li>Freedom of Information Disclosure Log</li></ol></nav></div><div id="block-lit-ui-toolbar-readspeaker-block"><div class="open-readspeaker-ui"><div id="readspeaker_button" class="rs_preserve rs_skip rs_addtools rs_splitbutton rs_exp rsbtn"><button type="button"
+            class="rsbtn_tooltoggle"
+            data-rslang="title/arialabel:menu"
+            title="Menu" aria-label="Menu"
+            aria-expanded="false"
+            style="display: none;"
+            data-rs-container="readspeaker_button"
+            data-rsevent-id="rs_6626"
+            accesskey="1"><span class="rsicn rsicn-arrow-down" aria-hidden="true"></span></button></div></div></div></div>
+  <main class="dhs-page-content__main pb-10 print:max-w-full print:ml-0 print:w-full">
+    <a id="main-content" tabindex="-1"></a>
+          <div class="my-8 md:mt-0">
+                  <div id="block-dhs-page-title" class="heading-hero">
+    
+        
+    
+  <h1 class="heading-1 mb-5">Freedom of Information Disclosure Log</h1>
+
+
+  </div>
+  <div id="block-lit-short-description">
+    
+        
+      <p class="text-4xl subtitle">The Freedom of Information (FOI) Disclosure Log lists information which we’ve released in response to an FOI access request. This is subject to exceptions.</p>
+
+  </div>
+
+  
+      </div>
+                <div data-drupal-messages-fallback class="hidden"></div>  
+    
+  
+<article class="dhs-page-content__body body constrained">
+  
+
+  
+    
+  
+  
+    
+  
+                    <p>
+<span class="media-element file-full embedded-entity" data-delta="1" data-embed-button="link_files" data-entity-embed-display="image:image" data-entity-type="file" data-entity-uuid="db475780-6ce8-5a1f-9072-74ce54e2204a" data-langcode="en">  <img src="/sites/default/files/images/foi-logo_0.gif" width="148" height="62" loading="lazy" alt="">
+
+</span>
+
+</p>
+
+<p>Information published on the Disclosure Log can include documents from:</p>
+
+<ul>
+	<li>Centrelink</li>
+	<li>Medicare</li>
+	<li>Child Support</li>
+	<li>CRS Australia</li>
+	<li>Hearing Australia.</li>
+</ul>
+
+<p>We’re required by the <em>Freedom of Information Act 1982</em> (FOI Act) to publish a Disclosure Log. It lists non-personal information we’ve released in response to an FOI request.</p>
+
+<p>Generally, we remove information referred to in our FOI Disclosure Log after 12 months unless the information has enduring public value.</p>
+
+<table data-dhs-table-sort="false">
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Detail</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>4 March 2022</td>
+			<td>
+			<p>Operational Blueprint document (LEX 66373).</p>
+
+			<ul>
+				<li>Maintaining the value of real estate assets on customer records<br>
+				108-04130100</li>
+			</ul>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> 47E(d)<br>
+			<strong>Exemptions:</strong> 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>1 March 2022</td>
+			<td>
+			<p>Australian Workplace Equality Index scorecard (LEX 65866).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>20 January 2022</td>
+			<td>
+			<p>Document concerning Centrelink appeals (LEX 66071).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus" style="font-size: 1.125rem;">available upon request</a><span style="font-size: 1.125rem; background-color: rgba(255, 255, 255, var(--bg-opacity));">.</span></p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>17 January 2022</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 65445):</p>
+
+			<ul>
+				<li>Operational Blueprint Document: Raising emergency payment debts and grant/ex-gratia overpayments 003-01100000</li>
+				<li>JET Child Care Fee Assistance Guidelines previously used by the Agency (LEX 65445)</li>
+			</ul>
+
+			<p>10 documents released in full and 5 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>22 December 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 65547):</p>
+
+			<ul>
+				<li>Deciding whether a debt was due to fraud for a bankrupt customer 107-05070030</li>
+				<li>Special and unusual circumstances waivers 107-05120030</li>
+				<li>Customer compensation and act of grace payments 109-07040000</li>
+				<li>SME explanations ARO referrals and implementing ARO decisions 109-02020010</li>
+				<li>Reviews by an Authorised Review Officer (ARO) 109-03020020</li>
+				<li>Secretary initiated review of decisions 109-06020000</li>
+				<li>Payment specific reviews of decisions 109-05000000</li>
+				<li>Status Resolution Support Services (SRSS) payment debt recovery 005-06110000</li>
+				<li>Review of decision for Status Resolution Support Services (SRSS) payment 005-06130000</li>
+			</ul>
+
+			<p>1 document released in full and 7 documents released in part The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 37(2)(b) and 47E(d)<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>29 November 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 65136):</p>
+
+			<ul>
+				<li>109-02000000</li>
+				<li>109-03000000</li>
+				<li>109-05080000</li>
+				<li>109-06000000</li>
+				<li>109-07040000</li>
+			</ul>
+
+			<p>1 document released in full and 4 documents released in part The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>26 November 2021</td>
+			<td>
+			<p>Operational Blueprint document (LEX 65102):</p>
+
+			<ul>
+				<li>Reviews and Appeals 109-03000000</li>
+			</ul>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>24 November 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 64554):</p>
+
+			<ul>
+				<li>Nominees 104-04090000</li>
+				<li>Reviewing nominee arrangements 110-06090160</li>
+				<li>Appointing nominees 110-06090160</li>
+				<li>Accepting information from nominees 104-04090050</li>
+				<li>Disclosing information to a nominee 104-04090060</li>
+				<li>Obligations of nominees 104-04090020</li>
+			</ul>
+
+			<p>6 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>22 November 2021</td>
+			<td>
+			<p>Documents relating to (LEX 63498):</p>
+
+			<ul>
+				<li>administrative errors made while processing claims under the Medicare Benefits Schedule; and</li>
+				<li>most common types of administrative errors over the last three years.</li>
+			</ul>
+
+			<p>4 documents released in full and 15 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>10 November 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 63282):</p>
+
+			<ul>
+				<li>Deciding whether a debt was due to fraud for a bankrupt customer 107-05070030</li>
+				<li>Special and unusual circumstances waivers 107-05120030</li>
+				<li>Customer compensation and act of grace payments 109-07040000</li>
+				<li>SME explanations ARO referrals and implementing ARO decisions 109-02020010</li>
+				<li>Reviews by an Authorised Review Officer (ARO) 109-03020020</li>
+				<li>Secretary initiated review of decisions 109-06020000</li>
+				<li>Payment specific reviews of decisions 109-05000000</li>
+				<li>Status Resolution Support Services (SRSS) payment debt recovery 005-06110000</li>
+				<li>Review of decision for Status Resolution Support Services (SRSS) payment 005-06130000</li>
+			</ul>
+
+			<p>1 document released in full, 6 documents released in part and 2 documents not released. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 37(2)(b) and and 47E(d)<br>
+			<strong>Exemptions:</strong> Sections 37(2)(b) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>13 October 2021</td>
+			<td>
+			<p>Minister’s Office: Office of the Minister for the National Disability Insurance Scheme and Minister for Government Service, the Hon Linda Reynolds CSC</p>
+
+			<p>Ministerial office internal correspondence and correspondence between the ministerial office and Services Australia in relation to Senator Kitching’s order agreed to by the Senate on 18 May 2021 and amended order on 31 August 2021. (LEX 64369).</p>
+
+			<p>9 documents released in full. 16 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47C and 47E(d)<br>
+			<strong>Exemptions:</strong> Sections 47C and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>11 October 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 62961):</p>
+
+			<ul>
+				<li>Aged care reviews - quarterly reviews 065-20062953</li>
+				<li>Aged care reviews - Reassessments and updates 065-20082042</li>
+			</ul>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>27 September 2021</td>
+			<td>
+			<p>Guidance on valuations, including valuing house and curtilage (LEX 63945).</p>
+
+			<p>2 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>13 September 2021</td>
+			<td>
+			<p>Operational Blueprint document (LEX 63436):</p>
+
+			<ul>
+				<li>Australian Taxation Office (ATO) identity fraud and debts 107-02010020</li>
+			</ul>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 37(2)(b) and 47E(d)<br>
+			<strong>Exemptions:</strong> Sections 37(2)(b) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>6 September 2021</td>
+			<td>
+			<p>Operational Blueprint document (LEX 63368):</p>
+
+			<ul>
+				<li>Claim lodgement of Centrelink claims 106-03020000</li>
+			</ul>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22 and 47E(d)<br>
+			<strong>Exemptions:</strong> Sections 22 and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>30 August 2021</td>
+			<td>
+			<p>Documents relating to Centrepay:</p>
+
+			<ul>
+				<li>Centrepay Service Reasons, and</li>
+				<li>Centrepay Level 3 Helpdesk process (LEX62369)</li>
+			</ul>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>9 August 2021</td>
+			<td>
+			<p>Document relating to a ‘random sample’ of welfare debts (LEX 61938).</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>15 July 2021</td>
+			<td>
+			<p>KPMG report “Returned Repayments Project” (LEX 62249):</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47E(d), 47C and 47F(1)<br>
+			<strong>Exemptions:</strong> Sections 47E(d), 47C and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>28 June 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 61222):</p>
+
+			<ul>
+				<li>Nominees 104-04090000</li>
+				<li>Reviewing nominee arrangements 110-06090160</li>
+			</ul>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>27 April 2021</td>
+			<td>
+			<p>Document showing the approval dates for:</p>
+
+			<ul>
+				<li>Divisional Fraud Risk Assessments</li>
+				<li>Fraud and Corruption Control Plan</li>
+				<li>Fraud Control Plan (LEX 61635).</li>
+			</ul>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>12 February 2021</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 60269):</p>
+
+			<ul>
+				<li>Recording interactions 104-07020060</li>
+			</ul>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47E(c) and 47E(d)<br>
+			<strong>Exemptions:</strong> Sections 47E(c) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>17 December 2020</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 58147):</p>
+
+			<ul>
+				<li>Cashless Debit Card (CDC) 103-03150000</li>
+				<li>Exit Applications from the Cashless Debit Card (CDC) 103-20081031</li>
+			</ul>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>4 September 2020</td>
+			<td>
+			<p>Minister’s Office: Office of the Minister for the National Disability Insurance Scheme and Minister for Government Services, the Hon Stuart Robert MP</p>
+
+			<p>Correspondence between the Minister’s office and Advanced Personnel Management sent this year. (LEX 56679).</p>
+
+			<p>9 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> 47F<br>
+			<strong>Exemptions:</strong> 47F</p>
+			</td>
+		</tr>
+		<tr>
+			<td>20 July 2020</td>
+			<td>
+			<p>Contractor Work Health and Safety Management forms (LEX 54984):</p>
+
+			<ul>
+				<li>Contractor Work Health and Safety Induction checklist</li>
+				<li>Work Health and Safety Information Sheet.</li>
+			</ul>
+
+			<p>2 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>13 July 2020</td>
+			<td>
+			<p>Random sample of 500 debts conducted by Services Australia for the Minister (LEX 55417).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Decision made: 22 June 2020<br>
+			Documents released: 2 July 2020</td>
+			<td>
+			<p>Briefing points, talking points and communications sent to the Minister’s Office related to traffic issues associated with MyGov on 23 March 2020 (LEX 53889):</p>
+
+			<ul>
+				<li>Transcript of interview with Minister Stuart Robert on 23 March 2020</li>
+				<li>Email briefings to and from the Minister’s Office</li>
+			</ul>
+
+			<p>4 documents released in part and 1 document refused. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47, 47C, 47E(d) and 47F(1)<br>
+			<strong>Exemptions:</strong> Sections 47, 47C, 47E(d) and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>10 June 2020</td>
+			<td>
+			<p>A Risk Management Plan, Open Issues Summary, Progress Report and Issues Summary (LEX 45597).</p>
+
+			<p>1 document released in full, 3 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> 47F(1)<br>
+			<strong>Exemptions:</strong> 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>3 June 2020</td>
+			<td>
+			<p>Operational Blueprint document: Nominees 104-04090000 (LEX 54407).</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>3 June 2020</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 54111):</p>
+
+			<ul>
+				<li>Independence for Youth Allowance (YA) customers 001-04060000</li>
+				<li>Assessing unreasonable to live at home (UTLAH) for customers claiming or receiving Youth Allowance (YA), Disability Support Pension (DSP) or Special Benefit (SpB) 001-04030030</li>
+			</ul>
+
+			<p>1 document released in full and 1 document released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>2 June 2020</td>
+			<td>
+			<p>Operational Blueprints (LEX 53956):</p>
+
+			<p>7 documents released in full, 1 document released in part, and 5 documents not released. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> Sections 37E(a) and 37E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>8 April 2020</td>
+			<td>
+			<p>Documents that concern the actual or possible impact of the 2019-2020 bushfires on Cashless Debit Card trial sites and those involved in Cashless Debit Card trials (LEX 53426).</p>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 47C and 47E(d)<br>
+			<strong>Exemptions:</strong> Sections 47C and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>6 April 2020</td>
+			<td>
+			<p>Guidelines for the release of information where necessary in the public interest. (LEX 51091).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>7 February 2020</td>
+			<td>
+			<p>Age Pension Statistics for 2018-19 (LEX 50335).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>7 February 2020</td>
+			<td>
+			<p>Documents showing the job description for a CAO within Operations Division (LEX 50336).</p>
+
+			<p>2 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>3 February 2020</td>
+			<td>
+			<p>Documents regarding Program Protocols and related Operational Blueprints (LEX 50114).</p>
+
+			<p>8 documents released in full. Part of the request refused as documents do not exist. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>30 January 2020</td>
+			<td>
+			<p>Operational Blueprint documents as at 29 November 2017 (LEX 50060):</p>
+
+			<ul>
+				<li>Earnings Apportionment Tool (EAT) 107-03020010</li>
+				<li>Assessing and coding employment income 108-07010010</li>
+				<li>Income Test for single allowance customers 108-01020010</li>
+			</ul>
+
+			<p>3 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>22 January 2020</p>
+			</td>
+			<td>
+			<p>'The Scheme for Compensation for Detriment caused by Defective Administration - Authorisations' signed by Minister Robert on 4 June 2019 (LEX 49822).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>17 January 2020</td>
+			<td>
+			<p>Documents relating to CN3553520-A1 (LEX 48727).</p>
+
+			<p>5 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 47(1)(b), 47C, 47D, 47E(d) and 47F(1)<br>
+			<strong>Exemptions:</strong> Sections 47(1)(b), 47C, 47D, 47E(d) and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>31 December 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 49633):</p>
+
+			<ul>
+				<li>Initial request for review of decision or appeal (CLK) 109-02000000</li>
+				<li>Priority review requests 109-02010000</li>
+				<li>Internal review of decision 109-02020000</li>
+				<li>Quality checks by a Subject Matter Expert (SME), referral to Authorised Review Office (ARO) and implementation of ARO decisions 109-02020010</li>
+				<li>Making an unfavourable decision (CLK) 109-03010000</li>
+				<li>Reviews by an Authorised Review Officer (ARO) 109-03020020</li>
+				<li>Administrative Appeals Tribunal (AAT) (CLK) 109-03030000</li>
+			</ul>
+
+			<p>3 documents released in full and 4 document released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>23 December 2019</td>
+			<td>
+			<p>Operational Blueprint documents relating to Unearned Income Interventions (LEX 48887).</p>
+
+			<p>12 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>20 December 2019</td>
+			<td>
+			<p>Agency: Minister for Government Services and National Disability Insurance Scheme</p>
+
+			<p>Documents containing the word ontology created since 1 November 2019 (LEX 49655).</p>
+
+			<p>2 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>10 December 2019</td>
+			<td>
+			<p>Guidance for compliance officers (LEX 49097).</p>
+
+			<p>1 document released. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>3 December 2019</td>
+			<td>
+			<p>Possible data breach notifications made to the Office of the Australian Information Commissioner regarding My Health Record in the 2018/19 financial year (LEX 48993 and LEX 49040).</p>
+
+			<p>30 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 47E(d) and 47F<br>
+			<strong>Exemptions:</strong> Sections 47E(d) and 47F</p>
+			</td>
+		</tr>
+		<tr>
+			<td>2 December 2019</td>
+			<td>
+			<p>Guidelines for the release of information where necessary in the public interest. (LEX 42717 and LEX 40029).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>25 November 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 48621):</p>
+
+			<ul>
+				<li>Program, discretion and estimate reviews and reminders for private trusts and private companies 043-0416010</li>
+				<li>Review and reassessments for private trusts and private companies 043-04160000</li>
+			</ul>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)<br>
+			<strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>18 November 2019</td>
+			<td>
+			<p>External Review of Decision Analysis (LEX 48332)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47E(d) and 47C<br>
+			<strong>Exemptions:</strong> Sections 47E(d) and 47C</p>
+			</td>
+		</tr>
+		<tr>
+			<td>4 November 2019</td>
+			<td>
+			<p>Document relating to Japanese exchange rates (LEX 48136).<br>
+			1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22<br>
+			<strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>28 October 2019</td>
+			<td>
+			<p>Documents relating to foreign exchange rates (LEX 47985).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>21 October 2019</td>
+			<td>
+			<p>Document regarding the Code of Operation 2002 (LEX 47795).</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47F(1)</p>
+
+			<p><strong>Exemptions:</strong> Section 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>16 October 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 47701):</p>
+
+			<ul>
+				<li>Child Care Subsidy (CCS) payments and withholdings 007-17103124</li>
+				<li>Child Care Subsidy (CCS) withholdings 007-17103126</li>
+				<li>Child Care Subsidy (CCS) claims processing 007-17103135</li>
+				<li>Processing Child Care Subsidy (CCS) claims 007-17103136</li>
+			</ul>
+
+			<p>3 documents released in full and 1 document released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22 and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>15 October 2019</td>
+			<td>
+			<p>Work order documents (LEX 45499).</p>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47(1)(b), 47E(c), 47E(d) and 47F(1)</p>
+
+			<p><strong>Exemptions:</strong> Sections 47(1)(b), 47E(c), 47E(d) and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>4 October 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 47023):</p>
+
+			<ul>
+				<li>Pension Loans Scheme (PLS) 065-08000000</li>
+				<li>Completing a Pension Loans Scheme application form (SA310) 065-08010000</li>
+				<li>Assessing Pension Loans Scheme (PLS) applications 065-08020010</li>
+				<li>Security for the Pension Loans Scheme (PLS) 065-08020020</li>
+				<li>Initiating recovery of a Pension Loans Scheme (PLS) outstanding loan amount 065-08020030</li>
+				<li>Repayment of Pension Loans Scheme (PLS) loans 065-08020040</li>
+				<li>Settlement of Pension Loans Scheme (PLS) loan amounts 065-08020050</li>
+				<li>Pension Loans Scheme (PLS) reviews 065-08020060</li>
+			</ul>
+
+			<p>Documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>30 September 2019</td>
+			<td>
+			<p>Online Compliance information and statistics July 2016-December 2017 (LEX 47316).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>27 September 2019</td>
+			<td>
+			<p>Privacy Impact Assessment on the DHS Response to the Independent Review of Health Providers Access to Medicare Numbers (LEX 46187)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> sections 37(2)(b) and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Sections 37(2)(b) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>24 September 2019</td>
+			<td>
+			<p>Number of Disability Support Pensioners with migraine provided as at least one of medical conditions that was assessed and the percentage of Disability Support Pensioners who have migraine listed as a medical condition (LEX 46629).</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>23 September 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 45796):</p>
+
+			<ul>
+				<li>Claiming Disability Support Pension (DSP) 008-03010010</li>
+				<li>What is medical evidence for Disability Support Pension (DSP)? 008-03030010</li>
+				<li>Diagnosis of a medical condition provided by an Assessment Services Psychologist for Disability Support Pension (DSP) 008-03030020</li>
+				<li>Assessing a new claim for Disability Support Pension (DSP) after a Job Capacity Assessment (JCA) 008-03030050</li>
+				<li>Granting Disability Support Pension (DSP) (manifest) 008-03030140</li>
+				<li>Rejecting a new claim for Disability Support Pension (DSP) including manifest rejections 008-03030150</li>
+				<li>Identifying Disability Support Pension (DSP) customers with participation requirements 008-03090030</li>
+				<li>Conducting interviews for Disability Support Pension (DSP) customers with participation requirements 008-03090040</li>
+				<li>Understanding Job Capacity Assessments (JCA) reports 008-06070030</li>
+			</ul>
+
+			<p>9 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>23 September 2019</td>
+			<td>
+			<p>Documents regarding Centrelink Express Plus app (LEX 47026)</p>
+
+			<p>2 documents released in full. These documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act</strong>: N/A</p>
+
+			<p><strong>Exemptions</strong>: N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>10 September 2019</td>
+			<td>
+			<p>Documents sent to the Commonwealth Ombudsman related to the progress or implementation of recommendations from the Commonwealth Ombudsman’s report Accessibility of Disability Support Pension for remote Indigenous Australians. (LEX 46209).</p>
+
+			<p>5 documents released in full and 1 document released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act</strong>: Section 22 and 47E(d)</p>
+
+			<p><strong>Exemptions</strong>: Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>10 September 2019</td>
+			<td>
+			<p>Ministerial brief dated 28 February 2017. (LEX 35111).</p>
+
+			<p>Document released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act</strong>: N/A</p>
+
+			<p><strong>Exemptions</strong>: N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>5 September 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 46488):</p>
+
+			<ul>
+				<li>Ministerial orders and Medicare eligibility 011-44070000</li>
+				<li>Perform public security check for Medicare 011-40020000</li>
+				<li>Applicants for permanent residency eligibility for Medicare 011-44020000</li>
+			</ul>
+
+			<p>1 document released in part and 2 documents released in full, with out of scope material removed. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 37(2)(b) and 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Sections 37(2)(b) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>20 August 2019</td>
+			<td>
+			<p>Question Time Brief relating to Centrelink call centre capacity (LEX 45021)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>19 August 2019</td>
+			<td>
+			<p>Operational Blueprint document: Common and specialised activities for child support staff 277-01100020 (LEX 46028)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>12 August 2019</td>
+			<td>
+			<p>Operational Blueprint documents (LEX 45956):</p>
+
+			<ul>
+				<li>Assessment of a medical certificate to determine exemption from Mutual Obligation Requirements for a temporary incapacity 001-09120010</li>
+				<li>Expiry and renewal of medical certificates for payments with Mutual Obligation Requirements 001-09121000</li>
+			</ul>
+
+			<p>2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>12 August 2019</td>
+			<td>
+			<p>Meeting agendas and other notes for meetings held with the Minister for Human Services, Minister for Social Services, or their offices, between 1 January 2016 and 31 December 2016, relating to the Better Management of the Social Welfare System Initiative or Taskforce Integrity.</p>
+
+			<p>4 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 34(3), 47F(1) and 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Sections 34(3), 47F(1) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>9 August 2019</td>
+			<td>
+			<p>Operational Blueprint document: Assessment of a medical certificate to determine exemption from Mutual Obligation Requirements 001-09120010 (LEX 45149)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>30 July 2019</td>
+			<td>
+			<p>Documents relating to Operational Blueprint 108-07010010 assessing and coding employment income. (LEX 45734)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>30 July 2019</td>
+			<td>
+			<p>Documents relating to Leave Payment training package. (LEX 45736)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>29 July 2019</td>
+			<td>
+			<p>Agency: Minister for Government Services</p>
+
+			<p>Department of Human Services Incoming Brief for Minister Robert. (LEX 44779)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 34(1)(c), 34(3), 37(2)(b), 47C and 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Sections 34(1)(c), 34(3), 37(2)(b), 47C and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>25 July 2019</td>
+			<td>
+			<p>Documents relating to foreign exchange rates. (LEX 45357)</p>
+
+			<p>Document released in full. Part of request refused as documents don’t exist. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 24(a)</p>
+
+			<p><strong>Exemptions: </strong>Section 24(a)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>22 July 2019</td>
+			<td>
+			<p>Operational Blueprint document: Calculating financial capacity for business owners 277-0 4060000 document (LEX 34952)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>17 July 2019</td>
+			<td>
+			<p>Documents relating to our staff policies for records management and fitness for duty health assessments. (LEX 44258)</p>
+
+			<p>2 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>12 July 2019</td>
+			<td>
+			<p>Document relating to the assessment of assets hardship, prior to 7 January 2019. (LEX 45056)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p>Please note that this document is no longer valid. The current version is also available to the public.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>12 July 2019</td>
+			<td>
+			<p>Disclosure log request, documents relating to records management policy. (LEX 45603)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 22</p>
+
+			<p><strong>Exemptions:</strong> Section 22</p>
+			</td>
+		</tr>
+		<tr>
+			<td>4 July 2019</td>
+			<td>
+			<p>Customer Committee meetings and internal consultations concerning Indigenous Servicing. (LEX 44914)</p>
+
+			<p>4 documents released in full and 2 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22, 47F and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Sections 47F and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>2 July 2019</td>
+			<td>
+			<p>Document relating to FOI Sharepoint announcements. (LEX 44186)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22 and 47F(1)</p>
+
+			<p><strong>Exemptions:</strong> Section 47F</p>
+			</td>
+		</tr>
+		<tr>
+			<td>17 June 2019</td>
+			<td>
+			<p>Document relating to compensation policy. (LEX44466)</p>
+
+			<p>4 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>12 June 2019</td>
+			<td>
+			<p>Document relating to records management policy. (LEX44341)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 22</p>
+
+			<p><strong>Exemptions:</strong> Section 22</p>
+			</td>
+		</tr>
+		<tr>
+			<td>5 June 2019</td>
+			<td>
+			<p>Document relating to portability and assessment of payments. (LEX44188)</p>
+
+			<p>31 documents released in full and 5 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 24A and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>20 May 2019</td>
+			<td>
+			<p>Document relating to aggregation of study load rules.(LEX 43822)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22 and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Sections 22 and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>6 May 2019</td>
+			<td>
+			<p>Commonwealth Bank of Australia (CBA) foreign exchange rates (as would be available on CBA’s website) on 44 dates between 27 July 2015 and 22 February 2019 inclusive (LEX 42846)</p>
+
+			<p>44 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>30 April 2019</td>
+			<td>
+			<p>Documents relating to the provision of KPMG providing a business operations review for the agency during 22 May 2017 to 31 December 2017 (LEX 42920)</p>
+
+			<p>3 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22</p>
+
+			<p><strong>Exemptions:</strong> Sections 47(1)(b), 47E(d), 47F(1) and 47G(1)(a)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>24 April 2019</td>
+			<td>
+			<p>LEX 42948</p>
+
+			<ul>
+				<li>Policy and Standard for Staff Email and Messaging</li>
+				<li>Directive: Cyber Security Policy Non-compliance</li>
+				<li>Information Security Markings (release in full)</li>
+			</ul>
+
+			<p>1 document, released in full, and 2 documents, released in part, are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong></p>
+
+			<ul>
+				<li>Policy and Standard for Staff Email and Messaging (release in part - s47E(d))</li>
+				<li>Directive: Cyber Security Policy Non-compliance (release in part - s47E(c) and s47E(d))</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>27 March 2019</td>
+			<td>
+			<ul>
+				<li>Deed of Standing Offer for the Provision of ICT Contractor Services, Services number 11/1000006268; and</li>
+				<li>Request for Tender (“RFT”) for the Provision of ICT Contractor Services, Services number 11/1000006268 (LEX40762)</li>
+			</ul>
+
+			<p>2 documents, released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>6 March 2019</td>
+			<td>
+			<p>Amendment of the document described as: the plan to implement the recommendations in the 2014 report of the own motion investigation 'FOI at the Department of Human Services' (LEX 42362)</p>
+
+			<p>1 document, released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22 and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Sections 22 and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>5 March 2019</td>
+			<td>
+			<p>Documents relating to the contract between Kelly Services and Services Australia in relation to labour hire arrangements in the Appeals Branch including the External Review of Decision team (LEX 41692).</p>
+
+			<p>3 documents, released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 47F(1) and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Sections 47F(1) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>28 February 2019</td>
+			<td>
+			<p>Financial Information Service - First Principles Review - 09.10.2017 (LEX 41331)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>28 February 2019</td>
+			<td>
+			<p>Recruitment Approval Form for Quality Checker (APS 4) Position and Compiler (APS3) Position (LEX 42096)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 47E(c) and 47C</p>
+
+			<p><strong>Exemptions:</strong> 47E(c) and 47C</p>
+			</td>
+		</tr>
+		<tr>
+			<td>11 February 2019</td>
+			<td>
+			<p>Procedures for determining breaches of the APS Code of Conduct and the imposition of sanctions (LEX 41464)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>23 January 2019</td>
+			<td>
+			<p>Documents relating to the provision of KPMG providing a business operations review for the agency during 22 May 2017 to 31 December 2017 (LEX 40946).</p>
+
+			<p>3 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 47(1)(b), 47E(d), 47F(1) and 47G(1)(a)</p>
+
+			<p><strong>Exemptions:</strong> Sections 47(1)(b), 47E(d), 47F(1) and 47G(1)(a)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>4 January 2019</td>
+			<td>
+			<p>Operational Blueprint document: Child Protection Agency Medicare card number requests for children and young people in out-of-home care 011-44120030 (LEX 41345)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>7 December 2018</td>
+			<td>
+			<p>Operational Blueprint document Calculating financial capacity for business owners 277-04060000 document (LEX 34952)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 37(2)(b) and 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Sections 37(2)(b) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>7 December 2018</td>
+			<td>
+			<p>Public Interest Certificate issued by Services Australia to BreastScreen Victoria Inc, dated 03/02/2016 (LEX 40829)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>26 November 2018</td>
+			<td>
+			<p>Operational blueprint document: Circumstances affecting capacity with compulsory requirement 001-10050000 document (LEX 39013)</p>
+
+			<p>1 document released in full and 3 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>15 November 2018</td>
+			<td>
+			<p>Documents formerly available on the AusTender website under RFT 1000401959 Request for Tender for the Procurement of a Systems lntegrator Panel (LEX 39604)</p>
+
+			<p>37 documents released. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>9 November 2018</td>
+			<td>
+			<p>Documents outlining the change history related to mylT Article 725 ('Valid reasons to call the Shared Services ICT Service Desk Urgent Escalation Channel') between 13 November 2015 and 30 July 2018.<br>
+			Documents outlining the change history of mylT Article 1158 ('Cyber Security Incident Reporting') for the Period May 2017 to July 2017.<br>
+			Documents outlining the change history related to the web page 'Genesys Workforce Management Solution' from the period prior to November 2016 until November 2017. (LEX 39753)</p>
+
+			<p>3 documents released with out of scope information removed. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22, 47E(c) and 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Sections 47E(c) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>4 July 2018</td>
+			<td>
+			<p>Contracts, in force during the period 1 December 2016 to 17 January 2017 (inclusive), between the Commonwealth of Australia represented by Services Australia and Dun and Bradstreet (Australia) Pty Ltd for the provision of a Mercantile Agent Service for Debt Recovery (LEX 30798)</p>
+
+			<p>1 document released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22, 27(1)(b), 47E(d) and 47F(1)</p>
+
+			<p><strong>Exemptions: </strong>Sections 27(1)(b), 47E(d) and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>28 June 2018</td>
+			<td>
+			<p>Any documents which show the number and percentage of children with an approved medical exemption for one or more vaccines, recorded by the Australian Childhood Immunisation Register (ACIR) and/or the Australian Immunisation Register (AIR), for the purpose of Commonwealth legislation, for each of the years 2011 to 2017 inclusive. Yearly statisics will suffice (LEX 36430)</p>
+
+			<p>16 documents released with out of scope information removed. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act:</strong> Section 22</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>7 June 2018</td>
+			<td>
+			<p>The Services Australia website 'Reciprocal Health Care Agreement 405 and 410 visa holders from the United Kingdom' in the form prior to being updated on 1 March 2018.</p>
+
+			<p>The Services Australia website 'United Kingdom Reciprocal Health Care Agreement for 405 and 410 retirement visa holders' in the form prior to being updated on 13 December 2017 (LEX 36572)</p>
+
+			<p>2 documents released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>16 April 2018</td>
+			<td>
+			<p>Ministerial briefs since 1 October 2017 on the Modernising Health and Aged Care Payments Services Program (LEX 34599).</p>
+
+			<p>2 documents released in full and 4 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22, 34(3) and 47F(1).</p>
+
+			<p><strong>Exemptions: </strong>Sections 34(3) and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>13 March 2018</td>
+			<td>
+			<p>Operational blueprint documents (LEX 34342)</p>
+
+			<ul>
+				<li>003-09000000 Early Release of Superannuation Benefits</li>
+				<li>003-09010000 Apply for early release of superannuation benefits under compassionate grounds</li>
+				<li>003-09010030 Early release of superannuation benefits under medical treatment and medical transport grounds</li>
+				<li>003-09010040 Early release of superannuation benefits under the mortgage assistance ground</li>
+				<li>003-09010050 Early release of superannuation benefits under the modification of home/vehicle ground</li>
+				<li>003-09010060 Early release of superannuation benefits under the palliative care ground for customers</li>
+				<li>003-09010070 Early release of superannuation benefits under palliative care, death, funeral or burial grounds for dependants</li>
+				<li>003-09010110 Request for priority assessment of early release of superannuation benefits under compassionate grounds</li>
+				<li>003-09010120 Telephone protocols for early release of superannuation benefits under compassionate grounds</li>
+				<li>003-09010150 Reviews of decision for early release of superannuation benefits under compassionate grounds</li>
+				<li>003-09010160 Assessing and recording an early release of superannuation benefits application under compassionate grounds</li>
+				<li>003-09010170 Determining dependency for early release of superannuation benefits under compassionate grounds</li>
+				<li>003-09010180 Early release of superannuation benefits under the consistent with ground.</li>
+			</ul>
+
+			<p>3 documents released in full and 10 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Section 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>2 March 2018</td>
+			<td>
+			<p>Services Australia Incoming Brief for Minister Keenan (LEX34602)</p>
+
+			<p>1 document was released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 47C, 47E(d), 47E(c) and 47F(1)</p>
+
+			<p><strong>Exemptions: </strong>Sections 47C, 47E(d), 47E(c) and 47F(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>23 February 2018</td>
+			<td>
+			<p>Data specifying the total number of Disability Support Pension (DSP) suspensions due to the recipient being 'in gaol', and the total number DSP cancellations because the recipient was 'in gaol', for each of the last three full financial years (2014-15; 2015-16; and 2016-17)</p>
+
+			<p>1 document released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>19 January 2018</td>
+			<td>
+			<p>National Indigenous Coalition meeting minutes and agenda items. (LEX 31843)</p>
+
+			<p>3 documents released in full and 5 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 47C, 47F and 47E(d)</p>
+
+			<p><strong>Exemptions: </strong>Sections 47C, 47F and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>18 January 2018</td>
+			<td>
+			<p>Statistics relating to the Online Compliance Intervention. (LEX 29651)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 24A and 17</p>
+
+			<p><strong>Exemptions: </strong>N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>21 December 2017</td>
+			<td>
+			<p>Operational Blueprint 108-04080040 - Exempt lump sums (LEX 32237)</p>
+
+			<p>1 document released in part. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Section 47G(1)</p>
+
+			<p><strong>Exemptions: </strong>Section 47G(1)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>28 November 2017</td>
+			<td>
+			<p>Operational Blueprint 107-03040000 - Perpetual Centrelink Calendar (LEX 30212)</p>
+
+			<p>1 document released in full. The document is <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>15 November 2017</td>
+			<td>
+			<p>Statistics relating to Farm Household Allowance recipients as at 21 July 2017 (LEX 30864)</p>
+
+			<p>1 document released in full. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>N/A</p>
+
+			<p><strong>Exemptions:</strong> N/A</p>
+			</td>
+		</tr>
+		<tr>
+			<td>8 November 2017</td>
+			<td>
+			<p>Internal correspondence regarding Medicare (LEX 30613)</p>
+
+			<p>8 documents released in part. The documents are <a href="#contactus">available upon request</a>.</p>
+
+			<p><strong>Sections of the Act: </strong>Sections 22, 37(1)(a), 37(2)(b), 47G , 47C(1) and 47E(d)</p>
+
+			<p><strong>Exemptions:</strong> Sections 37(1)(a) , 37(2)(b), 47G, 47C(1) and 47E(d)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>17 January 2017</td>
+			<td>
+			<p>Incoming Government Brief as it refers to Medicare (LEX 22819)</p>
+
+			<p>3 documents released in part.</p>
+
+			<p>The documents are available upon request.</p>
+
+			<p><strong>Sections of the Act:</strong> Sections 22, 37 and 47C(1)</p>
+
+			<p><strong>Exemptions:</strong> Sections 37 and 47C(1)</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2><a id="contactus" name="contactus"></a>Contact us for documents</h2>
+
+<p>Some documents are available upon request at:</p>
+
+<address>FOI Legal Team<br>
+Services Australia<br>
+PO Box 7820<br>
+Canberra BC ACT 2610</address>
+
+<p>Email the <a href="mailto:foi.legal.Team@servicesaustralia.gov.au">FOI legal Team</a>.</p>
+
+<h2>Unable to access information in the log</h2>
+
+<p>If you are unable to access the information in this log, you can contact us by:</p>
+
+<ul>
+	<li>sending an email to the <a href="mailto:foi.legal.team@servicesaustralia.gov.au">FOI legal Team</a></li>
+	<li>writing to us at:
+	<address>FOI Legal Team<br>
+	Services Australia<br>
+	PO Box 7820<br>
+	Canberra BC ACT 2610</address>
+	</li>
+</ul>
+
+            
+
+
+</article>
+
+
+  
+  </main>
+
+  <div class="dhs-page-content__below relative flex flex-wrap justify-between w-full py-10 border-t border-grey-1c"><div data-behaviour="vue" id="block-lit-page-poll-vue"><div><lit-page-poll :poll-question="&quot;Was this page useful?&quot;" :poll-options-yes="[{&quot;gaLabel&quot;:&quot;Helpful to me&quot;,&quot;text&quot;:&quot;It was helpful to me&quot;},{&quot;gaLabel&quot;:&quot;Content makes sense&quot;,&quot;text&quot;:&quot;The content makes sense&quot;},{&quot;gaLabel&quot;:&quot;Well written&quot;,&quot;text&quot;:&quot;It was well written&quot;},{&quot;gaLabel&quot;:&quot;Easy layout to read&quot;,&quot;text&quot;:&quot;The layout or style made it easy to read&quot;},{&quot;gaLabel&quot;:&quot;Something else&quot;,&quot;text&quot;:&quot;Something else&quot;}]" :poll-options-no="[{&quot;gaLabel&quot;:&quot;Not helpful to me&quot;,&quot;text&quot;:&quot;It was not helpful to me&quot;},{&quot;gaLabel&quot;:&quot;Technical error&quot;,&quot;text&quot;:&quot;I got a technical error&quot;},{&quot;gaLabel&quot;:&quot;Difficult layout to read&quot;,&quot;text&quot;:&quot;The layout or style made it difficult to read&quot;},{&quot;gaLabel&quot;:&quot;Confusing content&quot;,&quot;text&quot;:&quot;The content is confusing&quot;},{&quot;gaLabel&quot;:&quot;Poorly written&quot;,&quot;text&quot;:&quot;It was poorly written&quot;},{&quot;gaLabel&quot;:&quot;Something else&quot;,&quot;text&quot;:&quot;Something else&quot;}]"></lit-page-poll></div></div><div id="block-lit-page-updated"><p class="body pt-5 text-md text-grey-dark">Page last updated: 8 March 2022</p></div><div class="hidden print:block" id="block-lit-print-info"><div class="pt-12"><img class="break-auto float-left mb-5 mr-5" src="https://chart.apis.google.com/chart?chs=150x150&amp;cht=qr&amp;chld=L|0&amp;chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package" alt="QR code" title="QR code" /><p class="break-words clearfix print:text-md">This information was printed 4 April 2022 from <strong>https://www.servicesaustralia.gov.au/freedom-information-disclosure-log</strong>. It may not include all of the relevant information on this topic. Please consider any relevant site notices at <strong>https://www.servicesaustralia.gov.au/site-notices</strong> when using this material.</p><div class="lit-print-info-links mt-10 body"><h2>Printed link references</h2><ol class="print:text-md"></ol></div></div></div></div>
+</div>
+
+<footer class="relative bg-black text-white print:hidden flex-grow-0">
+            <div id="block-lit-footer">
+    
+        
+    
+<div class="pt-12 font-thin text-sm">
+    <div class="md:hidden mb-6" id="lit-footer-mobile">
+    <nav aria-label="Footer">
+      <ul class="flex flex-col">
+                  <li  class="border-t border-white hover:border-blue-60">
+            <span
+              class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md hover:bg-blue-60 hover:text-black"
+              data-dhs-accordion="1"
+              data-dhs-target="#lit-footer-accordion-0">
+              <a href="#lit-footer-accordion-0">Services Australia</a>
+            </span>
+                          <ul class="pb-4" id="lit-footer-accordion-0">
+                                
+                                  <li  class="py-4">
+                    <a  href="/about-us" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">About us</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/forms" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Forms</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/media" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Media</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="https://mhs.gov.au" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Our Minister</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="border-t border-white hover:border-blue-60">
+            <span
+              class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md hover:bg-blue-60 hover:text-black"
+              data-dhs-accordion="1"
+              data-dhs-target="#lit-footer-accordion-1">
+              <a href="#lit-footer-accordion-1">Contact</a>
+            </span>
+                          <ul class="pb-4" id="lit-footer-accordion-1">
+                                                  <li class="py-4">
+                    <a  href="/contact-us" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact</a>
+                  </li>
+                
+                                  <li  class="hidden md:block py-4">
+                    <a  href="/contact-us" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact us</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="https://findus.servicesaustralia.gov.au" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Find us</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/complaints-and-feedback" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Complaints and feedback</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="border-t border-white hover:border-blue-60">
+            <span
+              class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md hover:bg-blue-60 hover:text-black"
+              data-dhs-accordion="1"
+              data-dhs-target="#lit-footer-accordion-2">
+              <a href="#lit-footer-accordion-2">Business</a>
+            </span>
+                          <ul class="pb-4" id="lit-footer-accordion-2">
+                                                  <li class="py-4">
+                    <a  href="/running-business" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business</a>
+                  </li>
+                
+                                  <li  class="py-4">
+                    <a  href="/proda-provider-digital-access" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">PRODA</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/business-hub" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business Hub</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/paid-parental-leave-scheme-for-employers" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Paid Parental Leave scheme for employers</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="border-t border-white hover:border-blue-60">
+            <span
+              class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md hover:bg-blue-60 hover:text-black"
+              data-dhs-accordion="1"
+              data-dhs-target="#lit-footer-accordion-3">
+              <a href="#lit-footer-accordion-3">Community groups</a>
+            </span>
+                          <ul class="pb-4" id="lit-footer-accordion-3">
+                                                  <li class="py-4">
+                    <a  href="/community" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Community groups</a>
+                  </li>
+                
+                                  <li  class="py-4">
+                    <a  href="/family-organisations" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Family organisations</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/multicultural-organisations" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Multicultural organisations</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/apply-to-be-approved-voluntary-work-organisation" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Apply to be a voluntary work organisation</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="border-t border-white hover:border-blue-60">
+            <span
+              class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md hover:bg-blue-60 hover:text-black"
+              data-dhs-accordion="1"
+              data-dhs-target="#lit-footer-accordion-4">
+              <a href="#lit-footer-accordion-4">Health professionals</a>
+            </span>
+                          <ul class="pb-4" id="lit-footer-accordion-4">
+                                                  <li class="py-4">
+                    <a  href="/health-professionals" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health professionals</a>
+                  </li>
+                
+                                  <li  class="py-4">
+                    <a  href="/hpos" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health Professionals Online Services</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/aged-care-provider-portal" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Aged Care Provider Portal</a>
+                  </li>
+                                  <li  class="py-4">
+                    <a  href="/medicare-benefits-for-health-professionals" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Medicare benefits for health professionals</a>
+                  </li>
+                              </ul>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+
+    <div class="hidden md:block md:pb-12">
+    <nav aria-label="Footer">
+      <ul class="flex flex-row">
+                  <li  class="mb-0 pb-12 flex-1 border-b border-white">
+            <span class="font-bold text-md">
+                          Services Australia
+                        </span>
+
+                          <ul>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/about-us" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">About us</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/forms" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Forms</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/media" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Media</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="https://mhs.gov.au" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Our Minister</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="mb-0 pb-12 flex-1 border-b border-white">
+            <span class="font-bold text-md">
+                          <a  href="/contact-us" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact</a>
+                        </span>
+
+                          <ul>
+                                  <li  class="hidden md:block mt-8 w-11/12">
+                    <a  href="/contact-us" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact us</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="https://findus.servicesaustralia.gov.au" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Find us</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/complaints-and-feedback" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Complaints and feedback</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="mb-0 pb-12 flex-1 border-b border-white">
+            <span class="font-bold text-md">
+                          <a  href="/running-business" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business</a>
+                        </span>
+
+                          <ul>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/proda-provider-digital-access" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">PRODA</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/business-hub" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business Hub</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/paid-parental-leave-scheme-for-employers" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Paid Parental Leave scheme for employers</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="mb-0 pb-12 flex-1 border-b border-white">
+            <span class="font-bold text-md">
+                          <a  href="/community" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Community groups</a>
+                        </span>
+
+                          <ul>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/family-organisations" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Family organisations</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/multicultural-organisations" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Multicultural organisations</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/apply-to-be-approved-voluntary-work-organisation" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Apply to be a voluntary work organisation</a>
+                  </li>
+                              </ul>
+                      </li>
+                  <li  class="mb-0 pb-12 flex-1 border-b border-white">
+            <span class="font-bold text-md">
+                          <a  href="/health-professionals" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health professionals</a>
+                        </span>
+
+                          <ul>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/hpos" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health Professionals Online Services</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/aged-care-provider-portal" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Aged Care Provider Portal</a>
+                  </li>
+                                  <li  class="mt-8 w-11/12">
+                    <a  href="/medicare-benefits-for-health-professionals" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Medicare benefits for health professionals</a>
+                  </li>
+                              </ul>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+
+    <div class="mb-12 pb-12 border-b border-white md:flex md:items-center">
+        <div class="flex-1 md:border-transparent md:mb-0">
+      <nav aria-label="Utility links">
+        <ul class="md:flex md:flex-wrap">
+                      <li  class="mb-12 whitespace-no-wrap md:my-4 md:mr-10">
+              <a  href="/your-right-to-privacy" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Privacy</a>
+            </li>
+                      <li  class="mb-12 whitespace-no-wrap md:my-4 md:mr-10">
+              <a  href="/site-notices" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Site notices</a>
+            </li>
+                      <li  class="mb-12 whitespace-no-wrap md:my-4 md:mr-10">
+              <a  href="/accessibility" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Accessibility</a>
+            </li>
+                      <li  class="mb-12 whitespace-no-wrap md:my-4 md:mr-10">
+              <a  href="/access-to-information" class="border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Access to information</a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+
+        <div class="md:flex lg:w-2/5">
+      <div class="mb-6 md:mb-0 md:mr-6 lg:mr-0 lg:w-1/2">
+        <div class="text-md font-medium mb-2">Languages</div>
+        <a href="/information-your-language" class="lit-footer-languages-link" aria-label="Languages">
+          <span class="a11y">Languages</span>
+        </a>
+      </div>
+
+      <div class=" lg:w-1/2">
+        <div class="text-md font-medium mb-2">Follow us</div>
+        <a href="/connect-with-us-social-media" class="lit-footer-social-link" aria-label="Follow us">
+          <span class="a11y">Follow us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <div class="pb-16 flex md:items-center flex-col md:flex-row md:flex-row-reverse md:justify-between">
+        <p class="mb-12 md:mb-0 md:align-right md:text-right md:w-1/2">Services Australia acknowledges the Traditional Custodians of the lands we live on. We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations.</p>
+
+        <div class="hidden md:flex-col md:flex-grow"></div>
+
+        <div>
+            <div class="text-center md:text-left">
+        <img width="310px" height="100%" alt="Australian Government" class="inline-block" src="/themes/custom/dhs/images/logo-co-branded-stacked-white.svg" />
+
+      </div>
+
+            <div class="font-thin text-sm text-center mt-6 md:text-right">ABN - 90&zwj;&nbsp;&zwj;794&zwj;&nbsp;&zwj;605&zwj;&nbsp;&zwj;008</div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  
+</footer>
+
+
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/25566","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"context":"1"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"lit_analytics":{"customDimensions":{"1":"Executive Communication","2":"Centrelink, Medicare, Child Support","3":"25566","4":"518254","6":"156","7":"Generic-page","8":"2.012","9":"20200612","10":"20220308","14":"(not set)","15":"(not set)","16":"1","17":"false","18":"1-22-54677-36001-25571-25566"},"customMetrics":[],"debug":false,"messages":[],"propertyId":"UA-24200153-1","siteName":"Services Australia","page":"\/freedom-information-disclosure-log","anonymizeIp":true,"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|rtf|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"google_optimize":{"ids":["GTM-TNHBWNR"]},"breakpoints":{"xs":"320","sm":"480","md":"840","lg":"1152","xl":"1366"},"lit":{"node":{"id":25566,"bundle":"dhs_page","title":"Freedom of Information Disclosure Log"},"tableOfContents":{"enabled":true},"pageTitle":"Freedom of Information Disclosure Log - Services Australia"},"ajaxTrustedUrl":{"\/search":true},"nid":"25566","user":{"uid":0,"permissionsHash":"fcef7e89fad295f0d8ef79d7154c40ef75fa34f5948afb637aebb9665192a3e6"}}</script>
+<script src="/sites/default/files/js/js_0REm7Plc5yF36gZtS0Id01BRpfMSlNSZSamK7BeGIfw.js"></script>
+<script src="//f1-oc.readspeaker.com/script/5525/webReader/webReader.js?pids=wr"></script>
+
+
+        <script>
+      /**
+       * This is a modified version of the anti-flicker snippet for Google
+       * Optimize.
+       * @see https://support.google.com/optimize/answer/7100284
+       */
+
+      // Check if we have Optimize enabled.
+      var hasOptimize = drupalSettings && drupalSettings.google_optimize && drupalSettings.google_optimize.ids;
+      if (hasOptimize) {
+        // We need to pass container config as an object keyed by the container
+        // ID.
+        var containerIdConfig = {};
+        containerIdConfig[drupalSettings.google_optimize.ids[0]] = true;
+
+        (function(a,els,y,n,c,h,i,d,e) {
+            els = document.querySelectorAll(els);
+            els.forEach(function(el) { el.classList.add(y); });
+            h.start=1*new Date;
+            h.end=i=function(){els.forEach(function(el) { el.classList.remove(y); })};
+            (a[n]=a[n]||[]).hide=h;
+            setTimeout(function(){i();h.end=null},c);
+            h.timeout=c;
+          })(window,'.dhs-optimize-noflicker','dhs-optimize-noflicker','dataLayer',4000,containerIdConfig);
+      }
+      else {
+        // Fallback, if Optimize is disabled. Immediately removes the
+        // .dhs-optimize-noflicker class.
+        document.querySelectorAll('.dhs-optimize-noflicker').forEach(function (el) {
+          el.classList.remove('dhs-optimize-noflicker');
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+    <!--
+    window.rsConf = {
+      ui: {
+        disableDetachment: true,
+        tools: { translation: false },
+        mobileVertPos: 'bottom=90',
+      },
+    };
+    //-->
+    </script>
+
+        <script> </script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"NRJS-56afeaf32ee93d607b1","applicationID":"688337168","transactionName":"NlBWZUtQXRBUAkNZWw8adVJNWFwNGiVFRUQAWWhfVlVWP3YOWURGDllYVEttfQxRBGFZURZ2W19NQ1wPWQRFHQoXXFFG","queueTime":0,"applicationTime":709,"atts":"GhdVEwNKTh4=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
