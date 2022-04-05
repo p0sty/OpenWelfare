@@ -1,0 +1,512 @@
+
+Online Claim for Mobility Allowance 008-05010030
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Workflows for Mobility Allowance (MOB)
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Required Order                    | Workflow and Function             |
++-----------------------------------+-----------------------------------+
+| Beforehand (if required)          | My profile updated during claim   |
+|                                   |                                   |
+|                                   | When a customer has updated My    |
+|                                   | profile details during a claim    |
+|                                   | activity, a CDC activity may      |
+|                                   | require action prior to           |
+|                                   | commencing workflows.             |
++-----------------------------------+-----------------------------------+
+| 1st                               | Data load                         |
+|                                   |                                   |
+|                                   | This workflow automatically takes |
+|                                   | information from the customer’s   |
+|                                   | record and from their online      |
+|                                   | claim and loads it into a new     |
+|                                   | claim activity on the customer’s  |
+|                                   | record.                           |
+|                                   |                                   |
+|                                   | Data load should only ever be run |
+|                                   | once, unless regenerating the     |
+|                                   | claim.                            |
+|                                   |                                   |
+|                                   | Launch Data Load workflow:        |
+|                                   |                                   |
+|                                   | -   Manual Action Required        |
+|                                   |     messages may appear when      |
+|                                   |     manual updates may be         |
+|                                   |     required. These messages      |
+|                                   |     cannot be viewed again once   |
+|                                   |     data load has completed, so   |
+|                                   |     they must be addressed by the |
+|                                   |     Service Officer completing    |
+|                                   |     the data load. Follow up with |
+|                                   |     the customer if necessary and |
+|                                   |     update the record as required |
+|                                   | -   select Finish to complete the |
+|                                   |     data load                     |
+|                                   | -   the Data load workflow status |
+|                                   |     may be Completed with errors. |
+|                                   |     If the status is Complete     |
+|                                   |     with errors, this must be     |
+|                                   |     manually changed to Completed |
+|                                   |     before running the Finalise   |
+|                                   |     claim workflow                |
+|                                   | -   select the grey box to the    |
+|                                   |     left of the Data Load         |
+|                                   |     workflow to display errors    |
+|                                   |     and warnings                  |
+|                                   | -   continue processing other     |
+|                                   |     staff workflows, excluding    |
+|                                   |     Finalise Claim, before        |
+|                                   |     completing any manual updates |
+|                                   |     via Workspace                 |
++-----------------------------------+-----------------------------------+
+| 2nd                               | Identity confirmation             |
+|                                   |                                   |
+|                                   | Check the Identity Summary        |
+|                                   | screen, if a customer has an      |
+|                                   | existing Identity Confirmation    |
+|                                   | Indicator (ICI) of 'Confirmed',   |
+|                                   | code 'IC' on the legacy POI       |
+|                                   | screen select continue.           |
+|                                   |                                   |
+|                                   | If the ICI displays another       |
+|                                   | status, follow-up Identity        |
+|                                   | Confirmation with the customer.   |
++-----------------------------------+-----------------------------------+
+| 3rd                               | Verify Medical Condition          |
+|                                   |                                   |
+|                                   | This links to and populates the   |
+|                                   | MC screen. This information would |
+|                                   | be obtained from a Medical Report |
+|                                   | when provided. This workflow must |
+|                                   | be run prior to 'Verify Mobility  |
+|                                   | Circumstances'.                   |
++-----------------------------------+-----------------------------------+
+| 4th                               | Verify Mobility Circumstances     |
+|                                   |                                   |
+|                                   | This workflow is to record        |
+|                                   | whether or not the customer has   |
+|                                   | an inability to use public        |
+|                                   | transport and if the travel test  |
+|                                   | has been met.                     |
+|                                   |                                   |
+|                                   | This workflow cannot be completed |
+|                                   | until the Verify Medical          |
+|                                   | condition Workflow has been       |
+|                                   | completed.                        |
++-----------------------------------+-----------------------------------+
+| Any                               | Verify Employment and Training    |
+|                                   | Details                           |
+|                                   |                                   |
+|                                   | This workflow is to confirm the   |
+|                                   | customer’s employment and         |
+|                                   | training. Details provided can be |
+|                                   | removed or a new entry added if   |
+|                                   | required.                         |
++-----------------------------------+-----------------------------------+
+| Any                               | MOB advance payment               |
+|                                   |                                   |
+|                                   | This workflow will only populate  |
+|                                   | if the customer indicates within  |
+|                                   | the online claim they wish to     |
+|                                   | receive a MOB advance payment,    |
+|                                   | and they do not intend on leaving |
+|                                   | Australia within the next 6       |
+|                                   | months.                           |
+|                                   |                                   |
+|                                   | Processing staff are to indicate  |
+|                                   | 'Yes' to 'Has this task been      |
+|                                   | completed?' and select 'Finish'   |
+|                                   |                                   |
+|                                   | This creates a Manual Follow-up   |
+|                                   | (MFU) activity to remind the      |
+|                                   | processing officer to action the  |
+|                                   | request for an advance payment    |
+|                                   | upon completion of a successful   |
+|                                   | claim.                            |
+|                                   |                                   |
+|                                   | Staff action the advance payment  |
+|                                   | via the Advance Payment Script    |
+|                                   | upon claim finalisation.          |
++-----------------------------------+-----------------------------------+
+| Last                              | Finalise claim                    |
+|                                   |                                   |
+|                                   | Launches the Assessment Results   |
+|                                   | (AR) screen for claim             |
+|                                   | finalisation. This should be run  |
+|                                   | once all other claim updates have |
+|                                   | been completed.                   |
+|                                   |                                   |
+|                                   | Note: ensure all relevant         |
+|                                   | information included in the       |
+|                                   | online claim has been coded       |
+|                                   | accordingly on the customer’s     |
+|                                   | record. Some information will     |
+|                                   | require manual action to          |
+|                                   | complete, for example,            |
+|                                   | information relating to income    |
+|                                   | from employment.                  |
+|                                   |                                   |
+|                                   | Access screens and workflows not  |
+|                                   | available within the Social       |
+|                                   | Application (claim workflow) via  |
+|                                   | Workspace. A claim can be         |
+|                                   | selected from the Activity List   |
+|                                   | (AL) screen to make additional    |
+|                                   | updates within the claim          |
+|                                   | activity.                         |
+|                                   |                                   |
+|                                   | The status of this workflow must  |
+|                                   | be Completed for the Social       |
+|                                   | Application (claim workflow)      |
+|                                   | status to be Approved.            |
++-----------------------------------+-----------------------------------+
+
+Staff Workflows
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Assess action required on other   |
+|                                   | workflows                         |
+|                                   |                                   |
+|                                   | Assess the workflows shown under  |
+|                                   | Staff Workflows to determine if   |
+|                                   | action is required.               |
+|                                   |                                   |
+|                                   | If the information recorded is    |
+|                                   | current and accurate and does not |
+|                                   | require alteration, select        |
+|                                   | Progress.                         |
+|                                   |                                   |
+|                                   | To exit a workflow without        |
+|                                   | finalising it, select Cancel.     |
+|                                   |                                   |
+|                                   | Once all required updates have    |
+|                                   | been made within a workflow,      |
+|                                   | select Finish.                    |
+|                                   |                                   |
+|                                   | Additional workflows can be added |
+|                                   | when required, select:            |
+|                                   |                                   |
+|                                   | -   Add under Staff Workflows     |
+|                                   | -   the down arrow at the bottom  |
+|                                   |     of the workflow column        |
+|                                   | -   the appropriate workflow from |
+|                                   |     the list                      |
+|                                   | -   the down arrow under the      |
+|                                   |     Status column and select      |
+|                                   |     Required                      |
+|                                   | -   Save                          |
++-----------------------------------+-----------------------------------+
+| 2                                 | Manually changing the status of   |
+|                                   | workflows                         |
+|                                   |                                   |
+|                                   | The status of the workflow can be |
+|                                   | changed by selecting the Change   |
+|                                   | Status toggle icon in line with   |
+|                                   | the relevant workflow to change   |
+|                                   | the status from:                  |
+|                                   |                                   |
+|                                   | -   Required to Not Required      |
+|                                   | -   Completed to Required, or     |
+|                                   | -   Completed with errors to      |
+|                                   |     Completed                     |
+|                                   |                                   |
+|                                   | Circumstances which may warrant a |
+|                                   | change of status from Completed   |
+|                                   | to Required:                      |
+|                                   |                                   |
+|                                   | during a claim assessment, before |
+|                                   | running the Finalise Claim        |
+|                                   | workflow, details already coded   |
+|                                   | in any workflow require           |
+|                                   | correction                        |
+|                                   |                                   |
+|                                   | when running Finalise Claim, an   |
+|                                   | error is identified and the       |
+|                                   | specific workflow is not          |
+|                                   | automatically re-opened           |
+|                                   |                                   |
+|                                   | QOL decision outcome of not       |
+|                                   | passed and workflow(s) must be    |
+|                                   | re-run to code or correct         |
+|                                   | required information, as          |
+|                                   | identified in the QOL decision:   |
+|                                   |                                   |
+|                                   | -   via Workspace, go to Activity |
+|                                   |     List (AL) screen, select the  |
+|                                   |     claim activity and select U   |
+|                                   |     (undo submitted activity not  |
+|                                   |     passed in QOL) option and     |
+|                                   |     Continue                      |
+|                                   | -   key the Social Application    |
+|                                   |     (claim workflow)              |
+|                                   | -   identify the workflow(s)      |
+|                                   |     which must be re-run and      |
+|                                   |     select the Change Status      |
+|                                   |     toggle icon to update         |
+|                                   |     workflow status to Required   |
+|                                   | -   select/run the relevant       |
+|                                   |     workflow(s)                   |
+|                                   | -   once all required workflows   |
+|                                   |     have been completed, select   |
+|                                   |     the Change Status toggle icon |
+|                                   |     in line with the Finalise     |
+|                                   |     Claim workflow                |
+|                                   |                                   |
+|                                   | select/run the Finalise Claim     |
+|                                   | workflow to finalise the claim    |
+|                                   | and complete the workflow         |
++-----------------------------------+-----------------------------------+
+| 3                                 | Manual updates resulting from     |
+|                                   | data load                         |
+|                                   |                                   |
+|                                   | Some information from the         |
+|                                   | customer’s online claim may not   |
+|                                   | be automatically uploaded into    |
+|                                   | the new claim activity when the   |
+|                                   | Data Load workflow is run if:     |
+|                                   |                                   |
+|                                   | -   it is deemed complex and      |
+|                                   |     needs Service Officer         |
+|                                   |     discretion/assessment, or     |
+|                                   | -   the data provided by the      |
+|                                   |     customer conflicts with       |
+|                                   |     existing data on their record |
+|                                   |                                   |
+|                                   | Any updates not completed in the  |
+|                                   | staff workflows can be manually   |
+|                                   | actioned:                         |
+|                                   |                                   |
+|                                   | -   launch Workspace              |
+|                                   | -   select the new claim activity |
+|                                   |     from the Activity List (AL)   |
+|                                   |     screen                        |
+|                                   | -   make any required updates,    |
+|                                   |     for example, code a manual    |
+|                                   |     rejection reason on the       |
+|                                   |     Benefit Action (BA) screen    |
+|                                   | -   return to the online claim    |
+|                                   |     using the Search Online       |
+|                                   |     Claims functions under the    |
+|                                   |     Claims Online heading in      |
+|                                   |     Workspace                     |
++-----------------------------------+-----------------------------------+
+
+Finalisation and follow up
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Finalise Claim                    |
+|                                   |                                   |
+|                                   | Finalise Claim is run once all    |
+|                                   | the required actions are          |
+|                                   | completed and all claim           |
+|                                   | information updated.              |
+|                                   |                                   |
+|                                   | The workflow presents any errors  |
+|                                   | or warnings on the Assessment     |
+|                                   | Warning and Error (AWE) screen.   |
+|                                   | These may have to be actioned     |
+|                                   | before the claim can be           |
+|                                   | finalised.                        |
+|                                   |                                   |
+|                                   | Once all errors have been         |
+|                                   | rectified, the workflow will      |
+|                                   | present the Assessment Results    |
+|                                   | (AR) screen where the new claim   |
+|                                   | can be finalised.                 |
+|                                   |                                   |
+|                                   | After selecting Finalise and      |
+|                                   | Continue, select Finish in the    |
+|                                   | top right corner to complete the  |
+|                                   | workflow and return to the online |
+|                                   | claim.                            |
+|                                   |                                   |
+|                                   | The Finalise Claim workflow will  |
+|                                   | now show as Completed in the      |
+|                                   | Staff Workflows.                  |
+|                                   |                                   |
+|                                   | The Social Application (claim     |
+|                                   | workflow) status will             |
+|                                   | automatically update to Approved, |
+|                                   | but there may be a delay of up to |
+|                                   | 30 minutes before this update     |
+|                                   | occurs.                           |
+|                                   |                                   |
+|                                   | The Social Application status can |
+|                                   | also be manually updated to       |
+|                                   | Approved, once the Finalise Claim |
+|                                   | workflow is completed, select:    |
+|                                   |                                   |
+|                                   | -   User Status tab > Set New     |
+|                                   |     Status > grey box next to     |
+|                                   |     Approved > Save               |
+|                                   |                                   |
+|                                   | Processing staff will be required |
+|                                   | to manually complete a            |
+|                                   | Finalisation Document.            |
+|                                   |                                   |
+|                                   | Has the customer’s claim been     |
+|                                   | rejected?                         |
+|                                   |                                   |
+|                                   | Yes, advise the customer of the   |
+|                                   | decision and their review and     |
+|                                   | appeal rights via auto claim      |
+|                                   | outcome correspondence. If the    |
+|                                   | customer contacts after the claim |
+|                                   | has been rejected:                |
+|                                   |                                   |
+|                                   | -   FRC or FSD, go to Step 2      |
+|                                   | -   for another reason, the claim |
+|                                   |     remains rejected. If the      |
+|                                   |     customer has requested an     |
+|                                   |     explanation or applied for a  |
+|                                   |     formal review of the decision |
+|                                   |     to reject their claim, see    |
+|                                   |     Reviews and appeals.          |
+|                                   |     Procedure ends here           |
+|                                   |                                   |
+|                                   | No, procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 2                                 | Rejected FRC or FSD               |
+|                                   |                                   |
+|                                   | This rejection reason does not    |
+|                                   | apply to Identity documents       |
+|                                   | requested when a customer’s claim |
+|                                   | has been granted and subsequently |
+|                                   | cancelled following Commencement  |
+|                                   | of Identity.                      |
+|                                   |                                   |
+|                                   | Has the customer provided the     |
+|                                   | requested documentation within 13 |
+|                                   | weeks of being notified of the    |
+|                                   | rejection decision?               |
+|                                   |                                   |
+|                                   | Yes:                              |
+|                                   |                                   |
+|                                   | -   scan documentation to record  |
+|                                   | -   Processing staff actioning    |
+|                                   |     the reassessment, go to Step  |
+|                                   |     4                             |
+|                                   | -   otherwise, procedure ends     |
+|                                   |     here                          |
+|                                   |                                   |
+|                                   | No, claim remains rejected. If    |
+|                                   | the customer wants an explanation |
+|                                   | or formal review, see Reviews and |
+|                                   | appeals                           |
++-----------------------------------+-----------------------------------+
+| 3                                 | Document supplied within 13 weeks |
+|                                   | after being notified of the claim |
+|                                   | rejection decision                |
+|                                   |                                   |
+|                                   | Consider the document to decide   |
+|                                   | if the original claim should be   |
+|                                   | re-opened.                        |
+|                                   |                                   |
+|                                   | If the decision is made to:       |
+|                                   |                                   |
+|                                   | -   not re-open the original      |
+|                                   |     claim, advise the customer    |
+|                                   |     their review and appeal       |
+|                                   |     rights                        |
+|                                   | -   re-open the original claim.   |
+|                                   |     The Social Application (claim |
+|                                   |     workflow) status of the       |
+|                                   |     subsequent online claim must  |
+|                                   |     be set to Not required by     |
+|                                   |     updating the User Status and  |
+|                                   |     selecting Save. The claim can |
+|                                   |     be granted from the original  |
+|                                   |     date of contact as long as    |
+|                                   |     the customer had continuing   |
+|                                   |     entitlement                   |
++-----------------------------------+-----------------------------------+
+| 4                                 | Re-index online claim             |
+|                                   |                                   |
+|                                   | The claim determination (granted  |
+|                                   | or rejected) must be checked in   |
+|                                   | Workspace as the Social           |
+|                                   | Application (claim workflow)      |
+|                                   | status will only display as       |
+|                                   | Approved.                         |
+|                                   |                                   |
+|                                   | Only claims with a determination  |
+|                                   | of Rejected can be re-indexed     |
+|                                   | through the Social Application.   |
+|                                   |                                   |
+|                                   | Previous online claim details can |
+|                                   | be used.                          |
+|                                   |                                   |
+|                                   | To re-index a rejected claim,     |
+|                                   | select the:                       |
+|                                   |                                   |
+|                                   | -   Re-index Claim button at the  |
+|                                   |     top of the Social             |
+|                                   |     Application, or               |
+|                                   | -   Scheduled Actions tab >       |
+|                                   |     Schedule New Actions > grey   |
+|                                   |     box next to Re-index Claim >  |
+|                                   |     Schedule > Save               |
+|                                   |                                   |
+|                                   | This will advance the online      |
+|                                   | claim status to In Process        |
+|                                   |                                   |
+|                                   | If a red status symbol appears    |
+|                                   | and the status does not show as   |
+|                                   | In Process, this indicates the    |
+|                                   | claim activity could not be       |
+|                                   | regenerated. If this occurs,      |
+|                                   | launch Workspace to investigate   |
+|                                   | the record and ensure there are   |
+|                                   | no other activities preventing    |
+|                                   | the claim activity from being     |
+|                                   | re-indexed.                       |
+|                                   |                                   |
+|                                   | All previously completed Staff    |
+|                                   | workflows will already have been  |
+|                                   | applied to the system, but the    |
+|                                   | status of the following workflows |
+|                                   | will be set to Required, for      |
+|                                   | example Finalise claim.           |
++-----------------------------------+-----------------------------------+
+
+Forms
+
+Claim for Mobility Allowance (MA001)
+
+Services Australia website
+
+Payment and Service Finder
+
+Centrelink online account
+
+Payments you can claim online
+
+Digital Support Products
+
+Online guides and videos show how customers use self service. Customers
+can view these on the Services Australia website or YouTube Channel
+(https://www.youtube.com/user/HumanServicesGovAU).
+
+Staff can view them at  Centrelink digital support products. Staff can
+also view  training simulations,  staff task cards  and  quick clips.
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

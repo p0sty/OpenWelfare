@@ -1,0 +1,310 @@
+
+Recording private maintenance income on Centrelink systems 277-51030010
+
+-   Background
+-   Process Summary
+-   Process
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+Helpdesk
+
+Level 2 Policy Helpdesk
+
+Examples
+
+Voluntary child support coded on or after 1 January 2011 is included in
+the MIT from the date the voluntary child support started. It is not
+applied from the start date of the DMA period, unless the child support
+and the Maintenance Action Test (MAT) have the same date of effect.
+
+Table 1: this table describes how voluntary child support collected
+during a DMA period is assessed in the MIT and how to code discharged
+child support arrears.
+
++-----------------------------------+-----------------------------------+
+| Item                              | Example                           |
++-----------------------------------+-----------------------------------+
+| 1                                 | Voluntary child support recorded  |
+|                                   | (post 1 January 2011)             |
+|                                   |                                   |
+|                                   | A customer commences a DMA period |
+|                                   | on the 2 December 2020 and        |
+|                                   | advises Centrelink on 10 January  |
+|                                   | 2021 that they have been          |
+|                                   | receiving voluntary child support |
+|                                   | payments of $250.00 per week      |
+|                                   | since 24 December 2020. The       |
+|                                   | voluntary child support is coded  |
+|                                   | with a date of event and date of  |
+|                                   | effect of 24 December 2020 on 10  |
+|                                   | January 2021.                     |
+|                                   |                                   |
+|                                   | -   Event Date: 24/12/2020        |
+|                                   | -   Start Date: 24/12/2020        |
+|                                   | -   Amt $.cc: 250                 |
+|                                   | -   Type: VOL                     |
+|                                   | -   Frq: 1WE                      |
+|                                   | -   Select [Enter]                |
++-----------------------------------+-----------------------------------+
+| 2                                 | Coding discharged child support   |
+|                                   | arrears                           |
+|                                   |                                   |
+|                                   | Customer changed from Child       |
+|                                   | Support collect to private        |
+|                                   | collect in August 2020 and        |
+|                                   | discharged child support arrears  |
+|                                   | of $2000 on 1 September 2020.     |
+|                                   | Current child support assessment  |
+|                                   | amount is $5000 per annum. The    |
+|                                   | customer does not have an         |
+|                                   | exemption from the MAT.           |
+|                                   |                                   |
+|                                   | Child support assessment: $5000   |
+|                                   | per annum                         |
+|                                   |                                   |
+|                                   | Work out the daily rate of child  |
+|                                   | support assessment: $5000/365 =   |
+|                                   | $13.69 per day                    |
+|                                   |                                   |
+|                                   | Discharged arrears $2000 + daily  |
+|                                   | rate of child support assessment  |
+|                                   | $13.69 = $2013.69                 |
+|                                   |                                   |
+|                                   | Code the Actual Maintenance       |
+|                                   | Collected - Group (MNAG) screen   |
+|                                   | fields as follows:                |
+|                                   |                                   |
+|                                   | -   Event Date: 01/09/2020        |
+|                                   | -   Start Date: 01/09/2020        |
+|                                   | -   Amt $.cc: 2013.69             |
+|                                   | -   Type: ACT                     |
+|                                   | -   Frq: DLY                      |
+|                                   | -   Select [Enter]                |
+|                                   |     On a new line:                |
+|                                   | -   Event Date: 02/09/2020        |
+|                                   | -   Start Date: 02/09/2020        |
+|                                   | -   Amt $.cc: 0                   |
+|                                   | -   Type: ACT                     |
+|                                   | -   Frq: leave this field blank   |
++-----------------------------------+-----------------------------------+
+| 3                                 | Coding discharged child support   |
+|                                   | arrears when the case has ended   |
+|                                   |                                   |
+|                                   | Customer had a Child Support      |
+|                                   | collect case and was owed $1500   |
+|                                   | arrears by the payer. Customer    |
+|                                   | then ended the case on 20         |
+|                                   | February 2020. The arrears were   |
+|                                   | not discharged until 25 February  |
+|                                   | 2020.                             |
+|                                   |                                   |
+|                                   | In scenarios where the case has   |
+|                                   | ended prior to discharging        |
+|                                   | arrears, the DOV used must be     |
+|                                   | prior to the case end date.       |
+|                                   |                                   |
+|                                   | Child support assessment: $6800   |
+|                                   | per annum                         |
+|                                   |                                   |
+|                                   | Work out the daily rate of child  |
+|                                   | support assessment: $6800/365 =   |
+|                                   | $18.63 per day                    |
+|                                   |                                   |
+|                                   | Discharged arrears $1500 + daily  |
+|                                   | rate of child support assessment  |
+|                                   | $18.63 = $1518.63                 |
+|                                   |                                   |
+|                                   | Code the Actual Maintenance       |
+|                                   | Collected - Group (MNAG) screen   |
+|                                   | fields as follows:                |
+|                                   |                                   |
+|                                   | -   Event Date: 18/02/2020        |
+|                                   | -   Start Date: 18/02/2020        |
+|                                   | -   Amt $.cc: 1518.63             |
+|                                   | -   Type: ACT                     |
+|                                   | -   Frq: DLY                      |
+|                                   | -   Select [Enter]                |
+|                                   |     On a new line:                |
+|                                   | -   Event Date: 19/02/2020        |
+|                                   | -   Start Date: 19/02/2020        |
+|                                   | -   Amt $.cc: 0                   |
+|                                   | -   Type: ACT                     |
+|                                   | -   Frq: leave this field blank   |
+|                                   |                                   |
+|                                   | The MNOI screen must also be      |
+|                                   | coded to ensure the discharged    |
+|                                   | amount is included in the         |
+|                                   | customers FTB reconciliation      |
+|                                   | calculation. See Amending         |
+|                                   | maintenance income details on the |
+|                                   | Override Maintenance Income       |
+|                                   | (MNOI) screen.                    |
++-----------------------------------+-----------------------------------+
+| 4                                 | Coding voluntary maintenance      |
+|                                   | where the customer has a partial  |
+|                                   | exemption and no child support    |
+|                                   | case                              |
+|                                   |                                   |
+|                                   | A customer is in a DMA period and |
+|                                   | contacts on 20/03/21 to book an   |
+|                                   | appointment with a Social Worker  |
+|                                   | to discuss an exemption. MXR is   |
+|                                   | coded from 20/03/21. Customer     |
+|                                   | attends the appointment with the  |
+|                                   | Social Worker on 01/04/21. During |
+|                                   | the appointment, the Social       |
+|                                   | Worker determines that the        |
+|                                   | customer could have been granted  |
+|                                   | a full exemption due to violence, |
+|                                   | however the customer disclosed to |
+|                                   | the Social Worker that they are   |
+|                                   | collecting $75.00 per fortnight   |
+|                                   | from the other parent. The Social |
+|                                   | Worker therefore grants a partial |
+|                                   | exemption. The MAT code is        |
+|                                   | updated to PMV from 22/03/2021 as |
+|                                   | this is the date the customer     |
+|                                   | advised the voluntary maintenance |
+|                                   | payments commenced.               |
+|                                   |                                   |
+|                                   | -   Event Date: 22/03/2021        |
+|                                   | -   Start Date: 22/03/2021        |
+|                                   | -   Amt $.cc: 75                  |
+|                                   | -   Type: VOL                     |
+|                                   | -   Frq: 2WE                      |
+|                                   | -   Select [Enter]                |
++-----------------------------------+-----------------------------------+
+| 5                                 | Coding voluntary maintenance      |
+|                                   | where the customer has a partial  |
+|                                   | exemption and a private collect   |
+|                                   | child support case                |
+|                                   |                                   |
+|                                   | A customer has a private collect  |
+|                                   | child support case and recently   |
+|                                   | had an increase in their child    |
+|                                   | support assessment from $4000.00  |
+|                                   | per annum to $12,800.00 per       |
+|                                   | annum. Customer contacts          |
+|                                   | Centrelink and requests an        |
+|                                   | appointment with a Social Worker  |
+|                                   | to discuss an exemption from the  |
+|                                   | MAT. During the appointment, the  |
+|                                   | customer advises the Social       |
+|                                   | Worker that they do not want to   |
+|                                   | end their child support case as   |
+|                                   | the payer is paying some, but not |
+|                                   | all, of the child support         |
+|                                   | assessment. The Social Worker     |
+|                                   | determines that there are grounds |
+|                                   | for granting a partial exemption  |
+|                                   | from the MAT due to violence. The |
+|                                   | customer advises they are able to |
+|                                   | continue collecting $4000.00 per  |
+|                                   | annum. The Social Worker grants a |
+|                                   | partial exemption (PMV) from      |
+|                                   | 17/06/2021, which was the date    |
+|                                   | the assessment increased.         |
+|                                   |                                   |
+|                                   | -   Event Date: 17/06/2021        |
+|                                   | -   Start Date: 17/06/21          |
+|                                   | -   Amt $.cc: 4000                |
+|                                   | -   Type: ACT                     |
+|                                   | -   Frq: ANN                      |
+|                                   | -   Select [Enter]                |
++-----------------------------------+-----------------------------------+
+
+Text to include in the Free Text (Q888) letter to customer
+
+Table 2: this table provides text for the (Q888) Free Text letter used
+where a customer is privately collecting an overseas court ordered
+amount of maintenance. The letter informs the customer that if the
+exchange rate used by the agency differs by more than 5%, from the
+current commercial rate, the rate may be reviewed upon request of the
+customer. It also advises that where the amount of maintenance collected
+changes, they must notify the agency.
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Free Text (Q888) letter text      |
+|                                   |                                   |
+|                                   | 'Exchange rate' letter            |
+|                                   |                                   |
+|                                   | Dear {CUSTOMER TITLE SURNAME}     |
+|                                   |                                   |
+|                                   | We are writing to you about the   |
+|                                   | maintenance income that you are   |
+|                                   | privately collecting from         |
+|                                   | overseas. You have advised us     |
+|                                   | that you are receiving {amount}   |
+|                                   | and {type} each {frequency}. We   |
+|                                   | use a commercial exchange rate    |
+|                                   | when we convert this income to    |
+|                                   | Australian dollars for            |
+|                                   | calculating your Family Tax       |
+|                                   | Benefit Part A.                   |
+|                                   |                                   |
+|                                   | On {date} the exchange rate was   |
+|                                   | {rate}. This is the exchange rate |
+|                                   | we used to convert your           |
+|                                   | non-Australian income into        |
+|                                   | Australian dollars. You can ask   |
+|                                   | us for a reassessment of your     |
+|                                   | Family Tax Benefit Part A if      |
+|                                   | there is more than a 5 per cent   |
+|                                   | difference between the exchange   |
+|                                   | rate we used, and the actual      |
+|                                   | commercial exchange rate          |
+|                                   | applicable at the time you        |
+|                                   | received the income.              |
+|                                   |                                   |
+|                                   | To reassess your payment, we need |
+|                                   | you to show us evidence that the  |
+|                                   | commercial exchange rate at the   |
+|                                   | time you received the income      |
+|                                   | differs by more than 5 per cent   |
+|                                   | from the exchange rate we used.   |
+|                                   |                                   |
+|                                   | You can provide this evidence     |
+|                                   | with your request for a           |
+|                                   | reassessment by going to          |
+|                                   | my.gov.au and signing in to       |
+|                                   | access your Centrelink online     |
+|                                   | account. You can upload your      |
+|                                   | evidence (up to 5MB) by selecting |
+|                                   | 'Documents and Statements' from   |
+|                                   | the menu. If you do not have a    |
+|                                   | myGov account, you can create one |
+|                                   | and link it to your Centrelink    |
+|                                   | online account.                   |
+|                                   |                                   |
+|                                   | You can also go to                |
+|                                   | servicesaustralia.gov.au/contact  |
+|                                   | for more ways to contact us.      |
+|                                   |                                   |
+|                                   | You must tell us as soon as       |
+|                                   | possible if the amount of         |
+|                                   | maintenance you are collecting    |
+|                                   | changes or your income increases. |
+|                                   | If you do not tell us you may     |
+|                                   | incur a debt which will have to   |
+|                                   | be repaid.                        |
+|                                   |                                   |
+|                                   | This is an information notice     |
+|                                   | given under the family assistance |
+|                                   | law.                              |
+|                                   |                                   |
+|                                   | Yours sincerely                   |
+|                                   |                                   |
+|                                   | {OIC.NAME}                        |
+|                                   |                                   |
+|                                   | {OIC.TITLE}                       |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

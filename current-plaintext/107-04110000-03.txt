@@ -1,0 +1,571 @@
+
+Manual Follow-ups (MFU) for Family Assistance reconciliation recovery 107-04110000
+
+-   Background
+-   Process
+-   References
+
+[Expand/Collapse all sections]Expand all
+
+On this page:
+
+Manual Follow-ups (MFU) for family assistance reconciliation recovery
+
+Additional MFUs for family assistance reconciliation recovery
+
+Manual Follow-ups (MFU) for family assistance reconciliation recovery
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | DMNFMU39 and DMNMFU48 + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is there a DMN/DBT MFU that       |
+|                                   | reads:                            |
+|                                   |                                   |
+|                                   | 'Customer has an over recovery on |
+|                                   | debt nnnnnnnn. Consider           |
+|                                   | reapplying payments or refund     |
+|                                   | where appropriate' with a keyword |
+|                                   | of DMNMFU39 or                    |
+|                                   |                                   |
+|                                   | 'Customer has payments on Debt Id |
+|                                   | nnnnnnnn. Transfer payments to    |
+|                                   | Debt Id nnnnnnnn or refund where  |
+|                                   | appropriate' with a keyword of    |
+|                                   | DMNMFU48?                         |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Transfer the repayments + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Only the Debt Management Branch   |
+|                                   | (DMB) is able to add payments to  |
+|                                   | a debt. See Office Locator for    |
+|                                   | contact details for Debt          |
+|                                   | Recovery.                         |
+|                                   |                                   |
+|                                   | Adjust the re-reconciliation      |
+|                                   | debt, then any other outstanding  |
+|                                   | debts:                            |
+|                                   |                                   |
+|                                   | -   On the Repayment History      |
+|                                   |     (OPRH) screen, 'S'elect the   |
+|                                   |     payment to be adjusted.       |
+|                                   | -   Press [Enter]                 |
+|                                   |                                   |
+|                                   | The Adjust Repayment History      |
+|                                   | (OPAH) screen displays. Complete  |
+|                                   | the following fields:             |
+|                                   |                                   |
+|                                   | Correct Amt field - the amount    |
+|                                   | that should have been:            |
+|                                   |                                   |
+|                                   | -   paid to finalise the debt or  |
+|                                   | -   withheld                      |
+|                                   |                                   |
+|                                   | Reason field - free text Press    |
+|                                   | [Enter]                           |
+|                                   |                                   |
+|                                   | If a refund is required? see      |
+|                                   | Refunding debt repayments         |
+|                                   |                                   |
+|                                   | On the Assessment Finalisation    |
+|                                   | (OPAF) screen:                    |
+|                                   |                                   |
+|                                   | -   Key 'Y' in the Finished?      |
+|                                   |     field                         |
+|                                   | -   Press [Enter]                 |
+|                                   |                                   |
+|                                   | Check the General Information     |
+|                                   | (OPGI) screen. Ensure the balance |
+|                                   | is zero.                          |
+|                                   |                                   |
+|                                   | See Step 3 in Table 2             |
++-----------------------------------+-----------------------------------+
+| 3                                 | DMNMFU42 + Read more ...          |
+|                                   |                                   |
+|                                   | Is there is a DMN/DBT MFU that    |
+|                                   | reads: 'Waiver reason XXX         |
+|                                   | reversed on nnnnnnnn, check and   |
+|                                   | apply waiver to nnnnnnnn if       |
+|                                   | appropriate' with a keyword of    |
+|                                   | DMNMFU42?                         |
+|                                   |                                   |
+|                                   | Check all waiver screens. This    |
+|                                   | activity will only occur where:   |
+|                                   |                                   |
+|                                   | -   there is a recoverable debt   |
+|                                   |     following re-reconciliation   |
+|                                   |     and                           |
+|                                   | -   the original reconciliation   |
+|                                   |     debt has a status of          |
+|                                   |     Finalised Reconciliation      |
+|                                   |     (FRN) and                     |
+|                                   | -   the debt was not waived using |
+|                                   |     the reason $1,000 waiver (TWF |
+|                                   |     or TWC), or less than $50     |
+|                                   |     (LTF)                         |
+|                                   |                                   |
+|                                   | Reversal of waiver                |
+|                                   |                                   |
+|                                   | Reverse a waiver during the       |
+|                                   | process of re-reconciliation if   |
+|                                   | the debt has a reason of:         |
+|                                   |                                   |
+|                                   | -   FRC Family Assistance         |
+|                                   |     reconciliation                |
+|                                   | -   FRR Centrelink FA generated   |
+|                                   |     re-reconciliation, or         |
+|                                   | -   FRA Australian Tax Office     |
+|                                   |     (ATO) amended tax notice of   |
+|                                   |     assessment (TNA)              |
+|                                   |     re-reconciliation             |
+|                                   |                                   |
+|                                   | The original reconciliation       |
+|                                   | waived amount will:               |
+|                                   |                                   |
+|                                   | -   display on the Waiver (OPWA)  |
+|                                   |     screen                        |
+|                                   | -   have a reason code of IFR -   |
+|                                   |     Reversed and included in      |
+|                                   |     reconciliation                |
+|                                   |                                   |
+|                                   | Does the waiver reason on the     |
+|                                   | cancelled debt (excluding reasons |
+|                                   | TWC, TWF, LTF) apply to the new   |
+|                                   | re-reconciliation debt?           |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, 'C'ancel the MFU and      |
+|                                   |     record a DOC stating the debt |
+|                                   |     is not eligible for the       |
+|                                   |     waiver. Go to Step 5          |
++-----------------------------------+-----------------------------------+
+| 4                                 | Determine the appropriate amount  |
+|                                   | to waive + Read more ...          |
+|                                   |                                   |
+|                                   | This may be different to the      |
+|                                   | original amount waived.           |
+|                                   |                                   |
+|                                   | Waive any amount less than $50    |
+|                                   | under the small debt waiver       |
+|                                   | provisions. Use reason LTF.       |
+|                                   |                                   |
+|                                   | Apply the waiver:                 |
+|                                   |                                   |
+|                                   | Go to the Activity List (AL)      |
+|                                   | screen                            |
+|                                   |                                   |
+|                                   | 'S'elect the MFU activity         |
+|                                   |                                   |
+|                                   | Go to the Add Waiver (OPWAA)      |
+|                                   | screen. Complete the fields:      |
+|                                   |                                   |
+|                                   | -   Amount Waived                 |
+|                                   | -   Reason Waived                 |
+|                                   |                                   |
+|                                   | Press [Enter]                     |
+|                                   |                                   |
+|                                   | Go to the OPAF screen:            |
+|                                   |                                   |
+|                                   | -   Key 'Y' in the Finished?      |
+|                                   |     Field                         |
+|                                   | -   Press [Enter]                 |
+|                                   |                                   |
+|                                   | Note: complete adjustments prior  |
+|                                   | to waiver action where there were |
+|                                   | repayments on the original        |
+|                                   | reconciliation calculation. See   |
+|                                   | Adjusting and adding debt         |
+|                                   | repayments.                       |
+|                                   |                                   |
+|                                   | Advise the customer of the result |
+|                                   | in writing                        |
+|                                   |                                   |
+|                                   | In the Amount of Waiver field,    |
+|                                   | include the amount waived as a    |
+|                                   | result of the $1,000 waiver. Only |
+|                                   | the $1,000 waiver and small debt  |
+|                                   | waiver (LTF) can be included in   |
+|                                   | the Q418.                         |
+|                                   |                                   |
+|                                   | -   Make 2 genuine attempts to    |
+|                                   |     contact the customer          |
+|                                   | -   Where the result is           |
+|                                   |     different, discuss the        |
+|                                   |     outcome of the waiver         |
+|                                   | -   Explain the letter they will  |
+|                                   |     receive only provides details |
+|                                   |     of the $1,000 waiver.         |
+|                                   |                                   |
+|                                   | See Step 3 in Table 2             |
++-----------------------------------+-----------------------------------+
+| 5                                 | DMNMFU43 + Read more ...          |
+|                                   |                                   |
+|                                   | Identify eligible debts If there  |
+|                                   | is a DMN/DBT MFU with a keyword   |
+|                                   | of DMNMFU43 that reads:           |
+|                                   |                                   |
+|                                   | -   'Not full $1,000 waiver       |
+|                                   |     utilised'. Check if this debt |
+|                                   |     eligible with (Debt Id).      |
+|                                   |     Consider applying waiver' or  |
+|                                   | -   'Customer has not received    |
+|                                   |     the full benefit of the       |
+|                                   |     $1,000 waiver. Check if this  |
+|                                   |     debt is eligible'             |
+|                                   |                                   |
+|                                   | Go to the Debt List (OPDL)        |
+|                                   | screen. 'S'elect any debts raised |
+|                                   | within the 2000/01 financial year |
+|                                   | with the code:                    |
+|                                   |                                   |
+|                                   | FTB Family Tax Benefit, or        |
+|                                   |                                   |
+|                                   | CCF Child Care Benefit for        |
+|                                   | approved care                     |
+|                                   |                                   |
+|                                   | with a status of:                 |
+|                                   |                                   |
+|                                   | -   DET Determined                |
+|                                   | -   DWO Determined, written off   |
+|                                   | -   DMC Determined, Collection    |
+|                                   |     agent, or                     |
+|                                   | -   FRE Finalised, recovered      |
+|                                   |                                   |
+|                                   | The remaining waiver must not be  |
+|                                   | applied to:                       |
+|                                   |                                   |
+|                                   | -   ADV FTB Advance debts         |
+|                                   | -   DUP Duplicate payments        |
+|                                   | -   past period claims through    |
+|                                   |     ATO or Services Australia     |
+|                                   |     (where the customer did not   |
+|                                   |     receive any FTB via           |
+|                                   |     instalments in 2000-01)       |
+|                                   | -   circumstance changes during   |
+|                                   |     2000-01 where the debt was    |
+|                                   |     raised before reconciliation  |
+|                                   |     (unless picked up at          |
+|                                   |     reconciliation which will be  |
+|                                   |     included in waiver)           |
+|                                   | -   over anticipated FTB          |
+|                                   |     entitlements through reduced  |
+|                                   |     tax withholdings              |
+|                                   | -   CCB for registered care (CCI) |
+|                                   | -   CCB lump sum claims (or       |
+|                                   |     recalculations of the claim)  |
+|                                   | -   non-lodgement of an income    |
+|                                   |     tax return where it is        |
+|                                   |     required for FTB/CCB          |
+|                                   | -   reconciliation for 2000-01    |
+|                                   |                                   |
+|                                   | Is the debt type eligible for the |
+|                                   | $1,000 waiver? To confirm         |
+|                                   | eligibility staff must refer to   |
+|                                   | Family Tax Benefit (FTB) and      |
+|                                   | Child Care Benefit (CCB) debts    |
+|                                   | for the 2000-2001 income year     |
+|                                   |                                   |
+|                                   | -   Yes, remaining waiver amount  |
+|                                   |     exists. Apply to another      |
+|                                   |     overpayment. Go to Step 6     |
+|                                   | -   No, 'C'ancel the MFU. Record  |
+|                                   |     a DOC stating the debt is not |
+|                                   |     eligible for the waiver. See  |
+|                                   |     Step 1 in Table 2             |
++-----------------------------------+-----------------------------------+
+| 6                                 | Identify the residual waiver      |
+|                                   | amount that is available to       |
+|                                   | apply + Read more ...             |
+|                                   |                                   |
+|                                   | On the OPDL screen, 'S'elect the  |
+|                                   | reconciliation or                 |
+|                                   | re-reconciliation debt            |
+|                                   |                                   |
+|                                   | Go to the OPWA screen and         |
+|                                   | identify the reconciliation       |
+|                                   | waiver which will show with a     |
+|                                   | reason code of TWC or TWF         |
+|                                   |                                   |
+|                                   | Deduct that amount from $1,000 to |
+|                                   | calculate the residual amount     |
+|                                   |                                   |
+|                                   | Select the eligible debt from the |
+|                                   | OPDL screen                       |
+|                                   |                                   |
+|                                   | View the Total For This Debt      |
+|                                   | field. If the remaining waiver is |
+|                                   | applied to this amount and the    |
+|                                   | debt balance is below $50:        |
+|                                   |                                   |
+|                                   | -   waive this amount, less than  |
+|                                   |     fifty (LTF)                   |
+|                                   |                                   |
+|                                   | The customer may have a FTB and   |
+|                                   | CCB debt. Correctly apply the     |
+|                                   | residual waiver according to the  |
+|                                   | payment.                          |
+|                                   |                                   |
+|                                   | Check the status of the debt      |
+|                                   |                                   |
+|                                   | Contact the Debt Recovery team if |
+|                                   | the OPGI screen displays a debt   |
+|                                   | status of:                        |
+|                                   |                                   |
+|                                   | -   DMC - Determined Collection   |
+|                                   |     agent, or                     |
+|                                   | -   DWO - Determined written off? |
+|                                   |                                   |
+|                                   | Request a restart of recovery to  |
+|                                   | allow the waiver to be actioned.  |
+|                                   | Once actioned, go to Step 8.      |
+|                                   |                                   |
+|                                   | Check if the request for recovery |
+|                                   | has been actioned:                |
+|                                   |                                   |
+|                                   | -   'S'elect the debt from the    |
+|                                   |     OPDL screen, and              |
+|                                   | -   Key OPWO in the Nxt field     |
+|                                   |                                   |
+|                                   | If the recovery has been          |
+|                                   | restarted:                        |
+|                                   |                                   |
+|                                   | -   there will be an end date     |
+|                                   |     recorded                      |
+|                                   | -   the debt status should also   |
+|                                   |     have changed from DWO or DMC  |
+|                                   |     to DET                        |
+|                                   |                                   |
+|                                   | Does the eligible debt have a     |
+|                                   | status on the OPGI screen of      |
+|                                   | FRE - Finalised Recovered?        |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 7             |
+|                                   | -   No, go to Step 8              |
++-----------------------------------+-----------------------------------+
+| 7                                 | OPRH screen + Read more ...       |
+|                                   |                                   |
+|                                   | 'S'elect the eligible debt from   |
+|                                   | the OPDL screen and key 'OPRH' to |
+|                                   | view any repayments received.     |
+|                                   |                                   |
+|                                   | Have any repayments been received |
+|                                   | on the debt?                      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 8             |
+|                                   | -   No, go to Step 9              |
++-----------------------------------+-----------------------------------+
+| 8                                 | Calculate the new debt amount +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Calculate the new debt amount     |
+|                                   | less the:                         |
+|                                   |                                   |
+|                                   | -   remaining waiver amount       |
+|                                   | -   small debt waiver if          |
+|                                   |     applicable                    |
+|                                   |                                   |
+|                                   | Total any repayments received     |
+|                                   | against the eligible debt.        |
+|                                   |                                   |
+|                                   | Deduct the repayments received    |
+|                                   | from the new debt amount.         |
+|                                   |                                   |
+|                                   | Is the amount negative?           |
+|                                   |                                   |
+|                                   | -   Yes, adjust the OPRH screen   |
+|                                   |     by the amount that the        |
+|                                   |     overpayment would be          |
+|                                   |     over-recovered once the       |
+|                                   |     waiver is applied. See        |
+|                                   |     Adjusting and adding debt     |
+|                                   |     repayments. Go to Step 9.     |
+|                                   | -   No, go to Step 9              |
++-----------------------------------+-----------------------------------+
+| 9                                 | Apply the waiver + Read more ...  |
+|                                   |                                   |
+|                                   | 'S'elect the MFU activity from    |
+|                                   | the AL screen, and go to the      |
+|                                   | OPWAA screen.                     |
+|                                   |                                   |
+|                                   | Complete the following to apply   |
+|                                   | the remaining waiver amount:      |
+|                                   |                                   |
+|                                   | -   Amount Waived $ field         |
+|                                   | -   Reason Waived field           |
+|                                   | -   Press [Enter]                 |
+|                                   | -   Go to the OPAF screen         |
+|                                   | -   Key 'Y' in the Finished?      |
+|                                   |     field                         |
+|                                   | -   Press [Enter]                 |
+|                                   |                                   |
+|                                   | If the new balance of the debt is |
+|                                   | less than $50, waive under the    |
+|                                   | small debt waiver provisions.     |
+|                                   |                                   |
+|                                   | Finalise the activity.            |
+|                                   |                                   |
+|                                   | On the OPGI screen. Check the     |
+|                                   | correct amount resulting from the |
+|                                   | waiver is displayed.              |
+|                                   |                                   |
+|                                   | Send a letter, see Step 3 in      |
+|                                   | Table 2                           |
++-----------------------------------+-----------------------------------+
+
+Additional MFUs for family assistance reconciliation recovery
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | DMNMFU41 + Read more ...          |
+|                                   |                                   |
+|                                   | Is there a DMN/ADV MFU that reads |
+|                                   | 'Debt Id nnnnnnnn finalised in    |
+|                                   | re-reconciliation and new debt    |
+|                                   | has been raised and waived LTF.   |
+|                                   | Please issue appropriate advice   |
+|                                   | regarding re-reconciliation       |
+|                                   | result' with a keyword of         |
+|                                   | DMNMFU41?                         |
+|                                   |                                   |
+|                                   | Yes, 'S'elect the original debt   |
+|                                   | from the OPDL screen and go to    |
+|                                   | the OPRH screen                   |
+|                                   |                                   |
+|                                   | -   If repayments have been       |
+|                                   |     received on the debt,         |
+|                                   |     transfer any payments to any  |
+|                                   |     other debts outstanding. See  |
+|                                   |     Adjusting and adding debt     |
+|                                   |     repayments                    |
+|                                   | -   Complete the refund if        |
+|                                   |     required. See Refunding debt  |
+|                                   |     repayments                    |
+|                                   | -   If unsure how to process      |
+|                                   |     refunds, contact the relevant |
+|                                   |     Debt Recovery Team for        |
+|                                   |     assistance                    |
+|                                   |                                   |
+|                                   | Advise the customer:              |
+|                                   |                                   |
+|                                   | -   change in the debt balance    |
+|                                   |     following re-reconciliation   |
+|                                   | -   amount due has been waived    |
+|                                   |     and                           |
+|                                   | -   any details about repayments  |
+|                                   |     transferred or refunded       |
+|                                   |                                   |
+|                                   | Complete the manual letter        |
+|                                   | (Q999). For assistance in         |
+|                                   | completing this letter, see       |
+|                                   | Family Tax Benefit (FTB) and      |
+|                                   | Child Care Benefit (CCB) debts    |
+|                                   | for the 2000-2001 income year.    |
+|                                   |                                   |
+|                                   | -   No, go to Step 2              |
++-----------------------------------+-----------------------------------+
+| 2                                 | DMNMFU44, FAOWAIVE and FAORECO +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | There may be a DMN/RCV activity   |
+|                                   | with the keyword of either        |
+|                                   | DMNMFU44, FAOWAIVE, and/or        |
+|                                   | FAORECO. The notes for the        |
+|                                   | activity read:                    |
+|                                   |                                   |
+|                                   | 'Debt Id nnnnnnnn finalised in    |
+|                                   | rereconciliation and new debt has |
+|                                   | been raised.'                     |
+|                                   |                                   |
+|                                   | Does the customer have a DMN/RCV  |
+|                                   | with a relevant keyword?          |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 3             |
+|                                   | -   No, go to Step 4              |
++-----------------------------------+-----------------------------------+
+| 3                                 | DMNMFUxx + Read more ...          |
+|                                   |                                   |
+|                                   | Send a Q418 letter. This advises  |
+|                                   | the customer if they are owed a   |
+|                                   | refund, they will receive it      |
+|                                   | within 14 days.                   |
+|                                   |                                   |
+|                                   | Update the OPKD screen. Add the   |
+|                                   | keyword DMNMFUxx (where xx is the |
+|                                   | MFU number).                      |
+|                                   |                                   |
+|                                   | Enter the Q418 completion date in |
+|                                   | the Advice of OVP details field.  |
+|                                   |                                   |
+|                                   | For eligible former Centrelink    |
+|                                   | customers, the Interest Charge    |
+|                                   | warning must be included in the   |
+|                                   | debt notice.                      |
+|                                   |                                   |
+|                                   | In the Comments field, enter the  |
+|                                   | text 'Q418 sent - man adv FTB/CCF |
+|                                   | rereco'.                          |
+|                                   |                                   |
+|                                   | Record the details on a DOC.      |
+|                                   | Include the date of event and     |
+|                                   | details of changes made.          |
+|                                   |                                   |
+|                                   | Go to Step 4.                     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Check for a specific DMN/DBT      |
+|                                   | MFU + Read more ...               |
+|                                   |                                   |
+|                                   | Is there a DMN/DBT MFU that reads |
+|                                   | 'Debt Id nnnnnnnn adjusted while  |
+|                                   | client deceased. Issue Q421 to    |
+|                                   | estate to advise new              |
+|                                   | reconciliation result'?           |
+|                                   |                                   |
+|                                   | -   Yes, check if a manual letter |
+|                                   |     needs to be issued            |
+|                                   | -   No, go to Step 5              |
++-----------------------------------+-----------------------------------+
+| 5                                 | MFU FTB non-reconciliation debt   |
+|                                   | falling in 2000-01 + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is there a MFU on the customer's  |
+|                                   | record related to a FTB debt      |
+|                                   | (non-reconciliation), with a debt |
+|                                   | period falling within 2000-01     |
+|                                   | financial year?                   |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 6             |
+|                                   | -   No, see Manually waiving      |
+|                                   |     family assistance             |
+|                                   |     reconciliation debts for      |
+|                                   |     2000-01 where there is no     |
+|                                   |     Manual Follow-up (MFU)        |
+|                                   |     activity                      |
++-----------------------------------+-----------------------------------+
+| 6                                 | MFU texts for FTB                 |
+|                                   | non-reconciliation debt falling   |
+|                                   | in 2000-01 + Read more ...        |
+|                                   |                                   |
+|                                   | These MFUs will read either:      |
+|                                   |                                   |
+|                                   | -   'FA debt check new waiver     |
+|                                   |     provision', or                |
+|                                   | -   'Previously written off -     |
+|                                   |     check if customer needs to be |
+|                                   |     contacted'                    |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 
