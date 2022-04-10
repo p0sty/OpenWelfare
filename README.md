@@ -1,23 +1,60 @@
-# OpenWelfare
-Open Welfare: 
+# OpenWelfare:
 Services Australia Operational Blueprint Freedom project
 
-Applications of the dataset:
+## Master problem: 
+Our welfare system [hides half of how it works](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=0) from the needy public.
 
-A ["blocked or not" search engine of the Operational Blueprint is available here](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=0).
+###Sub problems:
 
-Technical:
+1. In the [existing public offering](https://operational.servicesaustralia.gov.au), even finding out that the master problem exists is beyond the capacity of a human, a click per topic to process.
 
-The last [Operational Blueprint](https://operational.servicesaustralia.gov.au) text is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
+2. If you follow the instructions provided to get you access to the article, you guarantee that others beside yourself cannot access the article as all documents on the FOI disclosure log are only "[available upon request](https://www.servicesaustralia.gov.au/freedom-information-disclosure-log?context=1)". This has an easy solution once you know it - use [Right To Know](http://righttoknow.org.au)
 
-The Operational Blueprint Freedom Report master report tab separated values file is:
+3. Given that we now know there are literally thousands of pages that are blocked, it is hard to keep track of what has been released and what has not, and what is hidden behind a 'request wall'.
+
+##Prior attempted solutions:
+
+1. Just Ask The Government For All The Documents: Result - [No, too much work](https://www.righttoknow.org.au/request/all_documents_marked_potentially).
+
+2. Tell Us How You Decide What To Block: Result - [No, what?](https://www.righttoknow.org.au/request/decision_making_criteria_for_pot#incoming-12159)
+
+3. If Giving Us All The Documents is Too Hard, Can we Just Have All The Debt Ones?: Result - [No, uh, hangon, $700 please to do our job](https://www.righttoknow.org.au/request/operational_information_debts#outgoing-11873).
+
+4. Can I have them one at a time? Result: [mostly yes, at begrudgingly no cost, with some arguing](https://www.righttoknow.org.au/search/posty%20requested_from:services_australia/all).
+
+## New proposed solution:
+
+Take what we know works (requesting them one or two at a time) and have a lot of completely disconnected, unrelated people who care about their respective topics request them.
+
+## How?
+
+With our ["Blocked or Not" search query spreadsheet](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=0) 3 step process.
+
+1. Find a coloured red blocked article on [the spreadsheet](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=0)
+
+2. Copy the Article Title from the Sheet (it includes the article number), Register an account and write a request on [Right To Know](http://righttoknow.org.au/) as [10 people already have](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=871559379).
+
+3. Submit your request. Congratulations! The Federal government now have a legal obligation to respond to your request in 30 days!
+
+***It's that easy!***
+
+And bingo, the very next day, that Article won't be red anymore, and you will get email updates about your request!
+
+Whether you actually succeed, fail or have partial success (eg redacted documents) you will have furthered our knowledge of how this behemoth of a system works.
+
+##How does this technically work?
+
+The last [Operational Blueprint](https://operational.servicesaustralia.gov.au) raw html is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
+
+Plaintext versions are created in subfolders with -plaintext on them.
+
+A program is run against the data to generate the required tests - eg, is the article blocked or not, when was it last updated, has anyone requested it before on RTK, on the disclosure log etc.
+
+Those tests are put in The Operational Blueprint Freedom Report master report tab separated values file:
 OpenWelfare-OperationalBlueprintFreedomReport.tsv
 
-To begin with, the only feature it can track is whether the page is blocked or not.
 
-The following serves a roadmap of sorts.
-
-What/Why:
+## So, why, apart from the problem above did you do this?:
 
 As Centrelink/Services Australia says on it's Information Publication Scheme (IPS) Agency Plan says:
 
@@ -62,25 +99,13 @@ This project started to initially answer the question:
 
 "How much of the operational information is blocked behind this FOI "Block"?"
 
-Having started this, I can tell you now that over half of all operational documents are behind this "potentially FOI exempt" banner as of 12 March 2022. 
-
-See the .tsv file for exact details.
-
 I find it hard to believe that literally half of all procedures should be blocked. Every Australian will interact with Services Australia, why is over half of how the organisation works secret?
 
 How does this meet Service Australias stated IPS goals?
 
-Justin Warren attempted to request all blocked documents and publish all of them to the operational blueprint - this was met with refusal as it was deemed "too much work".
-https://www.righttoknow.org.au/request/all_documents_marked_potentially
-
-Justin then tried to ascertain as to how Centrelink determine what is "potentially FOI exempt" - this was also practially refused.
-https://www.righttoknow.org.au/request/decision_making_criteria_for_pot#incoming-12159
-
-I know personally that upon actually asking for documents - whilst an arduous, cumbersome and time consuming process - more often than not reveals that an operational document should not be blocked.
-
 I have had success in releasing 5x completely pages personally, more to a partial success. some released in months scale, some years.
 
-One person cannot complete this task, this requires community.
+After seeing exactly how many blocked pages there were, I had the realisation that one person cannot complete this task, this requires community.
 
 It appears the only way that this information will be more readily released is to either bring to light the fact it is not, or request each page individually.
 
@@ -117,4 +142,4 @@ So this will help hold accountable at minimum between $23.2964 and $30.024 milli
 
 I also hope that by bringing to light these facts we can either together celebrate the Freedom Report going up, or commiserate it going down.
 
-If you've got this far, you may wish to support the project - please follow @CentrelinkDown on twitter for updates and DM if you think you can help.
+If you've got this far, you may wish to support the project - please follow [@Open_Welfare](http://twitter.com/open_welfare) for updates and DM if you think you can help.
