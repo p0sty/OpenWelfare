@@ -7,9 +7,6 @@ Processing JobSeeker Payment (JSP) claims 001-19051507
 -   Resources
 -   Training & Support
 
-This procedure is under review. An Operational Message about this
-content exists.
-
 [Expand/Collapse all sections]Expand all
 
 On this page:
@@ -77,8 +74,12 @@ Table 1
 |                                   |                                   |
 |                                   | Go to Step 3                      |
 |                                   |                                   |
-|                                   | For claims generated due to DSP   |
-|                                   | cancellation, go to Step 2        |
+|                                   | For claims generated:             |
+|                                   |                                   |
+|                                   | -   due to DSP cancellation, go   |
+|                                   |     to Step 2                     |
+|                                   | -   not due to DSP cancellation,  |
+|                                   |     go to Step 3                  |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Claim generated due to DSP        |
 |                                   | cancellation - risk based medical |
@@ -90,7 +91,7 @@ Table 1
 |                                   | Decision - DSP SOI DOC for        |
 |                                   | cancellation details.             |
 |                                   |                                   |
-|                                   | Make 1 genuine attempt to call    |
+|                                   | Make one genuine attempt to call  |
 |                                   | the customer to advise outcome of |
 |                                   | claim. Tell the customer the      |
 |                                   | claim may be subject to a quality |
@@ -129,15 +130,204 @@ Table 1
 |                                   | No, process claim, see Step 1 in  |
 |                                   | Table 2                           |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Claim status + Read more ...      |
+| 3                                 | Check customer benefit status     |
+|                                   | line + Read more ...              |
+|                                   |                                   |
+|                                   | For claims generated where the    |
+|                                   | customer is currently on ABY or   |
+|                                   | ABY PES payments, go to Step 4.   |
+|                                   |                                   |
+|                                   | To prevent incorrect claim        |
+|                                   | assessment, there may be a need   |
+|                                   | to update the customer's record   |
+|                                   | outside the new claim.            |
+|                                   |                                   |
+|                                   | Updates may include correcting    |
+|                                   | the previous benefit status so it |
+|                                   | displays as CAN (cancel). This    |
+|                                   | will prevent incorrect arrears    |
+|                                   | when finalising the claim or end  |
+|                                   | dating student/apprenticeship     |
+|                                   | details.                          |
+|                                   |                                   |
+|                                   | If the benefit status is CNP      |
+|                                   | (cancel next payment):            |
+|                                   |                                   |
+|                                   | -   go to Customer Summary tile   |
+|                                   | -   enter the customer's CRN and  |
+|                                   |     select the customer           |
+|                                   | -   go to Payment Summary (PS)    |
+|                                   |     screen via Super Key          |
+|                                   | -   Key '9999' in the Number of   |
+|                                   |     months in past field, Execute |
+|                                   | -   note the date paid to plus 1  |
+|                                   | -   go to Benefit Action (BA)     |
+|                                   |     screen via Super Key and code |
+|                                   |     cancellation                  |
++-----------------------------------+-----------------------------------+
+| 4                                 | Check customer record + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | To prevent incorrect claim        |
+|                                   | assessment, there may be a need   |
+|                                   | to update the customer's record   |
+|                                   | outside the new claim.            |
+|                                   |                                   |
+|                                   | If the customer is transferring   |
+|                                   | to JSP and was receiving          |
+|                                   | Pensioner Education Supplement    |
+|                                   | (PES) with the income support     |
+|                                   | payment they are transferring     |
+|                                   | from:                             |
+|                                   |                                   |
+|                                   | -   update the Education Details  |
+|                                   |     (EDC) and Education Status    |
+|                                   |     (NES) screens to cancel PES   |
+|                                   |     before processing the JSP     |
+|                                   |     claim, then                   |
+|                                   | -   restore the PES after the JSP |
+|                                   |     claim has been finalised. See |
+|                                   |     Cancellation of, or changes   |
+|                                   |     to qualifying payment for     |
+|                                   |     Pensioner Education           |
+|                                   |     Supplement (PES), ABSTUDY PES |
+|                                   |     or Assistance for Isolated    |
+|                                   |     Children PES                  |
+|                                   |                                   |
+|                                   | If the customer was a full-time   |
+|                                   | Youth Allowance or Austudy        |
+|                                   | student/Apprentice before         |
+|                                   | claiming, or current              |
+|                                   | education/apprenticeship details  |
+|                                   | display on their record:          |
+|                                   |                                   |
+|                                   | -   end date details for student  |
+|                                   |     payment, or                   |
+|                                   | -   end date details for          |
+|                                   |     Apprenticeship payment        |
+|                                   |                                   |
+|                                   | If the ABSTUDY customer is:       |
+|                                   |                                   |
+|                                   | -   no longer studying or         |
+|                                   |     undertaking an Apprentice,    |
+|                                   |     the payment will need to be   |
+|                                   |     cancelled. See Payment of     |
+|                                   |     ABSTUDY when a student is     |
+|                                   |     deferring or discontinuing    |
+|                                   |     study before the end of the   |
+|                                   |     course                        |
+|                                   | -   continuing in the course as a |
+|                                   |     part-time student, they can   |
+|                                   |     remain in receipt of ABSTUDY  |
+|                                   |     as they qualify for           |
+|                                   |     allowances under the          |
+|                                   |     part-time award (No           |
+|                                   |     fortnightly payments are made |
+|                                   |     under the part-time award).   |
+|                                   |     The ABSTUDY record will need  |
+|                                   |     to be checked and the         |
+|                                   |     Education Course Details      |
+|                                   |     (EDC) screen may need         |
+|                                   |     updating to reflect the       |
+|                                   |     part-time course              |
+|                                   |                                   |
+|                                   | The ABY claim will remain CUR     |
+|                                   | whilst they are a part-time       |
+|                                   | student, and will not affect the  |
+|                                   | Job Seeker Payment claim. To      |
+|                                   | ensure the ABSTUDY record is      |
+|                                   | displaying correctly, see         |
+|                                   | Changing study load from          |
+|                                   | full-time to part-time or         |
+|                                   | concessional study load for       |
+|                                   | ABSTUDY or ABSTUDY Pensioner      |
+|                                   | Education Supplement (PES).       |
+|                                   |                                   |
+|                                   | Pre-Claim vulnerable circumstance |
+|                                   |                                   |
+|                                   | Where the customer has pre-claim  |
+|                                   | vulnerable circumstances recorded |
+|                                   | within the eight weeks prior to   |
+|                                   | their intent to claim contact     |
+|                                   | date the system will              |
+|                                   | automatically calculate the start |
+|                                   | date.                             |
+|                                   |                                   |
+|                                   | Where pre-claim vulnerable        |
+|                                   | circumstances are not able to be  |
+|                                   | automatically determined by the   |
+|                                   | system, they can be manually      |
+|                                   | added:                            |
+|                                   |                                   |
+|                                   | -   on the Pre-Claim Vulnerable   |
+|                                   |     Circumstance (PRECLM) screen  |
+|                                   |     in Process Direct or          |
+|                                   | -   via the Pre-claim             |
+|                                   |     Circumstance guided procedure |
+|                                   |     in Customer First             |
+|                                   |                                   |
+|                                   | If the customer has a pre-claim   |
+|                                   | circumstance displayed on PRECLM  |
+|                                   | with a start date that is more    |
+|                                   | than 8 weeks ago and no end date, |
+|                                   | consider if that pre-claim        |
+|                                   | vulnerable circumstance still     |
+|                                   | exists using available            |
+|                                   | information                       |
+|                                   |                                   |
+|                                   | -   Where the vulnerable          |
+|                                   |     circumstance is no longer     |
+|                                   |     active, consider end dating   |
+|                                   |     the vulnerable circumstance   |
+|                                   |     from the associated           |
+|                                   |     circumstance page and         |
+|                                   |     regenerate the claim          |
+|                                   | -   Some circumstances can remain |
+|                                   |     current on a customer's       |
+|                                   |     record indefinitely, such as  |
+|                                   |     an exemption from seeking     |
+|                                   |     child support due to family   |
+|                                   |     and domestic violence. In     |
+|                                   |     these cases, do not end date  |
+|                                   |     the exemption. Manually       |
+|                                   |     update the claim start date   |
+|                                   |     to the date of submission if  |
+|                                   |     required. See Step 2 in Table |
+|                                   |     1 in Intent to claim and      |
+|                                   |     vulnerable customers for more |
+|                                   |     information                   |
+|                                   |                                   |
+|                                   | After completing any updates,     |
+|                                   | select [more options] >           |
+|                                   | Regenerate claim.                 |
++-----------------------------------+-----------------------------------+
+| 5                                 | Claim status + Read more ...      |
+|                                   |                                   |
+|                                   | A JSP claim cannot be granted     |
+|                                   | unless the Participation          |
+|                                   | Interview has been completed and  |
+|                                   | a RapidConnect determination      |
+|                                   | made.                             |
+|                                   |                                   |
+|                                   | The Participation Interview codes |
+|                                   | a RapidConnect status on the Job  |
+|                                   | Seeker RapidConnect (JMRC) screen |
+|                                   | to determine the customer's start |
+|                                   | date of payments.                 |
+|                                   |                                   |
+|                                   | If error E543NM - ‘Participation  |
+|                                   | Workflow has not been completed’  |
+|                                   | appears, this means a Rapid       |
+|                                   | Connect determination has not     |
+|                                   | been made and a Participation     |
+|                                   | Interview has not been completed  |
+|                                   | or needs to be re-applied.        |
 |                                   |                                   |
 |                                   | Check the RapidConnect (JMRC) and |
-|                                   | Document List (DL) screens. Has   |
-|                                   | the customer attended their JSP   |
-|                                   | claim appointment?                |
-|                                   |                                   |
-|                                   | -   Yes, continue in this step    |
-|                                   | -   No, see RapidConnect          |
+|                                   | Document List (DL) screens. If    |
+|                                   | the customer has not attended     |
+|                                   | their JSP claim appointment, see  |
+|                                   | RapidConnect.                     |
 |                                   |                                   |
 |                                   | The claim status must be In       |
 |                                   | Process before it can be          |
@@ -145,7 +335,7 @@ Table 1
 |                                   |                                   |
 |                                   | Is the claim status In Process?   |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
+|                                   | -   Yes, go to Step 6             |
 |                                   | -   No, for claim status          |
 |                                   |     definitions and action to     |
 |                                   |     take, see Process Direct      |
@@ -167,8 +357,14 @@ Table 1
 |                                   |     claims in Cancelling claim    |
 |                                   |     activities and re-indexing    |
 |                                   |     claims                        |
+|                                   |                                   |
+|                                   | If the customer is claiming       |
+|                                   | Disability Support Pension (DSP), |
+|                                   | assess the claim as JobSeeker     |
+|                                   | Payment provisional, see Step 15  |
+|                                   | in Table 2.                       |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Review claim details + Read more  |
+| 6                                 | Review claim details + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Check the customer's benefit      |
@@ -194,7 +390,102 @@ Table 1
 |                                   |     window. If it is blank, press |
 |                                   |     [F5] to refresh the page      |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Review scanned documents + Read   |
+| 7                                 | Transfer claims + Read more ...   |
+|                                   |                                   |
+|                                   | A streamlined claim is offered to |
+|                                   | some customers when they are      |
+|                                   | losing qualification for their    |
+|                                   | previous payment.                 |
+|                                   |                                   |
+|                                   | Eligible customers will be        |
+|                                   | offered a 'task' on the home page |
+|                                   | of their online account, allowing |
+|                                   | them to advise that they wish to  |
+|                                   | claim JSP. The task is variable   |
+|                                   | according to the payment type. It |
+|                                   | is available from up to 28 days   |
+|                                   | before qualification for their    |
+|                                   | current payment ends, up until    |
+|                                   | the date they lose qualification. |
+|                                   |                                   |
+|                                   | Transfer claims can be identified |
+|                                   | by the DOCs on the DL. This claim |
+|                                   | was auto populated from existing  |
+|                                   | verified customer details. This   |
+|                                   | claim can be assessed without the |
+|                                   | need to review the details in the |
+|                                   | claim.                            |
+|                                   |                                   |
+|                                   | For Parenting Payment Single      |
+|                                   | (PPS) customers transferring to   |
+|                                   | JSP:                              |
+|                                   |                                   |
+|                                   | -   DL will display a PP to JSP   |
+|                                   |     Transition Claim DOC          |
+|                                   | -   The DOC will contain the      |
+|                                   |     Claim ID                      |
+|                                   | -   Advise of any required        |
+|                                   |     supporting documentation that |
+|                                   |     is to be provided             |
+|                                   | -   This claim was auto populated |
+|                                   |     from existing verified        |
+|                                   |     customer details. This claim  |
+|                                   |     can be assessed without the   |
+|                                   |     need to review the details in |
+|                                   |     the claim                     |
+|                                   |                                   |
+|                                   | For Parenting Payment Partnered   |
+|                                   | (PPP) customers transferring to   |
+|                                   | JSP:                              |
+|                                   |                                   |
+|                                   | -   DL will display a PP to JSP   |
+|                                   |     Transition Claim DOC          |
+|                                   | -   The DOC will contain the      |
+|                                   |     Claim ID                      |
+|                                   | -   Advise of any required        |
+|                                   |     supporting documentation that |
+|                                   |     is to be provided             |
+|                                   | -   This claim was auto populated |
+|                                   |     from existing verified        |
+|                                   |     customer details. This claim  |
+|                                   |     can be assessed without the   |
+|                                   |     need to review the details in |
+|                                   |     the claim                     |
+|                                   |                                   |
+|                                   | For students transferring to JSP  |
+|                                   |                                   |
+|                                   | -   DL will display a STU to JSP  |
+|                                   |     Transition Claim DOC          |
+|                                   | -   The DOC will contain the      |
+|                                   |     Claim ID                      |
+|                                   | -   Advise of any required        |
+|                                   |     supporting documentation that |
+|                                   |     is to be provided             |
+|                                   | -   This claim was auto populated |
+|                                   |     from existing verified        |
+|                                   |     customer details. This claim  |
+|                                   |     can be assessed without the   |
+|                                   |     need to review the details in |
+|                                   |     the claim                     |
+|                                   |                                   |
+|                                   | As customers transfer from        |
+|                                   | another payment, the information  |
+|                                   | contained on their record is      |
+|                                   | current unless the customer       |
+|                                   | indicates any changes in their    |
+|                                   | streamline claim.                 |
+|                                   |                                   |
+|                                   | For more information on transfer  |
+|                                   | claims, see Transfer to JobSeeker |
+|                                   | Payment (JSP) from another        |
+|                                   | payment.                          |
+|                                   |                                   |
+|                                   | Is this a transfer claim?         |
+|                                   |                                   |
+|                                   | -   Yes, see Step 1 in Table 2    |
+|                                   | -   No, go to Step 8              |
++-----------------------------------+-----------------------------------+
+| 8                                 | Review scanned documents + Read   |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | To view supporting documents:     |
@@ -214,12 +505,11 @@ Table 1
 |                                   | There may also be older documents |
 |                                   | not related to the claim.         |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Bank accounts and balances        |
+| 9                                 | Bank accounts and balances        |
 |                                   | verification + Read more ...      |
 |                                   |                                   |
-|                                   | Customers claiming JSP on or      |
-|                                   | after the 25 September 2020 may   |
-|                                   | need to supply proof of all bank  |
+|                                   | Customers claiming JSP may need   |
+|                                   | to supply proof of all bank       |
 |                                   | accounts they hold, including     |
 |                                   | balances as part of the claim.    |
 |                                   |                                   |
@@ -250,14 +540,17 @@ Table 1
 |                                   |                                   |
 |                                   | The following customers are       |
 |                                   | exempt from providing supporting  |
-|                                   | documentation confirming bank     |
-|                                   | account balances.                 |
+|                                   | documents confirming bank account |
+|                                   | balances:                         |
 |                                   |                                   |
 |                                   | -   Customers who have been on    |
 |                                   |     income support payment in     |
 |                                   |     last 13 weeks and did not     |
 |                                   |     advise of any new bank        |
 |                                   |     accounts                      |
+|                                   | -   Customers with a partner who  |
+|                                   |     is current on payment with    |
+|                                   |     confirmed bank accounts       |
 |                                   | -   Customers who are indigenous  |
 |                                   |     and living in a remote area   |
 |                                   | -   Customers transitioning from  |
@@ -284,7 +577,7 @@ Table 1
 |                                   | Request for Information guided    |
 |                                   | procedure.                        |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Supporting evidence + Read more   |
+| 10                                | Supporting evidence + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | When assessing a JSP claim:       |
@@ -305,12 +598,12 @@ Table 1
 |                                   | access the information.           |
 |                                   |                                   |
 |                                   | If the documents supplied are     |
-|                                   | acceptable, go to Step 10.        |
+|                                   | acceptable, go to Step 13.        |
 |                                   |                                   |
 |                                   | Otherwise, check the Tasks tab.   |
 |                                   | If the task is:                   |
 |                                   |                                   |
-|                                   | not displaying, go to Step 9      |
+|                                   | not displaying, go to Step 12     |
 |                                   |                                   |
 |                                   | displaying:                       |
 |                                   |                                   |
@@ -318,13 +611,13 @@ Table 1
 |                                   | -   Select the Financial          |
 |                                   |     documents                     |
 |                                   | -   Check the evidence            |
-|                                   | -   Go to Step 8                  |
+|                                   | -   Go to Step 11                 |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Make an outbound call to the      |
+| 11                                | Make an outbound call to the      |
 |                                   | customer + Read more ...          |
 |                                   |                                   |
-|                                   | Make 1 genuine attempt to contact |
-|                                   | by phone.                         |
+|                                   | Make one genuine attempt to       |
+|                                   | contact by phone.                 |
 |                                   |                                   |
 |                                   | -   Issue a pre-call notification |
 |                                   |     (SMS only) between 8:00 am    |
@@ -349,20 +642,20 @@ Table 1
 |                                   |     as soon as possible, see      |
 |                                   |     Upload documents service      |
 |                                   | -   the claim will be placed on   |
-|                                   |     hold for 1 day                |
+|                                   |     hold for one day              |
 |                                   | -   the claim will be rejected if |
 |                                   |     they do not provide the       |
 |                                   |     evidence                      |
 |                                   |                                   |
-|                                   | place the claim on hold for 1 day |
-|                                   | and annotate the Progress Of      |
+|                                   | place the claim on hold for one   |
+|                                   | day and annotate the Progress Of  |
 |                                   | Claim (POC) DOC, with the contact |
 |                                   | outcome. Procedure end here       |
 |                                   |                                   |
 |                                   | If the contact is unsuccessful,   |
-|                                   | go to Step 10.                    |
+|                                   | go to Step 13.                    |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Requesting documents + Read more  |
+| 12                                | Requesting documents + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | In some cases, extra evidence may |
@@ -371,18 +664,20 @@ Table 1
 |                                   | about trusts, companies or        |
 |                                   | compensation.                     |
 |                                   |                                   |
-|                                   | Make 1 genuine attempt to contact |
-|                                   | the customer.                     |
+|                                   | Make one genuine attempt to       |
+|                                   | contact the customer.             |
 |                                   |                                   |
 |                                   | -   Issue a pre-call notification |
-|                                   |     (SMS only) between 8:00 am    |
-|                                   |     and 8:00 pm using the         |
-|                                   |     customer's local time to let  |
-|                                   |     them know a Service Officer   |
-|                                   |     will call them today from a   |
-|                                   |     private number, see           |
-|                                   |     Centrelink letters online and |
-|                                   |     Electronic Messaging.         |
+|                                   |     (if the customer has SMS      |
+|                                   |     notifications enabled)        |
+|                                   |     between 8:00 am and 8:00 pm   |
+|                                   |     using the customer's local    |
+|                                   |     time to let them know a       |
+|                                   |     Service Officer will call     |
+|                                   |     them today from a private     |
+|                                   |     number, see Centrelink        |
+|                                   |     letters online and Electronic |
+|                                   |     Messaging.                    |
 |                                   |                                   |
 |                                   | If contact was successful:        |
 |                                   |                                   |
@@ -404,14 +699,24 @@ Table 1
 |                                   |                                   |
 |                                   | -   issue a request for           |
 |                                   |     information via [More         |
-|                                   |     Options] > Request Documents  |
+|                                   |     Options] > Request Documents, |
+|                                   |     for further information see   |
+|                                   |     Circumstance Change Monitor   |
+|                                   |     (CCM)                         |
+|                                   |                                   |
+|                                   | If the online claim has not made  |
+|                                   | a request to the customer for     |
+|                                   | evidence and they do not meet any |
+|                                   | of the claim exceptions, raise an |
+|                                   | incident via Roxy and issue a     |
+|                                   | RFI.                              |
 |                                   |                                   |
 |                                   | Note: documents that have been    |
 |                                   | requested at Next Step in the     |
 |                                   | claim should not be requested     |
 |                                   | again.                            |
 +-----------------------------------+-----------------------------------+
-| 10                                | Referrals (if required) + Read    |
+| 13                                | Referrals (if required) + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Note: the decision may already be |
@@ -484,7 +789,7 @@ Table 1
 |                                   | circumstances have been actioned, |
 |                                   | see Step 3 in Table 2.            |
 +-----------------------------------+-----------------------------------+
-| 11                                | Identity Confirmation + Read more |
+| 14                                | Identity Confirmation + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | On the TS screen, check the       |
@@ -492,7 +797,7 @@ Table 1
 |                                   |                                   |
 |                                   | If the Identity Status is:        |
 |                                   |                                   |
-|                                   | Confirmed, go to Step 12          |
+|                                   | Confirmed, go to Step 15          |
 |                                   |                                   |
 |                                   | Not Confirmed, consider coding    |
 |                                   | alternative proof of identity:    |
@@ -511,7 +816,7 @@ Table 1
 |                                   | -   Close the Customer Summary    |
 |                                   |     window to return to the claim |
 +-----------------------------------+-----------------------------------+
-| 12                                | Check for other activities + Read |
+| 15                                | Check for other activities + Read |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Some activities may stop          |
@@ -556,124 +861,7 @@ Table 1
 |                                   |     assistance. See the Resources |
 |                                   |     page for standard text        |
 +-----------------------------------+-----------------------------------+
-| 13                                | Check customer record + Read more |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | To prevent incorrect claim        |
-|                                   | assessment, there may be a need   |
-|                                   | to update the customer's record   |
-|                                   | outside the new claim.            |
-|                                   |                                   |
-|                                   | Updates may include correcting    |
-|                                   | the previous benefit status so it |
-|                                   | displays as CAN (cancel). This    |
-|                                   | will prevent incorrect arrears    |
-|                                   | when finalising the claim or end  |
-|                                   | dating student/apprenticeship     |
-|                                   | details.                          |
-|                                   |                                   |
-|                                   | If the benefit status is CNP      |
-|                                   | (cancel next payment):            |
-|                                   |                                   |
-|                                   | -   go to Customer Summary tile   |
-|                                   | -   enter the customer's CRN and  |
-|                                   |     select the customer           |
-|                                   | -   go to Payment Summary (PS)    |
-|                                   |     screen via Super Key          |
-|                                   | -   Key '9999' in the Number of   |
-|                                   |     months in past field, Execute |
-|                                   | -   note the date paid to plus 1  |
-|                                   | -   go to Benefit Action (BA)     |
-|                                   |     screen via Super Key and code |
-|                                   |     cancellation                  |
-|                                   |                                   |
-|                                   | If the customer is transferring   |
-|                                   | to JSP and was receiving          |
-|                                   | Pensioner Education Supplement    |
-|                                   | (PES) with the income support     |
-|                                   | payment they are transferring     |
-|                                   | from:                             |
-|                                   |                                   |
-|                                   | -   update the Education Details  |
-|                                   |     (EDC) and Education Status    |
-|                                   |     (NES) screens to cancel PES   |
-|                                   |     before processing the JSP     |
-|                                   |     claim, then                   |
-|                                   | -   restore the PES after the JSP |
-|                                   |     claim has been finalised. See |
-|                                   |     Cancellation of, or changes   |
-|                                   |     to qualifying payment for     |
-|                                   |     Pensioner Education           |
-|                                   |     Supplement (PES), ABSTUDY PES |
-|                                   |     or Assistance for Isolated    |
-|                                   |     Children PES                  |
-|                                   |                                   |
-|                                   | If the customer was a full-time   |
-|                                   | student/Apprentice before         |
-|                                   | claiming, or current              |
-|                                   | education/apprenticeship details  |
-|                                   | display on their record:          |
-|                                   |                                   |
-|                                   | -   end date details for student  |
-|                                   |     payment, or                   |
-|                                   | -   end date details for          |
-|                                   |     Apprenticeship payment        |
-|                                   |                                   |
-|                                   | Pre-Claim vulnerable circumstance |
-|                                   |                                   |
-|                                   | Where the customer has pre-claim  |
-|                                   | vulnerable circumstances recorded |
-|                                   | within the eight weeks prior to   |
-|                                   | their intent to claim contact     |
-|                                   | date the system will              |
-|                                   | automatically calculate the start |
-|                                   | date.                             |
-|                                   |                                   |
-|                                   | -   Where pre-claim vulnerable    |
-|                                   |     circumstances are not able to |
-|                                   |     be automatically determined   |
-|                                   |     by the system they can be     |
-|                                   |     manually added on the         |
-|                                   |     Pre-Claim Vulnerable          |
-|                                   |     Circumstance (PRECLM) screen  |
-|                                   |     in Process Direct or via the  |
-|                                   |     Pre-claim Circumstance Guided |
-|                                   |     procedure in Customer First   |
-|                                   | -   If the customer has a         |
-|                                   |     pre-claim circumstance        |
-|                                   |     displayed on PRECLM with a    |
-|                                   |     start date that is more than  |
-|                                   |     8 weeks ago and no end date,  |
-|                                   |     consider if that pre-claim    |
-|                                   |     vulnerable circumstance still |
-|                                   |     exists using available        |
-|                                   |     information. Where the        |
-|                                   |     vulnerable circumstance is no |
-|                                   |     longer active, consider end   |
-|                                   |     dating the vulnerable         |
-|                                   |     circumstance from the         |
-|                                   |     associated circumstance page  |
-|                                   |     and regenerate the claim.     |
-|                                   |     Some circumstances can remain |
-|                                   |     current on a customer's       |
-|                                   |     record indefinitely, such as  |
-|                                   |     an exemption from seeking     |
-|                                   |     child support due to family   |
-|                                   |     and domestic violence. In     |
-|                                   |     these cases, do not end date  |
-|                                   |     the exemption. Manually       |
-|                                   |     update the claim start date   |
-|                                   |     to the date of submission if  |
-|                                   |     required. See Step 2 in Table |
-|                                   |     1 in Intent to claim and      |
-|                                   |     vulnerable customers for more |
-|                                   |     information                   |
-|                                   |                                   |
-|                                   | After completing any updates,     |
-|                                   | select [More Options] >           |
-|                                   | Regenerate claim.                 |
-+-----------------------------------+-----------------------------------+
-| 14                                | Relationship details + Read more  |
+| 16                                | Relationship details + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | These details must be             |
@@ -830,6 +1018,16 @@ Table 2
 +-----------------------------------+-----------------------------------+
 | 3                                 | Claim rejection + Read more ...   |
 |                                   |                                   |
+|                                   | Note: if the customer has failed  |
+|                                   | to supply their Tax File Number   |
+|                                   | or Proof Of Identity (POI), do    |
+|                                   | not streamline reject FSD. Use    |
+|                                   | discretion when an automatic      |
+|                                   | rejection may be the most         |
+|                                   | appropriate rejection option. See |
+|                                   | Rejecting a claim for JobSeeker   |
+|                                   | Payment or Youth Allowance.       |
+|                                   |                                   |
 |                                   | Is the customer getting a         |
 |                                   | precluding payment (CPP) or is    |
 |                                   | another payment more appropriate  |
@@ -846,16 +1044,6 @@ Table 2
 |                                   |     rejection on the Benefit      |
 |                                   |     Action (BA) screen. Go to     |
 |                                   |     Step 4                        |
-|                                   |                                   |
-|                                   | Note: if the customer has failed  |
-|                                   | to supply their Tax File Number   |
-|                                   | or Proof Of Identity (POI), do    |
-|                                   | not streamline reject FSD. Use    |
-|                                   | discretion when an automatic      |
-|                                   | rejection may be the most         |
-|                                   | appropriate rejection option. See |
-|                                   | Rejecting a claim for JobSeeker   |
-|                                   | Payment or Youth Allowance.       |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Rent verification + Read more ... |
 |                                   |                                   |
@@ -1337,6 +1525,58 @@ Table 2
 |                                   |                                   |
 |                                   | See Step 1 in Table 3.            |
 +-----------------------------------+-----------------------------------+
+| 15                                | JSP Provisional claims + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Customers may be eligible for JSP |
+|                                   | Provisional when they have an     |
+|                                   | outstanding Disability (DSP)      |
+|                                   | claim. Customers who meet this    |
+|                                   | criteria are exempt from mutual   |
+|                                   | obligation requirements for the   |
+|                                   | period during which the DSP claim |
+|                                   | is being determined (13 weeks).   |
+|                                   |                                   |
+|                                   | To determine if the customer is   |
+|                                   | claiming JobSeeker Provisional    |
+|                                   | and exempt from mutual            |
+|                                   | obligations:                      |
+|                                   |                                   |
+|                                   | -   Select the Keyword icon. If   |
+|                                   |     the keyword JSPPROV is        |
+|                                   |     displayed the customer is     |
+|                                   |     applying for JobSeeker        |
+|                                   |     Provisional, or               |
+|                                   | -   Select the Review of claim.   |
+|                                   |     Under the Circumstance        |
+|                                   |     details, the circumstances    |
+|                                   |     will display Disability       |
+|                                   |     Support Pension - JobSeeker   |
+|                                   |     Payment confirming the        |
+|                                   |     customer is applying for      |
+|                                   |     JobSeeker Provisional         |
+|                                   |                                   |
+|                                   | Code the DSP exemption:           |
+|                                   |                                   |
+|                                   | -   Use Super Key to go to AEX    |
+|                                   |     screen                        |
+|                                   | -   Add new row                   |
+|                                   | -   In the Activity Type field,   |
+|                                   |     select DSP - Claiming DSP     |
+|                                   | -   Record the start and end      |
+|                                   |     dates of the exemption. The   |
+|                                   |     start date being the date the |
+|                                   |     DSP Claim was lodged, noted   |
+|                                   |     from the Review of Claim or   |
+|                                   |     DSP PoC DOC and end date 13   |
+|                                   |     weeks from that date.         |
+|                                   |                                   |
+|                                   | See JobSeeker Payment (JSP) and   |
+|                                   | Youth Allowance (YA)              |
+|                                   | (Provisional).                    |
+|                                   |                                   |
+|                                   | See Step 1 in Table 3.            |
++-----------------------------------+-----------------------------------+
 
 Assess and finalise claim
 
@@ -1461,8 +1701,10 @@ Table 3
 |                                   |                                   |
 |                                   | Note:                             |
 |                                   |                                   |
-|                                   | -   Consider any outstanding      |
-|                                   |     reporting requirements        |
+|                                   | -   If there are outstanding      |
+|                                   |     reporting statements, use the |
+|                                   |     Earnings and Reporting tool   |
+|                                   |     to process payment/s          |
 |                                   | -   The system will reject JSP    |
 |                                   |     reason FRP (failed to report) |
 |                                   |     after 22 days from the claim  |
@@ -1472,18 +1714,18 @@ Table 3
 +-----------------------------------+-----------------------------------+
 | 4                                 | Customer contact + Read more ...  |
 |                                   |                                   |
-|                                   | Make 1 genuine attempt to contact |
-|                                   | the customer once the claim is    |
-|                                   | finalised, regardless of the      |
-|                                   | claim outcome. If the customer is |
-|                                   | subscribed, issue a pre-call      |
-|                                   | notification (SMS only) between   |
-|                                   | 8:00 am and 8:00 pm using the     |
-|                                   | customer's local time to let them |
-|                                   | know a Service Officer will call  |
-|                                   | them today from a private number, |
-|                                   | see Centrelink letters online and |
-|                                   | Electronic Messaging.             |
+|                                   | Make one genuine attempt to       |
+|                                   | contact the customer once the     |
+|                                   | claim is finalised, regardless of |
+|                                   | the claim outcome. If the         |
+|                                   | customer is subscribed, issue a   |
+|                                   | pre-call notification (SMS only)  |
+|                                   | between 8:00 am and 8:00 pm using |
+|                                   | the customer's local time to let  |
+|                                   | them know a Service Officer will  |
+|                                   | call them today from a private    |
+|                                   | number, see Centrelink letters    |
+|                                   | online and Electronic Messaging.  |
 |                                   |                                   |
 |                                   | Successful + Read more ...        |
 |                                   |                                   |
