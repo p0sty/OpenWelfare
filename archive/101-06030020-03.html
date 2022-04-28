@@ -297,7 +297,7 @@ document the customer’s record explaining why they must re-apply for the card<
 		</ul>
 <p>Otherwise&#58;</p>
 		<ul>		<li>
-tell the customer to lodge an <img src="../resources/images/icon-ss-phone-32px.png" alt="" title="A self service option is available" /> online claim</li>
+tell the customer to lodge an <img src="../resources/images/icon-ss-phone-32px.png" alt="A self service option is available for customers" title="A self service option is available" /> online claim</li>
 		<li>
 run an Assisted Customer Claim (ACC), see <a href="../specialist-manuals-and-system-tools/111-06047000-01.html">Viewing and processing online and assisted customer claims</a> </li>
 		<li>
@@ -321,54 +321,66 @@ issue an Application for a Health Care Card for a former recipient of a Carer Al
 <div class="showcont">
 
 
-<p>In the <strong>EHC</strong> system, select <strong>'ISS'</strong> from the <strong>System&#58;</strong> field and key <strong>'SVEHC'</strong> in the <strong>Nxt </strong>field.</p>
+<p>In the <strong>EHC</strong> system, select <strong>'ISS'</strong> from the <strong>System&#58;</strong> field.</p>
 
-<p>If the EHC is <strong>current</strong>, select the renewal activity either from the Future Activity List (<strong>FAL</strong>) or Activity List (<strong>AL</strong>) screen, then select the screens that need updating&#58;</p>
-		<ul>		<li>
-the Student status (<strong>EHCA</strong>) screen</li>
-			<ul>			<li>
-all details will prepopulate, only update where Student ID details have changed with Date of Event as date of contact</li>		</ul>
-		<li>
-the Benefit Action (<strong>BA</strong>) screen</li>
-			<ul>			<li>
-<strong>SVC rsn - 'EHC'</strong></li>
-			<li>
-<strong>Action - 'REN'</strong></li>
-			<li>
-<strong>Effect date</strong> - renewal date (new card start date will be auto-populated by system)</li>
-			<li>
-<strong>Source</strong> - (usually) '<strong>PHO</strong>' or '<strong>PER</strong>'</li>
-			<li>
-<strong>DOR</strong> - (usually) system date</li>		</ul>
-		<li>
-finalise the activity via the Assessment Results (<strong>AR</strong>) screen</li>
-		<li>
-record the details on a <strong>DOC</strong>. Use <strong>Fast Note</strong> - select <strong>Auto text</strong> &gt; <strong>Concession Cards</strong> &gt; <strong>Claims</strong> &gt; <strong>Ex-CDA (child) HCC (EHC) NCL Grant/Reject</strong> option</li>
-		<li>
-if needed, withdraw the submitted claim, see <a href="../initial-contact-general/106-03040050-01.html">Withdrawal of claims</a></li>
-		</ul>
-<p>If the EHC has <strong>expired</strong>, create an activity on the Benefit Action (<strong>BA</strong>) screen, by completing the following fields&#58;</p>
-		<ul>		<li>
-<strong>SVC rsn - 'EHC'</strong></li>
-		<li>
-<strong>Action - 'REN'</strong></li>
-		<li>
-<strong>Effect date</strong> - renewal date (new card start date is previous card's cancellation date)</li>
-		<li>
-<strong>Source</strong> - (usually) '<strong>PHO</strong>' or '<strong>PER</strong>'</li>
-		<li>
-<strong>DOR</strong> - processing date</li>
-		<li>
-update the Student status (<strong>EHCA</strong>) screen, if required</li>
-		<li>
-finalise the activity via the <strong>AR</strong> screen</li>
-		<li>
-record the details on a <strong>DOC</strong>. Use <strong>Fast Note</strong> - select <strong>Auto text</strong> &gt; <strong>Concession Cards</strong> &gt; <strong>Claims</strong> &gt; <strong>Ex-CDA (child) HCC (EHC) NCL Grant/Reject</strong> option</li>
-		<li>
-if a customer has submitted a claim not yet finalised, withdraw the submitted claim, see <a href="../initial-contact-general/106-03040050-01.html">Withdrawal of claims</a></li>
-		</ul>
-<p>If the customer is qualified for an EHC, a new card will be issued to them on the Health Care Card carrier (SS357).</p>
+<p>If EHC is <strong>current</strong>, select the renewal activity either from the Future Activity List (<strong>FAL</strong>) or Activity List (<strong>AL</strong>) screen, then select the screens that need updating&#58;</p>
 
+<p>To convert activity from <strong>FAL</strong> to <strong>AL</strong>&#58;</p>
+		<ul>		<li>
+Select the <strong>Ex-Care Receiver Health Care Card/Renewal</strong> activity</li>
+		<li>
+Select the radio button <strong>'To SELECT future activity for update'</strong></li>
+		<li>
+<strong>Source</strong> and <strong>Date of Receipt</strong> will prepopulate, select <strong>Continue</strong></li>
+		</ul>
+<p>From <strong>AL</strong> or once activity is converted from <strong>FAL</strong> to <strong>AL</strong>&#58;</p>
+		<ul>		<li>
+On the Ex-CA (Child) HCC Assessment (<strong>EHCA</strong>) screen, all details will prepopulate. Only update if <strong>Student ID</strong> has changed with&#58;</li>
+			<ul>			<li>
+<strong>Date of Event</strong> as contact date</li>		</ul>
+		<li>
+Select <strong>Continue</strong></li>
+		<li>
+On Assessment Results (<strong>AR</strong>) select Concession Entitlement (<strong>MCCS</strong>) to display the new <strong>Period End Date</strong></li>
+		<li>
+Select <strong>Continue</strong></li>
+		<li>
+On <strong>AR</strong> select <strong>Finalise</strong></li>
+		<li>
+Record details using <strong>Fast Note</strong> - select <strong>Auto text</strong> &gt; <strong>Concession Cards</strong> &gt; <strong>Claims</strong> &gt; <strong>Ex-CDA (child) HCC (EHC) NCL Grant/Reject</strong> option</li>
+		<li>
+If needed, withdraw the submitted claim, see <a href="../initial-contact-general/106-03040050-01.html">Withdrawal of claims</a></li>
+		</ul>
+<p>If the EHC has <strong>expired</strong> within the last 13 weeks, create an activity on the Benefit Action (<strong>BA</strong>) screen&#58;</p>
+		<ul>		<li>
+<strong>Service Reason&#58;</strong> <strong>'EHC'</strong> (Ex-CA Child HCC)</li>
+		<li>
+<strong>Action&#58;</strong> <strong>'REN'</strong> (Renewal)</li>
+		<li>
+<strong>Effect date&#58;</strong> previous card cancellation date</li>
+		<li>
+<strong>Source&#58;</strong> '<strong>PHO</strong>' or '<strong>PER</strong>'</li>
+		<li>
+<strong>Receipt Date&#58;</strong> processing date, select <strong>Submit Change</strong> twice</li>
+		<li>
+On Ex-CA (Child) HCC Assessment (<strong>EHCA</strong>) screen, all details will prepopulate. Only update if <strong>Student ID</strong> has changed with&#58;</li>
+			<ul>			<li>
+<strong>Date of Event</strong> as contact date</li>		</ul>
+		<li>
+Select <strong>Continue</strong></li>
+		<li>
+On Assessment Results (<strong>AR</strong>) select Concession Entitlement (<strong>MCSS</strong>) to display the new <strong>Period End Date</strong></li>
+		<li>
+Select <strong>Continue</strong></li>
+		<li>
+On <strong>AR</strong> select <strong>Finalise</strong></li>
+		<li>
+Record details using <strong>Fast Note</strong> - select <strong>Auto text</strong> &gt; <strong>Concession Cards</strong> &gt; <strong>Claims</strong> &gt; <strong>Ex-CDA (child) HCC (EHC) NCL Grant/Reject</strong> option</li>
+		<li>
+If a customer has submitted a claim not yet finalised, withdraw the submitted claim, see <a href="../initial-contact-general/106-03040050-01.html">Withdrawal of claims</a></li>
+		<li>
+If the customer is qualified for an EHC, a new card will be issued to them on the Health Care Card carrier (SS357).</li>
+		</ul>
 <p>Scan to store any SS456 form and documents, see <a href="../specialist-manuals-and-system-tools/111-10010030-01.html">Scanning Centrelink documents using an MFD</a>.</p>
 </div>
 
