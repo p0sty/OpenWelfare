@@ -204,12 +204,16 @@
 <a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
 
 
-<h2 id="On this Page&#58;">On this Page&#58;</h2>
+<h2 id="On this page&#58;">On this page&#58;</h2>
 
 
 <p><a href="../students-and-trainees/010-05030010-03.html#bp03_L3TT_Assessing_eligi">Assessing eligibility and qualification for ABSTUDY PES</a></p>
 
 <p><a href="../students-and-trainees/010-05030010-03.html#bp03_L3TT_Steps_to_finali">Finalise the claim for ABSTUDY PES</a></p>
+
+<p><a href="../students-and-trainees/010-05030010-03.html#bp03_L3TT_Reject_the_clai">Reject the claim for ABSTUDY PES</a></p>
+
+<p></p>
 
 <p></p>
 <a class="anchor" name="bp03_L3TT_Assessing_eligi"></a>
@@ -625,8 +629,8 @@ if the student was receiving ABSTUDY PES immediately prior to their transfer to 
 <p>Depending on the reason for the rejection, the ABSTUDY claim may reject automatically (following the updating of information on the customer's record, for example, student attending primary school) or may need to be rejected manually. See <a target="_blank" href="../ongoing-contact/102-10010230-01.html">Pensioner Education Supplement (PES), ABSTUDY PES and Assistance for Isolated Children (AIC) PES cancellation, suspension and rejection codes</a> for a list of which rejection codes are automatic and which are manual.</p>
 
 <p>To action the rejection&#58;</p>
-		<ul>		<li>
-manually, see <a target="_blank" href="../initial-contact-general/106-07130230-01.html">Rejecting a Pensioner Education Supplement (PES) or ABSTUDY PES claim</a></li>
+		<ul>		<li><a class="anchor" name="_Hlt102044012"></a><a class="anchor" name="_Hlt102044011"></a>
+manually, see <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Reject_the_clai_Step">Table 3</a></li>
 		<li>
 automatically, <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Assessing_eligi_Step15">go to  Step 15</a></li>		</ul>
 </div>
@@ -657,8 +661,8 @@ contact the applicant and provide an explanation of the decision. See <a href=".
 <p>A <strong>manual rejection letter</strong> will be required if a Manual Follow-up (MFU) activity has been created after overnight processing on the <strong>AL</strong> screen. If an MFU requires a manual letter, generate a manual letter (Q134) on the Letter Display (<strong>LD</strong>) screen and complete it by giving the reason(s) for rejecting the claim and advising the applicant's rights for review and appeal.</p>
 
 <p>Is the customer receiving Carer Payment (CP)?</p>
-		<ul>		<li>
-<strong>Yes</strong>, see <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Steps_to_finali_Step04">Step 4 in Table 2</a></li>
+		<ul>		<li><a class="anchor" name="_Hlt102044041"></a>
+<strong>Yes</strong>, see <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Reject_the_clai_Step04">Step 4 in Table 3</a></li>
 		<li>
 <strong>No</strong>, procedure ends here</li>		</ul>
 </div>
@@ -758,7 +762,7 @@ complete any scanned documents actioned as part of the claim</li>
 		</ul>
 <p>Is the customer receiving Carer Payment (CP)?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Steps_to_finali_Step04">go to Step 4</a></li>
+<strong>Yes</strong>, see <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Reject_the_clai_Step04">Table 3 Step 4</a></li>
 		<li>
 <strong>No</strong>, procedure ends here</li>		</ul>
 </div>
@@ -766,29 +770,127 @@ complete any scanned documents actioned as part of the claim</li>
 
 <p></p></td>
 </tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp03_L3TT_Reject_the_clai"></a>
+<h3>Reject the claim for ABSTUDY PES</h3>
+
+
+<p>Table 3</p>
+<table caption="" width="100%">
 <tr>
-<td>
-<a class="anchor" name="bp03_tbl_Steps_to_finali_Step04"></a>
-<p>4</p></td>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Reject_the_clai_Step"></a>
+<p><strong>Step</strong></p></td>
 <td>
 
-<p><strong>Carer Payment (CP)</strong> <a title="Read more 19" class="showhead bp03_tbl_Steps_to_finali_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Steps_to_finali_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Reject_the_clai_Step01"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Code the rejection of claim</strong> <a title="Read more 19" class="showhead bp03_tbl_Reject_the_clai_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reject_the_clai_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>CP customers have limits on activities they undertake to remain eligible for CP, which includes study. </p>
-
-<p>Service Officers processing ABSTUDY PES claims must refer the CRN to a CP-skilled Service Officer to reassess the customer’s circumstances&#58;</p>
+<p>Code the rejection on the system&#58;</p>
 		<ul>		<li>
-use the <strong>Fast Note </strong>- select <strong>Auto text</strong>, use <strong>Carers</strong> &gt; <strong>Update</strong> &gt; <strong>Commenced study – CPAS to be updated</strong></li>
+in the <strong>Nxt</strong> field, key <strong>'SVPES'</strong></li>
+		<li>
+in the <strong>Sys</strong> field, key <strong>'ISS'</strong></li>
+		<li>
+press [<strong>Enter</strong>]</li>
+		</ul>
+<p>The customer's PES record status must be either New Claim (NCL) or Assessed (ASS) for the rejection activity to be accepted. If this is not the case, index the new PES claim before rejecting&#58;</p>
+		<ul>		<li>
+go to the Benefits Action (<strong>BA</strong>) screen</li>
+		<li>
+in the <strong>Svc Rsn</strong> field, key benefit type <strong>'EPA'</strong> for ABSTUDY PES</li>
+		<li>
+in the <strong>Action</strong> field, key <strong>'REJ'</strong></li>
+		<li>
+for the <strong>Reason</strong> field, select an appropriate rejection code by using <strong>field help '?'</strong>, or check cancellation, suspension and rejection reason codes. Only use rejection code ‘Other’ (<strong>OTH</strong>) if no other rejection code is appropriate. For example, to reject ABSTUDY PES claims where a student is not entitled to ABSTUDY PES due to receiving other government assistance for the same period</li>
+		<li>
+the date will default in the <strong>Effect date</strong> field</li>
+		</ul>
+<p>Go to the Assessment Results (<strong>AR</strong>) screen.</p>
+
+<p>Finalise the activity by keying <strong>'Y'</strong> in the <strong>Finished</strong> field and press [<strong>Enter</strong>].</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Reject_the_clai_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Check if a manual rejection reason letter is required</strong> <a title="Read more 20" class="showhead bp03_tbl_Reject_the_clai_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reject_the_clai_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>A manual letter will be required if a Manual Follow-up (MFU) activity has been created on the Activity List (<strong>AL</strong>) screen after the rejection activity is finalised.</p>
+
+<p>Go to the <strong>AL</strong> screen, if there is&#58;</p>
+		<ul>		<li>
+an MFU requiring a manual letter, <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Reject_the_clai_Step03">go to Step 3</a></li>
+		<li>
+no MFU, record the details of decision on a <strong>DOC</strong>, <a href="../students-and-trainees/010-05030010-03.html#bp03_tbl_Reject_the_clai_Step04">go to Step 4</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Reject_the_clai_Step03"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Send a manual letter</strong> <a title="Read more 21" class="showhead bp03_tbl_Reject_the_clai_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reject_the_clai_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Generate a manual letter (Q134) on the Letter Display (<strong>LD</strong>) screen and complete it by giving the reason(s) for rejecting the claim and advising of the applicant's right of review and appeal. The letter will be sent to the applicant.</p>
+
+<p>Record the details of decision on a <strong>DOC</strong>. If the rejection reason is <strong>FRC</strong> or <strong>FSD</strong>, the decision <strong>DOC</strong> must list all documents not provided at the time of the rejection.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Reject_the_clai_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Carer Payment (CP)</strong> <a title="Read more 22" class="showhead bp03_tbl_Reject_the_clai_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reject_the_clai_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>CP customers have limits on activities they undertake to remain eligible for CP, which includes study.</p>
+
+<p>Service Officers processing ABSTUDY PES claims must refer the CRN to a CP-skilled Service Officer to reassess the customer’s circumstances, if the customer receives CP&#58;</p>
+		<ul>		<li>
+use the <strong>Fast Note</strong> - select <strong>Auto text</strong>, use <strong>Carers</strong> &gt; <strong>Update</strong> &gt; <strong>Commenced study – CPAS</strong> to be updated</li>
 		<li>
 select <strong>Confirm</strong></li>
 		<li>
 ensure all relevant information is recorded in the <strong>DOC</strong></li>
 		<li>
 select <strong>Continue</strong></li>
-		<li>
-do <strong>not</strong> close the <strong>DOC</strong> created by the workflow</li>		</ul>
+		</ul>
+<p>do <strong>not</strong> close the <strong>DOC</strong> created by the workflow</p>
+</div>
+
 
 <p></p></td>
 </tr>
