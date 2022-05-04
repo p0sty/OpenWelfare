@@ -9,11 +9,13 @@ Assessing a Claim for ABSTUDY Pensioner Education Supplement (SY020) 010-0503001
 
 [Expand/Collapse all sections]Expand all
 
-On this Page:
+On this page:
 
 Assessing eligibility and qualification for ABSTUDY PES
 
 Finalise the claim for ABSTUDY PES
+
+Reject the claim for ABSTUDY PES
 
 Assessing eligibility and qualification for ABSTUDY PES
 
@@ -515,10 +517,7 @@ Table 1
 |                                   |                                   |
 |                                   | To action the rejection:          |
 |                                   |                                   |
-|                                   | -   manually, see Rejecting a     |
-|                                   |     Pensioner Education           |
-|                                   |     Supplement (PES) or ABSTUDY   |
-|                                   |     PES claim                     |
+|                                   | -    manually, see Table 3        |
 |                                   | -   automatically, go to Step 15  |
 +-----------------------------------+-----------------------------------+
 | 15                                | Automatic rejection + Read more   |
@@ -558,7 +557,7 @@ Table 1
 |                                   | Is the customer receiving Carer   |
 |                                   | Payment (CP)?                     |
 |                                   |                                   |
-|                                   | -   Yes, see Step 4 in Table 2    |
+|                                   | -    Yes, see Step 4 in Table 3   |
 |                                   | -   No, procedure ends here       |
 +-----------------------------------+-----------------------------------+
 
@@ -646,8 +645,101 @@ Table 2
 |                                   | Is the customer receiving Carer   |
 |                                   | Payment (CP)?                     |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
+|                                   | -   Yes, see Table 3 Step 4       |
 |                                   | -   No, procedure ends here       |
++-----------------------------------+-----------------------------------+
+
+Reject the claim for ABSTUDY PES
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Code the rejection of claim +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Code the rejection on the system: |
+|                                   |                                   |
+|                                   | -   in the Nxt field, key 'SVPES' |
+|                                   | -   in the Sys field, key 'ISS'   |
+|                                   | -   press [Enter]                 |
+|                                   |                                   |
+|                                   | The customer's PES record status  |
+|                                   | must be either New Claim (NCL) or |
+|                                   | Assessed (ASS) for the rejection  |
+|                                   | activity to be accepted. If this  |
+|                                   | is not the case, index the new    |
+|                                   | PES claim before rejecting:       |
+|                                   |                                   |
+|                                   | -   go to the Benefits Action     |
+|                                   |     (BA) screen                   |
+|                                   | -   in the Svc Rsn field, key     |
+|                                   |     benefit type 'EPA' for        |
+|                                   |     ABSTUDY PES                   |
+|                                   | -   in the Action field, key      |
+|                                   |     'REJ'                         |
+|                                   | -   for the Reason field, select  |
+|                                   |     an appropriate rejection code |
+|                                   |     by using field help '?', or   |
+|                                   |     check cancellation,           |
+|                                   |     suspension and rejection      |
+|                                   |     reason codes. Only use        |
+|                                   |     rejection code ‘Other’ (OTH)  |
+|                                   |     if no other rejection code is |
+|                                   |     appropriate. For example, to  |
+|                                   |     reject ABSTUDY PES claims     |
+|                                   |     where a student is not        |
+|                                   |     entitled to ABSTUDY PES due   |
+|                                   |     to receiving other government |
+|                                   |     assistance for the same       |
+|                                   |     period                        |
+|                                   | -   the date will default in the  |
+|                                   |     Effect date field             |
+|                                   |                                   |
+|                                   | Go to the Assessment Results (AR) |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | Finalise the activity by keying   |
+|                                   | 'Y' in the Finished field and     |
+|                                   | press [Enter].                    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Check if a manual rejection       |
+|                                   | reason letter is required + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | A manual letter will be required  |
+|                                   | if a Manual Follow-up (MFU)       |
+|                                   | activity has been created on the  |
+|                                   | Activity List (AL) screen after   |
+|                                   | the rejection activity is         |
+|                                   | finalised.                        |
+|                                   |                                   |
+|                                   | Go to the AL screen, if there is: |
+|                                   |                                   |
+|                                   | -   an MFU requiring a manual     |
+|                                   |     letter, go to Step 3          |
+|                                   | -   no MFU, record the details of |
+|                                   |     decision on a DOC, go to Step |
+|                                   |     4                             |
++-----------------------------------+-----------------------------------+
+| 3                                 | Send a manual letter + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Generate a manual letter (Q134)   |
+|                                   | on the Letter Display (LD) screen |
+|                                   | and complete it by giving the     |
+|                                   | reason(s) for rejecting the claim |
+|                                   | and advising of the applicant's   |
+|                                   | right of review and appeal. The   |
+|                                   | letter will be sent to the        |
+|                                   | applicant.                        |
+|                                   |                                   |
+|                                   | Record the details of decision on |
+|                                   | a DOC. If the rejection reason is |
+|                                   | FRC or FSD, the decision DOC must |
+|                                   | list all documents not provided   |
+|                                   | at the time of the rejection.     |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Carer Payment (CP) + Read more    |
 |                                   | ...                               |
@@ -661,7 +753,8 @@ Table 2
 |                                   | ABSTUDY PES claims must refer the |
 |                                   | CRN to a CP-skilled Service       |
 |                                   | Officer to reassess the           |
-|                                   | customer’s circumstances:         |
+|                                   | customer’s circumstances, if the  |
+|                                   | customer receives CP:             |
 |                                   |                                   |
 |                                   | -   use the Fast Note - select    |
 |                                   |     Auto text, use Carers >       |
@@ -672,8 +765,9 @@ Table 2
 |                                   |     information is recorded in    |
 |                                   |     the DOC                       |
 |                                   | -   select Continue               |
-|                                   | -   do not close the DOC created  |
-|                                   |     by the workflow               |
+|                                   |                                   |
+|                                   | do not close the DOC created by   |
+|                                   | the workflow                      |
 +-----------------------------------+-----------------------------------+
 
                                    

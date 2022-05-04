@@ -466,17 +466,35 @@ Table 2
 |                                   | amount.                           |
 |                                   |                                   |
 |                                   | Ensure the debt details are       |
-|                                   | correct:                          |
+|                                   | correct.                          |
 |                                   |                                   |
-|                                   | -   check the debt total on ADEX  |
-|                                   |     to confirm the arrears are    |
-|                                   |     being used to offset the debt |
-|                                   | -   use the date of the first     |
-|                                   |     negative adjustment as the    |
-|                                   |     debt start date               |
-|                                   | -   use the end date of the last  |
-|                                   |     negative adjustment as the    |
-|                                   |     debt end date                 |
+|                                   | Check the debt total on ADEX to   |
+|                                   | confirm the arrears are being     |
+|                                   | used to offset the debt.          |
+|                                   |                                   |
+|                                   | If the arrears before the first   |
+|                                   | negative adjustment (debt) are:   |
+|                                   |                                   |
+|                                   | -   legally payable, use the      |
+|                                   |     first day of the positive     |
+|                                   |     adjustment (CR) as the debt   |
+|                                   |     start date                    |
+|                                   | -   not legally payable, use the  |
+|                                   |     first day of the negative     |
+|                                   |     adjustment (debt) as the debt |
+|                                   |     start date                    |
+|                                   |                                   |
+|                                   | If the arrears after the last     |
+|                                   | negative adjustment (debt) are:   |
+|                                   |                                   |
+|                                   | -   legally payable, use the last |
+|                                   |     day of the positive           |
+|                                   |     adjustment (CR) as the debt   |
+|                                   |     end date                      |
+|                                   | -   not legally payable, use the  |
+|                                   |     last day of the negative      |
+|                                   |     adjustment as the debt end    |
+|                                   |     date                          |
 |                                   |                                   |
 |                                   | Make a note of the following      |
 |                                   | information which will be entered |
