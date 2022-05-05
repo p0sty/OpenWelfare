@@ -1,3 +1,16 @@
+    dhs-analytics-category="on_this_page" dhs-analytics-action="click"
+    dhs-analytics-label="contact_us_for_documents"}
+-   [Unable to access information in the log](#a2){.link .trans
+    dhs-analytics-behavior="onclick"
+    dhs-analytics-category="on_this_page" dhs-analytics-action="click"
+    dhs-analytics-label="unable_to_access_information_in_the_log"}
+:::
+
+[ ![](/sites/default/files/images/foi-logo_0.gif){width="148"
+height="62" loading="lazy"} ]{.media-element .file-full .embedded-entity
+delta="1" embed-button="link_files" entity-embed-display="image:image"
+entity-type="file" entity-uuid="db475780-6ce8-5a1f-9072-74ce54e2204a"
+langcode="en"}
 
 Information published on the Disclosure Log can include documents from:
 
@@ -1922,7 +1935,7 @@ Canberra BC ACT 2610
 Email the [FOI legal
 Team](mailto:foi.legal.Team@servicesaustralia.gov.au).
 
-## Unable to access information in the log
+## Unable to access information in the log {#a2}
 
 If you are unable to access the information in this log, you can contact
 us by:
@@ -1953,7 +1966,7 @@ Page last updated: 27 April 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 4 May 2022 from
+This information was printed 5 May 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
