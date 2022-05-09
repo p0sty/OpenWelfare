@@ -252,6 +252,14 @@
 <p>The claim form must be checked and recorded on the system.</p>
 
 <p>See <a href="../students-and-trainees/010-03020010-01.html">Checking the SY040</a>.</p>
+
+<p>If the claim is incomplete, or further information is required, Service Officers must&#58;</p>
+		<ul>		<li>
+attempt to contact the applicant to obtain the information verbally, or</li>
+		<li>
+issue a Q679 requesting further information</li>
+		</ul>
+<p>Once the claim is complete, and all information is available, <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Indexing_the_ap_Step02">go to Step 2</a>.</p>
 </div>
 
 
@@ -725,9 +733,11 @@ RES Task Selector (Record relevant residency details)</li>		</ul>
 			<ul>			<li>
 1 January of the earliest year, where the AIC is for multiple years</li>
 			<li>
-1 January of the current year, or</li>
+1 January of the current year</li>
 			<li>
-the date the child came into the applicant's care</li>		</ul>
+the date the child came into the applicant's care, or</li>
+			<li>
+the date of receipt of the claim, if the claim is for a future year</li>		</ul>
 		<li>
 <strong>Action&#58;</strong> <strong>I</strong>, insert</li>
 		</ul>
@@ -773,7 +783,7 @@ the date the child came into the applicant's care</li>		</ul>
 		<ul>		<li>
 <strong>Yes</strong>, <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Indexing_SY040_Step08">go to Step 8</a></li>
 		<li>
-<strong>No</strong>, in the <strong>Non-approval Reason&#58;</strong> field, select the appropriate code. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Indexing_SY040_Step08">Go to Step 8</a></li>		</ul>
+<strong>No</strong>, in the <strong>Non-approval Reason&#58;</strong> field, select the appropriate code. If the inappropriate applicant has applied, inhibit the letter as it will be issued to the students address, issue a manual notification letter. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Indexing_SY040_Step08">Go to Step 8</a></li>		</ul>
 </div>
 
 
@@ -959,7 +969,7 @@ State authorised care and whose permanent accommodation is financed wholly or su
 		<ul>		<li>
 <strong>Yes</strong>, <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step03">go to Step 3</a></li>
 		<li>
-<strong>No</strong>, do not update the Education Details Course (<strong>EDC</strong>) screen, <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step04">go to Step 4</a></li>		</ul>
+<strong>No</strong>, do not update the Education Details Course (<strong>EDC</strong>) screen, manually reject the claim via the Benefit Action (<strong>BA</strong>) screen. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step04">Go to Step 4</a></li>		</ul>
 </div>
 
 
@@ -1035,6 +1045,26 @@ studying by distance education, check eligibility for <a href="../students-and-t
 			<li>
 '<strong>DEO</strong>' if living in a second family home, studying via a Homeland Learning Centre or an alternative education site</li>		</ul>
 		<li>
+undertaking approved home schooling, and their approved registration for home schooling will cease due to maximum age rules prior to the end of the academic year, create a manual follow up on the Review Registration (<strong>RVR</strong>) screen&#58;</li>
+			<ul>			<li>
+<strong>Service Reason&#58;</strong> field, EIS</li>
+			<li>
+<strong>Review Reason&#58;</strong> field, REV</li>
+			<li>
+<strong>Due Date&#58;</strong> field, 28 days prior to the cessation of the home schooling registration</li>
+			<li>
+<strong>Source&#58;</strong> field, INT</li>
+			<li>
+<strong>Date of Receipt&#58;</strong> field, system date</li>
+			<li>
+<strong>Notes&#58;</strong> field, record details of maximum age for state or territory and when registration is expected to cease</li>
+			<li>
+<strong>Keywords&#58;</strong> field, AICAGE</li>
+			<li>
+<strong>Transfer To Region&#58;</strong> field, LPT</li>
+			<li>
+When activity falls due, see <a href="../students-and-trainees/010-03040020-01.html">Eligibility for Assistance for Isolated Children (AIC) Scheme Distance Education Allowance (DED)</a></li>		</ul>
+		<li>
 boarding away from home, check eligibility for <a href="../students-and-trainees/010-03040010-01.html">Boarding Allowance (BA/ABA)</a>. If boarding costs are unknown or require confirmation, in the <strong>Annual Boarding Fees&#58;</strong> field, code $1.00</li>
 		<li>
 private boarding, complete the following fields&#58;</li>
@@ -1079,9 +1109,11 @@ living in a second family home, check eligibility for <a href="../students-and-t
 			<ul>			<li>
 <strong>Living Arrangement&#58;</strong> field, code '<strong>SHA</strong>'</li>
 			<li>
-<strong>No of SHA Siblings&#58;</strong> field, code the number of other children living in the second home. <strong>Note&#58;</strong> if keying a claim for the 3rd child to enter the second family home, the correct number to key is 2. Due to system limitation, if 3 is coded, the claim will reject</li>		</ul>
+<strong>No of SHA Siblings&#58;</strong> field, code the number of other children living in the second home. <strong>Note&#58;</strong> if keying a claim for the 3rd child to enter the second family home, the correct number to key is 2. Due to system limitation, if 3 is coded, the claim will reject</li>
+			<li>
+<strong>SH Non-approval Reason&#58;</strong> field, record appropriate outcome if not eligible for second home allowance</li>		</ul>
 		<li>
-studying by distance education, boarding away from home or living in a second family home <strong>but</strong> receives Disability Support Pension or Parenting Payment Single, <a href="../students-and-trainees/010-03040040-01.html">check eligibility for AIC Scheme Pensioner Education Supplement (PES)</a>. If eligible, update the Living Arrangement Details (<strong>EILA</strong>) screen</li>
+studying by distance education, boarding away from home or living in a second family home <strong>but</strong> receives Disability Support Pension or Parenting Payment Single, <a href="../students-and-trainees/010-03040040-01.html">check eligibility for AIC Scheme Pensioner Education Supplement (PES)</a>. If eligible, update the Living Arrangement Details (EILA) screen</li>
 		<li>
 receiving AIC Pensioner Education Supplement (PES), contact and refer claim to the Senior Service Officer of '<strong>LPT</strong>'</li>
 		<li>
@@ -1171,13 +1203,17 @@ none of the above, code '<strong>NOP</strong>' in the <strong>Living Arrangement
 
 <p>Is the claim going to be granted?</p>
 		<ul>		<li>
-<strong>Yes</strong>, record all details in a <strong>DOC</strong>, including the relevant policy references. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step10">Go to  Step 10</a></li>
-		<li>
-<strong>No</strong>, rejected&#58;</li>
+<strong>Yes&#58;</strong></li>
 			<ul>			<li>
-automatically, <strong>DOC</strong> the record, including the relevant policy references. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step10">Go to  Step 10</a></li>
+Record details in a <strong>DOC</strong>, using <strong>Customer First Fast Note</strong> guided procedure, select <strong>Auto text</strong>, use <strong>Students, ABSTUDY &amp; Apprentices &gt; AIC &gt; AIC Grant/_DOV</strong></li>
 			<li>
-manually, <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step09">go to Step 9</a></li>			</ul>			</ul>
+Ensure the <strong>DOC</strong> includes the relevant policy references. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step10">Go to  Step 10</a></li>		</ul>
+		<li>
+<strong>No</strong>, the claim will be rejected&#58;</li>
+			<ul>			<li>
+Manually, <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step09">go to Step 9</a></li>
+			<li>
+Automatically<br>- Record details in a <strong>DOC</strong>, using <strong>Customer First Fast Note</strong> guided procedure, select <strong>Auto text</strong>, use <strong>Students, ABSTUDY &amp; Apprentices &gt; AIC &gt; AIC Reject/_DOV</strong><br>- Ensure the <strong>DOC</strong> includes the relevant policy references. <a href="../students-and-trainees/010-03020040-03.html#bp03_tbl_Assessing_the_c_Step10">Go to  Step 10</a></li>			</ul>			</ul>
 </div>
 
 
