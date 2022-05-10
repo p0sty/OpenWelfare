@@ -248,7 +248,7 @@
 
 <p>New Zealand collects money for Australian Child Support cases. New Zealand send the money to Australian Child Support for distribution to payees in Australia.  </p>
 
-<p>Schedule of payments is received into the International Disbursement mailbox, between the 13th and 16th of each month. If it does not arrive, contact NZIR and request them to email it ASAP.</p>
+<p>Schedule of payments is received into the International Disbursement mailbox, after the 6th working day of each month. If it does not arrive, contact NZIR and request them to email it ASAP.</p>
 </div>
 
 
@@ -282,7 +282,7 @@
 <div class="showcont">
 
 
-<p>Format the spreadsheet and convert it to a .prn file before the 19th of each month.</p>
+<p>Format the spreadsheet and convert it to a .prn file before the 14th of each month.</p>
 </div>
 
 
@@ -328,7 +328,27 @@ Check the Schedule to ensure all customers have a CSID and IRD. If they are miss
 			<li>
 Some CSIDs will have different fonts etc. Format them to all look the same</li>
 			<li>
-Make all names upper case (Create a new column and use the formula =Upper)</li>
+Insert a new column after column A (Payer Last Name and column C (Payer First Name) (so new columns are “B” and “D”</li>
+			<li>
+Sort CSID A-Z</li>
+			<li>
+Open NZ schedule – SYSOUT Prevention from G&#58;\Int\DHS_International-_child_Support\Central_Authority_Team\Disbursements\NZ Schedules and Errors\NZ Error Report (Sysout)</li>
+			<li>
+In cell B2 create a VLOOKUP where the lookup value is the CSID. Table Array is all rows excluding headings in B, C and D of the NZ Schedule – SYSOUT Prevention spreadsheet. Column index is 3 and Range lookup is false. Drag this formula to the end of the schedule</li>
+			<li>
+In cell D2 create a VLOOKUP where the lookup value is the CSID. Table Array is all rows excluding headings in B, C and D of the NZ Schedule – SYSOUT Prevention spreadsheet. Column index is 2 and Range lookup is false. Drag this formula to the end of the schedule</li>
+			<li>
+Select Global&gt;Copy&gt; Save values</li>		</ul>
+		<li>
+It will now have first and last names of the customers who need to be changed from the NZ schedule to match the records in Cuba</li>
+			<ul>			<li>
+Sort the spreadsheet by column B (all the customers requiring updates are at the top) Scroll down to the first #N/A</li>
+			<li>
+In the first cell with #N/A type the formula =Upper(A???) where ??? is the cell next to the first #N/A in column B</li>
+			<li>
+Repeat for Column D – then select Global&gt; Copy&gt;Paste values. When both columns, B and D are all upper case and show the names required to be used in the PRN. Delete Columns A and C</li>
+			<li>
+Make all names upper case (create a new column and use the formula =Upper)</li>
 			<li>
 Remove any spaces from before names and remove 'restricted'</li>
 			<li>
@@ -508,7 +528,7 @@ check the column widths to ensure they are correct</li>		</ul>
 <div class="showcont">
 
 
-<p>Once formatted, IT will pick up the file. IT will action the file on the 22nd of the month or the first working day if this falls on a weekend, so payments can be automatically applied to Cuba and reports generated for payments requiring manual processing.</p>
+<p>Once formatted, IT will pick up the file. IT will action the file on the 15th of the month or the first working day if this falls on a weekend, so payments can be automatically applied to Cuba and reports generated for payments requiring manual processing.</p>
 </div>
 
 
@@ -542,7 +562,7 @@ check the column widths to ensure they are correct</li>		</ul>
 <div class="showcont">
 
 
-<p>After payment information is received from NZIR and the .prn file has been created and saved to the correct location, check that NZIR have actually sent the funds to Child support.</p>
+<p>After payment information is received from NZIR and the .prn file has been created and saved to the correct location, check that NZIR have sent the funds and been received to Child support.</p>
 		<ul>		<li>
 The correct account for NZIR to deposit funds into is&#58;</li>
 			<ul>			<li>
@@ -560,7 +580,7 @@ Click on the Payments List link or access via Accounting/Payment Lists/Find</li>
 		<li>
 The Payments box should have a Received and Posted date showing when the payment has cleared into the Services Australia bank account and the amount. This confirms the payment has been received and is in the correct bank account</li>
 		</ul>
-<p><strong>Note&#58;</strong> the funds must by in the Child Support bank account before IT process the .prn file on the 22nd of the month.</p>
+<p><strong>Note&#58;</strong> the funds must by in the Child Support bank account before IT process the .prn file on the 15th of the month.</p>
 </div>
 
 
@@ -594,7 +614,7 @@ The Payments box should have a Received and Posted date showing when the payment
 <div class="showcont">
 
 
-<p>On the 22nd of each month, or the first working day after the 22nd, the NZ Error report is received via email. This report is for money that NZIR have sent to Australia and cannot be applied to Cuba automatically. This report is the SYSOUT report.</p>
+<p>On the 15th of each month, or the first working day after the 15th, the NZ Error report is received via email. This report is for money that NZIR have sent to Australia and cannot be applied to Cuba automatically. This report is the SYSOUT report.</p>
 
 <p>Format the report into a spreadsheet.</p>
 </div>

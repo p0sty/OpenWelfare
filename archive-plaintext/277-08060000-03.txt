@@ -45,8 +45,8 @@ Table 1
 |                                   |                                   |
 |                                   | Schedule of payments is received  |
 |                                   | into the International            |
-|                                   | Disbursement mailbox, between the |
-|                                   | 13th and 16th of each month. If   |
+|                                   | Disbursement mailbox, after the   |
+|                                   | 6th working day of each month. If |
 |                                   | it does not arrive, contact NZIR  |
 |                                   | and request them to email it      |
 |                                   | ASAP.                             |
@@ -64,7 +64,7 @@ Table 2
 |                                   |                                   |
 |                                   | Format the spreadsheet and        |
 |                                   | convert it to a .prn file before  |
-|                                   | the 19th of each month.           |
+|                                   | the 14th of each month.           |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Format CSIDs + Read more ...      |
 |                                   |                                   |
@@ -119,8 +119,66 @@ Table 2
 |                                   | -   Some CSIDs will have          |
 |                                   |     different fonts etc. Format   |
 |                                   |     them to all look the same     |
+|                                   | -   Insert a new column after     |
+|                                   |     column A (Payer Last Name and |
+|                                   |     column C (Payer First Name)   |
+|                                   |     (so new columns are “B” and   |
+|                                   |     “D”                           |
+|                                   | -   Sort CSID A-Z                 |
+|                                   | -   Open NZ schedule – SYSOUT     |
+|                                   |     Prevention from               |
+|                                   |     G:\Int\DHS_In                 |
+|                                   | ternational-_child_Support\Centra |
+|                                   | l_Authority_Team\Disbursements\NZ |
+|                                   |     Schedules and Errors\NZ Error |
+|                                   |     Report (Sysout)               |
+|                                   | -   In cell B2 create a VLOOKUP   |
+|                                   |     where the lookup value is the |
+|                                   |     CSID. Table Array is all rows |
+|                                   |     excluding headings in B, C    |
+|                                   |     and D of the NZ Schedule –    |
+|                                   |     SYSOUT Prevention             |
+|                                   |     spreadsheet. Column index is  |
+|                                   |     3 and Range lookup is false.  |
+|                                   |     Drag this formula to the end  |
+|                                   |     of the schedule               |
+|                                   | -   In cell D2 create a VLOOKUP   |
+|                                   |     where the lookup value is the |
+|                                   |     CSID. Table Array is all rows |
+|                                   |     excluding headings in B, C    |
+|                                   |     and D of the NZ Schedule –    |
+|                                   |     SYSOUT Prevention             |
+|                                   |     spreadsheet. Column index is  |
+|                                   |     2 and Range lookup is false.  |
+|                                   |     Drag this formula to the end  |
+|                                   |     of the schedule               |
+|                                   | -   Select Global>Copy> Save      |
+|                                   |     values                        |
+|                                   |                                   |
+|                                   | It will now have first and last   |
+|                                   | names of the customers who need   |
+|                                   | to be changed from the NZ         |
+|                                   | schedule to match the records in  |
+|                                   | Cuba                              |
+|                                   |                                   |
+|                                   | -   Sort the spreadsheet by       |
+|                                   |     column B (all the customers   |
+|                                   |     requiring updates are at the  |
+|                                   |     top) Scroll down to the first |
+|                                   |     #N/A                          |
+|                                   | -   In the first cell with #N/A   |
+|                                   |     type the formula =Upper(A???) |
+|                                   |     where ??? is the cell next to |
+|                                   |     the first #N/A in column B    |
+|                                   | -   Repeat for Column D – then    |
+|                                   |     select Global> Copy>Paste     |
+|                                   |     values. When both columns, B  |
+|                                   |     and D are all upper case and  |
+|                                   |     show the names required to be |
+|                                   |     used in the PRN. Delete       |
+|                                   |     Columns A and C               |
 |                                   | -   Make all names upper case     |
-|                                   |     (Create a new column and use  |
+|                                   |     (create a new column and use  |
 |                                   |     the formula =Upper)           |
 |                                   | -   Remove any spaces from before |
 |                                   |     names and remove 'restricted' |
@@ -304,7 +362,7 @@ Table 2
 |                                   |                                   |
 |                                   | Once formatted, IT will pick up   |
 |                                   | the file. IT will action the file |
-|                                   | on the 22nd of the month or the   |
+|                                   | on the 15th of the month or the   |
 |                                   | first working day if this falls   |
 |                                   | on a weekend, so payments can be  |
 |                                   | automatically applied to Cuba and |
@@ -326,8 +384,8 @@ Table 3
 |                                   | received from NZIR and the .prn   |
 |                                   | file has been created and saved   |
 |                                   | to the correct location, check    |
-|                                   | that NZIR have actually sent the  |
-|                                   | funds to Child support.           |
+|                                   | that NZIR have sent the funds and |
+|                                   | been received to Child support.   |
 |                                   |                                   |
 |                                   | The correct account for NZIR to   |
 |                                   | deposit funds into is:            |
@@ -363,7 +421,7 @@ Table 3
 |                                   | Note: the funds must by in the    |
 |                                   | Child Support bank account before |
 |                                   | IT process the .prn file on the   |
-|                                   | 22nd of the month.                |
+|                                   | 15th of the month.                |
 +-----------------------------------+-----------------------------------+
 
 Error correction required when updating the SYSOUT report
@@ -375,8 +433,8 @@ Table 4
 +-----------------------------------+-----------------------------------+
 | 1                                 | Error correction + Read more ...  |
 |                                   |                                   |
-|                                   | On the 22nd of each month, or the |
-|                                   | first working day after the 22nd, |
+|                                   | On the 15th of each month, or the |
+|                                   | first working day after the 15th, |
 |                                   | the NZ Error report is received   |
 |                                   | via email. This report is for     |
 |                                   | money that NZIR have sent to      |

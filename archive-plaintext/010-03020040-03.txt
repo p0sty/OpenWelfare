@@ -43,6 +43,20 @@ Table 1
 |                                   | and recorded on the system.       |
 |                                   |                                   |
 |                                   | See Checking the SY040.           |
+|                                   |                                   |
+|                                   | If the claim is incomplete, or    |
+|                                   | further information is required,  |
+|                                   | Service Officers must:            |
+|                                   |                                   |
+|                                   | -   attempt to contact the        |
+|                                   |     applicant to obtain the       |
+|                                   |     information verbally, or      |
+|                                   | -   issue a Q679 requesting       |
+|                                   |     further information           |
+|                                   |                                   |
+|                                   | Once the claim is complete, and   |
+|                                   | all information is available, go  |
+|                                   | to Step 2.                        |
 +-----------------------------------+-----------------------------------+
 | 2                                 | EIA or EIO service reason + Read  |
 |                                   | more ...                          |
@@ -441,10 +455,12 @@ Table 3
 |                                   | -   1 January of the earliest     |
 |                                   |     year, where the AIC is for    |
 |                                   |     multiple years                |
-|                                   | -   1 January of the current      |
-|                                   |     year, or                      |
+|                                   | -   1 January of the current year |
 |                                   | -   the date the child came into  |
-|                                   |     the applicant's care          |
+|                                   |     the applicant's care, or      |
+|                                   | -   the date of receipt of the    |
+|                                   |     claim, if the claim is for a  |
+|                                   |     future year                   |
 |                                   |                                   |
 |                                   | Action: I, insert                 |
 |                                   |                                   |
@@ -486,8 +502,13 @@ Table 3
 |                                   | -   Yes, go to Step 8             |
 |                                   | -   No, in the Non-approval       |
 |                                   |     Reason: field, select the     |
-|                                   |     appropriate code. Go to Step  |
-|                                   |     8                             |
+|                                   |     appropriate code. If the      |
+|                                   |     inappropriate applicant has   |
+|                                   |     applied, inhibit the letter   |
+|                                   |     as it will be issued to the   |
+|                                   |     students address, issue a     |
+|                                   |     manual notification letter.   |
+|                                   |     Go to Step 8                  |
 +-----------------------------------+-----------------------------------+
 | 8                                 | First application for the         |
 |                                   | student + Read more ...           |
@@ -678,7 +699,10 @@ Table 4
 |                                   | -   Yes, go to Step 3             |
 |                                   | -   No, do not update the         |
 |                                   |     Education Details Course      |
-|                                   |     (EDC) screen, go to Step 4    |
+|                                   |     (EDC) screen, manually reject |
+|                                   |     the claim via the Benefit     |
+|                                   |     Action (BA) screen. Go to     |
+|                                   |     Step 4                        |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Study details + Read more ...     |
 |                                   |                                   |
@@ -787,6 +811,37 @@ Table 4
 |                                   |     Homeland Learning Centre or   |
 |                                   |     an alternative education site |
 |                                   |                                   |
+|                                   | undertaking approved home         |
+|                                   | schooling, and their approved     |
+|                                   | registration for home schooling   |
+|                                   | will cease due to maximum age     |
+|                                   | rules prior to the end of the     |
+|                                   | academic year, create a manual    |
+|                                   | follow up on the Review           |
+|                                   | Registration (RVR) screen:        |
+|                                   |                                   |
+|                                   | -   Service Reason: field, EIS    |
+|                                   | -   Review Reason: field, REV     |
+|                                   | -   Due Date: field, 28 days      |
+|                                   |     prior to the cessation of the |
+|                                   |     home schooling registration   |
+|                                   | -   Source: field, INT            |
+|                                   | -   Date of Receipt: field,       |
+|                                   |     system date                   |
+|                                   | -   Notes: field, record details  |
+|                                   |     of maximum age for state or   |
+|                                   |     territory and when            |
+|                                   |     registration is expected to   |
+|                                   |     cease                         |
+|                                   | -   Keywords: field, AICAGE       |
+|                                   | -   Transfer To Region: field,    |
+|                                   |     LPT                           |
+|                                   | -   When activity falls due, see  |
+|                                   |     Eligibility for Assistance    |
+|                                   |     for Isolated Children (AIC)   |
+|                                   |     Scheme Distance Education     |
+|                                   |     Allowance (DED)               |
+|                                   |                                   |
 |                                   | boarding away from home, check    |
 |                                   | eligibility for Boarding          |
 |                                   | Allowance (BA/ABA). If boarding   |
@@ -860,6 +915,10 @@ Table 4
 |                                   |     Due to system limitation, if  |
 |                                   |     3 is coded, the claim will    |
 |                                   |     reject                        |
+|                                   | -   SH Non-approval Reason:       |
+|                                   |     field, record appropriate     |
+|                                   |     outcome if not eligible for   |
+|                                   |     second home allowance         |
 |                                   |                                   |
 |                                   | studying by distance education,   |
 |                                   | boarding away from home or living |
@@ -972,17 +1031,31 @@ Table 4
 |                                   |                                   |
 |                                   | Is the claim going to be granted? |
 |                                   |                                   |
-|                                   | Yes, record all details in a DOC, |
-|                                   | including the relevant policy     |
-|                                   | references. Go to Step 10         |
+|                                   | Yes:                              |
 |                                   |                                   |
-|                                   | No, rejected:                     |
-|                                   |                                   |
-|                                   | -   automatically, DOC the        |
-|                                   |     record, including the         |
+|                                   | -   Record details in a DOC,      |
+|                                   |     using Customer First Fast     |
+|                                   |     Note guided procedure, select |
+|                                   |     Auto text, use Students,      |
+|                                   |     ABSTUDY & Apprentices > AIC > |
+|                                   |     AIC Grant/_DOV                |
+|                                   | -   Ensure the DOC includes the   |
 |                                   |     relevant policy references.   |
 |                                   |     Go to Step 10                 |
-|                                   | -   manually, go to Step 9        |
+|                                   |                                   |
+|                                   | No, the claim will be rejected:   |
+|                                   |                                   |
+|                                   | -   Manually, go to Step 9        |
+|                                   | -   Automatically                 |
+|                                   |     - Record details in a DOC,    |
+|                                   |     using Customer First Fast     |
+|                                   |     Note guided procedure, select |
+|                                   |     Auto text, use Students,      |
+|                                   |     ABSTUDY & Apprentices > AIC > |
+|                                   |     AIC Reject/_DOV               |
+|                                   |     - Ensure the DOC includes the |
+|                                   |     relevant policy references.   |
+|                                   |     Go to Step 10                 |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Manual rejection + Read more ...  |
 |                                   |                                   |
