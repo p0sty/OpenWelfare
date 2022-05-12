@@ -30,6 +30,78 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 9 May 2022                        | Operational Blueprint documents   |
+|                                   | (LEX 61113):                      |
+|                                   |                                   |
+|                                   | -   Employment Services           |
+|                                   |     Assessment (ESAt) referrals   |
+|                                   |     made by Employment Services   |
+|                                   |     Providers 001-02230040        |
+|                                   | -   Employment Services           |
+|                                   |     Assessment (ESAt) overview    |
+|                                   |     001-02330000                  |
+|                                   | -   Request an Employment         |
+|                                   |     Services Assessment (ESAt)    |
+|                                   |     001-02330010                  |
+|                                   | -   Determining when an           |
+|                                   |     Employment Services           |
+|                                   |     Assessment (ESAt) is required |
+|                                   |     001-02330040                  |
+|                                   | -   Identifying people with a     |
+|                                   |     partial capacity to work      |
+|                                   |     001-03030060                  |
+|                                   | -   Assessment of a medical       |
+|                                   |     certificate to determine      |
+|                                   |     exemption from mutual         |
+|                                   |     obligation requirements for a |
+|                                   |     temporary incapacity          |
+|                                   |     001-09120010                  |
+|                                   | -   Exempting a job seeker from   |
+|                                   |     mutual obligation             |
+|                                   |     requirements for serious      |
+|                                   |     illness 001-09120080          |
+|                                   | -   Expiry and renewal of medical |
+|                                   |     certificates for payments     |
+|                                   |     with mutual obligation        |
+|                                   |     requirements 001-09121000     |
+|                                   | -   Initial contact by a customer |
+|                                   |     who is ill, injured or has a  |
+|                                   |     disability 008- 01010000      |
+|                                   | -   Employment services for       |
+|                                   |     people with disabilities      |
+|                                   |     008-02000000                  |
+|                                   | -   Eligibility criteria for      |
+|                                   |     participation with Disability |
+|                                   |     Employment Services (DES)     |
+|                                   |     008-04030020                  |
+|                                   | -   Assessing a job seeker's      |
+|                                   |     mutual obligation             |
+|                                   |     requirements based on         |
+|                                   |     Employment Services           |
+|                                   |     Assessment (ESAt)/Job         |
+|                                   |     Capacity Assessment (JCA)     |
+|                                   |     reports 008-06070070.         |
+|                                   |                                   |
+|                                   | 12 documents released in full.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** 22\      |
+|                                   | **Exemptions:** 22                |
++-----------------------------------+-----------------------------------+
+| 5 May 2022                        | Operational Blueprint document    |
+|                                   | (LEX 67034):                      |
+|                                   |                                   |
+|                                   | -   Personalised Services         |
+|                                   |     101-17021300.                 |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** 47E(d)\  |
+|                                   | **Exemptions:** 47E(d)            |
++-----------------------------------+-----------------------------------+
 | 20 April 2022                     | Decision notices to applicants    |
 |                                   | for Australian Victim of          |
 |                                   | Terrorism Overseas payments (LEX  |
@@ -43,26 +115,26 @@ after 12 months unless the information has enduring public value.
 |                                   | **Exemptions:** 47F(1)            |
 +-----------------------------------+-----------------------------------+
 | 15 March 2022                     | Operational Blueprint document    |
-|                                   | (LEX 66593).                      |
+|                                   | (LEX 66593):                      |
 |                                   |                                   |
 |                                   | -   Bankruptcy for Centrelink     |
-|                                   |     debts 107-05070000            |
+|                                   |     debts 107-05070000.           |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act:** Section  |
 |                                   | 37(2)(b)\                         |
-|                                   | **Exemptions:** Section 37(2)(b)  |
+|                                   | **Exemptions:** Section 37(2)(b)  |
 +-----------------------------------+-----------------------------------+
 | 4 March 2022                      | Operational Blueprint document    |
-|                                   | (LEX 66373).                      |
+|                                   | (LEX 66373):                      |
 |                                   |                                   |
 |                                   | -   Maintaining the value of real |
 |                                   |     estate assets on customer     |
 |                                   |     records\                      |
-|                                   |     108-04130100                  |
+|                                   |     108-04130100.                 |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
@@ -106,7 +178,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     003-01100000                  |
 |                                   | -   JET Child Care Fee Assistance |
 |                                   |     Guidelines previously used by |
-|                                   |     the Agency (LEX 65445)        |
+|                                   |     the Agency (LEX 65445).       |
 |                                   |                                   |
 |                                   | 10 documents released in full and |
 |                                   | 5 documents released in part. The |
@@ -144,10 +216,10 @@ after 12 months unless the information has enduring public value.
 |                                   |     recovery 005-06110000         |
 |                                   | -   Review of decision for Status |
 |                                   |     Resolution Support Services   |
-|                                   |     (SRSS) payment 005-06130000   |
+|                                   |     (SRSS) payment 005-06130000.  |
 |                                   |                                   |
 |                                   | 1 document released in full and 7 |
-|                                   | documents released in part The    |
+|                                   | documents released in part. The   |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
@@ -162,10 +234,10 @@ after 12 months unless the information has enduring public value.
 |                                   | -   109-03000000                  |
 |                                   | -   109-05080000                  |
 |                                   | -   109-06000000                  |
-|                                   | -   109-07040000                  |
+|                                   | -   109-07040000.                 |
 |                                   |                                   |
 |                                   | 1 document released in full and 4 |
-|                                   | documents released in part The    |
+|                                   | documents released in part. The   |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
@@ -177,7 +249,7 @@ after 12 months unless the information has enduring public value.
 |                                   | (LEX 65102):                      |
 |                                   |                                   |
 |                                   | -   Reviews and Appeals           |
-|                                   |     109-03000000                  |
+|                                   |     109-03000000.                 |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
@@ -200,7 +272,7 @@ after 12 months unless the information has enduring public value.
 |                                   | -   Disclosing information to a   |
 |                                   |     nominee 104-04090060          |
 |                                   | -   Obligations of nominees       |
-|                                   |     104-04090020                  |
+|                                   |     104-04090020.                 |
 |                                   |                                   |
 |                                   | 6 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -216,7 +288,7 @@ after 12 months unless the information has enduring public value.
 |                                   | -   administrative errors made    |
 |                                   |     while processing claims under |
 |                                   |     the Medicare Benefits         |
-|                                   |     Schedule; and                 |
+|                                   |     Schedule                      |
 |                                   | -   most common types of          |
 |                                   |     administrative errors over    |
 |                                   |     the last three years.         |
@@ -257,7 +329,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     recovery 005-06110000         |
 |                                   | -   Review of decision for Status |
 |                                   |     Resolution Support Services   |
-|                                   |     (SRSS) payment 005-06130000   |
+|                                   |     (SRSS) payment 005-06130000.  |
 |                                   |                                   |
 |                                   | 1 document released in full, 6    |
 |                                   | documents released in part and 2  |
@@ -302,7 +374,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     reviews 065-20062953          |
 |                                   | -   Aged care reviews -           |
 |                                   |     Reassessments and updates     |
-|                                   |     065-20082042                  |
+|                                   |     065-20082042.                 |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -328,7 +400,7 @@ after 12 months unless the information has enduring public value.
 |                                   |                                   |
 |                                   | -   Australian Taxation Office    |
 |                                   |     (ATO) identity fraud and      |
-|                                   |     debts 107-02010020            |
+|                                   |     debts 107-02010020.           |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
@@ -343,7 +415,7 @@ after 12 months unless the information has enduring public value.
 |                                   | (LEX 63368):                      |
 |                                   |                                   |
 |                                   | -   Claim lodgement of Centrelink |
-|                                   |     claims 106-03020000           |
+|                                   |     claims 106-03020000.          |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
@@ -359,7 +431,7 @@ after 12 months unless the information has enduring public value.
 |                                   | -   Centrepay Service Reasons,    |
 |                                   |     and                           |
 |                                   | -   Centrepay Level 3 Helpdesk    |
-|                                   |     process (LEX62369)            |
+|                                   |     process (LEX62369).           |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -398,7 +470,7 @@ after 12 months unless the information has enduring public value.
 |                                   |                                   |
 |                                   | -   Nominees 104-04090000         |
 |                                   | -   Reviewing nominee             |
-|                                   |     arrangements 110-06090160     |
+|                                   |     arrangements 110-06090160.    |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -429,7 +501,7 @@ after 12 months unless the information has enduring public value.
 |                                   | (LEX 60269):                      |
 |                                   |                                   |
 |                                   | -   Recording interactions        |
-|                                   |     104-07020060                  |
+|                                   |     104-07020060.                 |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
@@ -447,7 +519,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     103-03150000                  |
 |                                   | -   Exit Applications from the    |
 |                                   |     Cashless Debit Card (CDC)     |
-|                                   |     103-20081031                  |
+|                                   |     103-20081031.                 |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -513,7 +585,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     Minister Stuart Robert on 23  |
 |                                   |     March 2020                    |
 |                                   | -   Email briefings to and from   |
-|                                   |     the Minister's Office         |
+|                                   |     the Minister's Office.        |
 |                                   |                                   |
 |                                   | 4 documents released in part and  |
 |                                   | 1 document refused. The documents |
@@ -560,7 +632,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     receiving Youth Allowance     |
 |                                   |     (YA), Disability Support      |
 |                                   |     Pension (DSP) or Special      |
-|                                   |     Benefit (SpB) 001-04030030    |
+|                                   |     Benefit (SpB) 001-04030030.   |
 |                                   |                                   |
 |                                   | 1 document released in full and 1 |
 |                                   | document released in part. The    |
@@ -659,7 +731,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     108-07010010                  |
 |                                   | -   Income Test for single        |
 |                                   |     allowance customers           |
-|                                   |     108-01020010                  |
+|                                   |     108-01020010.                 |
 |                                   |                                   |
 |                                   | 3 documents released in full. The |
 |                                   | documents are [available upon     |
@@ -669,9 +741,9 @@ after 12 months unless the information has enduring public value.
 |                                   | 22\                               |
 |                                   | **Exemptions:** N/A               |
 +-----------------------------------+-----------------------------------+
-| 22 January 2020                   | \'The Scheme for Compensation for |
+| 22 January 2020                   | 'The Scheme for Compensation for  |
 |                                   | Detriment caused by Defective     |
-|                                   | Administration - Authorisations\' |
+|                                   | Administration - Authorisations'  |
 |                                   | signed by Minister Robert on 4    |
 |                                   | June 2019 (LEX 49822).            |
 |                                   |                                   |
@@ -718,7 +790,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     109-03020020                  |
 |                                   | -   Administrative Appeals        |
 |                                   |     Tribunal (AAT) (CLK)          |
-|                                   |     109-03030000                  |
+|                                   |     109-03030000.                 |
 |                                   |                                   |
 |                                   | 3 documents released in full and  |
 |                                   | 4 document released in part. The  |
@@ -806,7 +878,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     043-0416010                   |
 |                                   | -   Review and reassessments for  |
 |                                   |     private trusts and private    |
-|                                   |     companies 043-04160000        |
+|                                   |     companies 043-04160000.       |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -874,7 +946,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     claims processing             |
 |                                   |     007-17103135                  |
 |                                   | -   Processing Child Care Subsidy |
-|                                   |     (CCS) claims 007-17103136     |
+|                                   |     (CCS) claims 007-17103136.    |
 |                                   |                                   |
 |                                   | 3 documents released in full and  |
 |                                   | 1 document released in part. The  |
@@ -925,7 +997,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     Scheme (PLS) loan amounts     |
 |                                   |     065-08020050                  |
 |                                   | -   Pension Loans Scheme (PLS)    |
-|                                   |     reviews 065-08020060          |
+|                                   |     reviews 065-08020060.         |
 |                                   |                                   |
 |                                   | Documents released in part. The   |
 |                                   | documents are [available upon     |
@@ -1016,7 +1088,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     008-03090040                  |
 |                                   | -   Understanding Job Capacity    |
 |                                   |     Assessments (JCA) reports     |
-|                                   |     008-06070030                  |
+|                                   |     008-06070030.                 |
 |                                   |                                   |
 |                                   | 9 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -1079,7 +1151,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     for Medicare 011-40020000     |
 |                                   | -   Applicants for permanent      |
 |                                   |     residency eligibility for     |
-|                                   |     Medicare 011-44020000         |
+|                                   |     Medicare 011-44020000.        |
 |                                   |                                   |
 |                                   | 1 document released in part and 2 |
 |                                   | documents released in full, with  |
@@ -1131,7 +1203,7 @@ after 12 months unless the information has enduring public value.
 |                                   | -   Expiry and renewal of medical |
 |                                   |     certificates for payments     |
 |                                   |     with Mutual Obligation        |
-|                                   |     Requirements 001-09121000     |
+|                                   |     Requirements 001-09121000.    |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -1454,8 +1526,8 @@ after 12 months unless the information has enduring public value.
 |                                   | described as: the plan to         |
 |                                   | implement the recommendations in  |
 |                                   | the 2014 report of the own motion |
-|                                   | investigation \'FOI at the        |
-|                                   | Department of Human Services\'    |
+|                                   | investigation 'FOI at the         |
+|                                   | Department of Human Services'     |
 |                                   | (LEX 42362)                       |
 |                                   |                                   |
 |                                   | 1 document, released in part. The |
@@ -1619,20 +1691,20 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | 9 November 2018                   | Documents outlining the change    |
 |                                   | history related to mylT Article   |
-|                                   | 725 (\'Valid reasons to call the  |
+|                                   | 725 ('Valid reasons to call the   |
 |                                   | Shared Services ICT Service Desk  |
-|                                   | Urgent Escalation Channel\')      |
+|                                   | Urgent Escalation Channel')       |
 |                                   | between 13 November 2015 and 30   |
 |                                   | July 2018.\                       |
 |                                   | Documents outlining the change    |
 |                                   | history of mylT Article 1158      |
-|                                   | (\'Cyber Security Incident        |
-|                                   | Reporting\') for the Period May   |
+|                                   | ('Cyber Security Incident         |
+|                                   | Reporting') for the Period May    |
 |                                   | 2017 to July 2017.\               |
 |                                   | Documents outlining the change    |
 |                                   | history related to the web page   |
-|                                   | \'Genesys Workforce Management    |
-|                                   | Solution\' from the period prior  |
+|                                   | 'Genesys Workforce Management     |
+|                                   | Solution' from the period prior   |
 |                                   | to November 2016 until November   |
 |                                   | 2017. (LEX 39753)                 |
 |                                   |                                   |
@@ -1693,18 +1765,17 @@ after 12 months unless the information has enduring public value.
 |                                   | **Exemptions:** N/A               |
 +-----------------------------------+-----------------------------------+
 | 7 June 2018                       | The Services Australia website    |
-|                                   | \'Reciprocal Health Care          |
-|                                   | Agreement 405 and 410 visa        |
-|                                   | holders from the United Kingdom\' |
-|                                   | in the form prior to being        |
-|                                   | updated on 1 March 2018.          |
+|                                   | 'Reciprocal Health Care Agreement |
+|                                   | 405 and 410 visa holders from the |
+|                                   | United Kingdom' in the form prior |
+|                                   | to being updated on 1 March 2018. |
 |                                   |                                   |
 |                                   | The Services Australia website    |
-|                                   | \'United Kingdom Reciprocal       |
-|                                   | Health Care Agreement for 405 and |
-|                                   | 410 retirement visa holders\' in  |
-|                                   | the form prior to being updated   |
-|                                   | on 13 December 2017 (LEX 36572)   |
+|                                   | 'United Kingdom Reciprocal Health |
+|                                   | Care Agreement for 405 and 410    |
+|                                   | retirement visa holders' in the   |
+|                                   | form prior to being updated on 13 |
+|                                   | December 2017 (LEX 36572)         |
 |                                   |                                   |
 |                                   | 2 documents released in full. The |
 |                                   | documents are [available upon     |
@@ -1812,13 +1883,13 @@ after 12 months unless the information has enduring public value.
 | 23 February 2018                  | Data specifying the total number  |
 |                                   | of Disability Support Pension     |
 |                                   | (DSP) suspensions due to the      |
-|                                   | recipient being \'in gaol\', and  |
+|                                   | recipient being 'in gaol', and    |
 |                                   | the total number DSP              |
 |                                   | cancellations because the         |
-|                                   | recipient was \'in gaol\', for    |
-|                                   | each of the last three full       |
-|                                   | financial years (2014-15;         |
-|                                   | 2015-16; and 2016-17)             |
+|                                   | recipient was 'in gaol', for each |
+|                                   | of the last three full financial  |
+|                                   | years (2014-15; 2015-16; and      |
+|                                   | 2016-17)                          |
 |                                   |                                   |
 |                                   | 1 document released in full. The  |
 |                                   | documents are [available upon     |
@@ -1950,14 +2021,14 @@ us by:
 :::
 
 ::: {.dhs-page-content__below .relative .flex .flex-wrap .justify-between .w-full .py-10 .border-t .border-grey-1c}
-::: {#block-lit-page-poll-vue behaviour="vue"}
+::: {#lit-page-poll behaviour="vue"}
 <div>
 
 </div>
 :::
 
 ::: {#block-lit-page-updated}
-Page last updated: 27 April 2022
+Page last updated: 12 May 2022
 :::
 
 ::: {#block-lit-print-info .hidden .print:block}
@@ -1966,7 +2037,7 @@ Page last updated: 27 April 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 11 May 2022 from
+This information was printed 12 May 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
