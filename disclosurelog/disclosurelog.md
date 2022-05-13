@@ -30,6 +30,26 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 12 May 2022                       | Operational Blueprint documents   |
+|                                   | (LEX 66300):                      |
+|                                   |                                   |
+|                                   | -   Privacy checking and quality  |
+|                                   |     checking of documents for the |
+|                                   |     Administrative Appeals        |
+|                                   |     Tribunal (AAT) 109-03030030   |
+|                                   | -   Administration requirements   |
+|                                   |     for Administrative Appeals    |
+|                                   |     Tribunal (AAT) hearing        |
+|                                   |     109-03030050.                 |
+|                                   |                                   |
+|                                   | 2 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** Sections |
+|                                   | 22 and 47E(d)\                    |
+|                                   | **Exemptions:** Section 47E(d)    |
++-----------------------------------+-----------------------------------+
 | 9 May 2022                        | Operational Blueprint documents   |
 |                                   | (LEX 61113):                      |
 |                                   |                                   |
@@ -158,11 +178,7 @@ after 12 months unless the information has enduring public value.
 |                                   |                                   |
 |                                   | 1 document released in full. The  |
 |                                   | document is [available upon       |
-|                                   | request](                         |
-|                                   | #contactus){style="font-size: 1.1 |
-|                                   | 25rem;"}[.]{style="font-size: 1.1 |
-|                                   | 25rem; background-color: rgba(255 |
-|                                   | , 255, 255, var(--bg-opacity));"} |
+|                                   | request](#contactus).             |
 |                                   |                                   |
 |                                   | **Sections of the Act:** Section  |
 |                                   | 22\                               |
@@ -2028,7 +2044,7 @@ us by:
 :::
 
 ::: {#block-lit-page-updated}
-Page last updated: 12 May 2022
+Page last updated: 13 May 2022
 :::
 
 ::: {#block-lit-print-info .hidden .print:block}
@@ -2037,7 +2053,7 @@ Page last updated: 12 May 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 12 May 2022 from
+This information was printed 13 May 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
