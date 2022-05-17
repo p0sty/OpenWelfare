@@ -656,9 +656,235 @@ Table 2
 |                                   | message.                          |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Messages available through        |
-|                                   | Desktop Messaging + Read more ... |
+|                                   | Desktop Messaging (Customer       |
+|                                   | First) + Read more ...            |
 |                                   |                                   |
-|                                   | -   Pre-call notification (SMS    |
+|                                   | Pre-call notification (SMS only)  |
+|                                   | Advises customer a Service        |
+|                                   | Officer or Subject Matter Expert  |
+|                                   | (SME) will call today             |
+|                                   | This message must only be created |
+|                                   | between 8:00 am and 8:00 pm on    |
+|                                   | any day using the customer's      |
+|                                   | local time or it will be delayed  |
+|                                   |                                   |
+|                                   | ARO only - Pre-call notification  |
+|                                   | (SMS only)                        |
+|                                   | Advises the customer they will    |
+|                                   | receive a call in the next 2      |
+|                                   | hours to discuss a decision they  |
+|                                   | want reviewed                     |
+|                                   | This message must only be created |
+|                                   | between 8:00 am and 8:00 pm on    |
+|                                   | any day using the customer's      |
+|                                   | local time or it will be delayed  |
+|                                   | Not to be used by SMEs or other   |
+|                                   | staff                             |
+|                                   |                                   |
+|                                   | ARO only - Post-call notification |
+|                                   | Advises the customer we tried to  |
+|                                   | contact them about their request  |
+|                                   | for a formal review of a decision |
+|                                   | and asks customer to cll back on  |
+|                                   | specific number by a specific     |
+|                                   | date                              |
+|                                   | Not to be used by SMEs or other   |
+|                                   | staff                             |
+|                                   |                                   |
+|                                   | Assessment Services only -        |
+|                                   | Pre-call SMS to arrange a JCA for |
+|                                   | DSP claim (SMS only)              |
+|                                   | Advises the customer that a       |
+|                                   | Centrelink representative will be |
+|                                   | contacting them to arrange a JCA  |
+|                                   | appointment                       |
+|                                   |                                   |
+|                                   | Assessment Services only -        |
+|                                   | Pre-call SMS to advise ESAt or    |
+|                                   | JCA phone assessment (SMS only)   |
+|                                   | Advises the customer that a       |
+|                                   | Centrelink Assessor will be       |
+|                                   | contacting them to conduct their  |
+|                                   | ESAt/JCA phone assessment         |
+|                                   |                                   |
+|                                   | Pre-call - Emergency claim (SMS   |
+|                                   | only)                             |
+|                                   | Advises the customer that a       |
+|                                   | Service Officer will be calling   |
+|                                   | them about their Centrelink       |
+|                                   | emergency claim                   |
+|                                   |                                   |
+|                                   | Centrelink Appointment (SMS only) |
+|                                   | Advises the customer a Service    |
+|                                   | Officer will call today for their |
+|                                   | ParentsNext appointment           |
+|                                   | This message must only be created |
+|                                   | between 8:00 am and 8:00 pm on    |
+|                                   | the appointment day using the     |
+|                                   | customer's local time or it will  |
+|                                   | be delayed                        |
+|                                   |                                   |
+|                                   | RSS - Request customer to         |
+|                                   | contact - discuss review          |
+|                                   | Advises the customer that a       |
+|                                   | Service Officer tried to call     |
+|                                   | them about their payment review   |
+|                                   | and to call back on a direct      |
+|                                   | number                            |
+|                                   |                                   |
+|                                   | RSS - Request customer to         |
+|                                   | contact - discuss review outcome  |
+|                                   | Advises the customer that a       |
+|                                   | Service Officer tried to call     |
+|                                   | them about the outcome of their   |
+|                                   | payment review and to call back   |
+|                                   | on a direct number                |
+|                                   |                                   |
+|                                   | Request claim lodgement           |
+|                                   | Reminds the customer to submit    |
+|                                   | their claim for a student payment |
+|                                   | or independent status             |
+|                                   |                                   |
+|                                   | Confirm claim lodgement           |
+|                                   | Advises the customer their claim  |
+|                                   | has been received. Do not use for |
+|                                   | claims that use the Circumstance  |
+|                                   | Change Monitor (CCM) as CCM       |
+|                                   | already sends confirmation        |
+|                                   | messages                          |
+|                                   |                                   |
+|                                   | Request documents                 |
+|                                   | Request documents from the        |
+|                                   | customer to support their claim   |
+|                                   | for a student payment or          |
+|                                   | independent status claims only    |
+|                                   | Do not use for claims that use    |
+|                                   | CCM. Request document using       |
+|                                   | Process Direct or the Customer    |
+|                                   | First guided procedure            |
+|                                   | Must also send a formal request   |
+|                                   | using the Request for Information |
+|                                   | guided procedure                  |
+|                                   | Can also send to their partner or |
+|                                   | parent if they have permission to |
+|                                   | enquire. Create message on        |
+|                                   | partner or parent's Centrelink    |
+|                                   | record                            |
+|                                   |                                   |
+|                                   | Reminder to provide documents     |
+|                                   | For student payment or            |
+|                                   | independent status claims only    |
+|                                   | Can also send to their partner or |
+|                                   | parent if they have permission to |
+|                                   | enquire. Create message on        |
+|                                   | partner or parent's Centrelink    |
+|                                   | record                            |
+|                                   |                                   |
+|                                   | Claim finalised                   |
+|                                   | Advises the customer their claim  |
+|                                   | has been completed                |
+|                                   | Do not use for claims that use    |
+|                                   | Circumstance Change Monitor (CCM) |
+|                                   | as CCM sends a grant or rejection |
+|                                   | message                           |
+|                                   |                                   |
+|                                   | Advise Student Allowable Time     |
+|                                   | Expiry date and request Academic  |
+|                                   | Transcript                        |
+|                                   |                                   |
+|                                   | Social Worker request for         |
+|                                   | customer to contact               |
+|                                   | Social workers only - advises the |
+|                                   | customer that a social worker     |
+|                                   | tried to call them and to call    |
+|                                   | back on a specific number         |
+|                                   |                                   |
+|                                   | Social Worker pre-call (SMS only) |
+|                                   | Social workers only - advises the |
+|                                   | customer that a social worker     |
+|                                   | will call them today.             |
+|                                   | This message must only be created |
+|                                   | between 8:00 am and 8:00 pm on    |
+|                                   | any day using the customer's      |
+|                                   | local time or it will be delayed  |
+|                                   |                                   |
+|                                   | Warning social distancing COVID19 |
+|                                   | (SMS only)(Approved decision      |
+|                                   | makers only)                      |
+|                                   | Advises the customer that         |
+|                                   | non-compliance with social        |
+|                                   | distancing rules may result in    |
+|                                   | restricted access to our service  |
+|                                   | centres                           |
+|                                   |                                   |
+|                                   | Warning self-isolation COVID19    |
+|                                   | (SMS only)( Approved decision     |
+|                                   | makers only)                      |
+|                                   | Advises the customer that         |
+|                                   | breaching self-isolation          |
+|                                   | requirements will result in       |
+|                                   | exclusion from our service        |
+|                                   | centres and police contact        |
+|                                   |                                   |
+|                                   | Warning behaviour (SMS only)(     |
+|                                   | Approved decision makers only)    |
+|                                   | Reminds the customer that they    |
+|                                   | must treat staff and other        |
+|                                   | customers with respect. If they   |
+|                                   | don't, we may restrict how they   |
+|                                   | contact us and/or we may contact  |
+|                                   | the police                        |
+|                                   |                                   |
+|                                   | MSP provisional (SMS only)(       |
+|                                   | Approved decision makers only)    |
+|                                   | Advises the customer that due to  |
+|                                   | their behaviour, they may not     |
+|                                   | attend our service centres for a  |
+|                                   | specific period. Confirms they    |
+|                                   | can complete their business by    |
+|                                   | speaking with someone on a        |
+|                                   | specific number, or by using      |
+|                                   | their online account              |
+|                                   |                                   |
+|                                   | MSP reminder (SMS only)( Approved |
+|                                   | decision makers only)             |
+|                                   | Reminds the customer that they    |
+|                                   | may not attend our service        |
+|                                   | centres for a specific period.    |
+|                                   | Confirms they can complete their  |
+|                                   | business by speaking with someone |
+|                                   | on a specific number, or by using |
+|                                   | their online account              |
+|                                   |                                   |
+|                                   | MSP face to face and call         |
+|                                   | restriction/MSP Review outcome -  |
+|                                   | extend (SMS only)( Approved       |
+|                                   | decision makers only)             |
+|                                   | Advises the customer that due to  |
+|                                   | their behaviour, the MSP          |
+|                                   | restriction has been extended for |
+|                                   | a specific period. Confirms they  |
+|                                   | can complete their business by    |
+|                                   | speaking with someone on a        |
+|                                   | specific number, or by using      |
+|                                   | their online account              |
+|                                   |                                   |
+|                                   | Debt Raising - Unsuccessful       |
+|                                   | Contact (SMS only)                |
+|                                   | Advises the customer that a       |
+|                                   | Service Officer tried to call     |
+|                                   | them about their debt. It also    |
+|                                   | advises that a letter will be     |
+|                                   | sent explaining how much is owed, |
+|                                   | their repayment options and       |
+|                                   | advice to call the debt line for  |
+|                                   | more information                  |
+|                                   |                                   |
+|                                   | Messages available through        |
+|                                   | Correspondence – Issue            |
+|                                   | Correspondence (Process Direct):  |
+|                                   |                                   |
+|                                   | -   Pre Call SMS to Customer (SMS |
 |                                   |     only)                         |
 |                                   |     Advises customer a Service    |
 |                                   |     Officer or Subject Matter     |
@@ -668,221 +894,12 @@ Table 2
 |                                   |     8:00 pm on any day using the  |
 |                                   |     customer's local time or it   |
 |                                   |     will be delayed               |
-|                                   | -   ARO only - Pre-call           |
-|                                   |     notification (SMS only)       |
-|                                   |     Advises the customer they     |
-|                                   |     will receive a call in the    |
-|                                   |     next 2 hours to discuss a     |
-|                                   |     decision they want reviewed   |
-|                                   |     This message must only be     |
-|                                   |     created between 8:00 am and   |
-|                                   |     8:00 pm on any day using the  |
-|                                   |     customer's local time or it   |
-|                                   |     will be delayed               |
-|                                   |     Not to be used by SMEs or     |
-|                                   |     other staff                   |
-|                                   | -   ARO only - Post-call          |
-|                                   |     notification                  |
-|                                   |     Advises the customer we tried |
-|                                   |     to contact them about their   |
-|                                   |     request for a formal review   |
-|                                   |     of a decision and asks        |
-|                                   |     customer to call back on      |
-|                                   |     specific number by a specific |
-|                                   |     date                          |
-|                                   |     Not to be used by SMEs or     |
-|                                   |     other staff                   |
-|                                   | -   Assessment Services only -    |
-|                                   |     Pre-call SMS to arrange a JCA |
-|                                   |     for DSP claim (SMS only)      |
-|                                   |     Advises the customer that a   |
-|                                   |     Centrelink representative     |
-|                                   |     will be contacting them to    |
-|                                   |     arrange a JCA appointment     |
-|                                   | -   Assessment Services only -    |
-|                                   |     Pre-call SMS to advise ESAt   |
-|                                   |     or JCA phone assessment (SMS  |
-|                                   |     only)                         |
-|                                   |     Advises the customer that a   |
-|                                   |     Centrelink Assessor will be   |
-|                                   |     contacting them to conduct    |
-|                                   |     their ESAt/JCA phone          |
-|                                   |     assessment                    |
-|                                   | -   Pre-call - Emergency claim    |
-|                                   |     (SMS only)                    |
+|                                   | -   Emergency Claim Pre Call SMS  |
+|                                   |     to Customer (SMS only)        |
 |                                   |     Advises the customer that a   |
 |                                   |     Service Officer will be       |
 |                                   |     calling them about their      |
 |                                   |     Centrelink emergency claim    |
-|                                   | -   Centrelink Appointment (SMS   |
-|                                   |     only)                         |
-|                                   |     Advises the customer a        |
-|                                   |     Service Officer will call     |
-|                                   |     today for their ParentsNext   |
-|                                   |     appointment                   |
-|                                   |     This message must only be     |
-|                                   |     created between 8:00 am and   |
-|                                   |     8:00 pm on the appointment    |
-|                                   |     day using the customer's      |
-|                                   |     local time or it will be      |
-|                                   |     delayed                       |
-|                                   | -   RSS - Request customer to     |
-|                                   |     contact - discuss review      |
-|                                   |     Advises the customer that a   |
-|                                   |     Service Officer tried to call |
-|                                   |     them about their payment      |
-|                                   |     review and to call back on a  |
-|                                   |     direct number                 |
-|                                   | -   RSS - Request customer to     |
-|                                   |     contact - discuss review      |
-|                                   |     outcome                       |
-|                                   |     Advises the customer that a   |
-|                                   |     Service Officer tried to call |
-|                                   |     them about the outcome of     |
-|                                   |     their payment review and to   |
-|                                   |     call back on a direct number  |
-|                                   | -   Request claim lodgement       |
-|                                   |     Reminds the customer to       |
-|                                   |     submit their claim for a      |
-|                                   |     student payment or            |
-|                                   |     independent status            |
-|                                   | -   Confirm claim lodgement       |
-|                                   |     Advises the customer their    |
-|                                   |     claim has been received. Do   |
-|                                   |     not use for claims that use   |
-|                                   |     the Circumstance Change       |
-|                                   |     Monitor (CCM) as CCM already  |
-|                                   |     sends confirmation messages   |
-|                                   | -   Request documents             |
-|                                   |     Request documents from the    |
-|                                   |     customer to support their     |
-|                                   |     claim for a student payment   |
-|                                   |     or independent status claims  |
-|                                   |     only                          |
-|                                   |     Do not use for claims that    |
-|                                   |     use CCM. Request document     |
-|                                   |     using Process Direct or the   |
-|                                   |     Customer First guided         |
-|                                   |     procedure                     |
-|                                   |     Must also send a formal       |
-|                                   |     request using the Request for |
-|                                   |     Information guided procedure  |
-|                                   |     Can also send to their        |
-|                                   |     partner or parent if they     |
-|                                   |     have permission to enquire.   |
-|                                   |     Create message on partner or  |
-|                                   |     parent's Centrelink record    |
-|                                   | -   Reminder to provide documents |
-|                                   |     For student payment or        |
-|                                   |     independent status claims     |
-|                                   |     only                          |
-|                                   |     Can also send to their        |
-|                                   |     partner or parent if they     |
-|                                   |     have permission to enquire.   |
-|                                   |     Create message on partner or  |
-|                                   |     parent's Centrelink record    |
-|                                   | -   Claim finalised               |
-|                                   |     Advises the customer their    |
-|                                   |     claim has been completed      |
-|                                   |     Do not use for claims that    |
-|                                   |     use Circumstance Change       |
-|                                   |     Monitor (CCM) as CCM sends a  |
-|                                   |     grant or rejection message    |
-|                                   | -   Advise Student Allowable Time |
-|                                   |     Expiry date and request       |
-|                                   |     Academic Transcript           |
-|                                   | -   Social Worker request for     |
-|                                   |     customer to contact           |
-|                                   |     Social workers only - advises |
-|                                   |     the customer that a social    |
-|                                   |     worker tried to call them and |
-|                                   |     to call back on a specific    |
-|                                   |     number                        |
-|                                   | -   Social Worker pre-call (SMS   |
-|                                   |     only)                         |
-|                                   |     Social workers only - advises |
-|                                   |     the customer that a social    |
-|                                   |     worker will call them today.  |
-|                                   |     This message must only be     |
-|                                   |     created between 8:00 am and   |
-|                                   |     8:00 pm on any day using the  |
-|                                   |     customer's local time or it   |
-|                                   |     will be delayed               |
-|                                   | -   Warning social distancing     |
-|                                   |     COVID19 (SMS only)(Approved   |
-|                                   |     decision makers only)         |
-|                                   |     Advises the customer that     |
-|                                   |     non-compliance with social    |
-|                                   |     distancing rules may result   |
-|                                   |     in restricted access to our   |
-|                                   |     service centres               |
-|                                   | -   Warning self-isolation        |
-|                                   |     COVID19 (SMS only)( Approved  |
-|                                   |     decision makers only)         |
-|                                   |     Advises the customer that     |
-|                                   |     breaching self-isolation      |
-|                                   |     requirements will result in   |
-|                                   |     exclusion from our service    |
-|                                   |     centres and police contact    |
-|                                   | -   Warning behaviour (SMS only)( |
-|                                   |     Approved decision makers      |
-|                                   |     only)                         |
-|                                   |     Reminds the customer that     |
-|                                   |     they must treat staff and     |
-|                                   |     other customers with respect. |
-|                                   |     If they don't, we may         |
-|                                   |     restrict how they contact us  |
-|                                   |     and/or we may contact the     |
-|                                   |     police                        |
-|                                   | -   MSP provisional (SMS only)(   |
-|                                   |     Approved decision makers      |
-|                                   |     only)                         |
-|                                   |     Advises the customer that due |
-|                                   |     to their behaviour, they may  |
-|                                   |     not attend our service        |
-|                                   |     centres for a specific        |
-|                                   |     period. Confirms they can     |
-|                                   |     complete their business by    |
-|                                   |     speaking with someone on a    |
-|                                   |     specific number, or by using  |
-|                                   |     their online account          |
-|                                   | -   MSP reminder (SMS only)(      |
-|                                   |     Approved decision makers      |
-|                                   |     only)                         |
-|                                   |     Reminds the customer that     |
-|                                   |     they may not attend our       |
-|                                   |     service centres for a         |
-|                                   |     specific period. Confirms     |
-|                                   |     they can complete their       |
-|                                   |     business by speaking with     |
-|                                   |     someone on a specific number, |
-|                                   |     or by using their online      |
-|                                   |     account                       |
-|                                   | -   MSP face to face and call     |
-|                                   |     restriction/MSP Review        |
-|                                   |     outcome - extend (SMS only)(  |
-|                                   |     Approved decision makers      |
-|                                   |     only)                         |
-|                                   |     Advises the customer that due |
-|                                   |     to their behaviour, the MSP   |
-|                                   |     restriction has been extended |
-|                                   |     for a specific period.        |
-|                                   |     Confirms they can complete    |
-|                                   |     their business by speaking    |
-|                                   |     with someone on a specific    |
-|                                   |     number, or by using their     |
-|                                   |     online account                |
-|                                   | -   Debt Raising - Unsuccessful   |
-|                                   |     Contact (SMS only)            |
-|                                   |     Advises the customer that a   |
-|                                   |     Service Officer tried to call |
-|                                   |     them about their debt. It     |
-|                                   |     also advises that a letter    |
-|                                   |     will be sent explaining how   |
-|                                   |     much is owed, their repayment |
-|                                   |     options and advice to call    |
-|                                   |     the debt line for more        |
-|                                   |     information                   |
 |                                   |                                   |
 |                                   | See Resources page for links to   |
 |                                   | message text.                     |
