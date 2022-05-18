@@ -30,6 +30,47 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 17 May 2022                       | Australian Immunisation Register  |
+|                                   | (AIR) medical exemption forms     |
+|                                   | (LEX 67422):                      |
+|                                   |                                   |
+|                                   | -   IMMU-11-1209                  |
+|                                   | -   IMMU-11-1302                  |
+|                                   | -   IMMU-11-1310                  |
+|                                   | -   IM011-1512                    |
+|                                   | -   IM011-1609                    |
+|                                   | -   IM011-1705                    |
+|                                   | -   IM011-1712                    |
+|                                   | -   IM011-1807                    |
+|                                   | -   IM011-2008                    |
+|                                   | -   IM011-2102                    |
+|                                   | -   IM011-2109                    |
+|                                   | -   IM011-210930                  |
+|                                   | -   IM011-2212                    |
+|                                   | -   IM011-2202.                   |
+|                                   |                                   |
+|                                   | 14 documents released in full.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** N/A\     |
+|                                   | **Exemptions:** N/A               |
++-----------------------------------+-----------------------------------+
+| 13 May 2022                       | Operational Blueprint documents   |
+|                                   | (LEX 67005):                      |
+|                                   |                                   |
+|                                   | -   Cuba Letter Listing contained |
+|                                   |     within Letters for Child      |
+|                                   |     Support Customers             |
+|                                   |     277-01060000.                 |
+|                                   |                                   |
+|                                   | 1 document released in full. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** N/A\     |
+|                                   | **Exemptions:** N/A               |
++-----------------------------------+-----------------------------------+
 | 12 May 2022                       | Operational Blueprint documents   |
 |                                   | (LEX 66300):                      |
 |                                   |                                   |
@@ -47,7 +88,7 @@ after 12 months unless the information has enduring public value.
 |                                   | request](#contactus).             |
 |                                   |                                   |
 |                                   | **Sections of the Act:** Sections |
-|                                   | 22 and 47E(d)\                    |
+|                                   | 22 and 47E(d)\                    |
 |                                   | **Exemptions:** Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 9 May 2022                        | Operational Blueprint documents   |
@@ -153,8 +194,7 @@ after 12 months unless the information has enduring public value.
 |                                   |                                   |
 |                                   | -   Maintaining the value of real |
 |                                   |     estate assets on customer     |
-|                                   |     records\                      |
-|                                   |     108-04130100.                 |
+|                                   |     records 108-04130100.         |
 |                                   |                                   |
 |                                   | 1 document released in part. The  |
 |                                   | document is [available upon       |
@@ -2044,7 +2084,7 @@ us by:
 :::
 
 ::: {#block-lit-page-updated}
-Page last updated: 13 May 2022
+Page last updated: 18 May 2022
 :::
 
 ::: {#block-lit-print-info .hidden .print:block}
@@ -2053,7 +2093,7 @@ Page last updated: 13 May 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 17 May 2022 from
+This information was printed 18 May 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
