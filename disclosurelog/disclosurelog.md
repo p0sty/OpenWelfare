@@ -1,5 +1,3 @@
-    dhs-analytics-category="on_this_page" dhs-analytics-action="click"
-    dhs-analytics-label="contact_us_for_documents"}
 -   [Unable to access information in the log](#a2){.link .trans
     dhs-analytics-behavior="onclick"
     dhs-analytics-category="on_this_page" dhs-analytics-action="click"
@@ -149,6 +147,17 @@ after 12 months unless the information has enduring public value.
 |                                   |                                   |
 |                                   | **Sections of the Act:** 22\      |
 |                                   | **Exemptions:** 22                |
++-----------------------------------+-----------------------------------+
+| 5 May 2022                        | Documents pertaining to the       |
+|                                   | Covid-19 Vaccine Claims Scheme    |
+|                                   | (LEX 67346).                      |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** 47E(d)\  |
+|                                   | **Exemptions:** 47E(d)            |
 +-----------------------------------+-----------------------------------+
 | 5 May 2022                        | Operational Blueprint document    |
 |                                   | (LEX 67034):                      |
@@ -2076,24 +2085,22 @@ us by:
     Canberra BC ACT 2610
 :::
 
-::: {.dhs-page-content__below .relative .flex .flex-wrap .justify-between .w-full .py-10 .border-t .border-grey-1c}
+::: {#lit-content-below .relative .flex .flex-wrap .justify-between .w-full .py-10 .border-t .border-grey-1c}
 ::: {#lit-page-poll behaviour="vue"}
 <div>
 
 </div>
 :::
 
-::: {#block-lit-page-updated}
-Page last updated: 18 May 2022
-:::
+Page last updated: 26 May 2022
 
-::: {#block-lit-print-info .hidden .print:block}
+::: {.hidden .print:block}
 ::: pt-12
 ![QR
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 25 May 2022 from
+This information was printed 26 May 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
@@ -2108,175 +2115,177 @@ material.
 :::
 :::
 
-::: {#block-lit-footer}
 ::: {.pt-12 .font-thin .text-sm}
-::: {#lit-footer-mobile .md:hidden .mb-6}
+::: {#lit-footer-mobile .md:hidden}
 -   [ [Services Australia](#lit-footer-accordion-0) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
     .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
     dhs-target="#lit-footer-accordion-0"}
-    -   [About us](/about-us){.border-b .border-black
+    -   [About us](/about-us){.py-4 .block .md:inline .border-b
+        .border-black .hover:border-blue-60 .hover:text-blue-60
+        .focus:border-blue-60 .focus:text-blue-60}
+    -   [Forms](/forms){.py-4 .block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
-    -   [Forms](/forms){.border-b .border-black .hover:border-blue-60
-        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Media](/media){.border-b .border-black .hover:border-blue-60
-        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Our Minister](https://mhs.gov.au){.border-b .border-black
+    -   [Media](/media){.py-4 .block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
+    -   [Our Minister](https://mhs.gov.au){.py-4 .block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Contact](#lit-footer-accordion-1) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
     .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
     dhs-target="#lit-footer-accordion-1"}
-    -   [Contact](/contact-us){.border-b .border-black
+    -   [Contact](/contact-us){.block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Contact us](/contact-us){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Find us](https://findus.servicesaustralia.gov.au){.border-b
+        .focus:text-blue-60 .py-4}
+    -   [Contact us](/contact-us){.py-4 .block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
-    -   [Complaints and feedback](/complaints-and-feedback){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+    -   [Find us](https://findus.servicesaustralia.gov.au){.py-4 .block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Complaints and feedback](/complaints-and-feedback){.py-4 .block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Business](#lit-footer-accordion-2) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
     .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
     dhs-target="#lit-footer-accordion-2"}
-    -   [Business](/running-business){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [PRODA](/proda-provider-digital-access){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Business Hub](/business-hub){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Paid Parental Leave scheme for
-        employers](/paid-parental-leave-scheme-for-employers){.border-b
+    -   [Business](/running-business){.block .md:inline .border-b
+        .border-black .hover:border-blue-60 .hover:text-blue-60
+        .focus:border-blue-60 .focus:text-blue-60 .py-4}
+    -   [PRODA](/proda-provider-digital-access){.py-4 .block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Business Hub](/business-hub){.py-4 .block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
+    -   [Paid Parental Leave scheme for
+        employers](/paid-parental-leave-scheme-for-employers){.py-4
+        .block .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Community groups](#lit-footer-accordion-3) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
     .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
     dhs-target="#lit-footer-accordion-3"}
-    -   [Community groups](/community){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Family organisations](/family-organisations){.border-b
+    -   [Community groups](/community){.block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+        .focus:border-blue-60 .focus:text-blue-60 .py-4}
+    -   [Family organisations](/family-organisations){.py-4 .block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Multicultural
-        organisations](/multicultural-organisations){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+        organisations](/multicultural-organisations){.py-4 .block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Apply to be a voluntary work
-        organisation](/apply-to-be-approved-voluntary-work-organisation){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+        organisation](/apply-to-be-approved-voluntary-work-organisation){.py-4
+        .block .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Health professionals](#lit-footer-accordion-4) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
     .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
     dhs-target="#lit-footer-accordion-4"}
-    -   [Health professionals](/health-professionals){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
-    -   [Health Professionals Online Services](/hpos){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
-    -   [Aged Care Provider
-        Portal](/aged-care-provider-portal){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
+    -   [Health professionals](/health-professionals){.block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60
+        .py-4}
+    -   [Health Professionals Online Services](/hpos){.py-4 .block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Aged Care Provider Portal](/aged-care-provider-portal){.py-4
+        .block .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Medicare benefits for health
-        professionals](/medicare-benefits-for-health-professionals){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+        professionals](/medicare-benefits-for-health-professionals){.py-4
+        .block .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 :::
 
 ::: {.hidden .md:block .md:pb-12}
 -   [ Services Australia ]{.font-bold .text-md}
-    -   [About us](/about-us){.border-b .border-black
+    -   [About us](/about-us){.block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
-    -   [Forms](/forms){.border-b .border-black .hover:border-blue-60
+    -   [Forms](/forms){.block .md:inline .border-b .border-black
+        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
+        .focus:text-blue-60}
+    -   [Media](/media){.block .md:inline .border-b .border-black
+        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
+        .focus:text-blue-60}
+    -   [Our Minister](https://mhs.gov.au){.block .md:inline .border-b
+        .border-black .hover:border-blue-60 .hover:text-blue-60
+        .focus:border-blue-60 .focus:text-blue-60}
+-   [ [Contact](/contact-us){.block .md:inline .border-b .border-black
+    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
+    .focus:text-blue-60} ]{.font-bold .text-md}
+    -   [Contact us](/contact-us){.block .md:inline .border-b
+        .border-black .hover:border-blue-60 .hover:text-blue-60
+        .focus:border-blue-60 .focus:text-blue-60}
+    -   [Find us](https://findus.servicesaustralia.gov.au){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Media](/media){.border-b .border-black .hover:border-blue-60
+    -   [Complaints and feedback](/complaints-and-feedback){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Our Minister](https://mhs.gov.au){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
--   [ [Contact](/contact-us){.border-b .border-black
-    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-    .focus:text-blue-60} ]{.font-bold .text-md}
-    -   [Contact us](/contact-us){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Find us](https://findus.servicesaustralia.gov.au){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
-    -   [Complaints and feedback](/complaints-and-feedback){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
--   [ [Business](/running-business){.border-b .border-black
-    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-    .focus:text-blue-60} ]{.font-bold .text-md}
-    -   [PRODA](/proda-provider-digital-access){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Business Hub](/business-hub){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
-    -   [Paid Parental Leave scheme for
-        employers](/paid-parental-leave-scheme-for-employers){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
--   [ [Community groups](/community){.border-b .border-black
-    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-    .focus:text-blue-60} ]{.font-bold .text-md}
-    -   [Family organisations](/family-organisations){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
-    -   [Multicultural
-        organisations](/multicultural-organisations){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
-    -   [Apply to be a voluntary work
-        organisation](/apply-to-be-approved-voluntary-work-organisation){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
--   [ [Health professionals](/health-professionals){.border-b
+-   [ [Business](/running-business){.block .md:inline .border-b
     .border-black .hover:border-blue-60 .hover:text-blue-60
     .focus:border-blue-60 .focus:text-blue-60} ]{.font-bold .text-md}
-    -   [Health Professionals Online Services](/hpos){.border-b
+    -   [PRODA](/proda-provider-digital-access){.block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Business Hub](/business-hub){.block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
-    -   [Aged Care Provider
-        Portal](/aged-care-provider-portal){.border-b .border-black
-        .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60}
+    -   [Paid Parental Leave scheme for
+        employers](/paid-parental-leave-scheme-for-employers){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+-   [ [Community groups](/community){.block .md:inline .border-b
+    .border-black .hover:border-blue-60 .hover:text-blue-60
+    .focus:border-blue-60 .focus:text-blue-60} ]{.font-bold .text-md}
+    -   [Family organisations](/family-organisations){.block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Multicultural
+        organisations](/multicultural-organisations){.block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Apply to be a voluntary work
+        organisation](/apply-to-be-approved-voluntary-work-organisation){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+-   [ [Health professionals](/health-professionals){.block .md:inline
+    .border-b .border-black .hover:border-blue-60 .hover:text-blue-60
+    .focus:border-blue-60 .focus:text-blue-60} ]{.font-bold .text-md}
+    -   [Health Professionals Online Services](/hpos){.block .md:inline
+        .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
+    -   [Aged Care Provider Portal](/aged-care-provider-portal){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Medicare benefits for health
-        professionals](/medicare-benefits-for-health-professionals){.border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+        professionals](/medicare-benefits-for-health-professionals){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 :::
 
 ::: {.mb-12 .pb-12 .border-b .border-white .md:flex .md:items-center}
-::: {.flex-1 .md:border-transparent .md:mb-0}
--   [Privacy](/your-right-to-privacy){.border-b .border-black
-    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-    .focus:text-blue-60}
--   [Site notices](/site-notices){.border-b .border-black
-    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-    .focus:text-blue-60}
--   [Accessibility](/accessibility){.border-b .border-black
-    .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-    .focus:text-blue-60}
--   [Access to information](/access-to-information){.border-b
-    .border-black .hover:border-blue-60 .hover:text-blue-60
+::: {.flex-1 .md:border-transparent .mb-6 .md:mb-0}
+-   [Privacy](/your-right-to-privacy){.py-6 .md:py-0 .block .md:inline
+    .border-b .border-black .hover:border-blue-60 .hover:text-blue-60
     .focus:border-blue-60 .focus:text-blue-60}
+-   [Site notices](/site-notices){.py-6 .md:py-0 .block .md:inline
+    .border-b .border-black .hover:border-blue-60 .hover:text-blue-60
+    .focus:border-blue-60 .focus:text-blue-60}
+-   [Accessibility](/accessibility){.py-6 .md:py-0 .block .md:inline
+    .border-b .border-black .hover:border-blue-60 .hover:text-blue-60
+    .focus:border-blue-60 .focus:text-blue-60}
+-   [Access to information](/access-to-information){.py-6 .md:py-0
+    .block .md:inline .border-b .border-black .hover:border-blue-60
+    .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 :::
 
 ::: {.md:flex .lg:w-2/5}
@@ -2322,7 +2331,6 @@ ABN - 90‍ ‍794‍ ‍605‍ ‍008
 :::
 
 </div>
-:::
 :::
 :::
 :::

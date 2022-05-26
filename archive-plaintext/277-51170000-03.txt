@@ -1834,10 +1834,10 @@ Table 6
 |                                   | principal carer status claims     |
 |                                   | they are now the principal carer. |
 |                                   |                                   |
-|                                   | select the MFU activity and check |
+|                                   | Select the MFU activity and check |
 |                                   | the new care % for the child      |
 |                                   |                                   |
-|                                   | update the new care percentage:   |
+|                                   | Update the new care percentage:   |
 |                                   |                                   |
 |                                   | -   updates must be made to the   |
 |                                   |     FTB Shared Care (FSC) screen  |
@@ -1852,7 +1852,7 @@ Table 6
 |                                   |     the correct DOR. See Item 7   |
 |                                   |     in Table 1                    |
 |                                   |                                   |
-|                                   | if necessary, make a principal    |
+|                                   | If necessary, make a principal    |
 |                                   | carer determination and notify    |
 |                                   | all carers by sending a Q807      |
 |                                   | letter to each. Use the 'Child -  |
@@ -1860,12 +1860,12 @@ Table 6
 |                                   | script' to generate and send the  |
 |                                   | Q807 letters                      |
 |                                   |                                   |
-|                                   | if the customer is no longer      |
+|                                   | If the customer is no longer      |
 |                                   | entitled to the 'with child'      |
 |                                   | rate, see Principal carer of a    |
 |                                   | dependent child                   |
 |                                   |                                   |
-|                                   | if the Child Support care         |
+|                                   | If the Child Support care         |
 |                                   | decision needs clarification or   |
 |                                   | there is a system issue, see Item |
 |                                   | 6 in Table 1                      |
@@ -1905,15 +1905,15 @@ Table 6
 |                                   | cancel the MFU and create a new   |
 |                                   | activity with source code CSSAL.  |
 |                                   |                                   |
-|                                   | select the MFU activity and check |
+|                                   | Select the MFU activity and check |
 |                                   | the new care % for the child      |
 |                                   |                                   |
-|                                   | determine if an update is         |
+|                                   | Determine if an update is         |
 |                                   | required on the SSA Shared Care   |
 |                                   | (SSC) screen including a          |
 |                                   | principal carer determination     |
 |                                   |                                   |
-|                                   | update the new care % and/or      |
+|                                   | Update the new care % and/or      |
 |                                   | principal carer determination:    |
 |                                   |                                   |
 |                                   | -   a child's FTB Shared Care     |
@@ -1930,14 +1930,14 @@ Table 6
 |                                   |     using the correct DOR. See    |
 |                                   |     Item 7 in Table 1             |
 |                                   |                                   |
-|                                   | if making a principal carer       |
+|                                   | If making a principal carer       |
 |                                   | determination, notify all carers  |
 |                                   | by sending a Q807 letter to each. |
 |                                   | Use the 'Child - Change in Care   |
 |                                   | Arrangement script' to generate   |
 |                                   | and send the Q807 letters         |
 |                                   |                                   |
-|                                   | if the customer is in receipt of  |
+|                                   | If the customer is in receipt of  |
 |                                   | JobSeeker Payment (JSP), Youth    |
 |                                   | Allowance (job seeker) or Special |
 |                                   | Benefit (SpB) under JSP           |
@@ -1946,52 +1946,49 @@ Table 6
 |                                   | coding will need to be updated in |
 |                                   | the NSS system                    |
 |                                   |                                   |
-|                                   | if the customer is in receipt of  |
+|                                   | If the customer is in receipt of  |
 |                                   | Parenting Payment Single (PPS)    |
 |                                   | the Child/Override (CHOC) screen  |
 |                                   | may need to be updated for        |
 |                                   | Service Rsn: PPS from the date of |
-|                                   | change                            |
+|                                   | change. The customer:             |
 |                                   |                                   |
-|                                   | if the customer is the principal  |
-|                                   | carer and a line is current for   |
-|                                   | reason Other (OTN) or Transfer    |
-|                                   | out to Partner (TOP), code an End |
-|                                   | Override (EOV) to ensure the      |
-|                                   | child is assessed as a PP child   |
-|                                   | or pension child                  |
-|                                   |                                   |
-|                                   | if the customer is no longer the  |
-|                                   | principal carer however has       |
-|                                   | shared care of:                   |
-|                                   |                                   |
-|                                   | -   a legally dependent child,    |
-|                                   |     code OTN (Other-Not PP Child  |
-|                                   |     but qualifies for add. IFA)   |
-|                                   |     to ensure the child is not    |
-|                                   |     assessed as a PP child,       |
-|                                   |     however is assessed as a      |
-|                                   |     pension child for income test |
-|                                   |     purposes                      |
-|                                   | -   a child who is not a legal    |
-|                                   |     dependent, code Transfer out  |
-|                                   |     to Partner (TOP). While there |
-|                                   |     is no partner this will       |
+|                                   | -   is the principal carer and a  |
+|                                   |     line is current for reason    |
+|                                   |     Other-Eligibility No (OTN) or |
+|                                   |     Transfer out to Partner       |
+|                                   |     (TOP), code an End Override   |
+|                                   |     (EOV). This ensures the child |
+|                                   |     is assessed as a PP child or  |
+|                                   |     pension child                 |
+|                                   | -   is no longer the principal    |
+|                                   |     carer however has shared care |
+|                                   |     of a legally dependent child, |
+|                                   |     code OTN. This ensures the    |
+|                                   |     child is not assessed as a PP |
+|                                   |     child, however is assessed as |
+|                                   |     a pension child for the       |
+|                                   |     additional income free area   |
+|                                   | -   is no longer the principal    |
+|                                   |     carer however has shared care |
+|                                   |     of a child who is not a legal |
+|                                   |     dependent, code TOP. While    |
+|                                   |     there is no partner this will |
 |                                   |     ensure the child is no longer |
 |                                   |     assessed as a PP child or     |
 |                                   |     pension child                 |
+|                                   | -   no longer has any care the    |
+|                                   |     child should be coded with    |
+|                                   |     left Customer Care (LCC) on   |
+|                                   |     the Child in Care (CHC)       |
+|                                   |     screen                        |
 |                                   |                                   |
-|                                   | if the customer no longer has any |
-|                                   | care the child should be coded    |
-|                                   | with left Customer Care (LCC) on  |
-|                                   | the Child in Care (CHC) screen    |
-|                                   |                                   |
-|                                   | if the Child Support care         |
+|                                   | If the Child Support care         |
 |                                   | decision needs clarification or   |
 |                                   | there is a system issue, see Item |
 |                                   | 6 in Table 1                      |
 |                                   |                                   |
-|                                   | create a DOC within the MFU       |
+|                                   | Create a DOC within the MFU       |
 |                                   | activity, and finalise activity   |
 +-----------------------------------+-----------------------------------+
 
