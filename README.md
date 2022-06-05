@@ -2,7 +2,11 @@
 Services Australia Operational Blueprint Freedom project
 
 ## Master problem 
-Our welfare system [hides half of how it works](https://docs.google.com/spreadsheets/d/1a5iNs4PwOGUbDzLuxudHfv1HWCprqAee1GzQZ0e-dLE/edit#gid=0) from the needy public.
+Our welfare system [hides half of how it works](http://posty.online/centrelink) from the needy public.
+
+As expressed in the article above:
+
+"Australian bureaucracy has learned that nobody ever got into trouble for not releasing information publicly, and generally seeks to keep these manuals under wraps, despite requirements under the Freedom of Information Act to publish them." - Charles Maskell-Knight on Asher Wolf's Article '[On secrets, Services Australia and a call for more transparent public governance](http://posty.online/centrelink)'
 
 ### Sub problems
 
