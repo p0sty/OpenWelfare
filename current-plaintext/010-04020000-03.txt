@@ -836,8 +836,6 @@ Table 2
 |                                   |                                   |
 |                                   | -   Income Maintenance Period     |
 |                                   |     (IMP)                         |
-|                                   | -   Liquid Asset Waiting Period   |
-|                                   |     (LAWP)                        |
 |                                   | -   Seasonal Work Preclusion      |
 |                                   |     Period (SWPP)                 |
 |                                   | -   Newly Arrived Resident's      |
@@ -898,10 +896,7 @@ Table 3
 |                                   |                                   |
 |                                   | If the claim is to be:            |
 |                                   |                                   |
-|                                   | Granted, go to Step 5             |
-|                                   |                                   |
-|                                   | Rejected FSD - Failed to supply   |
-|                                   | documents, go to Step 2           |
+|                                   | Granted, go to Step 4             |
 |                                   |                                   |
 |                                   | Rejected because of 1 of the      |
 |                                   | following rejection reasons:      |
@@ -913,43 +908,23 @@ Table 3
 |                                   |     or DOC                        |
 |                                   | -   NAT - Not an apprentice       |
 |                                   | -   NAC - Not an approved course  |
-|                                   | -   FTE - FT employment, earned   |
+|                                   | -   FTS - FT employment, earned   |
 |                                   |     income not advised            |
-|                                   | -   go to Step 3                  |
+|                                   | -   FSD - Failed to supply        |
+|                                   |     documents. Where the customer |
+|                                   |     has failed to provide their   |
+|                                   |     Tax File Number, or Proof of  |
+|                                   |     Identity (POI) only, do not   |
+|                                   |     streamline reject FSD. Code   |
+|                                   |     the claim and allow it to     |
+|                                   |     reject automatically with     |
+|                                   |     reasons REJ-TFN or REJ-POI    |
+|                                   | -   go to Step 2                  |
 |                                   |                                   |
 |                                   | Rejected for any other reason, go |
-|                                   | to Step 4                         |
+|                                   | to Step 3                         |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Failed to supply documents + Read |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | Do not reject claims FSD for      |
-|                                   | failure to provide                |
-|                                   | bank/investment balances where    |
-|                                   | the customer was only requested   |
-|                                   | for assessment of a LAWP and the  |
-|                                   | qualification date is more than   |
-|                                   | 13 weeks before the claim         |
-|                                   | lodgement date, as a LAWP of any  |
-|                                   | duration would have been          |
-|                                   | self-served.                      |
-|                                   |                                   |
-|                                   | Where the customer has failed to  |
-|                                   | provide their Tax File Number,    |
-|                                   | POI or Parental income, do not    |
-|                                   | streamline reject FSD. Code the   |
-|                                   | claim and allow it to reject      |
-|                                   | automatically with reasons        |
-|                                   | REJ-TFN, REJ-POI or REJ-PIA.      |
-|                                   |                                   |
-|                                   | If the claim is to be:            |
-|                                   |                                   |
-|                                   | -   streamline rejected, go to    |
-|                                   |     Step 3                        |
-|                                   | -   rejected for any other        |
-|                                   |     reason, go to Step 4          |
-+-----------------------------------+-----------------------------------+
-| 3                                 | Streamline rejection + Read more  |
+| 2                                 | Streamline rejection + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | If the claim is to be streamline  |
@@ -1027,7 +1002,7 @@ Table 3
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Customer is not eligible for      |
+| 3                                 | Customer is not eligible for      |
 |                                   | Austudy + Read more ...           |
 |                                   |                                   |
 |                                   | Where the claim is not finalised  |
@@ -1118,7 +1093,7 @@ Table 3
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Granting of a claim + Read more   |
+| 4                                 | Granting of a claim + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Select Assess.                    |

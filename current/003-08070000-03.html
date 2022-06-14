@@ -211,6 +211,8 @@
 
 <p><a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_Processing_revi">13 week reviews - processing</a></p>
 
+<p><a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_Checking_and_up">Checking and updating details</a></p>
+
 <p><a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_SpB_categories">SpB categories</a></p>
 
 <p><a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_Annual_Intensiv">Annual Intensive Reviews (AIR)</a></p>
@@ -326,7 +328,7 @@ given permission for the customer to enquire, their partner's details are also r
 
 <p>If completing a blank form, they will need to fill in their name, address, Customer Reference Number (CRN), the date of issue and the return date on the first page of the form.</p>
 
-<p>The customer needs to complete and return the form as instructed on the front page and provide any supporting documents requested.</p>
+<p>The customer needs to complete and return the form as instructed on the front page and provide any supporting documentation requested.</p>
 
 <p><strong>Due date</strong></p>
 
@@ -418,29 +420,19 @@ The customer need to complete and return the review form with required supportin
 <p>1</p></td>
 <td>
 
-<p><strong>Begin 13 week review</strong> <a title="Read more 5" class="showhead bp03_tbl_Processing_revi_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Run script if SpB current</strong> <a title="Read more 5" class="showhead bp03_tbl_Processing_revi_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Service Officers will need to identify if the review is completed by&#58;</p>
+<p>Is SpB current?</p>
 		<ul>		<li>
-a paper claim <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L2GT_Forms">BC048m</a>, or </li>
+<strong>Yes</strong>,</li>
+			<ul>			<li>
+Start the <strong>Review Special Benefit</strong> script. In Customer Record select <strong>Script Selector &gt; Review, Special Benefit</strong>. <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step03">Go to Step 3</a></li>
+			<li>
+If the script is not available, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step02">go to Step 2</a></li>		</ul>
 		<li>
-the online channel  </li>
-		</ul>
-<p>The way the customer has chosen to complete their review will determine how it is located on the system.  </p>
-
-<p>If the customer has submitted a paper review form <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L2GT_Forms">BC048m,</a> go to the Future Activity List (<strong>FAL</strong>) screen.</p>
-		<ul>		<li>
-select the review by '<strong>S</strong>'electing the <strong>NSS/FRM SPL eligibility end date</strong> activity</li>
-		<li>
-if the activity is not listed on the <strong>FAL</strong> screen, check the Activity List (<strong>AL)</strong> screen and select the review from here</li>
-		<li>
-if there is no activity on <strong>FAL </strong>or <strong>AL,</strong> do an <a href="../initial-contact-general/106-06020030-03.html">RSIMME refresh</a> to get the activity</li>
-		<li>
-<a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step03">go to Step 3</a></li>
-		</ul>
-<p>If the review is completed via the online channel, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step02">go to Step 2</a>.</p>
+<strong>No</strong>, the script cannot be used if SpB is cancelled. <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step02">Go to Step 2</a></li>		</ul>
 </div>
 
 
@@ -452,39 +444,19 @@ if there is no activity on <strong>FAL </strong>or <strong>AL,</strong> do an <a
 <p>2</p></td>
 <td>
 
-<p><strong>Check online review details</strong> <a title="Read more 6" class="showhead bp03_tbl_Processing_revi_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>If script not available</strong> <a title="Read more 6" class="showhead bp03_tbl_Processing_revi_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>The system will complete the review and calculate a new Eligibility End Date (EED) if&#58;</p>
+<p>Go to the Future Activity List (<strong>FAL</strong>) screen.</p>
 		<ul>		<li>
-the customer has completed the review online, and</li>
+Select the review by '<strong>S</strong>'electing the <strong>NSS/FRM SPL eligibility end date</strong> activity</li>
 		<li>
-they advised there is no change to their details or circumstances, and no follow-up actions have been created</li>
-		</ul>
-<p>To view the SpB online review details provided by the customer&#58;</p>
-		<ul>		<li>
-In Customer First Workspace, select <strong>Special Benefit Review Summary</strong> (Customer online Account)</li>
+If the activity is not listed on the <strong>FAL</strong> screen, check the Activity List (<strong>AL)</strong> screen and select the review from here</li>
 		<li>
-Select the <strong>Service ID</strong> hyperlink</li>
-		<li>
-Select the <strong>Receipt</strong> icon at top left</li>
-		<li>
-Select the sideway triangle to view information</li>
-		</ul>
-<p>Compare the information in the <strong>OLS SPB Update Manual DOC </strong>with the customer's responses in the <strong>Special Benefit Review Summary</strong> and update accordingly. </p>
-
-<p>There may be separate <strong>DOCs </strong>on the record for address, accommodation and requested information. Check these <strong>DOCs.</strong></p>
-
-<p>Check the information the customer has provided as an update or change in circumstance&#58;</p>
-		<ul>		<li>
-A customer may have one or many action items in the <strong>DOC </strong>that needs manual processing</li>
-		<li>
-If there is not enough detail to process the review, contact the customer to discuss and make the appropriate updates</li>
+If there is no activity on <strong>FAL </strong>or <strong>AL,</strong> do an <a href="../initial-contact-general/106-06020030-03.html">RSIMME refresh</a> to get the activity</li>		</ul>
 </div>
 
-		</ul>
-<p></p>
 
 <p></p></td>
 </tr>
@@ -494,31 +466,17 @@ If there is not enough detail to process the review, contact the customer to dis
 <p>3</p></td>
 <td>
 
-<p><strong>Residency qualification</strong> <a title="Read more 7" class="showhead bp03_tbl_Processing_revi_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check/update details on the customer's record</strong> <a title="Read more 7" class="showhead bp03_tbl_Processing_revi_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Service Officers <strong>must </strong>undertake a <a href="../initial-contact-general/106-06020030-03.html">Refresh RSIMME screen</a> to confirm visa status.  This will identify if the&#58;</p>
-		<ul>		<li>
-customer’s visa subclass has changed, and </li>
-		<li>
-Special Benefit review needs to continue</li>
-		</ul>
-<p>If the customer has a visa subclass 309, 820, 060, 070, 785, 790 with an end date before the next review, make sure the EED is Visa End Date minus one day.</p>
+<p>Compare the customer's responses on the BC048m form or Special Benefit Review Summary (online) with the details on their record.</p>
 
-<p>Tell the customer SpB will be cancelled and they need to contact the Department of Home Affairs.</p>
+<p>For help checking/ updating details, see <a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_Checking_and_up">Table 3</a>.</p>
 
-<p>For <a href="../help-in-an-emergency/003-08010010-01.html">Australian Citizen Children</a> review, the refresh of the <strong>RSIMME</strong> screen <strong>must</strong> be undertaken on the custodial parent’s record.</p>
+<p><a class="modal-link" href="../help-in-an-emergency/003-08030040-03.html">Apply the available funds test</a>.</p>
 
-<p>Is the customer still eligible for Special Benefit?</p>
-		<ul>		<li>
-<strong>Yes,</strong> <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step05">go to Step 5</a></li>
-		<li>
-<strong>No,</strong> if the customer&#58;</li>
-			<ul>			<li>
-has lost qualification and SpB is no longer payable due to a change in circumstances, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step04">go to Step 4</a></li>
-			<li>
-is now eligible for another income support payment or will be eligible in the next 13 weeks, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step19">go to  Step 19</a></li>			</ul>			</ul>
+<p>For help checking eligibility based on the SpB category, see <a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_SpB_categories">Table 4</a>.</p>
 </div>
 
 
@@ -530,17 +488,17 @@ is now eligible for another income support payment or will be eligible in the ne
 <p>4</p></td>
 <td>
 
-<p><strong>Not eligible for SpB</strong> <a title="Read more 8" class="showhead bp03_tbl_Processing_revi_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Is the customer entitled to SpB?</strong> <a title="Read more 8" class="showhead bp03_tbl_Processing_revi_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
-
-<p><a target="_blank" href="../review-of-decision-and-appeals/109-03010000-03.html">Contact the customer to advise the unfavourable decision</a> if an automatic or manual cancellation applies due to a change in circumstances or update. For example, cancellation reasons OSA, CPP, COP, and HAR.</p>
-
-<p>For other cancellation reasons, cancel the payment using the Benefit Action (<strong>BA</strong>) screen.</p>
-
-<p>See <a href="../ongoing-contact/102-10020000-01.html">Cancellation of payments</a>.</p>
-
-<p><a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step23">Go to  Step 23</a>.</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step06">go to Step 6</a></li>
+		<li>
+<strong>No</strong>, if the customer&#58;</li>
+			<ul>			<li>
+has lost qualification and SpB is no longer payable due to a change in circumstances, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step05">go to Step 5</a></li>
+			<li>
+is now eligible for another income support payment or will be eligible in the next 13 weeks, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step07">go to Step 7</a></li>			</ul>			</ul>
 </div>
 
 
@@ -552,43 +510,17 @@ is now eligible for another income support payment or will be eligible in the ne
 <p>5</p></td>
 <td>
 
-<p><strong>Personal, contact and accommodation details</strong> <a title="Read more 9" class="showhead bp03_tbl_Processing_revi_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Not eligible for SpB</strong> <a title="Read more 9" class="showhead bp03_tbl_Processing_revi_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Check and encourage the customer to register for self service. They will be able to view, update, upload documents, and complete reviews online.</p>
+<p><a target="_blank" href="../review-of-decision-and-appeals/109-03010000-03.html">Contact the customer to advise the unfavourable decision</a> if an automatic or manual cancellation applies due to a change in circumstances or update. For example, cancellation reasons OSA, CPP, COP, HAR.</p>
 
-<p>Check/update these screens&#58;</p>
-		<ul>		<li>
-NSS Income Summary (<strong>NIS</strong>)</li>
-		<li>
-Proof of Identification (<strong>POI</strong>)</li>
-		<li>
-Email Address (<strong>EMA</strong>)</li>
-		<li>
-Telephone Summary (<strong>TDS</strong>)</li>
-		<li>
-Other Contact Details (<strong>OCD</strong>) for language update</li>
-		<li>
-Tax File Number Summary (<strong>TFS</strong>)</li>
-		<li>
-Customer Link Summary (<strong>NOLS</strong>) for nominee/payment arrangement</li>
-		<li>
-Customer Person Detail Summary (<strong>CPDS</strong>) for name updates</li>
-		<li>
-If they advise their account details are incorrect, see <a href="../payment-delivery/103-04030010-01.html">Changing payment destination</a></li>
-		<li>
-Product (<strong>SVP</strong>) to add new accounts or (<strong>SVDI</strong>) for direct investments</li>
-		<li>
-Accommodation (<strong>AC</strong>) screen. <a href="../help-in-an-emergency/003-08040000-01.html">If rent details are coded as NRP</a>, review this to make sure coding is still appropriate. Update Address Details (<strong>ADS</strong>) if needed</li>
-		</ul>
-<p>See <a href="../help-in-an-emergency/003-08040000-01.html">Rates of payment for SpB</a> for how to update the <strong>AC </strong>screen. The rate reduces by&#58;</p>
-		<ul>		<li>
-one third if the customer is receiving free meals <strong>or </strong>free lodging</li>
-		<li>
-two thirds if the customer is receiving free meals <strong>and</strong> lodging</li>
-		</ul>
-<p>If the customer advises they are going overseas, see <a href="../help-in-an-emergency/003-08070040-01.html">SpB customer going overseas</a>.</p>
+<p>For other cancellation reasons, cancel the payment using the Benefit Action (<strong>BA</strong>) screen.</p>
+
+<p>See <a href="../ongoing-contact/102-10020000-01.html">Cancellation of payments</a>.</p>
+
+<p><a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step11">Go to  Step 11</a>.</p>
 </div>
 
 
@@ -600,409 +532,7 @@ two thirds if the customer is receiving free meals <strong>and</strong> lodging<
 <p>6</p></td>
 <td>
 
-<p><strong>Partner details changed</strong> <a title="Read more 10" class="showhead bp03_tbl_Processing_revi_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>Issue a Request for Information (RFI) letter if any verifying documents are needed. </p>
-
-<p>For example, Separation Details (MOD S), Partner Details (MOD P) or death certificate.</p>
-		<ul>		<li>
-Check for lodgement of the MOD P</li>
-		<li>
-If <a href="../compliance-and-reviews/110-19111307-01.html">Section 24</a> has been approved, a review is needed every 13 weeks in conjunction with review</li>
-		<li>
-Determine if <a href="../compliance-and-reviews/110-19111344-01.html">Member of a couple (MOCA) assessment</a> is needed</li>
-		<li>
-If information is not returned, suspend SpB and tell the customer their payment will remain suspended until the MOD P is returned</li>
-		<li>
-If able to obtain enough information over the phone, update the Marital Status (<strong>MS</strong>) screen and link the records</li>
-		</ul>
-<p><strong>Note&#58;</strong> if a customer has provided information advising changes in relationship, this can be accepted for the review and no additional MOD P or MOD S is needed.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step07"></a>
-<p>7</p></td>
-<td>
-
-<p><strong>Tertiary study</strong> <a title="Read more 11" class="showhead bp03_tbl_Processing_revi_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>For customers undertaking tertiary study, check their record to see if the study has been approved in their Job Plan. If not, contact the customer to discuss their situation.</p>
-
-<p>For help with study rules, see <a href="../help-in-an-emergency/003-08050000-01.html">Mutual obligation requirements for SpB</a>.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step08"></a>
-<p>8</p></td>
-<td>
-
-<p><strong>Changes for FTB customers</strong> <a title="Read more 12" class="showhead bp03_tbl_Processing_revi_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If&#58;</p>
-		<ul>		<li>
-a Family Tax Benefit (FTB) child has left the customer's care, see <a href="../help-in-an-emergency/003-08050000-01.html">Child leaves customer's care/custody</a></li>
-		<li>
-there is a change to shared care arrangements of an FTB child, create an <strong>ACTDOC </strong>with the details and send through to FCC</li>
-		<li>
-the customer is advising the FTB child's details are incorrect and need updating (name, sex, date of birth), see <a href="../ongoing-contact/102-05050090-01.html">Change Child (CCH) screen</a></li>
-		</ul>
-<p>The customer will need to provide proof of birth for a newly added child. See <a href="../ongoing-contact/102-05050120-01.html">linking a child to a customer's record</a>.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step09"></a>
-<p>9</p></td>
-<td>
-
-<p><strong>SpB category</strong> <a title="Read more 13" class="showhead bp03_tbl_Processing_revi_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the customer continues to qualify for SpB, but another category is more appropriate, update the SpB Other Details (<strong>NSOD</strong>) screen. See <a href="../help-in-an-emergency/003-08060000-03.html">Processing SpB claims</a>.</p>
-
-<p>Code these fields on the <strong>NSOD</strong> screen&#58;</p>
-		<ul>		<li>
-<strong>Date of Event&#58;</strong> change to reflect the most recent change in circumstances</li>
-		<li>
-<strong>SPL Category&#58;</strong> change if another category becomes more appropriate. See Table 3</li>
-		<li>
-<strong>Payable Under&#58;</strong> change if appropriate</li>
-		<li>
-<strong>Available Funds Test&#58;</strong> update if applicable. For more details, see <a href="../help-in-an-emergency/003-08030040-03.html">SpB available funds test</a></li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step10"></a>
-<p>10</p></td>
-<td>
-
-<p><strong>Employment income</strong> <a title="Read more 14" class="showhead bp03_tbl_Processing_revi_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the customer advises their or their partner's income has changed or is incorrect, contact the customer to discuss. Request payslips/ information for the relevant period if applicable.</p>
-
-<p>For help, see&#58;</p>
-		<ul>		<li>
-<a href="../income-assests-and-rates-of-payment/108-07010010-03.html">Assessing and coding employment income</a></li>
-		<li>
-<a href="../help-in-an-emergency/003-08010010-01.html">SpB for Australian Citizen Children (ACC) and Australian permanent resident children</a></li>
-		</ul>
-<p>Check and update the following screens as needed&#58;</p>
-		<ul>		<li>
-NSS Income Summary (<strong>NIS</strong>) to check overall income that could affect the payment</li>
-		<li>
-Employment Income Paid Details (<strong>EAPP</strong>)</li>
-		<li>
-Other Government Payments (<strong>OGP</strong>)</li>
-		<li>
-Other Income Summary (<strong>OINS</strong>)</li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step11"></a>
-<p>11</p></td>
-<td>
-
-<p><strong>Foreign income</strong> <a title="Read more 15" class="showhead bp03_tbl_Processing_revi_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>Updates are needed if&#58;</p>
-		<ul>		<li>
-the customer advises their foreign income and assets details, or</li>
-		<li>
-the parent or guardian of an Australian Citizen Child (ACC) or Australian permanent resident child customer advises their foreign income and assets details</li>
-		</ul>
-<p>Check and update these screens if needed&#58;</p>
-		<ul>		<li>
-Foreign Income/Asset Detail (<strong>FID</strong>)</li>
-		<li>
-Overseas income and pensions (<strong>FIPS/FPD</strong>)</li>
-		</ul>
-<p>For help with coding, see <a href="../income-assests-and-rates-of-payment/108-05020050-03.html">Foreign income and assets</a>.</p>
-
-<p>If more documents are need to verify details&#58;</p>
-		<ul>		<li>
-contact the customer, or </li>
-		<li>
-issue a Request for Information (RFI) letter</li>
-		</ul>
-<p>If pension details are coded but need updating, check related <strong>DOCs</strong> and update the <strong>FPD </strong>screen.</p>
-
-<p>To update a foreign pension (for a non-agreement country) on a customer's record, use the <strong>Foreign Pension</strong> script in <strong>Customer First Workspace &gt; Script</strong> menu.</p>
-
-<p>To add a new foreign pension, referral details to International Services (CIS) to complete coding. See <a href="../initial-contact-general/106-08030000-03.html">Foreign pension coding</a>.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step12"></a>
-<p>12</p></td>
-<td>
-
-<p><strong>Real estate/business</strong> <a title="Read more 16" class="showhead bp03_tbl_Processing_revi_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the customer is adding or updating these details, they need to provide a Real Estate Details (MOD R) or Business Details (MOD F) form.</p>
-
-<p>If a MOD R and/or MOD F has&#58;</p>
-		<ul>		<li>
-been provided, see&#58;</li>
-			<ul>			<li>
-<a href="../initial-contact-general/106-07100130-03.html">Assessing and coding the Real estate details Mod R</a></li>
-			<li>
-<a href="../business-and-employers/043-03060020-03.html">Assessing and coding the Business details for sole traders and partnerships Mod F</a></li>		</ul>
-		<li>
-has not been provided&#58;</li>
-			<ul>			<li>
-Contact the customer and tell them the documents must be provided. <strong>DOC </strong>the record. See <a href="../complaints-privacy-and-foi/104-04080010-03.html">Requesting information (CLK)</a></li>
-			<li>
-Code a review with keyword <strong>!CLRKRFI </strong>to follow up return of the documents</li>
-			</ul>			</ul>
-<p>Contact the customer to check if the real estate is a readily realisable asset (within their control to use the funds for ongoing expenses).See <a href="../help-in-an-emergency/003-08030040-04.html">SpB available funds test</a>.</p>
-
-<p><strong>Note&#58; </strong>if the customer’s business is consistently running at a loss, the customer’s eligibility will need to be assessed. A person who perseveres with an unprofitable venture cannot qualify for Special Benefit.</p>
-
-<p>Is it considered a realisable asset?</p>
-		<ul>		<li>
-<strong>Yes,</strong> include the asset amount as part of the available funds test.</li>
-			<ul>			<li>
-Update the SpB Other Details (<strong>NSOD</strong>) screen</li>
-			<li>
-If available funds exceed $5,000, the system will cancel SpB with the reason <strong>HAR</strong> (not in hardship)</li>		</ul>
-		<li>
-<strong>No,</strong> update the real estate details and <strong>DOC</strong> the record</li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step13"></a>
-<p>13</p></td>
-<td>
-
-<p><strong>Compensation</strong> <a title="Read more 17" class="showhead bp03_tbl_Processing_revi_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>The customer will need to provide a Compensation and Damages (MOD C) if they advise their compensation details are incorrect or incomplete.</p>
-
-<p>If the MOD C&#58;</p>
-		<ul>		<li>
-has not been provided</li>
-			<ul>			<li>
-contact the customer and advise documents must be provided</li>
-			<li>
-hold the <strong>DOC </strong>and <strong>NSS/FRM</strong> activity with a resubmit date of when the documents are due</li>		</ul>
-		<li>
-has been provided, see <a href="../compensation/117-01040010-03.html">Coding Compensation and damages (MOD C) to request a clearance</a></li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step14"></a>
-<p>14</p></td>
-<td>
-
-<p><strong>Other assets and income</strong> <a title="Read more 18" class="showhead bp03_tbl_Processing_revi_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the customer has tried to update other assets or share details online&#58;</p>
-		<ul>		<li>
-Check related <strong>DOCs</strong></li>
-		<li>
-Update the Other Asset Summary (<strong>OASS</strong>) screen if needed</li>
-		<li>
-If more details are needed to complete updates, <a href="../complaints-privacy-and-foi/104-04080010-03.html">issue a Request for Information (RFI) letter</a> and contact the customer to tell them</li>
-		<li>
-Consider if it is reasonable to expect the customer to realise any of these assets (whether it is within their control or beyond their control)</li>
-		</ul>
-<p>If the customer is updating share details, update these screens.</p>
-		<ul>		<li>
-Securities and Investments Summary (<strong>SIS</strong>)</li>
-		<li>
-Managed Investments Summary (<strong>MIS</strong>)</li>
-		</ul>
-<p>For help with updates, see&#58;</p>
-		<ul>		<li>
-<a href="../income-assests-and-rates-of-payment/108-19092734-01.html">Updating shares and securities</a></li>
-		<li>
-<a href="../income-assests-and-rates-of-payment/108-04090020-01.html">Managed investments - adding a new investment</a></li>
-		<li>
-<a href="../income-assests-and-rates-of-payment/108-04090030-01.html">Managed investments - updating existing investments</a></li>
-		</ul>
-<p><strong>Other income</strong></p>
-
-<p>Update the Other Income (OIN) screen if needed.</p>
-
-<p>Income earned or received in kind or financial support received by the customer or parent of an Australian Citizen Child (ACC) or Australian permanent resident child.</p>
-
-<p>For more information, see <a href="../help-in-an-emergency/003-08040000-01.html">Rates of payment for SPB</a>.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step15"></a>
-<p>15</p></td>
-<td>
-
-<p><strong>Other means of support</strong> <a title="Read more 19" class="showhead bp03_tbl_Processing_revi_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the customer answered <strong>YES</strong> to ‘Do you receive any regular financial or other form of assistance from any person?’&#58;</p>
-		<ul>		<li>
-Check details about what has changed for the support the customer receives</li>
-		<li>
-Code any free board and/or lodgings on the Accommodation (<strong>AC</strong>) screen</li>
-		<li>
-Code any other ongoing regular support on the Other Income Summary (<strong>OINS</strong>) screen</li>
-		<li>
-Check the customer continues to <a href="../help-in-an-emergency/003-08030020-01.html">qualify for SpB</a></li>
-		<li>
-Check if the customer is under Assurance of Support</li>
-			<ul>			<li>
-If the customer advises or the Service Officer identifies the assurer is now providing adequate support to the customer (assuree), take care before cancelling SpB reason <strong>OSA</strong> (other means of support available)</li>
-			<li>
-If they no longer qualify because they are receiving sufficient support, cancel SpB reason <strong>OSA</strong> when completing the assessment</li>		</ul>
-		<li>
-Update the <strong>DOC</strong> with any action taken</li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step16"></a>
-<p>16</p></td>
-<td>
-
-<p><strong>Rate Component Override (RCO)</strong> <a title="Read more 20" class="showhead bp03_tbl_Processing_revi_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>Service Officers must make sure that they have checked the <strong>RCO </strong>screen to check the customer is receiving the correct rate with regards to&#58;</p>
-		<ul>		<li>
-CPI rate increases</li>
-		<li>
-Energy Supplement</li>
-		<li>
-Pharmaceutical allowance</li>
-		<li>
-Number of siblings in the family unit</li>
-		<li>
-Review payment list to determine if parent is receiving SRSS, if so, make sure the FTB rate is coded</li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step17"></a>
-<p>17</p></td>
-<td>
-
-<p><strong>Newly Arrived Resident’s Waiting Period (NARWP) and residence</strong> <a title="Read more 21" class="showhead bp03_tbl_Processing_revi_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>A follow-up is needed for customers who&#58;</p>
-		<ul>		<li>
-are in <strong>NMN, NMA, NMP, NRA </strong>or <strong>NRD</strong> categories, and</li>
-		<li>
-have served or are due to have served the notional NARWP or 10 years qualifying Australian residence before the next Eligibility End Date (EED)</li>
-		</ul>
-<p>Check if the customer has served the <a href="../migrants-refugees-and-visitors/005-02020000-01.html">NARWP</a> for another income support payment or 10 years qualifying Australian residency for Age Pension or DSP and is residentially qualified for another payment depending on their category of SpB. An exemption may apply. See&#58;</p>
-		<ul>		<li>
-<a href="../older-australians/065-03040010-01.html">Residence assessment for customers claiming Age Pension</a></li>
-		<li>
-<a href="../people-with-disability/008-03050010-03.html">Residence assessment for customers claiming Disability Support Pension (DSP)</a></li>
-		<li>
-<a href="../initial-contact-general/106-06020110-01.html">Residence assessment for customers claiming Parenting Payment (PP)</a></li>
-		<li>
-For other income support payments, see <a href="../migrants-refugees-and-visitors/005-02020000-01.html">NARWP and Qualifying Residence Period</a></li>
-		</ul>
-<p>If the customer is the holder of a SpB temporary visa and the visa end date is earlier than the 13 weeks, make sure the EED on the <strong>NMIS </strong>screen is Visa End Date minus one day.</p>
-
-<p>Update the residence details by <a href="../initial-contact-general/106-06020030-01.html">activating the Department of Home Affairs datalink on the RSIMME screen</a>.</p>
-		<ul>		<li>
-Go to the Residence Cluster Task Selector (<strong>RETS</strong>) screen to check the customer's residence status&#58;</li>
-		<li>
-Make sure their visa still qualifies the customer for SpB. Check the Legal Residence Details (<strong>RSLEG</strong>) screen</li>
-		<li>
-Check if they have served the NARWP if applicable&#58;</li>
-			<ul>			<li>
-<strong>RSLEG </strong>screen</li>
-			<li>
-Immigration Movements (<strong>RSIM</strong>) screen</li>
-			<li>
-Australian Periods of Presence (<strong>RSPAP/RSPAR</strong>) screens, or</li>		</ul>
-		<li>
-Check if they have qualifying residence for another income support payment</li>
-		</ul>
-<p>If the <strong>RSLEG </strong>screen has been updated with a new visa subclass, check if the new visa entitled the customer to another social security payment.</p>
-
-<p>If the customer&#58;</p>
-		<ul>		<li>
-may be eligible for another payment, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step19">go to  Step 19</a></li>
-		<li>
-no longer qualifies for SpB, cancel the payment from the grant date of the new visa</li>
-			<ul>			<li>
-update the <strong>DOC </strong>with any action taken</li>			</ul>			</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step18"></a>
-<p>18</p></td>
-<td>
-
-<p><strong>Mutual obligation requirements</strong> <a title="Read more 22" class="showhead bp03_tbl_Processing_revi_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Mutual obligation requirements</strong> <a title="Read more 10" class="showhead bp03_tbl_Processing_revi_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1036,11 +566,11 @@ SpB non-NVH mutual obligation requirements based on policy (not subject to compl
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step19"></a>
-<p>19</p></td>
+<a class="anchor" name="bp03_tbl_Processing_revi_Step07"></a>
+<p>7</p></td>
 <td>
 
-<p><strong>Eligibility End Date (EED)</strong> <a title="Read more 23" class="showhead bp03_tbl_Processing_revi_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Eligibility End Date (EED)</strong> <a title="Read more 11" class="showhead bp03_tbl_Processing_revi_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1052,17 +582,17 @@ SpB non-NVH mutual obligation requirements based on policy (not subject to compl
 			<ul>			<li>
 Extend the EED on the <strong>NMIS</strong> screen for the day they are residentially qualified for another payment, or the next payday + 14 days for the day before they lose eligibility</li>
 			<li>
-<strong>Do not</strong> extend the EED beyond this date if the visa end date is before the next 13 week EED<br>Example&#58; for a temporary visa holder (790, 449, 785 visa) whose visa end date is before the next 13 week EED, the EED on the <strong>NMIS</strong> screen must be Visa End Date minus one day</li>		</ul>
+<strong>Do not</strong> extend the EED beyond this date if the visa end date is before the next 13 week EED<br>Example&#58; for a temporary visa holder e.g. (790, 449, 785 visa) whose visa end date is before the next 13 week EED, the EED on the <strong>NMIS</strong> screen must be Visa End Date minus one day</li>		</ul>
 		<li>
 <strong>eligible for another payment</strong> now or by the next EED</li>
 			<ul>			<li>
 Extend the EED on the NMIS screen for the day they are residentially qualified for another payment or the next payday + 14 days</li>
 			<li>
-<strong>Do not</strong> extend the EED beyond this date if the customer will meet 10 year residence<br>Example&#58; If the customer will meet the 10 year Australian residence for AGE or serve the NARWP for JSP, confirm this information on their record to make sure they meet the residence requirements or a qualifying residence exemption for a more appropriate income support payment. See <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Checking_and_up_13">Item 17 in Table </a>2</li>
+<strong>Do not</strong> extend the EED beyond this date if the customer will meet 10 year residence<br>Example&#58; If the customer will meet the 10 year Australian residence for AGE or serve the NARWP for JSP, confirm this information on their record to make sure they meet the residence requirements or a qualifying residence exemption for a more appropriate income support payment. See <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Checking_and_up_13">Item 13 in Table 3</a></li>
 			<li>
 If the customer is subscribed, <a target="_blank" href="../self-service/133-05000000-03.html#bp03_L3TT_Sending_a_Deskt">send a pre-call SMS</a> before calling them</li>
 			<li>
-Tell the customer they must apply for another more appropriate payment and that their SpB will stop the day before they become eligible for another payment. Tell the customer they can <a target="_blank" href="../initial-contact-general/106-03040020-01.html">make an early claim</a> up to 13 weeks before they become eligible. <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L3TT_Manual_letter_t01">Send a manual letter</a></li>
+Advise the customer they must apply for another more appropriate payment and that their SpB will stop the day before they become eligible for another payment. Advise the customer they can <a target="_blank" href="../initial-contact-general/106-03040020-01.html">make an early claim</a> up to 13 weeks before they become eligible. <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L3TT_Manual_letter_t01">Send a manual letter</a></li>
 			<li>
 If unable to contact the customer, <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L3TT_Manual_letter_t01">issue a letter</a> online (preferred) or by post to advise they must apply for a more appropriate payment and their SpB will stop the day before they become eligible for another payment</li>
 			<li>
@@ -1078,21 +608,21 @@ If the customer is considered vulnerable, run an Assisted Customer Claim to subm
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step20"></a>
-<p>20</p></td>
+<a class="anchor" name="bp03_tbl_Processing_revi_Step08"></a>
+<p>8</p></td>
 <td>
 
-<p><strong>Is SpB status suspended or cancelled?</strong> <a title="Read more 24" class="showhead bp03_tbl_Processing_revi_Step20" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step20" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Is SpB status suspended or cancelled?</strong> <a title="Read more 12" class="showhead bp03_tbl_Processing_revi_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step21">go to  Step 21</a></li>
+<strong>Yes</strong>, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step09">go to Step 9</a></li>
 		<li>
 <strong>No</strong>,</li>
 			<ul>			<li>
-If coding has resulted in a gap in SpB payments (missing payment), <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step22">go to  Step 22</a></li>
+If coding has resulted in a gap in SpB payments (missing payment), <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step10">go to  Step 10</a></li>
 			<li>
-To complete the review, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step23">go to  Step 23</a></li>			</ul>			</ul>
+To complete the review, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step11">go to  Step 11</a></li>			</ul>			</ul>
 </div>
 
 
@@ -1100,11 +630,11 @@ To complete the review, <a href="../help-in-an-emergency/003-08070000-03.html#bp
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step21"></a>
-<p>21</p></td>
+<a class="anchor" name="bp03_tbl_Processing_revi_Step09"></a>
+<p>9</p></td>
 <td>
 
-<p><strong>Restoring SpB</strong> <a title="Read more 25" class="showhead bp03_tbl_Processing_revi_Step21" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step21" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Restoring SpB</strong> <a title="Read more 13" class="showhead bp03_tbl_Processing_revi_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -1150,9 +680,9 @@ Customer has been advised/reminded of the general notification provisions</li>
 		</ul>
 <p><strong>Missing payment?</strong></p>
 
-<p>If coding has resulted in a gap in SpB payments (missing payment), <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step22">go to  Step 22</a>.</p>
+<p>If coding has resulted in a gap in SpB payments (missing payment), <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step10">go to  Step 10</a>.</p>
 
-<p>To complete the review, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step23">go to  Step 23</a>.</p>
+<p>To complete the review, <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step11">go to  Step 11</a>.</p>
 </div>
 
 
@@ -1160,11 +690,11 @@ Customer has been advised/reminded of the general notification provisions</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step22"></a>
-<p>22</p></td>
+<a class="anchor" name="bp03_tbl_Processing_revi_Step10"></a>
+<p>10</p></td>
 <td>
 
-<p><strong>SpB coding for missing payments</strong> <a title="Read more 26" class="showhead bp03_tbl_Processing_revi_Step22" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step22" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>SpB coding for missing payments</strong> <a title="Read more 14" class="showhead bp03_tbl_Processing_revi_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1194,17 +724,17 @@ Reassess the record and apply the most appropriate date or EED in the <strong>St
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Processing_revi_Step23"></a>
-<p>23</p></td>
+<a class="anchor" name="bp03_tbl_Processing_revi_Step11"></a>
+<p>11</p></td>
 <td>
 
-<p><strong>Finalise review and record DOC</strong> <a title="Read more 27" class="showhead bp03_tbl_Processing_revi_Step23" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step23" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalise review and record DOC</strong> <a title="Read more 15" class="showhead bp03_tbl_Processing_revi_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Processing_revi_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>Complete all Special Benefit review, ACT/CALL <strong>DOC</strong>s and digital work items.</p>
 
-<p>Record details on the <strong>SpB 13 Week Review Completed</strong> <strong>DOC</strong> in line with <a target="_blank" href="../specialist-manuals-and-system-tools/111-15040000-01.html">minimum standards</a>.</p>
+<p>Record details on a <strong>DOC</strong> in line with <a target="_blank" href="../specialist-manuals-and-system-tools/111-15040000-01.html">minimum standards</a>.</p>
 		<ul>		<li>
 If payment is to continue, include&#58;</li>
 			<ul>			<li>
@@ -1218,7 +748,7 @@ any change in circumstances</li>
 			<li>
 any customer contact</li>
 			<li>
-the new EED on <strong>NMIS</strong></li>		</ul>
+the new EED</li>		</ul>
 		<li>
 If payment is <strong>not</strong> to continue, include&#58;</li>
 			<ul>			<li>
@@ -1240,14 +770,474 @@ any customer contact</li>
 </table>
 
 <p></p>
+<a class="anchor" name="bp03_L3TT_Checking_and_up"></a>
+<h3>Checking and updating details</h3>
+
+
+<p class="info-box warning">SpB processing teams only</p>
+
+<p>Table 3&#58; checking and updating details on the customer's record. This applies for SpB 13 week reviews and Annual Intensive Reviews.</p>
+<table caption="Table 32&#58; checking and updating details on the customer's record.This applies for SpB 13 week reviews and Annual Intensive Reviews" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Checking_and_up_Item"></a>
+<p><strong>Item</strong></p></td>
+<td>
+
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_1"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Check online review details</strong> <a title="Read more 16" class="showhead bp03_tbl_Checking_and_up_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The system will complete the review and calculate a new EED if&#58;</p>
+		<ul>		<li>
+the customer has completed the review online, and</li>
+		<li>
+they advised there is no change to their details or circumstances, and no follow-up actions have been created</li>
+		</ul>
+<p>To view the SpB online review details provided by the customer&#58;</p>
+		<ul>		<li>
+In Customer First Workspace, select <strong>Special Benefit Review Summary (Customer online Account)</strong></li>
+		<li>
+Select the <strong>Service ID</strong> hyperlink.</li>
+		<li>
+Select the <strong>Receipt </strong>icon at top left</li>
+		<li>
+Select the sideway triangle to view information</li>
+		</ul>
+<p>Compare the information in the <strong>OLS SPB Update Manual DOC </strong>with the customer's responses in the Special Benefit Review Summary and update accordingly. There may be separate <strong>DOC</strong>s on the record for address, accommodation and requested information. Check these <strong>DOC</strong>s.</p>
+
+<p>Check what information the customer has provided as an update or change in circumstance. Process following the steps below.</p>
+
+<p>A customer may have one or many action items in the <strong>DOC</strong> that require manual processing. If there is not enough detail to process the review, contact the customer to discuss and make the appropriate updates.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_2"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Personal, contact and accommodation details</strong> <a title="Read more 17" class="showhead bp03_tbl_Checking_and_up_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Check and encourage the customer to register for self service. They will be able to view, update, upload documents, and complete reviews online.</p>
+
+<p>Check/update these screens&#58;</p>
+		<ul>		<li>
+<a target="_blank" href="../initial-contact-general/106-06020030-03.html">Refresh RSIMME screen</a> to confirm visa status</li>
+		<li>
+If the customer has a visa subclass 309, 820, 060, 070, 785, 790 with an end date before the next review, make sure the EED is Visa End Date minus one day.<br>Advise the customer SpB will be cancelled and they need to contact the Department of Home Affairs</li>
+		<li>
+NSS Income Summary (<strong>NIS</strong>)</li>
+		<li>
+Email Address (<strong>EMA</strong>)</li>
+		<li>
+Telephone Summary (<strong>TDS</strong>)</li>
+		<li>
+Other Contact Details (<strong>OCD</strong>) for language update</li>
+		<li>
+Tax File Number Summary (<strong>TFS</strong>)</li>
+		<li>
+Customer Link Summary (<strong>NOLS</strong>) for nominee/payment arrangement</li>
+		<li>
+Customer Person Detail Summary (<strong>CPDS</strong>) for name updates</li>
+		<li>
+If they advise their account details are incorrect, see <a target="_blank" href="../payment-delivery/103-04030010-01.html">Changing payment destination</a></li>
+		<li>
+Product (<strong>SVP</strong>) to add new accounts or (<strong>SVDI</strong>) for direct investments</li>
+		<li>
+Accommodation (<strong>AC</strong>) screen. <a target="_blank" href="../help-in-an-emergency/003-08040000-01.html">If rent details are coded as NRP</a>, review this to make sure coding is still appropriate. Update Address Details (<strong>ADS</strong>) if needed</li>
+		</ul>
+<p>See <a target="_blank" href="../help-in-an-emergency/003-08040000-01.html">Rates of payment for SpB</a> for how to update the <strong>AC</strong> screen. The rate reduces by&#58;</p>
+		<ul>		<li>
+one third if the customer is receiving free meals <strong>or </strong>free lodging</li>
+		<li>
+two thirds if the customer is receiving free meals <strong>and</strong> lodging</li>
+		</ul>
+<p>If the customer advises they are going overseas, see <a href="../help-in-an-emergency/003-08070040-01.html">SpB customer going overseas</a>,</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_3"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Partner details changed</strong> <a title="Read more 18" class="showhead bp03_tbl_Checking_and_up_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Issue a Request for Information (RFI) letter if any verifying documents are needed. For example, Separation Details (MOD S), Partner Details (MOD P), death certificate.</p>
+		<ul>		<li>
+Check for lodgement of the MOD P</li>
+		<li>
+If information is not returned, suspend SpB and tell the customer their payment will remain suspended until the MOD P is returned</li>
+		<li>
+If able to obtain enough information over the phone, update Marital Status (<strong>MS</strong>) screen and link records</li>
+		</ul>
+<p><strong>Note&#58;</strong> if a customer has provided information advising changes in relationship, this can be accepted for the review and no additional MOD P or MOD S is required.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_4"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Tertiary study</strong> <a title="Read more 19" class="showhead bp03_tbl_Checking_and_up_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>For customers undertaking tertiary study, check their record to see if the study has been approved in their Job Plan. If not, contact the customer to discuss their situation.</p>
+
+<p>For help with study rules, see <a href="../help-in-an-emergency/003-08050000-01.html">Mutual obligation requirements for SpB</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_5"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Changes for FTB customers</strong> <a title="Read more 20" class="showhead bp03_tbl_Checking_and_up_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+If a Family Tax Benefit (FTB) child has left the customer's care, see <a target="_blank" href="../ongoing-contact/102-05050020-01.html">Child leaves customer's care/custody</a></li>
+		<li>
+If there is a change to shared care arrangements of an FTB child, create an <strong>ACTDOC</strong> with the details and send through to FCC</li>
+		<li>
+If the customer is advising the FTB child's details are incorrect and need updating (name, sex, date of birth), see <a target="_blank" href="../ongoing-contact/102-05050090-01.html">Change Child (CCH) screen</a></li>
+		<li>
+The customer will need to provide proof of birth for a newly added child. See <a target="_blank" href="../ongoing-contact/102-05050120-01.html">linking a child to a customer's record</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_6"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>SpB category</strong> <a title="Read more 21" class="showhead bp03_tbl_Checking_and_up_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer continues to qualify for SpB but another category is more appropriate, update the SpB Other Details (<strong>NSOD</strong>) screen. See <a href="../help-in-an-emergency/003-08060000-03.html">Processing SpB claims</a>.</p>
+
+<p>Code these fields on the <strong>NSOD</strong> screen&#58;</p>
+		<ul>		<li>
+<strong>Date of Event</strong>&#58; change to reflect the most recent change in circumstances</li>
+		<li>
+<strong>SPL Category</strong>&#58; change if another category becomes more appropriate. See <a href="../help-in-an-emergency/003-08070000-03.html#bp03_L3TT_SpB_categories">Table 4</a></li>
+		<li>
+<strong>Payable Under</strong>&#58; change if appropriate</li>
+		<li>
+<strong>Available Funds Test</strong>&#58; update if applicable. For more information, see <a class="modal-link" href="../help-in-an-emergency/003-08030040-03.html">SpB available funds test</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_7"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Employment income</strong> <a title="Read more 22" class="showhead bp03_tbl_Checking_and_up_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer advises their or their partner's income has changed or is incorrect, contact the customer to discuss. Request payslips/ information for the relevant period if applicable.</p>
+
+<p>For help, see&#58;</p>
+		<ul>		<li>
+<a target="_blank" href="../income-assests-and-rates-of-payment/108-07010010-03.html">Assessing and coding employment income</a></li>
+		<li>
+<a target="_blank" href="../help-in-an-emergency/003-08010010-01.html">SpB for Australian Citizen Children (ACC) and Australian permanent resident children</a></li>
+		</ul>
+<p>Check and update the following screens as needed&#58;</p>
+		<ul>		<li>
+NSS Income Summary (<strong>NIS</strong>) to check overall income that could affect the payment</li>
+		<li>
+Employment Income Paid Details (<strong>EAPP</strong>)</li>
+		<li>
+Other Government Payments (<strong>OGP</strong>)</li>
+		<li>
+Other Income Summary (<strong>OINS</strong>)</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_8"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Foreign income</strong> <a title="Read more 23" class="showhead bp03_tbl_Checking_and_up_8" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_8" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Updates are needed if&#58;</p>
+		<ul>		<li>
+the customer advises their foreign income and assets details, or</li>
+		<li>
+the parent or guardian of an Australian Citizen Child (ACC) or Australian permanent resident child customer advises their foreign income and assets details</li>
+		</ul>
+<p>Check and update these screens if needed&#58;</p>
+		<ul>		<li>
+Foreign Income/Asset Detail (<strong>FID</strong>)</li>
+		<li>
+<a href="../income-assests-and-rates-of-payment/108-05020050-01.html">Overseas income and pensions</a> (<strong>FIPS</strong>/ <strong>FPD</strong>)</li>
+		</ul>
+<p>For help with coding, see <a target="_blank" href="../income-assests-and-rates-of-payment/108-05020050-03.html">Foreign income and assets</a>.</p>
+
+<p>If more documents are need to verify details, contact the customer or issue a Request for Information (RFI) letter.</p>
+
+<p>If pension details are coded but need updating, check related <strong>DOC</strong>s and update the <strong>FPD</strong> screen.</p>
+
+<p>To update a foreign pension (for a non-agreement country) on a customer's record, use the <strong>Foreign Pension</strong> script in Customer First <strong>Workspace &gt; Script</strong> menu.</p>
+
+<p>To add a new foreign pension, referral details to International Services (CIS) to complete coding. See <a href="../initial-contact-general/106-08030000-03.html">Foreign pension coding</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_9"></a>
+<p>9</p></td>
+<td>
+
+<p><strong>Real estate/business</strong> <a title="Read more 24" class="showhead bp03_tbl_Checking_and_up_9" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_9" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer is adding or updating these details, they need to provide a Real Estate Details (MOD R) or Business Details (MOD F) form.</p>
+
+<p>If a MOD R and/or MOD F has&#58;</p>
+		<ul>		<li>
+been provided, see</li>
+			<ul>			<li>
+<a target="_blank" href="../initial-contact-general/106-07100130-03.html">Assessing and coding the Real estate details Mod R</a></li>
+			<li>
+<a target="_blank" href="../business-and-employers/043-03060020-03.html">Assessing and coding the Business details for sole traders and partnerships Mod F</a></li>		</ul>
+		<li>
+has not been provided</li>
+			<ul>			<li>
+Contact the customer and advise them the documents must be provided. <strong>DOC</strong> the record. See <a target="_blank" href="../complaints-privacy-and-foi/104-04080010-03.html">Requesting information (CLK)</a></li>
+			<li>
+Code a review with keyword <strong>!CLRKRFI</strong> to follow up return of the documents</li>
+			</ul>			</ul>
+<p>Contact the customer to check if the real estate is a readily realisable asset (within their control to use the funds for ongoing expenses).See <a target="_blank" class="modal-link" href="../help-in-an-emergency/003-08030040-04.html">SpB available funds test</a>.</p>
+
+<p>Is it considered a realisable asset?</p>
+		<ul>		<li>
+<strong>Yes</strong>, include the asset amount as part of the available funds test. Update the SpB Other Details (<strong>NSOD</strong>) screen. If available funds exceed $5,000, the system will cancel SpB reason <strong>HAR</strong> (not in hardship)</li>
+		<li>
+<strong>No</strong>, update the real estate details and <strong>DOC</strong> the record</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_10"></a>
+<p>10</p></td>
+<td>
+
+<p><strong>Compensation</strong> <a title="Read more 25" class="showhead bp03_tbl_Checking_and_up_10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The customer will need to provide a Compensation and Damages (MOD C) if they advise their compensation details are incorrect or incomplete.</p>
+
+<p>If the MOD C&#58;</p>
+		<ul>		<li>
+has not been provided</li>
+			<ul>			<li>
+contact the customer and advise documents must be provided</li>
+			<li>
+hold the <strong>DOC</strong> and NSS/FRM activity with a resubmit date of when the documents are due</li>		</ul>
+		<li>
+has been provided, see <a target="_blank" href="../compensation/117-01040010-03.html">Coding Compensation and damages (MOD C) to request a clearance</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_11"></a>
+<p>11</p></td>
+<td>
+
+<p><strong>Other assets and income</strong> <a title="Read more 26" class="showhead bp03_tbl_Checking_and_up_11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer has tried to update other assets or share details online&#58;</p>
+		<ul>		<li>
+Check related <strong>DOC</strong>s</li>
+		<li>
+Update the Other Asset Summary (<strong>OASS</strong>) screen if needed</li>
+		<li>
+If more details are needed to complete updates, <a target="_blank" href="../complaints-privacy-and-foi/104-04080010-03.html">issue a Request for Information (RFI) letter</a> and contact the customer to advise</li>
+		<li>
+Consider if it is reasonable to expect the customer to realise any of these assets (whether it is within their control or beyond their control)</li>
+		</ul>
+<p>If the customer is updating share details, update these screens.</p>
+		<ul>		<li>
+Securities and Investments Summary (<strong>SIS</strong>)</li>
+		<li>
+Managed Investments Summary (<strong>MIS</strong>)</li>
+		</ul>
+<p>For help with updates, see&#58;</p>
+
+<p><a target="_blank" href="../income-assests-and-rates-of-payment/108-19092734-01.html">Updating shares and securities</a></p>
+
+<p><a target="_blank" href="../income-assests-and-rates-of-payment/108-04090020-01.html">Managed investments - adding a new investment</a></p>
+
+<p><a target="_blank" href="../income-assests-and-rates-of-payment/108-04090030-01.html">Managed investments - updating existing investments</a></p>
+
+<p><strong>Other income</strong></p>
+
+<p><a target="_blank" href="../income-assests-and-rates-of-payment/108-05020010-03.html">Update the Other Income (OIN) screen</a> if needed.</p>
+
+<p>Income earned or received in kind or financial support received by the customer or parent of an Australian Citizen Child (ACC) or Australian permanent resident child.</p>
+
+<p>For more information, see <a target="_blank" href="../help-in-an-emergency/003-08040000-01.html">Rates of payment for SPB</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_12"></a>
+<p>12</p></td>
+<td>
+
+<p><strong>Other means of support</strong> <a title="Read more 27" class="showhead bp03_tbl_Checking_and_up_12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer answered <strong>YES</strong> to <strong>Do you receive any regular financial or other form of assistance from any person</strong>?</p>
+
+<p>Check details about what has changed in relation to the support the customer receives.</p>
+
+<p>Code any free board and/or lodgings on the Accommodation (<strong>AC</strong>) screen.</p>
+
+<p>Code any other ongoing regular support on the Other Income Summary (<strong>OINS</strong>) screen.</p>
+
+<p>Check the customer continues to <a target="_blank" href="../help-in-an-emergency/003-08030020-01.html">qualify for SpB</a>.</p>
+
+<p>Check if the customer is under Assurance of Support. If the customer advises or the Service Officer identifies the assurer is now providing adequate support to the customer (assuree), take care before cancelling SpB reason <strong>OSA</strong> (other means of support available).</p>
+
+<p>If they no longer qualify because they are receiving sufficient support, cancel SpB reason <strong>OSA</strong> when completing the assessment.</p>
+
+<p>Update the <strong>DOC</strong> with any action taken.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Checking_and_up_13"></a>
+<p>13</p></td>
+<td>
+
+<p><strong>Newly Arrived Resident’s Waiting Period (NARWP) and residence</strong> <a title="Read more 28" class="showhead bp03_tbl_Checking_and_up_13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Checking_and_up_13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>A follow-up is needed for customers who&#58;</p>
+		<ul>		<li>
+are in <strong>NMN</strong>, <strong>NMA</strong>, <strong>NMP</strong>, <strong>NRA</strong> or <strong>NRD</strong> categories, and</li>
+		<li>
+have served or are due to have served the notional NARWP or 10 years qualifying Australian residence before the next EED</li>
+		</ul>
+<p>Check if the customer has served the <a href="../migrants-refugees-and-visitors/005-02020000-01.html">NARWP</a> for another income support payment or 10 years qualifying Australian residency for Age Pension or DSP and is residentially qualified for another payment depending on their category of SpB. An exemption may apply. See&#58;</p>
+		<ul>		<li>
+<a href="../older-australians/065-03040010-01.html">Residence assessment for customers claiming Age Pension</a></li>
+		<li>
+<a href="../people-with-disability/008-03050010-03.html">Residence assessment for customers claiming Disability Support Pension (DSP)</a></li>
+		<li>
+<a href="../initial-contact-general/106-06020110-01.html">Residence assessment for customers claiming Parenting Payment (PP)</a></li>
+		<li>
+For other income support payments, see <a href="../migrants-refugees-and-visitors/005-02020000-01.html">NARWP and Qualifying Residence Period</a></li>
+		</ul>
+<p>If the customer is the holder of a SpB temporary visa and the visa end date is earlier than the 13 weeks, make sure the EED on the <strong>NMIS </strong>screen is Visa End Date minus one day.</p>
+
+<p>Update the residence details by <a target="_blank" href="../initial-contact-general/106-06020030-01.html">activating the Department of Home Affairs datalink on the RSIMME screen</a>.</p>
+
+<p>Go to the Residence Cluster Task Selector (<strong>RETS</strong>) screen to check the customer's residence status&#58;</p>
+		<ul>		<li>
+Make sure their visa still qualifies the customer for SpB. Check the Legal Residence Details (<strong>RSLEG</strong>) screen</li>
+		<li>
+Check if they have served the NARWP if applicable&#58;</li>
+			<ul>			<li>
+<strong>RSLEG</strong> screen</li>
+			<li>
+Immigration Movements (<strong>RSIM</strong>) screen</li>
+			<li>
+Australian Periods of Presence (<strong>RSPAP</strong>) screens, or</li>		</ul>
+		<li>
+Check if they have qualifying residence for another income support payment</li>
+		</ul>
+<p>If the <strong>RSLEG </strong>screen has been updated with a new visa subclass, check if the new visa entitled the customer to another social security payment.</p>
+
+<p>If the customer&#58;</p>
+		<ul>		<li>
+may be eligible for another payment, see <a href="../help-in-an-emergency/003-08070000-03.html#bp03_tbl_Processing_revi_Step07">Step 7 in Table 2</a></li>
+		<li>
+no longer qualifies for SpB, cancel the payment from the grant date of the new visa. Update the <strong>DOC</strong> with any action taken</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
 <a class="anchor" name="bp03_L3TT_SpB_categories"></a>
 <h3>SpB categories</h3>
 
 
 <p class="info-box warning">SpB processing teams only</p>
 
-<p>Table 3&#58; this applies for 13 week reviews and Annual Intensive Reviews. Reviewing eligibility based on the customer's SpB category.</p>
-<table caption="Table 3&#58; reviewing eligibility based on the customer's SpB category." width="100%">
+<p>Table 4&#58; this applies for 13 week reviews and Annual Intensive Reviews. Reviewing eligibility based on the customer's SpB category.</p>
+<table caption="Table 4&#58; reviewing eligibility based on the customer's SpB category." width="100%">
 <tr>
 <td width="11%">
 <a class="anchor" name="bp03_tbl_SpB_categories_Item"></a>
@@ -1262,7 +1252,7 @@ any customer contact</li>
 <p>1</p></td>
 <td>
 
-<p><strong>SpB category check</strong> <a title="Read more 28" class="showhead bp03_tbl_SpB_categories_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>SpB category check</strong> <a title="Read more 29" class="showhead bp03_tbl_SpB_categories_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1286,7 +1276,7 @@ any customer contact</li>
 <p>2</p></td>
 <td>
 
-<p><strong>ACC - Australian Citizen Child or Australian permanent resident child of non-permanent resident adult</strong> <a title="Read more 29" class="showhead bp03_tbl_SpB_categories_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>ACC - Australian Citizen Child or Australian permanent resident child of non-permanent resident adult</strong> <a title="Read more 30" class="showhead bp03_tbl_SpB_categories_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -1306,7 +1296,7 @@ Check custodial parent’s record if permanent/provisional or any qualifying vis
 			<li>
 Contact the custodial parent to advise they should claim another payment (SpB and FTB). If unable to contact, <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L3TT_Manual_letter_t01">issue the relevant letter</a>. SpB for the child will be cancelled on the date of the visa change + 14 days. This gives a buffer to the customer due to potential hardship</li>
 			<li>
-Adjust the EED to the date cancelling + 14 days to make sure the ACC payment is cancelled</li>
+Adjust the EED to the date cancelling + 14 days to ensure the ACC payment is cancelled</li>
 			<li>
 Upon lodgement of a claim, the custodial parent can ask to have their claim assessed urgently for SpB and FTB due to hardship</li>		</ul>
 		<li>
@@ -1344,7 +1334,7 @@ If the custodial parent is working, income above the maximum rate of JSP plus ad
 <p>3</p></td>
 <td>
 
-<p><strong>AOS - under Assurance of Support and Assurer/s cannot provide support</strong> <a title="Read more 30" class="showhead bp03_tbl_SpB_categories_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>AOS - under Assurance of Support and Assurer/s cannot provide support</strong> <a title="Read more 31" class="showhead bp03_tbl_SpB_categories_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1358,7 +1348,7 @@ If the custodial parent is working, income above the maximum rate of JSP plus ad
 
 <p>Check <strong>AOAE </strong>screen for AoS period.</p>
 
-<p>Update category in <strong>NSOD</strong> screen if AoS has expired.</p>
+<p>Update category in NSOD screen if AOS has expired.</p>
 
 <p>For more information, see <a href="../migrants-refugees-and-visitors/005-03050020-01.html">Assuree makes a claim for an AoS recoverable payment</a>.</p>
 </div>
@@ -1372,19 +1362,17 @@ If the custodial parent is working, income above the maximum rate of JSP plus ad
 <p>4</p></td>
 <td>
 
-<p><strong>CFC - caring for a child with medical condition</strong> <a title="Read more 31" class="showhead bp03_tbl_SpB_categories_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CFC - caring for a child with medical condition</strong> <a title="Read more 32" class="showhead bp03_tbl_SpB_categories_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Check&#58;</p>
-		<ul>		<li>
-the customer does not qualify for Carer Payment (CP), Parenting Payment (PP) or other income support</li>
-		<li>
-the customer has no other means of support</li>
-		<li>
-continuous caring responsibility</li>
-		<li>
-if the person being cared for does not have sufficient funds to support or partially support the carer</li>		</ul>
+<p>Check the customer does not qualify for Carer Payment (CP), Parenting Payment (PP) or other income support.</p>
+
+<p>Check the customer has no other means of support,</p>
+
+<p>Check continuous caring responsibility.</p>
+
+<p>Check if the person being cared for does not have sufficient funds to support or partially support the carer.</p>
 </div>
 
 
@@ -1396,7 +1384,7 @@ if the person being cared for does not have sufficient funds to support or parti
 <p>5</p></td>
 <td>
 
-<p><strong>CIP - caring responsibility, not qualified for CP or other income support</strong> <a title="Read more 32" class="showhead bp03_tbl_SpB_categories_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CIP - caring responsibility, not qualified for CP or other income support</strong> <a title="Read more 33" class="showhead bp03_tbl_SpB_categories_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1420,7 +1408,7 @@ prevented from working for this reason</li>
 <p>6</p></td>
 <td>
 
-<p><strong>Nominated Visa Holders</strong> <a title="Read more 33" class="showhead bp03_tbl_SpB_categories_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Nominated Visa Holders</strong> <a title="Read more 34" class="showhead bp03_tbl_SpB_categories_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1450,7 +1438,7 @@ prevented from working for this reason</li>
 <p>7</p></td>
 <td>
 
-<p><strong>NMA - newly arrived residents of Age Pension age</strong> <a title="Read more 34" class="showhead bp03_tbl_SpB_categories_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>NMA - newly arrived residents of Age Pension age</strong> <a title="Read more 35" class="showhead bp03_tbl_SpB_categories_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1472,7 +1460,7 @@ served the NARWP, or</li>
 <p>8</p></td>
 <td>
 
-<p><strong>NMN - waiting period for JSP/YA</strong> <a title="Read more 35" class="showhead bp03_tbl_SpB_categories_8" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_8" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>NMN - waiting period for JSP/YA</strong> <a title="Read more 36" class="showhead bp03_tbl_SpB_categories_8" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_8" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1492,7 +1480,7 @@ served the NARWP, or</li>
 <p>9</p></td>
 <td>
 
-<p><strong>NMP - waiting period for PP/WDA/CP</strong> <a title="Read more 36" class="showhead bp03_tbl_SpB_categories_9" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_9" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>NMP - waiting period for PP/WDA/CP</strong> <a title="Read more 37" class="showhead bp03_tbl_SpB_categories_9" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_9" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1516,7 +1504,7 @@ over 6 years, code under <strong>NMN</strong> category</li>		</ul>
 <p>10</p></td>
 <td>
 
-<p><strong>NRA- not residentially qualified for Age Pension</strong> <a title="Read more 37" class="showhead bp03_tbl_SpB_categories_10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>NRA- not residentially qualified for Age Pension</strong> <a title="Read more 38" class="showhead bp03_tbl_SpB_categories_10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1540,7 +1528,7 @@ served the NARWP, or</li>
 <p>11</p></td>
 <td>
 
-<p><strong>NRD - not residentially qualified for DSP</strong> <a title="Read more 38" class="showhead bp03_tbl_SpB_categories_11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>NRD - not residentially qualified for DSP</strong> <a title="Read more 39" class="showhead bp03_tbl_SpB_categories_11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1570,7 +1558,7 @@ Check the referral summary for a current JCA report. If the last JCA report was 
 <p>12</p></td>
 <td>
 
-<p><strong>OLT - other long term cases</strong> <a title="Read more 39" class="showhead bp03_tbl_SpB_categories_12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>OLT - other long term cases</strong> <a title="Read more 40" class="showhead bp03_tbl_SpB_categories_12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1602,7 +1590,7 @@ Check the referral summary for a current JCA report. If the last JCA report was 
 <p>13</p></td>
 <td>
 
-<p><strong>OST - short term cases</strong> <a title="Read more 40" class="showhead bp03_tbl_SpB_categories_13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>OST - short term cases</strong> <a title="Read more 41" class="showhead bp03_tbl_SpB_categories_13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1630,7 +1618,7 @@ Check the referral summary for a current JCA report. If the last JCA report was 
 <p>14</p></td>
 <td>
 
-<p><strong>PPV - partner provisional visa</strong> <a title="Read more 41" class="showhead bp03_tbl_SpB_categories_14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>PPV - partner provisional visa</strong> <a title="Read more 42" class="showhead bp03_tbl_SpB_categories_14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1652,7 +1640,7 @@ Check the referral summary for a current JCA report. If the last JCA report was 
 <p>15</p></td>
 <td>
 
-<p><strong>SOM - socially marginalised, unable to meet mutual obligation requirements</strong> <a title="Read more 42" class="showhead bp03_tbl_SpB_categories_15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>SOM - socially marginalised, unable to meet mutual obligation requirements</strong> <a title="Read more 43" class="showhead bp03_tbl_SpB_categories_15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1662,7 +1650,7 @@ Check the referral summary for a current JCA report. If the last JCA report was 
 
 <p>Check the customer is not eligible for Disability Support Pension (DSP), or because of their medical condition refused to claim DSP.</p>
 
-<p>Check if other help is provided by external agencies.</p>
+<p>Check if other assistance is provided by external agencies.</p>
 
 <p>If NARWP applies, consider assessment under other most appropriate category.</p>
 </div>
@@ -1676,7 +1664,7 @@ Check the referral summary for a current JCA report. If the last JCA report was 
 <p>16</p></td>
 <td>
 
-<p><strong>USY - under 16 years of age</strong> <a title="Read more 43" class="showhead bp03_tbl_SpB_categories_16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>USY - under 16 years of age</strong> <a title="Read more 44" class="showhead bp03_tbl_SpB_categories_16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_SpB_categories_16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1714,8 +1702,8 @@ may be receiving financial support</li>		</ul>
 
 <p class="info-box warning">SpB processing teams only</p>
 
-<p>Table 4&#58; process to follow when allocated an <strong>SPL/HNR MFU</strong>.</p>
-<table caption="Table 4&#58; process to follow when allocated an SPL/HNR MFU. SpB processing teams only " width="100%">
+<p>Table 5&#58; process to follow when allocated an <strong>SPL/HNR MFU</strong>.</p>
+<table caption="Table 5&#58; process to follow when allocated an SPL/HNR MFU. SpB processing teams only " width="100%">
 <tr>
 <td width="11%">
 <a class="anchor" name="bp03_tbl_Annual_Intensiv_Item"></a>
@@ -1730,7 +1718,7 @@ may be receiving financial support</li>		</ul>
 <p>1</p></td>
 <td>
 
-<p><strong>Is SpB status SPL/CAN or SPL/SUS?</strong> <a title="Read more 44" class="showhead bp03_tbl_Annual_Intensiv_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Is SpB status SPL/CAN or SPL/SUS?</strong> <a title="Read more 45" class="showhead bp03_tbl_Annual_Intensiv_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -1738,7 +1726,7 @@ may be receiving financial support</li>		</ul>
 			<ul>			<li>
 if SpB is to be restored, conduct AIR. Go to Step 2</li>
 			<li>
-If SpB is not to be restored, complete the SPL/HNR-MFU activity on the <strong>AL </strong>screen. Run the <strong>AIR Fast Not</strong>e to capture the outcome. Customer is not currently receiving Special Benefit. SPL/HNR MFU completed as no action is needed. Procedure ends here</li>		</ul>
+If SpB is not to be restored, complete the SPL/HNR-MFU activity on the <strong>AL </strong>screen. Run the <strong>AIR Fast Not</strong>e to capture the outcome. Customer is not currently receiving Special Benefit. SPL/HNR MFU completed as no action is required. Procedure ends here</li>		</ul>
 		<li>
 <strong>No</strong>, go to Step 2</li>		</ul>
 </div>
@@ -1752,7 +1740,7 @@ If SpB is not to be restored, complete the SPL/HNR-MFU activity on the <strong>A
 <p>2</p></td>
 <td>
 
-<p><strong>SpB current (SPL/CUR or SPL/LAP)</strong> <a title="Read more 45" class="showhead bp03_tbl_Annual_Intensiv_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>SpB current (SPL/CUR or SPL/LAP)</strong> <a title="Read more 46" class="showhead bp03_tbl_Annual_Intensiv_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1788,7 +1776,7 @@ Start the AIR instead of the 13 week review</li>			</ul>			</ul>
 <p>3</p></td>
 <td>
 
-<p><strong>Conduct file audit</strong> <a title="Read more 46" class="showhead bp03_tbl_Annual_Intensiv_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Conduct file audit</strong> <a title="Read more 47" class="showhead bp03_tbl_Annual_Intensiv_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1822,7 +1810,7 @@ The customer’s living arrangements</li>
 <p>4</p></td>
 <td>
 
-<p><strong>Details to check for ACC customers or Australian permanent resident children</strong> <a title="Read more 47" class="showhead bp03_tbl_Annual_Intensiv_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Details to check for ACC customers or Australian permanent resident children</strong> <a title="Read more 48" class="showhead bp03_tbl_Annual_Intensiv_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -1860,7 +1848,7 @@ Confirmed parent’s residency on <strong>RSLEG</strong> screen?</li>		</ul>
 		<li>
 Check age of child/ren<br>If school age, they should not remain on SpB as they are considered a full-time student. Each state and territory is different, but 6 years of age is a good indicator of school age in most states. If the child’s SpB payment is the family’s only source of income, and not getting this payment would place the family at risk of homelessness, do not cancel payment. Record details clearly in a <strong>DOC</strong></li>
 		<li>
-Check parental income, including other means of support (for example, Red Cross) See <a target="_blank" href="../help-in-an-emergency/003-08010010-05.html">examples of calculations for ACC</a></li>
+Check parental income, including other means of support (e.g. Red Cross) See <a target="_blank" href="../help-in-an-emergency/003-08010010-05.html">examples of calculations for ACC</a></li>
 		<li>
 Child Support</li>
 			<ul>			<li>
@@ -1876,7 +1864,7 @@ Check custodial parent’s record if permanent/provisional or any qualifying vis
 			<li>
 Contact the custodial parent to advise they should claim another payment (SpB and FTB). If unable to contact, <a href="../help-in-an-emergency/003-08070000-05.html#bp05_L3TT_Manual_letter_t01">issue the relevant letter</a>. SpB for the child will be cancelled on the date of the visa change + 14 days. This gives a buffer to the customer due to potential hardship</li>
 			<li>
-Adjust the EED to the date cancelling + 14 days to make sure the ACC payment is cancelled</li>		</ul>
+Adjust the EED to the date cancelling + 14 days to ensure the ACC payment is cancelled</li>		</ul>
 		<li>
 Non-protected SCV<br>FTB is the most appropriate payment. SpB can only be granted if the customer/custodial parent is homeless or at risk of homeless</li>		</ul>
 </div>
@@ -1890,7 +1878,7 @@ Non-protected SCV<br>FTB is the most appropriate payment. SpB can only be grante
 <p>5</p></td>
 <td>
 
-<p><strong>Details to check for all SpB customers</strong> <a title="Read more 48" class="showhead bp03_tbl_Annual_Intensiv_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Details to check for all SpB customers</strong> <a title="Read more 49" class="showhead bp03_tbl_Annual_Intensiv_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -1900,7 +1888,7 @@ Check and encourage the customer to register for self service. They will be able
 		<li>
 <a target="_blank" href="../initial-contact-general/106-06020030-03.html">Refresh RSIMME screen</a> to confirm visa status</li>
 		<li>
-If the customer has a visa subclass 309, 820, 060, 070, 785, 790 with an end date before the next review, make sure the EED is Visa End Date minus one day.<br>Tell the customer SpB will be cancelled and they need to contact the Department of Home Affairs</li>
+If the customer has a visa subclass 309, 820, 060, 070, 785, 790 with an end date before the next review, make sure the EED is Visa End Date minus one day.<br>Advise the customer SpB will be cancelled and they need to contact the Department of Home Affairs</li>
 		<li>
 Check age, NARWP and residency for another payment. The customer must submit a claim for the appropriate payment within 14 days</li>
 		<li>
@@ -1918,7 +1906,7 @@ partner released from prison</li>
 			<li>
 sponsor or assurer can provide support</li>		</ul>
 		<li>
-If under AOS category, can the assurer now provide support?</li>
+If under AOS category can the assurer now provide support?</li>
 		<li>
 Customer and partner combined funds over $5,000<br>See <a class="modal-link" href="../help-in-an-emergency/003-08030040-03.html">SpB available funds test</a></li>
 		<li>
@@ -1938,11 +1926,11 @@ Mutual obligation exemption<br>Check <strong>NSOD </strong>payable condition, <s
 		<li>
 <strong>PPV/NMP</strong> categories</li>
 			<ul>			<li>
-if the child has turned 6, the customer needs to look for work as the child is considered school age and a full-time student</li>
+if the child has turned 6, the customer is required to look for work as the child is considered school age and a full-time student</li>
 			<li>
 If the customer was a carer, has the caring responsibility ended?</li>
 			<li>
-Update <strong>NSOD</strong> payable condition, <strong>AEX</strong> screen, or change to another SpB category if needed</li>		</ul>
+Update <strong>NSOD</strong> payable condition, <strong>AEX</strong> screen, or change to another SpB category if required</li>		</ul>
 		<li>
 Accommodation <br>If No Rent Paid, change to Free Board and/or Lodging to apply the 1/3 or 2/3 deduction</li>
 		<li>
@@ -1980,7 +1968,7 @@ Could the hardship be avoided?</li>		</ul>
 <p>6</p></td>
 <td>
 
-<p><strong>Issue AIR manual letter and place HNR-MFU on hold</strong> <a title="Read more 49" class="showhead bp03_tbl_Annual_Intensiv_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Issue AIR manual letter and place HNR-MFU on hold</strong> <a title="Read more 50" class="showhead bp03_tbl_Annual_Intensiv_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2006,13 +1994,13 @@ Run the Fast Note workflow&#58; <strong>Auto Text &gt; Special Benefit &gt; Spec
 <p>8</p></td>
 <td>
 
-<p><strong>HNR MFU due on Day 22</strong> <a title="Read more 50" class="showhead bp03_tbl_Annual_Intensiv_8" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_8" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>HNR MFU due on Day 22</strong> <a title="Read more 51" class="showhead bp03_tbl_Annual_Intensiv_8" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_8" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>HNR MFU is due and unheld for allocation.</p>
 
-<p>If the customer submitted a SpB 13 week review after AIR manual letter sent, staff can close the scan or complete the <strong>OLS SPL</strong> <strong>update manual DOC</strong>. EED has been extended for 13 weeks as part of AIR process.</p>
+<p>If the customer submitted an SpB 13 week review after AIR manual letter sent, staff can close the scan or complete the <strong>OLS SPL</strong> <strong>update manual DOC</strong>. EED has been extended for 13 weeks as part of AIR process.</p>
 
 <p>Has the customer returned the AIR manual letter?</p>
 		<ul>		<li>
@@ -2036,7 +2024,7 @@ Go to Step 10</li>			</ul>			</ul>
 <p>9</p></td>
 <td>
 
-<p><strong>AIR manual letter returned</strong> <a title="Read more 51" class="showhead bp03_tbl_Annual_Intensiv_9" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_9" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>AIR manual letter returned</strong> <a title="Read more 52" class="showhead bp03_tbl_Annual_Intensiv_9" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_9" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2062,7 +2050,7 @@ Make 2 genuine attempts to contact the customer to <a target="_blank" href="../r
 <p>10</p></td>
 <td>
 
-<p><strong>Finalise review</strong> <a title="Read more 52" class="showhead bp03_tbl_Annual_Intensiv_10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalise review</strong> <a title="Read more 53" class="showhead bp03_tbl_Annual_Intensiv_10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Annual_Intensiv_10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
