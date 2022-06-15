@@ -228,7 +228,6 @@ Table 1:
 |                                   | work types:                       |
 |                                   |                                   |
 |                                   | -   ZALL_DMB_RA_OREC              |
-|                                   | -   ZALL_DMB_RA_DTH_LET           |
 |                                   | -   ZALL_RCV_ADV_DOC              |
 |                                   | -   ZALL_RCV_GARN                 |
 |                                   | -   ZALL_RCV_INT_CHG              |
@@ -238,9 +237,9 @@ Table 1:
 |                                   | -   ZALL_RCV_PATH_02              |
 |                                   | -   ZALL_RCV_PATH_03              |
 |                                   | -   ZDMS_QSS40                    |
-|                                   | -   ZALL_RCV_ACT                  |
+|                                   | -   ZIAM_RCV_ACT                  |
 |                                   | -   ZIAM_RCV_BKN                  |
-|                                   | -   ZALL_RCV_CALL                 |
+|                                   | -   ZIAM_RCV_CALL                 |
 |                                   | -   ZIAM_RCV_DTH_NOARR            |
 |                                   | -   ZIAM_RCV_DVA                  |
 |                                   | -   ZIAM_RCV_GEN                  |
@@ -1626,33 +1625,96 @@ Table 5:
 |                                   | -   Recovery Options Exhausted    |
 |                                   |     (ROE), go to Step 4           |
 |                                   | -   all other reasons, go to Step |
-|                                   |     5                             |
+|                                   |     7                             |
 |                                   |                                   |
 |                                   | No, follow up required action     |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Recovery options exhausted        |
-|                                   | (ROE) + Read more ...             |
+| 4                                 | Recovery options exhausted (ROE)  |
+|                                   | checklist + Read more ...         |
 |                                   |                                   |
 |                                   | Open the IDC Information system   |
 |                                   | and select Resources.             |
 |                                   |                                   |
 |                                   | Complete the ROE checklist:       |
 |                                   |                                   |
+|                                   | -   refer to the 'Example' tab    |
+|                                   |     for help                      |
 |                                   | -   ensure all actions are        |
 |                                   |     completed and recovery        |
 |                                   |     options are exhausted         |
 |                                   | -   save the completed checklist  |
 |                                   |     into the customer's case file |
-|                                   | -   run the Recovery Options      |
-|                                   |     Exhausted Fast Note, and,     |
-|                                   |     ensure the activity is linked |
-|                                   |     to the Fast Note. For         |
-|                                   |     instructions see, Outbound    |
-|                                   |     customer contact and          |
-|                                   |     gathering information when    |
-|                                   |     recovering debts              |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Expire the CMR display on access  |
+| 5                                 | Refer the case to an Operational  |
+|                                   | Leader (OL) + Read more ...       |
+|                                   |                                   |
+|                                   | Email the ROE submission to an OL |
+|                                   | for approval.                     |
+|                                   |                                   |
+|                                   | Update the IDC Information        |
+|                                   | system:                           |
+|                                   |                                   |
+|                                   | complete the Case Details screen: |
+|                                   |                                   |
+|                                   | -   Due Date: set due date for 5  |
+|                                   |     business days to check for a  |
+|                                   |     response from the OL          |
+|                                   | -   Due Comment: enter a reason   |
+|                                   |     for the new due date          |
+|                                   | -   Active status: change to      |
+|                                   |     'Pending Approval'            |
+|                                   | -   Approval Status: change to    |
+|                                   |     'Recovery Options Exhausted'  |
+|                                   |                                   |
+|                                   | complete the Case Information     |
+|                                   | tab:                              |
+|                                   |                                   |
+|                                   | -   New comment: add a summary of |
+|                                   |     the action completed          |
+|                                   |                                   |
+|                                   | Did the OL approve the ROE        |
+|                                   | submission?                       |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 6             |
+|                                   | -   No, complete the action as    |
+|                                   |     instructed by OL              |
++-----------------------------------+-----------------------------------+
+| 6                                 | Recovery options exhausted (ROE)  |
+|                                   | DOC + Read more ...               |
+|                                   |                                   |
+|                                   | Add a ROE DOC to the customer's   |
+|                                   | record to identify that Case      |
+|                                   | Managed Recovery (CMR) is no      |
+|                                   | longer case managing the          |
+|                                   | customer:                         |
+|                                   |                                   |
+|                                   | Service Reason: DMN               |
+|                                   |                                   |
+|                                   | Who: CSO                          |
+|                                   |                                   |
+|                                   | Source: INT                       |
+|                                   |                                   |
+|                                   | Receipt Date: Today               |
+|                                   |                                   |
+|                                   | Channel: INT                      |
+|                                   |                                   |
+|                                   | Ext Detail: Recovery options      |
+|                                   | exhausted                         |
+|                                   |                                   |
+|                                   | in the Text: field, add:          |
+|                                   |                                   |
+|                                   | -   This Record is no longer case |
+|                                   |     managed as all available      |
+|                                   |     resources have been reviewed  |
+|                                   |     and recovery unsuccessful. If |
+|                                   |     CUS contacts, negotiate       |
+|                                   |     repayment of debt.            |
+|                                   |                                   |
+|                                   | close the DOC                     |
+|                                   |                                   |
+|                                   | the DOC will show on DL           |
++-----------------------------------+-----------------------------------+
+| 7                                 | Expire the CMR display on access  |
 |                                   | (DOA) DOC + Read more ...         |
 |                                   |                                   |
 |                                   | Expire the CMR DOA DOC in         |
@@ -1681,7 +1743,7 @@ Table 5:
 |                                   | check DL. The DOC will no longer  |
 |                                   | show at the top                   |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Remove the Civil Action + Read    |
+| 8                                 | Remove the Civil Action + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | End date the civil action:        |
@@ -1715,7 +1777,7 @@ Table 5:
 |                                   | OPCV coding including if debt     |
 |                                   | balances are zero.                |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Update Workload Manager (WLM)     |
+| 9                                 | Update Workload Manager (WLM)     |
 |                                   | Actor Relationships + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
@@ -1742,7 +1804,7 @@ Table 5:
 |                                   | the CRN is removed from the Actor |
 |                                   | Relationship                      |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Finalise customer case file +     |
+| 10                                | Finalise customer case file +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | To finalise case:                 |
@@ -1765,7 +1827,7 @@ Table 5:
 |                                   | Recovery Team (SRT) email the     |
 |                                   | customer case file to the SRT     |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Intensive Debt Collection (IDC)   |
+| 11                                | Intensive Debt Collection (IDC)   |
 |                                   | Information System + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
