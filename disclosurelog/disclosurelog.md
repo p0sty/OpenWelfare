@@ -2116,7 +2116,7 @@ us by:
     Canberra BC ACT 2610
 :::
 
-::: {#lit-content-below .relative .flex .flex-wrap .justify-between .w-full .py-10 .border-t .border-grey-1c}
+::: {#lit-content-below .relative .flex .flex-wrap .justify-between .w-full .py-8 .border-t .border-grey-1c}
 ::: {#lit-page-poll behaviour="vue"}
 <div>
 
@@ -2126,19 +2126,19 @@ us by:
 Page last updated: 14 June 2022
 
 ::: {.hidden .print:block}
-::: pt-12
+::: pt-9
 ![QR
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 15 June 2022 from
+This information was printed 16 June 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
 **https://www.servicesaustralia.gov.au/site-notices** when using this
 material.
 
-::: {.lit-print-info-links .mt-10 .body}
+::: {.lit-print-info-links .mt-8 .body}
 ## Printed link references
 :::
 :::
@@ -2146,22 +2146,22 @@ material.
 :::
 :::
 
-::: {.pt-12 .font-thin .text-sm}
+::: {.pt-9 .font-thin .text-sm}
 ::: {#lit-footer-mobile .md:hidden}
 -   [ [Services Australia](#lit-footer-accordion-0) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
     .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
     dhs-target="#lit-footer-accordion-0"}
-    -   [About us](/about-us){.py-4 .block .md:inline .border-b
+    -   [About us](/about-us){.py-5 .block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
-    -   [Forms](/forms){.py-4 .block .md:inline .border-b .border-black
+    -   [Forms](/forms){.py-5 .block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
-    -   [Media](/media){.py-4 .block .md:inline .border-b .border-black
+    -   [Media](/media){.py-5 .block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
-    -   [Our Minister](https://mhs.gov.au){.py-4 .block .md:inline
+    -   [Our Minister](https://mhs.gov.au){.py-5 .block .md:inline
         .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Contact](#lit-footer-accordion-1) ]{.flex .font-bold
@@ -2170,14 +2170,14 @@ material.
     dhs-target="#lit-footer-accordion-1"}
     -   [Contact](/contact-us){.block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
-        .focus:text-blue-60 .py-4}
-    -   [Contact us](/contact-us){.py-4 .block .md:inline .border-b
+        .focus:text-blue-60 .py-5}
+    -   [Contact us](/contact-us){.py-5 .block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
-    -   [Find us](https://findus.servicesaustralia.gov.au){.py-4 .block
+    -   [Find us](https://findus.servicesaustralia.gov.au){.py-5 .block
         .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Complaints and feedback](/complaints-and-feedback){.py-4 .block
+    -   [Complaints and feedback](/complaints-and-feedback){.py-5 .block
         .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Business](#lit-footer-accordion-2) ]{.flex .font-bold
@@ -2186,15 +2186,15 @@ material.
     dhs-target="#lit-footer-accordion-2"}
     -   [Business](/running-business){.block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60 .py-4}
-    -   [PRODA](/proda-provider-digital-access){.py-4 .block .md:inline
+        .focus:border-blue-60 .focus:text-blue-60 .py-5}
+    -   [PRODA](/proda-provider-digital-access){.py-5 .block .md:inline
         .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Business Hub](/business-hub){.py-4 .block .md:inline .border-b
+    -   [Business Hub](/business-hub){.py-5 .block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
     -   [Paid Parental Leave scheme for
-        employers](/paid-parental-leave-scheme-for-employers){.py-4
+        employers](/paid-parental-leave-scheme-for-employers){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Community groups](#lit-footer-accordion-3) ]{.flex .font-bold
@@ -2203,16 +2203,16 @@ material.
     dhs-target="#lit-footer-accordion-3"}
     -   [Community groups](/community){.block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60 .py-4}
-    -   [Family organisations](/family-organisations){.py-4 .block
+        .focus:border-blue-60 .focus:text-blue-60 .py-5}
+    -   [Family organisations](/family-organisations){.py-5 .block
         .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Multicultural
-        organisations](/multicultural-organisations){.py-4 .block
+        organisations](/multicultural-organisations){.py-5 .block
         .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Apply to be a voluntary work
-        organisation](/apply-to-be-approved-voluntary-work-organisation){.py-4
+        organisation](/apply-to-be-approved-voluntary-work-organisation){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Health professionals](#lit-footer-accordion-4) ]{.flex .font-bold
@@ -2222,20 +2222,20 @@ material.
     -   [Health professionals](/health-professionals){.block .md:inline
         .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60
-        .py-4}
-    -   [Health Professionals Online Services](/hpos){.py-4 .block
+        .py-5}
+    -   [Health Professionals Online Services](/hpos){.py-5 .block
         .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
-    -   [Aged Care Provider Portal](/aged-care-provider-portal){.py-4
+    -   [Aged Care Provider Portal](/aged-care-provider-portal){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
     -   [Medicare benefits for health
-        professionals](/medicare-benefits-for-health-professionals){.py-4
+        professionals](/medicare-benefits-for-health-professionals){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 :::
 
-::: {.hidden .md:block .md:pb-12}
+::: {.hidden .md:block .md:pb-9}
 -   [ Services Australia ]{.font-bold .text-md}
     -   [About us](/about-us){.block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
@@ -2303,7 +2303,7 @@ material.
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 :::
 
-::: {.mb-12 .pb-12 .border-b .border-white .md:flex .md:items-center}
+::: {.mb-9 .pb-9 .border-b .border-white .md:flex .md:items-center}
 ::: {.flex-1 .md:border-transparent .mb-6 .md:mb-0}
 -   [Privacy](/your-right-to-privacy){.py-6 .md:py-0 .block .md:inline
     .border-b .border-black .hover:border-blue-60 .hover:text-blue-60
@@ -2321,7 +2321,7 @@ material.
 
 ::: {.md:flex .lg:w-2/5}
 ::: {.mb-6 .md:mb-0 .md:mr-6 .lg:mr-0 .lg:w-1/2}
-::: {.text-md .font-medium .mb-2}
+::: {.text-md .font-medium .mb-3}
 Languages
 :::
 
@@ -2330,7 +2330,7 @@ aria-label="Languages"}
 :::
 
 ::: lg:w-1/2
-::: {.text-md .font-medium .mb-2}
+::: {.text-md .font-medium .mb-3}
 Follow us
 :::
 
@@ -2341,7 +2341,7 @@ aria-label="Follow us"}
 :::
 :::
 
-::: {.pb-16 .flex .md:items-center .flex-col .md:flex-row .md:flex-row-reverse .md:justify-between}
+::: {.pb-10 .flex .md:items-center .flex-col .md:flex-row .md:flex-row-reverse .md:justify-between}
 Services Australia acknowledges the Traditional Custodians of the lands
 we live on. We pay our respects to all Elders, past and present, of all
 Aboriginal and Torres Strait Islander nations.
