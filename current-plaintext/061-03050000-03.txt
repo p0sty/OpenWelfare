@@ -26,11 +26,11 @@ Table 1
 |                                   |                                   |
 |                                   | For pension customers (includes   |
 |                                   | Age Pension, Disability Support   |
-|                                   | Pension, Carers Payment, Widows   |
-|                                   | Allowance and Parenting Payment   |
-|                                   | Single), see Return to Australia  |
-|                                   | procedures for service centre and |
-|                                   | Smart Centre staff for pension    |
+|                                   | Pension, Carers Payment and       |
+|                                   | Parenting Payment Single), see    |
+|                                   | Return to Australia procedures    |
+|                                   | for service centre and Smart      |
+|                                   | Centre staff for pension          |
 |                                   | payments.                         |
 |                                   |                                   |
 |                                   | In most cases, customers do not   |
@@ -72,16 +72,6 @@ Table 1
 |                                   | confirmed by the Immigration      |
 |                                   | Datalink                          |
 |                                   |                                   |
-|                                   | -   The Event date field should   |
-|                                   |     be coded with the date the    |
-|                                   |     customer will or has already  |
-|                                   |     returned to Australia         |
-|                                   | -   In the Country field code     |
-|                                   |     'Australia'                   |
-|                                   | -   The Reason, End date and Ext  |
-|                                   |     Rsn fields are left blank     |
-|                                   | -   Code Source and DOR if        |
-|                                   |     required                      |
 |                                   | -   Record details of the future  |
 |                                   |     RTA on a DOC                  |
 |                                   | -   Procedure ends here           |
@@ -109,48 +99,7 @@ Table 1
 |                                   | screen to trigger Immigration     |
 |                                   | Datalink + Read more ...          |
 |                                   |                                   |
-|                                   | Code the customer's country of    |
-|                                   | birth in the Country of Birth     |
-|                                   | field if required                 |
-|                                   |                                   |
-|                                   | Code 'Y'es in the Have you Lived  |
-|                                   | or travelled outside Australia    |
-|                                   | since 1 September 1994, including |
-|                                   | short trips and holidays? field   |
-|                                   |                                   |
-|                                   | If the customer has travel        |
-|                                   | documents:                        |
-|                                   |                                   |
-|                                   | -   Code 'AP', 'OP' or 'DI' in    |
-|                                   |     the Type field                |
-|                                   | -   Record details of the         |
-|                                   |     document in Travel Document   |
-|                                   |     Number field                  |
-|                                   | -   Complete Country of Issue     |
-|                                   |     field                         |
-|                                   |                                   |
-|                                   | Key 'Y' in Request Immigration    |
-|                                   | data (Y/N)? field                 |
-|                                   |                                   |
-|                                   | If required, key the Source field |
-|                                   | and the correct Date of Receipt   |
-|                                   | in the DOR field generally this   |
-|                                   | must be:                          |
-|                                   |                                   |
-|                                   | -   the date of return as advised |
-|                                   |     by the customer, if the       |
-|                                   |     customer is returning         |
-|                                   |     following a temporary absence |
-|                                   | -   date of contact if returning  |
-|                                   |     to reside in Australia or     |
-|                                   |     return is more than 12 months |
-|                                   |     ago                           |
-|                                   |                                   |
-|                                   | Press [Enter] to activate the     |
-|                                   | immigration datalink              |
-|                                   |                                   |
-|                                   | Return to the RSIM screen and     |
-|                                   | check for the return information. |
+|                                   | Request the Immigration Datalink. |
 |                                   |                                   |
 |                                   | Did completing the RSIMME screen  |
 |                                   | provide the customer's movement   |
@@ -215,15 +164,7 @@ Table 1
 | 6                                 | Update the return to Australia +  |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | Go to the RSCD screen.            |
-|                                   |                                   |
-|                                   | -   Record the date the customer  |
-|                                   |     returned to Australia in the  |
-|                                   |     Event Date field              |
-|                                   | -   Record 'Australia' in the     |
-|                                   |     Country field                 |
-|                                   | -   Leave the Reason, End date    |
-|                                   |     and Ext Rsn fields blank      |
+|                                   | Update the RSCD screen.           |
 |                                   |                                   |
 |                                   | Note: coding the RSCD screen will |
 |                                   | not return the customer to        |
@@ -231,7 +172,7 @@ Table 1
 |                                   | in the contingency mode). That    |
 |                                   | will only occur once the movement |
 |                                   | information has been confirmed by |
-|                                   | the immigration datalink.         |
+|                                   | the Immigration Datalink.         |
 |                                   |                                   |
 |                                   | Are the Source and DOR fields     |
 |                                   | already recorded from previous    |
@@ -289,19 +230,15 @@ Table 2
 |                                   | in Australia after residing       |
 |                                   | overseas?                         |
 |                                   |                                   |
-|                                   | To check, go to the Country of    |
-|                                   | Residence (CRES) screen. If the   |
-|                                   | top entry is a country other than |
+|                                   | Check the Country of Residence    |
+|                                   | (CRES) screen. If the top entry   |
+|                                   | is a country other than           |
 |                                   | Australia, the customer is        |
 |                                   | recorded as being a resident      |
 |                                   | overseas.                         |
 |                                   |                                   |
-|                                   | -   Yes, go to the CRES screen.   |
-|                                   |     Record 'AU' in the Country    |
-|                                   |     field on the top line and the |
-|                                   |     date of return to Australia   |
-|                                   |     in the Start Date field.      |
-|                                   |     Press [Enter]. Go to Step 2   |
+|                                   | -   Yes, update the CRES screen   |
+|                                   |     then go to Step 2             |
 |                                   | -   No, go to Step 2              |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Reclaiming non-automatic          |
@@ -1003,11 +940,9 @@ Table 2
 |                                   | (MCCS) screen. If not coded       |
 |                                   | correctly, information can be     |
 |                                   | obtained directly via the         |
-|                                   | immigration datalink. See         |
-|                                   | Activating the Department of Home |
-|                                   | Affairs datalink and contingency  |
-|                                   | procedures if datalink is         |
-|                                   | unavailable.                      |
+|                                   | Immigration Datalink. See         |
+|                                   | Activating the Immigration        |
+|                                   | Datalink.                         |
 |                                   |                                   |
 |                                   | Record all information regarding  |
 |                                   | the return to Australia on a DOC. |

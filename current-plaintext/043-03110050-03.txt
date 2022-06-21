@@ -35,9 +35,6 @@ Assessing income for a sole trader
 | 3                                 | Converting assets to cash + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Is the customer converting assets |
-|                                   | to cash?                          |
-|                                   |                                   |
 |                                   | For example, if a customer owns a |
 |                                   | small number of cattle on land    |
 |                                   | surrounding the family home and   |
@@ -47,16 +44,22 @@ Assessing income for a sole trader
 |                                   | occasionally selling one or more  |
 |                                   | cattle is not considered income.  |
 |                                   |                                   |
-|                                   | -   Yes, no income is assessable. |
-|                                   |     Update customer asset details |
-|                                   |     as needed. Procedure ends     |
-|                                   |     here                          |
-|                                   | -   No, the income received is to |
-|                                   |     be assessed as a lump sum for |
-|                                   |     up to 52 weeks. The income is |
-|                                   |     to be coded on the Other      |
-|                                   |     Income (OIN) screen.          |
-|                                   |     Procedure ends here           |
+|                                   | Is the customer converting assets |
+|                                   | to cash?                          |
+|                                   |                                   |
+|                                   | Yes, income is not assessable.    |
+|                                   |                                   |
+|                                   | -   Update customer asset details |
+|                                   |     as needed                     |
+|                                   | -   Procedure ends here           |
+|                                   |                                   |
+|                                   | No, assess the income received as |
+|                                   | a lump sum for up to 52 weeks     |
+|                                   |                                   |
+|                                   | -   Code the income is on the     |
+|                                   |     Other Income (OIN) screen.    |
+|                                   |     See Treatment of lump sums    |
+|                                   | -   Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Action required + Read more ...   |
 |                                   |                                   |
@@ -65,7 +68,8 @@ Assessing income for a sole trader
 |                                   | -   Issue Real Estate (MOD R)     |
 |                                   |     form if real estate is        |
 |                                   |     involved                      |
-|                                   | -   Record details on a DOC       |
+|                                   | -   Record details on a DOC or    |
+|                                   |     Note                          |
 |                                   |                                   |
 |                                   | See Requesting information (CLK)  |
 |                                   | when requesting information from  |
@@ -164,7 +168,9 @@ Assessing income for a sole trader
 |                                   | the recipient has lodged an       |
 |                                   | income tax return which covers    |
 |                                   | self-employment income for a      |
-|                                   | period of 12 months               |
+|                                   | period of 12 months. See Steps to |
+|                                   | assess an interim profit and loss |
+|                                   | statement                         |
 |                                   |                                   |
 |                                   | If this is a new customer with an |
 |                                   | existing business that has traded |
@@ -185,65 +191,29 @@ Assessing income for a sole trader
 |                                   | an interim profit and loss        |
 |                                   | statement.                        |
 |                                   |                                   |
-|                                   | Check the Real Estate/Business    |
-|                                   | Summary (REBS) screen to see if   |
-|                                   | the self-employment business has  |
-|                                   | previously been coded. If there   |
-|                                   | are no business details:          |
+|                                   | Code the sole trader details in   |
+|                                   | either:                           |
 |                                   |                                   |
-|                                   | Run script                        |
+|                                   | Process Direct:                   |
 |                                   |                                   |
-|                                   | Use the Self employment script if |
-|                                   | a customer advises they have      |
-|                                   | income from, or are about to      |
-|                                   | start, self-employment as a sole  |
-|                                   | trader (working as a sole         |
-|                                   | trader):                          |
+|                                   | -   Key Start into the Super Key  |
+|                                   | -   Select the Self-employment    |
+|                                   |     workflow from the Task        |
+|                                   |     Selector                      |
 |                                   |                                   |
-|                                   | -   The script is used to update  |
-|                                   |     income and assets for sole    |
-|                                   |     trader cases and to request   |
-|                                   |     documents needed              |
-|                                   | -   This is the preferred method  |
-|                                   |     and includes setting reviews, |
-|                                   |     recording real estate linked  |
-|                                   |     to a business and recording   |
-|                                   |     details on a DOC              |
+|                                   | Customer Record:                  |
 |                                   |                                   |
-|                                   | The script will not record        |
-|                                   | financial assets.                 |
+|                                   | -   use the Self employment       |
+|                                   |     script to update income and   |
+|                                   |     assets                        |
 |                                   |                                   |
-|                                   | Manual coding if script cannot be |
-|                                   | used                              |
-|                                   |                                   |
-|                                   | -   Code the Real Estate/Business |
-|                                   |     Identifying (REBI) screen,    |
-|                                   |     and go to the Business Detail |
-|                                   |     (BUS) screen                  |
-|                                   | -   Code the BUS screen with      |
-|                                   |     details of business income.   |
-|                                   |     Use the correct date of event |
-|                                   |     (DOV) for business income and |
-|                                   |     assets. Ensure that any       |
-|                                   |     financial assets that are not |
-|                                   |     used as part of the operation |
-|                                   |     of the business are separated |
-|                                   |     and coded on the appropriate  |
-|                                   |     Managed Investments Summary   |
-|                                   |     (MIS), Securities and         |
-|                                   |     Investments Summary (SIS) or  |
-|                                   |     Savings Summary (SVS)         |
-|                                   |     screens. See Assessment of    |
-|                                   |     income and assets from sole   |
-|                                   |     traders and partnerships      |
-|                                   |                                   |
-|                                   | The Self employment script cannot |
+|                                   | The Self employment script or     |
+|                                   | Self-employment workflow cannot   |
 |                                   | be used to update MIS, SIS or SVS |
 |                                   | screens.                          |
 |                                   |                                   |
-|                                   | Set up a review to request the    |
-|                                   | next interim profit and loss      |
-|                                   | statement.                        |
+|                                   | Manually code if script or        |
+|                                   | workflow are not available.       |
 |                                   |                                   |
 |                                   | Go to Step 10                     |
 +-----------------------------------+-----------------------------------+
@@ -311,8 +281,7 @@ Assessing income for a sole trader
 |                                   |     period of self-employment, go |
 |                                   |     to Step 7                     |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Does income tax return reflect    |
-|                                   | current income? + Read more ...   |
+| 7                                 | Current income + Read more ...    |
 |                                   |                                   |
 |                                   | []                                |
 |                                   |                                   |
@@ -320,64 +289,89 @@ Assessing income for a sole trader
 |                                   | financial statements reflect the  |
 |                                   | customer's current rate of income |
 |                                   | received from self-employment.    |
+|                                   | Reasons for a change in income    |
+|                                   | may include:                      |
 |                                   |                                   |
-|                                   | -   Yes, request the customer     |
-|                                   |     supply a copy of the income   |
-|                                   |     tax return and financial      |
-|                                   |     statements. When the          |
-|                                   |     documents have been returned, |
-|                                   |     go to Step 8                  |
-|                                   | -   No, request the customer      |
-|                                   |     supply a profit and loss      |
-|                                   |     statement for the period from |
-|                                   |     the date the income changed   |
-|                                   |     (for example, SU580). When    |
-|                                   |     the profit and loss has been  |
-|                                   |     returned, go to Step 9        |
+|                                   | -   loss of a contract            |
+|                                   | -   seasonal downturn in business |
+|                                   |     or                            |
+|                                   | -   other change in business      |
+|                                   |     circumstances                 |
+|                                   |                                   |
+|                                   | See:                              |
+|                                   |                                   |
+|                                   | -   Unexpected downturn of a      |
+|                                   |     business                      |
+|                                   | -   Business has ceased to        |
+|                                   |     operate or has closed         |
+|                                   | -   Seasonal downturn in business |
+|                                   | -   Steps to assess an interim    |
+|                                   |     profit and loss statement     |
+|                                   |                                   |
+|                                   | Does the income tax return        |
+|                                   | reflect current income?           |
+|                                   |                                   |
+|                                   | Yes                               |
+|                                   |                                   |
+|                                   | -   Request the customer supply a |
+|                                   |     copy of the income tax return |
+|                                   |     and financial statements.     |
+|                                   | -   When the documents have been  |
+|                                   |     returned, go to Step 8        |
+|                                   |                                   |
+|                                   | No,                               |
+|                                   |                                   |
+|                                   | -   Request the customer supply a |
+|                                   |     profit and loss statement for |
+|                                   |     the period from the date the  |
+|                                   |     income changed (for example,  |
+|                                   |     SU580)                        |
+|                                   | -   When the profit and loss has  |
+|                                   |     been returned, go to Step 9   |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Latest income tax return lodged + |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | []                                |
 |                                   |                                   |
-|                                   | Use the Self employment script if |
-|                                   | a customer advises they have      |
-|                                   | income from, or are about to      |
-|                                   | start, self-employment as a sole  |
-|                                   | trader (working as a sole         |
-|                                   | trader):                          |
+|                                   | Code sole trader income in        |
+|                                   | either:                           |
 |                                   |                                   |
-|                                   | -   The script is used to update  |
-|                                   |     income and assets for sole    |
-|                                   |     trader cases and to request   |
-|                                   |     documents needed              |
-|                                   | -   This is the preferred method  |
-|                                   |     and includes setting reviews, |
-|                                   |     recording real estate linked  |
-|                                   |     to a business and recording   |
-|                                   |     details on a DOC              |
+|                                   | Process Direct:                   |
 |                                   |                                   |
-|                                   | The script will not record        |
-|                                   | financial assets.                 |
+|                                   | -   Key Start into the Super Key  |
+|                                   |     and                           |
+|                                   | -   Select the Self-employment    |
+|                                   |     workflow from the Task        |
+|                                   |     Selector                      |
+|                                   | -   See Assessing and coding the  |
+|                                   |     Business details for sole     |
+|                                   |     traders and partnerships Mod  |
+|                                   |     F                             |
 |                                   |                                   |
-|                                   | Manual coding if script cannot be |
-|                                   | used                              |
+|                                   | Customer Record                   |
 |                                   |                                   |
-|                                   | Code the BUS screen with the      |
-|                                   | income from the profit and loss   |
-|                                   | statement.                        |
+|                                   | -   use the Self employment       |
+|                                   |     script to update income and   |
+|                                   |     assets                        |
 |                                   |                                   |
-|                                   | Ensure the correct date of event  |
-|                                   | for assessment of business income |
-|                                   | and assets                        |
+|                                   | Manually code the details if the  |
+|                                   | workflow and script are not       |
+|                                   | available.                        |
 |                                   |                                   |
-|                                   | Note: If unsure how to assess the |
+|                                   | If unsure how to assess the       |
 |                                   | customer's business interests     |
 |                                   | from the information provided,    |
 |                                   | discuss with a Technical Peer     |
-|                                   | Support Officer who may discuss   |
-|                                   | with a Complex Assessment Officer |
-|                                   | (CAO) if necessary.               |
+|                                   | Support Officer (TPS) who may     |
+|                                   | discuss with a Complex Assessment |
+|                                   | Officer (CAO) if necessary. To    |
+|                                   | find a list of available CAOs go  |
+|                                   | to Locator and use region code    |
+|                                   | CAO. After consultation with the  |
+|                                   | CAO, if agreed that a formal CAO  |
+|                                   | referral is appropriate, refer    |
+|                                   | the case to the CAO.              |
 |                                   |                                   |
 |                                   | Go to Step 10                     |
 +-----------------------------------+-----------------------------------+
@@ -436,41 +430,38 @@ Assessing income for a sole trader
 |                                   | adjusted net profit/loss for the  |
 |                                   | business.                         |
 |                                   |                                   |
-|                                   | Run script                        |
+|                                   | Code sole trader income in        |
+|                                   | either:                           |
 |                                   |                                   |
-|                                   | Use the Self employment script if |
-|                                   | a customer advises they have      |
-|                                   | income from, or are about to      |
-|                                   | start, self-employment as a sole  |
-|                                   | trader (working as a sole         |
-|                                   | trader):                          |
+|                                   | Process Direct:                   |
 |                                   |                                   |
-|                                   | -   The script is used to update  |
-|                                   |     income and assets for sole    |
-|                                   |     trader cases and to request   |
-|                                   |     documents needed              |
-|                                   | -   This is the preferred method  |
-|                                   |     and includes setting reviews, |
-|                                   |     recording real estate linked  |
-|                                   |     to a business and recording   |
-|                                   |     details on a DOC              |
+|                                   | -   Key Start into the Super Key  |
+|                                   |     and                           |
+|                                   | -   Select the Self-employment    |
+|                                   |     workflow from the Task        |
+|                                   |     Selector                      |
+|                                   | -   See Assessing and coding the  |
+|                                   |     Business details for sole     |
+|                                   |     traders and partnerships Mod  |
+|                                   |     F                             |
 |                                   |                                   |
-|                                   | The script will not record        |
-|                                   | financial assets.                 |
+|                                   | Customer Record                   |
 |                                   |                                   |
-|                                   | Manual coding if script cannot be |
-|                                   | used                              |
+|                                   | -   use the Self employment       |
+|                                   |     script to update income and   |
+|                                   |     assets                        |
 |                                   |                                   |
-|                                   | Code the BUS screen with the      |
-|                                   | adjusted business income.         |
+|                                   | Manually code the details if the  |
+|                                   | workflow and script are not       |
+|                                   | available.                        |
 |                                   |                                   |
-|                                   | Note: If unsure how to assess the |
+|                                   | If unsure how to assess the       |
 |                                   | customer's business interests     |
 |                                   | from the information provided,    |
 |                                   | discuss with a Technical Peer     |
-|                                   | Support Officer who may discuss   |
-|                                   | with a Complex Assessment Officer |
-|                                   | (CAO) if necessary.               |
+|                                   | Support Officer (TPS) who may     |
+|                                   | discuss with a Complex Assessment |
+|                                   | Officer (CAO) if necessary.       |
 |                                   |                                   |
 |                                   | Go to Step 10                     |
 +-----------------------------------+-----------------------------------+
@@ -491,13 +482,13 @@ Assessing income for a sole trader
 |                                   | Updating income estimates for the |
 |                                   | current income year.              |
 |                                   |                                   |
-|                                   | Record details on a DOC. Include  |
-|                                   | all information used for          |
+|                                   | Record details on a Note or DOC.  |
+|                                   | Include all information used for  |
 |                                   | assessment including the source   |
-|                                   | documents for example, 2019       |
+|                                   | documents for example, 2020       |
 |                                   | Income Tax Returns, Profit and    |
-|                                   | loss 1 July 2019 to 30 September  |
-|                                   | 2019.                             |
+|                                   | loss 1 July 2020 to 30 September  |
+|                                   | 2020.                             |
 +-----------------------------------+-----------------------------------+
 
                                    

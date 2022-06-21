@@ -2,6 +2,9 @@
 Services Australia Operational Blueprint Freedom project
 
 ## Master problem 
+
+[![Watch the video of How Centrelink Works](https://img.youtube.com/vi/XNGvku1mycg/hqdefault.jpg)](https://www.youtube.com/watch?v=xNGvku1mycg)
+
 Our welfare system [hides half of how it works](http://posty.online/centrelink) from the needy public.
 
 As expressed in the article above:
