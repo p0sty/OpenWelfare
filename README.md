@@ -1,9 +1,9 @@
 # OpenWelfare
 Services Australia Operational Blueprint Freedom project
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+
 
 ## Master problem 
-
-[![Watch the video of How Centrelink Works](https://img.youtube.com/vi/XNGvku1mycg/hqdefault.jpg)](https://www.youtube.com/watch?v=xNGvku1mycg)
 
 Our welfare system [hides half of how it works](http://posty.online/centrelink) from the needy public.
 
@@ -52,6 +52,7 @@ Whether you actually succeed, fail or have partial success (eg redacted document
 ## How does this technically work?
 
 The last [Operational Blueprint](https://operational.servicesaustralia.gov.au) raw html is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
+
 
 Plaintext versions are created in subfolders with -plaintext on them.
 
@@ -122,13 +123,21 @@ This is useful, for most purposes - but does not reflect the natural order of th
 There is no ability to:
 
 track changes to the way centrelink operates - it assumes we live in the perpetual now.
+
 know of updates to areas that are of concern to you or others you care about
+
 know of new instructions
+
 know when old instructions are updated
+
 know what of the instructions is updated
+
 know when old instructions are removed
+
 know when articles are blocked from public view (put behind foi wall)
+
 know when articles are released to public view (removed from foi wall)
+
 In general - provide more transparency than is available by default
 
 The people responsible for keeping the register up to date are Service Australia's National Managers for each area (see IPS link above).
@@ -143,6 +152,3 @@ https://www.transparency.gov.au/find-data#MWI4LDFhd3BwMCwxYjgsMWF3cG96LDFiOCwxYX
 
 So this will help hold accountable at minimum between $23.2964 and $30.024 million dollars at least, as well as the publics right to know, in a prompt manner.
 
-I also hope that by bringing to light these facts we can either together celebrate the Freedom Report going up, or commiserate it going down.
-
-If you've got this far, you may wish to support the project - please follow [@Open_Welfare](http://twitter.com/open_welfare) for updates and DM if you think you can help.

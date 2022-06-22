@@ -2131,7 +2131,7 @@ Page last updated: 14 June 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 21 June 2022 from
+This information was printed 22 June 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
@@ -2161,8 +2161,8 @@ material.
     -   [Media](/media){.py-5 .block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
-    -   [Our Minister](https://mhs.gov.au){.py-5 .block .md:inline
-        .border-b .border-black .hover:border-blue-60
+    -   [Our Minister](https://ministers.dss.gov.au/bill-shorten){.py-5
+        .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Contact](#lit-footer-accordion-1) ]{.flex .font-bold
     .icon-accordion .icon-white .items-center .justify-between .py-6
@@ -2246,9 +2246,9 @@ material.
     -   [Media](/media){.block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60}
-    -   [Our Minister](https://mhs.gov.au){.block .md:inline .border-b
-        .border-black .hover:border-blue-60 .hover:text-blue-60
-        .focus:border-blue-60 .focus:text-blue-60}
+    -   [Our Minister](https://ministers.dss.gov.au/bill-shorten){.block
+        .md:inline .border-b .border-black .hover:border-blue-60
+        .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
 -   [ [Contact](/contact-us){.block .md:inline .border-b .border-black
     .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
     .focus:text-blue-60} ]{.font-bold .text-md}

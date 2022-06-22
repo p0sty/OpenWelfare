@@ -154,6 +154,9 @@ customer is in receipt of commission or contract income.
 |                                   | themselves self-employed or an    |
 |                                   | employee.                         |
 |                                   |                                   |
+|                                   | If it is unclear, use the         |
+|                                   | Decision Support Tool.            |
+|                                   |                                   |
 |                                   | Consider if the customer's        |
 |                                   | employment situation meets the:   |
 |                                   |                                   |
@@ -207,13 +210,13 @@ Table 2
 |                                   |                                   |
 |                                   | issue a:                          |
 |                                   |                                   |
-|                                   | -   Business details (MOD F)      |
-|                                   | -   Real estate details (MOD R)   |
+|                                   | -   Business Details (MOD F)      |
+|                                   | -   Real Estate Details (MOD R)   |
 |                                   |     (only if the business owns    |
 |                                   |     real estate)                  |
 |                                   |                                   |
 |                                   | record all details of contact on  |
-|                                   | a DOC                             |
+|                                   | a Note or DOC                     |
 |                                   |                                   |
 |                                   | When the customer returns the     |
 |                                   | form/s, continue with this        |
@@ -238,16 +241,13 @@ Table 2
 |                                   | sum is paid. The lump sum is      |
 |                                   | assessed as income for a period   |
 |                                   | into the future equal to the      |
-|                                   | length of time, which the work    |
+|                                   | length of time for which the work |
 |                                   | was done.                         |
 |                                   |                                   |
 |                                   | If the customer receives          |
 |                                   | commission income, the net        |
-|                                   | commissions are assessed as       |
-|                                   | remunerative lump sums and held   |
-|                                   | as income for 52 weeks (even when |
-|                                   | payments are small and/or         |
-|                                   | regular).                         |
+|                                   | commissions are treated as        |
+|                                   | business income.                  |
 |                                   |                                   |
 |                                   | Commission or contract payments   |
 |                                   | received by self-employed         |
@@ -293,13 +293,13 @@ Table 2
 |                                   |     Period Start Date (EPSD) of   |
 |                                   |     the period in which it is     |
 |                                   |     paid for the period it        |
-|                                   |     represents, up to 52 weeks.   |
-|                                   |     For example, commission       |
-|                                   |     income paid for work done     |
-|                                   |     over April, May and June (1   |
-|                                   |     April to 30 June) is assessed |
-|                                   |     for 91 days, frequency would  |
-|                                   |     be LOP                        |
+|                                   |     represents, up to a maximum   |
+|                                   |     of 52 weeks. For example,     |
+|                                   |     commission income paid for    |
+|                                   |     work done over April, May and |
+|                                   |     June (1 April to 30 June) is  |
+|                                   |     assessed for 91 days,         |
+|                                   |     frequency would be LOP        |
 |                                   |                                   |
 |                                   | The table on the Resources page   |
 |                                   | explains how to assess commission |
@@ -328,9 +328,11 @@ Table 2
 |                                   | payment in the year from the same |
 |                                   | employer, and where these         |
 |                                   | payments are assessed as          |
-|                                   | remunerative lump sums, each paid |
-|                                   | income event can be coded under   |
-|                                   | the same employer.                |
+|                                   | remunerative lump sums on the     |
+|                                   | Employment Income Paid Details    |
+|                                   | (EAPP) screen, each paid income   |
+|                                   | event can be coded under the same |
+|                                   | employer.                         |
 |                                   |                                   |
 |                                   | For customers regarded as:        |
 |                                   |                                   |
@@ -351,16 +353,14 @@ Table 2
 |                                   | workers and regarded as           |
 |                                   | employees, use the Earnings and   |
 |                                   | Reporting workflow to add new,    |
-|                                   | edit, or may also be used to      |
-|                                   | update income details.            |
+|                                   | edit, or update income details.   |
 |                                   |                                   |
 |                                   | If the employee is paid an        |
 |                                   | advance of a future commission, a |
 |                                   | review of their contract should   |
 |                                   | determine if the advance is a     |
 |                                   | repayable loan - no income is     |
-|                                   | assessed as it is a loan not      |
-|                                   | income.                           |
+|                                   | assessed if it is a loan.         |
 |                                   |                                   |
 |                                   | If the Earnings and Reporting     |
 |                                   | workflow is not available, code   |
@@ -390,7 +390,7 @@ Table 2
 |                                   | commission income was paid (more  |
 |                                   | than one event date can be coded) |
 |                                   |                                   |
-|                                   | Amount $.cc: key the amount of    |
+|                                   | Amount $: key the amount of       |
 |                                   | commission income paid            |
 |                                   |                                   |
 |                                   | Freq: if the income paid is for a |
@@ -454,10 +454,6 @@ Table 2
 |                                   | fields on the Employment Income   |
 |                                   | Paid Details (EAPP) screen:       |
 |                                   |                                   |
-|                                   | income is received as a lump sum  |
-|                                   | and customer is under Age Pension |
-|                                   | age, code the following fields:   |
-|                                   |                                   |
 |                                   | -   Type: key EAR - Earnings from |
 |                                   |     employment                    |
 |                                   | -   Employer Name/Description:    |
@@ -465,8 +461,8 @@ Table 2
 |                                   | -   Event Date: key the date the  |
 |                                   |     income was paid (more than    |
 |                                   |     one event date can be coded)  |
-|                                   | -   Amount $.cc: key the amount   |
-|                                   |     of income assessed            |
+|                                   | -   Amount $: key the amount of   |
+|                                   |     income assessed               |
 |                                   | -   Freq: key the income paid is  |
 |                                   |     for a period covering a       |
 |                                   |     fortnight or less, the        |
@@ -478,29 +474,12 @@ Table 2
 |                                   |     start date and end dates of   |
 |                                   |     the period for which the      |
 |                                   |     commission income is paid     |
-|                                   |                                   |
-|                                   | as the customer is assessed as an |
-|                                   | employee and eligible for Working |
-|                                   | Credit, apply the Working Credit  |
-|                                   | rules to the total ordinary       |
-|                                   | income before applying the Income |
-|                                   | Test                              |
-|                                   |                                   |
-|                                   | income is received as a lump sum  |
-|                                   | and customer is of Age Pension    |
-|                                   | age or above, code the following  |
-|                                   | fields on the EAPP screen:        |
-|                                   |                                   |
-|                                   | -   Type: key EAR Earnings from   |
-|                                   |     employment                    |
-|                                   | -   Description: key the source   |
-|                                   |     of the income                 |
-|                                   | -   Event Date: key the date the  |
-|                                   |     income was paid (more than    |
-|                                   |     one event can be coded)       |
-|                                   | -   Amount $.cc: key the amount   |
-|                                   |     of income paid                |
-|                                   | -   Freq: key 'IOP' or 'LOP'      |
+|                                   | -   If the customer is assessed   |
+|                                   |     as an employee and eligible   |
+|                                   |     for Working Credit, apply the |
+|                                   |     Working Credit rules to the   |
+|                                   |     total ordinary income before  |
+|                                   |     applying the Income Test      |
 |                                   | -   If the customer is a          |
 |                                   |     pensioner, over Age Pension   |
 |                                   |     age and eligible for the Work |
@@ -548,8 +527,7 @@ Table 2
 |                                   | removed at the end of the         |
 |                                   | assessment period.                |
 |                                   |                                   |
-|                                   | If script is not available add    |
-|                                   | new other income. Code the        |
+|                                   | Add new other income. Code the    |
 |                                   | following fields on the OIN       |
 |                                   | screen:                           |
 |                                   |                                   |
@@ -573,7 +551,7 @@ Table 2
 |                                   |     payment                       |
 |                                   | -   Event Date: key the date the  |
 |                                   |     commission was paid           |
-|                                   | -   Amount $.cc: key the net      |
+|                                   | -   Amount $: key the net         |
 |                                   |     commission/royalty paid       |
 |                                   |     (gross amount received less   |
 |                                   |     allowable expenses incurred)  |
@@ -608,19 +586,27 @@ Table 2
 |                                   | OINS for the full relevant        |
 |                                   | period.                           |
 |                                   |                                   |
-|                                   | Note: before finalising the       |
-|                                   | script updates ensure all         |
-|                                   | activities have been coded, for   |
-|                                   | example, income recording on the  |
-|                                   | OIN screen and a manual review    |
-|                                   | has been set up.                  |
+|                                   | Code the details in either:       |
 |                                   |                                   |
-|                                   | Check to ensure any old income    |
-|                                   | coded previously on OIN using an  |
-|                                   | ongoing assessment code, for      |
-|                                   | example, MTH, ANN, etc. have been |
-|                                   | removed at the end of the         |
-|                                   | assessment period.                |
+|                                   | Process Direct:                   |
+|                                   |                                   |
+|                                   | -   Use Customer Summary to run   |
+|                                   |     the Self-Employment workflow  |
+|                                   |     to add or update details.     |
+|                                   |     Select the Self-employment    |
+|                                   |     workflow from the Task        |
+|                                   |     Selector (START)              |
+|                                   |                                   |
+|                                   | Customer Record:                  |
+|                                   |                                   |
+|                                   | -   Use the Self Employment       |
+|                                   |     script to update income and   |
+|                                   |     assets                        |
+|                                   |                                   |
+|                                   | The workflow or script will not   |
+|                                   | update personal financial assets. |
+|                                   | See Income and expenses of a      |
+|                                   | business.                         |
 |                                   |                                   |
 |                                   | If script is not available and:   |
 |                                   |                                   |
@@ -658,11 +644,11 @@ Table 2
 |                                   | -   Event Date: key the date the  |
 |                                   |     income was entitled to be     |
 |                                   |     received                      |
-|                                   | -   Amount $.cc: convert an       |
-|                                   |     annual rate of income for the |
-|                                   |     net lump sum amount (income   |
-|                                   |     less allowable expenses) of   |
-|                                   |     the contractor income. For    |
+|                                   | -   Amount $: convert an annual   |
+|                                   |     rate of income for the net    |
+|                                   |     lump sum amount (income less  |
+|                                   |     allowable expenses) of the    |
+|                                   |     contractor income. For        |
 |                                   |     example if the net income was |
 |                                   |     $3,000 for 3 months of work,  |
 |                                   |     an amount of $12,000 would be |
@@ -675,26 +661,21 @@ Table 2
 |                                   | only for income recorded on       |
 |                                   | OINS + Read more ...              |
 |                                   |                                   |
-|                                   | The Self employment script will   |
-|                                   | automatically code a review for   |
-|                                   | 52 weeks only.                    |
-|                                   |                                   |
 |                                   | If commission is to be held for a |
-|                                   | lesser period, or the script or   |
-|                                   | workflow are not used, a review   |
-|                                   | needs to be coded to remove the   |
-|                                   | commission income from the        |
-|                                   | customer's record.                |
+|                                   | lesser period, a review needs to  |
+|                                   | be coded to remove the commission |
+|                                   | income from the customer's        |
+|                                   | record.                           |
 |                                   |                                   |
 |                                   | After coding the commission or    |
 |                                   | contract details on the OIN       |
 |                                   | screen, code a manual review to   |
 |                                   | remove that income assessment.    |
 |                                   | For example if the commission was |
-|                                   | received on 1 May 2012 and the    |
+|                                   | received on 1 May 2020 and the    |
 |                                   | commission is to be assessed for  |
 |                                   | 6 weeks, the review should be set |
-|                                   | for 12 June 2012 to zero off the  |
+|                                   | for 12 June 2020 to zero off the  |
 |                                   | income at the end of the 6 week   |
 |                                   | period.                           |
 |                                   |                                   |
@@ -706,8 +687,7 @@ Table 2
 |                                   | set a manual review, see How to   |
 |                                   | code and action a manual review.  |
 |                                   |                                   |
-|                                   | Code a DOC on the customer's      |
-|                                   | record.                           |
+|                                   | Record a Note or DOC.             |
 |                                   |                                   |
 |                                   | If the customer or partner        |
 |                                   | receives Family Tax Benefit (FTB) |

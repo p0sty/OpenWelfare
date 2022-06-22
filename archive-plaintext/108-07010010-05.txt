@@ -27,9 +27,10 @@ Table 1
 |                                   | entitlement period                |
 |                                   |                                   |
 |                                   | If a customer was paid $220.00    |
-|                                   | for a pay period of 14 days       |
-|                                   | during the entitlement period of  |
-|                                   | 11 days the system will need to   |
+|                                   | for a pay period of 14 days and   |
+|                                   | was entitled to report for a      |
+|                                   | shortened entitlement period of   |
+|                                   | 11 days, the system will need to  |
 |                                   | still assess the $220.00 for 14   |
 |                                   | days. If the $220.00 is coded     |
 |                                   | with an IOP frequency, the system |
@@ -40,7 +41,7 @@ Table 1
 |                                   | calculating the correct daily     |
 |                                   | amount of $15.71 over 14 days     |
 |                                   | resulting in potential            |
-|                                   | overpayment.                      |
+|                                   | underpayment.                     |
 |                                   |                                   |
 |                                   | By coding with a LOP frequency,   |
 |                                   | the system will assess $172.86 in |
@@ -51,8 +52,8 @@ Table 1
 |                                   | instalment period ($47.14/14 =    |
 |                                   | 3.367142857142857 per day) along  |
 |                                   | with any other income reported by |
-|                                   | the customer for the entitlement  |
-|                                   | period.                           |
+|                                   | the customer for the next         |
+|                                   | entitlement period.               |
 |                                   |                                   |
 |                                   | Single claimant or partnered      |
 |                                   | where neither is currently in     |
@@ -114,12 +115,16 @@ Table 1
 |                                   |     8 January                     |
 |                                   |                                   |
 |                                   | In the entitlement period 9       |
-|                                   | January to 22 January 2021,       |
+|                                   | January to 22 January 2021, the   |
 |                                   | customer was not paid any         |
 |                                   | employment income. The customer's |
 |                                   | payment will still be impacted by |
 |                                   | the income reported in the        |
-|                                   | previous entitlement period.      |
+|                                   | previous entitlement period. The  |
+|                                   | eight days of income ($160) is    |
+|                                   | spread over the next 14 day       |
+|                                   | entitlement period. $160/14 =     |
+|                                   | $11.42 per day.                   |
 |                                   |                                   |
 |                                   | Partner already in receipt of     |
 |                                   | income support payment and has    |
@@ -167,12 +172,12 @@ Table 1
 |                                   | $280.00/14 (days in employer pay  |
 |                                   | period) = $20.00.                 |
 |                                   |                                   |
-|                                   | Coding of customer's employment   |
+|                                   | Coding of claimant's employment   |
 |                                   | income on EAPP screen should have |
 |                                   | already been completed for the    |
 |                                   | partner's income support payment  |
 |                                   |                                   |
-|                                   | The customer's earnings screen    |
+|                                   | The claimant's earnings screen    |
 |                                   | should have been be coded as      |
 |                                   | follows:                          |
 |                                   |                                   |
@@ -190,29 +195,29 @@ Table 1
 |                                   | There may be circumstances where  |
 |                                   | members of a couple will receive  |
 |                                   | a different daily rate in the     |
-|                                   | first entitlement period when     |
+|                                   | first entitlement period when the |
 |                                   | partner is already current on     |
-|                                   | payment and customer claiming.    |
-|                                   | This may occur when the partner   |
-|                                   | who is claiming is working and    |
-|                                   | has regular income which is       |
-|                                   | already coded and has a short     |
-|                                   | period in their first entitlement |
-|                                   | period. This is due to the        |
-|                                   | attribution of Work Bonus which   |
-|                                   | will be applied to the Work Bonus |
-|                                   | eligible income for the claimant. |
-|                                   | The Work Bonus for the claimant   |
-|                                   | will start to accrue from their   |
-|                                   | date of grant. If the claimant    |
-|                                   | has 8 days in their first         |
-|                                   | entitlement period, the Work      |
-|                                   | Bonus they have accrued will be   |
-|                                   | applied across those eight days.  |
-|                                   | However, their accrued Work Bonus |
-|                                   | will be applied across the full   |
-|                                   | 14 day entitlement period for the |
-|                                   | partner who is already on         |
+|                                   | payment and the customer is       |
+|                                   | claiming. This may occur when the |
+|                                   | customer who is claiming is       |
+|                                   | working and has regular income    |
+|                                   | which is already coded and has a  |
+|                                   | short period in their first       |
+|                                   | entitlement period. This is due   |
+|                                   | to the attribution of Work Bonus  |
+|                                   | which will be applied to the Work |
+|                                   | Bonus eligible income for the     |
+|                                   | claimant. The Work Bonus for the  |
+|                                   | claimant will start to accrue     |
+|                                   | from their date of grant. If the  |
+|                                   | claimant has 8 days in their      |
+|                                   | first entitlement period, the     |
+|                                   | Work Bonus they have accrued will |
+|                                   | be applied across those eight     |
+|                                   | days. However, their accrued Work |
+|                                   | Bonus will be applied across the  |
+|                                   | full 14 day entitlement period    |
+|                                   | for the partner who is already on |
 |                                   | payment.                          |
 |                                   |                                   |
 |                                   | Example                           |
@@ -652,7 +657,8 @@ Table 1
 |                                   | assessment for a month.           |
 |                                   |                                   |
 |                                   | On the EAN screen, the MTE income |
-|                                   | will show as a 2WE figure.        |
+|                                   | will show as a 2WE figure, with a |
+|                                   | channel type of CAL (calculated). |
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
@@ -754,7 +760,7 @@ Table 1
 |                                   | above:                            |
 |                                   |                                   |
 |                                   | -   The EAPP DOV = 07 DEC 2020    |
-|                                   | -   The customer's EPEDC is D     |
+|                                   | -   The customer's EPED code is D |
 |                                   | -   The number of days in the pay |
 |                                   |     period is the number of days  |
 |                                   |     between the LOP Start and End |
@@ -773,9 +779,10 @@ Table 1
 |                                   |     in this example, is 14 days   |
 |                                   |     in length                     |
 |                                   | -   Even though in EP5 only 5     |
-|                                   |     days of EI is attributed, due |
-|                                   |     to existing IOP apportionment |
-|                                   |     rules, $204.92 (the remaining |
+|                                   |     days of employment income is  |
+|                                   |     attributed, due to existing   |
+|                                   |     IOP apportionment rules,      |
+|                                   |     $204.92 (the remaining        |
 |                                   |     amount) is spread evenly      |
 |                                   |     across the entire EP          |
 |                                   |                                   |
@@ -1144,12 +1151,12 @@ Table 2
 |                                   | 1st update (cease existing        |
 |                                   | coding):                          |
 |                                   |                                   |
-|                                   | Date of event: 5 December 2020    |
-|                                   | (EPSD of the entitlement period   |
-|                                   | that includes 7 December 2020     |
-|                                   | (transition period))              |
-|                                   |                                   |
-|                                   | Amount: $0                        |
+|                                   | -   Date of event: 5 December     |
+|                                   |     2020 (EPSD of the entitlement |
+|                                   |     period that includes 7        |
+|                                   |     December 2020 (transition     |
+|                                   |     period))                      |
+|                                   | -   Amount: $0                    |
 |                                   |                                   |
 |                                   | 2nd update (recording the amount  |
 |                                   | to be assessed):                  |
@@ -1224,6 +1231,8 @@ calculating the correct amount to report during the transition period.
 
 Note: for assistance with correct Date of Event (DOV) coding, see
 Determining the Date of Event for Employment Income.
+
+Conversion of continuous income
 
 Customers with existing continuous employment income recorded on the
 Employment Income Details (EAN) screen or Foreign Income/Asset Details

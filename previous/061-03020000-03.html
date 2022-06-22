@@ -238,7 +238,7 @@
 <div class="showcont">
 
 
-<p>This includes Age Pension, Disability Support Pension (DSP), Carers Payment (CP), Widow Allowance (WA) or Parenting Payment Single (PPS) customers.</p>
+<p>This includes Age Pension, Disability Support Pension (DSP), Carers Payment (CP), or Parenting Payment Single (PPS) customers.</p>
 
 <p>For <strong>non-pension</strong> and concession card customers, see <a href="../australians-overseas/061-03050000-01.html">Return to Australia procedures for service centre and Smart Centre staff for non-pension payments and cards</a>.</p>
 
@@ -252,9 +252,7 @@
 		<ul>		<li>
 <strong>Yes</strong>, see <a href="../australians-overseas/061-03030000-01.html">Return to Australia coding for dependent children</a>. Procedure ends here</li>
 		<li>
-<strong>No</strong>, run the Portability Script - Departures and Returns. If the script is not working, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_01_Step02">go to Step 2</a></li>
-		</ul>
-<p><strong>Note&#58;</strong> ensure to record the correct date in the DOR&#58; field in the portability script.</p>
+<strong>No</strong>, run the Portability Script - Departures and Returns. If the script is not working, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_01_Step02">go to Step 2</a></li>		</ul>
 </div>
 
 
@@ -274,15 +272,9 @@
 		<ul>		<li>
 <strong>Yes</strong>, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_01_Step03">go to Step 3</a></li>
 		<li>
-<strong>No</strong>, code the future return to Australia manually on the Customer Advised Travel Details (<strong>RSCD</strong>) screen if not already coded. <strong>Note&#58;</strong> this will not return the customer to Australia (unless the datalink is in contingency mode). That will only occur once the movement information is confirmed by Department of Home Affairs via the immigration datalink.</li>
+<strong>No</strong>, code the future return to Australia manually on the Customer Advised Travel Details (<strong>RSCD</strong>) screen if not already coded. <strong>Note&#58;</strong> this will not return the customer to Australia (unless the datalink is in contingency mode). That will only occur once the movement information is confirmed by the <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020030-03.html#bp03_L3TT_Activating_the_">Immigration Datalink</a></li>
 			<ul>			<li>
-<strong>Event Date</strong> field is the date the customer will return to Australia</li>
-			<li>
-<strong>Country</strong> field code '<strong>Australia</strong>'</li>
-			<li>
-<strong>Reason</strong>, <strong>End Date</strong> and <strong>Ext Rsn</strong> fields are left blank</li>
-			<li>
-Code <strong>Source</strong> and <strong>DOR</strong> if required</li>
+Update the <a target="_blank" class="modal-link" href="../initial-contact-general/106-22011747-03.html#bp03_L3TT_Completing_the_">RSCD screen</a></li>
 			<li>
 Record details of the future return to Australia on a <strong>DOC</strong></li>
 			<li>
@@ -302,11 +294,11 @@ Procedure ends here</li>			</ul>			</ul>
 <div class="showcont">
 
 
-<p>For DSP customers, check the Residence Savings (<strong>RSS</strong>) screen. If the <strong>DSP Port. 1 July 2004 status</strong> field is '<strong>Y</strong>' the customer has this savings provision.</p>
+<p>For DSP customers, check the <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020010-03.html#bp03_L3TT_Coding_the_Resi">Residence Savings (RSS) screen</a>. If the <strong>DSP Port. 1 July 2004 status</strong> field is '<strong>Y</strong>' the customer has this savings provision.</p>
 
 <p>For other customers, go to the Pensions Savings Provisions and Entitlement (<strong>PSVI</strong>) screen. If the <strong>20 Sept 2000 Portability Savings Ind</strong> field is '<strong>Y</strong>', the customer is subject to this savings provision.</p>
 
-<p>For all customers, including DSP, go to the Residence Savings (<strong>RSS</strong>) screen. If the <strong>300 Month denominator Ind</strong> field is '<strong>Y</strong>', the customer is subject to these savings.</p>
+<p>For all customers, including DSP, go to the <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020010-03.html#bp03_L3TT_Coding_the_Resi">Residence Savings (RSS) screen</a>. If the <strong>300 Month denominator Ind</strong> field is '<strong>Y</strong>', the customer is subject to these savings.</p>
 
 <p>Is the customer currently subject to any of these portability savings provisions?</p>
 		<ul>		<li>
@@ -332,11 +324,11 @@ Procedure ends here</li>			</ul>			</ul>
 		<ul>		<li>
 record in Environment I (and <strong>current</strong>)</li>
 		<li>
-returning after having lived outside Australia (check the Country of Residence (<strong>CRES</strong>) screen)</li>
+returning after having lived outside Australia (check the <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020010-03.html#bp03_L3TT_Coding_the_Coun">Country of Residence (CRES) screen</a>)</li>
 		<li>
-paid under an International Agreement (go to Additional Residence Details (<strong>ARD</strong>) screen, if <strong>Agreement Country</strong> field contains an agreement country, the return to Australia will need to be done by CIS)</li>
+paid under an International Agreement (go to <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020010-03.html#bp03_L3TT_Coding_the_Addi">Additional Residence Details (ARD) screen</a>, if <strong>Agreement Country</strong> field contains an agreement country, the return to Australia will need to be done by CIS)</li>
 		<li>
-Returning from New Zealand (NZ) (check RSCD or ask the customer)</li>
+Returning from New Zealand (NZ) (check <a target="_blank" class="modal-link" href="../initial-contact-general/106-22011747-03.html#bp03_L3TT_Completing_the_">RSCD</a> or ask the customer)</li>
 		</ul>
 <p>Do <strong>any </strong>of the above apply to the customer?</p>
 		<ul>		<li>
@@ -387,8 +379,6 @@ Returning from New Zealand (NZ) (check RSCD or ask the customer)</li>
 <strong>Yes</strong>, issue a temporary interim voucher for their period in Australia. A concession card cannot be issued by the system. An interim voucher will default to 14 days, but it may be extended up to 3 months - 12 weeks. For cases returning to Australia issue the interim voucher for a minimum of 28 days in the first instance. See <a href="../additional-products-and-services/101-06070000-01.html">Confirming concession care entitlement and issuing interim vouchers</a></li>
 		<li>
 <strong>No</strong>, tell the customer that they are not entitled to a concession card and it cannot be issued. If they want to request an explanation of the decision, refer the work item to CIS in <a href="../specialist-manuals-and-system-tools/111-06060000-01.html">Work Optimiser</a> using Work Item Type ZIAM_EIR_INTL_SC. See Request for an explanation, quality check or review</li>
-		<li>
-.</li>
 		</ul>
 <p>Procedure ends here.</p>
 </div>
@@ -446,39 +436,17 @@ been automatically restored on their return</li>
 <p>2</p></td>
 <td>
 
-<p><strong>Code Immigration Enquiry (RSIMME) screen to trigger the immigration datalink</strong> <a title="Read more 8" class="showhead bp03_tbl_System_coding_a_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_System_coding_a_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Request the Immigration Datalink</strong> <a title="Read more 8" class="showhead bp03_tbl_System_coding_a_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_System_coding_a_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
+
+<p>Update the <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020030-03.html#bp03_L3TT_Activating_the_">Immigration Enquiry (RSIMME) screen and request the Immigration Datalink</a>.</p>
+
+<p>Completing the <strong>RSIMME</strong> screen should provide the customer's movement information?</p>
 		<ul>		<li>
-Code the customer's country of birth in the <strong>Country of Birth</strong> field if required</li>
+Ensure that the date in the Immigration Limiting Date (ILD)&#58; field is the date of departure (if available) or earlier. Consider if the ILD needs to be moved. Once it is moved back, it cannot be moved forward to a more recent date</li>
 		<li>
-Code '<strong>Y</strong>'es, '<strong>N</strong>'o or '<strong>U</strong>'nknown in the Have you <strong>lived or travelled outside Australia since 1 September 1994, including short trips and holidays</strong> field</li>
-		<li>
-If the customer has travel documents&#58;</li>
-			<ul>			<li>
-Code '<strong>AP</strong>', '<strong>OP</strong>' or '<strong>DI</strong>' in the <strong>Type</strong> field</li>
-			<li>
-Record details of the document in the <strong>Travel Document Number</strong> field</li>
-			<li>
-Complete the <strong>Country of Issue</strong> field</li>		</ul>
-		<li>
-Key '<strong>Y</strong>' in the <strong>Request Immigration data (Y/N)?</strong> field</li>
-		<li>
-If required, key the <strong>Source</strong> field and the correct date in the DOR field, generally this must be&#58;</li>
-			<ul>			<li>
-date of return if customer is returning following a temporary absence</li>
-			<li>
-date of contact if returning after living overseas or return is more than 12 months ago</li>		</ul>
-		<li>
-Press [<strong>Enter</strong>] to activate the immigration datalink</li>
-		<li>
-Return to the <strong>RSIM</strong> screen and check for the return information</li>
-		</ul>
-<p>Did completing the <strong>RSIMME</strong> screen provide the customer's movement information?</p>
-		<ul>		<li>
-<strong>Yes</strong>, ensure that the date in the Immigration Limiting Date (ILD)&#58; field is the date of departure (if available) or earlier. Consider if the ILD needs to be moved. Once it is moved back, it cannot be moved forward to a more recent date.</li>
-		<li>
-To manually move the <strong>ILD</strong>&#58;</li>
+To manually move the ILD&#58;</li>
 			<ul>			<li>
 Go to the Immigration Enquiry (<strong>RSIM</strong>) screen (or <strong>CHRSIM</strong> for child)</li>
 			<li>
@@ -486,7 +454,11 @@ Code '<strong>Y</strong>' in the <strong>Would you like to use all DIAC</strong>
 			<li>
 Code a new date in the <strong>Immigration Limiting Date</strong> (<strong>ILD</strong>) field to use immigration data from that particular date</li>
 			<li>
-When ILD is correct, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_System_coding_a_Step04">go to Step 4</a></li>		</ul>
+When ILD is correct, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_System_coding_a_Step04">go to Step 4</a></li>
+			</ul>			</ul>
+<p>Has the return date been recorded on the <strong>RSIM</strong> screen by requesting the Immigration Datalink?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_System_coding_a_Step04">go to Step 4</a></li>
 		<li>
 <strong>No</strong>, <a href="../australians-overseas/061-03020000-03.html#bp03_tbl_System_coding_a_Step03">go to Step 3</a></li>		</ul>
 </div>
@@ -500,7 +472,7 @@ When ILD is correct, <a href="../australians-overseas/061-03020000-03.html#bp03_
 <p>3</p></td>
 <td>
 
-<p><strong>Return date has not been recorded after triggering the immigration datalink</strong> <a title="Read more 9" class="showhead bp03_tbl_System_coding_a_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_System_coding_a_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Return date has not been recorded after requesting the Immigration Datalink</strong> <a title="Read more 9" class="showhead bp03_tbl_System_coding_a_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_System_coding_a_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -522,19 +494,11 @@ When ILD is correct, <a href="../australians-overseas/061-03020000-03.html#bp03_
 <div class="showcont">
 
 
-<p>Go to the Customer Advised Travel Details (<strong>RSCD</strong>) screen.</p>
-		<ul>		<li>
-Record the date the customer returned to Australia in the <strong>Event Date</strong> field</li>
-		<li>
-Record '<strong>Australia</strong>' in the <strong>Country</strong> field</li>
-		<li>
-Leave <strong>Reason</strong>, <strong>End date</strong> and <strong>Ext Rsn</strong> fields blank</li>
-		<li>
-Record the appropriate source in the <strong>Source</strong> field</li>
-		<li>
-Record the correct date in the DOR field</li>
-		</ul>
-<p><strong>Note&#58;</strong> coding the <strong>RSCD</strong> screen will not return the customer to Australia, unless the datalink is in contingency mode. The return to Australia will only occur once the movement information has been confirmed by the immigration datalink.</p>
+<p>Update the <a target="_blank" class="modal-link" href="../initial-contact-general/106-22011747-03.html#bp03_L3TT_Completing_the_">Customer Advised Travel Details (RSCD) screen</a>.</p>
+
+<p>Record the correct date in the DOR field.</p>
+
+<p><strong>Note&#58;</strong> coding the <a target="_blank" class="modal-link" href="../initial-contact-general/106-22011747-03.html#bp03_L3TT_Completing_the_">RSCD screen</a> will not return the customer to Australia, unless the datalink is in contingency mode. The return to Australia will only occur once the movement information has been confirmed by the <a target="_blank" class="modal-link" href="../initial-contact-general/106-06020030-03.html#bp03_L3TT_Activating_the_">Immigration Datalink</a>.</p>
 </div>
 
 
