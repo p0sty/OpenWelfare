@@ -1,9 +1,9 @@
 # OpenWelfare
 Services Australia Operational Blueprint Freedom project
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
-
 
 ## Master problem 
+
+[![Watch the three minute video explaining the problem and solution](https://img.youtube.com/vi/xNGvku1mycg/hqdefault.jpg)](https://youtu.be/xNGvku1mycg)
 
 Our welfare system [hides half of how it works](http://posty.online/centrelink) from the needy public.
 
@@ -52,6 +52,9 @@ Whether you actually succeed, fail or have partial success (eg redacted document
 ## How does this technically work?
 
 The last [Operational Blueprint](https://operational.servicesaustralia.gov.au) raw html is saved nightly to "Current" folder, the previous nights saved "Previous" and all 'previous' versions copied into the folder 'archive' for easier retrieval of deleted content.
+
+Plaintext versions are created in subfolders with -plaintext on them.
+
 
 
 Plaintext versions are created in subfolders with -plaintext on them.
@@ -143,12 +146,3 @@ In general - provide more transparency than is available by default
 The people responsible for keeping the register up to date are Service Australia's National Managers for each area (see IPS link above).
 
 According to [Services Australia's Organisation chart page](https://www.servicesaustralia.gov.au/organisational-structure?context=1) - there are currently 139 of them.
-
-apsjobs.gov.au has previously advertised for National Managers - the most recent one is in the SES Band 1 pay. (notably I cannot link as apsjobs.gov.au links to an external site and specifically removes the National Manager role when salary searching) - I have this information from the candidate pack from the external recruiter that I had to hand over an email for.
-archive.org copy here: https://web.archive.org/web/20220312052220/https://executiveintelligencegroup.com.au/wp-content/uploads/2022/02/804-NM-ICT-Digital-Data-B1-Services-Australia-Candidate-Information.pdf
-
-transparency.gov.au advises that SES Band 1 are paid between $167,600 and $216,000 per annum at Services Australia in 2020-21
-https://www.transparency.gov.au/find-data#MWI4LDFhd3BwMCwxYjgsMWF3cG96LDFiOCwxYXdwb3ksMWI4LDE5bjk1LDFiOCwxOW45NCwxYjgsMTE3ZnZlLDFiOCwxMTdmdmQsMWI4LDExN2Z2YywxYjgsMTE3ZnZiLDFiOCwxMTdmdmEsMWI4LDExN2Z2OSwxYjgsMTlrMHo0LDFiOCwtMmFleDUwJDU5JGZlOGYxOWNkLThmZjEtNTY1Ny04OGIxLTEyYTBjMjVjNDkyYV9kODRkNWIzMC0wNDgyLTQ1ZmItYTIxMC0wNjgwNDBlYzRkYWNfZnkyMFNjaGVtYV9TZXJ2aWNlcyBBdXN0cmFsaWFfMjAyMC0yMV8yMDIwLzIxJGNvbHVtbiQlNUIlN0IlMjJSYW5nZSUyMiUzQSUyMk1heGltdW0lMjBTYWxhcnklMjIlN0QlNUQkMSRjYXRlZ29yeSQwJDAkZmFsc2U
-
-So this will help hold accountable at minimum between $23.2964 and $30.024 million dollars at least, as well as the publics right to know, in a prompt manner.
-
