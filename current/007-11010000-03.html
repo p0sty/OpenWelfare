@@ -337,6 +337,8 @@ the reconciliation outcome is a debt, and</li>
 		<li>
 the customer resides in an area where there is a pause on debt raising due to a declared major disaster or emergency event</li>
 		</ul>
+<p><strong>Note&#58;</strong> automatic reconciliation does not occur for CCS.</p>
+
 <p>See <a href="../families/007-11080000-01.html">Manual intervention into family assistance reconciliation</a> and <a href="../families/007-11010020-01.html">Family Tax Benefit (FTB) reconciliation or lump sum claim pending</a>.</p>
 
 <p><strong>Partial reconciliation</strong>, including FTB supplements, can occur from 2 July following the relevant year if only ex-partner actual income details are needed for reconciliation to occur. SIFS is not paid for a partnered period if partner income is not known. <a href="../families/007-11010090-01.html">Special processing applies for customers with an ex-partner</a>.</p>
@@ -411,9 +413,11 @@ Has lodged</li>
 		<li>
 Has not lodged</li>
 		<li>
-Has advised not required to lodge</li>
+Has an exemption from lodging where the FAO Non-Lodger Exemption (<strong>FNLE</strong>) screen is coded</li>
+		<li>
+Is excluded from lodging</li>
 		</ul>
-<p>If actual income details have not been received and the tax return&#58;</p>
+<p>If actual income details have not been received and the customer advises a tax return&#58;</p>
 		<ul>		<li>
 is required to be lodged or is not required to be lodged, see <a href="../families/007-11010110-01.html">Non-lodger and late lodger process for FTB reconciliation</a></li>
 		<li>
@@ -557,7 +561,7 @@ MCA Mandatory Continuous Adjustment</li>
 		<li>
 MCO Nil Pay More Choice Option</li>
 		<li>
-PIP Prohibition of FTB</li>		</ul>
+<strong><a href="../families/007-11010120-01.html">P</strong>IP Prohibition of FTB</a></li>		</ul>
 </div>
 
 
@@ -675,7 +679,7 @@ FTB raised as a debt for the relevant financial year</li>
 		<ul>		<li>
 <strong>Income reconciliation</strong> for income reconciliation periods where estimated income was used to work out their FTB rate during the relevant financial year. If available, actual adjusted taxable income details are used to work out correct FTB entitlement. Income assessment modes. See the <a href="../families/007-11010000-05.html">Resources</a> page for further information</li>
 		<li>
-For any period they were partnered, their and their partner's combined adjusted taxable income is used to work out the correct FTB rate. FTB Part A is not income tested for periods during which they or their partner received an income support payment. FTB Part B is income tested for all partnered periods. See <a href="../families/007-07070010-01.html">Effect of income support entitlement on FTB</a></li>
+For any period they were partnered, their and their partner's combined adjusted taxable income is used to work out the correct FTB rate. FTB Part A is not income tested for periods during which they or their partner received an income support payment above nil rate. FTB Part B is income tested for all partnered periods. See <a href="../families/007-07070010-01.html">Effect of income support entitlement on FTB</a></li>
 		<li>
 <a href="../families/007-11010090-01.html">Special processing rules apply for ex-partners</a></li>
 		<li>
@@ -749,22 +753,28 @@ The system compares the correct FTB entitlement with the amount paid during the 
 <div class="showcont">
 
 
-<p>For any periods the customer was&#58;</p>
+<p>For any periods the customer was <strong>Single</strong> and received ISP&#58; </p>
 		<ul>		<li>
-<strong>Single</strong> and received ISP, FTB Part A and Part B instalments are not income tested. However, from 1 July 2018, if the customer received any employment income nil rate periods during the financial year, FTB Part A will be subject to the income test for these periods.<br>From 1 July 2016, payment of FTB Part A supplement is subject to an income limit. This extends to ISP customers<br><strong>Note&#58;</strong> single persons in receipt of an ISP, who are not income tested, are subject to automatic reconciliation for the same period they were FTB current during the financial year. If their adjusted taxable income (ATI) is below the limit, the Part A supplement will be paid. However, if they later lodge a tax return and their ATI exceeds the supplement income limit, an overpayment will be raised for the Part A supplement. The <a href="../families/007-11010000-05.html">Resources</a> page contains an example</li>
+FTB Part A and Part B instalments are not income tested. However, from 1 July 2018, if a customer's ISP is reduced to a nil rate due to employment income during the financial year, FTB Part A will be subject to the income test for these periods. </li>
 		<li>
-<strong>Partnered</strong> and either they or their partner were entitled to an ISP, the FTB Part A instalments are not income tested. However, the exemption from the FTB Part A income test does not apply to partnered income support customers under the following circumstances&#58;</li>
+From 1 July 2016, payment of FTB Part A supplement is subject to an income limit. This includes ISP customers<br><strong>Note&#58;</strong> single ISP customers whose FTB is automatic reconciled using an adjusted taxable income (ATI) below the limit will be paid the Part A supplement. However, if they later lodge a tax return and their new ATI exceeds the supplement income limit, an overpayment will be raised for the Part A supplement. The <a href="../families/007-11010000-05.html">Resources</a> page contains an example</li>
+		</ul>
+<p>For any periods the customer was<strong> Partnered</strong> and either they or their partner were entitled to an ISP&#58;</p>
+		<ul>		<li>
+the FTB Part A instalments are not income tested. However, from 1 July 2018 the FTB Part A income test does apply to partnered income support customers for periods when&#58;</li>
 			<ul>			<li>
 both are in receipt of an income support payment and both are in an employment income nil rate period</li>
 			<li>
-only one member of the couple is in receipt of an income support payment and they are in an employment nil rate period. The customers must provide estimates of their and their partner’s income to assess their entitlement to FTB Part A</li>		</ul>
+only one member of the couple is in receipt of an income support payment and they are in an employment nil rate period</li>		</ul>
 		<li>
-From 1 July 2016, payment of FTB Part A supplement is subject to an income limit. This extends to ISP customers. Part B is income tested for all partnered customers&#58;</li>
+From 1 July 2016, payment of FTB Part A supplement is subject to an income limit. This includes ISP customers. Part B is income tested for all partnered customers&#58;</li>
 			<ul>			<li>
 the primary earner income limit does not apply during ISP periods</li>
 			<li>
 the secondary earner income test does not apply during a <a href="../families/007-07080070-01.html">return to work quarantine period</a></li>
 			</ul>			</ul>
+<p><strong>All ISP customers</strong></p>
+
 <p>A separate <a href="../families/007-10010000-01.html">income test applies for SIFS</a> (from the 2017-18 financial year, SIFS is only paid to customers if they meet grandfathering provisions).</p>
 
 <p>For all ISP customers, the maintenance action test and maintenance income test can affect their FTB Part A rate. However, FTB Part A cannot be reduced below the base rate by maintenance income.</p>

@@ -28,6 +28,20 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 12 July 2022                      | Operational Blueprint document    |
+|                                   | (LEX 67666):                      |
+|                                   |                                   |
+|                                   | -   Wellbeing Exemptions from     |
+|                                   |     Cashless Debit Card (CDC)     |
+|                                   |     103-20081023.                 |
+|                                   |                                   |
+|                                   | 1 document released in full. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** N/A\     |
+|                                   | **Exemptions:** N/A               |
++-----------------------------------+-----------------------------------+
 | 1 June 2022                       | Operational Blueprint document    |
 |                                   | (LEX 67641):                      |
 |                                   |                                   |
@@ -2123,7 +2137,7 @@ us by:
 </div>
 :::
 
-Page last updated: 14 June 2022
+Page last updated: 15 July 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2131,7 +2145,7 @@ Page last updated: 14 June 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 28 June 2022 from
+This information was printed 18 July 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at

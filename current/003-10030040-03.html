@@ -378,7 +378,9 @@ Procedure ends here</li>			</ul>			</ul>
 
 <p>The Immediate Payment requests script will automatically check if RTGS is available before displaying it as a method of payment option.</p>
 
-<p>RTGS can be selected as payment method after 3&#58;30 pm (NSW and VIC time) but the payment will not to be issued until the next business day. If the payment is being made to the smaller bank account and Credit Unions, it may take up 2 working days to be received into the customer's account.</p>
+<p>With the exception of FHA and SRSS guided procedures, RTGS can be selected as payment method after 3&#58;30 pm (NSW and VIC time) but the payment will not to be issued until the next business day. If the payment is being made to the smaller bank account and Credit Unions, it may take up 2 working days to be received into the customer's account.</p>
+
+<p>FHA and SRSS guided procedure will not allow RTGS payments after 3&#58;30pm.</p>
 
 <p>The customer should be warned that fees or charges might be applied by their financial institution, depending on the terms and conditions of their account, to receive the RTGS payment if a manual process is used. As the account holder, the customer will be liable for any fees or charges.</p>
 
@@ -436,7 +438,7 @@ any <a target="_blank" href="../help-in-an-emergency/003-17040701-01.html">other
 		<li>
 <a href="../help-in-an-emergency/003-10030040-03.html#bp03_tbl_Issuing_immedia_Step09">Go to Step 9</a></li>
 		<li>
-<strong>No</strong>, see <a href="../help-in-an-emergency/003-10030040-03.html#bp03_L2GT_Manual_coding_f01">Table 6</a></li>		</ul>
+<strong>No</strong>, see <a href="../help-in-an-emergency/003-10030040-03.html#bp03_L3TT_How_to_manually">Table 6</a></li>		</ul>
 </div>
 
 
@@ -732,7 +734,7 @@ Complete the following fields</li>
 <div class="showcont">
 
 
-<p>Staff will need to have the following specific role approved in ESSentials&#58;</p>
+<p>Staff will need to have the following ole approved in ESSentials&#58;</p>
 		<ul>		<li>
 Role name&#58;<strong> ZC.CF.FCC.PYMT.REIS</strong></li>
 		<li>
@@ -811,6 +813,8 @@ Farm Household Allowance <strong>Benefit Case</strong></li>
 <p><strong>Process RTGS payment</strong> <a title="Read more 19" class="showhead bp03_tbl_Issuing_Farm_Ho_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_Farm_Ho_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
+
+<p><strong>Note&#58; </strong>standard system limits apply to FHA payments made via RTGS. Payments made <strong>above </strong>system limits will reject with no warning or error messaging.</p>
 		<ul>		<li>
 Run the <strong>Issue RTGS Payment</strong> guided procedure</li>
 		<li>
@@ -866,21 +870,23 @@ Record details of RTGS payment in a <strong>DOC</strong> using the <strong>FHA R
 		<ul>		<li>
 attend an interview</li>
 		<li>
-lodge a form or medical certificate on the due date, unless prevented by the nature of their incapacity or a medical condition</li>
-		<li>
-lodge a form personally</li>
-		<li>
 lodge a completed or signed form</li>
 		<li>
 advise of a change of payment destination, or</li>
 		<li>
-advise the agency of any change in their circumstances needed by the Act</li>
+advise the agency of any change in their circumstances, or report on their required reporting date</li>
 		</ul>
 <p>Customer's regular entitlement not received due to Centrelink delay or error, customer in severe financial hardship and customer did not contribute to the delay?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../help-in-an-emergency/003-10030040-03.html#bp03_tbl_Issuing_Status_Step02">go to Step 2</a></li>
+<strong>Yes</strong>, record the outcome of the decision using the Fast Note <strong>Multicultural</strong> &gt; <strong>Update</strong> &gt; <strong>SRSS RTGS Outcome</strong>. <a href="../help-in-an-emergency/003-10030040-03.html#bp03_tbl_Issuing_Status_Step02">Go to Step 2</a></li>
 		<li>
-<strong>No</strong>, the customer is not eligible for an immediate payment by RTGS and the payment will be paid by direct credit in the next payment strip. Procedure ends here</li>		</ul>
+<strong>No</strong>, the customer is not eligible for an immediate payment by RTGS and the payment will be paid by direct credit in the next payment strip</li>
+			<ul>			<li>
+Record the outcome of the decision using the Fast Note <strong>Multicultural</strong> &gt; <strong>Update</strong> &gt; <strong>SRSS RTGS Outcome</strong></li>
+			<li>
+If the customer is in financial hardship, see <a href="../migrants-refugees-and-visitors/005-06070030-01.html">Department of Home Affairs contracted service provider responsibilities for SRSS payment</a></li>
+			<li>
+Procedure ends here</li>			</ul>			</ul>
 </div>
 
 
@@ -896,11 +902,13 @@ advise the agency of any change in their circumstances needed by the Act</li>
 <div class="showcont">
 
 
-<p>Once the customer has been approved for an immediate payment, staff will need to have the following specific role approved in ESSentials&#58;</p>
+<p>Staff will need to have the following role approved in ESSentials to access the <strong>Issue RTGS Payment</strong> guided procedure.</p>
 		<ul>		<li>
 Role name&#58; <strong>ZC.CF.FCC.PYMT.REIS</strong></li>
 		<li>
-Description&#58; <strong>FCC Reissue Payment</strong></li>		</ul>
+Description&#58; <strong>FCC Reissue Payment</strong></li>
+		</ul>
+<p>Staff without access to the guided procedure should record their decision using the fast note and escalate to the Level 1 SRSS support team for action.</p>
 </div>
 
 
@@ -912,7 +920,7 @@ Description&#58; <strong>FCC Reissue Payment</strong></li>		</ul>
 <p>3</p></td>
 <td>
 
-<p><strong>Customer needs payment today</strong> <a title="Read more 22" class="showhead bp03_tbl_Issuing_Status_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_Status_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Issue an urgent payment via RTGS for SRSS</strong> <a title="Read more 22" class="showhead bp03_tbl_Issuing_Status_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_Status_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -920,9 +928,9 @@ Description&#58; <strong>FCC Reissue Payment</strong></li>		</ul>
 
 <p>Access the guided procedure by <strong>Workspace</strong> &gt; <strong>Financial Customer Care</strong>.</p>
 
-<p>The guided procedure will only display for staff with the <strong>ZC.CF.FCC.PYMT.REIS</strong> role.</p>
+<p><strong>Note&#58; </strong>standard system limits apply to SRSS payments made via RTGS. Payments made <strong>above </strong>system limits will reject with no warning or error messaging.</p>
 
-<p>The guided procedure comprises steps&#58;</p>
+<p> The guided procedure comprises steps&#58;</p>
 		<ul>		<li>
 <strong>Select benefit type</strong>&#58; Status Resolution Support Services, then select <strong>Next</strong></li>
 		<li>
@@ -932,9 +940,97 @@ Description&#58; <strong>FCC Reissue Payment</strong></li>		</ul>
 		<li>
 <strong>DOC</strong> the record with the outcome</li>
 			<ul>			<li>
+If the RTGS is being actioned by Level 1 SRSS support referral, annotate the SRSS RTGS Outcome DOC to confirm payment has been issued via RTGS</li>
+			<li>
 <strong>Note&#58;</strong> a reference to <a href="../help-in-an-emergency/003-10030040-04.html#bp04_L2LL_Legislation">SSAA 1999 Section 55</a> (payment into bank account etc.) can be included, but as payment delivery is not the significant decision, it is not compulsory</li>
 			</ul>			</ul>
 <p>Immediately escalate issues to the SRSS Helpdesk.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Issuing_Status_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Customer advises RTGS payment not received</strong> <a title="Read more 23" class="showhead bp03_tbl_Issuing_Status_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_Status_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer advises they have not received their RTGS payment, check the following to make sure the payment has been processed and issued (Please note it may take up to two hours for a payment issued via RTGS to credit into the customer’s account and display in the below GPs)&#58;</p>
+		<ul>		<li>
+Payment List (Financial Customer Care) GP</li>
+		<li>
+Payment Delivery Search GP</li>
+		<li>
+DL (Document List)</li>
+		</ul>
+<p>Has the payment been processed and issued to the account on the customer’s record?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../help-in-an-emergency/003-10030040-03.html#bp03_tbl_Issuing_Status_Step05">go to Step 5</a></li>
+		<li>
+<strong>No</strong>, issue the customer’s payment using the Issue RTGS Payment (Financial Customer Care) GP and <strong>DOC</strong> the customer’s record using the <strong>SRSS RTGS Outcome Fast Note</strong>. Procedure ends here</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Issuing_Status_Step05"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Has the payment been issued to the customer’s account and is now showing as returned from the financial institution?</strong> <a title="Read more 24" class="showhead bp03_tbl_Issuing_Status_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_Status_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Check the Payment List (Financial Customer Care) GP. The returned payment will display as Returned and display the reason for return. In addition, check <strong>PASB</strong> in Process Direct to see if a lock is displaying. </p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../help-in-an-emergency/003-10030040-03.html#bp03_tbl_Issuing_Status_Step06">go to Step 6</a></li>
+		<li>
+<strong>No</strong>, and the payment was issued prior to today&#58;</li>
+			<ul>			<li>
+Request evidence (bank statements) that the payment did not credit to the customer’s account</li>
+			<li>
+Refer the matter to the SRSS Helpdesk via email. Procedure ends here</li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Issuing_Status_Step06"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>Payment is showing as returned in Payment List (Financial Customer Care) GP</strong> <a title="Read more 25" class="showhead bp03_tbl_Issuing_Status_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_Status_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Investigate the reason the payment was returned, confirm the customer’s account details and that the customer’s account is currently active.  </p>
+
+<p><strong>Customer’s account details are not correct</strong></p>
+		<ul>		<li>
+Update the details using <a href="../payment-delivery/103-04030010-01.html">Changing Payment Destination</a>. This will remove the lock</li>
+		<li>
+Once the lock no longer displays in <strong>PASB</strong>, reissue the returned payment using the Issue RTGS Payment (Financial Customer Care) GP</li>
+		<li>
+<strong>DOC</strong> the customer’s record using the <strong>SRSS RTGS Outcome Fast Note</strong>. </li>
+		<li>
+Procedure ends here</li>
+		</ul>
+<p><strong>Customer’s account details are correct </strong></p>
+		<ul>		<li>
+Raise an incident using mySupport for the lock to be removed and the payment reissued</li>
+		<li>
+If the payment is to be reissued via RTGS contact the SRSS Helpdesk for an ICT escalation</li>
+		<li>
+Procedure ends here </li>		</ul>
 </div>
 
 
@@ -964,7 +1060,7 @@ Description&#58; <strong>FCC Reissue Payment</strong></li>		</ul>
 <p>1</p></td>
 <td>
 
-<p><strong>Issue the emergency payment by RTGS</strong> <a title="Read more 23" class="showhead bp03_tbl_Issuing_emergen_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_emergen_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Issue the emergency payment by RTGS</strong> <a title="Read more 26" class="showhead bp03_tbl_Issuing_emergen_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_emergen_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1006,7 +1102,7 @@ the system will issue the payment by NPP if the account is NPP reachable, once t
 <p>2</p></td>
 <td>
 
-<p><strong>Payment is DRA or NZ DRA, or customer already granted an emergency payment to be paid by direct credit, but needs an immediate payment</strong> <a title="Read more 24" class="showhead bp03_tbl_Issuing_emergen_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_emergen_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Payment is DRA or NZ DRA, or customer already granted an emergency payment to be paid by direct credit, but needs an immediate payment</strong> <a title="Read more 27" class="showhead bp03_tbl_Issuing_emergen_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Issuing_emergen_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1092,7 +1188,7 @@ Complete the following fields&#58;</li>
 <p>1</p></td>
 <td>
 
-<p><strong>Manual issue RTGS payment</strong> <a title="Read more 25" class="showhead bp03_tbl_How_to_manually_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_How_to_manually_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Manual issue RTGS payment</strong> <a title="Read more 28" class="showhead bp03_tbl_How_to_manually_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_How_to_manually_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1122,7 +1218,7 @@ The Issue Future Payment (<strong>IFP</strong>) screen will display</li>		</ul>
 <p>2</p></td>
 <td>
 
-<p><strong>Complete coding on IFP screen</strong> <a title="Read more 26" class="showhead bp03_tbl_How_to_manually_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_How_to_manually_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Complete coding on IFP screen</strong> <a title="Read more 29" class="showhead bp03_tbl_How_to_manually_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_How_to_manually_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
