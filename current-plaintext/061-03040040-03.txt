@@ -114,18 +114,10 @@ Table 1
 |                                   | recorded on the Immigration       |
 |                                   | Advised Movements (RSIM) screen.  |
 |                                   |                                   |
-|                                   | If the RSIM screen is blank, go   |
-|                                   | to the Immigration Enquiry        |
-|                                   | (RSIMME) screen. Code 'Y' in the  |
-|                                   | Lived or travelled outside        |
-|                                   | Australia since 1 Sept 1994:      |
-|                                   | field and 'Y' in the Request      |
-|                                   | Immigration data (Y/N)?: field.   |
-|                                   | If necessary, record the Source:  |
-|                                   | field, Record the correct date in |
-|                                   | the DOR: field and press [Enter]. |
-|                                   | The screen flow will return to    |
-|                                   | the RSIM screen.                  |
+|                                   | If the RSIM screen is blank, run  |
+|                                   | the Immigration Datalink on the   |
+|                                   | RSIMME screen. The screen flow    |
+|                                   | will return to the RSIM screen.   |
 |                                   |                                   |
 |                                   | Does the customer disagree with   |
 |                                   | the date of return on the RSIM    |
@@ -183,11 +175,10 @@ Table 1
 |                                   | Go to the Country of Residence    |
 |                                   | (CRES) screen. If the departure   |
 |                                   | date for the relevant absence has |
-|                                   | a matching line on the CRES       |
+|                                   | a matching entry on the CRES      |
 |                                   | screen with a country other than  |
-|                                   | Australia in the Country: field,  |
-|                                   | the latest absence was recorded   |
-|                                   | as permanent.                     |
+|                                   | Australia, the latest absence was |
+|                                   | recorded as permanent.            |
 |                                   |                                   |
 |                                   | Was the relevant absence recorded |
 |                                   | as a permanent absence on the     |
@@ -213,16 +204,9 @@ Table 1
 |                                   | coded with a permanent return for |
 |                                   | the original date of return?      |
 |                                   |                                   |
-|                                   | Yes, go to the CRES screen code   |
-|                                   | 'C' in relevant line (usually the |
-|                                   | top line) containing 'Australia'  |
-|                                   | in the Country: field and the     |
-|                                   | original date of return in the    |
-|                                   | Start date: field. Code the new   |
-|                                   | date of return in the Start Date: |
-|                                   | field. Record the Source: field.  |
-|                                   | Record the correct date in the    |
-|                                   | DOR: field and press [Enter]. If  |
+|                                   | Yes, update CRES with the new     |
+|                                   | date of return. Record the        |
+|                                   | correct date in the DOR. If       |
 |                                   | return is:                        |
 |                                   |                                   |
 |                                   | -   more than 28 days in the      |
@@ -240,45 +224,33 @@ Table 1
 |                                   | Yes, and the return to live in    |
 |                                   | Australia date:                   |
 |                                   |                                   |
-|                                   | -   is recorded, code 'D' in the  |
-|                                   |     relevant line (usually the    |
-|                                   |     top line) containing          |
-|                                   |     'Australia' in the Country    |
-|                                   |     field and the original date   |
-|                                   |     of return in the Start date:  |
-|                                   |     field. Record the correct     |
-|                                   |     date in the DOR: field and    |
-|                                   |     press [Enter]. Go to Step 9   |
+|                                   | -   is recorded                   |
+|                                   |     delete the CRES entry.        |
+|                                   |     record the correct date in    |
+|                                   |     the DOR: field                |
+|                                   |     press [Enter]                 |
+|                                   |     go to Step 9                  |
 |                                   | -   is not recorded, leave this   |
 |                                   |     blank. Go to Step 9           |
 |                                   |                                   |
-|                                   | No, go to the CRES screen and     |
-|                                   | code 'Australia' in the Country:  |
-|                                   | field and the date of return in   |
-|                                   | the Start date: field. Record the |
-|                                   | Source: and DOR: fields and press |
-|                                   | [Enter]. Go to Step 9             |
+|                                   | No, update the CRES screen with   |
+|                                   | Australia as the country and the  |
+|                                   | date of return as the start date. |
+|                                   | Go to Step 9                      |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Correct RSCD screen + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Go to RSCD screen.                |
 |                                   |                                   |
-|                                   | -   Locate the line representing  |
-|                                   |     the original return to        |
-|                                   |     Australia which has Australia |
-|                                   |     coded in the Country: field   |
-|                                   |     and the original date of      |
-|                                   |     return in the Event date:     |
-|                                   |     field                         |
-|                                   | -   Record a 'C' in the field     |
-|                                   |     immediately in front of this  |
-|                                   |     line and the correct date of  |
-|                                   |     return in the Event date:     |
-|                                   |     field. If necessary, record   |
-|                                   |     the Source: field. Record the |
-|                                   |     correct date in the DOR:      |
-|                                   |     field and press [Enter]       |
+|                                   | -   Locate the entry with the     |
+|                                   |     original return to Australia  |
+|                                   | -   Correct the date of return on |
+|                                   |     the RSCD screen. If           |
+|                                   |     necessary, record the Source: |
+|                                   |     field. Record the correct     |
+|                                   |     date in the DOR: field and    |
+|                                   |     press [Enter]                 |
 |                                   |                                   |
 |                                   | Will the customer continue to     |
 |                                   | reside in another country?        |
@@ -287,10 +259,7 @@ Table 1
 |                                   |     Return To Australia           |
 |                                   |     procedures for Centrelink     |
 |                                   |     International Services        |
-|                                   | -   No, see Step 1 in the         |
-|                                   |     Restoration process when      |
-|                                   |     return to Australia has been  |
-|                                   |     delayed table                 |
+|                                   | -   No, see Step 1 in Table 2     |
 +-----------------------------------+-----------------------------------+
 
 Restoration process when return to Australia has been delayed

@@ -293,6 +293,8 @@ Tell the carer to contact once the change has actually occurred. Record the advi
 <p>If the care assessment was completed&#58;</p>
 		<ul>		<li>
 select the child from the <strong>CHS</strong> screen and navigate to the <strong>FSC</strong> screen, where the date the new care arrangement started, the care percentage, assessment method (CSP Care Decision) and carer will show</li>
+		<li>
+and the person receives an income support payment, check and update the <a href="../families/007-02050000-03.html">SSA Shared Care (SSC)</a> screen and <a href="../job-seekers/001-04030010-01.html">Principal Carer Circumstances Details (PCCD)</a> screen (in NSS system), with the Child Support care decision if not already completed</li>
 		</ul>
 <p>Record details of the contact on a <strong>DOC</strong>.</p>
 
@@ -386,7 +388,7 @@ the circumstances surrounding the temporary change of care</li>
 
 <p><strong>A person may remain the</strong> principal carer <strong>of a child</strong> (for social security payments) if the child is absent from the customer's care temporarily and it is clear the child will return to live with the customer. This generally applies to absences of up to eight weeks, for example, during school holidays a child spends time with their other parent or relative.</p>
 		<ul>		<li>
-<img src="../resources/images/icon-phone.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-phone.png" title="Phone contact&#58; Typically done by Smart Centre staff. Staff may complete this step if they are trained." />For periods of no more than 8 weeks, transfer <strong>ACTDOC</strong> to Centrelink Service Centre to assess continued eligibility. Procedure ends here</li>
+<img src="../resources/images/icon-phone.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-phone.png" title="Phone contact&#58; Typically done by Smart Centre staff. Staff may complete this step if they are trained." />For periods of no more than 8 weeks, the person will remain the principal carer of the child, however will need to advise if circumstances change and the absence will extend or does extend past 8 weeks</li>
 		<li>
 <img src="../resources/images/icon-face-to-face.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-face-to-face.png" title="Face-to-face contact&#58; Typically done by service centre staff. Staff may complete this step if they are trained." />For periods of 8-12 weeks, the person may remain the principal carer of the child, depending on the circumstances, if they can demonstrate an ongoing involvement in the care of the child and continual exercise of control over key decisions relating to the child. It should also be clear that usual caring arrangements will resume at a specified time</li>
 		<li>
@@ -536,11 +538,11 @@ select <strong>OK</strong></li>
 		<li>
 the activity created will now appear in the Activity List (<strong>AL</strong>) screen</li>
 		</ul>
-<p>Make note of the AMR, as it will be needed to merge data on the Ripple Manager Consequence (<strong>RMC</strong>) screen. <strong>Note&#58;</strong> if the customer is <strong>JSP/CUR and the principal carer status</strong> is changing&#58;</p>
+<p>Make note of the AMR, as it will be needed to merge data on the Ripple Manager Consequence (<strong>RMC</strong>) screen. <strong>Note&#58;</strong> if the customer is receiving an income support payment<strong> and the principal carer status</strong> is changing&#58;</p>
 		<ul>		<li>
 code all updates in the <strong>NSS</strong> system</li>
 			<ul>			<li>
-this will allow access to update the Principal Carer Circumstances (<strong>PCCD</strong>) screen</li>
+this will allow access to update the <a href="../job-seekers/001-04030010-01.html">Principal Carer Circumstances (PCCD)</a> screen</li>
 			</ul>			</ul>
 <p><strong>Note&#58;</strong> there is a current problem (P24845), where shared care is not applying correctly. This happens when a child is in the care of a parent who has transferred their FTB to their current partner (step parent). See the <a href="../ongoing-contact/102-05050020-05.html">Resources</a> page for more information.</p>
 
@@ -612,12 +614,12 @@ Return to the <strong>customer's record</strong> and check that the data has mer
 <div class="showcont">
 
 
-<p>If the customer is <strong>JSP/CUR and the principal carer status</strong> is changing&#58;</p>
+<p>If the customer is receiving an ISP payment in the NSS system <strong>and the principal carer status</strong> is changing&#58;</p>
 		<ul>		<li>
 code all updates in the <strong>NSS</strong> system</li>
-			<ul>			<li>
-this will allow access to update the <strong>PCCD</strong> screen</li>
-			</ul>			</ul>
+		<li>
+this will allow <a href="../job-seekers/001-04030010-01.html">access to update the PCCD screen</a></li>
+		</ul>
 <p><strong>Use</strong> the correct DOR when applying care decisions. This is the date of notification. The date Centrelink was advised of the change of circumstances, either verbally or in writing.</p>
 
 <p>In the customer's record, '<strong>S</strong>'elect the child from the <strong>CHS</strong> screen.</p>

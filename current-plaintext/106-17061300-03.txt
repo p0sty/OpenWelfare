@@ -60,8 +60,8 @@ datalink activity that has failed to auto-complete in the system.
 |                                   | -   Yes, go to Step 3             |
 |                                   | -   No, go to Step 2              |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Triggering the Department of Home |
-|                                   | Affairs datalink + Read more ...  |
+| 2                                 | Triggering the Immigration        |
+|                                   | Datalink + Read more ...          |
 |                                   |                                   |
 |                                   | While in the activity, navigate   |
 |                                   | to the Immigration Enquiry        |
@@ -70,23 +70,8 @@ datalink activity that has failed to auto-complete in the system.
 |                                   | (CHIMME) screen while inside the  |
 |                                   | child's record.                   |
 |                                   |                                   |
-|                                   | In Customer First, do the         |
-|                                   | following to request immigration  |
-|                                   | data:                             |
-|                                   |                                   |
-|                                   | -   select 'Yes' next to 'Request |
-|                                   |     Immigration data (Y/N)?'      |
-|                                   | -   press 'Continue' to request   |
-|                                   |     immigration data              |
-|                                   |                                   |
-|                                   | In Customer Record, do the        |
-|                                   | following to request immigration  |
-|                                   | data:                             |
-|                                   |                                   |
-|                                   | -   code 'Y' in the Request       |
-|                                   |     Immigration data (Y/N)? field |
-|                                   | -   press [Enter] to activate the |
-|                                   |     immigration datalink          |
+|                                   | Request the Immigration Datalink  |
+|                                   | on the RSIMME/CHIMME screen.      |
 |                                   |                                   |
 |                                   | Repeat this step for each of the  |
 |                                   | customer, partner and child/ren.  |
@@ -296,9 +281,10 @@ screen displays the E563PN error.
 |                                   | transferred to one that is not,   |
 |                                   | the ARD screen needs to be        |
 |                                   | updated to remove the indicator.  |
+|                                   |                                   |
 |                                   | To update the ARD screen:         |
 |                                   |                                   |
-|                                   | -   in the immigration datalink   |
+|                                   | -   in the Immigration Datalink   |
 |                                   |     activity, access the          |
 |                                   |     Immigration Advised Movements |
 |                                   |     (RSIM) screen and make a note |
@@ -309,20 +295,13 @@ screen displays the E563PN error.
 |                                   |     departures on a customer      |
 |                                   |     record, use the oldest        |
 |                                   |     provisional one available     |
-|                                   | -   navigate to the ARD screen    |
-|                                   |     while still in the activity   |
-|                                   | -   code the date of departure    |
-|                                   |     from RSIM in the Date of      |
-|                                   |     Event: field                  |
-|                                   | -   code the Proportional         |
-|                                   |     Portability Savings: field as |
-|                                   |     'N'                           |
+|                                   | -   use the departure date from   |
+|                                   |     RSIM as the Date of Event     |
+|                                   | -   use No for the Proportional   |
+|                                   |     Portability Savings           |
 |                                   | -   navigate to the Assessment    |
 |                                   |     Results (AR) screen and       |
-|                                   |     return to Step 4 in Actioning |
-|                                   |     outstanding Department of     |
-|                                   |     Home Affairs datalink         |
-|                                   |     activities table              |
+|                                   |     return to Step 4 in Table 1   |
 +-----------------------------------+-----------------------------------+
 
 Activity is unable to be finalised due to error E597PN: Entitled Wife/Wid departing Australia - record status on ARD
@@ -352,7 +331,7 @@ screen displays the E597PN error.
 |                                   |                                   |
 |                                   | To update the ARD screen:         |
 |                                   |                                   |
-|                                   | in the immigration datalink       |
+|                                   | in the Immigration Datalink       |
 |                                   | activity, access the Immigration  |
 |                                   | Advised Movements (RSIM) screen   |
 |                                   | and make a note of the most       |
@@ -416,15 +395,15 @@ screen displays the E812RS error.
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Department of Home Affairs link   |
-|                                   | activity + Read more ...          |
+| 1                                 | Immigration Datalink activity +   |
+|                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | The immigration link activity may |
-|                                   | be unable to be finalised because |
-|                                   | of the presence of a Manual       |
-|                                   | Follow Up (MFU) activity on the   |
-|                                   | record to do with portability or  |
-|                                   | residence.                        |
+|                                   | The Immigration Datalink activity |
+|                                   | may be unable to be finalised     |
+|                                   | because of the presence of a      |
+|                                   | Manual Follow Up (MFU) activity   |
+|                                   | on the record to do with          |
+|                                   | portability or residence.         |
 |                                   |                                   |
 |                                   | Finalising these portability and  |
 |                                   | residence MFUs can only be done   |
@@ -441,21 +420,11 @@ screen displays the E812RS error.
 |                                   | Optimiser + Read more ...         |
 |                                   |                                   |
 |                                   | Re-categorise the activity in     |
-|                                   | Work Optimiser so that it can be  |
-|                                   | picked up by a Service Officer in |
-|                                   | CIS:                              |
+|                                   | Work Optimiser to ZIAM_CISRES_MFU |
+|                                   | so that it can be picked up by a  |
+|                                   | Service Officer in CIS.           |
 |                                   |                                   |
-|                                   | -   the relevant Work Item ID is  |
-|                                   |     ZIAM_CISRES_MFU - Intl        |
-|                                   |     Residence Assessment - MFU    |
-|                                   | -   the relevant Skilltag name is |
-|                                   |     CIS RESIDENCE - GENERAL       |
-|                                   |                                   |
-|                                   | When the datalink activity has    |
-|                                   | been re-categorised it can be     |
-|                                   | picked up and processed by a CIS  |
-|                                   | Service Officer. Procedure ends   |
-|                                   | here.                             |
+|                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 | 3                                 | CIS Service Officer + Read more   |
 |                                   | ...                               |
@@ -463,16 +432,16 @@ screen displays the E812RS error.
 |                                   | The CIS Service Officer will need |
 |                                   | to investigate the MFU and take   |
 |                                   | any necessary action to finalise  |
-|                                   | it. Finalise the immigration link |
-|                                   | activity. For more information,   |
-|                                   | see Centrelink International      |
-|                                   | Services (CIS) actioning a Manual |
-|                                   | Follow-up activity when no match  |
-|                                   | occurs and Centrelink             |
+|                                   | it. Finalise the Immigration      |
+|                                   | Datalink activity. For more       |
+|                                   | information, see Centrelink       |
 |                                   | International Services (CIS)      |
 |                                   | actioning a Manual Follow-up      |
-|                                   | activity when a multimatch        |
-|                                   | occurs.                           |
+|                                   | activity when no match occurs and |
+|                                   | Centrelink International Services |
+|                                   | (CIS) actioning a Manual          |
+|                                   | Follow-up activity when a         |
+|                                   | multimatch occurs.                |
 +-----------------------------------+-----------------------------------+
 
                                    

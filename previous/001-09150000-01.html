@@ -240,11 +240,11 @@
 
 <p>Job seeker management activities generated on customer records include the following&#58;</p>
 		<ul>		<li>
-<strong>JSR/ADD activities</strong> will be created when the job seeker is receiving an <a href="../job-seekers/001-09020000-01.html">income support payment that has mutual obligation requirements</a>, but does not have a Job seeker Active (JSR/ACT) status. They will also create when a student lodges a student to job seeker transitional claim within four weeks of their Student End Date (SED). In these cases, see <a href="../job-seekers/001-03020050-01.html">Student to job seeker transfers</a>, and <a href="../job-seekers/001-02020050-01.html">Eligibility and registration as a No Stream Services Required (NSSRR)/No Remote Referral Required (NRRR) job seeker</a> for assistance. In addition, an <strong>Action Issue</strong> will display on the job seeker's record to alert that the Job Seeker Registration (JSR) process needs completion. <strong>Note&#58;</strong> these activities should <strong>not</strong> be cancelled unless the corresponding job seeker claim has recently been rejected in which case they should be cancelled</li>
+<strong>JSR/ADD activities</strong> will be created when the job seeker is receiving an <a href="../job-seekers/001-09020000-01.html">income support payment that has mutual obligation requirements</a>, but does not have a Job seeker Active (JSR/ACT) status. They will also create when a student lodges a student to job seeker transitional claim within four weeks of their Student End Date (SED). In these cases, see <a href="../job-seekers/001-03020050-01.html">Student to job seeker transfers</a>, and <a href="../job-seekers/001-02020050-01.html">Eligibility and registration as a Job Seeker Registration Only (JSRO)/No Remote Referral Required (NRRR) job seeker</a> for assistance. In addition, an <strong>Action Issue</strong> will display on the job seeker's record to alert that the Job Seeker Registration (JSR) process needs completion. <strong>Note&#58;</strong> these activities should <strong>not</strong> be cancelled unless the corresponding job seeker claim has recently been rejected in which case they should be cancelled</li>
 		<li>
 <strong>JSR/UPD activities</strong> are non-cancellable and alert that further action is needed on a job seeker's record. A To Do Indicator (TDI) may be attached to a UPD activity and will identify what action is needed. The relevant workflow will need to be completed to action the JSR/UPD according to the TDI</li>
 		</ul>
-<p>If the customer <strong>does not</strong> require Job Seeker Registration, inactivate their registration via the Inactivate Job Seeker Registration link in the <strong>Looking for Work</strong> workflow. This will auto-complete the JSR/UPD activity.</p>
+<p>If the customer <strong>does not</strong> require Job Seeker Registration, inactivate their registration via the Inactivate Job Seeker Registration link in the <strong>Job Seeker Registration</strong> workflow. This will auto-complete the JSR/UPD activity.</p>
 		</div>
 	</div>
 </div>
@@ -261,23 +261,23 @@
 
 <p>The following activities apply to all job seekers receiving an income support payment with mutual obligation requirements&#58;</p>
 		<ul>		<li>
-<strong>JSR/UPD with 'JSC' To Do Indicator (TDI) and 'JSCIREQ' keyword</strong> activities will be created when the job seeker has a Job Seeker Registration 'Active' (JSR/ACT) status, but does not have a <a href="../job-seekers/001-02050000-01.html">Job Seeker Classification Instrument (JSCI)</a> active on the record. In these circumstances the JSCI must be completed with the job seeker</li>
+<strong>JSR/UPD with 'JSC' To Do Indicator (TDI) and 'JSCIREQ' keyword</strong> activities will be created when the job seeker has a Job Seeker Registration 'Active' (JSR/ACT) status, but does not have a <a href="../job-seekers/001-02050000-01.html">Job Seeker Snapshot</a> active on the record. In these circumstances the Job Seeker Snapshot must be completed with the job seeker</li>
 		<li>
-<strong>JSR/UPD with 'JSC' TDI and 'FEP' keyword</strong> activities will be created when the job seeker is receiving an income support payment that requires them to be <a href="../job-seekers/001-02040010-01.html">registered as a Fully Eligible Participant (FEP) job seeker</a>. The JSCI must be completed as part of the FEP registration</li>
+<strong>JSR/UPD with 'JSC' TDI and 'FEP' keyword</strong> activities will be created when the job seeker is receiving an income support payment that requires them to be <a href="../job-seekers/001-02040010-01.html">registered as a Fully Eligible Participant (FEP) job seeker</a>. The Job Seeker Snapshot must be completed as part of the FEP registration</li>
 		<li>
-<strong>JSR/UPD with 'ESA' TDI and 'ESAREFRQ' keyword</strong> activities are created when the job seeker requires a <a href="../job-seekers/001-02330010-01.html">referral to an Employment Services Assessment (ESAt)</a> or Job Capacity Assessment (JCA) based on their responses to the JSCI. If the <a href="../job-seekers/001-02330020-01.html">ESAt/JCA is deferred with a pending medical evidence reason</a>, the activity will not appear during the period of deferment, and will be recreated once this period has expired</li>
+<strong>JSR/UPD with 'ESA' TDI and 'ESAREFRQ' keyword</strong> activities are created when the job seeker requires a <a href="../job-seekers/001-02330010-01.html">referral to an Employment Services Assessment (ESAt)</a> or Job Capacity Assessment (JCA) based on the Job Seeker Snapshot. If the <a href="../job-seekers/001-02330020-01.html">ESAt/JCA is deferred with a pending medical evidence reason</a>, the activity will not appear during the period of deferment, and will be recreated once this period has expired</li>
 		<li>
 <strong>JSR/UPD with 'ESA' TDI and 'ESATATT' keyword</strong> activities are created when a job seeker has been suspended because they failed to attend an <a href="../job-seekers/001-02330010-01.html">ESAt</a> appointment. Job seekers are sent a letter asking them to contact Services Australia to arrange a new ESAt appointment. No action is required by Service Officers until the job seeker contacts</li>
 		<li>
-<strong>JSR/UPD with 'ESP' TDI</strong> activities will be created when the job seeker's JSR and JSCI are active, but they have not been connected with an Employment Services Provider</li>
+<strong>JSR/UPD with 'ESP' TDI</strong> activities will be created when the job seeker's JSR and Job Seeker Snapshot are active, but they have not been connected with an Employment Services Provider</li>
 		<li>
-<strong>JSR/UPD with 'ESP' TDI and 'NSUS' keyword</strong> activities will be created when a job seeker requires a re-engagement appointment to be booked with their Employment Services Provider. This occurs when the job seeker's Stream Service suspension period has expired. In addition, an <strong>Action Item</strong> will be displayed on the <strong>Participation Summary</strong> screen</li>
+<strong>JSR/UPD with 'ESP' TDI and 'NSUS' keyword</strong> activities will be created when a job seeker requires a re-engagement appointment to be booked with their Employment Services Provider. This occurs when the job seeker's Employment Services Provider suspension period has expired. In addition, an <strong>Action Item</strong> will be displayed on the <strong>Participation Summary</strong> screen</li>
 		<li>
-<strong>JSR/UPD with 'ESA' TDI and 'D26' parameter and 'ESAREFRQ' keyword</strong> activities will be created when a Domestic Violence - Relationship Breakdown (D26) Exemption has expired and the job seeker is a principal carer in Stream A or B <strong>or</strong> they live in a <a href="../job-seekers/001-02140000-01.html">Community Development Program (CDP)</a> region. The job seeker should be referred to an ESAt to assess if their current level of support with their Employment Services Provider is appropriate</li>
+<strong>JSR/UPD with 'ESA' TDI and 'D26' parameter and 'ESAREFRQ' keyword</strong> activities will be created when a Domestic Violence - Relationship Breakdown (D26) Exemption has expired and the job seeker is a principal carer <strong>or</strong> they live in a <a href="../job-seekers/001-02140000-01.html">Community Development Program (CDP)</a> region. The job seeker should be referred to an ESAt to assess if their current level of support with their Employment Services Provider is appropriate</li>
 		<li>
 <strong>JSR/UPD with 'RJC' TDI</strong> activities will be created when a job seeker lives in a <a href="../job-seekers/001-02140000-01.html">CDP</a> region and requires referral to a CDP provider</li>
 		<li>
-<strong>JSR/UPD with 'TW5' TDI</strong> activities will be created when a job seeker is eligible for a referral to a Transition to Work provider and a provider is available in the job seeker's region</li>
+<strong>JSR/UPD with 'TW5' TDI</strong> activities will be created when a job seeker is eligible for a referral to a Workforce Australia - Transition to Work provider and a provider is available in the job seeker's region</li>
 		</div>
 	</div>
 </div>
@@ -294,13 +294,13 @@
 
 <p>JSR/MFU (Manual Follow-up) and WAP/MFU activities are created to alert that the job seeker may benefit from a referral to a program or additional services. These activities can be completed manually or cancelled (if appropriate)&#58;</p>
 		<ul>		<li>
-<strong>JSR/MFU with 'AMEP/SEE' keyword</strong> activity will be created when a job seeker has been identified as benefiting from a referral to an <a href="../job-seekers/001-02170000-01.html">Adult Migrant English Program (AMEP)</a> or <a href="../job-seekers/001-02090000-01.html">Skills for Education and Employment (SEE)</a> program when the <strong>Job Seeker Classification Instrument (JSCI)</strong> workflow is run, and the Service Officer confirms the referral is required</li>
+<strong>JSR/MFU with 'AMEP/SEE' keyword</strong> activity will be created when a job seeker has been identified as benefiting from a referral to an <a href="../job-seekers/001-02170000-01.html">Adult Migrant English Program (AMEP)</a> or <a href="../job-seekers/001-02090000-01.html">Skills for Education and Employment (SEE)</a> program when the Job Seeker Snapshot is run, and the Service Officer confirms the referral is required</li>
 		<li>
 <strong>JSR/MFU with 'DES' keyword</strong> activity will be created when a job seeker should be <a href="../people-with-disability/008-04030110-01.html">referred to a Disability Employment Services (DES)</a> provider, because of recommendations in the job seeker's Employment Services Assessment (ESAt)/Job Capacity Assessment (JCA) report</li>
 		<li>
 <strong>JSR/MFU with 'ADE' keyword</strong> activity is created when a job seeker may benefit from a referral to an <a href="../people-with-disability/008-02010000-01.html">Australian Disability Enterprises (ADE)</a> program based on the recommendations in an ESAt/JCA report</li>
 		<li>
-<strong>WAP/MFU with 'WAPDHSM' keyword</strong> activity is created to prompt Service Officers to update the customer's Job Plan and code Activity and Exemption (<strong>AEX</strong>) screen where a customer may be eligible for <strong>Part-time Work (PTW), Self-Employment (SEL), Paid Work and Self Employment (Combined) (PWS), Study and Self Employment (Combined) (SSE), Study and Paid Work (Combined) (SPW) or Voluntary and Paid Work (Combined) (VPE)</strong> but does not currently have one of those Approved Activities recorded.</li>
+<strong>WAP/MFU with 'WAPDHSM' keyword</strong> activity is created to prompt Service Officers to update the customer's Job Plan and code Activity and Exemption (<strong>AEX</strong>) screen where a customer may be eligible for <strong>Part-time Work (PTW), Self-Employment (SEL), Paid Work and Self Employment (Combined) (PWS), Study and Self Employment (Combined) (SSE), Study and Paid Work (Combined) (SPW) or Voluntary and Paid Work (Combined) (VPE)</strong> but does not currently have one of those Approved Activities recorded</li>
 		</div>
 	</div>
 </div>
@@ -313,33 +313,33 @@
 <h2 id="bp01_L2LL_Related_links">Related links</h2>
 
 
-<p><a href="../job-seekers/001-02020000-01.html">Eligibility to access employment assistance services through jobactive</a></p>
+<p><a href="../job-seekers/001-02020000-01.html">Eligibility to access employment assistance services through Workforce Australia</a></p>
 
-<p><a href="../job-seekers/001-02020020-01.html">Eligibility for jobactive as a Fully Eligible Participant (FEP)</a></p>
+<p><a href="../job-seekers/001-02020020-01.html">Eligibility for Workforce Australia as a Fully Eligible Participant (FEP)</a></p>
 
 <p><a href="../job-seekers/001-20100119-01.html">Altered processes and mutual obligation requirements for job seekers due to coronavirus (COVID-19) response</a></p>
 
-<p><a href="../job-seekers/001-02050000-01.html">Job Seeker Classification Instrument (JSCI)</a></p>
+<p><a href="../job-seekers/001-02050000-01.html">Job Seeker Snapshot </a></p>
 
-<p><a href="../job-seekers/001-02050080-01.html">JSCI initiated Employment Services Assessment (ESAt) flags</a></p>
+<p><a href="../job-seekers/001-02050080-01.html">Job Seeker Snapshot initiated Employment Services Assessment (ESAt) flags</a></p>
 
-<p><a href="../job-seekers/001-02330050-01.html">Actioning a pending Job Seeker Classification Instrument (JSCI) initiated Employment Services Assessment (ESAt) activity</a></p>
+<p><a href="../job-seekers/001-02330050-01.html">Actioning a pending Job Seeker Snapshot initiated Employment Services Assessment (ESAt) activity</a></p>
 
 <p><a href="../people-with-disability/008-06030150-01.html">Actioning automatic activities of a current Job Capacity Assessment (JCA) referral</a></p>
 
 <p><a href="../job-seekers/001-02060020-01.html">Online Diary</a></p>
 
-<p><a href="../job-seekers/001-02060010-01.html">Selection or allocation of a jobactive organisation</a></p>
+<p><a href="../job-seekers/001-02060010-01.html">Selection or allocation of a Workforce Australia Employment Services Provider</a></p>
 
 <p><a href="../job-seekers/001-02330030-01.html">Deferred referral to Employment Services Providers</a></p>
 
 <p><a href="../job-seekers/001-09120030-01.html">Exempting a job seeker from mutual obligation requirements due to special circumstances</a></p>
 
-<p><a href="../job-seekers/001-02020060-01.html">Exits and suspensions from jobactive or Community Development Program (CDP)</a></p>
+<p><a href="../job-seekers/001-02020060-01.html">Exits and suspensions from Workforce Australia or Community Development Program (CDP)</a></p>
 
 <p><a href="../job-seekers/001-17030800-01.html">Youth Bonus Wage Subsidy (YBWS) 26 Week Suspension Period</a></p>
 
-<p><a href="../job-seekers/001-02020050-01.html">Eligibility and registration as a No Stream Services Required (NSSRR)/No Remote Referral Required (NRRR) job seeker</a></p>
+<p><a href="../job-seekers/001-02020050-01.html">Eligibility and registration as a Job Seeker Registration Only (JSRO)/No Remote Referral Required (NRRR) job seeker</a></p>
 
 <p><a href="../job-seekers/001-03020050-01.html">Student to job seeker transfers</a></p>
 

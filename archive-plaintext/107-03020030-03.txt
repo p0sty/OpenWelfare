@@ -12,439 +12,46 @@ Using the MultiCal debt calculator
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Accessing the MultiCal debt       |
-|                                   | calculator + Read more ...        |
+| 1                                 | Determining if MultiCal is        |
+|                                   | needed + Read more ...            |
 |                                   |                                   |
-|                                   | To run MultiCal, users need:      |
+|                                   | Use the following checks to       |
+|                                   | determine if a MultiCal is        |
+|                                   | needed:                           |
 |                                   |                                   |
-|                                   | -   access to the shared          |
-|                                   |     61023543-MultiCal_tool-RW     |
-|                                   |     folder                        |
-|                                   | -   access to the                 |
-|                                   |     MultiCal-FileNet-Plugin and,  |
-|                                   | -   installation of the Content   |
-|                                   |     Navigator for Microsoft       |
-|                                   |     program                       |
+|                                   | -   Limiting Date (LMTD) screen   |
+|                                   |     (in each system) or NSS       |
+|                                   |     General Information (NGI),    |
+|                                   |     Pensions General Information  |
+|                                   |     (PNGI) or PP General          |
+|                                   |     Information (PGGI) screens    |
+|                                   |     for limiting dates relevant   |
+|                                   |     to the period                 |
+|                                   | -   If payment is cancelled or    |
+|                                   |     suspended                     |
+|                                   | -   AR screen has a before the    |
+|                                   |     limiting date (BLD) line      |
+|                                   | -   If customer cancels or        |
+|                                   |     suspends within the activity  |
+|                                   | -   No debt on AR screen where    |
+|                                   |     one is expected               |
+|                                   | -   Larger debt result than       |
+|                                   |     expected - historical         |
+|                                   |     rejection/cancellation of     |
+|                                   |     payment                       |
+|                                   | -   Debt start/end dates outside  |
+|                                   |     the earnings update           |
 |                                   |                                   |
-|                                   | See the User Access and Line      |
-|                                   | Manager Access user guides on the |
-|                                   | Resources page for how to obtain  |
-|                                   | access.                           |
-|                                   |                                   |
-|                                   | See the FileNet user guide on the |
-|                                   | Resources page for details on how |
-|                                   | to save and retrieve saved cases. |
-|                                   |                                   |
-|                                   | Customer Record must be used to   |
-|                                   | download customer details and     |
-|                                   | payments from ISIS. MultiCal does |
-|                                   | not work with Customer First.     |
-|                                   |                                   |
-|                                   | Note: MultiCal will not respond   |
-|                                   | when there are issues with        |
-|                                   | viewing scanned images.           |
-|                                   |                                   |
-|                                   | Access MultiCal via the link on   |
-|                                   | the Resources page.               |
-|                                   |                                   |
-|                                   | Before opening Multical, ensure   |
-|                                   | that:                             |
-|                                   |                                   |
-|                                   | -   an active Customer Record     |
-|                                   |     session is opened             |
-|                                   | -   Customer First has not been   |
-|                                   |     started or opened by          |
-|                                   |     Softphone                     |
-|                                   | -   no other Excel documents are  |
-|                                   |     open, e.g. Earnings           |
-|                                   |     Apportionment Tool (EAT)      |
-|                                   |                                   |
-|                                   | If there is an error message,     |
-|                                   | close Customer Record and all     |
-|                                   | other applications and open       |
-|                                   | MultiCal first.                   |
-|                                   |                                   |
-|                                   | See the MultiCal User Guide on    |
-|                                   | the Resources page for more       |
-|                                   | information.                      |
+|                                   | If the outcome is not correct,    |
+|                                   | the debt may need to be           |
+|                                   | calculated using MultiCal.        |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Starting a New Calculation + Read |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | Before starting a new             |
-|                                   | calculation, check FileNet to     |
-|                                   | determine if the customer has     |
-|                                   | previous MultiCal calculations    |
-|                                   | saved to prevent replicating an   |
-|                                   | existing case.                    |
-|                                   |                                   |
-|                                   | File Menu                         |
-|                                   |                                   |
-|                                   | To start a new calculation,       |
-|                                   | select New Case from the File     |
-|                                   | menu. If the case is for a second |
-|                                   | debt for the same customer, the   |
-|                                   | option of retaining parts of the  |
-|                                   | information already entered is    |
-|                                   | given. See section 1 in the       |
-|                                   | MultiCal User Guide on the        |
-|                                   | Resources page for more           |
-|                                   | information.                      |
-|                                   |                                   |
-|                                   | Start the calculation by          |
-|                                   | activating the Calculation Wizard |
-|                                   | in the Calculate menu from the    |
-|                                   | Add-Ins Tab.                      |
-|                                   |                                   |
-|                                   | Calibrating a MultiCal            |
-|                                   |                                   |
-|                                   | Before entering details for a     |
-|                                   | debt assessment, calibrate the    |
-|                                   | MultiCal to zero:                 |
-|                                   |                                   |
-|                                   | This re-creates a customer record |
-|                                   | within the MultiCal calculation   |
-|                                   | period before the update being    |
-|                                   | assessed. This is so the          |
-|                                   | information and reassessment      |
-|                                   | points match the customer's       |
-|                                   | record before updates resulting   |
-|                                   | from the review                   |
-|                                   |                                   |
-|                                   | This ensures there are no         |
-|                                   | incorrect debt or arrears being   |
-|                                   | produced before applying the      |
-|                                   | reassessed information and        |
-|                                   | calculating a final result. This  |
-|                                   | is useful for:                    |
-|                                   |                                   |
-|                                   | -   identifying MultiCal coding   |
-|                                   |     errors                        |
-|                                   | -   misunderstandings around      |
-|                                   |     eligibility and               |
-|                                   | -   ensuring the income and asset |
-|                                   |     tests are being applied       |
-|                                   |     appropriately in the MultiCal |
-|                                   |                                   |
-|                                   | See the MultiCal User Guide on    |
-|                                   | the Resources page for how to     |
-|                                   | calibrate, including examples.    |
-+-----------------------------------+-----------------------------------+
-| 3                                 | Calculation Wizard + Read more    |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | This has 6 buttons for each part  |
-|                                   | of the calculation. For a new     |
-|                                   | debt, not all buttons are         |
-|                                   | immediately available. They       |
-|                                   | become selectable after           |
-|                                   | completing other components.      |
-|                                   |                                   |
-|                                   | Select the Calculation Details to |
-|                                   | record calculation information in |
-|                                   | the relevant fields.              |
-|                                   |                                   |
-|                                   | See section 3.1 in the MultiCal   |
-|                                   | User Guide in the Resources page  |
-|                                   | for more information.             |
-|                                   |                                   |
-|                                   | When the relevant information has |
-|                                   | been entered select Ok.           |
-+-----------------------------------+-----------------------------------+
-| 4                                 | Assessment Details - Reassessment |
-|                                   | Dates screen + Read more ...      |
-|                                   |                                   |
-|                                   | The Reassessment Dates screen is  |
-|                                   | used to apply different           |
-|                                   | circumstances for periods in the  |
-|                                   | debt calculation.                 |
-|                                   |                                   |
-|                                   | Select Assessment Details from    |
-|                                   | the Calculation Wizard to add     |
-|                                   | Reassessment Dates.               |
-|                                   |                                   |
-|                                   | The Reassessment Dates screen has |
-|                                   | the following fields:             |
-|                                   |                                   |
-|                                   | Add Date to List                  |
-|                                   |                                   |
-|                                   | Additional dates may be added by  |
-|                                   | entering the required date into   |
-|                                   | the Date to Add field, then       |
-|                                   | selecting the Add button. The     |
-|                                   | Edit Selection function is then   |
-|                                   | selected to record customer and   |
-|                                   | partner circumstances as at the   |
-|                                   | elected date of event. Note: NOHL |
-|                                   | rules need to be considered when  |
-|                                   | entering the date of event.       |
-|                                   |                                   |
-|                                   | Add Date and Increment            |
-|                                   |                                   |
-|                                   | Allows creation of regular        |
-|                                   | Reassessment dates by days,       |
-|                                   | weeks, months or years.           |
-|                                   |                                   |
-|                                   | Reassessment date description     |
-|                                   |                                   |
-|                                   | Selecting a date in the list      |
-|                                   | allows the addition of a          |
-|                                   | Reassessment date description.    |
-|                                   | Edit, delete or redate selections |
-|                                   | function is available.            |
-|                                   |                                   |
-|                                   | Edit Selection                    |
-|                                   |                                   |
-|                                   | To add or update the customer     |
-|                                   | circumstances, select the date in |
-|                                   | the list and select Edit          |
-|                                   | Selection.                        |
-|                                   |                                   |
-|                                   | Delete selection                  |
-|                                   |                                   |
-|                                   | To delete a date that is not      |
-|                                   | required, select the date from    |
-|                                   | the list and select Delete        |
-|                                   | Selection.                        |
-|                                   |                                   |
-|                                   | Redate Selection                  |
-|                                   |                                   |
-|                                   | Use the Redate Selection button   |
-|                                   | to move a reassessment point.     |
-|                                   | Select Redate Selection to        |
-|                                   | changed date on the old           |
-|                                   | reassessment point.               |
-|                                   |                                   |
-|                                   | See section 3.2 and 3.3 in the    |
-|                                   | MultiCal User Guide on the        |
-|                                   | Resources page for more           |
-|                                   | information.                      |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Assessment Details Screen -       |
-|                                   | General Circumstances Tab + Read  |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | Enter the relevant general        |
-|                                   | circumstances for the customer    |
-|                                   | and/or partner in the General     |
-|                                   | Circumstances tab.                |
-|                                   |                                   |
-|                                   | See section 3.4 in the MultiCal   |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information.             |
-+-----------------------------------+-----------------------------------+
-| 6                                 | Assessment Details- Youth and     |
-|                                   | Students Tab + Read more ...      |
-|                                   |                                   |
-|                                   | The Youth and Students Tab is to  |
-|                                   | be updated if the customer or     |
-|                                   | partner is/was in receipt of:     |
-|                                   |                                   |
-|                                   | -   Youth Allowance (YA)          |
-|                                   | -   Austudy or                    |
-|                                   | -   Disability Support Pension    |
-|                                   |     (DSP) and under 21 years of   |
-|                                   |     age                           |
-|                                   |                                   |
-|                                   | See section 3.5 in the MultiCal   |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information.             |
-+-----------------------------------+-----------------------------------+
-| 7                                 | Assessment Details - Income and   |
-|                                   | Assets Tab + Read more ...        |
-|                                   |                                   |
-|                                   | Update the Assessment Details -   |
-|                                   | Income and Assets Tab if the      |
-|                                   | customer and partner/ex- partner  |
-|                                   | have income or assets coded on    |
-|                                   | their records including deemed    |
-|                                   | income from financial             |
-|                                   | investments.                      |
-|                                   |                                   |
-|                                   | See section 3.6 in the MultiCal   |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information including    |
-|                                   | coding details.                   |
-+-----------------------------------+-----------------------------------+
-| 8                                 | Customer/Partner Payments + Read  |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | Payments can be directly          |
-|                                   | downloaded from a Customer Record |
-|                                   | session by selecting the Download |
-|                                   | PS/PD button.                     |
-|                                   |                                   |
-|                                   | Note: arrears payments will       |
-|                                   | appear on a separate sheet and    |
-|                                   | need to be manually added to each |
-|                                   | affected fortnight. See section   |
-|                                   | 13.3 in the MultiCal user guide   |
-|                                   | on the Resources page for more    |
-|                                   | information.                      |
-|                                   |                                   |
-|                                   | Consider all other related        |
-|                                   | activities within the assessment  |
-|                                   | period, for example previously    |
-|                                   | waived, recovered or determined   |
-|                                   | debts or debts that have been     |
-|                                   | 'finalised no debt'.              |
-|                                   |                                   |
-|                                   | Check that the payment periods    |
-|                                   | downloaded, accurately reflect    |
-|                                   | the payments shown on the Payment |
-|                                   | Summary (PS) screen. Note: short  |
-|                                   | entitlement periods are not       |
-|                                   | automatically identified by the   |
-|                                   | MultiCal debt calculator as the   |
-|                                   | calculator generally applies a    |
-|                                   | full 14 day period.               |
-|                                   |                                   |
-|                                   | See section 3.7 in the MultiCal   |
-|                                   | user guide on the Resources page  |
-|                                   | for more information including    |
-|                                   | coding details.                   |
-+-----------------------------------+-----------------------------------+
-| 9                                 | Calibrate with Declared           |
-|                                   | Employment Income + Read more ... |
-|                                   |                                   |
-|                                   | Download the declared employment  |
-|                                   | income from the EANS/EAAD screen  |
-|                                   | for the customer/partner and      |
-|                                   | apportion the income.             |
-|                                   |                                   |
-|                                   | Copy any previously declared      |
-|                                   | amounts to the Declared $' column |
-|                                   | in the MultiCal debt calculator.  |
-|                                   | Note: this information is         |
-|                                   | beneficial for the customer and   |
-|                                   | third parties if debt             |
-|                                   | calculations are requested.       |
-|                                   |                                   |
-|                                   | Calculate the debt using          |
-|                                   | calculation wizard to calibrate   |
-|                                   | the MultiCal to confirm all the   |
-|                                   | relevant information has been     |
-|                                   | entered accurately. The           |
-|                                   | Calibration should calculate the  |
-|                                   | overpayment as 0.00.              |
-|                                   |                                   |
-|                                   | See section 3.9 in the MultiCal   |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information.             |
-+-----------------------------------+-----------------------------------+
-| 10                                | Casual Employment Income + Read   |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | The Casual Earnings screen        |
-|                                   | contains options to download      |
-|                                   | employment income for one period  |
-|                                   | (IOP). Employment Income Summary  |
-|                                   | screen (EANS), verified           |
-|                                   | employment income (EAAD) details, |
-|                                   | or allow manual entry of income   |
-|                                   | for the customer and their        |
-|                                   | partner.                          |
-|                                   |                                   |
-|                                   | Income recorded on the EANS       |
-|                                   | screen with a frequency other     |
-|                                   | than IOP should be recorded as    |
-|                                   | income on the Assessment          |
-|                                   | Details - Income and Asset        |
-|                                   | overlay tabs or manually entered  |
-|                                   | for each entitlement period on    |
-|                                   | the Casual Earnings Screen.       |
-|                                   |                                   |
-|                                   | Select a separate sheet for each  |
-|                                   | employer being assessed.          |
-|                                   |                                   |
-|                                   | Reference the employer name and   |
-|                                   | information source, such as       |
-|                                   | payslips or bank statements and   |
-|                                   | include the customer's declared   |
-|                                   | employment income amounts in the  |
-|                                   | Declared $' column. Note: income  |
-|                                   | entered is what the customer      |
-|                                   | advised, not amounts already      |
-|                                   | apportioned, for example from the |
-|                                   | EAT sheet.                        |
-|                                   |                                   |
-|                                   | See section 3.8 in the MultiCal   |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information including    |
-|                                   | coding information.               |
-+-----------------------------------+-----------------------------------+
-| 11                                | Calculate Debt + Read more ...    |
-|                                   |                                   |
-|                                   | Select Calculate Debt through the |
-|                                   | Calculation Wizard to assess the  |
-|                                   | resulting debt calculations.      |
-|                                   |                                   |
-|                                   | On the Debt submission sheet,     |
-|                                   | accessed via the Debt Submission  |
-|                                   | option in the Calculate menu,     |
-|                                   | provide details of the debt for   |
-|                                   | the customer and or partner.      |
-|                                   |                                   |
-|                                   | As of 1 July 2006, a 10% recovery |
-|                                   | fee may apply to the debt. The    |
-|                                   | debt submission includes an       |
-|                                   | option to apply or not apply the  |
-|                                   | fee, and it is mandatory to make  |
-|                                   | a selection either way on this    |
-|                                   | screen.                           |
-|                                   |                                   |
-|                                   | To calculate the 10% recovery     |
-|                                   | fee, go to the Add-ins File menu. |
-|                                   | The 10% Recovery Fee can be       |
-|                                   | calculated for both the customer  |
-|                                   | and partner. The amount of the    |
-|                                   | debt that was not due to          |
-|                                   | undeclared personal exertion      |
-|                                   | income will be displayed as Other |
-|                                   | Circumstances component.          |
-|                                   |                                   |
-|                                   | See section 12 in the MultiCal    |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information including    |
-|                                   | coding information.               |
-+-----------------------------------+-----------------------------------+
-| 12                                | Add Document to FileNet + Read    |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | To save a new case, add a new     |
-|                                   | document to FileNet.              |
-|                                   |                                   |
-|                                   | From the IBM ECM menu:            |
-|                                   |                                   |
-|                                   | Select the drop-down field under  |
-|                                   | Object Store                      |
-|                                   |                                   |
-|                                   | Select Customer Document          |
-|                                   |                                   |
-|                                   | Select the drop-down field under  |
-|                                   | Entry Templates:                  |
-|                                   |                                   |
-|                                   | -   Select All Templates          |
-|                                   | -   Select MultiCal Entry         |
-|                                   |     Template                      |
-|                                   |                                   |
-|                                   | Delete the text under Document    |
-|                                   | Title                             |
-|                                   |                                   |
-|                                   | Complete the Document Title and   |
-|                                   | External Reference fields using   |
-|                                   | the naming convention             |
-|                                   |                                   |
-|                                   | See section 5 in the MultiCal     |
-|                                   | User Guide on the Resources page  |
-|                                   | for more information.             |
-+-----------------------------------+-----------------------------------+
-| 13                                | Print MultiCal debt calculation + |
-|                                   | Read more ...                     |
-|                                   |                                   |
-|                                   | Print the MultiCal debt calculate |
-|                                   | by selecting Print Case from the  |
-|                                   | Multical File menu.               |
+| 2                                 | Printing a MultiCal debt          |
+|                                   | calculation + Read more ...       |
+|                                   |                                   |
+|                                   | Print the MultiCal debt           |
+|                                   | calculation by selecting Print    |
+|                                   | Case from the Multical File menu. |
 |                                   |                                   |
 |                                   | A list of available parts of the  |
 |                                   | calculation is presented. By      |
@@ -453,15 +60,15 @@ Using the MultiCal debt calculator
 |                                   | to be printed and select OK to    |
 |                                   | proceed.                          |
 +-----------------------------------+-----------------------------------+
-| 14                                | Access to a multi-function device |
+| 3                                 | Access to a multi-function device |
 |                                   | (MFD) + Read more ...             |
 |                                   |                                   |
 |                                   | Is an MFD available?              |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 15            |
-|                                   | -   No, go to Step 16             |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, go to Step 5              |
 +-----------------------------------+-----------------------------------+
-| 15                                | Scan MultiCal debt calculation to |
+| 4                                 | Scan MultiCal debt calculation to |
 |                                   | customer record using MFD + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
@@ -471,7 +78,7 @@ Using the MultiCal debt calculator
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 16                                | Upload MultiCal debt calculation  |
+| 5                                 | Upload MultiCal debt calculation  |
 |                                   | to customer record document tools |
 |                                   | in Customer First + Read more ... |
 |                                   |                                   |

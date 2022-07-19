@@ -1,5 +1,5 @@
 
-Raising ABSTUDY debts to the parent, guardian or institution 107-09120050
+Raising ABSTUDY debts 107-09120050
 
 -   Background
 -   Process
@@ -9,13 +9,37 @@ Raising ABSTUDY debts to the parent, guardian or institution 107-09120050
 
 For ABSTUDY Smart Centre Processing staff only.
 
-ABSTUDY debt to a parent or institution
+ABSTUDY debts
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Negative adjustment + Read more   |
+| 1                                 | Determining debt type + Read more |
 |                                   | ...                               |
+|                                   |                                   |
+|                                   | Is the debt related to ABSTUDY    |
+|                                   | Fares (FAA) or Away from Base     |
+|                                   | (AFB)?                            |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   Service Officers skilled, see |
+|                                   |     Raising Fares Allowance (FAA) |
+|                                   |     debts                         |
+|                                   | -   Service Officers not skilled, |
+|                                   |     add the appropriate travel or |
+|                                   |     AFB keyword and unassign as   |
+|                                   |     capability adjust in WLM      |
+|                                   |     inbox. Procedure ends here    |
+|                                   |                                   |
+|                                   | No, go to Step 2                  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Negative adjustment + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | If the debt relates to ABSTUDY    |
+|                                   | fares, see Raising Fares          |
+|                                   | Allowance (FAA) debts.            |
 |                                   |                                   |
 |                                   | An ABSTUDY student has benefits   |
 |                                   | reassessed and a negative         |
@@ -28,7 +52,7 @@ ABSTUDY debt to a parent or institution
 |                                   |                                   |
 |                                   | Is the debt over $50?             |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 2             |
+|                                   | -   Yes, go to Step 3             |
 |                                   | -   No, there is no requirement   |
 |                                   |     for further action. The       |
 |                                   |     system will automatically     |
@@ -36,7 +60,7 @@ ABSTUDY debt to a parent or institution
 |                                   |     that result from a            |
 |                                   |     reassessment                  |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Debt waiver + Read more ...       |
+| 3                                 | Debt waiver + Read more ...       |
 |                                   |                                   |
 |                                   | Check the debt amount to ensure   |
 |                                   | it is correct. See Calculating    |
@@ -53,9 +77,9 @@ ABSTUDY debt to a parent or institution
 |                                   |                                   |
 |                                   | -   Yes, see Waiving Centrelink   |
 |                                   |     debts. Procedure ends here    |
-|                                   | -   No, go to Step 3              |
+|                                   | -   No, go to Step 4              |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Determine who is the              |
+| 4                                 | Determine who is the              |
 |                                   | payee/debtor + Read more ...      |
 |                                   |                                   |
 |                                   | Where a student has multiple      |
@@ -80,7 +104,7 @@ ABSTUDY debt to a parent or institution
 |                                   | institution. Raise the debt       |
 |                                   | against the payee's record.       |
 +-----------------------------------+-----------------------------------+
-| 4                                 | DMN/NDB activity + Read more ...  |
+| 5                                 | DMN/NDB activity + Read more ...  |
 |                                   |                                   |
 |                                   | Check the Activity List (AL)      |
 |                                   | screen for a DMN/NDB activity in  |
@@ -106,7 +130,7 @@ ABSTUDY debt to a parent or institution
 |                                   | institution at which the student  |
 |                                   | resides/attends.                  |
 |                                   |                                   |
-|                                   | Yes, go to Step 5                 |
+|                                   | Yes, go to Step 6                 |
 |                                   |                                   |
 |                                   | No, finalise the debt shell that  |
 |                                   | is not required. 'S 'elect the    |
@@ -121,6 +145,9 @@ ABSTUDY debt to a parent or institution
 |                                   | -   in the Calculated Amount $:   |
 |                                   |     field, enter '0.00'           |
 |                                   | -   in the FND Reason: field,     |
+|                                   |     enter the appropriate code,   |
+|                                   |     i.e. if it is a third party   |
+|                                   |     debt on a customer's record,  |
 |                                   |     enter 'TPD' for third party   |
 |                                   |     debt                          |
 |                                   | -   in the Addntl Reference No:   |
@@ -137,26 +164,29 @@ ABSTUDY debt to a parent or institution
 |                                   |     Document Recording (ODR)      |
 |                                   | -   manually create a new debt    |
 |                                   |     shell for the payee. Go to    |
-|                                   |     Step 7                        |
+|                                   |     Step 8                        |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Debt Action script + Read more    |
+| 6                                 | Debt Action script + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Use the Raise a debt guided       |
-|                                   | procedure to raise the debt.      |
+|                                   | procedure in Customer First or    |
+|                                   | Debt action script in Customer    |
+|                                   | Record to raise the debt.         |
 |                                   |                                   |
 |                                   | Note: if necessary, adjust the    |
 |                                   | text of the Account Payable to    |
 |                                   | suit the student's circumstances. |
 |                                   |                                   |
-|                                   | Is the guided procedure working?  |
+|                                   | Is the guided procedure/script    |
+|                                   | working?                          |
 |                                   |                                   |
 |                                   | -   Yes, follow the prompts. Go   |
-|                                   |     to Step 7                     |
+|                                   |     to Step 8                     |
 |                                   | -   No, follow the manual         |
-|                                   |     procedure. Go to Step 6       |
+|                                   |     procedure. Go to Step 7       |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Manual procedure to raise the     |
+| 7                                 | Manual procedure to raise the     |
 |                                   | debt + Read more ...              |
 |                                   |                                   |
 |                                   | Raise the debt by actioning an    |
@@ -196,7 +226,7 @@ ABSTUDY debt to a parent or institution
 |                                   | for debts are on the Getting it   |
 |                                   | Right DOC Minimum Standards page  |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Storage of debt information +     |
+| 8                                 | Storage of debt information +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Sometimes, the raising of debts   |
