@@ -158,7 +158,11 @@ Table 1
 |                                   |     to MAT via Medical Assessment |
 |                                   |     Team Referral. Use the        |
 |                                   |     Referral reason ‘New          |
-|                                   |     evidence’. Go to Table 3      |
+|                                   |     evidence’. Procedure ends     |
+|                                   |     here until MAT has been       |
+|                                   |     completed. When MAT is        |
+|                                   |     completed, go to Table 3 to   |
+|                                   |     review MAT and stream claim   |
 |                                   | -   GCD, refer to Disability      |
 |                                   |     Medical Assessment (DMA)      |
 |                                   |     appointment outcome to reopen |
@@ -174,6 +178,20 @@ Table 1
 |                                   | SOA (DSP claim) will be created   |
 |                                   | in Process Direct and referred to |
 |                                   | MAT.                              |
+|                                   |                                   |
+|                                   | MAT will check the customer’s     |
+|                                   | record to make sure a DSP Claim   |
+|                                   | is present before completing at   |
+|                                   | MAT/SA479.                        |
+|                                   |                                   |
+|                                   | Where no claim is present, MAT    |
+|                                   | will cancel the MAT Referral and  |
+|                                   | annotate the DSP Progress DOC.    |
+|                                   | Note: if MAT have completed a     |
+|                                   | recommendation/SA479 and no DSP   |
+|                                   | Claim is present, do not progress |
+|                                   | the claim. Send feedback to MAT   |
+|                                   | Assessor via Staff Feedback Tool. |
 |                                   |                                   |
 |                                   | If a DSP claim (SA466) has not    |
 |                                   | been lodged, make genuine         |
@@ -839,7 +857,7 @@ Table 3
 |                                   | the customer wishes to pursue     |
 |                                   | assessment of the subsequent      |
 |                                   | claim, progress claim per normal  |
-|                                   | process.                          |
+|                                   | process. Go to Step 2.            |
 |                                   |                                   |
 |                                   | For help with multiple claims,    |
 |                                   | Service Officers can contact      |
@@ -847,7 +865,10 @@ Table 3
 |                                   |                                   |
 |                                   | If the customer is seeking        |
 |                                   | reassessment of a previously      |
-|                                   | rejected claim, go to Step 2.     |
+|                                   | rejected claim, see Initial       |
+|                                   | contact about a decision and the  |
+|                                   | review of decision process. Go to |
+|                                   | Step 2.                           |
 +-----------------------------------+-----------------------------------+
 | 2                                 | DSP new claim + Read more ...     |
 |                                   |                                   |
@@ -954,6 +975,7 @@ Table 3
 |                                   | -   establish the potential DSP   |
 |                                   |     start date, and               |
 |                                   | -   update the PNA screen         |
+|                                   | -   ACC Issue                     |
 |                                   |                                   |
 |                                   | If staff have used the Assisted   |
 |                                   | Customer Claim (ACC) to start or  |
@@ -995,14 +1017,25 @@ Table 3
 |                                   | recorded, and                     |
 |                                   |                                   |
 |                                   | consider backdating if provisions |
-|                                   | apply for:                        |
+|                                   | apply for intent to claim and     |
+|                                   | vulnerable customers              |
 |                                   |                                   |
-|                                   | -   intent to claim and           |
-|                                   |     vulnerable customers          |
-|                                   | -   early claims. For example,    |
-|                                   |     when a customer lodges a      |
-|                                   |     claim up to 13 weeks before   |
-|                                   |     qualifying for payment        |
+|                                   | Start date may need to be later   |
+|                                   | than date of submission where:    |
+|                                   |                                   |
+|                                   | -   it is an early claim, for     |
+|                                   |     example, customer is 15 years |
+|                                   |     and 9 months. PNA needs to be |
+|                                   |     changed to customer’s 16th    |
+|                                   |     birthday                      |
+|                                   | -   an exclusion period applies,  |
+|                                   |     for example, customer has a   |
+|                                   |     compensation preclusion       |
+|                                   |     period. PNA needs to be       |
+|                                   |     amended to day after the      |
+|                                   |     preclusion period ends. See   |
+|                                   |     Calculating the start day     |
+|                                   |     general rule                  |
 |                                   |                                   |
 |                                   | To ensure DSP claim is assessed   |
 |                                   | from the correct start date:      |
@@ -1047,7 +1080,7 @@ Table 3
 |                                   | ineligible or there is a current  |
 |                                   | and valid assessment that         |
 |                                   | indicates the customer is not     |
-|                                   | medically eligible, go to Step 5  |
+|                                   | medically eligible, go to Step 6  |
 |                                   |                                   |
 |                                   | is ineligible for DSP due to age, |
 |                                   | MAT will:                         |
@@ -1058,7 +1091,7 @@ Table 3
 |                                   |     assessment (SA479) has not    |
 |                                   |     been completed as customer’s  |
 |                                   |     age precludes DSP eligibility |
-|                                   | -   go to Step 9 to review        |
+|                                   | -   go to Step 10 to review       |
 |                                   |     non-medical                   |
 |                                   |                                   |
 |                                   | is manifestly medically eligible, |
@@ -1066,20 +1099,136 @@ Table 3
 |                                   | assessment that supports          |
 |                                   | eligibility or a Job Capacity     |
 |                                   | Assessment (JCA) referral is      |
-|                                   | required and the claim was        |
-|                                   | submitted:                        |
+|                                   | required and the customer is:     |
 |                                   |                                   |
-|                                   | -   online or via Assisted        |
-|                                   |     Customer Claim (ACC), go to   |
-|                                   |     Step 6                        |
-|                                   | -   via paper claim and scanned   |
-|                                   |     to the record, go to Step 7   |
+|                                   | -   currently working, go to Step |
+|                                   |     5                             |
+|                                   | -   not currently working:        |
 |                                   |                                   |
-|                                   | has insufficient medical evidence |
-|                                   | to assess medical eligibility,    |
-|                                   | see Step 1 in Table 4             |
+|                                   | - for claims submitted online or  |
+|                                   | via Assisted Customer Claim       |
+|                                   | (ACC), go to Step 7               |
+|                                   |                                   |
+|                                   | - for paper claims scanned to the |
+|                                   | record, go to Step 8              |
+|                                   |                                   |
+|                                   | - and has insufficient medical    |
+|                                   | evidence to assess medical        |
+|                                   | eligibility, see Step 1 in Table  |
+|                                   | 4                                 |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Manifestly medically ineligible   |
+| 5                                 | Customer working 15 hours or more |
+|                                   | per week + Read more ...          |
+|                                   |                                   |
+|                                   | Consider the circumstances before |
+|                                   | progressing a claim where MAT     |
+|                                   | recommend:                        |
+|                                   |                                   |
+|                                   | manifest medical eligibility      |
+|                                   |                                   |
+|                                   | there is a current and valid      |
+|                                   | assessment supporting DSP         |
+|                                   | eligibility, or                   |
+|                                   |                                   |
+|                                   | the customer requires a JCA       |
+|                                   | Referral, and                     |
+|                                   |                                   |
+|                                   | the customer is working at least  |
+|                                   | 15 hours per week                 |
+|                                   |                                   |
+|                                   | Review the definition of clear    |
+|                                   | ability to work at least 15 hours |
+|                                   | per week in open employment       |
+|                                   |                                   |
+|                                   | Review ‘Recommendation Rationale’ |
+|                                   | section on MAT/SA479 to see if    |
+|                                   | the MAT Assessor has considered   |
+|                                   | customer’s employment in their    |
+|                                   | recommendation                    |
+|                                   |                                   |
+|                                   | To determine if the claim should  |
+|                                   | be manifestly rejected on this    |
+|                                   | criteria:                         |
+|                                   |                                   |
+|                                   | -   consider the customer’s       |
+|                                   |     employment circumstances      |
+|                                   | -   review information on the DSP |
+|                                   |     Claim                         |
+|                                   | -   payslips and wages            |
+|                                   | -   employment details coded on   |
+|                                   |     the EANS/EAPP                 |
+|                                   |                                   |
+|                                   | If needed, contact the            |
+|                                   | customer/nominee. Discuss the     |
+|                                   | nature of the employment,         |
+|                                   | determine if the employment is    |
+|                                   | supported, or is in jeopardy, due |
+|                                   | to the medical condition(s)       |
+|                                   |                                   |
+|                                   | If help is needed, refer to the   |
+|                                   | Level 2 Policy Helpdesk           |
+|                                   |                                   |
+|                                   | -   annotate DSP Claim Progress   |
+|                                   |     DOC on DL/Notes and include   |
+|                                   |     notes                         |
+|                                   | -   update status of DSP claim to |
+|                                   |     ‘On Hold’ for reason ‘policy’ |
+|                                   | -   apply hold to user            |
+|                                   |                                   |
+|                                   | Where the customer is not working |
+|                                   | 15 hrs per week or more in the    |
+|                                   | open labour market, at the        |
+|                                   | relevant minimum wage, record     |
+|                                   | this on the DSP Claim Progress    |
+|                                   | DOC on DL/Note:                   |
+|                                   |                                   |
+|                                   | -   for claims submitted online   |
+|                                   |     or via Assisted Customer      |
+|                                   |     Claim (ACC), go to Step 7     |
+|                                   | -   for paper claims scanned to   |
+|                                   |     the record, go to Step 8      |
+|                                   |                                   |
+|                                   | Where the customer has a clear    |
+|                                   | ability to work at least 15 hours |
+|                                   | per week in open employment, and  |
+|                                   | the work is sustainable and not   |
+|                                   | in jeopardy, amend the MAT        |
+|                                   | Recommendation/SA479 to reflect   |
+|                                   | manifest rejection:               |
+|                                   |                                   |
+|                                   | Refer back to MAT for review:     |
+|                                   |                                   |
+|                                   | -   select [more options] >       |
+|                                   |     Referral to create a referral |
+|                                   |     to MAT                        |
+|                                   | -   select Medical Assessment     |
+|                                   |     Team Referral                 |
+|                                   | -   select Referral Reason:       |
+|                                   |     Report Inconsistent           |
+|                                   | -   Add Additional text: customer |
+|                                   |     has a clear ability to work   |
+|                                   |     15 hours per week or more in  |
+|                                   |     the open employment, please   |
+|                                   |     review MAT Recommendation     |
+|                                   | -   select Finish. A referral is  |
+|                                   |     created and the claim is      |
+|                                   |     automatically placed On Hold  |
+|                                   |     with reason Awaiting MAT      |
+|                                   |     Recommendation                |
+|                                   | -   annotate DSP Claim Progress   |
+|                                   |     DOC on DL/Notes advising a    |
+|                                   |     new referral to MAT has been  |
+|                                   |     actioned and processing staff |
+|                                   |     should refer to the most      |
+|                                   |     recent UNSPOC/SA479 for an    |
+|                                   |     outcome                       |
+|                                   | -   Notes will update with Note   |
+|                                   |     for Medical Referral to MAT   |
+|                                   |                                   |
+|                                   | Procedure ends here until MAT is  |
+|                                   | complete                          |
++-----------------------------------+-----------------------------------+
+| 6                                 | Manifestly medically ineligible   |
 |                                   | or reject on basis of current and |
 |                                   | valid assessment + Read more ...  |
 |                                   |                                   |
@@ -1115,7 +1264,7 @@ Table 3
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Online claim/ACC + Read more ...  |
+| 7                                 | Online claim/ACC + Read more ...  |
 |                                   |                                   |
 |                                   | When an online or ACC is          |
 |                                   | submitted, a DSP new claim work   |
@@ -1222,6 +1371,12 @@ Table 3
 |                                   |     requires referral to SCCRT    |
 |                                   |     for assessment under this     |
 |                                   |     criteria                      |
+|                                   | -   customer is identified with   |
+|                                   |     Trans Vaginal Mesh (TVM)      |
+|                                   |     conditions. Note: these cases |
+|                                   |     are normally identified by    |
+|                                   |     MAT and referred to SCCRT     |
+|                                   |     prior to streaming            |
 |                                   | -   check if any vulnerabilities  |
 |                                   |     or barriers exist for the     |
 |                                   |     customer and ensure these are |
@@ -1238,15 +1393,16 @@ Table 3
 |                                   |     be considered for referral to |
 |                                   |     the SCCRT for ongoing         |
 |                                   |     management                    |
-|                                   | -   referrals must be made in     |
-|                                   |     consultation with a Team      |
-|                                   |     Leader                        |
+|                                   | -   referrals must be made by a   |
+|                                   |     Service Support Officer (SSO) |
+|                                   |     or Team Leader (APS5 or       |
+|                                   |     above)                        |
 |                                   | -   see the Resources page to     |
 |                                   |     make referrals to the SCCRT   |
 |                                   |                                   |
 |                                   | Go to Step 8.                     |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Paper claim submission + Read     |
+| 8                                 | Paper claim submission + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | On scanning an SA466, SA494 or    |
@@ -1401,6 +1557,13 @@ Table 3
 |                                   |     requires referral to SCCRT    |
 |                                   |     for assessment under this     |
 |                                   |     criteria                      |
+|                                   | -   customer is identified with   |
+|                                   |     Trans Vaginal Mesh (TVM)      |
+|                                   |     conditions. Please note:      |
+|                                   |     these cases are normally      |
+|                                   |     identified by MAT and         |
+|                                   |     referred to SCCRT prior to    |
+|                                   |     streaming                     |
 |                                   | -   check if any vulnerabilities  |
 |                                   |     or barriers exist for the     |
 |                                   |     customer and ensure these are |
@@ -1417,15 +1580,16 @@ Table 3
 |                                   |     be considered for referral to |
 |                                   |     the SCCRT for ongoing         |
 |                                   |     management                    |
-|                                   | -   referrals must be made in     |
-|                                   |     consultation with a Team      |
-|                                   |     Leader                        |
+|                                   | -   referrals must be made by a   |
+|                                   |     Service Support Officer (SSO) |
+|                                   |     or Team Leader (APS5 or       |
+|                                   |     above)                        |
 |                                   | -   see the Resources page to     |
 |                                   |     make referrals to the SCCRT   |
 |                                   |                                   |
-|                                   | Go to Step 8.                     |
+|                                   | Go to Step 9.                     |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Review claim details + Read more  |
+| 9                                 | Review claim details + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | The Transaction Summary (TS)      |
@@ -1562,9 +1726,9 @@ Table 3
 |                                   | DSP Claim Progress DOC on         |
 |                                   | DL/Notes                          |
 |                                   |                                   |
-|                                   | Go to Step 9.                     |
+|                                   | Go to Step 10.                    |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Non-medical eligibility + Read    |
+| 10                                | Non-medical eligibility + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Check if the customer is          |
@@ -1589,7 +1753,17 @@ Table 3
 |                                   | claim and supporting documents,   |
 |                                   | the customer is clearly not       |
 |                                   | entitled under the Pensions       |
-|                                   | income or assets test             |
+|                                   | income or assets test. Note: if   |
+|                                   | customers medical eligibility is  |
+|                                   | complete, the system will         |
+|                                   | identify the correct rejection    |
+|                                   | reason. If medical eligibility is |
+|                                   | yet to be established, use        |
+|                                   | rejection reason DIA (excess      |
+|                                   | income and/or assets). See        |
+|                                   | Rejecting a new claim for         |
+|                                   | Disability Support Pension (DSP)  |
+|                                   | including manifest rejections     |
 |                                   |                                   |
 |                                   | Residency. See Residence          |
 |                                   | assessment for customers claiming |
@@ -1616,6 +1790,12 @@ Table 3
 |                                   |     Residence/QRE question in the |
 |                                   |     JCA Referral in Process       |
 |                                   |     Direct                        |
+|                                   | -   The Resources page has a link |
+|                                   |     to the Disability Support     |
+|                                   |     Pension Residency Screens     |
+|                                   |     Checklist. This has more      |
+|                                   |     information about assessing a |
+|                                   |     customer’s residency status l |
 |                                   |                                   |
 |                                   | Department of Veterans' Affairs   |
 |                                   | (DVA) Payments                    |
@@ -1656,10 +1836,10 @@ Table 3
 |                                   | current on an existing Income     |
 |                                   | Support Payment?                  |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 10            |
-|                                   | -   No, go to Step 11             |
+|                                   | -   Yes, go to Step 11            |
+|                                   | -   No, go to Step 12             |
 +-----------------------------------+-----------------------------------+
-| 10                                | Customer and/or partner is        |
+| 11                                | Customer and/or partner is        |
 |                                   | current on an existing Income     |
 |                                   | Support Payment (ISP) + Read more |
 |                                   | ...                               |
@@ -1715,6 +1895,16 @@ Table 3
 |                                   |     code AEX, go to Step 8 in     |
 |                                   |     Table 4 then return here to   |
 |                                   |     continue the processing       |
+|                                   | -   If some income and asset      |
+|                                   |     details cannot be confirmed   |
+|                                   |     due to waiting on             |
+|                                   |     verification and further      |
+|                                   |     information is needed, SAD    |
+|                                   |     the AEX and any updates to    |
+|                                   |     contact details. This makes   |
+|                                   |     sure information is correctly |
+|                                   |     applied to the customers      |
+|                                   |     record                        |
 |                                   |                                   |
 |                                   | Note: where the Accommodation     |
 |                                   | (ACS) screen is updated with Rent |
@@ -1747,7 +1937,7 @@ Table 3
 |                                   | No, or if further information is  |
 |                                   | required, see Step 2 in Table 4   |
 +-----------------------------------+-----------------------------------+
-| 11                                | Non-current customer who is       |
+| 12                                | Non-current customer who is       |
 |                                   | single or with a non-current      |
 |                                   | partner + Read more ...           |
 |                                   |                                   |
@@ -1785,7 +1975,7 @@ Table 3
 |                                   |     the system to reject          |
 |                                   | -   verification is not required  |
 |                                   |     unless necessary to           |
-|                                   |     accurately determine asset    |
+|                                   |     accurately detmine asset      |
 |                                   |     value (for example, a managed |
 |                                   |     investment)                   |
 |                                   |                                   |
@@ -1803,6 +1993,19 @@ Table 3
 |                                   |     assessments, Member of a      |
 |                                   |     Couple assessment (MOCA) and  |
 |                                   |     International Services        |
+|                                   |     Note: where customer has a    |
+|                                   |     compensation preclusion       |
+|                                   |     period ending after, but      |
+|                                   |     within 13 weeks of, the claim |
+|                                   |     submission date, a JCA        |
+|                                   |     Referral can proceed. If the  |
+|                                   |     claim is ready to finalise,   |
+|                                   |     place the claim on Hold for   |
+|                                   |     reason Customer to Provide    |
+|                                   |     Information until the day     |
+|                                   |     after the compensation        |
+|                                   |     preclusion period has ended   |
+|                                   |     to allow claim finalisation   |
 |                                   | -   if the Living Arrangements    |
 |                                   |     question set is completed and |
 |                                   |     it recommends SS293 or SS284  |
@@ -1851,6 +2054,20 @@ Table 4
 |                                   | If medical evidence has been      |
 |                                   | lodged since MAT assessment, go   |
 |                                   | to Step 4.                        |
+|                                   |                                   |
+|                                   | If the MAT determine there is     |
+|                                   | insufficient medical evidence to  |
+|                                   | assess eligibility for DSP, they  |
+|                                   | will attempt to contact the       |
+|                                   | customer and deliver Service      |
+|                                   | Officer Interview (SOI). In       |
+|                                   | certain circumstances, they can   |
+|                                   | give the customer an extra 5 days |
+|                                   | to supply information for their   |
+|                                   | claim. For more information about |
+|                                   | the MAT SOI process, see          |
+|                                   | Disability Support Pension (DSP)  |
+|                                   | Service Officer Interview (SOI).  |
 |                                   |                                   |
 |                                   | If the DSP Medical Assessment     |
 |                                   | Recommendation report indicates   |
@@ -2189,6 +2406,11 @@ Table 4
 |                                   | Check for any outstanding ESAt or |
 |                                   | JCA referrals or assessments:     |
 |                                   |                                   |
+|                                   | view outstanding ESAT/JCA’s via   |
+|                                   | Referral Summary (RRSUM) or the   |
+|                                   | ESAt or JCA tile in the DSP Claim |
+|                                   | Summary                           |
+|                                   |                                   |
 |                                   | request early finalisation of any |
 |                                   | outstanding ESAts or JCA reports  |
 |                                   | if appropriate                    |
@@ -2203,15 +2425,12 @@ Table 4
 |                                   |                                   |
 |                                   | -   ESAt needs to be              |
 |                                   |     upgraded/changed to a JCA     |
-|                                   | -   select [more options] >       |
-|                                   |     Referral                      |
-|                                   | -   select Referral Type >        |
-|                                   |     Assessment Services           |
-|                                   | -   Referral Reason > Query JCA   |
-|                                   |     Status                        |
-|                                   | -   remove pre-filled text in the |
-|                                   |     Additional Information field  |
-|                                   |     and key, ‘Customer has an     |
+|                                   | -   Send an email to ASNAT        |
+|                                   |     Support, see Resources        |
+|                                   | -   Subject line: ESAt to be      |
+|                                   |     upgraded to JCA               |
+|                                   | -   Include in email: Customer    |
+|                                   |     CRN and text ‘Customer has an |
 |                                   |     ESAt appointment but requires |
 |                                   |     a JCA referral for a DSP New  |
 |                                   |     Claim’                        |
@@ -2227,10 +2446,12 @@ Table 4
 |                                   | attended and the report has not   |
 |                                   | been submitted within 14 days:    |
 |                                   |                                   |
-|                                   | -   run the ASB Assistance        |
-|                                   |     Required Fast Note in         |
-|                                   |     Customer First and key notes  |
-|                                   |     as follows, ‘Customer has an  |
+|                                   | -   Send an email to ASNAT        |
+|                                   |     Support, see Resources        |
+|                                   | -   Subject line: ESAt not yet    |
+|                                   |     submitted                     |
+|                                   | -   Include in email: Customer    |
+|                                   |     CRN and text ‘Customer has an |
 |                                   |     outstanding ESAt Report.      |
 |                                   |     Please arrange for Report to  |
 |                                   |     be submitted to allow JCA     |
@@ -2269,6 +2490,12 @@ Table 4
 |                                   |     has been submitted and        |
 |                                   |     finalised, go to section      |
 |                                   |     below titled ‘JCA referral’   |
+|                                   | -   if DSP appeal JCA is related  |
+|                                   |     to a formal review, and the   |
+|                                   |     ARO decision has been         |
+|                                   |     finalised and implemented,    |
+|                                   |     refer to Level 2 Policy       |
+|                                   |     Helpdesk for advice           |
 |                                   |                                   |
 |                                   | JCA referral                      |
 |                                   |                                   |
@@ -2279,13 +2506,22 @@ Table 4
 |                                   | Referral, ‘Has the customer       |
 |                                   | resided Australia for 10 years or |
 |                                   | do they have a QRE?’ defaults to  |
-|                                   | No. If customer has 10 years      |
-|                                   | residence or a QRE, change the    |
-|                                   | answer to Yes. See Residence      |
-|                                   | assessment for customers claiming |
-|                                   | Disability Support Pension (DSP)  |
-|                                   | to answer this question           |
-|                                   | correctly.                        |
+|                                   | No.                               |
+|                                   |                                   |
+|                                   | -   If the customer does not have |
+|                                   |     10 years residence, and no    |
+|                                   |     QRE, leave the answer as No   |
+|                                   | -   If customer has 10 years      |
+|                                   |     residence or a QRE, change    |
+|                                   |     the answer to Yes.            |
+|                                   |                                   |
+|                                   | See the Disability Support        |
+|                                   | Pension Residency Screens         |
+|                                   | Checklist (on Resources page) and |
+|                                   | Residence assessment for          |
+|                                   | customers claiming Disability     |
+|                                   | Support Pension (DSP) to answer   |
+|                                   | this question correctly.          |
 |                                   |                                   |
 |                                   | See Residence assessment for      |
 |                                   | customers claiming Disability     |
@@ -2320,6 +2556,18 @@ Table 4
 |                                   | The exemption is coded on the     |
 |                                   | Activity and Exemption Summary    |
 |                                   | (AEX) screen.                     |
+|                                   |                                   |
+|                                   | Note: JSP/YA customers should     |
+|                                   | have the ‘Claiming DSP’ exemption |
+|                                   | applied, regardless of existing   |
+|                                   | activity type or exemption. The   |
+|                                   | only time the exemption should    |
+|                                   | not be applied is at the          |
+|                                   | customer’s request. If AEX is not |
+|                                   | coded because the customer        |
+|                                   | requested the exemption not       |
+|                                   | apply, document this in the DSP   |
+|                                   | Claim Progress DOC.               |
 |                                   |                                   |
 |                                   | Does the AEX screen require       |
 |                                   | updates?                          |
@@ -2448,7 +2696,9 @@ Table 4
 |                                   | Service Officer will:             |
 |                                   |                                   |
 |                                   | -   create an SSO referral using  |
-|                                   |     the Direct SSO Referral       |
+|                                   |     the Direct SSO Referral - use |
+|                                   |     escalation type ‘Check        |
+|                                   |     JCA/ESAt/DMA Report’          |
 |                                   | -   select Status icon            |
 |                                   | -   select Edit                   |
 |                                   | -   change claim status to On     |
@@ -2715,8 +2965,12 @@ Table 1
 |                                   |     refer to MAT via Medical      |
 |                                   |     Assessment Team Referral. Use |
 |                                   |     the Referral reason ‘New      |
-|                                   |     evidence’. Go to Step 2 in    |
-|                                   |     Table 3                       |
+|                                   |     evidence’. Procedure ends     |
+|                                   |     here until MAT has been       |
+|                                   |     completed. When MAT is        |
+|                                   |     completed, go to Step 2 in    |
+|                                   |     Table 3 to continuing         |
+|                                   |     streaming claim               |
 |                                   | -   GCD, refer to Disability      |
 |                                   |     Medical Assessment (DMA)      |
 |                                   |     appointment outcome to reopen |
@@ -2732,6 +2986,21 @@ Table 1
 |                                   | SOA (DSP claim) will be created   |
 |                                   | in Process Direct and referred to |
 |                                   | MAT.                              |
+|                                   |                                   |
+|                                   | MAT will check the customer’s     |
+|                                   | record to ensure a DSP Claim is   |
+|                                   | present before completing a       |
+|                                   | MAT/SA479.                        |
+|                                   |                                   |
+|                                   | Where no claim is present, MAT    |
+|                                   | will cancel the MAT Referral and  |
+|                                   | annotate the DSP Progress DOC.    |
+|                                   | Note: If MAT have completed a     |
+|                                   | recommendation/SA479 and no DSP   |
+|                                   | Claim is present, the claim must  |
+|                                   | not be progressed. Send feedback  |
+|                                   | to MAT Assessor via Staff         |
+|                                   | Feedback Tool.                    |
 |                                   |                                   |
 |                                   | If a DSP claim (SA466) has not    |
 |                                   | been lodged, make genuine         |
@@ -3401,7 +3670,7 @@ Table 3
 |                                   | the customer wishes to pursue     |
 |                                   | assessment of the subsequent      |
 |                                   | claim, progress claim per normal  |
-|                                   | process.                          |
+|                                   | process. Go to Step 2             |
 |                                   |                                   |
 |                                   | For help with multiple claims,    |
 |                                   | Service Officers can contact      |
@@ -3409,7 +3678,8 @@ Table 3
 |                                   |                                   |
 |                                   | If the customer is seeking        |
 |                                   | reassessment of a previously      |
-|                                   | rejected claim, go to Step 2.     |
+|                                   | rejected claim, refer to Reviews  |
+|                                   | and appeals, go to Step 2.        |
 +-----------------------------------+-----------------------------------+
 | 2                                 | DSP new claim + Read more ...     |
 |                                   |                                   |
@@ -3573,19 +3843,33 @@ Table 3
 |                                   |                                   |
 |                                   | Review !CUPC screen to:           |
 |                                   |                                   |
-|                                   | decide if there are any Pre-Claim |
-|                                   | Circumstances and Contact dates   |
-|                                   | recorded, and                     |
+|                                   | -   decide if there are any       |
+|                                   |     Pre-Claim Circumstances and   |
+|                                   |     Contact dates recorded, and   |
+|                                   | -   consider backdating if        |
+|                                   |     provisions apply for intent   |
+|                                   |     to claim and vulnerable       |
+|                                   |     customers                     |
 |                                   |                                   |
-|                                   | consider backdating if provisions |
-|                                   | apply for:                        |
+|                                   | Start date may need to be later   |
+|                                   | than date of submission where:    |
 |                                   |                                   |
-|                                   | -   intent to claim and           |
-|                                   |     vulnerable customers          |
-|                                   | -   early claims. For example,    |
-|                                   |     when a customer lodges a      |
-|                                   |     claim up to 13 weeks before   |
-|                                   |     qualifying for payment        |
+|                                   | -   it is an early claim, for     |
+|                                   |     example, customer is 15 years |
+|                                   |     and 9 months. PNA needs to be |
+|                                   |     changed to customers 16th     |
+|                                   |     birthday                      |
+|                                   | -   An exclusion period applies,  |
+|                                   |     for example, customer has a   |
+|                                   |     compensation preclusion       |
+|                                   |     period which ends within 13   |
+|                                   |     weeks of the claim submission |
+|                                   |     date. PNA needs to be amended |
+|                                   |     to the day after the          |
+|                                   |     preclusion period ends        |
+|                                   |                                   |
+|                                   | See Calculating the start date    |
+|                                   | general rule                      |
 |                                   |                                   |
 |                                   | To ensure DSP claim is assessed   |
 |                                   | from the correct start date:      |
@@ -3630,7 +3914,7 @@ Table 3
 |                                   | ineligible or there is a current  |
 |                                   | and valid assessment that         |
 |                                   | indicates the customer is not     |
-|                                   | medically eligible, go to Step 5  |
+|                                   | medically eligible, go to Step 6  |
 |                                   |                                   |
 |                                   | is ineligible for DSP due to age, |
 |                                   | MAT will:                         |
@@ -3644,7 +3928,7 @@ Table 3
 |                                   |     with ‘SA479 not completed as  |
 |                                   |     customer’s age precludes DSP  |
 |                                   |     eligibility’                  |
-|                                   | -   go to Step 9 to review        |
+|                                   | -   go to Step 10 to review       |
 |                                   |     non-medical                   |
 |                                   |                                   |
 |                                   | is manifestly medically eligible, |
@@ -3652,13 +3936,119 @@ Table 3
 |                                   | assessment that supports          |
 |                                   | eligibility or a Job Capacity     |
 |                                   | Assessment (JCA) referral is      |
-|                                   | required, go to Step 6            |
+|                                   | required, if:                     |
+|                                   |                                   |
+|                                   | -   customer is currently         |
+|                                   |     working, go to Step 5         |
+|                                   | -   customer is not currently     |
+|                                   |     working, go to Step 6         |
 |                                   |                                   |
 |                                   | has insufficient medical evidence |
 |                                   | to assess medical eligibility,    |
 |                                   | see Step 1 in Table 4             |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Manifestly medically ineligible   |
+| 5                                 | Customer working 15 hours or more |
+|                                   | per week + Read more ...          |
+|                                   |                                   |
+|                                   | Consider the circumstances before |
+|                                   | progressing a claim where MAT     |
+|                                   | recommend:                        |
+|                                   |                                   |
+|                                   | manifest medical eligibility      |
+|                                   |                                   |
+|                                   | there is a current and valid      |
+|                                   | assessment supporting DSP         |
+|                                   | eligibility, or                   |
+|                                   |                                   |
+|                                   | the customer requires a JCA       |
+|                                   | Referral, and                     |
+|                                   |                                   |
+|                                   | the customer is working at least  |
+|                                   | 15 hours per week                 |
+|                                   |                                   |
+|                                   | Review the definition of clear    |
+|                                   | ability to work at least 15 hours |
+|                                   | per week in open employment       |
+|                                   |                                   |
+|                                   | Review ‘Recommendation Rationale’ |
+|                                   | section on MAT/SA479 to see if    |
+|                                   | the MAT Assessor has considered   |
+|                                   | customer’s employment in their    |
+|                                   | recommendation                    |
+|                                   |                                   |
+|                                   | To determine if the claim should  |
+|                                   | be manifestly rejected on this    |
+|                                   | criteria:                         |
+|                                   |                                   |
+|                                   | -   consider the customer’s       |
+|                                   |     employment circumstances      |
+|                                   | -   review information on the DSP |
+|                                   |     Claim                         |
+|                                   | -   payslips and wages            |
+|                                   | -   employment details coded on   |
+|                                   |     the EANS/EAPP                 |
+|                                   |                                   |
+|                                   | If needed, contact the            |
+|                                   | customer/nominee. Discuss the     |
+|                                   | nature of the employment,         |
+|                                   | determine if the employment is    |
+|                                   | supported, or is in jeopardy, due |
+|                                   | to the medical condition(s)       |
+|                                   |                                   |
+|                                   | If help is needed, refer to the   |
+|                                   | Level 2 Policy Helpdesk           |
+|                                   |                                   |
+|                                   | -   run the Streaming and         |
+|                                   |     Progress Doc script. Select   |
+|                                   |     ‘Policy’ as the hold reason   |
+|                                   |     and hold for 14 days          |
+|                                   | -   apply hold to user            |
+|                                   |                                   |
+|                                   | Procedure ends here until Level 2 |
+|                                   | Policy helpdesk have responded.   |
+|                                   |                                   |
+|                                   | Where the customer is not working |
+|                                   | 15 hrs per week or more, in the   |
+|                                   | open labour market, at the        |
+|                                   | relevant minimum wage, record     |
+|                                   | this on the DSP Claim Progress    |
+|                                   | DOC on DL/Note. Go to Step 6.     |
+|                                   |                                   |
+|                                   | Where the customer has a clear    |
+|                                   | ability to work at least 15 hours |
+|                                   | per week in open employment, and  |
+|                                   | the work is sustainable and not   |
+|                                   | in jeopardy, amend the MAT        |
+|                                   | Recommendation/SA479 to reflect   |
+|                                   | manifest rejection:               |
+|                                   |                                   |
+|                                   | Refer back to MAT for review:     |
+|                                   |                                   |
+|                                   | -   run the Streaming and         |
+|                                   |     Progress DOC script. Select   |
+|                                   |     'Policy' as the on hold       |
+|                                   |     reason and hold for 14 days   |
+|                                   | -   annotate the DSP new claim    |
+|                                   |     Progress DOC to advise the    |
+|                                   |     details of referral to MAT to |
+|                                   |     review MAT recommendation due |
+|                                   |     to clear ability to work 15   |
+|                                   |     hrs per week                  |
+|                                   | -   record a Fast Note. Select    |
+|                                   |     Auto Text option >            |
+|                                   |     Disabilities > Claims >       |
+|                                   |     Template - DSP MAT            |
+|                                   |     Recommendation Query > select |
+|                                   |     option 1, Report              |
+|                                   |     inconsistent. Add notes as    |
+|                                   |     follows ‘please review SA479  |
+|                                   |     as customer is working 15     |
+|                                   |     hours per week or more, in    |
+|                                   |     the open labour market’       |
+|                                   | -   Procedure ends here until MAT |
+|                                   |     has been completed            |
++-----------------------------------+-----------------------------------+
+| 6                                 | Manifestly medically ineligible   |
 |                                   | or reject on basis of current and |
 |                                   | valid assessment + Read more ...  |
 |                                   |                                   |
@@ -3694,18 +4084,18 @@ Table 3
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Check claim submission + Read     |
+| 7                                 | Check claim submission + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If the claim was submitted via:   |
 |                                   |                                   |
 |                                   | -   online channels, or Assisted  |
 |                                   |     Customer Claim (ACC), go to   |
-|                                   |     Step 7                        |
+|                                   |     Step 8                        |
 |                                   | -   paper claim and scanned to    |
-|                                   |     the record, go to Step 8      |
+|                                   |     the record, go to Step 9      |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Online claim/ACC + Read more ...  |
+| 8                                 | Online claim/ACC + Read more ...  |
 |                                   |                                   |
 |                                   | When a claim is submitted online  |
 |                                   | or via ACC, a DSP new claim is    |
@@ -3836,6 +4226,12 @@ Table 3
 |                                   |     requires referral to SCCRT    |
 |                                   |     for assessment under this     |
 |                                   |     criteria                      |
+|                                   | -   customer is identified with   |
+|                                   |     Trans Vaginal Mesh (TVM)      |
+|                                   |     conditions. Note: these cases |
+|                                   |     are normally identified by    |
+|                                   |     MAT and referred to SCCRT     |
+|                                   |     before streaming              |
 |                                   | -   check if any vulnerabilities  |
 |                                   |     or barriers exist for the     |
 |                                   |     customer and ensure these are |
@@ -3852,15 +4248,16 @@ Table 3
 |                                   |     be considered for referral to |
 |                                   |     the SCCRT for ongoing         |
 |                                   |     management                    |
-|                                   | -   referrals must be made in     |
-|                                   |     consultation with a Team      |
-|                                   |     Leader                        |
+|                                   | -   referrals must be made by a   |
+|                                   |     Service Support Officer (SSO) |
+|                                   |     or Team Leader (APS5 or       |
+|                                   |     above)                        |
 |                                   | -   see the Resources page to     |
 |                                   |     make referrals to the SCCRT   |
 |                                   |                                   |
-|                                   | Go to Step 8.                     |
+|                                   | Go to Step 9.                     |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Paper claim submission + Read     |
+| 9                                 | Paper claim submission + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | On scanning an SA466, SA494 or    |
@@ -4004,6 +4401,12 @@ Table 3
 |                                   |     requires referral to SCCRT    |
 |                                   |     for assessment under this     |
 |                                   |     criteria                      |
+|                                   | -   customer is identified with   |
+|                                   |     Trans Vaginal Mesh (TVM)      |
+|                                   |     conditions. Note: these cases |
+|                                   |     are normally identified by    |
+|                                   |     MAT and referred to SCCRT     |
+|                                   |     before streaming              |
 |                                   | -   check if any vulnerabilities  |
 |                                   |     or barriers exist for the     |
 |                                   |     customer and ensure these are |
@@ -4020,15 +4423,16 @@ Table 3
 |                                   |     be considered for referral to |
 |                                   |     the SCCRT for ongoing         |
 |                                   |     management                    |
-|                                   | -   referrals must be made in     |
-|                                   |     consultation with a Team      |
-|                                   |     Leader                        |
+|                                   | -   referrals must be made by a   |
+|                                   |     Service Support Officer (SSO) |
+|                                   |     or Team Leader (APS5 or       |
+|                                   |     above)                        |
 |                                   | -   see the Resources page to     |
 |                                   |     make referrals to the SCCRT   |
 |                                   |                                   |
-|                                   | Go to Step 8.                     |
+|                                   | Go to Step 10.                    |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Review claim details + Read more  |
+| 10                                | Review claim details + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Check the claim for the           |
@@ -4122,9 +4526,9 @@ Table 3
 |                                   | must be made within the DSP new   |
 |                                   | claim activity.                   |
 |                                   |                                   |
-|                                   | Go to Step 10.                    |
+|                                   | Go to Step 11.                    |
 +-----------------------------------+-----------------------------------+
-| 10                                | Non-medical eligibility + Read    |
+| 11                                | Non-medical eligibility + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Check if the customer is          |
@@ -4149,7 +4553,17 @@ Table 3
 |                                   | claim and supporting documents,   |
 |                                   | the customer is clearly not       |
 |                                   | entitled under the Pensions       |
-|                                   | income or assets test             |
+|                                   | income or assets test. Note: if   |
+|                                   | medical eligibility has been      |
+|                                   | completed, the system will        |
+|                                   | identify the correct reject       |
+|                                   | reason. If medical eligibility is |
+|                                   | yet to be established, use        |
+|                                   | rejection reason DIA (excess      |
+|                                   | income and assets), see Rejecting |
+|                                   | a new claim for Disability        |
+|                                   | Support Pension (DSP) including   |
+|                                   | manifest rejections               |
 |                                   |                                   |
 |                                   | Residency. See Residence          |
 |                                   | assessment for customers claiming |
@@ -4174,8 +4588,13 @@ Table 3
 |                                   |     JCA has been submitted. Staff |
 |                                   |     must correctly answer the     |
 |                                   |     Residence/QRE question in the |
-|                                   |     JCA Referral in Process       |
-|                                   |     Direct                        |
+|                                   |     JCA Referral Fast Note        |
+|                                   | -   The Resources page has a link |
+|                                   |     to the Disability Support     |
+|                                   |     Pension Residency Screens     |
+|                                   |     Checklist. This has more      |
+|                                   |     information about assessing a |
+|                                   |     customer’s residency status   |
 |                                   |                                   |
 |                                   | Department of Veterans' Affairs   |
 |                                   | (DVA) Payments                    |
@@ -4216,10 +4635,10 @@ Table 3
 |                                   | current on an existing Income     |
 |                                   | Support Payment?                  |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 11            |
-|                                   | -   No, go to Step 12             |
+|                                   | -   Yes, go to Step 12            |
+|                                   | -   No, go to Step 13             |
 +-----------------------------------+-----------------------------------+
-| 11                                | Customer and/or partner is        |
+| 12                                | Customer and/or partner is        |
 |                                   | current on an existing Income     |
 |                                   | Support Payment (ISP) + Read more |
 |                                   | ...                               |
@@ -4272,7 +4691,17 @@ Table 3
 |                                   |     applicable, code this on the  |
 |                                   |     Activity and Exemption        |
 |                                   |     Summary (AEX) screen and      |
-|                                   |     include in SAD update.        |
+|                                   |     include in SAD update         |
+|                                   | -   if some income and asset      |
+|                                   |     details cannot be confirmed   |
+|                                   |     due to waiting on             |
+|                                   |     verification, and further     |
+|                                   |     information is needed, SAD    |
+|                                   |     the AEX and any updates to    |
+|                                   |     contact details. This makes   |
+|                                   |     sure information is correctly |
+|                                   |     applied to the customers      |
+|                                   |     record                        |
 |                                   |                                   |
 |                                   | If manifest eligibility is met    |
 |                                   | and further information or        |
@@ -4294,7 +4723,7 @@ Table 3
 |                                   | No, or if further information is  |
 |                                   | required, see Step 2 in Table 4   |
 +-----------------------------------+-----------------------------------+
-| 12                                | Non-current customer who is       |
+| 13                                | Non-current customer who is       |
 |                                   | single or with a non-current      |
 |                                   | partner + Read more ...           |
 |                                   |                                   |
@@ -4318,6 +4747,16 @@ Table 3
 |                                   |     where the claim is not being  |
 |                                   |     rejected or manually granted  |
 |                                   |     immediately                   |
+|                                   | -   if some income and asset      |
+|                                   |     details cannot be confirmed   |
+|                                   |     due to waiting on             |
+|                                   |     verification, and further     |
+|                                   |     information is needed, SAD    |
+|                                   |     the AEX and any updates to    |
+|                                   |     contact details. This makes   |
+|                                   |     sure information is correctly |
+|                                   |     applied to the customers      |
+|                                   |     record                        |
 |                                   |                                   |
 |                                   | Determine what supporting         |
 |                                   | documents are required to verify  |
@@ -4350,6 +4789,20 @@ Table 3
 |                                   |     assessments, Member of a      |
 |                                   |     Couple assessment (MOCA) and  |
 |                                   |     International Services        |
+|                                   | -   where customer has a          |
+|                                   |     compensation preclusion       |
+|                                   |     period ending after, but      |
+|                                   |     within 13 weeks of, the claim |
+|                                   |     submission date, a JCA        |
+|                                   |     Referral can proceed. If the  |
+|                                   |     claim is ready to finalise,   |
+|                                   |     the claim must be placed ‘On  |
+|                                   |     Hold’ for reason ‘Customer to |
+|                                   |     Provide Information’ until    |
+|                                   |     the day after the             |
+|                                   |     compensation preclusion       |
+|                                   |     period has ended, to allow    |
+|                                   |     claim finalisation            |
 |                                   | -   requests for verification     |
 |                                   |     must be issued to the         |
 |                                   |     customer. The claim cannot be |
@@ -4401,6 +4854,20 @@ Table 4
 |                                   | If medical evidence has been      |
 |                                   | lodged since the MAT assessment,  |
 |                                   | go to Step 4.                     |
+|                                   |                                   |
+|                                   | If the MAT determine there is     |
+|                                   | insufficient medical evidence to  |
+|                                   | assess eligibility for DSP, they  |
+|                                   | will attempt to contact the       |
+|                                   | customer and deliver Service      |
+|                                   | Officer Interview (SOI). In       |
+|                                   | certain circumstances, they can   |
+|                                   | give the customer an extra 5 days |
+|                                   | to supply information for their   |
+|                                   | claim. For more information about |
+|                                   | the MAT SOI process, see          |
+|                                   | Disability Support Pension (DSP)  |
+|                                   | Service Officer Interview (SOI).  |
 |                                   |                                   |
 |                                   | If the DSP Medical Assessment     |
 |                                   | Recommendation report indicates   |
@@ -4769,6 +5236,9 @@ Table 4
 |                                   | Check for any outstanding ESAt or |
 |                                   | JCA referrals or assessments:     |
 |                                   |                                   |
+|                                   | view outstanding ESAT/JCA’s via   |
+|                                   | Referral Summary (RRSUM)          |
+|                                   |                                   |
 |                                   | request early finalisation of any |
 |                                   | outstanding ESAts or JCA reports  |
 |                                   | if appropriate                    |
@@ -4820,7 +5290,27 @@ Table 4
 |                                   | Create a JCA referral via Fast    |
 |                                   | Note:                             |
 |                                   |                                   |
-|                                   | -   annotate DSP Claim Progress   |
+|                                   | The residence question must be    |
+|                                   | answered correctly in the Fast    |
+|                                   | Note:                             |
+|                                   |                                   |
+|                                   | -   If the customer does not have |
+|                                   |     10 years Australian           |
+|                                   |     Residence, or a QRE, answer   |
+|                                   |     as No                         |
+|                                   | -   If the customer has 10 years  |
+|                                   |     Australian Residence, or a    |
+|                                   |     QRE, answer as Yes            |
+|                                   |                                   |
+|                                   | See the Disability Support        |
+|                                   | Pension Residency Screens         |
+|                                   | Checklist (on Resources page),    |
+|                                   | and Residence assessment for      |
+|                                   | customers claiming Disability     |
+|                                   | Support Pension (DSP) for more    |
+|                                   | information                       |
+|                                   |                                   |
+|                                   | -   Annotate DSP Claim Progress   |
 |                                   |     DOC to advise customer has    |
 |                                   |     been referred for a Job       |
 |                                   |     Capacity Assessment and date  |
@@ -4852,6 +5342,18 @@ Table 4
 |                                   | The exemption is coded on the     |
 |                                   | Activity and Exemption Summary    |
 |                                   | (AEX) screen.                     |
+|                                   |                                   |
+|                                   | Note: JSP/YA customers should     |
+|                                   | have the ‘Claiming DSP’ exemption |
+|                                   | applied, regardless of existing   |
+|                                   | activity type or exemption. The   |
+|                                   | only time the exemption should    |
+|                                   | not be applied is at the          |
+|                                   | customer’s request. If AEX is not |
+|                                   | coded because the customer asked  |
+|                                   | for the exemption to not apply,   |
+|                                   | document this in the DSP Claim    |
+|                                   | Progress DOC                      |
 |                                   |                                   |
 |                                   | Does the AEX screen require       |
 |                                   | updates?                          |
@@ -4954,7 +5456,8 @@ Table 4
 |                                   |     DOC are on hold for 14 days   |
 |                                   | -   refer the case to the SSO via |
 |                                   |     the Direct Referral to SSO    |
-|                                   |     web form                      |
+|                                   |     web form, use escalation type |
+|                                   |     ‘Check JCA/ESAt/DMA Report’   |
 |                                   | -   wait for the query to be      |
 |                                   |     reviewed. Once reviewed, go   |
 |                                   |     to Step 9                     |
