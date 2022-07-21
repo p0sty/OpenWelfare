@@ -204,7 +204,7 @@
 <a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
 
 
-<p class="info-box warning">For Case Managed Recovery Team (CMRT) only</p>
+<p class="info-box warning">For Service Officers with DMNSTP mainframe access only.</p>
 <a class="anchor" name="bp03_L3TT_Debtor_data_mat"></a>
 <h3>Debtor data match reviews</h3>
 
@@ -233,7 +233,7 @@
 		<ul>		<li>
 a new data match, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step02">go to Step 2</a></li>
 		<li>
-a customer calling about the Q289, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step07">go to Step 7</a></li>
+a customer calling about the Q289, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step06">go to Step 6</a></li>
 		<li>
 sending a Q289, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step11">go to  Step 11</a></li>		</ul>
 </div>
@@ -253,9 +253,9 @@ sending a Q289, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_
 
 <p>Check the customers personal details including&#58;</p>
 		<ul>		<li>
-<strong>STP data</strong> screen (<strong>OPSTC</strong>)</li>
+<strong>STP data</strong> (<strong>OPSTC</strong>) screen</li>
 		<li>
-Customer Personal Detail Summary screen (<strong>CPDS</strong>) for all of customers known names</li>
+Customer Personal Detail Summary (<strong>CPDS</strong>) screen for all of customers known names</li>
 		<li>
 Date of Birth</li>
 		<li>
@@ -281,17 +281,17 @@ Address, present and historical</li>
 <div class="showcont">
 
 
-<p>If the data match is not for the customer email the Operational Leader (OL) with the details.</p>
+<p>If the data match is not for the customer, email the Operational Leader (OL) with the details.</p>
 
 <p><strong>Operational Leader</strong></p>
 		<ul>		<li>
-Complete the Mutual Client Register (MCR) Issues/Errors webform via mySupport. The Resources page contains a link to mySupport</li>
+Log into mySupport (see the <a href="../debts/107-21052045-05.html">Resources</a> page for a link) and key Mutual Client Register (MCR) Issues/Errors into the <strong>Search</strong> field</li>
 		</ul>
-<p><strong>Case Managed Recovery Team (CMRT)</strong></p>
+<p><strong>Debt staff</strong></p>
 		<ul>		<li>
-Update the Individual case allocation workbook to show Rejected status. See <a href="../debts/107-20112320-01.html">Case managed debt recovery</a></li>
+Finalise the STP MFU activity on the STP Employer Summary (<strong>OPSTE</strong>) screen. Select the reason <strong>EXC</strong> (Exclude from ETP selection) on the STP Outcome (<strong>OPSTX</strong>) screen</li>
 		<li>
-Finalise the STP activity on the <strong>OPSTE</strong> screen. Select the reason (EXC) on the <strong>OPSTX</strong> screen</li>
+<strong>Delete</strong> the auto completed <strong>STP DOC</strong> (created at finalisation)</li>
 		</ul>
 <p>Procedure ends here.</p>
 </div>
@@ -317,11 +317,13 @@ Finalise the STP activity on the <strong>OPSTE</strong> screen. Select the reaso
 		<li>
 <strong>No</strong>&#58;</li>
 			<ul>			<li>
-reject the case. Update the Individual case allocation workbook to show <strong>Rejected</strong> status</li>
+'<strong>S</strong>'elect the STP MFU activity from the Activity List (<strong>AL</strong>) screen, this will take you to the STP Employer Summary (<strong>OPSTE</strong>) screen</li>
 			<li>
-finalise the STP activity on the <strong>OPSTE</strong> screen and select the reason on the <strong>OPSTX</strong> screen</li>
+Key <strong>Y</strong> in the finalise activity on the <strong>OPSTE</strong> screen</li>
 			<li>
-code EXC (<strong>Exclude from ETP selection</strong>) to finalise the activity</li>
+Key <strong>EXC</strong> (Exclude from ETP selection) in the <strong>Reason</strong> field and <strong>Y</strong> in the <strong>Confirm</strong> field on the STP Outcome (<strong>OPSTX</strong>) screen to finalise the activity</li>
+			<li>
+delete the auto completed <strong>STP DOC</strong> (created at finalisation), as information has not been confirmed, it should not be on the file</li>
 			<li>
 Procedure ends here</li>			</ul>			</ul>
 </div>
@@ -335,23 +337,33 @@ Procedure ends here</li>			</ul>			</ul>
 <p>5</p></td>
 <td>
 
-<p><strong>Review customer file</strong> <a title="Read more 5" class="showhead bp03_tbl_Debtor_data_mat_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Debtor_data_mat_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Reasonable effort</strong> <a title="Read more 5" class="showhead bp03_tbl_Debtor_data_mat_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Debtor_data_mat_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Follow the <a href="../debts/107-20112320-01.html">Case managed debt recovery</a> process to&#58;</p>
+<p>Review the customer record including&#58;</p>
 		<ul>		<li>
-Review the customer information</li>
+previous arrangements</li>
 		<li>
-add Display On Access <strong>DOC</strong></li>
+repayments</li>
 		<li>
-add <strong>Civil Recovery</strong> status</li>
+debt amount, status and balance</li>
 		<li>
-apply actor relationships</li>
+any correspondence and notifications sent to the customer</li>
+		</ul>
+<p>Make a reasonable effort to contact the customer using the Telephone Summary (<strong>TDS</strong>) screen and customer STP phone numbers.</p>
+
+<p>Send a pre-call SMS prior to every contact attempt if the customer&#58;</p>
+		<ul>		<li>
+has a telephone number on record, <strong>and</strong></li>
 		<li>
-add the case to the Intensive Debt Collections (IDC) information system</li>
+is subscribed to receive SMS messages via Electronic Messaging. See <a href="../self-service/133-05000000-01.html">Centrelink letters online and Electronic Messaging</a></li>
+		</ul>
+<p>Was customer contact successful?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step06">go to Step 6</a></li>
 		<li>
-create a customer case file</li>		</ul>
+<strong>No</strong>, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step07">go to Step 7</a></li>		</ul>
 </div>
 
 
@@ -363,19 +375,25 @@ create a customer case file</li>		</ul>
 <p>6</p></td>
 <td>
 
-<p><strong>Genuine contact attempts</strong> <a title="Read more 6" class="showhead bp03_tbl_Debtor_data_mat_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Debtor_data_mat_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Discuss the reason for the call</strong> <a title="Read more 6" class="showhead bp03_tbl_Debtor_data_mat_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Debtor_data_mat_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Make genuine attempts to contact the customer using the Telephone Summary (<strong>TDS</strong>) screen and customer STP phone numbers.</p>
+<p><a href="../debts/107-05010050-01.html">Safeguard the customer's privacy</a> before discussing the reason for the call.</p>
 
-<p>The customer must be notified of the match before contacting the customer’s employer or the customer at work.</p>
-
-<p>Was customer contact successful?</p>
+<p>All customers <strong>must</strong> be advised of the following&#58;</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step07">go to Step 7</a></li>
+The call is being recorded. See <a href="../specialist-manuals-and-system-tools/111-17081500-01.html">Call and screen recording - information and access</a></li>
 		<li>
-<strong>No</strong>, <strong>DOC</strong> the attempt using the <strong>Unsuccessful Engagement Fast Note</strong>. <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step11">Go to  Step 11</a></li>		</ul>
+The STP employment data match. <strong>Note&#58;</strong> the STP information including the Year to Date (YTD) is only an indication of the customer's circumstances. Consider the customers individual circumstances</li>
+		<li>
+The current outstanding balance and any payment arrangements</li>
+		</ul>
+<p>Does the customer dispute the match data?</p>
+		<ul>		<li>
+<strong>Yes</strong>, obtain details about why the customer disagrees and refer the file to an Operational Leader for investigation</li>
+		<li>
+<strong>No</strong>, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step08">go to Step 8</a></li>		</ul>
 </div>
 
 
@@ -387,25 +405,15 @@ create a customer case file</li>		</ul>
 <p>7</p></td>
 <td>
 
-<p><strong>Discuss the reason for the call</strong> <a title="Read more 7" class="showhead bp03_tbl_Debtor_data_mat_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Debtor_data_mat_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Unsuccessful contact attempt</strong> <a title="Read more 7" class="showhead bp03_tbl_Debtor_data_mat_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Debtor_data_mat_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p><a href="../debts/107-05010050-01.html">Safeguard the customer’s privacy</a> before discussing the reason for the call.</p>
-
-<p>Advise the customer&#58;</p>
+<p>Was a message left for the customer to call back within 2 business days?</p>
 		<ul>		<li>
-the call is being recorded. See <a href="../specialist-manuals-and-system-tools/111-17081500-01.html">Call and screen recording - information and access</a></li>
+<strong>Yes</strong>, <strong>hold</strong> the MFU activity for 2 days</li>
 		<li>
-of the STP employment data match. <strong>Note&#58;</strong> the STP information including the Year to Date (YTD) is only an indication of the customer’s circumstances. Consider the customers individual circumstances</li>
-		<li>
-the current outstanding balance and any payment arrangements</li>
-		</ul>
-<p>Does the customer dispute the match data?</p>
-		<ul>		<li>
-<strong>Yes</strong>, obtain details about why the customer disagrees and refer the file to an Operational Leader for investigation</li>
-		<li>
-<strong>No</strong>, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step08">go to Step 8</a></li>		</ul>
+<strong>No</strong>, <strong>DOC</strong> the attempt using the <strong>Unsuccessful Engagement Fast Note</strong>, then <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step11">go to  Step 11</a></li>		</ul>
 </div>
 
 
@@ -445,15 +453,13 @@ the current outstanding balance and any payment arrangements</li>
 
 <p>To exclude the customer from the STP process&#58;</p>
 		<ul>		<li>
-go to the <strong>OPSTE</strong> screen</li>
+'<strong>S</strong>'elect the MFU from the <strong>AL</strong> screen, that will take you to the <strong>OPSTE</strong> screen</li>
 		<li>
-code a ‘<strong>Y</strong>’ in the <strong>Finalise Activity?</strong> Field, to go to the <strong>OPSTX</strong> screen</li>
+Key '<strong>Y</strong>' in the <strong>Finalise activity</strong> field, to go to the <strong>OPSTX</strong> screen</li>
 		<li>
-code <strong>EXC (Exclude from ETP selection)</strong> to finalise the activity</li>
+Key <strong>EXC</strong> (Exclude from ETP selection) and the date the customer is to be excluded to finalise the activity</li>
 		<li>
-an online document is automatically created on the customer’s record with the details of the STP data</li>
-		<li>
-when the activity is finalised the STP data will no longer be viewable on the <strong>STP</strong> screens</li>
+an online document is automatically created on the customer's record with the details of the STP data</li>
 		<li>
 record the decision and reasons for excluding customer in a <strong>DOC</strong> on the customer record</li>
 		</ul>
@@ -479,25 +485,23 @@ record the decision and reasons for excluding customer in a <strong>DOC</strong>
 		<ul>		<li>
 their employer will be contacted to place a wage garnishee</li>
 		<li>
-they will receive a notice with the details of the garnishee. <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step12">Go to  Step 12</a></li>
+they will receive a notice with the details of the garnishee, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step12">go to  Step 12</a></li>
 		</ul>
-<p>Consider giving the customer more time to enter into voluntary arrangement. For example, to talk to their partner or look at their finances. Did the customer enter into a payment arrangement or an interim arrangement?</p>
+<p>Consider giving the customer more time (maximum of 7 days) to enter into a voluntary arrangement. For example, to talk to their partner or look at their finances. Did the customer enter into a payment arrangement or an interim arrangement?</p>
 		<ul>		<li>
 <strong>Yes</strong>&#58;</li>
 			<ul>			<li>
-code the arrangement and document the customers file. See <a href="../debts/107-05020050-01.html">Arranging cash repayments to recover debts</a></li>
+Record the arrangement and <strong>DOC</strong> the customers file. See <a href="../debts/107-05020050-01.html">Arranging cash repayments to recover debts</a>, then</li>
 			<li>
-update the IDC Information System. See <a href="../debts/107-20112320-01.html">Case managed debt recovery</a></li>
+'<strong>S</strong>'elect the MFU from the <strong>AL</strong> screen (this will take you to the <strong>OPSTE</strong> screen)</li>
 			<li>
-after coding payment arrangement, go to the <strong>OPSTE</strong> screen. Code a ‘<strong>Y</strong>’ in the <strong>Finalise Activity?</strong> field</li>
+Key '<strong>Y</strong>' in the <strong>Finalise activity</strong> field</li>
 			<li>
-in the <strong>OPSTX </strong>screen code <strong>ARR (Payment Arrangement Coded) </strong>to finalise the activity - an online document will be automatically created on the customer’s record with the details of the STP data</li>
+Key <strong>ARR</strong> (Payment Arrangement Coded) in the <strong>OPSTX</strong> screen to finalise the activity</li>
 			<li>
-after finalising the activity the STP data will no longer be viewable on the <strong>STP</strong> screens</li>
+An online document is automatically created on the customer's record with the details of the STP data</li>
 			<li>
-if the customer enters into an interim arrangement go to <a href="../debts/107-20112320-01.html">Case managed debt recovery</a></li>
-			<li>
-procedure ends here</li>		</ul>
+Procedure ends here</li>		</ul>
 		<li>
 <strong>No</strong>, advise the customer&#58;</li>
 			<ul>			<li>
@@ -523,45 +527,25 @@ of other debt recovery actions</li>
 <div class="showcont">
 
 
-<p>Compare the address from the STP data with the address start date on the Address History screen (<strong>ADH</strong>). Send a Q289 letter to the address with the most recent date.</p>
+<p>Compare the address from the STP data with the address start date on the Address History (<strong>ADH</strong>) screen. Send a manual Q289 letter via the Letter Display (<strong>LD</strong>) screen to the address with the most recent date.</p>
 
-<p><strong>Note</strong>&#58; do not send an ‘Ask employer for employment details’ (Q609) letter, STP data match is sufficient to confirm employment. STP information updates weekly and includes start and end dates of employment.</p>
+<p><strong>Do not send an 'Ask employer for employment details' (Q609) letter</strong>, STP data match information is sufficient to confirm employment. STP information updates regularly and includes payroll event start and end dates.</p>
 
 <p><strong>DOC</strong> the customer record including&#58;</p>
 		<ul>		<li>
 details of the call</li>
 		<li>
-the address Q289 letter sent to</li>
+address the Q289 letter was sent to</li>
 		<li>
 the customer has an employment data match</li>
 		<li>
-the employer details, and</li>
-		<li>
-the campaign number</li>
+the employer details</li>
 		</ul>
-<p>Resubmit the STP Activity for 14 days to align with the issuing of the Q289 letter.</p>
-
-<p>Update the IDC Information system&#58;</p>
-		<ul>		<li>
-open the <strong>Case Information</strong> tab&#58;</li>
-			<ul>			<li>
-<strong>New Comment</strong>&#58; add details of phone attempts, Q289 notice and STP information</li>
-			<li>
-<strong>Additional Notes</strong>&#58; add any extra information</li>		</ul>
-		<li>
-open the <strong>Case details</strong> tab&#58;</li>
-			<ul>			<li>
-<strong>Due Date</strong>&#58; set as 15 days from the date the Q289 letter is sent</li>
-			<li>
-<strong>Due Comment</strong>&#58; enter reason for new due date</li>
-			<li>
-<strong>Active Status</strong>&#58; ‘Pending Warning Letter Expiration’</li>
-			</ul>			</ul>
-<p>Provide the customer with 14 days to respond.</p>
+<p><strong>Resubmit the STP MFU activity for 14 days</strong> to align with the issuing of the Q289 letter.</p>
 
 <p>Did the customer respond and enter into a payment arrangement?</p>
 		<ul>		<li>
-<strong>Yes</strong>, ensure the STP data activity is correctly finalised. Procedure ends here</li>
+<strong>Yes</strong>, ensure the STP MFU activity is correctly finalised. Procedure ends here</li>
 		<li>
 <strong>No</strong>, <a href="../debts/107-21052045-03.html#bp03_tbl_Debtor_data_mat_Step12">go to  Step 12</a></li>		</ul>
 </div>
@@ -585,17 +569,25 @@ open the <strong>Case details</strong> tab&#58;</li>
 		<ul>		<li>
 <strong>Yes</strong>&#58;</li>
 			<ul>			<li>
-in the <strong>OPSTX</strong> screen code <strong>GRN</strong> (<strong>Garnishee Coded</strong>) to finalise the activity. An online document will automatically create on the customer’s record with the details of the STP data</li>
+'<strong>S</strong>'elect the MFU from the <strong>AL</strong> screen which takes you to the <strong>OPSTX</strong> screen</li>
 			<li>
-go to <a href="../debts/107-20112320-01.html">Case managed debt recovery</a></li>		</ul>
+Key <strong>GRN</strong> (Garnishee Coded) to finalise the activity</li>
+			<li>
+An online document will automatically create on the customer's record with the details of the STP data</li>
+			<li>
+To apply the wage garnishee, see Table 3 of <a href="../debts/107-05050010-03.html">Garnishee of continuing income to recover debts</a></li>		</ul>
 		<li>
-<strong>No</strong>, document on the customer record using the <strong>Not suitable for garnishee Fast Note</strong>&#58;</li>
+<strong>No&#58;</strong></li>
 			<ul>			<li>
-finalise the <strong>STP</strong> activity through the <strong>OPSTE</strong> and <strong>OPSTX</strong> screens</li>
+Document the customer record using the <strong>Not suitable for garnishee Fast Note</strong></li>
 			<li>
-consider if the customer is suitable for further investigation</li>
+'<strong>S</strong>'elect the MFU from the <strong>AL</strong> screen which takes you to the <strong>OPSTE</strong> screen</li>
 			<li>
-See <a href="../debts/107-20112320-01.html">Case managed debt recovery</a></li>			</ul>			</ul>
+Key <strong>EXC</strong> (Exclude from ETP selection) on the <strong>OPSTX</strong> screen to finalise the activity</li>
+			<li>
+Consider if the customer is suitable for further investigation</li>
+			<li>
+Consider referral to Case Managed Recovery if the debt is over $10,000. See <a href="../debts/107-20112320-01.html">Case managed debt recovery</a></li>			</ul>			</ul>
 </div>
 
 
