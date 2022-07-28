@@ -1,11 +1,9 @@
--   [Unable to access information in the log](#a2){.link .trans
-    dhs-analytics-behavior="onclick"
     dhs-analytics-category="on_this_page" dhs-analytics-action="click"
     dhs-analytics-label="unable_to_access_information_in_the_log"}
 :::
 
-[ ![](/sites/default/files/images/foi-logo_0.gif){width="148"
-height="62" loading="lazy"} ]{.media-element .file-full .embedded-entity
+[ ![](/sites/default/files/images/foi-logo_0.gif){loading="lazy"
+width="148" height="62"} ]{.media-element .file-full .embedded-entity
 delta="1" embed-button="link_files" entity-embed-display="image:image"
 entity-type="file" entity-uuid="db475780-6ce8-5a1f-9072-74ce54e2204a"
 langcode="en"}
@@ -2145,7 +2143,7 @@ Page last updated: 15 July 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 27 July 2022 from
+This information was printed 28 July 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
