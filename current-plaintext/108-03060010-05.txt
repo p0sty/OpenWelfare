@@ -9,19 +9,354 @@ Calculation of Defence Force Income Support Allowance (DFISA) 108-03060010
 This procedure is under review. An Operational Message about this
 content exists.
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+Examples
 
-You can request a copy from the department's Information Publication
-Scheme by:
+How DFISA rates will display on DFS screen for reporting customers
 
--   sending an email to freedomofinformation@humanservices.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Before 1 January 2022, DFISA payments for stimulus reporters were
+calculated and transmitted to DVA when the customer reports their income
+at the end of every entitlement period. DVA paid DFISA for the
+entitlement period retrospectively. This is to ensure the correct amount
+of DFISA was paid and to prevent overpayment.
+
+A zero DFISA rate was then transmitted to DVA at the start of every
+entitlement period. This occurred in the background. The DFISA Summary
+(DFS) screen will show a provisional rate of DFISA, which is the rate
+that would apply if the customer did not report any income.
+
+Table 1: This table describes an example of the details displayed on the
+DFISA Summary (DFS) screen for these reporting customers.
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | A customer’s entitlement period   |
+|                                   | end date and reporting date is 27 |
+|                                   | October 2017. The start date for  |
+|                                   | this entitlement period is 14     |
+|                                   | October 2017.                     |
+|                                   |                                   |
+|                                   | The system calculates and         |
+|                                   | displays a provisional DFISA rate |
+|                                   | for the start of the entitlement  |
+|                                   | period. This is the DFISA rate    |
+|                                   | that would apply if the customer  |
+|                                   | did not report any income.        |
+|                                   |                                   |
+|                                   | The provisional rate of DFISA     |
+|                                   | will be visible on the DFS screen |
+|                                   | but it is not transmitted to DVA  |
+|                                   | as the customer has not yet       |
+|                                   | reported.                         |
++-----------------------------------+-----------------------------------+
+| 2                                 | However, the system will send a   |
+|                                   | zero rate to DVA for 14 October   |
+|                                   | 2017. This will halt DVA DFISA    |
+|                                   | payments until the customer       |
+|                                   | reports at the end of the         |
+|                                   | entitlement period.               |
+|                                   |                                   |
+|                                   | The zero rate of DFISA is not     |
+|                                   | visible on the DFS screen, but it |
+|                                   | can be viewed by selecting the    |
+|                                   | DFISAOUT-N trigger on the         |
+|                                   | Transaction/Trigger List (TTL)    |
+|                                   | screen, then viewing the          |
+|                                   | ETT.TRN.DATA.TEXT field.          |
+|                                   |                                   |
+|                                   | Customer reports at the end of    |
+|                                   | the entitlement period            |
+|                                   |                                   |
+|                                   | When the customer reports at the  |
+|                                   | end of the entitlement period,    |
+|                                   | the income test is applied and a  |
+|                                   | new DFISA rate is calculated for  |
+|                                   | the entire period. The new DFISA  |
+|                                   | rate will be displayed on the DFS |
+|                                   | screen from the start of the      |
+|                                   | entitlement period (DOE 14        |
+|                                   | October 2017), and the rate will  |
+|                                   | be transmitted to DVA for         |
+|                                   | payment.                          |
+|                                   |                                   |
+|                                   | Once again, the DFS screen will   |
+|                                   | display a provisional rate of     |
+|                                   | DFISA for the start of the next   |
+|                                   | entitlement period (that is, the  |
+|                                   | rate that would apply if the      |
+|                                   | customer did not report any       |
+|                                   | income, in this case 24.1482).    |
++-----------------------------------+-----------------------------------+
+| 3                                 | The system will send a zero rate  |
+|                                   | of DFISA for the start of the     |
+|                                   | next entitlement period (that is, |
+|                                   | 28 October 2017). The new DFISA   |
+|                                   | rate and the zero rate can be     |
+|                                   | viewed by selecting the           |
+|                                   | DFISAOUT-N trigger on the         |
+|                                   | Transaction/Trigger List (TTL)    |
+|                                   | screen.                           |
++-----------------------------------+-----------------------------------+
+| 4                                 | View the ETT.TRN.DATA.TEXT field. |
++-----------------------------------+-----------------------------------+
+
+Calculating notional rent assistance
+
+Table 2: This table provides an example of how to calculate a notional
+rate of Rent Assistance (RA) using the DVA disability income rent test.
+
+These amounts may not be current. They are examples only. For current
+payments, see Rates and thresholds.
+
++-----------------------------------+-----------------------------------+
+| Example                           | Description                       |
++-----------------------------------+-----------------------------------+
+| Notional Rate of RA for a         | John and Helen receive Age        |
+| Pensioner couple                  | Pension plus Rent Assistance of   |
+|                                   | $62.70 each.                      |
+|                                   |                                   |
+|                                   | John also receives a 100%         |
+|                                   | Disability Compensation Payment   |
+|                                   | (DP) from DVA, at a fortnightly   |
+|                                   | rate of $488.40                   |
+|                                   |                                   |
+|                                   | Step 1                            |
+|                                   |                                   |
+|                                   | Obtain the customer’s actual rate |
+|                                   | of RA.                            |
+|                                   |                                   |
+|                                   | The couple’ actual rate of RA is  |
+|                                   | $62.70 each.                      |
+|                                   |                                   |
+|                                   | Step 2                            |
+|                                   |                                   |
+|                                   | Obtain the RA reduction amount by |
+|                                   | applying the partnered pension    |
+|                                   | income test to the DVA Disability |
+|                                   | Compensation Payment (DP) income  |
+|                                   | amount:                           |
+|                                   |                                   |
+|                                   | -   Combined rate of DVA DP       |
+|                                   |     income / 2 = $488.40 / 2 =    |
+|                                   |     $244.20 DVA DP income each pf |
+|                                   | -   Income free area = $150.00 pf |
+|                                   |     each                          |
+|                                   | -   Excess income = $244.20 -     |
+|                                   |     $150.00 = $94.20 each         |
+|                                   | -   RA reduction amount = $94.20  |
+|                                   |     x 0.5 (taper) = $47.10 each   |
+|                                   |                                   |
+|                                   | Step3                             |
+|                                   |                                   |
+|                                   | Subtract the RA reduction amount  |
+|                                   | from the actual rate of RA. This  |
+|                                   | amount equals the notional rate   |
+|                                   | of RA:                            |
+|                                   |                                   |
+|                                   | -   Actual rate of RA = $62.70    |
+|                                   | -   RA Reduction amount = $47.10  |
+|                                   | -   Notional rate of RA =         |
+|                                   |     $62.70 - $47.10 = $15.60      |
+|                                   |                                   |
+|                                   | Step 4                            |
+|                                   |                                   |
+|                                   | The notional rate of RA is then   |
+|                                   | included in the customer’s DFISA  |
+|                                   | rate calculation.                 |
+|                                   |                                   |
+|                                   | DFISA = (notional rate of pension |
+|                                   | or benefit + notional rate of RA) |
+|                                   | minus (actual rate of pension or  |
+|                                   | benefit + actual rate of RA)      |
++-----------------------------------+-----------------------------------+
+
+DFISA Lump Sum Bereavement Payment (LBP) calculation
+
+Table 3: This table provides an example of how to manually calculate a
+DFISA LBP. These calculations should be completed by the DVA Clearance
+Team.
+
+These amounts may not be current. They are examples only. For current
+payments, see Rates and thresholds.
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| Deceased customer paid by DVA,    | Ian and Dianne are a pension      |
+| surviving partner paid by         | couple who own their own home –   |
+| Services Australia                | Ian passed away on 28 November    |
+|                                   | 2017.                             |
+|                                   |                                   |
+|                                   | -   Ian received a TPI Disability |
+|                                   |     Compensation Payment (TPI) of |
+|                                   |     $1373.80 pf from DVA. The     |
+|                                   |     couple have other ordinary    |
+|                                   |     income of $125.00 each pf     |
+|                                   | -   DVA were notified of the      |
+|                                   |     death on 1 December 2017      |
+|                                   | -   Ian’s DVA entitlement period  |
+|                                   |     end date (EPED) is 4 December |
+|                                   |     2017, so the death was        |
+|                                   |     actioned within the           |
+|                                   |     entitlement period in which   |
+|                                   |     the death occurred            |
+|                                   | -   Note the deceased customer’s  |
+|                                   |     entitlement period (that is,  |
+|                                   |     the DVA entitlement period)   |
+|                                   |     is used in the LBP            |
+|                                   |     calculation                   |
+|                                   |                                   |
+|                                   | Prior to death, Ian received a    |
+|                                   | Service Pension from DVA at the   |
+|                                   | maximum rate of $674.20 pf.       |
+|                                   |                                   |
+|                                   | -   Ian’s TPI is not treated as   |
+|                                   |     income for the Service        |
+|                                   |     Pension as it is exempted     |
+|                                   |     from the income test under    |
+|                                   |     the Veterans’ Entitlements    |
+|                                   |     Act                           |
+|                                   | -   Ian received the maximum rate |
+|                                   |     of Service Pension as their   |
+|                                   |     ordinary income of $125.00 is |
+|                                   |     below the income free area of |
+|                                   |     $150.00                       |
+|                                   |                                   |
+|                                   | Prior to Ian’s death, Dianne      |
+|                                   | received an Age Pension of        |
+|                                   | $343.25 pf paid by Services       |
+|                                   | Australia, and a Defence Force    |
+|                                   | Income Support Allowance (DFISA)  |
+|                                   | payment of $330.95 pf from DVA.   |
+|                                   |                                   |
+|                                   | -   TPI is treated as income for  |
+|                                   |     Dianne’s Age Pension. As this |
+|                                   |     reduces the rate of Age       |
+|                                   |     Pension, Dianne is entitled   |
+|                                   |     to DFISA and may be entitled  |
+|                                   |     to a DFISA LBP                |
+|                                   | -   To obtain the DFISA LBP       |
+|                                   |     amount, a notional rate of    |
+|                                   |     Age Pension is calculated     |
+|                                   |     where TPI is excluded from    |
+|                                   |     the income test. This rate    |
+|                                   |     will be used in the LBP       |
+|                                   |     calculation to determine      |
+|                                   |     Dianne’s notional LBP         |
+|                                   |     entitlement                   |
+|                                   | -   Dianne’s actual LBP           |
+|                                   |     entitlement is then           |
+|                                   |     subtracted from the notional  |
+|                                   |     LBP to obtain the DFISA LBP   |
+|                                   |     amount                        |
+|                                   | -   Dianne’s notional rate of Age |
+|                                   |     Pension is the maximum rate   |
+|                                   |     of $674.20 pf as the ordinary |
+|                                   |     (non TPI) income of $125.00   |
+|                                   |     is below the income free area |
+|                                   |     of $150.00, therefore does    |
+|                                   |     not reduce Dianne’s rate      |
+|                                   |                                   |
+|                                   | Dianne’s New Single Rate (NR) is  |
+|                                   | $894.40.                          |
++-----------------------------------+-----------------------------------+
+| Calculating the actual LBP (paid  | The system can’t automatically    |
+| by Services Australia)            | calculate the LBP payment as Ian  |
+|                                   | was a DVA customer. This must be  |
+|                                   | calculated manually using the LBP |
+|                                   | formula:                          |
+|                                   |                                   |
+|                                   | LBP = [(CMCR - NR) x 6] plus      |
+|                                   | [(CMCR - NR) x NDEP/14]           |
+|                                   |                                   |
+|                                   | Combined Member of a Couple Rate  |
+|                                   | (CMCR) = $674.20 + $343.25 =      |
+|                                   | $1017.45                          |
+|                                   |                                   |
+|                                   | New Single Rate (NR) = $894.40    |
+|                                   |                                   |
+|                                   | NDEP = 7 (Number of entitlement   |
+|                                   | days from and including the date  |
+|                                   | of death until and including the  |
+|                                   | end of the entitlement period, in |
+|                                   | this case 28 November to 4        |
+|                                   | December).                        |
+|                                   |                                   |
+|                                   | Calculation as follows:           |
+|                                   |                                   |
+|                                   | [(CMCR - NR) x 6] = $123.05 x 6 = |
+|                                   | $738.30                           |
+|                                   |                                   |
+|                                   | [(CMCR - NR) x NDEP/14] = $123.05 |
+|                                   | x 7/14 = $61.53                   |
+|                                   |                                   |
+|                                   | Actual LBP = $738.30 + $61.53 =   |
+|                                   | $799.83                           |
++-----------------------------------+-----------------------------------+
+| Calculating the notional LBP      | The same formula is used to       |
+|                                   | calculate the notional LBP.       |
+|                                   |                                   |
+|                                   | The rates used in the formula     |
+|                                   | exclude any DVA DP (in this case  |
+|                                   | TPI) from the income test.        |
+|                                   |                                   |
+|                                   | Notional LBP = [(Notional CMCR –  |
+|                                   | Notional NR) x 6] plus [(Notional |
+|                                   | CMCR – Notional NR) x NDEP/14]    |
+|                                   |                                   |
+|                                   | Notional Combined Member of a     |
+|                                   | Couple Rate (Notional CMCR) =     |
+|                                   | $674.20 + $674.20 = $1348.40      |
+|                                   |                                   |
+|                                   | Notional New Single Rate (NR) =   |
+|                                   | $894.40 (no need to calculate a   |
+|                                   | Notional NR for this example as   |
+|                                   | Ian’s TPI no longer reduces       |
+|                                   | Dianne’s Age Pension rate)        |
+|                                   |                                   |
+|                                   | NDEP = 7                          |
+|                                   |                                   |
+|                                   | Calculation as follows:           |
+|                                   |                                   |
+|                                   | [(Notional CMCR – NR) x 6] =      |
+|                                   | $454.00 x 6 = $2724.00            |
+|                                   |                                   |
+|                                   | [(Notional CMCR - NR) x NDEP/14]  |
+|                                   | = $454.00 x 7/14 = $227.00        |
+|                                   |                                   |
+|                                   | Notional LBP = $2724.00 + $227.00 |
+|                                   | = $2951.00                        |
++-----------------------------------+-----------------------------------+
+| Calculating the DFISA LBP         | DFISA LBP = Notional LBP minus    |
+|                                   | Actual LBP                        |
+|                                   |                                   |
+|                                   | DFISA LBP = $2951.00 – $799.83 =  |
+|                                   | $2151.17                          |
++-----------------------------------+-----------------------------------+
+| Paying the LBP amounts            | The manually calculated actual    |
+|                                   | LBP is paid via the OOP screen.   |
+|                                   | See Calculation of a Lump Sum     |
+|                                   | Bereavement Payment (LBP) for     |
+|                                   | details                           |
+|                                   |                                   |
+|                                   | The manually calculated DFISA LBP |
+|                                   | amount should be coded on the     |
+|                                   | DFLS screen, which triggers an    |
+|                                   | automatic transmission to DVA     |
+|                                   | (who will pay the amount). A      |
+|                                   | system issue may prevent the      |
+|                                   | transmission from occurring – in  |
+|                                   | this instance the DVA Clearance   |
+|                                   | Team will advise DVA of the       |
+|                                   | amount manually.                  |
++-----------------------------------+-----------------------------------+
+
+DVA Clearance Team
+
+For cases requiring a manual calculation, contact the DVA Clearance
+Team.
 
                                    
 

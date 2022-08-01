@@ -1277,13 +1277,39 @@ Table 2
 |                                   | Processing FTB lump sum claims.   |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Manual Follow-up (MFU) after      |
-|                                   | reconciliation + Read more ...    |
+|                                   | reconciliation is completed with  |
+|                                   | a debt outcome + Read more ...    |
 |                                   |                                   |
-|                                   | An I031FY MFU will be created     |
-|                                   | after reconciliation if there is  |
-|                                   | an over-estimation of tax-free    |
-|                                   | pension/benefit, and the          |
-|                                   | reconciliation outcome is a debt. |
+|                                   | An I031FY MFU is created after    |
+|                                   | reconciliation is completed and   |
+|                                   | an estimate is used in the        |
+|                                   | reconciliation calculation and    |
+|                                   | outcome is a debt.                |
+|                                   |                                   |
+|                                   | The purpose of the MFU is to      |
+|                                   | initiate a review of the actual   |
+|                                   | amount received by the customer   |
+|                                   | to ensure the tax-free pensions   |
+|                                   | and benefits income used in       |
+|                                   | reconciliation outcome is         |
+|                                   | correct.                          |
+|                                   |                                   |
+|                                   | If tax-free pensions and benefits |
+|                                   | income has not been recorded on   |
+|                                   | the Previous Financial Year       |
+|                                   | Income (FIPY) screen, when FTB is |
+|                                   | reconciled the system will use    |
+|                                   | the higher of:                    |
+|                                   |                                   |
+|                                   | -   tax free pensions and         |
+|                                   |     benefits amount on Tax        |
+|                                   |     Payment Summary (TXGS)        |
+|                                   |     screen, or                    |
+|                                   | -   the estimate (MRE, FYE or     |
+|                                   |     EAP) on the FAO Tax Free      |
+|                                   |     Pension/Benefit (FTF) screen  |
+|                                   |     for the relevant financial    |
+|                                   |     year                          |
 |                                   |                                   |
 |                                   | Check if the reconciliation debt  |
 |                                   | was caused by the customer        |
@@ -1317,38 +1343,57 @@ Table 2
 |                                   | Contact the customer, using       |
 |                                   | Desktop Electronic Message        |
 |                                   | Capability (DEMC) if possible.    |
-|                                   | Discuss and update the tax-free   |
-|                                   | pension and benefit amount via    |
-|                                   | FIPY if necessary using the       |
-|                                   | actual tax-free pension/benefit   |
-|                                   | paid. For help, see Updating      |
-|                                   | previous financial year incomes   |
-|                                   | for FTB and CCB.                  |
 |                                   |                                   |
-|                                   | Note: the customer must provide a |
-|                                   | revised tax-free pension and      |
-|                                   | benefit amount before FIPY can be |
-|                                   | updated.                          |
+|                                   | If contact is successful:         |
 |                                   |                                   |
-|                                   | Where customer contact is         |
-|                                   | unsuccessful, no updates to FIPY  |
-|                                   | should be made:                   |
+|                                   | -   Discuss the tax-free pensions |
+|                                   |     and benefits.                 |
+|                                   |     Ask the customer if they or   |
+|                                   |     their partner received a      |
+|                                   |     tax-free pension or benefit   |
+|                                   |     from the Department of        |
+|                                   |     Veterans’ Affairs, as this    |
+|                                   |     would not be included on TXGS |
+|                                   | -   The customer must provide a   |
+|                                   |     revised tax-free pensions and |
+|                                   |     benefits amount before the    |
+|                                   |     income can be updated.        |
+|                                   |     They must provide an amount   |
+|                                   |     that is at least equal to the |
+|                                   |     amount on TXGS                |
+|                                   | -   Update the income on FIPY if  |
+|                                   |     necessary using the actual    |
+|                                   |     tax-free pensions and         |
+|                                   |     benefits paid.                |
+|                                   |     For help, see Updating        |
+|                                   |     previous financial year       |
+|                                   |     incomes for FTB, CCS and CCB  |
+|                                   | -   DOC the record with the       |
+|                                   |     reason the income was updated |
+|                                   |     and the re-reconciliation     |
+|                                   |     outcome                       |
+|                                   | -   Cancel the MFU from AL screen |
+|                                   |     with the MFU Keyword #RECTFA. |
 |                                   |                                   |
+|                                   | Note: updates to the tax-free     |
+|                                   | pensions and benefits amount may  |
+|                                   | not result in a change to the     |
+|                                   | reconciliation outcome.           |
+|                                   |                                   |
+|                                   | If customer contact is not        |
+|                                   | successful:                       |
+|                                   |                                   |
+|                                   | -   no updates to FIPY should be  |
+|                                   |     made                          |
 |                                   | -   DOC the record advising if    |
 |                                   |     customer contacts to discuss  |
 |                                   |     and update the tax-free       |
-|                                   |     pension and benefit amount    |
+|                                   |     pensions and benefits amount  |
 |                                   |     via FIPY if necessary using   |
-|                                   |     the actual tax-free           |
-|                                   |     pension/benefit paid          |
+|                                   |     the actual tax-free pensions  |
+|                                   |     and benefits paid             |
 |                                   | -   Cancel the MFU from AL screen |
-|                                   |                                   |
-|                                   | MFU Keyword #RECTFA.              |
-|                                   |                                   |
-|                                   | More help is available by typing  |
-|                                   | 'V' next to the activity on the   |
-|                                   | Activity List (AL) screen and     |
-|                                   | viewing the notes.                |
+|                                   |     with the MFU Keyword #RECTFA  |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Advance Warning and Errors (AWE)  |
 |                                   | screen edit after                 |

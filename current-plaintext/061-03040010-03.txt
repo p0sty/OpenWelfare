@@ -26,7 +26,7 @@ Cancelling or changing travel arrangement details
 |                                   | been recorded?                    |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 2             |
-|                                   | -   No, go to Step 7              |
+|                                   | -   No, go to Step 6              |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Has the customer had approved     |
 |                                   | portability coded for this        |
@@ -59,7 +59,7 @@ Cancelling or changing travel arrangement details
 |                                   | Yes, departure is changing by     |
 |                                   | more than 3 days, go to Step 6    |
 |                                   |                                   |
-|                                   | No:,                              |
+|                                   | No:                               |
 |                                   |                                   |
 |                                   | -   departure is changing by less |
 |                                   |     than 3 days, go to Step 4     |
@@ -67,39 +67,46 @@ Cancelling or changing travel arrangement details
 |                                   |     departure altogether, go to   |
 |                                   |     Step 6                        |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Does the customer want written    |
-|                                   | advice of the effect of change? + |
-|                                   | Read more ...                     |
-|                                   |                                   |
-|                                   | -   Yes, go to Step 6             |
-|                                   | -   No, go to Step 5              |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Correct the departure + Read more |
+| 4                                 | Correct the departure + Read more |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | Go to the line on the RSCD screen |
-|                                   | with the customer's intended      |
-|                                   | departure date and record 'C' in  |
-|                                   | front of the departure date and   |
-|                                   | correct the date as required.     |
+|                                   | Check the RSCD screen             |
 |                                   |                                   |
-|                                   | Record the Source: and DOR:       |
-|                                   | fields.                           |
+|                                   | There may already be a record of  |
+|                                   | return to Australia advised       |
+|                                   | earlier                           |
 |                                   |                                   |
-|                                   | Press [Enter].                    |
+|                                   | If the customer was granted       |
+|                                   | restricted portability for an     |
+|                                   | approved absence, there may be    |
+|                                   | information recorded on RSCD      |
+|                                   | before the expected date of       |
+|                                   | return to Australia:              |
 |                                   |                                   |
-|                                   | Check if the RSCD screen also     |
-|                                   | contains a return to Australia    |
-|                                   | line for the earlier advised      |
-|                                   | departure. If there is a line     |
-|                                   | with 'Australia' in the Country:  |
-|                                   | field with an Event date later    |
-|                                   | than the original departure date, |
-|                                   | the return to Australia has been  |
-|                                   | recorded. Code 'C' at the start   |
-|                                   | of this line if the expected      |
-|                                   | departure date has changed and    |
-|                                   | press [Enter] again.              |
+|                                   | -   This will only occur if the   |
+|                                   |     customer was granted payment  |
+|                                   |     for a specific negotiated     |
+|                                   |     period which ended before the |
+|                                   |     planned return to Australia   |
+|                                   |     date                          |
+|                                   | -   It will have an Event date    |
+|                                   |     for the day after the end of  |
+|                                   |     the specific negotiated       |
+|                                   |     period and the same country   |
+|                                   |     to which the customer was     |
+|                                   |     departing                     |
+|                                   | -   Delete the entry as part of   |
+|                                   |     the update to RSCD            |
+|                                   |                                   |
+|                                   | Update the RSCD screen with the   |
+|                                   | new information:                  |
+|                                   |                                   |
+|                                   | -   Change the intended departure |
+|                                   |     date                          |
+|                                   | -   Check if an expected date of  |
+|                                   |     return has also been coded.   |
+|                                   |     It may need to be changed as  |
+|                                   |     well                          |
 |                                   |                                   |
 |                                   | If the customer has subject to    |
 |                                   | restricted portability and was    |
@@ -117,61 +124,23 @@ Cancelling or changing travel arrangement details
 |                                   | negotiated period and the same    |
 |                                   | country to which the customer was |
 |                                   | departing in the Country: field.  |
-|                                   | If this line exists, code 'D' at  |
-|                                   | the start of this line and press  |
-|                                   | [Enter] again.                    |
+|                                   | If this line exists, it needs to  |
+|                                   | be deleted.                       |
 |                                   |                                   |
-|                                   | Go to Step 9.                     |
+|                                   | Go to Step 8.                     |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Delete the departure + Read more  |
+| 5                                 | Delete the departure + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | Go to the line on the RSCD screen |
-|                                   | with the customer's intended      |
-|                                   | travel date and code 'D' in front |
-|                                   | of the departure date.            |
+|                                   | Delete the travel from the RSCD   |
+|                                   | screen.                           |
 |                                   |                                   |
-|                                   | Record the Source: and DOR:       |
-|                                   | fields.                           |
-|                                   |                                   |
-|                                   | Press [Enter].                    |
-|                                   |                                   |
-|                                   | Check if the RSCD screen also     |
-|                                   | contains a return to Australia    |
-|                                   | line for the departure. If there  |
-|                                   | is a line with 'Australia' in the |
-|                                   | Country field with an Event date  |
-|                                   | later than the changed departure  |
-|                                   | date, the return to Australia has |
-|                                   | been recorded. Code 'D' at the    |
-|                                   | start of this line and press      |
-|                                   | [Enter] again.                    |
-|                                   |                                   |
-|                                   | If the customer has a restricted  |
-|                                   | payment and was granted an        |
-|                                   | approved absence, the system may  |
-|                                   | record a second line between the  |
-|                                   | departure line and the return to  |
-|                                   | Australia line. This line will    |
-|                                   | only occur if the customer was    |
-|                                   | granted a specific negotiated     |
-|                                   | period for the absence which      |
-|                                   | ended before the planned return   |
-|                                   | to Australia date. It will have   |
-|                                   | an Event date for the day after   |
-|                                   | the end of the specific           |
-|                                   | negotiated period and the same    |
-|                                   | country to which the customer was |
-|                                   | departing in the Country: field.  |
-|                                   | If this line exists, code 'D' at  |
-|                                   | the start of this line and press  |
-|                                   | [Enter] again.                    |
-|                                   |                                   |
-|                                   | Ensure all lines relating to the  |
-|                                   | relevant absence have been        |
-|                                   | removed before proceeding.        |
+|                                   | Ensure all information on RSCD    |
+|                                   | relating to the relevant absence  |
+|                                   | have been removed before          |
+|                                   | proceeding.                       |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Delete any associated departure   |
+| 6                                 | Delete any associated departure   |
 |                                   | coding + Read more ...            |
 |                                   |                                   |
 |                                   | Go to the Address History (ADH)   |
@@ -187,14 +156,9 @@ Cancelling or changing travel arrangement details
 |                                   | cease incorrectly.                |
 |                                   |                                   |
 |                                   | If the planned absence was to     |
-|                                   | live in another country, go to    |
+|                                   | live in another country, update   |
 |                                   | the Country of Residence (CRES)   |
-|                                   | screen. If a line exists with the |
-|                                   | customer's planned departure date |
-|                                   | and their new country of          |
-|                                   | residence, delete or change this  |
-|                                   | by coding 'D' or 'C' in front of  |
-|                                   | the line, as appropriate.         |
+|                                   | screen.                           |
 |                                   |                                   |
 |                                   | If the customer is going to an    |
 |                                   | agreement country, check if they  |
@@ -238,11 +202,11 @@ Cancelling or changing travel arrangement details
 |                                   | the effect of the change on their |
 |                                   | payment?                          |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 8             |
+|                                   | -   Yes, go to Step 7             |
 |                                   | -   No, record details in a DOC   |
-|                                   |     and go to Step 9              |
+|                                   |     and go to Step 8              |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Redo portability decision + Read  |
+| 7                                 | Redo portability decision + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If the customer changes their     |
@@ -279,7 +243,7 @@ Cancelling or changing travel arrangement details
 |                                   | date(s) and a new letter can be   |
 |                                   | selected.                         |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Have any dependent children's     |
+| 8                                 | Have any dependent children's     |
 |                                   | travel details changed? + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
@@ -287,10 +251,10 @@ Cancelling or changing travel arrangement details
 |                                   |     details as required, see      |
 |                                   |     Changing details of a child's |
 |                                   |     travel to and from Australia. |
-|                                   |     Go to Step 10                 |
-|                                   | -   No, go to Step 10             |
+|                                   |     Go to Step 9                  |
+|                                   | -   No, go to Step 9              |
 +-----------------------------------+-----------------------------------+
-| 10                                | Check if payment needs to be      |
+| 9                                 | Check if payment needs to be      |
 |                                   | restored + Read more ...          |
 |                                   |                                   |
 |                                   | If the customer’s payment has     |
@@ -314,24 +278,24 @@ Cancelling or changing travel arrangement details
 |                                   | Does the customer’s payment need  |
 |                                   | to be restored?                   |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 11            |
+|                                   | -   Yes, go to Step 10            |
 |                                   | -   No, no further action is      |
 |                                   |     required. Procedure ends here |
 +-----------------------------------+-----------------------------------+
-| 11                                | Customer's payments have          |
+| 10                                | Customer's payments have          |
 |                                   | stopped + Read more ...           |
 |                                   |                                   |
 |                                   | Can the customer's payment be     |
 |                                   | restored?                         |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 12            |
+|                                   | -   Yes, go to Step 11            |
 |                                   | -   No, ensure all actions and    |
 |                                   |     decisions are recorded in a   |
 |                                   |     DOC. Check if the customer    |
 |                                   |     needs to lodge a new claim.   |
 |                                   |     Procedure ends here           |
 +-----------------------------------+-----------------------------------+
-| 12                                | Restore payment + Read more ...   |
+| 11                                | Restore payment + Read more ...   |
 |                                   |                                   |
 |                                   | Go to the Benefit Action (BA)     |
 |                                   | screen                            |

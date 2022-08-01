@@ -6,19 +6,178 @@ How to group children on a customer's Family Tax Benefit (FTB) record 277-510500
 -   References
 -   Training & Support
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This document outlines the procedures for grouping children on a
+customer's record for child support purposes. Grouping children ensures
+the Maintenance Action Test (MAT) and Maintenance Income Test (MIT) are
+correctly applied to a customer's FTB Part A rate.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Maintenance and FTB
 
--   sending an email to freedomofinformation@humanservices.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Customers claiming FTB for a child from a previous relationship must
+take reasonable action to obtain child support from the child's other
+parent to be paid more than base rate FTB Part A for the child, unless
+an exemption is appropriate.
+
+Child support received by an FTB customer and/or their partner may
+affect the customer's rate of FTB Part A. Any child support received
+must be recorded on the customer's record to make sure the correct rate
+of FTB Part A is paid.
+
+For FTB instalment claims, all children linked to the FTB customer and
+their partner are grouped according to child support entitlement on the
+Maintenance Entitlement Group Summary (MNGS) screen. This screen is the
+entry point for viewing and updating child support information.
+
+For FTB lump sum claims for 2008-2009 onwards, children are grouped on
+the Maint LSC Group Summary (MLGS) screen.
+
+Grouping of children on the MNGS screen
+
+Grouping needs to be done when a customer ('parent') claims FTB for a
+child from a previous relationship.
+
+For child support purposes, the term 'parent' refers to:
+
+-   biological parent
+-   adoptive parent
+-   if the child was born as the result of an artificial conception
+    procedure (ACP), a parent of the child under section 60H of the
+    Family Law Act
+-   if the child was born because of a surrogacy arrangement, a parent
+    of the child under section 60HB of the Family Law Act
+
+Although grouping of children on the Maintenance Entitlement Group
+Summary (MNGS) screen generally occurs automatically, manual grouping
+may be required where the customer's circumstances change, see Manual
+grouping of children below.
+
+The child/ren may appear in the following groups:
+
+-   Current Relationship (CRE)
+-   Entitlement (ENT)
+-   Non-Biological (ENB)
+-   Non-Active
+-   Deceased Payer (LPD)
+
+Note: there is an issue where a child is adopted by a couple that later
+separates. These children are being automatically placed in an ENT group
+and given a maintenance action exemption of Non-Biological Parent
+receiving maintenance (NBP). This is not the desired outcome, see Issue
+where a child is adopted and the parents later separate below.
+
+Manual grouping of children
+
+Where a child is in a Non-Biological (ENB) maintenance group on the
+Maintenance Entitlement Group Summary (MNGS) screen and the customer
+advises they are receiving voluntary maintenance for the child/ren, the
+child/ren must be manually moved in to an Entitlement (ENT) group in
+order to record the voluntary maintenance, see Manual grouping in Table
+1.
+
+Grouping should be checked when the customer circumstances change such
+as when they separate or reconcile. In some cases, the system
+automatically updates groups.
+
+As same-sex relationships are recognised from 1 July 2009, it may be
+necessary to regroup the children for whom an IVF exemption was recorded
+before July 2009.
+
+Issue where a child is adopted and the parents later separate
+
+When a couple adopts a child and this is coded on the Child
+Miscellaneous Circumstances (CHM) screen, the child is placed in a
+Current Relationship (CRE) group on the MNGS screen. The child
+automatically receives a maintenance exemption code of 'CCR' (Child of
+current relationship).
+
+If the couple separates, the child is placed in an ENT group and a
+maintenance code of 'NBP' is automatically applied:
+
+-   these children are not automatically given a 91 day Deciding
+    Maintenance Action (DMA) period
+-   the customer is not automatically sent a Maintenance Action
+    Requirement Notification Letter (MARNL) advising them of the need to
+    take action, and
+-   the child does not revert to NMA (No maintenance action) if the
+    customer fails to take reasonable action to obtain child support
+    within the 91 day DMA period
+
+This is incorrect, see Manual process required where a couple adopt a
+child and later separate in Table 1.
+
+System problem - Customer has 3 or more child support groups on the MNGS screen
+
+A system problem, PM70178, affected FTB customers who have 3 or more
+child support groups on the Maintenance Entitlement Group Summary (MNGS)
+screen. Where maintenance data from Child Support was loaded on to the
+Centrelink record (identified on the Event Summary (ES) screen as a *SP
+activity), and the activity contained details of a new child support
+payer, the new payer incorrectly overrode the details for 1 or more of
+the existing groups on the MNGS screen. This problem was fixed in
+September 2016, which prevents any further occurrences of the issue from
+occurring, but customers impacted before this date have not yet been
+cleaned up.
+
+Example:
+
+-   An FTB customer has 2 groups on the MNGS screen, for payers 1 and 2
+-   The customer then has a child come in to their care. As the new
+    child has a different parent to the customer's other children, the
+    child is placed in their own Entitlement (ENT) group on the MNGS
+    screen
+-   A child support case is then started against payer 3
+-   When the details of the new child support case were received by
+    Centrelink via the data exchange (showing the customer has a child
+    support case against payer 3), payer 3's details incorrectly
+    overrode the details for either or both of the other payers
+-   This resulted in payer 3 showing as the payer for multiple groups,
+    with the periods payer 3 was partnered to the customer being applied
+    to the maintenance action and income calculation for the other
+    groups
+
+This issue may have caused incorrect FTB reconciliation debts and
+arrears, and projected overpayments (Mandatory Continuous Adjustment),
+as it applied incorrect maintenance action and income results to other
+groups.
+
+Impacted records are generally identified via the customer contacting to
+query FTB reconciliation debts and/or arrears, or an unexpected increase
+or decrease to their ongoing FTB. Where a customer raises a concern of
+this kind, Service Officers should check if this issue has caused the
+decrease/increase/debt. This can be confirmed by checking the MNGS
+screen to see if a payers name is attached to multiple groups (Note:
+'page down' to see other pages on the MNGS screen).
+
+If assistance is required in determining if this issue has affected a
+customer, refer to the local Technical Peer Support (TPS) Officer. Where
+the TPS Officer determines that the customer has been affected by this
+issue or is unsure, they are to escalate the enquiry to their Service
+Support Officer (SSO) via the normal escalation process.
+
+SSOs must check whether a payer is incorrectly attached to multiple
+groups on the MNGS screen. If so, the SSOs need to update the payer
+details for the relevant group/s and must DOC their investigation/coding
+indicating who is the duplicated payer.
+
+Related links
+
+Family Tax Benefit (FTB) and child support for children born as a result
+of a surrogacy arrangement or via artificial conception procedure
+(including children of same-sex couples)
+
+Linking and unlinking a child support paying parent to a Family Tax
+Benefit record
+
+Maintenance Action Test (MAT) codes
+
+Maintenance Action Test (MAT) for Family Tax Benefit (FTB) customers
+
+Matching a child support child between Centrelink and Child Support
+
+Recording child support details for a previous year Family Tax Benefit
+(FTB) claim
 
                                    
 
