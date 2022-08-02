@@ -1064,34 +1064,54 @@ Table 2
 |                                   | Has the system issued the correct |
 |                                   | amount?                           |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 3             |
-|                                   | -   No,                           |
-|                                   | -   []For current customers if    |
-|                                   |     the system is displaying an   |
-|                                   |     incorrect amount, go to Step  |
-|                                   |     2                             |
-|                                   | -   For incorrect amounts within  |
-|                                   |     a new claim (NCL) activity    |
-|                                   |     where a warning occurs, go to |
-|                                   |     Step 4                        |
-|                                   | -   If the system has incorrectly |
-|                                   |     issued the RS to a            |
-|                                   |     non-qualified student, go to  |
-|                                   |     Step 4                        |
-|                                   | -   If the system is not          |
-|                                   |     displaying any amount of RS,  |
-|                                   |     go to Step 7                  |
-|                                   | -   [                             |
+|                                   | Yes, go to Step 3                 |
+|                                   |                                   |
+|                                   | No,                               |
+|                                   |                                   |
+|                                   | [                                 |
 |                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
 |                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   |     Blueprint Migration\RDT       |
-|                                   |     Release                       |
-|                                   |     Icons\32w\icon-phone.png]If   |
-|                                   |     an activity had already been  |
-|                                   |     started, cancel the activity  |
-|                                   |     on the Activity List (AL)     |
-|                                   |     screen and send an ACTDOC to  |
-|                                   |     SNN. Procedure ends here      |
+|                                   | Blueprint Migration\RDT Release   |
+|                                   | Icons\32w\icon-phone.png]If an    |
+|                                   | activity had already been         |
+|                                   | started, cancel the activity on   |
+|                                   | the Activity List (AL) screen and |
+|                                   | for customers receiving:          |
+|                                   |                                   |
+|                                   | -   YA create a Fast Note -       |
+|                                   |     select Auto Text, use         |
+|                                   |     Students, ABSTUDY and         |
+|                                   |     Apprentices > Update > YAL    |
+|                                   |     study update action DOC       |
+|                                   | -   ABSTUDY create a Fast Note -  |
+|                                   |     select Auto Text, use         |
+|                                   |     Students, ABSTUDY and         |
+|                                   |     Apprentices > Update >        |
+|                                   |     ABSTUDY Action request        |
+|                                   | -   Add the text - ‘Amount of     |
+|                                   |     Relocation Scholarship        |
+|                                   |     requires investigation. Refer |
+|                                   |     to OpB 010-07030010’. Include |
+|                                   |     any other relevant            |
+|                                   |     information supplied by the   |
+|                                   |     customer                      |
+|                                   | -   For telephony staff,          |
+|                                   |     procedure ends here           |
+|                                   |                                   |
+|                                   | []For current customers if the    |
+|                                   | system is displaying an incorrect |
+|                                   | amount, go to Step 2              |
+|                                   |                                   |
+|                                   | For incorrect amounts within a    |
+|                                   | new claim (NCL) activity where a  |
+|                                   | warning occurs, go to Step 4      |
+|                                   |                                   |
+|                                   | If the system has incorrectly     |
+|                                   | issued the RS to a non-qualified  |
+|                                   | student, go to Step 4             |
+|                                   |                                   |
+|                                   | If the system is not displaying   |
+|                                   | any amount of RS, go to Step 7    |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Manual override of incorrect RS   |
 |                                   | payment + Read more ...           |

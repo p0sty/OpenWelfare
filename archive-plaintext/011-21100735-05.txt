@@ -4,19 +4,493 @@ Medicare Patient History (NHSI) CICS Mainframe 011-21100735
 -   Background
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains Medicare patient claim history screen field
+descriptions and basic information on how to access and read Medicare
+patient history. This page also contains a list of function keys and
+their uses.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+On this page:
 
--   sending an email to freedomofinformation@humanservices.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Using control lines to access Medicare patient claim history
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| NHSI,Card#,Patient Reference      | This returns Medicare patient     |
+| [Enter] or NHSI,PIN [Enter]       | claim history screen for the      |
+|                                   | patient                           |
+|                                   |                                   |
+|                                   | Note: patient reference is a      |
+|                                   | unique identifier of the patient  |
+|                                   | for the Medicare card. It can be: |
+|                                   |                                   |
+|                                   | -   reference number              |
+|                                   | -   initial,e                     |
+|                                   | -   name.                         |
+|                                   |                                   |
+|                                   | If the system cannot determine    |
+|                                   | the patient uniquely, a list will |
+|                                   | display on screen. Use [PF5] to   |
+|                                   | select the patient.               |
++-----------------------------------+-----------------------------------+
+| Control line modifiers            | For a list of control line        |
+|                                   | modifiers see Indicators, codes,  |
+|                                   | modifiers and control lines for   |
+|                                   | claims processing in Medicare.    |
++-----------------------------------+-----------------------------------+
+
+Summary of NHSI function keys
+
+Table 2
+
+Note: when a function key is used the label will change to BASIC. When
+used a second time NHSI will display the original header information.
+
+To access function keys [PF13] to [PF24] use the shift key plus the
+function key that corresponds to your selection. For example, [PF14]
+becomes [Shift] and [PF2].
+
++-----------------------------------+-----------------------------------+
+| Category title                    | Description                       |
++-----------------------------------+-----------------------------------+
+| [PF1]-HELP                        | Place cursor on the field to      |
+|                                   | expand and press [PF1]            |
++-----------------------------------+-----------------------------------+
+| [PF2]-CLM ID+                     | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to CLM ID, OPER, INDX |
+|                                   | and MD                            |
++-----------------------------------+-----------------------------------+
+| [PF3]-EXIT                        | Exits from NHSI to a blank screen |
++-----------------------------------+-----------------------------------+
+| [PF4]-FEE/SRC+                    | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to FEE, DOL, SORC and |
+|                                   | N                                 |
++-----------------------------------+-----------------------------------+
+| [PF5]-CURSOR SEL                  | Select a member on a Medicare     |
+|                                   | Card to view history              |
+|                                   |                                   |
+|                                   | [PF5] is only available when the  |
+|                                   | system cannot uniquely identify   |
+|                                   | the patient                       |
++-----------------------------------+-----------------------------------+
+| [PF6]-SUBS/HOSP+                  | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to HOSP, GAP$ SUB$    |
+|                                   | and UNSUB$                        |
++-----------------------------------+-----------------------------------+
+| [PF7]-BACKWARDS                   | Scroll backwards 9 lines of       |
+|                                   | patient claim history             |
+|                                   |                                   |
+|                                   | If the cursor is under a service  |
+|                                   | line, the system will scroll from |
+|                                   | this point                        |
++-----------------------------------+-----------------------------------+
+| [PF8]-FORWARDS                    | Scroll forward 9 lines of patient |
+|                                   | claim history.                    |
+|                                   |                                   |
+|                                   | If the cursor is under a service  |
+|                                   | line, the system will scroll from |
+|                                   | this point.                       |
++-----------------------------------+-----------------------------------+
+| [PF9]-PIN/TIME                    | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to PIN, PRC DT and    |
+|                                   | TIME                              |
++-----------------------------------+-----------------------------------+
+| [PF10]-CHQ/EFT                    | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to CHQ/EFT, ISS DT,   |
+|                                   | STAT and S                        |
++-----------------------------------+-----------------------------------+
+| [PF11]-ITM QUAL+                  | Headings FST DT, LSDT and NO      |
+|                                   | change to QUALFR and FST DT       |
++-----------------------------------+-----------------------------------+
+| [PF12]-CANCEL                     | Exits from NHSI to a blank screen |
++-----------------------------------+-----------------------------------+
+| [PF14]-Claim Type Id              | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to CLM ID, DOL, POSN  |
+|                                   | and CT                            |
++-----------------------------------+-----------------------------------+
+| [PF16]- Assessment Ind            | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to MO, DIMS, VU,      |
+|                                   | MMRI, ME and AST                  |
++-----------------------------------+-----------------------------------+
+| [PF18]- OOP Info                  | Headings PI, RSN, TX, PRC DT and  |
+|                                   | OPER change to HOSP, GAP$ SUB$    |
+|                                   | and UNSUB$                        |
+|                                   |                                   |
+|                                   | This information relates to the   |
+|                                   | MSN                               |
++-----------------------------------+-----------------------------------+
+| [PF23]- ITEM (LSPN)               | Headings FST DT, LSDT and NO      |
+|                                   | change to LSPN and FST DT         |
++-----------------------------------+-----------------------------------+
+
+Headers in Medicare patient claim history
+
+Table 3
+
+Note: further information can be viewed by placing the curser:
+
+under the header or value in the column and pressing PF1, and/or
+
+on Indicators, codes, modifiers and control lines for claims processing
+in Medicare
+
++-----------------------+-----------------------+-----------------------+
+| Header                | Description           | PF1                   |
++-----------------------+-----------------------+-----------------------+
+| PATIENT               | The patient’s         | -   Patient name as   |
+|                       | abbreviate first name |     appears on the    |
+|                       | appears in this       |     Medicare card     |
+|                       | column                | -   Gender            |
+|                       |                       | -   Date of birth     |
+|                       |                       | -   PIN               |
+|                       |                       | -   Card Issue        |
+|                       |                       | -   CSN and FTB       |
+|                       |                       |     elibility         |
++-----------------------+-----------------------+-----------------------+
+| ITEM                  | The item number or    | Item description as   |
+|                       | service code appears  | written in QITI at    |
+|                       | in this column        | the DOS claimed.      |
+|                       |                       |                       |
+|                       |                       | Explanation of Alpha  |
+|                       |                       | value                 |
+|                       |                       |                       |
+|                       |                       | Example: AH or SR     |
++-----------------------+-----------------------+-----------------------+
+| FST DT                | The date of service   | If Item is CLID the   |
+|                       | (DOS) or              | Minor Customer ID     |
+|                       | referral/request date | name will display     |
+|                       | is shown              |                       |
++-----------------------+-----------------------+-----------------------+
+| LSDT                  | The date a referral   |                       |
+|                       | expires shown as MMYY |                       |
+|                       |                       |                       |
+|                       | Note: indefinite      |                       |
+|                       | referrals will        |                       |
+|                       | display as 1259       |                       |
++-----------------------+-----------------------+-----------------------+
+| NO                    | The number in this    |                       |
+|                       | column indicates:     |                       |
+|                       |                       |                       |
+|                       | -   the number of     |                       |
+|                       |     patients seen for |                       |
+|                       |     bulk consultation |                       |
+|                       |     items.            |                       |
+|                       | -   the number of     |                       |
+|                       |     lines below       |                       |
+|                       |     relating to a     |                       |
+|                       |     PAYP line         |                       |
+|                       | -   the number of     |                       |
+|                       |     lines above that  |                       |
+|                       |     a referral or     |                       |
+|                       |     request relates   |                       |
+|                       |     to                |                       |
+|                       | -   the number of     |                       |
+|                       |     additional fields |                       |
+|                       |     for a radiation   |                       |
+|                       |     oncology service  |                       |
++-----------------------+-----------------------+-----------------------+
+| PROVIDER              | The provider number   | -   Paygroup ID and   |
+|                       | of the servicing,     |     start date        |
+|                       | referring, requesting | -   CICS search       |
+|                       | or PAYP appear in     |     reference         |
+|                       | this column           | -   Provider Name     |
+|                       |                       | -   Practice address  |
+|                       | ACRF details are also | -   Speciality codes  |
+|                       | appear in this column |                       |
++-----------------------+-----------------------+-----------------------+
+| P                     | The payee code is     | Information of payee  |
+|                       | displayed in this     | code used             |
+|                       | column.               |                       |
++-----------------------+-----------------------+-----------------------+
+| CHARGE                | The amount charged or | For patient claims    |
+|                       | assigned for bulk     | the Claimants details |
+|                       | bill appears in this  | will display          |
+|                       | column                |                       |
+|                       |                       |                       |
+|                       | Note: notional        |                       |
+|                       | charges will display  |                       |
+|                       | as a blank value and  |                       |
+|                       | the total will be     |                       |
+|                       | shown on the first    |                       |
+|                       | item in the service   |                       |
+|                       | group                 |                       |
++-----------------------+-----------------------+-----------------------+
+| BENEFIT               | The system calculated | For patient claim     |
+|                       | benefit appears in    | EMSN eligibility and  |
+|                       | this column           | benefit will display  |
+|                       | Note: notional        |                       |
+|                       | charges will display  |                       |
+|                       | as a blank value and  |                       |
+|                       | the total will be     |                       |
+|                       | shown on the first    |                       |
+|                       | item in the service   |                       |
+|                       | group                 |                       |
++-----------------------+-----------------------+-----------------------+
+| PI                    | Any processing        | Information of PI     |
+|                       | indicators (PI) used  | used.                 |
+|                       | will appear in this   |                       |
+|                       | column                |                       |
+|                       |                       |                       |
+|                       | Note: the system will |                       |
+|                       | only display one PI   |                       |
+|                       | regardless if         |                       |
+|                       | multiple are used on  |                       |
+|                       | a claim               |                       |
++-----------------------+-----------------------+-----------------------+
+| RSN                   | Any reason (RSN) code | Information of the    |
+|                       | used will appear in   | RSN used              |
+|                       | this column           |                       |
+|                       |                       |                       |
+|                       | Note: the system will |                       |
+|                       | only display one RSN  |                       |
+|                       | regardless if         |                       |
+|                       | multiple are used on  |                       |
+|                       | a claim               |                       |
++-----------------------+-----------------------+-----------------------+
+| TX                    | Any claim or service  | T: Displays claims    |
+|                       | text will display in  | text                  |
+|                       | this column           |                       |
+|                       |                       | X: Displays           |
+|                       |                       | Adjustment            |
+|                       |                       | information           |
++-----------------------+-----------------------+-----------------------+
+| PRC DT                | The date of           |                       |
+|                       | processing (DOP) for  |                       |
+|                       | the service line      |                       |
++-----------------------+-----------------------+-----------------------+
+| OPER                  | The P number of the   |                       |
+|                       | operator who          |                       |
+|                       | processed the service |                       |
+|                       | line                  |                       |
+|                       |                       |                       |
+|                       | Note: Mainframe       |                       |
+|                       | displays an operators |                       |
+|                       | P number Universal    |                       |
+|                       | Logins are not used   |                       |
+|                       | in mainframe          |                       |
++-----------------------+-----------------------+-----------------------+
+| CLM ID                | The claim ID for bulk |                       |
+|                       | bill or simplified    |                       |
+|                       | billing/ECLIPSE       |                       |
+|                       | claims appear in this |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| INDX                  | The position number   |                       |
+|                       | of a bulk bill claim, |                       |
+|                       | or patient claims     |                       |
+|                       | relative position     |                       |
+|                       | will appear in this   |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| MD                    | Any fee modifiers     | Information of the    |
+|                       | used will appear in   | modifier used         |
+|                       | this column           |                       |
++-----------------------+-----------------------+-----------------------+
+| FEE                   | The schedule fee used |                       |
+|                       | by the system in      |                       |
+|                       | determining the       |                       |
+|                       | benefit for a service |                       |
++-----------------------+-----------------------+-----------------------+
+| DOL                   | The date of lodgement |                       |
+|                       | (DOL) for the service |                       |
+|                       | line                  |                       |
++-----------------------+-----------------------+-----------------------+
+| POSN                  | The position number   |                       |
+|                       | of a bulk bill claim, |                       |
+|                       | or patient claims     |                       |
+|                       | relative position     |                       |
+|                       | will appear in this   |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| CT                    | The claim type will   | Information on the    |
+|                       | appear in this column | claims type           |
++-----------------------+-----------------------+-----------------------+
+| SORC                  | The source office     | Information on the    |
+|                       | code of the operator  | Source office code    |
+|                       | who processed the     |                       |
+|                       | service line will     |                       |
+|                       | appear in this column |                       |
++-----------------------+-----------------------+-----------------------+
+| N                     | This column indicates |                       |
+|                       | grouping of items     |                       |
+|                       | processed as a        |                       |
+|                       | notional charge       |                       |
++-----------------------+-----------------------+-----------------------+
+| MO                    | This column displays  | Information on the    |
+|                       | what multiple         | Multiple Operation    |
+|                       | operation rule        | Rule applied to the   |
+|                       | applies to a service  | item                  |
+|                       | line                  |                       |
++-----------------------+-----------------------+-----------------------+
+| DIMS                  | This column displays  | Information on the    |
+|                       | what diagnostic       | Diagnostic Imaging    |
+|                       | imaging multiple      | Multiple Service Rule |
+|                       | service rule applies  | applied to the item   |
+|                       | to a service line     |                       |
++-----------------------+-----------------------+-----------------------+
+| VU                    | This column displays  | Information on the    |
+|                       | what multiple         | Multiple Vascular     |
+|                       | vascular ultrasound   | Ultrasound Services   |
+|                       | service site rule to  | Site Rule applied to  |
+|                       | a service line        | the item              |
++-----------------------+-----------------------+-----------------------+
+| MMRI                  | This column displays  | Information on the    |
+|                       | what multiple         | Multiple              |
+|                       | musculoskeletal MRI   | Musculoskeletal MRI   |
+|                       | service rule applies  | Services Rule applied |
+|                       | to a service line     | to the item           |
++-----------------------+-----------------------+-----------------------+
+| ME                    | This column displays  | Information on the    |
+|                       | what multiple         | Multiple              |
+|                       | echocardiogram        | Echocardiogram        |
+|                       | service rule applies  | Services Rule applied |
+|                       | to a service line     | to the item           |
++-----------------------+-----------------------+-----------------------+
+| AST                   | This column indicates | Information on        |
+|                       | who an assistant      | assistant payment     |
+|                       | surgeon item has been | method                |
+|                       | paid to               |                       |
++-----------------------+-----------------------+-----------------------+
+| HOSP GAP$             | The gap amount for an |                       |
+|                       | in hospital service   |                       |
+|                       | will appear in this   |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| SUB$                  | The amount            |                       |
+|                       | substantiated for a   |                       |
+|                       | service line will     |                       |
+|                       | appear in this column |                       |
+|                       |                       |                       |
+|                       | Note: PF6 will        |                       |
+|                       | display EMSN amounts  |                       |
+|                       | and PF18 will display |                       |
+|                       | MSN amounts           |                       |
++-----------------------+-----------------------+-----------------------+
+| UNSUB$                | The amount            |                       |
+|                       | unsubstantiated for a |                       |
+|                       | service line will     |                       |
+|                       | appear in this column |                       |
++-----------------------+-----------------------+-----------------------+
+| PIN                   | The patients PIN will |                       |
+|                       | appear in this column |                       |
++-----------------------+-----------------------+-----------------------+
+| TIME                  | The time of           |                       |
+|                       | processing the        |                       |
+|                       | service line will     |                       |
+|                       | appear in this        |                       |
+|                       | column. The time is   |                       |
+|                       | as per Canberra time  |                       |
++-----------------------+-----------------------+-----------------------+
+| CHQ/EFT               | The Reserve Bank      | Information on bank   |
+|                       | cheque number, or     | account and claimant  |
+|                       | patients EFT details  | details for an EFT    |
+|                       | will appear in this   | payment.              |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| ISS DT                | The issue date of a   |                       |
+|                       | cheque or EFT payment |                       |
+|                       | will appear in this   |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| STAT                  | The status of a       | Information on a      |
+|                       | cheque or EFT payment | Cheque’s status.      |
+|                       | will appear in this   |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| S                     | The state code of a   | Information on the    |
+|                       | system generated      | State code for a      |
+|                       | cheque will appear in | cheque                |
+|                       | this column           |                       |
++-----------------------+-----------------------+-----------------------+
+| QUALFR                | Any item qualifiers   |                       |
+|                       | (IE Equipment number) |                       |
+|                       | will appear is this   |                       |
+|                       | column                |                       |
++-----------------------+-----------------------+-----------------------+
+| LSPN                  | This column displays  |                       |
+|                       | the LSPN for a        |                       |
+|                       | diagnostic imaging    |                       |
+|                       | item will appear in   |                       |
+|                       | this column           |                       |
++-----------------------+-----------------------+-----------------------+
+
+Common NHSI ITEM values
+
+Table 4: this table contains a list of common values seen in Medicare
+patient claim history ITEM field that are not MBS items
+
++-----------------------------------+-----------------------------------+
+| Value                             | Description                       |
++-----------------------------------+-----------------------------------+
+| AH                                | Allied Health referral line. This |
+|                                   | line details the referral         |
+|                                   | information for allied health     |
+|                                   | services. The associated services |
+|                                   | will appear above this line. The  |
+|                                   | value in the NO field indicates   |
+|                                   | the number of lines above this    |
+|                                   | referral relates to               |
++-----------------------------------+-----------------------------------+
+| DI                                | Diagnostic Imaging request line.  |
+|                                   | This line details the request     |
+|                                   | information for diagnostic        |
+|                                   | imaging services. The associated  |
+|                                   | services will appear above this   |
+|                                   | line. The value in the NO field   |
+|                                   | indicates the number of lines     |
+|                                   | above this request relates to     |
++-----------------------------------+-----------------------------------+
+| PA                                | Pathology request line. The line  |
+|                                   | details the request information   |
+|                                   | for pathology services. The       |
+|                                   | associated services will appear   |
+|                                   | above this line. The value in the |
+|                                   | NO field indicates the number of  |
+|                                   | lines above this request relates  |
+|                                   | to                                |
++-----------------------------------+-----------------------------------+
+| SR                                | Specialist Referral line. The     |
+|                                   | line details the referral         |
+|                                   | information for referred          |
+|                                   | specialist and consultant         |
+|                                   | physician services. The           |
+|                                   | associated services will appear   |
+|                                   | above this line. The value in the |
+|                                   | NO field indicates the number of  |
+|                                   | lines above this referral relates |
+|                                   | to                                |
++-----------------------------------+-----------------------------------+
+| ACRF                              | Account Reference line. This line |
+|                                   | shows the account reference       |
+|                                   | number associated with a PDVC     |
+|                                   | claim where the provider has      |
+|                                   | requested an account reference    |
++-----------------------------------+-----------------------------------+
+| CLID                              | Claim ID line. This line details  |
+|                                   | information for claims            |
+|                                   | electronically transmitted to     |
+|                                   | Services Australia                |
++-----------------------------------+-----------------------------------+
+| PAYP                              | Pay Provider line. This line      |
+|                                   | displays the when a provider      |
+|                                   | other than the servicing provider |
+|                                   | is to be paid for services        |
+|                                   | rendered                          |
++-----------------------------------+-----------------------------------+
+| OPAY                              | Over Payment line. This line      |
+|                                   | indicates the total value of an   |
+|                                   | adjustment that has been over     |
+|                                   | paid                              |
++-----------------------------------+-----------------------------------+
+| UPAY                              | Under Payment line. This line     |
+|                                   | indicates the total value of an   |
+|                                   | adjustment that has been under    |
+|                                   | paid                              |
++-----------------------------------+-----------------------------------+
 
                                    
 

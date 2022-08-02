@@ -81,10 +81,24 @@ Table 1:
 |                                   |     number of person advising and |
 |                                   |     details of funeral director   |
 |                                   |     if known                      |
-|                                   | -   run the Notification of Death |
-|                                   |     guided procedure to generate  |
-|                                   |     an ACTDOC to the processing   |
-|                                   |     Service                       |
+|                                   | -   The Notification of Death     |
+|                                   |     guided procedure will not     |
+|                                   |     code the death, but will      |
+|                                   |     generate a DOC on the record. |
+|                                   |     This is an open work item to  |
+|                                   |     be allocated to a Service     |
+|                                   |     Officer with the required     |
+|                                   |     skill set to confirm the      |
+|                                   |     death                         |
+|                                   | -   if the guided procedure is    |
+|                                   |     not available, create an open |
+|                                   |     work item using Fast Note     |
+|                                   |     with the following            |
+|                                   |     information:                  |
+|                                   | -   Select Auto Text, use         |
+|                                   |     Generic > Update > Death      |
+|                                   |     Notification (Adult) - ACTION |
+|                                   |     REQUIRED                      |
 |                                   | -   [                             |
 |                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
 |                                   | SERDELEXCEL\WORKPRODIMP\Operation |
@@ -465,8 +479,10 @@ Table 3:
 |                                   | screen.                           |
 |                                   |                                   |
 |                                   | Is the child a Family Tax Benefit |
-|                                   | (FTB) child of the carer or       |
-|                                   | another person?                   |
+|                                   | (FTB), Child Care Subsidy (CCS),  |
+|                                   | Parental Leave Pay (PPL) and/or   |
+|                                   | Dad and Partner Pay (DAP) child   |
+|                                   | of the carer or another person?   |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 3             |
 |                                   | -   No, go to Step 4              |
@@ -512,8 +528,8 @@ Table 3:
 |                                   | The Notification of death         |
 |                                   | FTB/CCS/PPL - Child Fast Note     |
 |                                   | template auto-adds the keyword    |
-|                                   | FAOBRV to ensure the ACTDOC is    |
-|                                   | allocated to the Families         |
+|                                   | FAOBRV to ensure the open work    |
+|                                   | item is allocated to the Families |
 |                                   | Bereavement and Double Orphan     |
 |                                   | Pension (DOP) team. There is no   |
 |                                   | requirement to add additional     |
@@ -542,36 +558,106 @@ Table 3:
 |                                   | the death and bereavement coding  |
 |                                   | for these payments as well.       |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Handoff to Carer Processing       |
-|                                   | team + Read more ...              |
+| 5                                 | Coding the Death + Read more ...  |
 |                                   |                                   |
-|                                   | Record the details on an ACTDOC   |
-|                                   | and transfer the ACTDOC to the    |
-|                                   | Carer Processing team (WVW) to    |
-|                                   | complete with an additional       |
-|                                   | manually added keyword of         |
-|                                   | 'Urgent'.                         |
-|                                   |                                   |
-|                                   | Child selection screen            |
+|                                   | Access the carer's record         |
 |                                   |                                   |
 |                                   | Go to the Child Selection (CHS)   |
 |                                   | screen and 'S'elect the           |
-|                                   | appropriate care receiver. Key    |
-|                                   | the details in the Source and DOR |
-|                                   | fields. Press [Enter]:            |
+|                                   | appropriate care receiver.        |
+|                                   | Complete the Source and DOR       |
+|                                   | fields, then press [Enter]        |
 |                                   |                                   |
+|                                   | The Child Task Selector (CHTS)    |
+|                                   | displays, 'S'elect the Change     |
+|                                   | Child (CCH) screen. Complete the  |
+|                                   | Death Date field and press        |
+|                                   | [Enter]                           |
+|                                   |                                   |
+|                                   | The FTB Child Bereavement         |
+|                                   | Assistance Delivery Option (FBRV) |
+|                                   | screen displays. This offers the  |
+|                                   | bereavement payment delivery as a |
+|                                   | lump sum or an instalment option. |
+|                                   | CA will pay a bereavement lump    |
+|                                   | sum                               |
+|                                   |                                   |
+|                                   | -   If the customer is receiving  |
+|                                   |     FTB for the child, code the   |
+|                                   |     FBRV screen as required       |
+|                                   | -   If FTB is not being paid, FTB |
+|                                   |     Child Bereavement Assistance  |
+|                                   |     will not be payable. Go to    |
+|                                   |     the AR screen                 |
+|                                   |                                   |
+|                                   | If the deceased child only        |
+|                                   | attracted the Health Care Card    |
+|                                   | (HCC) for CA, the system will     |
+|                                   | automatically cancel the carer's  |
+|                                   | entitlement                       |
+|                                   |                                   |
+|                                   | The system will automatically pay |
+|                                   | a Lump Sum Bereavement Payment    |
+|                                   | (LBP) and cancel CA for that care |
+|                                   | receiver. Ensure any instalments  |
+|                                   | of CA paid after the death of the |
+|                                   | child were deducted from the CA   |
+|                                   | LBP                               |
+|                                   |                                   |
+|                                   | If instalments paid after the     |
+|                                   | child's death are not deducted    |
+|                                   | (this is a known system issue -   |
+|                                   | see Resources), adjust the CA LBP |
+|                                   |                                   |
+|                                   | -   From the AR screen within the |
+|                                   |     death activity, select        |
+|                                   |     Optional Actions >Carer       |
+|                                   |     Allowance >One Off Payments   |
+|                                   |     (OOP) from the left hand side |
+|                                   |     menu                          |
+|                                   | -   Overstrike the amount with    |
+|                                   |     the correct bereavement       |
+|                                   |     payment amount and press      |
+|                                   |     [Enter] to return to AR       |
+|                                   |     screen                        |
+|                                   | -   Finalise the activity on the  |
+|                                   |     AR screen                     |
+|                                   |                                   |
+|                                   | Take note of any warnings that    |
+|                                   | appear before finalising the      |
+|                                   | activity on the AR screen         |
+|                                   |                                   |
+|                                   | Record the details of the         |
+|                                   | bereavement and any adjustments   |
+|                                   | made to the LBP in a DOC          |
+|                                   |                                   |
+|                                   | Offer the services of a social    |
+|                                   | worker                            |
+|                                   |                                   |
+|                                   | Confirming the outcome            |
+|                                   |                                   |
+|                                   | To double check the action taken, |
+|                                   | 'S'elect the relevant care        |
+|                                   | receiver from the Care Receiver   |
+|                                   | Summary (CRS) and go to the Care  |
+|                                   | Receiver Assessment Results       |
+|                                   | (CJAR) screen. The following will |
+|                                   | be displayed in the BEN/STS-RSN   |
+|                                   | field                             |
+|                                   |                                   |
+|                                   | -   Status 'STS': CAN             |
+|                                   | -   Reason 'RSN': DEA (Death)     |
 |                                   | -   on the Child Task Selector    |
 |                                   |     (CHTS) screen, 'S'elect the   |
 |                                   |     Change Child (CCH) screen and |
 |                                   |     code the Death Date field     |
-|                                   | -   on the Child Bereavement      |
-|                                   |     Assistance Delivery Option    |
-|                                   |     (FBRV) screen, the options    |
-|                                   |     presented are to pay as a     |
-|                                   |     lump sum or in instalments.   |
-|                                   |     Press [Enter] and finalise    |
-|                                   |     the activity from the         |
-|                                   |     Activity List (AL) screen     |
+|                                   | -   on the FBRV screen, the       |
+|                                   |     options presented are to pay  |
+|                                   |     as a lump sum or in           |
+|                                   |     instalments. Press [Enter]    |
+|                                   |     and finalise the activity     |
+|                                   |     from the Activity List (AL)   |
+|                                   |     screen                        |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Check the CRS screen + Read more  |
 |                                   | ...                               |
@@ -637,11 +723,11 @@ Table 3:
 |                                   |                                   |
 |                                   | -   a death action cannot be      |
 |                                   |     processed with activities on  |
-|                                   |     the Activity List (AL)        |
-|                                   |     screen. The Notification of   |
-|                                   |     Death guided procedure will   |
-|                                   |     provide a prompt if there is  |
-|                                   |     an activity on the AL screen. |
+|                                   |     the AL screen. The            |
+|                                   |     Notification of Death guided  |
+|                                   |     procedure will provide a      |
+|                                   |     prompt if there is an         |
+|                                   |     activity on the AL screen.    |
 |                                   |     Where possible ensure all     |
 |                                   |     activities are completed and  |
 |                                   |     run the daily driver. If      |
@@ -651,13 +737,18 @@ Table 3:
 |                                   |     raising team. See Requesting  |
 |                                   |     refunds and raising debts for |
 |                                   |     deceased customer             |
-|                                   | -   if it is not possible to      |
-|                                   |     complete an activity, the     |
-|                                   |     Notification of Death guided  |
-|                                   |     procedure will create an      |
-|                                   |     ACTDOC to the service centre. |
-|                                   |     In these instances, suspend   |
-|                                   |     the customer’s record via BA  |
+|                                   | -   if not possible to complete   |
+|                                   |     an activity, the Notification |
+|                                   |     of Death guided procedure     |
+|                                   |     will not code the death, but  |
+|                                   |     will generate a DOC on the    |
+|                                   |     record. This is an open work  |
+|                                   |     item to be allocated to a     |
+|                                   |     Service Officer with the      |
+|                                   |     required skill set to confirm |
+|                                   |     the death. In these           |
+|                                   |     instances, suspend the        |
+|                                   |     customer’s record via BA      |
 |                                   |     using the reason code 'OTH',  |
 |                                   |     pending confirmation and      |
 |                                   |     processing of the death. Do   |

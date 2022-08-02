@@ -1282,11 +1282,13 @@ Continue processing claim, <a href="../families/007-05020010-03.html#bp03_tbl_Pr
 
 <p><strong>Check error details&#58;</strong></p>
 		<ul>		<li>
-If error<strong> E340CU - DAP claimant advised marital status change</strong> displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step15">go to  Step 15</a></li>
+If error <strong>E717P1 - Single DAP child required</strong> displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step15">go to  Step 15</a></li>
 		<li>
-If error <strong>E704P1 - Income for Financial Year ending 20xx </strong>displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step16">go to  Step 16</a></li>
+If error<strong> E340CU - DAP claimant advised marital status change</strong> displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step16">go to  Step 16</a></li>
 		<li>
-If error <strong>E892F1 - Early Claim data must be checked (FECS/FECD) for child</strong> displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step17">go to  Step 17</a></li>
+If error <strong>E704P1 - Income for Financial Year ending 20xx </strong>displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step17">go to  Step 17</a></li>
+		<li>
+If error <strong>E892F1 - Early Claim data must be checked (FECS/FECD) for child</strong> displays, <a href="../families/007-05020010-03.html#bp03_tbl_Process_DAP_cla01_Step18">go to  Step 18</a></li>
 		<li>
 If no error displays, or other errors have been addressed, select <strong>Assess</strong>. See <a href="../families/007-05020010-03.html#bp03_L3TT_Finalise_DAP_cl">Table 3</a></li>		</ul>
 </div>
@@ -1300,7 +1302,67 @@ If no error displays, or other errors have been addressed, select <strong>Assess
 <p>15</p></td>
 <td>
 
-<p><strong>Error E340CU - DAP claimant advised marital status change</strong> <a title="Read more 25" class="showhead bp03_tbl_Process_DAP_cla01_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Error E717P1 - Single DAP child required (post birth DAP claims)</strong> <a title="Read more 25" class="showhead bp03_tbl_Process_DAP_cla01_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Where a customer has not provided proof of birth for the child, <strong>and</strong></p>
+		<ul>		<li>
+it is likely that the child has a CRN (i.e. other parent has, or would have claimed a payment for the child</li>
+		<li>
+the child details provided in the DAP claim may be incorrect (i.e. incorrect spelling of name or date of birth</li>
+		<li>
+a request for the additional information (Q777/RFI) was sent, but not returned</li>
+		<li>
+2 genuine attempts to contact the customer has been unsuccessful</li>
+		<li>
+the claim needs is to be assessed not effective (NEF)</li>
+		</ul>
+<p>The error <strong>E717P1</strong> cannot be removed unless the Child Override/Claim (<strong>CHOC</strong>) screen is updated. As the correct details for the child cannot be confirmed, a child record should not be created. This is to prevent multiple Centrelink Reference Numbers (CRN) being created for the child.</p>
+
+<p>To manually remove the DAP claim in Process Direct, the Service Officer will  need to&#58;</p>
+		<ul>		<li>
+Go to Transaction Summary (<strong>TS</strong>) screen</li>
+		<li>
+Select <strong>Status</strong></li>
+		<li>
+Select <strong>Edit</strong></li>
+		<li>
+On the <strong>Change Status</strong> dialogue box, select <strong>Not Effective</strong> from the dropdown box</li>
+		<li>
+Select <strong>Save</strong></li>
+		<li>
+Go to the <strong>TS</strong> screen</li>
+		<li>
+Check the status of the claim is NEF</li>
+		<li>
+Using the <strong>Super Key</strong>, go to the Activity list (<strong>AL</strong>) screen</li>
+		<li>
+Select <strong>Cancel</strong></li>
+		<li>
+A pop up dialogue box will confirm claim has been cancelled</li>
+		<li>
+Select <strong>OK</strong></li>
+		<li>
+Cancel the new claim (NCL) activity created on the record in Process Direct</li>
+		<li>
+In a separate activity in <strong>Customer First</strong>, update any new details provided in the claim by the customer (for example, telephone number, address, income estimate etc.)</li>
+		<li>
+Record details of the claim outcome on a <strong>DOC</strong>/<strong>Note</strong> (for example, claim outcome is NEF, any other changes to entitlement etc.)</li>
+		<li>
+In Customer First, send a manual Q999 letter to the customer advising the outcome. See <a href="../families/007-05020010-05.html#bp05_L3TT_Suggested_lette">Resources</a> page for Q999 text</li>
+		</ul>
+<p>Procedure ends here.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_DAP_cla01_Step16"></a>
+<p>16</p></td>
+<td>
+
+<p><strong>Error E340CU - DAP claimant advised marital status change</strong> <a title="Read more 26" class="showhead bp03_tbl_Process_DAP_cla01_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1342,11 +1404,11 @@ FTB (no ISP), see <a href="../families/007-03030090-01.html">Family Tax Benefit 
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_DAP_cla01_Step16"></a>
-<p>16</p></td>
+<a class="anchor" name="bp03_tbl_Process_DAP_cla01_Step17"></a>
+<p>17</p></td>
 <td>
 
-<p><strong>E704P1 - Income for Financial Year ending 20xx</strong> <a title="Read more 26" class="showhead bp03_tbl_Process_DAP_cla01_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>E704P1 - Income for Financial Year ending 20xx</strong> <a title="Read more 27" class="showhead bp03_tbl_Process_DAP_cla01_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1376,11 +1438,11 @@ the date of claim/nominated start date, whichever is earlier (for post birth cla
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_DAP_cla01_Step17"></a>
-<p>17</p></td>
+<a class="anchor" name="bp03_tbl_Process_DAP_cla01_Step18"></a>
+<p>18</p></td>
 <td>
 
-<p><strong>E892F1 - Early Claim data must be checked (FECS/FECD) for child</strong> <a title="Read more 27" class="showhead bp03_tbl_Process_DAP_cla01_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>E892F1 - Early Claim data must be checked (FECS/FECD) for child</strong> <a title="Read more 28" class="showhead bp03_tbl_Process_DAP_cla01_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_DAP_cla01_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1426,7 +1488,7 @@ Select <strong>Save</strong></li>
 <p>1</p></td>
 <td>
 
-<p><strong>Entitlement (ELD) screen</strong> <a title="Read more 28" class="showhead bp03_tbl_Finalise_DAP_cl_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Entitlement (ELD) screen</strong> <a title="Read more 29" class="showhead bp03_tbl_Finalise_DAP_cl_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1452,7 +1514,7 @@ If the customer does not meet eligibility criteria, <a href="../families/007-050
 <p>2</p></td>
 <td>
 
-<p><strong>Assessed pending proof of birth/entry into care</strong> <a title="Read more 29" class="showhead bp03_tbl_Finalise_DAP_cl_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Assessed pending proof of birth/entry into care</strong> <a title="Read more 30" class="showhead bp03_tbl_Finalise_DAP_cl_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1478,7 +1540,7 @@ If the customer does not meet eligibility criteria, <a href="../families/007-050
 <p>3</p></td>
 <td>
 
-<p><strong>DAP/PND-POB or DAP/PND-POP and only proof of birth has been provided </strong> <a title="Read more 30" class="showhead bp03_tbl_Finalise_DAP_cl_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>DAP/PND-POB or DAP/PND-POP and only proof of birth has been provided </strong> <a title="Read more 31" class="showhead bp03_tbl_Finalise_DAP_cl_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1502,7 +1564,7 @@ If the customer does not meet eligibility criteria, <a href="../families/007-050
 <p>4</p></td>
 <td>
 
-<p><strong>Finalising a pre-birth DAP claim on receipt of proof of child's birth</strong> <a title="Read more 31" class="showhead bp03_tbl_Finalise_DAP_cl_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalising a pre-birth DAP claim on receipt of proof of child's birth</strong> <a title="Read more 32" class="showhead bp03_tbl_Finalise_DAP_cl_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1570,7 +1632,7 @@ Child Override/Claim (<strong>CHOC</strong>) screen. Ensure a line exists for th
 <p>5</p></td>
 <td>
 
-<p><strong>Rejection or not effective claim</strong> <a title="Read more 32" class="showhead bp03_tbl_Finalise_DAP_cl_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Rejection or not effective claim</strong> <a title="Read more 33" class="showhead bp03_tbl_Finalise_DAP_cl_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1594,7 +1656,7 @@ Child Override/Claim (<strong>CHOC</strong>) screen. Ensure a line exists for th
 <p>6</p></td>
 <td>
 
-<p><strong>Check outcome and finalise claim</strong> <a title="Read more 33" class="showhead bp03_tbl_Finalise_DAP_cl_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check outcome and finalise claim</strong> <a title="Read more 34" class="showhead bp03_tbl_Finalise_DAP_cl_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_DAP_cl_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1660,7 +1722,7 @@ Where a reassessment activity is completed in Customer First, use the Fast Note 
 <p>1</p></td>
 <td>
 
-<p><strong>Finalising a DAP claim when customer and/or partner is in receipt of income support payment</strong> <a title="Read more 34" class="showhead bp03_tbl_Income_support_01_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_01_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalising a DAP claim when customer and/or partner is in receipt of income support payment</strong> <a title="Read more 35" class="showhead bp03_tbl_Income_support_01_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_01_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1696,7 +1758,7 @@ lose their entitlement to their ISP and any associated concession cards (that is
 <p>2</p></td>
 <td>
 
-<p><strong>Cancellation of income support payment or future start date</strong> <a title="Read more 35" class="showhead bp03_tbl_Income_support_01_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_01_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Cancellation of income support payment or future start date</strong> <a title="Read more 36" class="showhead bp03_tbl_Income_support_01_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_01_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1716,7 +1778,7 @@ lose their entitlement to their ISP and any associated concession cards (that is
 <p>3</p></td>
 <td>
 
-<p><strong>Create review DOC</strong> <a title="Read more 36" class="showhead bp03_tbl_Income_support_01_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_01_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Create review DOC</strong> <a title="Read more 37" class="showhead bp03_tbl_Income_support_01_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_01_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1781,7 +1843,7 @@ A Finalise <strong>DOC</strong> will be automatically created once the claim is 
 <p>1</p></td>
 <td>
 
-<p><strong>Customer has lodged a DAP claim for a newborn or recently adopted child</strong> <a title="Read more 37" class="showhead bp03_tbl_DAP_preprocess_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer has lodged a DAP claim for a newborn or recently adopted child</strong> <a title="Read more 38" class="showhead bp03_tbl_DAP_preprocess_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1841,7 +1903,7 @@ for the status of the claim, see <a href="../families/007-02010020-01.html">Chec
 <p>2</p></td>
 <td>
 
-<p><strong>Online claim lodged</strong> <a title="Read more 38" class="showhead bp03_tbl_DAP_preprocess_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Online claim lodged</strong> <a title="Read more 39" class="showhead bp03_tbl_DAP_preprocess_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1871,7 +1933,7 @@ Select the <strong>review claim</strong> tab to view the claim information</li>
 <p>3</p></td>
 <td>
 
-<p><strong>Pre-processing claim checks for paper/verbal claims (pre-birth and post birth claims)</strong> <a title="Read more 39" class="showhead bp03_tbl_DAP_preprocess_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-processing claim checks for paper/verbal claims (pre-birth and post birth claims)</strong> <a title="Read more 40" class="showhead bp03_tbl_DAP_preprocess_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1909,7 +1971,7 @@ Confirm the correct DOR using <strong>Document Tools</strong> as it shows the DO
 <p>4</p></td>
 <td>
 
-<p><strong>Claim requirements</strong> <a title="Read more 40" class="showhead bp03_tbl_DAP_preprocess_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Claim requirements</strong> <a title="Read more 41" class="showhead bp03_tbl_DAP_preprocess_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1969,7 +2031,7 @@ return it for processing</li>
 <p>5</p></td>
 <td>
 
-<p><strong>Further information required</strong> <a title="Read more 41" class="showhead bp03_tbl_DAP_preprocess_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Further information required</strong> <a title="Read more 42" class="showhead bp03_tbl_DAP_preprocess_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2011,7 +2073,7 @@ Tax File Numbers (TFNs) and/or bank account details within 28 days</li>
 <p>6</p></td>
 <td>
 
-<p><strong>Pre or post birth claims</strong> <a title="Read more 42" class="showhead bp03_tbl_DAP_preprocess_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre or post birth claims</strong> <a title="Read more 43" class="showhead bp03_tbl_DAP_preprocess_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2031,7 +2093,7 @@ Tax File Numbers (TFNs) and/or bank account details within 28 days</li>
 <p>7</p></td>
 <td>
 
-<p><strong>Child of multiple birth</strong> <a title="Read more 43" class="showhead bp03_tbl_DAP_preprocess_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child of multiple birth</strong> <a title="Read more 44" class="showhead bp03_tbl_DAP_preprocess_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2077,7 +2139,7 @@ Record details on a <strong>DOC</strong>. Procedure ends here</li>			</ul>			</u
 <p>8</p></td>
 <td>
 
-<p><strong>Appropriate evidence provided for multiple birth</strong> <a title="Read more 44" class="showhead bp03_tbl_DAP_preprocess_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Appropriate evidence provided for multiple birth</strong> <a title="Read more 45" class="showhead bp03_tbl_DAP_preprocess_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2105,7 +2167,7 @@ If the customer cannot be contacted, <a target="_blank" href="../families/007-07
 <p>9</p></td>
 <td>
 
-<p><strong>Refer the case and supporting evidence to Level 2 Policy Helpdesk for assessment</strong> <a title="Read more 45" class="showhead bp03_tbl_DAP_preprocess_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Refer the case and supporting evidence to Level 2 Policy Helpdesk for assessment</strong> <a title="Read more 46" class="showhead bp03_tbl_DAP_preprocess_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_DAP_preprocess_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2167,7 +2229,7 @@ Record details on a <strong>DOC</strong>. Procedure ends here</li>			</ul>			</u
 <p>1</p></td>
 <td>
 
-<p><strong>Check customer's benefit status line</strong> <a title="Read more 46" class="showhead bp03_tbl_Process_and_fin_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check customer's benefit status line</strong> <a title="Read more 47" class="showhead bp03_tbl_Process_and_fin_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2191,7 +2253,7 @@ Post birth claims, <a href="../families/007-05020010-03.html#bp03_tbl_Process_an
 <p>2</p></td>
 <td>
 
-<p><strong>Processing a pre-birth DAP claim</strong> <a title="Read more 47" class="showhead bp03_tbl_Process_and_fin_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Processing a pre-birth DAP claim</strong> <a title="Read more 48" class="showhead bp03_tbl_Process_and_fin_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2217,7 +2279,7 @@ Post birth claims, <a href="../families/007-05020010-03.html#bp03_tbl_Process_an
 <p>3</p></td>
 <td>
 
-<p><strong>Review the pre-birth claim outcome</strong> <a title="Read more 48" class="showhead bp03_tbl_Process_and_fin_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Review the pre-birth claim outcome</strong> <a title="Read more 49" class="showhead bp03_tbl_Process_and_fin_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2247,7 +2309,7 @@ Post birth claims, <a href="../families/007-05020010-03.html#bp03_tbl_Process_an
 <p>4</p></td>
 <td>
 
-<p><strong>Post birth claims (no pre-birth claim lodged)</strong> <a title="Read more 49" class="showhead bp03_tbl_Process_and_fin_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Post birth claims (no pre-birth claim lodged)</strong> <a title="Read more 50" class="showhead bp03_tbl_Process_and_fin_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2303,7 +2365,7 @@ A FTB reassessment activity will be created on the Activity List (<strong>AL</st
 <p>5</p></td>
 <td>
 
-<p><strong>Finalising a pre-birth DAP claim upon receipt of proof of child's birth</strong> <a title="Read more 50" class="showhead bp03_tbl_Process_and_fin_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalising a pre-birth DAP claim upon receipt of proof of child's birth</strong> <a title="Read more 51" class="showhead bp03_tbl_Process_and_fin_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2323,7 +2385,7 @@ A FTB reassessment activity will be created on the Activity List (<strong>AL</st
 <p>6</p></td>
 <td>
 
-<p><strong>Finalising a pre-birth DAP claim upon receipt of proof of child's birth</strong> <a title="Read more 51" class="showhead bp03_tbl_Process_and_fin_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalising a pre-birth DAP claim upon receipt of proof of child's birth</strong> <a title="Read more 52" class="showhead bp03_tbl_Process_and_fin_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2393,7 +2455,7 @@ Child Override/Claim (<strong>CHOC</strong>) screen. Ensure a line exists for th
 <p>7</p></td>
 <td>
 
-<p><strong>Check if additional coding required within DAP post-birth claim</strong> <a title="Read more 52" class="showhead bp03_tbl_Process_and_fin_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check if additional coding required within DAP post-birth claim</strong> <a title="Read more 53" class="showhead bp03_tbl_Process_and_fin_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2455,7 +2517,7 @@ Record details on a <strong>DOC</strong></li>
 <p>8</p></td>
 <td>
 
-<p><strong>FTB customer contact successful</strong> <a title="Read more 53" class="showhead bp03_tbl_Process_and_fin_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>FTB customer contact successful</strong> <a title="Read more 54" class="showhead bp03_tbl_Process_and_fin_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2489,7 +2551,7 @@ For further assistance, see <a href="../families/007-07030120-01.html">Reassessm
 <p>9</p></td>
 <td>
 
-<p><strong>Reviewing claims</strong> <a title="Read more 54" class="showhead bp03_tbl_Process_and_fin_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Reviewing claims</strong> <a title="Read more 55" class="showhead bp03_tbl_Process_and_fin_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_and_fin_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2579,7 +2641,7 @@ the date of claim/nominated start date, whichever is earlier (for post birth cla
 <p>1</p></td>
 <td>
 
-<p><strong>Finalising a DAP claim when customer and/or partner is in receipt of income support payment</strong> <a title="Read more 55" class="showhead bp03_tbl_Income_support_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalising a DAP claim when customer and/or partner is in receipt of income support payment</strong> <a title="Read more 56" class="showhead bp03_tbl_Income_support_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2617,7 +2679,7 @@ lose their entitlement to their ISP and any associated concession cards (that is
 <p>2</p></td>
 <td>
 
-<p><strong>Cancellation of income support payment or future start date</strong> <a title="Read more 56" class="showhead bp03_tbl_Income_support_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Cancellation of income support payment or future start date</strong> <a title="Read more 57" class="showhead bp03_tbl_Income_support_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2637,7 +2699,7 @@ lose their entitlement to their ISP and any associated concession cards (that is
 <p>3</p></td>
 <td>
 
-<p><strong>Create review DOC</strong> <a title="Read more 57" class="showhead bp03_tbl_Income_support_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Create review DOC</strong> <a title="Read more 58" class="showhead bp03_tbl_Income_support_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Income_support_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

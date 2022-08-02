@@ -6,19 +6,252 @@ Cheque processing in Medicare 011-43090000
 -   References
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+Contact details
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Assessing and Benefits
 
--   sending an email to freedomofinformation@humanservices.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Cheque extraction requests
+
+Medicare claims helpdesk
+
+Medicare Health Programme Support Officers (PSO)
+
+Write to us - Services Australia
+
+Allied Health providers
+
+The following is a list of Allied Health providers:
+
+-   Aboriginal Health Workers
+-   Audiologists
+-   Chiropractors
+-   Diabetes Educators
+-   Dieticians/Nutritionists
+-   Enrolled Nurses
+-   Exercise Physiologists
+-   Occupational Therapists
+-   Orthoptists
+-   Orthotists/Prothetists
+-   Osteopaths
+-   Physiotherapists
+-   Podiatrists
+-   Psychologists
+-   Registered Nurses
+-   Social Workers
+-   Speech Pathologists
+
+Cheque status
+
+Table 1
+
++-----------------------+-----------------------+-----------------------+
+| Cheque status         | Date of issue         | Additional            |
+|                       |                       | information           |
++-----------------------+-----------------------+-----------------------+
+| UNPRES                | < 14 days from the    | Cheque is in transit  |
+|                       | issue date            | and should not be     |
+|                       |                       | stopped.              |
++-----------------------+-----------------------+-----------------------+
+| UNPRES                | > 14 days from the    | Cheque can be stopped |
+|                       | issue date            | if it is not subject  |
+|                       |                       | to the 90 Day Pay     |
+|                       |                       | Doctor Cheque Scheme. |
++-----------------------+-----------------------+-----------------------+
+| PRES                  | < or > 14 days        | Cheque has been       |
+|                       |                       | banked.               |
++-----------------------+-----------------------+-----------------------+
+| CANC                  | No details            | Cheque has been       |
+|                       |                       | cancelled -           |
+|                       |                       | Investigate patient   |
+|                       |                       | history.              |
++-----------------------+-----------------------+-----------------------+
+| CAN/EFT               | DDMMYY                | Payment has been      |
+|                       |                       | deposited into        |
+|                       |                       | providers EFT         |
+|                       |                       | account. Process      |
+|                       |                       | ends.                 |
++-----------------------+-----------------------+-----------------------+
+| No Details            | Blank or no details   | Investigate date of   |
+|                       | are on the screen     | processing:           |
+|                       |                       |                       |
+|                       |                       | -   DOP < 14 days -   |
+|                       |                       |     cheque may not be |
+|                       |                       |     issued            |
+|                       |                       | -   DOP > 90 days -   |
+|                       |                       |     cheque/payment -  |
+|                       |                       |     has been          |
+|                       |                       |     finalised. See    |
+|                       |                       |     Cheque Trace      |
+|                       |                       |                       |
+|                       |                       | Note: cheque details  |
+|                       |                       | stay visible on NHSI  |
+|                       |                       | or BBCI for 2 months  |
+|                       |                       | past the date of      |
+|                       |                       | presentation or       |
+|                       |                       | cancelling.           |
++-----------------------+-----------------------+-----------------------+
+| RETURNED              |                       | Cheque has been       |
+|                       |                       | returned to Services  |
+|                       |                       | Australia this        |
+|                       |                       | cheque/payment can be |
+|                       |                       | reissued.             |
++-----------------------+-----------------------+-----------------------+
+| REDIRECT              |                       | Cheque has been       |
+|                       |                       | redirected to         |
+|                       |                       | customer’s new        |
+|                       |                       | address.              |
++-----------------------+-----------------------+-----------------------+
+| STALE                 |                       | Cheque is over 15     |
+|                       |                       | months old.           |
+|                       |                       |                       |
+|                       |                       | -   If appearing on   |
+|                       |                       |     history payment   |
+|                       |                       |     can be reissued   |
+|                       |                       | -   If unable to      |
+|                       |                       |     locate the        |
+|                       |                       |     original          |
+|                       |                       |     processing line   |
+|                       |                       |     and the cheque is |
+|                       |                       |     under 6 years     |
+|                       |                       |     old, obtain the   |
+|                       |                       |     claims history    |
+|                       |                       |                       |
+|                       |                       | Cheque is over 6      |
+|                       |                       | years old, advise     |
+|                       |                       | customer Medicare is  |
+|                       |                       | unable to validate    |
+|                       |                       | that no replacement   |
+|                       |                       | cheque has been       |
+|                       |                       | issued. Therefore,    |
+|                       |                       | the cheque cannot be  |
+|                       |                       | reissued. Where a     |
+|                       |                       | customer is           |
+|                       |                       | requesting payment of |
+|                       |                       | a cheque that is more |
+|                       |                       | than 6 years old from |
+|                       |                       | date of issue, a      |
+|                       |                       | Service Officer can   |
+|                       |                       | escalate to Claims    |
+|                       |                       | Policy for advice.    |
++-----------------------+-----------------------+-----------------------+
+
+Cheque enquiry control lines
+
+Table 2: control lines that can be used to access the cheque enquiry
+screen.
+
++-----------------------------------+-----------------------------------+
+| Control line                      | Returns                           |
++-----------------------------------+-----------------------------------+
+| BBEI,card number                  | Cheque enquiry details for the    |
+|                                   | Medicare card number keyed in the |
+|                                   | control line.                     |
++-----------------------------------+-----------------------------------+
+| BBEI,provider number (no alpha)   | Cheque enquiry details for direct |
+|                                   | bill claims submitted by the      |
+|                                   | provider.                         |
++-----------------------------------+-----------------------------------+
+| BBCI,NB?R,cheque number           | Full details of the:              |
+|                                   |                                   |
+|                                   | -   cheque                        |
+|                                   | -   provider number               |
+|                                   | -   provider name and address     |
+|                                   | -   cheque location               |
+|                                   | -   cheque status                 |
++-----------------------------------+-----------------------------------+
+| BATI,NB?R,cheque number           | The status of the cheque -        |
+|                                   | cancelled, stale, EFT, 90 Day Pay |
+|                                   | Doctor Cheque Scheme              |
++-----------------------------------+-----------------------------------+
+
+Cheque entry screen options
+
+Table 3: options on the cheque entry screen in the D field.
+
++-----------------------------------+-----------------------------------+
+| Code                              | Code function                     |
++-----------------------------------+-----------------------------------+
+| *                                 | Indicates that the customer name  |
+|                                   | and address for the cheque is     |
+|                                   | different to that displayed on    |
+|                                   | the screen.                       |
++-----------------------------------+-----------------------------------+
+| C                                 | Over key (*) with C and press     |
+|                                   | [Enter].                          |
+|                                   |                                   |
+|                                   | The different names and addresses |
+|                                   | are displayed at the bottom of    |
+|                                   | the screen.                       |
++-----------------------------------+-----------------------------------+
+| P                                 | Displays the provider number for  |
+|                                   | that cheque.                      |
++-----------------------------------+-----------------------------------+
+| T                                 | Displays the text field for that  |
+|                                   | cheque.                           |
++-----------------------------------+-----------------------------------+
+| N                                 | Displays the claim numbers        |
+|                                   | covered by a particular cheque    |
+|                                   | for direct bill claims.           |
++-----------------------------------+-----------------------------------+
+
+State codes for cheque processing
+
+Table 4: control lines and codes for entering returned interstate
+cheques.
+
++-----------------------+-----------------------+-----------------------+
+| State                 | Control line          | Code                  |
++-----------------------+-----------------------+-----------------------+
+| NSW and ACT           | NBNR                  | N                     |
++-----------------------+-----------------------+-----------------------+
+| SA and NT             | NBXR                  | X                     |
++-----------------------+-----------------------+-----------------------+
+| QLD                   | NBQR                  | Q                     |
++-----------------------+-----------------------+-----------------------+
+| VIC and TAS           | NBVR                  | V                     |
++-----------------------+-----------------------+-----------------------+
+| WA                    | NBWR                  | W                     |
++-----------------------+-----------------------+-----------------------+
+
+Services Australia website
+
+Medicare Claim form (MS014)
+
+Stop cheque and reissue payment
+
+See Stop cheque and reissue payment form (MO051) on the Services
+Australia Intranet.
+
+Cheque extraction request form
+
+When a processing error is identified, Service Officers must fill out a
+cheque extraction form.
+
+Use 'Save As' workaround to download/use attachments.
+
+PP039 - Cheque extraction request form - all states
+
+Customer enquiry form
+
+Use 'Save As' workaround to download/use attachments.
+
+PP040 - Customer enquiry form
+
+Escalation forms
+
+Do not share these attachments externally. See Freedom of Information -
+Information Publication Scheme.
+Use ‘Save As’ workaround to download/use attachments.
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Claims Enquiries
+Escalation form
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Claims File Fix Escalation
+form
 
                                    
 

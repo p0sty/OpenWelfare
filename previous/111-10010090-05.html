@@ -189,7 +189,7 @@
 			
 				<!-- start pageDataHeading -->
 				<h1>Faxing letters using Outlook and Customer First 111-10010090</h1>
-<ul id="tabs-primary"><li><a href="../specialist-manuals-and-system-tools/111-10010090-01.html">Background</a></li><li><a href="../specialist-manuals-and-system-tools/111-10010090-02.html">Process Summary</a></li><li><a href="../specialist-manuals-and-system-tools/111-10010090-03.html">Process</a></li><li><a href="../specialist-manuals-and-system-tools/111-10010090-04.html">References</a></li><li><a class="active students" href="../specialist-manuals-and-system-tools/111-10010090-05.html">Resources</a></li></ul>
+<ul id="tabs-primary"><li><a href="../specialist-manuals-and-system-tools/111-10010090-01.html">Background</a></li><li><a href="../specialist-manuals-and-system-tools/111-10010090-03.html">Process</a></li><li><a href="../specialist-manuals-and-system-tools/111-10010090-04.html">References</a></li><li><a class="active students" href="../specialist-manuals-and-system-tools/111-10010090-05.html">Resources</a></li></ul>
 				<!-- end pageDataHeading -->
 				
 				<!-- start pageDataContent -->
@@ -205,276 +205,83 @@
 
 
 <p>This page contains an attachment listing current forms available for Desktop Faxing, plus details on common errors which cause unsuccessful transmission of faxes from Desktop Faxing. Links on this page may be unavailable to external audiences.</p>
-<div class="twisty">
-	
 <a class="anchor" name="bp05_L2GT_Intranet_link"></a>
 <h2 id="bp05_L2GT_Intranet_link">Intranet link</h2>
 
-	<div class="collapsible_container">
-		<div class="block">
 
 <p><img src="../resources/images/icon-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-attachment.png" title="A linked attachment is available" />Forms currently available from Desktop Faxing</p>
-		</div>
-	</div>
-</div>
-
 
 <p></p>
-<div class="twisty">
-	
-<a class="anchor" name="bp05_L3TT_Common_desktop_"></a>
-<h3 class="collapsible" id="bp05_L3TT_Common_desktop_">Common desktop faxing errors</h3>
 
-	<div class="collapsible_container">
-		<div class="block">
+<p></p>
 
-<p>Table 1&#58; This table describes information on common errors encountered when using Desktop Faxing.</p><table caption="Table 1&#58; This table describes information on common errors encountered when using Desktop Faxing." width="100%">
+<h3>Common code mistakes and their effect</h3>
+
+
+<p>Table 1&#58; This table describes common problems that can come up when fax codes are used incorrectly.</p>
+<table caption="" width="100%">
 <tr>
-<td width="11%">
-<a class="anchor" name="bp05_tbl_Common_desktop_Item"></a>
-<p><strong>Item</strong></p></td>
+<td width="50%">
+
+<p><strong>Mistake</strong></p></td>
 <td>
 
-<p><strong>Description</strong></p></td>
+<p><strong>Effect</strong></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Common_desktop_1"></a>
-<p>1</p></td>
+
+<p>Spelling error in codes&#58;</p>
+
+<p><strong>@@recepientcompany=&quot;Example Pty Ltd&quot;</strong></p>
+
+<p></p></td>
 <td>
 
-<p><strong>Digital Command Signal sent 3 times without response</strong></p>
-
-<p>The sending fax machine is trying to communicate the fax transmission protocol with the receiving fax machine. It usually indicates a hardware incompatibility between the fax machines.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Check fax number and try sending fax again. If it fails a second time, manually fax the required documents.</p></td>
+<p>The misspelled code appears in the body of the fax.</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Common_desktop_2"></a>
-<p>2</p></td>
+
+<p>Using a code without including text after the equals sign (<strong>=</strong>)</p>
+
+<p><strong>@@senderlastname=</strong></p>
+
+<p></p></td>
 <td>
 
-<p><strong>Destination is busy</strong></p>
+<p>The code appears in the body of the fax.</p>
 
-<p>The sending fax machine is trying to communicate the fax transmission protocol with the receiving fax machine. It usually indicates a hardware incompatibility between the fax machines.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Attempt to contact recipient and advise fax is being sent, to ensure phone line is available to receive fax.</p></td>
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Common_desktop_3"></a>
-<p>3</p></td>
+
+<p>Using spaces in codes without including quote marks, or without using a plain text email format</p>
+
+<p><strong>@@recipientcompany=Example Pty Ltd </strong></p>
+
+<p><strong>@@senderlastname=Services Australia</strong></p>
+
+<p></p></td>
 <td>
 
-<p><strong>Dial tone detected</strong></p>
-
-<p>This occurs when an outside line is not accessed. The dialling sequence was not completed and did not break dial tone, likely meaning the number is incomplete.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Check the fax number is complete and try sending the fax again. If it fails a second time, manually fax the required documents. As this error can mean there is a problem with the Services Australia fax gateway, report the issue using mySupport.</p></td>
+<p>The first word of the code appears in the right place. Any subsequent words in the code appear in the body of the message.</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Common_desktop_4"></a>
-<p>4</p></td>
+
+<p>Omitting the recipient name but including the company name&#58; </p>
+
+<p><strong>@@recipientcompany=&quot;Example Pty Ltd&quot;</strong></p>
+
+<p></p></td>
 <td>
 
-<p><strong>Failure to train</strong></p>
-
-<p>This is a 'hang up' error message. Problem is with the data transmission between faxes possibly due to bad line.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Attempt sending fax again. If this doesn't work, contact recipient and request another fax number or manually fax forms. Report the issue using mySupport.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Common_desktop_5"></a>
-<p>5</p></td>
-<td>
-
-<p><strong>Maximum time out exceeded</strong></p>
-
-<p>This is a 'hang up' error message. The fax machine has reached its maximum period of time in waiting for a response from the other end of the line.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Attempt sending the fax again. If this still fails, the line is likely blocked due to high volume of calls/faxes being made. Try again later or manually fax the forms.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Common_desktop_6"></a>
-<p>6</p></td>
-<td>
-
-<p><strong>No answer, T30 T1 time out</strong></p>
-
-<p>The fax modem was unable to detect a fax carrier transmission. This may occur when dialling a voice line rather than a fax line. If dialling a fax line, however, then this may mean the modem is having an error in detecting and working with the recipient's carrier signal.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Ensure the number dialled is correct. Phone recipient and advise that a fax is being sent and their device is required to be switched to the fax function. If device is already set to 'Fax' check with the recipient for another fax number to send to, or manually fax the forms. </p></td>
+<p>There will be a gap between the <strong>To</strong> header and the name of the company.</p></td>
 </tr>
 
 </table>
-		</div>
-	</div>
-</div>
-
-
-<p></p>
-<div class="twisty">
-	
-<a class="anchor" name="bp05_L3TT_Other_desktop_f"></a>
-<h3 class="collapsible" id="bp05_L3TT_Other_desktop_f">Other desktop faxing errors</h3>
-
-	<div class="collapsible_container">
-		<div class="block">
-
-<p>Table 2&#58; This table describes error messages received when a fax is being sent.</p><table caption="Table 2&#58; This table describes error messages received when a fax is being sent." width="100%">
-<tr>
-<td width="11%">
-<a class="anchor" name="bp05_tbl_Other_desktop_f_Item"></a>
-<p><strong>Item</strong></p></td>
-<td>
-
-<p><strong>Description</strong></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_1"></a>
-<p>1</p></td>
-<td>
-
-<p><strong>No answer tone</strong></p>
-
-<p>Possibly a voice line, or fax line is 'off the hook' or has hung up.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Ensure number dialled is correct. Phone recipient and advise that a fax is being sent and their device is required to be switched to the fax function. If the device is already set to 'Fax', they will need to ensure all phone lines are connected correctly.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_2"></a>
-<p>2</p></td>
-<td>
-
-<p><strong>No dial tone</strong></p>
-
-<p>There are no lines available to send outgoing fax.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Attempt to phone recipient and advise that a fax is being sent and their device is required to be switched to the fax function.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_3"></a>
-<p>3</p></td>
-<td>
-
-<p><strong>No loop current or A/B signalling bits</strong></p>
-
-<p>Number is not a fax machine but a phone number.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Ensure fax number dialled is correct. Phone recipient and advise that a fax is being sent and their device is required to be switched to the fax function.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_4"></a>
-<p>4</p></td>
-<td>
-
-<p><strong>Not a fax machine</strong></p>
-
-<p>Fax is being sent to a machine that is busy (receiver or sending another fax) The Fax Server 'retries' faxes sent to busy fax machines, however a problem with a network router is preventing this process from occurring properly. The problem has been escalated to the vendor. At this stage, it cannot be guaranteed that faxes sent to busy fax machines will be sent successfully.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>However, after the first failure, please ensure that the fax is manually issued, until the issue is resolved.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_5"></a>
-<p>5</p></td>
-<td>
-
-<p><strong>Number dialled, no signal detected, possible dead line</strong></p>
-
-<p>No response received from other device when attempting dial out. Fax number is possibly incorrect.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Ensure the fax number dialled is correct. Contact recipient and check number is for fax machine, and advise that a fax is being sent and their device is required to be switched to the fax function.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_6"></a>
-<p>6</p></td>
-<td>
-
-<p><strong>Server doesn't support this message type</strong></p>
-
-<p>Receiving device is not a fax machine or a compatible device to receive faxes. Most likely a telephone number.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Ensure number dialled is correct. Contact recipient and check number is for a fax machine, and advise them a fax is being sent. The device may require to be switched to the fax function.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Other_desktop_f_7"></a>
-<p>7</p></td>
-<td>
-
-<p><strong>Voice answer or silence</strong></p>
-
-<p>Fax number is incorrect, or same device is both phone and fax.</p>
-
-<p><strong>Solution&#58;</strong></p>
-
-<p>Ensure fax number is dialled correct. Phone recipient and advice that a fax is being sent and their device is required to be switched to the fax function.</p></td>
-</tr>
-
-</table>
-		</div>
-	</div>
-</div>
-
-
-<p></p>
-<div class="twisty">
-	
-<a class="anchor" name="bp05_L2GT_Desktop_fax"></a>
-<h2 id="bp05_L2GT_Desktop_fax">Desktop fax</h2>
-
-	<div class="collapsible_container">
-		<div class="block">
-
-<p><strong>Location&#58;</strong></p>
-
-<p>Customer First/Documents &amp; Correspondence/Desktop Fax</p>
-
-<p><strong>Description&#58;</strong></p>
-
-<p>The Desktop Fax workflow allows users to select and fax various forms within Customer First.</p>
-
-<p>Desktop faxing is a method of transferring information that combines the traditional facsimile (fax) machine and digital storage on a computer. The term 'desktop fax' refers to the digital image once it has been received through this channel. The term 'desktop faxing' refers to the process of sending and receiving an image through this channel.</p>
-
-<p>In this process, a fax machine is connected to a computer instead of a telephone line. This computer creates an image of the original document and saves it as a file. There is no paper copy produced at the sender's end.</p>
-		</div>
-	</div>
-</div>
-
 
 <p></p>
 

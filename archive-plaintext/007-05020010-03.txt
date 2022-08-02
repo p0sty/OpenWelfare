@@ -1558,23 +1558,107 @@ Table 2:
 |                                   |                                   |
 |                                   | Check error details:              |
 |                                   |                                   |
+|                                   | -   If error E717P1 - Single DAP  |
+|                                   |     child required displays, go   |
+|                                   |     to Step 15                    |
 |                                   | -   If error E340CU - DAP         |
 |                                   |     claimant advised marital      |
 |                                   |     status change displays, go to |
-|                                   |     Step 15                       |
+|                                   |     Step 16                       |
 |                                   | -   If error E704P1 - Income for  |
 |                                   |     Financial Year ending 20xx    |
-|                                   |     displays, go to Step 16       |
+|                                   |     displays, go to Step 17       |
 |                                   | -   If error E892F1 - Early Claim |
 |                                   |     data must be checked          |
 |                                   |     (FECS/FECD) for child         |
-|                                   |     displays, go to Step 17       |
+|                                   |     displays, go to Step 18       |
 |                                   | -   If no error displays, or      |
 |                                   |     other errors have been        |
 |                                   |     addressed, select Assess. See |
 |                                   |     Table 3                       |
 +-----------------------------------+-----------------------------------+
-| 15                                | Error E340CU - DAP claimant       |
+| 15                                | Error E717P1 - Single DAP child   |
+|                                   | required (post birth DAP          |
+|                                   | claims) + Read more ...           |
+|                                   |                                   |
+|                                   | Where a customer has not provided |
+|                                   | proof of birth for the child, and |
+|                                   |                                   |
+|                                   | -   it is likely that the child   |
+|                                   |     has a CRN (i.e. other parent  |
+|                                   |     has, or would have claimed a  |
+|                                   |     payment for the child         |
+|                                   | -   the child details provided in |
+|                                   |     the DAP claim may be          |
+|                                   |     incorrect (i.e. incorrect     |
+|                                   |     spelling of name or date of   |
+|                                   |     birth                         |
+|                                   | -   a request for the additional  |
+|                                   |     information (Q777/RFI) was    |
+|                                   |     sent, but not returned        |
+|                                   | -   2 genuine attempts to contact |
+|                                   |     the customer has been         |
+|                                   |     unsuccessful                  |
+|                                   | -   the claim needs is to be      |
+|                                   |     assessed not effective (NEF)  |
+|                                   |                                   |
+|                                   | The error E717P1 cannot be        |
+|                                   | removed unless the Child          |
+|                                   | Override/Claim (CHOC) screen is   |
+|                                   | updated. As the correct details   |
+|                                   | for the child cannot be           |
+|                                   | confirmed, a child record should  |
+|                                   | not be created. This is to        |
+|                                   | prevent multiple Centrelink       |
+|                                   | Reference Numbers (CRN) being     |
+|                                   | created for the child.            |
+|                                   |                                   |
+|                                   | To manually remove the DAP claim  |
+|                                   | in Process Direct, the Service    |
+|                                   | Officer will need to:             |
+|                                   |                                   |
+|                                   | -   Go to Transaction Summary     |
+|                                   |     (TS) screen                   |
+|                                   | -   Select Status                 |
+|                                   | -   Select Edit                   |
+|                                   | -   On the Change Status dialogue |
+|                                   |     box, select Not Effective     |
+|                                   |     from the dropdown box         |
+|                                   | -   Select Save                   |
+|                                   | -   Go to the TS screen           |
+|                                   | -   Check the status of the claim |
+|                                   |     is NEF                        |
+|                                   | -   Using the Super Key, go to    |
+|                                   |     the Activity list (AL) screen |
+|                                   | -   Select Cancel                 |
+|                                   | -   A pop up dialogue box will    |
+|                                   |     confirm claim has been        |
+|                                   |     cancelled                     |
+|                                   | -   Select OK                     |
+|                                   | -   Cancel the new claim (NCL)    |
+|                                   |     activity created on the       |
+|                                   |     record in Process Direct      |
+|                                   | -   In a separate activity in     |
+|                                   |     Customer First, update any    |
+|                                   |     new details provided in the   |
+|                                   |     claim by the customer (for    |
+|                                   |     example, telephone number,    |
+|                                   |     address, income estimate      |
+|                                   |     etc.)                         |
+|                                   | -   Record details of the claim   |
+|                                   |     outcome on a DOC/Note (for    |
+|                                   |     example, claim outcome is     |
+|                                   |     NEF, any other changes to     |
+|                                   |     entitlement etc.)             |
+|                                   | -   In Customer First, send a     |
+|                                   |     manual Q999 letter to the     |
+|                                   |     customer advising the         |
+|                                   |     outcome. See Resources page   |
+|                                   |     for Q999 text                 |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 16                                | Error E340CU - DAP claimant       |
 |                                   | advised marital status change +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
@@ -1657,7 +1741,7 @@ Table 2:
 |                                   |                                   |
 |                                   | See Table 3.                      |
 +-----------------------------------+-----------------------------------+
-| 16                                | E704P1 - Income for Financial     |
+| 17                                | E704P1 - Income for Financial     |
 |                                   | Year ending 20xx + Read more ...  |
 |                                   |                                   |
 |                                   | Error E704P1 can occur if:        |
@@ -1698,7 +1782,7 @@ Table 2:
 |                                   |                                   |
 |                                   | See Table 3.                      |
 +-----------------------------------+-----------------------------------+
-| 17                                | E892F1 - Early Claim data must be |
+| 18                                | E892F1 - Early Claim data must be |
 |                                   | checked (FECS/FECD) for child +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
