@@ -284,7 +284,11 @@ Customer Reference Number (CRN)</li>
 			<ul>			<li>
 obtain name and contact number of person advising and details of funeral director if known</li>
 			<li>
-run the <strong>Notification of Death</strong> guided procedure to generate an <strong>ACTDOC</strong> to the processing Service</li>
+The <strong>Notification of Death</strong> guided procedure will not code the death, but will generate a <strong>DOC</strong> on the record. This is an open work item to be allocated to a Service Officer with the required skill set to confirm the death</li>
+			<li>
+if the guided procedure is not available, create an open work item using <strong>Fast Note</strong> with the following information&#58;</li>
+			<li>
+Select <strong>Auto Text,</strong> use <strong>Generic</strong> &gt; <strong>Update</strong> &gt; <strong>Death Notification (Adult) - ACTION REQUIRED</strong></li>
 			<li>
 <img src="../resources/images/icon-phone.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-phone.png" title="Phone contact&#58; Typically done by Smart Centre staff. Staff may complete this step if they are trained." />procedure ends here</li>
 			<li>
@@ -624,7 +628,7 @@ CP was paid for short term or episodic care situation</li>
 
 <p>Go to the Child Selection (<strong>CHS</strong>) screen.</p>
 
-<p>Is the child a Family Tax Benefit (FTB) child of the carer or another person?</p>
+<p>Is the child a Family Tax Benefit (FTB), Child Care Subsidy (CCS), Parental Leave Pay (PPL) and/or Dad and Partner Pay (DAP) child of the carer or another person?</p>
 		<ul>		<li>
 <strong>Yes</strong>, <a href="../carers/009-03090010-03.html#bp03_tbl_Code_details_of_Step03">go to Step 3</a></li>
 		<li>
@@ -662,7 +666,7 @@ whether there are any doubts about the information provided</li>
 		<li>
 if applicable, the name of any person charged with the death of the child/ren</li>
 		</ul>
-<p>The <strong>Notification of death FTB/CCS/PPL - Child Fast Note</strong> template auto-adds the keyword <strong>FAOBRV</strong> to ensure the <strong>ACTDOC</strong> is allocated to the Families Bereavement and Double Orphan Pension (<strong>DOP</strong>) team. There is no requirement to add additional keywords.</p>
+<p>The <strong>Notification of death FTB/CCS/PPL - Child Fast Note</strong> template auto-adds the keyword <strong>FAOBRV</strong> to ensure the open work item is allocated to the Families Bereavement and Double Orphan Pension (<strong>DOP</strong>) team. There is no requirement to add additional keywords.</p>
 
 <p><a href="../carers/009-03090010-03.html#bp03_tbl_Code_details_of_Step06">Go to Step 6</a>.</p>
 </div>
@@ -698,19 +702,51 @@ if applicable, the name of any person charged with the death of the child/ren</l
 <p>5</p></td>
 <td>
 
-<p><strong>Handoff to Carer Processing team</strong> <a title="Read more 17" class="showhead bp03_tbl_Code_details_of_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Code_details_of_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Coding the Death</strong> <a title="Read more 17" class="showhead bp03_tbl_Code_details_of_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Code_details_of_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
-
-<p>Record the details on an <strong>ACTDOC </strong>and transfer the <strong>ACTDOC</strong> to the Carer Processing team (WVW) to complete with an additional manually added keyword of 'Urgent'.</p>
-
-<p><strong>Child selection screen</strong></p>
-
-<p>Go to the Child Selection (<strong>CHS</strong>) screen and '<strong>S</strong>'elect the appropriate care receiver. Key the details in the <strong>Source</strong> and <strong>DOR</strong> fields. Press [<strong>Enter</strong>]&#58;</p>
 		<ul>		<li>
+Access the carer's record</li>
+		<li>
+Go to the Child Selection (<strong>CHS</strong>) screen and '<strong>S</strong>'elect the appropriate care receiver. Complete the <strong>Source</strong> and <strong>DOR</strong> fields, then press [<strong>Enter</strong>]</li>
+		<li>
+The Child Task Selector (<strong>CHTS</strong>) displays, '<strong>S</strong>'elect the Change Child (<strong>CCH</strong>) screen. Complete the Death Date field and press [<strong>Enter</strong>]</li>
+		<li>
+The FTB Child Bereavement Assistance Delivery Option (<strong>FBRV</strong>) screen displays. This offers the bereavement payment delivery as a lump sum or an instalment option. CA will pay a bereavement lump sum</li>
+			<ul>			<li>
+If the customer is receiving FTB for the child, code the <strong>FBRV</strong> screen as required</li>
+			<li>
+If FTB is not being paid, FTB Child Bereavement Assistance will not be payable. Go to the <strong>AR</strong> screen</li>		</ul>
+		<li>
+If the deceased child only attracted the Health Care Card (HCC) for CA, the system will automatically cancel the carer's entitlement</li>
+		<li>
+The system will automatically pay a Lump Sum Bereavement Payment (LBP) and cancel CA for that care receiver. Ensure any instalments of CA paid after the death of the child were deducted from the CA LBP</li>
+		<li>
+If instalments paid after the child's death are not deducted (this is a known system issue - see <a href="../carers/009-03090010-05.html">Resources</a>), adjust the CA LBP</li>
+			<ul>			<li>
+From the <strong>AR</strong> screen within the death activity, select <strong>Optional Actions</strong> &gt;<strong>Carer Allowance</strong> &gt;<strong>One Off Payments</strong> (<strong>OOP</strong>) from the left hand side menu</li>
+			<li>
+Overstrike the amount with the correct bereavement payment amount and press [<strong>Enter</strong>] to return to <strong>AR</strong> screen</li>
+			<li>
+Finalise the activity on the <strong>AR</strong> screen</li>		</ul>
+		<li>
+Take note of any warnings that appear before finalising the activity on the <strong>AR</strong> screen</li>
+		<li>
+Record the details of the bereavement and any adjustments made to the LBP in a <strong>DOC</strong></li>
+		<li>
+Offer the services of a social worker</li>
+		</ul>
+<p><strong>Confirming the outcome</strong></p>
+
+<p>To double check the action taken, '<strong>S</strong>'elect the relevant care receiver from the Care Receiver Summary (<strong>CRS</strong>) and go to the Care Receiver Assessment Results (<strong>CJAR</strong>) screen. The following will be displayed in the <strong>BEN/STS-RSN</strong> field</p>
+		<ul>		<li>
+Status 'STS'&#58; <strong>CAN</strong></li>
+		<li>
+Reason 'RSN'&#58; <strong>DEA</strong> (Death)</li>
+		<li>
 on the Child Task Selector (<strong>CHTS</strong>) screen, '<strong>S</strong>'elect the Change Child (<strong>CCH</strong>) screen and code the <strong>Death Date</strong> field</li>
 		<li>
-on the Child Bereavement Assistance Delivery Option (<strong>FBRV</strong>) screen, the options presented are to pay as a lump sum or in instalments. Press [<strong>Enter</strong>] and finalise the activity from the Activity List (<strong>AL</strong>) screen</li>		</ul>
+on the <strong>FBRV</strong> screen, the options presented are to pay as a lump sum or in instalments. Press [<strong>Enter</strong>] and finalise the activity from the Activity List (<strong>AL</strong>) screen</li>		</ul>
 </div>
 
 
@@ -796,9 +832,9 @@ finalise activity via the <strong>AR</strong> screen. Note any warnings that wil
 
 <p>Code <strong>all</strong> deaths using the <strong>Notification of Death</strong> guided procedure&#58;</p>
 		<ul>		<li>
-a death action cannot be processed with activities on the Activity List (<strong>AL</strong>) screen. The <strong>Notification of Death</strong> guided procedure will provide a prompt if there is an activity on the <strong>AL</strong> screen. Where possible ensure all activities are completed and run the daily driver. If there is a '<strong>STA</strong>' debt activity on the <strong>AL</strong> screen, contact the appropriate debt raising team. See <a href="../debts/107-04010110-01.html">Requesting refunds and raising debts for deceased customer</a></li>
+a death action cannot be processed with activities on the <strong>AL</strong> screen. The <strong>Notification of Death</strong> guided procedure will provide a prompt if there is an activity on the <strong>AL</strong> screen. Where possible ensure all activities are completed and run the daily driver. If there is a '<strong>STA</strong>' debt activity on the <strong>AL</strong> screen, contact the appropriate debt raising team. See <a href="../debts/107-04010110-01.html">Requesting refunds and raising debts for deceased customer</a></li>
 		<li>
-if it is not possible to complete an activity, the <strong>Notification of Death</strong> guided procedure will create an <strong>ACTDOC</strong> to the service centre. In these instances, suspend the customer’s record via BA using the reason code '<strong>OTH</strong>', pending confirmation and processing of the death. Do not issue Q134 (or any other letter). <strong>Note&#58;</strong> a decision to suspend a customer's payment must be based on reliable evidence</li>
+if  not possible to complete an activity, the <strong>Notification of Death</strong> guided procedure will not code the death, but will generate a <strong>DOC</strong> on the record. This is an open work item to be allocated to a Service Officer with the required skill set to confirm the death. In these instances, suspend the customer’s record via BA using the reason code '<strong>OTH</strong>', pending confirmation and processing of the death. <strong>Do not issue</strong> Q134 (or any other letter). <strong>Note&#58;</strong> a decision to suspend a customer's payment must be based on reliable evidence</li>
 		<li>
 run the <strong>Notification of Death</strong> guided procedure</li>
 		</ul>
