@@ -70,10 +70,10 @@ Table 1
 |                                   | Officer is required to make       |
 |                                   | updates in these cases.           |
 |                                   |                                   |
-|                                   | If allocated an ACTDOC or Work    |
-|                                   | Item regarding a change in        |
-|                                   | circumstances for a DAP customer, |
-|                                   | go to Step 8.                     |
+|                                   | If allocated a Fast Note/Handoff  |
+|                                   | or Work Item regarding a change   |
+|                                   | in circumstances for a DAP        |
+|                                   | customer, go to Step 8.           |
 |                                   |                                   |
 |                                   | If an online update is not        |
 |                                   | auto-finalised, customers will    |
@@ -250,12 +250,13 @@ Table 1
 |                                   |     Processing DAP online and     |
 |                                   |     assisted customer claims      |
 +-----------------------------------+-----------------------------------+
-| 8                                 | FCC processing - ACTDOC or Work   |
-|                                   | Item received + Read more ...     |
+| 8                                 | FCC processing - Fast             |
+|                                   | Note/Handoff or Work Item         |
+|                                   | received + Read more ...          |
 |                                   |                                   |
-|                                   | ACTDOC received                   |
+|                                   | Fast Note/Handoff received        |
 |                                   |                                   |
-|                                   | Upon receipt of an ACTDOC         |
+|                                   | Upon receipt of a handoff         |
 |                                   | relating to a DAP claim that has  |
 |                                   | not yet been assessed, process    |
 |                                   | the DAP claim based on the new    |
@@ -274,7 +275,58 @@ Table 1
 |                                   | date after DAP has been paid, see |
 |                                   | Step 4 in Table 2.                |
 |                                   |                                   |
-|                                   | Workload Management               |
+|                                   | Work Item received                |
+|                                   |                                   |
+|                                   | A DAP Change of Circumstances     |
+|                                   | (CoC) activity can generate when: |
+|                                   |                                   |
+|                                   | a customer                        |
+|                                   |                                   |
+|                                   | -   updates their circumstances   |
+|                                   |     online but the update is      |
+|                                   |     unsuccessful                  |
+|                                   | -   accesses the online service   |
+|                                   |     and no updates are made but   |
+|                                   |     it is submitted by the        |
+|                                   |     customer                      |
+|                                   |                                   |
+|                                   | a Service Officer starts a DAP    |
+|                                   | Change of Circumstance and        |
+|                                   | doesn’t complete the change       |
+|                                   |                                   |
+|                                   | All DAP CoC work items are        |
+|                                   | actioned in Customer First.       |
+|                                   |                                   |
+|                                   | There are two different work item |
+|                                   | types that could be allocated for |
+|                                   | manual completion:                |
+|                                   |                                   |
+|                                   | -   ZIAM_FCC_REA                  |
+|                                   | -   ZCOC_ZDAP                     |
+|                                   |                                   |
+|                                   | The work items may be duplicated, |
+|                                   | therefore it is important to      |
+|                                   | check for and complete both the:  |
+|                                   |                                   |
+|                                   | -   Integrated System (ISIS)      |
+|                                   |     activity (viewable via        |
+|                                   |     Activity List (AL) screen),   |
+|                                   |     and                           |
+|                                   | -   any associated Customer First |
+|                                   |     SAP                           |
+|                                   |     Interaction Record/s          |
+|                                   |                                   |
+|                                   | If a DAP circumstance guided      |
+|                                   | procedure is started and not      |
+|                                   | complete, the activity often      |
+|                                   | updates to ‘in process’ to        |
+|                                   | continue to action the Change of  |
+|                                   | Circumstances (CoC) interaction   |
+|                                   | activity.                         |
+|                                   |                                   |
+|                                   | Change the activity back to ‘in   |
+|                                   | draft’ to enable updates, and     |
+|                                   | finalise the activity.            |
 |                                   |                                   |
 |                                   | Online updates that do not        |
 |                                   | auto-finalise will be allocated   |
@@ -472,6 +524,20 @@ Table 2
 |                                   | A letter will be issued advising  |
 |                                   | the change and outcome            |
 |                                   |                                   |
+|                                   | Note: where the DAP Circumstances |
+|                                   | guided procedure has been         |
+|                                   | started, but the Service Officer  |
+|                                   | determines it is no longer        |
+|                                   | required (based on customer       |
+|                                   | conversation):                    |
+|                                   |                                   |
+|                                   | -   select the Edit icon, and     |
+|                                   | -   update the status to          |
+|                                   |     Cancelled                     |
+|                                   |                                   |
+|                                   | This ensures the started          |
+|                                   | interaction record is completed.  |
+|                                   |                                   |
 |                                   | A 2 year limiting date ensures    |
 |                                   | reassessments of older DAP claims |
 |                                   | do not automatically apply a      |
@@ -512,13 +578,11 @@ Table 2
 |                                   | -   Complete the abridged         |
 |                                   |     eligibility test and include  |
 |                                   |     all details in a Progress     |
-|                                   |     DOC. Create the ACTDOC using  |
-|                                   |     Fast Note. Select Auto Text.  |
-|                                   |     Use Families > Updates >      |
-|                                   |     Change of Circs DAP action    |
-|                                   |     required. This will           |
-|                                   |     automatically be allocated to |
-|                                   |     a trained Service Officer     |
+|                                   |     DOC. Handoff to a trained     |
+|                                   |     Service Officer using Fast    |
+|                                   |     Note. Select Auto Text - use  |
+|                                   |     Families > Updates > Change   |
+|                                   |     of Circs DAP action required  |
 |                                   |                                   |
 |                                   | FCC processing staff              |
 |                                   |                                   |
@@ -658,6 +722,20 @@ Table 2
 |                                   |                                   |
 |                                   | A letter will be issued advising  |
 |                                   | the change and outcome            |
+|                                   |                                   |
+|                                   | Note: where the DAP Circumstances |
+|                                   | guided procedure has been         |
+|                                   | started, but the Service Officer  |
+|                                   | determines it is no longer        |
+|                                   | required (based on customer       |
+|                                   | conversation):                    |
+|                                   |                                   |
+|                                   | -   select the Edit icon, and     |
+|                                   | -   update the status to          |
+|                                   |     Cancelled                     |
+|                                   |                                   |
+|                                   | This ensures the started          |
+|                                   | interaction record is completed.  |
 |                                   |                                   |
 |                                   | Customers who do not meet the     |
 |                                   | abridged eligibility test will    |

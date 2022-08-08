@@ -260,7 +260,7 @@ DAP work test details</li>
 
 <p><strong>Note&#58;</strong> customers cannot use online services when they have a claim status of NCL to update their income or work test nor their nominated start date. A Service Officer is required to make updates in these cases.</p>
 
-<p>If allocated an <strong>ACTDOC</strong> or <strong>Work Item</strong> regarding a change in circumstances for a DAP customer, <a href="../families/007-05040030-03.html#bp03_tbl_Notification_an_Step08">go to Step 8</a>.</p>
+<p>If allocated a <strong>Fast Note/Handoff</strong> or <strong>Work Item</strong> regarding a change in circumstances for a DAP customer, <a href="../families/007-05040030-03.html#bp03_tbl_Notification_an_Step08">go to Step 8</a>.</p>
 
 <p>If an online update is not auto-finalised, customers will receive the message<br>'Your update was not able to be completed. Your information has been saved and a Service Officer will complete the update' and the Work Item will be allocated in Customer First. For DAP trained staff to action the Work Item, <a href="../families/007-05040030-03.html#bp03_tbl_Notification_an_Step05">go to Step 5</a>.</p>
 
@@ -420,19 +420,47 @@ DAP/NCL, include all details in the claim Progress <strong>DOC</strong></li>
 <p>8</p></td>
 <td>
 
-<p><strong>FCC processing - ACTDOC or Work Item received</strong> <a title="Read more 8" class="showhead bp03_tbl_Notification_an_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Notification_an_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>FCC processing - Fast Note/Handoff or Work Item received</strong> <a title="Read more 8" class="showhead bp03_tbl_Notification_an_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Notification_an_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p><strong>ACTDOC received</strong></p>
+<p><strong>Fast Note/Handoff received</strong></p>
 
-<p>Upon receipt of an <strong>ACTDOC</strong> relating to a DAP claim that has not yet been assessed, process the DAP claim based on the new information provided. See <a href="../families/007-05020000-01.html">Assessing Dad and Partner Pay (DAP) claims</a>.</p>
+<p>Upon receipt of a handoff relating to a DAP claim that has not yet been assessed, process the DAP claim based on the new information provided. See <a href="../families/007-05020000-01.html">Assessing Dad and Partner Pay (DAP) claims</a>.</p>
 
 <p>If the claim cannot be processed, create or annotate a progress <strong>DOC</strong> to include the changed information and place the claim on hold for the required timeframe.</p>
 
 <p>To change the nominated start date after DAP has been paid, see <a href="../families/007-05040030-03.html#bp03_tbl_Updating_nomina_Step04">Step 4 in Table 2</a>.</p>
 
-<p><strong>Workload Management</strong></p>
+<p><strong>Work Item received</strong></p>
+
+<p>A DAP Change of Circumstances (CoC) activity can generate when&#58;</p>
+		<ul>		<li>
+a customer </li>
+			<ul>			<li>
+updates their circumstances online but the update is unsuccessful</li>
+			<li>
+accesses the online service and no updates are made but it is submitted by the customer</li>		</ul>
+		<li>
+a Service Officer starts a DAP Change of Circumstance and doesn’t complete the change</li>
+		</ul>
+<p>All DAP CoC work items are actioned in Customer First.</p>
+
+<p>There are two different work item types that could be allocated for manual completion&#58;</p>
+		<ul>		<li>
+ZIAM_FCC_REA</li>
+		<li>
+ZCOC_ZDAP</li>
+		</ul>
+<p>The work items may be duplicated, therefore it is important to check for and complete both the&#58;</p>
+		<ul>		<li>
+Integrated System (ISIS) activity (viewable via Activity List (<strong>AL</strong>) screen), and</li>
+		<li>
+any associated Customer First SAP <strong><a href="../specialist-manuals-and-system-tools/111-06045030-01.html">I</strong>nteraction Record/s</a></li>
+		</ul>
+<p>If a <strong>DAP circumstance</strong> guided procedure is started and not complete, the activity often updates to ‘in process’ to continue to action the Change of Circumstances (CoC) interaction activity.</p>
+
+<p>Change the activity back to ‘in draft’ to enable updates, and finalise the activity.</p>
 
 <p>Online updates that do not auto-finalise will be allocated via a Work Item with ID <strong>ZCOC ZDAP</strong> (Family Related Change of Circumstance). See <a href="../specialist-manuals-and-system-tools/111-06050000-01.html">Workload Management</a>.</p>
 
@@ -558,6 +586,14 @@ Advise the customer of the change in circumstances outcome</li>
 		<li>
 A letter will be issued advising the change and outcome</li>
 		</ul>
+<p><strong>Note&#58;</strong> where the DAP Circumstances guided procedure has been started, but the Service Officer determines it is no longer required (based on customer conversation)&#58;</p>
+		<ul>		<li>
+select the <strong>Edit</strong> icon, and </li>
+		<li>
+update the status to <strong>Cancelled</strong></li>
+		</ul>
+<p>This ensures the started interaction record is completed.</p>
+
 <p>A 2 year limiting date ensures reassessments of older DAP claims do not automatically apply a retrospective change to a customer's record. These changes must be manually coded.</p>
 
 <p>Is the customer notifying a retrospective change in circumstances for a DAP child whose date of birth or entry into care is more than 2 years from today's date?</p>
@@ -604,7 +640,7 @@ DAP has already been paid and new nominated DAP period has been provided, <a hre
 
 <p><strong>Service Officers not trained in DAP claim processing</strong></p>
 		<ul>		<li>
-Complete the abridged eligibility test and include all details in a Progress <strong>DOC</strong>. Create the <strong>ACTDOC</strong> using <a href="../specialist-manuals-and-system-tools/111-05050020-03.html">Fast Note</a>.<strong> </strong>Select <strong>Auto Text. </strong>Use <strong>Families</strong> &gt; <strong>Updates</strong> &gt; <strong>Change of Circs DAP action required</strong>. This will automatically be allocated to a trained Service Officer</li>
+Complete the abridged eligibility test and include all details in a Progress <strong>DOC</strong>. Handoff to a trained Service Officer using <a href="../specialist-manuals-and-system-tools/111-05050020-03.html">Fast Note</a>.<strong> </strong>Select <strong>Auto Text - </strong>use <strong>Families</strong> &gt; <strong>Updates</strong> &gt; <strong>Change of Circs DAP action required</strong></li>
 		</ul>
 <p><strong>FCC processing staff</strong></p>
 		<ul>		<li>
@@ -668,6 +704,14 @@ Advise the customer of the change in circumstances outcome</li>
 		<li>
 A letter will be issued advising the change and outcome</li>
 		</ul>
+<p><strong>Note&#58;</strong> where the DAP Circumstances guided procedure has been started, but the Service Officer determines it is no longer required (based on customer conversation)&#58;</p>
+		<ul>		<li>
+select the <strong>Edit</strong> icon, and </li>
+		<li>
+update the status to <strong>Cancelled</strong></li>
+		</ul>
+<p>This ensures the started interaction record is completed.</p>
+
 <p>Customers who do not meet the abridged eligibility test will have their claim rejected, e.g. they now fail the work test, income test. Record the relevant change in circumstances so the claim rejects for the appropriate reason.</p>
 
 <p>Procedure ends here.</p>
