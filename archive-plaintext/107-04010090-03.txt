@@ -1,5 +1,5 @@
 
-Debts raised over duplicate, multiple or intertwined Customer Reference Numbers (CRN) 107-04010090
+Debt raising over duplicate, multiple or intertwined Customer Reference Numbers (CRN) 107-04010090
 
 -   Background
 -   Process
@@ -22,8 +22,8 @@ Debts where multiple CRN exist
 |                                   |     environments a record is in.  |
 |                                   |     For further information, see  |
 |                                   |     Inter-environment transfer of |
-|                                   |     debts. Procedure ends here    |
-|                                   | -   No, go to Step 2              |
+|                                   |     debts. Go to Step 2           |
+|                                   | -   No, procedure ends here       |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Has Data Quality Unit (DQU) taken |
 |                                   | action + Read more ...            |
@@ -134,30 +134,37 @@ Debts where multiple CRN exist
 |                                   | -   details of debts on the       |
 |                                   |     secondary records             |
 |                                   |                                   |
-|                                   | Create an ACTDOC with a keyword   |
-|                                   | of 'ACTDRU'.                      |
+|                                   | When the primary and multiple     |
+|                                   | CRNs have been identified, the    |
+|                                   | Family Assistance Manual          |
+|                                   | Intervention team (MIV) will take |
+|                                   | action to ensure the result is    |
+|                                   | moved to the primary record.      |
 |                                   |                                   |
-|                                   | The ACTDOC must be sent to NS7.   |
+|                                   | Has the debt been removed from    |
+|                                   | the multiple or duplicate CRNs    |
+|                                   | and moved to the primary record?  |
 |                                   |                                   |
-|                                   | Record details in a DOC and       |
-|                                   | include the original Debt ID. See |
-|                                   | Online Document Recording (ODR)   |
-|                                   | for further details.              |
-|                                   |                                   |
-|                                   | Procedure ends here.              |
+|                                   | -   Yes, go to Step 9             |
+|                                   | -   No, manual intervention may   |
+|                                   |     be required. Send an ACTDOC   |
+|                                   |     with keywords ‘ACTMIV’ and    |
+|                                   |     ‘#MULTCRN’ to MIV. Procedure  |
+|                                   |     ends here                     |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Not fully recovered debt where    |
-|                                   | multiple CRNs exist + Read more   |
-|                                   | ...                               |
+| 6                                 | Undetermined debt activity or     |
+|                                   | non-recovered debt where multiple |
+|                                   | CRNs exist + Read more ...        |
 |                                   |                                   |
-|                                   | Has a non-recovered debt been     |
-|                                   | raised where a customer has       |
-|                                   | multiple CRNs?                    |
+|                                   | Is there an undetermined debt     |
+|                                   | activity or a non-recovered debt  |
+|                                   | where a customer has multiple     |
+|                                   | CRNs?                             |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 7             |
 |                                   | -   No, procedure ends here       |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Is the Debt on a multiple or      |
+| 7                                 | Is the debt on a multiple or      |
 |                                   | intertwined CRN? + Read more ...  |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 8             |
@@ -191,7 +198,7 @@ Debts where multiple CRN exist
 |                                   |                                   |
 |                                   | Do not send the auto letter       |
 |                                   |                                   |
-|                                   | On the Key Dates (OPKD) screen    |
+|                                   | On the Key Dates (OPKD) screen:   |
 |                                   |                                   |
 |                                   | -   record the date of issue of   |
 |                                   |     the original advice, and      |
@@ -217,16 +224,33 @@ Debts where multiple CRN exist
 |                                   |     further details. Procedure    |
 |                                   |     ends here                     |
 +-----------------------------------+-----------------------------------+
-| 10                                | Refer the debt to the Debt        |
-|                                   | Management Team + Read more ...   |
+| 10                                | Transfer of debt repayment/s from |
+|                                   | secondary CRNs to the primary     |
+|                                   | CRN + Read more ...               |
 |                                   |                                   |
-|                                   | -   See Debt Management for       |
-|                                   |     further information           |
-|                                   | -   Record all details in a DOC   |
-|                                   |     including details of the      |
+|                                   | Transfer the repayment from the   |
+|                                   | secondary CRNs to the primary CRN |
+|                                   | on the OPRTD screen:              |
+|                                   |                                   |
+|                                   | -   Enter the customer’s primary  |
+|                                   |     CRN into the third party CRN  |
+|                                   |     field                         |
+|                                   | -   In the Debt ID field, enter   |
+|                                   |     the new Debt ID, that was     |
+|                                   |     created at Step 8             |
+|                                   | -   Repayment arrangement/s on    |
+|                                   |     the secondary CRNs must be    |
+|                                   |     replicated on the primary     |
+|                                   |     CRN, see Transfer debt        |
+|                                   |     repayments to a third party’s |
+|                                   |     debt in DMIS                  |
+|                                   | -   Record all details in a DOC.  |
+|                                   |     Include details of the        |
 |                                   |     original Debt ID. See Online  |
 |                                   |     Document Recording (ODR) for  |
 |                                   |     further details               |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
                                    

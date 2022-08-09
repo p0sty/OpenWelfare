@@ -114,13 +114,20 @@ Table 1
 |                                   | determine the required action. If |
 |                                   | the debt will be raised:          |
 |                                   |                                   |
-|                                   | manually, go to Step 9            |
+|                                   | manually,                         |
+|                                   |                                   |
+|                                   | -   for Advance Payment (ADV)     |
+|                                   |     debts automatically held      |
+|                                   |     following death action, go to |
+|                                   |     Step 7                        |
+|                                   | -   for other debts, go to Step   |
+|                                   |     10                            |
 |                                   |                                   |
 |                                   | automatically, and                |
 |                                   |                                   |
 |                                   | -   no changes need to be made,   |
 |                                   |     that is, debt activity is     |
-|                                   |     correct, go to Step 7         |
+|                                   |     correct, go to Step 8         |
 |                                   | -   needs to be finalised 'no     |
 |                                   |     debt' (FND) to amalgamate     |
 |                                   |     multiple (MUL) debt           |
@@ -178,7 +185,75 @@ Table 1
 |                                   |     press [Enter]                 |
 |                                   | -   procedure ends here           |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Un-holding an undetermined debt   |
+| 7                                 | Action required for automatically |
+|                                   | held ADV debt activity following  |
+|                                   | death action + Read more ...      |
+|                                   |                                   |
+|                                   | Do not un-hold the debt activity. |
+|                                   |                                   |
+|                                   | Finalise 'no debt' (FND) the ADV  |
+|                                   | debt:                             |
+|                                   |                                   |
+|                                   | -   go to the Debt List (OPDL)    |
+|                                   |     screen and 'S'elect the ADV   |
+|                                   |     debt                          |
+|                                   | -   go to Modify/Assess Debt      |
+|                                   |     (OPMA) screen                 |
+|                                   | -   change the Calculated Amount  |
+|                                   |     $: to $0                      |
+|                                   | -   add the Multiple Debts (MUL)  |
+|                                   |     code to the FND reason: field |
+|                                   |     and press [Enter]             |
+|                                   | -   press [Enter] twice to go to  |
+|                                   |     the Assessment Finalisation   |
+|                                   |     (OPAF) screen                 |
+|                                   | -   key 'Y' in the Finished?      |
+|                                   |     field and press [Enter] to    |
+|                                   |     finalise the debt             |
+|                                   | -   go to the Debt List (OPDL)    |
+|                                   |     screen to confirm the debt    |
+|                                   |     now displays the O/S Balance  |
+|                                   |     as $0.00 and the Status as    |
+|                                   |     F-No debt                     |
+|                                   | -   cancel the debt activity – go |
+|                                   |     to the Activity List (AL)     |
+|                                   |     screen and key 'C' in the     |
+|                                   |     Selection field of the        |
+|                                   |     relevant debt activity and    |
+|                                   |     press [Enter]                 |
+|                                   |                                   |
+|                                   | The ADV debt activity can only be |
+|                                   | cancelled on the AL screen once   |
+|                                   | all other debt activities on the  |
+|                                   | customer record have been         |
+|                                   | finalised.                        |
+|                                   |                                   |
+|                                   | Does an ADV debt exist?           |
+|                                   |                                   |
+|                                   | Yes, and it has been:             |
+|                                   |                                   |
+|                                   | -   less than 28 days since the   |
+|                                   |     date of death, set a review.  |
+|                                   |     See Requesting refunds and    |
+|                                   |     raising debts for deceased    |
+|                                   |     customer, Step 3 in Table 2   |
+|                                   | -   more than 28 days since the   |
+|                                   |     date of death, go to          |
+|                                   |     Requesting refunds and        |
+|                                   |     raising debts for deceased    |
+|                                   |     customer, Table 3             |
+|                                   |                                   |
+|                                   | No,                               |
+|                                   |                                   |
+|                                   | -   if processing a               |
+|                                   |     Registrar-General's Office    |
+|                                   |     Intervention (RGO)            |
+|                                   |     intervention, see Finalising  |
+|                                   |     Registrar-General's Office    |
+|                                   |     Interventions (RGO)           |
+|                                   | -   procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 8                                 | Un-holding an undetermined debt   |
 |                                   | activity that will be             |
 |                                   | automatically raised + Read more  |
 |                                   | ...                               |
@@ -208,9 +283,9 @@ Table 1
 |                                   | Is the debt activity un-held?     |
 |                                   |                                   |
 |                                   | -   Yes, procedure ends here      |
-|                                   | -   No, go to Step 8              |
+|                                   | -   No, go to Step 9              |
 +-----------------------------------+-----------------------------------+
-| 8                                 | System error workarounds for      |
+| 9                                 | System error workarounds for      |
 |                                   | un-holding a debt that will be    |
 |                                   | automatically raised + Read more  |
 |                                   | ...                               |
@@ -236,7 +311,7 @@ Table 1
 |                                   | -   Press [Enter] and return to   |
 |                                   |     the AL screen                 |
 |                                   | -   Repeat the DMNUNHLD process   |
-|                                   |     from Step 7                   |
+|                                   |     from Step 8                   |
 |                                   |                                   |
 |                                   | Debts with no DOC attached or the |
 |                                   | attached DOC cannot be located on |
@@ -247,7 +322,7 @@ Table 1
 |                                   |     activity using the Fast Note  |
 |                                   |     tool in Customer First        |
 |                                   | -   Repeat the DMNUNHLD process   |
-|                                   |     from Step 7                   |
+|                                   |     from Step 8                   |
 |                                   |                                   |
 |                                   | Have either of the workarounds    |
 |                                   | successfully un-held the debt?    |
@@ -257,7 +332,7 @@ Table 1
 |                                   |     assistance. See the Resources |
 |                                   |     page for a link to mySupport  |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Un-holding an undetermined debt   |
+| 10                                | Un-holding an undetermined debt   |
 |                                   | activity that will be manually    |
 |                                   | determined + Read more ...        |
 |                                   |                                   |
