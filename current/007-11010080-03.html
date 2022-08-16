@@ -287,7 +287,7 @@ receiving CCS and need to code ex-partner details, see <a href="../families/007-
 			<li>
 any other FTB, CCB or CCS customer, <a href="../families/007-11010080-03.html#bp03_tbl_Contact_with_cu_Step02">go to Step 2</a></li>		</ul>
 		<li>
-<strong><img src="../resources/images/icon-ss-phone-32px.png" alt="" title="A self service option is available" /> </strong>Completed a not required to lodge update online or via the Express Plus Centrelink mobile app which has not finalised automatically, <a href="../families/007-11010080-03.html#bp03_tbl_Contact_with_cu_Step04">go to Step 4</a></li>
+<img src="../resources/images/icon-ss-phone-32px.png" alt="" title="A self service option is available" /><strong> </strong>Completed a not required to lodge update online or via the Express Plus Centrelink mobile app which has not finalised automatically, <a href="../families/007-11010080-03.html#bp03_tbl_Contact_with_cu_Step04">go to Step 4</a></li>
 		<li>
 Completed a 'Return not Necessary' (RNN) advice via the ATO, <a href="../families/007-11010080-03.html#bp03_tbl_Contact_with_cu_Step09">go to Step 9</a></li>
 		<li>
@@ -615,7 +615,7 @@ If a previously provided 'not required to lodge' advice was 'not accepted' by Ce
 <h3>Pre update actions and checks</h3>
 
 
-<p>Table 2&#58; </p>
+<p>Table 2 </p>
 <table caption="Table 2&#58; this table describes the actions and checks required prior to running the workflow." width="100%">
 <tr>
 <td width="11%">
@@ -661,13 +661,15 @@ Having reportable fringe benefits, reportable superannuation contributions, net 
 
 <p>Single Touch Payroll (STP) data can be viewed on the STP Data for FTB Customer (<strong>STPF</strong>) screen in Process Direct.</p>
 
+<p>Select the <strong>Help</strong> button on the <strong>STPF</strong> screen for more information about the screen fields.</p>
+
 <p>Enter the relevant <strong>Financial Year</strong> and select <strong>search</strong>.</p>
 
 <p>This will display <strong>Payroll Data Indicators</strong> for the customer and partner where applicable&#58;</p>
 		<ul>		<li>
 <strong>Payroll information exists</strong> for customer/partner will present with Y if their employer has provided information. </li>
 		<li>
-<strong>A tax return is required</strong> will present a Y if there is a reason the customer/partner is to lodge a tax return, otherwise this will be N</li>
+<strong>A tax return is required</strong> (based on STP data only) will present a Y if there is a reason the customer/partner is to lodge a tax return, otherwise this will be N</li>
 		<li>
 <strong>Customer/Partner reasons for tax return</strong> will display if the customer/partner has a tax return requirement&#58;</li>
 			<ul>			<li>
@@ -713,7 +715,7 @@ Taxable entitlement (<strong>TXGS</strong>)</li>
 		<li>
 Real estate and business (<strong>REBS</strong>)</li>
 		<li>
-Non- taxable entitlement (<strong>TXGS</strong>) (note that Remote Area Allowance RAA is included as a non-taxable entitlement on TXGS but is not assessable income for FTB or CCS)</li>
+Non- taxable entitlement (<strong>TXGS</strong>) (note that Remote Area Allowance RAA is included as a non-taxable entitlement on <strong>TXGS</strong> but is not assessable income for FTB or CCS)</li>
 		<li>
 Tax withheld (<strong>TXGS</strong>)</li>
 		<li>
@@ -761,7 +763,7 @@ wants to proceed with the non-lodgement declaration, see <a href="../families/00
 <h3>Recording non-lodgement for FTB and CCS customers</h3>
 
 
-<p>Table 3&#58; Recording non-lodgement exemption and income for non-lodgement year for Family Tax Benefit (FTB) customers and Child Care Subsidy (CCS) customers.</p>
+<p>Table 3&#58; recording non-lodgement exemption and income for non-lodgement year for Family Tax Benefit (FTB) customers and Child Care Subsidy (CCS) customers.</p>
 <table caption="Table 3&#58; this table describes the process to record non-lodgment exemption and income for Family Tax Benefit (FTB) customers and Child Care Subsidy (CCS) customers." width="100%">
 <tr>
 <td width="11%">
@@ -851,8 +853,30 @@ If actual income details have been transferred from the Australian Taxation Offi
 		<li>
 If they advise <strong>nil income</strong>, leave the field blank or code $'<strong>0</strong>'</li>
 		<li>
-If the customer/partner/ex-partner received any income support payments during the relevant financial year, information will display in the <strong>Information on record</strong> section in the workflow. If an income amount <strong>less than</strong> that displaying in this section is advised, this <strong>must</strong> be discussed. If a <a href="../income-assests-and-rates-of-payment/108-05030010-01.html">reasonable estimate</a> is determined, an explanation <strong>must</strong> be recorded in the <strong>Fast Note</strong></li>
+If the customer/partner/ex-partner received any income support payments during the relevant financial year, information will display in the <strong>Information on record</strong> section in the workflow. If an income amount <strong>less than</strong> that displaying in this section is advised, this <strong>must</strong> be discussed. </li>
 		</ul>
+<p><strong>Income Support Payment (ISP) pre-fill</strong></p>
+
+<p>Amounts for <strong>Taxable Income</strong> and <strong>Tax Free Pension/Benefit</strong> should prefill from the Tax Payment Summary (<strong>TXGS</strong>) screen for the customer or partner. If a $0 amount is prefilled but the workflow produces a message indicating that there should be an amount of Taxable or Tax Free Pension/Benefit from income support payments, it may be that&#58; </p>
+		<ul>		<li>
+Centrelink ISP was current in the previous financial year, however ISP payment was not paid in the previous financial year. For example&#58;</li>
+			<ul>			<li>
+ISP is current at zero rate or ISP was granted for a date in the previous financial year, and </li>
+			<li>
+arrears were paid in the next financial year</li>		</ul>
+		<li>
+DVA ISP was current in the previous financial year and the amount needs to be included as income in the non-lodgement advice</li>
+		</ul>
+<p>If this message appears, check the&#58;</p>
+		<ul>		<li>
+amount of income support on <strong>TXGS</strong> screen</li>
+		<li>
+ISP amounts on the Payment Summary (<strong>PS</strong>) screen. If arrears were paid in a later financial year, the amounts do not need to be included in income confirmation for the earlier financial year. To record the correct income, the non-lodgement advice needs to be recorded manually. See <a href="../families/007-11010080-03.html#bp03_L3TT_Decision_making">Table 5</a></li>
+		</ul>
+<p>For an example see Table 2, Scenario 5 on the <a href="../families/007-11010080-05.html">Resources</a> page.</p>
+
+<p>If a <a href="../income-assests-and-rates-of-payment/108-05030010-01.html">reasonable estimate</a> is determined, an explanation <strong>must</strong> be recorded in the <strong>Fast Note</strong>.</p>
+
 <p>Their answers to the following questions may require more details to be added to the <strong>Fast Note</strong>&#58;</p>
 		<ul>		<li>
 Did you or your partner have any <strong>tax withheld</strong> from any income or payments?</li>
@@ -1515,7 +1539,7 @@ Tax Exempt Foreign Income</li>
 <h3>Coding non-lodgement advice manually for either FTB or CCS customers</h3>
 
 
-<p>Table 5&#58; This table outlines how to manually code a non-lodgement advice in Customer First for either FTB or CCS when the relevant workflow is not available.</p>
+<p>Table 5&#58; how to manually code a non-lodgement advice in Customer First for either FTB or CCS when the relevant workflow is not available.</p>
 <table caption="Table 5&#58; this table outlines how to manually code a non-lodgement advice in Customer First for either FTB or CCS when the relevant workflow is not available." width="100%">
 <tr>
 <td width="11%">
@@ -1709,7 +1733,7 @@ have to repay the FTB for the relevant financial year</li>
 <h3>Finalise Family Assistance Office non lodgement exemption workflow</h3>
 
 
-<p>Table 6&#58; Checking and finalising the workflow. All CCB/CCR references relate to financial years before 2018-19.</p>
+<p>Table 6&#58; checking and finalising the workflow. All CCB/CCR references relate to financial years before 2018-19.</p>
 <table caption="Table 6&#58; checking and finalising the workflow. All CCB/CCR references relate to financial years before 2018-19." width="100%">
 <tr>
 <td width="11%">

@@ -117,20 +117,28 @@ customer's record.
 | 14 days to verify                 | the Accommodation Details (AC)    |
 |                                   | screen.                           |
 |                                   |                                   |
+|                                   | The system will automatically     |
+|                                   | issue a Rent Certificate          |
+|                                   | (SU523HD). Rent Assistance (RA)   |
+|                                   | will be paid.                     |
+|                                   |                                   |
 |                                   | Customer has changed address or   |
 |                                   | accommodation circumstances:      |
 |                                   |                                   |
 |                                   | -   for income support payments   |
-|                                   |     and ABSTUDY customers, this   |
-|                                   |     includes changes to rent or   |
-|                                   |     sharer details without a      |
-|                                   |     change of address. Do not use |
-|                                   |     COA for customers who meet    |
-|                                   |     the reduced verification of   |
-|                                   |     rent rules                    |
+|                                   |     and ABSTUDY customers who     |
+|                                   |     receive, or will receive, RA  |
+|                                   |     with ISP/ABY. This includes   |
+|                                   |     changes to rent or sharer     |
+|                                   |     details without a change of   |
+|                                   |     address. Do not use COA for   |
+|                                   |     customers who meet the        |
+|                                   |     reduced verification of rent  |
+|                                   |     rules                         |
 |                                   | -   for Family Tax Benefit (FTB)  |
-|                                   |     customers, the customer has   |
-|                                   |     advised of the change within  |
+|                                   |     customers who currently       |
+|                                   |     receive RA with FTB and       |
+|                                   |     advise of the change within   |
 |                                   |     14 days. This includes        |
 |                                   |     changes to rent or sharer     |
 |                                   |     details without a change of   |
@@ -849,6 +857,11 @@ customer's record.
 | verify                            | the Accommodation Details (AC)    |
 |                                   | screen.                           |
 |                                   |                                   |
+|                                   | The system will automatically     |
+|                                   | issue a Rent Certificate          |
+|                                   | (SU523HD). Rent Assistance (RA)   |
+|                                   | will be paid.                     |
+|                                   |                                   |
 |                                   | Customer advises they are finding |
 |                                   | it hard to provide verification   |
 |                                   | of rent details in the requested  |
@@ -1443,7 +1456,13 @@ customer's record.
 | verify                            | the Accommodation Details (AC)    |
 |                                   | screen.                           |
 |                                   |                                   |
-|                                   | New claim granted and customer's  |
+|                                   | The system will automatically     |
+|                                   | issue a Rent Certificate          |
+|                                   | (SU523HD). Rent Assistance (RA)   |
+|                                   | will be paid.                     |
+|                                   |                                   |
+|                                   | Income support payment or ABSTUDY |
+|                                   | new claim granted and customer's  |
 |                                   | accommodation circumstances are   |
 |                                   | being updated. Note: this code is |
 |                                   | not required when a tenancy       |
@@ -1640,6 +1659,9 @@ customer's record.
 |                                   | the Accommodation Details (AC)    |
 |                                   | screen.                           |
 |                                   |                                   |
+|                                   | Rent Assistance (RA) will not be  |
+|                                   | paid                              |
+|                                   |                                   |
 |                                   | Customer has not verified the     |
 |                                   | rent details recorded on the AC   |
 |                                   | screen within the allowable       |
@@ -1654,8 +1676,6 @@ customer's record.
 |                                   |     requested rent verification   |
 |                                   |     by the due date (automatic    |
 |                                   |     system updates)               |
-|                                   |                                   |
-|                                   | RA is not payable.                |
 |                                   |                                   |
 |                                   | Use NVE to stop paying RA, for    |
 |                                   | example, where verification is    |
@@ -1959,9 +1979,10 @@ customer's record.
 |                                   |                                   |
 |                                   | Where incorrect coding in these   |
 |                                   | fields does not impact payment    |
-|                                   | correctness, release with         |
-|                                   | feedback for staff corrective     |
-|                                   | action.                           |
+|                                   | correctness, the 'No' option is   |
+|                                   | selected and the activity is      |
+|                                   | released with feedback for staff  |
+|                                   | corrective action.                |
 |                                   |                                   |
 |                                   | The Resources page contains       |
 |                                   | examples of common AC screen      |
@@ -2234,6 +2255,10 @@ customer's record.
 | Required                          | the Accommodation Details (AC)    |
 |                                   | screen.                           |
 |                                   |                                   |
+|                                   | The system will not issue a Rent  |
+|                                   | Certificate (SU523HD). Rent       |
+|                                   | Assistance (RA) will not be paid. |
+|                                   |                                   |
 |                                   | Used when an FTB customer updates |
 |                                   | their accommodation circumstances |
 |                                   | online and they:                  |
@@ -2255,10 +2280,10 @@ customer's record.
 |                                   | for customers where the Service   |
 |                                   | Officer:                          |
 |                                   |                                   |
-|                                   | -   suspects the details provided |
-|                                   |     are fraudulent and wants      |
-|                                   |     verification to make sure     |
-|                                   |     payments are correct          |
+|                                   | -    suspects the details         |
+|                                   |     provided are fraudulent and   |
+|                                   |     wants verification to make    |
+|                                   |     sure payments are correct     |
 |                                   | -   details about the decision to |
 |                                   |     use RVL must be recorded in a |
 |                                   |     DOC                           |
@@ -2268,9 +2293,8 @@ customer's record.
 |                                   |     before additional payment, of |
 |                                   |     RA is appropriate             |
 |                                   |                                   |
-|                                   | This code will not pay RA. See    |
-|                                   | Determining proof of rent for the |
-|                                   | Verification field on the         |
+|                                   | See Determining proof of rent for |
+|                                   | the Verification field on the     |
 |                                   | Accommodation Details (AC) screen |
 |                                   | for processing information.       |
 +-----------------------------------+-----------------------------------+
@@ -2301,8 +2325,8 @@ customer's record.
 |                                   |                                   |
 |                                   | The system will automatically     |
 |                                   | issue a Rent Certificate          |
-|                                   | (SU523HD). Rent Assistance will   |
-|                                   | not be paid.                      |
+|                                   | (SU523HD). Rent Assistance (RA)   |
+|                                   | will not be paid.                 |
 |                                   |                                   |
 |                                   | Family Tax Benefit (FTB)          |
 |                                   | customers must provide rent       |
@@ -2331,10 +2355,6 @@ customer's record.
 |                                   |     that verification is needed   |
 |                                   |     before additional payment, of |
 |                                   |     RA is appropriate             |
-|                                   |                                   |
-|                                   | This code will not pay RA, but    |
-|                                   | will automatically issue a Rent   |
-|                                   | Certificate (SU523HD).            |
 |                                   |                                   |
 |                                   | See Determining proof of rent for |
 |                                   | the Verification field on the     |
@@ -2642,6 +2662,10 @@ customer's record.
 | Verification to be uploaded       | the Accommodation Details (AC)    |
 |                                   | screen.                           |
 |                                   |                                   |
+|                                   | The system will not issue a Rent  |
+|                                   | Certificate (SU523HD). Rent       |
+|                                   | Assistance (RA) will be paid.     |
+|                                   |                                   |
 |                                   | Used when a customer updates      |
 |                                   | their accommodation circumstances |
 |                                   | online and they:                  |
@@ -2655,9 +2679,10 @@ customer's record.
 |                                   |     with an eligible income       |
 |                                   |     support payment or ABSTUDY,   |
 |                                   |     or                            |
-|                                   | -   receive RA with FTB and have  |
-|                                   |     notified the change in        |
-|                                   |     circumstance within 14 days   |
+|                                   | -   currently receive RA with FTB |
+|                                   |     and have notified the change  |
+|                                   |     in circumstance within 14     |
+|                                   |     days                          |
 |                                   |                                   |
 |                                   | The customer has 14 days to       |
 |                                   | verify their rent details. If the |
