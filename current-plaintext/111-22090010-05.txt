@@ -8,19 +8,950 @@ Bulk Bill quality checking processing 111-22090010
 -   Resources
 -   Training & Support
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains information about the error status codes (including
+the non-error code), attachments concerning DQRI, the online Error
+Explanation Sheet and The Quality Control System for Medicare, and a
+list of links to the Intranet.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+On this Page:
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Error-free status code
+
+Error-free status code for bulk bill quality checking
+
+Table 1: This table lists the error-free status code for manual and
+online bulk bill quality checking.
+
++-----------------------+-----------------------+-----------------------+
+| Error-free status     | Definition            | Processing tip        |
+| code                  |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| 001                   | Error-free            | Transaction is        |
+|                       |                       | error-free            |
++-----------------------+-----------------------+-----------------------+
+
+Document error status codes
+
+Document error status codes for bulk bill quality checking
+
+Table 2: This table lists the document error status codes for manual and
+scanning bulk bill quality checking.
+
+Note: document error codes do not apply to online transmissions.
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| D02                   | (DB1) Service         | The address of the    |
+|                       | provider details      | service provider must |
+|                       | incorrect or not      | match the practice    |
+|                       | completed and not     | location. Where the   |
+|                       | detected by the       | practitioner has more |
+|                       | Service Officer.      | than one practice     |
+|                       |                       | location recorded     |
+|                       |                       | with Services         |
+|                       |                       | Australia, the        |
+|                       |                       | provider number used  |
+|                       |                       | should be applicable  |
+|                       |                       | to the practice       |
+|                       |                       | location where, or    |
+|                       |                       | from which, the       |
+|                       |                       | service was provided. |
+|                       |                       |                       |
+|                       |                       | It is an error when a |
+|                       |                       | PO Box or group link  |
+|                       |                       | is on the DB1 and not |
+|                       |                       | detected by the       |
+|                       |                       | Service Officer.      |
++-----------------------+-----------------------+-----------------------+
+| D07                   | (DB1) Payee provider  | DB1 forms have been   |
+|                       | details not completed | designed to enable    |
+|                       | when appropriate and  | benefits for a claim  |
+|                       | not detected by the   | to be directed to a   |
+|                       | Service Officer.      | practitioner other    |
+|                       |                       | than the one who      |
+|                       |                       | rendered the service. |
+|                       |                       | For example, where a  |
+|                       |                       | short term locum is   |
+|                       |                       | acting on behalf of   |
+|                       |                       | the principal doctor. |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the payee provider    |
+|                       |                       | details are           |
+|                       |                       | incomplete on the DB1 |
+|                       |                       | and not detected by   |
+|                       |                       | the Service Officer.  |
++-----------------------+-----------------------+-----------------------+
+| D08                   | DB1 not signed by     | It is an error when   |
+|                       | service provider and  | the provider          |
+|                       | not detected by the   | signature is omitted  |
+|                       | Service Officer.      | from the DB1.         |
+|                       |                       |                       |
+|                       |                       | Note: a signature     |
+|                       |                       | stamp is not          |
+|                       |                       | acceptable for manual |
+|                       |                       | or scanning.          |
++-----------------------+-----------------------+-----------------------+
+| D09                   | (DB1) Witness         | It is an error when   |
+|                       | signature or name of  | the witness name or   |
+|                       | witness not present   | signature is omitted  |
+|                       | and not detected by   | from the DB1.         |
+|                       | the Service Officer.  |                       |
+|                       |                       | It is not an error if |
+|                       |                       | the date of the       |
+|                       |                       | witness is missing.   |
+|                       |                       |                       |
+|                       |                       | Note: a signature     |
+|                       |                       | stamp is not          |
+|                       |                       | acceptable for manual |
+|                       |                       | or scanning.          |
++-----------------------+-----------------------+-----------------------+
+| D11                   | (DB1) Claim date      | When a provider       |
+|                       | omitted or incorrect  | number is closed and  |
+|                       | and not detected by   | the claim date is     |
+|                       | the Service Officer.  | after the close date  |
+|                       |                       | (but DOS is within    |
+|                       |                       | the open date), the   |
+|                       |                       | system will not       |
+|                       |                       | accept that claim     |
+|                       |                       | date. It is           |
+|                       |                       | acceptable to key the |
+|                       |                       | date of claim as the  |
+|                       |                       | date the provider     |
+|                       |                       | number has closed due |
+|                       |                       | to system restraints. |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the claim date is     |
+|                       |                       | omitted or incorrect  |
+|                       |                       | on the DB1 and not    |
+|                       |                       | detected by the       |
+|                       |                       | Service Officer.      |
+|                       |                       |                       |
+|                       |                       | It is not an error    |
+|                       |                       | when the claim date   |
+|                       |                       | is omitted or         |
+|                       |                       | incorrect and the     |
+|                       |                       | Service Officer has   |
+|                       |                       | used the date the     |
+|                       |                       | header is signed as   |
+|                       |                       | the claim date.       |
++-----------------------+-----------------------+-----------------------+
+| D12                   | DB1 used when DB1H    | It is an error when a |
+|                       | should have been used | provider has          |
+|                       | and not detected by   | submitted in-hospital |
+|                       | the Service Officer.  | services on a DB1 and |
+|                       |                       | the Service Officer   |
+|                       |                       | has failed to notate  |
+|                       |                       | that the relevant     |
+|                       |                       | correspondence has    |
+|                       |                       | been sent to the      |
+|                       |                       | provider advising     |
+|                       |                       | future claims will be |
+|                       |                       | rejected if incorrect |
+|                       |                       | stationery is used.   |
+|                       |                       |                       |
+|                       |                       | A photocopy or fax of |
+|                       |                       | a blank header is     |
+|                       |                       | acceptable when the   |
+|                       |                       | provider runs out of  |
+|                       |                       | stationery. The       |
+|                       |                       | provider must         |
+|                       |                       | complete all sections |
+|                       |                       | each time the claim   |
+|                       |                       | is submitted and not  |
+|                       |                       | use a photocopy of    |
+|                       |                       | previously completed  |
+|                       |                       | and signed DB1.       |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | scanning.             |
++-----------------------+-----------------------+-----------------------+
+| D13                   | DB1H used when DB1    | It is an error when a |
+|                       | should have been      | provider has          |
+|                       | used.                 | submitted             |
+|                       |                       | out-of-hospital       |
+|                       |                       | services on a DB1H    |
+|                       |                       | and the Service       |
+|                       |                       | Officer has failed to |
+|                       |                       | notate that the       |
+|                       |                       | relevant              |
+|                       |                       | correspondence has    |
+|                       |                       | been sent to the      |
+|                       |                       | provider advising     |
+|                       |                       | future claims will be |
+|                       |                       | rejected if incorrect |
+|                       |                       | stationery is used.   |
+|                       |                       |                       |
+|                       |                       | A photocopy or fax of |
+|                       |                       | a blank header is     |
+|                       |                       | acceptable when the   |
+|                       |                       | provider runs out of  |
+|                       |                       | stationery. The       |
+|                       |                       | provider must         |
+|                       |                       | complete all sections |
+|                       |                       | each time the claim   |
+|                       |                       | is submitted and not  |
+|                       |                       | use a photocopy of    |
+|                       |                       | previously completed  |
+|                       |                       | and signed DB1.       |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | scanning.             |
++-----------------------+-----------------------+-----------------------+
+| D14                   | (DB2-DB5) Incorrect   | It is an error when   |
+|                       | type of voucher.      | an incorrect voucher  |
+|                       |                       | type is submitted and |
+|                       |                       | not detected by the   |
+|                       |                       | Service Officer.      |
+|                       |                       |                       |
+|                       |                       | Note: it is a         |
+|                       |                       | legislative           |
+|                       |                       | requirement that      |
+|                       |                       | claims for Medicare   |
+|                       |                       | benefit must be       |
+|                       |                       | submitted on an       |
+|                       |                       | approved form.        |
++-----------------------+-----------------------+-----------------------+
+| D16                   | (DB2, DB3 and DB4)    | It is an error when   |
+|                       | Voucher not signed by | the patient (or       |
+|                       | patient or reason for | responsible person)   |
+|                       | omission of signature | does not sign the     |
+|                       | omitted or not        | voucher or the        |
+|                       | sufficient.           | explanation for no    |
+|                       |                       | signature is          |
+|                       |                       | insufficient or       |
+|                       |                       | inappropriate and not |
+|                       |                       | detected by the       |
+|                       |                       | Service Officer.      |
+|                       |                       |                       |
+|                       |                       | Note: it is not       |
+|                       |                       | sufficient for the    |
+|                       |                       | provider to notate    |
+|                       |                       | 'unable to sign' or   |
+|                       |                       | 'left surgery before  |
+|                       |                       | signing’. (Exception  |
+|                       |                       | DB1b stationery) for  |
+|                       |                       | all channels.         |
++-----------------------+-----------------------+-----------------------+
+| D17                   | (DB2-DB5) Patient's   | It is an error when a |
+|                       | details insufficient  | patient cannot be     |
+|                       | to uniquely identify  | identified uniquely   |
+|                       | the Medicare card     | from details supplied |
+|                       | number.               | and not detected by   |
+|                       |                       | the Service Officer.  |
+|                       |                       |                       |
+|                       |                       | Note: if a patient's  |
+|                       |                       | Medicare number is    |
+|                       |                       | not available, a      |
+|                       |                       | provider may claim by |
+|                       |                       | including the         |
+|                       |                       | patient's name, date  |
+|                       |                       | of birth and current  |
+|                       |                       | address on the        |
+|                       |                       | voucher. If           |
+|                       |                       | eligibility cannot be |
+|                       |                       | confirmed, the        |
+|                       |                       | service for the       |
+|                       |                       | patient must be       |
+|                       |                       | rejected.             |
++-----------------------+-----------------------+-----------------------+
+| D18                   | (DB2-DB5) Incorrect   | It is an error when a |
+|                       | patient nominated or  | card number has been  |
+|                       | patient not nominated | imprinted or written  |
+|                       | on voucher and not    | on a voucher and:     |
+|                       | identified by the     |                       |
+|                       | Service Officer.      | -   no patient sub    |
+|                       |                       |     numerate was      |
+|                       |                       |     indicated on      |
+|                       |                       |     voucher           |
+|                       |                       | -   incorrect patient |
+|                       |                       |     sub numerate was  |
+|                       |                       |     indicated on      |
+|                       |                       |     voucher           |
+|                       |                       |                       |
+|                       |                       | and was not detected  |
+|                       |                       | by the Service        |
+|                       |                       | Officer.              |
+|                       |                       |                       |
+|                       |                       | It is not an error    |
+|                       |                       | when there is no sub  |
+|                       |                       | numerate indicated on |
+|                       |                       | the voucher and only  |
+|                       |                       | one person on the     |
+|                       |                       | card.                 |
++-----------------------+-----------------------+-----------------------+
+| D19                   | (DB2-DB5) Date of     | It is an error when   |
+|                       | service not shown on  | the date of service   |
+|                       | voucher or illegible  | is omitted or         |
+|                       | and not detected by   | illegible and not     |
+|                       | the Service Officer.  | detected by the       |
+|                       |                       | Service Officer.      |
+|                       |                       |                       |
+|                       |                       | Note: if the Service  |
+|                       |                       | Officer has confirmed |
+|                       |                       | service date details, |
+|                       |                       | verification must be  |
+|                       |                       | present.              |
++-----------------------+-----------------------+-----------------------+
+| D20                   | (DB2-DB5) Item number | It is an error when   |
+|                       | or description of     | the item number or    |
+|                       | service not written   | description is        |
+|                       | on voucher and not    | omitted or illegible  |
+|                       | detected by the       | and not detected by   |
+|                       | Service Officer.      | the Service Officer.  |
+|                       |                       |                       |
+|                       |                       | Note: if the Service  |
+|                       |                       | Officer has confirmed |
+|                       |                       | the item numbers with |
+|                       |                       | the provider,         |
+|                       |                       | verification must be  |
+|                       |                       | present.              |
++-----------------------+-----------------------+-----------------------+
+| D23                   | Benefit assigned not  | It is an error when   |
+|                       | written on voucher    | the benefit assigned  |
+|                       | and not detected by   | is not indicated on   |
+|                       | the Service Officer.  | the voucher and not   |
+|                       |                       | detected by the       |
+|                       |                       | Service Officer.      |
++-----------------------+-----------------------+-----------------------+
+| D24                   | (DB2-DB5) Requesting  | It is an error when   |
+|                       | or referring          | the referring or      |
+|                       | practitioner's name   | requesting provider   |
+|                       | and provider number   | details are omitted   |
+|                       | or name and address   | or incorrect on the   |
+|                       | not written on        | voucher and not       |
+|                       | voucher when          | detected by the       |
+|                       | appropriate and not   | Service Officer.      |
+|                       | detected by the       |                       |
+|                       | Service Officer.      | Note: if the Service  |
+|                       |                       | Officer has confirmed |
+|                       |                       | referring or          |
+|                       |                       | requesting provider   |
+|                       |                       | details, verification |
+|                       |                       | must be present.      |
++-----------------------+-----------------------+-----------------------+
+| D26                   | (DB2-DB5) Date of     | It is an error when   |
+|                       | request or referral   | the referring or      |
+|                       | not written on        | requesting date is    |
+|                       | voucher when          | omitted or incorrect  |
+|                       | appropriate and not   | on the voucher and    |
+|                       | detected by the       | not detected by the   |
+|                       | Service Officer.      | Service Officer.      |
+|                       |                       |                       |
+|                       |                       | Note: if the Service  |
+|                       |                       | Officer has confirmed |
+|                       |                       | the referring or      |
+|                       |                       | requesting date,      |
+|                       |                       | verification must be  |
+|                       |                       | present.              |
++-----------------------+-----------------------+-----------------------+
+| D29                   | Service provider's    | It is an error when   |
+|                       | details not indicated | the service provider  |
+|                       | on voucher or         | details are:          |
+|                       | different to header   |                       |
+|                       | and not detected by   | -   omitted from the  |
+|                       | the Service Officer.  |     voucher           |
+|                       |                       | -   incorrect         |
+|                       |                       | -   different to the  |
+|                       |                       |     claim header      |
+|                       |                       |                       |
+|                       |                       | and not detected by   |
+|                       |                       | the Service Officer.  |
+|                       |                       |                       |
+|                       |                       | Note: if the Service  |
+|                       |                       | Officer has confirmed |
+|                       |                       | service provider      |
+|                       |                       | details, verification |
+|                       |                       | must be present.      |
++-----------------------+-----------------------+-----------------------+
+| D30                   | S4B3 item paid        | It is an error when a |
+|                       | without delegate's    | delegate's approval   |
+|                       | approval.             | was not indicated on  |
+|                       |                       | documentation for     |
+|                       |                       | payment of S4B3 items |
+|                       |                       | and not detected by   |
+|                       |                       | the Service Officer.  |
++-----------------------+-----------------------+-----------------------+
+| D31                   | (DB2 and DB4)         | It is an error when   |
+|                       | Radiation oncology    | an equipment number   |
+|                       | equipment number not  | is not endorsed on    |
+|                       | indicated on voucher  | the voucher and not   |
+|                       | and not detected by   | detected by the       |
+|                       | the Service Officer.  | Service Officer.      |
+|                       |                       |                       |
+|                       |                       | Note: if the Service  |
+|                       |                       | Officer has confirmed |
+|                       |                       | equipment number      |
+|                       |                       | details, verification |
+|                       |                       | must be present.      |
++-----------------------+-----------------------+-----------------------+
+| D32                   | No documents to       | It is an error when a |
+|                       | support payment.      | claim is processed    |
+|                       |                       | without supporting    |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Note: if              |
+|                       |                       | documentation is      |
+|                       |                       | recovered after the   |
+|                       |                       | quality check process |
+|                       |                       | is complete, the      |
+|                       |                       | error code is not to  |
+|                       |                       | be reversed.          |
+|                       |                       |                       |
+|                       |                       | Quality Checkers must |
+|                       |                       | confirm the service   |
+|                       |                       | and endeavour to      |
+|                       |                       | retrieve the          |
+|                       |                       | documents.            |
+|                       |                       |                       |
+|                       |                       | Where confirmation of |
+|                       |                       | the service or        |
+|                       |                       | retrieval of          |
+|                       |                       | documents cannot be   |
+|                       |                       | achieved, this should |
+|                       |                       | be escalated through  |
+|                       |                       | State processes.      |
++-----------------------+-----------------------+-----------------------+
+| D34                   | Practitioner or       | It is an error when   |
+|                       | patient copy of       | the patient copies or |
+|                       | vouchers submitted    | photocopies are       |
+|                       | with no justification | submitted and         |
+|                       | and not detected by   | accepted by the       |
+|                       | the Service Officer.  | Service Officer       |
+|                       |                       | without a provider    |
+|                       |                       | covering letter.      |
++-----------------------+-----------------------+-----------------------+
+| D39                   | More than four        | Where four document   |
+|                       | document errors.      | errors are detected   |
+|                       |                       | key all four error    |
+|                       |                       | codes.                |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | document errors are   |
+|                       |                       | detected key the      |
+|                       |                       | first three errors    |
+|                       |                       | with their applicable |
+|                       |                       | codes and key 'D39'   |
+|                       |                       | as the fourth error.  |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | errors are made and   |
+|                       |                       | there is a            |
+|                       |                       | combination of        |
+|                       |                       | document and          |
+|                       |                       | processing errors key |
+|                       |                       | 'D89' as the fourth   |
+|                       |                       | error.                |
++-----------------------+-----------------------+-----------------------+
+
+Processing error status codes
+
+Processing error status codes for bulk bill quality checking
+
+Table 3: This table lists the document error status codes for manual and
+scanning and online bulk bill quality checking unless otherwise
+specified.
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| D40                   | Payee provider keyed  | Manual                |
+|                       | incorrectly or        |                       |
+|                       | omitted.              | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has:                  |
+|                       |                       |                       |
+|                       |                       | -   not keyed the     |
+|                       |                       |     payee provider    |
+|                       |                       | -   keyed the         |
+|                       |                       |     incorrect payee   |
+|                       |                       |     provider.         |
+|                       |                       |                       |
+|                       |                       | Scanning              |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has not corrected or  |
+|                       |                       | entered payee         |
+|                       |                       | provider details      |
+|                       |                       | prior to payment.     |
+|                       |                       |                       |
+|                       |                       | Note: this error      |
+|                       |                       | status code does not  |
+|                       |                       | apply to online bulk  |
+|                       |                       | bill.                 |
++-----------------------+-----------------------+-----------------------+
+| D41                   | Claim ID keyed        | Manual                |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the claim ID does not |
+|                       |                       | match supporting      |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Note: this error      |
+|                       |                       | status code does not  |
+|                       |                       | apply to online       |
+|                       |                       | claiming or scanning. |
++-----------------------+-----------------------+-----------------------+
+| D42                   | Date of lodgement     | Manual                |
+|                       | keyed incorrectly.    |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the date of lodgement |
+|                       |                       | (DOL) keyed does not  |
+|                       |                       | match supporting      |
+|                       |                       | documentation when    |
+|                       |                       | indicated.            |
+|                       |                       |                       |
+|                       |                       | Note: if a claim has  |
+|                       |                       | been transmitted      |
+|                       |                       | twice by the          |
+|                       |                       | provider, the Service |
+|                       |                       | Officer should        |
+|                       |                       | process from the      |
+|                       |                       | earlier DOL           |
+|                       |                       | transmission and      |
+|                       |                       | delete the second     |
+|                       |                       | transmission.         |
+|                       |                       |                       |
+|                       |                       | Note: this error      |
+|                       |                       | status code does not  |
+|                       |                       | apply to online       |
+|                       |                       | claiming or scanning. |
++-----------------------+-----------------------+-----------------------+
+| D43                   | Service provider      | Manual                |
+|                       | keyed incorrectly.    |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the service provider  |
+|                       |                       | details do not match  |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Scanning              |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the service provider  |
+|                       |                       | details have not been |
+|                       |                       | corrected prior to    |
+|                       |                       | payment.              |
+|                       |                       |                       |
+|                       |                       | Note: this error      |
+|                       |                       | status code does not  |
+|                       |                       | apply to online       |
+|                       |                       | claiming.             |
++-----------------------+-----------------------+-----------------------+
+| D44                   | Incorrect card number | Manual                |
+|                       | keyed or selected.    |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the card number keyed |
+|                       |                       | differs to the        |
+|                       |                       | voucher submitted or  |
+|                       |                       | patient records.      |
+|                       |                       |                       |
+|                       |                       | Scanning              |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the incorrect card    |
+|                       |                       | number was keyed or   |
+|                       |                       | not identified prior  |
+|                       |                       | to payment.           |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the incorrect card    |
+|                       |                       | number was supplied   |
+|                       |                       | and the Service       |
+|                       |                       | Officer did not       |
+|                       |                       | reject the claim.     |
++-----------------------+-----------------------+-----------------------+
+| D45                   | Patient keyed or      | Manual and scanning   |
+|                       | selected incorrectly. |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the patient keyed or  |
+|                       |                       | selected differs to   |
+|                       |                       | the patient on the    |
+|                       |                       | voucher submitted.    |
+|                       |                       |                       |
+|                       |                       | Note: when there is   |
+|                       |                       | multiple card members |
+|                       |                       | and no patient        |
+|                       |                       | sub-numerate          |
+|                       |                       | indicated a Service   |
+|                       |                       | Officer cannot assume |
+|                       |                       | the person who signed |
+|                       |                       | the voucher is the    |
+|                       |                       | patient.              |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the patient selected  |
+|                       |                       | differs to the        |
+|                       |                       | transmission details. |
++-----------------------+-----------------------+-----------------------+
+| D46                   | Item keyed or         | Manual                |
+|                       | selected incorrectly. |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the item number keyed |
+|                       |                       | does not match the    |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Scanning              |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the item:             |
+|                       |                       |                       |
+|                       |                       | -   has not been      |
+|                       |                       |     corrected when    |
+|                       |                       |     appropriate       |
+|                       |                       | -   was keyed         |
+|                       |                       |     incorrectly       |
+|                       |                       |                       |
+|                       |                       | prior to payment.     |
+|                       |                       |                       |
+|                       |                       | Note: this error      |
+|                       |                       | status code does not  |
+|                       |                       | apply to online       |
+|                       |                       | claiming.             |
++-----------------------+-----------------------+-----------------------+
+| D47                   | Incorrect date of     | Manual                |
+|                       | service.              |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the date of service   |
+|                       |                       | keyed does not match  |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Scanning              |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the date of service:  |
+|                       |                       |                       |
+|                       |                       | -   has not been      |
+|                       |                       |     corrected when    |
+|                       |                       |     appropriate       |
+|                       |                       | -   was keyed         |
+|                       |                       |     incorrectly       |
+|                       |                       |                       |
+|                       |                       | prior to payment.     |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D48                   | Incorrect benefit     | It is acceptable for  |
+|                       | assigned.             | the Service Officer   |
+|                       |                       | to acknowledge a      |
+|                       |                       | difference between    |
+|                       |                       | the benefit assigned, |
+|                       |                       | and a system          |
+|                       |                       | generated benefit up  |
+|                       |                       | to a difference of    |
+|                       |                       | $5.00 for a derived   |
+|                       |                       | fee item, and $10.00  |
+|                       |                       | for all other items.  |
+|                       |                       | Any more than this    |
+|                       |                       | amount should be      |
+|                       |                       | investigated.         |
+|                       |                       |                       |
+|                       |                       | Manual and scanning   |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer:  |
+|                       |                       |                       |
+|                       |                       | -   keyed the         |
+|                       |                       |     incorrect benefit |
+|                       |                       |     assigned          |
+|                       |                       | -   has allowed       |
+|                       |                       |     payment of a      |
+|                       |                       |     different amount  |
+|                       |                       |     without           |
+|                       |                       |     justification     |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has altered the       |
+|                       |                       | benefit assigned from |
+|                       |                       | the transmitted data  |
+|                       |                       | to allow payment.     |
+|                       |                       |                       |
+|                       |                       | Note: where the       |
+|                       |                       | Service Officer has   |
+|                       |                       | manually calculated   |
+|                       |                       | the schedule fee      |
+|                       |                       | incorrectly and this  |
+|                       |                       | has resulted in an    |
+|                       |                       | incorrect payment,    |
+|                       |                       | this is an error.     |
++-----------------------+-----------------------+-----------------------+
+| D49                   | Incorrect processing  | This error occurs     |
+|                       | indicator (PI) used.  | when a restriction    |
+|                       |                       | should have been      |
+|                       |                       | overridden, but the   |
+|                       |                       | wrong PI was used.    |
+|                       |                       |                       |
+|                       |                       | Manual and scanning   |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the wrong PI has been |
+|                       |                       | keyed.                |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when a |
+|                       |                       | text message supports |
+|                       |                       | the restriction       |
+|                       |                       | override, however the |
+|                       |                       | Service Officer has   |
+|                       |                       | used the incorrect    |
+|                       |                       | PI.                   |
+|                       |                       |                       |
+|                       |                       | Note: only highest PI |
+|                       |                       | code used is stored   |
+|                       |                       | by the system.        |
+|                       |                       |                       |
+|                       |                       | If a Service Officer  |
+|                       |                       | has incorrectly       |
+|                       |                       | overridden a          |
+|                       |                       | restriction then the  |
+|                       |                       | error would be D51.   |
++-----------------------+-----------------------+-----------------------+
+| D50                   | Incorrect reason code | All channels          |
+|                       | keyed or omitted.     |                       |
+|                       |                       | It is an error if a   |
+|                       |                       | reason code was not   |
+|                       |                       | entered when required |
+|                       |                       | to process the claim  |
+|                       |                       | or the wrong reason   |
+|                       |                       | code was entered.     |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error if the system   |
+|                       |                       | has inserted the      |
+|                       |                       | reason code.          |
++-----------------------+-----------------------+-----------------------+
+| D51                   | Restrictive item paid | All channels          |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has inappropriately   |
+|                       |                       | overridden a          |
+|                       |                       | restriction.          |
++-----------------------+-----------------------+-----------------------+
+| D52                   | Incorrect modifier    | Manual and scanning   |
+|                       | used.                 |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has used the          |
+|                       |                       | incorrect modifier.   |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D53                   | Incorrect SR or AH    | This error code       |
+|                       | referring details.    | applies to specialist |
+|                       |                       | (SR) and allied       |
+|                       |                       | health (AH) referral  |
+|                       |                       | lines that appear on  |
+|                       |                       | history including the |
+|                       |                       | keying of SUB/CON in  |
+|                       |                       | the RSN field.        |
+|                       |                       |                       |
+|                       |                       | Manual and scanning   |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the referral line     |
+|                       |                       | keyed differs to the  |
+|                       |                       | voucher submitted.    |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the SUB/CON keyed in  |
+|                       |                       | the RSN field is      |
+|                       |                       | incorrect.            |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when the system |
+|                       |                       | has generated a       |
+|                       |                       | referral line with    |
+|                       |                       | RSN SGN.              |
++-----------------------+-----------------------+-----------------------+
+| D54                   | Incorrect DI          | Manual and scanning   |
+|                       | requesting details.   |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the diagnostic (DI)   |
+|                       |                       | request details do    |
+|                       |                       | not match voucher     |
+|                       |                       | submitted.            |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D55                   | Incorrect PA          | Manual and scanning   |
+|                       | requesting details.   |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the pathology (PA)    |
+|                       |                       | request details do    |
+|                       |                       | not match voucher     |
+|                       |                       | submitted.            |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D56                   | Item lines omitted.   | Manual and scanning   |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has not keyed the     |
+|                       |                       | item lines indicated  |
+|                       |                       | on the voucher.       |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D57                   | Additional item lines | All channels          |
+|                       | paid or keyed without |                       |
+|                       | justification.        | It is an error when   |
+|                       |                       | additional item lines |
+|                       |                       | have been paid or     |
+|                       |                       | keyed without         |
+|                       |                       | justification.        |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when additional |
+|                       |                       | lines have been keyed |
+|                       |                       | in accordance with    |
+|                       |                       | business rules.       |
++-----------------------+-----------------------+-----------------------+
+| D59                   | Item lines rejected   | All channels          |
+|                       | in error.             |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Service Officer   |
+|                       |                       | has rejected item/s   |
+|                       |                       | lines, when not in    |
+|                       |                       | accordance with       |
+|                       |                       | business rules.       |
++-----------------------+-----------------------+-----------------------+
+| D60                   | LSPN keyed            | Manual and scanning   |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the Location Specific |
+|                       |                       | Practice Number       |
+|                       |                       | (LSPN) for a          |
+|                       |                       | diagnostic imaging or |
+|                       |                       | oncology item does    |
+|                       |                       | not match voucher     |
+|                       |                       | submitted.            |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D61                   | SCP keyed             | Manual and scanning   |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the SCP (Specimen     |
+|                       |                       | Collection Point) for |
+|                       |                       | a pathology item does |
+|                       |                       | not match voucher     |
+|                       |                       | submitted.            |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| D89                   | More than four        | Where four processing |
+|                       | processing errors.    | errors are detected   |
+|                       |                       | key all four error    |
+|                       |                       | codes.                |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | processing errors are |
+|                       |                       | detected key the      |
+|                       |                       | first three errors    |
+|                       |                       | with the applicable   |
+|                       |                       | code and key 'D89' as |
+|                       |                       | the fourth error.     |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | errors are made and   |
+|                       |                       | there is a            |
+|                       |                       | combination of        |
+|                       |                       | processing and        |
+|                       |                       | document errors key   |
+|                       |                       | 'D89' as the fourth   |
+|                       |                       | error.                |
++-----------------------+-----------------------+-----------------------+
+
+Intranet links
+
+Error Explanation Sheet
+
+Undertake Root Cause Analysis
+
+Quality Processes, which includes Quality Checking Contacts
+
+Quality Framework and Resources
+
+Other resources - Quality Policies includes:
+
+-   Aim for Accuracy Guidelines
+-   Aim for Accuracy - Policy for Health Programmes
+-   Security Roles for Authorising Changes to Quality Checking Controls
+    Policy
+-   Quality Checking Own Work Policy
+-   Quality Checking New Starters Policy
+
+Attachments
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Explanation of DQRI online
+formatted data for bulk bill claims
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Guide to completing the online
+Error Explanation Sheet for Medicare
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Pre-check Form for New
+Starters
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png]The
+Quality Control System (QCS) for Medicare
 
                                    
 

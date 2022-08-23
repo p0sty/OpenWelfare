@@ -8,19 +8,919 @@ Public Eligibility quality checking processing 111-22090030
 -   Resources
 -   Training & Support
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+Status code categories
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Table 1
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
++-----------------------------------+-----------------------------------+
+| Category                          | Displayed in QCS as…              |
++-----------------------------------+-----------------------------------+
+| Error-free                        | OK                                |
++-----------------------------------+-----------------------------------+
+| Document status codes             | ADM                               |
++-----------------------------------+-----------------------------------+
+| Processing status codes           | PRO                               |
++-----------------------------------+-----------------------------------+
+
+Error-free status code
+
+Table 2
+
++-----------------------+-----------------------+-----------------------+
+| Error-free status     | Definition            | Processing tip        |
+| code                  |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| 001                   | Error-free            | Quality check did not |
+|                       |                       | detect errors.        |
++-----------------------+-----------------------+-----------------------+
+
+Document error status codes
+
+Table 3
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| E02                   | Medicare card number  | It is an error when   |
+|                       | and/or individual     | the Medicare card     |
+|                       | reference number      | number or IRN was:    |
+|                       | (IRN) omitted or      |                       |
+|                       | incorrect.            | -   not notated in    |
+|                       |                       |     the office use    |
+|                       |                       |     only section of a |
+|                       |                       |     Medicare          |
+|                       |                       |     Copy/Transfer     |
+|                       |                       |     Application form  |
+|                       |                       | -   incorrectly       |
+|                       |                       |     quoted in the     |
+|                       |                       |     office use only   |
+|                       |                       |     section of a      |
+|                       |                       |     Medicare          |
+|                       |                       |     Copy/Transfer     |
+|                       |                       |     Application form  |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when:           |
+|                       |                       |                       |
+|                       |                       | -   a print of the    |
+|                       |                       |     card number is    |
+|                       |                       |     attached to the   |
+|                       |                       |     relevant          |
+|                       |                       |     documentation and |
+|                       |                       |     there is no       |
+|                       |                       |     notation of the   |
+|                       |                       |     Medicare card     |
+|                       |                       |     number            |
+|                       |                       | -   a copy card is    |
+|                       |                       |     requested and     |
+|                       |                       |     both card numbers |
+|                       |                       |     are indicated on  |
+|                       |                       |     the form          |
++-----------------------+-----------------------+-----------------------+
+| E06                   | Address details       | It is an error when   |
+|                       | omitted.              | the address details   |
+|                       |                       | were omitted from an  |
+|                       |                       | enrolment form (or    |
+|                       |                       | written               |
+|                       |                       | correspondence) and   |
+|                       |                       | there is no           |
+|                       |                       | verification present. |
++-----------------------+-----------------------+-----------------------+
+| E10                   | Reason for copy or    | It is an error when   |
+|                       | transfer application  | the reason for a copy |
+|                       | omitted.              | or transfer has not   |
+|                       |                       | been notated on the   |
+|                       |                       | form.                 |
++-----------------------+-----------------------+-----------------------+
+| E11                   | Name/s incomplete or  | It is an error when a |
+|                       | omitted.              | member of the         |
+|                       |                       | public's:             |
+|                       |                       |                       |
+|                       |                       | -   first name        |
+|                       |                       | -   surname           |
+|                       |                       | -   second name (if   |
+|                       |                       |     applicable)       |
+|                       |                       |                       |
+|                       |                       | was incomplete or     |
+|                       |                       | omitted from the form |
+|                       |                       | and no verification   |
+|                       |                       | is present.           |
+|                       |                       |                       |
+|                       |                       | Note: this error does |
+|                       |                       | not apply to the name |
+|                       |                       | stated in the         |
+|                       |                       | declaration.          |
++-----------------------+-----------------------+-----------------------+
+| E12                   | Sex omitted.          | It is an error when a |
+|                       |                       | member of the         |
+|                       |                       | public's sex was      |
+|                       |                       | omitted from the      |
+|                       |                       | Medicare Enrolment    |
+|                       |                       | Application form and  |
+|                       |                       | no verification is    |
+|                       |                       | present.              |
++-----------------------+-----------------------+-----------------------+
+| E13                   | Insufficient          | It is an error if     |
+|                       | documentation to      | there is              |
+|                       | support enrolment     | inappropriate or      |
+|                       | action taken for      | insufficient          |
+|                       | child in state/foster | documentation to      |
+|                       | care.                 | support any enrolment |
+|                       |                       | action taken for a    |
+|                       |                       | child under the age   |
+|                       |                       | of 15 in state/foster |
+|                       |                       | care.                 |
++-----------------------+-----------------------+-----------------------+
+| E16                   | Signature omitted or  | It is an error when   |
+|                       | incomplete.           | an Enrolment/EFT      |
+|                       |                       | collection form was   |
+|                       |                       | not signed and there  |
+|                       |                       | is no verification    |
+|                       |                       | present (if           |
+|                       |                       | applicable).          |
+|                       |                       |                       |
+|                       |                       | Note: signatures may  |
+|                       |                       | be required for all   |
+|                       |                       | applicants over the   |
+|                       |                       | age of 14 for EFT     |
+|                       |                       | collection, 15 for    |
+|                       |                       | all other forms.      |
++-----------------------+-----------------------+-----------------------+
+| E19                   | Insufficient,         | It is an error if the |
+|                       | inappropriate or no   | following is not in   |
+|                       | documentation to      | the batch to support  |
+|                       | support enrolment     | the enrolment         |
+|                       | action taken.         | amendment taken:      |
+|                       |                       |                       |
+|                       |                       | -   enrolment form    |
+|                       |                       | -   EFT collection    |
+|                       |                       |     form              |
+|                       |                       | -   correspondence    |
+|                       |                       |                       |
+|                       |                       | Note: it is an error  |
+|                       |                       | when comments are not |
+|                       |                       | included in CDMS when |
+|                       |                       | documents are         |
+|                       |                       | verified using the    |
+|                       |                       | Document Verification |
+|                       |                       | System (DVS).         |
++-----------------------+-----------------------+-----------------------+
+| E20                   | Insufficient or       | It is an error when   |
+|                       | incorrect             | there is:             |
+|                       | identification to     |                       |
+|                       | support enrolment     | -   insufficient or   |
+|                       | amendment action      |     no certified      |
+|                       | taken.                |     copies of         |
+|                       |                       |     required          |
+|                       |                       |     identification to |
+|                       |                       |     support enrolment |
+|                       |                       |     amendment action  |
+|                       |                       |     taken             |
++-----------------------+-----------------------+-----------------------+
+| E22                   | DIAC/Applicant for    | It is an error when a |
+|                       | permanent residency.  | member of the public  |
+|                       |                       | has been enrolled     |
+|                       | Insufficient,         | and:                  |
+|                       | inappropriate or no   |                       |
+|                       | documentation to      | -   a Medicare        |
+|                       | support enrolment     |     Enrolment         |
+|                       | action taken.         |     Application form  |
+|                       |                       |     has not been      |
+|                       |                       |     completed         |
+|                       |                       | -   passports for all |
+|                       |                       |     card members have |
+|                       |                       |     not been sighted  |
+|                       |                       |     and notated on    |
+|                       |                       |     CDMS              |
+|                       |                       | -   eligibility       |
+|                       |                       |     documentation has |
+|                       |                       |     been sighted but  |
+|                       |                       |     not notated on    |
+|                       |                       |     CDMS              |
+|                       |                       |                       |
+|                       |                       | It is not an error    |
+|                       |                       | when the DIAC link    |
+|                       |                       | has been used to      |
+|                       |                       | support the           |
+|                       |                       | application.          |
+|                       |                       |                       |
+|                       |                       | Note: this may        |
+|                       |                       | require referral to   |
+|                       |                       | the Compliance        |
+|                       |                       | Operations area,      |
+|                       |                       | Program Review        |
+|                       |                       | Division.             |
++-----------------------+-----------------------+-----------------------+
+| E23                   | Returning             | It is an error when a |
+|                       | residents/citizens    | member of the public  |
+|                       | and New Zealand       | has been enrolled     |
+|                       | citizens residing     | and:                  |
+|                       | permanently in        |                       |
+|                       | Australia.            | -   a Medicare        |
+|                       |                       |     Enrolment         |
+|                       | Insufficient,         |     Application form  |
+|                       | inappropriate or no   |     has not been      |
+|                       | documentation to      |     completed         |
+|                       | support enrolment     | -   passports for all |
+|                       | action taken.         |     card members have |
+|                       |                       |     not been sighted  |
+|                       |                       |     and notated on    |
+|                       |                       |     CDMS              |
+|                       |                       | -   documents have    |
+|                       |                       |     been sighted but  |
+|                       |                       |     not notated on    |
+|                       |                       |     CDMS              |
+|                       |                       | -   mandatory minimum |
+|                       |                       |     residency         |
+|                       |                       |     document          |
+|                       |                       |     requirements have |
+|                       |                       |     not been met      |
+|                       |                       | -   statutory         |
+|                       |                       |     declaration       |
+|                       |                       |     incomplete        |
+|                       |                       |                       |
+|                       |                       | Note: this may        |
+|                       |                       | require referral to   |
+|                       |                       | the Compliance        |
+|                       |                       | Operations area,      |
+|                       |                       | Program Review        |
+|                       |                       | Division.             |
++-----------------------+-----------------------+-----------------------+
+| E24                   | New enrolment         | It is an error when a |
+|                       | Reciprocal Health     | member of the public  |
+|                       | Care Agreement.       | has been enrolled     |
+|                       |                       | and:                  |
+|                       | Insufficient,         |                       |
+|                       | inappropriate or no   | -   a Medicare        |
+|                       | documentation to      |     Enrolment form    |
+|                       | support enrolment     |     has not been      |
+|                       | action taken.         |     completed         |
+|                       |                       | -   passports for all |
+|                       |                       |     card members have |
+|                       |                       |     not been sighted  |
+|                       |                       |     and notated on    |
+|                       |                       |     CDMS              |
+|                       |                       | -   additional        |
+|                       |                       |     Reciprocal Health |
+|                       |                       |     Care Agreement    |
+|                       |                       |     (RHCA) support    |
+|                       |                       |     documents have    |
+|                       |                       |     not been sighted  |
+|                       |                       |     and notated on    |
+|                       |                       |     CDMS (where       |
+|                       |                       |     applicable)       |
+|                       |                       |                       |
+|                       |                       | Note: this may        |
+|                       |                       | require referral to   |
+|                       |                       | the Compliance        |
+|                       |                       | Operations area,      |
+|                       |                       | Program Review        |
+|                       |                       | Division.             |
++-----------------------+-----------------------+-----------------------+
+| E39                   | More than four        | If 4 document errors  |
+|                       | document errors.      | are detected, key all |
+|                       |                       | 4 error codes in the  |
+|                       |                       | status value          |
+|                       |                       | available.            |
+|                       |                       |                       |
+|                       |                       | If more than 4 errors |
+|                       |                       | detected, key the     |
+|                       |                       | first 3 errors with   |
+|                       |                       | applicable code and   |
+|                       |                       | key E39 as the fourth |
+|                       |                       | error.                |
+|                       |                       |                       |
+|                       |                       | When more than 4      |
+|                       |                       | errors are made and   |
+|                       |                       | there is a            |
+|                       |                       | combination of        |
+|                       |                       | document and          |
+|                       |                       | processing errors,    |
+|                       |                       | use E89 as the fourth |
+|                       |                       | error.                |
++-----------------------+-----------------------+-----------------------+
+
+Processing error status codes
+
+Table 4
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| E40                   | Incorrect Medicare    | It is an error when   |
+|                       | card number.          | an enrolment          |
+|                       |                       | transaction has been  |
+|                       |                       | processed under the   |
+|                       |                       | incorrect card        |
+|                       |                       | number.               |
+|                       |                       |                       |
+|                       |                       | It is an error if a   |
+|                       |                       | duplicate pin/        |
+|                       |                       | consumer ID was       |
+|                       |                       | created when          |
+|                       |                       | completing an         |
+|                       |                       | enrolment activity.   |
+|                       |                       | If a customer record  |
+|                       |                       | already exists in     |
+|                       |                       | CDMS, it must be used |
+|                       |                       | to associate the      |
+|                       |                       | Medicare enrolment.   |
++-----------------------+-----------------------+-----------------------+
+| E41                   | Group contact title,  | It is an error when   |
+|                       | first name or family  | the group contact:    |
+|                       | name incorrect or not |                       |
+|                       | changed.              | was keyed incorrectly |
+|                       |                       |                       |
+|                       |                       | selected does not     |
+|                       |                       | match supporting      |
+|                       |                       | documentation         |
+|                       |                       |                       |
+|                       |                       | was not updated when  |
+|                       |                       | group contact is:     |
+|                       |                       |                       |
+|                       |                       | -   transferred to a  |
+|                       |                       |     new group         |
+|                       |                       | -   deceased          |
++-----------------------+-----------------------+-----------------------+
+| E42                   | Long name details     | It is an error when   |
+|                       | incorrect.            | the:                  |
+|                       |                       |                       |
+|                       |                       | group member's        |
+|                       |                       | fields:               |
+|                       |                       |                       |
+|                       |                       | -   applicants name   |
+|                       |                       |     keyed incorrectly |
+|                       |                       |     For example as    |
+|                       |                       |     much of the       |
+|                       |                       |     applicant's name  |
+|                       |                       |     as possible       |
+|                       |                       |     should be keyed   |
+|                       |                       |                       |
+|                       |                       | Medicare long name    |
+|                       |                       | fields:               |
+|                       |                       |                       |
+|                       |                       | -   first and surname |
+|                       |                       |     have not been     |
+|                       |                       |     completed in full |
+|                       |                       | -   second name has   |
+|                       |                       |     been keyed in     |
+|                       |                       |     full              |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   only one member   |
+|                       |                       |     of the public can |
+|                       |                       |     be associated     |
+|                       |                       |     with this         |
+|                       |                       |     Medicare card     |
+|                       |                       | -   for quality       |
+|                       |                       |     control purposes, |
+|                       |                       |     it is one error   |
+|                       |                       |     if both sections  |
+|                       |                       |     of fields are in  |
+|                       |                       |     error             |
++-----------------------+-----------------------+-----------------------+
+| E43                   | Address details keyed | It is an error when   |
+|                       | incorrectly or not    | the address was:      |
+|                       | updated when          |                       |
+|                       | appropriate.          | -   keyed incorrectly |
+|                       |                       | -   not updated       |
+|                       |                       | -   keyed in Personal |
+|                       |                       |     inappropriately   |
++-----------------------+-----------------------+-----------------------+
+| E44                   | Comments field not    | It is an error when   |
+|                       | completed when        | the comments:         |
+| Note: non-critical    | appropriate or        |                       |
+| error. This must not  | completed             | keyed are             |
+| be recorded on QBBI,  | inappropriately.      | inappropriate or not  |
+| only on the online    |                       | related to the        |
+| Error Explanation     |                       | correct:              |
+| Sheet.                |                       |                       |
+|                       |                       | -   member of the     |
+|                       |                       |     public            |
+|                       |                       | -   section of CDMS,  |
+|                       |                       |     for example,      |
+|                       |                       |     Personal,         |
+|                       |                       |     Entitlement or    |
+|                       |                       |     Group             |
+|                       |                       |                       |
+|                       |                       | were not keyed when   |
+|                       |                       | appropriate           |
++-----------------------+-----------------------+-----------------------+
+| E45                   | Ineligible member/s   | It is an error when a |
+|                       | of the public         | member of the public  |
+|                       | enrolled.             | was enrolled when the |
+|                       |                       | supporting            |
+|                       |                       | documentation         |
+|                       |                       | indicated that they   |
+|                       |                       | were not eligible.    |
++-----------------------+-----------------------+-----------------------+
+| E46                   | Entitlement type      | It is an error when   |
+|                       | incorrect or not      | the entitlement type  |
+|                       | changed when          | has:                  |
+|                       | appropriate.          |                       |
+|                       |                       | -   been selected     |
+|                       |                       |     incorrectly       |
+|                       |                       | -   not been changed  |
++-----------------------+-----------------------+-----------------------+
+| E47                   | Country of            | It is an error when   |
+|                       | relevance/Reciprocal  | the Country of        |
+|                       | Health Care Agreement | Relevance/RHCA        |
+|                       | (RHCA) country        | country selected does |
+|                       | selected incorrectly. | not match supporting  |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| E48                   | Power of attorney     | It is an error when   |
+|                       | (POA) details         | the POA details have  |
+|                       | incorrect or not      | been:                 |
+|                       | completed when        |                       |
+|                       | appropriate.          | -   keyed incorrectly |
+|                       |                       | -   selected          |
+|                       |                       |     incorrectly       |
++-----------------------+-----------------------+-----------------------+
+| E49                   | Entitlement start     | It is an error when   |
+|                       | date incorrect or not | the entitlement start |
+|                       | changed when          | date has:             |
+|                       | appropriate.          |                       |
+|                       |                       | -   been keyed        |
+|                       |                       |     incorrectly       |
+|                       |                       | -   not been changed  |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when the dates  |
+|                       |                       | have been updated as  |
+|                       |                       | per Department of     |
+|                       |                       | Home Affairs link.    |
++-----------------------+-----------------------+-----------------------+
+| E50                   | Entitlement end date  | It is an error when   |
+|                       | or entitlement end    | the:                  |
+|                       | reason incorrect or   |                       |
+|                       | not changed when      | -   entitlement end   |
+|                       | appropriate.          |     date has been     |
+|                       |                       |     keyed incorrectly |
+|                       |                       | -   entitlement end   |
+|                       |                       |     date has not been |
+|                       |                       |     changed or        |
+|                       |                       |     removed           |
+|                       |                       | -   entitlement end   |
+|                       |                       |     reason has been   |
+|                       |                       |     selected          |
+|                       |                       |     incorrectly       |
++-----------------------+-----------------------+-----------------------+
+| E51                   | Return mail indicator | It is an error when   |
+|                       | selected incorrectly  | the:                  |
+|                       | or not selected or    |                       |
+|                       | type of return mail   | -   return mail       |
+|                       | incorrect.            |     indicator was not |
+|                       |                       |     recorded in Group |
+|                       |                       |     or Personal       |
+|                       |                       | -   return mail       |
+|                       |                       |     indicator         |
+|                       |                       |     selected          |
+|                       |                       |     incorrectly in    |
+|                       |                       |     Group or Personal |
+|                       |                       | -   type of return    |
+|                       |                       |     mail was selected |
+|                       |                       |     incorrectly in    |
+|                       |                       |     Group or Personal |
+|                       |                       | -   return mail has   |
+|                       |                       |     been updated at   |
+|                       |                       |     Personal and not  |
+|                       |                       |     Group (where      |
+|                       |                       |     appropriate)      |
++-----------------------+-----------------------+-----------------------+
+| E52                   | Medicare              | It is an error when   |
+|                       | Copy/Transfer not     | an applicant/person   |
+|                       | actioned or actioned  | has:                  |
+|                       | incorrectly via       |                       |
+|                       | Medicare copy         | -   been transferred  |
+|                       | transfer application  |     to another group  |
+|                       | form MS011, Medicare  |     when a copy was   |
+|                       | Enrolment form MS004  |     requested         |
+|                       | (Part C) or FA081.    | -   been copied to    |
+|                       |                       |     another group     |
+|                       |                       |     when a transfer   |
+|                       |                       |     was requested     |
+|                       |                       | -   not end-dated the |
+|                       |                       |     association when  |
+|                       |                       |     appropriate       |
+|                       |                       | -   MS004/FA081 -     |
+|                       |                       |     Newborn not       |
+|                       |                       |     copied to         |
+|                       |                       |     partner's card    |
+|                       |                       |     when requested in |
+|                       |                       |     Part C of MS004   |
+|                       |                       |     or FA081          |
+|                       |                       |                       |
+|                       |                       | Note: when both       |
+|                       |                       | parents are shown on  |
+|                       |                       | a family card,        |
+|                       |                       | children under the    |
+|                       |                       | age of 15 years       |
+|                       |                       | should not be         |
+|                       |                       | transferred without   |
+|                       |                       | the authority of both |
+|                       |                       | parents.              |
++-----------------------+-----------------------+-----------------------+
+| E53                   | Replacement card not  | It is an error when:  |
+|                       | issued or issued      |                       |
+|                       | incorrectly.          | -   a request for a   |
+|                       |                       |     replacement card  |
+|                       |                       |     was not actioned  |
+|                       |                       | -   a replacement     |
+|                       |                       |     card was issued   |
+|                       |                       |     incorrectly       |
+|                       |                       | -   the source of a   |
+|                       |                       |     replacement card  |
+|                       |                       |     request was       |
+|                       |                       |     selected          |
+|                       |                       |     incorrectly       |
+|                       |                       | -   the reason for    |
+|                       |                       |     replacement card  |
+|                       |                       |     selected does not |
+|                       |                       |     match supporting  |
+|                       |                       |     documentation     |
+|                       |                       |     when indicated    |
+|                       |                       |                       |
+|                       |                       | Note: when processing |
+|                       |                       | a notification of     |
+|                       |                       | death for a multiple  |
+|                       |                       | person enrolment, a   |
+|                       |                       | replacement card is   |
+|                       |                       | not to be issued      |
+|                       |                       | unless requested.     |
++-----------------------+-----------------------+-----------------------+
+| E54                   | Title and/or suffix   | It is an error when a |
+|                       | selected incorrectly. | title and/or suffix   |
+| Note: non-critical    |                       | is incorrectly        |
+| error. This must not  |                       | selected and has not  |
+| be recorded on QBBI,  |                       | been updated at       |
+| only on the online    |                       | Personal.             |
+| Error Explanation     |                       |                       |
+| Sheet.                |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| E55                   | Personal contact      | It is an error when a |
+|                       | details not keyed or  | member of the         |
+| Note: non-critical    | keyed incorrectly.    | public's contact      |
+| error. This must not  |                       | details are not keyed |
+| be recorded on QBBI,  |                       | or keyed incorrectly. |
+| only on the online    |                       | This includes when    |
+| Error Explanation     |                       | the:                  |
+| Sheet.                |                       |                       |
+|                       |                       | -   business phone    |
+|                       |                       |     number            |
+|                       |                       | -   business comment  |
+|                       |                       | -   home phone number |
+|                       |                       | -   home comment      |
+|                       |                       | -   fax number        |
+|                       |                       | -   fax comment       |
+|                       |                       | -   mobile number     |
+|                       |                       | -   mobile comment    |
+|                       |                       | -   email address     |
+|                       |                       | -   email comment     |
+|                       |                       |                       |
+|                       |                       | does not match        |
+|                       |                       | supporting            |
+|                       |                       | documentation when    |
+|                       |                       | legible.              |
++-----------------------+-----------------------+-----------------------+
+| E56                   | EFT banking details   | It is an error when a |
+|                       | keyed incorrectly.    | member of the         |
+|                       |                       | public's EFT details  |
+|                       |                       | were:                 |
+|                       |                       |                       |
+|                       |                       | -   not keyed         |
+|                       |                       | -   keyed incorrectly |
+|                       |                       | -   not updated       |
+|                       |                       | -   not ended         |
+|                       |                       | -   recorded against  |
+|                       |                       |     the incorrect     |
+|                       |                       |     member of the     |
+|                       |                       |     public            |
++-----------------------+-----------------------+-----------------------+
+| E57                   | Family name or only   | It is an error when a |
+|                       | name keyed            | member of the         |
+|                       | incorrectly.          | public’s family name  |
+|                       |                       | or only name has:     |
+|                       |                       |                       |
+|                       |                       | -   been keyed        |
+|                       |                       |     incorrectly       |
+|                       |                       | -   not been updated  |
+|                       |                       |     at personal or    |
+|                       |                       |     group level when  |
+|                       |                       |     appropriate       |
+|                       |                       |                       |
+|                       |                       | Note: a request for a |
+|                       |                       | name change at group  |
+|                       |                       | level only must be    |
+|                       |                       | notated in the        |
+|                       |                       | personal comments.    |
++-----------------------+-----------------------+-----------------------+
+| E58                   | First name keyed      | It is an error when   |
+|                       | incorrectly.          | the first name has:   |
+|                       |                       |                       |
+|                       |                       | -   been keyed        |
+|                       |                       |     incorrectly       |
+|                       |                       | -   not been updated  |
+|                       |                       |     at personal or    |
+|                       |                       |     group level when  |
+|                       |                       |     appropriate       |
++-----------------------+-----------------------+-----------------------+
+| E59                   | Second name/s or      | It is an error when a |
+|                       | initial incorrect.    | member of the         |
+|                       |                       | public's second names |
+|                       |                       | or initial has:       |
+|                       |                       |                       |
+|                       |                       | -   not been keyed    |
+|                       |                       | -   been keyed        |
+|                       |                       |     incorrectly       |
+|                       |                       | -   not been updated  |
+|                       |                       |     at personal or    |
+|                       |                       |     group level when  |
+|                       |                       |     appropriate       |
+|                       |                       | -   not been keyed in |
+|                       |                       |     full when         |
+|                       |                       |     appropriate       |
+|                       |                       |                       |
+|                       |                       | Note: where the       |
+|                       |                       | second names or       |
+|                       |                       | initial is already    |
+|                       |                       | populated but not     |
+|                       |                       | indicated on          |
+|                       |                       | supporting            |
+|                       |                       | documentation the     |
+|                       |                       | field is not required |
+|                       |                       | to be updated.        |
++-----------------------+-----------------------+-----------------------+
+| E60                   | Sex selected          | It is an error when a |
+|                       | incorrectly or not    | member of the         |
+|                       | changed when          | public's sex does not |
+|                       | appropriate.          | match supporting      |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Note: sex can only be |
+|                       |                       | amended for gender    |
+|                       |                       | reassignment when     |
+|                       |                       | relevant              |
+|                       |                       | documentation         |
+|                       |                       | requirements have     |
+|                       |                       | been met.             |
++-----------------------+-----------------------+-----------------------+
+| E61                   | Date of birth keyed   | It is an error when a |
+|                       | incorrectly.          | member of the         |
+|                       |                       | public's date of      |
+|                       |                       | birth does not match  |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| E62                   | Date of death or      | It is an error when a |
+|                       | notification source   | member of the         |
+|                       | incorrect.            | public's date of      |
+|                       |                       | death:                |
+|                       |                       |                       |
+|                       |                       | -   has been keyed    |
+|                       |                       |     incorrectly       |
+|                       |                       | -   has not been      |
+|                       |                       |     keyed             |
+|                       |                       | -   notification of   |
+|                       |                       |     deceased source   |
+|                       |                       |     has been selected |
+|                       |                       |     incorrectly       |
++-----------------------+-----------------------+-----------------------+
+| E63                   | Aboriginal/Torres     | It is an error when   |
+|                       | Strait/South Sea      | the Aboriginal/Torres |
+| Note: non-critical    | Islander status       | Strait/South Sea      |
+| error. This must not  | selected incorrectly  | Islander status:      |
+| be recorded on QBBI,  | or not updated.       |                       |
+| only on the online    |                       | -   selected is       |
+| Error Explanation     |                       |     incorrect         |
+| Sheet.                |                       | -   was not updated   |
+|                       |                       |                       |
+|                       |                       | Note: where the       |
+|                       |                       | Aboriginal/Torres     |
+|                       |                       | Strait/South Sea      |
+|                       |                       | Islander status is    |
+|                       |                       | already populated but |
+|                       |                       | not indicated on      |
+|                       |                       | supporting            |
+|                       |                       | documentation the     |
+|                       |                       | selection is not      |
+|                       |                       | required to be        |
+|                       |                       | updated.              |
++-----------------------+-----------------------+-----------------------+
+| E64                   | Eligibility and/or    | It is an error when   |
+|                       | residency documents   | the required          |
+|                       | keyed/selected        | eligibility or        |
+|                       | incorrectly or not    | residency documents   |
+|                       | entered.              | sighted or notated    |
+|                       |                       | were:                 |
+|                       |                       |                       |
+|                       |                       | -   selected          |
+|                       |                       |     incorrectly       |
+|                       |                       | -   keyed incorrectly |
+|                       |                       | -   not selected      |
+|                       |                       |                       |
+|                       |                       | It is an error if the |
+|                       |                       | reference date or     |
+|                       |                       | text was omitted or   |
+|                       |                       | incorrect.            |
++-----------------------+-----------------------+-----------------------+
+| E65                   | Person/s suppressed   | It is an error when a |
+|                       | in error.             | Service Officer has   |
+|                       |                       | suppressed a          |
+|                       |                       | person/s.             |
++-----------------------+-----------------------+-----------------------+
+| E89                   | More than four        | When four processing  |
+|                       | processing errors.    | errors are detected   |
+|                       |                       | key all four error    |
+|                       |                       | codes in the status   |
+|                       |                       | value available.      |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | processing errors     |
+|                       |                       | detected key the      |
+|                       |                       | first three errors    |
+|                       |                       | with applicable code  |
+|                       |                       | followed by error     |
+|                       |                       | code E89 in the       |
+|                       |                       | fourth field.         |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | errors are made and   |
+|                       |                       | there is a            |
+|                       |                       | combination of        |
+|                       |                       | processing and        |
+|                       |                       | document errors, use  |
+|                       |                       | E89 as the fourth     |
+|                       |                       | error.                |
++-----------------------+-----------------------+-----------------------+
+
+Medicare Safety Net document error status codes
+
+Table 5
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| E08                   | Insufficient,         | It is error when:     |
+|                       | incomplete or no      |                       |
+|                       | documentation to      | -   the Medicare      |
+|                       | support Medicare      |     Safety Net        |
+|                       | Safety Net            |     confirmation form |
+|                       | confirmation.         |     was incomplete    |
+|                       |                       | -   there was no      |
+|                       |                       |     Medicare Safety   |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form              |
+|                       |                       |                       |
+|                       |                       | to support action     |
+|                       |                       | taken.                |
++-----------------------+-----------------------+-----------------------+
+
+Medicare Safety Net processing error status codes
+
+Table 6
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| E67                   | Medicare Safety Net   | It is an error when   |
+|                       | registration member   | the member type does  |
+|                       | type keyed            | not match supporting  |
+|                       | incorrectly or not    | documentation.        |
+|                       | updated.              |                       |
++-----------------------+-----------------------+-----------------------+
+| E68                   | Member omitted from,  | It is an error when a |
+|                       | included in or not    | member of the public  |
+|                       | removed from a family | was either:           |
+|                       | Safety Net            |                       |
+|                       | registration when     | -   omitted           |
+|                       | appropriate.          | -   included          |
+|                       |                       | -   not removed       |
+|                       |                       |                       |
+|                       |                       | from the family       |
+|                       |                       | Safety Net            |
+|                       |                       | registration when     |
+|                       |                       | appropriate.          |
++-----------------------+-----------------------+-----------------------+
+| E69                   | Family confirmed      | It is an error when   |
+|                       | incorrectly.          | the family            |
+|                       |                       | composition for       |
+|                       |                       | confirmation does not |
+|                       |                       | match supporting      |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+
+My Health Record processing error status codes
+
+Table 7
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| EH05 Critical         | Individual registered | This is an error when |
+|                       | incorrectly without   | the individual or a   |
+|                       | consent.              | dependant has been    |
+|                       |                       | registered and they   |
+|                       |                       | have not given their  |
+|                       |                       | authority.            |
++-----------------------+-----------------------+-----------------------+
+
+Email template
+
+Table 8
+
++-----------------------------------+-----------------------------------+
+| Email                             | Description                       |
++-----------------------------------+-----------------------------------+
+| Subject                           | My Health Record processing error |
++-----------------------------------+-----------------------------------+
+| Body                              | Complete the following            |
+|                                   | information:                      |
+|                                   |                                   |
+|                                   | Your details                      |
+|                                   |                                   |
+|                                   | Date:                             |
+|                                   |                                   |
+|                                   | Your Name:                        |
+|                                   |                                   |
+|                                   | Your phone number:                |
+|                                   |                                   |
+|                                   | Self reported or QC?              |
+|                                   |                                   |
+|                                   | Processing details                |
+|                                   |                                   |
+|                                   | Source office code:               |
+|                                   |                                   |
+|                                   | Processing date:                  |
+|                                   |                                   |
+|                                   | Processor P number:               |
+|                                   |                                   |
+|                                   | Form Type                         |
+|                                   | (FA081/MS004/Online/Other):       |
+|                                   |                                   |
+|                                   | Error details (Registered/not     |
+|                                   | registered incorrectly):          |
+|                                   |                                   |
+|                                   | Consumer details                  |
+|                                   |                                   |
+|                                   | Name:                             |
+|                                   |                                   |
+|                                   | DOB:                              |
+|                                   |                                   |
+|                                   | IHI:                              |
+|                                   |                                   |
+|                                   | Phone no:                         |
+|                                   |                                   |
+|                                   | Dependent details (if applicable) |
+|                                   |                                   |
+|                                   | Name:                             |
+|                                   |                                   |
+|                                   | DOB:                              |
+|                                   |                                   |
+|                                   | IHI:                              |
+|                                   |                                   |
+|                                   | Please attach documents           |
++-----------------------------------+-----------------------------------+
+
+Attachments
+
+Do not share these attachments externally. See Freedom of Information –
+Information Publication Scheme.
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Guide to completing the online
+Error Explanation Sheet
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Pre-check Form for New
+Starters
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png]The
+Quality Control System (QCS) for Medicare
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]CDMS Quality Control Quick
+Reference Guide
+
+Intranet links
+
+Error Explanation Sheet
+
+Other resources - 'Quality Policies' includes:
+
+-   Aim for Accuracy Guidelines
+-   Aim for Accuracy Policy for Health Programmes
+-   Security Roles for Authorising Changes to Quality Checking Controls
+    Policy
+-   Quality Checking Own Work Policy
+-   Quality Checking New Starters Policy
+
+Contact details
+
+My Health Record Support team
 
                                    
 
