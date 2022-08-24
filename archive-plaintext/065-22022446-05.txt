@@ -26,7 +26,10 @@ Scheme.
 [\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
 Blueprint Migration\RDT Release
 Icons\32w\icon-hidden-attachment.png]Email to Aged Care Programme -
-Manual SPARC letter
+Manual Residential Care letter
+
+Note: any manual letters will be written in the RC60 to RC66 templates
+which may differ from the original template.
 
 Aged Care DVA Referral Process
 
@@ -55,17 +58,20 @@ Centrelink - Aged care letter templates
 
 External websites
 
-My Aged Care - Aged care home costs and fees
-
-My Aged Care - Income and assets assessment for aged care homes
-
-Department of Health - Schedule of Fees and Charges Pre – 1 July 2014
+Department of Health – Schedule of Subsidies and Supplements for Aged
+Care
 
 Department of Health – Schedule of Fees and Charges Post – 1 July 2014
 
-Department of Health - Aged Care Schedule of subsidies and supplements
+Department of Health - Schedule of Fees and Charges Pre – 1 July 2014
 
 Department of Health - Temporary leave from Home Care Packages
+
+Department of Health - Aged Care Schedule of subsidies and supplements
+
+My Aged Care - Aged care home costs and fees
+
+My Aged Care - Income and means assessment
 
 Services Australia intranet
 
@@ -76,10 +82,11 @@ Change of resident status initial letters
 Table 1
 
 +-----------------------+-----------------------+-----------------------+
-| Scenario              | System behaviour      | Manual action         |
-|                       |                       | required              |
+| Scenario              | Aged Care Payment     | Manual action         |
+|                       | System (ACPS)         | required              |
+|                       | behaviour             |                       |
 +-----------------------+-----------------------+-----------------------+
-| Not low corrected to  | SPARC will pay full   | Manual calculation of |
+| Not low corrected to  | ACPS will pay full    | Manual calculation of |
 | Low                   | MTAS to provider from | any MTC liability     |
 |                       | date of entry into    |                       |
 |                       | care                  | MTC payable – M       |
@@ -88,12 +95,12 @@ Table 1
 |                       |                       | BDF only – N series   |
 |                       |                       | letter                |
 +-----------------------+-----------------------+-----------------------+
-| Low corrected to Not  | SPARC will refund all | N series to confirm   |
+| Low corrected to Not  | ACPS will refund all  | N series to confirm   |
 | Low                   | MTC, refund is        | not low means         |
 |                       | manually stopped      | resident status       |
 |                       |                       |                       |
 |                       | MTCF is reconciled by |                       |
-|                       | SPARC                 |                       |
+|                       | ACPS                  |                       |
 +-----------------------+-----------------------+-----------------------+
 | Multiple corrections  | If an update          | If restoring original |
 |                       | corrected resident    | resident status to:   |
@@ -126,7 +133,7 @@ Table 2
 | Scenario              | Current system        | Manual remediation    |
 |                       | behaviour             | process               |
 +-----------------------+-----------------------+-----------------------+
-| Resident status has   | SPARC will:           |                       |
+| Resident status has   | ACPS will:            |                       |
 | been corrected to low |                       |                       |
 | means and care        | -   Calculate the     |                       |
 | recipient liable to   |     correct amount    |                       |
@@ -144,7 +151,7 @@ Table 2
 |                       |     email to ACAH     |                       |
 |                       |     with correct MTC  |                       |
 +-----------------------+-----------------------+-----------------------+
-| Resident status has   | SPARC will:           |                       |
+| Resident status has   | ACPS will:            |                       |
 | been corrected to not |                       |                       |
 | low means and care    | -   Calculate the     |                       |
 | recipient liable to   |     correct amount    |                       |
@@ -163,12 +170,13 @@ Table 2
 |                       |     correct refund    |                       |
 |                       |     amount            |                       |
 +-----------------------+-----------------------+-----------------------+
-| Resident status of    | SPARC will:           |                       |
+| Resident status of    | ACSP will:            |                       |
 | Not low means         |                       |                       |
-| corrected to Low      | -   Full Means Tested |                       |
-| means                 |     Accommodation     |                       |
-|                       |     Supplement (MTAS) |                       |
-| – current provider    |     paid to provider  |                       |
+| corrected to Low      | -   pay Full Means    |                       |
+| means                 |     Tested            |                       |
+|                       |     Accommodation     |                       |
+| – current provider    |     Supplement (MTAS) |                       |
+|                       |     paid to provider  |                       |
 |                       |     from date of      |                       |
 |                       |     entry until QR    |                       |
 |                       |     effective date    |                       |
@@ -210,8 +218,8 @@ Table 2
 |                       | -   all refunds due   |                       |
 +-----------------------+-----------------------+-----------------------+
 | Resident status of    | -   No reconciliation |                       |
-| Not low means         |     would occur in    |                       |
-| corrected to Low      |     SPARC as the care |                       |
+| Not low means         |     would occur as    |                       |
+| corrected to Low      |     the care          |                       |
 | means                 |     recipient is      |                       |
 |                       |     already           |                       |
 | – previous provider   |     discharged from   |                       |
@@ -279,8 +287,8 @@ Table 2
 |                       |     hoc date          |                       |
 +-----------------------+-----------------------+-----------------------+
 | Resident status of    | -   No reconciliation |                       |
-| Low means corrected   |     would occur in    |                       |
-| to Not low means      |     SPARC as the care |                       |
+| Low means corrected   |     would occur as    |                       |
+| to Not low means      |     the care          |                       |
 |                       |     recipient is      |                       |
 | – previous provider   |     already           |                       |
 |                       |     discharged from   |                       |
@@ -301,7 +309,7 @@ Table 2
 |                       |     of refunds (if    |                       |
 |                       |     applicable)       |                       |
 +-----------------------+-----------------------+-----------------------+
-| Multiple corrections  | SPARC will:           |                       |
+| Multiple corrections  | ACPS will:            |                       |
 | to resident status    |                       |                       |
 |                       | -   Set maximum fees  |                       |
 | Care recipient        |     for MND           |                       |

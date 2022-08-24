@@ -400,17 +400,17 @@ Some circumstances can remain current on a customer's record indefinitely, such 
 <p>5</p></td>
 <td>
 
-<p><strong>Claim status</strong> <a title="Read more 5" class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>New or reindexed claim</strong> <a title="Read more 5" class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>A JSP claim cannot be granted unless the Participation Interview has been completed and a RapidConnect determination made.</p>
+<p>A JSP new claim or reindexed claim cannot be granted unless the Participation Interview has been completed and a RapidConnect determination made.</p>
 
-<p>The Participation Interview codes a RapidConnect status on the Job Seeker RapidConnect (<strong>JMRC</strong>) screen to determine the customer's start date of payments.</p>
+<p>The Participation Interview codes a RapidConnect status on the Job Seeker RapidConnect (<strong>JMRC</strong>) screen to determine the customer's start date of payments. See <a href="../job-seekers/001-02030000-01.html">RapidConnect</a>.</p>
 
-<p>If error E543NM - 'Participation Workflow has not been completed' appears, this means a Rapid Connect determination has not been made and a Participation Interview has not been completed or needs to be re-applied.</p>
+<p>If error E543NM - 'Participation Workflow has not been completed' appears, the Participation Interview has not been completed successfully, see Table 3 in <a href="../job-seekers/001-03020100-03.html">Participation Interview</a> before continuing with claim processing.</p>
 
-<p>Check the RapidConnect (<strong>JMRC</strong>) and Document List (<strong>DL</strong>) screens. If the customer has not attended their JSP claim appointment, see <a href="../job-seekers/001-02030000-01.html">RapidConnect</a>.</p>
+<p><strong>Note&#58;</strong> automation - once Service Officers complete the Participation Interview and '<strong>FINISH</strong>' is selected, they will be exited from the claim transaction. The claim will immediately be streamed into automation, which creates a lock on the customer's record. Depending on system performance, this can take several minutes. If after 5 minutes, the record is no longer locked with the user ID 'Roxy' the claim will either be 'Done' (no further action required) or SO's can continue to assess the claim.</p>
 
 <p>The claim status must be <strong>In Process</strong> before it can be processed.</p>
 
@@ -427,6 +427,8 @@ If rejected <strong>FSD</strong>, <strong>FRC</strong> or <strong>POI</strong>, 
 If rejected <strong>DNL/FRP</strong>, see <a href="../job-seekers/001-18120545-03.html">Early or late lodgement of job seeker reports</a></li>
 		<li>
 To re-index the claim, refer to directions for SAP online claims in <a target="_blank" href="../initial-contact-general/106-07030050-03.html">Cancelling claim activities and re-indexing claims</a></li>
+		<li>
+The Participation Interview must be re-run, see <a href="../job-seekers/001-03020100-01.html">Participation Interview</a></li>
 		</ul>
 <p>If the customer is claiming Disability Support Pension (DSP), assess the claim as JobSeeker Payment provisional, see <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step15">Step 15 in Table 2</a>.</p>
 </div>
@@ -596,25 +598,23 @@ served any part of a LAWP (including self served) in the last twelve months</li>
 <div class="showcont">
 
 
-<p>Customers claiming JSP &#160;<strong>may</strong> &#160;need to supply proof of all bank accounts they hold, including balances as part of the claim.</p>
+<p>Customers claiming JSP <strong>may</strong> need to supply proof of all bank accounts they hold, including balances as part of the claim.</p>
 
-<p>If the customer has claimed online, &#160;<strong>do not request</strong> &#160;proof of bank accounts. The online claim will show this as a &#160;<strong>Required task</strong>.</p>
+<p>If the customer has claimed online, <strong>do not request</strong> proof of bank accounts. The online claim will show this as a <strong>Required task</strong>.</p>
 
 <p>Customers <strong>may</strong> need to provide&#58;</p>
 		<ul>		<li>
-evidence of all bank account balances of all accounts held in the customer and their partner’s name. The evidence must cover the period from the Date Last Worked (DLW) plus 1 to the claim submission date</li>
+evidence of all bank account balances of all accounts held in the customer and their partner's name. The evidence must cover the period from the Date Last Worked (DLW) plus 1 to the claim submission date</li>
 		<li>
 one of the following&#58;</li>
-		<li>
-a bank statement for all accounts held in their or their partner’s name</li>
-		<li>
+			<ul>			<li>
+a bank statement for all accounts held in their or their partner's name</li>
+			<li>
 a copy of the online account information and transactions</li>
-		</ul>
-<p></p>
-
+			</ul>			</ul>
 <p>If the customer has supplied bank verification that is sufficient to assess their liquid asset position, do not reject claims FSD for failure to provide bank/investment balances. An example is if they have evidence of bank balances provided from Date last worked (or studied) plus 1 and the claim submission date, but the transaction dates are not complete in between these dates.</p>
 
-<p><strong>Note&#58;</strong> &#160;an ATM slip is &#160;not &#160;an acceptable supporting document.</p>
+<p><strong>Note&#58;</strong> an ATM slip is &#160;not &#160;an acceptable supporting document.</p>
 
 <p>If the customer is not subject to a Liquid Assets Waiting Period (LAWP), request new evidence if either of the following apply&#58;</p>
 		<ul>		<li>
@@ -630,11 +630,11 @@ the date of the bank account balance is older than 14 business days from claim s
 		<li>
 the date is earlier than their claim commencement date</li>
 		</ul>
-<p>See the &#160;<a href="../job-seekers/001-19051507-05.html">Resources</a> &#160;page for examples.</p>
+<p>See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for examples.</p>
 
-<p>Bank account details may be pre-populated into an online claim. If the customer has not zeroed off the balance or advised the account is closed, Service Officers can accept verbal confirmation that the account is closed. See &#160;<a target="_blank" href="../initial-contact-general/106-07060000-05.html#bp05_tbl_A_to_C_examples01_7">Documents required for Centrelink new claims</a>.</p>
+<p>Bank account details may be pre-populated into an online claim. If the customer has not zeroed off the balance or advised the account is closed, Service Officers can accept verbal confirmation that the account is closed. See <a target="_blank" href="../initial-contact-general/106-07060000-05.html#bp05_tbl_A_to_C_examples01_7">Documents required for Centrelink new claims</a>.</p>
 
-<p>See <strong>Documents</strong> screen<strong> </strong>in the<strong> Request for Information</strong> guided procedure.</p>
+<p>See <strong>Documents</strong> screen in the <strong>Request for Information</strong> guided procedure.</p>
 </div>
 
 
@@ -1062,7 +1062,7 @@ earlier than claim commencement date. See the <a href="../job-seekers/001-190515
 
 <p>Other Assets Details (<strong>OAS</strong>) screen is pre-filled from the online claim.</p>
 
-<p>For more information, see <a href="../income-assests-and-rates-of-payment/108-04020010-01.html">Assessing assets at their net market value</a>.</p>
+<p>For more information, see <a href="../income-assests-and-rates-of-payment/expired/108-04020010-01.html">Assessing assets at their net market value</a>.</p>
 </div>
 
 
@@ -1176,7 +1176,7 @@ a debt raised for the period they were not eligible</li>
 		<ul>		<li>
 after the DPT+1, code the correct start date in the <strong>Manual Start Date</strong> field on <strong>NDC</strong> to override the system calculated start date</li>
 		<li>
-before the DPT+1 (which is very rare), check&#58; </li>
+before the DPT+1 (which is very rare), check&#58;</li>
 			<ul>			<li>
 the customer is not being paid again for a period they were previously receiving payment</li>
 			<li>
@@ -1496,7 +1496,7 @@ If the start date of the NEIS income is before the cancellation date, end date t
 
 <p>Check to see if the customer has met RapidConnect requirements within 28 days from date of Participation Interview. Has the customer attended?</p>
 		<ul>		<li>
-<strong>Yes</strong>, see <a href="../job-seekers/001-02030010-03.html#bp03_L3TT_Assessment_of_p">Processes for RapidConnect appointments</a>, Table 3 Step 5</li>
+<strong>Yes</strong>, see <a href="../job-seekers/001-02030010-03.html#bp03_L3TT_Assessment_of_p">Processes for RapidConnect appointments</a>, Step 5 in Table 3</li>
 		<li>
 <strong>No</strong>, rejection is correct, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Assess_and_fina_Step04">go to Step 4</a></li>		</ul>
 </div>

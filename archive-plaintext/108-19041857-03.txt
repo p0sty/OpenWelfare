@@ -499,6 +499,11 @@ Table 2
 |                                   |     funds (SAF) are not able to   |
 |                                   |     offer these pooled lifetime   |
 |                                   |     products                      |
+|                                   | -   Provider or SMSF/SAF Name:    |
+|                                   |     name of financial institution |
+|                                   |     or name of SMSF or SAF. Do    |
+|                                   |     not code names of financial   |
+|                                   |     planners and accountants      |
 |                                   | -   Provider or SMSF/SAF ABN: the |
 |                                   |     fund's Australian Business    |
 |                                   |     Number (ABN)                  |
@@ -619,16 +624,65 @@ Table 2
 |                                   | customer                          |
 |                                   |                                   |
 |                                   | Assessable Income Amount: the     |
-|                                   | system will automatically assess  |
-|                                   | 60% of the gross income amount    |
+|                                   | system calculates and displays    |
+|                                   | the assessable income amount      |
+|                                   | which can be either of the        |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   If purchased with             |
+|                                   |     non-superannuation monies     |
+|                                   |     (LPO), the purchase price     |
+|                                   |     less any commutations is      |
+|                                   |     considered a financial asset  |
+|                                   |     and subject to deeming until  |
+|                                   |     the Assessment Day            |
+|                                   | -   From Assessment Day, 60% of   |
+|                                   |     the gross income amount for   |
+|                                   |     either product purchased with |
+|                                   |     superannuation (LPS) and      |
+|                                   |     non-superannuation (LPO)      |
+|                                   |     monies                        |
 |                                   |                                   |
 |                                   | Assessable Asset Amount field:    |
 |                                   | the system calculates and         |
 |                                   | displays the assessable asset     |
-|                                   | amount which is the greater of    |
-|                                   | 60% of the purchase price, or any |
-|                                   | surrender value, or death benefit |
-|                                   | value keyed                       |
+|                                   | amount when purchased with any of |
+|                                   | the following:                    |
+|                                   |                                   |
+|                                   | -   non-superannuation monies     |
+|                                   |     (LPO) before Assessment Day.  |
+|                                   |     The assessable amount is 100% |
+|                                   |     of the purchase price less    |
+|                                   |     any commutations and the      |
+|                                   |     balance is increased annually |
+|                                   |     based on upper deeming rate   |
+|                                   | -   superannuation monies (LPS)   |
+|                                   |     before Assessment Day, there  |
+|                                   |     is NIL asset assessable       |
+|                                   | -   either superannuation or      |
+|                                   |     non-superannuation monies     |
+|                                   |     on/after Assessment Day. The  |
+|                                   |     assessable amount is the      |
+|                                   |     greater of 60% of the         |
+|                                   |     purchase price less any       |
+|                                   |     commutations                  |
+|                                   |     OR 100% of the surrender      |
+|                                   |     value or 100% of the death    |
+|                                   |     benefits if either is above   |
+|                                   |     the Capital Asset Schedule    |
+|                                   |     (CAS) limits                  |
+|                                   | -   either superannuation or      |
+|                                   |     non-superannuation monies     |
+|                                   |     after the Threshold Day. The  |
+|                                   |     assessable amount is the      |
+|                                   |     greater of 30% of the         |
+|                                   |     purchase price less any       |
+|                                   |     commutations                  |
+|                                   |     OR 100% of the surrender      |
+|                                   |     value                         |
+|                                   |     OR 100% of the death benefit  |
+|                                   |     if either is above the CAS    |
+|                                   |     limits                        |
 |                                   |                                   |
 |                                   | Commutation Date: the date of the |
 |                                   | latest commutation. This date is  |
@@ -1552,19 +1606,67 @@ Table 2
 |                                   | amount stated                     |
 |                                   |                                   |
 |                                   | Assessable Income Amount: the     |
-|                                   | system will auto assess 60% of    |
-|                                   | the gross income amount           |
+|                                   | system calculates and displays    |
+|                                   | the assessable income amount      |
+|                                   | which can be either of the        |
+|                                   | following:                        |
 |                                   |                                   |
-|                                   | Assessable Asset Amount: system   |
-|                                   | calculates and displays the       |
-|                                   | assessable asset amount which is  |
-|                                   | the greater of 60% of the         |
-|                                   | purchase price, or any surrender  |
-|                                   | value, or death benefit value     |
-|                                   | keyed                             |
+|                                   | -   If purchased with             |
+|                                   |     non-superannuation monies     |
+|                                   |     (LPO), the purchase price     |
+|                                   |     less any commutations is      |
+|                                   |     considered a financial asset  |
+|                                   |     and subject to deeming until  |
+|                                   |     the Assessment Day            |
+|                                   | -   From Assessment Day, 60% of   |
+|                                   |     the gross income amount for   |
+|                                   |     either product purchased with |
+|                                   |     superannuation (LPS) and      |
+|                                   |     non-superannuation (LPO)      |
+|                                   |     monies                        |
 |                                   |                                   |
-|                                   | Source, DOR and Action: key       |
-|                                   | details                           |
+|                                   | Assessable Asset Amount: the      |
+|                                   | system calculates and displays    |
+|                                   | the assessable asset amount when  |
+|                                   | purchased with any of the         |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   non-superannuation monies     |
+|                                   |     (LPO) before Assessment Day.  |
+|                                   |     The assessable amount is 100% |
+|                                   |     of the purchase price less    |
+|                                   |     any commutations and the      |
+|                                   |     balance is increased annually |
+|                                   |     based on upper deeming rate   |
+|                                   | -   superannuation monies (LPS)   |
+|                                   |     before Assessment Day, there  |
+|                                   |     is NIL assets assessable      |
+|                                   | -   either superannuation or      |
+|                                   |     non-superannuation monies     |
+|                                   |     on/after Assessment Day. The  |
+|                                   |     assessable amount is the      |
+|                                   |     greater of 60% of the         |
+|                                   |     purchase price less any       |
+|                                   |     commutations                  |
+|                                   |     OR 100% of the surrender      |
+|                                   |     value or 100% of the death    |
+|                                   |     benefits if either is above   |
+|                                   |     the Capital Asset Schedule    |
+|                                   |     (CAS) limits                  |
+|                                   | -   either superannuation or      |
+|                                   |     non-superannuation monies     |
+|                                   |     after the Threshold Day. The  |
+|                                   |     assessable amount is the      |
+|                                   |     greater of 30% of the         |
+|                                   |     purchase price less any       |
+|                                   |     commutations                  |
+|                                   |     OR 100% of the surrender      |
+|                                   |     value                         |
+|                                   |     OR 100% of the death benefit  |
+|                                   |     if either is above the CAS    |
+|                                   |     limits                        |
+|                                   | -   Source, DOR and Action: key   |
+|                                   |     details                       |
 |                                   |                                   |
 |                                   | select Continue                   |
 +-----------------------------------+-----------------------------------+

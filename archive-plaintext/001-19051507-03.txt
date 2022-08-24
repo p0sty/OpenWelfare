@@ -308,33 +308,47 @@ Table 1
 |                                   | select [more options] >           |
 |                                   | Regenerate claim.                 |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Claim status + Read more ...      |
+| 5                                 | New or reindexed claim + Read     |
+|                                   | more ...                          |
 |                                   |                                   |
-|                                   | A JSP claim cannot be granted     |
-|                                   | unless the Participation          |
-|                                   | Interview has been completed and  |
-|                                   | a RapidConnect determination      |
-|                                   | made.                             |
+|                                   | A JSP new claim or reindexed      |
+|                                   | claim cannot be granted unless    |
+|                                   | the Participation Interview has   |
+|                                   | been completed and a RapidConnect |
+|                                   | determination made.               |
 |                                   |                                   |
 |                                   | The Participation Interview codes |
 |                                   | a RapidConnect status on the Job  |
 |                                   | Seeker RapidConnect (JMRC) screen |
 |                                   | to determine the customer's start |
-|                                   | date of payments.                 |
+|                                   | date of payments. See             |
+|                                   | RapidConnect.                     |
 |                                   |                                   |
 |                                   | If error E543NM - 'Participation  |
 |                                   | Workflow has not been completed'  |
-|                                   | appears, this means a Rapid       |
-|                                   | Connect determination has not     |
-|                                   | been made and a Participation     |
+|                                   | appears, the Participation        |
 |                                   | Interview has not been completed  |
-|                                   | or needs to be re-applied.        |
+|                                   | successfully, see Table 3 in      |
+|                                   | Participation Interview before    |
+|                                   | continuing with claim processing. |
 |                                   |                                   |
-|                                   | Check the RapidConnect (JMRC) and |
-|                                   | Document List (DL) screens. If    |
-|                                   | the customer has not attended     |
-|                                   | their JSP claim appointment, see  |
-|                                   | RapidConnect.                     |
+|                                   | Note: automation - once Service   |
+|                                   | Officers complete the             |
+|                                   | Participation Interview and       |
+|                                   | 'FINISH' is selected, they will   |
+|                                   | be exited from the claim          |
+|                                   | transaction. The claim will       |
+|                                   | immediately be streamed into      |
+|                                   | automation, which creates a lock  |
+|                                   | on the customer's record.         |
+|                                   | Depending on system performance,  |
+|                                   | this can take several minutes. If |
+|                                   | after 5 minutes, the record is no |
+|                                   | longer locked with the user ID    |
+|                                   | 'Roxy' the claim will either be   |
+|                                   | 'Done' (no further action         |
+|                                   | required) or SO's can continue to |
+|                                   | assess the claim.                 |
 |                                   |                                   |
 |                                   | The claim status must be In       |
 |                                   | Process before it can be          |
@@ -364,6 +378,9 @@ Table 1
 |                                   |     claims in Cancelling claim    |
 |                                   |     activities and re-indexing    |
 |                                   |     claims                        |
+|                                   | -   The Participation Interview   |
+|                                   |     must be re-run, see           |
+|                                   |     Participation Interview       |
 |                                   |                                   |
 |                                   | If the customer is claiming       |
 |                                   | Disability Support Pension (DSP), |
@@ -581,31 +598,32 @@ Table 1
 | 10                                | Bank accounts and balances        |
 |                                   | verification + Read more ...      |
 |                                   |                                   |
-|                                   | Customers claiming JSP  may  need |
+|                                   | Customers claiming JSP may need   |
 |                                   | to supply proof of all bank       |
 |                                   | accounts they hold, including     |
 |                                   | balances as part of the claim.    |
 |                                   |                                   |
 |                                   | If the customer has claimed       |
-|                                   | online,  do not request  proof of |
+|                                   | online, do not request proof of   |
 |                                   | bank accounts. The online claim   |
-|                                   | will show this as a  Required     |
+|                                   | will show this as a Required      |
 |                                   | task.                             |
 |                                   |                                   |
 |                                   | Customers may need to provide:    |
 |                                   |                                   |
-|                                   | -   evidence of all bank account  |
-|                                   |     balances of all accounts held |
-|                                   |     in the customer and their     |
-|                                   |     partner’s name. The evidence  |
-|                                   |     must cover the period from    |
-|                                   |     the Date Last Worked (DLW)    |
-|                                   |     plus 1 to the claim           |
-|                                   |     submission date               |
-|                                   | -   one of the following:         |
+|                                   | evidence of all bank account      |
+|                                   | balances of all accounts held in  |
+|                                   | the customer and their partner's  |
+|                                   | name. The evidence must cover the |
+|                                   | period from the Date Last Worked  |
+|                                   | (DLW) plus 1 to the claim         |
+|                                   | submission date                   |
+|                                   |                                   |
+|                                   | one of the following:             |
+|                                   |                                   |
 |                                   | -   a bank statement for all      |
 |                                   |     accounts held in their or     |
-|                                   |     their partner’s name          |
+|                                   |     their partner's name          |
 |                                   | -   a copy of the online account  |
 |                                   |     information and transactions  |
 |                                   |                                   |
@@ -623,7 +641,7 @@ Table 1
 |                                   | are not complete in between these |
 |                                   | dates.                            |
 |                                   |                                   |
-|                                   | Note:  an ATM slip is  not  an    |
+|                                   | Note: an ATM slip is  not  an     |
 |                                   | acceptable supporting document.   |
 |                                   |                                   |
 |                                   | If the customer is not subject to |
@@ -653,7 +671,7 @@ Table 1
 |                                   | -   the date is earlier than      |
 |                                   |     their claim commencement date |
 |                                   |                                   |
-|                                   | See the  Resources  page for      |
+|                                   | See the Resources page for        |
 |                                   | examples.                         |
 |                                   |                                   |
 |                                   | Bank account details may be       |
@@ -663,7 +681,7 @@ Table 1
 |                                   | the account is closed, Service    |
 |                                   | Officers can accept verbal        |
 |                                   | confirmation that the account is  |
-|                                   | closed. See  Documents required   |
+|                                   | closed. See Documents required    |
 |                                   | for Centrelink new claims.        |
 |                                   |                                   |
 |                                   | See Documents screen in the       |
@@ -1830,7 +1848,7 @@ Table 3
 |                                   |                                   |
 |                                   | -   Yes, see Processes for        |
 |                                   |     RapidConnect appointments,    |
-|                                   |     Table 3 Step 5                |
+|                                   |     Step 5 in Table 3             |
 |                                   | -   No, rejection is correct, go  |
 |                                   |     to Step 4                     |
 +-----------------------------------+-----------------------------------+
