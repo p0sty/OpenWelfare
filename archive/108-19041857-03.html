@@ -622,6 +622,8 @@ Select <strong>Start</strong> to initiate the workflow</li>
 		<li>
 <strong>Income stream from SMSF/SAF?&#58;</strong> leave blank, self-managed superannuation funds (SMSF) or small APRA superannuation funds (SAF) are not able to offer these pooled lifetime products</li>
 		<li>
+<strong>Provider or SMSF/SAF Name</strong>&#58; name of financial institution or name of SMSF or SAF. Do not code names of financial planners and accountants</li>
+		<li>
 <strong>Provider or SMSF/SAF ABN&#58;</strong> the fund's Australian Business Number (ABN)</li>
 		<li>
 <strong>Product Name</strong>, key name of the income stream product as stated on the schedule. For joint income streams, include the term ‘jointly owned’ to identify the product as a jointly owned income stream</li>
@@ -692,9 +694,21 @@ Select <strong>Start</strong> to initiate the workflow</li>
 		<ul>		<li>
 <strong>Initial Purchase Price&#58;</strong> amount originally paid for the income stream (not reduced by any commutations). This amount can be keyed with or without cents. If keyed incorrectly, cancel the product and rekey. For joint income streams, multiply the amount shown on the schedule by the percentage held by the customer</li>
 		<li>
-<strong>Assessable Income Amount&#58;</strong> the system will automatically assess 60% of the gross income amount </li>
+<strong>Assessable Income Amount&#58;</strong> the system calculates and displays the assessable income amount which can be either of the following&#58;</li>
+			<ul>			<li>
+If purchased with non-superannuation monies (LPO), the purchase price less any commutations is considered a financial asset and subject to deeming until the Assessment Day</li>
+			<li>
+From Assessment Day, 60% of the gross income amount for either product purchased with superannuation (LPS) and non-superannuation (LPO) monies</li>		</ul>
 		<li>
-<strong>Assessable Asset Amount field&#58;</strong> the system calculates and displays the assessable asset amount which is the greater of 60% of the purchase price, or any surrender value, or death benefit value keyed</li>
+<strong>Assessable Asset Amount field&#58;</strong> the system calculates and displays the assessable asset amount  when purchased with any of the following&#58;</li>
+			<ul>			<li>
+non-superannuation monies (LPO) before Assessment Day. The assessable amount is 100% of the purchase price less any commutations and the balance is increased annually based on upper deeming rate</li>
+			<li>
+superannuation monies (LPS) before Assessment Day, there is NIL asset assessable</li>
+			<li>
+either superannuation or non-superannuation monies on/after Assessment Day. The assessable amount is the greater of 60% of the purchase price less any commutations <br>OR 100% of the surrender value or 100% of the death benefits if either is above the Capital Asset Schedule (CAS) limits</li>
+			<li>
+either superannuation or non-superannuation monies after the Threshold Day. The assessable amount is the greater of 30% of the purchase price less any commutations <br>OR 100% of the surrender value <br>OR 100% of the death benefit if either is above the CAS limits</li>		</ul>
 		<li>
 <strong>Commutation Date&#58;</strong> the date of the latest commutation. This date is only for information and is not the date of effect</li>
 		<li>
@@ -1305,11 +1319,23 @@ If '<strong>CPI</strong>' is keyed, the system will send a letter to the income 
 		<li>
 <strong>Death Benefit&#58;</strong> if the income stream schedule indicates the death benefit value is more than the amount allowed under SIS Regulations Capital Access Schedule, key this field with the amount stated</li>
 		<li>
-<strong>Assessable Income Amount&#58;</strong> the system will auto assess 60% of the gross income amount </li>
+<strong>Assessable Income Amount&#58;</strong> the system calculates and displays the assessable income amount which can be either of the following&#58;</li>
+			<ul>			<li>
+If purchased with non-superannuation monies (LPO), the purchase price less any commutations is considered a financial asset and subject to deeming until the Assessment Day</li>
+			<li>
+From Assessment Day, 60% of the gross income amount for either product purchased with superannuation (LPS) and non-superannuation (LPO) monies</li>		</ul>
 		<li>
-<strong>Assessable Asset Amount&#58;</strong> system calculates and displays the assessable asset amount which is the greater of 60% of the purchase price, or any surrender value, or death benefit value keyed</li>
-		<li>
-<strong>Source, DOR</strong> and <strong>Action&#58;</strong> key details</li>
+<strong>Assessable Asset Amount&#58;</strong> the system calculates and displays the assessable asset amount when purchased with any of the following&#58;</li>
+			<ul>			<li>
+non-superannuation monies (LPO) before Assessment Day. The assessable amount is 100% of the purchase price less any commutations and the balance is increased annually based on upper deeming rate</li>
+			<li>
+superannuation monies (LPS) before Assessment Day, there is NIL assets assessable</li>
+			<li>
+either superannuation or non-superannuation monies on/after Assessment Day. The assessable amount is the greater of 60% of the purchase price less any commutations <br>OR 100% of the surrender value or 100% of the death benefits if either is above the Capital Asset Schedule (CAS) limits</li>
+			<li>
+either superannuation or non-superannuation monies after the Threshold Day. The assessable amount is the greater of 30% of the purchase price less any commutations <br>OR 100% of the surrender value <br>OR 100% of the death benefit if either is above the CAS limits</li>
+			<li>
+<strong>Source, DOR</strong> and <strong>Action&#58;</strong> key details</li>		</ul>
 		<li>
 select <strong>Continue</strong></li>		</ul>
 </div>
