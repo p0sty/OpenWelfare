@@ -5,19 +5,656 @@ Process a Pharmaceutical Benefits Scheme (PBS) patient refund 011-60020030
 -   Process
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+Letters and forms
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Pharmaceutical Benefits Scheme patient refund letters
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+More information is needed for your PBS item refund
+
+Patient claim for refund Pharmaceutical Benefits Scheme (PBS) form
+(PB132)
+
+Letter scenarios and responses
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Scenario                          | Response                          |
++-----------------------------------+-----------------------------------+
+| Every item in the claim is        | Reject claim – letter Z1680 Your  |
+| rejected                          | PBS item refund is not payable    |
+|                                   |                                   |
+|                                   | For items dispensed after Date of |
+|                                   | Death, Documents must be          |
+|                                   | addressed to the Estate of the    |
+|                                   | Patient.                          |
++-----------------------------------+-----------------------------------+
+| All items in the claim are        | Pay and no letter sent            |
+| payable                           |                                   |
++-----------------------------------+-----------------------------------+
+| Some items in the claim are       | Pay refundable items and no       |
+| payable and some are not payable  | letter sent                       |
++-----------------------------------+-----------------------------------+
+| If any items could be payable     | Reject claim – letter Z1682 More  |
+| with more information provided by | information is needed for your    |
+| the claimant                      | PBS item refund                   |
+|                                   |                                   |
+|                                   | Do not split the claims. Send all |
+|                                   | information to be returned to the |
+|                                   | claimant. No items to be keyed    |
+|                                   | into mainframe                    |
++-----------------------------------+-----------------------------------+
+
+Note: create a processing note in the WLM to explain rejection reasons -
+which items were rejected for payment, the dollar value and why.
+
+Fields for claim form details
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Field                             | Description                       |
++-----------------------------------+-----------------------------------+
+| Date of lodgement                 | The date the claim is received    |
+|                                   | for processing by the agency..    |
++-----------------------------------+-----------------------------------+
+| Mode of payment                   | Defaults to EFT. Cannot be        |
+|                                   | changed.                          |
++-----------------------------------+-----------------------------------+
+| Quoted number of items            | The total number of refund        |
+|                                   | receipts in the claim.            |
+|                                   |                                   |
+|                                   | A maximum of 99 items can be      |
+|                                   | keyed in 1 EFT patient refund     |
+|                                   | claim.                            |
++-----------------------------------+-----------------------------------+
+| Medicare number                   | When the Medicare card number is  |
+|                                   | not known, the Service Officer    |
+|                                   | can attempt to locate claimant    |
+|                                   | details by keying the Medicare    |
+|                                   | number of the patient or search   |
+|                                   | PATIENT ENQUIRIES - SELECTION     |
+|                                   | CRITERIA (RPQN) screen.           |
+|                                   |                                   |
+|                                   | The claimant’s name and address   |
+|                                   | details can be used to locate the |
+|                                   | Medicare number.                  |
+|                                   |                                   |
+|                                   | In many cases the claimant is     |
+|                                   | attached to the Medicare number   |
+|                                   | of the patient. The Medicare      |
+|                                   | number of the claimant is not     |
+|                                   | mandatory, as the claimant does   |
+|                                   | not need to prove their           |
+|                                   | eligibility for Medicare          |
+|                                   | benefits. Alternatively, when the |
+|                                   | Medicare number of the claimant   |
+|                                   | is not quoted, the Service        |
+|                                   | Officer can key the claimant's    |
+|                                   | name and address details.         |
++-----------------------------------+-----------------------------------+
+
+Fields for prescription record form details
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Field                             | Description                       |
++-----------------------------------+-----------------------------------+
+| Approval                          | The pharmacy approval number      |
+|                                   | quoted on the pharmacy receipt,   |
+|                                   | submitted with the refund claim.  |
++-----------------------------------+-----------------------------------+
+| Date of supply                    | Reflects the date the pharmacist  |
+|                                   | supplied the item being claimed.  |
+|                                   | The date must be keyed correctly  |
+|                                   | as it is used to determine        |
+|                                   | whether the Medicare or           |
+|                                   | entitlement identification (ID)   |
+|                                   | was current on the date of        |
+|                                   | supply.                           |
++-----------------------------------+-----------------------------------+
+| Item code                         | This code reflects the item       |
+|                                   | supplied to the patient. It is    |
+|                                   | usually quoted on the receipt or  |
+|                                   | PRF. If an item code is not       |
+|                                   | quoted, the item name can be      |
+|                                   | keyed in the item field.          |
++-----------------------------------+-----------------------------------+
+| Quantity                          | This information is obtained from |
+|                                   | the receipt. When a quantity is   |
+|                                   | quoted as 100gms or 100mls, the   |
+|                                   | value 100 is keyed.               |
+|                                   |                                   |
+|                                   | MQ (Maximum Quantity) is an       |
+|                                   | acceptable value in this field    |
+|                                   | where the quantity is not         |
+|                                   | supplied on the receipt.          |
+|                                   |                                   |
+|                                   | The system inserts the quantity   |
+|                                   | which is stored against the item  |
+|                                   | in the Schedule of Pharmaceutical |
+|                                   | Benefits.                         |
++-----------------------------------+-----------------------------------+
+| Authority ID                      | This field is keyed when the item |
+|                                   | is supplied on an authority       |
+|                                   | prescription form.                |
+|                                   |                                   |
+|                                   | The value in this field can be up |
+|                                   | to 8 numeric characters. If not   |
+|                                   | quoted, 1234 can be added to the  |
+|                                   | authority ID field.               |
++-----------------------------------+-----------------------------------+
+| Price                             | This is the value of the item as  |
+|                                   | shown on the receipt. The amount  |
+|                                   | is keyed in cents. For example,   |
+|                                   | $15.34 should be keyed as 1534).  |
++-----------------------------------+-----------------------------------+
+| SN20DR                            | Acceptable values in this field   |
+|                                   | are:                              |
+|                                   |                                   |
+|                                   | -   Y                             |
+|                                   | -   N                             |
++-----------------------------------+-----------------------------------+
+
+Receipt S87A details
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Required details                  | Explanation                       |
++-----------------------------------+-----------------------------------+
+| Patient name                      | The patient name should match the |
+|                                   | name of the person listed on the  |
+|                                   | Patient claim for refund form     |
+|                                   | under the patient details.        |
++-----------------------------------+-----------------------------------+
+| Patient address                   | The patient address would be the  |
+|                                   | address of the patient as stored  |
+|                                   | by the pharmacy at the time which |
+|                                   | the item was supplied.            |
++-----------------------------------+-----------------------------------+
+| Patient payment level             | The patient payment level refers  |
+|                                   | to the rate that the patient paid |
+|                                   | at the pharmacy when the item was |
+|                                   | supplied. Valid levels are:       |
+|                                   |                                   |
+|                                   | P - private                       |
+|                                   |                                   |
+|                                   | G - general                       |
+|                                   |                                   |
+|                                   | C - concession                    |
+|                                   |                                   |
+|                                   | F – free                          |
+|                                   |                                   |
+|                                   | Note: Receipts will show the      |
+|                                   | amount paid which will include    |
+|                                   | any premiums which are not        |
+|                                   | refundable. Make sure concession  |
+|                                   | receipts that include premiums    |
+|                                   | are not mistaken for, and entered |
+|                                   | as a general payment level. If    |
+|                                   | uncertain the Safety Net Checker  |
+|                                   | can be used to verify the patient |
+|                                   | level the script was supplied at. |
++-----------------------------------+-----------------------------------+
+| Date supplied                     | The date supplied is the date     |
+|                                   | which the pharmacy has quoted, as |
+|                                   | being the date which they         |
+|                                   | supplied the item to the patient. |
++-----------------------------------+-----------------------------------+
+| Item code                         | Each item listed in either the    |
+|                                   | PBS or Repatriation               |
+|                                   | Pharmaceutical Benefits Scheme    |
+|                                   | (RPBS) schedule is allocated an   |
+|                                   | item number. The item code for    |
+|                                   | the item supplied should appear   |
+|                                   | in this field.                    |
++-----------------------------------+-----------------------------------+
+| Quantity                          | The quantity field must be        |
+|                                   | present for all items where an    |
+|                                   | item code has been quoted.        |
++-----------------------------------+-----------------------------------+
+| Regulation 24 (Y/N)               | Under some circumstances, usually |
+|                                   | because of hardship for the       |
+|                                   | patient, the prescriber can       |
+|                                   | indicate that the original and    |
+|                                   | the repeats be supplied at the    |
+|                                   | same time. This is known as       |
+|                                   | supply under Regulation 24.       |
+|                                   |                                   |
+|                                   | In these cases, the total cost of |
+|                                   | the item is slightly less than    |
+|                                   | the total cost, when the item had |
+|                                   | been supplied individually. The   |
+|                                   | patient is expected to pay a      |
+|                                   | contribution for each of the      |
+|                                   | supplies.                         |
++-----------------------------------+-----------------------------------+
+| Repeats                           | When the answer to the Regulation |
+|                                   | 24 question is Y, then the number |
+|                                   | of repeats are required to be     |
+|                                   | completed. When not, the item     |
+|                                   | should be rejected, as correct    |
+|                                   | payment cannot be determined.     |
++-----------------------------------+-----------------------------------+
+| SN20DR (Safety Net Early Supply   | This indicates whether the item   |
+| rule)                             | supplied is a SN20DR affected     |
+|                                   | item. When an 87A patient receipt |
+|                                   | is received, the box is ticked    |
+|                                   | Yes or No. When a pharmacy        |
+|                                   | print-out is received, a 'SN20DR' |
+|                                   | flag is displayed.                |
++-----------------------------------+-----------------------------------+
+| Authority number                  | The authority number field may be |
+|                                   | completed when an item supplied   |
+|                                   | is listed in the Schedule of      |
+|                                   | Pharmaceutical Benefits as an     |
+|                                   | authority item.                   |
++-----------------------------------+-----------------------------------+
+| Price paid                        | The price paid is the price that  |
+|                                   | the patient paid when the item    |
+|                                   | was supplied at the pharmacy.     |
++-----------------------------------+-----------------------------------+
+| Pharmacist signature              | The pharmacist's signature.       |
++-----------------------------------+-----------------------------------+
+| Pharmacy approval number          | Each pharmacy is allocated an     |
+|                                   | approval number by Services       |
+|                                   | Australia. This number relates to |
+|                                   | the pharmacy and not the          |
+|                                   | pharmacist.                       |
+|                                   |                                   |
+|                                   | When the approval number is not   |
+|                                   | shown and cannot be ascertained,  |
+|                                   | then the receipt should not be    |
+|                                   | accepted. The receipt can have a  |
+|                                   | pharmacy stamp which includes the |
+|                                   | approval number. When an approval |
+|                                   | number is not present but the     |
+|                                   | receipt includes the pharmacy     |
+|                                   | address, the Service Officer can  |
+|                                   | try to ascertain this in order to |
+|                                   | process the claim, from the       |
+|                                   | pharmacy approval database or by  |
+|                                   | phoning the PBS - general         |
+|                                   | enquires number.                  |
++-----------------------------------+-----------------------------------+
+
+Resolve error message (PBS patient refunds)
+
+Table 5
+
++-----------------------------------+-----------------------------------+
+| Error message                     | Resolution                        |
++-----------------------------------+-----------------------------------+
+| BSB NUMBER INVALID. REJECT CLAIM  | Return the claim. Ask the         |
+|                                   | claimant to provide current bank  |
+|                                   | account details to Medicare. Use  |
+|                                   | the Z1682 We need more            |
+|                                   | information to refund your PBS    |
+|                                   | claim letter. When the number is  |
+|                                   | not keyed correctly:              |
+|                                   |                                   |
+|                                   | -   correct the number            |
+|                                   | -   continue processing           |
+|                                   |                                   |
+|                                   | When the number is keyed as       |
+|                                   | supplied: Reject the claim and    |
+|                                   | return with a PBS rejection       |
+|                                   | letter.                           |
++-----------------------------------+-----------------------------------+
+| BSB NUMBER DOES NOT EXIST. REJECT | Return the claim. Ask the         |
+| CLAIM                             | claimant to provide current bank  |
+|                                   | account details to Medicare. Use  |
+|                                   | the Z1682 We need more            |
+|                                   | information to refund your PBS    |
+|                                   | claim letter.                     |
++-----------------------------------+-----------------------------------+
+| ACCOUNT NUMBER INVALID            | Return the claim. Ask the         |
+|                                   | claimant to provide current bank  |
+|                                   | account details Medicare. Use the |
+|                                   | Z1682 We need more information to |
+|                                   | refund your PBS claim letter.     |
++-----------------------------------+-----------------------------------+
+| ACCOUNT NAME CONTAINS INVALID     | Return the claim. Ask the         |
+| CHARACTERS                        | claimant to provide current bank  |
+|                                   | account details to Medicare. Use  |
+|                                   | the Z1682 We need more            |
+|                                   | information to refund your PBS    |
+|                                   | claim letter.                     |
++-----------------------------------+-----------------------------------+
+| MINIMUM FIELD LENGTH NOT MET      | Check the information is keyed    |
+|                                   | correctly from the claim form.    |
+|                                   |                                   |
+|                                   | When the information is not keyed |
+|                                   | correctly:                        |
+|                                   |                                   |
+|                                   | -   correct the information       |
+|                                   | -   continue processing           |
+|                                   |                                   |
+|                                   | When the information is keyed as  |
+|                                   | supplied reject the claim and     |
+|                                   | return with Z1680 Your PBS item   |
+|                                   | refund is not payable letter.     |
++-----------------------------------+-----------------------------------+
+| NO VALID BANK ACCOUNT DETAILS IN  | Return the claim. Ask the         |
+| CDMS                              | claimant to provide current bank  |
+|                                   | account details to Medicare. Use  |
+|                                   | the Z1682 We need more            |
+|                                   | information to refund your PBS    |
+|                                   | claim letter.                     |
++-----------------------------------+-----------------------------------+
+| MEDICARE NUMBER INVALID           | When a Medicare number is keyed   |
+|                                   | and the system finds the number   |
+|                                   | constructed invalidly, the        |
+|                                   | message MEDICARE NUMBER INVALID   |
+|                                   | displays                          |
+|                                   |                                   |
+|                                   | Check the Medicare card number is |
+|                                   | keyed correctly from the claim    |
+|                                   | form.                             |
+|                                   |                                   |
+|                                   | When the number is not keyed      |
+|                                   | correctly:                        |
+|                                   |                                   |
+|                                   | -   correct the number            |
+|                                   | -   continue processing           |
+|                                   |                                   |
+|                                   | When the number is keyed as       |
+|                                   | supplied check the Patient        |
+|                                   | Enquiries system (RPQN) in        |
+|                                   | Pharmaceutical Benefits Scheme    |
+|                                   | (PBS) to determine if the patient |
+|                                   | can be found.                     |
+|                                   |                                   |
+|                                   | When the patient is found:        |
+|                                   |                                   |
+|                                   | -   key the correct number        |
+|                                   | -   continue processing           |
+|                                   |                                   |
+|                                   | When the patient is not found:    |
+|                                   |                                   |
+|                                   | -   return the claim to the       |
+|                                   |     claimant with a Z1682 We need |
+|                                   |     more information to refund    |
+|                                   |     your PBS claim letter         |
+|                                   | -   delete the claim being        |
+|                                   |     processed in Mainframe. See   |
+|                                   |     Table 12 on the Process page  |
+|                                   |     to delete an existing claim   |
++-----------------------------------+-----------------------------------+
+| MEDICARE NUMBER VALID BUT NOT     | When the Medicare number provided |
+| FOUND                             | and keyed is validly constructed, |
+|                                   | but is not known by the system,   |
+|                                   | the message MEDICARE NUMBER VALID |
+|                                   | BUT NOT FOUND displays. Service   |
+|                                   | Officers cannot add this number   |
+|                                   | to the patient refund system.     |
+|                                   |                                   |
+|                                   | Check the RPQN Patient Enquiries  |
+|                                   | system in PBS to determine if the |
+|                                   | patient can be found.             |
+|                                   |                                   |
+|                                   | When the patient is found:        |
+|                                   |                                   |
+|                                   | -   key the correct number        |
+|                                   | -   continue processing           |
+|                                   |                                   |
+|                                   | When the patient is not found:    |
+|                                   |                                   |
+|                                   | -   return the claim to the       |
+|                                   |     claimant with a Z1682 We need |
+|                                   |     more information to refund    |
+|                                   |     your PBS claim letter         |
+|                                   | -   delete the claim being        |
+|                                   |     processed in Mainframe. See   |
+|                                   |     Table 12 on the Process page  |
+|                                   |     to delete an existing claim.  |
++-----------------------------------+-----------------------------------+
+| SAFETY NET ID INVALID             | Conduct a patient search in       |
+|                                   | either RPQN Patient Enquiries     |
+|                                   | System or RNCE Safety Net system. |
+|                                   |                                   |
+|                                   | When the patient is found and the |
+|                                   | error in the quoted ID is found   |
+|                                   | process the claim using the       |
+|                                   | corrected ID.                     |
+|                                   |                                   |
+|                                   | When the Safety Net ID quoted is  |
+|                                   | different or the patient cannot   |
+|                                   | be found:                         |
+|                                   |                                   |
+|                                   | -   check the Medicare card       |
+|                                   |     number is keyed correctly     |
+|                                   |     from the claim form           |
+|                                   | -   delete the claim being        |
+|                                   |     processed in Mainframe. See   |
+|                                   |     Table 12 on the Process page  |
+|                                   |     to delete an existing claim   |
+|                                   |     return the claim to the       |
+|                                   |     claimant with a Z1682 We need |
+|                                   |     more information to refund    |
+|                                   |     your PBS claim letter         |
++-----------------------------------+-----------------------------------+
+| VALID ID PATIENT NOT LISTED       | When the patient's last name      |
+|                                   | corresponds to the last name in   |
+|                                   | the agency's records and the      |
+|                                   | patient is a dependent of the     |
+|                                   | group contact:                    |
+|                                   |                                   |
+|                                   | -   add the patient details       |
+|                                   | -   continue processing the claim |
+|                                   |                                   |
+|                                   | When the last name is different   |
+|                                   | to the last name in the agency's  |
+|                                   | records, or the Service Officer   |
+|                                   | is unsure the patient is a        |
+|                                   | dependant of the group contact    |
+|                                   | check the details with the        |
+|                                   | claimant.                         |
++-----------------------------------+-----------------------------------+
+| INVALID CENTRELINK ENTITLEMENT ID | Conduct a patient search in the   |
+|                                   | patient enquiry system.           |
+|                                   |                                   |
+|                                   | When the patient is located and   |
+|                                   | the error in the quoted ID is     |
+|                                   | evident process the claim using   |
+|                                   | the corrected ID.                 |
+|                                   |                                   |
+|                                   | When the entitlement ID is        |
+|                                   | different, or the patient cannot  |
+|                                   | be found:                         |
+|                                   |                                   |
+|                                   | -   return the claim to the       |
+|                                   |     claimant with Z1680 Your PBS  |
+|                                   |     item refund is not payable    |
+|                                   |     letter                        |
+|                                   | -   delete the claim in           |
+|                                   |     Mainframe. See Table 12 on    |
+|                                   |     the Process page to delete an |
+|                                   |     existing claim                |
+|                                   |                                   |
+|                                   | When a Confirmation of Concession |
+|                                   | Entitlement form is supplied and  |
+|                                   | the number is handwritten but the |
+|                                   | system advises it is invalidly    |
+|                                   | constructed:                      |
+|                                   |                                   |
+|                                   | -   call the PBS helpdesk to      |
+|                                   |     determine the correct number  |
++-----------------------------------+-----------------------------------+
+| DVA ITEM BUT NO SN/DVA LINK       | Ensure that the CN/SN card is     |
+|                                   | correctly keyed into the system   |
+|                                   | by searching for the CN/SN card   |
+|                                   | in the RNFA > OR ENTITLEMENT      |
+|                                   | NUMBER field.                     |
+|                                   |                                   |
+|                                   | If the CN/SN card is correctly    |
+|                                   | recorded in the system it         |
+|                                   | displays the patient's date of    |
+|                                   | birth.                            |
+|                                   |                                   |
+|                                   | If the date of birth is not       |
+|                                   | populated correctly link the SN   |
+|                                   | family details by searching for   |
+|                                   | the patient and adding them to    |
+|                                   | the CN/SN card.                   |
+|                                   |                                   |
+|                                   | -   Locate SN card via RNFA.      |
+|                                   |     Press [F12] to display family |
+|                                   |     members                       |
+|                                   | -   Select by adding relationship |
+|                                   |     code                          |
+|                                   | -   Press [F5] to update record   |
+|                                   |                                   |
+|                                   | CN/SN cards from previous years   |
+|                                   | are held in processing centres. A |
+|                                   | card can be allocated by the      |
+|                                   | Service Officer following the     |
+|                                   | process in Table 7 on the Process |
+|                                   | page. This allows a refund to be  |
+|                                   | processed where a CN/SN card was  |
+|                                   | not issued in a previous year.    |
+|                                   |                                   |
+|                                   | This error may also appear where  |
+|                                   | the CN/SN card is incorrectly     |
+|                                   | linked to a concession or Safety  |
+|                                   | Net card rather than the DVA      |
+|                                   | card.                             |
+|                                   |                                   |
+|                                   | Escalate to a Programme Support   |
+|                                   | Officer if assistance is          |
+|                                   | required.                         |
++-----------------------------------+-----------------------------------+
+| PRESCRIBER ID MISSING             | The prescriber field is not       |
+|                                   | mandatory. Press [F12] to         |
+|                                   | acknowledge the warning and       |
+|                                   | continuing processing.            |
++-----------------------------------+-----------------------------------+
+| CHECK SN20DR ENDORSEMENT          | Once an item, quantity and date   |
+|                                   | of supply is keyed on the PB      |
+|                                   | PATIENT REFUND - RECEIPT DETAILS  |
+|                                   | (RPRS) screen and the item keyed  |
+|                                   | is a SN20DR item, the system      |
+|                                   | displays a warning message 'Check |
+|                                   | SN20DR endorsement'.              |
+|                                   |                                   |
+|                                   | Check the receipt for a SN20DR    |
+|                                   | endorsement. Key:                 |
+|                                   |                                   |
+|                                   | -   Y on the PB PATIENT REFUND -  |
+|                                   |     RECEIPT DETAILS screen, if    |
+|                                   |     SN20DR applies                |
+|                                   | -   N on the PB PATIENT REFUND -  |
+|                                   |     RECEIPT DETAILS screen if     |
+|                                   |     SN20DR does not apply         |
+|                                   |                                   |
+|                                   | Press [F12] to acknowledge the    |
+|                                   | warning and continue processing.  |
++-----------------------------------+-----------------------------------+
+| ITEM SUPPLIED IS NOT SN20DR ITEM  | Once an item, quantity and date   |
+|                                   | of supply is keyed on the PB      |
+|                                   | PATIENT REFUND - RECEIPT DETAILS  |
+|                                   | screen the system displays a      |
+|                                   | warning message 'Item supplied is |
+|                                   | not SN20DR item'.                 |
+|                                   |                                   |
+|                                   | Check the receipt for a SN20DR    |
+|                                   | endorsement. Key:                 |
+|                                   |                                   |
+|                                   | -   Y on the PB PATIENT REFUND -  |
+|                                   |     RECEIPT DETAILS screen, if    |
+|                                   |     SN20DR applies                |
+|                                   | -   N on the PB PATIENT REFUND -  |
+|                                   |     RECEIPT DETAILS screen if     |
+|                                   |     SN20DR does not apply         |
+|                                   |                                   |
+|                                   | Press [F12] to acknowledge the    |
+|                                   | warning and continue processing.  |
++-----------------------------------+-----------------------------------+
+| DOS AFTER DATE OF DEATH           | Service Officers must not         |
+|                                   | disclose a patient's deceased     |
+|                                   | status to any person (including   |
+|                                   | the claimant) when processing PBS |
+|                                   | Patient Refund claims.            |
+|                                   |                                   |
+|                                   | Reject and return to Estate of    |
+|                                   | Patient.                          |
++-----------------------------------+-----------------------------------+
+
+Processing PBS patient refunds for Reform and Non Reform States
+
+Table 6
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Processing a patient refund for   |
+|                                   | reform States or Territory        |
+|                                   |                                   |
+|                                   | For all reform States or          |
+|                                   | Territory (Qld, SA, NT, WA, Vic   |
+|                                   | and Tas) the following rules      |
+|                                   | apply when processing a patient   |
+|                                   | refund:                           |
+|                                   |                                   |
+|                                   | -   PBS items dispensed in a      |
+|                                   |     reform State or Territory     |
+|                                   |     public hospital are counted   |
+|                                   |     towards the PBS Safety Net    |
+|                                   |     threshold and are eligible    |
+|                                   |     for a refund                  |
+|                                   | -   Non-PBS/Private items are     |
+|                                   |     counted towards the PBS       |
+|                                   |     Safety Net but are not        |
+|                                   |     refunded. These are items     |
+|                                   |     listed on a prescription      |
+|                                   |     record form (PRF) but not     |
+|                                   |     identified as PBS items.      |
+|                                   |     Non-PBS items are usually     |
+|                                   |     identified on the             |
+|                                   |     prescription by a prescriber  |
+|                                   |     as non-PBS, Private, or with  |
+|                                   |     no PBS item code              |
+|                                   |                                   |
+|                                   | Note: if it cannot be determined  |
+|                                   | if an item on a hospital PRF is   |
+|                                   | PBS seek advice from a Programme  |
+|                                   | Support Officer (PSO).            |
++-----------------------------------+-----------------------------------+
+| 2                                 | Processing a patient refund for   |
+|                                   | non-reform states                 |
+|                                   |                                   |
+|                                   | For all non-reform State or       |
+|                                   | Territory (ACT/NSW) the following |
+|                                   | rules apply when processing a     |
+|                                   | patient refund:                   |
+|                                   |                                   |
+|                                   | -   PBS items dispensed in a      |
+|                                   |     non-reform state public       |
+|                                   |     hospital are counted towards  |
+|                                   |     the PBS Safety Net threshold  |
+|                                   |     but are not refunded          |
+|                                   | -   Non-PBS/Private items are     |
+|                                   |     counted towards the PBS       |
+|                                   |     Safety Net but are not        |
+|                                   |     refunded. These are items     |
+|                                   |     listed on a prescription      |
+|                                   |     record form (PRF) but not     |
+|                                   |     identified as PBS items.      |
+|                                   |     Non-PBS items are usually     |
+|                                   |     identified on the             |
+|                                   |     prescription by a prescriber  |
+|                                   |     as non-PBS, Private, or with  |
+|                                   |     no PBS item code              |
+|                                   |                                   |
+|                                   | Note: if it cannot be determined  |
+|                                   | if an item on a hospital PRF is   |
+|                                   | PBS seek advice from a Programme  |
+|                                   | Support Officer (PSO).            |
++-----------------------------------+-----------------------------------+
 
                                    
 

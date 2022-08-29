@@ -5,19 +5,272 @@ Mutual Client Register (MCR) for Business Support staff 108-20111659
 -   References
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+MCR Monitoring Guide
 
-You can request a copy from the department's Information Publication
-Scheme by:
+This attachment is not to be shared externally. See Freedom of
+Information – Information Publication Scheme.
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+[]MCR Monitoring Cheat Sheet
+
+Fields on the Manage Transactions screen
+
+Table1
+
++-----------------------------------+-----------------------------------+
+| Heading                           | Description                       |
++-----------------------------------+-----------------------------------+
+| Record ID                         | ID number                         |
++-----------------------------------+-----------------------------------+
+| CRN                               | CRN of the person                 |
++-----------------------------------+-----------------------------------+
+| Category                          | -   Person                        |
+|                                   | -   Link                          |
+|                                   | -   STP historical data           |
++-----------------------------------+-----------------------------------+
+| Request type                      | -   Add person                    |
+|                                   | -   Delete person                 |
+|                                   | -   Add link                      |
+|                                   | -   Update link                   |
+|                                   | -   Delete link                   |
+|                                   | -   Add STP history               |
+|                                   | -   Delete STP history            |
++-----------------------------------+-----------------------------------+
+| Deleted                           | Indicator will be set to 'Yes' if |
+|                                   | the transaction has been deleted  |
++-----------------------------------+-----------------------------------+
+| Created on                        | Date and time stamp when request  |
+|                                   | was created                       |
++-----------------------------------+-----------------------------------+
+| Sent on                           | Date and time the request was     |
+|                                   | sent to the ATO                   |
++-----------------------------------+-----------------------------------+
+| Received on                       | Date and time the response was    |
+|                                   | received from the ATO             |
++-----------------------------------+-----------------------------------+
+| Status                            | -   Generated                     |
+|                                   | -   Pending                       |
+|                                   | -   Completed                     |
++-----------------------------------+-----------------------------------+
+| Send to ATO                       | -   Yes – the request will        |
+|                                   |     send/has been sent to the ATO |
+|                                   | -   No – the request will not     |
+|                                   |     send/has not been sent to the |
+|                                   |     ATO                           |
++-----------------------------------+-----------------------------------+
+| Outcome                           | -   Success                       |
+|                                   | -   Error                         |
++-----------------------------------+-----------------------------------+
+| Response reason                   | -   No match                      |
+|                                   | -   Multi-match                   |
+|                                   | -   Mismatch                      |
+|                                   | -   Invalid value                 |
+|                                   | -   Person not on MCR             |
+|                                   | -   Max attempts reached          |
+|                                   | -   Multi-ID person               |
+|                                   | -   Unknown                       |
+|                                   | -   Overlapping periods           |
+|                                   | -   Link not found                |
+|                                   | -   Exceeds period                |
+|                                   | -   No data available             |
+|                                   | -   Partial data only             |
++-----------------------------------+-----------------------------------+
+| Attempts                          | When status is Pending, this is   |
+|                                   | the number of re-try attempts     |
+|                                   | made                              |
++-----------------------------------+-----------------------------------+
+| Last sent on                      | Date and time stamp of when       |
+|                                   | request was last sent to ATO.     |
++-----------------------------------+-----------------------------------+
+| Link Authority                    | -   Family Assistance Act -       |
+|                                   |     FTB/CCS                       |
+|                                   | -   Student Assistance Act -      |
+|                                   |     ABSTUDY                       |
+|                                   | -   Paid Parental Leave Act -     |
+|                                   |     PPL/DDP                       |
+|                                   | -   Social Security Act - ISP/LIC |
++-----------------------------------+-----------------------------------+
+| Link Reason                       | -   Care receiver                 |
+|                                   | -   Debtor customer               |
+|                                   | -   Debtor partner                |
+|                                   | -   FAO customer                  |
+|                                   | -   FAO partner                   |
+|                                   | -   ISP customer                  |
+|                                   | -   ISP partner                   |
+|                                   | -   PIT link parent               |
+|                                   | -   Deceased                      |
+|                                   | -   Undetermined record           |
+|                                   | -   FTB/CCS/PPL customer          |
+|                                   | -   FTB/CCS partner               |
+|                                   | -   ISP/LIC/ABY customer          |
+|                                   | -   ISP/LIC/ABY partner           |
+|                                   | -   Parent of YA/ABY customer     |
++-----------------------------------+-----------------------------------+
+| Benefit type                      | The relevant payment or benefit   |
+|                                   | for the person.                   |
++-----------------------------------+-----------------------------------+
+| Start date                        | The date the link was added       |
++-----------------------------------+-----------------------------------+
+| End date                          | -   31/12/9999 where Active, or   |
+|                                   | -   Actual date that link has     |
+|                                   |     ended                         |
++-----------------------------------+-----------------------------------+
+| Share Delayed data                | -   Yes                           |
+|                                   | -   No                            |
++-----------------------------------+-----------------------------------+
+| Trigger event                     | See table below                   |
++-----------------------------------+-----------------------------------+
+| Trigger date                      | Date and time stamp of when       |
+|                                   | Trigger event occurred            |
++-----------------------------------+-----------------------------------+
+| Created by                        | -   Staff Logon ID                |
+|                                   | -   SYSTEM                        |
++-----------------------------------+-----------------------------------+
+| Org unit                          | Org unit of the Staff member      |
+|                                   | (will be blank if created by      |
+|                                   | SYSTEM)                           |
++-----------------------------------+-----------------------------------+
+| Delete reason                     | -   Added in error                |
+|                                   | -   Other                         |
++-----------------------------------+-----------------------------------+
+| HANA ID                           | The HANA system reference ID for  |
+|                                   | the transaction record            |
++-----------------------------------+-----------------------------------+
+| Reference ID                      | The order in the system           |
++-----------------------------------+-----------------------------------+
+
+Add person - Error Response reasons
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Response Reason                   | Short Description                 |
++-----------------------------------+-----------------------------------+
+| No match                          | The ATO was unable to match the   |
+|                                   | Centrelink customer to an ATO     |
+|                                   | client                            |
++-----------------------------------+-----------------------------------+
+| Mismatch                          | The ATO finds the Centrelink CRN  |
+|                                   | has already been matched to an    |
+|                                   | ATO client with different         |
+|                                   | personal details                  |
++-----------------------------------+-----------------------------------+
+| Multi-ID person                   | The ATO finds that the Centrelink |
+|                                   | customer has already been matched |
+|                                   | to an ATO client for a different  |
+|                                   | CRN                               |
++-----------------------------------+-----------------------------------+
+| Multi-match                       | The ATO finds multiple possible   |
+|                                   | ATO client matches for the        |
+|                                   | Centrelink customer               |
++-----------------------------------+-----------------------------------+
+| Invalid value                     | The ATO has found a personal      |
+|                                   | detail supplied in the request is |
+|                                   | not in a valid format             |
++-----------------------------------+-----------------------------------+
+
+MCR Trigger events
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Item                              | Short Description                 |
++-----------------------------------+-----------------------------------+
+| 1                                 | Outstanding debt                  |
++-----------------------------------+-----------------------------------+
+| 2                                 | No outstanding debt               |
++-----------------------------------+-----------------------------------+
+| 3                                 | ISP/LIC customer                  |
++-----------------------------------+-----------------------------------+
+| 4                                 | ISP/LIC RES                       |
++-----------------------------------+-----------------------------------+
+| 5                                 | ISP/LIC CAN                       |
++-----------------------------------+-----------------------------------+
+| 6                                 | ISP/LIC REJ                       |
++-----------------------------------+-----------------------------------+
+| 7                                 | FAO customer                      |
++-----------------------------------+-----------------------------------+
+| 8                                 | FAO RES                           |
++-----------------------------------+-----------------------------------+
+| 9                                 | FAO CAN                           |
++-----------------------------------+-----------------------------------+
+| 10                                | FAO REJ                           |
++-----------------------------------+-----------------------------------+
+| 11                                | Deceased                          |
++-----------------------------------+-----------------------------------+
+| 12                                | Debtor partner                    |
++-----------------------------------+-----------------------------------+
+| 13                                | Debtor partner - end              |
++-----------------------------------+-----------------------------------+
+| 14                                | ISP/LIC partner                   |
++-----------------------------------+-----------------------------------+
+| 15                                | ISP/LIC partner - end             |
++-----------------------------------+-----------------------------------+
+| 16                                | Partner's ISP/LIC RES             |
++-----------------------------------+-----------------------------------+
+| 17                                | Partner's ISP/LIC CAN             |
++-----------------------------------+-----------------------------------+
+| 18                                | Partner's ISP/LIC REJ             |
++-----------------------------------+-----------------------------------+
+| 19                                | FAO partner                       |
++-----------------------------------+-----------------------------------+
+| 20                                | FAO partner – end                 |
++-----------------------------------+-----------------------------------+
+| 21                                | Partner's FAO RES                 |
++-----------------------------------+-----------------------------------+
+| 22                                | Partner's FAO CAN                 |
++-----------------------------------+-----------------------------------+
+| 23                                | Partner's FAO REJ                 |
++-----------------------------------+-----------------------------------+
+| 24                                | PIT link parent                   |
++-----------------------------------+-----------------------------------+
+| 25                                | Care receiver link                |
++-----------------------------------+-----------------------------------+
+| 26                                | PIT link ended                    |
++-----------------------------------+-----------------------------------+
+| 27                                | Care receiver link ended          |
++-----------------------------------+-----------------------------------+
+| 28                                | Undetermined record               |
++-----------------------------------+-----------------------------------+
+| 29                                | FAO NEF                           |
++-----------------------------------+-----------------------------------+
+| 30                                | Partner's FAO NEF                 |
++-----------------------------------+-----------------------------------+
+| 31                                | PIT link customer CAN/REJ         |
++-----------------------------------+-----------------------------------+
+| 32                                | Care provider CAN/REJ             |
++-----------------------------------+-----------------------------------+
+| 33                                | Online ISP/LIC REJ                |
++-----------------------------------+-----------------------------------+
+| 34                                | Online ISP/LIC CAN                |
++-----------------------------------+-----------------------------------+
+| 35                                | ISP/LIC WDR/WDC                   |
++-----------------------------------+-----------------------------------+
+| 36                                | ISP/LIC NRE                       |
++-----------------------------------+-----------------------------------+
+| 37                                | ISP/LIC OBS                       |
++-----------------------------------+-----------------------------------+
+| 38                                | ISP/LIC COM                       |
++-----------------------------------+-----------------------------------+
+| 39                                | Online FAO CAN                    |
++-----------------------------------+-----------------------------------+
+| 40                                | FAO WDR/WDC                       |
++-----------------------------------+-----------------------------------+
+| 41                                | FAO NRE                           |
++-----------------------------------+-----------------------------------+
+| 42                                | FAO OBS                           |
++-----------------------------------+-----------------------------------+
+| 43                                | FAO COM                           |
++-----------------------------------+-----------------------------------+
+| 44                                | ISP benefit type switched         |
++-----------------------------------+-----------------------------------+
+| 45                                | Online FAO REJ                    |
++-----------------------------------+-----------------------------------+
+| 46                                | ISP/LIC NEF                       |
++-----------------------------------+-----------------------------------+
+| 47                                | Online FAO NEF                    |
++-----------------------------------+-----------------------------------+
 
                                    
 

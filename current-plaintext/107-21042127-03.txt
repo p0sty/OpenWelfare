@@ -6,19 +6,780 @@ Reports for Medicare debt 107-21042127
 -   References
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+On this page:
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Monthly reconciliation report
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Prepare a reconciliation worksheet
+
+Debt Waiver Report
+
+Change of reconciliation account
+
+MCA administered receipts report
+
+Monthly reconciliation report
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Choose a report type + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Open SAP and run the report:      |
+|                                   |                                   |
+|                                   | -   Ageing report, go to Step 2   |
+|                                   | -   Customer list report, go to   |
+|                                   |     Step 3                        |
+|                                   | -   Customer transaction report,  |
+|                                   |     go to Step 4                  |
+|                                   |                                   |
+|                                   | Note: for a full reconciliation,  |
+|                                   | all of the above reports are      |
+|                                   | required. For a simplified        |
+|                                   | reconciliation, only the Ageing   |
+|                                   | report is required. See the       |
+|                                   | Resources page for a list of full |
+|                                   | and simplified GL                 |
+|                                   | reconciliations.                  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Ageing report + Read more ...     |
+|                                   |                                   |
+|                                   | Run Transaction S_ALR_87012178 -  |
+|                                   | Customer Open Item Analysis       |
+|                                   | (Overdue).                        |
+|                                   |                                   |
+|                                   | Only update the following fields. |
+|                                   | Leave all other fields blank:     |
+|                                   |                                   |
+|                                   | Company Code: 'HIC'               |
+|                                   |                                   |
+|                                   | Fiscal Year: the current          |
+|                                   | financial year                    |
+|                                   |                                   |
+|                                   | Open items at key date: last day  |
+|                                   | of the calendar month             |
+|                                   | (dd.mm.yyyy)                      |
+|                                   |                                   |
+|                                   | Line item Reconciliation Acct:    |
+|                                   | the General Ledger Account (GL)   |
+|                                   | being reconciled. See the         |
+|                                   | Resources page for a list of GL   |
+|                                   | codes                             |
+|                                   |                                   |
+|                                   | Standard Documents: Tick          |
+|                                   |                                   |
+|                                   | OI sorted list sorting: (1,2) =   |
+|                                   | '1'                               |
+|                                   |                                   |
+|                                   | Summarization Level: (0-6) = '6'  |
+|                                   |                                   |
+|                                   | OI list summarization: (0-2) =    |
+|                                   | '1'                               |
+|                                   |                                   |
+|                                   | Company Code Data: '2'            |
+|                                   |                                   |
+|                                   | Due Date sorted list:             |
+|                                   | '30/60/90/120'                    |
+|                                   |                                   |
+|                                   | -   GL 13119 is the only          |
+|                                   |     exception. Key                |
+|                                   |     '30/60/90/366/731' for this   |
+|                                   |     account only                  |
+|                                   |                                   |
+|                                   | Rounding factor/decimal places:   |
+|                                   | '0/2'                             |
+|                                   |                                   |
+|                                   | Assign Items: Tick                |
+|                                   |                                   |
+|                                   | Press Execute [F8].               |
+|                                   |                                   |
+|                                   | Note: an ageing report can take   |
+|                                   | up to 20 minutes to generate.     |
++-----------------------------------+-----------------------------------+
+| 3                                 | Customer list report + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Run Transaction S_ALR_87012172 -  |
+|                                   | Customer Balances in Local        |
+|                                   | Currency.                         |
+|                                   |                                   |
+|                                   | Only update indicated fields.     |
+|                                   | Leave all other fields blank.     |
+|                                   |                                   |
+|                                   | Enter:                            |
+|                                   |                                   |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Fiscal Year: key the current  |
+|                                   |     financial year                |
+|                                   | -   Reporting Periods: see        |
+|                                   |     Resources for a list of the   |
+|                                   |     Reporting periods             |
+|                                   | -   Reconciliation Account: the   |
+|                                   |     GL account to be reconciled.  |
+|                                   |     See Resources for a list of   |
+|                                   |     GL codes                      |
+|                                   | -   Normal Balances: Tick         |
+|                                   | -   Detail List: Tick             |
+|                                   | -   Detail List: One Time Cust:   |
+|                                   |     Tick                          |
+|                                   | -   Totals of All Company Code:   |
+|                                   |     Tick                          |
+|                                   |                                   |
+|                                   | Press Execute [F8].               |
+|                                   |                                   |
+|                                   | When the report generates, go to  |
+|                                   | Step 5.                           |
++-----------------------------------+-----------------------------------+
+| 4                                 | Customer transaction report +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Run Transaction - YBA4 - Document |
+|                                   | enquiry facility.                 |
+|                                   |                                   |
+|                                   | Only update indicated fields.     |
+|                                   | Leave all other fields blank.     |
+|                                   | Enter:                            |
+|                                   |                                   |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Posting Date: Start and end   |
+|                                   |     dates of the month            |
+|                                   | -   GL Account: the GL being      |
+|                                   |     reconciled. See Resources for |
+|                                   |     a list of GL codes            |
+|                                   | -   Use list viewer for output:   |
+|                                   |     Tick                          |
+|                                   | -   Start with display variant:   |
+|                                   |     '/DRP'                        |
+|                                   |                                   |
+|                                   | Press Execute [F8]                |
+|                                   |                                   |
+|                                   | When the report generates, go to  |
+|                                   | Step 5.                           |
++-----------------------------------+-----------------------------------+
+| 5                                 | Export the report into an Excel   |
+|                                   | sheet + Read more ...             |
+|                                   |                                   |
+|                                   | Select List at the top left       |
+|                                   | corner. In the List dropdown:     |
+|                                   |                                   |
+|                                   | -   For Ageing and Customer List  |
+|                                   |     reports, select Send          |
+|                                   | -   For Customer transaction      |
+|                                   |     report select Export -> Local |
+|                                   |     file                          |
+|                                   |                                   |
+|                                   | Select Text with Tabs             |
+|                                   |                                   |
+|                                   | Select the green tick             |
+|                                   |                                   |
+|                                   | When the Document Enquiry         |
+|                                   | Facility pop up box appears:      |
+|                                   |                                   |
+|                                   | -   select Generate, and          |
+|                                   | -   Save the file to the desktop  |
+|                                   |                                   |
+|                                   | Go to Step 6.                     |
++-----------------------------------+-----------------------------------+
+| 6                                 | Have the required reports been    |
+|                                   | generated? + Read more ...        |
+|                                   |                                   |
+|                                   | All required reports must be      |
+|                                   | generated before preparing a      |
+|                                   | reconciliation worksheet.         |
+|                                   |                                   |
+|                                   | Are all reports ready?            |
+|                                   |                                   |
+|                                   | -   Yes, see Step 1 in Table 2    |
+|                                   | -   No, generate all required     |
+|                                   |     reports, then see Step 1 in   |
+|                                   |     Table 2                       |
+|                                   |                                   |
+|                                   | Note: delete the file saved to    |
+|                                   | the desktop once the data has     |
+|                                   | been transferred to the           |
+|                                   | reconciliation worksheet.         |
++-----------------------------------+-----------------------------------+
+
+Prepare a reconciliation worksheet
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Open the reconciliation           |
+|                                   | worksheet + Read more ...         |
+|                                   |                                   |
+|                                   | Go to the file in the shared      |
+|                                   | FINANCE > Reconciliation folder:  |
+|                                   |                                   |
+|                                   | -   Select the relevant financial |
+|                                   |     year folder                   |
+|                                   | -   Select the previous month     |
+|                                   |     folder for the latest         |
+|                                   |     worksheet                     |
+|                                   | -   Open the spreadsheet for the  |
+|                                   |     required General Ledger       |
+|                                   |     account (GL) to be reconciled |
++-----------------------------------+-----------------------------------+
+| 2                                 | Save the spreadsheet into the     |
+|                                   | current folder + Read more ...    |
+|                                   |                                   |
+|                                   | Do not:                           |
+|                                   |                                   |
+|                                   | -   change the spreadsheet before |
+|                                   |     saving a copy of the sheet in |
+|                                   |     the current reporting period, |
+|                                   |     or                            |
+|                                   | -   overwrite the previous        |
+|                                   |     period’s data                 |
+|                                   |                                   |
+|                                   | Copy all data from the Schedule   |
+|                                   | tab into the Previous Month tab.  |
+|                                   | Use 'paste special' to remove the |
+|                                   | formulas.                         |
++-----------------------------------+-----------------------------------+
+| 3                                 | Print screen the GL balance from  |
+|                                   | SAP to the worksheet + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Run Transaction FAGLB03 and       |
+|                                   | complete the following fields:    |
+|                                   |                                   |
+|                                   | -   Account number: the GL being  |
+|                                   |     reconciled                    |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Fiscal Year: key the current  |
+|                                   |     financial year                |
+|                                   | -   Press Execute [F8]            |
+|                                   | -   Use the Print Screen function |
+|                                   |     to copy the balance screen    |
+|                                   |     [Ctrl + Alt + Print Screen]   |
+|                                   | -   Paste the screen shot to the  |
+|                                   |     GLXXXXX tab of the worksheet  |
+|                                   |     from Step 2                   |
++-----------------------------------+-----------------------------------+
+| 4                                 | Update the cover page + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Go to the Coverpage tab of the    |
+|                                   | worksheet. In the following       |
+|                                   | cells:                            |
+|                                   |                                   |
+|                                   | -   A4:, change the date to the   |
+|                                   |     last reporting date of the    |
+|                                   |     month. For example,           |
+|                                   |     reconciliation as at 31 July  |
+|                                   |     xxxx                          |
+|                                   | -   Prepared by: key 'your name'  |
+|                                   |                                   |
+|                                   | If there is a zero balance,       |
+|                                   | procedure ends here. Otherwise,   |
+|                                   | go to Step 5.                     |
++-----------------------------------+-----------------------------------+
+| 5                                 | Copy the SAP reports into the     |
+|                                   | relevant tab + Read more ...      |
+|                                   |                                   |
+|                                   | Copy all data in the:             |
+|                                   |                                   |
+|                                   | -   Ageing report to the Ageing   |
+|                                   |     tab of the worksheet          |
+|                                   | -   Customer list report to the   |
+|                                   |     Customer tab of the           |
+|                                   |     worksheet. Complete this step |
+|                                   |     only if a full report is      |
+|                                   |     required                      |
+|                                   | -   Customer transaction report   |
+|                                   |     to the All Transactions tab   |
+|                                   |     of the worksheet. Complete    |
+|                                   |     this step only a full report  |
+|                                   |     is required                   |
++-----------------------------------+-----------------------------------+
+| 6                                 | Add the formulas + Read more ...  |
+|                                   |                                   |
+|                                   | Go to the All Transactions tab,   |
+|                                   | select cell A8:                   |
+|                                   |                                   |
+|                                   | -   Copy the formula from the     |
+|                                   |     previous month                |
+|                                   |     reconciliation.               |
+|                                   | -   Paste to cell A8 of the All   |
+|                                   |     Transactions tab in the       |
+|                                   |     Reconciliation worksheet for  |
+|                                   |     the current month             |
+|                                   | -   Drag the formula in cell A8   |
+|                                   |     down to the end of Column A   |
+|                                   |                                   |
+|                                   | Go to the All Transactions tab,   |
+|                                   | select cell C8:                   |
+|                                   |                                   |
+|                                   | -   Copy the formula from the     |
+|                                   |     previous month reconciliation |
+|                                   | -   Paste to cell C8 of the All   |
+|                                   |     Transactions tab in the       |
+|                                   |     Reconciliation worksheet for  |
+|                                   |     the current month             |
+|                                   | -   Drag the formula in cell C8   |
+|                                   |     down to the end of Column C   |
++-----------------------------------+-----------------------------------+
+| 7                                 | Edit the Schedule tab + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Go to the Customer tab:           |
+|                                   |                                   |
+|                                   | -   Copy all customers in column  |
+|                                   |     I                             |
+|                                   | -   Paste to the Schedule tab     |
+|                                   |     under the Customer column     |
+|                                   | -   Check that the reconciliation |
+|                                   |     period is correct (for        |
+|                                   |     example, reconciliation as at |
+|                                   |     31 July xxxx)                 |
+|                                   | -   Change the date of the        |
+|                                   |     beginning balance to the      |
+|                                   |     first day of the reporting    |
+|                                   |     period (for example,          |
+|                                   |     01/07/2020)                   |
+|                                   | -   Change the date of the ending |
+|                                   |     balance to the last day of    |
+|                                   |     the reporting period (for     |
+|                                   |     example, 31/07/2020)          |
+|                                   | -   Drag the formula from cell D8 |
+|                                   |     across to cell R8             |
++-----------------------------------+-----------------------------------+
+| 8                                 | Compare the balance in the Ageing |
+|                                   | report to the balance in the      |
+|                                   | worksheet + Read more ...         |
+|                                   |                                   |
+|                                   | To obtain the closing balance for |
+|                                   | the month, run SAP Transaction    |
+|                                   | FAGLB03 - G/L Account Balance     |
+|                                   | Display:                          |
+|                                   |                                   |
+|                                   | In the As per Debtors sub ledger  |
+|                                   | corresponding cell of the         |
+|                                   | Coverpage tab, key the formula    |
+|                                   | '=Schedule!M8'. View the result:  |
+|                                   |                                   |
+|                                   | -   the amounts for Balance per   |
+|                                   |     ledger and Debtors per ledger |
+|                                   |     totals must match, and        |
+|                                   | -   the Cell total must display   |
+|                                   |     0.00. Review Steps 5 to 8 if  |
+|                                   |     required                      |
+|                                   |                                   |
+|                                   | Save the worksheet                |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Debt Waiver Report
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Getting the waiver report + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | In SAP, run Transaction FBL3N -   |
+|                                   | General Ledger (GL) Account Line  |
+|                                   | Item Display. Enter the           |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   G/L Account: '51204'          |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Line item selection: for all  |
+|                                   |     items, key dates (dd.mm.yyyy) |
+|                                   |     for the reporting period      |
+|                                   |                                   |
+|                                   | Press Execute [F8].               |
++-----------------------------------+-----------------------------------+
+| 2                                 | Export the waiver report into an  |
+|                                   | Excel spreadsheet + Read more ... |
+|                                   |                                   |
+|                                   | Select List at the top left       |
+|                                   | corner of the waiver report:      |
+|                                   |                                   |
+|                                   | Select Save/Send file             |
+|                                   |                                   |
+|                                   | Select Text with Tabs             |
+|                                   |                                   |
+|                                   | Select the green tick             |
+|                                   |                                   |
+|                                   | When the Document Enquiry         |
+|                                   | Facility pop up box appears:      |
+|                                   |                                   |
+|                                   | -   select Generate, and          |
+|                                   | -   Save the file to the desktop  |
++-----------------------------------+-----------------------------------+
+| 3                                 | Reconciliation report for         |
+|                                   | waiver + Read more ...            |
+|                                   |                                   |
+|                                   | Open the spreadsheet created and  |
+|                                   | saved in Step 2. Use the waiver   |
+|                                   | template to record the following  |
+|                                   | for any transactions listed:      |
+|                                   |                                   |
+|                                   | -   Customer number               |
+|                                   | -   Customer name                 |
+|                                   | -   Debt amount                   |
+|                                   | -   Approved debt waived          |
+|                                   | -   Number of waivers             |
+|                                   | -   Health program                |
+|                                   | -   the Act each waiver is under  |
+|                                   | -   Date processed                |
+|                                   |                                   |
+|                                   | Save the spreadsheet in the       |
+|                                   | shared folder: > Write Offs >     |
+|                                   | Waiver of Debts.                  |
+|                                   |                                   |
+|                                   | Note: delete the file saved to    |
+|                                   | the desktop in Step 2.            |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Change of reconciliation account
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Check that customers are created  |
+|                                   | in the correct General Ledger     |
+|                                   | (GL) account + Read more ...      |
+|                                   |                                   |
+|                                   | To perform a change of GL         |
+|                                   | Account, check the reconciliation |
+|                                   | account spreadsheet for any       |
+|                                   | customer numbers out of range.    |
+|                                   |                                   |
+|                                   | Are any customers out of range?   |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, run the reconciliation    |
+|                                   |     report                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Check the customer has a zero     |
+|                                   | ($0) balance in their account +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Run Transaction FBL5N - Customer  |
+|                                   | Line Item Display.                |
+|                                   |                                   |
+|                                   | -   In the Customer account       |
+|                                   |     field, key the '(customer     |
+|                                   |     number)'                      |
+|                                   | -   Press Execute [F8]            |
+|                                   |                                   |
+|                                   | Does the customer have a zero     |
+|                                   | balance in their account?         |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 3             |
+|                                   | -   No, zero the account. See     |
+|                                   |     Table 4 in Financial          |
+|                                   |     adjustments for Medicare debt |
+|                                   |     for how to reverse an invoice |
++-----------------------------------+-----------------------------------+
+| 3                                 | Change the Reconciliation Account |
+|                                   | field + Read more ...             |
+|                                   |                                   |
+|                                   | Service Officers at APS5 and      |
+|                                   | above levels have delegation to   |
+|                                   | change the Reconciliation Account |
+|                                   | field.                            |
+|                                   |                                   |
+|                                   | Run Transaction FD02 - Change     |
+|                                   | customer:                         |
+|                                   |                                   |
+|                                   | -   Enter the customer number     |
+|                                   | -   Go to the Company Code Data   |
+|                                   |     tab and then to the Account   |
+|                                   |     Management screen             |
+|                                   | -   In the Reconciliation Account |
+|                                   |     field, change the GL code.    |
+|                                   |     See the Resources page for a  |
+|                                   |     list of GL codes              |
+|                                   | -   Select Save                   |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+MCA administered receipts report
+
+Table 5
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Export Debit data + Read more ... |
+|                                   |                                   |
+|                                   | In the shared drive, open         |
+|                                   | FINANCE>MCA Administered Account  |
+|                                   | Template:                         |
+|                                   |                                   |
+|                                   | Save the file under the current   |
+|                                   | month and financial year (for     |
+|                                   | example, February 2020-21)        |
+|                                   |                                   |
+|                                   | Select Enable Content             |
+|                                   |                                   |
+|                                   | Open SAP. Run Transaction FAGLB03 |
+|                                   | – G/L Account Balance Display     |
+|                                   |                                   |
+|                                   | Enter Data:                       |
+|                                   |                                   |
+|                                   | -   Account Number: '10400'       |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Fiscal Year: key the current  |
+|                                   |     financial year                |
+|                                   |                                   |
+|                                   | Press Execute [F8]                |
+|                                   |                                   |
+|                                   | Double click on the amount in the |
+|                                   | Debit Column – Line 2             |
+|                                   |                                   |
+|                                   | Export Data:                      |
+|                                   |                                   |
+|                                   | -   Change the layout to match    |
+|                                   |     the layout in the spreadsheet |
+|                                   | -   Select List > Export >        |
+|                                   |     Spreadsheet                   |
+|                                   | -   When the pop up appears,      |
+|                                   |     select the green tick         |
+|                                   | -   Make sure sub-totals are      |
+|                                   |     removed from the report       |
+|                                   |                                   |
+|                                   | Copy and paste the data into tab  |
+|                                   | 10400 - MCA Administered Account  |
+|                                   | (91021-1) Template YYYY           |
+|                                   |                                   |
+|                                   | Note: this template is the Cash   |
+|                                   | Management team worksheet,        |
+|                                   | provided at the start of each     |
+|                                   | financial year. Do not delete,    |
+|                                   | amend or add any columns or rows  |
+|                                   | to this worksheet.                |
++-----------------------------------+-----------------------------------+
+| 2                                 | Export Line Items + Read more ... |
+|                                   |                                   |
+|                                   | Run Transaction FBL3N – G/L       |
+|                                   | Account Line Item Display.        |
+|                                   |                                   |
+|                                   | Select Multiple Selection         |
+|                                   |                                   |
+|                                   | Enter data:                       |
+|                                   |                                   |
+|                                   | -   Account Number: Key the       |
+|                                   |     relevant GL account number    |
+|                                   |     ranging from 10401 to 10408   |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Fiscal Year: key the current  |
+|                                   |     financial year                |
+|                                   | -   Go to Line Item Selection     |
+|                                   | -   Select cleared items for the  |
+|                                   |     current month, then select    |
+|                                   |     /NASS LAYOUT                  |
+|                                   |                                   |
+|                                   | Press Execute [F8]                |
+|                                   |                                   |
+|                                   | Export data:                      |
+|                                   |                                   |
+|                                   | -   Select List > Export >        |
+|                                   |     Spreadsheet                   |
+|                                   | -   When the pop up appears,      |
+|                                   |     select the green tick         |
+|                                   | -   Make sure sub-totals are      |
+|                                   |     removed from the report       |
+|                                   |                                   |
+|                                   | Copy and paste data into tab      |
+|                                   | 10401-8 - MCA Administered        |
+|                                   | Account (91021-1) Template        |
+|                                   | 2020-21                           |
+|                                   |                                   |
+|                                   | Repeat the above process for Open |
+|                                   | items for the:                    |
+|                                   |                                   |
+|                                   | -   previous month and paste in   |
+|                                   |     tab CF_ItemsPM and            |
+|                                   | -   current month and paste in    |
+|                                   |     tab CF_ItemsCM                |
++-----------------------------------+-----------------------------------+
+| 3                                 | Export Customer Allocation data + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Run Transaction YBA4 – Document   |
+|                                   | Enquiry Facility.                 |
+|                                   |                                   |
+|                                   | Select all transactions for       |
+|                                   | Customer Allocation:              |
+|                                   |                                   |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Copy all documents listed in  |
+|                                   |     tab 10401-8 in MCA            |
+|                                   |     Administered Account          |
+|                                   |     (91021-1) Template 2020-21    |
+|                                   | -   Paste into the Document       |
+|                                   |     number field. Select /DRP_ART |
+|                                   |     as layout                     |
+|                                   | -   Press Execute [F8]. Data will |
+|                                   |     display                       |
+|                                   | -   Export the data to an Excel   |
+|                                   |     file                          |
+|                                   | -   Copy data from the Excel file |
+|                                   |     into the Customer Allocation  |
+|                                   |     tab in the MCA Administered   |
+|                                   |     Account (91021-1) Template    |
+|                                   |     2020-21                       |
++-----------------------------------+-----------------------------------+
+| 4                                 | Export Credit data + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Run Transaction FAGLBO3 – G/L     |
+|                                   | Account Balance Display:          |
+|                                   |                                   |
+|                                   | Enter the following data:         |
+|                                   |                                   |
+|                                   | -   Account Number: '10400'       |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Fiscal Year: key the current  |
+|                                   |     financial year                |
+|                                   |                                   |
+|                                   | Press Execute [F8]                |
+|                                   |                                   |
+|                                   | Double click on the amount in     |
+|                                   | Credit Column – Line 2            |
+|                                   |                                   |
+|                                   | Export Data:                      |
+|                                   |                                   |
+|                                   | -   Change the layout to match    |
+|                                   |     the layout in the spreadsheet |
+|                                   | -   Select List > Export >        |
+|                                   |     Spreadsheet                   |
+|                                   | -   When the pop up appears,      |
+|                                   |     select the green tick         |
+|                                   |                                   |
+|                                   | Copy and paste the data into tab  |
+|                                   | 10400 Credit in MCA Administered  |
+|                                   | Account (91021-1) Template for    |
+|                                   | the appropriate financial year    |
+|                                   | (FY)                              |
++-----------------------------------+-----------------------------------+
+| 5                                 | Retrieve data + Read more ...     |
+|                                   |                                   |
+|                                   | Retrieve data for End of Month    |
+|                                   | Transfer (EOMTFR) in tab 10401-8  |
+|                                   | in MCA Administered Account       |
+|                                   | (91021-1) Template for the FY     |
+|                                   |                                   |
+|                                   | Select the document number of the |
+|                                   | Recoveries for previous Month (SA |
+|                                   | Doc Type)                         |
+|                                   |                                   |
+|                                   | Run Transaction FB03 – Display    |
+|                                   | Document Transaction              |
+|                                   |                                   |
+|                                   | Enter the Document Number, as     |
+|                                   | selected above                    |
+|                                   |                                   |
+|                                   | Export Data:                      |
+|                                   |                                   |
+|                                   | -   Change the layout to match    |
+|                                   |     the layout in the spreadsheet |
+|                                   | -   Select List > Export >        |
+|                                   |     Spreadsheet                   |
+|                                   | -   When the pop up appears,      |
+|                                   |     select the green tick         |
+|                                   |                                   |
+|                                   | Export and paste the data into    |
+|                                   | tab EOMTFR in MCA Administered    |
+|                                   | Account (91021-1) Template for    |
+|                                   | the FY                            |
++-----------------------------------+-----------------------------------+
+| 6                                 | Reconciling data + Read more ...  |
+|                                   |                                   |
+|                                   | The summary sheet shows:          |
+|                                   |                                   |
+|                                   | -   detailed reconciliations for  |
+|                                   |     cheque, BPAY, and EFT         |
+|                                   |     payments received and         |
+|                                   |     allocated for the current     |
+|                                   |     month, and                    |
+|                                   | -   outstanding BPAY and EFT      |
+|                                   |     payment allocations for       |
+|                                   |     previous months               |
+|                                   |                                   |
+|                                   | Use the Customer Allocation tab   |
+|                                   | to select programs and check for  |
+|                                   | errors, misallocations,           |
+|                                   | transfers, incorrect posting      |
+|                                   | dates or incorrect document       |
+|                                   | dates.                            |
+|                                   |                                   |
+|                                   | Check total amounts received for  |
+|                                   | cheque, BPAY, and EFT equal the   |
+|                                   | total amounts allocated and       |
+|                                   | transferred to relevant agencies  |
+|                                   |                                   |
+|                                   | Update the Text in column G in    |
+|                                   | Customer Allocation for payment   |
+|                                   | types. This picks up the          |
+|                                   | information in column X           |
+|                                   |                                   |
+|                                   | Select a category at a time,      |
+|                                   | starting with 'blanks':           |
+|                                   |                                   |
+|                                   | -   check the 'blanks', as text   |
+|                                   |     has no information for the    |
+|                                   |     payment method                |
+|                                   | -   compare with SAP, investigate |
+|                                   |     as needed                     |
+|                                   |                                   |
+|                                   | Check column G (text) and insert  |
+|                                   | the payment type, for example     |
+|                                   | EFT/CHQ or BPAY                   |
+|                                   |                                   |
+|                                   | Check that the quality data is    |
+|                                   | extracted from SAP:               |
+|                                   |                                   |
+|                                   | -   On the Summary Tab, scroll to |
+|                                   |     the right of the workbook on  |
+|                                   |     column AZ                     |
+|                                   | -   To reconcile, work on the red |
+|                                   |     ticks                         |
+|                                   | -   Green ticks indicate correct  |
+|                                   |     allocation. This is the final |
+|                                   |     outcome required              |
+|                                   |                                   |
+|                                   | Refer work to an APS5 level       |
+|                                   | Service Officer for Quality       |
+|                                   | Assurance checking and sign off   |
+|                                   |                                   |
+|                                   | For DMOs, procedure ends here.    |
+|                                   |                                   |
+|                                   | For APS5s, go to Step 7.          |
++-----------------------------------+-----------------------------------+
+| 7                                 | Quality assurance signoff by      |
+|                                   | delegate + Read more ...          |
+|                                   |                                   |
+|                                   | Work item(s) must be:             |
+|                                   |                                   |
+|                                   | -   quality assurance checked,    |
+|                                   |     and                           |
+|                                   | -   forwarded by email to the     |
+|                                   |     Cash Management and Reporting |
+|                                   |     Services team                 |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
 
                                    
 

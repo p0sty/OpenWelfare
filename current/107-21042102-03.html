@@ -196,21 +196,200 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p class="info-box warning">For Medicare Debt Management Officers (DMO) only</p>
+<a class="anchor" name="bp03_L3TT_Dunning_"></a>
+<h3>Dunning </h3>
+
+
+<p>Table 1</p>
+<table caption="This tables describes the steps to issue a series of overdue account reminders which runs weekly. This includes the levels, changing the dates and exluding customers." class="" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Dunning_Item"></a>
+<p><strong>	Item</strong></p></td>
+<td>
+
+<p><strong>Information</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Dunning_1"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Dunning levels</strong> <a title="Read more 1" class="showhead bp03_tbl_Dunning_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Dunning_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>There are 3 levels in the dunning process&#58;</p>
+		<ul>		<li>
+<strong>Level 1 - Overdue reminder&#58;</strong></li>
+			<ul>			<li>
+a notice issues when payment remains outstanding 30 days after sending the original invoice is sent</li>
+			<li>
+the debtor has 14 days to pay</li>		</ul>
+		<li>
+<strong>Level 2 - Overdue reminder&#58;</strong></li>
+			<ul>			<li>
+a notice issues when payment remains outstanding 14 days after sending the first reminder is sent</li>
+			<li>
+the debtor has 7 days to pay</li>		</ul>
+		<li>
+<strong>Level 3 - Overdue reminder&#58;</strong></li>
+			<ul>			<li>
+a notice issues when payment remains outstanding 7 days after sending the second reminder </li>
+			<li>
+payment is now due</li>
+			</ul>			</ul>
+<p>If the debt remains outstanding after the Dunning process, see <a href="../debts/107-21042133-01.html">Active recovery of outstanding Medicare debt</a>.</p>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Dunning_2"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Changing the dunning date</strong> <a title="Read more 2" class="showhead bp03_tbl_Dunning_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Dunning_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Open SAP and run Transaction <strong>FBL5N</strong> - Customer Line Item Display. Update the following fields&#58;</p>
+		<ul>		<li>
+<strong>Customer account&#58;</strong> key customer number (for example, BB000000XX)</li>
+		<li>
+<strong>Company code</strong>&#58; key '<strong>HIC</strong>'</li>
+		<li>
+Select Execute <strong>[F8]</strong></li>
+			<ul>			<li>
+Change the <strong>Last dunned</strong> date to the date 2 days before the previous dunned date. For example, the last dunned date of 25/06/20 changes to 23/06/20</li>
+			<li>
+Change the <strong>Dunning Level</strong> (1, 2 or 3) (box next to Last Dunned date)</li>
+			<li>
+Select the <strong>green tick</strong> to complete</li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Dunning_3"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Run the weekly dunning </strong> <a title="Read more 3" class="showhead bp03_tbl_Dunning_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Dunning_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Run Transaction <strong>SM37</strong> - Overview of Job Selection in SAP. Double click to open Simple Job Selection.</p>
+
+<p>Complete the following fields&#58;</p>
+		<ul>		<li>
+<strong>Job Name&#58;</strong> - key '<strong>F150*</strong>'</li>
+		<li>
+<strong>User Name&#58;</strong> - key '<strong>*</strong>'</li>
+		<li>
+<strong>Job Status&#58;</strong> In the following boxes&#58;</li>
+			<ul>			<li>
+<strong>Active&#58;</strong> tick</li>
+			<li>
+<strong>Finished&#58; </strong>tick</li>
+			<li>
+<strong>Schedule&#58;</strong> tick</li>
+			<li>
+<strong>Ready&#58;</strong> tick</li>
+			<li>
+<strong>Released&#58;</strong> untick</li>		</ul>
+		<li>
+<strong>Job Start Condition</strong>&#58; the <strong>From</strong> date and <strong>To</strong> date are both the same and always a Tuesday. <strong>Note&#58;</strong> an automatic dunning run has been set up in the system to run weekly each Tuesday</li>
+			<ul>			<li>
+Select Execute [<strong>F8</strong>] to display the Job Overview screen&#58;</li>
+			<li>
+Select the <strong>Job</strong> name tick box (start from the first one with the 'H' icon in the Spool column)</li>
+			<li>
+Select the <strong>Spool</strong> icon in the header bar</li>
+			<li>
+The Spool list displays. Select the <strong>Spool Number</strong> by ticking the box</li>
+			<li>
+Print the reminder notices - select <strong>Print</strong> [<strong>Ctrl P</strong>]</li>
+			</ul>			</ul>
+<p>Repeat the above process for all <strong>Job</strong> name items that have an 'H' icon in the <strong>Spool</strong> column.</p>
+
+<p>In the shared drive, open the Finance &gt; Dunning Weekly folder.</p>
+		<ul>		<li>
+Update the Dunning Activity spreadsheet. Include&#58;</li>
+			<ul>			<li>
+the date, and</li>
+			<li>
+the number of pages per job</li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Dunning_4"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Exclude a customer </strong> <a title="Read more 4" class="showhead bp03_tbl_Dunning_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Dunning_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Set a block to exclude a customer from the dunning process. For example, set the block where a customer has contacted Debt Recovery to arrange an agreed Repayment Plan.</p>
+
+<p>To block a customer, run Transaction <strong>FBL5N</strong> - Customer Line Item Display&#58;</p>
+		<ul>		<li>
+<strong>Customer account&#58;</strong> key customer number. (For example, BB000000XX)</li>
+		<li>
+a new <strong>Values</strong> popup box opens</li>
+		<li>
+<strong>Dunning Block&#58;</strong> key '<strong>A</strong>'</li>
+		<li>
+select Execute [<strong>F8</strong>]</li>
+		<li>
+go to the Menu Bar&#58;</li>
+			<ul>			<li>
+select <strong>Edit</strong></li>
+			<li>
+select the items to exclude or select all [<strong>F5</strong>]</li>
+			<li>
+select <strong>Mass Change</strong> [<strong>Ctrl+Shift+F9</strong>]</li>		</ul>
+		<li>
+a new <strong>Values</strong> popup box opens</li>
+		<li>
+<strong>Dunning Block&#58;</strong> key '<strong>A</strong>'</li>
+		<li>
+select Execute [<strong>F8</strong>]</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp04_L1RF_References"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

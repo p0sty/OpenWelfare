@@ -196,21 +196,214 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines information about pend processing of Simplified Billing manual claims for Medicare.</p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Pend_processing"></a>
+<h2 id="_Toc344898764">Pend processing of manual Simplified Billing claims</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Pend processing of manual Simplified Billing claims&#58;</p>
+		<ul>		<li>
+manual claims must be completed within 7 days of the date of lodgement (DOL)</li>
+		<li>
+uses the FAPI transaction</li>
+		</ul>
+<p><strong>Note&#58;</strong> all existing Medicare eligibility and assessing rules apply when processing pended Simplified Billing claims using the FAPI transaction.</p>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Simplified_Bill"></a>
+<h2 id="_Toc344898764">Simplified Billing pend processing transactions</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p><strong>RMDS report</strong></p>
+
+<p>The details needed for the FAPI control line are obtained from the daily produced MCA NSB301 SIMPBILL DLY PEND RPT which is available via the Report Management and Distribution System (RMDS). From 12 June 2017 this report only displays Simplified Billing manual claims with a current status of 'PEND'. </p>
+
+<p><strong>Simplified Billing pend processing control lines</strong></p>
+
+<p>The Simplified Billing pend processing control line is FAPI, Minor ID or Registration number, Claim ID,DOL=ddmmyy.</p>
+
+<p>For example, FAPI,1234567X,00023,DOL=150509.</p>
+
+<p><strong>Note&#58;</strong></p>
+		<ul>		<li>
+Modifier DOL= is optional when the customer and claim ID combination are not unique. For example, FAPI,3531110A,00024.</li>
+		<li>
+Additional modifier ,PAT= cardnumber with issue number or patient name. For example, FAPI,1234567C,00023,DOL=150503,PAT= 1098765432/MURIE.</li>
+		</ul>
+<p>Used to position directly on the first segment for the specified card or patient combination.</p>
+
+<p>The <a href="../your-health/011-43060040-05.html">Resources</a> page contains a list of the transaction identifiers associated with Simplified Billing pend processing.</p>
+
+<p><strong>Simplified Billing payee codes</strong></p>
+
+<p>The following codes are to be used with the FAPI system and are unique to Simplified Billing pend processing, payee code&#58;</p>
+		<ul>		<li>
+8 to pay</li>
+		<li>
+F to reject</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Delete_a_Simpli"></a>
+<h2 id="_Toc344898764">Delete a Simplified Billing manual pended claim</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Simplified Billing claims entered manually using the FEGI transaction can be deleted at pend status using the supervisor FASI transaction.</p>
+
+<p>For example, FASI, Minor ID or Registration number, DOL=ddmmyy,DELETE. <strong>F9</strong> to acknowledge deletion.</p>
+
+<p><strong>Note&#58;</strong></p>
+		<ul>		<li>
+Prior to using the DELETE modifier, confirm the claim is the correct one to be deleted by browsing the details with FBPI. This is recommended since FASI, DELETE does not display the claim details at any point during the delete process.</li>
+		<li>
+If the Service Officer attempts to use the DELETE modifier with either the normal FAPI transaction or lacks supervisor access, the message 1-SUPVSR is displayed.</li>
+		</ul>
+<p>Once deleted, a claim no longer appears on FCEI and any subsequent daily pend reports in RMDS (MCA NSB301 SIMPBILL DLY PEND RPT).</p>
+
+<p>The <a href="../your-health/011-43060040-05.html">Resources</a> page contains a list of FASI,DELETE edit checks.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Notional_charge"></a>
+<h2 id="_Toc344898764">Notional charges</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Providers may raise one charge to cover a multiple procedure. In these cases, a charge of zero dollars identifies subsequent item lines as part of grouped services that has a notional charge.</p>
+
+<p>For example&#58;</p>
+		<ul>		<li>
+Item&#58; 55274 – Charge&#58; $600</li>
+		<li>
+Item&#58; 55244 – Charge&#58; $0</li>
+		</ul>
+<p><strong>Note&#58;</strong> in notional charge situations, the system automatically allocates charges to the individual items and uses a reason code to advise the charge has been apportioned over all items in the notional charge.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Scrolling_Histo"></a>
+<h2 id="_Toc344898764">Scrolling History Details in FAPI</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Where a potential conflict between the items being assessed and items already paid on patient history exists within a manual Simplified Billing claim, all conflicting lines of patient history are available for viewing.</p>
+
+<p>Where there is greater than 5 lines of patient history to view, Service Officers must&#58;</p>
+		<ul>		<li>
+position the cursor in the conflicting patient history details displayed at the bottom of the screen</li>
+		<li>
+press <strong>PF8-FORWARDS</strong> to scroll through and view any additional history details</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_FAPI_field_desc"></a>
+<h2 id="_Toc344898764">FAPI field descriptions</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>On the <strong>FAPC</strong> screen, line&#58;</p>
+		<ul>		<li>
+3 and 4 display details for the provider who rendered the services, including the provider number, name, address and qualifications</li>
+		<li>
+5 displays the Medicare card number, first 5 characters of the patient’s name and initial, and the operator reference</li>
+		<li>
+6 displays any Consumer Directory Maintenance System (CDMS) comments that has been recorded for the card number</li>
+		</ul>
+<p>The <a href="../your-health/011-43060040-05.html">Resources</a> page contains a list of <strong>FAPC</strong> screen field descriptions.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Pend_processing01"></a>
+<h2 id="_Toc344898764">Pend processing of Simplified Billing EDI and ECLIPSE claims</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>All electronic Simplified Billing claims are to be processed via the Work Distribution, Allocation and Management System (WDAM)&#58;</p>
+		<ul>		<li>
+for ECLIPSE refer to <a href="../your-health/011-43060010-01.html">Eclipse claims for Simplified Billing in Medicare</a></li>
+		<li>
+for EDI refer to <a href="../your-health/011-17033000-01.html">Electronic Data Interchange (EDI) claims for Simplified Billing in Medicare</a></li>
+		</ul>
+<p>For further information see the <a href="../your-health/011-43060040-05.html">Resources</a> page for the Work Distribution, Allocation and Management System (WDAM) Operator Manual.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+
+<p>The <a href="../your-health/011-43060040-05.html">Resources</a> page contains a list of the transaction identifiers associated with Simplified Billing pend processing, a list of FASI,DELETE edit checks, a list of insert and delete line values in <strong>FAPI</strong>, a list of <strong>FAPI</strong> screen field descriptions, <strong>FAPI</strong> key functions and the Work Distribution, Allocation and Management System (WDAM) Operator Manual.</p>
+
+<p></p>
+<a class="anchor" name="bp01_L2LL_Related_links"></a>
+<h2 id="_Toc344898764">Related links&#58;</h2>
+
+
+<p><a href="../your-health/011-43180000-01.html">Work Distribution, Allocation and Management System (WDAM) for Medicare claims</a></p>
+
+<p><a href="../your-health/011-17033000-01.html">Electronic Data Interchange (EDI) claims for Simplified Billing in Medicare</a></p>
+
+<p><a href="../your-health/011-43060010-01.html">Eclipse claims for Simplified Billing in Medicare</a></p>
+
+<p></p>
+<a class="anchor" name="bp05_L1RT_Resources"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

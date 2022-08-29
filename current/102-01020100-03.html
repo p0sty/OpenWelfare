@@ -196,21 +196,203 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p class="info-box warning">For Service Profiling Team Leader use only.</p>
+
+<p>This page contains information about accessing and using the Profiling Bulk Update Facility (<strong>PQBUF</strong>) screen.</p>
+<a class="anchor" name="bp03_L2GT_PQBUF_screen"></a>
+<h2 id="bp03_L2GT_PQBUF_screen">PQBUF screen</h2>
+
+<a class="anchor" name="bp03_L3TT_Accessing_and_u"></a>
+<h3>Accessing and using the PQBUF screen</h3>
+
+
+<p>This table describes information about accessing and using the Profiling Bulk Update Facility (<strong>PQBUF</strong>) screen.</p>
+<table caption="This table describes information about accessing and using the Profiling Bulk Update Facility (PQBUF) screen." class="" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Accessing_and_u_Item"></a>
+<p><strong>Item</strong></p></td>
+<td>
+
+<p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Accessing_and_u_1"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>System processing</strong> <a title="Read more 1" class="showhead bp03_tbl_Accessing_and_u_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Accessing_and_u_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The Profiling Bulk Update Facility (<strong>PQBUF</strong>) screen is used to select and automatically commence Service Components on customer records without the need to manually update individual customer records.</p>
+
+<p>The <strong>PQBUF</strong> screen will start 'STA' the Service Component by changing the first Service Action from Not Started ('<strong>NST</strong>') to Started ('<strong>STA</strong>').</p>
+
+<p>Actions include&#58;</p>
+		<ul>		<li>
+<strong>Book Appointment</strong> - the system will attempt to book an appointment. If successful, the action will be Completed ('<strong>COM</strong>'). A Manual Follow-up will be created if unsuccessful</li>
+		<li>
+<strong>Issue Form</strong> - the system will issue the appropriate form. Once the form is issued the action will be Completed ('<strong>COM</strong>')</li>
+		<li>
+<strong>File Review</strong> - if there are no appointments to be made or forms to be issued, the action will remain as Started ('<strong>STA</strong>') and a review created in the Integrated Review System (IRS)</li>		</ul>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Accessing_and_u_2"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Accessing the Profiling Bulk Update Facility (PQBUF) screen</strong> <a title="Read more 2" class="showhead bp03_tbl_Accessing_and_u_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Accessing_and_u_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The <strong>PQBUF</strong> screen is accessed by coding '<strong>PQBUF</strong>' in the <strong>Nxt&#58;</strong> field.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Accessing_and_u_3"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Screen fields</strong> <a title="Read more 3" class="showhead bp03_tbl_Accessing_and_u_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Accessing_and_u_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Upon navigation to the <strong>PQBUF</strong> screen, the <strong>Area/CSC&#58;</strong> field must be completed by entering a valid code that is compatible with the current environment code and pressing [<strong>Enter</strong>].</p>
+
+<p>Selecting Service Components via Area or National will select records from within any environment.</p>
+		<ul>		<li>
+<strong>CSC</strong> code will select Service Components for the service centre in the current environment</li>
+		<li>
+<strong>Area</strong> code will select Service Components for the Area across all environments</li>
+		<li>
+<strong>NAT</strong> (National) code will select Service Components across all environments</li>
+		</ul>
+<p><strong>Note</strong>&#58; if '<strong>NAT</strong>' (National) code is entered in the <strong>Area/CSC&#58;</strong> field, for a particular Service Component then the Service Component will be started in <strong>all</strong> Environments according to the <strong>Svc Reason</strong>, <strong>Number</strong> and <strong>Frequency</strong> entered.</p>
+
+<p>The <strong>PQBUF</strong> screen will then redisplay the following fields&#58;</p>
+		<ul>		<li>
+<strong>Service Cmpnt</strong> - This field requires a valid Service Component ID. Leading zeroes are not to be entered but will show upon redisplay</li>
+		<li>
+<strong>SVC Reason</strong> - This field can be used to restrict Service Components to particular Service Reasons. Valid values are&#58;</li>
+			<ul>			<li>
+<strong>ANY</strong> - Selects customers with any associated Service Reason</li>
+			<li>
+<strong>PEN</strong> - Selects customers with PEN Service Reason</li>
+			<li>
+<strong>NSS</strong> - Selects customers with NSS Service Reason</li>
+			<li>
+<strong>FAO</strong> - Selects customers with FAO Service Reason</li>
+			<li>
+Service Reason codes, for example AGE</li>		</ul>
+		<li>
+<strong>Number</strong> - This field is used to determine the number of records to be included in the bulk update. Valid values are 1 - 999</li>
+		<li>
+<strong>Freq</strong> - This field is used to determine the frequency with which the associated Service Component will run. Valid values are&#58;</li>
+			<ul>			<li>
+<strong>ONE</strong> - one off selection</li>
+			<li>
+<strong>1WE</strong> - weekly</li>
+			<li>
+<strong>2WE</strong> - two weekly</li>
+			<li>
+<strong>4WE</strong> - four weekly</li>		</ul>
+		<li>
+<strong>End Date</strong> - This field is used to end date the bulk selection. If left blank, the selection will continue to run with the frequency entered until a date is coded</li>
+		<li>
+<strong>Next Run Date</strong> - This field is protected and will display the date on which the selection is next due to be run as per the frequency coded</li>
+		<li>
+<strong>Logon ID</strong> - This field displays the logon ID of the latest user to update a selection</li>
+		</ul>
+<p>Action fields are displayed adjacent to the selection. Valid values are '<strong>C</strong>'orrect and '<strong>D</strong>'elete. See <a href="../ongoing-contact/102-01020100-03.html#bp03_tbl_Accessing_and_u_5">Correcting or deleting a current section</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Accessing_and_u_4"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Inserting a new bulk selection</strong> <a title="Read more 4" class="showhead bp03_tbl_Accessing_and_u_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Accessing_and_u_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To create a new bulk selection to commence, enter a valid Area or Service Centre code in the <strong>Area/CSC&#58;</strong> field.</p>
+
+<p>Update the following fields&#58;</p>
+
+<p><strong>Service Cmpnt</strong></p>
+		<ul>		<li>
+<strong>SVC Reason</strong> (if left blank, this field will default to <strong>ANY</strong>)</li>
+		<li>
+<strong>Number</strong></li>
+		<li>
+<strong>Freq</strong></li>
+		<li>
+<strong>End Date</strong> (if required).</li>
+		</ul>
+<p>Press [<strong>Enter</strong>]. A <strong>Confirm Selection Details?&#58;</strong> field will display. Code&#58;</p>
+		<ul>		<li>
+'<strong>Y</strong>'es to confirm the details and a new insert line will display or</li>
+		<li>
+'<strong>N</strong>'o, which will redisplay a blank insert line</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Accessing_and_u_5"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Correcting or deleting a current selection</strong> <a title="Read more 5" class="showhead bp03_tbl_Accessing_and_u_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Accessing_and_u_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Action fields are displayed adjacent to the selection. Valid values are&#58;</p>
+		<ul>		<li>
+'<strong>C</strong>'orrect - used to correct the Number, Frequency and/or End Date for any selection and</li>
+		<li>
+'<strong>D</strong>'elete - used to delete any selection that has not yet commenced</li>
+		</ul>
+<p>A <strong>Confirm Selection Details?&#58;</strong> field or <strong>Confirm Delete?&#58;</strong> field will display with a '<strong>Y</strong>'es or '<strong>N</strong>'o to be coded.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p></div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>
