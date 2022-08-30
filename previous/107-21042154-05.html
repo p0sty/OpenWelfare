@@ -196,21 +196,69 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+<a class="anchor" name="bp05_L3TT_Medicare_Overpa"></a>
+<h3>Medicare Overpayment (MCO) and Bulk Bill (BB) report formula list </h3>
+
+
+<p>Table 1&#58; Formulas are for editing or formatting the excel spreadsheet when extracting data from the Medicare Overpayment (MCO) and Bulk Bill (BB) report.</p>
+<table caption="Provides Formulas for editing or formatting the excel spreadsheet when extracting data from the Medicare Overpayment (MCO) and Bulk Bill (BB) report." width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp05_tbl_Medicare_Overpa_Number"></a>
+<p><strong>Number</strong></p></td>
+<td>
+
+<p><strong>Formulas</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Medicare_Overpa_1"></a>
+<p>1</p></td>
+<td>
+
+<p>=IF(ISERROR(TRIM(SUBSTITUTE(J2,MID(J2,FIND(&quot;MCO&quot;,J2)+3,256),&quot;&quot;))),&quot;BulkBill&quot;,&quot;MCO&quot;)</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Medicare_Overpa_2"></a>
+<p>2</p></td>
+<td>
+
+<p>=IF(LEFT(K2,2)=&quot;PR&quot;,MID(MID(MID(SUBSTITUTE(K2,&quot; &quot;,&quot;^&quot;,1),1,256),FIND(&quot;^&quot;,SUBSTITUTE(K2,&quot; &quot;,&quot;^&quot;,1)),256),2,FIND(&quot; &quot;,MID(MID(SUBSTITUTE(K2,&quot; &quot;,&quot;^&quot;,1),1,256),FIND(&quot;^&quot;,SUBSTITUTE(K2,&quot; &quot;,&quot;^&quot;,1)),256))-2),RIGHT(TRIM(SUBSTITUTE(J2,MID(J2,FIND(&quot;&#58;&quot;,J2),256),&quot;&quot;)),1))</p>
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp05_L2LL_Contact_details"></a>
+<h2 id="bp05_L2LL_Contact_details">Contact details</h2>
+
+
+<p><a target="_blank" class="extwebsitelink" href="https&#58;//www.servicesaustralia.gov.au/individuals/contact-us/phone-us#medicaregeneral">Medicare - general customer enquiries</a></p>
+
+<p>Debt Programme and Compensation Recovery (DPCR) and Compliance Programme Branch contacts</p>
+
+<p>Medicare EFT manual payments</p>
+
+<p>Bulk bill claims</p>
+
+<p>Medicare Provider Services (MPS) Assessing</p></div><div class="rightpanel">
+   
 </div>
-<!-- end primary tab container -->
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

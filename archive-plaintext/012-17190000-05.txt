@@ -4,19 +4,331 @@ System access and functionality issues for Veterans' Affairs Processing (VAP) 01
 -   Background
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains contact information and details of access groups,
+including descriptions, instructions and locations where applicable.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+On this Page:
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Contact details
+
+Veterans' Affairs Processing (VAP)
+
+RACF default groups
+
+Location and appropriate default groups
+
+Table 1: This table describes locations and the appropriate RACF default
+groups.
+
++-----------------------------------+-----------------------------------+
+| Location                          | Default group                     |
++-----------------------------------+-----------------------------------+
+| Services Australia Canberra       | CENTRAL, HAPA, HAPAR, TSMAJOR     |
++-----------------------------------+-----------------------------------+
+| P09 (DVA)                         | CENTRAL                           |
++-----------------------------------+-----------------------------------+
+| P07 (DVA)                         | TAS                               |
++-----------------------------------+-----------------------------------+
+| P06 (DVA)                         | WA                                |
++-----------------------------------+-----------------------------------+
+| P05 (DVA)                         | SANT                              |
++-----------------------------------+-----------------------------------+
+| P04 (DVA)                         | QLD                               |
++-----------------------------------+-----------------------------------+
+| P03 (DVA)                         | VIC                               |
++-----------------------------------+-----------------------------------+
+| P02 (DVA)                         | NSW                               |
++-----------------------------------+-----------------------------------+
+| Perth                             | WA                                |
++-----------------------------------+-----------------------------------+
+| Adelaide                          | SANT                              |
++-----------------------------------+-----------------------------------+
+| Melbourne                         | VIC                               |
++-----------------------------------+-----------------------------------+
+
+View only group
+
+View only access group for DVA and VAP staff
+
+Table 2: This table describes the view only access group for DVA and VAP
+staff.
+
++-----------------------+-----------------------+-----------------------+
+| Access group          | Description           | Instructions          |
++-----------------------+-----------------------+-----------------------+
+| CICS GROUP VPV -      | Contains no sensitive | Can be applied to any |
+| Veterans' Processing  | transactions.         | staff needing to view |
+| View                  |                       | DVA and VAP data.     |
++-----------------------+-----------------------+-----------------------+
+| CICS GROUP VVO        | Adds Veteran and      | Can be applied to     |
+|                       | Medicare service      | internal Services     |
+|                       | history transaction   | Australia staff       |
+|                       | VHOI                  | needing to view       |
+|                       |                       | Veteran and Medicare  |
+|                       |                       | service history (for  |
+|                       |                       | example, My Health    |
+|                       |                       | Record). Must never   |
+|                       |                       | be applied to         |
+|                       |                       | external staff        |
+|                       |                       | without approval.     |
++-----------------------+-----------------------+-----------------------+
+| CICS GROUP PBV - PBS  | Contains no sensitive | Can be applied to VAP |
+| View                  | transactions          | staff needing to view |
+|                       |                       | PBS data for DVA      |
+|                       |                       | purposes.             |
++-----------------------+-----------------------+-----------------------+
+
+Processing groups
+
+Processing access groups for VAP Service Officers, Team Coaches and PSO
+
+Table 3: This table describes the processing access groups for VAP
+Service Officers, Team Coaches and PSO.
+
++-----------------------+-----------------------+-----------------------+
+| Access group          | Description           | Instructions          |
++-----------------------+-----------------------+-----------------------+
+| CICS GROUP VPG -      | Provides access to    | Only granted to       |
+| Veterans' Processing  | the payment of claims | Service Officers      |
+| General               | transactions,         | paying VAP claims.    |
+|                       | supervisor rules and  |                       |
+|                       | Medicare service      |                       |
+|                       | history.              |                       |
++-----------------------+-----------------------+-----------------------+
+| CICS GROUP VPH -      | Provides access to    | Only granted to       |
+| Veterans' Processing  | VAMM screens for      | Service Officers who  |
+| Hospital              | viewing Hospital      | process and pay       |
+|                       | Contract information  | hospital claims.      |
+|                       | and access to payment |                       |
+|                       | history for Hospital  | No need for staff to  |
+|                       | services.             | have another          |
+|                       |                       | processing group.     |
++-----------------------+-----------------------+-----------------------+
+| CICS GROUP VPS -      | Provides access to    | Must only be granted  |
+| Veterans' Processing  | update the step-down  | to senior hospital    |
+| Super-hospital        | history for Hospital  | processing Service    |
+|                       | services.             | Officers.             |
+|                       |                       |                       |
+|                       |                       | No need for staff to  |
+|                       |                       | have another          |
+|                       |                       | processing group.     |
++-----------------------+-----------------------+-----------------------+
+
+Additional access for Team Coaches and PSO
+
+Team Coaches and PSO additional access group
+
+Table 4: This table describes the additional access group for Team
+Coaches and Programme Support Officer (PSO).
+
++-----------------+-----------------+-----------------+-----------------+
+| Access group    | Description     | Instructions    |                 |
++-----------------+-----------------+-----------------+-----------------+
+| GCICS G369 &    | -   GCICS G369  |                 |                 |
+| Production      |     contains    |                 |                 |
+| Secure Check    |     transaction |                 |                 |
+| VTA.OVAI01      |     OVAI        |                 |                 |
+|                 | -   Used to     |                 |                 |
+|                 |     access      |                 |                 |
+|                 |     Service     |                 |                 |
+|                 |     Officer     |                 |                 |
+|                 |     statistics  |                 |                 |
+|                 |                 |                 |                 |
+|                 | Only applied to |                 |                 |
+|                 | a Team Coach or |                 |                 |
+|                 | PSO.            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+VAP program management staff
+
+Access groups for VAP program management staff
+
+Table 5: This table describes the access groups for VAP program
+management staff.
+
++-----------------------+-----------------------+-----------------------+
+| Access group          | Description           | Instructions          |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VNB -      | Provides access for   | Never apply to state  |
+| Veterans' National    | VAP business staff.   | processing staff,     |
+| Business              |                       | policy or IT staff.   |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VNP -      | Provides access for   | Never apply to state  |
+| Veterans' National    | VAP policy staff.     | processing staff,     |
+| Policy                |                       | business or IT staff. |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VNT -      | Provides access for   | Staff in this area    |
+| Veterans' National IT | VAP IT developers.    | should never have     |
+|                       |                       | access to VPG, VPH or |
+|                       |                       | VPS.                  |
++-----------------------+-----------------------+-----------------------+
+
+Access for DVA staff
+
+DVA staff access and instructions
+
+Table 6: This table describes the access for DVA staff.
+
++-----------------------+-----------------------+-----------------------+
+| Access group          | Description           | Instructions          |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VPV -      | View access to DVA    | Applied to any DVA    |
+| Veterans' Processing  | data.                 | staff member that     |
+| View                  |                       | does not require      |
+|                       |                       | access to:            |
+|                       |                       |                       |
+|                       |                       | -   CICS Group VDV    |
+|                       |                       | -   CICS Group VDP    |
+|                       |                       | -   CICS Group VDM    |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VDV -      | View DVA data and     | Applied to DVA staff  |
+| Veterans' DVA MALCM   | update Hospital       | required to update    |
+|                       | contracts.            | private hospital      |
+|                       |                       | contracts.            |
+|                       |                       |                       |
+|                       |                       | This group should     |
+|                       |                       | never be applied to a |
+|                       |                       | Services Australia    |
+|                       |                       | staff member.         |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VDP -      | Provides access for   | This group should     |
+| Veterans' DVA PBS     | DVA PBS staff.        | never be applied to a |
+|                       |                       | Services Australia    |
+|                       |                       | staff member.         |
++-----------------------+-----------------------+-----------------------+
+| CICS Group VDM -      | View DVA and Medicare | Access to this group  |
+| Veterans' DVA         | service history for   | requires special      |
+| Medicare History      | veterans.             | delegate approval and |
+|                       |                       | must only be applied  |
+|                       |                       | to a DVA staff member |
+|                       |                       | working in the MEPI   |
+|                       |                       | or Medical and Allied |
+|                       |                       | Health PARS team.     |
+|                       |                       |                       |
+|                       |                       | This group should     |
+|                       |                       | never be applied to a |
+|                       |                       | Services Australia    |
+|                       |                       | staff member.         |
++-----------------------+-----------------------+-----------------------+
+
+Tivoli groups approved for VAP staff
+
+TAM groups that are approved for VAP operations and VAP staff
+
+Table 7: This table describes TAM (Tivoli Access Manager) groups that
+are approved for VAP operations and VAP program management staff. TAM
+Groups are not required by DVA staff.
+
++-----------------------+-----------------------+-----------------------+
+| Group name            | Description           | Staff applicable      |
++-----------------------+-----------------------+-----------------------+
+| DVA_data_corr         | DVA maintenance       | All                   |
+| ection_standard_group | system                |                       |
++-----------------------+-----------------------+-----------------------+
+| PDS_intranet          | PDS                   | All                   |
++-----------------------+-----------------------+-----------------------+
+| PDS_hpos_support      | PDS                   | All                   |
++-----------------------+-----------------------+-----------------------+
+| PDS_general_enquiry   | PDS                   | All                   |
++-----------------------+-----------------------+-----------------------+
+| PDS_c                 | PDS                   | All                   |
+| all_centre_operations |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| Hichol                | ECLIPSE claims        | Program management    |
++-----------------------+-----------------------+-----------------------+
+| PDS_D                 | PDS DVA speciality    | Program management    |
+| VAspeccode_operations | codes                 |                       |
++-----------------------+-----------------------+-----------------------+
+| pds_pgm_enquiry       | PDS Program           | All                   |
+|                       | Registration          |                       |
++-----------------------+-----------------------+-----------------------+
+
+General system functionality issues
+
+System functionality issues and how to resolve them
+
+Table 8: This table lists the common system functionality issues and
+outlines the process to resolve them.
+
++-----------------------------------+-----------------------------------+
+| Issue                             | Resolution                        |
++-----------------------------------+-----------------------------------+
+| Veteran History (VHOI)            | A service displayed on VHOI has   |
+|                                   | not necessarily been paid. Any    |
+|                                   | voucher that is received by the   |
+|                                   | mainframe that is not in error is |
+|                                   | displayed on veteran history      |
+|                                   | (VHOI). Service Officers must     |
+|                                   | check that the associated claim   |
+|                                   | has been paid to determine if the |
+|                                   | service has been paid.            |
++-----------------------------------+-----------------------------------+
+| Veteran services rejected with    | VHOI and statements (VPSI) are    |
+| reason code 376 not on statements | stored by patient file number.    |
+|                                   | When the veteran file number      |
+|                                   | cannot be determined, the system  |
+|                                   | is unable to write any            |
+|                                   | information to history (VHOI) or  |
+|                                   | the statement (VPSI). As a        |
+|                                   | consequence, when a service is    |
+|                                   | rejected with reason code 376     |
+|                                   | (veteran cannot be identified     |
+|                                   | with information supplied), the   |
+|                                   | information related to that       |
+|                                   | service will not be displayed.    |
++-----------------------------------+-----------------------------------+
+| Duplicate provider statements not | When a File Fix or other          |
+| available (NO STMTAVL)            | information culling action has    |
+|                                   | removed a patient from a claim,   |
+|                                   | the NO STMTAVL (no statement      |
+|                                   | available) message will display.  |
+|                                   | However, when one of a number of  |
+|                                   | services for a patient have been  |
+|                                   | culled, this error message is not |
+|                                   | displayed.                        |
++-----------------------------------+-----------------------------------+
+| 1-PATIENT Default Selecting and   | While changing or selecting a     |
+| Delete Service Line               | patient and using [F3] to         |
+|                                   | auto-select the patient in the    |
+|                                   | rest of the claim, if a service   |
+|                                   | line is deleted using D on the    |
+|                                   | action field and [F6], the system |
+|                                   | may ABEND. Service Officers can   |
+|                                   | resolve the ABEND by entering the |
+|                                   | full veteran number, including    |
+|                                   | leading 0s. To prevent the ABEND, |
+|                                   | Service Officers should complete  |
+|                                   | the [F3] patient selection        |
+|                                   | function in the entire claim      |
+|                                   | prior to attempting to delete a   |
+|                                   | service line.                     |
++-----------------------------------+-----------------------------------+
+| ABEND error message               | When processing a Veterans'       |
+|                                   | claim, sometimes the transaction  |
+|                                   | will fail and an 'ABEND' error    |
+|                                   | message will appear with an error |
+|                                   | code, for example,                |
+|                                   |                                   |
+|                                   | error: 'DFHAC2206 18:00:43        |
+|                                   | CICSPT02 Transaction SUSR failed  |
+|                                   | with ABEND AZI6'.                 |
+|                                   |                                   |
+|                                   | Report the error to the Programme |
+|                                   | Support Officer (PSO) who will    |
+|                                   | email the VAP Helpdesk with a     |
+|                                   | screen shot of the ABEND message. |
++-----------------------------------+-----------------------------------+
+| PCC Card Type Online Override     | When a Pension concession card    |
+|                                   | (PCC) cardholder is system        |
+|                                   | rejected with reason code 744 and |
+|                                   | an Online paperless claim has the |
+|                                   | ReferralOverrideTypeCde set to H, |
+|                                   | the system is inserting reason    |
+|                                   | code 350 over the top of the 744  |
+|                                   | rejection.                        |
++-----------------------------------+-----------------------------------+
 
                                    
 

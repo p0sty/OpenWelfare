@@ -196,21 +196,606 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This page contains information on accessing the Operational Statistics System (OSS).</p>
+
+<h2 id="On this Page&#58;">On this Page&#58;</h2>
+
+<div class="twisty">
+	
+<a class="anchor" name="bp05010000_OSS_screen_access"></a>
+<h2 id="bp05010000_OSS_screen_access">OSS screen access</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+<a class="anchor" name="bp05020000_Control_lines_for_ac"></a>
+<h3>Control lines for accessing OSS</h3>
+
+
+<p>This table lists the control lines to access the OSS.</p><table caption="This table lists the control lines to access the Operational Statistice System (OSS)." width="100%">
+<tr>
+<td width="16%">
+<a class="anchor" name="bp05020001_Control_line"></a>
+<p><strong>Control line</strong></p></td>
+<td>
+
+<p><strong>Explanation</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020002_Transaction_identifi"></a>
+<p>Transaction identifier</p></td>
+<td>
+
+<p>The transaction identifier consists of 4 characters (the same transaction identifiers used for Medicare OSS)&#58;</p>
+		<ul>		<li>
+character 1</li>
+			<ul>			<li>
+= Operational Statistics System</li>		</ul>
+		<li>
+character 2</li>
+			<ul>			<li>
+N = Medicare</li>		</ul>
+		<li>
+character 3, either&#58;</li>
+			<ul>			<li>
+O = Operator</li>
+			<li>
+B = Branch or Source Office Manager</li>
+			<li>
+R = Regional or Smart Centre Manager</li>
+			<li>
+S = State Office Manager</li>
+			<li>
+A = Central Office (Australia totals)</li>		</ul>
+		<li>
+character 4</li>
+			<ul>			<li>
+I = Initial enquiry</li>			</ul>			</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020003_Modifier"></a>
+<p>Modifier</p></td>
+<td>
+
+<p>Either&#58;</p>
+		<ul>		<li>
+SBA</li>
+		<li>
+PHR</li>
+		</ul>
+<p>The modifier used to tell the system return billing agent statistics or health fund statistic.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020004_DM"></a>
+<p>D/M</p></td>
+<td>
+
+<p>Either&#58;</p>
+		<ul>		<li>
+D = daily</li>
+		<li>
+M = modifier</li>
+		</ul>
+<p>Used to determine the period.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020005_Source_Office"></a>
+<p>Source Office</p></td>
+<td>
+
+<p>Source office codes are assigned to claims when they are background assessed. The first character identifies the state followed by the region identifier. For example, AJ = A (for NSW) followed by J (regional identifier).</p>
+		<ul>		<li>
+Offline transaction source office codes have been set up specifically for simplified billing claims. See the <a href="../your-health/011-43060060-05.html#bp05030000_Background_assessed_">Background assessed simplified billing claims</a> table.</li>
+		<li>
+Online transaction source office codes (pend processing) are recalled by using any source office code.</li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020006_Date"></a>
+<p>Date</p></td>
+<td>
+
+<p>The dates the statistics relate to any valid date in the format DDMMYY or date range with the dates separated by a comma.</p>
+
+<p><strong>Note&#58;</strong> 00MMYY is used when months of statistics are required.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020007_Back_loaded_modifier"></a>
+<p>Back loaded modifier</p></td>
+<td>
+
+<p>Valid value B.</p>
+
+<p>Used to return statistics for claims that originated in another source office but were finalised by the source office in the control line.</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05030000_Background_assessed_"></a>
+<h2 id="bp05030000_Background_assessed_">Background assessed simplified billing claims</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+<a class="anchor" name="bp05040000_Source_office_codes_"></a>
+<h3>Source office codes assigned to background assessed simplified billing claims</h3>
+
+
+<p>This table lists the source office codes assigned to background assessed simplified billing claims.</p><table caption="This table lists the source office codes assigned to background assessed simplified billing claims." width="100%">
+<tr>
+<td width="9%">
+<a class="anchor" name="bp05040001_State"></a>
+<p><strong>State</strong></p></td>
+<td width="30%">
+
+<p><strong>EDI and manual billing agent claims</strong></p></td>
+<td width="32%">
+
+<p><strong>EDI and manual health fund claims</strong></p></td>
+<td>
+
+<p><strong>ECLIPSE billing agent and health fund claims</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05040002_NSW"></a>
+<p>NSW</p></td>
+<td>
+
+<p>AJAP</p></td>
+<td>
+
+<p>AJEF</p></td>
+<td>
+
+<p>AYEC</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05040003_VIC"></a>
+<p>VIC</p></td>
+<td>
+
+<p>CDBS</p></td>
+<td>
+
+<p>CDFP</p></td>
+<td>
+
+<p>CYEC</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05040004_QLD"></a>
+<p>QLD</p></td>
+<td>
+
+<p>EAAP</p></td>
+<td>
+
+<p>EAEF</p></td>
+<td>
+
+<p>EYEQ</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05040005_SA"></a>
+<p>SA</p></td>
+<td>
+
+<p>GAAP</p></td>
+<td>
+
+<p>GAEF</p></td>
+<td>
+
+<p>GYEC</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05040006_WA"></a>
+<p>WA</p></td>
+<td>
+
+<p>IAAP</p></td>
+<td>
+
+<p>IAEF</p></td>
+<td>
+
+<p>IYEC</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05040007_TAS"></a>
+<p>TAS</p></td>
+<td>
+
+<p>KAAP</p></td>
+<td>
+
+<p>KAEF</p></td>
+<td>
+
+<p>KYEC</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05050000_OSS_processing_and_w"></a>
+<h2 id="bp05050000_OSS_processing_and_w">OSS processing and work on hand screen field descriptions</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p><strong>Note&#58;</strong></p>
+
+<p>Within the&#58;</p>
+		<ul>		<li>
+simplified billing system the originating source office is the transmitting source office for the claim such as AJAP, CDBS, EAAP, IAAP and KAAP</li>
+		<li>
+health fund system the originating source office is the transmitting source office for states such as AJEF, CDFP, EAEF, GAEF, IAEF and KAEF</li>
+		</ul><a class="anchor" name="bp05060000_Fields_displayed_on_"></a>
+<h3>Fields displayed on the OSS processing and work on hand screen</h3>
+
+
+<p>This table lists the fields displayed on the OSS processing and work on hand screen.</p><table caption="This table lists the fields displayed on the Operational Statistics System (OSS) processing and work on hand screen." width="100%">
+<tr>
+<td width="24%">
+<a class="anchor" name="bp05060001_Field_name"></a>
+<p><strong>Field name</strong></p></td>
+<td>
+
+<p><strong>This field displays the total number of…</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05060002_Transmitted_ClaimsP"></a>
+<p>Transmitted Claims</p>
+		<ul>		<li>
+Pat/Prov Segments</li>
+		<li>
+Lines</li></td>
+<td>
+		</ul>
+<p>Health fund and billing agent claims transmitted.</p>
+
+<p><strong>Pat/Prov segments</strong></p>
+
+<p>Patient/provider segments (equivalent of the current direct bill voucher) for the health fund claims received.</p>
+
+<p><strong>Lines</strong></p>
+
+<p>Item lines for the pat/prov segments.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05060003_System_Paid_Claims"></a>
+<p>System Paid - Claims</p>
+		<ul>		<li>
+Pat/Prov segments</li>
+		<li>
+Lines</li></td>
+<td>
+		</ul>
+<p>Health fund claims received that were error free and have been automatically paid by the system.</p>
+
+<p><strong>Pat/Prov segments</strong></p>
+
+<p>Error free pat/prov segments that were automatically paid by the system.</p>
+
+<p><strong>Lines</strong></p>
+
+<p>Error free item lines for the pat/prov segments that were automatically paid by the system.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05060004_Pend_Paid_PatProv"></a>
+<p>Pend Paid - Pat/Prov segments</p>
+		<ul>		<li>
+Lines</li></td>
+<td>
+		</ul>
+<p>Pat/prov segments activated within paid claims. (This includes rejected segments, resolved segments, paid and pend activated).</p>
+
+<p><strong>Lines</strong></p>
+
+<p>Pend paid item lines for the pat/prov segments.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05060005_Rejected_Lines_Man"></a>
+<p>Rejected Lines - Manual</p>
+		<ul>		<li>
+System</li></td>
+<td>
+		</ul>
+<p>Item lines rejected manually by Service Officers.</p>
+
+<p><strong>System</strong></p>
+
+<p>Items lines rejected automatically due to assessing rules.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05060006_Adjustments_Patpr"></a>
+<p>Adjustments - Pat/prov segments</p>
+		<ul>		<li>
+Lines</li></td>
+<td>
+		</ul>
+<p>Pat/prov segments adjustment lines for the pat/prov segments.</p>
+
+<p><strong>Lines</strong></p>
+
+<p>Item lines adjusted.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05060007_Work_On_HandPended"></a>
+<p>Work On Hand</p>
+
+<p>Pended</p></td>
+<td>
+
+<p>Pat/prov segments, lines and unresolved lines waiting for Service Officer action.</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05070000_Claims_statistics_by"></a>
+<h2 id="bp05070000_Claims_statistics_by">Claims statistics by source office code</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+<a class="anchor" name="bp05080000_Recalling_claims_sta"></a>
+<h3>Recalling claims statistics for source office codes</h3>
+
+
+<p>This table lists information displayed in the work on hand processing screen fields when recalling claims statistics by source office code.</p><table caption="This table lists information displayed in the work on hand processing screen fields when recalling claims statistics by source office code." width="100%">
+<tr>
+<td width="20%">
+<a class="anchor" name="bp05080001_Column_name"></a>
+<p><strong>Column name</strong></p></td>
+<td>
+
+<p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05080002_This_location"></a>
+<p>This location</p></td>
+<td>
+
+<p>Productivity figures when the originating source office and processing source office are the same as that on the control line.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05080003_Other_location"></a>
+<p>Other location</p></td>
+<td>
+
+<p>Productivity figures when the source office keyed on the control line is not the originating source office but is the processing source office.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05080004_Total"></a>
+<p>Total</p></td>
+<td>
+
+<p>The aggregated total of This location and Other location figures.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05080005_Work_on_hand"></a>
+<p>Work on hand</p></td>
+<td>
+
+<p><strong>Pat/Prov Segments</strong></p>
+
+<p>The number of PAT/PROV segments for background assessing and pend that are still on hand.</p>
+
+<p><strong>Lines</strong></p>
+
+<p>The number of lines for background assessing and pend.</p>
+
+<p><strong>Unresolved Lines</strong></p>
+
+<p>The number of lines not yet pend processed. This field is only available in the pended column.</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05090000_Claims_statistics_by"></a>
+<h2 id="bp05090000_Claims_statistics_by">Claims statistics by state</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+<a class="anchor" name="bp05100000_Recalling_claims_sta"></a>
+<h3>Recalling claims statistics by state</h3>
+
+
+<p>This table describes what information is displayed in the work on hand processing screen fields when recalling claims by state.</p><table caption="This table describes what information is displayed in the work on hand processing screen fields when recalling claims by state." width="100%">
+<tr>
+<td width="20%">
+<a class="anchor" name="bp05100001_Column_name"></a>
+<p><strong>Column name</strong></p></td>
+<td>
+
+<p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05100002_This_location"></a>
+<p>This location</p></td>
+<td>
+
+<p>Productivity figures when the originating source office and processing source office are within the state specified on the control line.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05100003_Other_location"></a>
+<p>Other location</p></td>
+<td>
+
+<p>Productivity figures when the state keyed on the control line is not the originating source office state but rather the processing source office state.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05100004_Total"></a>
+<p>Total</p></td>
+<td>
+
+<p>The aggregated total of This Location and Other Location figures.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05100005_Work_on_hand"></a>
+<p>Work on hand</p></td>
+<td>
+
+<p><strong>Pat/Prov Segments</strong></p>
+
+<p>The number of PAT/PROV segments for background assessing and pend that are still on hand.</p>
+
+<p><strong>Lines</strong></p>
+
+<p>The number of lines for background assessing and pend.</p>
+
+<p><strong>Unresolved Lines</strong></p>
+
+<p>The number of lines not yet pend processed. This field is only available in the pended column.</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05110000_Claims_statistics_by"></a>
+<h2 id="bp05110000_Claims_statistics_by">Claims statistics by region</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+<a class="anchor" name="bp05120000_Recalling_claims_sta"></a>
+<h3>Recalling claims statistics by region</h3>
+
+
+<p>This table describes what information is displayed in the work on hand processing screen fields when recalling claims by region.</p><table caption="This table describes what information is displayed in the work on hand processing screen fields when recalling claims by region." width="100%">
+<tr>
+<td width="20%">
+<a class="anchor" name="bp05120001_Column_name"></a>
+<p><strong>Column name</strong></p></td>
+<td>
+
+<p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05120002_This_location"></a>
+<p>This location</p></td>
+<td>
+
+<p>Productivity figures when the originating source office and processing source office are within the region specified on the control line.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05120003_Other_location"></a>
+<p>Other location</p></td>
+<td>
+
+<p>Productivity figures when the region keyed on the control line is not the originating source office state but rather the processing source office region.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05120004_Total"></a>
+<p>Total</p></td>
+<td>
+
+<p>The aggregated total of This Location and Other Location figures.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05120005_Work_on_hand"></a>
+<p>Work on hand</p></td>
+<td>
+
+<p><strong>Pat/Prov Segments</strong></p>
+
+<p>The number of PAT/PROV segments for background assessing and pend that are still on hand.</p>
+
+<p><strong>Lines</strong></p>
+
+<p>The number of lines for background assessing and pend.</p>
+
+<p><strong>Unresolved Lines</strong></p>
+
+<p>The number of lines not yet pend processed. This field is only available in the pended column.</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+
+<p></p>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

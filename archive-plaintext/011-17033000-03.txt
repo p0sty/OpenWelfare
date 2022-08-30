@@ -6,19 +6,158 @@ Electronic Data Interchange (EDI) claims for Simplified Billing in Medicare 011-
 -   Process
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains information on how to process rejected and partially
+rejected Electronic Data Interchange (EDI) claims via the Work
+Distribution, Allocation and Management System (WDAM).
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Process Simplified Billing EDI claims once picked up for WDAM Simplified Billing queue
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+This table describes the process to finalise payments for Simplified
+Billing EDI claims once picked up for the Work Distribution, Allocation
+and Management System (WDAM) Simplified Billing queue.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Process EDI claim + Read more ... |
+|                                   |                                   |
+|                                   | Log on to Mainframe:              |
+|                                   |                                   |
+|                                   | -   MQRI press [Enter]            |
+|                                   | -   enter 'SB' in the GIVE ME     |
+|                                   |     NEXT CLAIM field and press    |
+|                                   |     [Enter]                       |
+|                                   |                                   |
+|                                   | The system will return the next   |
+|                                   | most urgent Simplified Billing    |
+|                                   | electronic claim in the FAPI      |
+|                                   | (FAPC) screen. This may be either |
+|                                   | an EDI or Electronic Claim        |
+|                                   | Lodgement and Information         |
+|                                   | Processing Service Environment    |
+|                                   | (ECLIPSE) claim. An operator can  |
+|                                   | not specify the Simplified        |
+|                                   | Billing claim type to process in  |
+|                                   | WDAM.                             |
+|                                   |                                   |
+|                                   | For access to WDAM, complete a    |
+|                                   | WDAM Access request to Simplified |
+|                                   | Billing Specialist queue on the   |
+|                                   | Resources page.                   |
+|                                   |                                   |
+|                                   | The Resources page contains links |
+|                                   | to the WDAM Operator Manual.      |
++-----------------------------------+-----------------------------------+
+| 2                                 | Assess EDI Claim + Read more ...  |
+|                                   |                                   |
+|                                   | The claim processing screen will  |
+|                                   | be displayed.                     |
+|                                   |                                   |
+|                                   | Review and apply assessing        |
+|                                   | restrictions by following warning |
+|                                   | messages:                         |
+|                                   |                                   |
+|                                   | -   warning message must be       |
+|                                   |     actioned in order from left   |
+|                                   |     to right and further          |
+|                                   |     explanations can be viewed by |
+|                                   |     placing the cursor under the  |
+|                                   |     return message and pressing   |
+|                                   |     [PF1]                         |
+|                                   | -   check patient history to      |
+|                                   |     determine if services should  |
+|                                   |     be paid or rejected           |
+|                                   |                                   |
+|                                   | All assessing rules apply and     |
+|                                   | must be followed, for example:    |
+|                                   |                                   |
+|                                   | -   multiple operation rule       |
+|                                   | -   diagnostic service rules      |
+|                                   | -   restrictions                  |
+|                                   | -   time dependencies             |
+|                                   | -   amputations                   |
+|                                   | -   anaesthetics formulae/RVG     |
+|                                   |                                   |
+|                                   | Text field messages must be read. |
+|                                   | Place the cursor under the item   |
+|                                   | number and press [PF4].           |
+|                                   |                                   |
+|                                   | Note:                             |
+|                                   |                                   |
+|                                   | -   Assistant items must be       |
+|                                   |     processed last in a batch.    |
+|                                   |     Key F3 to scroll between      |
+|                                   |     vouchers in error             |
+|                                   | -   Ensure consistency between    |
+|                                   |     surgical item and assistant   |
+|                                   |     item text fields. If no       |
+|                                   |     surgical items have been      |
+|                                   |     claimed, assess assistant     |
+|                                   |     items by manually calculating |
+|                                   |     the schedule fee amount.      |
+|                                   |     Operators must access service |
+|                                   |     text notations to determine   |
+|                                   |     what surgical items the       |
+|                                   |     assistant surgeon assisted on |
+|                                   | -   Where applicable, key the     |
+|                                   |     appropriate Processing        |
+|                                   |     indicator in the PI field as  |
+|                                   |     per the return warning        |
+|                                   |     messages                      |
+|                                   | -   When rejecting a service, the |
+|                                   |     payee code (P) field must be  |
+|                                   |     changed from 8 to F, and the  |
+|                                   |     applicable RSN code keyed in  |
+|                                   |     the RSN field                 |
++-----------------------------------+-----------------------------------+
+| 3                                 | Finalise EDI Claim + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Once voucher has been assessed:   |
+|                                   |                                   |
+|                                   | -   press [Enter]                 |
+|                                   | -   key [PF3] to move to the next |
+|                                   |     patient voucher in error      |
+|                                   |                                   |
+|                                   | Note: a claim cannot be completed |
+|                                   | until all errors have been        |
+|                                   | resolved. Once all errors have    |
+|                                   | been resolved, the system will    |
+|                                   | return the message 'NO ERRORS OK  |
+|                                   | TO PAY'.                          |
++-----------------------------------+-----------------------------------+
+| 4                                 | Pay EDI claim + Read more ...     |
+|                                   |                                   |
+|                                   | To process:                       |
+|                                   |                                   |
+|                                   | -   Over key FAPC to FPPI and     |
+|                                   |     press [Enter] to update the   |
+|                                   |     claim status                  |
+|                                   | -   Over key FPPI to FPPP and     |
+|                                   |     press [Enter] to pay the      |
+|                                   |     claim. The system will return |
+|                                   |     ‘PAID OK’ on the MQRI screen  |
+|                                   | -   Press [Enter] to return to    |
+|                                   |     the Online Claims Management  |
+|                                   |     screen to select the next     |
+|                                   |     most urgent claim and repeat  |
+|                                   |     above                         |
++-----------------------------------+-----------------------------------+
+| 5                                 | EDI failed transmissions + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | If an EDI claim has failed it     |
+|                                   | will appear on the EDI105 report  |
+|                                   | and the private health insurer    |
+|                                   | will be contacted by the          |
+|                                   | Simplified Billing programme      |
+|                                   | area.                             |
+|                                   |                                   |
+|                                   | See also: Simplified Billing      |
+|                                   | reports in RMDS.                  |
++-----------------------------------+-----------------------------------+
 
                                    
 

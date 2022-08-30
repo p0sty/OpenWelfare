@@ -9,19 +9,60 @@ Derived fee items for Telehealth claims in Medicare 012-41050030
 This procedure is under review. An Operational Message about this
 content exists.
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains error codes for derived fee items for Telehealth
+claims and a link to Medicare Benefits Schedule (MBS) Online.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+System codes
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Note: these reason codes are system generated - no operator intervention
+is required.
+
+Derived fee item error codes
+
+This table describes derived fee scenarios and associated system
+responses and codes for resolution.
+
++-----------------------------------+-----------------------------------+
+| Situation                         | System response                   |
++-----------------------------------+-----------------------------------+
+| A Telehealth derived fee item is  | -   error message 2-ITEM COV is   |
+| claimed prior to the item's start |     returned                      |
+| date                              | -   use reason code 206 to        |
+|                                   |     resolve message               |
++-----------------------------------+-----------------------------------+
+| More than one Telehealth derived  | -   error message 3-MULT ITM is   |
+| fee item and existing             |     returned                      |
+| specialist/consultant physician   | -   use reason code 640 to        |
+| consultation item (such as a base |     resolve message               |
+| item) are claimed within the same |                                   |
+| group/sub-group                   |                                   |
++-----------------------------------+-----------------------------------+
+| Each new specialist/consultant    | -   error message 3-NO BASE is    |
+| physician Telehealth derived fee  |     returned                      |
+| item is only claimable when       | -   use reason code 223 to        |
+| present in the same claim as an   |     resolve message               |
+| existing specialist/consultant    |                                   |
+| physician consultation item (such |                                   |
+| as a base item)                   |                                   |
++-----------------------------------+-----------------------------------+
+| More than one Telehealth existing | -   error message 6-MULT BSE is   |
+| specialist/consultant physician   |     returned                      |
+| consultation item (such as a base | -   use reason code 641 to        |
+| item) is claimed with a single    |     resolve message               |
+| Telehealth derived fee item in    |                                   |
+| the same                          |                                   |
++-----------------------------------+-----------------------------------+
+| The Telehealth derived fee item   | -   warning message 8-DRV ITM is  |
+| is associated with a zero dollar  |     returned                      |
+| benefit                           | -   use reason codes 642 and 643  |
+|                                   |     to resolve message            |
++-----------------------------------+-----------------------------------+
+
+External websites
+
+MBS Online Medicare Benefits Schedule
 
                                    
 

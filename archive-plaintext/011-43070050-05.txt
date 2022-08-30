@@ -5,19 +5,155 @@ Simplified Billing enquiry FHEI screen 011-43070050
 -   Process
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains a list of Simplified Billing enquiry FHEI screen
+functions and a list of modifiers including shortened modifiers used to
+display information on the FHEI screen.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+FHEI screen and modifiers
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Modifiers assist in refining the information displayed in the FHEI
+screen. For example, if the adjusted claim Id is included within the
+modifier, the system will only display items that belong to the adjusted
+claim.
+
+Screen functions
+
+FHEI screen functions
+
+This table provides a list of keys that perform different functions on
+the FHEI screen.
+
++-----------------------------------+-----------------------------------+
+| Key                               | Description                       |
++-----------------------------------+-----------------------------------+
+| PF1                               | Enables PF1 function (Help) to    |
+|                                   | display description/definition    |
+|                                   | (as per Patient claim screens) by |
+|                                   | cursor location: Reason Code.     |
+|                                   |                                   |
+|                                   | Example: When the cursor is       |
+|                                   | placed under a reason code and    |
+|                                   | the F1 Help key is pressed, the   |
+|                                   | explanation/description that      |
+|                                   | applies for the reason code is to |
+|                                   | be displayed in the information   |
+|                                   | area at the bottom of the screen. |
++-----------------------------------+-----------------------------------+
+| PPF2                              | When selected will display the    |
+|                                   | claim id and date of lodgement of |
+|                                   | claim for each item. For:         |
+|                                   |                                   |
+|                                   | -   unadjusted items, selecting   |
+|                                   |     PF2 key, will display the     |
+|                                   |     original claim id and         |
+|                                   |     original date of lodgement    |
+|                                   | -   adjusted items, selecting     |
+|                                   |     this key, will display the    |
+|                                   |     respective adjusted claim id  |
+|                                   |     and adjusted date of          |
+|                                   |     lodgement                     |
+|                                   |                                   |
+|                                   | The CLAIM ID and DOL columns will |
+|                                   | be displayed in place of BENEFIT  |
+|                                   | and SER PROV columns              |
+|                                   |                                   |
+|                                   | Then press PF2 again to return    |
+|                                   | back to basic screen.             |
++-----------------------------------+-----------------------------------+
+| Service Lines Limit               | If the number of service lines is |
+|                                   | greater than 1,500, the message   |
+|                                   | 1-MAXLINES is displayed with the  |
+|                                   | FHEI control line. No other       |
+|                                   | details are to be displayed on    |
+|                                   | the screen at this stage.         |
+|                                   |                                   |
+|                                   | When this message appears add the |
+|                                   | modifier to include the ‘CARD     |
+|                                   | NUMBER,PROVIDER NUMBER’ to filter |
+|                                   | the retrieved segments.           |
+|                                   |                                   |
+|                                   | Note: the 1-MAXLINES message will |
+|                                   | remain on the screen until the    |
+|                                   | modifier is entered.              |
++-----------------------------------+-----------------------------------+
+| PF12-CANCEL                       | Cancels out the enquiry           |
+|                                   | transaction.                      |
++-----------------------------------+-----------------------------------+
+| PF8-FORWARD and PF7-BACKWARD      | If all items retrieved for the    |
+|                                   | claim cannot fit on one page, the |
+|                                   | message 'MORE' is displayed. Use  |
+|                                   | these function keys to scroll     |
+|                                   | through the claim details.        |
++-----------------------------------+-----------------------------------+
+
+New modifiers for use
+
+Example
+
+This table provides an example of modifiers in their shortened form. The
+below shortened modifiers can only be used on the FHEI screen. This is
+to ensure modifiers stay within the modifier character limit of 55.
+
++-----------------------------------+-----------------------------------+
+| Modifiers                         | Shortened modifiers               |
++-----------------------------------+-----------------------------------+
+| FHEI,MINOR ID OR REGISTRATION     | FHEI,MINOR ID OR REGISTRATION     |
+| NUMBER,CLAIM                      | NUMBER,L                          |
+| ID,DOL=DDMMYY                     | =DDMMYY,F/DDMMYY,T/DDMMYY,I/NNNNN |
+| ,FROM/DDMMYY,TO/DDMMYY,ITEM/NNNNN |                                   |
++-----------------------------------+-----------------------------------+
+
+Other modifiers for use
+
+Depending on which modifier combination is used will depend on the
+information displayed on the FHEI enquiry screen.
+
+Other modifiers for use on FHEI screen
+
+This table lists the modifiers that can be used with other modifiers for
+the FHEI screen.
+
+Note: the shortened modifiers are in bold.
+
++-----------------------------------+-----------------------------------+
+| Modifier                          | Description                       |
++-----------------------------------+-----------------------------------+
+| ADJ                               | LDA claims for Simplified Billing |
++-----------------------------------+-----------------------------------+
+| NNNNNN                            | Claim Id                          |
++-----------------------------------+-----------------------------------+
+| L=ddmmyy or DOL=ddmmyy or         | Date of lodgement                 |
+| DOL/ddmmyy                        |                                   |
++-----------------------------------+-----------------------------------+
+| P/ddmmyy or DOP/ddmmyy            | Date of processing                |
++-----------------------------------+-----------------------------------+
+| F/ddmmyy or FROM/ddmmyy           | Services from the specified date  |
+|                                   | of service                        |
++-----------------------------------+-----------------------------------+
+| IRN                               | Medicare card reference           |
+|                                   | number/sub-numerate of the        |
+|                                   | required patient                  |
++-----------------------------------+-----------------------------------+
+| I/nnnnn or ITEM/nnnnn             | Display specified item            |
++-----------------------------------+-----------------------------------+
+| I/nnnnn-nnnnn or ITEM/nnnnn-nnnnn | Services for the specified item   |
+|                                   | range                             |
++-----------------------------------+-----------------------------------+
+| name                              | First name of the patient         |
++-----------------------------------+-----------------------------------+
+| SORT/DOS                          | Sort display in date of service   |
++-----------------------------------+-----------------------------------+
+| F/ddmmyy or FROM/ddmmyy           | From date                         |
++-----------------------------------+-----------------------------------+
+| T/ddmmyy or TO/ddmmyy             | Services to the nominated date of |
+|                                   | service                           |
++-----------------------------------+-----------------------------------+
+| cccccccccc                        | Medicare card number              |
++-----------------------------------+-----------------------------------+
+| AAAAAAAAA (alpha and numeric)     | Minor ID or Registration number   |
++-----------------------------------+-----------------------------------+
 
                                    
 

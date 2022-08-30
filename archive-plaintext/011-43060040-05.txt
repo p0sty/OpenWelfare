@@ -4,19 +4,223 @@ Pend processing of Simplified Billing manual claims for Medicare 011-43060040
 -   Background
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains a list of the transaction identifiers associated with
+Simplified Billing pend processing, a list of FASI,DELETE edit checks, a
+list of insert and delete line values in FAPI, a list of FAPI screen
+field descriptions, FAPI key functions and the Work Distribution,
+Allocation and Management System (WDAM) Operator Manual.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Transaction identifiers
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Transaction identifiers associated with Simplified Billing pend processing
+
+Table 1: This table contains a list of the transaction identifiers
+associated with Simplified Billing pend processing.
+
++-----------------------------------+-----------------------------------+
+| Transaction.                      | Description                       |
++-----------------------------------+-----------------------------------+
+| FAPI                              | Initiate access to a pended       |
+|                                   | Simplified Billing claim.         |
++-----------------------------------+-----------------------------------+
+| FAPC                              | Allow standard claim changes to   |
+|                                   | be performed.                     |
++-----------------------------------+-----------------------------------+
+| FPPI                              | NO ERRORS OK TO PAY.              |
++-----------------------------------+-----------------------------------+
+| FPPP                              | P TO PAY.                         |
++-----------------------------------+-----------------------------------+
+| FBPI                              | Initiate browse of a pended       |
+|                                   | Simplified Billing claim.         |
++-----------------------------------+-----------------------------------+
+| FBPC                              | View pended Simplified Billing    |
+|                                   | claim.                            |
++-----------------------------------+-----------------------------------+
+| FASI                              | Initiate supervisor access and    |
+|                                   | option to delete pended claim.    |
++-----------------------------------+-----------------------------------+
+| FASC                              | Supervisor allowed claim changes  |
+|                                   | to be performed.                  |
++-----------------------------------+-----------------------------------+
+
+FASI,DELETE Edit checks
+
+Error messages and checks
+
+Table 2: This table contains a list of FASI,DELETE edit checks.
+
++-----------------------------------+-----------------------------------+
+| Error message.                    | Edit check                        |
++-----------------------------------+-----------------------------------+
+| 1-SRCE OFF                        | The Service Officer has attempted |
+|                                   | to delete a manual claim          |
+|                                   | registered to a different source  |
+|                                   | office code that was original     |
+|                                   | keyed for that claim.             |
++-----------------------------------+-----------------------------------+
+| 1-SUPVSR                          | The Service Officer lacks         |
+|                                   | supervisor access or has          |
+|                                   | attempted the DELETE modifier     |
+|                                   | with FAPI rather than FASI        |
++-----------------------------------+-----------------------------------+
+| 3-STATUS                          | The manual claim does not have a  |
+|                                   | current status of PEND.           |
++-----------------------------------+-----------------------------------+
+| 2-CLM TYPE                        | The claim is not a manually       |
+|                                   | entered claim.                    |
++-----------------------------------+-----------------------------------+
+
+Insert and delete lines in FAPI
+
+Use the A field on the FAPC screen to insert and delete lines in FAPC.
+
+Note: actions can be keyed for many service lines but they must be of
+the same type, that is, all ‘D’ or all ‘I’.
+
+Insert and delete line values, descriptions and explanations
+
+Table 3: This table lists the valid values in the A field. Key one of
+the following values in the A field and press [PF6].
+
++-----------------------+-----------------------+-----------------------+
+| Value                 | Description           | Explanation           |
++-----------------------+-----------------------+-----------------------+
+| I                     | Insert a service      | Insert a blank        |
+|                       | line.                 | service line under    |
+|                       |                       | this line and move    |
+|                       |                       | all subsequent        |
+|                       |                       | service lines down    |
+|                       |                       | one line.             |
++-----------------------+-----------------------+-----------------------+
+| D                     | Delete a service      | Delete this service   |
+|                       | line.                 | line and move all     |
+|                       |                       | subsequent service    |
+|                       |                       | lines up one line.    |
++-----------------------+-----------------------+-----------------------+
+
+FAPI field descriptions
+
+FAPI screen field descriptions
+
+Table 4: This table contains a list of FAPI screen field descriptions.
+
++-----------------------------------+-----------------------------------+
+| Field.                            | Description                       |
++-----------------------------------+-----------------------------------+
+| A                                 | Action field – a particular value |
+|                                   | in this field in conjunction with |
+|                                   | [PF6] will insert or delete lines |
+|                                   | in FAPI.                          |
++-----------------------------------+-----------------------------------+
+| POS                               | Identifies a group of items       |
+|                                   | within a patient/provider         |
+|                                   | segment.                          |
++-----------------------------------+-----------------------------------+
+| ITEM                              | Medicare item number for the      |
+|                                   | service rendered.                 |
++-----------------------------------+-----------------------------------+
+| DOS                               | The date the service was rendered |
+|                                   | or the date of referral.          |
++-----------------------------------+-----------------------------------+
+| P                                 | Payee code used to indicate       |
+|                                   | whether the service is to be paid |
+|                                   | or rejected.                      |
++-----------------------------------+-----------------------------------+
+| CHARGE                            | The amount charged for the        |
+|                                   | service.                          |
++-----------------------------------+-----------------------------------+
+| PI                                | Processing indicator used to      |
+|                                   | supply the system with any        |
+|                                   | additional information needed to  |
+|                                   | pay the service.                  |
++-----------------------------------+-----------------------------------+
+| RSN                               | Used to key a reason code         |
+|                                   | associated with payment or        |
+|                                   | rejection.                        |
++-----------------------------------+-----------------------------------+
+| MD                                | Used to modify the benefit        |
+|                                   | payable for the service.          |
++-----------------------------------+-----------------------------------+
+| FEE                               | Schedule fee for the services     |
+|                                   | rendered.                         |
++-----------------------------------+-----------------------------------+
+| BENEFIT                           | Medicare benefit payable for the  |
+|                                   | service.                          |
++-----------------------------------+-----------------------------------+
+| T                                 | Text, not used in manual data     |
+|                                   | entry.                            |
++-----------------------------------+-----------------------------------+
+| REQ PROV                          | Provider number of the            |
+|                                   | practitioner who                  |
+|                                   | requested/referred the service.   |
++-----------------------------------+-----------------------------------+
+| REF TO                            | Referral expiry date.             |
++-----------------------------------+-----------------------------------+
+| OTX                               | (PF4) to view operator text       |
++-----------------------------------+-----------------------------------+
+| NO                                | Number of months the referral is  |
+|                                   | valid (used when other than 12    |
+|                                   | months – general or 3 months –    |
+|                                   | specialist).                      |
++-----------------------------------+-----------------------------------+
+
+FAPI PF Key functions
+
+FAPI PF (function key) descriptions
+
+Table 5: This table contains a list of FAPI PF (function) keys that can
+be used on the FAPI suite of screens.
+
++-----------------------------------+-----------------------------------+
+| Function key                      | Function                          |
++-----------------------------------+-----------------------------------+
+| PF1-HELP                          | Displays an explanation for a     |
+|                                   | return message or a specific      |
+|                                   | field.                            |
++-----------------------------------+-----------------------------------+
+| PF3-NEXT ERR                      | Displays the next error in the    |
+|                                   | claim.                            |
++-----------------------------------+-----------------------------------+
+| PF4-SHOW TXT                      | Position cursor on the T column   |
+|                                   | field and press [PF4] will        |
+|                                   | display the item text.            |
++-----------------------------------+-----------------------------------+
+| PF6-INS/DEL                       | Used to perform action(s)         |
+|                                   | specified in the action field.    |
+|                                   | The actions that can be performed |
+|                                   | are insert a blank line and       |
+|                                   | delete a line.                    |
++-----------------------------------+-----------------------------------+
+| PF7-BACKWARDS                     | Used to move backward to previous |
+|                                   | history lines in potential        |
+|                                   | conflict with items being         |
+|                                   | assessed.                         |
++-----------------------------------+-----------------------------------+
+| PF8-FORWARDS                      | Used to move forwards to          |
+|                                   | additional history lines in       |
+|                                   | potential conflict with items     |
+|                                   | being assessed.                   |
++-----------------------------------+-----------------------------------+
+| PF8-BROWSE                        | Displays the next                 |
+|                                   | patient/provider segment.         |
++-----------------------------------+-----------------------------------+
+| PF10 - INS                        | Add operator text.                |
++-----------------------------------+-----------------------------------+
+| PF12-CANCEL                       | Cancels transaction.              |
++-----------------------------------+-----------------------------------+
+
+WDAM Operator Manual
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png]
+Work Distribution, Allocation and Management System (WDAM) Operator
+Manual
 
                                    
 

@@ -346,6 +346,10 @@ Table 1
 |                                   | finalising claims to ensure they  |
 |                                   | are correct.                      |
 |                                   |                                   |
+|                                   | Determine if the customer is      |
+|                                   |  entitled to Education Entry      |
+|                                   | Payment (EdEP).                   |
+|                                   |                                   |
 |                                   | Within the claim:                 |
 |                                   |                                   |
 |                                   | On the Miscellaneous Update       |
@@ -354,19 +358,30 @@ Table 1
 |                                   | -   In the Event date: field      |
 |                                   |     enter the study start date    |
 |                                   | -   In the Current circumstance:  |
-|                                   |     field select FTS - Full-time  |
-|                                   |     student                       |
+|                                   |     field, if no EdEP is to be    |
+|                                   |     paid, key FTS. If EdEP is to  |
+|                                   |     be paid, key FTE              |
 |                                   |                                   |
 |                                   | On the Date of Commencement (NDC) |
 |                                   | screen:                           |
 |                                   |                                   |
 |                                   | -   In the Manual Start Date:     |
-|                                   |     field enter the YA/AUS start  |
+|                                   |     field enter the YA/AUS grant  |
 |                                   |     date                          |
 |                                   | -   In the Manual Start Date      |
 |                                   |     comments: field enter 'not a  |
 |                                   |     transfer, eligible for YA/AUS |
 |                                   |     from <date>'                  |
+|                                   |                                   |
+|                                   | If error E789NS – Event date      |
+|                                   | cannot be more than 15 weeks      |
+|                                   | prior to DOR presents:            |
+|                                   |                                   |
+|                                   | -   complete the NMIS coding,     |
+|                                   |     cancelling the JSP outside of |
+|                                   |     the claim in Customer First   |
+|                                   | -   document the decision         |
+|                                   | -   run a SAP refresh             |
 |                                   |                                   |
 |                                   | Continue assessing the YA/Austudy |
 |                                   | claim, see Assessing and coding   |

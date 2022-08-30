@@ -6,19 +6,445 @@ Allocations, receipting and banking for Medicare debt 107-21042123
 -   References
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+On this page:
 
-You can request a copy from the department's Information Publication
-Scheme by:
+Cheque payment allocation and handling
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+BPAY manual allocation
+
+Allocation of EFT transactions
+
+Cheque payment allocation and handling
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Preparing and banking cheques +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Bank cheques to the appropriate   |
+|                                   | program account.                  |
+|                                   |                                   |
+|                                   | Stamp the account number for      |
+|                                   | deposit on the back of each       |
+|                                   | cheque.                           |
+|                                   |                                   |
+|                                   | At the end of each day, bank all  |
+|                                   | cheques for payments managed by   |
+|                                   | Medicare Recovery into the        |
+|                                   | Administered Account.             |
+|                                   |                                   |
+|                                   | See the References page for a     |
+|                                   | link to Managing Money (Banking). |
++-----------------------------------+-----------------------------------+
+| 2                                 | Cheques not for Medicare          |
+|                                   | Recovery + Read more ...          |
+|                                   |                                   |
+|                                   | Send all cheques not managed by   |
+|                                   | Medicare Recovery to the relevant |
+|                                   | team.                             |
+|                                   |                                   |
+|                                   | Note: Medicare Recovery can only  |
+|                                   | bank cheques made payable to      |
+|                                   | Services Australia, Department of |
+|                                   | Human Services, Medicare          |
+|                                   | Australia or Medicare.            |
++-----------------------------------+-----------------------------------+
+| 3                                 | Post cheque payments to SAP +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Login to SAP and run Transaction  |
+|                                   | FBZ1 – Post Incoming Payments.    |
+|                                   | Enter the following data into     |
+|                                   | each field:                       |
+|                                   |                                   |
+|                                   | -   Document Date: key the date   |
+|                                   |     the cheque was received -     |
+|                                   |     dd.mm.yyyy format             |
+|                                   | -   Posting Date: processing      |
+|                                   |     date- (dd.mm.yyyy)            |
+|                                   | -   Type: 'DT'                    |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Currency: 'AUD'               |
+|                                   | -   Document Number: leave blank  |
+|                                   | -   Reference: key cheque number  |
+|                                   | -   Doc.Header Text: key bank     |
+|                                   |     name as a 3 letter code and   |
+|                                   |     BSB number on the cheque      |
+|                                   | -   Clearing Text: key either     |
+|                                   |     Current (CU) or Prior         |
+|                                   |     (PR)/program (2 or 3 letter   |
+|                                   |     code)/CHQ/Details of Drawer   |
+|                                   |     (Person who wrote the         |
+|                                   |     cheque)/Customer number. For  |
+|                                   |     example, PR BB CHQ Heart Care |
+|                                   |     Western Aust. Multicust       |
+|                                   |                                   |
+|                                   | In Bank data section, complete:   |
+|                                   |                                   |
+|                                   | -   Account: key '10404'          |
+|                                   |     (Cheques - Administered)      |
+|                                   | -   Amount: key amount of the     |
+|                                   |     payment                       |
+|                                   | -   Text: key Current (CU) or     |
+|                                   |     Prior (PR)/program (2 or 3    |
+|                                   |     letter code)/payment          |
+|                                   |     type/drawer/customer number.  |
+|                                   |     For example, 'PR BB CHQ Heart |
+|                                   |     Care Western Aust. Multicust' |
+|                                   |                                   |
+|                                   | In Open Item Selection, complete  |
+|                                   | the following:                    |
+|                                   |                                   |
+|                                   | -   Account: key Customer Account |
+|                                   |     Number. Note: If payment is   |
+|                                   |     for various customer accounts |
+|                                   |     tick the Other accounts box   |
+|                                   | -   In the pop up that appears,   |
+|                                   |     key all customer account      |
+|                                   |     numbers relating to the       |
+|                                   |     payment                       |
+|                                   | -   Tick the Standard OIs box     |
+|                                   | -   Select Continue               |
+|                                   | -   In the next pop up box, add   |
+|                                   |     any additional customer       |
+|                                   |     account numbers               |
+|                                   | -   Check balance of Not assigned |
+|                                   |     is '0' before selecting       |
+|                                   |     Execute [F8]                  |
+|                                   | -   Select Save [Ctrl+S]          |
+|                                   |                                   |
+|                                   | When all cheques are processed,   |
+|                                   | generate a Deposit Slip. Go to    |
+|                                   | Step 4                            |
++-----------------------------------+-----------------------------------+
+| 4                                 | Create the bank deposit slip in   |
+|                                   | SAP + Read more ...               |
+|                                   |                                   |
+|                                   | Run Transaction ZDEP – Deposit    |
+|                                   | Slip.                             |
+|                                   |                                   |
+|                                   | To start the Bank Deposit Slip    |
+|                                   | enter the following data:         |
+|                                   |                                   |
+|                                   | GL Account Selection:             |
+|                                   |                                   |
+|                                   | -   Chart of Accounts: key 'HIC'  |
+|                                   | -   G/L account: key '10404' –    |
+|                                   |     (Cheques administered)        |
+|                                   | -   Company code: key 'HIC'       |
+|                                   |                                   |
+|                                   | Line Item Selection:              |
+|                                   |                                   |
+|                                   | -   Open/Closed: select Open      |
+|                                   |     Items and key today’s date    |
+|                                   |     (dd.mm.yy)                    |
+|                                   |                                   |
+|                                   | FI Document Input:                |
+|                                   |                                   |
+|                                   | -   Document Created By: key your |
+|                                   |     SAP user ID                   |
+|                                   | -   Posting Document Date: key    |
+|                                   |     today’s date (dd.mm.yy)       |
+|                                   | -   Document Reference Text: key  |
+|                                   |     'DRP CHQ banking'             |
+|                                   | -   Deposit Slip Report Header:   |
+|                                   |     key 'DRP Admin Chq Banking'   |
+|                                   |     and deposit date (dd.mm.yyyy) |
+|                                   |                                   |
+|                                   | Select Execute [F8]               |
++-----------------------------------+-----------------------------------+
+| 5                                 | Complete the deposit slip + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Select items to add to the        |
+|                                   | deposit slip by ticking the check |
+|                                   | boxes on the left of the screen:  |
+|                                   |                                   |
+|                                   | Click the task bar icon or press  |
+|                                   | [F6] to create a deposit slip for |
+|                                   | the RBA                           |
+|                                   |                                   |
+|                                   | Select Display to display the     |
+|                                   | Deposit Slip                      |
+|                                   |                                   |
+|                                   | Select Print and print 2 copies   |
+|                                   |                                   |
+|                                   | -   Copy 1 – for banking. Send    |
+|                                   |     with cheques to the bank      |
+|                                   | -   Copy 2 – for filing and       |
+|                                   |     quality assurance             |
+|                                   |                                   |
+|                                   | Select Execute [F8]               |
++-----------------------------------+-----------------------------------+
+| 6                                 | Posting + Read more ...           |
+|                                   |                                   |
+|                                   | Before posting, check the total   |
+|                                   | balance and number of cheques     |
+|                                   | matches. To post:                 |
+|                                   |                                   |
+|                                   | -   Press [F5] - Post with        |
+|                                   |     clearing - to clear G/L       |
+|                                   |     Account A-MCARE Recovery      |
+|                                   |     Receipts Deposit Clrg         |
+|                                   | -   A deposit slip screen with    |
+|                                   |     the document number generated |
+|                                   |     displays                      |
+|                                   | -   Print a copy of this document |
+|                                   |     to attach to the banking file |
++-----------------------------------+-----------------------------------+
+| 7                                 | Banking file actions + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Create a Banking file             |
+|                                   |                                   |
+|                                   | Fill out a General Ledger         |
+|                                   | Document Header form to be        |
+|                                   | attached to the banking file.     |
+|                                   | Include:                          |
+|                                   |                                   |
+|                                   | -   Total number of cheques       |
+|                                   | -   Number of cheques not banked  |
+|                                   |     or on hand                    |
+|                                   | -   Total amount banked           |
+|                                   |                                   |
+|                                   | Forward the file to the Team      |
+|                                   | Leader to:                        |
+|                                   |                                   |
+|                                   | -   check the RBA deposit amount  |
+|                                   |     is correct, and               |
+|                                   | -   approve                       |
+|                                   |                                   |
+|                                   | File storage to HP:               |
+|                                   |                                   |
+|                                   | -   scan the banking file, and    |
+|                                   | -   store to HP container         |
+|                                   |     E18/3052                      |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+BPAY manual allocation
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | View General Ledger (GL) 10408 –  |
+|                                   | BPAY in SAP + Read more ...       |
+|                                   |                                   |
+|                                   | Login to SAP and run Transaction  |
+|                                   | FBL3N - G/L Account Line Items:   |
+|                                   |                                   |
+|                                   | -   G/L account: key '10408' to   |
+|                                   |     view                          |
+|                                   | -   Layout: key '/DRP_FINANCE'    |
+|                                   | -   Select Execute [F8]           |
+|                                   |                                   |
+|                                   | Note: GL 10408 is for unallocated |
+|                                   | funds. This links to GL 10407     |
+|                                   | (allocated funds).                |
+|                                   |                                   |
+|                                   | See the Resources page for the GL |
+|                                   | codes for the Medicare            |
+|                                   | Administered Banking Account.     |
++-----------------------------------+-----------------------------------+
+| 2                                 | Post BPAY payments in SAP + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Run Transaction FBZ1 – Post       |
+|                                   | Incoming Payments.                |
+|                                   |                                   |
+|                                   | Enter the following data into     |
+|                                   | each field:                       |
+|                                   |                                   |
+|                                   | -   Document Date: key the date   |
+|                                   |     the payment was received      |
+|                                   |     (dd.mm.yy)                    |
+|                                   | -   Posting Date: key processing  |
+|                                   |     date (dd.mm.yy)               |
+|                                   | -   Type: 'DT'                    |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Currency: 'AUD'               |
+|                                   | -   Document Number: leave blank  |
+|                                   | -   Reference: key EFT document   |
+|                                   |     number                        |
+|                                   | -   Doc. Header Text: EFT         |
+|                                   |     document number and date      |
+|                                   |     received                      |
+|                                   | -   Clearing Text: Current (CU)   |
+|                                   |     or Prior (PR)/program (2 or 3 |
+|                                   |     letter code)/BPAY             |
+|                                   |     number/customer number. For   |
+|                                   |     example, 'CU PIP BPAY12345    |
+|                                   |     987654321'                    |
+|                                   |                                   |
+|                                   | In Bank data section, complete:   |
+|                                   |                                   |
+|                                   | -   Account: Select BPAY 10408    |
+|                                   | -   Amount: key amount of the     |
+|                                   |     payment                       |
+|                                   | -   Text: key Current (CU) or     |
+|                                   |     Prior (PR)/program (2 or 3    |
+|                                   |     letter code)/BPAY             |
+|                                   |     number/customer number. For   |
+|                                   |     example, 'CU PIP BPAY 12345   |
+|                                   |     987654321'                    |
+|                                   |                                   |
+|                                   | In Open Item Selection, complete  |
+|                                   | the following:                    |
+|                                   |                                   |
+|                                   | -   Account: key Customer Account |
+|                                   |     Number. Note: If payment is   |
+|                                   |     for various customer accounts |
+|                                   |     tick the Other accounts box   |
+|                                   | -   In the pop up that appears,   |
+|                                   |     key all customer account      |
+|                                   |     numbers relating to the       |
+|                                   |     payment                       |
+|                                   | -   Tick the Standard OIs box     |
+|                                   | -   Select Continue               |
+|                                   | -   In the next pop up box, add   |
+|                                   |     any additional customer       |
+|                                   |     account numbers               |
+|                                   | -   Check balance of Not assigned |
+|                                   |     is '0' before selecting       |
+|                                   |     Execute [F8]                  |
+|                                   | -   Select Save - [Ctrl+S]        |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Allocation of EFT transactions
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Investigate the EFT transaction + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | With a Medicare card number or a  |
+|                                   | provider number:                  |
+|                                   |                                   |
+|                                   | -   check if the record exists in |
+|                                   |     SAP for the same amount       |
+|                                   | -   check mainframe records for   |
+|                                   |     the transaction               |
+|                                   | -   check GL 51600 - Bad and      |
+|                                   |     doubtful debts expense        |
+|                                   |     account, for amounts less     |
+|                                   |     than $100, where a Medicare   |
+|                                   |     card number is provided       |
+|                                   | -   check the written off debt    |
+|                                   |     Excel listing at              |
+|                                   |     FINANCE>Banking>written off   |
+|                                   |     debt                          |
+|                                   |                                   |
+|                                   | When there is a provider number   |
+|                                   | and the debt cannot be            |
+|                                   | identified:                       |
+|                                   |                                   |
+|                                   | -   check if the customer exists  |
+|                                   |     in SAP                        |
+|                                   | -   check mainframe records for   |
+|                                   |     the transaction               |
+|                                   | -   call the provider to confirm  |
+|                                   |     the reason for the payment,   |
+|                                   |     if unable to locate it        |
+|                                   |                                   |
+|                                   | Where only an organisation name   |
+|                                   | is supplied:                      |
+|                                   |                                   |
+|                                   | Conduct a Google search to try    |
+|                                   | and find the organisation:        |
+|                                   |                                   |
+|                                   | -   If found, call them to get    |
+|                                   |     information to assist in      |
+|                                   |     payment allocation            |
+|                                   | -   If unable to find the source  |
+|                                   |     of the transaction, request a |
+|                                   |     trace from the RBA. The RBA   |
+|                                   |     trace must be requested       |
+|                                   |     through Services Australia,   |
+|                                   |     Medicare Treasury. The RBA    |
+|                                   |     charge a fee of $35.00 for a  |
+|                                   |     trace and will provide        |
+|                                   |     Medicare Treasury with a      |
+|                                   |     trace number                  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Allocate EFT payments in SAP +    |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | If the EFT transaction can now be |
+|                                   | allocated, login to SAP and run   |
+|                                   | Transaction FBZ1 – Post Incoming  |
+|                                   | Payments.                         |
+|                                   |                                   |
+|                                   | Enter the following data into     |
+|                                   | each field:                       |
+|                                   |                                   |
+|                                   | -   Document Date: key the date   |
+|                                   |     the payment was received -    |
+|                                   |     (dd.mm.yy)                    |
+|                                   | -   Posting Date: processing      |
+|                                   |     date- (dd.mm.yy)              |
+|                                   | -   Type: 'DT'                    |
+|                                   | -   Company Code: 'HIC'           |
+|                                   | -   Currency: 'AUD'               |
+|                                   | -   Document Number: leave blank  |
+|                                   | -   Reference: key EFT document   |
+|                                   |     number                        |
+|                                   | -   Doc. Header Text: EFT         |
+|                                   |     document number and date      |
+|                                   |     received                      |
+|                                   | -   Clearing Text: Current (CU)   |
+|                                   |     or Prior (PR)/program (2 or 3 |
+|                                   |     letter code)/EFT              |
+|                                   |     number/customer number. For   |
+|                                   |     example, 'CU PIP EFT12345     |
+|                                   |     987654321'                    |
+|                                   |                                   |
+|                                   | In Bank data section, complete:   |
+|                                   |                                   |
+|                                   | -   Account: Select EFT 10406     |
+|                                   | -   Amount: key amount of the     |
+|                                   |     payment                       |
+|                                   | -   Text: key Current (CU) or     |
+|                                   |     Prior (PR)/program (2 or 3    |
+|                                   |     letter code)/EFT              |
+|                                   |     number/customer number. For   |
+|                                   |     example, 'CU PIP EFT 12345    |
+|                                   |     987654321'                    |
+|                                   |                                   |
+|                                   | In Open Item Selection, complete: |
+|                                   |                                   |
+|                                   | -   Account: key Customer Account |
+|                                   |     Number. Note: If payment is   |
+|                                   |     for various customer accounts |
+|                                   |     tick the Other accounts box   |
+|                                   | -   Pop up appears                |
+|                                   | -   Key all customer account      |
+|                                   |     numbers relating to the       |
+|                                   |     payment                       |
+|                                   | -   Tick the Standard OIs box     |
+|                                   | -   Select Continue               |
+|                                   | -   In the next pop up box, add   |
+|                                   |     additional customer account   |
+|                                   |     numbers                       |
+|                                   | -   Check balance of Not assigned |
+|                                   |     is '0' before selecting       |
+|                                   |     Execute [F8]                  |
+|                                   | -   Select Save - [Ctrl+S]        |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
 
                                    
 

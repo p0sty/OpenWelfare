@@ -6,19 +6,185 @@ Electronic Data Interchange (EDI) claims for Simplified Billing in Medicare 011-
 -   Process
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This document outlines Electronic Data Interchange (EDI) claims being
+transmitted via the Services Australia gateway system for Simplified
+Billing claims in Medicare.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+About EDI
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+EDI is simply the transfer of data between 2 parties, the private health
+insurer and Services Australia, where services are transmitted
+electronically as opposed to other means of communication.
+
+EDI allows for the transfer of a file from a private health insurer's
+database/software to the agency's systems using secure file transfer
+protocol (SFTP). Services Australia will accept EDI transmissions 24
+hours per day, 7 days per week via ‘Managed File Transfer’. Services
+Australia manage both inbound and outbound files.
+
+Once processing has been completed, the agency will transmit 2 reports
+to assist the private health insurers in reconciling their claims - a
+Statement of Benefit (Exception report) and an Electronic Funds Transfer
+(EFT) payment report (Payment report), for all successful claims.
+
+Note: with the implementation of the new Sterling system from April 2019
+exception reports will have ‘MEDRUC’ in the file name and the payment
+report will have ‘REMADV’ in the file name.
+
+The Process page contains information on Simplified Billing EDI claims.
+
+Statement of Benefit
+
+Information regarding both paid and unpaid benefits will be included in
+the Statement of Benefit. The report is generated overnight, after
+Medicare processing has been completed, and is then transmitted via
+Secure File Transfer Protocol (SFTP) to the private health insurer the
+morning of the following day.
+
+These statements will be transmitted daily, Monday through to Saturday.
+
+The following information is contained in the transmitted file from the
+agency:
+
+-   minor ID
+-   claim number
+-   date of lodgement
+-   number of patients
+-   number of exceptions
+-   total amount charged
+-   total benefit paid
+-   patient details
+-   fund/agent reference number
+-   Medicare number
+-   card flag if applicable, space if not applicable
+-   surname
+-   first name
+-   number of items paid
+-   number of items rejected
+-   number of exceptions
+-   total benefit paid
+-   item number
+-   date of service
+-   servicing provider number
+-   amount charged
+-   schedule fee
+-   benefit paid, and
+-   explanation code
+
+EFT payment report
+
+Information regarding Medicare benefits paid into a private health
+insurers' bank account will be included in the EFT payment report.
+
+The following information is contained in the transmitted file from the
+agency:
+
+-   number of claim payments
+-   minor ID
+-   function ID = M (Medicare)
+-   total deposit amount
+-   payment run number
+-   payment date
+-   claim number
+-   date of transmission
+-   BSB number (as registered with the agency)
+-   account number (as registered with the agency)
+-   account name (as registered with the agency)
+-   deposit amount
+
+Accuracy of data
+
+It is the agency's policy that any data transmitted cannot be altered.
+This is to ensure that all data held by the agency is accurate. Even if
+there is an obvious change needed, Service Officers are not allowed to
+amend the information.
+
+Date of birth
+
+Where there is more than 1 person with the same name enrolled on a
+Medicare card number, background assessing automatically selects the
+patient where an exact match is made with data held on the Consumer
+Directory.
+
+This removes the need for Service Officers to select the correct patient
+where the first names are identical.
+
+Referral or request details
+
+Where a referral or request line is transmitted by a private health
+insurer for items that are not subject to these requirements, background
+assessing ignores the data and does not pass it to the FAPI screen.
+
+This removes the need for Service Officers to enter reason codes on all
+unnecessary referral or request lines during pend processing.
+
+Patient demographics
+
+Where a private health insurer does not have a valid Medicare card
+number, they have the option to transmit the patient demographics which
+include:
+
+-   surname
+-   first name
+-   second initial
+-   date of birth
+-   sex
+-   locality
+-   postcode
+
+Where there is an exact match with a record on the Consumer Directory,
+the Medicare card number is automatically inserted during background
+assessing and included on the statement of benefit returned to the
+private health insurer.
+
+Note: if no match is made the claim must be rejected.
+
+Source office codes
+
+Service Officers must logon to the EDI processing source office code for
+the site.
+
+The Resources page contains more information on EDI processing source
+office codes for the site.
+
+Access claims history data
+
+Service Officers can access claims history data by referring to:
+
+-   patient history (NHSI)
+-   claim history (FCEI) and request duplicate statement (FPSI)
+
+1-PREV CON message
+
+Co-claiming 1-PREV CON will return when certain consultation items are
+on a patient’s history and restrict with a Group T8 item, with:
+
+-   a schedule fee over the threshold amount
+-   claimed on the same date of service, and
+-   performed by the same provider
+
+The Resources page contains a matrix with the process for 1-PREV CON
+message returns and templates
+
+The Resources page contains links to the Services Australia website,
+information on notional charges, Electronic Data Interchange (EDI)
+source office codes and default system operator numbers, Simplified
+Billing control line modifiers and claims, Private Health Insurers list
+and Work Distribution, Allocation and Management System (WDAM) Operator
+Manual and links to the WDAM access request form.
+
+Related links
+
+Payments for Simplified Billing in Medicare
+
+Pend processing of Simplified Billing manual claims for Medicare
+
+Work Distribution, Allocation and Management System (WDAM) for Medicare
+claims
+
+Perform telephone security check for private health insurers in Medicare
 
                                    
 

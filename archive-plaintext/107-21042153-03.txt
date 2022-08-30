@@ -6,19 +6,558 @@ Financial adjustments for Medicare debt 107-21042153
 -   References
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+For Medicare Debt Management Officers (DMO) only
 
-You can request a copy from the department's Information Publication
-Scheme by:
+On this page:
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Debt for write off
+
+Refunds
+
+Invoice Reversal
+
+Funds Transfer
+
+Adding customers to the Medicare Debt Recovery (DRP) database
+
+Debt for write off
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Action the write off and send for |
+|                                   | approval + Read more ...          |
+|                                   |                                   |
+|                                   | Check the write off request has   |
+|                                   | approval at the appropriate       |
+|                                   | delegation level. See the         |
+|                                   | References page for Medicare      |
+|                                   | Services, Delegations and         |
+|                                   | Authorisations.                   |
+|                                   |                                   |
+|                                   | Go to the file in the shared      |
+|                                   | folder - FINANCE > Databases >    |
+|                                   | Financial Adjustments:            |
+|                                   |                                   |
+|                                   | Select Add Write-Offs. A          |
+|                                   | financial adjustment for          |
+|                                   | write-off ID is created           |
+|                                   |                                   |
+|                                   | Select a category from the drop   |
+|                                   | down box:                         |
+|                                   |                                   |
+|                                   | -   Write off – legally           |
+|                                   |     unrecoverable, or             |
+|                                   | -   Write off – uneconomical to   |
+|                                   |     pursue                        |
+|                                   |                                   |
+|                                   | Enter Customer Number – (For      |
+|                                   | example, BB000000XX)              |
+|                                   |                                   |
+|                                   | Select [TAB]. Customer name       |
+|                                   | populates in the customer name    |
+|                                   | tab                               |
+|                                   |                                   |
+|                                   | Complete Document Details:        |
+|                                   |                                   |
+|                                   | -   General ledger                |
+|                                   | -   Cost centre (see invoice for  |
+|                                   |     cost centre number)           |
+|                                   | -   Invoice to apply write-off to |
+|                                   | -   Amount                        |
+|                                   | -   Other details – summarise     |
+|                                   |     actions undertaken in         |
+|                                   |     attempting debt recovery.     |
+|                                   |     Include requesting officer    |
+|                                   |     and delegate’s approval       |
+|                                   |                                   |
+|                                   | Submit the write-off request to   |
+|                                   | the financial delegate:           |
+|                                   |                                   |
+|                                   | -   Attach the email generated    |
+|                                   |     from the FAR request to the   |
+|                                   |     customer record in SAP. To    |
+|                                   |     attach documents in SAP, see  |
+|                                   |     Table 1 in SAP Invoice and    |
+|                                   |     customer navigation           |
+|                                   | -   Change the Assignment field   |
+|                                   |     to the FAR ID. For example,   |
+|                                   |     FAR 12345                     |
+|                                   |                                   |
+|                                   | For:                              |
+|                                   |                                   |
+|                                   | -   Debt Management Officers      |
+|                                   |     (DMO), procedure ends here    |
+|                                   | -   Team Leaders, go to Step 2    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Team Leader to approve and        |
+|                                   | finalise + Read more ...          |
+|                                   |                                   |
+|                                   | When all details are correct,     |
+|                                   | approve and finalise the write    |
+|                                   | off.                              |
++-----------------------------------+-----------------------------------+
+
+Refunds
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Credit balance + Read more ...    |
+|                                   |                                   |
+|                                   | A customer account can go into    |
+|                                   | credit if:                        |
+|                                   |                                   |
+|                                   | -   the account is overpaid       |
+|                                   | -   there are duplicated payments |
+|                                   | -   there is an incorrect posting |
+|                                   | -   there is an incorrect payment |
+|                                   |     allocation                    |
+|                                   | -   a debt is not valid, or       |
+|                                   | -   an adjustment is made that    |
+|                                   |     places the customer's account |
+|                                   |     into credit                   |
+|                                   |                                   |
+|                                   | Check the account for the amount  |
+|                                   | of the credit.                    |
+|                                   |                                   |
+|                                   | Is the credit under $5?           |
+|                                   |                                   |
+|                                   | -   Yes, a work item is allocated |
+|                                   |     to the Team Leader to action  |
+|                                   |     for credits under $5. Go to   |
+|                                   |     Step 9                        |
+|                                   | -   No, go to Step 2              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Check for Vendor + Read more ...  |
+|                                   |                                   |
+|                                   | Search for an existing vendor     |
+|                                   | record using Transaction          |
+|                                   | XK03-Display vendor.              |
+|                                   |                                   |
+|                                   | Does the vendor exist in SAP?     |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Bank details + Read more ...      |
+|                                   |                                   |
+|                                   | Get the customer's bank details   |
+|                                   | from:                             |
+|                                   |                                   |
+|                                   | -   the customer                  |
+|                                   | -   previous EFT payments (the    |
+|                                   |     remittance may show the BSB   |
+|                                   |     and Account number), or       |
+|                                   | -   the Consumer Directory        |
+|                                   |     Maintenance System (CDMS)     |
+|                                   |                                   |
+|                                   | Go to Step 4.                     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Complete and return the Vendor    |
+|                                   | form + Read more ...              |
+|                                   |                                   |
+|                                   | Complete the Vendor form. Go to   |
+|                                   | the shared folder - FINANCE >     |
+|                                   | Forms > Vendor > Vendor Form      |
+|                                   | Internal Use Only                 |
+|                                   |                                   |
+|                                   | Are customer details complete?    |
+|                                   |                                   |
+|                                   | -   Yes, complete the form and    |
+|                                   |     email to Shared Services -    |
+|                                   |     Vendor Maintenance            |
+|                                   | -   No, contact the customer and  |
+|                                   |     complete the form             |
+|                                   |                                   |
+|                                   | When Vendor Maintenance advise    |
+|                                   | the Vendor number, go to Step 5.  |
++-----------------------------------+-----------------------------------+
+| 5                                 | Complete the funds transfer       |
+|                                   | macro + Read more ...             |
+|                                   |                                   |
+|                                   | Complete the funds transfer.      |
+|                                   |                                   |
+|                                   | -   Go to the Macro V8 form in    |
+|                                   |     the shared folder - FINANCE > |
+|                                   |     Macros > Digitalised Signed   |
+|                                   |     Macros                        |
+|                                   | -   Select Submit. An email is    |
+|                                   |     auto created                  |
++-----------------------------------+-----------------------------------+
+| 6                                 | Request approval by the financial |
+|                                   | delegate + Read more ...          |
+|                                   |                                   |
+|                                   | Send the email to the Team Leader |
+|                                   | to approve the request.           |
+|                                   |                                   |
+|                                   | Include the following:            |
+|                                   |                                   |
+|                                   | -   the Vendor form from Step 4   |
+|                                   | -   the funds transfer request    |
+|                                   | -   details of the customer       |
+|                                   |     account with transaction      |
+|                                   |     indicating a credit balance . |
+|                                   |     Use the [Print Screen]        |
+|                                   |     function to copy              |
+|                                   | -   details of the customer       |
+|                                   |     account with receipted        |
+|                                   |     payments. Use [Print Screen]  |
+|                                   |     to copy                       |
+|                                   | -   any other evidence to support |
+|                                   |     the request for refund        |
+|                                   |     validation                    |
+|                                   |                                   |
+|                                   | The delegate (Team Leader):       |
+|                                   |                                   |
+|                                   | -   approves the request, and     |
+|                                   | -   refers it to Treasury for the |
+|                                   |     refund                        |
++-----------------------------------+-----------------------------------+
+| 7                                 | Confirm the transfer of funds is  |
+|                                   | complete + Read more ...          |
+|                                   |                                   |
+|                                   | Check General Ledger (GL) 10403-  |
+|                                   | MCARE RECOVERY RECEIPTS RBANET    |
+|                                   | CLRG to confirm funds:            |
+|                                   |                                   |
+|                                   | Run Transaction FBL3N - G/L       |
+|                                   | Account Line Items in SAP         |
+|                                   |                                   |
+|                                   | -   In G/L Account Selection, key |
+|                                   |     '10403'                       |
+|                                   | -   Change Company Code to 'HIC'  |
+|                                   |                                   |
+|                                   | Execute [F8]                      |
+|                                   |                                   |
+|                                   | Make sure the vendor number and   |
+|                                   | refund amount are correct         |
+|                                   |                                   |
+|                                   | Is the transfer of funds from     |
+|                                   | administered receipts to          |
+|                                   | administered payments completed?  |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 8             |
+|                                   | -   No, wait for the transfer to  |
+|                                   |     complete, then go to Step 8   |
++-----------------------------------+-----------------------------------+
+| 8                                 | Processing a Financial Adjustment |
+|                                   | Request (FAR) + Read more ...     |
+|                                   |                                   |
+|                                   | Go to the shared folder -         |
+|                                   | FINANCE > Databases > Financial   |
+|                                   | Adjustments                       |
+|                                   |                                   |
+|                                   | Select Add FAR. A FAR ID is auto  |
+|                                   | created                           |
+|                                   |                                   |
+|                                   | Select a category from the drop   |
+|                                   | down box                          |
+|                                   |                                   |
+|                                   | -   Refund – overpayment or       |
+|                                   | -   Refund – paid in error        |
+|                                   |                                   |
+|                                   | Enter customer number – For       |
+|                                   | example, BB000000XX               |
+|                                   |                                   |
+|                                   | Select [TAB]. Customer name       |
+|                                   | self-populates in the Customer    |
+|                                   | name field                        |
+|                                   |                                   |
+|                                   | Complete document details. Update |
+|                                   | all specified fields highlighted  |
+|                                   | in red on the FAR                 |
+|                                   |                                   |
+|                                   | -   Vendor number                 |
+|                                   | -   Vendor name                   |
+|                                   | -   Enter the document number     |
+|                                   |     into the related document     |
+|                                   |     field. For example, Invoice   |
+|                                   |     number or Payment reference   |
+|                                   |     number                        |
+|                                   | -   Amount                        |
+|                                   | -   Other details (include the    |
+|                                   |     reason for the refund)        |
+|                                   |                                   |
+|                                   | For:                              |
+|                                   |                                   |
+|                                   | -   Debt Management Officers      |
+|                                   |     (DMO), procedure ends here    |
+|                                   | -   Team Leaders, go to Step 9    |
++-----------------------------------+-----------------------------------+
+| 9                                 | Team Leader to approve and        |
+|                                   | finalise + Read more ...          |
+|                                   |                                   |
+|                                   | When all details are correct,     |
+|                                   | approve and finalise the          |
+|                                   | transaction.                      |
+|                                   |                                   |
+|                                   | Note: the delegate completes      |
+|                                   | Financial Adjustment Request      |
+|                                   | (FAR) transactions weekly.        |
++-----------------------------------+-----------------------------------+
+
+Invoice Reversal
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Processing an invoice reversal +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | A reversal is required, where the |
+|                                   | invoice:                          |
+|                                   |                                   |
+|                                   | -   is for debt that is not valid |
+|                                   | -   is duplicated                 |
+|                                   | -   is for the wrong amount       |
+|                                   | -   is for the wrong customer     |
+|                                   | -   has the wrong details         |
+|                                   |                                   |
+|                                   | Go to the shared folder -         |
+|                                   | FINANCE > Databases >Financial    |
+|                                   | Adjustments:                      |
+|                                   |                                   |
+|                                   | Select Add FAR. A FAR ID is auto  |
+|                                   | created                           |
+|                                   |                                   |
+|                                   | Select a category from the drop   |
+|                                   | down box:                         |
+|                                   |                                   |
+|                                   | -   Invoice reversal – debt not   |
+|                                   |     valid                         |
+|                                   | -   Invoice reversal – duplicate  |
+|                                   | -   Invoice reversal – wrong      |
+|                                   |     amount                        |
+|                                   | -   Invoice reversal – wrong      |
+|                                   |     customer                      |
+|                                   | -   Invoice reversal – wrong      |
+|                                   |     details                       |
+|                                   |                                   |
+|                                   | Key Customer number – For         |
+|                                   | example, BB000000XX               |
+|                                   |                                   |
+|                                   | Select [TAB]. Customer Name       |
+|                                   | self-populates in the Customer    |
+|                                   | name tab                          |
+|                                   |                                   |
+|                                   | Complete Document details. Update |
+|                                   | all fields highlighted in red on  |
+|                                   | the FAR                           |
+|                                   |                                   |
+|                                   | -   General ledger                |
+|                                   | -   Cost centre - see invoice for |
+|                                   |     cost centre number            |
+|                                   | -   Invoice to apply write-off to |
+|                                   | -   Amount                        |
+|                                   | -   Other details - include the   |
+|                                   |     reason for the reversal       |
+|                                   |                                   |
+|                                   | Go back to the customer's record. |
+|                                   | Update:                           |
+|                                   |                                   |
+|                                   | -   Assignment field with the FAR |
+|                                   |     ID number                     |
+|                                   | -   Customer notes and            |
+|                                   | -   any relevant attachments      |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Funds Transfer
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Complete the funds transfer       |
+|                                   | request + Read more ...           |
+|                                   |                                   |
+|                                   | Funds transfer is part of the     |
+|                                   | refund process.                   |
+|                                   |                                   |
+|                                   | Go to Macros in the shared        |
+|                                   | folder - FINANCE > Macros > Funds |
+|                                   | Transfer. Include:                |
+|                                   |                                   |
+|                                   | -   Bank account and amount       |
+|                                   | -   Customer and/or vendor        |
+|                                   |     details                       |
+|                                   | -   Supporting information        |
+|                                   |                                   |
+|                                   | Select Submit on the macro to     |
+|                                   | generate an email to the Team     |
+|                                   | Leader. Include:                  |
+|                                   |                                   |
+|                                   | -   bank account details showing  |
+|                                   |     incoming payment. Use the     |
+|                                   |     [Print Screen] function       |
+|                                   | -   customers’ account details    |
+|                                   |     showing the open item (to be  |
+|                                   |     paid/refunded/transferred).   |
+|                                   |     Use [Print Screen]            |
+|                                   |                                   |
+|                                   | Send the email to the Team Leader |
+|                                   |                                   |
+|                                   | Non-Medicare Debts - Use an       |
+|                                   | account number to transfer the    |
+|                                   | money. If there is no account,    |
+|                                   | send an email to the Treasury     |
+|                                   | Help Desk to obtain the correct   |
+|                                   | account number.                   |
+|                                   |                                   |
+|                                   | For:                              |
+|                                   |                                   |
+|                                   | -   Debt Management Officers      |
+|                                   |     (DMO), procedure ends here    |
+|                                   | -   Team Leaders, go to Step 2    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Team Leader to approve and        |
+|                                   | finalise + Read more ...          |
+|                                   |                                   |
+|                                   | When all details are correct,     |
+|                                   | approve and finalise the          |
+|                                   | transaction.                      |
+|                                   |                                   |
+|                                   | The delegate completes Financial  |
+|                                   | Adjustment Request (FAR)          |
+|                                   | transactions weekly.              |
++-----------------------------------+-----------------------------------+
+
+Adding customers to the Medicare Debt Recovery (DRP) database
+
+Table 5
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Adding individual customers       |
+|                                   | (manually) + Read more ...        |
+|                                   |                                   |
+|                                   | Note: this process can only be    |
+|                                   | completed by Medicare Debt        |
+|                                   | Recovery APS5 level staff         |
+|                                   |                                   |
+|                                   | An update of the database occurs  |
+|                                   | fortnightly. It includes all new  |
+|                                   | customers (including compensation |
+|                                   | customers), already recorded in   |
+|                                   | SAP. Use the database to perform  |
+|                                   | the tasks where cases are not     |
+|                                   | selected for Dunning.             |
+|                                   |                                   |
+|                                   | Go to the Invoices Database in    |
+|                                   | the shared folder - FINANCE >     |
+|                                   | Databases > Start Here – DRP      |
+|                                   | database                          |
+|                                   |                                   |
+|                                   | -   Go to the Main Menu           |
+|                                   | -   Select Add Customers          |
+|                                   | -   Key the details in the pop up |
+|                                   |     box. The Customer Number must |
+|                                   |     match the customer number in  |
+|                                   |     SAP                           |
+|                                   |                                   |
+|                                   | To add customers to the database  |
+|                                   | in bulk, go to Step 2.            |
++-----------------------------------+-----------------------------------+
+| 2                                 | Adding customers (bulk) + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Note: not following each step may |
+|                                   | corrupt the database.             |
+|                                   |                                   |
+|                                   | Upload customers to SAP           |
+|                                   |                                   |
+|                                   | Go to the database in the shared  |
+|                                   | folder - FINANCE > Databases >    |
+|                                   | Customer Group Upload Schedule:   |
+|                                   |                                   |
+|                                   | -   Copy the Customer range       |
+|                                   | -   Run Transaction YFP8 in SAP   |
+|                                   | -   Select Customer account and   |
+|                                   |     paste the customer number     |
+|                                   |     range. (To select multiple    |
+|                                   |     ranges, select the yellow     |
+|                                   |     arrow on the right)           |
+|                                   | -   Select Dynamic Selections     |
+|                                   | -   Select Created on and key the |
+|                                   |     date range (get the date      |
+|                                   |     range from the Customer Group |
+|                                   |     Upload Schedule)              |
+|                                   | -   Press Execute [F8]            |
+|                                   | -   In the Display Variant field, |
+|                                   |     key '/DRP_EXPORT'             |
+|                                   | -   Press Execute [F8]            |
+|                                   |                                   |
+|                                   | Export the file to Excel          |
+|                                   |                                   |
+|                                   | -   On the List menu, Save/Send   |
+|                                   |     file                          |
+|                                   | -   Select Spreadsheet            |
+|                                   | -   Save the file to the shared   |
+|                                   |     folder - FINANCE >            |
+|                                   |     Databases > Customer Group    |
+|                                   |     Upload Schedule               |
+|                                   | -   Press [Ctrl+H] to display the |
+|                                   |     Find and Replace dialog box   |
+|                                   | -   Key a comma ',' in Find what  |
+|                                   |     line and select Replace All   |
+|                                   | -   Repeat the above Find and     |
+|                                   |     Replace step, but key a quote |
+|                                   |     '“' in the Find what line and |
+|                                   |     select Replace All            |
+|                                   | -   Save and close the file       |
+|                                   |                                   |
+|                                   | Open the database (Note: the      |
+|                                   | database can only be used by one  |
+|                                   | person at a time)                 |
+|                                   |                                   |
+|                                   | -   Select [F11] to access the    |
+|                                   |     Navigation Bar                |
+|                                   | -   Double-click on the Customer  |
+|                                   |     table in the left hand column |
+|                                   | -   Select New Record at the      |
+|                                   |     bottom of the list of         |
+|                                   |     customers to go to the        |
+|                                   |     Customer Number field         |
+|                                   | -   Select Unfiltered to filter   |
+|                                   |     out all existing records      |
+|                                   | -   Open the saved spreadsheet    |
+|                                   | -   Select data in columns A to G |
+|                                   |     by highlighting from row 2    |
+|                                   |     down to the last row          |
+|                                   | -   Press [Ctrl+C] to copy the    |
+|                                   |     data                          |
+|                                   |                                   |
+|                                   | Return to the database:           |
+|                                   |                                   |
+|                                   | -   Select all the columns from   |
+|                                   |     Customer Number to Region     |
+|                                   | -   Copy all data, under the      |
+|                                   |     Title line                    |
+|                                   | -   Select Paste from the Edit    |
+|                                   |     menu. The database is now     |
+|                                   |     updated                       |
+|                                   |                                   |
+|                                   | Exit Microsoft Access. Go to File |
+|                                   | and select Exit                   |
+|                                   |                                   |
+|                                   | Update the Customer Group Upload  |
+|                                   | schedule with the date range      |
+|                                   |                                   |
+|                                   | Delete the Excel file that was    |
+|                                   | uploaded                          |
++-----------------------------------+-----------------------------------+
 
                                    
 

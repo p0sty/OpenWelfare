@@ -196,21 +196,170 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines the policy and procedure on retiring eHealth Program (EHP) individual records in the Healthcare Identifiers (HI) Service. An EHP individual record is retired on notification that the individual is deceased.</p>
+
+<h2 id="_Toc344898764">On this Page&#58;</h2>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Definition_of_E"></a>
+<h2 id="_Toc344898764">Definition of EHP individual</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>EHP individuals, for the purpose of this document, are defined as&#58;</p>
+		<ul>		<li>
+Responsible Officer (RO)</li>
+		<li>
+Organisation Maintenance Officer (OMO)</li>
+		<li>
+Healthcare Provider Individual (HPI-I)</li>
+		<li>
+Contracted Service Provider Officer (CSP officer)</li>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Requirements_of"></a>
+<h2 id="_Toc344898764">Requirements of notification of death</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>A Service Officer can retire an EHP individual record after they receive notification that the Healthcare Provider Individual is deceased.</p>
+
+<p>There are restrictions as to who can notify the HI Service of a deceased EHP individual. If the deceased person is a&#58;</p>
+		<ul>		<li>
+Responsible Officer (RO), the HI Service can be notified by the new RO for the seed organisation</li>
+		<li>
+Organisation Maintenance Officer (OMO), the HI Service can be notified by&#58;</li>
+			<ul>			<li>
+an RO of the seed organisation in the hierarchy to which the OMO belonged</li>
+			<li>
+an OMO above the deceased OMO in the organisation hierarchy</li>		</ul>
+		<li>
+Healthcare Provider Individual (HPI-I), the HI Service can be notified by&#58;</li>
+			<ul>			<li>
+a Data source (the Australian Health Practitioners Regulatory Agency (AHPRA))</li>
+			<li>
+an OMO from an organisation to which the Healthcare Provider is linked</li>
+			<li>
+a family member</li>		</ul>
+		<li>
+Contracted Service Provider (CSP officer), the HI Service can be notified by&#58;</li>
+			<ul>			<li>
+another CSP officer registered and authorised to act on behalf of the CSP organisation</li>
+			<li>
+a family member</li>
+		</div>
+	</div>
+</div>
+			</ul>			</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Retiring_an_EHP"></a>
+<h2 id="_Toc344898764">Retiring an EHP individual record</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>EHP individual records are set to <strong>retired</strong> when the following are added to the record&#58;</p>
+		<ul>		<li>
+date of death</li>
+		<li>
+date of death accuracy</li>
+		<li>
+source of death notification</li>
+		</ul>
+<p>Name details must be recorded for the person who notifies of the death.</p>
+
+<p>On successfully retiring the record&#58;</p>
+		<ul>		<li>
+all links to provider organisations are end dated</li>
+		<li>
+access to the HI Service is removed using this individual's Public Key Infrastructure (PKI) certificate</li>
+		<li>
+all Healthcare Provider Directory Service (HI HPD) entries for the Healthcare provider are removed and are not returned during a search of the HI HPD</li>
+		</ul>
+<p><strong>Note&#58;</strong> HPI-I records retired in error can be reinstated by a Service Officer.</p>
+
+<p>Where the EHP Individual is a Responsible Officer (RO), they can only be retired when there is another RO linked to the organisation.</p>
+
+<p>Organisations and Contracted Service Provider (CSP) organisations can have multiple Organisation Maintenance Officers (OMO) or CSP officers linked to them. Where an organisation only has one OMO or CSP officer linked, a new person must be appointed before the only OMO or CSP officer is retired.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Automatic_retir"></a>
+<h2 id="_Toc344898764">Automatic retiring of EHP individual records</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>The HI Service automatically retires a record when the date of birth recorded indicates that the individual has reached the age of 130 years.</p>
+
+<p><strong>Note&#58;</strong> the existing record must have a status of either <strong>active</strong> or <strong>deactivated</strong>.</p>
+
+<p>On successful retirement of the record&#58;</p>
+		<ul>		<li>
+all Healthcare Provider Directory Service (HI HPD) entries for the retired EHP individual record are removed and are not returned during a search for the HI HPD</li>
+		<li>
+all links to provider organisations are end dated</li>
+		<li>
+access to the HI Service is removed using this individual's Public Key Infrastructure (PKI) certificate</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Retire_EHP_indi"></a>
+<h2 id="_Toc344898764">Retire EHP individual record via data source</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>The notification of the death of an EHP individual maybe received via a web service request.</p>
+
+<p>An identifier must be provided for every request to amend an EHP individual's record by a data source.</p>
+
+<p>Where death details have already been recorded for an individual, death notifications are not processed as part of the amendment request.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<a class="anchor" name="bp02_L1PT_Process_summary"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>
