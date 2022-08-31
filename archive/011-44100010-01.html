@@ -196,21 +196,167 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines information about Delivery Point Identifier (DPID) matching for Medicare enrolments.</p>
+
+<h2 id="On this Page&#58;">On this Page&#58;</h2>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Medicare_addres"></a>
+<h2 id="bp01_L2GT_Medicare_addres">Medicare address and DPID</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>When a new or existing enrolment address is added or modified, it is matched against an address on the postal address file (PAF) provided by Australia Post. When a Medicare address is matched with a PAF address, a Delivery Point Identifier (DPID) is allocated and an individual barcode (related to that DPID) printed on correspondence.</p>
+
+<p>It is important when adding or modifying an address on enrolment and patient claims screens that every attempt is made to ensure that a DPID can be allocated to that address.</p>
+
+<p>The <strong>6-CHK ADDR</strong> message displays when an address is keyed in a non-standard format. An address in a standard format has a greater chance of finding a matching address on PAF and, therefore, of allocating a DPID.</p>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_DPID_matching"></a>
+<h2 id="bp01_L2GT_DPID_matching">DPID matching</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>When a new or existing enrolment address is added or modified, it is matched against an address on the postal address file (PAF) provided by Australia Post. When a Medicare address is matched with a PAF address, a Delivery Point Identifier (DPID) is allocated and an individual barcode (related to that DPID) printed on correspondence.</p>
+
+<p>The DPID/PAF has been installed on the Services Australia systems to create savings in postage to the organisation, increase data integrity and enhance customer service by using the recognised address from Australia Post. Whenever a Service Officer fails to accept the address provided, this undermines the integrity of the DPID/PAF matching process.</p>
+
+<p>It is important that when adding or modifying an address on enrolment and patient claims screens, every attempt is made to ensure that a DPID can be allocated to that address.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Update_address_"></a>
+<h2 id="bp01_L2GT_Update_address_">Update address to match DPID</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>The following describes how to update an address to match the DPID in a new or existing enrolment.</p>
+		<ul>		<li>
+<p>If a new or existing enrolment address is made by mail, select <strong>Accept</strong></p></li>
+			<ul>			<li>
+Record is updated with DPID address</li>		</ul>
+		<li>
+If a new or existing enrolment address is made in person by telephone or at a Medicare Service Centre, or the address given does not match the DPID and you are able to speak to the applicant in person or by phone</li>
+			<ul>			<li>
+Inform the applicant that their Services Australia address must be updated to match the address given by Australia Post. Tell them what the DPID address is and ask for confirmation that this is their address</li>
+			<li>
+If applicant strongly objects to using the DPID address, see the information under 'Applicant objects to DPID address' below</li>
+			<li>
+If they do not object, select <strong>Accept</strong>. Record is updated with the DPID address</li>
+		</div>
+	</div>
+</div>
+			</ul>			</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Applicant_objec"></a>
+<h2 id="bp01_L2GT_Applicant_objec">Applicant objects to DPID address</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>If an applicant strongly objects to their Services Australia address being updated to match the DPID address&#58;</p>
+		<ul>		<li>
+<p>Select <strong>Continue/Change</strong> to override the DPID. System continues with the address keyed.</p></li>
+		<li>
+Update record with applicant's preferred address.</li>
+		<li>
+Endorse 'DPID not allocated by the system' on one of the following&#58;</li>
+			<ul>			<li>
+CDMS Commentary</li>
+			<li>
+<strong>Note&#58;</strong> notate spreadsheet that comments have been added to CDMS Operator batch record form</li>
+			<li>
+Medicare Enrolment form</li>
+		</div>
+	</div>
+</div>
+			</ul>			</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Error_message_c"></a>
+<h2 id="bp01_L2GT_Error_message_c">Error message continues to display</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>If the message <strong>6-NO DPID?</strong> still displays and the address is confirmed as correct, override the address as follows.</p>
+		<ul>		<li>
+For enrolment processing, use existing override procedures</li>
+		<li>
+For claims processing, use&#58;</li>
+			<ul>			<li>
+A indicator for permanent address</li>
+			<li>
+B indicator for temporary address change</li>
+			</ul>			</ul>
+<p>The return message <strong>6-CHK ADDR</strong> remains unchanged.</p>
+
+<p>The <strong>6-CHK ADDR</strong> message continues to display when an address is keyed in a non-standard format. An address in a standard format has a greater chance of finding a matching address on PAF and, therefore, of allocating a DPID.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<a class="anchor" name="bp01_L2LL_Related_links"></a>
+<h2 id="bp01_L2LL_Related_links">Related links</h2>
+
+
+<p><a href="../your-health/011-44060000-01.html">Reciprocal Health Care Agreements (RHCA) eligibility for Medicare and Pharmaceutical Benefits Scheme (PBS)</a></p>
+
+<p><a href="../your-health/011-44120000-01.html">Child enrolments in Medicare</a></p>
+
+<p><a href="../your-health/011-43010070-01.html">Medicare claims for deceased persons</a></p>
+
+<p><a href="../your-health/011-44150000-01.html">Medicare cards</a></p>
+
+<p><a href="../your-health/011-40060010-01.html">Register a customer for Medicare in the Consumer Directory Maintenance System (CDMS)</a></p>
+
+<p><a href="../your-health/011-44150020-01.html">Copy or transfer a person or child to another Medicare card</a></p>
+
+<p><a href="../your-health/011-44110030-01.html">Change of address for Medicare enrolments</a></p>
+
+<p><a href="../your-health/011-44160000-01.html">System flags, control lines and abbreviations for Medicare enrolments</a></p>
+
+<p></p>
+<a class="anchor" name="bp06_L1TT_Training_Supp"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

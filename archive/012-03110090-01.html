@@ -196,21 +196,174 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines how to identify and resolve duplicate Healthcare Provider Identifier - Organisation (HPI-O) records in the Healthcare Identifiers (HI) Service. A duplicate record is defined where more than one identifier has been allocated to the same healthcare provider organisation. A potential duplicate report is generated weekly for manual follow-up and resolution.</p>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Seed_organisati"></a>
+<h2 id="_Toc344898764">Seed organisations created incorrectly</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Two seed organisations created incorrectly cannot be merged as duplicates. The record that is to become the secondary record must first be moved into the same hierarchy as the seed (primary) and made a network organisation. It can then be resolved as a duplicate of the seed organisation.</p>
+
+<p><strong>See also&#58;</strong> <a href="../health-professionals/012-03110070-01.html">Process organisation change of ownership in the Healthcare Identifiers (HI) Service</a>.</p>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Identify_potent"></a>
+<h2 id="_Toc344898764">Identify potential duplicate HPI-O record – manual process</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>A Service Officer can flag two or more records if they suspect that they belong to the same organisation.</p>
+
+<p>Flagged records have the status ‘Potential Duplicate’ (flagged awaiting resolution) until a manual resolution process takes place. A record with a status of ‘Potential Duplicate’ cannot be flagged again before being resolved.</p>
+
+<p>The potential duplicate flag can be removed once it is determined that the record is not a duplicate.</p>
+
+<p>Retired records cannot be flagged as potential duplicates.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Identify_potent01"></a>
+<h2 id="_Toc344898764">Identify potential HPI-O record – automatic process</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>The HI Service performs real-time checks and flags potential duplicate organisations.</p>
+
+<p>This involves searching for an exact match on <strong>all</strong> of the following criteria&#58;</p>
+		<ul>		<li>
+preferred organisation name</li>
+		<li>
+preferred organisation address</li>
+		<li>
+Australian Business Number (ABN) or Australian Company Number (ACN)</li>
+		</ul>
+<p>The automated duplicate checking process occurs&#58;</p>
+		<ul>		<li>
+against all organisation records in the HI Service</li>
+		<li>
+during each create and amend process</li>
+		</ul>
+<p>A record with a status of ‘Potential Duplicate’ cannot be flagged again before being resolved.</p>
+
+<p>Potential duplicate (HPI-Os) are identified&#58;</p>
+		<ul>		<li>
+via automatic checks&#58;</li>
+			<ul>			<li>
+when creating a new HPI-O</li>
+			<li>
+in the Identify Duplicate process</li>		</ul>
+		<li>
+via external sources</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Resolution_of_d"></a>
+<h2 id="_Toc344898764">Resolution of duplicate organisation records</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>A Service Officer must complete a manual duplicate resolution process.</p>
+
+<p>A record flagged as a potential duplicate can be&#58;</p>
+		<ul>		<li>
+resolved if it is determined that the record is a duplicate of another record</li>
+		<li>
+determined not to be a duplicate and have the potential duplicate flag removed</li>
+		<li>
+amended if required</li>
+		</ul>
+<p>For the purpose of duplicate resolution a&#58;</p>
+		<ul>		<li>
+<strong>primary</strong> record is the record that was originally created</li>
+		<li>
+<strong>secondary</strong> record is the record that was created subsequently and in error</li>
+		</ul>
+<p>Where the secondary record is determined to be a duplicate&#58;</p>
+		<ul>		<li>
+the record is end-dated and the status changes to ‘Retired Duplicate’</li>
+		<li>
+any child organisations of the resolved secondary record are unlinked from the secondary record and re-linked to the parent organisation of the secondary record (the child’s grandparent)</li>
+		<li>
+any Healthcare Provider links to the resolved secondary record is end-dated with the current date and time stamp</li>
+		<li>
+any Responsible Officer (RO) or Organisation Maintenance Officer (OMO) links to the resolved secondary record is end-dated with the current date and time stamp</li>
+		<li>
+amended details are updated in the Healthcare Provider Directory Service (HI HPD), based on preferences</li>
+		<li>
+the system logs for the two records are not merged</li>
+		<li>
+the system log for the resolved secondary record can be requested if required</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Refer_potential"></a>
+<h2 id="_Toc344898764">Refer potential duplicates</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Refer all potential duplicates to Tier 3 HI Service Provider support team for follow-up action and resolution.</p>
+
+<p>See <a href="../health-professionals/012-03110090-05.html">Resources</a> for a link to contact details.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<a class="anchor" name="bp01_L2LL_Related_links01"></a>
+<h2 id="_Toc344898764">Related links</h2>
+
+
+<p><a href="../health-professionals/012-03110000-01.html">Healthcare Provider Identifier - Organisation (HPI-O) in Healthcare Identifiers (HI) Service</a></p>
+
+<p><a href="../health-professionals/012-03110080-01.html">Identify and resolve replica Healthcare Provider Identifier - Organisation (HPI-O) record in Healthcare Identifiers (HI) Service</a></p>
+
+<p></p>
+<a class="anchor" name="bp02_L1PT_Process_summary"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

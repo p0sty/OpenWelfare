@@ -196,21 +196,138 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p></p>
+<a class="anchor" name="bp05_L3TT_Scenarios"></a>
+<h3>Scenarios</h3>
+
+
+<p>Table 1 This table describes different scenarios and what warning messages appear with multiple users. In the following scenarios Service Officers will be referred to as User 1, User 2 and User 3</p>
+
+<p></p>
+<table caption="Table 1 This table describes different scenarios and what warning messages appear with multiple users. In the following scenarios Service Officers will be referred to as User 1, User 2 and User 3 " width="100%">
+<tr>
+<td width="49%">
+<a class="anchor" name="bp05_tbl_Scenarios_Scenario"></a>
+<p><strong>Scenario</strong></p></td>
+<td>
+
+<p><strong>Outcome</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Scenarios_Two_user"></a>
+<p><strong>Two users access the same CRN </strong></p>
+		<ul>		<li>
+User 1 is actioning a transaction in a customer’s record</li>
+		<li>
+User 2 accesses the same customer record</li></td>
+<td>
+		<li>
+User 1 does not receive any messaging</li>
+		<li>
+User 2 will receive a warning message <strong>'User&#58; &lt;USERID&gt; is currently in transaction ID&lt;XXXXXXXXXX&gt;' </strong></li>
+		<li>
+User 2 is able to make updates to the record as has only accessed the same record and not the same transaction </li>
+		<li>
+All actions such as <strong>Assess</strong>, <strong>Add</strong>, <strong>Edit</strong> and <strong>Delete </strong>are enabled</li>		</ul>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Scenarios_Multiple"></a>
+<p><strong>Multiple users are accessing the same CRN with one user accessing one transaction</strong></p>
+		<ul>		<li>
+User 1 accesses CRN via Customer Summary tile</li>
+		<li>
+User 2 access Transaction ID 001 via Inbox tile</li>
+		<li>
+User 3 accesses CRN via Customer Summary tile</li></td>
+<td>
+		<li>
+User 1 does not receive any messaging </li>
+		<li>
+User 2 will receive a warning message <strong>'User&#58; &lt;USERID&gt; is currently in this CRN'</strong></li>
+		<li>
+User 2 is able to continue to action the transaction they are working on</li>
+		<li>
+User 3 will be presented with the messages that User 1 <strong>'User&#58; &lt;USERID&gt; is currently in this CRN'</strong> and User 2 <strong>'User&#58; &lt;USERID&gt; is currently in transaction ID&lt;001&gt;'</strong> </li>
+		<li>
+User 3 is able to make updates to the customer record except to Transaction ID 001</li>
+		</ul>
+<p></p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Scenarios_Multiple01"></a>
+<p><strong>Multiple users access different transactions on the same CRN </strong></p>
+		<ul>		<li>
+User 1 accesses Transaction ID 001 via Inbox tile</li>
+		<li>
+User 2 access Transaction ID 002 via Inbox tile</li>
+		<li>
+User 3 accesses Transaction ID 001 via Inbox tile</li></td>
+<td>
+		<li>
+User 1 does not receive any messaging </li>
+		<li>
+User 2 receives a message <strong>'User&#58; &lt;USERID&gt; is currently in transaction ID&lt;001&gt;'</strong> </li>
+		<li>
+User 2 is able to make updates within their transaction ID 002</li>
+		<li>
+User 3 will be presented with the messages that<br>User 1 - <strong>'User&#58; &lt;USERID&gt; is currently in this transaction'</strong><br>User 2 -  <strong>'User&#58; &lt;USERID&gt; is currently in transaction ID&lt;002&gt;'</strong> and <strong>'User&#58; &lt;USERID&gt; is currently in this CRN'</strong> </li>
+		<li>
+User 3 is unable to make any updates in Transaction ID 001</li>
+		<li>
+All actions such as <strong>Assess</strong>, <strong>Add</strong>, <strong>Edit </strong>and <strong>Delete</strong> are disabled</li>		</ul>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Scenarios_Multiple02"></a>
+<p><strong>Multiple users are accessing the same transaction with one user accessing the same CRN</strong></p>
+		<ul>		<li>
+User 1 accesses Transaction ID 001 via Inbox tile</li>
+		<li>
+User 2 accesses CRN via Customer Summary tile</li>
+		<li>
+User 3 accesses the same transaction ID 001 via the Inbox tile and removes transaction lock from User 1</li></td>
+<td>
+		<li>
+User 1 does not receive any messaging</li>
+		<li>
+User 2 receives a message that User 1 is <strong>'User&#58; &lt;USERID&gt; is currently in transaction ID&lt;001&gt;'</strong> </li>
+		<li>
+User 2 is able to make updates to the customer’s record as they are not in the same transaction as User 1</li>
+		<li>
+User 3 will receive a message that User 1 <strong>'User&#58; &lt;USERID&gt; is currently in this transaction'</strong> and User 2 is <strong>'User&#58; &lt;USERID&gt; is currently in this CRN'</strong></li>
+		<li>
+User 3 will not be able to make any updates to the transaction, as User 1 is already in the transaction</li>
+		<li>
+User 3 is able to remove the transaction lock from User 1 <strong>only</strong> in urgent circumstances</li>		</ul></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp06_L1TT_Training_Supp"></a>
+</div><div class="rightpanel">
+   
 </div>
-<!-- end primary tab container -->
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

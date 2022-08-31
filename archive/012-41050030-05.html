@@ -201,21 +201,99 @@
 </div>
 
 
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This page contains error codes for derived fee items for Telehealth claims and a link to Medicare Benefits Schedule (MBS) Online.</p>
+<a class="anchor" name="bp05010000_System_codes"></a>
+<h2 id="bp05010000_System_codes">System codes</h2>
+
+
+<p><strong>Note&#58;</strong> these reason codes are system generated - no operator intervention is required.</p>
+<a class="anchor" name="bp05020000_Derived_fee_item_err"></a>
+<h3>Derived fee item error codes</h3>
+
+
+<p>This table describes derived fee scenarios and associated system responses and codes for resolution.</p>
+<table caption="This table describes derived fee scenarios and associated system responses and codes for resolution." width="100%">
+<tr>
+<td width="47%">
+<a class="anchor" name="bp05020001_Situation"></a>
+<p><strong>Situation</strong></p></td>
+<td>
+
+<p><strong>System response</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020002_A_Telehealth_derived"></a>
+<p>A Telehealth derived fee item is claimed prior to the item's start date</p></td>
+<td>
+		<ul>		<li>
+error message 2-ITEM COV is returned</li>
+		<li>
+use reason code 206 to resolve message</li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020003_More_than_one_Telehe"></a>
+<p>More than one Telehealth derived fee item and existing specialist/consultant physician consultation item (such as a base item) are claimed within the same group/sub-group</p></td>
+<td>
+		<ul>		<li>
+error message 3-MULT ITM is returned</li>
+		<li>
+use reason code 640 to resolve message</li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020004_Each_new_specialist"></a>
+<p>Each new specialist/consultant physician Telehealth derived fee item is only claimable when present in the same claim as an existing specialist/consultant physician consultation item (such as a base item)</p></td>
+<td>
+		<ul>		<li>
+error message 3-NO BASE is returned</li>
+		<li>
+use reason code 223 to resolve message</li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020005_More_than_one_Telehe"></a>
+<p>More than one Telehealth existing specialist/consultant physician consultation item (such as a base item) is claimed with a single Telehealth derived fee item in the same</p></td>
+<td>
+		<ul>		<li>
+error message 6-MULT BSE is returned</li>
+		<li>
+use reason code 641 to resolve message</li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05020006_The_Telehealth_deriv"></a>
+<p>The Telehealth derived fee item is associated with a zero dollar benefit</p></td>
+<td>
+		<ul>		<li>
+warning message 8-DRV ITM is returned</li>
+		<li>
+use reason codes 642 and 643 to resolve message</li>		</ul></td>
+</tr>
+
+</table>
+<a class="anchor" name="bp05030000_External_websites"></a>
+<h2 id="bp05030000_External_websites">External websites</h2>
+
+
+<p><a target="_blank" class="extwebsitelink" href="http&#58;//www.mbsonline.gov.au/internet/mbsonline/publishing.nsf/Content/Home">MBS Online Medicare Benefits Schedule</a></p>
+
+<p></p>
+</div><div class="rightpanel">
+   
 </div>
-<!-- end primary tab container -->
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

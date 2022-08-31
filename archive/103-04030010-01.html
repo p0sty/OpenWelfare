@@ -196,21 +196,205 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines information on what happens when a customer contacts Services Australia to change their payment destination. There is no legislation or policy which covers how often a customer can change their payment destination.</p>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Issues_to_consi"></a>
+<h2 id="_Toc344898764">Issues to consider when changing payment destination</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Consider the following issues when a customer wishes to change their payment destination&#58;</p>
+		<ul>		<li>
+Privacy issues</li>
+		<li>
+Payment destination details can only be changed by the customer themselves or a person with payment authority for that customer. This can also include a faxed request from a bank, on their letterhead <strong>and</strong> signed by the customer</li>
+		<li>
+The customer <strong>must have legal access</strong> to the account - it must be in their own name, or their name must appear in the title of the joint account</li>
+		<li>
+Customers who bank with credit unions must provide their <strong>account</strong> number, not their <strong>member</strong> number, or their payments will reject. This applies even where the customer has historically provided their member number (to Centrelink or any other third party)</li>
+		<li>
+Account numbers with leading zeros <strong>must</strong> be recorded exactly as described – any zeroes missed from the start of an account number can inadvertently redirect funds to an incorrect recipient</li>
+		<li>
+Payments can only be made to a child's account if the account is held in trust for the child by the customer or if withdrawals can only be made by the customer. In these cases, it is deemed that the customer has legal access to the account</li>
+		<li>
+It is vital that the correct information is coded. Once the payment destination has been updated confirm the change with the customer</li>
+		<li>
+If the customer receives more than one type of payment, confirm with the customer the account details for each payment</li>
+		<li>
+If a customer has a direct credit exemption coded and on the Payment Summary (<strong>PS</strong>) screen the payment destination is cheque, this payment has not been issued to the customer and will not be issued until bank account details are coded</li>
+		<li>
+Review any Payment Nominee arrangement that may be current. Where applicable, this arrangement needs to be cancelled before any payment destination changes are completed</li>
+		<li>
+Is this payment destination used for the receipt of NDIS payments? NDIS payments should be in a separate account as NDIS amounts received for funded support are income, asset and deeming exempt for income support purposes.</li>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Work_Items"></a>
+<h2 id="_Toc344898764">Work Items</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>The following work items relate to changing payment destination&#58;</p>
+		<ul>		<li>
+<strong>ZCOC_PMT_DEST Change of Circumstances - Payment Destination</strong> is created when an online payment destination update has failed. The ‘UPD DOC’ on the Document List (<strong>DL</strong>) screen will confirm the cause</li>
+		<li>
+<strong>ZDMS_Q286 - Provide account details for direct credit Q286</strong> is created when a ‘Q286 - Letter to client requesting account details for payment destination’ has been completed and returned by the customer</li>
+		<li>
+<strong>ZDMS_Q092 Requested payment destination details Q092</strong> is created when a customer uploads a ‘Q092 to customer requesting payment destination details’ form</li>
+		<li>
+<strong>ZDMS_SS270 - SS270 Group Payment Request</strong> is created when a ‘SS270 Group Payment Request’ form is scanned to a customer’s record. See <a href="../payment-delivery/103-04010130-01.html">Group payment schedules and payments to organisations</a> for more information</li>
+		<li>
+<strong>ZDMS_SS290 - SS290 Change of payment account details</strong> is created when a customer uploads a ‘SS290 Change of payment account details’</li>
+		</ul>
+<p>For ZDMS_Q286, ZDMS_Q092, ZDMS_SS270 and ZDMS_SS290 work items&#58;</p>
+		<ul>		<li>
+Check the Activity List (<strong>AL</strong>) screen to identify the form code on the left hand side of the activity</li>
+		<li>
+Check the Document List (<strong>DL</strong>) screen to identify if there was a triggering event that created this activity</li>
+		<li>
+Action the scan and update to the bank payment destination. When actioned and completed&#58;</li>
+			<ul>			<li>
+Select the Transaction ID from the <strong>AL</strong> screen</li>
+			<li>
+Select <strong>Edit</strong></li>
+			<li>
+Change Status from <strong>Document Added</strong> to <strong>Completed</strong></li>
+		</div>
+	</div>
+</div>
+			</ul>			</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Separated_custo"></a>
+<h2 id="_Toc344898764">Separated customers</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>When a customer separates from their partner, ensure the customer's bank account details are correct and confirm whether they wish to have payments made to the same account.</p>
+
+<p>If a customer has payments made to a joint account, advise the customer that if money is paid into the joint account, the former partner will have access to their payment. The customer should be asked if they have an account in their own name only, as payment should not continue to be made to the joint account.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_YA_or_ABSTUDY_c"></a>
+<h2 id="_Toc344898764">YA or ABSTUDY customer turns 18 years</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Under 18 year olds who are <a href="../students-and-trainees/010-02040000-01.html">dependent</a> on their parents will have their payments sent directly to the parent.</p>
+
+<p>Once the Youth Allowance (YA) or ABSTUDY customer has turned 18, the payment must either be paid to an account held by the customer (or parents if the customer has a joint bank account with them) or a Payment Nominee arrangement must be made. A parent who has been receiving their under 18 YA child's payments may have <a href="../complaints-privacy-and-foi/104-01020010-01.html">authority to provide new bank account details in the child's own name when the child turns 18</a>.</p>
+
+<p>There are certain 'payees' for customers in receipt of ABSTUDY Living Allowance, refer to <a href="../students-and-trainees/010-02070080-01.html">Living Allowance for ABSTUDY</a> for further information.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Assistance_for_"></a>
+<h2 id="_Toc344898764">Assistance for Isolated Children (AIC)</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Only AIC Smart Centre staff can change the payment destination of AIC records. AIC payment information is NOT coded on the <strong>PAS</strong> screen, and if coded here will cause payment errors/issues. Staff receiving a request to have the payment destination of an AIC applicant changed should send an <strong>ACTDOC</strong> to LPT with keywords of <strong>ACTAIC</strong> and <strong>URGENT</strong>. The <strong>ACTDOC</strong> will need to contain the Account name, Account number, BSB and the date from which the details changed.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_YA_and_ABSTUDY_"></a>
+<h2 id="_Toc344898764">YA and ABSTUDY customers under 18 years of age</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>In some cases, payments can be made to the customer or a third party. See <a href="../payment-delivery/103-04010050-01.html">Under 18 year old Youth Allowance (YA) or ABSTUDY customer wants to stop payment going to their parents</a>.</p>
+
+<p>There is no restriction on making changes to payment destination for customers who are under 18 and <strong>independent</strong>.</p>
+
+<p><strong>Note&#58;</strong> if <strong>any</strong> payment destination change is requested by a third party, <strong>extra care must be taken</strong> to confirm identity, circumstances and financial arrangements before a change is made.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+
+<p>The <a href="../payment-delivery/103-04030010-05.html">Resources</a> page contains links to self service information on the Services Australia website and to forms used by a customer to request the appointment of a nominee, to authorise payment to be sent to an institution and to request their payment destination be changed.</p>
+<a class="anchor" name="bp01_L2LL_Related_links"></a>
+<h2 id="_Toc344898764">Related links</h2>
+
+
+<p><a href="../payment-delivery/103-04030000-01.html">Payment destination</a></p>
+
+<p><a href="../payment-delivery/103-04010050-01.html">Under 18 year old Youth Allowance (YA) or ABSTUDY customer wants to stop payment going to parents</a></p>
+
+<p><a href="../complaints-privacy-and-foi/104-01010000-01.html">Accepting and disclosing information</a></p>
+
+<p><a href="../complaints-privacy-and-foi/104-04090030-01.html">Cancelling a nominee arrangement</a></p>
+
+<p><a href="../complaints-privacy-and-foi/104-04090040-01.html">Changing personal details of nominees</a></p>
+
+<p><a href="../payment-delivery/103-04010000-01.html">Centrelink payments to third parties</a></p>
+
+<p><a href="../payment-delivery/103-04010130-01.html">Group payment schedules and payments to organisations</a></p>
+
+<p><a href="../payment-delivery/103-04050000-01.html">Protection of customer payments</a></p>
+
+<p><a href="../complaints-privacy-and-foi/104-04110000-01.html">Authenticating a customer</a></p>
+
+<p><a href="../complaints-privacy-and-foi/104-04090070-01.html">Nominee organisations</a></p>
+
+<p><a href="../payment-delivery/103-04010030-01.html">Payments to parents of ABSTUDY students aged 16-17 years</a></p>
+
+<p><a href="../payment-delivery/103-04010010-01.html">Payments to parents for under 18 year old Youth Allowance (YA) dependent customers</a></p>
+
+<p><a href="../payment-delivery/103-04010070-01.html">Payments to third parties and institutions for ABSTUDY</a></p>
+
+<p><a href="../complaints-privacy-and-foi/104-01020010-01.html">Accepting information from parents of Youth Allowance (YA) customers</a></p>
+
+<p></p>
+<a class="anchor" name="bp02_L1PT_Process_summary"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

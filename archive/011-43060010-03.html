@@ -196,21 +196,589 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This page contains information on how to process Electronic Claim Lodgement and Information Processing Service Environment (ECLIPSE) claims, identify rejected and partially rejected ECLIPSE claims and find ECLIPSE claims in Search Analyse Investigate Network Tool (SAINT).</p>
+
+<p></p>
+
+<h2 id="On this page&#58;">On this page&#58;</h2>
+
+
+<p><a href="../your-health/011-43060010-03.html#bp03_L3TT_Process_Simplif">Process Simplified Billing ECLIPSE claims</a></p>
+
+<p><a href="../your-health/011-43060010-03.html#bp03_L3TT_Identify_reject">Identify rejected, partially rejected or paid ECLIPSE claims</a></p>
+
+<p><a href="../your-health/011-43060010-03.html#bp03_L3TT_Find_ECLIPSE_cl">Find ECLIPSE claim details in SAINT</a></p>
+
+<p></p>
+<a class="anchor" name="bp03_L3TT_Process_Simplif"></a>
+<h3>Process Simplified Billing ECLIPSE claims</h3>
+
+
+<p>Table 1&#58; This table describes how to process and finalise payments for Simplified Billing ECLIPSE claims once picked up for the Work Distribution, Allocation and Management System (WDAM).</p>
+<table caption="Table 1&#58; This table describes how to process and finalise payments for Simplified Billing ECLIPSE claims once picked up for the Work Distribution, Allocation and Management System (WDAM)." class="" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Process_Simplif_Step"></a>
+<p><strong>Step</strong></p></td>
+<td>
+
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_Simplif_Step01"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Process ECLIPSE claim</strong> <a title="Read more 1" class="showhead bp03_tbl_Process_Simplif_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_Simplif_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Log on to Mainframe, key&#58;</p>
+		<ul>		<li>
+<strong>MQRI</strong>, press [<strong>Enter</strong>]</li>
+		<li>
+enter <strong>SB</strong> in the <strong>GIVE ME NEXT CLAIM</strong> field, press [<strong>Enter</strong>]</li>
+		</ul>
+<p>The system will return the next most urgent Simplified Billing electronic claim in <strong>FAPI</strong> (<strong>FAPC</strong>) screen. This may be either an ECLIPSE or EDI claim.</p>
+
+<p>For <strong>access to WDAM</strong>, complete a <strong>WDAM Access request to Simplified Billing Specialist queue </strong>on the <a href="../your-health/011-43060010-05.html">Resources</a> page.</p>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_Simplif_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Assess ECLIPSE Claim</strong> <a title="Read more 2" class="showhead bp03_tbl_Process_Simplif_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_Simplif_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The pend processing screen will be displayed.</p>
+
+<p>Review and apply assessing restrictions by following warning messages&#58;</p>
+		<ul>		<li>
+warning message must be actioned in order from left to right and further explanations can be viewed by placing the cursor under the return message and pressing [F1]</li>
+		<li>
+check patient history to determine if services should be paid or rejected</li>
+		<li>
+all assessing rules apply and must be followed, for example&#58;</li>
+			<ul>			<li>
+multiple operation rule</li>
+			<li>
+diagnostic service rules</li>
+			<li>
+restrictions</li>
+			<li>
+time dependencies</li>
+			<li>
+amputations</li>
+			<li>
+anaesthetics formulas/RVG</li>
+			<li>
+text field messages must be read - place the cursor under the item number and press [F4]</li>
+			</ul>			</ul>
+<p><strong>Note&#58;</strong></p>
+		<ul>		<li>
+Assistant items must be processed last in a batch. Key [<strong>F8</strong>] to scroll through services</li>
+		<li>
+Ensure consistency between surgical item and assistant item text fields. If no surgical items have been claimed, manually calculate the assistant item using [<strong>F4</strong>] to calculate the items the assistant provider has endorsed in the text field</li>
+		<li>
+Where applicable, key the appropriate processing indicator in the <strong>PI</strong> field as per the return warning messages</li>
+		<li>
+When rejecting a service, the payee code (<strong>P</strong>) field must be changed from <strong>8</strong> to <strong>F</strong>, and the applicable <strong>RSN</strong> code keyed in the <strong>RSN</strong> field</li>
+		</ul>
+<p>1-PREV CON return messages. The <a href="../your-health/011-43060010-05.html#bp05_L2GT_Matrix_for_1PR">Resources</a> page contains the 1-PREV CON Matrix</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_Simplif_Step03"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Finalise ECLIPSE Claim</strong> <a title="Read more 3" class="showhead bp03_tbl_Process_Simplif_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_Simplif_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Once the claim has been assessed, select [<strong>Enter</strong>].</p>
+
+<p><strong>Note&#58;</strong> a claim cannot be completed until all errors have been resolved. Once all errors have been resolved, the system will return the message <strong>'NO ERRORS OK TO PAY'</strong>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_Simplif_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Pay ECLIPSE Claim</strong> <a title="Read more 4" class="showhead bp03_tbl_Process_Simplif_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_Simplif_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+Over key <strong>FAPC</strong> to <strong>FPPI</strong> and select [<strong>Enter</strong>] to update the claim status</li>
+		<li>
+Over key <strong>FPPI</strong> to <strong>FPPP</strong> and select [<strong>Enter</strong>] to pay the claim. The claim will return ‘<strong>PAID OK</strong>’</li>
+		<li>
+Select [<strong>Enter</strong>] to return to the Online Claims Management screen to select the next claim and repeat above</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp03_L3TT_Identify_reject"></a>
+<h3>Identify rejected, partially rejected or paid ECLIPSE claims</h3>
+
+
+<p>Table 2&#58; This table describes how to identify ECLIPSE claims rejected, partially rejected or paid claims by Medicare in mainframe.</p>
+<table caption="Table 2&#58; This table describes how to identify ECLIPSE claims rejected by Medicare in mainframe. Note&#58; where Medicare rejects the whole claim, the claim details and rejection information is not transmitted to the private health insurer. ECLIPSE claims can be identified using the FCEI control line.  " width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Identify_reject_Step"></a>
+<p><strong>Step</strong></p></td>
+<td>
+
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step01"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Confirm how claim was transmitted</strong> <a title="Read more 5" class="showhead bp03_tbl_Identify_reject_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Was the claim transmitted via the ECLIPSE channel and initiated by the health professional or practice staff?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step02">go to Step 2</a></li>
+		<li>
+<strong>No</strong>, <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step10">go to  Step 10</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Identify the health professional</strong> <a title="Read more 6" class="showhead bp03_tbl_Identify_reject_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Identify the health professional or practice staff performing a provider security check. See <a href="../health-professionals/012-40030000-01.html">Perform telephone security check for Medicare health professionals</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step03"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Identify the claim</strong> <a title="Read more 7" class="showhead bp03_tbl_Identify_reject_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Get the following details from the health professional or practice staff to identify the claim&#58;</p>
+		<ul>		<li>
+Minor ID</li>
+		<li>
+Claim ID (ECLIPSE claim IDs have a % suffix, for example 12345%)</li>
+		<li>
+Date of lodgement</li>
+		</ul>
+<p>Can the health professional or practice staff provide the above details?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step08">go to Step 8</a></li>
+		<li>
+<strong>No</strong>, if the site cannot locate the claim ID, <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step04">go to Step 4</a> and request the additional details</li>
+		</ul>
+<p>See the <a href="../your-health/011-43060010-05.html">Resources</a> page for a list of billing agents and private health insurers.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Requesting additional details to identify a claim </strong> <a title="Read more 8" class="showhead bp03_tbl_Identify_reject_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Get the following details from the health professional or practice staff to identify the patient&#58;</p>
+		<ul>		<li>
+Medicare card number and Individual Reference Number (IRN)</li>
+		<li>
+patient's first name</li>
+		<li>
+patient's surname</li>
+		<li>
+patient's date of birth (if required)</li>
+		</ul>
+<p>Can the health professional or practice staff provide the above details?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step05">go to Step 5</a></li>
+		<li>
+<strong>No</strong>, ask them to phone back when they have the required details. Procedure ends here</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step05"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Identify ECLIPSE claims - NHSI screen</strong> <a title="Read more 9" class="showhead bp03_tbl_Identify_reject_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To identify ECLIPSE claims on the Medicare claims history (<strong>NHSI</strong>) screen&#58;</p>
+		<ul>		<li>
+key control line <strong>NHSI, cardnumber, patient name or IRN</strong></li>
+		<li>
+select [<strong>Enter</strong>]</li>
+		</ul>
+<p>Patient history displays, including rejected services for ECLIPSE claims only if Medicare has not rejected all the services in the claim.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step06"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>Confirm details</strong> <a title="Read more 10" class="showhead bp03_tbl_Identify_reject_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Confirm the details of service&#58;</p>
+		<ul>		<li>
+date of service</li>
+		<li>
+provider details</li>
+		<li>
+service items</li>
+		</ul>
+<p>To confirm the claim ID and date of lodgement press&#58;</p>
+		<ul>		<li>
+<strong>PF2-CLAIM ID</strong> to identify claim ID. ECLIPSE claim IDs have a % suffix for example 12345%</li>
+		<li>
+<strong>PF4-FEE/SRC</strong> to check the date of lodgement</li>
+		</ul>
+<p>Use patient history modifiers to refine the search on the history screen, it can display as either&#58; </p>
+		<ul>		<li>
+<strong>NHSI,cardnumber,patient name,</strong> or </li>
+		<li>
+<strong>NHSI,cardnumber,IRN</strong>, or</li>
+		<li>
+<strong>NHSI,cardnumber,DOS/DDMMYY</strong>. This control line returns all services on the patient history with the specified date of service</li>
+		</ul>
+<p>Does the claim ID have a <strong>suffix %</strong> ? </p>
+		<ul>		<li>
+<strong>Yes</strong>,</li>
+			<ul>			<li>
+if the claim is paid, payee code 8 displays. To confirm the claim status <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step09">go to Step 9</a></li>
+			<li>
+if the claim has been rejected, payee code F displays. To search the status of claim <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step07">go to Step 7</a></li>		</ul>
+		<li>
+<strong>No</strong>, confirm the claim type with the health professional&#58;</li>
+			<ul>			<li>
+private health insurers or billing agents submit Manual or EDI claims. <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step10">Go to  Step 10</a></li>
+			<li>
+for ECLIPSE patient claims, tell the health professional to contact the eBusiness Service Centre. Procedure ends here</li>
+			</ul>			</ul>
+<p>See also&#58; <a target="_blank" href="../your-health/011-43020000-01.html">Indicators, codes, modifiers and control lines for claims processing in Medicare</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step07"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Check claim details</strong> <a title="Read more 11" class="showhead bp03_tbl_Identify_reject_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Are the claim details available on the patient history?</p>
+		<ul>		<li>
+<strong>Yes</strong>, PFI on the Medicare reason code to identify the reason for the rejection. </li>
+			<ul>			<li>
+Tell the health professional or practice staff the reason for the rejection</li>
+			<li>
+Procedure ends here</li>		</ul>
+		<li>
+<strong>No</strong>, the claim may have been health fund rejected or failed to transmit. <a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step08">Go to Step 8</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Key control line</strong> <a title="Read more 12" class="showhead bp03_tbl_Identify_reject_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+key control line <strong>FCEI, Fund Minor ID, Claim ID, DOL=ddmmyy</strong></li>
+		<li>
+select [<strong>Enter</strong>]</li>
+		</ul>
+<p>The system returns details of the status of the claim.</p>
+
+<p>Example&#58;</p>
+
+<p><strong>FCEI, ABC12345, 00001%, DOL=311012</strong></p>
+
+<p><strong>SMITH HEATH FUND</strong></p>
+
+<p><strong>A CLAIM ID DOL - REF CLM SC STATUS RSN OPER REF</strong></p>
+
+<p>00001% - 311012 - 1 REJECTED - ABCD 311012 5555X 428</p>
+
+<p><strong>STATUS</strong> – <strong>OPER</strong> - <strong>REFERENCE</strong></p>
+
+<p>01 REJECTED - OPER - 020712 5555X </p>
+
+<p>02 FUND REJ - OPER - 020712 5XXXX 064</p>
+
+<p>03 HUB 2GET - OPER - 020712 5XXXX 064</p>
+
+<p>04 IN PEND - OPER - 020712 5XXXX 326</p>
+
+<p>05 D/E COMP - OPER - 010712 5555X 212</p>
+
+<p>06 FUND ASS - OPER - 010712 FXXXX 000</p>
+
+<p><a href="../your-health/011-43060010-03.html#bp03_tbl_Identify_reject_Step09">Go to Step 9</a> to confirm the status.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step09"></a>
+<p>9</p></td>
+<td>
+
+<p><strong>Confirm claim status</strong> <a title="Read more 13" class="showhead bp03_tbl_Identify_reject_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+If the claims displays <strong>PAID-SD</strong> or <strong>PAID-LD</strong>, tell the health professional or practice staff that the claim is paid&#58;</li>
+			<ul>			<li>
+<strong>PAID-SD</strong> - Paid same day</li>
+			<li>
+<strong>PAID-LD</strong> - Paid latter day</li>
+			<li>
+Procedure<strong> </strong>ends here</li>		</ul>
+		<li>
+If the claim displays <strong>FUND REJ</strong>, this status is applied to either&#58;</li>
+			<ul>			<li>
+claims if all services are rejected by Medicare, or</li>
+			<li>
+AG/SC claims if all services are rejected by the private health insurer. Go to <a href="../your-health/011-43060010-03.html#bp03_tbl_Find_ECLIPSE_cl_Step">Table 3</a> to view the details in SAINT</li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Identify_reject_Step10"></a>
+<p>10</p></td>
+<td>
+
+<p><strong>Direct for further assistance</strong> <a title="Read more 14" class="showhead bp03_tbl_Identify_reject_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Identify_reject_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more…</a></p>
+<div class="showcont">
+
+
+<p>Direct the health professional or practice staff to the relevant private health insurer or billing agent for help.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp03_L3TT_Find_ECLIPSE_cl"></a>
+<h3>Find ECLIPSE claim details in SAINT</h3>
+
+
+<p>Table 3&#58; This table describes how to find ECLIPSE claim details in SAINT. Identify ECLIPSE claims by using the Minor ID or Registration number and date of lodgement.</p>
+<table caption="Table 4&#58; This table describes how to find ECLIPSE claim details in Wobbly. ECLIPSE claims can be identified using the Minor ID and date of lodgement." width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Find_ECLIPSE_cl_Step"></a>
+<p><strong>Step</strong></p></td>
+<td>
+
+<p><strong>Action</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Find_ECLIPSE_cl_Step01"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Confirm how the claim was received</strong> <a title="Read more 15" class="showhead bp03_tbl_Find_ECLIPSE_cl_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Find_ECLIPSE_cl_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Confirm with the caller the claim was either&#58;</p>
+		<ul>		<li>
+transmitted via the ECLIPSE channel</li>
+		<li>
+submitted under the Simplified Billing Agreement or Scheme Arrangement</li>
+		</ul>
+<p>To identify the provider, see <a href="../health-professionals/012-40030000-01.html">Perform telephone security check for Medicare health professionals</a>.</p>
+
+<p><strong>Note&#58;</strong> Simplified Billing Arrangements do not include ECLIPSE Patient Claims. Refer enquiries about ECLIPSE Patient Claims to the eBusiness Service Centre.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Find_ECLIPSE_cl_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Get details from the health professional/practice staff</strong> <a title="Read more 16" class="showhead bp03_tbl_Find_ECLIPSE_cl_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Find_ECLIPSE_cl_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Get the following details from the health professional or practice staff to identify the claim&#58;</p>
+		<ul>		<li>
+minor ID</li>
+		<li>
+date of lodgement</li>
+		<li>
+patient Medicare number</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Find_ECLIPSE_cl_Step03"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>Log on to Saint and search the transaction</strong> <a title="Read more 17" class="showhead bp03_tbl_Find_ECLIPSE_cl_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Find_ECLIPSE_cl_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+Go to <a href="../health-professionals/012-20111120-03.html">Search Analyse Investigate Network Tool (SAINT)</a>&#58; </li>
+			<ul>			<li>
+Process page &gt; Table 2 to log on, then</li>
+			<li>
+Process page &gt; Table 4, Steps 3 to 9 to search for a transaction</li>
+			<li>
+Select the transmission ID hyperlink to view</li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Find_ECLIPSE_cl_Step04"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>View the PROC STAT</strong> <a title="Read more 18" class="showhead bp03_tbl_Find_ECLIPSE_cl_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Find_ECLIPSE_cl_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To view the status of an Inpatient Medical claim (<strong>IMC</strong>) go to the Message Details page&#58;</p>
+		<ul>		<li>
+Select the Summary heading, 3 green buttons display&#58; </li>
+			<ul>			<li>
+<strong>Outbound</strong> <strong>Msg</strong></li>
+			<li>
+<strong>Proc Stat</strong>, and </li>
+			<li>
+<strong>Inbound</strong> Msg</li>		</ul>
+		<li>
+Select <strong>PROC STAT</strong>. From this screen, staff can see the <strong>EXT_STAT_CDE</strong> to determine the status of the claim&#58;</li>
+			<ul>			<li>
+<strong>COMPLETE /SUCCESS</strong>, the claim assessment is complete and reports are available</li>
+			<li>
+<strong>MEDICARE_REJECTED</strong>, the claim has been rejected by Medicare and 4 digit reason code displays. Select <strong>Outbound Msg</strong> and [<strong>+</strong>] to view the status code and text</li>
+			<li>
+<strong>HEALTH_FUND_REJECTED</strong> the claim is rejected by the health fund and the 4 digit reason code displays. Select <strong>Outbound Msg</strong> and [<strong>+</strong>] to view the status code and text</li>		</ul>
+		<li>
+Tell the health professional or practice staff the claim status</li>
+		</ul>
+<p>Procedure ends here.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp05_L1RT_Resources"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>

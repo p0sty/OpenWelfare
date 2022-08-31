@@ -196,21 +196,351 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines information on aged care systems and the data exchange process in relation to means assessments.</p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Historical_SPAR"></a>
+<h2 id="bp01_L2GT_Historical_SPAR">Historical SPARC process</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>The System for the Payment of Aged Residential Care (SPARC) is the legacy aged care payment system for residential care. SPARC is a view only system from 20 August 2022.</p>
+
+<p>To view the legacy SPARC process, see the <a target="_blank" href="../older-australians/065-13110000-01.html?PageVersion=13824">historical version</a>.</p>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Aged_care_syste01"></a>
+<h2 id="bp01_L2GT_Aged_care_syste01">Aged care systems</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Data related to aged care is exchanged between a number of systems&#58;</p>
+		<ul>		<li>
+Aged Care Management Payment System (ACMPS)&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+receives data from systems outlined below</li>
+			<li>
+calculates fees for home care</li>
+			<li>
+generates letters for home care </li>
+			<li>
+issues most residential care letters</li>
+			<li>
+will display some historical residential care letters depending on the letter type, date and code</li>
+			<li>
+uses data received from the Aged Care Provider Portal (ACPP) to manage provider payments for home and flexible care (Short-Term Restorative Care (STRC) and transition care)</li>
+			<li>
+is used to send data about claim impacting events, adjustments, care recipient circumstances and classifications to allow the Payment Assessment Calculation Engine (PACE) to complete residential care assessment and calculation</li>		</ul>
+		<li>
+Aged Care Payment System (ACPS)&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+receives data from ACMPS and residential care providers via ACPP</li>
+			<li>
+calculates fees for residential care </li>
+			<li>
+uses data received from Aged Care Provider Portal (ACPP) to manage provider payments for residential care</li>
+			<li>
+See <a href="../older-australians/065-13110000-05.html#bp05_L2GT_Aged_Care_Payme">Resources</a> page for the ACPS data flow</li>		</ul>
+		<li>
+Aged Care Provider Portal (ACPP)&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+is used by all aged care providers home care providers (home, residential and flexible care) for events and claiming purposes</li>		</ul>
+		<li>
+Aged Care Staff-Assist Portal (ACSAP)&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+is a view only access to the ACPP</li>
+			<li>
+helps Service Officers to replicate scenarios in the ACPP and resolve some provider queries</li>		</ul>
+		<li>
+Aged Care Staff Portal (ACSP)&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+is the consolidated system for staff processing aged care claims and payments </li>
+			<li>
+uses means assessment information received from ACMPS to generate and exclude (where appropriate) letters for residential care </li>
+			<li>
+is used to manage online claiming aged care users’ access for ACPP purposes </li>		</ul>
+		<li>
+Aged Care System (ACS)&#58;</li>
+			<ul>			<li>
+is a Department of Veterans’ Affairs (DVA) system</li>
+			<li>
+is used by DVA for the purpose of home and residential care means assessments</li>
+			<li>
+transmits care recipients’ means assessment results to ACMPS for DVA customers</li>		</ul>
+		<li>
+Customer First&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+is the Centrelink interface of ISIS (Income Security Integrated System)</li>
+			<li>
+for aged care purposes is used by Centrelink staff for home and residential care means assessments</li>
+			<li>
+transmits care recipients’ means assessment results to ACMPS</li>		</ul>
+		<li>
+Data lake&#58;</li>
+			<ul>			<li>
+is a Services Australia system </li>
+			<li>
+is used for aged care archiving and reporting purposes</li>
+			<li>
+archives data from SPARC that has not been migrated to ACMPS </li>
+			<li>
+receives claims processing data from PACE </li>
+			<li>
+produces Tableau reports</li>		</ul>
+		<li>
+My Aged Care gateway&#58;</li>
+			<ul>			<li>
+is a Department of Health and Aged Care system</li>
+			<li>
+transmits the National Screening and Assessment Form (NSAF) and care approval details to ACMPS and then ACSP. This includes information about care recipients’ additional transition care and respite care days information for residential care purposes</li>		</ul>
+		<li>
+National Approved Provider System (NAPS)&#58;</li>
+			<ul>			<li>
+is a Department of Health and Aged Care system</li>
+			<li>
+transmits aged care provider/service details and service funding classification information to ACMPS and then ACSP. This includes information about aged care services’ approved places</li>		</ul>
+		<li>
+Payment Assessment Calculation Engine (PACE)&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+receives data from ACMPS and reference data from its own databases to determine eligibility, assess entitlement and calculate claims, advances and means assessment for residential care purposes</li>
+			<li>
+will return payment statement details, auto advances and entitlement summaries to ACMPS when calculations have been completed for residential care purposes</li>		</ul>
+		<li>
+Payment Utility&#58;</li>
+			<ul>			<li>
+is a Services Australia system</li>
+			<li>
+receives data from ACMPS about service master data, advances and payment instructions </li>
+			<li>
+use data from ACMPS to compare the payment amount to the advance amount and then make payments to service providers</li>
+		</div>
+	</div>
+</div>
+			</ul>			</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Home_care_data_01"></a>
+<h2 id="bp01_L2GT_Home_care_data_01">Home care data exchange process</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>When a care recipient starts care, the home care data exchange process occurs in the following order&#58;</p>
+		<ul>		<li>
+A National Screening and Assessment Form (NSAF) is lodged and received via the My Aged Care gateway following an assessment of care needs. This assessment is completed by an Aged Care Assessment Team (ACAT) assessor</li>
+		<li>
+Details of the entry into home care is coded in the Aged Care Provider Portal (ACPP) by the service provider. <strong>Note&#58;</strong> entry into care is coded after an NSAF has been completed</li>
+		<li>
+The entry event from ACPP will be transmitted into ACMPS</li>
+		<li>
+ACMPS will determine whether Services Australia or Department of Veterans’ Affairs (DVA) hold current income information for that care recipient. This is done by checking ISIS (Income security Integrated System) for Services Australia and Aged Care System (ACS) for DVA&#58;</li>
+			<ul>			<li>
+Where current income information is present Customer First or ACS will automatically complete a means assessment and send means assessment data to ACMPS</li>
+			<li>
+Where no income information is found, a letter is sent to the care recipient requesting they complete a means assessment form. As the means assessment did not complete automatically it must be manually coded in Customer First for Services Australia or ACS for DVA when the form is provided</li>		</ul>
+		<li>
+Once the means assessment is complete (including means not disclosed) the data will transmit to ACMPS. It can take up to 24 hours following transmission before it can be viewed in ACMPS</li>
+		<li>
+ACMPS will use the means assessment data to calculate fees and generate letters advising of the means assessment result. Letters can take up to 5 working days to be issued</li>
+		</ul>
+<p>A care recipient may also request a means assessment prior to commencing care&#58;</p>
+		<ul>		<li>
+A means assessment is completed in Customer First via a form being lodged or, if eligible, via a verbal assessment</li>
+		<li>
+Income details are sent to ACMPS and remain for 120 days</li>
+		<li>
+If the care recipient commences care within the valid period, entry event will be transmitted to ACMPS</li>
+		<li>
+ACMPS will use valid means assessment data to calculate fees and generate letters</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Residential_car01"></a>
+<h2 id="bp01_L2GT_Residential_car01">Residential care data exchange process</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>When a care recipient starts care, the residential care data exchange process occurs in the following order&#58;</p>
+		<ul>		<li>
+A National Screening and Assessment Form (NSAF) is lodged and received via the My Aged Care gateway following an assessment of care needs. This assessment is completed by an Aged Care Assessment Team (ACAT) assessor</li>
+		<li>
+Details of the entry into residential care is coded in Aged Care Provider Portal (ACPP) by the service provider. <strong>Note&#58;</strong> entry into care is coded after an NSAF has been completed</li>
+		<li>
+The entry event from ACPP will be transmitted into&#58;</li>
+			<ul>			<li>
+ACSP for viewing </li>
+			<li>
+ACMPS for further determination</li>		</ul>
+		<li>
+ACMPS determines whether Services Australia or Department of Veterans’ Affairs (DVA) hold current income and asset information for the care recipient. This is done by checking ISIS (Income security Integrated System) for Services Australia and Aged Care System (ACS) for DVA</li>
+			<ul>			<li>
+Where current income and asset information is present Customer First or ACS completes a means assessment and send means assessment data to ACMPS for non-homeowners, or care recipients who have already completed an assessment prior to entry</li>
+			<li>
+Where no income and assets information is found, a letter is sent to the care recipient requesting they complete a means assessment form. As the means assessment did not complete automatically it must be manually coded in Customer First for Services Australia or ACS for DVA when the form is provided</li>		</ul>
+		<li>
+Once the means assessment is complete (including means not disclosed) the data will transmit to ACMPS. This can take up to 24 hours following transmission</li>
+		<li>
+ACMPS transmits the means assessment data to PACE and ACSP</li>
+		<li>
+PACE will use the means assessment data to calculate fees and ACSP generates letters advising of the means assessment result including a summary of income and assets, Letters can take up to 5 working days to be issued</li>
+		</ul>
+<p>A care recipient may also request a means assessment prior to commencing care&#58;</p>
+		<ul>		<li>
+Means assessment is completed in Customer First via a form being lodged or, if eligible, via a verbal assessment </li>
+		<li>
+Income and asset details are sent to ACMPS and remain valid for 120 days</li>
+		<li>
+If care recipient commences care within the valid period, entry event will be transmitted to ACSP and then ACMPS</li>
+		<li>
+ACMPS will use valid means assessment data and generate initial letters including a summary of income and assets</li>
+		<li>
+ACMPS will send income and asset information to PACE and ACSP</li>
+		<li>
+PACE will calculate fees and ACSP generates fee letters</li>
+		</div>
+	</div>
+</div>
+		</ul>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Manual_data_mat"></a>
+<h2 id="bp01_L2GT_Manual_data_mat">Manual data matching</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>In order for aged care systems to be able to exchange information there must be established links between the systems. The linking process commences when one system seeks a matching care recipient record in another system in order to transmit data. The link can be established in one of the following ways&#58;</p>
+		<ul>		<li>
+automatically when the majority of data coded matches, or</li>
+		<li>
+manually when the systems cannot confirm a match. This may occur when&#58;</li>
+			<ul>			<li>
+multiple records exist</li>
+			<li>
+inconsistent data is present in different systems</li>
+			<li>
+no record exists for the care recipient</li>
+			</ul>			</ul>
+<p>Once a care recipient is in care and the initial links have been established, means assessment data and event information is exchanged between systems. Any subsequent update to means assessment data or event information is also exchanged between systems resulting in updates to fees if required. Means assessment data can also be sent manually between an aged care system by doing a refresh activity in Customer First. All income, assets and dates of effect must be accurate and all aged care system links established <strong>before</strong> a refresh activity is done.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+
+<p>The <a href="../older-australians/065-13110000-05.html">Resources</a> page contains a link to mySupport, external websites and the ACPS data flow.</p>
+
+<p></p>
+<a class="anchor" name="bp01_L2LL_Contents"></a>
+<h2 id="bp01_L2LL_Contents">Contents</h2>
+
+
+<p><a href="../older-australians/065-13110070-01.html">Aged Care Education and Training Incentive (ACETI) program</a></p>
+
+<p><a href="../older-australians/065-13110040-01.html">Aged Care Management Payment System (ACMPS)</a></p>
+
+<p><a href="../older-australians/065-19102857-01.html">ACMPS actioning CLK/DVA potential match requests</a></p>
+
+<p><a href="../older-australians/065-21050336-01.html">ACMPS means assessment data from different sources</a></p>
+
+<p><a href="../older-australians/065-13090050-01.html">Aged Care Web Services and Aged Care Provider Portal (ACPP)</a></p>
+
+<p><a href="../older-australians/065-18052200-01.html">Maintain claims in Aged Care Management Payment System (ACMPS)</a></p>
+
+<p><a href="../older-australians/065-18112915-01.html">Maintain provider details in the Aged Care Management Payment System (ACMPS)</a></p>
+
+<p><a href="../older-australians/065-19111818-01.html">Matching new care recipients via External Customer Match Listing (ECML)</a></p>
+
+<p><a href="../older-australians/065-19090420-01.html">Multiple ACMPS records remediation</a></p>
+
+<p><a href="../older-australians/065-13110030-01.html">National Approved Provider System (NAPS)</a></p>
+
+<p><a href="../older-australians/065-19070940-01.html">Profiling and manual refresh of aged care means assessment data</a></p>
+
+<p><a href="../older-australians/065-19112131-01.html">Aged Care Staff-Assist Portal (ACSAP)</a> </p>
+
+<p><a href="../older-australians/065-19112638-01.html">Aged Care Provider Portal (ACPP)</a></p>
+
+<p><a href="../older-australians/065-19112638-01.html">Aged Care Provider Portal (ACPP) self service</a>  </p>
+
+<p><a href="../older-australians/065-22040403-01.html">Aged Care Staff Portal (ACSP) – Managing provider and service user details</a>  </p>
+
+<p><a href="../older-australians/065-13090010-01.html">Online claiming registration process for aged care providers</a></p>
+
+<p><a href="../older-australians/065-13090040-01.html">Process residential aged care held event management in the Aged Care Staff Portal (ACSP)</a></p>
+
+<p><a href="../older-australians/065-20072219-01.html">Aged Care Provider Portal (ACPP) self service</a></p>
+
+<p><a href="../older-australians/065-20033026-01.html">Aged Care Staff Portal (ACSP) – Access and using the home page</a></p>
+
+<p><a href="../older-australians/065-22040400-01.html">Aged Care Staff Portal (ACSP) – Care Recipient in Context (CRiC)</a></p>
+
+<p><a href="../older-australians/065-22040405-01.html">Aged Care Staff Portal (ACSP) – Service in Context</a></p>
+
+<p><a href="../older-australians/065-22080238-01.html">Aged Care Staff Portal (ACSP) - Residential aged care financial hardship assistance</a></p>
+
+<p><a href="../older-australians/065-22063018-01.html">Aged Care Staff Portal (ACSP) - Residential aged care reviews</a></p>
+
+<p><a href="../older-australians/065-13070020-01.html">Manage aged care service details</a></p>
+
+<p><a href="../older-australians/065-13070030-01.html">Manage aged care recipient details</a></p>
+
+<p></p>
+<a class="anchor" name="bp01_L2LL_Related_links"></a>
+<h2 id="bp01_L2LL_Related_links">Related links</h2>
+
+
+<p><a href="../older-australians/065-13000000-01.html">Aged Care program for service providers</a></p>
+
+<p></p>
+<a class="anchor" name="bp05_L1RT_Resources"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>
