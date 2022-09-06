@@ -1,0 +1,301 @@
+
+Monitoring the Inter-environment Change of Address (ICoA) facility for completed transfers 102-03020040
+
+-   Background
+-   Process Summary
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+This page contains the process used to monitor an ICoA transfer.
+
+On this Page:
+
+ICoA transfer
+
+Child only transfer
+
+ICoA transfer
+
+Monitoring an ICoA transfer of details
+
+Table 1: This table describes the process to monitor an
+Inter-environment change of address transfer of customer details.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Transfer of records to new        |
+|                                   | environment + Read more ...       |
+|                                   |                                   |
+|                                   | After an Inter-environment Change |
+|                                   | of Address (ICoA) transfer has    |
+|                                   | completed the customer's records  |
+|                                   | will be located in the new        |
+|                                   | environment.                      |
+|                                   |                                   |
+|                                   | The Display Scheduled Transfers   |
+|                                   | (ITSC) screen, which is usually   |
+|                                   | used for monitoring ICoA, cannot  |
+|                                   | be used to display completed      |
+|                                   | (COM) transferred-in records.     |
+|                                   |                                   |
+|                                   | Note: transfers can be one of     |
+|                                   | four status types.                |
++-----------------------------------+-----------------------------------+
+| 2                                 | Check for completed (COM)         |
+|                                   | transfers + Read more ...         |
+|                                   |                                   |
+|                                   | Perform a search from the Name    |
+|                                   | (IN) screen in the gaining        |
+|                                   | (Transfer-In) environment.        |
+|                                   |                                   |
+|                                   | Is the customer record now        |
+|                                   | current in the gaining            |
+|                                   | environment?                      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 3                                 | The customer is not in the        |
+|                                   | gaining environment: + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   if the customer is not in the |
+|                                   |     gaining environment, monitor  |
+|                                   |     the scheduled (SCH) transfers |
+|                                   |     See Monitoring the            |
+|                                   |     Inter-environment Change of   |
+|                                   |     Address (ICoA) facility for   |
+|                                   |     scheduled transfers           |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 4                                 | The customer has been transferred |
+|                                   | to the gaining environment + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | There is still a need to check    |
+|                                   | that background ICoA processing   |
+|                                   | was completed successfully.       |
+|                                   |                                   |
+|                                   | Check the ICOA Transfer Log       |
+|                                   | (ITLG) screens in the gaining and |
+|                                   | losing environments.              |
+|                                   |                                   |
+|                                   | -   Customer transfer, go to Step |
+|                                   |     5                             |
+|                                   | -   Child only transfer, see Step |
+|                                   |     1 of the Child only ICoA      |
+|                                   |     transfer table                |
++-----------------------------------+-----------------------------------+
+| 5                                 | For completed customer            |
+|                                   | transfers + Read more ...         |
+|                                   |                                   |
+|                                   | -   go to the ITLG screen in the  |
+|                                   |     gaining environment. Press    |
+|                                   |     [Enter]. If no log details    |
+|                                   |     are displayed then enter the  |
+|                                   |     customer's CRN. The ITLG      |
+|                                   |     screen for the customer       |
+|                                   |     transfer will be displayed    |
+|                                   | -   view the details including    |
+|                                   |     the Original User:; Date      |
+|                                   |     Started: and Last User Rgn:   |
+|                                   |     fields to confirm that this   |
+|                                   |     is the correct log record     |
+|                                   |     (use the PF7, PF8 keys if     |
+|                                   |     required)                     |
+|                                   | -   confirm that the Transfer     |
+|                                   |     status: field is COM          |
++-----------------------------------+-----------------------------------+
+| 6                                 | Check the Edit status: and        |
+|                                   | Current Edits: fields + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   if the ITLG screens display   |
+|                                   |     an edit status of OK and      |
+|                                   |     number of current edits as 0  |
+|                                   |     but has not transferred       |
+|                                   |     within 2 days of the last     |
+|                                   |     edit being cleared. See       |
+|                                   |     Inter-environment Change of   |
+|                                   |     Address (ICoA) facility       |
+|                                   |     problems escalation process.  |
+|                                   |     Procedure ends here           |
+|                                   | -   if the Edit status: field     |
+|                                   |     displays Warning, and the     |
+|                                   |     Current Edits value is one or |
+|                                   |     more, then there are warnings |
+|                                   |     that may impact on benefit    |
+|                                   |     processing                    |
+|                                   | -   go to the Display             |
+|                                   |     InterEnvironment transfer     |
+|                                   |     edits (ITED) screen to view   |
+|                                   |     the Warnings                  |
+|                                   | -   more detailed information on  |
+|                                   |     the warning can be displayed  |
+|                                   |     by entering an 'S' on the     |
+|                                   |     warning detail line. Note the |
+|                                   |     further action required by    |
+|                                   |     the user after the transfer   |
+|                                   |     is complete                   |
+|                                   |                                   |
+|                                   | Return to the ITLG screen in the  |
+|                                   | gaining environment.              |
++-----------------------------------+-----------------------------------+
+| 7                                 | Swap to the ITLG screen in the    |
+|                                   | losing environment + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   if no log details are         |
+|                                   |     displayed then code the       |
+|                                   |     customer CRN and select       |
+|                                   |     [Enter]                       |
+|                                   | -   view the details including    |
+|                                   |     the Original User:, Date      |
+|                                   |     Started:, and Last User Rgn:  |
+|                                   |     fields to confirm that this   |
+|                                   |     is the correct log record     |
+|                                   |     (use the PF7, PF8 keys if     |
+|                                   |     required)                     |
+|                                   | -   confirm that the Transfer     |
+|                                   |     status: field is COM          |
++-----------------------------------+-----------------------------------+
+| 8                                 | Is the Transfer Status in the     |
+|                                   | losing environment different from |
+|                                   | that in the gaining               |
+|                                   | environment? + Read more ...      |
+|                                   |                                   |
+|                                   | -   Yes, see Inter-environment    |
+|                                   |     Change of Address (ICoA)      |
+|                                   |     facility problem escalation   |
+|                                   |     process. Procedure ends here  |
+|                                   | -   No, go to Step 9              |
++-----------------------------------+-----------------------------------+
+| 9                                 | Check the Edit status: and        |
+|                                   | Current Edits: fields + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   if the ITLG screens display   |
+|                                   |     an edit status of OK and      |
+|                                   |     number of current edits as 0  |
+|                                   |     but has not transferred       |
+|                                   |     within 2 days of the last     |
+|                                   |     edit being cleared. See       |
+|                                   |     Inter-environment Change of   |
+|                                   |     Address (ICoA) facility       |
+|                                   |     problem escalation process.   |
+|                                   |     Procedure ends here           |
+|                                   | -   if the Edit status: field     |
+|                                   |     displays Warning, and the     |
+|                                   |     Current Edits value is one or |
+|                                   |     more, then there are warnings |
+|                                   |     that may impact on benefit    |
+|                                   |     processing                    |
+|                                   | -   navigate to the Display       |
+|                                   |     InterEnvironment transfer     |
+|                                   |     edits (ITED) screen to view   |
+|                                   |     the Warnings                  |
+|                                   | -   more detailed information on  |
+|                                   |     the warning can be displayed  |
+|                                   |     by entering an 'S' on the     |
+|                                   |     warning detail line. Take     |
+|                                   |     note of further action        |
+|                                   |     required by the user after    |
+|                                   |     the transfer is complete, and |
+|                                   |     ensure these factors are      |
+|                                   |     actioned                      |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Child only transfer
+
+Child only ICoA transfer
+
+Table 2: This table describes the process to monitor a child only Inter
+environment Change of Address transfer of details.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | For completed child only          |
+|                                   | transfers + Read more ...         |
+|                                   |                                   |
+|                                   | -   go to the ITSC screen in the  |
+|                                   |     losing environment. Modify    |
+|                                   |     the search criteria on the    |
+|                                   |     ITSC screen:                  |
+|                                   | -   in the Status: field code     |
+|                                   |     'COM'                         |
+|                                   | -   in the Transfer In: field     |
+|                                   |     code 'N'                      |
+|                                   | -   in the Transfer Out: field    |
+|                                   |     code 'Y'                      |
+|                                   | -   in the UID: field code user   |
+|                                   |     ID                            |
+|                                   | -   select [Enter]                |
+|                                   | -   a list of Transfers out       |
+|                                   |     meeting the search criteria   |
+|                                   |     will be displayed             |
+|                                   |                                   |
+|                                   | Is the relevant transfer listed?  |
+|                                   |                                   |
+|                                   | -   Yes, select the relevant      |
+|                                   |     transfer using the 'L'        |
+|                                   |     option. Go to Step 2          |
+|                                   | -   No, check the selection       |
+|                                   |     criteria                      |
+|                                   |                                   |
+|                                   | If the search criteria are        |
+|                                   | correct then repeat the search    |
+|                                   | using a Status of SCH, if the     |
+|                                   | transfer is found with a SCH      |
+|                                   | status. See Inter-environment     |
+|                                   | Change of Address (ICoA) facility |
+|                                   | problem escalation process.       |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 2                                 | ITLG screen for child transfer +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | If the transfer is listed, when   |
+|                                   | selected using the 'L' option,    |
+|                                   | the ICOA Transfer Log (ITLG)      |
+|                                   | screen for the Child transfer     |
+|                                   | will be displayed.                |
+|                                   |                                   |
+|                                   | -   check the Edit status: and    |
+|                                   |     Current Edits: fields         |
+|                                   | -   if the ITLG screens display   |
+|                                   |     an edit status of OK and      |
+|                                   |     number of current edits as 0  |
+|                                   |     but has not transferred       |
+|                                   |     within 2 days of the last     |
+|                                   |     edit being cleared. See       |
+|                                   |     Inter-environment Change of   |
+|                                   |     Address (ICoA) facility       |
+|                                   |     problem escalation process.   |
+|                                   |     Procedure ends here           |
+|                                   | -   if the Edit status: field     |
+|                                   |     displays Warning, and the     |
+|                                   |     Current Edits value is one or |
+|                                   |     more, then there are warnings |
+|                                   |     that may impact on benefit    |
+|                                   |     processing. Go to the ITED    |
+|                                   |     screen to view the Warnings   |
+|                                   | -   more detailed information on  |
+|                                   |     the warning can be displayed  |
+|                                   |     by entering an 'S' on the     |
+|                                   |     warning detail line. Note     |
+|                                   |     further action that will be   |
+|                                   |     required by the user after    |
+|                                   |     the transfer is complete, and |
+|                                   |     ensure these factors are      |
+|                                   |     actioned                      |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

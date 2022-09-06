@@ -1,0 +1,306 @@
+
+Immediate payment by payment method direct credit 003-10030010
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+On this page:
+
+Delivering an immediate payment by direct credit
+
+How to manually code a direct credit payment
+
+Delivering an immediate payment by direct credit
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Immediate payment to customer by  |
+|                                   | direct credit + Read more ...     |
+|                                   |                                   |
+|                                   | -   Immediate payments cannot be  |
+|                                   |     issued if the customer's      |
+|                                   |     record is in the 'I'          |
+|                                   |     (overseas) environment. For   |
+|                                   |     details of other situations   |
+|                                   |     in which an immediate payment |
+|                                   |     cannot be issued, see Urgent  |
+|                                   |     payments due to exceptional   |
+|                                   |     and unforeseen or             |
+|                                   |     extraordinary circumstances   |
+|                                   | -   The customer must have        |
+|                                   |     already been approved for an  |
+|                                   |     immediate payment, such as    |
+|                                   |     urgent payment, replacement   |
+|                                   |     payment, hardship advance     |
+|                                   | -   The payment is to be made by  |
+|                                   |     direct credit to the          |
+|                                   |     customer's bank account The   |
+|                                   |     Immediate Payment requests    |
+|                                   |     script is used to code        |
+|                                   |     immediate payments            |
+|                                   |                                   |
+|                                   | Before assessing or issuing an    |
+|                                   | immediate payment, make sure the  |
+|                                   | customer record is the correct    |
+|                                   | one by asking authentication      |
+|                                   | questions to verify Proof of      |
+|                                   | Record Ownership (PORO). See      |
+|                                   | Authenticating a Centrelink       |
+|                                   | customer for a detailed process.  |
+|                                   |                                   |
+|                                   | If the customer receives Farm     |
+|                                   | Household Allowance (FHA) and the |
+|                                   | staff member is:                  |
+|                                   |                                   |
+|                                   | -   not trained in FHA, transfer  |
+|                                   |     customer to the Farmer        |
+|                                   |     Assistance hotline            |
+|                                   | -   on the Farmer Assistance      |
+|                                   |     hotline and not trained in    |
+|                                   |     Urgent Payments, lodge a      |
+|                                   |     Technical Peer Support (TPS)  |
+|                                   |     request                       |
+|                                   |                                   |
+|                                   | If the customer contacts in       |
+|                                   | person, they must be              |
+|                                   | authenticated at application. It  |
+|                                   | is preferable they provide at     |
+|                                   | least 1 photo identity document   |
+|                                   | for a comparison.                 |
+|                                   |                                   |
+|                                   | If this is not available and the  |
+|                                   | Service Officer doubts they are   |
+|                                   | speaking with the customer, they  |
+|                                   | must ask more authentication      |
+|                                   | questions. These must not be      |
+|                                   | limited to details their friends  |
+|                                   | and relatives know such as their  |
+|                                   | date of birth or how many         |
+|                                   | children are in the family. The   |
+|                                   | questions must be searching, but  |
+|                                   | must not be so personal as to be  |
+|                                   | intrusive. If appropriate,        |
+|                                   | explain to the customer why they  |
+|                                   | are being asking these questions. |
+|                                   | See Authenticating a Centrelink   |
+|                                   | customer for a detailed process   |
++-----------------------------------+-----------------------------------+
+| 2                                 | Immediate payment request granted |
+|                                   | and customer wants to change the  |
+|                                   | amount + Read more ...            |
+|                                   |                                   |
+|                                   | If this occurs, the customer is   |
+|                                   | requesting a new urgent payment.  |
+|                                   | As the customer has already had   |
+|                                   | an urgent payment granted, they   |
+|                                   | cannot request another urgent     |
+|                                   | payment on the same day.          |
++-----------------------------------+-----------------------------------+
+| 3                                 | Immediate Payment requests        |
+|                                   | script + Read more ...            |
+|                                   |                                   |
+|                                   | All urgent payment requests must  |
+|                                   | be processed by the Immediate     |
+|                                   | Payment requests script with the  |
+|                                   | exception for Farm Household      |
+|                                   | Allowance (FHA).                  |
+|                                   |                                   |
+|                                   | If the customer is receiving FHA, |
+|                                   | go to Step 4.                     |
+|                                   |                                   |
+|                                   | For all other customers:          |
+|                                   |                                   |
+|                                   | In Customer Record, open the      |
+|                                   | Script Selector menu              |
+|                                   |                                   |
+|                                   | Select immediate payment requests |
+|                                   | script and click the Run Script   |
+|                                   | button                            |
+|                                   |                                   |
+|                                   | Then follow the prompts - the     |
+|                                   | script will complete the activity |
+|                                   | and record a DOC including:       |
+|                                   |                                   |
+|                                   | -   the outcome and reason for    |
+|                                   |     the immediate payment request |
+|                                   | -   the documents or verifiable   |
+|                                   |     evidence provided by the      |
+|                                   |     customer (if needed)          |
+|                                   | -   the amount (limited to $200   |
+|                                   |     for an urgent payment and     |
+|                                   |     $1,000 for an immediate       |
+|                                   |     payment due to agency delay)  |
+|                                   |     and method of payment         |
+|                                   | -   any other help offered or     |
+|                                   |     referrals made                |
+|                                   |                                   |
+|                                   | Note: the Immediate Payment       |
+|                                   | request script will pause on the  |
+|                                   | Issue Future Payment (IFP) screen |
+|                                   | to allow insertion of the correct |
+|                                   | reason. Once the correct code has |
+|                                   | been input press [Enter], then    |
+|                                   | click OK on the script.           |
+|                                   |                                   |
+|                                   | Is the Immediate Payment request  |
+|                                   | script available?                 |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, where system problems     |
+|                                   |     prevent the use of the        |
+|                                   |     script, the payment must be   |
+|                                   |     manually coded, see Step 1 in |
+|                                   |     Table 2                       |
++-----------------------------------+-----------------------------------+
+| 4                                 | Immediate payment for Farm        |
+|                                   | Household Allowance (FHA) + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Issue the immediate payment by    |
+|                                   | Direct Credit using the Issue     |
+|                                   | Urgent Payment guided procedure.  |
+|                                   |                                   |
+|                                   | In the Issue Urgent Payment       |
+|                                   | guided procedure:                 |
+|                                   |                                   |
+|                                   | -   Confirm the correct bank      |
+|                                   |     account details are           |
+|                                   |     displaying in the Customer    |
+|                                   |     Information section           |
+|                                   | -   Reason for Issue - Enter the  |
+|                                   |     details                       |
+|                                   | -   Amount field - Enter the      |
+|                                   |     minimum amount needed to meet |
+|                                   |     the customer’s immediate need |
+|                                   | -   Select the Payment Method     |
+|                                   |     ‘Direct Credit’ from the drop |
+|                                   |     down                          |
+|                                   | -   Select Continue               |
+|                                   | -   Confirm to proceed with the   |
+|                                   |     Urgent Payment in the pop-up  |
+|                                   |                                   |
+|                                   | Record the decision on a DOC.     |
++-----------------------------------+-----------------------------------+
+| 5                                 | Payment delivery + Read more ...  |
+|                                   |                                   |
+|                                   | Tell the customer that the        |
+|                                   | payment will be delivered to      |
+|                                   | their bank account:               |
+|                                   |                                   |
+|                                   | -   the next working day for      |
+|                                   |     payments in the Newstart      |
+|                                   |     system, or                    |
+|                                   | -   in 2 working days for other   |
+|                                   |     payments                      |
++-----------------------------------+-----------------------------------+
+
+How to manually code a direct credit payment
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Manually code direct credit       |
+|                                   | payment to a customer's bank      |
+|                                   | account + Read more ...           |
+|                                   |                                   |
+|                                   | The payment should be coded       |
+|                                   | manually only when the Immediate  |
+|                                   | Payment request script is         |
+|                                   | unavailable.                      |
+|                                   |                                   |
+|                                   | -   On the Payment Summary (PS)   |
+|                                   |     screen in the customer's      |
+|                                   |     record key 'R' against the    |
+|                                   |     payment to be actioned, the   |
+|                                   |     press [Enter]                 |
+|                                   | -   The Issue Payment Select      |
+|                                   |     (IPPRE) screen will open      |
+|                                   | -   Select the type of issue      |
+|                                   |     payment by coding an 'S'      |
+|                                   |     beside Early payment from     |
+|                                   |     current Pay Period: field     |
+|                                   | -   Select destination type by    |
+|                                   |     coding an 'S' in the Default  |
+|                                   |     Destination: field. Press     |
+|                                   |     [Enter]. (If deductions       |
+|                                   |     exist, these will be taken    |
+|                                   |     from the remaining amount)    |
++-----------------------------------+-----------------------------------+
+| 2                                 | The Issue Future Payment (IFP)    |
+|                                   | screen will open + Read more ...  |
+|                                   |                                   |
+|                                   | All fields must be coded:         |
+|                                   |                                   |
+|                                   | In the Issue Amount: field enter  |
+|                                   | the amount to be paid (it cannot  |
+|                                   | exceed the available amount)      |
+|                                   |                                   |
+|                                   | The Reason: for crisis payment    |
+|                                   | and urgent payment grants use     |
+|                                   | field help '?' to change the      |
+|                                   | reason to:                        |
+|                                   |                                   |
+|                                   | -   DEP-Departmental Delay        |
+|                                   | -   ECI-Extraordinary             |
+|                                   |     Circumstances                 |
+|                                   | -   EXC-Exceptional and           |
+|                                   |     Unforeseen                    |
+|                                   | -   FNL-Funeral Expenses          |
+|                                   | -   CRI-Crisis Payment            |
+|                                   |                                   |
+|                                   | For any payment reason that falls |
+|                                   | outside of the above, choose the  |
+|                                   | most appropriate reason from the  |
+|                                   | list available in the field help. |
+|                                   | More details about the            |
+|                                   | appropriate code reasons is       |
+|                                   | available on the Resources tab    |
+|                                   |                                   |
+|                                   | In the Finished (Y/Q/N): field,   |
+|                                   | key 'Y'                           |
+|                                   |                                   |
+|                                   | In the Notes: field record the    |
+|                                   | reason for the urgent payment.    |
+|                                   | This will create a DOC            |
+|                                   |                                   |
+|                                   | Complete the Source: and DOR:     |
+|                                   | fields, and press [Enter]         |
+|                                   |                                   |
+|                                   | The Immediate payment will be     |
+|                                   | recorded on the PS screen         |
+|                                   |                                   |
+|                                   | Record all details on a DOC       |
+|                                   | including:                        |
+|                                   |                                   |
+|                                   | -   the outcome and reason for    |
+|                                   |     the immediate payment request |
+|                                   | -   the documents or verifiable   |
+|                                   |     evidence provided by the      |
+|                                   |     customer (if needed)          |
+|                                   | -   the amount (limited to $200   |
+|                                   |     for an urgent payment and     |
+|                                   |     $1,000 for an immediate       |
+|                                   |     payment due to agency delay)  |
+|                                   |     and method of payment         |
+|                                   | -   any other help offered or     |
+|                                   |     referrals made                |
+|                                   | -   a reference to SSAA 1999      |
+|                                   |     Section 55 (payment into bank |
+|                                   |     account etc) can be included, |
+|                                   |     but as payment delivery is    |
+|                                   |     not the significant decision, |
+|                                   |     it is not compulsory          |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

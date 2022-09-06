@@ -1,0 +1,284 @@
+
+Identifying a customer's primary Centrelink Customer Reference Number (CRN) 102-13030070
+
+-   Background
+-   Process Summary
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+For Data Quality Unit (DQU) staff only.
+
+Identifying a customer's primary CRN
+
+This table describes the process steps that DQU staff should follow to
+identify a customer's primary Centrelink Customer Reference Number
+(CRN).
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Multiple records identified +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | The primary record for a customer |
+|                                   | must be established when more     |
+|                                   | than one record belongs to the    |
+|                                   | same customer.                    |
+|                                   |                                   |
+|                                   | Check for additional records      |
+|                                   | using the Multiple Match List     |
+|                                   | (MML) screen.                     |
+|                                   |                                   |
+|                                   | Have all the records already been |
+|                                   | MLC linked and documented by the  |
+|                                   | Data Quality Unit (Office Code    |
+|                                   | NA8)?                             |
+|                                   |                                   |
+|                                   | -   Yes, no further action is     |
+|                                   |     required. Procedure ends here |
+|                                   | -   No, go to Step 2              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Unauthenticated Online Entity     |
+|                                   | (UOE) and Organisation (ORG)      |
+|                                   | records + Read more ...           |
+|                                   |                                   |
+|                                   | Are any of the records            |
+|                                   | Unauthenticated Online Entries    |
+|                                   | (UOE) or Organisation (ORG) CRNs? |
+|                                   |                                   |
+|                                   | Yes, action as follows:           |
+|                                   |                                   |
+|                                   | -   UOE records display the       |
+|                                   |     message 'M9864. This is a UOE |
+|                                   |     Object some screens are       |
+|                                   |     protected' at the top when    |
+|                                   |     they are first entered.       |
+|                                   |     Annotate the referral with    |
+|                                   |     'NNN NNN NNNA is a UOE, not   |
+|                                   |     multiple. No referral was     |
+|                                   |     required. Refer to Centrelink |
+|                                   |     Customer Reference Numbers    |
+|                                   |     for further information'.     |
+|                                   |     Close the referral. If there  |
+|                                   |     are no additional multiples   |
+|                                   |     to be assessed, procedure     |
+|                                   |     ends here                     |
+|                                   | -   ORG records may display the   |
+|                                   |     message 'M9890 Customer is an |
+|                                   |     organisation' at the top of   |
+|                                   |     the screen when they are      |
+|                                   |     first entered. Annotate the   |
+|                                   |     referral with 'NNN NNN NNNA   |
+|                                   |     is an ORG record. Unable to   |
+|                                   |     link ORGs. See Indexing an    |
+|                                   |     organisation for nominees and |
+|                                   |     private trusts and companies  |
+|                                   |     for further information.      |
+|                                   |     Close the referral. If there  |
+|                                   |     are no additional multiples   |
+|                                   |     to be assessed, procedure     |
+|                                   |     ends here.                    |
+|                                   | -   If there are additional       |
+|                                   |     records, go to Step 3         |
+|                                   |                                   |
+|                                   | No, go to Step 3                  |
++-----------------------------------+-----------------------------------+
+| 3                                 | Delete Person and Deceased        |
+|                                   | records + Read more ...           |
+|                                   |                                   |
+|                                   | Check if any CRN(s) meet the      |
+|                                   | Delete Person (DP) business       |
+|                                   | rules. If so, this CRN is a       |
+|                                   | multiple record. If all the       |
+|                                   | records meet the DP business      |
+|                                   | rules, the customer must retain   |
+|                                   | access to one record only.        |
+|                                   | Consider which record has         |
+|                                   | historical value and/or access to |
+|                                   | online services.                  |
+|                                   |                                   |
+|                                   | If all records are deceased, the  |
+|                                   | record(s) will transfer to the Y  |
+|                                   | Environment. If one record is     |
+|                                   | deceased and the remaining CRNs   |
+|                                   | have not had the Death/Executor   |
+|                                   | (DEA) screen coded, delete the    |
+|                                   | record via Delete Person (DP). If |
+|                                   | unable to delete, refer to DQU    |
+|                                   | Lead.                             |
+|                                   |                                   |
+|                                   | Do any of the CRNs meet the       |
+|                                   | Delete Person business rules?     |
+|                                   |                                   |
+|                                   | Yes, delete the CRN(s) via Delete |
+|                                   | Person (DP)                       |
+|                                   |                                   |
+|                                   | -   If after deleting the         |
+|                                   |     multiple(s) only one record   |
+|                                   |     remains, this is the          |
+|                                   |     customer's primary CRN.       |
+|                                   |     Procedure ends here           |
+|                                   | -   If more than one record       |
+|                                   |     remains for the customer, the |
+|                                   |     primary CRN must still be     |
+|                                   |     determined. Go to Step 4      |
+|                                   |                                   |
+|                                   | No, go to Step 4                  |
++-----------------------------------+-----------------------------------+
+| 4                                 | Record type + Read more ...       |
+|                                   |                                   |
+|                                   | Is the customer under 26 years of |
+|                                   | age?                              |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, convert the CHI to a PER  |
+|                                   |     if required, go to Step 6     |
++-----------------------------------+-----------------------------------+
+| 5                                 | Children's records + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | If the customer is under the age  |
+|                                   | of 26, consider historical data,  |
+|                                   | payments made to                  |
+|                                   | parent(s)/guardian(s) and, if a   |
+|                                   | referral to the Service Delivery  |
+|                                   | Network (SDN) (for example FAO    |
+|                                   | Complex/CCMS/etc.) is required.   |
+|                                   |                                   |
+|                                   | Most data for CHI records will be |
+|                                   | held in the                       |
+|                                   | parent(s)/guardian(s)' CRN.       |
+|                                   |                                   |
+|                                   | To determine the primary,         |
+|                                   | considerations should include     |
+|                                   | (but are not limited to):         |
+|                                   |                                   |
+|                                   | -   Child Support: In the child's |
+|                                   |     CRN check Reference Number    |
+|                                   |     (!NU) for a CSA ID and/or     |
+|                                   |     Maintenance Entitlement Group |
+|                                   |     Summary (MNGS) for the        |
+|                                   |     parent(s)/guardian(s)         |
+|                                   | -   Family Assistance: check      |
+|                                   |     Assessment Explanation (AXFTB |
+|                                   |     and/or AXCCF) and XBS for     |
+|                                   |     payment status                |
+|                                   | -   Shared Care: Go to Child      |
+|                                   |     Selection (CHS) and check     |
+|                                   |     Shared Care (FTB) (FSS) and   |
+|                                   |     Shared Care (SSA) (SSC)       |
+|                                   | -   Child Care Attendance Data:   |
+|                                   |     In Workspace, select 'View    |
+|                                   |     Child Care Attendance' from   |
+|                                   |     the Family Assistance Menu.   |
+|                                   |     Ensure all checks for         |
+|                                   |     historical attendance data    |
+|                                   |     are selected from the drop    |
+|                                   |     down box                      |
+|                                   | -   Other Entitlements: Check for |
+|                                   |     payments made to              |
+|                                   |     parent(s)/guardian(s) such as |
+|                                   |     PPS, PPP, CAR, CDA or JSP     |
+|                                   | -   Concession Card(s): In        |
+|                                   |     Workspace, select 'Concession |
+|                                   |     Card Details' from the        |
+|                                   |     Concession Cards menu and     |
+|                                   |     check Card Type (for example, |
+|                                   |     Foster Child Health Care      |
+|                                   |     Card)                         |
+|                                   |                                   |
+|                                   | Can the primary CRN be            |
+|                                   | determined?                       |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 7             |
+|                                   | -   No, seek assistance from the  |
+|                                   |     Data Quality Lead and/or the  |
+|                                   |     Multiple Child Record (MCR)   |
+|                                   |     contact                       |
++-----------------------------------+-----------------------------------+
+| 6                                 | Identifying the Primary CRN +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Newly created records should be   |
+|                                   | carefully checked with a view to  |
+|                                   | deleting them. Rework should be   |
+|                                   | avoided if possible but where     |
+|                                   | significant information for the   |
+|                                   | customer is on an older existing  |
+|                                   | record, it may be necessary to    |
+|                                   | determine this record as the      |
+|                                   | primary and have information      |
+|                                   | moved from the newly created CRN  |
+|                                   | to the older existing record.     |
+|                                   |                                   |
+|                                   | Screens to check to assist in     |
+|                                   | determining the primary CRN       |
+|                                   | include (but are not limited to): |
+|                                   |                                   |
+|                                   | -   Link Summary (LS) - current   |
+|                                   |     links, for example, CHI/PAR,  |
+|                                   |     CAR                           |
+|                                   | -   Reference Numbers (!NU) -     |
+|                                   |     active external links, for    |
+|                                   |     example, CSA ID               |
+|                                   | -   Payment Summary (PS) -        |
+|                                   |     current payments/entitlements |
+|                                   | -   Future Activity List (FAL) -  |
+|                                   |     non-cancellable activities    |
+|                                   | -   Mutual Customer               |
+|                                   |     Identification (MCI) - match  |
+|                                   |     with the Australian Tax       |
+|                                   |     Office                        |
+|                                   | -   Debt List (OPDL) -            |
+|                                   |     outstanding debts             |
+|                                   |                                   |
+|                                   | Note: some records will become    |
+|                                   | eligible for deletion via shell   |
+|                                   | clean up as information becomes   |
+|                                   | historical, but others may never  |
+|                                   | meet requirements.                |
+|                                   |                                   |
+|                                   | Can the primary CRN be            |
+|                                   | determined?                       |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 7             |
+|                                   | -   No, seek assistance from the  |
+|                                   |     Data Quality Lead and/or the  |
+|                                   |     Multiple Child Record (MCR)   |
+|                                   |     contact                       |
++-----------------------------------+-----------------------------------+
+| 7                                 | Current Child to Parent           |
+|                                   | (CHI/PAR) + Read more ...         |
+|                                   |                                   |
+|                                   | In the multiple CRNs go to the    |
+|                                   | Link Summary (LS) screen.         |
+|                                   |                                   |
+|                                   | Is there a current CHI/PAR link   |
+|                                   | on the multiple record?           |
+|                                   |                                   |
+|                                   | -   Yes, go to Multiple           |
+|                                   |     Centrelink child CRN checks   |
+|                                   |     and cleansing. Procedure ends |
+|                                   |     here                          |
+|                                   | -   No, go to Step 8              |
++-----------------------------------+-----------------------------------+
+| 8                                 | CLI/MLC Activities + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is there a CLI/MLC activity       |
+|                                   | present?                          |
+|                                   |                                   |
+|                                   | -   Yes, go to Data Quality Unit  |
+|                                   |     (DQU) CLI/MLC process for     |
+|                                   |     multiples. Procedure ends     |
+|                                   |     here                          |
+|                                   | -   No, go to Actioning multiple  |
+|                                   |     Centrelink Customer Reference |
+|                                   |     Numbers (CRN). Procedure ends |
+|                                   |     here                          |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

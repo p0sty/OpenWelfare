@@ -1,0 +1,231 @@
+
+New claim for Crisis Payment after customer released from prison or psychiatric confinement 003-07030030
+
+-   Background
+-   Process
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+Contact details
+
+Public Trustee offices
+
+Rejection codes and reasons
+
+Table 1
+
++-----------------------+-----------------------+-----------------------+
+| Item                  | Rejection code        | Reason                |
++-----------------------+-----------------------+-----------------------+
+| 1                     | LOD - Claim not       | You did not claim     |
+|                       | lodged within         | within the required   |
+|                       | required period       | timeframe.            |
++-----------------------+-----------------------+-----------------------+
+| 2                     | NFH - Not in          | You are not in severe |
+|                       | financial hardship    | financial hardship.   |
++-----------------------+-----------------------+-----------------------+
+| 3                     | NIA - Not in          | You were not in       |
+|                       | Australia on day of   | Australia on the day  |
+|                       | lodgement             | you made a claim.     |
++-----------------------+-----------------------+-----------------------+
+| 4                     | NQP - Not receiving   | You are not receiving |
+|                       | an ISP                | an income support     |
+|                       |                       | payment or ABSTUDY    |
+|                       |                       | Living Allowance.     |
++-----------------------+-----------------------+-----------------------+
+| 5                     | PEC - Already paid    | You have already been |
+|                       | for this circumstance | paid a Crisis Payment |
+|                       |                       | for this extreme      |
+|                       |                       | circumstance          |
++-----------------------+-----------------------+-----------------------+
+| 6                     | L14 - Period of       | You have not been in  |
+|                       | imprisonment is less  | prison or psychiatric |
+|                       | than fourteen (14)    | confinement for 14    |
+|                       | days                  | days or more because  |
+|                       |                       | of being charged with |
+|                       |                       | an offence.           |
++-----------------------+-----------------------+-----------------------+
+
+Error and warning messages
+
+Table 2
+
++-----------------------+-----------------------+-----------------------+
+| Error                 | Message text          | Action                |
++-----------------------+-----------------------+-----------------------+
+| SR594                 | Crisis Data is        | This will display if  |
+|                       | mandatory for Crisis  | there is no data on   |
+|                       | Payment claim         | the CRISIS_PRI        |
+|                       |                       | screen.               |
+|                       |                       |                       |
+|                       |                       | Staff to update the   |
+|                       |                       | screen with Crisis    |
+|                       |                       | Payment claim data.   |
++-----------------------+-----------------------+-----------------------+
+| SR598                 | Customer may not be   | This will display if  |
+|                       | in Australia. Refresh | the customer is not   |
+|                       | RSIM.                 | in Australia based on |
+|                       |                       | RSIM but claim has    |
+|                       |                       | come through and the  |
+|                       |                       | customer has said     |
+|                       |                       | ‘yes’ they are in     |
+|                       |                       | Australia.            |
+|                       |                       |                       |
+|                       |                       | Staff to check the    |
+|                       |                       | RSIM screen and call  |
+|                       |                       | the immigration       |
+|                       |                       | datalink for such     |
+|                       |                       | claims to determine   |
+|                       |                       | if in Australia or    |
+|                       |                       | not.                  |
++-----------------------+-----------------------+-----------------------+
+| SR613                 | Qualifying payment    | This will display if  |
+|                       | Claim ( Claim ID ) is | they system           |
+|                       | currently ‘In         | identifies that       |
+|                       | Process’              | customer is not       |
+|                       |                       | current on qualifying |
+|                       |                       | benefit but they have |
+|                       |                       | a claim for a         |
+|                       |                       | qualifying payment    |
+|                       |                       | that is 'In Process', |
+|                       |                       | 'On Hold' or          |
+|                       |                       | 'Submitted'.          |
+|                       |                       |                       |
+|                       |                       | Staff to progress the |
+|                       |                       | qualifying payment    |
+|                       |                       | before finalising the |
+|                       |                       | Crisis Payment or the |
+|                       |                       | Crisis Payment will   |
+|                       |                       | reject. The Crisis    |
+|                       |                       | Payment should not be |
+|                       |                       | finalised until the   |
+|                       |                       | ISP has been granted  |
+|                       |                       | or rejected.          |
++-----------------------+-----------------------+-----------------------+
+| SR623                 | Prison Actual Release | This warning is       |
+|                       | date is between 8-21  | occurring as customer |
+|                       | days, check contact   | claimed outside the   |
+|                       | date.                 | allowed timeframe     |
+|                       |                       | since the date of     |
+|                       |                       | event. The release    |
+|                       |                       | from prison or        |
+|                       |                       | psychiatric           |
+|                       |                       | confinement was       |
+|                       |                       | between 8 and 21 days |
+|                       |                       | before the date of    |
+|                       |                       | receipt.              |
+|                       |                       |                       |
+|                       |                       | The customer needs to |
+|                       |                       | contact about         |
+|                       |                       | claiming a payment or |
+|                       |                       | concession card       |
+|                       |                       | within 7 days of the  |
+|                       |                       | extreme circumstance. |
+|                       |                       | The customer then     |
+|                       |                       | needs to lodge their  |
+|                       |                       | claim 14 days after   |
+|                       |                       | the contact date.     |
+|                       |                       |                       |
+|                       |                       | Check the DOC List    |
+|                       |                       | (DL) to see if there  |
+|                       |                       | was contact about     |
+|                       |                       | seeking a payment or  |
+|                       |                       | concession card       |
+|                       |                       | within 14 days of the |
+|                       |                       | start of the          |
+|                       |                       | isolation period. If  |
+|                       |                       | yes, Crisis Payment   |
+|                       |                       | can be granted if the |
+|                       |                       | claim was lodged      |
+|                       |                       | within 14 days of the |
+|                       |                       | contact date.         |
+|                       |                       |                       |
+|                       |                       | Update the Override   |
+|                       |                       | LOD Rejection field   |
+|                       |                       | to allow the claim to |
+|                       |                       | be granted.           |
++-----------------------+-----------------------+-----------------------+
+| SR624                 | Cus not SUS or CAN    | This will display if  |
+|                       | before release date.  | the system does not   |
+|                       | Review entitlement to | identify a SUS or CAN |
+|                       | primary payment.      | on the system for the |
+|                       |                       | period the customer   |
+|                       |                       | was in prison or      |
+|                       |                       | psychiatric           |
+|                       |                       | confinement.          |
+|                       |                       |                       |
+|                       |                       | Staff to check the    |
+|                       |                       | customer’s            |
+|                       |                       | entitlements for the  |
+|                       |                       | period of             |
+|                       |                       | imprisonment and if   |
+|                       |                       | not entitled staff    |
+|                       |                       | should follow the     |
+|                       |                       | admission process to  |
+|                       |                       | update imprisonment   |
+|                       |                       | details followed by   |
+|                       |                       | debt action and       |
+|                       |                       | referrals (Step 12)   |
+|                       |                       | before                |
+|                       |                       | re-establishing       |
+|                       |                       | primary payment       |
+|                       |                       | eligibility.          |
+|                       |                       |                       |
+|                       |                       | The Crisis Payment    |
+|                       |                       | should not be         |
+|                       |                       | finalised until       |
+|                       |                       | review of entitlement |
+|                       |                       | is complete. The      |
+|                       |                       | claim should be       |
+|                       |                       | placed on hold while  |
+|                       |                       | this occurs.          |
++-----------------------+-----------------------+-----------------------+
+
+Forms
+
+Claim for Crisis Payment Release from Prison or Psychiatric Confinement
+(SU508)
+
+Confirmation of Identity - Verification for Aboriginal and Torres Strait
+Islander people (RA010)
+
+Prison Servicing and contacts
+
+Incarcerated Customer Services Contacts
+
+Correctional facilities
+
+Referrals, peak post release NGO services
+
+ACT - Prisoners Aid ACT
+
+NSW - Community Restorative Centre (CRC)
+
+NT - Darwin Prisoners Aid Association Inc
+
+QLD - Australian Community Safety and Research Organisation (ACRO)
+
+SA - OARS Community Transitions
+
+VIC - Victorian Association for the Care and Resettlement of Offenders
+(VACRO)
+
+WA - Outcare
+
+Contact Details for Release of Medical Information
+
+Access to Queensland Health Records - see Queensland Government, Right
+to Information and Information Policy, Information Access application
+
+Transition to Independent Living Allowance (TILA)
+
+Intranet links
+
+Confirming admission and release
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

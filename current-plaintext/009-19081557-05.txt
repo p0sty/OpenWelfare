@@ -1,0 +1,657 @@
+
+Transfer from Wife Pension (WP) to Carer Payment (CP) 009-19081557
+
+-   Background
+-   Process Summary
+-   Process
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+Manual Follow-Ups (MFU)
+
+The following scenarios will produce Manual Follow Up (MFU) messages to
+support CP (XWP) processing. Most scenarios deal with gaining or losing
+entitlement to payment level CA and the effect on CP (XWP)
+grandfathering eligibility.
+
+Only staff at the APS5 level or above can make changes to the
+grandfathering status.
+
+MFUs where payment level CA is granted or reinstated
+
+Table 1
+
++-----------------------+-----------------------+-----------------------+
+| Scenario              | Message and Keywords  | Details               |
++-----------------------+-----------------------+-----------------------+
+| Retrospective payment | Check if customer is  | If CA is granted or   |
+| level CA entitlement  | eligible for CAR      | reinstated without    |
+| outside 13 weeks – CP | (XWP) restoration     | any gaps, more than   |
+| (XWP) remains         |                       | 13 weeks after the    |
+| cancelled             | Keywords XWP, XWCGRF, | date of effect of     |
+|                       | I094PN                | suspension,           |
+|                       |                       | cancellation or       |
+|                       | Work type ID -        | change of CA HCC      |
+|                       | ZIAM_CDA_RES_MFU      | only, CP (XWP) will   |
+|                       |                       | not be automatically  |
+|                       |                       | restored.             |
+|                       |                       |                       |
+|                       |                       | CP (XWP)              |
+|                       |                       | grandfathering status |
+|                       |                       | ‘NOT’ will            |
+|                       |                       | automatically be      |
+|                       |                       | deleted and the       |
+|                       |                       | previous status ‘GRF’ |
+|                       |                       | will be reinstated.   |
+|                       |                       | However the CAR (XWP) |
+|                       |                       | benefit status will   |
+|                       |                       | remain as CAN-CAC. No |
+|                       |                       | CAR paragraph will be |
+|                       |                       | generated.            |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | review the carer’s    |
+|                       |                       | income, assets and    |
+|                       |                       | accommodation and     |
+|                       |                       | manually restore CP   |
+|                       |                       | (XWP) if appropriate. |
++-----------------------+-----------------------+-----------------------+
+| Retrospective         | Check if customer is  | WP customer has       |
+| entitlement on or     | eligible for CAR      | already transferred   |
+| before 19 March 2020  | (XWP)                 | to AGE/JSP from 20    |
+| –AGE/JSP              |                       | March 2020 or at the  |
+|                       | Keywords XWP, XWCGRF, | end of the            |
+|                       | I096PN                | bereavement period.   |
+|                       |                       |                       |
+|                       | Work type ID -        | Subsequently, payment |
+|                       | ZIAM_CDA_RESGRA_MFU   | level CA is granted   |
+|                       |                       | or reinstated with a  |
+|                       |                       | Date of Effect (DOE)  |
+|                       |                       | prior to 20 March     |
+|                       |                       | 2020.                 |
+|                       |                       |                       |
+|                       |                       | Customer gets payment |
+|                       |                       | level CA on both      |
+|                       |                       | 19/03/20 and 20/03/20 |
+|                       |                       | and has no break in   |
+|                       |                       | entitlement since     |
+|                       |                       | then.                 |
+|                       |                       |                       |
+|                       |                       | Grandfathered ‘GRF’   |
+|                       |                       | status code will      |
+|                       |                       | automatically be      |
+|                       |                       | applied to the        |
+|                       |                       | Grandfathering        |
+|                       |                       | Summary (GFS) and     |
+|                       |                       | Grandfathering        |
+|                       |                       | Override (GFD)        |
+|                       |                       | screens from 20 March |
+|                       |                       | 2020. However AGE/JSP |
+|                       |                       | grandfathering status |
+|                       |                       | won’t be changed.     |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | reject AGE/JSP and    |
+|                       |                       | grant CP (XWP)        |
+|                       |                       | manually from 20      |
+|                       |                       | March 2020 or the end |
+|                       |                       | of the bereavement    |
+|                       |                       | period if applicable. |
+|                       |                       | If CAR (XWP) is       |
+|                       |                       | granted, AGE/JSP will |
+|                       |                       | be automatically      |
+|                       |                       | rejected or cancelled |
+|                       |                       | from the grant date.  |
+|                       |                       | Overpaid AGE/JSP will |
+|                       |                       | be offset from CP     |
+|                       |                       | (XWP) arrears.        |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   manually delete   |
+|                       |                       |     the WP Residence  |
+|                       |                       |     Test Exemption on |
+|                       |                       |     the ARD when      |
+|                       |                       |     indexing the CP   |
+|                       |                       |     claim.            |
+|                       |                       | -   the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     type XWC 2020     |
+|                       |                       |     Former WP-CARER   |
+|                       |                       |     will              |
+|                       |                       |     automatically be  |
+|                       |                       |     coded on the GFS  |
+|                       |                       |     screen.           |
+|                       |                       | -   the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     type XWP 2020     |
+|                       |                       |     Former WP/WID     |
+|                       |                       |     will              |
+|                       |                       |     automatically be  |
+|                       |                       |     deleted on the    |
+|                       |                       |     GFS when AGE/JSP  |
+|                       |                       |     is rejected       |
++-----------------------+-----------------------+-----------------------+
+| Retrospective         | Check if customer     | WP customer was       |
+| entitlement before 20 | should be granted CAR | transferred to        |
+| March 2020 – AGE/JSP  | (XWP)                 | AGE/JSP from 20 March |
+| to CP (Standard)      |                       | 2020 or at the end of |
+|                       | Keywords XWP, XWCGRF, | the bereavement       |
+|                       | I098PN                | period. Subsequently, |
+|                       |                       | customer has been     |
+|                       | Non Grandfathered CP  | granted CP            |
+|                       | Standard              | (Standard).           |
+|                       |                       |                       |
+|                       | Work Item ID -        | Subsequently, payment |
+|                       | ZIAM_CDA_RESGRA_MFU   | level CA is granted,  |
+|                       |                       | restored, or changed  |
+|                       |                       | to payment level from |
+|                       |                       | CA HCC only or CA     |
+|                       |                       | zero rate due to ETT, |
+|                       |                       | with a Date of Effect |
+|                       |                       | (DOE) prior to 20     |
+|                       |                       | March 2020.           |
+|                       |                       |                       |
+|                       |                       | Customer now gets     |
+|                       |                       | payment level CA on   |
+|                       |                       | both 19/03/20 and     |
+|                       |                       | 20/03/20 and has no   |
+|                       |                       | break in entitlement  |
+|                       |                       | since then.           |
+|                       |                       |                       |
+|                       |                       | Grandfathered ‘GRO’   |
+|                       |                       | status code will be   |
+|                       |                       | applied to the        |
+|                       |                       | Grandfathering        |
+|                       |                       | Summary (GFS) and     |
+|                       |                       | Grandfathering        |
+|                       |                       | Override (GFD)        |
+|                       |                       | screens from the CP   |
+|                       |                       | (Standard) grant      |
+|                       |                       | date.                 |
+|                       |                       |                       |
+|                       |                       | Note: ‘GRO’ status    |
+|                       |                       | code allows carers    |
+|                       |                       | who are eligible for  |
+|                       |                       | CP (XWP) to be paid   |
+|                       |                       | CP (standard).        |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | reject AGE/JSP and    |
+|                       |                       | grant CP (XWP)        |
+|                       |                       | manually from 20      |
+|                       |                       | March 2020 or the end |
+|                       |                       | of the bereavement    |
+|                       |                       | period. Then to       |
+|                       |                       | re-grant CP           |
+|                       |                       | (Standard)            |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   manually delete   |
+|                       |                       |     the WP Residence  |
+|                       |                       |     Test Exemption on |
+|                       |                       |     the ARD when      |
+|                       |                       |     indexing the CP   |
+|                       |                       |     claim             |
+|                       |                       | -   the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     type XWC 2020     |
+|                       |                       |     Former WP-CARER   |
+|                       |                       |     will              |
+|                       |                       |     automatically     |
+|                       |                       |     change to ‘NOT’   |
+|                       |                       |     when CP (XWP) is  |
+|                       |                       |     manually granted  |
+|                       |                       |     from 20 March     |
+|                       |                       |     2020              |
+|                       |                       | -   the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     type XWC 2020     |
+|                       |                       |     Former WP-CARER   |
+|                       |                       |     will              |
+|                       |                       |     automatically be  |
+|                       |                       |     coded on the GFS  |
+|                       |                       |     screen            |
++-----------------------+-----------------------+-----------------------+
+
+MFUs where payment level CA is ceased
+
+Table 2
+
++-----------------------+-----------------------+-----------------------+
+| Scenario              | Message and Keywords  | Details               |
++-----------------------+-----------------------+-----------------------+
+| Payment level CA      | Check if customer is  | WP customer has       |
+| entitlement stopped   | eligible for AGE or   | transferred to CP     |
+| retrospectively prior | JSP                   | (XWP). Subsequently,  |
+| to 20 March 2020 CP   |                       | customer’s last or    |
+| (XWP) customer        | Keywords XWP, XWCGRF, | the only payment      |
+|                       | I097PN                | level CA payment      |
+|                       |                       | stops retrospectively |
+|                       | Work type ID -        | with a DOE on or      |
+|                       | ZIAM_CDA_CUSCAN_MFU   | before 20 March 2020. |
+|                       |                       |                       |
+|                       |                       | The CP grandfathering |
+|                       |                       | status code ‘GRF’     |
+|                       |                       | will automatically be |
+|                       |                       | deleted from the      |
+|                       |                       | Grandfathering        |
+|                       |                       | Summary (GFS) and     |
+|                       |                       | Grandfathering        |
+|                       |                       | Override (GFD)        |
+|                       |                       | screens from 20 March |
+|                       |                       | 2020. CP (XWP) will   |
+|                       |                       | be rejected           |
+|                       |                       | automatically from 20 |
+|                       |                       | March 2020 for the    |
+|                       |                       | reason ‘CAC’.         |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | manually index        |
+|                       |                       | AGE/JSP claim from 20 |
+|                       |                       | March 2020, add XWP   |
+|                       |                       | grandfathering type   |
+|                       |                       | 2020 Former WP/WID on |
+|                       |                       | the GFS screen and    |
+|                       |                       | insert the ‘WP’       |
+|                       |                       | Residence Test        |
+|                       |                       | Exemption code on the |
+|                       |                       | ARD screen. Ensure CP |
+|                       |                       | (XWP) overpayment is  |
+|                       |                       | offset from AGE/JSP   |
+|                       |                       | arrears and finalise  |
+|                       |                       | the debt shell.       |
++-----------------------+-----------------------+-----------------------+
+| Payment level CA      | Retrospective CDA     | WP customer has       |
+| entitlement stopped   | Su                    | already transferred   |
+| retrospectively       | spension/Cancellation | to CP (XWP) and then  |
+| on/before 20 March    | – Manual debt action  | was granted CP        |
+| 2020.                 |                       | (Standard).           |
+|                       | Keywords XWP, XWCGRF, | Subsequently,         |
+| CP (Standard)         | I119PN                | customer’s last or    |
+| customer              |                       | the only payment      |
+|                       | Work type ID -        | level CA payment      |
+|                       | ZIAM_CAR_SUSCAN_MFU   | stops retrospectively |
+|                       |                       | with a DOE on or      |
+|                       |                       | before 20 March 2020. |
+|                       |                       |                       |
+|                       |                       | The CP grandfathering |
+|                       |                       | status code ‘GRF’     |
+|                       |                       | will automatically be |
+|                       |                       | deleted from the      |
+|                       |                       | Grandfathering        |
+|                       |                       | Summary (GFS) and     |
+|                       |                       | Grandfathering        |
+|                       |                       | Override (GFD)        |
+|                       |                       | screens from 20 March |
+|                       |                       | 2020. CP              |
+|                       |                       | grandfathering status |
+|                       |                       | code ‘GRO’ will be    |
+|                       |                       | deleted from grant    |
+|                       |                       | date of CP            |
+|                       |                       | (Standard).           |
+|                       |                       |                       |
+|                       |                       | CP (Standard) will    |
+|                       |                       | stay current due to   |
+|                       |                       | the limiting date for |
+|                       |                       | the CP (Standard)     |
+|                       |                       | grant date. A CAR/BLD |
+|                       |                       | line will be          |
+|                       |                       | displayed on the      |
+|                       |                       | Assessment Results    |
+|                       |                       | (AR) screen.          |
+|                       |                       |                       |
+|                       |                       | Customer has received |
+|                       |                       | CP (XWP) when not     |
+|                       |                       | eligible, but was     |
+|                       |                       | eligible to be        |
+|                       |                       | grandfathered to      |
+|                       |                       | ‘AGE’ if they didn’t  |
+|                       |                       | get payment level CA  |
+|                       |                       | on 19 March 2020, or  |
+|                       |                       | eligible to be        |
+|                       |                       | grandfathered to JSP  |
+|                       |                       | if under APA.         |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | check if there is any |
+|                       |                       | debt and notify the   |
+|                       |                       | customer. Check if a  |
+|                       |                       | debt was raised via   |
+|                       |                       | the Daily Rate        |
+|                       |                       | Components (RAC)      |
+|                       |                       | screen before         |
+|                       |                       | finalising the CA     |
+|                       |                       | su                    |
+|                       |                       | spension/cancellation |
+|                       |                       | activity. Consider    |
+|                       |                       | alternative           |
+|                       |                       | eligibility for       |
+|                       |                       | AGE/JSP before        |
+|                       |                       | raising a debt.       |
+|                       |                       |                       |
+|                       |                       | Note: Customer is not |
+|                       |                       | eligible for ‘AGE’    |
+|                       |                       | grandfathering if CA  |
+|                       |                       | was payable since 19  |
+|                       |                       | March 2020.           |
+|                       |                       |                       |
+|                       |                       | The loss of payment   |
+|                       |                       | level CA and CP (XWP) |
+|                       |                       | grandfathering        |
+|                       |                       | provisions doesn’t    |
+|                       |                       | necessarily mean the  |
+|                       |                       | carer is not eligible |
+|                       |                       | to continue receiving |
+|                       |                       | CP (Standard).        |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   manually insert   |
+|                       |                       |     the WP Residence  |
+|                       |                       |     Test Exemption on |
+|                       |                       |     the ARD when      |
+|                       |                       |     indexing the      |
+|                       |                       |     AGE/JSP claim.    |
+|                       |                       | -   the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     status of GRO and |
+|                       |                       |     GRF for XWC 2020  |
+|                       |                       |     Former WP-CARER   |
+|                       |                       |     will              |
+|                       |                       |     automatically be  |
+|                       |                       |     deleted           |
+|                       |                       | -   check that the    |
+|                       |                       |     grandfathering    |
+|                       |                       |     type XWP 2020     |
+|                       |                       |     Former WP/WID is  |
+|                       |                       |     inserted when     |
+|                       |                       |     indexing AGE/JSP  |
+|                       |                       |     from 20 March     |
+|                       |                       |     2020              |
++-----------------------+-----------------------+-----------------------+
+| Payment level CA      | Retrospective CDA     | WP customer           |
+| entitlement stopped   | Su                    | transferred to CP     |
+| retrospectively after | spension/Cancellation | (XWP) and then was    |
+| 20 March 2020         | – Manual debt action  | granted CP            |
+|                       |                       | (Standard).           |
+| CP (Standard)         | Keywords XWP, XWCGRF, | Subsequently,         |
+| customer              | I119PN.               | customer’s last or    |
+|                       |                       | the only payment      |
+|                       | Work type ID -        | level CA payment      |
+|                       | ZIAM_CAR_SUSCAN_MFU   | stops retrospectively |
+|                       |                       | with a DOE after 20   |
+|                       |                       | March 2020 while      |
+|                       |                       | customer was paid CP  |
+|                       |                       | (XWP).                |
+|                       |                       |                       |
+|                       |                       | The CP (XWP) debt in  |
+|                       |                       | between the CA        |
+|                       |                       | cessation and CP      |
+|                       |                       | (Standard) grant date |
+|                       |                       | can be manually       |
+|                       |                       | raised through the    |
+|                       |                       | Daily Rate Components |
+|                       |                       | (RAC) screen by using |
+|                       |                       | reason Before         |
+|                       |                       | Limiting Date (LTD)   |
+|                       |                       | when taking the       |
+|                       |                       | CDA/CAN activity to   |
+|                       |                       | the AR screen.        |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | check if there is any |
+|                       |                       | debt between when CP  |
+|                       |                       | (XWP) eligibility was |
+|                       |                       | lost and CP           |
+|                       |                       | (Standard) was        |
+|                       |                       | granted, and to       |
+|                       |                       | notify the customer   |
+|                       |                       | of loss of CP         |
+|                       |                       | eligibility for the   |
+|                       |                       | period. Customer was  |
+|                       |                       | not eligible for      |
+|                       |                       | AGE/JSP               |
+|                       |                       | grandfathering as     |
+|                       |                       | they got payment      |
+|                       |                       | level CA on 19 March  |
+|                       |                       | 2020.                 |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   manually cancel   |
+|                       |                       |     CP (XWP) from the |
+|                       |                       |     CA cancellation   |
+|                       |                       |     date.             |
+|                       |                       | -   the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     status for XWC    |
+|                       |                       |     2020 Former       |
+|                       |                       |     WP-CARER will     |
+|                       |                       |     automatically     |
+|                       |                       |     change to NOT     |
+|                       |                       |     from the CA       |
+|                       |                       |     cancellation date |
++-----------------------+-----------------------+-----------------------+
+| Payment level CA      | Check if customer is  | The system will not   |
+| entitlement stopped   | still eligible for    | automatically change  |
+| (or reinstated) –     | CAR (XWP)             | the CP (XWP)          |
+| manually              |                       | grandfathered status  |
+| grandfathered         | Keywords XWP, XWCGRF  | or cancel CP (XWP)    |
+|                       |                       | when payment level CA |
+|                       | Work type ID -        | is stopped for a      |
+|                       | ZIAM_CDA_CARGRF_MFU   | manually              |
+|                       |                       | grandfathered CP      |
+|                       |                       | (XWP) customer (i.e.  |
+|                       |                       | a grandfathered       |
+|                       |                       | status ‘GRF’ was      |
+|                       |                       | manually coded). CP   |
+|                       |                       | (XWP) will remain     |
+|                       |                       | current.              |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | check if customer is  |
+|                       |                       | still eligible for    |
+|                       |                       | grandfathering and CP |
+|                       |                       | (XWP).                |
+|                       |                       |                       |
+|                       |                       | If no longer          |
+|                       |                       | eligible, update the  |
+|                       |                       | grandfathering status |
+|                       |                       | to ‘NOT’ from the     |
+|                       |                       | date of effect (DOE)  |
+|                       |                       | of the loss of        |
+|                       |                       | eligibility.          |
+|                       |                       |                       |
+|                       |                       | If payment level CA   |
+|                       |                       | payment stopped on or |
+|                       |                       | before 20 March 2020, |
+|                       |                       | reject CP (XWP) and   |
+|                       |                       | consider eligibility  |
+|                       |                       | to grandfather for    |
+|                       |                       | AGE/JSP.              |
+|                       |                       |                       |
+|                       |                       | Note: customer is not |
+|                       |                       | eligible for ‘AGE’    |
+|                       |                       | grandfathering if CA  |
+|                       |                       | was payable for 19    |
+|                       |                       | March.                |
+|                       |                       |                       |
+|                       |                       | If payment level CA   |
+|                       |                       | payment stopped after |
+|                       |                       | 20 March 2020, add a  |
+|                       |                       | grandfathering status |
+|                       |                       | of ‘NOT’ from the DOE |
+|                       |                       | of break in payment   |
+|                       |                       | level CA entitlement, |
+|                       |                       | and cancel CP (XWP)   |
+|                       |                       | manually from the     |
+|                       |                       | same date.            |
+|                       |                       |                       |
+|                       |                       | Note: CP (XWP) is not |
+|                       |                       | automatically         |
+|                       |                       | restored for manually |
+|                       |                       | grandfathered         |
+|                       |                       | customers when        |
+|                       |                       | payment level CA is   |
+|                       |                       | restored, re-granted, |
+|                       |                       | or changed from CA    |
+|                       |                       | HCC only or CA CUR    |
+|                       |                       | ETT to payment level. |
+|                       |                       | An MFU will not be    |
+|                       |                       | produced again. In    |
+|                       |                       | this case confirm the |
+|                       |                       | customer does not     |
+|                       |                       | have a break in       |
+|                       |                       | payment level CA      |
+|                       |                       | entitlement before    |
+|                       |                       | manually              |
+|                       |                       | re-grandfathering. If |
+|                       |                       | eligible.             |
+|                       |                       |                       |
+|                       |                       | -   select the 2020   |
+|                       |                       |     Former WP–CARER   |
+|                       |                       |     line from the     |
+|                       |                       |     Grandfathering    |
+|                       |                       |     Summary (GFS)     |
+|                       |                       |     screen            |
+|                       |                       | -   on the            |
+|                       |                       |     Grandfathering    |
+|                       |                       |     Override (GFD)    |
+|                       |                       |     screen, delete    |
+|                       |                       |     the               |
+|                       |                       |     grandfathering    |
+|                       |                       |     status ‘NOT’      |
+|                       |                       | -   manually restore  |
+|                       |                       |     CP (XWP)          |
++-----------------------+-----------------------+-----------------------+
+
+MFU for CP (Standard) cancellation where short term or episodic period is less than 3 months
+
+Table 3:
+
++-----------------------+-----------------------+-----------------------+
+| Scenario              | Message and Keywords  | Details               |
++-----------------------+-----------------------+-----------------------+
+| CP Standard Episodic  | Short-term/episodic   | Where CP (Standard)   |
+| is cancelled for      | cancelled. Assess CAR | Episodic eligibility  |
+| reason L3M and CP     | (XWP)                 | is lost (e.g. due to  |
+| (XWP) eligible        |                       | the child leaving     |
+|                       | Keywords: XWP,        | care), and the DOE is |
+|                       | XWCGRF, I145PN        | less than 3 months    |
+|                       |                       | from the grant date,  |
+|                       | Work type ID -        | and the customer is   |
+|                       | ZIAM_CAR_EPS_MFU      | still eligible for CP |
+|                       |                       | (XWP) grandfathering, |
+|                       |                       | CP Standard will not  |
+|                       |                       | automatically switch  |
+|                       |                       | to CP (XWP).          |
+|                       |                       |                       |
+|                       |                       | CP Standard will      |
+|                       |                       | automatically cancel. |
+|                       |                       | The grandfathering    |
+|                       |                       | status will remain as |
+|                       |                       | ‘GRO’.                |
+|                       |                       |                       |
+|                       |                       | An MFU is raised to   |
+|                       |                       | manually grant CP     |
+|                       |                       | (XWP) from the date   |
+|                       |                       | of cancellation of CP |
+|                       |                       | (Standard). Delete    |
+|                       |                       | the grandfathering    |
+|                       |                       | status of GRO and     |
+|                       |                       | ensure CP is still    |
+|                       |                       | payable (e.g.         |
+|                       |                       | customer is still     |
+|                       |                       | payable under the     |
+|                       |                       | pensions means test). |
++-----------------------+-----------------------+-----------------------+
+
+Updating the 2020 Former WP - CARER grandfathering type
+
+The carer’s grandfathering provisions and grandfathering status will
+appear on the Grandfathering Summary (GFS) screen. Changes to a carer’s
+grandfathering status are made on the Grandfathering Override (GFD)
+screen.
+
+The initial grandfathering status will be set as GRF on 20 March 2020;
+this includes Wife Pension customers who are in a bereavement period on
+20 March 2020 and transfer to Carer Payment (XWP) on their bereavement
+period end date (BPED) + 1.
+
+Status codes on GFS and GFD screens
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| GRF (Grandfathered)               | A customer transfers from Wife    |
+|                                   | Pension with payment level CA to  |
+|                                   | CP (XWP) on 20 March 2020 or at   |
+|                                   | the end of the Wife Pension       |
+|                                   | bereavement period.               |
++-----------------------------------+-----------------------------------+
+| GRO (Grandfathered Override)      | A CP (XWP) customer wants to      |
+|                                   | assess their eligibility under    |
+|                                   | the CP (Standard). GRO status     |
+|                                   | will override the GRF status.     |
++-----------------------------------+-----------------------------------+
+| BRV (Bereavement)                 | When the last, or only, payment   |
+|                                   | level CA care receiver is         |
+|                                   | deceased, the XWC status will     |
+|                                   | change from GRF to BRV to enable  |
+|                                   | the CP to be continued for 14     |
+|                                   | weeks from the date of death and  |
+|                                   | pay the bereavement lump sum if   |
+|                                   | eligible.                         |
++-----------------------------------+-----------------------------------+
+| NOT (Not Grandfathered)           | CP (XWP) customer’s only or last  |
+|                                   | CA is suspended, cancelled or     |
+|                                   | changed to HCC only.              |
++-----------------------------------+-----------------------------------+
+| APL (Manual)                      | Appeal                            |
++-----------------------------------+-----------------------------------+
+| DVT (Manual)                      | DVA transfer with issue or        |
+|                                   | limitation                        |
++-----------------------------------+-----------------------------------+
+| POL (Manual)                      | Policy Decision                   |
++-----------------------------------+-----------------------------------+
+| SYS (Manual)                      | System error or omission          |
++-----------------------------------+-----------------------------------+
+| AUT (Auto)                        | Auto update                       |
++-----------------------------------+-----------------------------------+
+| CNV (Auto)                        | Conversion                        |
++-----------------------------------+-----------------------------------+
+
+Rules when manually updating the 2020 Former WP - CARER grandfathering type
+
+When inserting a new entry (as opposed to changing and existing entry),
+the date of effect of any new 2020 Former WP–CARER grandfathering status
+entry cannot be the same as an existing grandfathering entry.
+
+The date of effect of any entry must be equal or greater than 20 March
+2020.
+
+Any updates, including insertion and changes, will be applied as the
+latest status. If there are any subsequent statuses with a DOE that is
+later than the new/changing entry, the system will automatically delete
+them.
+
+Any deletion of an existing status will make the previous status the
+latest one.
+
+Customer must get payment level Carer Allowance when the most recent
+status is changed to GRF/GRO.
+
+Where a grandfathered status has been applied manually and payment level
+CA ceases, a MFU activity will prompt to manually amend the
+grandfathered status.
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

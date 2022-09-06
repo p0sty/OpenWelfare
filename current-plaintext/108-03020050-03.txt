@@ -1,0 +1,456 @@
+
+Coding the Care Receiver Income and Assets Details (CRIA) screen 108-03020050
+
+-   Background
+-   Process
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+System coding on CRIA screen
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Accessing the Care Receiver       |
+|                                   | Income and Assets Details (CRIA)  |
+|                                   | screen + Read more ...            |
+|                                   |                                   |
+|                                   | The Care Receiver Income and      |
+|                                   | Assets Details (CRIA) screen can  |
+|                                   | be accessed:                      |
+|                                   |                                   |
+|                                   | -   as part of the new claim      |
+|                                   |     screen flow for a child care  |
+|                                   |     receiver, the CRIA screen     |
+|                                   |     will be pre-selected from the |
+|                                   |     Care Receiver Task Selector   |
+|                                   |     (CETS) screen                 |
+|                                   | -   for adult care receivers, it  |
+|                                   |     will be selected during the   |
+|                                   |     CRP/ADD or review activity    |
+|                                   |     from the Activity List (AL)   |
+|                                   |     screen                        |
+|                                   | -   as part of the Restoration    |
+|                                   |     workflow                      |
+|                                   | -   by coding 'CRIA' in the Nxt:  |
+|                                   |     field                         |
++-----------------------------------+-----------------------------------+
+| 2                                 | Coding more than one care         |
+|                                   | receiver + Read more ...          |
+|                                   |                                   |
+|                                   | If there is more than one care    |
+|                                   | receiver (combined care or        |
+|                                   | multiple care), a CRIA screen     |
+|                                   | needs to be coded for each care   |
+|                                   | receiver. As the system will not  |
+|                                   | combine totals but will           |
+|                                   | separately assess each care       |
+|                                   | receiver, in combined or multiple |
+|                                   | care cases, the income and assets |
+|                                   | details of the relevant           |
+|                                   | assessable persons should be      |
+|                                   | totalled and then those figures   |
+|                                   | copied into each care receiver’s  |
+|                                   | CRIA screen.                      |
+|                                   |                                   |
+|                                   | For example: if Carer Payment     |
+|                                   | (CP) is assessed for 2 children   |
+|                                   | with a disability under combined  |
+|                                   | care provisions the same details  |
+|                                   | should be coded on each child's   |
+|                                   | CRIA screen as follows:           |
+|                                   |                                   |
+|                                   | a parent resides with their three |
+|                                   | FTB children. The parent claims   |
+|                                   | CP for the 2 disabled children    |
+|                                   | they are providing care for. For  |
+|                                   | combined care purposes the income |
+|                                   | and asset assessment will include |
+|                                   | the following relevant persons:   |
+|                                   |                                   |
+|                                   | -   the parent                    |
+|                                   | -   the partner of the parent     |
+|                                   | -   child care receiver 1 and     |
+|                                   |     child care receiver 2         |
+|                                   | -   the other FTB child           |
+|                                   |                                   |
+|                                   | if the total of the combined      |
+|                                   | taxable income of all relevant    |
+|                                   | persons was $50,000, then $50,000 |
+|                                   | should be coded on the CRIA       |
+|                                   | screen of child care receiver 1,  |
+|                                   | and $50,000 copied on to the CRIA |
+|                                   | screen of the second child care   |
+|                                   | receiver. The same process        |
+|                                   | applies to assets                 |
+|                                   |                                   |
+|                                   | In exchanged care cases, each     |
+|                                   | carer will need to qualify on     |
+|                                   | their own, taking into            |
+|                                   | consideration all of the          |
+|                                   | income/assets of each care        |
+|                                   | receiver individually when they   |
+|                                   | are in their care.                |
+|                                   |                                   |
+|                                   | For example, Carer A is looking   |
+|                                   | after care receiver X while Carer |
+|                                   | B is looking after care receiver  |
+|                                   | Y. If the combined income/assets  |
+|                                   | of A and X are above the limit    |
+|                                   | then Carer A will not qualify for |
+|                                   | CP even if when the combined      |
+|                                   | income/assets of A and Y are      |
+|                                   | under the limit. This is because  |
+|                                   | they do not have continuing       |
+|                                   | qualification at all times. Carer |
+|                                   | B may qualify if their            |
+|                                   | income/assets, combined with      |
+|                                   | carer receiver X and Y            |
+|                                   | separately, is under the limit.   |
+|                                   | For help with coding exchanged    |
+|                                   | care, contact the Carer Helpdesk. |
++-----------------------------------+-----------------------------------+
+| 3                                 | The CRIA screen + Read more ...   |
+|                                   |                                   |
+|                                   | The determining officer must      |
+|                                   | decide whether the information    |
+|                                   | provided is acceptable and/or if  |
+|                                   | further evidence is required.     |
+|                                   |                                   |
+|                                   | If the care receiver is a higher  |
+|                                   | Adult Disability Assessment Tool  |
+|                                   | (ADAT) score adult:               |
+|                                   |                                   |
+|                                   | the taxable income assessment     |
+|                                   | must include the income of the    |
+|                                   | care receiver and the care        |
+|                                   | receiver's partner if they have   |
+|                                   | one                               |
+|                                   |                                   |
+|                                   | the asset assessment must include |
+|                                   | the assets/liquid assets of the   |
+|                                   | care receiver                     |
+|                                   |                                   |
+|                                   | -   the care receiver's partner   |
+|                                   |     if they have one              |
+|                                   | -   the assets/liquid assets of   |
+|                                   |     any Family Tax Benefit (FTB)  |
+|                                   |     children of the care receiver |
+|                                   |     or partner                    |
+|                                   |                                   |
+|                                   | If the care receiver is a lower   |
+|                                   | ADAT score adult (dependent       |
+|                                   | child):                           |
+|                                   |                                   |
+|                                   | the taxable income assessment     |
+|                                   | must include the income of the    |
+|                                   | care receiver, and                |
+|                                   |                                   |
+|                                   | -   the care receiver's partner   |
+|                                   |     if they have one              |
+|                                   | -   the dependent child, and any  |
+|                                   |     other FTB children of the     |
+|                                   |     care receiver or their        |
+|                                   |     partner                       |
+|                                   |                                   |
+|                                   | the asset assessment must include |
+|                                   | the assets/liquid assets of the   |
+|                                   | care receiver, and                |
+|                                   |                                   |
+|                                   | -   the care receiver’s partner   |
+|                                   |     if they have one              |
+|                                   | -   the dependent child           |
+|                                   | -   any other FTB children of the |
+|                                   |     care receiver or their        |
+|                                   |     partner                       |
+|                                   |                                   |
+|                                   | If the care receiver is a lower   |
+|                                   | ADAT score adult (multiple care   |
+|                                   | child or children):               |
+|                                   |                                   |
+|                                   | the taxable income assessment     |
+|                                   | must include the income of the    |
+|                                   | lower ADAT adult, and             |
+|                                   |                                   |
+|                                   | -   their partner if they have    |
+|                                   |     one                           |
+|                                   | -   any of their FTB children     |
+|                                   | -   each multiple care child      |
+|                                   | -   if the lower ADAT score adult |
+|                                   |     is not the parent or guardian |
+|                                   |     of the qualifying             |
+|                                   |     child/children, their parent  |
+|                                   |     and partner if they have one  |
+|                                   |     and the FTB children of the   |
+|                                   |     parent or partner             |
+|                                   |                                   |
+|                                   | the asset assessment must include |
+|                                   | the assets/liquid assets of the:  |
+|                                   |                                   |
+|                                   | -   lower ADAT adult              |
+|                                   | -   their partner if they have    |
+|                                   |     one                           |
+|                                   | -   any of their FTB children     |
+|                                   | -   each multiple care child      |
+|                                   | -   if the lower ADAT score adult |
+|                                   |     is not the parent or guardian |
+|                                   |     of the qualifying             |
+|                                   |     child/children, their parent  |
+|                                   |     and partner if they have one  |
+|                                   |     and the FTB children of the   |
+|                                   |     parent or partner             |
+|                                   |                                   |
+|                                   | If the care receiver is a child,  |
+|                                   | combined care child or multiple   |
+|                                   | care child and the child or       |
+|                                   | children live with their parent   |
+|                                   | or legal guardian:                |
+|                                   |                                   |
+|                                   | the taxable income and asset      |
+|                                   | assessment must include the       |
+|                                   | income and assets/liquid assets   |
+|                                   | of:                               |
+|                                   |                                   |
+|                                   | -   the child care receiver/s     |
+|                                   | -   their parent or legal         |
+|                                   |     guardian                      |
+|                                   | -   partner if they have one      |
+|                                   | -   the FTB children of the       |
+|                                   |     parent or partner             |
+|                                   |                                   |
+|                                   | If the care receiver is a         |
+|                                   | child/children and the            |
+|                                   | child/children does/do not live   |
+|                                   | with their parent or legal        |
+|                                   | guardian, only the taxable income |
+|                                   | and asset details of the child    |
+|                                   | care receiver/s are assessable.   |
+|                                   |                                   |
+|                                   | The following are not included in |
+|                                   | the asset assessment regardless   |
+|                                   | of the circumstances of the care  |
+|                                   | receiver:                         |
+|                                   |                                   |
+|                                   | -   the family home               |
+|                                   | -   funds received from           |
+|                                   |     DisabilityCare Australia, the |
+|                                   |     national disability insurance |
+|                                   |     scheme (the scheme) deposited |
+|                                   |     into an account specifically  |
+|                                   |     for the purposes of managing  |
+|                                   |     the care receiver's           |
+|                                   |     DisabilityCare plan           |
+|                                   | -   assets obtained to            |
+|                                   |     specifically help the care    |
+|                                   |     receiver in respect of their  |
+|                                   |     disability                    |
+|                                   |                                   |
+|                                   | See Applying the assets test      |
+|                                   | component of the non -customer    |
+|                                   | Care Receiver Income and Assets   |
+|                                   | (CRIA) test.                      |
++-----------------------------------+-----------------------------------+
+| 4                                 | Date of Event: field + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | For new claims, the date of event |
+|                                   | must be entered as the start date |
+|                                   | of payment. This is the date the  |
+|                                   | system reassesses the CRIA        |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | Note: edit ‘EO23CR – Date cannot  |
+|                                   | be more than 63 days in the       |
+|                                   | future' displays if 1 January of  |
+|                                   | the following year is entered as  |
+|                                   | part of the new claim activity.   |
+|                                   |                                   |
+|                                   | For annual reviews, if the CRIA   |
+|                                   | screen is not updated with the    |
+|                                   | date 1 January, Carer Payment     |
+|                                   | will automatically cancel on that |
+|                                   | date. The cancellation will occur |
+|                                   | for all carers linked to the care |
+|                                   | receiver.                         |
+|                                   |                                   |
+|                                   | For CRIA reviews, the date        |
+|                                   | entered must be 1 January         |
+|                                   | following the 1 November CRIA     |
+|                                   | maturity date. For example:       |
+|                                   |                                   |
+|                                   | -   Review matured: 01/11/2019    |
+|                                   | -   Review submitted by carer on  |
+|                                   |     30/11/2019                    |
+|                                   | -   DOE for CRIA 01/01/2020       |
++-----------------------------------+-----------------------------------+
+| 5                                 | Base Financial Year Taxable       |
+|                                   | Income $: field + Read more ...   |
+|                                   |                                   |
+|                                   | Code the taxable income of the    |
+|                                   | care receiver and all assessable  |
+|                                   | persons for the base tax year, to |
+|                                   | apply the care receiver income    |
+|                                   | test.                             |
++-----------------------------------+-----------------------------------+
+| 6                                 | Current Financial Year Taxable    |
+|                                   | Income $: field + Read more ...   |
+|                                   |                                   |
+|                                   | This is a mandatory field, which  |
+|                                   | should usually be coded with a    |
+|                                   | duplicate of the amount recorded  |
+|                                   | for the Base Financial Year       |
+|                                   | Taxable Income. A different       |
+|                                   | amount representing an actual     |
+|                                   | written estimate for the current  |
+|                                   | year should be coded in this      |
+|                                   | field in the following            |
+|                                   | circumstances:                    |
+|                                   |                                   |
+|                                   | for child or adult                |
+|                                   | claims/reviews, code an actual    |
+|                                   | current year estimate if:         |
+|                                   |                                   |
+|                                   | -   the base tax year income is   |
+|                                   |     over the income threshold and |
+|                                   |     there has been a decrease     |
+|                                   |     since the base tax year, or   |
+|                                   | -   the assets are medium or high |
+|                                   |     range                         |
+|                                   |                                   |
+|                                   | for information about when to     |
+|                                   | code an estimate for the current  |
+|                                   | year, see:                        |
+|                                   |                                   |
+|                                   | -   Applying the income test      |
+|                                   |     component of the non-customer |
+|                                   |     Care Receiver Income and      |
+|                                   |     Assets (CRIA) test            |
+|                                   | -   Assets test exemptions for    |
+|                                   |     the non-customer Care         |
+|                                   |     Receiver Income and Assets    |
+|                                   |     (CRIA) test                   |
+|                                   |                                   |
+|                                   | The date of effect is the date    |
+|                                   | the request for a current year    |
+|                                   | estimate was made. There are no   |
+|                                   | backdating or date of claim       |
+|                                   | lodgement provisions.             |
++-----------------------------------+-----------------------------------+
+| 7                                 | Assets Value Range: field + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Code a 'Y' in the relevant field, |
+|                                   | which reflects the care           |
+|                                   | receiver’s assets range. This     |
+|                                   | field assesses the care receivers |
+|                                   | assets test limit.                |
+|                                   |                                   |
+|                                   | When the non-customer care        |
+|                                   | receiver asset test falls in      |
+|                                   | mid-range and the liquid assets   |
+|                                   | threshold is met, the system will |
+|                                   | check that the recorded income is |
+|                                   | within the non-customer care      |
+|                                   | receiver's income threshold. For  |
+|                                   | care receivers income thresholds  |
+|                                   | and asset limits see the Carer    |
+|                                   | Payment (CP) - Care Receiver      |
+|                                   | Income and Asset Limits link on   |
+|                                   | the Rates and Threshold page.     |
+|                                   |                                   |
+|                                   | Note: if there is more than one   |
+|                                   | care receiver, the asset value    |
+|                                   | range and liquid asset value      |
+|                                   | range coded on each care          |
+|                                   | receiver's CRIA screen should be  |
+|                                   | based on the combined assets of   |
+|                                   | all assessable persons.           |
++-----------------------------------+-----------------------------------+
+| 8                                 | Liquid Assets Value Range:        |
+|                                   | field + Read more ...             |
+|                                   |                                   |
+|                                   | Code a 'Y' in the relevant field, |
+|                                   | which reflects the care           |
+|                                   | receiver's liquid assets range    |
+|                                   | only if the care receiver's       |
+|                                   | assets are above the current care |
+|                                   | receivers assets test limit. If   |
+|                                   | not above the current asset       |
+|                                   | limit, do not code (leave blank). |
+|                                   | For care receivers assets test    |
+|                                   | threshold see the Carer Payment   |
+|                                   | (CP) - Care Receiver Income and   |
+|                                   | Asset Limits link on the Rates    |
+|                                   | and Threshold page.               |
+|                                   |                                   |
+|                                   | Note: the value of the care       |
+|                                   | receiver’s liquid assets is not   |
+|                                   | asked in the online claim.        |
+|                                   |                                   |
+|                                   | Contact the customer by phone if  |
+|                                   | these details are needed and it   |
+|                                   | cannot be determined from other   |
+|                                   | documents given by the carer.     |
+|                                   |                                   |
+|                                   | If contact is unsuccessful, send  |
+|                                   | a:                                |
+|                                   |                                   |
+|                                   | -   Carer Payment Income and      |
+|                                   |     Assets details of the person  |
+|                                   |     being cared for 16 years and  |
+|                                   |     over (SA304a), or             |
+|                                   | -   Carer Payment Income and      |
+|                                   |     assets details - child being  |
+|                                   |     cared for - under 16 years    |
+|                                   |     (SA304c)                      |
+|                                   |                                   |
+|                                   | For more information, see Assets  |
+|                                   | test exemptions for the           |
+|                                   | non-customer Care Receiver Income |
+|                                   | and Assets (CRIA) test.           |
++-----------------------------------+-----------------------------------+
+| 9                                 | Number of FTB children: field +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | It is only necessary to code the  |
+|                                   | number of Family Tax Benefit      |
+|                                   | (FTB) children if the care        |
+|                                   | receiver's assets are above the   |
+|                                   | current care receivers assets     |
+|                                   | test limit.                       |
+|                                   |                                   |
+|                                   | If they are not above the current |
+|                                   | asset limit, do not code (leave   |
+|                                   | blank).                           |
+|                                   |                                   |
+|                                   | The number of FTB children may be |
+|                                   | taken from the forms 'Carer       |
+|                                   | Payment Income and Assets details |
+|                                   | of the person being cared for 16  |
+|                                   | years and over (SA304a)' or       |
+|                                   | 'Carer Payment Income and assets  |
+|                                   | details - child being cared for - |
+|                                   | under 16 years (SA304c)',         |
+|                                   | excluding the child care          |
+|                                   | receiver.                         |
+|                                   |                                   |
+|                                   | For care receivers assets test    |
+|                                   | threshold see the Carer Payment   |
+|                                   | (CP) - Care Receiver Income and   |
+|                                   | Asset Limits link on the Rates    |
+|                                   | and Threshold page                |
+|                                   |                                   |
+|                                   | Field help exists to define an    |
+|                                   | FTB child, or see Family Tax      |
+|                                   | Benefit (FTB) child of a person.  |
+|                                   | If this field is not coded the    |
+|                                   | system will use the number of FTB |
+|                                   | children for which the care       |
+|                                   | receiver is paid FTB.             |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

@@ -1,0 +1,373 @@
+
+Public Eligibility quality checking processing 111-22090030
+
+-   Background
+-   Process Summary
+-   Process
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+This page contains the quality checking transactions that must be
+selected separately and actioned by the next working day. Note: due to
+end of month reporting, the quality checking process must be completed
+by the first working day of the new month
+
+On this page:
+
+Daily quality checks for public eligibility transactions - obtain source
+documents
+
+Daily quality checks for public eligibility transactions - perform check
+
+Daily quality checks for public eligibility transactions - obtain source documents
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Access the Quality Control System |
+|                                   | (QCS) + Read more ...             |
+|                                   |                                   |
+|                                   | Key 'QBBI' and press [Enter].     |
+|                                   |                                   |
+|                                   | The QBBI screen displays details  |
+|                                   | of selected transactions from the |
+|                                   | previous day's processing plus    |
+|                                   | any outstanding transactions not  |
+|                                   | previously actioned.              |
+|                                   |                                   |
+|                                   | CDMS transactions selected for    |
+|                                   | quality checking are displayed in |
+|                                   | the QCS using the legacy (CICS)   |
+|                                   | transaction IDs. The following    |
+|                                   | relationships between the legacy  |
+|                                   | transaction ID and the public     |
+|                                   | eligibility processing activities |
+|                                   | are displayed:                    |
+|                                   |                                   |
+|                                   | -   EANU (E2) - register Medicare |
+|                                   |     card details                  |
+|                                   | -   EREU (E1) - amend Medicare    |
+|                                   |     card details                  |
+|                                   | -   EFPU (E3) - amend personal    |
+|                                   |     details                       |
+|                                   | -   ELNU (E6) - amend Medicare    |
+|                                   |     entitlement details           |
+|                                   | -   ERFU - amend Program Review   |
+|                                   |     details                       |
++-----------------------------------+-----------------------------------+
+| 2                                 | Select transaction to be          |
+|                                   | checked + Read more ...           |
+|                                   |                                   |
+|                                   | Select the transaction to be      |
+|                                   | quality checked by positioning    |
+|                                   | the cursor in the 'S' (select)    |
+|                                   | field then pressing [Enter].      |
+|                                   |                                   |
+|                                   | A legacy enrolment screen is      |
+|                                   | returned.                         |
+|                                   |                                   |
+|                                   | Press [F3] (or applicable         |
+|                                   | function key) to return to the    |
+|                                   | QBBI screen.                      |
++-----------------------------------+-----------------------------------+
+| 3                                 | Entitlement Details Inquiry       |
+|                                   | screen + Read more ...            |
+|                                   |                                   |
+|                                   | Before checking the enrolment,    |
+|                                   | search for any possible customer  |
+|                                   | records.                          |
+|                                   |                                   |
+|                                   | Highlight and copy the Medicare   |
+|                                   | card number from the QCS.         |
+|                                   |                                   |
+|                                   | Switch to CDMS and paste the      |
+|                                   | Medicare card number into the     |
+|                                   | Inquire on Consumer Details       |
+|                                   | search screen then select         |
+|                                   | Entitlement.                      |
+|                                   |                                   |
+|                                   | The Entitlement Details Inquiry   |
+|                                   | screen for all members associated |
+|                                   | with the Medicare card number is  |
+|                                   | displayed.                        |
+|                                   |                                   |
+|                                   | Once Medicare details have been   |
+|                                   | checked on the Entitlement        |
+|                                   | Details Inquiry screen, conduct a |
+|                                   | consumer search to ensure no      |
+|                                   | duplicate records have been       |
+|                                   | created.                          |
+|                                   |                                   |
+|                                   | Begin by doing a consumer search  |
+|                                   | using:                            |
+|                                   |                                   |
+|                                   | -   Family Name                   |
+|                                   | -   Age Range                     |
+|                                   | -   Select ‘ALL’ for the Gender   |
+|                                   |     field                         |
+|                                   |                                   |
+|                                   | If CDMS returns too many or no    |
+|                                   | search results, refine the        |
+|                                   | search:                           |
+|                                   |                                   |
+|                                   | -   add the first initial of the  |
+|                                   |     customer’s first name         |
+|                                   |                                   |
+|                                   | If unable to locate a customer do |
+|                                   | an address search:                |
+|                                   |                                   |
+|                                   | -   in CDMS, select the Address   |
+|                                   |     Search button                 |
+|                                   | -   select Medicare from the      |
+|                                   |     Program drop down menu        |
+|                                   | -   enter the Locality or         |
+|                                   |     postcode and select the       |
+|                                   |     result from the drop down box |
+|                                   | -   enter the full Address in the |
+|                                   |     Address Line and the Locality |
+|                                   |     if not already pre-filled     |
+|                                   | -   select the State from the     |
+|                                   |     drop down box                 |
+|                                   |                                   |
+|                                   | Select one of the following:      |
+|                                   |                                   |
+|                                   | -   Personal - personal details   |
+|                                   |     of the customer               |
+|                                   | -   Entitlement - Medicare        |
+|                                   |     entitlement of a customer     |
+|                                   | -   Group - group or card details |
+|                                   |     of a customer                 |
++-----------------------------------+-----------------------------------+
+| 4                                 | Birth date within 52 weeks of     |
+|                                   | original processing + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Do any consumer IDs have a birth  |
+|                                   | date less than 52 weeks (one      |
+|                                   | year) from the date of original   |
+|                                   | processing indicated on the PRC   |
+|                                   | DT on the QBBI screen?            |
+|                                   |                                   |
+|                                   | This step ensures that enrolments |
+|                                   | actioned from a families source   |
+|                                   | are easily identified.            |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, go to Step 9              |
++-----------------------------------+-----------------------------------+
+| 5                                 | Entitlement details + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Select the radio button for any   |
+|                                   | consumer IDs with a birth date    |
+|                                   | less than 52 weeks (one year)     |
+|                                   | from the date of original         |
+|                                   | processing (PRC DT on the QBBI    |
+|                                   | screen).                          |
+|                                   |                                   |
+|                                   | Check history for each of the     |
+|                                   | above consumer IDs by:            |
+|                                   |                                   |
+|                                   | -   selecting summary             |
+|                                   | -   then selecting entitlement    |
+|                                   |                                   |
+|                                   | The entitlement details section   |
+|                                   | displays.                         |
++-----------------------------------+-----------------------------------+
+| 6                                 | History details + Read more ...   |
+|                                   |                                   |
+|                                   | Select the History Summary        |
+|                                   | button.                           |
+|                                   |                                   |
+|                                   | Select program document from the  |
+|                                   | event drop down list.             |
+|                                   |                                   |
+|                                   | Match the source code and the     |
+|                                   | Service Officer's logon ID from   |
+|                                   | QCS to the User ID and Source     |
+|                                   | Office field.                     |
+|                                   |                                   |
+|                                   | Select the radio button against   |
+|                                   | the event with matching details.  |
+|                                   |                                   |
+|                                   | Select History Details.           |
+|                                   |                                   |
+|                                   | The History Details - Program     |
+|                                   | documentation screen is           |
+|                                   | displayed.                        |
+|                                   |                                   |
+|                                   | When more than one consumer ID    |
+|                                   | need to be checked, select the    |
+|                                   | radio button for each consumer ID |
+|                                   | and repeat Steps 5 and 6.         |
++-----------------------------------+-----------------------------------+
+| 7                                 | Determine if families is source   |
+|                                   | of document + Read more ...       |
+|                                   |                                   |
+|                                   | Identify the document utilised in |
+|                                   | the Document Name field.          |
+|                                   | Transactions have been actioned   |
+|                                   | from a families source where the  |
+|                                   | following appears in the Document |
+|                                   | Name field:                       |
+|                                   |                                   |
+|                                   | scanned FA081 Newborn Child       |
+|                                   | Declaration and Medicare Sighted  |
+|                                   |                                   |
+|                                   | Are there documents in the batch? |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 9             |
+|                                   | -   No, go to Step 8              |
++-----------------------------------+-----------------------------------+
+| 8                                 | Obtain scanned images if          |
+|                                   | required + Read more ...          |
+|                                   |                                   |
+|                                   | Check if the enrolment was        |
+|                                   | actioned from:                    |
+|                                   |                                   |
+|                                   | -   scanned FA081 (from a         |
+|                                   |     families source). There may   |
+|                                   |     not be any documents in the   |
+|                                   |     batch as the information is   |
+|                                   |     held electronically           |
+|                                   | -   hardcopy which has then been  |
+|                                   |     sent to be scanned. There     |
+|                                   |     also may not be any documents |
+|                                   |     in the batch                  |
+|                                   |                                   |
+|                                   | Was the enrolment actioned from   |
+|                                   | the above?                        |
+|                                   |                                   |
+|                                   | -   Yes, the Quality Checker must |
+|                                   |     access or obtain a copy of    |
+|                                   |     the relevant scanned image.   |
+|                                   |     Request assistance from a     |
+|                                   |     staff member with access to   |
+|                                   |     the scanned images if         |
+|                                   |     required. When image is       |
+|                                   |     obtained, go to Step 9        |
+|                                   | -    No, see Table 2              |
++-----------------------------------+-----------------------------------+
+| 9                                 | Examine Service Officer's batch + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Examine the batch for the Service |
+|                                   | Officer selected and locate the   |
+|                                   | source documents.                 |
+|                                   |                                   |
+|                                   | See Table 2.                      |
++-----------------------------------+-----------------------------------+
+
+Daily quality checks for public eligibility transactions - perform check
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Perform check + Read more ...     |
+|                                   |                                   |
+|                                   | Compare the source documents with |
+|                                   | information in the CDMS history   |
+|                                   | using the CDMS quality control    |
+|                                   | quick reference guide.            |
+|                                   |                                   |
+|                                   | If more than one consumer ID need |
+|                                   | to be checked, select the radio   |
+|                                   | button of each individual.        |
+|                                   |                                   |
+|                                   | If the Service Officer's batch    |
+|                                   | has left the source office before |
+|                                   | quality checking, the Service     |
+|                                   | Officer's work for that day must  |
+|                                   | be recalled and quality checking  |
+|                                   | conducted.                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Record check results + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Once the transaction and source   |
+|                                   | documents have been examined,     |
+|                                   | return to the Quality Control     |
+|                                   | System (QCS).                     |
+|                                   |                                   |
+|                                   | QCS displays 'b' (browse) in the  |
+|                                   | S field and is now ready to       |
+|                                   | accept error status codes in the  |
+|                                   | STATUS field to indicate whether  |
+|                                   | or not the transaction had been   |
+|                                   | processed correctly.              |
+|                                   |                                   |
+|                                   | In the STATUS fields for the      |
+|                                   | transaction selected, key only    |
+|                                   | one status code and press         |
+|                                   | [Enter] - the error with the      |
+|                                   | greatest impact.                  |
+|                                   |                                   |
+|                                   | QCS returns a lower case 'u' in   |
+|                                   | the S field to advise that the    |
+|                                   | selection has been updated with   |
+|                                   | an error status code.             |
+|                                   |                                   |
+|                                   | If several updates have been      |
+|                                   | performed in CDMS on the same     |
+|                                   | Medicare card, QCS may select the |
+|                                   | same card multiple times on the   |
+|                                   | same day. In these cases, Quality |
+|                                   | Checkers must only populate one   |
+|                                   | QCS transaction line with a valid |
+|                                   | status code. All other selections |
+|                                   | should remain unactioned. They    |
+|                                   | will be automatically removed     |
+|                                   | from QBBI after about 21 days.    |
++-----------------------------------+-----------------------------------+
+| 3                                 | All transactions checked + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | When all the transactions have    |
+|                                   | been actioned, press [PF3] to     |
+|                                   | exit QCS.                         |
++-----------------------------------+-----------------------------------+
+| 4                                 | Documentation + Read more ...     |
+|                                   |                                   |
+|                                   | Endorse the source documents and  |
+|                                   | batch envelope with the:          |
+|                                   |                                   |
+|                                   | -   word 'checked'                |
+|                                   | -   Quality Checker's logon ID    |
+|                                   | -   Quality Checker's signature   |
+|                                   | -   date the quality check was    |
+|                                   |     undertaken                    |
++-----------------------------------+-----------------------------------+
+| 5                                 | Record errors + Read more ...     |
+|                                   |                                   |
+|                                   | For identified errors the Quality |
+|                                   | Checker must:                     |
+|                                   |                                   |
+|                                   | -   submit the online Error       |
+|                                   |     Explanation Sheet (EES),      |
+|                                   |     ensuring all errors           |
+|                                   |     identified in the checks are  |
+|                                   |     recorded                      |
+|                                   | -   (if there is a My Health      |
+|                                   |     Record error) complete the    |
+|                                   |     email template and send to My |
+|                                   |     Health Record Support         |
+|                                   | -   return a copy of the          |
+|                                   |     transaction with a brief      |
+|                                   |     description of the action     |
+|                                   |     required to the Service       |
+|                                   |     Officer for correction or     |
+|                                   |     send to the appropriate       |
+|                                   |     section in the program for    |
+|                                   |     actioning                     |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

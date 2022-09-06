@@ -1,0 +1,535 @@
+
+Centrelink intertwined records processing 102-13030100
+
+-   Background
+-   Process Summary
+-   Process
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+This page contains information to assist Data Quality Unit (DQU) Service
+Officers with the process of deleting and transferring incorrect
+customer information to a background screen.
+
+On this Page:
+
+Deleting incorrect information
+
+Quality Assurance, deletion and documenting the record
+
+Deleting incorrect information
+
+Transfer of incorrect information to a background screen
+
+Table 1: This table describes the process to follow when confirming
+correct data and deleting incorrect data.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Confirm correct information +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Confirm the customer's correct    |
+|                                   | information using:                |
+|                                   |                                   |
+|                                   | -   the customer data base        |
+|                                   | -   online claims                 |
+|                                   | -   scanned documents             |
+|                                   | -   customer contact              |
+|                                   | -   using the Online Search (OLS) |
+|                                   |     system                        |
+|                                   | -   using the Intelligence Query  |
+|                                   |     (IQ) tool                     |
+|                                   | -   paper files                   |
+|                                   | -   x-files for particular        |
+|                                   |     information                   |
+|                                   |                                   |
+|                                   | Once intertwined data is          |
+|                                   | identified it must first be       |
+|                                   | logically deleted before data     |
+|                                   | transfer can occur. This action   |
+|                                   | results in an identified Activity |
+|                                   | ID (AMR)                          |
+|                                   |                                   |
+|                                   | The deletion AMR is entered on    |
+|                                   | the Physically Delete Data        |
+|                                   | (PHYDEL) screen to remove the     |
+|                                   | incorrect data.                   |
+|                                   |                                   |
+|                                   | Note: information that cannot be  |
+|                                   | deleted because it causes         |
+|                                   | processing issues can, in some    |
+|                                   | cases, be 'end dated'. 'End       |
+|                                   | dated' information cannot be      |
+|                                   | removed using PHYDEL.             |
+|                                   |                                   |
+|                                   | An intertwined Case Study for     |
+|                                   | records referred to DQU details   |
+|                                   | the actions taken.                |
+|                                   |                                   |
+|                                   | All transferred data is recorded  |
+|                                   | in the relevant 'Data Transfer'   |
+|                                   | table in the Case Study.          |
+|                                   |                                   |
+|                                   | A DOC is added to affected        |
+|                                   | records with action taken by DQU. |
++-----------------------------------+-----------------------------------+
+| 2                                 | Code the Multiple and Intertwined |
+|                                   | Control (!MIC)screen + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | The !MIC screen is used to add    |
+|                                   | and delete warning messages       |
+|                                   | indicating a record is a multiple |
+|                                   | or is intertwined, and to control |
+|                                   | record access. Access to this     |
+|                                   | page is restricted to staff with  |
+|                                   | DQU ISP resource.                 |
+|                                   |                                   |
+|                                   | When the !MIC screen is coded on  |
+|                                   | a record, a message will present  |
+|                                   | to Service Officers on the        |
+|                                   | Multiple and Intertwined Warning  |
+|                                   | (MIW) screen.                     |
++-----------------------------------+-----------------------------------+
+| 3                                 | Determine appropriate system      |
+|                                   | screens + Read more ...           |
+|                                   |                                   |
+|                                   | For intertwined data on the       |
+|                                   | following screens:                |
+|                                   |                                   |
+|                                   | -   Tax File Number (TFS/TFN), go |
+|                                   |     to Step 4                     |
+|                                   | -   Customer Details (Name, date  |
+|                                   |     of birth and/or gender        |
+|                                   |     details) (CPDS), go to Step 5 |
+|                                   | -   Address (ADH), go to Step 6   |
+|                                   | -   Telephone Number (TDH), go to |
+|                                   |     Step 7                        |
+|                                   | -   Email address (EMA), go to    |
+|                                   |     Step 8                        |
+|                                   | -   Marital Status (MS/LS), go to |
+|                                   |     Step 9                        |
+|                                   | -   Parental Income Test (PIT)    |
+|                                   |     Multiple CRN (MLC) and Child  |
+|                                   |     to Parent (CHI/PAR) links     |
+|                                   |     (LS) go to Step 10            |
+|                                   |                                   |
+|                                   | When there is no other            |
+|                                   | information to be checked go to   |
+|                                   | Step 1 in the Quality Assurance,  |
+|                                   | deletion and documenting the      |
+|                                   | record table.                     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Tax File Numbers + Read more ...  |
+|                                   |                                   |
+|                                   | Note: when a customer is          |
+|                                   | incorrectly linked to a partner   |
+|                                   | (MS/LS) the TFN deletions should  |
+|                                   | be done prior to unlinking to     |
+|                                   | ensure any TFNs on the partner    |
+|                                   | record are also removed.          |
+|                                   |                                   |
+|                                   | Is the customer's correct TFN     |
+|                                   | known?                            |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   Ensure all instances of the   |
+|                                   |     incorrect TFN are set to 'Y'  |
+|                                   |     in the authorisation field    |
+|                                   | -   'C'orrect the partner's       |
+|                                   |     record if applicable          |
+|                                   | -   'C'orrect the TFN on the      |
+|                                   |     intertwined record. This will |
+|                                   |     logically delete the          |
+|                                   |     incorrect TFN and update the  |
+|                                   |     x-files of the Customer File  |
+|                                   |     (XPCUST) groups CUTA for the  |
+|                                   |     authorisation field, CUTF for |
+|                                   |     the customer's TFN, and CUTR  |
+|                                   |     for the customer's partner's  |
+|                                   |     TFN. These x-files should be  |
+|                                   |     carefully checked to ensure   |
+|                                   |     all incorrect data is deleted |
+|                                   | -   Correct the TFN on the        |
+|                                   |     Reference Numbers (NU) screen |
+|                                   |     if applicable                 |
+|                                   |                                   |
+|                                   | No,                               |
+|                                   |                                   |
+|                                   | -   The customer's correct TFN    |
+|                                   |     must be obtained. Do not      |
+|                                   |     replace an incorrect TFN with |
+|                                   |     a TFN code, for example,      |
+|                                   |     Remote Area (REM), unless it  |
+|                                   |     is valid for the customer's   |
+|                                   |     circumstances                 |
+|                                   | -   If it is not possible to      |
+|                                   |     obtain the correct TFN the    |
+|                                   |     last TFN on a record can be   |
+|                                   |     'C'orrected to a blank entry. |
+|                                   |     If there are assessment       |
+|                                   |     consequences, that is, debts  |
+|                                   |     or arrears, the activity must |
+|                                   |     not be finalised. When the    |
+|                                   |     correct TFN is known, update  |
+|                                   |     as above                      |
+|                                   | -   If an incorrect TFN cannot be |
+|                                   |     deleted the details need to   |
+|                                   |     be recorded in 'Residual      |
+|                                   |     Data'                         |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 2.                        |
++-----------------------------------+-----------------------------------+
+| 5                                 | Customer Details - name, date of  |
+|                                   | birth and/or gender details +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | 'D'elete incorrect lines from the |
+|                                   | Customer Person Detail Summary    |
+|                                   | (CPDS).                           |
+|                                   |                                   |
+|                                   | Note: Historical Legal (HLG)      |
+|                                   | names cannot be accessed for      |
+|                                   | deletion in Customer First. They  |
+|                                   | need to be deleted in Aviva.      |
+|                                   |                                   |
+|                                   | Check for incorrect names in the  |
+|                                   | Change Child (CCH) screen if the  |
+|                                   | record being corrected was        |
+|                                   | previously a child (CHI) record.  |
+|                                   | Incorrect names in the child's    |
+|                                   | history are recorded in the       |
+|                                   | 'Residual Data' table in the Case |
+|                                   | Study document.                   |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 2.                        |
++-----------------------------------+-----------------------------------+
+| 6                                 | Address + Read more ...           |
+|                                   |                                   |
+|                                   | 'D'elete incorrect address        |
+|                                   | details from the Address History  |
+|                                   | (ADH) screen including:           |
+|                                   |                                   |
+|                                   | -   partners and ex-partners      |
+|                                   |     incorrectly updated as a      |
+|                                   |     result of being linked to the |
+|                                   |     customer and/or               |
+|                                   | -   linked children who have been |
+|                                   |     converted from child (CHI) to |
+|                                   |     person (PER) with incorrect   |
+|                                   |     address details               |
+|                                   |                                   |
+|                                   | It may be necessary to update the |
+|                                   | Accommodation (AC) screen when    |
+|                                   | changes to addresses are made.    |
+|                                   | Usually this will be limited to   |
+|                                   | updating the Accommodation        |
+|                                   | details for: field to reflect     |
+|                                   | whether the address is for the    |
+|                                   | customer (C) or both the customer |
+|                                   | and their partner (B).            |
+|                                   |                                   |
+|                                   | Deleted lines on the              |
+|                                   | Accommodation Summary (ACS)       |
+|                                   | cannot be removed using PHYDEL.   |
+|                                   | This is recorded as 'Residual     |
+|                                   | Data' table in the Case Study     |
+|                                   | document.                         |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 2.                        |
++-----------------------------------+-----------------------------------+
+| 7                                 | Telephone number + Read more ...  |
+|                                   |                                   |
+|                                   | 'D'elete incorrect phone numbers  |
+|                                   | via the Telephone History (TDH)   |
+|                                   | including incorrect 'Number       |
+|                                   | Ended' entries.                   |
+|                                   |                                   |
+|                                   | Also check for incorrect phone    |
+|                                   | numbers that have flowed to       |
+|                                   | partner and ex-partner records    |
+|                                   | and delete where appropriate.     |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 2.                        |
++-----------------------------------+-----------------------------------+
+| 8                                 | Email address + Read more ...     |
+|                                   |                                   |
+|                                   | When a new email address is       |
+|                                   | entered, it 'end dates' (not      |
+|                                   | 'deletes') the previous email     |
+|                                   | address. To delete incorrect      |
+|                                   | email addresses may require       |
+|                                   | deleting correct email addresses  |
+|                                   | to access the incorrect ones for  |
+|                                   | deletion.                         |
+|                                   |                                   |
+|                                   | On the Email Address (EMA) screen |
+|                                   | enter footer details and code     |
+|                                   | Action: = 'D'elete. Finalisation  |
+|                                   | of this activity will produce a   |
+|                                   | deleted AMR, for example, 24D30.  |
+|                                   |                                   |
+|                                   | If required, re-input the correct |
+|                                   | email address for the customer.   |
+|                                   |                                   |
+|                                   | Multiple instances of email       |
+|                                   | addresses which include a blank   |
+|                                   | page prevent deletion of email    |
+|                                   | addresses prior to the blank      |
+|                                   | page. The prior addresses will be |
+|                                   | residual data and must be noted   |
+|                                   | in the 'Residual Data' table of   |
+|                                   | the Case Study document.          |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 2.                        |
++-----------------------------------+-----------------------------------+
+| 9                                 | Marital status + Read more ...    |
+|                                   |                                   |
+|                                   | 'D'elete incorrect partner links  |
+|                                   | from the Marital Status (MS)      |
+|                                   | screen. This will flow to the     |
+|                                   | Link Summary (LS) screen and      |
+|                                   | delete the partner link there in  |
+|                                   | the same AMR.                     |
+|                                   |                                   |
+|                                   | Unlinking will flow to the        |
+|                                   | partner record which will display |
+|                                   | a different AMR. All AMRs need to |
+|                                   | be noted in the 'Data Transfer'   |
+|                                   | table of the Case Study document. |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 2.                        |
++-----------------------------------+-----------------------------------+
+| 10                                | Other links + Read more ...       |
+|                                   |                                   |
+|                                   | Other links that can be deleted   |
+|                                   | are Parental Income Test (PIT),   |
+|                                   | Multiple CRNs (MLC) links and     |
+|                                   | child to parent (CHI/PAR) links.  |
+|                                   |                                   |
+|                                   | These need to be deleted from the |
+|                                   | Link Summary (LS) screen on the   |
+|                                   | record they were established on.  |
+|                                   |                                   |
+|                                   | -   PIT links need to be deleted  |
+|                                   |     from the claimant's record    |
+|                                   | -   MLC links need to be deleted  |
+|                                   |     from the primary record       |
+|                                   | -   CHI/PAR links are deleted     |
+|                                   |     from the parent record, after |
+|                                   |     appropriate assessment. Child |
+|                                   |     records must be converted to  |
+|                                   |     PER records before deletion   |
+|                                   |     or end date action, to ensure |
+|                                   |     they have the correct address |
+|                                   |     details.                      |
+|                                   |                                   |
+|                                   | Note: allow for 24 hours once you |
+|                                   | have deleted the chi/part link    |
+|                                   | before completing the data        |
+|                                   | transfer. This will ensure the    |
+|                                   | identification of any incorrect   |
+|                                   | payment changes and/or concession |
+|                                   | card cancellations as a result of |
+|                                   | possible ripple effects.          |
+|                                   |                                   |
+|                                   | To check for other fields that    |
+|                                   | can be deleted from the list, go  |
+|                                   | to Step 3.                        |
++-----------------------------------+-----------------------------------+
+
+Quality Assurance, deletion and documenting the record
+
+Checking deleted information, transferring data and documenting the outcome
+
+Table 2: This table describes how to check the deleted information,
+transfer the data and document the customer's record.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Quality Assurance (QA) + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | QA requires checking of deleted   |
+|                                   | information prior to it being     |
+|                                   | data transferred.                 |
+|                                   |                                   |
+|                                   | The Case Officer sends an email   |
+|                                   | to the INTERTWINED.DQU mailbox    |
+|                                   | requesting review of the          |
+|                                   | logically deleted information by  |
+|                                   | the rostered QA person.           |
+|                                   |                                   |
+|                                   | The QA Officer must check all the |
+|                                   | information included in the data  |
+|                                   | transfer tables for correctness   |
+|                                   | and refer to relevant information |
+|                                   | in the Case Study to confirm      |
+|                                   | correct action is being taken.    |
+|                                   |                                   |
+|                                   | Checks include:                   |
+|                                   |                                   |
+|                                   | -   Ensuring Child (CHI)/Parent   |
+|                                   |     (PAR) links are being         |
+|                                   |     appropriately deleted or end  |
+|                                   |     dated                         |
+|                                   | -   Partner information being     |
+|                                   |     addressed, particularly       |
+|                                   |     links, addresses, telephone   |
+|                                   |     details, email addresses and  |
+|                                   |     Tax File Numbers (TFNs)       |
+|                                   | -   CHI records being converted   |
+|                                   |     if necessary                  |
+|                                   | -   Identifying any other         |
+|                                   |     information that may have     |
+|                                   |     been missed in the initial    |
+|                                   |     analysis                      |
++-----------------------------------+-----------------------------------+
+| 2                                 | QA approved or rejected + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | The approval must be recorded in  |
+|                                   | the Event Log of the Case Study.  |
+|                                   | If QA is rejected and/or the QA   |
+|                                   | Officer has found more            |
+|                                   | information to be dealt with,     |
+|                                   | details of the decision must be   |
+|                                   | included in the Event Log. The QA |
+|                                   | Officer will reply to the request |
+|                                   | for QA email, then delete the     |
+|                                   | request from the mailbox.         |
+|                                   |                                   |
+|                                   | Has QA been approved?             |
+|                                   |                                   |
+|                                   | -   Yes, logically deleted data   |
+|                                   |     can be transferred. Go to     |
+|                                   |     Step 3                        |
+|                                   | -   No, take corrective action    |
+|                                   |     and resubmit for QA           |
++-----------------------------------+-----------------------------------+
+| 3                                 | Data Transfer Process + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Navigate to the customer's        |
+|                                   | record.                           |
+|                                   |                                   |
+|                                   | Note: Physically Delete Data      |
+|                                   | (PHYDEL) screen access is not     |
+|                                   | available within any other        |
+|                                   | activity.                         |
+|                                   |                                   |
+|                                   | -   Enter 'PHYDEL' in the Nxt:    |
+|                                   |     field                         |
+|                                   | -   Enter an individual AMR       |
+|                                   |     number, a selection of AMRs   |
+|                                   |     (separated by commas) or a    |
+|                                   |     range of AMRs (separated by a |
+|                                   |     hyphen) in the Deleting       |
+|                                   |     Activity ID: field and click  |
+|                                   |     'Search'                      |
+|                                   | -   Logically deleted data with   |
+|                                   |     matching AMR(s) will be       |
+|                                   |     displayed. This will show     |
+|                                   |     both the original AMR and     |
+|                                   |     deleted AMR, for example,     |
+|                                   |     214D693. Ensure the data      |
+|                                   |     displayed is the data to be   |
+|                                   |     deleted and additional        |
+|                                   |     information is not attached   |
+|                                   |     in the AMR being deleted      |
+|                                   | -   Select the data item(s) to be |
+|                                   |     transferred                   |
+|                                   | -   Enter the DQU Case ID in the  |
+|                                   |     Interaction ID: field, e.g.   |
+|                                   |     DQU1234                       |
+|                                   | -   Press the Delete button       |
+|                                   | -   Press OK or [Enter] to        |
+|                                   |     confirm deletion              |
+|                                   | -   The Activity ID will display  |
+|                                   |     on the Activity List (AL)     |
+|                                   |     screen as completed           |
+|                                   |                                   |
+|                                   | Deleted data will be transferred  |
+|                                   | to the XPCULD x-file and will be  |
+|                                   | stored in a CUDE group            |
++-----------------------------------+-----------------------------------+
+| 4                                 | If required, view data transfer   |
+|                                   | results + Read more ...           |
+|                                   |                                   |
+|                                   | Navigate to the customer's record |
+|                                   | within Janus or Customer First.   |
+|                                   |                                   |
+|                                   | Go to the View Physically Deleted |
+|                                   | Data (VPHYDEL) screen. This will  |
+|                                   | display a summary of the          |
+|                                   | information that has been deleted |
+|                                   | including the AMRs.               |
+|                                   |                                   |
+|                                   | All data transferred to the       |
+|                                   | XPCULD x-file for this customer   |
+|                                   | will be displayed in the CUDE     |
+|                                   | groups. If information needs to   |
+|                                   | be re-entered it will need to be  |
+|                                   | retrieved from this x-file.       |
++-----------------------------------+-----------------------------------+
+| 5                                 | Document customer's record + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Is all action on the intertwined  |
+|                                   | records complete?                 |
+|                                   |                                   |
+|                                   | -   Yes, annotate the Intertwined |
+|                                   |     Case Display on Access (DOA)  |
+|                                   |     DOC with "Incorrect data from |
+|                                   |     the following screens has     |
+|                                   |     been Data Transferred and is  |
+|                                   |     no longer viewable. Screens:" |
+|                                   |     (list the screens actioned)   |
+|                                   |     and any residual data. The    |
+|                                   |     DOC can be expired if there   |
+|                                   |     is no ongoing requirement for |
+|                                   |     it to be presented on entry   |
+|                                   |     to the record, or it can have |
+|                                   |     a future expiry date, for     |
+|                                   |     example, after mid-year       |
+|                                   |     reconciliation is finalised.  |
+|                                   |     In some cases the DOC should  |
+|                                   |     remain permanently as a DOA   |
+|                                   |     DOC                           |
+|                                   | -   No, annotate the existing     |
+|                                   |     Intertwined DOA DOC with      |
+|                                   |     "Incorrect data from the      |
+|                                   |     following screens has been    |
+|                                   |     Data Transferred and is no    |
+|                                   |     longer viewable. Screens:"    |
+|                                   |     (list the screens actioned)   |
+|                                   |                                   |
+|                                   | If necessary update the Multiple  |
+|                                   | and Intertwined Control (!MIC)    |
+|                                   | screen to ensure the relevant     |
+|                                   | Multiple and Intertwined Warning  |
+|                                   | (MIW) screen is presented.        |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 
