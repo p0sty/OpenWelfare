@@ -203,8 +203,8 @@
 					<body>
 <a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
 
-<a class="anchor" name="_Toc344898834"></a><a class="anchor" name="_Toc344898773"></a>
-<h2 id="_Toc344898773">On this page&#58;</h2>
+
+<h2 id="On this page&#58;">On this page&#58;</h2>
 
 
 <p><a href="../compensation/117-03010020-03.html#bp03_L3TT_Coding_changes_">Coding changes to periodic compensation payments</a></p>
@@ -266,7 +266,7 @@
 		<li>
 <strong>Activity Type&#58;</strong> CLE</li>
 		<li>
-<strong>Source&#58;</strong> MOD C or other valid source (for example, LET, FAX, PHO)</li>
+<strong>Source&#58;</strong> Mod C or other valid source (for example, LET, FAX, PHO)</li>
 		<li>
 <strong>Date of Receipt&#58;</strong> date of the 'Source' document or information was received</li>
 		<li>
@@ -286,7 +286,7 @@ Select <strong>Continue</strong> to generate CMM/CLE activity to AL screen</li>
 		</ul>
 <p>Scan supporting documents to the customer's record. For example&#58;</p>
 		<ul>		<li>
-MOD C</li>
+Mod C</li>
 		<li>
 letter from the compensation payer advising payments have commenced, changed or ceased</li>
 		<li>
@@ -1042,15 +1042,113 @@ select <strong>Continue</strong>. The Assessment Results (<strong>AR</strong>) s
 <div class="showcont">
 
 
-<p>Most letters will be delivered by the customer’s or nominated third party’s preferred delivery channel. The customer or third party must be given a reasonable amount of time to receive the letter by post.</p>
+<p>As the delegate, determine if the request is ‘urgent'.</p>
 
-<p>As the delegate, determine if the request is 'urgent' and/or a letter is required to be given on the same day.</p>
-
-<p>Is an urgent or same day letter required?</p>
+<p>Is an urgent letter required?</p>
 		<ul>		<li>
-<strong>Yes</strong>, fax a copy of the letter on the same day, see <a href="../specialist-manuals-and-system-tools/111-10010090-01.html">Faxing letters using Outlook and Customer First</a></li>
+<strong>Yes</strong>, <a href="../compensation/117-03010020-03.html#bp03_tbl_Calculating_per01_Step12">go to  Step 12</a></li>
 		<li>
 <strong>No</strong>, procedure ends here</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Calculating_per01_Step12"></a>
+<p>12</p></td>
+<td>
+
+<p><strong>Desktop faxing</strong> <a title="Read more 20" class="showhead bp03_tbl_Calculating_per01_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Calculating_per01_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>While in the customer’s record in Customer First&#58;</p>
+		<ul>		<li>
+In <strong>Nxt</strong> key '<strong>HS</strong>' </li>
+		<li>
+Select <strong>Continue</strong></li>
+			<ul>			<li>
+The History Summary (<strong>HS</strong>) screen will show</li>		</ul>
+		<li>
+Key '<strong>C</strong>' next to the letter to be printed</li>
+		<li>
+Press [<strong>Enter</strong>]</li>
+			<ul>			<li>
+The status of the letter will change to <strong>GE</strong> (Generated)</li>		</ul>
+		<li>
+Key '<strong>P</strong>' against the letter to desktop fax</li>
+		<li>
+Key '<strong>Y</strong>' in <strong>Final</strong></li>
+		<li>
+In <strong>Printer</strong> key ‘<strong>emailme</strong>’ </li>
+		<li>
+Press [<strong>Enter</strong>]</li>
+		</ul>
+<p>Staff will get an email with the subject ‘<strong>PDF of letter</strong>’&#58;</p>
+		<ul>		<li>
+Open the email and select <strong>Forward</strong> </li>
+		<li>
+Delete all the text in the body and subject of the email </li>
+		<li>
+<strong>Do not</strong> delete the attachment</li>
+		<li>
+Key the fax number followed by @smtpfax.internal.dept.local</li>
+			<ul>			<li>
+For example&#58; <strong>1300651387@smtpfax.internal.dept.local</strong> </li>		</ul>
+		<li>
+Enter suitable <strong>Subject</strong> details, for example Charge Notice</li>
+		<li>
+Enter suitable message details. For example, the claim officer’s name, the claim number and related message as per the fax header</li>
+		<li>
+Select <strong>Send</strong> </li>
+		<li>
+Select Email Classification <strong>OFFICIAL&#58; Sensitive</strong> if sending customer details</li>
+		<li>
+The compensation payer will get&#58;</li>
+			<ul>			<li>
+a fax cover sheet, and</li>
+			<li>
+the attached letter</li>
+			</ul>			</ul>
+<p><a href="../compensation/117-03010020-03.html#bp03_tbl_Calculating_per01_Step13">Go to  Step 13</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Calculating_per01_Step13"></a>
+<p>13</p></td>
+<td>
+
+<p><strong>Notification of Fax transmission</strong> <a title="Read more 21" class="showhead bp03_tbl_Calculating_per01_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Calculating_per01_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The user will get an email notice (generally in 5 minutes) advising the outcome of the fax transmission.</p>
+
+<p>Staff must annotate the <strong>DOC</strong> to confirm details faxed to third party including&#58;</p>
+		<ul>		<li>
+Recipient name</li>
+		<li>
+Fax number</li>
+		<li>
+Contents of email and details of attachment</li>
+		<li>
+Copy fax transmission receipt</li>
+		</ul>
+<p></p>
+
+<p><strong>Failed Fax&#58; &lt;CRN&gt;</strong> select attachment in email to identify failure reason.</p>
+		<ul>		<li>
+Confirm fax number and re-send</li>
+		<li>
+If re-send fails, record reason and copy fax transmission in <strong>DOC</strong></li>
+		<li>
+Send by post</li>		</ul>
 </div>
 
 

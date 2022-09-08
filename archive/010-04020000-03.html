@@ -253,17 +253,15 @@ an Assisted Customer Claim (ACC), or</li>
 		<li>
 a Claim for Austudy (SY002) paper claim</li>
 		</ul>
-<p><strong>Note&#58;</strong> where a paper claim is correctly scanned onto a customer's record, the system creates a Social Application (SOA) Shell.</p>
+<p><strong>Note</strong>&#58; where a paper claim is correctly scanned onto a customer's record, the system creates a Social Application (SOA) Shell.</p>
 
 <p>Where a SOA Shell claim (created by a scanned paper claim) is allocated to a Student Processing skilled Service Officer, and the claim is for an Australian Apprentice, re-categorise it to Austudy Apprentice claim (ZCLM_ZASA).</p>
 
 <p>A paper claim will not auto-create a SOA Shell where the claim is uploaded by the customer through <strong>Upload Documents</strong>. The paper claim must be manually created using the <a href="../specialist-manuals-and-system-tools/111-20012938-03.html">SOA Shell application in Process Direct</a>.</p>
 
-<p>Check the Document List (DL) screen for every claim to determine whether Pandemic Leave Disaster Payment (PLDP) has been paid. If PLDP has been paid, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step02">go to Step 2</a>.</p>
+<p>If there is a submitted online claim, ACC or SOA Shell claim available to process in Process Direct, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step03">go to Step 3</a>.</p>
 
-<p>If there is a submitted online claim, ACC or SOA Shell claim available to process in Process Direct, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step04">go to Step 4</a>.</p>
-
-<p>If an <strong>ACTDOC</strong> is allocated, requesting a reassessment of entitlement due to a review of decision, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step03">go to Step 3</a>.</p>
+<p>If an <strong>ACTDOC</strong> is allocated, requesting a reassessment of entitlement due to a review of decision, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step02">go to Step 2</a>.</p>
 </div>
 
 
@@ -275,51 +273,33 @@ a Claim for Austudy (SY002) paper claim</li>
 <p>2</p></td>
 <td>
 
-<p><strong>Pandemic Leave Disaster Payment paid</strong> <a title="Read more 2" class="showhead bp03_tbl_Determining_and_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Reassessment of entitlement</strong> <a title="Read more 2" class="showhead bp03_tbl_Determining_and_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Where a customer has been granted PLDP, determine what period the customer has been paid PLDP for&#58;</p>
-		<ul>		<li>
-View any <strong>Pandemic Leave Disaster Payment Grant DOC(s</strong>) </li>
-		<li>
-If this DOC is not present on the customer’s record, review the PLDP claim(s) (these may be a scanned <strong>EM252 </strong>form, Verbal Claim DOC or Online Claim) to identify the commencement date of isolation period(s)</li>
-		</ul>
-<p>If the customer will become qualified and payable for YA <strong>before</strong> or <strong>during </strong>the PLDP period(s), make a genuine attempt to contact the customer</p>
+<p>If the customer's previous claim is rejected (<strong>REJ</strong>) and a decision is made to reassess their entitlement, <a target="_blank" href="../initial-contact-general/106-07030050-03.html">re-index the claim</a>, then <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step03">go to Step 3</a>.</p>
 
-<p>If contact with the customer is unsuccessful&#58;</p>
-		<ul>		<li>
-assess the claim as per normal procedures</li>
-		<li>
-include information about the contact attempt with the customer in a <strong>DOC</strong>, <strong>and</strong></li>
-		<li>
-follow the process for when the PLDP payment was incorrectly paid in <a target="_blank" href="../help-in-an-emergency/003-22011652-03.html#bp03_tbl_Pandemic_Leave_Step03">Step 3 in Table 5 of Processing Pandemic Leave Disaster Payment claims in Process Direct</a></li>
-		</ul>
-<p>If contact with the customer is successful, tell the customer if their student payment is granted from the earliest date they are eligible, all or part of the PLDP payment <strong>may</strong> be raised as a debt.  </p>
+<p>If the customer is current on Austudy as a student or Australian Apprentice and a review of decision has determined the customer is entitled from an earlier start date&#58;</p>
 
-<p>Where the customer indicates they accept the PLDP may be raised as a debt and request their student payment is assessed from the earliest date&#58;</p>
+<p>Go to the Benefit Action (<strong>BA</strong>) screen. Code the following fields&#58;</p>
 		<ul>		<li>
-assess the claim as per normal procedures</li>
+<strong>Svc Rsn</strong> = '<strong>AUS</strong>'</li>
 		<li>
-include information about the discussion with the customer in a <strong>DOC</strong>, <strong>and</strong></li>
+<strong>Action</strong> = '<strong>CAN</strong>'</li>
 		<li>
-follow the process for when the PLDP payment was incorrectly paid in <a target="_blank" href="../help-in-an-emergency/003-22011652-03.html#bp03_tbl_Pandemic_Leave_Step03">Step 3 in Table 5 of Processing Pandemic Leave Disaster Payment claims in Process Direct</a></li>
+<strong>Reason</strong> = '<strong>OTH</strong>'</li>
+		<li>
+<strong>Effect Date</strong> = Date paid to +1</li>
+		<li>
+<strong>Notes1</strong> = Review of decision</li>
 		</ul>
-<p>Where the customer indicates they <strong>do not </strong>want to be paid a student payment and PLDP for the same period, select the appropriate option below.</p>
+<p>Press <strong>Enter</strong>. Go to the Assessment Results (<strong>AR</strong>) screen, inhibit letters and finalise the activity.</p>
 
-<p>If the earliest date the customer is entitled to the student payment is&#58;</p>
-		<ul>		<li>
-<strong>before</strong> their PLDP period&#58;</li>
-			<ul>			<li>
-grant the student payment from the earliest date of entitlement, and</li>
-			<li>
-cancel the student payment (CLR) from the day before the PLDP period. <strong>Note</strong>&#58; customers who select this option need to lodge another claim for their student payment to be reassessed. Advise the customer any new claim they submit will be subject to normal assessment procedures. It cannot be backdated to a date before they submit their claim. Include information about the discussion with the customer in a <strong>DOC</strong></li>		</ul>
-		<li>
-<strong>during</strong> their PLDP period&#58;</li>
-			<ul>			<li>
-grant the student payment from PLDP end date + 1 day</li>
-			<li>
-include information about the discussion with the customer in a<strong> DOC</strong></li>			</ul>			</ul>
+<p>Once the claim is re-granted, the system assesses any entitlement automatically and the payment displays as current. There is no requirement to restore or issue a restoration advice to the customer. The system also auto-issues a Health Care Card (HCC).</p>
+
+<p><a target="_blank" href="../initial-contact-general/106-07030050-03.html">Re-index the original claim</a>, then <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step03">go to Step 3</a>.</p>
+
+<p>If an online claim or ACC is not available, create a claim using the <a target="_blank" href="../specialist-manuals-and-system-tools/111-20012938-03.html">SOA Shell application in Process Direct</a>. <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step03">Go to Step 3</a>.</p>
 </div>
 
 
@@ -331,45 +311,7 @@ include information about the discussion with the customer in a<strong> DOC</str
 <p>3</p></td>
 <td>
 
-<p><strong>Reassessment of entitlement</strong> <a title="Read more 3" class="showhead bp03_tbl_Determining_and_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the customer's previous claim is rejected (<strong>REJ</strong>) and a decision is made to reassess their entitlement, <a target="_blank" href="../initial-contact-general/106-07030050-03.html">re-index the claim</a>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step04">go to Step 4</a>.</p>
-
-<p>If the customer is current on Austudy as a student or Australian Apprentice and a review of decision has determined the customer is entitled from an earlier start date&#58;</p>
-
-<p>Go to the Benefit Action (<strong>BA</strong>) screen. Code the following fields&#58;</p>
-		<ul>		<li>
-<strong>Svc Rsn</strong>, key <strong>AUS</strong></li>
-		<li>
-<strong>Action</strong>, key <strong>CAN</strong></li>
-		<li>
-<strong>Reason</strong>, key <strong>OTH</strong></li>
-		<li>
-<strong>Effect Date</strong>, key date paid to +1</li>
-		<li>
-<strong>Notes1</strong>, key <strong>Review of decision</strong></li>
-		</ul>
-<p>Press [<strong>Enter</strong>]. Go to the Assessment Results (<strong>AR</strong>) screen, inhibit letters and finalise the activity.</p>
-
-<p>Once the claim is re-granted, the system assesses any entitlement automatically and the payment displays as current. There is no requirement to restore or issue a restoration advice to the customer. The system also auto-issues a Health Care Card (HCC).</p>
-
-<p><a target="_blank" href="../initial-contact-general/106-07030050-03.html">Re-index the original claim</a>, then <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step04">go to Step 4</a>.</p>
-
-<p>If an online claim or ACC is not available, create a claim using the <a target="_blank" href="../specialist-manuals-and-system-tools/111-20012938-03.html">SOA Shell application in Process Direct</a>. <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step04">Go to Step 4</a>.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step04"></a>
-<p>4</p></td>
-<td>
-
-<p><strong>Pre-assessment checks</strong> <a title="Read more 4" class="showhead bp03_tbl_Determining_and_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-assessment checks</strong> <a title="Read more 3" class="showhead bp03_tbl_Determining_and_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -427,9 +369,9 @@ If the customer was a full-time student/Apprentice before claiming, or current e
 
 <p>Does the claim now require assessment?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step06">go to Step 6</a></li>
+<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step05">go to Step 5</a></li>
 		<li>
-<strong>No</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step05">go to Step 5</a></li>		</ul>
+<strong>No</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step04">go to Step 4</a></li>		</ul>
 </div>
 
 
@@ -437,11 +379,11 @@ If the customer was a full-time student/Apprentice before claiming, or current e
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step05"></a>
-<p>5</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step04"></a>
+<p>4</p></td>
 <td>
 
-<p><strong>Claim not required to be assessed</strong> <a title="Read more 5" class="showhead bp03_tbl_Determining_and_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Claim not required to be assessed</strong> <a title="Read more 4" class="showhead bp03_tbl_Determining_and_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -457,7 +399,7 @@ there is an existing claim available (where the Date of Receipt is within 12 mon
 		<li>
 A claim does not require assessment. For example, a previous claim has been rejected, the customer lodges a subsequent claim and it is determined that a reassessment of the previous claim is deemed appropriate</li>
 		</ul>
-<p><strong>Note&#58;</strong> Changing the claim to <strong>Not Required</strong> is final and the status cannot be changed again.</p>
+<p><strong>Note</strong>&#58; Changing the claim to <strong>Not Required</strong> is final and the status cannot be changed again.</p>
 
 <p>Before changing the status to <strong>Not Required</strong>, consider all other actions on the record to reduce the risk of changing the status incorrectly.</p>
 
@@ -485,11 +427,11 @@ Record the reason why the claim has been marked <strong>Not</strong> <strong>Req
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step06"></a>
-<p>6</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step05"></a>
+<p>5</p></td>
 <td>
 
-<p><strong>Relationships</strong> <a title="Read more 6" class="showhead bp03_tbl_Determining_and_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Relationships</strong> <a title="Read more 5" class="showhead bp03_tbl_Determining_and_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -513,11 +455,11 @@ View/update Child Details via Link Summary (<strong>LS</strong>) table</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step07"></a>
-<p>7</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step06"></a>
+<p>6</p></td>
 <td>
 
-<p><strong>Identifying the most appropriate payment</strong> <a title="Read more 7" class="showhead bp03_tbl_Determining_and_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Identifying the most appropriate payment</strong> <a title="Read more 6" class="showhead bp03_tbl_Determining_and_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -525,11 +467,11 @@ View/update Child Details via Link Summary (<strong>LS</strong>) table</li>
 
 <p>Is Austudy the most appropriate payment?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step09">go to Step 9</a></li>
+<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step08">go to Step 8</a></li>
 		<li>
 <strong>No</strong>, and the most appropriate payment is&#58;</li>
 			<ul>			<li>
-Youth Allowance, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step08">go to Step 8</a></li>
+Youth Allowance, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step07">go to Step 7</a></li>
 			<li>
 Another income support payment, See <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Finalising_stud_Step01">Table 3</a></li>			</ul>			</ul>
 </div>
@@ -539,11 +481,11 @@ Another income support payment, See <a href="../students-and-trainees/010-040200
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step08"></a>
-<p>8</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step07"></a>
+<p>7</p></td>
 <td>
 
-<p><strong>Change Benefit</strong> <a title="Read more 8" class="showhead bp03_tbl_Determining_and_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Change Benefit</strong> <a title="Read more 7" class="showhead bp03_tbl_Determining_and_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -557,11 +499,11 @@ Another income support payment, See <a href="../students-and-trainees/010-040200
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step09"></a>
-<p>9</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step08"></a>
+<p>8</p></td>
 <td>
 
-<p><strong>Qualification for Austudy</strong> <a title="Read more 9" class="showhead bp03_tbl_Determining_and_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Qualification for Austudy</strong> <a title="Read more 8" class="showhead bp03_tbl_Determining_and_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -579,11 +521,11 @@ an Australian Apprentice, the Activity Test does not apply, but they must&#58;</
 			<ul>			<li>
 be undertaking a full-time Australian Apprenticeship, and</li>
 			<li>
-have a current Commonwealth Registration Number. Obtain the Australian Apprenticeship details from the Department of Employment and Workplace Relations</li>
+have a current Commonwealth Registration Number. Obtain the Australian Apprenticeship details from the Department of Education, Skills and Employment</li>
 			</ul>			</ul>
 <p>Does the customer meet all <a href="../students-and-trainees/010-04030000-01.html">eligibility criteria for Austudy</a> or they will within 13 weeks of the date of lodgement?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step10">go to  Step 10</a></li>
+<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step09">go to Step 9</a></li>
 		<li>
 <strong>No</strong>, reject the claim using the correct code. No referral is required. See <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Finalising_stud_Step01">Step 1 in Table 3</a></li>		</ul>
 </div>
@@ -593,11 +535,11 @@ have a current Commonwealth Registration Number. Obtain the Australian Apprentic
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step10"></a>
-<p>10</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step09"></a>
+<p>9</p></td>
 <td>
 
-<p><strong>Payability for Austudy</strong> <a title="Read more 10" class="showhead bp03_tbl_Determining_and_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Payability for Austudy</strong> <a title="Read more 9" class="showhead bp03_tbl_Determining_and_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -613,7 +555,7 @@ have a current Commonwealth Registration Number. Obtain the Australian Apprentic
 		</ul>
 <p>Is the customer payable now, or they will be within 13 weeks of the date of claim?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step11">go to  Step 11</a></li>
+<strong>Yes</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step10">go to  Step 10</a></li>
 		<li>
 <strong>No</strong>, reject the claim appropriately. No referral is required. See <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Finalising_stud_Step01">Table 3</a></li>		</ul>
 </div>
@@ -623,11 +565,11 @@ have a current Commonwealth Registration Number. Obtain the Australian Apprentic
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step11"></a>
-<p>11</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step10"></a>
+<p>10</p></td>
 <td>
 
-<p><strong>Further actions required</strong> <a title="Read more 11" class="showhead bp03_tbl_Determining_and_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Further actions required</strong> <a title="Read more 10" class="showhead bp03_tbl_Determining_and_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -641,19 +583,19 @@ change benefit type, and</li>
 		<li>
 complete internal referrals</li>
 		</ul>
-<p><strong>Note&#58;</strong> before creating an internal referral, Service Officers must ensure all documents needed to enable a specialist assessment are provided. For example, a MOD PT must be accompanied by relevant supporting documents before a Complex Assessment Officer (CAO) referral is created.</p>
+<p><strong>Note</strong>&#58; before creating an internal referral, Service Officers must ensure all documents needed to enable a specialist assessment are provided. For example, a MOD PT must be accompanied by relevant supporting documents before a Complex Assessment Officer (CAO) referral is created.</p>
 
 <p>Are further actions required?</p>
 		<ul>		<li>
 <strong>Yes</strong>&#58;</li>
 			<ul>			<li>
-to request additional documents, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step12">go to  Step 12</a></li>
+to request additional documents, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step11">go to  Step 11</a></li>
 			<li>
-for internal referrals, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step13">go to  Step 13</a></li>
+for internal referrals, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step12">go to  Step 12</a></li>
 			<li>
-to regenerate or re-index a new claim, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step14">go to  Step 14</a></li>		</ul>
+to regenerate or re-index a new claim, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step13">go to  Step 13</a></li>		</ul>
 		<li>
-<strong>No</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step15">go to  Step 15</a></li>		</ul>
+<strong>No</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step14">go to  Step 14</a></li>		</ul>
 </div>
 
 
@@ -661,11 +603,11 @@ to regenerate or re-index a new claim, <a href="../students-and-trainees/010-040
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step12"></a>
-<p>12</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step11"></a>
+<p>11</p></td>
 <td>
 
-<p><strong>Additional supporting documents required</strong> <a title="Read more 12" class="showhead bp03_tbl_Determining_and_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Additional supporting documents required</strong> <a title="Read more 11" class="showhead bp03_tbl_Determining_and_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -685,7 +627,7 @@ do <strong>not</strong> place Student claims on hold to request documents where 
 
 <p>Is further <strong>essential</strong> information is required?</p>
 		<ul>		<li>
-<strong>Yes</strong>&#58;</li>
+<strong>Yes&#58;</strong></li>
 			<ul>			<li>
 select <img src="../resources/images/process_direct_small/more%20options.png" alt="more options" title="more options" /> &gt; <strong>Request Documents</strong></li>
 			<li>
@@ -713,11 +655,11 @@ request the documents after completing the claim. See <a href="../complaints-pri
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step13"></a>
-<p>13</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step12"></a>
+<p>12</p></td>
 <td>
 
-<p><strong>Referral required</strong> <a title="Read more 13" class="showhead bp03_tbl_Determining_and_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Referral required</strong> <a title="Read more 12" class="showhead bp03_tbl_Determining_and_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -741,11 +683,11 @@ Social Worker (<strong>SWO</strong>)</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step14"></a>
-<p>14</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step13"></a>
+<p>13</p></td>
 <td>
 
-<p><strong>Regenerate or Re-index claim</strong> <a title="Read more 14" class="showhead bp03_tbl_Determining_and_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Regenerate or Re-index claim</strong> <a title="Read more 13" class="showhead bp03_tbl_Determining_and_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -761,11 +703,11 @@ Social Worker (<strong>SWO</strong>)</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step15"></a>
-<p>15</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step14"></a>
+<p>14</p></td>
 <td>
 
-<p><strong>Identity confirmation</strong> <a title="Read more 15" class="showhead bp03_tbl_Determining_and_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Identity confirmation</strong> <a title="Read more 14" class="showhead bp03_tbl_Determining_and_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -773,7 +715,7 @@ Social Worker (<strong>SWO</strong>)</li>
 
 <p>If the <strong>Identity Status</strong> is&#58;</p>
 		<ul>		<li>
-<strong>Confirmed</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step16">go to  Step 16</a></li>
+<strong>Confirmed</strong>, <a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step15">go to  Step 15</a></li>
 		<li>
 <strong>Not Confirmed</strong>, code alternative proof of identity&#58;</li>
 			<ul>			<li>
@@ -785,7 +727,7 @@ Code the identity documents or consider applying alternative identity</li>
 			<li>
 Close the <strong>Customer Summary</strong> window to return to the claim</li>
 			<li>
-<a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step16">Go to  Step 16</a></li>			</ul>			</ul>
+<a href="../students-and-trainees/010-04020000-03.html#bp03_tbl_Determining_and_Step15">Go to  Step 15</a></li>			</ul>			</ul>
 </div>
 
 
@@ -793,11 +735,11 @@ Close the <strong>Customer Summary</strong> window to return to the claim</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Determining_and_Step16"></a>
-<p>16</p></td>
+<a class="anchor" name="bp03_tbl_Determining_and_Step15"></a>
+<p>15</p></td>
 <td>
 
-<p><strong>Previously receiving an allowance</strong> <a title="Read more 16" class="showhead bp03_tbl_Determining_and_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Previously receiving an allowance</strong> <a title="Read more 15" class="showhead bp03_tbl_Determining_and_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Determining_and_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -839,7 +781,7 @@ an apprentice, see <a href="../ongoing-contact/102-07030200-01.html">Existing Cu
 <p>1</p></td>
 <td>
 
-<p><strong>Assess and code Austudy claim</strong> <a title="Read more 17" class="showhead bp03_tbl_Assessing_and_c_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Assess and code Austudy claim</strong> <a title="Read more 16" class="showhead bp03_tbl_Assessing_and_c_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -875,7 +817,7 @@ For student claims, see <a href="../students-and-trainees/010-07010180-01.html">
 <p>2</p></td>
 <td>
 
-<p><strong>Check eligibility for Student Start-up Loan (SSL)</strong> <a title="Read more 18" class="showhead bp03_tbl_Assessing_and_c_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check eligibility for Student Start-up Loan (SSL)</strong> <a title="Read more 17" class="showhead bp03_tbl_Assessing_and_c_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -891,7 +833,7 @@ For student claims, see <a href="../students-and-trainees/010-07010180-01.html">
 <p>3</p></td>
 <td>
 
-<p><strong>Income to be reported</strong> <a title="Read more 19" class="showhead bp03_tbl_Assessing_and_c_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Income to be reported</strong> <a title="Read more 18" class="showhead bp03_tbl_Assessing_and_c_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -905,11 +847,11 @@ available in supporting documents</li>
 
 <p>For Apprentices, Service Officers must make sure&#58;</p>
 		<ul>		<li>
-the '<strong>Apprentice Employer</strong>' option is marked as '<strong>Y</strong>' within the new claim</li>
+the ‘<strong>Apprentice Employer</strong>’ option is marked as ‘<strong>Y</strong>’ within the new claim</li>
 		<li>
 the customer's income from their Apprenticeship is recorded correctly&#58; </li>
 			<ul>			<li>
-Update Employment Income Paid Details (<strong>EAPP</strong>) screen/Employment Income (<strong>EANS</strong>) screen with the employers details available via <a href="../students-and-trainees/010-04020000-05.html#bp05_L2GT_Access_Apprenti">Access Apprenticeships</a></li>
+Update Employment Income Paid Details (<strong>EAPP</strong>) screen/Employment Income (<strong>EANS</strong>) screen with the employers details available via <a href="../students-and-trainees/010-04020000-05.html#bp05_L2GT_Access_Apprenti">Access Apprenticeships</a> </li>
 			<li>
 Record '<strong>Zero Income</strong>' with a Date of Event prior to the customers first Entitlement Period End Day (EPED) (use any date at least 14 days prior to the customers first EPED)</li>
 			</ul>			</ul>
@@ -929,7 +871,7 @@ Record '<strong>Zero Income</strong>' with a Date of Event prior to the customer
 <p>4</p></td>
 <td>
 
-<p><strong>Final employment income</strong> <a title="Read more 20" class="showhead bp03_tbl_Assessing_and_c_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Final employment income</strong> <a title="Read more 19" class="showhead bp03_tbl_Assessing_and_c_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -975,7 +917,7 @@ the final employment income will be paid outside the first entitlement period</l
 <p>5</p></td>
 <td>
 
-<p><strong>Waiting periods</strong> <a title="Read more 21" class="showhead bp03_tbl_Assessing_and_c_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Waiting periods</strong> <a title="Read more 20" class="showhead bp03_tbl_Assessing_and_c_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -993,7 +935,7 @@ the final employment income will be paid outside the first entitlement period</l
 		</ul>
 <p>For assessment of waiting periods, see <a target="_blank" href="../initial-contact-general/106-05020000-01.html">Waiting periods for income support payments</a>.</p>
 
-<p><strong>Note&#58;</strong> the following waiting periods were waived due to COVID-19&#58;</p>
+<p><strong>Note</strong>&#58; the following waiting periods were waived due to COVID-19&#58;</p>
 		<ul>		<li>
 Seasonal Worker Preclusion Period (SWPP) is waived if it ends on or after 23 March 2020 until 31 March 2021</li>
 		<li>
@@ -1009,7 +951,7 @@ Newly Arrived Resident's Waiting Period (NARWP) is waived for claims lodged from
 <p>6</p></td>
 <td>
 
-<p><strong>Tax File Number (TFN)</strong> <a title="Read more 22" class="showhead bp03_tbl_Assessing_and_c_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Tax File Number (TFN)</strong> <a title="Read more 21" class="showhead bp03_tbl_Assessing_and_c_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assessing_and_c_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1049,7 +991,7 @@ Newly Arrived Resident's Waiting Period (NARWP) is waived for claims lodged from
 <p>1</p></td>
 <td>
 
-<p><strong>Outcome of claim</strong> <a title="Read more 23" class="showhead bp03_tbl_Finalising_stud_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Outcome of claim</strong> <a title="Read more 22" class="showhead bp03_tbl_Finalising_stud_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1087,7 +1029,7 @@ FTE - FT employment, earned income not advised</li>
 <p>2</p></td>
 <td>
 
-<p><strong>Failed to supply documents</strong> <a title="Read more 24" class="showhead bp03_tbl_Finalising_stud_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Failed to supply documents</strong> <a title="Read more 23" class="showhead bp03_tbl_Finalising_stud_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1111,7 +1053,7 @@ rejected for any other reason, <a href="../students-and-trainees/010-04020000-03
 <p>3</p></td>
 <td>
 
-<p><strong>Streamline rejection</strong> <a title="Read more 25" class="showhead bp03_tbl_Finalising_stud_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Streamline rejection</strong> <a title="Read more 24" class="showhead bp03_tbl_Finalising_stud_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1165,7 +1107,7 @@ Select <strong>Finalise</strong></li>
 <p>4</p></td>
 <td>
 
-<p><strong>Austudy student will not/did not commence full time study</strong> <a title="Read more 26" class="showhead bp03_tbl_Finalising_stud_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Austudy student will not/did not commence full time study</strong> <a title="Read more 25" class="showhead bp03_tbl_Finalising_stud_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1203,7 +1145,7 @@ Send the work item to <strong>NCA</strong></li>
 <p>5</p></td>
 <td>
 
-<p><strong>Customer is not eligible for Austudy</strong> <a title="Read more 27" class="showhead bp03_tbl_Finalising_stud_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer is not eligible for Austudy</strong> <a title="Read more 26" class="showhead bp03_tbl_Finalising_stud_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1261,7 +1203,7 @@ If the claim has not auto-generated a <strong>DOC</strong> (that is, an abridged
 <p>6</p></td>
 <td>
 
-<p><strong>Granting of a claim</strong> <a title="Read more 28" class="showhead bp03_tbl_Finalising_stud_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Granting of a claim</strong> <a title="Read more 27" class="showhead bp03_tbl_Finalising_stud_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalising_stud_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
