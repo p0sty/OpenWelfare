@@ -32,6 +32,19 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 5 September 2022                  | Documents pertaining to the       |
+|                                   | COVID-19 Vaccine Claims Scheme    |
+|                                   | for the period March 2022 to July |
+|                                   | 2022 (LEX 69092).                 |
+|                                   |                                   |
+|                                   | 5 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** Sections |
+|                                   | 22 and 47F(1)\                    |
+|                                   | **Exemptions:** Section 47F(1)    |
++-----------------------------------+-----------------------------------+
 | 15 August 2022                    | Operational Blueprint document    |
 |                                   | (LEX 68168):                      |
 |                                   |                                   |
@@ -2185,7 +2198,7 @@ us by:
 </div>
 :::
 
-Page last updated: 24 August 2022
+Page last updated: 12 September 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2193,7 +2206,7 @@ Page last updated: 24 August 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 11 September 2022 from
+This information was printed 12 September 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
