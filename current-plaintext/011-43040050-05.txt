@@ -6,19 +6,197 @@ Online statement and features for bulk bill LDA claims in Medicare 011-43040050
 -   Process
 -   Resources
 
-The guideline you have requested is potentially FOI exempt.
+[Expand/Collapse all sections]Expand all
 
-You have a right to apply for the document through FOI legislation.
+This page contains the processing procedures for subsequent adjustment
+claims, a list of existing and new RMDS reports, DCEI progressive and
+final status values for adjustment claims and a list of new return
+messages and definitions.
 
-You can request a copy from the department's Information Publication
-Scheme by:
+On this Page:
 
--   sending an email to freedomofinformation@servicesaustralia.gov.au
--   or writing to us at:
-    Freedom of Information
-    FOI and Information Release Branch
-    PO Box 7820
-    Canberra Mail Centre ACT 2610
+Status dependent processing of subsequent adjustment claims
+
+Subsequent adjustment claims processing procedures based on claim status
+
+Table 1: This table describes the processing procedures for subsequent
+adjustment claims depending on the status of the claim.
+
++-----------------------------------+-----------------------------------+
+| If the claim status is…           | then…                             |
++-----------------------------------+-----------------------------------+
+| ADJ PAID                          | -   either wait until the next    |
+|                                   |     working day and recommence    |
+| ADJ HIST, or                      |     processing the second         |
+|                                   |     adjustment claim, or          |
+| ADJ OPAY                          | -   reverse the update of the     |
+|                                   |     adjustment claim by using     |
+|                                   |     delete the claim control line |
+|                                   |     and start processing again to |
+|                                   |     include the additional        |
+|                                   |     adjustments                   |
++-----------------------------------+-----------------------------------+
+| ADJUST, or                        | -   either access the adjustment  |
+|                                   |     claim and process the         |
+| ADJ ENTRY                         |     additional adjustment, or     |
+|                                   | -   wait until the status of the  |
+|                                   |     adjustment claim is ADJ PAID, |
+|                                   |     ADJ HIST or ADJ OPAY and the  |
+|                                   |     date of payment (DOP) is not  |
+|                                   |     today's date, as described    |
+|                                   |     above, then recommence        |
+|                                   |     processing of the subsequent  |
+|                                   |     adjustment claim              |
++-----------------------------------+-----------------------------------+
+| ADJ COMP                          | -   wait until the claim status   |
+|                                   |     changes to ADJUST and process |
+|                                   |     as for ADJUST or ADJ ENTRY as |
+|                                   |     above                         |
++-----------------------------------+-----------------------------------+
+
+Existing reports
+
+Note: MCR 512 and MCR 513 will no longer generate new information as ADJ
+OPAY and ADJ HIST claims are no longer held.
+
+Existing RMDS reports
+
+Table 2: This table contains a list of existing data validation (RMDS)
+reports, including changes made.
+
++-----------------------+-----------------------+-----------------------+
+| Report                | Description           | Change                |
++-----------------------+-----------------------+-----------------------+
+| MCR 511               | Latter day            | No change.            |
+|                       | adjustments (LDA)     |                       |
+|                       | daily age analysis    |                       |
++-----------------------+-----------------------+-----------------------+
+| MCR 512               | LDA date of lodgement | No longer generated.  |
+|                       | (DOL) status analysis |                       |
++-----------------------+-----------------------+-----------------------+
+| MCR 513               | LDA held age analysis | No longer generated.  |
++-----------------------+-----------------------+-----------------------+
+
+New reports
+
+New RMDS reports
+
+Table 3: This table contains a list of new data validation (RMDS)
+reports, including content.
+
++-----------------------+-----------------------+-----------------------+
+| Report                | Description           | Content               |
++-----------------------+-----------------------+-----------------------+
+| MCR 514               | Latter day            | Shows all claims that |
+|                       | adjustments (LDA)     | resulted in an        |
+|                       | overpayment report    | overpayment and is    |
+|                       |                       | generated weekly.     |
++-----------------------+-----------------------+-----------------------+
+| MCR 515               | LDA suppressed        | Shows all services    |
+|                       | reports               | suppressed in claims  |
+|                       |                       | and is generated      |
+|                       |                       | monthly.              |
++-----------------------+-----------------------+-----------------------+
+
+DCEI progressive
+
+DCEI progressive status values for adjustment claims
+
+Table 4: This table lists the DCEI progressive status values an
+adjustment claim may have.
+
++-----------------------------------+-----------------------------------+
+| Status value                      | Description                       |
++-----------------------------------+-----------------------------------+
+| ADJ ENTR                          | Entering of adjustment details to |
+|                                   | the claim may commence or has     |
+|                                   | already commenced but has not     |
+|                                   | been completed. This status may   |
+|                                   | also mean that an operator has    |
+|                                   | failed to 'close' the claim after |
+|                                   | entering all adjustment details.  |
++-----------------------------------+-----------------------------------+
+| ADJ COMP                          | Entry of adjustment details is    |
+|                                   | complete and the claim is closed. |
+|                                   | The claim has been placed on the  |
+|                                   | background assessing queue and    |
+|                                   | will be assessed shortly.         |
++-----------------------------------+-----------------------------------+
+| ADJUST                            | The adjustment claim has passed   |
+|                                   | through background assessing or   |
+|                                   | has been reversed using the DHRI  |
+|                                   | control line. To finalise the     |
+|                                   | adjustment process the claim must |
+|                                   | be called up using the DHAI       |
+|                                   | control line and the operator     |
+|                                   | must access each screen, even     |
+|                                   | when there are no error/warning   |
+|                                   | messages. Any assessing errors    |
+|                                   | must be resolved before the       |
+|                                   | adjustment claim can be updated.  |
++-----------------------------------+-----------------------------------+
+
+DCEI final status
+
+DCEI final status values for adjustment claims
+
+Table 5: This table lists the DCEI final status values an adjustment
+claim may have.
+
++-----------------------------------+-----------------------------------+
+| Status value                      | Description                       |
++-----------------------------------+-----------------------------------+
+| ADJ HIST                          | The adjustment claim has been     |
+|                                   | updated. The result of all        |
+|                                   | adjustments in the claim is       |
+|                                   | either:                           |
+|                                   |                                   |
+|                                   | -   no change to benefit paid, or |
+|                                   | -   an underpayment of less than  |
+|                                   |     $1.00                         |
++-----------------------------------+-----------------------------------+
+| ADJ PAID                          | The adjustment claim has been     |
+|                                   | updated. The result of all        |
+|                                   | adjustments in the claim is an    |
+|                                   | underpayment of $1.00 or more.    |
+|                                   | The claim is paid in the next     |
+|                                   | overnight run.                    |
++-----------------------------------+-----------------------------------+
+| ADJ OPAY                          | The adjustment claim has been     |
+|                                   | updated. The result of all        |
+|                                   | adjustments in the claim is an    |
+|                                   | overpayment.                      |
++-----------------------------------+-----------------------------------+
+
+New return messages
+
+New return message definitions, screens and conditions
+
+Table 6: This table lists the new return messages which are unique to
+the DH** Bulk Bill latter day adjustments (LDA) system.
+
++-----------------+-----------------+-----------------+-----------------+
+| Return message  | Definition      | Screen          | Condition/field |
++-----------------+-----------------+-----------------+-----------------+
+| INV SUPRES      | (Warning) You   | DHSC            | Action code H,  |
+|                 | are attempting  |                 | M or F used in  |
+|                 | to perform      |                 | addition to     |
+|                 | multiple        |                 | date fields     |
+|                 | actions. Check  |                 | being over      |
+|                 | action          |                 | keyed.          |
+|                 | required.       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| MIXD TRANS      | (Error) You     | DLRI            | Attempting to   |
+|                 | have attempted  |                 | reverse a DHSI  |
+|                 | to mix          |                 | adjustment with |
+|                 | transactions.   |                 | the incorrect   |
+|                 | This adjustment |                 | control line.   |
+|                 | cannot be       |                 |                 |
+|                 | reversed using  |                 |                 |
+|                 | DLRI. Refer to  |                 |                 |
+|                 | State           |                 |                 |
+|                 | headquarters.   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
 
                                    
 

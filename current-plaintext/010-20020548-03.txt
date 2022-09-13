@@ -111,10 +111,12 @@ Table 1
 |                                   |                                   |
 |                                   | -   the payment the customer is   |
 |                                   |     transferring from must be     |
-|                                   |     payable on the day before the |
-|                                   |     customer qualifies for the    |
-|                                   |     new payment, for the claim to |
-|                                   |     be considered a transfer      |
+|                                   |     payable (for example not      |
+|                                   |     ASSessed status) on the day   |
+|                                   |     before the customer qualifies |
+|                                   |     for the new payment, for the  |
+|                                   |     claim to be considered a      |
+|                                   |     transfer                      |
 |                                   |                                   |
 |                                   | Tasks to view required tasks,     |
 |                                   | supporting documents requested    |
@@ -239,10 +241,16 @@ Table 1
 |                                   | Whether YA/Austudy is the most    |
 |                                   | beneficial payment must be        |
 |                                   | determined before assessing the   |
-|                                   | student claim. See Identifying    |
-|                                   | the most beneficial payment for   |
-|                                   | students or Australian            |
-|                                   | Apprentices.                      |
+|                                   | student claim. Compare the rate   |
+|                                   | and conditions of the outgoing    |
+|                                   | payment to possible rates and     |
+|                                   | conditions of student payments,   |
+|                                   | including add-ons like the Long   |
+|                                   | Term Income Support rate. See     |
+|                                   | Identifying the most beneficial   |
+|                                   | payment for students or           |
+|                                   | Australian Apprentices and return |
+|                                   | to this process                   |
 |                                   |                                   |
 |                                   | If the decision is not clear,     |
 |                                   | make one genuine attempt to       |
@@ -327,7 +335,7 @@ Table 1
 |                                   | -   Payments other than JSP, go   |
 |                                   |     to Step 10                    |
 +-----------------------------------+-----------------------------------+
-| 9                                 | JobSeeker Payment is still        |
+| 9                                 | JobSeeker Payment (JSP) is still  |
 |                                   | current + Read more ...           |
 |                                   |                                   |
 |                                   | JSP customers are not considered  |
@@ -346,6 +354,10 @@ Table 1
 |                                   | finalising claims to ensure they  |
 |                                   | are correct.                      |
 |                                   |                                   |
+|                                   | Determine if the customer is      |
+|                                   | entitled to Education Entry       |
+|                                   | Payment (EdEP).                   |
+|                                   |                                   |
 |                                   | Within the claim:                 |
 |                                   |                                   |
 |                                   | On the Miscellaneous Update       |
@@ -354,19 +366,30 @@ Table 1
 |                                   | -   In the Event date: field      |
 |                                   |     enter the study start date    |
 |                                   | -   In the Current circumstance:  |
-|                                   |     field select FTS - Full-time  |
-|                                   |     student                       |
+|                                   |     field, if no EdEP is to be    |
+|                                   |     paid, key FTS. If EdEP is to  |
+|                                   |     be paid, key FTE              |
 |                                   |                                   |
 |                                   | On the Date of Commencement (NDC) |
 |                                   | screen:                           |
 |                                   |                                   |
 |                                   | -   In the Manual Start Date:     |
-|                                   |     field enter the YA/AUS start  |
+|                                   |     field enter the YA/AUS grant  |
 |                                   |     date                          |
 |                                   | -   In the Manual Start Date      |
 |                                   |     comments: field enter 'not a  |
 |                                   |     transfer, eligible for YA/AUS |
 |                                   |     from <date>'                  |
+|                                   |                                   |
+|                                   | If error E789NS – Event date      |
+|                                   | cannot be more than 15 weeks      |
+|                                   | prior to DOR presents:            |
+|                                   |                                   |
+|                                   | -   complete the NMIS coding,     |
+|                                   |     cancelling the JSP outside of |
+|                                   |     the claim in Customer First   |
+|                                   | -   document the decision         |
+|                                   | -   run a SAP refresh             |
 |                                   |                                   |
 |                                   | Continue assessing the YA/Austudy |
 |                                   | claim, see Assessing and coding   |
@@ -563,8 +586,9 @@ Table 2
 | 5                                 | Determine study status + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Has the customer started          |
-|                                   | studying?                         |
+|                                   | On the date the claims is being   |
+|                                   | assessed, has the customer        |
+|                                   | started studying?                 |
 |                                   |                                   |
 |                                   | -   Yes, see Table 4              |
 |                                   | -   No, see Table 3               |
@@ -854,16 +878,23 @@ Table 5
 |                                   | -   JSP, go to Step 4             |
 |                                   | -   Any other income support      |
 |                                   |     payment, go to Step 5         |
+|                                   |                                   |
+|                                   | Another income support payment,   |
+|                                   | go to Step 6                      |
 +-----------------------------------+-----------------------------------+
 | 2                                 | JSP most beneficial payment +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | The grant date is the date the    |
-|                                   | customer loses JSP eligibility,   |
-|                                   | usually the study start date.     |
+|                                   | customer will lose JSP            |
+|                                   | eligibility, usually the study    |
+|                                   | start date. See JobSeeker Payment |
+|                                   | (JSP) job seekers returning to    |
+|                                   | full-time study.                  |
 |                                   |                                   |
-|                                   | If the date of receipt of the     |
-|                                   | claim is before the grant date:   |
+|                                   | Where the date of receipt of the  |
+|                                   | claim is before the YA/Austudy    |
+|                                   | grant date:                       |
 |                                   |                                   |
 |                                   | Code 2 entries on the Newstart    |
 |                                   | Education Status (NES) screen:    |
@@ -891,54 +922,6 @@ Table 5
 |                                   | to explain the decision           |
 |                                   |                                   |
 |                                   | Go to Step 3                      |
-|                                   |                                   |
-|                                   | If the date of receipt of the     |
-|                                   | claim is after the grant date:    |
-|                                   |                                   |
-|                                   | Grant the YA/Austudy payment and  |
-|                                   | cancel the JSP from the           |
-|                                   | YA/Austudy grant date. There is   |
-|                                   | no gap in entitlement.            |
-|                                   |                                   |
-|                                   | This applies whether or not the   |
-|                                   | customer had study in their Job   |
-|                                   | Plan, on the PBAS dashboard or on |
-|                                   | the AEX screen.                   |
-|                                   |                                   |
-|                                   | Within the claim activity, update |
-|                                   | the Miscellaneous Update Details  |
-|                                   | (NMIS) screen:                    |
-|                                   |                                   |
-|                                   | -   Current Circumstances: field, |
-|                                   |     key either FTS if no          |
-|                                   |     Education Entry Payment       |
-|                                   |     (EdEP) is to be paid or FTE   |
-|                                   |     if EdEP is to be paid. See    |
-|                                   |     Step 2 in Table 6 for further |
-|                                   |     information on assessing      |
-|                                   |     entitlement to EdEP           |
-|                                   | -   Event Date: field, key the    |
-|                                   |     grant date                    |
-|                                   |                                   |
-|                                   | On the Date of Commencement (NDC) |
-|                                   | screen:                           |
-|                                   |                                   |
-|                                   | Code the grant date in the Manual |
-|                                   | Start Date: field                 |
-|                                   |                                   |
-|                                   | In the Comments field, if the     |
-|                                   | claim was lodged:                 |
-|                                   |                                   |
-|                                   | -   Within 14 days of the grant   |
-|                                   |     date, enter Claim submitted   |
-|                                   |     within 14 days of             |
-|                                   |     qualification                 |
-|                                   | -   More than 14 days but less    |
-|                                   |     than 13 weeks of the grant    |
-|                                   |     date, enter Claim backdated   |
-|                                   |     under Section 12, SS(A)A 1999 |
-|                                   |                                   |
-|                                   | Go to Step 3.                     |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Continue to process the claim +   |
 |                                   | Read more ...                     |
@@ -971,16 +954,31 @@ Table 5
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | The grant date depends on when    |
-|                                   | the customer became qualified for |
-|                                   | YA/Austudy. If the customer:      |
+|                                   | the customer first qualified for  |
+|                                   | YA/Austudy and the date the       |
+|                                   | customer loses entitlement to     |
+|                                   | JSP, see JobSeeker Payment (JSP)  |
+|                                   | job seekers returning to          |
+|                                   | full-time study. If the customer: |
 |                                   |                                   |
-|                                   | -   qualified on the same date    |
-|                                   |     the claim was lodged, the     |
-|                                   |     grant date is the date the    |
-|                                   |     claim was lodged              |
-|                                   | -   was qualified on JSP date     |
-|                                   |     paid to + 1 day, the grant    |
-|                                   |     date is DPT + 1               |
+|                                   | first qualified on the same date  |
+|                                   | the claim was lodged, the grant   |
+|                                   | date is the date the claim was    |
+|                                   | lodged                            |
+|                                   |                                   |
+|                                   | first qualified before the claim  |
+|                                   | was lodged, assess the most       |
+|                                   | beneficial start date,            |
+|                                   | considering:                      |
+|                                   |                                   |
+|                                   | -   the earliest date             |
+|                                   |     qualification for YA/Austudy  |
+|                                   | -   any period that the customer  |
+|                                   |     qualified for both YA/Austudy |
+|                                   |     and JSP                       |
+|                                   | -   the date from which the       |
+|                                   |     customer no longer qualifies  |
+|                                   |     for JSP                       |
 |                                   |                                   |
 |                                   | Within the claim activity, update |
 |                                   | the Miscellaneous Update Details  |
@@ -1007,14 +1005,35 @@ Table 5
 |                                   |     Newstart Education Status     |
 |                                   |     (NES) screen                  |
 |                                   |                                   |
-|                                   | If the grant date is the date of  |
-|                                   | claim, on the Date of             |
-|                                   | Commencement (NDC) screen:        |
+|                                   | Code the Date of Commencement     |
+|                                   | (NDC) screen. If the grant date   |
+|                                   | is:                               |
 |                                   |                                   |
-|                                   | -   Key the grant date in the     |
-|                                   |     Manual Start Date: field      |
-|                                   | -   In the Comments: field, Study |
+|                                   | The date of claim:                |
+|                                   |                                   |
+|                                   | -   in the Manual Start Date:     |
+|                                   |     field enter the date of claim |
+|                                   | -   in the Comments: field, Study |
 |                                   |     start date                    |
+|                                   |                                   |
+|                                   | Up to 14 days before the date of  |
+|                                   | claim:                            |
+|                                   |                                   |
+|                                   | -   in the Manual Start Date:     |
+|                                   |     field enter the grant date    |
+|                                   | -   in the Comments: field, Claim |
+|                                   |     submitted within 14 days of   |
+|                                   |     qualification                 |
+|                                   |                                   |
+|                                   | More than 14 days but less than   |
+|                                   | 13 weeks before the date of       |
+|                                   | claim:                            |
+|                                   |                                   |
+|                                   | -   in the Manual Start Date:     |
+|                                   |     field enter the grant date    |
+|                                   | -   in the Comments: field, Claim |
+|                                   |     backdated under Section 12,   |
+|                                   |     SS(A)A 1999                   |
 |                                   |                                   |
 |                                   | See Step 1 in Table 6.            |
 +-----------------------------------+-----------------------------------+
@@ -1060,6 +1079,48 @@ Table 5
 |                                   |     support payments using reason |
 |                                   |     code COP - Another Payment is |
 |                                   |     More Appropriate              |
+|                                   |                                   |
+|                                   | See Step 1 in Table 6.            |
++-----------------------------------+-----------------------------------+
+| 6                                 | Any other income support payment  |
+|                                   | most beneficial + Read more ...   |
+|                                   |                                   |
+|                                   | The grant date is the date the    |
+|                                   | customer will lose eligibility    |
+|                                   | for their outgoing income support |
+|                                   | payment (for example, Parenting   |
+|                                   | Payment (Partnered) customer will |
+|                                   | lose care of only dependent       |
+|                                   | child).                           |
+|                                   |                                   |
+|                                   | Where the date of receipt of the  |
+|                                   | claim is before the YA/Austudy    |
+|                                   | grant date:                       |
+|                                   |                                   |
+|                                   | Code 2 entries on the Newstart    |
+|                                   | Education Status (NES) screen:    |
+|                                   |                                   |
+|                                   | -   Using date of receipt of      |
+|                                   |     claim - code the Student      |
+|                                   |     Status field with Not a       |
+|                                   |     Full-Time student NST         |
+|                                   | -   Using grant date - code the   |
+|                                   |     Student Status field with     |
+|                                   |     Full-Time student FTS         |
+|                                   |                                   |
+|                                   | On the Education Course Details   |
+|                                   | (EDC) screen, code the grant date |
+|                                   | in the Participation Status Event |
+|                                   | Date (PSED) field                 |
+|                                   |                                   |
+|                                   | On the Date of Commencement (NDC) |
+|                                   | screen, enter the grant date in   |
+|                                   | the Manual Start Date field (even |
+|                                   | if the system calculated start    |
+|                                   | date appears to be correct), and  |
+|                                   |                                   |
+|                                   | Add notes in the Comments field   |
+|                                   | to explain the decision           |
 |                                   |                                   |
 |                                   | See Step 1 in Table 6.            |
 +-----------------------------------+-----------------------------------+

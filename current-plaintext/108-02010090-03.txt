@@ -267,12 +267,11 @@ Table 1:
 | 5                                 | Extension requested to provide    |
 |                                   | actual income + Read more ...     |
 |                                   |                                   |
-|                                   | For Youth Allowance or ABSTUDY    |
-|                                   | Living Allowance:                 |
+|                                   | For Youth Allowance (YA) or       |
+|                                   | ABSTUDY Living Allowance:         |
 |                                   |                                   |
-|                                   | In Customer First:                |
-|                                   |                                   |
-|                                   | Update the existing NHI entry     |
+|                                   | In Customer First, update the     |
+|                                   | existing NHI entry                |
 |                                   |                                   |
 |                                   | Review Date: field: the date the  |
 |                                   | parent advises that actual income |
@@ -297,9 +296,9 @@ Table 1:
 |                                   | -   correct, code Yes             |
 |                                   | -   incorrect, code No            |
 |                                   |                                   |
-|                                   | In Process Direct:                |
+|                                   | In Process Direct, edit the       |
+|                                   | existing NHI entry:               |
 |                                   |                                   |
-|                                   | -   Edit the existing NHI entry   |
 |                                   | -   Review Date: field, the date  |
 |                                   |     the parent advises that       |
 |                                   |     actual income details will be |
@@ -317,11 +316,10 @@ Table 1:
 |                                   | -   Select Assess to go to the    |
 |                                   |     Entitlement (ELD) screen      |
 |                                   |                                   |
-|                                   | Once the Review Date field on the |
-|                                   | NHI screen is updated, the system |
-|                                   | automatically sends the customer  |
-|                                   | a letter asking for verification  |
-|                                   | of the estimated income.          |
+|                                   | When the review date on the NHI   |
+|                                   | screen is reached, a letter is    |
+|                                   | issued requesting verification of |
+|                                   | the estimated income.             |
 |                                   |                                   |
 |                                   | If there is no reply within 21    |
 |                                   | days, the customer's payment      |
@@ -332,12 +330,18 @@ Table 1:
 |                                   | given to restore the customer's   |
 |                                   | payments.                         |
 |                                   |                                   |
-|                                   | -   If an overpayment occurs, go  |
-|                                   |     to Step 8                     |
-|                                   | -   If arrears occur, go to Step  |
-|                                   |     9                             |
-|                                   | -   If no adjustment, go to Step  |
-|                                   |     10                            |
+|                                   | For ABSTUDY Living Allowance,     |
+|                                   | when the review date on the NHI   |
+|                                   | screen is reached, a Manual       |
+|                                   | Follow Up (MFU) is created with   |
+|                                   | the review reason PIT Estimate    |
+|                                   | Reminder PIT Estimate Review.     |
+|                                   | This MFU is not required and can  |
+|                                   | be cancelled.                     |
+|                                   |                                   |
+|                                   | Procedure ends here until         |
+|                                   | verification of actual income     |
+|                                   | supplied.                         |
 |                                   |                                   |
 |                                   | For AIC ABA, if there is no reply |
 |                                   | by the Review Date, and the       |
@@ -1022,6 +1026,8 @@ Table 2
 |                                   |     7                             |
 |                                   | -   event Date of suspension, go  |
 |                                   |     to Step 8                     |
+|                                   |                                   |
+|                                   | Otherwise, go to Step 10.         |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Arrears created by NHI event      |
 |                                   | date + Read more ...              |
