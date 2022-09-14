@@ -47,14 +47,13 @@ Checking location of documents when digital image is missing
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Process the activity if able  |
-|                                   |     to, or create an ACTDOC       |
-|                                   |     outlining further action      |
-|                                   |     needed. Procedure ends here   |
-|                                   | -   []Process from existing image |
-|                                   |     and move the image to the     |
-|                                   |     correct customer record if    |
-|                                   |     needed. Procedure ends here   |
+|                                   | -   Process the activity from the |
+|                                   |     existing image using the      |
+|                                   |     relevant Operational          |
+|                                   |     Blueprint                     |
+|                                   | -   Move the image to the correct |
+|                                   |     customer record if needed.    |
+|                                   |     Procedure ends here           |
 |                                   |                                   |
 |                                   | No, go to Step 3                  |
 +-----------------------------------+-----------------------------------+
@@ -72,14 +71,13 @@ Checking location of documents when digital image is missing
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Process the activity if able  |
-|                                   |     to, or create an ACTDOC       |
-|                                   |     outlining further action      |
-|                                   |     needed. Procedure ends here   |
-|                                   | -   []Process from existing image |
-|                                   |     and move the image to the     |
-|                                   |     correct customer record if    |
-|                                   |     needed. Procedure ends here   |
+|                                   | -   Process the activity from the |
+|                                   |     existing image using the      |
+|                                   |     relevant Operational          |
+|                                   |     Blueprint                     |
+|                                   | -   Move the image to the correct |
+|                                   |     customer record if needed.    |
+|                                   |     Procedure ends here           |
 |                                   |                                   |
 |                                   | No, go to Step 4                  |
 +-----------------------------------+-----------------------------------+
@@ -123,13 +121,11 @@ Checking location of documents when digital image is missing
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Process the activity if able  |
-|                                   |     to, or create an ACTDOC for   |
-|                                   |     the relevant processing team  |
-|                                   |     outlining further action      |
-|                                   |     needed. Procedure ends here   |
-|                                   | -   []Process from existing       |
-|                                   |     image. Procedure ends here    |
+|                                   | -   Process the activity from the |
+|                                   |     existing image using the      |
+|                                   |     relevant Operational          |
+|                                   |     Blueprint. Procedure ends     |
+|                                   |     here                          |
 |                                   |                                   |
 |                                   | No, if the documents were lodged: |
 |                                   |                                   |
@@ -158,11 +154,9 @@ Checking location of documents when digital image is missing
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Process the activity if able  |
-|                                   |     to, or create an ACTDOC for   |
-|                                   |     the relevant processing team  |
-|                                   |     outlining further action      |
-|                                   |     needed                        |
+|                                   | -   Process the activity using    |
+|                                   |     the relevant Operational      |
+|                                   |     Blueprint                     |
 |                                   | -   If document has an open       |
 |                                   |     digital image work item,      |
 |                                   |     reclassify via Open           |
@@ -251,13 +245,24 @@ Checking location of documents when digital image is missing
 |                                   |                                   |
 |                                   | If the customer cannot provide    |
 |                                   | this information, it may not be   |
-|                                   | possible to locate the documents. |
+|                                   | possible to locate the documents: |
 |                                   |                                   |
 |                                   | Complete the Request for document |
 |                                   | rescan, retrieval or location     |
-|                                   | webform.                          |
+|                                   | webform                           |
 |                                   |                                   |
-|                                   | Procedure ends here.              |
+|                                   | Document the details of the       |
+|                                   | request using the below Fast Note |
+|                                   | options:                          |
+|                                   |                                   |
+|                                   | -   Auto Text                     |
+|                                   | -   Category 1: Generic           |
+|                                   | -   Category 2: Enquiry           |
+|                                   | -   Template:                     |
+|                                   |     Rescan/Retrieval/Registered   |
+|                                   |     Post enquiry                  |
+|                                   |                                   |
+|                                   | Procedure ends here               |
 +-----------------------------------+-----------------------------------+
 | 10                                | Request location and retrieval of |
 |                                   | documents sent by fax + Read more |
@@ -350,11 +355,26 @@ Checking location of documents when digital image is missing
 |                                   | Can the customer provide all the  |
 |                                   | above details?                    |
 |                                   |                                   |
-|                                   | -   Yes, complete the request for |
-|                                   |     document rescan retrieval or  |
-|                                   |     location webform. Procedure   |
-|                                   |     ends here                     |
-|                                   | -   No, go to Step 12             |
+|                                   | Yes:                              |
+|                                   |                                   |
+|                                   | Complete the request for document |
+|                                   | rescan retrieval or location      |
+|                                   | webform                           |
+|                                   |                                   |
+|                                   | Document the details of the       |
+|                                   | request using the below Fast Note |
+|                                   | options:                          |
+|                                   |                                   |
+|                                   | -   Auto Text                     |
+|                                   | -   Category 1: Generic           |
+|                                   | -   Category 2: Enquiry           |
+|                                   | -   Template:                     |
+|                                   |     Rescan/Retrieval/Registered   |
+|                                   |     Post enquiry                  |
+|                                   |                                   |
+|                                   | Procedure ends here               |
+|                                   |                                   |
+|                                   | No, go to Step 12                 |
 +-----------------------------------+-----------------------------------+
 | 12                                | Recording details + Read more ... |
 |                                   |                                   |
@@ -365,9 +385,9 @@ Checking location of documents when digital image is missing
 |                                   | processing on the customer        |
 |                                   | record?                           |
 |                                   |                                   |
-|                                   | -   Yes, create an ACTDOC         |
-|                                   |     outlining image not located   |
-|                                   |     and further action needed.    |
+|                                   | -   Yes, refer to the relevant    |
+|                                   |     Operational Blueprint before  |
+|                                   |     creating a hand off activity. |
 |                                   |     Procedure ends here           |
 |                                   | -   No, go to Step 13             |
 +-----------------------------------+-----------------------------------+

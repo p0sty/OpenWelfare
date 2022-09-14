@@ -196,21 +196,198 @@
 				<div id="bgtab" class="">
 					
 <div id="relatedMessagesDiv"></div>
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+
+<p>This document outlines how to process pended claims in the AIR.</p>
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Pended_claims"></a>
+<h2 id="bp01_L2GT_Pended_claims">Pended claims</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>An immunisation encounter or episode is pended when the system assesses the antigen, dose or registration detail and one or more of these do not meet the AIR business rules.</p>
+
+<p>Reason codes and explanations help AIR Service Officers understand why an encounter has pended and how to process it.</p>
+
+<p>Some codes (such as Pend 24&#58; postcode/locality incompatible) are easily resolved. Some need clarification from the provider (such as Pend 103&#58; duplicate antigen codes - different provider). Others need help from an AIR Programme Support Officer (PSO) or AIR Program Support.</p>
+
+<p>See Resources for a list of <a href="../your-health/011-10110000-05.html#bp05_L3TT_System_reason_c">System reason codes and explanations</a>.</p>
+		</div>
+	</div>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Pend_processing"></a>
+<h2 id="bp01_L2GT_Pend_processing">Pend processing</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>AIR Site (WEB), bulk upload (IDI) and Practice Management (API) claims are online claims assessed automatically by the system. For more information, see the <a href="../your-health/011-10000000-05.html#bp05_L3TT_Data_transmissi">Data transmission methods</a> table. </p>
+
+<p>The last character of a claim ID (!, %, +, @, *, &amp;) provides information about the lodgement channel used, see <a href="../your-health/011-10100000-05.html#bp05_tbl_Identifying_dat_Step02">Step 2 in the Identifying data lodgement methods</a> table for details. Encounters that need to be assessed manually by Service Officers are placed in a pend queue and allocated a <a href="../your-health/011-10110000-05.html#bp05_L3TT_System_reason_c">pend reason (RSN) code</a>. Service Officers access the queue and process the pended encounters, preferably to an accepted (A) status. See the <a href="../your-health/011-10100000-05.html#bp05_L3TT_Action_codes_us">Action codes used in claims processing</a> table for more information about codes.</p>
+
+<p>All pend processing occurs in AIR Mainframe.</p>
+
+<p>Service Officers can search for an individual or provider using&#58;</p>
+		<ul>		<li>
+CDMS</li>
+		<li>
+Provider Directory System (PDS)</li>
+		<li>
+Customer First – Front of House (FOH)</li>
+		</ul>
+<p>The pend (P) status cannot be manually overwritten with an A (accept) status by Service Officers. Only the system can allocate a status of A or P. An antigen or dose status can only move to an A status where a change is made to&#58;</p>
+		<ul>		<li>
+the encounter or episode</li>
+		<li>
+the individual's registration</li>
+		<li>
+previous immunisation history</li>
+		</ul>
+<p>Any of the above changes can result in reassessment of an episode. Where no change is made to the record, Service Officers may overwrite the pend status with an appropriate assessment code e.g. C and Y, R and Z, or X. See also&#58; <a href="../your-health/011-10100000-05.html#bp05_L3TT_Action_codes_us">Action codes used in claims processing</a> table.</p>
+
+<p>It is essential that records are accurate. If unsure what to do, or for complicated pends that need processing any of the below codes, always check&#58;</p>
+		<ul>		<li>
+A - Data is within guidelines (system generated only)</li>
+		<li>
+C and Y - Data is good, provider has clarified</li>
+		<li>
+R and Z - Data should not be included on AIR (e.g. information incorrect)</li>
+		</ul>
+<p>Service Officers refer any scenarios that fall outside the standard pend processing guidelines to an AIR Programme Support Officer (PSO). The AIR PSO can escalate the scenario to AIR Program Support if necessary.</p>
+
+<p>See the <a href="../your-health/011-10110000-03.html">Process</a> page for how to reassess an episode.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Pend_error_and_"></a>
+<h2 id="bp01_L2GT_Pend_error_and_">Pend error and warning messages (AIR)</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Reason codes and explanations help Service Officers understand why an episode or encounter has pended and how to process it.</p>
+
+<p><strong>Error messages</strong></p>
+
+<p>Error messages display when a Service Officer accesses a pended encounter or episode. It explains the reason for the pend.</p>
+
+<p><strong>Examples</strong></p>
+		<ul>		<li>
+When an encounter or episode is pended with RSN code <strong>024</strong>, the error message&#58;<br>LOCALITY INVALID displays on the <strong>Encounter Details</strong> (<strong>YIAE)</strong> screen. The postcode (P/C) is not matching the suburb/location (LOC) recorded. Amending the locality or postcode may resolve an episode or encounter to an A status</li>
+		<li>
+When an episode is pended with RSN code <strong>103</strong>, the error message&#58;<br>SAME OR EQUIVALENT DOSE ALREADY RECORDED BY DIFFERENT PROVIDER displays on the <strong>Antigens Details</strong> (<strong>YIAN</strong>) screen. The same, or a similar vaccine (or component of the vaccine) with the same dose number has already been reported by another vaccination provider. Amending the vaccine or dose may resolve an incorrectly reported vaccine to an A status</li>
+		</ul>
+<p><strong>Warning messages</strong></p>
+
+<p>A warning message displays if data needs to be reviewed for the encounter or episode.</p>
+
+<p>The Service Officer presses [<strong>F18</strong>] – <strong>ACK WARN</strong> to&#58;</p>
+		<ul>		<li>
+acknowledge the warning</li>
+		<li>
+assess and if required amend the episode/encounter, or confirm the information with the vaccination provider</li>
+		</ul>
+<p>Acknowledging the warning continues the assessment of the episode.</p>
+
+<p><strong>Example</strong></p>
+
+<p>When an episode is pended with RSN code 107, the warning message <strong>DOSE GIVEN AT &gt; SCHEDULE AGE - [PF18] TO ACK WARNING</strong> displays on the <strong>YIAN</strong> screen. The service date recorded indicates that the vaccine and dose given were at an age that is older than is recommended. Correcting the date of the dose and selecting [<strong>F18</strong>] may resolve the episode to an A status.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Duplicate_claim"></a>
+<h2 id="bp01_L2GT_Duplicate_claim">Duplicate claims</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Pend 300 and 301 reason codes occur when a vaccination is duplicated on individual's history. The system automatically resolves them. No further action is required.</p>
+
+<p>If there are other types of pended encounters in the claim (for example, pend 80 – child not identified pend 24 - postcode/locality incompatible), processing the encounter may result in it being resolved to a pend 300 or 301, or an A status.</p>
+
+<p>See also&#58; View and amend history details on the <a href="../your-health/011-10110000-03.html">Process</a> page.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp01_L2GT_Overseas_vaccin"></a>
+<h2 id="bp01_L2GT_Overseas_vaccin">Overseas vaccinations (AIR)</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Overseas immunisations recorded for individuals on the AIR may cause future vaccinations given in Australia to pend due to differing immunisation schedules between countries.</p>
+
+<p>Vaccinations given in Australia must take precedence over vaccinations given overseas. Service Officers may need to reject previously recorded overseas vaccinations for&#58;</p>
+		<ul>		<li>
+valid Australian vaccinations to process to an A status, and</li>
+		<li>
+provider payments to be made</li>
+		</ul>
+<p><strong>Example</strong></p>
+
+<p>An individual has received dose 1 of generic, single antigen measles vaccine while overseas. Individual then receives a Priorix vaccine (MMR) dose 1 in Australia. The measles component of the Priorix vaccine is a duplicate and is pended.</p>
+
+<p>To bring the individual up to date, Service Officers must reject the generic measles vaccine given overseas. All 3 components of the Priorix vaccine will then resolve to an 'A' status and a provider payment will be made.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+
+<p>The <a href="../your-health/011-10110000-05.html">Resources</a> page contains troubleshooting tips, state codes, system reason codes and explanations, Workload Manager escalation details, and contact details.</p>
+
+<p></p>
+<a class="anchor" name="bp01_L2LL_Related_links"></a>
+<h2 id="bp01_L2LL_Related_links">Related links</h2>
+
+
+<p><a href="../your-health/011-10050000-01.html">Provider registration in Australian Immunisation Register (AIR)</a></p>
+
+<p><a href="../your-health/011-10100000-01.html">Process claims in the Australian Immunisation Register (AIR)</a></p>
+
+<p><a href="../your-health/011-44100030-01.html">Duplicate PIN and Consumer IDs in Medicare</a></p>
+
+<p><a href="../your-health/011-10000000-01.html">Australian Immunisation Register (AIR)</a></p>
+
+<p></p>
+<a class="anchor" name="bp03_L1PS_Process"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>
