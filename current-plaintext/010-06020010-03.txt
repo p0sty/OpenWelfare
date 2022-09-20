@@ -165,11 +165,15 @@ Table 1
 |                                   | is entitled to the student        |
 |                                   | payment is:                       |
 |                                   |                                   |
-|                                   | before their PLDP period:         |
+|                                   | before their PLDP period and the  |
+|                                   | customer wants to be paid from    |
+|                                   | the earliest possible date:       |
 |                                   |                                   |
 |                                   | -   grant the student payment     |
 |                                   |     from the earliest date of     |
-|                                   |     entitlement, and              |
+|                                   |     entitlement                   |
+|                                   | -   put the customer on 2WE       |
+|                                   |     reporting                     |
 |                                   | -   cancel the student payment    |
 |                                   |     (CLR) from the first day of   |
 |                                   |     the PLDP period. Note:        |
@@ -186,6 +190,11 @@ Table 1
 |                                   |     Include information about the |
 |                                   |     discussion with the customer  |
 |                                   |     in a DOC                      |
+|                                   |                                   |
+|                                   | before their PLDP period but the  |
+|                                   | customer requests YA be granted   |
+|                                   | from PLDP end date + 1 day only,  |
+|                                   | or                                |
 |                                   |                                   |
 |                                   | during their PLDP period:         |
 |                                   |                                   |
@@ -1339,7 +1348,6 @@ Table 3
 |                                   |     Masters or Doctorate          |
 |                                   | -   NAT - Not an apprentice       |
 |                                   | -   NAC - Not an approved course  |
-|                                   | -   ATR - Allowance time reached  |
 |                                   | -   go to Step 3                  |
 |                                   |                                   |
 |                                   | Rejected for any other reason, go |
@@ -1380,8 +1388,8 @@ Table 3
 |                                   |                                   |
 |                                   | Code the claim and allow it to    |
 |                                   | reject automatically with reasons |
-|                                   | REJ-TFN or REJ-PIA, if the        |
-|                                   | customer:                         |
+|                                   | REJ-POI, REJ-TFN or REJ-PIA, if   |
+|                                   | the customer:                     |
 |                                   |                                   |
 |                                   | does not provide 1 or more of the |
 |                                   | following documents requested as  |
@@ -1389,9 +1397,10 @@ Table 3
 |                                   |                                   |
 |                                   | -   Proof of identity (POI)       |
 |                                   | -   Tax File Number (TFN)         |
+|                                   | -   Parental Income (MOD JF) form |
 |                                   |                                   |
-|                                   | Note: streamline reject the claim |
-|                                   | FSD if:                           |
+|                                   | Streamline reject the claim FSD   |
+|                                   | if:                               |
 |                                   |                                   |
 |                                   | -   the customer does not provide |
 |                                   |     1 or more of the above        |
@@ -1549,6 +1558,10 @@ Table 3
 |                                   | rejection should automatically    |
 |                                   | occur once the information is     |
 |                                   | coded.                            |
+|                                   |                                   |
+|                                   | Note: if the customer has reached |
+|                                   | Allowable Time, see the Resources |
+|                                   | page in Coding New Study Details. |
 |                                   |                                   |
 |                                   | Where the claim is to be manually |
 |                                   | rejected, make all necessary      |
