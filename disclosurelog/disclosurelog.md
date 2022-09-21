@@ -2222,7 +2222,7 @@ Page last updated: 16 September 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 20 September 2022 from
+This information was printed 21 September 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
@@ -2239,10 +2239,7 @@ material.
 
 ::: {.pt-9 .font-thin .text-sm}
 ::: {#lit-footer-mobile .md:hidden}
--   [ [Services Australia](#lit-footer-accordion-0) ]{.flex .font-bold
-    .icon-accordion .icon-white .items-center .justify-between .py-6
-    .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
-    dhs-target="#lit-footer-accordion-0"}
+-   Services Australia
     -   [About us](/about-us){.py-5 .block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60}
@@ -2255,10 +2252,7 @@ material.
     -   [Our Minister](https://ministers.dss.gov.au/bill-shorten){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
--   [ [Contact](#lit-footer-accordion-1) ]{.flex .font-bold
-    .icon-accordion .icon-white .items-center .justify-between .py-6
-    .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
-    dhs-target="#lit-footer-accordion-1"}
+-   Contact
     -   [Contact](/contact-us){.block .md:inline .border-b .border-black
         .hover:border-blue-60 .hover:text-blue-60 .focus:border-blue-60
         .focus:text-blue-60 .py-5}
@@ -2271,10 +2265,7 @@ material.
     -   [Complaints and feedback](/complaints-and-feedback){.py-5 .block
         .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
--   [ [Business](#lit-footer-accordion-2) ]{.flex .font-bold
-    .icon-accordion .icon-white .items-center .justify-between .py-6
-    .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
-    dhs-target="#lit-footer-accordion-2"}
+-   Business
     -   [Business](/running-business){.block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60 .py-5}
@@ -2288,10 +2279,7 @@ material.
         employers](/paid-parental-leave-scheme-for-employers){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
--   [ [Community groups](#lit-footer-accordion-3) ]{.flex .font-bold
-    .icon-accordion .icon-white .items-center .justify-between .py-6
-    .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
-    dhs-target="#lit-footer-accordion-3"}
+-   Community groups
     -   [Community groups](/community){.block .md:inline .border-b
         .border-black .hover:border-blue-60 .hover:text-blue-60
         .focus:border-blue-60 .focus:text-blue-60 .py-5}
@@ -2306,10 +2294,7 @@ material.
         organisation](/apply-to-be-approved-voluntary-work-organisation){.py-5
         .block .md:inline .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60}
--   [ [Health professionals](#lit-footer-accordion-4) ]{.flex .font-bold
-    .icon-accordion .icon-white .items-center .justify-between .py-6
-    .text-md .hover:bg-blue-60 .hover:text-black dhs-accordion="1"
-    dhs-target="#lit-footer-accordion-4"}
+-   Health professionals
     -   [Health professionals](/health-professionals){.block .md:inline
         .border-b .border-black .hover:border-blue-60
         .hover:text-blue-60 .focus:border-blue-60 .focus:text-blue-60

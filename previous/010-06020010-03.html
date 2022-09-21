@@ -315,13 +315,17 @@ follow the process for when the PLDP payment was incorrectly paid in <a target="
 
 <p>If the earliest date the customer is entitled to the student payment is&#58;</p>
 		<ul>		<li>
-<strong>before</strong> their PLDP period&#58;</li>
+<strong>before</strong> their PLDP period and the customer wants to be paid from the earliest possible date&#58;</li>
 			<ul>			<li>
-grant the student payment from the earliest date of entitlement, and</li>
+grant the student payment from the earliest date of entitlement</li>
 			<li>
-cancel the student payment (CLR) from the first day of the PLDP period. <strong>Note</strong>&#58; customers who select this option need to lodge another claim for their student payment to be reassessed. Advise the customer any new claim they submit will be subject to normal assessment procedures. It cannot be backdated to a date before they submit their claim. Include information about the discussion with the customer in a <strong>DOC</strong></li>		</ul>
+put the customer on 2WE reporting</li>
+			<li>
+cancel the student payment (CLR) from the first day of the PLDP period. Note&#58; customers who select this option need to lodge another claim for their student payment to be reassessed. Advise the customer any new claim they submit will be subject to normal assessment procedures. It cannot be backdated to a date before they submit their claim. Include information about the discussion with the customer in a <strong>DOC</strong></li>		</ul>
 		<li>
-<strong>during</strong> their PLDP period&#58;</li>
+<strong>before</strong> their PLDP period but the customer requests YA be granted from PLDP end date + 1 day only, or</li>
+		<li>
+during their PLDP period&#58;</li>
 			<ul>			<li>
 grant the student payment from PLDP end date + 1 day</li>
 			<li>
@@ -1277,8 +1281,6 @@ NAT - Not an apprentice</li>
 			<li>
 NAC - Not an approved course</li>
 			<li>
-ATR - Allowance time reached</li>
-			<li>
 <a href="../students-and-trainees/010-06020010-03.html#bp03_tbl_Finalising_stud_Step03">go to Step 3</a></li>		</ul>
 		<li>
 <strong>Rejected for any other reason</strong>, <a href="../students-and-trainees/010-06020010-03.html#bp03_tbl_Finalising_stud_Step05">go to Step 5</a></li>
@@ -1307,15 +1309,17 @@ the parental income precludes payment for all siblings making a claim</li>
 
 <p>Do not reject claims FSD for failure to provide bank/investment balances where the customer was <strong>only</strong> requested for assessment of a LAWP <strong>and</strong> the <a href="../initial-contact-general/106-05010150-01.html">qualification date</a> is more than 13 weeks before the claim lodgement date, as a LAWP of any duration would have been self-served.</p>
 
-<p>Code the claim and allow it to reject automatically with reasons <strong>REJ-TFN</strong> or <strong>REJ-PIA</strong>, if the customer&#58;</p>
+<p>Code the claim and allow it to reject automatically with reasons <strong>REJ-POI</strong>, <strong>REJ-TFN</strong> or <strong>REJ-PIA</strong>, if the customer&#58;</p>
 		<ul>		<li>
 does not provide 1 or more of the following documents requested as part of their online claim&#58;</li>
 			<ul>			<li>
 Proof of identity (POI)</li>
 			<li>
 Tax File Number (TFN)</li>
+			<li>
+Parental Income (MOD JF) form</li>
 			</ul>			</ul>
-<p><strong>Note</strong>&#58; streamline reject the claim <strong>FSD</strong> if&#58;</p>
+<p>Streamline reject the claim <strong>FSD</strong> if&#58;</p>
 		<ul>		<li>
 the customer does not provide 1 or more of the above documents, and</li>
 		<li>
@@ -1438,6 +1442,8 @@ Procedure ends here</li>			</ul>			</ul>
 
 
 <p>Where the claim is not finalised as a streamline rejection, the rejection should automatically occur once the information is coded.</p>
+
+<p><strong>Note</strong>&#58; if the customer has reached Allowable Time, see the Resources page in <a href="../students-and-trainees/010-07010180-05.html">Coding New Study Details</a>.</p>
 
 <p>Where the claim is to be manually rejected, make all necessary updates required within the claim.</p>
 

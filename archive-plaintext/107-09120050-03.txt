@@ -21,16 +21,15 @@ ABSTUDY debts
 |                                   | Fares (FAA) or Away from Base     |
 |                                   | (AFB)?                            |
 |                                   |                                   |
-|                                   | Yes,                              |
+|                                   | Yes:                              |
 |                                   |                                   |
 |                                   | -   Service Officers skilled, see |
 |                                   |     Raising Fares Allowance (FAA) |
 |                                   |     debts                         |
 |                                   | -   Service Officers not skilled, |
-|                                   |     add the appropriate travel or |
-|                                   |     AFB keyword and unassign as   |
-|                                   |     capability adjust in WLM      |
-|                                   |     inbox. Procedure ends here    |
+|                                   |     re-categorise the work item   |
+|                                   |     to ZIAM_ABY_DEBT_TRAVEL.      |
+|                                   |     Procedure ends here           |
 |                                   |                                   |
 |                                   | No, go to Step 2                  |
 +-----------------------------------+-----------------------------------+
@@ -98,11 +97,10 @@ ABSTUDY debts
 |                                   | The system will navigate to the   |
 |                                   | Payment Details (PD) screen. The  |
 |                                   | name and address of the payee is  |
-|                                   | in the To: field. The payee may   |
-|                                   | be the student, the               |
-|                                   | parent/guardian or the            |
-|                                   | institution. Raise the debt       |
-|                                   | against the payee's record.       |
+|                                   | in the To field. The payee may be |
+|                                   | the student, the parent/guardian  |
+|                                   | or the institution. Raise the     |
+|                                   | debt against the payee's record.  |
 +-----------------------------------+-----------------------------------+
 | 5                                 | DMN/NDB activity + Read more ...  |
 |                                   |                                   |
@@ -112,9 +110,6 @@ ABSTUDY debts
 |                                   | parent's/guardian's and           |
 |                                   | institution's (if applicable)     |
 |                                   | records.                          |
-|                                   |                                   |
-|                                   | Is the debt shell on the payee's  |
-|                                   | record?                           |
 |                                   |                                   |
 |                                   | Note: a payee is a                |
 |                                   | person/inst                       |
@@ -130,6 +125,9 @@ ABSTUDY debts
 |                                   | institution at which the student  |
 |                                   | resides/attends.                  |
 |                                   |                                   |
+|                                   | Is the debt shell on the payee's  |
+|                                   | record?                           |
+|                                   |                                   |
 |                                   | Yes, go to Step 6                 |
 |                                   |                                   |
 |                                   | No, finalise the debt shell that  |
@@ -142,17 +140,16 @@ ABSTUDY debts
 |                                   | this screen. Continue to code the |
 |                                   | screen:                           |
 |                                   |                                   |
-|                                   | -   in the Calculated Amount $:   |
-|                                   |     field, enter '0.00'           |
-|                                   | -   in the FND Reason: field,     |
-|                                   |     enter the appropriate code,   |
-|                                   |     i.e. if it is a third party   |
-|                                   |     debt on a customer's record,  |
-|                                   |     enter 'TPD' for third party   |
-|                                   |     debt                          |
-|                                   | -   in the Addntl Reference No:   |
-|                                   |     field, enter the Customer     |
-|                                   |     Reference Number (CRN) of the |
+|                                   | -   Calculated Amount $ field,    |
+|                                   |     key '0.00'                    |
+|                                   | -   FND Reason field, key the     |
+|                                   |     appropriate code, i.e. if it  |
+|                                   |     is a third party debt on a    |
+|                                   |     customer's record, key 'TPD'  |
+|                                   |     for third party debt          |
+|                                   | -   Addntl Reference No field,    |
+|                                   |     key the Customer Reference    |
+|                                   |     Number (CRN) of the           |
 |                                   |     student/parent/guardian       |
 |                                   | -   press [Enter]                 |
 |                                   | -   Finalise the Assessment       |
@@ -189,37 +186,37 @@ ABSTUDY debts
 | 7                                 | Manual procedure to raise the     |
 |                                   | debt + Read more ...              |
 |                                   |                                   |
-|                                   | Raise the debt by actioning an    |
-|                                   | undetermined debt on the Debt     |
-|                                   | Management and Information System |
-|                                   | (DMIS). Complete the following    |
-|                                   | fields on the Modify/Assess Debt  |
-|                                   | (OPMA) screen with the specified  |
-|                                   | codes:                            |
+|                                   | Manually raise the debt by:       |
 |                                   |                                   |
-|                                   | -   In the Reason: field, enter   |
-|                                   |     the reason for the debt. See  |
-|                                   |     Late payment charge and       |
-|                                   |     interest under the Student    |
-|                                   |     Assistance Act 1973 for a     |
-|                                   |     list of applicable codes and  |
+|                                   | actioning an undetermined debt on |
+|                                   | the Debt Management and           |
+|                                   | Information System (DMIS).        |
+|                                   | Complete the following fields on  |
+|                                   | the Modify/Assess Debt (OPMA)     |
+|                                   | screen with the specified codes:  |
+|                                   |                                   |
+|                                   | -   Reason field, key the reason  |
+|                                   |     for the debt. See Late        |
+|                                   |     payment charge and interest   |
+|                                   |     under the Student Assistance  |
+|                                   |     Act 1973 for a list of        |
+|                                   |     applicable codes and          |
 |                                   |     suggested text to accompany   |
 |                                   |     them                          |
-|                                   | -   In the Section of Act: field, |
-|                                   |     code '39' (for Section 39 of  |
-|                                   |     the Student Assistance Act    |
-|                                   |     1973)                         |
-|                                   | -   Complete other details as     |
+|                                   | -   Section of Act field, key     |
+|                                   |     '39' (for Section 39 of the   |
+|                                   |     Student Assistance Act 1973)  |
+|                                   | -   complete other details as     |
 |                                   |     required                      |
-|                                   | -   Press [Enter]                 |
+|                                   | -   press [Enter]                 |
 |                                   |                                   |
-|                                   | Send the account payable letter   |
+|                                   | send the account payable letter   |
 |                                   | to the customer                   |
 |                                   |                                   |
-|                                   | Finalise the activity and note    |
+|                                   | finalise the activity and note    |
 |                                   | the Debt ID                       |
 |                                   |                                   |
-|                                   | Record details of the decision on |
+|                                   | record details of the decision on |
 |                                   | a DOC, including the Debt ID      |
 |                                   | number in the summary line.       |
 |                                   | Minimum DOC standard requirements |
