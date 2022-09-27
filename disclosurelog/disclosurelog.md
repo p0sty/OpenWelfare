@@ -32,7 +32,23 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
-| 12 September 2022                 | Document pertaining to the        |
+| 16 September 2022                 | Operational Blueprint documents   |
+|                                   | (LEX 67704):                      |
+|                                   |                                   |
+|                                   | -   Personalised Services OB      |
+|                                   |     101-17021300                  |
+|                                   | -   Managed Service Plan (MSP) -  |
+|                                   |     Reviewing OB 104-07050050.    |
+|                                   |                                   |
+|                                   | 2 documents released in part. The |
+|                                   | document are [available upon      |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions:** Section 47E(d)    |
++-----------------------------------+-----------------------------------+
+| 12 September 2022                 | Document pertaining to the        |
 |                                   | COVID-19 Vaccine Claims Scheme -  |
 |                                   | August 2022 (LEX 69135).          |
 |                                   |                                   |
@@ -2226,7 +2242,7 @@ us by:
 </div>
 :::
 
-Page last updated: 26 September 2022
+Page last updated: 27 September 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2234,7 +2250,7 @@ Page last updated: 26 September 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 26 September 2022 from
+This information was printed 27 September 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
