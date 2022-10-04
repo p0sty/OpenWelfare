@@ -407,7 +407,8 @@ Table 2
 |                                   |     self-service options if       |
 |                                   |     appropriate                   |
 |                                   | -   transfer the call to the      |
-|                                   |     Medicare main business line   |
+|                                   |     relevant Medicare main        |
+|                                   |     business line                 |
 |                                   |                                   |
 |                                   | Procedure ends here for Level 1.  |
 +-----------------------------------+-----------------------------------+
@@ -507,6 +508,14 @@ Table 2
 |                                   |     Outcome channel. Add an       |
 |                                   |     Acknowledgement date          |
 |                                   | -   Select Save                   |
+|                                   |                                   |
+|                                   | If feedback recorded in Medicare  |
+|                                   | incorrectly, check if a complaint |
+|                                   | Sensitive Information Indicator   |
+|                                   | has been recorded in CDMS. If so, |
+|                                   | end date the complaint Sensitive  |
+|                                   | Information Indicators in the     |
+|                                   | CDMS.                             |
 |                                   |                                   |
 |                                   | Procedure ends here for Level 1.  |
 +-----------------------------------+-----------------------------------+
@@ -623,6 +632,14 @@ Table 2
 |                                   |     Outcome channel. Add an       |
 |                                   |     Acknowledgement date          |
 |                                   | -   Select Save                   |
+|                                   |                                   |
+|                                   | If feedback recorded in Medicare  |
+|                                   | incorrectly, check if a complaint |
+|                                   | Sensitive Information Indicator   |
+|                                   | has been recorded in CDMS. If so, |
+|                                   | end date the complaint Sensitive  |
+|                                   | Information Indicators in the     |
+|                                   | CDMS.                             |
 |                                   |                                   |
 |                                   | Procedure ends here for Level 1   |
 |                                   |                                   |
@@ -1016,7 +1033,10 @@ Table 5
 |                                   |                                   |
 |                                   | If the customer's behaviours      |
 |                                   | remain challenging escalate to    |
-|                                   | Level 2 Complaints via:           |
+|                                   | Level 2 Complaints under          |
+|                                   | Escalation Reason – 7 Persistent  |
+|                                   | unreasonable complainant          |
+|                                   | behaviour, via:                   |
 |                                   |                                   |
 |                                   | -   warm transfer (preferred) or  |
 |                                   | -   the CFT                       |
@@ -2280,24 +2300,25 @@ Table 8
 |                                   | Update the feedback status to     |
 |                                   | awaiting response                 |
 |                                   |                                   |
-|                                   | Enter an On Hold Expiry Date for  |
-|                                   | the next business day. This holds |
-|                                   | the entry for access when next    |
-|                                   | scheduled to online work.         |
+|                                   | Centrelink only: Enter an On Hold |
+|                                   | Expiry Date for the next business |
+|                                   | day. This holds the entry for     |
+|                                   | access when next scheduled to     |
+|                                   | online work.                      |
 |                                   | Note: when the On hold date is    |
 |                                   | met the feedback status reverts   |
 |                                   | to Feedback Received, the         |
 |                                   | feedback remain allocated to the  |
 |                                   | assigned Service Officer          |
 |                                   |                                   |
-|                                   | If the assigned officer is not    |
-|                                   | scheduled for online work within  |
-|                                   | the next 2 business days, remove  |
-|                                   | from the employee responsible     |
-|                                   | field. On the day of the On Hold  |
-|                                   | Expiry Date, the feedback will    |
-|                                   | present to another Service        |
-|                                   | Officer                           |
+|                                   | Centrelink only: If the assigned  |
+|                                   | officer is not scheduled for      |
+|                                   | online work within the next 2     |
+|                                   | business days, remove from the    |
+|                                   | employee responsible field. On    |
+|                                   | the day of the On Hold Expiry     |
+|                                   | Date, the feedback will present   |
+|                                   | to another Service Officer        |
 |                                   |                                   |
 |                                   | Document all unsuccessful contact |
 |                                   | attempts on the feedback entry:   |
@@ -2797,11 +2818,16 @@ Table 9
 |                                   | not change the default            |
 |                                   | Zone/Branch Business reference.   |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Related Transactions tab –        |
-|                                   | FYA/FYI emails + Read more ...    |
+| 7                                 | Related Transactions tab -        |
+|                                   | External Channel - Email + Read   |
+|                                   | more ...                          |
 |                                   |                                   |
-|                                   | Check the FYA/FYA email was sent  |
-|                                   | if instructed in Customer         |
+|                                   | Check the transaction list to     |
+|                                   | confirm the                       |
+|                                   | Compliment/Suggestion/Complaint   |
+|                                   | FYI/Complaint Action required     |
+|                                   | External Channel -Email l was     |
+|                                   | sent if instructed in Customer    |
 |                                   | complaints and feedback index.    |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Document Attachment tab + Read    |
@@ -2843,6 +2869,9 @@ Table 9
 |                                   |     and                           |
 |                                   | -   remedy provided reflects the  |
 |                                   |     remedy or resolution provided |
+|                                   |                                   |
+|                                   | Update the selections using the   |
+|                                   | drop down options if needed.      |
 +-----------------------------------+-----------------------------------+
 | 11                                | Business Improvement + Read more  |
 |                                   | ...                               |
@@ -2890,6 +2919,18 @@ Table 9
 |                                   | -   update the status to          |
 |                                   |     Finalised                     |
 |                                   | -   select Save                   |
+|                                   |                                   |
+|                                   | Centrelink: Procedure ends here   |
+|                                   |                                   |
+|                                   | Medicare: go to Step 13           |
++-----------------------------------+-----------------------------------+
+| 13                                | End date the complaint Sensitive  |
+|                                   | Indicator in CDMS + Read more ... |
+|                                   |                                   |
+|                                   | Once the complaint has been       |
+|                                   | finalised, end date the complaint |
+|                                   | Sensitive Information Indicators  |
+|                                   | in the CDMS.                      |
 +-----------------------------------+-----------------------------------+
 
                                    

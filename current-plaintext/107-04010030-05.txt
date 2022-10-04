@@ -193,20 +193,28 @@ codes.
 +-----------------------------------+-----------------------------------+
 | 1                                 | Income and compensation           |
 |                                   |                                   |
-|                                   | Compensation - Income. 'You or    |
-|                                   | your partner have now been paid   |
-|                                   | arrears of periodic compensation. |
-|                                   | This compensation has now been    |
-|                                   | taken into account as income for  |
-|                                   | the period that it was            |
-|                                   | back-paid.'                       |
+|                                   | Compensation – Income - Self.     |
+|                                   | 'You have now been paid arrears   |
+|                                   | of periodic compensation. This    |
+|                                   | compensation has now been taken   |
+|                                   | into account as income for the    |
+|                                   | period that it was back-paid.'    |
+|                                   |                                   |
+|                                   | Compensation – Income – Partner.  |
+|                                   | ‘The periodic compensation paid   |
+|                                   | to your partner has been taken    |
+|                                   | into account as income for that   |
+|                                   | period. You also received         |
+|                                   | Centrelink payments for that      |
+|                                   | period and we have calculated     |
+|                                   | that you will need to pay back    |
+|                                   | this amount to Centrelink.’       |
 |                                   |                                   |
 |                                   | Income-taxable income amended by  |
 |                                   | ATO. 'Your taxable income was     |
 |                                   | amended by the Australian         |
-|                                   | Taxation Office (ATO). This       |
-|                                   | affected the payments made to     |
-|                                   | you.'                             |
+|                                   | Taxation Office. This affected    |
+|                                   | the payments made to you.'        |
 |                                   |                                   |
 |                                   | Income - incorrect estimate.      |
 |                                   | 'Your income was higher than you  |
@@ -246,11 +254,13 @@ codes.
 |                                   | {debtEndDate}.'                   |
 |                                   |                                   |
 |                                   | Income-partner earns wrongly      |
-|                                   | declared/coded. 'The correct      |
-|                                   | amount of your partner's earnings |
-|                                   | from {manually insert employer    |
-|                                   | name} was not taken into account  |
-|                                   | in the payments made to you.'     |
+|                                   | declared/coded. 'An incorrect     |
+|                                   | amount of your partner's          |
+|                                   | employment income from {manually  |
+|                                   | insert employer name} was used to |
+|                                   | work out the payments made to you |
+|                                   | from {debtStartDate} to           |
+|                                   | {debtEndDate}.'                   |
 |                                   |                                   |
 |                                   | Income-own earnings               |
 |                                   | undeclared/coded. 'This is        |
@@ -261,16 +271,16 @@ codes.
 |                                   | to {debtEndDate}.'                |
 |                                   |                                   |
 |                                   | Income Stream Auto                |
-|                                   | Update-partner. 'This is because  |
-|                                   | we use income from your partner's |
-|                                   | income stream/s to help us work   |
-|                                   | out how much we can pay you. The  |
-|                                   | correct amount of income from     |
-|                                   | your partner's income stream/s is |
+|                                   | Update-partner. 'The correct      |
+|                                   | amount of income from your        |
+|                                   | partner's income stream/s is      |
 |                                   | different to the amount we used   |
-|                                   | to pay you for the period from    |
-|                                   | {debtStartDate} to                |
-|                                   | {debtEndDate}.'                   |
+|                                   | to calculate how much you are     |
+|                                   | entitled to receive for the       |
+|                                   | period from {debtStartDate} to    |
+|                                   | {debtEndDate}. This means you     |
+|                                   | have been overpaid ${amt} and we  |
+|                                   | need to recover this amount.'     |
 |                                   |                                   |
 |                                   | Income from investment - self.    |
 |                                   | 'This is because we use income    |
@@ -294,13 +304,12 @@ codes.
 |                                   | your income support payment.'     |
 |                                   |                                   |
 |                                   | Income-partner earnings           |
-|                                   | undeclared/coded. 'This is        |
-|                                   | because an incorrect amount of    |
-|                                   | your {ex} partner's employment    |
-|                                   | income from {SOURCE} was used to  |
-|                                   | work out the payments made to you |
-|                                   | from {debtStartDate} to           |
-|                                   | {debtEndDate}.'                   |
+|                                   | undeclared/coded. 'An incorrect   |
+|                                   | amount of your {ex} partner's     |
+|                                   | employment income from {SOURCE}   |
+|                                   | was used to work out the payments |
+|                                   | made to you from {debtStartDate}  |
+|                                   | to {debtEndDate}.'                |
 |                                   |                                   |
 |                                   | Income-Incorrect Earnings         |
 |                                   | Auto-self. 'This is because an    |
@@ -319,12 +328,12 @@ codes.
 |                                   | {debtEndDate}.'                   |
 |                                   |                                   |
 |                                   | Income-non earnings or            |
-|                                   | investment - partner. 'The        |
-|                                   | correct amount of your partner's  |
-|                                   | income from {manually insert      |
-|                                   | income source} was not taken into |
-|                                   | account in the payments made to   |
-|                                   | you.'                             |
+|                                   | investment - partner. 'An         |
+|                                   | incorrect amount of your (ex)     |
+|                                   | partner's income from {SOURCE}    |
+|                                   | was used to work out the payments |
+|                                   | made to you from {debtStartDate}  |
+|                                   | to {debtEndDate}.'                |
 |                                   |                                   |
 |                                   | Income-non earnings or            |
 |                                   | investment - self. 'This is       |
@@ -344,10 +353,11 @@ codes.
 |                                   | to you.'                          |
 |                                   |                                   |
 |                                   | Income - Undeclared Cash Earning. |
-|                                   | 'Your earnings from {user to      |
-|                                   | manually insert employer name}    |
-|                                   | were not taken into account in    |
-|                                   | the payments made to you.'        |
+|                                   | 'An incorrect amount of your      |
+|                                   | employment income from {SOURCE}   |
+|                                   | was used to work out the payments |
+|                                   | made to you from {debtStartDate}  |
+|                                   | to {debtEndDate}.'                |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Obligation                        |
 |                                   |                                   |
@@ -361,7 +371,7 @@ codes.
 |                                   | receiving these payments, you     |
 |                                   | needed to lodge an income tax     |
 |                                   | return with the Australian        |
-|                                   | Taxation Office (ATO).'           |
+|                                   | Taxation Office.'                 |
 |                                   |                                   |
 |                                   | Failed Obligation-incorrect       |
 |                                   | rate - returned home. 'As you     |
@@ -392,10 +402,10 @@ codes.
 +-----------------------------------+-----------------------------------+
 | 3                                 | Dependants                        |
 |                                   |                                   |
-|                                   | Dependent children/students. 'You |
-|                                   | were not entitled to this benefit |
-|                                   | due to dependent children/student |
-|                                   | changes.'                         |
+|                                   | Dependent children/students.      |
+|                                   | '{Child/dependent’s name} has     |
+|                                   | left your care and you have been  |
+|                                   | overpaid.'                        |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Qualification                     |
 |                                   |                                   |
@@ -406,13 +416,14 @@ codes.
 |                                   | institution}.'                    |
 |                                   |                                   |
 |                                   | Qualification-Assets over limit.  |
-|                                   | 'There are limits to how much     |
-|                                   | your assets can be worth before   |
-|                                   | they affect your payment. The     |
-|                                   | value of your assets were above   |
-|                                   | the limit. This means the         |
-|                                   | payments made to you were         |
-|                                   | incorrect.'                       |
+|                                   | 'This is because there are limits |
+|                                   | to how much your assets can be    |
+|                                   | worth before they affect your     |
+|                                   | payment. The correct value of     |
+|                                   | your assets is different to the   |
+|                                   | amount we used in the payments    |
+|                                   | made to you from {debtStartDate}  |
+|                                   | to {debtEndDate}.'                |
 |                                   |                                   |
 |                                   | Studies - Commenced full-time.    |
 |                                   | 'When you commenced full-time     |
@@ -459,22 +470,24 @@ codes.
 |                                   |                                   |
 |                                   | Not eligible for payment. 'This   |
 |                                   | is because you are not eligible   |
-|                                   | for this payment as (insert       |
-|                                   | reason). You will need to pay the |
-|                                   | money back you received from      |
-|                                   | {debtStartDate} to                |
+|                                   | for this payment. You will need   |
+|                                   | to pay the money back you         |
+|                                   | received from {debtStartDate} to  |
 |                                   | {debtEndDate}.'                   |
 |                                   |                                   |
 |                                   | Not providing care. ('Warning     |
 |                                   | message - change of custody       |
 |                                   | and/or death are sensitive cases, |
 |                                   | please contact customer before    |
-|                                   | sending letter'). 'Payments were  |
-|                                   | made for a care receiver after    |
-|                                   | you stopped providing care for    |
-|                                   | them.'                            |
-|                                   |                                   |
-|                                   | Payment made after death.         |
+|                                   | sending letter'). 'This is        |
+|                                   | because you stopped providing     |
+|                                   | care for {Insert care receiver}   |
+|                                   | and after {debtEventDate} you     |
+|                                   | were no longer eligible for this  |
+|                                   | payment. You will need to pay the |
+|                                   | money back you received from      |
+|                                   | {debtStartDate} to                |
+|                                   | {debtEndDate}.'                   |
 |                                   |                                   |
 |                                   | Qualification-Full Time           |
 |                                   | employment. 'As you were employed |
@@ -490,30 +503,30 @@ codes.
 |                                   |                                   |
 |                                   | Advance Payment. 'This is because |
 |                                   | you were paid an advance of your  |
-|                                   | {payment type} on {date}. You     |
-|                                   | have not paid back your advance   |
-|                                   | in full. As your payments         |
-|                                   | stopped, we now need you to repay |
-|                                   | the balance'.                     |
+|                                   | {payment type}. You have not paid |
+|                                   | back your advance in full. As     |
+|                                   | your payments stopped, we now     |
+|                                   | need you to repay the balance'.   |
 |                                   |                                   |
 |                                   | Crisis Payment. 'This is the      |
-|                                   | balance of your Crisis Payment.   |
-|                                   | As your social security payments  |
-|                                   | have stopped, this amount is now  |
-|                                   | payable.'                         |
+|                                   | amount of your Crisis Payment. As |
+|                                   | you were not eligible to receive  |
+|                                   | Crisis Payment, this amount is    |
+|                                   | now payable.'                     |
 |                                   |                                   |
 |                                   | Advance - Special Employment.     |
 |                                   | 'This is the balance of your      |
-|                                   | advance. As your social security  |
-|                                   | payments have stopped, this       |
-|                                   | amount is now payable'.           |
+|                                   | Special Employment Advance. As    |
+|                                   | your social security payments     |
+|                                   | have stopped, this amount is now  |
+|                                   | payable'.                         |
 |                                   |                                   |
 |                                   | Advance - Severe Financial        |
 |                                   | Hardship. 'This is the balance of |
-|                                   | your Hardship Advance. As your    |
-|                                   | social security payments have     |
-|                                   | stopped, this amount is now       |
-|                                   | payable.'                         |
+|                                   | your Severe Financial Hardship    |
+|                                   | Advance. As your social security  |
+|                                   | payments have stopped, this       |
+|                                   | amount is now payable.'           |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Miscellaneous                     |
 |                                   |                                   |
@@ -532,8 +545,6 @@ codes.
 |                                   | Qualification-Incorrect date of   |
 |                                   | birth. 'Because of your age,      |
 |                                   | these payments were incorrect.'   |
-|                                   |                                   |
-|                                   | Internal Fraud                    |
 |                                   |                                   |
 |                                   | Misc - Prepayment/Holiday         |
 |                                   | processing. 'Because your         |
@@ -602,7 +613,7 @@ codes.
 |                                   | Studies - Fail to start           |
 |                                   | studies/course. 'As a condition   |
 |                                   | of receiving this payment, you    |
-|                                   | needed to start studies.'         |
+|                                   | needed to start your studies.'    |
 |                                   |                                   |
 |                                   | Studies - Not enrolled at         |
 |                                   | institution. 'As a condition of   |
@@ -613,15 +624,12 @@ codes.
 | 8                                 | Automatic codes                   |
 |                                   |                                   |
 |                                   | Automatic Internal Transfer       |
-|                                   | Adjustment. 'For the period       |
-|                                   | {start date} to {end date} you    |
-|                                   | were still being paid {payment    |
-|                                   | type from} instead of {payment    |
-|                                   | type to}. The amount of {payment  |
-|                                   | type to} that you were entitled   |
-|                                   | to for this period is less than   |
-|                                   | the amount of {payment type from} |
-|                                   | you received.'                    |
+|                                   | Adjustment. 'The total amount of  |
+|                                   | your new payment that you are     |
+|                                   | entitled to for this period is    |
+|                                   | less than the amount of the       |
+|                                   | payments you have already         |
+|                                   | received.'                        |
 +-----------------------------------+-----------------------------------+
 
 Examples of plain English text for the <DEBT REASON> field of Account Payable letter
@@ -631,9 +639,9 @@ Table 3
   -------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Type of debt                                                                                             Default text (pre-populated)                                                                                                                                                                                                                                                                      Plain English text
   Compensation                                                                                             You have now been paid arrears of periodic compensation. This compensation has now been taken into account as income for the period that it was back paid.                                                                                                                                        This is because you have been paid arrears of periodic compensation for the period (date) to (date).
-  Studies                                                                                                  When you discontinued your study, you could no longer receive these payments.                                                                                                                                                                                                                     This is because you did not maintain a full-time study load. You were no longer eligible for this payment. You will need to pay back the money you received from (date) to (date).
-  Full time employment                                                                                     You commenced full time employment with (employer) on (date). As you failed to advise Services Australia when you commenced full time employment, you have received more than you were entitled to.                                                                                               This is because you commenced full time employment with (employer) on (date).
-  Assets                                                                                                   The correct balance of your assets were not taken into account in the payments made to you from (date) to (date). This means you have been overpaid. We are, therefore, required to recover this amount.                                                                                          This is because an incorrect value of your assets was used to work out the payments made to you.
+  Studies                                                                                                  This is because you did not maintain a full-time study load. You were no longer eligible for this payment. You will need to pay back the money you received from (date) to (date).                                                                                                                When you discontinued your study, you could no longer receive these payments.
+  Full time employment                                                                                     As you were employed full-time, these payments should not have been paid to you.                                                                                                                                                                                                                  This is because you commenced full time employment with (employer) on (date).
+  Assets                                                                                                   This is because there are limits to how much your assets can be worth before they affect your payment. The correct value of your assets is different to the amount we used in the payments made to you from {debtStartDate} to {debtEndDate}.                                                     This is because an incorrect value of your assets was used to work out the payments made to you.
   Income and Assets                                                                                        N/A                                                                                                                                                                                                                                                                                               This is because an incorrect amount of income and assets was used to work out the payments made to you.
   Earnings                                                                                                 The correct earnings for you and your partner were not taken into account in the payments made to you from (date) to (date). This means you have been overpaid. We are, therefore, required to recover this amount.                                                                               This is because an incorrect amount of employment income from (employer) was used to work out the payments made to you.
   Earnings (where debt is due to former partners' employment income)                                       N/A                                                                                                                                                                                                                                                                                               This is because while you were still partnered with (former partner's name), an incorrect amount of their employment income from (employer name) was used to work out the payments made to you.

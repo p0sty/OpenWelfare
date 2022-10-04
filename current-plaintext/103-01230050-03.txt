@@ -12,15 +12,14 @@ BasicsCard reactivate posted or previously suspended card 103-01230050
 This page contains information about how to reactivate a suspended
 BasicsCard.
 
-On this Page:
+On this page:
 
-Preliminary checks
+Preliminary record check before reactivating a suspended BasicsCard
 
-System coding
+Activating a suspended BasicsCard
 
-Manual process for reactivating a previously suspended BasicsCard
-
-Preliminary checks
+Manual coding in Customer Record, BasicsCard Alternative Interface and
+BasicsCard Contingency Support System
 
 Preliminary record check before reactivating a suspended BasicsCard
 
@@ -60,8 +59,8 @@ before reactivating a suspended BasicsCard.
 |                                   | on the BasicsCard Summary page +  |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | Ensure that the BasicsCard was    |
-|                                   | issued to the payment nominee.    |
+|                                   | Ensure the BasicsCard was issued  |
+|                                   | to the payment nominee.           |
 |                                   |                                   |
 |                                   | -   Check the payment nominee     |
 |                                   |     arrangement exists            |
@@ -86,18 +85,13 @@ before reactivating a suspended BasicsCard.
 |                                   |                                   |
 |                                   | If the status is Blocked:         |
 |                                   |                                   |
-|                                   | The BasicsCard PIN will be        |
-|                                   | 'blocked' by the Card Transaction |
-|                                   | Provider (CTP) if customer enters |
-|                                   | their Personal Identification     |
-|                                   | Number (PIN) incorrectly six or   |
-|                                   | more times at a BasicsCard        |
-|                                   | Merchant.                         |
+|                                   | The BasicsCard will be 'blocked'  |
+|                                   | by the Card Transaction Provider  |
+|                                   | (CTP) if thecustomer enters their |
+|                                   | Personal Identification Number    |
+|                                   | (PIN) incorrectly six or more     |
+|                                   | times at a BasicsCard Merchant.   |
 |                                   |                                   |
-|                                   | Customers/payment nominees that   |
-|                                   | have a BasicsCard that is         |
-|                                   | 'blocked', will remain 'blocked'  |
-|                                   | until the customer contacts.      |
 |                                   | These BasicsCards can be          |
 |                                   | 'unblocked' by the customer       |
 |                                   | changing or resetting their PIN.  |
@@ -115,9 +109,8 @@ before reactivating a suspended BasicsCard.
 |                                   |                                   |
 |                                   | -   Yes, go to Step 5             |
 |                                   | -   No, the BasicsCard can be     |
-|                                   |     reactivated. See Step 1 in    |
-|                                   |     the Reactivating a suspended  |
-|                                   |     BasicsCard table              |
+|                                   |     reactivated. Go to Table 2,   |
+|                                   |     Step 1 table                  |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Replacement card has already been |
 |                                   | issued + Read more ...            |
@@ -138,12 +131,10 @@ before reactivating a suspended BasicsCard.
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
-System coding
+Activating a suspended BasicsCard
 
-Reactivating a suspended BasicsCard
-
-Table 2: This table describes the assisted processing instructions for
-workflows for reactivating a suspended BasicsCard.
+Table 2: This table describes the processing instructions for activating
+a suspended BasicsCard.
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -160,15 +151,10 @@ workflows for reactivating a suspended BasicsCard.
 |                                   | available?                        |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 2             |
-|                                   | -   No, see Step 1 in the Manual  |
-|                                   |     coding in the national index, |
-|                                   |     BasicsCard Alternative        |
-|                                   |     Interface and BasicsCard      |
-|                                   |     Contingency Support System    |
-|                                   |     table                         |
+|                                   | -   No, go to Table 3, Step 1     |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Review BasicsCard suspension Auto |
-|                                   | DOC                               |
+|                                   | DOC + Read more ...               |
 |                                   |                                   |
 |                                   | Prior to running the Change       |
 |                                   | BasicsCard Status workflow,       |
@@ -183,35 +169,12 @@ workflows for reactivating a suspended BasicsCard.
 |                                   | the customer a re-activation is   |
 |                                   | not possible at this time and the |
 |                                   | customer/payment nominee will     |
-|                                   | need to request a replacement.    |
-|                                   | See BasicsCard initial offer or   |
+|                                   | need to request a replacement. Go |
+|                                   | to BasicsCard initial offer or    |
 |                                   | replacement of BasicsCard         |
 |                                   |                                   |
-|                                   | Did the DOC advise a BasicsCard   |
-|                                   | had been issued and sent in the   |
-|                                   | mail?                             |
-|                                   |                                   |
-|                                   | Yes, and the card has been        |
-|                                   | allocated to another person,      |
-|                                   | contact the Deduction and         |
-|                                   | Confirmation Branch – IM and      |
-|                                   | BasicsCard team. Go to Step 4     |
-|                                   |                                   |
-|                                   | Yes, ask the customer if this is  |
-|                                   | the card they received in the     |
-|                                   | mail. If not tell them to dispose |
-|                                   | of the card and wait for their    |
-|                                   | replacement card to arrive. Look  |
-|                                   | up the card using the Reference   |
-|                                   | Number Search using the following |
-|                                   | inputs:                           |
-|                                   |                                   |
-|                                   | -   Customer ID: enter the 16     |
-|                                   |     digit BasicsCard number       |
-|                                   | -   Client Department: IND        |
-|                                   | -   ID Type: BCN                  |
-|                                   |                                   |
-|                                   | No, go to Step 3                  |
+|                                   | If the BasicsCard can be          |
+|                                   | reactivated, go to Step 3         |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Reactivating suspended            |
 |                                   | BasicsCard + Read more ...        |
@@ -220,33 +183,51 @@ workflows for reactivating a suspended BasicsCard.
 |                                   | BasicsCard, ensure the card in    |
 |                                   | the customer/payment nominee's    |
 |                                   | possession matches the BasicsCard |
-|                                   | listed on the BasicsCard Summary  |
-|                                   | screen.                           |
+|                                   | number listed on the BasicsCard   |
+|                                   | Summary screen.                   |
 |                                   |                                   |
-|                                   | Does the requested card match the |
-|                                   | system?                           |
+|                                   | Does the suspended card number    |
+|                                   | match the BasicsCard Summary      |
+|                                   | Screen?                           |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
-|                                   | -   No, advise the reactivation   |
-|                                   |     is not possible at this time. |
-|                                   |     See Initial offer or          |
-|                                   |     replacement of BasicsCard     |
+|                                   | Yes, go to Step 4                 |
+|                                   |                                   |
+|                                   | No, look up the card using the    |
+|                                   | Reference Number Search Facility  |
+|                                   | (RNS) screen using the following  |
+|                                   | inputs:                           |
+|                                   |                                   |
+|                                   | -   Customer ID: enter the 16     |
+|                                   |     digit BasicsCard number       |
+|                                   | -   Client Department: IND        |
+|                                   | -   ID Type: BCN                  |
+|                                   | -   Next Screen: ‘PED’ Select     |
+|                                   |                                   |
+|                                   | If error - 1018ZZ - No National   |
+|                                   | Index records found meeting the   |
+|                                   | search criteria' presents, a      |
+|                                   | replacement BasicsCard has        |
+|                                   | already been reissued and the     |
+|                                   | card they are holding can’t be    |
+|                                   | reactivated. Go to Initial offer  |
+|                                   | or replacement of BasicsCard to   |
+|                                   | issue a replacement BasicsCard.   |
+|                                   |                                   |
+|                                   | If the card has been allocated to |
+|                                   | another person, email the Income  |
+|                                   | Management Helpdesk with the      |
+|                                   | customer and card details. Go to  |
+|                                   | Initial offer or replacement of   |
+|                                   | BasicsCard to issue a replacement |
+|                                   | card.                             |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Run the workflow: Change          |
 |                                   | BasicsCard Status + Read more ... |
 |                                   |                                   |
-|                                   | Run the Change BasicsCard status  |
-|                                   | workflow to go to the BasicsCard  |
-|                                   | Status page.                      |
-|                                   |                                   |
-|                                   | Does the customer have a nominee? |
-|                                   |                                   |
-|                                   | -   Yes, go to Step 5             |
-|                                   | -   No, go to Step 6              |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Continue the workflow:            |
-|                                   | Authentication of nominee + Read  |
-|                                   | more ...                          |
+|                                   | Run the Change BasicsCard Status  |
+|                                   | workflow:                         |
 |                                   |                                   |
 |                                   | An Authentication page displays.  |
 |                                   |                                   |
@@ -256,11 +237,17 @@ workflows for reactivating a suspended BasicsCard.
 |                                   |     been read                     |
 |                                   | -   Confirm if the customer's     |
 |                                   |     record is password protected  |
-|                                   |                                   |
-|                                   | Once this is completed, confirm   |
-|                                   | the nominee's name and password.  |
-|                                   | The workflow will not continue    |
-|                                   | until this is done.               |
+|                                   | -   Confirm how the customer was  |
+|                                   |     authenticated by selecting    |
+|                                   |     the method/methods by which   |
+|                                   |     the customer has been         |
+|                                   |     authenticated using the list  |
+|                                   |     provided, or                  |
+|                                   | -   If the customer has a payment |
+|                                   |     nominee, confirm the          |
+|                                   |     nominee's name and password.  |
+|                                   |     The workflow will not         |
+|                                   |     continue until this is done.  |
 |                                   |                                   |
 |                                   | If a nominee cannot recall their  |
 |                                   | password, refer to Appointing     |
@@ -297,68 +284,8 @@ workflows for reactivating a suspended BasicsCard.
 |                                   | functionality to print BasicsCard |
 |                                   | balances on EFTPOS receipts for   |
 |                                   | customers.                        |
-|                                   |                                   |
-|                                   | Go to Step 7.                     |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Continue the workflow:            |
-|                                   | Authentication of customer + Read |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | The Authentication page displays. |
-|                                   |                                   |
-|                                   | -   If the customer has Display   |
-|                                   |     on Access (DOA) DOCs, confirm |
-|                                   |     that all the DOA DOCs have    |
-|                                   |     been read. Note: DOA DOCs     |
-|                                   |     will only appear if they are  |
-|                                   |     present on the customer's     |
-|                                   |     record                        |
-|                                   | -   Confirm if the customer's     |
-|                                   |     record is password protected  |
-|                                   | -   Confirm how the customer was  |
-|                                   |     authenticated by selecting    |
-|                                   |     the method/methods by which   |
-|                                   |     the customer has been         |
-|                                   |     authenticated using the list  |
-|                                   |     provided                      |
-|                                   |                                   |
-|                                   | The workflow will not continue    |
-|                                   | until the customer has been fully |
-|                                   | authenticated                     |
-|                                   |                                   |
-|                                   | This page will display the        |
-|                                   | customer/payment nominee's:       |
-|                                   |                                   |
-|                                   | -   card number                   |
-|                                   | -   expiry date                   |
-|                                   | -   card status                   |
-|                                   | -   reason for suspension         |
-|                                   | -   option to 'opt in' to         |
-|                                   |     BasicsCard Balance Printed on |
-|                                   |     EFTPOS receipt (BOR)          |
-|                                   |                                   |
-|                                   | If the customer/payment nominee   |
-|                                   | consents to the offer of BOR and  |
-|                                   | 'yes' is selected, then a         |
-|                                   | 'consent statement' will appear.  |
-|                                   | The customer/payment nominee will |
-|                                   | need to read and accept the       |
-|                                   | consent statement in order to     |
-|                                   | 'opt in' to Balance on Receipt.   |
-|                                   | Once the consent statement is     |
-|                                   | accepted the system will allow    |
-|                                   | the Service Officer to continue   |
-|                                   | on.                               |
-|                                   |                                   |
-|                                   | Note: there are a group of        |
-|                                   | national retailers that are       |
-|                                   | BasicsCard Balance on Receipt     |
-|                                   | merchants. These merchants have   |
-|                                   | the functionality to print        |
-|                                   | BasicsCard balances on EFTPOS     |
-|                                   | receipts for customers.           |
-+-----------------------------------+-----------------------------------+
-| 7                                 | Change BasicsCard status: Action  |
+| 5                                 | Change BasicsCard status: Action  |
 |                                   | to be taken + Read more ...       |
 |                                   |                                   |
 |                                   | -   Select the 'Reactivate'       |
@@ -370,7 +297,7 @@ workflows for reactivating a suspended BasicsCard.
 |                                   |     'BasicsCard reactivated.      |
 |                                   |     Current balance $......'      |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Next page: Auto DOC + Read more   |
+| 6                                 | Next page: Auto DOC + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Record on the DOC that the card   |
@@ -378,7 +305,7 @@ workflows for reactivating a suspended BasicsCard.
 |                                   | the time and date. Delete or add  |
 |                                   | information as required.          |
 +-----------------------------------+-----------------------------------+
-| 9                                 | BasicsCard is reactivated + Read  |
+| 7                                 | BasicsCard is reactivated + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | BasicsCard status shows as Active |
@@ -395,7 +322,7 @@ workflows for reactivating a suspended BasicsCard.
 |                                   |                                   |
 |                                   | Note: all customers/nominees who  |
 |                                   | get a BasicsCard posted in the    |
-|                                   | mail must change their PIN after  |
+|                                   | mail must set their PIN after     |
 |                                   | reactivating their BasicsCard.    |
 |                                   |                                   |
 |                                   | Review current priority needs and |
@@ -403,16 +330,9 @@ workflows for reactivating a suspended BasicsCard.
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
-Manual process for reactivating a previously suspended BasicsCard
+Manual coding in Customer Record, BasicsCard Alternative Interface and BasicsCard Contingency Support System
 
-Manual processing should only be undertaken when workflow is
-unavailable.
-
-Manual coding in the national index, BasicsCard Alternative Interface and BasicsCard Contingency Support System
-
-Table 3: This table outlines the manual processing instructions to
-reactivate a previously suspended BasicsCard in the national index and
-the BasicsCard Alternative Interface.
+Table 3
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -429,74 +349,10 @@ the BasicsCard Alternative Interface.
 |                                   |     in the Nxt: field. Code 'ACT' |
 |                                   |     in the Action: field to       |
 |                                   |     reactivate the card. Go to    |
-|                                   |     Step 5                        |
-|                                   | -   No, go to Step 2              |
+|                                   |     Step 2                        |
+|                                   | -   No, go to Step 3              |
 +-----------------------------------+-----------------------------------+
-| 2                                 | National index + Read more ...    |
-|                                   |                                   |
-|                                   | Access the National Index.        |
-|                                   |                                   |
-|                                   | Limited activities can be done in |
-|                                   | the National Index System. This   |
-|                                   | includes suspending and           |
-|                                   | reactivating BasicsCards,         |
-|                                   | obtaining BasicsCard balances and |
-|                                   | updating PINs.                    |
-|                                   |                                   |
-|                                   | To log into the National Index    |
-|                                   | system:                           |
-|                                   |                                   |
-|                                   | -   Open Customer Record and      |
-|                                   |     enter 'NNS' in the system     |
-|                                   |     field and 'N' in the          |
-|                                   |     environment field             |
-|                                   |                                   |
-|                                   | Is the National Index available?  |
-|                                   |                                   |
-|                                   | -   Yes, go to Step 3             |
-|                                   | -   No, use the BasicsCard        |
-|                                   |     Alternative Interface, go to  |
-|                                   |     Step 6                        |
-+-----------------------------------+-----------------------------------+
-| 3                                 | Search for customer using the     |
-|                                   | National Index + Read more ...    |
-|                                   |                                   |
-|                                   | To search for a customer using    |
-|                                   | the National Index:               |
-|                                   |                                   |
-|                                   | -   Go to the Name Search (IN)    |
-|                                   |     screen in the NNS system      |
-|                                   | -   Search for the customer (same |
-|                                   |     as if in Centrelink system    |
-|                                   |     environment)                  |
-|                                   | -   Press [Enter]                 |
-|                                   | -   The Client List (CL) screen   |
-|                                   |     will display                  |
-|                                   | -   Select the required customer  |
-|                                   | -   The National Index Person     |
-|                                   |     Details (PED) screen will     |
-|                                   |     display. This screen should   |
-|                                   |     provide enough information to |
-|                                   |     authenticate the customer     |
-+-----------------------------------+-----------------------------------+
-| 4                                 | To reactivate a suspended         |
-|                                   | BasicsCard + Read more ...        |
-|                                   |                                   |
-|                                   | In the Nxt: field, code 'BCRB' to |
-|                                   | access the BasicsCard screen.     |
-|                                   |                                   |
-|                                   | Card number: field will be        |
-|                                   | pre-populated from customer's     |
-|                                   | record.                           |
-|                                   |                                   |
-|                                   | Code the following fields:        |
-|                                   |                                   |
-|                                   | -   Expiry Date:                  |
-|                                   | -   Action: ACT (Activate)        |
-|                                   |                                   |
-|                                   | Press [Enter].                    |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Record on a DOC that the card has |
+| 2                                 | Record on a DOC that the card has |
 |                                   | been reactivated, including the   |
 |                                   | time and date. + Read more ...    |
 |                                   |                                   |
@@ -510,7 +366,7 @@ the BasicsCard Alternative Interface.
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Alternative Interface + Read more |
+| 3                                 | Alternative Interface + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Resources contain a link to the   |
@@ -519,12 +375,12 @@ the BasicsCard Alternative Interface.
 |                                   | Is the BasicsCard Alternative     |
 |                                   | Interface available?              |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 7             |
-|                                   | -   No, use the BasicsCard        |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, to access the BasicsCard  |
 |                                   |     Contingency Support System    |
-|                                   |     (BCSS), go to Step 10         |
+|                                   |     (BCSS), go to Step 7          |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Access the BasicsCard Alternative |
+| 4                                 | Access the BasicsCard Alternative |
 |                                   | Interface web page + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
@@ -551,18 +407,17 @@ the BasicsCard Alternative Interface.
 |                                   | known to use this interface       |
 |                                   |                                   |
 |                                   | Generally this would only be used |
-|                                   | when Customer First and the       |
-|                                   | National Index are not available  |
-|                                   | as the BasicsCard Alternative     |
-|                                   | Interface does not contain any    |
-|                                   | customer information. It cannot   |
-|                                   | be used to locate a customer's    |
-|                                   | record or to verify a customer's  |
-|                                   | identity. Access and use of this  |
-|                                   | facility is intended for Service  |
-|                                   | Officers in the 24/7 Income       |
-|                                   | Management Line or Level 1 and 2  |
-|                                   | Helpdesks.                        |
+|                                   | when Customer First and Customer  |
+|                                   | Record are not available as the   |
+|                                   | BasicsCard Alternative Interface  |
+|                                   | does not contain any customer     |
+|                                   | information. It cannot be used to |
+|                                   | locate a customer's record or to  |
+|                                   | verify a customer's identity.     |
+|                                   | Access and use of this facility   |
+|                                   | is intended for Service Officers  |
+|                                   | in the 24/7 Income Management     |
+|                                   | Line or Level 1 and 2 Helpdesks.  |
 |                                   |                                   |
 |                                   | Note: this must be used in        |
 |                                   | conjunction with Income           |
@@ -576,9 +431,9 @@ the BasicsCard Alternative Interface.
 |                                   | -   Open an Internet Browser      |
 |                                   |     session                       |
 |                                   | -   Access the interface’s web    |
-|                                   |     entry page. See the above     |
-|                                   |     link to the login page for    |
-|                                   |     the BasicsCard Alternative    |
+|                                   |     entry page. Resources         |
+|                                   |     contains a link to the        |
+|                                   |     BasicsCard Alternative        |
 |                                   |     Interface. Note: this can be  |
 |                                   |     added to 'Favourites' for     |
 |                                   |     future use                    |
@@ -604,13 +459,11 @@ the BasicsCard Alternative Interface.
 |                                   |     in lower case                 |
 |                                   | -   If there are any issues       |
 |                                   |     accessing this facility,      |
-|                                   |     email the BasicsCard and TPO  |
-|                                   |     Services Team. See Resources  |
-|                                   |     page for a link to their      |
-|                                   |     contact details in Office     |
-|                                   |     Locator                       |
+|                                   |     email the Income Management   |
+|                                   |     Helpdesk. See Resources page  |
+|                                   |     for their contact details     |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Account or Card Search page +     |
+| 5                                 | Account or Card Search page +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | From the Account or Card Search   |
@@ -628,7 +481,7 @@ the BasicsCard Alternative Interface.
 |                                   | 'Card Status' button. The Card    |
 |                                   | Status screen will display.       |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Card Status screen + Read more    |
+| 6                                 | Card Status screen + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | To reactivate previously          |
@@ -656,16 +509,15 @@ the BasicsCard Alternative Interface.
 |                                   | First is available. Procedure     |
 |                                   | ends here.                        |
 +-----------------------------------+-----------------------------------+
-| 10                                | BasicsCard Contingency Support    |
+| 7                                 | BasicsCard Contingency Support    |
 |                                   | System (BCSS) + Read more ...     |
 |                                   |                                   |
 |                                   | The BasicsCard Contingency        |
 |                                   | Support system allows access to   |
 |                                   | limited functions for BasicsCard  |
-|                                   | when the Centrelink system,       |
-|                                   | National Index and BasicsCard     |
-|                                   | Alternative Interfaces are not    |
-|                                   | operational.                      |
+|                                   | when the Centrelink system and    |
+|                                   | BasicsCard Alternative Interfaces |
+|                                   | are not operational.              |
 |                                   |                                   |
 |                                   | The BasicsCard Contingency        |
 |                                   | Support System will allow the     |
@@ -697,13 +549,7 @@ the BasicsCard Alternative Interface.
 |                                   |                                   |
 |                                   | See Resources for links to the    |
 |                                   | training presentation available   |
-|                                   | on the BasicsCard and TPO         |
-|                                   | Services team homepage.           |
-|                                   |                                   |
-|                                   | Note: BCSS will not open with the |
-|                                   | Firefox internet browser. Ensure  |
-|                                   | that the BCSS is opened using     |
-|                                   | Internet Explorer (IE).           |
+|                                   | on the BasicsCard intranet page.  |
 +-----------------------------------+-----------------------------------+
 
                                    
