@@ -282,18 +282,22 @@ Table1:
 |                                   | to contact the customer to obtain |
 |                                   | payment destination details.      |
 |                                   |                                   |
-|                                   | Send an ACTDOC to the customer's  |
-|                                   | service centre requesting they    |
-|                                   | attempt to contact the customer   |
-|                                   | to obtain payment destination     |
-|                                   | details.                          |
+|                                   | Send a                            |
 |                                   |                                   |
-|                                   | Procedure ends here until service |
-|                                   | centre advises outcome of         |
-|                                   | contact.                          |
+|                                   | Fast Note  to Income Management   |
+|                                   | Contact Officers (IMCOs)          |
+|                                   | requesting they attempt to        |
+|                                   | contact the customer to obtain    |
+|                                   | payment destination details.      |
+|                                   | Select Auto Text, use Income      |
+|                                   | Management > Update > Undisbursed |
+|                                   | Income Management Funds.          |
+|                                   |                                   |
+|                                   | Procedure ends here until IMCO    |
+|                                   | advises outcome of contact.       |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Service centre to follow up with  |
-|                                   | customer + Read more ...          |
+| 9                                 | IMCO to follow up with customer + |
+|                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | [                                 |
 |                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
@@ -301,9 +305,9 @@ Table1:
 |                                   | Blueprint Migration\RDT Release   |
 |                                   | Icons\32w\icon-face-to-face.png]  |
 |                                   |                                   |
-|                                   | On receipt of the ACTDOC from     |
-|                                   | IMPACT, the service centre will   |
-|                                   | make one attempt to contact the   |
+|                                   | On receipt of the Fast Note from  |
+|                                   | IMPACT, the IMCO will make 2      |
+|                                   | genuine attempts to contact the   |
 |                                   | customer to obtain payment        |
 |                                   | destination details.              |
 |                                   |                                   |
@@ -311,12 +315,18 @@ Table1:
 |                                   | successful?                       |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 10            |
-|                                   | -   No, annotate the ACTDOC with  |
-|                                   |     details of the unsuccessful   |
-|                                   |     contact attempt (including    |
-|                                   |     date and time), and transfer  |
-|                                   |     the ACTDOC to region IMT      |
-|                                   |     (IMPACT). Procedure ends here |
+|                                   | -   No, annotate the Fast Note    |
+|                                   |     with details of the           |
+|                                   |     unsuccessful contact attempt  |
+|                                   |     (including date and time),    |
+|                                   |     and finalise the Fast Note.   |
+|                                   | -   Handoff to IMPACT by          |
+|                                   |     selecting Auto Text, use      |
+|                                   |     Income Management > Update >  |
+|                                   |     Disbursement of Income        |
+|                                   |     Management Funds, noting that |
+|                                   |     the attempt to contact the    |
+|                                   |     customer was unsuccessful.    |
 +-----------------------------------+-----------------------------------+
 | 10                                | Contact with customer             |
 |                                   | successful + Read more ...        |
@@ -327,18 +337,18 @@ Table1:
 |                                   | Blueprint Migration\RDT Release   |
 |                                   | Icons\32w\icon-face-to-face.png]  |
 |                                   |                                   |
-|                                   | Service Officers are to ask the   |
-|                                   | customer for direct credit        |
-|                                   | payment destination details so    |
-|                                   | funds can be disbursed.           |
+|                                   | IMCOs are to ask the customer for |
+|                                   | direct credit payment destination |
+|                                   | details so funds can be           |
+|                                   | disbursed.                        |
 |                                   |                                   |
 |                                   | Where the payment destination is  |
-|                                   | 'cheque', Service Officers are to |
-|                                   | advice customers this is no       |
-|                                   | longer a payment option and funds |
-|                                   | cannot be disbursed until direct  |
-|                                   | credit details are provided. If   |
-|                                   | the customer does not have a bank |
+|                                   | 'cheque', IMCOs are to advise     |
+|                                   | customers this is no longer a     |
+|                                   | payment option and funds cannot   |
+|                                   | be disbursed until direct credit  |
+|                                   | details are provided. If the      |
+|                                   | customer does not have a bank     |
 |                                   | account make appropriate          |
 |                                   | referrals (e.g. to a community    |
 |                                   | organisation who can assist with  |
@@ -370,8 +380,8 @@ Table1:
 |                                   | funds when Income Management      |
 |                                   | ends.                             |
 |                                   |                                   |
-|                                   | Finalise the ACTDOC, noting the   |
-|                                   | outcome of contact with the       |
+|                                   | Finalise the Fast Note, noting    |
+|                                   | the outcome of contact with the   |
 |                                   | customer.                         |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
@@ -413,10 +423,13 @@ Table 2:
 |                                   | is required by the Income         |
 |                                   | Management Payments and Contact   |
 |                                   | Team (IMPACT). Service Officers   |
-|                                   | are to send an ACTDOC to IMPACT   |
-|                                   | (region code IMT) requesting      |
-|                                   | follow up. For more information   |
-|                                   | see Death of an income managed    |
+|                                   | are to send a Fast Note  to       |
+|                                   | IMPACT requesting follow up.      |
+|                                   | Select Auto Text, use Income      |
+|                                   | Management > Update >             |
+|                                   | Disbursement of Income Management |
+|                                   | Funds. For more information see   |
+|                                   | Death of an income managed        |
 |                                   | customer.                         |
 |                                   |                                   |
 |                                   | Re-credited funds:                |
@@ -599,21 +612,25 @@ Table 2:
 |                                   | in a DOC on the customer's        |
 |                                   | record.                           |
 |                                   |                                   |
-|                                   | -   An ACTDOC is to be sent to    |
-|                                   |     Region code IMT requesting    |
-|                                   |     the balance of the deceased   |
+|                                   | -   A  Fast Note  is to be        |
+|                                   |     created  requesting the       |
+|                                   |     balance of the deceased       |
 |                                   |     customer's funds be           |
 |                                   |     transferred to the General    |
 |                                   |     Ledger Account. The logon of  |
 |                                   |     the delegate authorising the  |
-|                                   |     transfer must be included     |
+|                                   |     transfer must be included.    |
+|                                   |     Select Auto Text, use Income  |
+|                                   |     Management > Update >         |
+|                                   |     Transfer Funds to General     |
+|                                   |     Ledger Account                |
 |                                   | -   Complete the 'Income          |
 |                                   |     Management Deceased Customer  |
 |                                   |     Referral Report', noting the  |
 |                                   |     request to transfer funds to  |
 |                                   |     the General Ledger Account    |
-|                                   |     has been sent via ACTDOC. The |
-|                                   |     completed form is to be       |
+|                                   |     has been sent via Fast Note.  |
+|                                   |     The completed form is to be   |
 |                                   |     emailed to the IMPACT team.   |
 |                                   |     Procedure ends here           |
 |                                   |                                   |
@@ -638,9 +655,9 @@ Table 3:
 |                                   | transferred to the General Ledger |
 |                                   | Account when:                     |
 |                                   |                                   |
-|                                   | -   a service centre returns a    |
-|                                   |     stopped/stale cheque ACTDOC   |
-|                                   |     to IMPACT advising the        |
+|                                   | -   an IMCO creates a             |
+|                                   |     stopped/stale cheque Fast     |
+|                                   |     Note to IMPACT advising the   |
 |                                   |     customer could not be         |
 |                                   |     contacted                     |
 |                                   | -   it is the second time a       |
