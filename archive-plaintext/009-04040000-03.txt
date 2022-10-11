@@ -40,7 +40,8 @@ only.
 |                                   | access work items.                |
 |                                   |                                   |
 |                                   | Select the work item to view      |
-|                                   | Customer and Claim Information.   |
+|                                   | Customer and Activity             |
+|                                   | Information.                      |
 |                                   |                                   |
 |                                   | Online claim/ACC submitted        |
 |                                   |                                   |
@@ -71,9 +72,9 @@ only.
 |                                   | For what to check upon lodgement, |
 |                                   | see Claiming CP and/or CA.        |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Review claim details -            |
-|                                   | Transaction Summary (TS) screen + |
-|                                   | Read more ...                     |
+| 2                                 | Review claim details - Customer   |
+|                                   | and Activity Information (TS)     |
+|                                   | screen + Read more ...            |
 |                                   |                                   |
 |                                   | Review information to determine   |
 |                                   | if additional action is required, |
@@ -81,13 +82,13 @@ only.
 |                                   | assessment of the claim or to     |
 |                                   | place the claim on hold.          |
 |                                   |                                   |
-|                                   | The Customer and Claim            |
-|                                   | Information table displays key    |
-|                                   | information, including the claim  |
-|                                   | status, the date the claim was    |
-|                                   | submitted by the carer (WEB       |
-|                                   | Channel), via ACC or created as a |
-|                                   | SOA shell (internal).             |
+|                                   | The Customer and Claim Activity   |
+|                                   | table displays key information,   |
+|                                   | including the claim status, the   |
+|                                   | date the claim was submitted by   |
+|                                   | the carer (WEB Channel), via ACC  |
+|                                   | or created as a SOA shell         |
+|                                   | (internal).                       |
 |                                   |                                   |
 |                                   | Link Summary (LS) or Marital      |
 |                                   | Status (MS) tables may contain    |
@@ -235,71 +236,24 @@ only.
 |                                   |                                   |
 |                                   | Multiple CP claims/care receivers |
 |                                   |                                   |
-|                                   | If a carer lodges a claim for CP  |
-|                                   | for more than one care receiver,  |
-|                                   | or multiple claims for CP for 2   |
-|                                   | or more carer receivers, it is    |
-|                                   | deemed that the customer has      |
-|                                   | lodged a claim for each care      |
-|                                   | receiver. Each claim must be      |
-|                                   | assessed. If the carer is         |
+|                                   | If a carer lodges multiple claims |
+|                                   | for CP for 2 or more carer        |
+|                                   | receivers, it is deemed that the  |
+|                                   | customer has lodged a claim for   |
+|                                   | each care receiver. Each claim    |
+|                                   | must be assessed. If the carer is |
 |                                   | eligible for more than one care   |
 |                                   | receiver, a determination of who  |
 |                                   | the carer is claiming for must be |
 |                                   | made.                             |
 |                                   |                                   |
-|                                   | More than one eligible care       |
-|                                   | receiver                          |
+|                                   | If a carer is already in receipt  |
+|                                   | of CP for one care receiver and   |
+|                                   | lodges a secondary CP claim, it   |
+|                                   | must be determined if this is a   |
+|                                   | change in care receiver.          |
 |                                   |                                   |
-|                                   | Contact the carer to discuss:     |
-|                                   |                                   |
-|                                   | -   CP can be paid for only one   |
-|                                   |     care receiver                 |
-|                                   | -   the circumstances of the      |
-|                                   |     carer and care receivers      |
-|                                   | -   the implications of the       |
-|                                   |     decision on bereavement       |
-|                                   |     provisions                    |
-|                                   | -   which care receiver they want |
-|                                   |     to claim for                  |
-|                                   |                                   |
-|                                   | Document contact with the carer   |
-|                                   | on the carer's record. If the     |
-|                                   | carer cannot be contacted, a      |
-|                                   | letter must be sent requesting    |
-|                                   | they contact before the claim is  |
-|                                   | finalised.                        |
-|                                   |                                   |
-|                                   | When the carer advises which care |
-|                                   | receiver they want to claim for:  |
-|                                   |                                   |
-|                                   | -   withdraw the additional       |
-|                                   |     claims, and                   |
-|                                   | -   finalise the claim for that   |
-|                                   |     care receiver                 |
-|                                   |                                   |
-|                                   | If the carer cannot be contacted  |
-|                                   | and does not respond to the       |
-|                                   | request to contact Services       |
-|                                   | Australia, reject the claims.     |
-|                                   |                                   |
-|                                   | Multiple care receivers:          |
-|                                   |                                   |
-|                                   | -   if no care receivers are      |
-|                                   |     eligible, reject the claim    |
-|                                   |     for each care receiver using  |
-|                                   |     the most appropriate reason   |
-|                                   | -   if only 1 care receiver is    |
-|                                   |     eligible, reject the claim    |
-|                                   |     for each of the ineligible    |
-|                                   |     care receivers before         |
-|                                   |     processing the claim for the  |
-|                                   |     eligible care receiver        |
-|                                   | -   create a SOA for each care    |
-|                                   |     receiver for action           |
-|                                   |                                   |
-|                                   | All claims must be finalised,     |
-|                                   | unless withdrawn.                 |
+|                                   | See Table 6                       |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Streaming of claims + Read more   |
 |                                   | ...                               |
@@ -381,7 +335,10 @@ only.
 |                                   |     accepted - Yes'               |
 |                                   | -   Australian residence          |
 |                                   | -   Tax File Number (TFN)         |
-|                                   | -                                 |
+|                                   | -   Bank account details for      |
+|                                   |     direct credit, or payment     |
+|                                   |     nominee details for paper     |
+|                                   |     claims                        |
 |                                   | -   check Medical Reports have    |
 |                                   |     been lodged                   |
 |                                   | -   any other information and     |
@@ -408,6 +365,14 @@ only.
 |                                   | processing staff can accept and   |
 |                                   | use verbal information from the   |
 |                                   | customer.                         |
+|                                   |                                   |
+|                                   | Make genuine attempts to contact  |
+|                                   | the carer by phone to obtain      |
+|                                   | missing information or clarify    |
+|                                   | claim details. Record any verbal  |
+|                                   | information requested or obtained |
+|                                   | in the claim Progress Note and/or |
+|                                   | DOC.                              |
 |                                   |                                   |
 |                                   | If verbal information is not      |
 |                                   | possible or practical to obtain,  |
@@ -1561,8 +1526,9 @@ only.
 |                                   | If the carer receives Age         |
 |                                   | Pension, lodges a claim for CP    |
 |                                   | and meets the eligibility and     |
-|                                   | payability criteria for CP,       |
-|                                   | contact the carer to explain that |
+|                                   | payability criteria for CP, make  |
+|                                   | genuine attempts to contact the   |
+|                                   | carer by phone to explain that    |
 |                                   | any existing qualification and    |
 |                                   | grandfathered status from their   |
 |                                   | existing payment will cease once  |
@@ -1572,6 +1538,50 @@ only.
 |                                   | still wanted. See Eligibility for |
 |                                   | Carer Payment (CP) and Transfers  |
 |                                   | to Carer Payment (CP).            |
+|                                   |                                   |
+|                                   | If genuine contact attempts by    |
+|                                   | phone are unsuccessful, send a    |
+|                                   | Q164 letter to the carer to       |
+|                                   | request contact.                  |
+|                                   |                                   |
+|                                   | Record details in the claim       |
+|                                   | progress Note or DOC on the       |
+|                                   | carer’s record, including:        |
+|                                   |                                   |
+|                                   | -   contact attempts made         |
+|                                   | -   that Service Officers are to  |
+|                                   |     discuss with the carer Age    |
+|                                   |     Pension to CP and the         |
+|                                   |     benefits of each payment      |
+|                                   | -   the carer must determine if   |
+|                                   |     CP is still wanted, or        |
+|                                   | -   if the carer wishes to remain |
+|                                   |     on Age Pension and withdraw   |
+|                                   |     their CP claim                |
+|                                   |                                   |
+|                                   | Hold the claim for the required   |
+|                                   | response time (until day 22,      |
+|                                   | unless other wait time provisions |
+|                                   | apply).                           |
+|                                   |                                   |
+|                                   | Once the claim has come off hold: |
+|                                   |                                   |
+|                                   | -   Carer has contacted and       |
+|                                   |     wishes to continue with CP    |
+|                                   |     claim: continue processing    |
+|                                   |     Age Pension to CP transfer    |
+|                                   | -   Carer wishes to withdraw      |
+|                                   |     their CP claim: see           |
+|                                   |     Withdrawal of claims.         |
+|                                   |     Customer will remain on Age   |
+|                                   |     Pension. Process any CA claim |
+|                                   |     as required                   |
+|                                   | -   Carer has failed to contact:  |
+|                                   |     reject claim Failed to Reply  |
+|                                   |     to Correspondence (FRC), see  |
+|                                   |     Rejecting a Carer Payment     |
+|                                   |     (CP) claim. Customer will     |
+|                                   |     remain on Age Pension         |
 |                                   |                                   |
 |                                   | JobSeeker Payment (JSP) to CP     |
 |                                   | transfers                         |
@@ -1589,9 +1599,14 @@ only.
 |                                   |     exceed the amount of JSP paid |
 |                                   |     for the period of             |
 |                                   |     entitlement. If this does not |
-|                                   |     occur, contact the Level 2    |
-|                                   |     Policy Help Desk              |
-|                                   | -   if CP entitlement CP ceased   |
+|                                   |     occur, obtain Technical Peer  |
+|                                   |     Support (TPS) and/or Service  |
+|                                   |     Support Officer (SSO)         |
+|                                   |     assistance. If required, send |
+|                                   |     a request to the Level 2      |
+|                                   |     Policy Help Desk with arrears |
+|                                   |     and error information         |
+|                                   | -   if CP entitlement ceased      |
 |                                   |     before the date of claim      |
 |                                   |     processing, ensure there is   |
 |                                   |     no overpayment from the date  |
@@ -2047,63 +2062,248 @@ Table 6
 | 1                                 | Multiple claims lodged for CP +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
+|                                   | Multiple claims occur when:       |
+|                                   |                                   |
+|                                   | -   a carer has submitted a claim |
+|                                   |     for CP for 2 or more care     |
+|                                   |     receivers, or                 |
+|                                   | -   a carer is already current    |
+|                                   |     for CP and has submitted a    |
+|                                   |     claim for CP for a new care   |
+|                                   |     receiver                      |
+|                                   |                                   |
 |                                   | Has the carer lodged multiple     |
 |                                   | claims for CP?                    |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 2             |
-|                                   | -   No, but the carer requests a  |
-|                                   |     review of a decision to       |
-|                                   |     reject a previous claim for   |
-|                                   |     CP and/or CA. Go to Step 5    |
+|                                   | -   No, but the carer has         |
+|                                   |     submitted a CP and/or CA      |
+|                                   |     claim as a request for a      |
+|                                   |     review of a decision, after   |
+|                                   |     the rejection of a previous   |
+|                                   |     claim for CP and/or CA. Go to |
+|                                   |     Step 7                        |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Check if carer qualifies for CP + |
 |                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Determine if the carer will       |
+|                                   | qualify for CP for the care       |
+|                                   | receivers by checking:            |
+|                                   |                                   |
+|                                   | -   the carer provides constant   |
+|                                   |     care on a daily basis, and    |
+|                                   | -   the THP and ADAT scores for   |
+|                                   |     the care receivers being      |
+|                                   |     claimed for                   |
+|                                   |                                   |
+|                                   | Provisionally code the care       |
+|                                   | receiver’s medical and care       |
+|                                   | details, within the new claim/SOA |
+|                                   | if possible.                      |
+|                                   |                                   |
+|                                   | Where the carer is already CP     |
+|                                   | current, the medical and care     |
+|                                   | details coding needs to be        |
+|                                   | completed in an activity outside  |
+|                                   | of the claim (in Customer First   |
+|                                   | or Customer Record). See Claiming |
+|                                   | Carer Payment (CP) and/or Carer   |
+|                                   | Allowance (CA).                   |
 |                                   |                                   |
 |                                   | Will the carer qualify for CP in  |
 |                                   | respect of more than one of the   |
 |                                   | care receivers?                   |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 3             |
-|                                   | -   No, go to Step 4              |
+|                                   | -   No, go to Step 6              |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Check who carer is claiming for + |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | If a carer lodges multiple claims |
-|                                   | for CP for 2 or more care         |
-|                                   | receivers, determine who the      |
-|                                   | carer is claiming for.            |
+|                                   | If a carer has lodged multiple    |
+|                                   | claims for CP for 2 or more       |
+|                                   | qualifying care receivers, the    |
+|                                   | carer must be the person who      |
+|                                   | decides who the carer is claiming |
+|                                   | for.                              |
 |                                   |                                   |
-|                                   | Has the carer identified the care |
-|                                   | receiver they want to claim CP    |
-|                                   | for?                              |
+|                                   | Make genuine attempts to contact  |
+|                                   | the carer by phone to discuss:    |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
-|                                   | -   No, clarify with the carer.   |
-|                                   |     Go to Step 4                  |
+|                                   | -   the circumstances of the      |
+|                                   |     qualifying care receivers     |
+|                                   | -   that CP can be paid for only  |
+|                                   |     one care receiver             |
+|                                   | -   if change in care receiver,   |
+|                                   |     multiple care, or combined    |
+|                                   |     care applies                  |
+|                                   | -   possible entitlement to       |
+|                                   |     bereavement provisions (if    |
+|                                   |     applicable)                   |
+|                                   | -   who the carer wishes to       |
+|                                   |     continue a claim for CP for   |
+|                                   | -   if the carer wishes to        |
+|                                   |     withdraw the claim/s for the  |
+|                                   |     multiple CP care receivers    |
+|                                   |                                   |
+|                                   | Was phone contact successful?     |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, go to Step 4              |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Process claim + Read more ...     |
+| 4                                 | Send a QSS32 + Read more ...      |
 |                                   |                                   |
-|                                   | Process the claim(s) that will be |
-|                                   | rejected first, see Table 2.      |
+|                                   | If genuine contact attempts by    |
+|                                   | phone are unsuccessful, send a    |
+|                                   | QSS32 letter to the carer to      |
+|                                   | request contact. See Resources    |
+|                                   | for QSS32 instructions.           |
 |                                   |                                   |
-|                                   | If the claim which will be        |
-|                                   | granted was processed first:      |
+|                                   | Record details in the claim       |
+|                                   | progress Note or DOC on the       |
+|                                   | carer’s record:                   |
 |                                   |                                   |
-|                                   | -   DOC the reasons why the other |
-|                                   |     claims will be rejected       |
-|                                   | -   Record as much information as |
+|                                   | -   the multiple care receivers   |
+|                                   |     the carer is claiming for     |
+|                                   | -   the date and time of contact  |
+|                                   |     attempts made                 |
+|                                   | -   details of the QSS32 issued   |
+|                                   |     and questions asked           |
+|                                   | -   information to be discussed   |
+|                                   |     with the carer if they        |
+|                                   |     contact                       |
+|                                   |                                   |
+|                                   | Hold the claim for the required   |
+|                                   | response time (until day 22,      |
+|                                   | unless other wait time provisions |
+|                                   | apply)                            |
+|                                   |                                   |
+|                                   | Once the claim has come off hold, |
+|                                   | has the carer now identified the  |
+|                                   | care receiver they want to claim  |
+|                                   | CP for?                           |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, go to Step 6              |
++-----------------------------------+-----------------------------------+
+| 5                                 | Withdrawal + Read more ...        |
+|                                   |                                   |
+|                                   | Does the carer wish to withdraw   |
+|                                   | part of their claim or their      |
+|                                   | claim entirely?                   |
+|                                   |                                   |
+|                                   | -   Yes, see Withdrawal of claims |
+|                                   |     and process any remaining     |
+|                                   |     claim as required             |
+|                                   | -   No, if the carer does not     |
+|                                   |     wish to withdraw their        |
+|                                   |     claim/s for multiple care     |
+|                                   |     receiver/s, all claims need   |
+|                                   |     to be finalised               |
++-----------------------------------+-----------------------------------+
+| 6                                 | Process claim + Read more ...     |
+|                                   |                                   |
+|                                   | If the carer will not qualify for |
+|                                   | any of the care receivers, prior  |
+|                                   | to rejecting the claims, check if |
+|                                   | any of the following are          |
+|                                   | applicable:                       |
+|                                   |                                   |
+|                                   | -   Carer Payment (CP) (child)    |
+|                                   |     when caring for 2 to 4        |
+|                                   |     children each with a          |
+|                                   |     disability or medical         |
+|                                   |     condition (combined care)     |
+|                                   | -   Eligibility for Carer Payment |
+|                                   |     (CP) under the Lower Adult    |
+|                                   |     Disability Assessment (ADAT)  |
+|                                   |     Tool                          |
+|                                   | -   Carer Payment (CP) (child)    |
+|                                   |     when caring for a disabled    |
+|                                   |     adult and 1 or 2 children     |
+|                                   |     with a disability or medical  |
+|                                   |     condition (multiple care)     |
+|                                   |                                   |
+|                                   | This step is to be followed to:   |
+|                                   |                                   |
+|                                   | -   reject claims for             |
+|                                   |     non-qualifying care           |
+|                                   |     receivers, and                |
+|                                   | -   grant for one qualifying care |
+|                                   |     receiver, where required, or  |
+|                                   | -   reject claims 'failed to      |
+|                                   |     reply to correspondence       |
+|                                   |     (FRC)', when contact attempts |
+|                                   |     are unsuccessful              |
+|                                   |                                   |
+|                                   | For carers who have lodged a CP   |
+|                                   | claim for multiple care           |
+|                                   | receivers:                        |
+|                                   |                                   |
+|                                   | -   Multiple CP claims cannot be  |
+|                                   |     assessed in one claim,        |
+|                                   |     however all claims must be    |
+|                                   |     finalised                     |
+|                                   | -   Set the original claim to     |
+|                                   |     'Not required'                |
+|                                   | -   Create SOAs for and process   |
+|                                   |     the claim/s that will be      |
+|                                   |     rejected first                |
+|                                   | -   Code the claim details to     |
+|                                   |     reject using the              |
+|                                   |     non-qualifying reason or FRC  |
+|                                   |     as required. See Table 2 and  |
+|                                   |     Rejecting a CP claim          |
+|                                   | -   Contact the customer as per   |
+|                                   |     normal SOI attempts to        |
+|                                   |     contact in rejecting a CP     |
+|                                   | -   Where a grant is applicable,  |
+|                                   |     create and process a final    |
+|                                   |     SOA to grant CP for the       |
+|                                   |     qualifying care receiver      |
+|                                   |                                   |
+|                                   | For carers who are already CP     |
+|                                   | current or if the claim which     |
+|                                   | will be granted was processed     |
+|                                   | first:                            |
+|                                   |                                   |
+|                                   | -   A new CP claim cannot be      |
+|                                   |     indexed/ finalised            |
+|                                   | -   The outcome is considered as  |
+|                                   |     'Rejected'                    |
+|                                   | -   Record details of the claim   |
+|                                   |     and non-qualifying care       |
+|                                   |     receiver or FRC rejection in  |
+|                                   |     a Note or DOC on the record.  |
+|                                   |     Record as much information as |
 |                                   |     possible                      |
-|                                   | -   Tell the customer that        |
-|                                   |     although CP will be granted,  |
-|                                   |     their other claim(s) for CP   |
-|                                   |     will be rejected              |
-|                                   | -   Send a Q134 manual advice.    |
-|                                   |     See Creating a Q134 letter    |
+|                                   | -   Contact the customer as per   |
+|                                   |     normal SOI attempts to        |
+|                                   |     contact in rejecting a CP     |
+|                                   | -   Send a Q134 manual advice     |
 |                                   | -   Set the claim to 'Not         |
 |                                   |     Required'                     |
+|                                   |                                   |
+|                                   | Was the carer already CP current  |
+|                                   | and has failed to reply to        |
+|                                   | correspondence regarding the      |
+|                                   | lodgement of a claim for a        |
+|                                   | multiple care receiver?           |
+|                                   |                                   |
+|                                   | -   Yes, a review must be         |
+|                                   |     commenced on the carer’s      |
+|                                   |     record to confirm they are    |
+|                                   |     still providing care to the   |
+|                                   |     initial care receiver. Follow |
+|                                   |     Reviews of Carer Payment (CP) |
+|                                   |     and/or Carer Allowance (CA).  |
+|                                   |     If there is no response to    |
+|                                   |     the review, see Cancellation  |
+|                                   |     of Carer Payment (CP)         |
+|                                   | -   No, procedure ends here       |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Carer requests a review of a      |
+| 7                                 | Carer requests a review of a      |
 |                                   | rejected claim + Read more ...    |
 |                                   |                                   |
 |                                   | Check if the claim will be        |
@@ -2120,7 +2320,7 @@ Table 6
 |                                   | Will the claim be granted as a    |
 |                                   | result of the request for review? |
 |                                   |                                   |
-|                                   | Yes, go to Step 6                 |
+|                                   | Yes, follow Step 6 in this table  |
 |                                   |                                   |
 |                                   | No:                               |
 |                                   |                                   |
@@ -2128,34 +2328,6 @@ Table 6
 |                                   |     claim, and                    |
 |                                   | -   proceed with the request for  |
 |                                   |     review                        |
-+-----------------------------------+-----------------------------------+
-| 6                                 | Contact the customer + Read more  |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | Contact the customer and explain  |
-|                                   | the payment will be granted based |
-|                                   | on the previous claim.            |
-|                                   |                                   |
-|                                   | Does the customer wish to         |
-|                                   | withdraw their current claim?     |
-|                                   |                                   |
-|                                   | Yes:                              |
-|                                   |                                   |
-|                                   | -   reassess previous claim, and  |
-|                                   | -   for the current claim, see    |
-|                                   |     Withdrawal of claims          |
-|                                   |                                   |
-|                                   | No:                               |
-|                                   |                                   |
-|                                   | -   reassess previous claim       |
-|                                   | -   DOC the reasons why the       |
-|                                   |     current claim will be         |
-|                                   |     rejected                      |
-|                                   | -   record as much information as |
-|                                   |     possible                      |
-|                                   | -   send a manual advice, and     |
-|                                   | -   set the claim to 'Not         |
-|                                   |     Required'                     |
 +-----------------------------------+-----------------------------------+
 
                                    

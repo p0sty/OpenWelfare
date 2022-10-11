@@ -1,8 +1,6 @@
 
 Change of care for Family Tax Benefit (FTB) 007-07040070
 
-[Expand/Collapse all sections]Expand all
-
 -   Background
 -   Process Summary
 -   Process
@@ -10,8 +8,13 @@ Change of care for Family Tax Benefit (FTB) 007-07040070
 -   Resources
 -   Training & Support
 
+[Expand/Collapse all sections]Expand all
+
 For Families and Child Care Smart Centre and Medicare Processing staff
 only.
+
+Staff trained in processing families claims in Process Direct follow the
+Process Direct coding.
 
 On this Page:
 
@@ -70,19 +73,29 @@ Table 1
 |                                   | Do not provide any details to the |
 |                                   | notifying carer.                  |
 |                                   |                                   |
-|                                   | If unsuccessful, issue a Q777 -   |
-|                                   | Request for documents to be       |
-|                                   | provided by the customer and      |
-|                                   | FA012 - Details of the customer's |
-|                                   | child's care arrangements to the  |
-|                                   | claimant requesting care          |
-|                                   | information. Where the customer   |
-|                                   | does not respond, see Not         |
-|                                   | effective claims or withdrawal of |
-|                                   | claim for Family Tax Benefit or   |
-|                                   | Stillborn Baby Payment. The       |
-|                                   | Resources page contains a list of |
-|                                   | titles for letters and forms.     |
+|                                   | If unsuccessful, for claims being |
+|                                   | processed in:                     |
+|                                   |                                   |
+|                                   | -   Process Direct send a Request |
+|                                   |     for Information as per        |
+|                                   |     Information requests for FTB, |
+|                                   |     PPL and DAP claims and Add    |
+|                                   |     Newborn activities            |
+|                                   | -   Customer First issue a Q777 - |
+|                                   |     Request for documents to be   |
+|                                   |     provided by the customer and  |
+|                                   |     FA012 - Details of the        |
+|                                   |     customer's child's care       |
+|                                   |     arrangements to the claimant  |
+|                                   |     requesting care information   |
+|                                   |                                   |
+|                                   | Where the customer does not       |
+|                                   | respond, see Not effective claims |
+|                                   | or withdrawal of claim for Family |
+|                                   | Tax Benefit or Stillborn Baby     |
+|                                   | Payment. The Resources page       |
+|                                   | contains a list of titles for     |
+|                                   | letters and forms.                |
 |                                   |                                   |
 |                                   | When care information is          |
 |                                   | received, check the Care          |
@@ -335,7 +348,7 @@ Table 2
 |                                   |     3                             |
 |                                   | -   is in disagreement over the   |
 |                                   |     care arrangements, go to Step |
-|                                   |     6                             |
+|                                   |     8                             |
 |                                   |                                   |
 |                                   | No, go to Step 4                  |
 +-----------------------------------+-----------------------------------+
@@ -355,27 +368,35 @@ Table 2
 | 4                                 | Request information + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | Run the Child Change in Care      |
-|                                   | Arrangements script to issue the  |
-|                                   | gaining carer with a Q810 - Your  |
-|                                   | care arrangement - Request for    |
+|                                   | For claims being actioned in:     |
+|                                   |                                   |
+|                                   | Process Direct, send an RFI as    |
+|                                   | per Information requests for FTB, |
+|                                   | PPL and DAP claims and Add        |
+|                                   | Newborn activities                |
+|                                   |                                   |
+|                                   | Customer First, run the Child     |
+|                                   | Change in Care Arrangements       |
+|                                   | script to issue the gaining carer |
+|                                   | with a Q810 - Your care           |
+|                                   | arrangement - Request for         |
 |                                   | information for change in care.   |
 |                                   | Where the customer also receives  |
 |                                   | an income support payment, ensure |
 |                                   | the 'FTB and ISP' radio box is    |
-|                                   | selected within the Q810.         |
+|                                   | selected within the Q810          |
 |                                   |                                   |
-|                                   | Note: the script cannot be used   |
-|                                   | for Child Care Subsidy (CCS) only |
-|                                   | customers. If the customer or     |
-|                                   | losing carer is getting CCS only: |
-|                                   |                                   |
-|                                   | -   send the approved manual Q888 |
-|                                   |     CCS ACCS RFI letter           |
-|                                   | -   include Details of your       |
+|                                   | -   The script cannot be used for |
+|                                   |     Child Care Subsidy (CCS) only |
+|                                   |     customers.                    |
+|                                   |     If the customer or losing     |
+|                                   |     carer is getting CCS only,    |
+|                                   |     send the approved manual Q888 |
+|                                   |     CCS ACCS RFI letter.          |
+|                                   |     Include Details of your       |
 |                                   |     child's care arrangements     |
 |                                   |     (FA012) if issuing a Q888 to  |
-|                                   |     losing carer                  |
+|                                   |     losing carer.                 |
 |                                   |                                   |
 |                                   | If the losing carer is FTB        |
 |                                   | current, run the Child - Change   |
@@ -492,14 +513,15 @@ Table 2
 |                                   |                                   |
 |                                   | Go to Step 5.                     |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Return of Q810/Q999 + Read more   |
-|                                   | ...                               |
+| 5                                 | Return of RFI/Q810/Q999 + Read    |
+|                                   | more ...                          |
 |                                   |                                   |
 |                                   | Evidence not returned within      |
 |                                   | allowable time frame:             |
 |                                   |                                   |
 |                                   | If there is still no response     |
-|                                   | received from either carer:       |
+|                                   | received from either carer in     |
+|                                   | Customer First:                   |
 |                                   |                                   |
 |                                   | -   Cancel the FTB for the losing |
 |                                   |     carer, reason 'FRC ' (Failed  |
@@ -591,7 +613,7 @@ Table 2
 |                                   | identify areas of disagreement    |
 |                                   | (if any). If:                     |
 |                                   |                                   |
-|                                   | -   disagreed, go to Step 6       |
+|                                   | -   disagreed, go to Step 8       |
 |                                   | -   no disagreements, assess the  |
 |                                   |     change of care. See Step 1 in |
 |                                   |     Table 3                       |
@@ -617,6 +639,93 @@ Table 2
 |                                   | contains example text for the     |
 |                                   | Q999. Document the decision in a  |
 |                                   | Fast Note.                        |
+|                                   |                                   |
+|                                   | For claims being processed in:    |
+|                                   |                                   |
+|                                   | -   Process Direct go to Step 6   |
+|                                   | -   Customer First go to Step 7   |
++-----------------------------------+-----------------------------------+
+| 6                                 | Claims in Process Direct + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | On the losing carer’s record:     |
+|                                   |                                   |
+|                                   | -   Key Start into the Super Key  |
+|                                   | -   Select the Families - Care    |
+|                                   |     Assessments workflow from the |
+|                                   |     Task Selector                 |
+|                                   | -   Select the relevant child     |
+|                                   |     from the Relations menu       |
+|                                   | -   Go to the Shared Care         |
+|                                   |     Assessment (SCA) screen       |
+|                                   | -   On the FTB Shared Care (FSC)  |
+|                                   |     table, update existing shared |
+|                                   |     care percentage to nil from   |
+|                                   |     date left care                |
+|                                   | -   On SSA Shared Care (SSC)      |
+|                                   |     table, update existing shared |
+|                                   |     care percentage to nil from   |
+|                                   |     date left care                |
+|                                   | -   On the Care Alignment Details |
+|                                   |     (CADDS) screen update the     |
+|                                   |     Care Assessment field to      |
+|                                   |     Finalised                     |
+|                                   | -   Record the child out of care  |
+|                                   |     on the Child in Care (CHC)    |
+|                                   |     screen                        |
+|                                   | -   Select the losing carer’s     |
+|                                   |     record from the Relations     |
+|                                   |     menu                          |
+|                                   | -   Update the Principal Carer    |
+|                                   |     Circumstances Details (PCCD)  |
+|                                   |     screen for income support     |
+|                                   |     payments (if required)        |
+|                                   | -   Child changes recorded on 1   |
+|                                   |     customer's record will ripple |
+|                                   |     to other customers linked to  |
+|                                   |     the child                     |
+|                                   | -   Check the customer and child  |
+|                                   |     environment, and transfer to  |
+|                                   |     the correct environment where |
+|                                   |     appropriate. Check the        |
+|                                   |     child's home environment on   |
+|                                   |     the Inter Environment         |
+|                                   |     Transfer (ICOA) screen in     |
+|                                   |     Process Direct. For help with |
+|                                   |     transferring, see Process     |
+|                                   |     Direct navigation, common     |
+|                                   |     screens and functions         |
+|                                   | -   Once all updates are          |
+|                                   |     complete, on the SWE screen   |
+|                                   |     select Assess                 |
+|                                   | -   Once satisfied with the       |
+|                                   |     outcome, on the Entitlement   |
+|                                   |     (ELD) screen select Finalise  |
+|                                   | -   Ensure that the following     |
+|                                   |     information is recorded on    |
+|                                   |     the finalisation Note - 'the  |
+|                                   |     customer was sent a Q810/Q999 |
+|                                   |     and FA012 on [date] to        |
+|                                   |     confirm the change of care,   |
+|                                   |     the customer failed to        |
+|                                   |     respond by [date], phone      |
+|                                   |     contact was attempted on      |
+|                                   |     [date] and that the contact   |
+|                                   |     was unsuccessful. Therefore   |
+|                                   |     [child/ren's names] have been |
+|                                   |     removed from care from        |
+|                                   |     [date].' The Resources page   |
+|                                   |     contains a list of titles for |
+|                                   |     letters and forms             |
+|                                   | -   Update the gaining carer's    |
+|                                   |     record. See Step 2 in Table 3 |
+|                                   |                                   |
+|                                   | Note: do not grant the gaining    |
+|                                   | carer until there is enough       |
+|                                   | evidence to support the decision  |
++-----------------------------------+-----------------------------------+
+| 7                                 | Claims in Customer First + Read   |
+|                                   | more ...                          |
 |                                   |                                   |
 |                                   | On the losing carer's record:     |
 |                                   |                                   |
@@ -683,7 +792,7 @@ Table 2
 |                                   | carer until there is enough       |
 |                                   | evidence to support the decision. |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Disagreement over change of       |
+| 8                                 | Disagreement over change of       |
 |                                   | care + Read more ...              |
 |                                   |                                   |
 |                                   | Was evidence for change of care   |
@@ -701,7 +810,7 @@ Table 2
 |                                   | -   does not respond to the       |
 |                                   |     request for information, or   |
 |                                   |     the care is disagreed, go to  |
-|                                   |     Step 8                        |
+|                                   |     Step 10                       |
 |                                   | -   responds to the request for   |
 |                                   |     information and/or there is a |
 |                                   |     dispute in relation to the    |
@@ -711,9 +820,9 @@ Table 2
 |                                   |     disputed care and/or the      |
 |                                   |     customer is in hardship       |
 |                                   |                                   |
-|                                   | No, go to Step 7                  |
+|                                   | No, go to Step 9                  |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Request evidence + Read more ...  |
+| 9                                 | Request evidence + Read more ...  |
 |                                   |                                   |
 |                                   | Ask the customer and previous     |
 |                                   | carer to provide any available    |
@@ -721,12 +830,16 @@ Table 2
 |                                   | care arrangements or change of    |
 |                                   | care within 14 days.              |
 |                                   |                                   |
-|                                   | Run the Child - Change in Care    |
-|                                   | Arrangements script to create the |
-|                                   | Q810 letter requesting evidence   |
-|                                   | of the care arrangements. Note:   |
+|                                   | For processing in:                |
 |                                   |                                   |
-|                                   | -   where the customer also       |
+|                                   | Customer First                    |
+|                                   |                                   |
+|                                   | -   Run the Child - Change in     |
+|                                   |     Care Arrangements script to   |
+|                                   |     create the Q810 letter        |
+|                                   |     requesting evidence of the    |
+|                                   |     care arrangements             |
+|                                   | -   Where the customer also       |
 |                                   |     receives an income support    |
 |                                   |     payment, ensure the 'FTB and  |
 |                                   |     ISP' radio box is selected    |
@@ -734,9 +847,16 @@ Table 2
 |                                   |     relevant privacy issues when  |
 |                                   |     referring to the other carer  |
 |                                   |     in the letter                 |
-|                                   | -   the script cannot be used for |
+|                                   | -   The script cannot be used for |
 |                                   |     Child Care Subsidy (CCS) only |
 |                                   |     customers                     |
+|                                   |                                   |
+|                                   | Process Direct:                   |
+|                                   |                                   |
+|                                   | -   send an RFI see Information   |
+|                                   |     requests for FTB, PPL and DAP |
+|                                   |     claims and Add Newborn        |
+|                                   |     activities                    |
 |                                   |                                   |
 |                                   | If the customer or losing carer   |
 |                                   | is getting CCS only:              |
@@ -759,7 +879,7 @@ Table 2
 |                                   | not FTB current and has an        |
 |                                   | existing Centrelink record:       |
 |                                   |                                   |
-|                                   | -   issue a Q999 letter with a    |
+|                                   | -   Issue a Q999 letter with a    |
 |                                   |     Details of your child's care  |
 |                                   |     arrangements (FA012) from     |
 |                                   |     their record                  |
@@ -773,7 +893,7 @@ Table 2
 |                                   | create a record for the losing    |
 |                                   | carer:                            |
 |                                   |                                   |
-|                                   | -   a record should be created    |
+|                                   | -   A record should be created    |
 |                                   |     and the children linked to    |
 |                                   |     the new record. See Adding a  |
 |                                   |     customer to the system and    |
@@ -790,7 +910,7 @@ Table 2
 |                                   | enough information to create a    |
 |                                   | record for the losing carer:      |
 |                                   |                                   |
-|                                   | -   issue a Q999 letter with a    |
+|                                   | -   Issue a Q999 letter with a    |
 |                                   |     Details of your child's care  |
 |                                   |     arrangements (FA012) from the |
 |                                   |     gaining carer's record as a   |
@@ -807,7 +927,7 @@ Table 2
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Disagreement over care            |
+| 10                                | Disagreement over care            |
 |                                   | arrangements + Read more ...      |
 |                                   |                                   |
 |                                   | All Disagreed Care assessments    |
@@ -825,10 +945,11 @@ Table 2
 |                                   | -   If there is no started        |
 |                                   |     activity on the Activity List |
 |                                   |     (AL) screen, re-index/create  |
-|                                   |     a new activity with the       |
-|                                   |     appropriate service reason,   |
-|                                   |     source and type, for example  |
-|                                   |     'NCL' or 'Add Child', and add |
+|                                   |     a new activity in Customer    |
+|                                   |     First with the appropriate    |
+|                                   |     service reason, source and    |
+|                                   |     type, for example 'NCL' or    |
+|                                   |     'Add Child', and add          |
 |                                   |     Keywords: 'DISAGREE' and      |
 |                                   |     'COCARE'                      |
 |                                   | -   If actioning an FA012, the    |
@@ -852,11 +973,11 @@ Table 2
 |                                   |     staff                         |
 |                                   | -   Create a DOA DOC using the    |
 |                                   |     Fast Note on the records of   |
-|                                   |     all parties, with an expiry   |
-|                                   |     date of 28 days. Select Auto  |
-|                                   |     Text. Use Families >          |
-|                                   |     Enquiry > Disagreed Care in   |
-|                                   |     Progress                      |
+|                                   |     all parties in Customer       |
+|                                   |     First, with an expiry date of |
+|                                   |     28 days. Select Auto Text.    |
+|                                   |     Use Families > Enquiry >      |
+|                                   |     Disagreed Care in Progress    |
 |                                   |                                   |
 |                                   | For customers experiencing        |
 |                                   | financial hardship or who are a   |
@@ -870,22 +991,21 @@ Table 2
 |                                   | before the due date of the        |
 |                                   | request for evidence.             |
 |                                   |                                   |
-|                                   | -   Use Fast Note auto text       |
-|                                   |     Families > Enquiry > Disagree |
-|                                   |     Care Urgent Esc.              |
+|                                   | -   Use Fast Note select Auto     |
+|                                   |     Text use Families > Enquiry > |
+|                                   |     Disagree Care Urgent Esc.     |
 |                                   |     Note: the 'Disagree Care      |
 |                                   |     Urgent Esc' auto text         |
 |                                   |     automatically adds the        |
 |                                   |     keywords URGENT and DISAGREE. |
-|                                   |     These do not need to be       |
-|                                   |     added.                        |
+|                                   |     These do not need to be added |
 |                                   |                                   |
 |                                   | Centrelink staff - Procedure ends |
 |                                   | here.                             |
 |                                   |                                   |
-|                                   | CSSC staff - go to Step 9.        |
+|                                   | CSSC staff - go to Step 11.       |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Appropriately skilled CSSC action |
+| 11                                | Appropriately skilled CSSC action |
 |                                   | required for Disagreed care +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
@@ -972,12 +1092,69 @@ Table 3
 |                                   | record.                           |
 |                                   |                                   |
 |                                   | If the child is a customer with a |
-|                                   | PER record, go to Step 4.         |
+|                                   | PER record and the update is in   |
+|                                   | Customer First, go to Step 4.     |
 |                                   |                                   |
 |                                   | Otherwise, in the losing carer's  |
 |                                   | record, complete updates in the   |
 |                                   | following order using the correct |
 |                                   | DOR when applying care decisions: |
+|                                   |                                   |
+|                                   | Process Direct                    |
+|                                   |                                   |
+|                                   | -   Key Start into the Super Key  |
+|                                   | -   Select the Families - Care    |
+|                                   |     Assessments workflow from the |
+|                                   |     Task Selector                 |
+|                                   | -   Select the relevant child     |
+|                                   |     from the Relations menu       |
+|                                   | -   Navigate to the Shared Care   |
+|                                   |     Assessment (SCA) screen       |
+|                                   | -   On the FTB Shared Care (FSC)  |
+|                                   |     table, update existing shared |
+|                                   |     care percentage to nil from   |
+|                                   |     date left care                |
+|                                   | -   On SSA Shared Care (SSC)      |
+|                                   |     table, update existing shared |
+|                                   |     care percentage to nil from   |
+|                                   |     date left care                |
+|                                   | -   On the Care Alignment Details |
+|                                   |     (CADDS) screen update the     |
+|                                   |     Care Assessment field to      |
+|                                   |     Finalised                     |
+|                                   | -   Record the child out of care  |
+|                                   |     on the Child in Care (CHC)    |
+|                                   |     screen                        |
+|                                   | -   Select the losing carer’s     |
+|                                   |     record from the Relations     |
+|                                   |     menu                          |
+|                                   | -   Update the Principal Carer    |
+|                                   |     Circumstances Details (PCCD)  |
+|                                   |     screen for income support     |
+|                                   |     payments (if required)        |
+|                                   | -   Child changes recorded on 1   |
+|                                   |     customer's record will ripple |
+|                                   |     to other customers linked to  |
+|                                   |     the child                     |
+|                                   | -   Check the customer and child  |
+|                                   |     environment, and transfer to  |
+|                                   |     the correct environment where |
+|                                   |     appropriate. Check the        |
+|                                   |     child's home environment on   |
+|                                   |     the Inter Environment         |
+|                                   |     Transfer (ICOA) screen in     |
+|                                   |     Process Direct. For help with |
+|                                   |     transferring, see Process     |
+|                                   |     Direct navigation, common     |
+|                                   |     screens and functions         |
+|                                   | -   Once all updates are          |
+|                                   |     complete, on the SWE screen   |
+|                                   |     select Assess                 |
+|                                   | -   Once satisfied with the       |
+|                                   |     outcome, on the Entitlement   |
+|                                   |     (ELD) screen select Finalise  |
+|                                   |                                   |
+|                                   | Customer First                    |
 |                                   |                                   |
 |                                   | -   on the FTB Shared Care (FSC)  |
 |                                   |     screen, update existing       |
@@ -994,11 +1171,28 @@ Table 3
 |                                   | -   record the child out of care  |
 |                                   |     on the Child in Care (CHC)    |
 |                                   |     screen                        |
-|                                   |                                   |
-|                                   | Child changes recorded on 1       |
-|                                   | customer's record will 'ripple'   |
-|                                   | to other customers linked to the  |
-|                                   | child.                            |
+|                                   | -   If the child's record is in a |
+|                                   |     different environment to the  |
+|                                   |     losing carer's record the     |
+|                                   |     coding of left care must be   |
+|                                   |     completed in the environment  |
+|                                   |     in which the child's Customer |
+|                                   |     Reference Number (CRN) is     |
+|                                   |     located                       |
+|                                   | -   The child's home environment  |
+|                                   |     can be determined by          |
+|                                   |     conducting an index search    |
+|                                   |     for the child via the Name    |
+|                                   |     Search (IN) screen. The       |
+|                                   |     National Index Name Search    |
+|                                   |     (IL) screen will then         |
+|                                   |     indicate which environment    |
+|                                   |     the child's record is located |
+|                                   |     in                            |
+|                                   | -   Child changes recorded on 1   |
+|                                   |     customer's record will        |
+|                                   |     'ripple' to other customers   |
+|                                   |     linked to the child.          |
 |                                   |                                   |
 |                                   | If the losing carer is deceased,  |
 |                                   | the updates should be undertaken  |
@@ -1024,29 +1218,11 @@ Table 3
 |                                   | changes of 100 per cent or nil    |
 |                                   | care).                            |
 |                                   |                                   |
-|                                   | If the child's record is in a     |
-|                                   | different environment to the      |
-|                                   | losing carer's record the coding  |
-|                                   | of left care must be completed in |
-|                                   | the environment in which the      |
-|                                   | child's Customer Reference Number |
-|                                   | (CRN) is located.                 |
-|                                   |                                   |
-|                                   | The child's home environment can  |
-|                                   | be determined by conducting an    |
-|                                   | index search for the child via    |
-|                                   | the Name Search (IN) screen. The  |
-|                                   | National Index Name Search (IL)   |
-|                                   | screen will then indicate which   |
-|                                   | environment the child's record is |
-|                                   | located in.                       |
-|                                   |                                   |
-|                                   | Note: if the child is attracting  |
-|                                   | Carer Payment and/or Carer        |
-|                                   | Allowance, appropriately trained  |
-|                                   | carer staff will still need to    |
-|                                   | complete a reassessment of        |
-|                                   | eligibility. Use                  |
+|                                   | If the child is attracting Carer  |
+|                                   | Payment and/or Carer Allowance,   |
+|                                   | appropriately trained carer staff |
+|                                   | will still need to complete a     |
+|                                   | reassessment of eligibility. Use  |
 |                                   |                                   |
 |                                   | Fast Note to send a request for   |
 |                                   | the Carer Payment and/or Carer    |
@@ -1056,8 +1232,63 @@ Table 3
 |                                   | Families > Updates > CA/CP        |
 |                                   | referral - check eligibility.     |
 +-----------------------------------+-----------------------------------+
-| 2                                 | In the gaining carer's record +   |
-|                                   | Read more ...                     |
+| 2                                 | In the gaining carer's record     |
+|                                   |                                   |
+|                                   | Process Direct + Read more ...    |
+|                                   |                                   |
+|                                   | -   Key Start into the Super Key  |
+|                                   | -   Select the Families - Care    |
+|                                   |     Assessments workflow from the |
+|                                   |     Task Selector                 |
+|                                   | -   Select the relevant child     |
+|                                   |     from the Relations menu       |
+|                                   | -   Record the child in care on   |
+|                                   |     the Child in Care (CHC)       |
+|                                   |     screen                        |
+|                                   | -   Navigate to the Shared Care   |
+|                                   |     Assessment (SCA) screen       |
+|                                   | -   On the FTB Shared Care (FSC)  |
+|                                   |     table, update shared care     |
+|                                   |     percentage                    |
+|                                   | -   On SSA Shared Care (SSC)      |
+|                                   |     table, update shared care     |
+|                                   |     percentage                    |
+|                                   | -   On the Care Alignment Details |
+|                                   |     (CADDS) screen update the     |
+|                                   |     Care Assessment field to      |
+|                                   |     Finalised                     |
+|                                   | -   Select the gaining carer’s    |
+|                                   |     record from the Relations     |
+|                                   |     menu                          |
+|                                   | -   Update the Principal Carer    |
+|                                   |     Circumstances Details (PCCD)  |
+|                                   |     screen for income support     |
+|                                   |     payments (if required)        |
+|                                   | -   Child changes recorded on 1   |
+|                                   |     customer's record will ripple |
+|                                   |     to other customers linked to  |
+|                                   |     the child                     |
+|                                   | -   Check the customer and child  |
+|                                   |     environment, and transfer to  |
+|                                   |     the correct environment where |
+|                                   |     appropriate. Check the        |
+|                                   |     child's home environment on   |
+|                                   |     the Inter Environment         |
+|                                   |     Transfer (ICOA) screen in     |
+|                                   |     Process Direct. For help with |
+|                                   |     transferring, see Process     |
+|                                   |     Direct navigation, common     |
+|                                   |     screens and functions         |
+|                                   | -   Once all updates are          |
+|                                   |     complete, on the SWE screen   |
+|                                   |     select Assess                 |
+|                                   | -   Once satisfied with the       |
+|                                   |     outcome, on the Entitlement   |
+|                                   |     (ELD) screen select Finalise  |
+|                                   |                                   |
+|                                   | Customer First                    |
+|                                   |                                   |
+|                                   | + Read more ...                   |
 |                                   |                                   |
 |                                   | Go to the Child Selection (CHS)   |
 |                                   | screen, 's'elect the relevant     |
@@ -1111,10 +1342,14 @@ Table 3
 +-----------------------------------+-----------------------------------+
 | 3                                 | Child a customer + Read more ...  |
 |                                   |                                   |
-|                                   | Is the child a customer?          |
+|                                   | Is the child a customer and the   |
+|                                   | updates are being completed in    |
+|                                   | Customer First?                   |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 4             |
-|                                   | -   No, go to Step 5              |
+|                                   | -   No, for child records or      |
+|                                   |     updating in Process Direct go |
+|                                   |     to Step 5                     |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Key the updates in the child's    |
 |                                   | PER record then return to the     |
@@ -1235,7 +1470,8 @@ Table 3
 |                                   |     corresponding to the carer in |
 |                                   |     Carer field                   |
 |                                   | -   on the FTB Shared Care (FSC)  |
-|                                   |     screen for family assistance  |
+|                                   |     screen/table for family       |
+|                                   |     assistance                    |
 |                                   | -   for mutual Centrelink and     |
 |                                   |     Child Support customers, if   |
 |                                   |     the child is entering the     |
@@ -1245,11 +1481,12 @@ Table 3
 |                                   |     key 'Y' in the More than 2    |
 |                                   |     carers field                  |
 |                                   | -   on the SSA Shared Carer (SSC) |
-|                                   |     screen when the customer is   |
-|                                   |     in receipt of any income      |
-|                                   |     support payment. This will    |
-|                                   |     assess for the 'with child'   |
-|                                   |     rate for single customers     |
+|                                   |     screen/table when the         |
+|                                   |     customer is in receipt of any |
+|                                   |     income support payment. This  |
+|                                   |     will assess for the 'with     |
+|                                   |     child' rate for single        |
+|                                   |     customers                     |
 |                                   | -   on the Principal Carer        |
 |                                   |     Circumstances Details (PCCD)  |
 |                                   |     screen (in NSS system) for    |
@@ -1310,11 +1547,11 @@ Table 3
 |                                   |     complete an online claim for  |
 |                                   |     family assistance             |
 |                                   | -   If the attempt to contact the |
-|                                   |     customer is unsuccessful,     |
-|                                   |     issue a Q369 letter - Invite  |
-|                                   |     to claim for Family           |
-|                                   |     Assistance and Parental Leave |
-|                                   |     Pay                           |
+|                                   |     customer is unsuccessful, in  |
+|                                   |     Customer First issue a Q369   |
+|                                   |     letter - Invite to claim for  |
+|                                   |     Family Assistance and         |
+|                                   |     Parental Leave Pay            |
 |                                   |                                   |
 |                                   | is already an FTB customer, see   |
 |                                   | Reassessment of Family Tax        |
@@ -1348,10 +1585,6 @@ Table 3
 |                                   | parent's record to the biological |
 |                                   | parent.                           |
 |                                   |                                   |
-|                                   | Run the Child - Change in Care    |
-|                                   | Arrangements script to create the |
-|                                   | appropriate letter.               |
-|                                   |                                   |
 |                                   | A Q807 SSA Shared Care Principal  |
 |                                   | Carer Determination letter must   |
 |                                   | be sent to all carers in a shared |
@@ -1359,15 +1592,25 @@ Table 3
 |                                   | one carer is claiming/receiving   |
 |                                   | an income support payment.        |
 |                                   |                                   |
-|                                   | Run the Child - Change in Care    |
-|                                   | Arrangements script to create the |
-|                                   | Q807 SSA Shared Care Principal    |
-|                                   | Carer Letter.                     |
+|                                   | In Process Direct:                |
 |                                   |                                   |
-|                                   | Automatic letters must be sent to |
-|                                   | ensure the customer receives      |
-|                                   | advice of their new rate of       |
-|                                   | payment.                          |
+|                                   | -   Go to Correspondence (CORRO)  |
+|                                   |     screen                        |
+|                                   | -   Select the appropriate Care   |
+|                                   |     Assessment Outcome letter     |
+|                                   |     under the Issue               |
+|                                   |     Correspondence table          |
+|                                   |                                   |
+|                                   | In Customer First:                |
+|                                   |                                   |
+|                                   | -   Run the Child - Change in     |
+|                                   |     Care Arrangements script to   |
+|                                   |     create the appropriate letter |
+|                                   |                                   |
+|                                   | Automatic letters must also be    |
+|                                   | sent to ensure the customer       |
+|                                   | receives advice of their new rate |
+|                                   | of payment.                       |
 |                                   |                                   |
 |                                   | Any disclosure of                 |
 |                                   | personal/protected information    |
