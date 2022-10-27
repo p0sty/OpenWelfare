@@ -32,6 +32,32 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 21 October 2022                   | Information regarding all         |
+|                                   | domestic business class flights   |
+|                                   | taken by employees of Services    |
+|                                   | Australia between 1 July 2021 and |
+|                                   | 30 June 2022 (LEX 69541).         |
+|                                   |                                   |
+|                                   | 1 document released in full. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions:** N/A               |
++-----------------------------------+-----------------------------------+
+| 13 October 2022                   | COVID-19 Vaccine Claims Scheme    |
+|                                   | Dashboard - extracted as at 10    |
+|                                   | August 2022 (LEX 69615).          |
+|                                   |                                   |
+|                                   | 1 document released in full. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions:** N/A               |
++-----------------------------------+-----------------------------------+
 | 16 September 2022                 | Operational Blueprint documents   |
 |                                   | (LEX 67704):                      |
 |                                   |                                   |
@@ -2260,7 +2286,7 @@ us by:
 </div>
 :::
 
-Page last updated: 5 October 2022
+Page last updated: 27 October 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2268,7 +2294,7 @@ Page last updated: 5 October 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 26 October 2022 from
+This information was printed 27 October 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
