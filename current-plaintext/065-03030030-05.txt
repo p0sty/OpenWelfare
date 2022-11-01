@@ -1,0 +1,149 @@
+
+Rejecting a claim for Age Pension 065-03030030
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Example letter - Pension rejection letter for deceased customer
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Standard text for Q999 letters    |
+|                                   |                                   |
+|                                   | Note: this is for example only    |
+|                                   | and should not be used as a       |
+|                                   | template. Paragraphs advising     |
+|                                   | review and appeal rights should   |
+|                                   | be included.                      |
+|                                   |                                   |
+|                                   | Pension rejection letter for      |
+|                                   | deceased customer                 |
+|                                   |                                   |
+|                                   | Estate of the Late <customer's    |
+|                                   | name>                             |
+|                                   |                                   |
+|                                   | Address                           |
+|                                   |                                   |
+|                                   | Date                              |
+|                                   |                                   |
+|                                   | Dear Sir/Madam,                   |
+|                                   |                                   |
+|                                   | Please accept our sympathy on the |
+|                                   | recent loss of <customer's name>. |
+|                                   | We realise that this is not a     |
+|                                   | good time to discuss payments but |
+|                                   | it is important that we advise    |
+|                                   | you of the outcome of <customer's |
+|                                   | name> claim for Age Pension       |
+|                                   |                                   |
+|                                   | Unfortunately the Age Pension     |
+|                                   | claim for <customer's name> has   |
+|                                   | not been successful because (for  |
+|                                   | example, the (income/assets) used |
+|                                   | to assess the claim is/are over   |
+|                                   | the allowable (income/assets)     |
+|                                   | limit)                            |
+|                                   |                                   |
+|                                   | INFORMATION USED TO ASSESS THE    |
+|                                   | CLAIM                             |
+|                                   |                                   |
+|                                   | Total income $XXXXXX              |
+|                                   |                                   |
+|                                   | Total assets $XXXXXX              |
+|                                   |                                   |
+|                                   | This is an information notice     |
+|                                   | given under social security law   |
++-----------------------------------+-----------------------------------+
+
+Age Pension New Claim (submit and DOC) script workaround
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| Details                           | The Age Pension New Claim (Submit |
+|                                   | and DOC) script is run from       |
+|                                   | Customer Record when an Age       |
+|                                   | Pension claim is ready to be      |
+|                                   | submitted. The script will submit |
+|                                   | the activity and create a DOC     |
+|                                   | containing relevant information   |
+|                                   | from the record, including income |
+|                                   | and assets with the exception of  |
+|                                   | employment income. A DOC will     |
+|                                   | also be recorded on the partner's |
+|                                   | record if the partner is also     |
+|                                   | claiming Age Pension.             |
++-----------------------------------+-----------------------------------+
+| Issue                             | Upon completion of the script, a  |
+|                                   | 'Follow Up Action' item           |
+|                                   | 'Verification of Income and       |
+|                                   | Assets data' will present. Staff  |
+|                                   | must select 'Cancel: Do not       |
+|                                   | proceed with this step', to       |
+|                                   | ensure that a 'Risk based claim   |
+|                                   | management' DOC is not created on |
+|                                   | the record, as this Trial has     |
+|                                   | ceased. Removal of this DOC is    |
+|                                   | mandatory to ensure customer      |
+|                                   | records accurately reflect the    |
+|                                   | assessment method used and meet   |
+|                                   | Getting it Right (GIR) Minimum    |
+|                                   | Standards.                        |
++-----------------------------------+-----------------------------------+
+| Action required                   | Staff must apply the following    |
+|                                   | workarounds to inhibit the 'Risk  |
+|                                   | based claim management' DOC.      |
+|                                   |                                   |
+|                                   | Customer claiming (only) - Select |
+|                                   | Cancel the script once            |
+|                                   | Grant/Reject doc has been         |
+|                                   | generated. Select ok when message |
+|                                   | from pop-up 'Script error has     |
+|                                   | occurred' displays.               |
+|                                   |                                   |
+|                                   | Both customer and partner are     |
+|                                   | claiming (combined claim) - Do    |
+|                                   | not cancel the script until it    |
+|                                   | has created the Grant/Reject docs |
+|                                   | on both records. Once the script  |
+|                                   | has created the 2nd Grant/Reject  |
+|                                   | doc on the partner record, the    |
+|                                   | workaround is to be applied.      |
+|                                   |                                   |
+|                                   | This will result in an incorrect  |
+|                                   | Risk Based claim management DOC   |
+|                                   | on the customer's record which    |
+|                                   | must be deleted.                  |
++-----------------------------------+-----------------------------------+
+
+Online task inviting customers to claim the CSHC
+
+An online task will appear on a customer's Centrelink online account
+homepage inviting them to claim a Commonwealth Seniors Health Card
+(CSHC) if their Age Pension claim has been rejected due to any of the
+following reasons:
+
+-   INC - Excess income
+-   ASS - Assets over limit
+-   CMP - Precluded due to Compensation direct deductions or
+-   COM - Compensation preclusion period
+
+The online task will not appear for those customers who:
+
+-   are not yet Pension age
+-   already have a CSHC
+-   have submitted a claim for CSHC
+-   have had a CSHC claim rejected in the previous 13 weeks
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

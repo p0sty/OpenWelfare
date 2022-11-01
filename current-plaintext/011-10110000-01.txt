@@ -1,0 +1,182 @@
+
+Process pended claims in Australian Immunisation Register (AIR) 011-10110000
+
+-   Background
+-   Process
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+This document outlines how to process pended claims in the AIR.
+
+Pended claims
+
+An immunisation encounter or episode is pended when the system assesses
+the antigen, dose or registration detail and one or more of these do not
+meet the AIR business rules.
+
+Reason codes and explanations help AIR Service Officers understand why
+an encounter has pended and how to process it.
+
+Some codes (such as Pend 24: postcode/locality incompatible) are easily
+resolved. Some need clarification from the provider (such as Pend 103:
+duplicate antigen codes - different provider). Others need help from an
+AIR Programme Support Officer (PSO) or AIR Program Support.
+
+See Resources for a list of System reason codes and explanations.
+
+Pend processing
+
+AIR Site (WEB), bulk upload (IDI) and Practice Management (API) claims
+are online claims assessed automatically by the system. For more
+information, see the Data transmission methods table.
+
+The last character of a claim ID (!, %, +, @, *, &) provides information
+about the lodgement channel used, see Step 2 in the Identifying data
+lodgement methods table for details. Encounters that need to be assessed
+manually by Service Officers are placed in a pend queue and allocated a
+pend reason (RSN) code. Service Officers access the queue and process
+the pended encounters, preferably to an accepted (A) status. See the
+Action codes used in claims processing table for more information about
+codes.
+
+All pend processing occurs in AIR Mainframe.
+
+Service Officers can search for an individual or provider using:
+
+-   CDMS
+-   Provider Directory System (PDS)
+-   Customer First – Front of House (FOH)
+
+The pend (P) status cannot be manually overwritten with an A (accept)
+status by Service Officers. Only the system can allocate a status of A
+or P. An antigen or dose status can only move to an A status where a
+change is made to:
+
+-   the encounter or episode
+-   the individual's registration
+-   previous immunisation history
+
+Any of the above changes can result in reassessment of an episode. Where
+no change is made to the record, Service Officers may overwrite the pend
+status with an appropriate assessment code e.g. C and Y, R and Z, or X.
+See also: Action codes used in claims processing table.
+
+It is essential that records are accurate. If unsure what to do, or for
+complicated pends that need processing any of the below codes, always
+check:
+
+-   A - Data is within guidelines (system generated only)
+-   C and Y - Data is good, provider has clarified
+-   R and Z - Data should not be included on AIR (e.g. information
+    incorrect)
+
+Service Officers refer any scenarios that fall outside the standard pend
+processing guidelines to an AIR Programme Support Officer (PSO). The AIR
+PSO can escalate the scenario to AIR Program Support if necessary.
+
+See the Process page for how to reassess an episode.
+
+Pend error and warning messages (AIR)
+
+Reason codes and explanations help Service Officers understand why an
+episode or encounter has pended and how to process it.
+
+Error messages
+
+Error messages display when a Service Officer accesses a pended
+encounter or episode. It explains the reason for the pend.
+
+Examples
+
+-   When an encounter or episode is pended with RSN code 024, the error
+    message:
+    LOCALITY INVALID displays on the Encounter Details (YIAE) screen.
+    The postcode (P/C) is not matching the suburb/location (LOC)
+    recorded. Amending the locality or postcode may resolve an episode
+    or encounter to an A status
+-   When an episode is pended with RSN code 103, the error message:
+    SAME OR EQUIVALENT DOSE ALREADY RECORDED BY DIFFERENT PROVIDER
+    displays on the Antigens Details (YIAN) screen. The same, or a
+    similar vaccine (or component of the vaccine) with the same dose
+    number has already been reported by another vaccination provider.
+    Amending the vaccine or dose may resolve an incorrectly reported
+    vaccine to an A status
+
+Warning messages
+
+A warning message displays if data needs to be reviewed for the
+encounter or episode.
+
+The Service Officer presses [F18] – ACK WARN to:
+
+-   acknowledge the warning
+-   assess and if required amend the episode/encounter, or confirm the
+    information with the vaccination provider
+
+Acknowledging the warning continues the assessment of the episode.
+
+Example
+
+When an episode is pended with RSN code 107, the warning message DOSE
+GIVEN AT > SCHEDULE AGE - [PF18] TO ACK WARNING displays on the YIAN
+screen. The service date recorded indicates that the vaccine and dose
+given were at an age that is older than is recommended. Correcting the
+date of the dose and selecting [F18] may resolve the episode to an A
+status.
+
+Duplicate claims
+
+Pend 300 and 301 reason codes occur when a vaccination is duplicated on
+individual's history. The system automatically resolves them. No further
+action is required.
+
+If there are other types of pended encounters in the claim (for example,
+pend 80 – child not identified pend 24 - postcode/locality
+incompatible), processing the encounter may result in it being resolved
+to a pend 300 or 301, or an A status.
+
+See also: View and amend history details on the Process page.
+
+Overseas vaccinations (AIR)
+
+Overseas immunisations recorded for individuals on the AIR may cause
+future vaccinations given in Australia to pend due to differing
+immunisation schedules between countries.
+
+Vaccinations given in Australia must take precedence over vaccinations
+given overseas. Service Officers may need to reject previously recorded
+overseas vaccinations for:
+
+-   valid Australian vaccinations to process to an A status, and
+-   provider payments to be made
+
+Example
+
+An individual has received dose 1 of generic, single antigen measles
+vaccine while overseas. Individual then receives a Priorix vaccine (MMR)
+dose 1 in Australia. The measles component of the Priorix vaccine is a
+duplicate and is pended.
+
+To bring the individual up to date, Service Officers must reject the
+generic measles vaccine given overseas. All 3 components of the Priorix
+vaccine will then resolve to an 'A' status and a provider payment will
+be made.
+
+The Resources page contains troubleshooting tips, state codes, system
+reason codes and explanations, Workload Manager escalation details, and
+contact details.
+
+Related links
+
+Provider registration in Australian Immunisation Register (AIR)
+
+Process claims in the Australian Immunisation Register (AIR)
+
+Duplicate PIN and Consumer IDs in Medicare
+
+Australian Immunisation Register (AIR)
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

@@ -1,0 +1,674 @@
+
+Latter day adjustment pathology services in Medicare 012-40020050
+
+-   Background
+-   
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+This page contains the procedures for latter day adjustments (LDA) for
+pathology services in Medicare.
+
+On this Page:
+
+Pathology claims with 6-RST ADJ message
+
+Non-coned patient episodes for bulk bill LDA
+
+Online bulk bill claims non-coned patient episodes for bulk bill LDA
+
+Online bulk bill claims coned patient episodes for bulk bill LDA
+
+Manual bulk bill claims coned and non-coned patient episodes for bulk
+bill LDA
+
+Pathology claims with 6-RST ADJ message
+
+Action pathology claims with 6-RST ADJ message
+
+This table describes how to action pathology claims with 6-RST ADJ
+message.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Is the GP the requesting          |
+|                                   | practitioner? + Read more ...     |
+|                                   |                                   |
+|                                   | Place the cursor on the           |
+|                                   | requesting practitioner's         |
+|                                   | provider number and press [F1],   |
+|                                   | to determine requesting           |
+|                                   | practitioner is a general         |
+|                                   | practitioner (GP).                |
+|                                   |                                   |
+|                                   | The provider's class/speciality   |
+|                                   | is displayed under the provider   |
+|                                   | details. When the practitioner is |
+|                                   | not a specialist, consultant      |
+|                                   | physician or dentist, the coning  |
+|                                   | rule applies.                     |
+|                                   |                                   |
+|                                   | See also:                         |
+|                                   |                                   |
+|                                   | 6 RST ADJ sample screen           |
+|                                   |                                   |
+|                                   | C01 104 Medicare practitioner -   |
+|                                   | medical category sample screen.   |
++-----------------------------------+-----------------------------------+
+| 2                                 | Check patient's claims history +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Check claims history to determine |
+|                                   | what has previously been claimed  |
+|                                   | for the patient episode.          |
+|                                   |                                   |
+|                                   | Note: when the message 8-OTH HIST |
+|                                   | displays on the history screen    |
+|                                   | use the patient history modifiers |
+|                                   | with the patient's PIN.           |
+|                                   |                                   |
+|                                   | The following modifiers may be    |
+|                                   | used:                             |
+|                                   |                                   |
+|                                   | -   PATH/ITEM - displays all the  |
+|                                   |     patient's pathology history   |
+|                                   |     including the incentive item  |
+|                                   | -   PDOR/ddmmyy - displays all    |
+|                                   |     pathology test items and      |
+|                                   |     patient episode initiation    |
+|                                   |     (PEI) information for a       |
+|                                   |     specific request date, but    |
+|                                   |     does not display the bulk     |
+|                                   |     bill incentive information as |
+|                                   |     a request date does not apply |
+|                                   |     to a bulk bill incentive item |
+|                                   | -   DOS/ddmmyy - displays the     |
+|                                   |     bulk bill incentive item if   |
+|                                   |     it has already been paid      |
+|                                   |                                   |
+|                                   | The appropriate patient history   |
+|                                   | is displayed for each modifier.   |
+|                                   | See also: Patient history sample  |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | Then:                             |
+|                                   |                                   |
+|                                   | -   print the claims history      |
+|                                   |     screen, or                    |
+|                                   | -   copy and paste it             |
+|                                   |     electronically (using text    |
+|                                   |     font Lucinda Console size 8), |
+|                                   |     or                            |
+|                                   | -   keep it on the swap screen to |
+|                                   |     refer to                      |
++-----------------------------------+-----------------------------------+
+| 3                                 | Coning has been applied to the    |
+|                                   | claims history + Read more ...    |
+|                                   |                                   |
+|                                   | When coning has been applied to   |
+|                                   | the claims in history:            |
+|                                   |                                   |
+|                                   | record the actual schedule fee    |
+|                                   | for each item that has been paid  |
+|                                   |                                   |
+|                                   | cross out the restrictive item    |
+|                                   |                                   |
+|                                   | identify:                         |
+|                                   |                                   |
+|                                   | -   any items that are exempt     |
+|                                   |     from coning (highlighted on   |
+|                                   |     screen sample).               |
+|                                   | -   the 3 items with the highest  |
+|                                   |     schedule fee (highlighted and |
+|                                   |     in bold on screen sample).    |
+|                                   |     See also: PI58 LDA            |
+|                                   |     adjustments for pathology     |
+|                                   |     sample screen.                |
++-----------------------------------+-----------------------------------+
+| 4                                 | Replace item on history and add   |
+|                                   | schedule fees + Read more ...     |
+|                                   |                                   |
+|                                   | -   replace the relevant item on  |
+|                                   |     history with the restrictive  |
+|                                   |     payable item in the claim     |
+|                                   | -   add the schedule fees for the |
+|                                   |     3 items with the highest      |
+|                                   |     schedule fee and the coning   |
+|                                   |     exempt item together          |
+|                                   |                                   |
+|                                   | Example 1                         |
+|                                   |                                   |
+|                                   | Item Schedule Fee Highest         |
+|                                   | schedule fee claim or history     |
+|                                   |                                   |
+|                                   | 65159 $70.90 2^(nd) highest       |
+|                                   | history                           |
+|                                   |                                   |
+|                                   | 73053 $19.45 coning exempt        |
+|                                   | history                           |
+|                                   |                                   |
+|                                   | 66638 $49.05 3^(rd) highest       |
+|                                   | history                           |
+|                                   |                                   |
+|                                   | 69360 $92.20 1^(st) highest       |
+|                                   | history                           |
+|                                   |                                   |
+|                                   | Total $231.60                     |
+|                                   |                                   |
+|                                   | Example 2                         |
+|                                   |                                   |
+|                                   | Add the schedule fees together    |
+|                                   | for the items paid on history     |
+|                                   |                                   |
+|                                   | Item Schedule Fee                 |
+|                                   |                                   |
+|                                   | 65159 $70.90                      |
+|                                   |                                   |
+|                                   | 65090 $11.15                      |
+|                                   |                                   |
+|                                   | 66638 $49.05                      |
+|                                   |                                   |
+|                                   | 66602 $42.95                      |
+|                                   |                                   |
+|                                   | 73053 $19.45                      |
+|                                   |                                   |
+|                                   | Total $193.50                     |
+|                                   |                                   |
+|                                   | See also: Restrictive payment     |
+|                                   | item sample screen.               |
+|                                   |                                   |
+|                                   | Example 3                         |
+|                                   |                                   |
+|                                   | Deduct the total from example 2   |
+|                                   | from the total in example 1 to    |
+|                                   | calculate the amount to be        |
+|                                   | adjusted.                         |
+|                                   |                                   |
+|                                   | $231.60 - 193.50 = $38.10         |
++-----------------------------------+-----------------------------------+
+| 5                                 | Follow instructions in the return |
+|                                   | messages + Read more ...          |
+|                                   |                                   |
+|                                   | Follow the instructions in the    |
+|                                   | return messages.                  |
+|                                   |                                   |
+|                                   | To pay the restrictive item on    |
+|                                   | the screen:                       |
+|                                   |                                   |
+|                                   | -   key PI 58                     |
+|                                   | -   over key the schedule fee in  |
+|                                   |     the Fee field with the amount |
+|                                   |     calculated for the adjustment |
+|                                   | -   press [Enter] and pay the     |
+|                                   |     adjustment                    |
+|                                   |                                   |
+|                                   | See also: Return message          |
+|                                   | instructions sample screen.       |
++-----------------------------------+-----------------------------------+
+| 6                                 | Adjusted claim is displayed on    |
+|                                   | patient history + Read more ...   |
+|                                   |                                   |
+|                                   | The adjusted claim is displayed   |
+|                                   | on the patient's history.         |
++-----------------------------------+-----------------------------------+
+
+Non-coned patient episodes for bulk bill LDA
+
+Action non-coned patient episodes for bulk bill LDA
+
+This table describes how to action latter day adjustments (LDA) on
+pathology claims for non-coned patient episodes when the 6-RST ADJ
+message is displayed.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Check claims history + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Print the current claims          |
+|                                   | processing screen as it contains  |
+|                                   | the claim information required    |
+|                                   | for the LDA in the history part   |
+|                                   | of the screen. See also:          |
+|                                   | Processing claim screen for claim |
+|                                   | ID screen sample.                 |
+|                                   |                                   |
+|                                   | Check claims history to determine |
+|                                   | what has previously been claimed  |
+|                                   | for the patient episode.          |
+|                                   |                                   |
+|                                   | Note: when the message 8-OTH HIST |
+|                                   | displays on the history screen,   |
+|                                   | use the patient history modifiers |
+|                                   | with the patient's PIN.           |
+|                                   |                                   |
+|                                   | The following modifiers may be    |
+|                                   | used to check patient history:    |
+|                                   |                                   |
+|                                   | -   PATH/ITEM - displays all      |
+|                                   |     pathology items including any |
+|                                   |     incentive items               |
+|                                   | -   PDOR/ddmmyy - displays all    |
+|                                   |     pathology test items and      |
+|                                   |     patient episode initiation    |
+|                                   |     (PEI) information for         |
+|                                   |     specific date of request, but |
+|                                   |     does not display the bulk     |
+|                                   |     bill incentive item           |
+|                                   | -   DOS/ddmmyy - displays all     |
+|                                   |     items for a specific date of  |
+|                                   |     service including any         |
+|                                   |     incentive items               |
+|                                   |                                   |
+|                                   | Note: as the incentive is         |
+|                                   | associated to the PEI, once the   |
+|                                   | date of service for the PEI is    |
+|                                   | found, use the DOS/ddmmyy         |
+|                                   | modifier to determine the         |
+|                                   | incentive item has previously     |
+|                                   | been paid.                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Previously paid and unpaid        |
+|                                   | incentive items + Read more ...   |
+|                                   |                                   |
+|                                   | When a PEI and bulk bill          |
+|                                   | incentive item has:               |
+|                                   |                                   |
+|                                   | Previously been paid for the      |
+|                                   | patient episode reject the:       |
+|                                   |                                   |
+|                                   | -   PEI with RSN 160              |
+|                                   | -   bulk bill incentive item with |
+|                                   |     RSN 550                       |
+|                                   | -   pathology tests with RSN 151  |
+|                                   | -   Note: there is no need to     |
+|                                   |     bring the rejected PEI and    |
+|                                   |     incentive into adjustment.    |
+|                                   |                                   |
+|                                   | Not been previously paid, reject  |
+|                                   | the pathology item with RSN 151.  |
+|                                   | See also: No errors ok to pay     |
+|                                   | sample screen.                    |
+|                                   |                                   |
+|                                   | For:                              |
+|                                   |                                   |
+|                                   | online claims, see table:         |
+|                                   |                                   |
+|                                   | -   Online bulk bill claims       |
+|                                   |     non-coned patient episodes    |
+|                                   |     for bulk bill LDA             |
+|                                   | -   Online bulk bill claims for   |
+|                                   |     coned patient episodes for    |
+|                                   |     bulk bill LDA                 |
+|                                   |                                   |
+|                                   | manual claims, see table:         |
+|                                   |                                   |
+|                                   | -   Manual bulk bill claims       |
+|                                   |     non-coned patient episodes    |
+|                                   |     for bulk bill LDA             |
++-----------------------------------+-----------------------------------+
+
+Online bulk bill claims non-coned patient episodes for bulk bill LDA
+
+Online bulk bill claims non-coned patient episodes for bulk bill LDA
+
+This table describes how to action latter day adjustments (LDA) on
+pathology claims for non-coned patient episodes when the 6-RST ADJ
+message is displayed for online claims.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Park the claim and obtain the     |
+|                                   | date of lodgement (DOL) + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Park the claim on the screen      |
+|                                   | using MQAI/MQRI.                  |
+|                                   |                                   |
+|                                   | MQAI CLM PARKED message appears.  |
+|                                   |                                   |
+|                                   | -   key DCEI,payee provider       |
+|                                   |     number,claim id to recall     |
+|                                   |     claim                         |
+|                                   |                                   |
+|                                   | The original claim information is |
+|                                   | returned.                         |
+|                                   |                                   |
+|                                   | For example,                      |
+|                                   | DHSI,1234567A,A0001,DOL=010101    |
+|                                   |                                   |
+|                                   | -   over key the control line     |
+|                                   |     with DHSI,provider            |
+|                                   |     number,claim id, DOL =ddmmyy  |
+|                                   | -   press [Enter]                 |
+|                                   |                                   |
+|                                   | The adjustment screen displays    |
+|                                   | the DOL change to the next day.   |
+|                                   |                                   |
+|                                   | Example:                          |
+|                                   | DHSC,123457A,A0001,DOL=020101     |
++-----------------------------------+-----------------------------------+
+| 2                                 | Open claim and make adjustments + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | -   open the adjustment claim     |
+|                                   | -   scroll [F8] through the claim |
+|                                   |     to locate the patient record  |
+|                                   |     to be adjusted                |
+|                                   |                                   |
+|                                   | The following fields can be       |
+|                                   | brought into a bulk bill          |
+|                                   | adjustment and over keyed:        |
+|                                   |                                   |
+|                                   | -   card number                   |
+|                                   | -   patient name                  |
+|                                   | -   item number                   |
+|                                   | -   DOS                           |
+|                                   | -   BN ASG                        |
+|                                   | -   REQ PROV                      |
+|                                   | -   over key the incorrect        |
+|                                   |     details with correct details  |
+|                                   |     and press [Enter]             |
+|                                   |                                   |
+|                                   | The system returns the DHSC       |
+|                                   | screen which displays:            |
+|                                   |                                   |
+|                                   | the original line that was        |
+|                                   | adjusted - all fields are         |
+|                                   | protected, except field A which   |
+|                                   | contains 'O' to indicate the      |
+|                                   | 'Original' line                   |
+|                                   |                                   |
+|                                   | a restated line with correct      |
+|                                   | details - all fields are          |
+|                                   | unprotected and 'R' is displayed  |
+|                                   | in field A to indicate the        |
+|                                   | 'Restated' line:                  |
+|                                   |                                   |
+|                                   | -   The system inserts 0 in the   |
+|                                   |     Fee and Benefit fields.       |
+|                                   | -   Other PIs and all reason      |
+|                                   |     codes are not restated (with  |
+|                                   |     the exception of RSN 366)     |
+|                                   |     which allows the adjusted     |
+|                                   |     line to be completely         |
+|                                   |     re-assessed.                  |
+|                                   | -   Any error messages that       |
+|                                   |     relate to the accuracy of new |
+|                                   |     details. See also: DHSC       |
+|                                   |     sample screen and Over key C  |
+|                                   |     and U to update sample        |
+|                                   |     screen.                       |
+|                                   |                                   |
+|                                   | Press F3 to close the claim and   |
+|                                   | press [Enter]                     |
+|                                   |                                   |
+|                                   | Resolve any error messages that   |
+|                                   | may display, check the correct    |
+|                                   | fields have been adjusted, and    |
+|                                   | correct benefits have been        |
+|                                   | applied                           |
+|                                   |                                   |
+|                                   | Over key C with U in DHAC to      |
+|                                   | update adjustment and press       |
+|                                   | [Enter]. See also: Benefit        |
+|                                   | calculation sample screen.        |
+|                                   |                                   |
+|                                   | Key MQAI to return to the online  |
+|                                   | claims queue and recall parked    |
+|                                   | claim                             |
+|                                   |                                   |
+|                                   | S in the A field against the      |
+|                                   | appropriate claim to select the   |
+|                                   | claim and complete the payment    |
+|                                   | process                           |
+|                                   |                                   |
+|                                   | Key P to Pay the claim            |
+|                                   |                                   |
+|                                   | Procedure complete for online     |
+|                                   | claims                            |
++-----------------------------------+-----------------------------------+
+
+Online bulk bill claims coned patient episodes for bulk bill LDA
+
+Online bulk bill claims coned patient episodes for bulk bill LDA
+
+This table describes how to action latter day adjustment (LDA) on
+pathology claims for coned patient episodes when the 6-RST ADJ message
+is displayed for online claims.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Park the claim and obtain the     |
+|                                   | date of lodgement (DOL) + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Park the claim on the screen      |
+|                                   | using MQAI/MQRI.                  |
+|                                   |                                   |
+|                                   | MQAI CLM PARKED message appears   |
+|                                   |                                   |
+|                                   | -   key DCEI,payee provider       |
+|                                   |     number,claim id to recall     |
+|                                   |     claim                         |
+|                                   |                                   |
+|                                   | the original claim information is |
+|                                   | returned.                         |
+|                                   |                                   |
+|                                   | Example:                          |
+|                                   | DHSI,1234567S,A0001,DOL=020101    |
+|                                   |                                   |
+|                                   | -   over key the control line     |
+|                                   |     with DHSA,provider            |
+|                                   |     number,claim id, DOL=ddmmyy   |
+|                                   | -   Press [Enter]                 |
+|                                   |                                   |
+|                                   | The adjustment screen displays    |
+|                                   | the DOL change to the next day.   |
+|                                   |                                   |
+|                                   | Example                           |
+|                                   | DHSC,1234567A,A0001,DOL=030101    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Open claim and make adjustment +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | -   open the adjustment claim     |
+|                                   | -   scroll [F8] through the claim |
+|                                   |     to locate the patient record  |
+|                                   |     to be adjusted                |
+|                                   |                                   |
+|                                   | The following fields can be       |
+|                                   | brought into a bulk bill          |
+|                                   | adjustment and over keyed:        |
+|                                   |                                   |
+|                                   | -   card number                   |
+|                                   | -   patient name                  |
+|                                   | -   item name                     |
+|                                   | -   DOS                           |
+|                                   | -   BN ASG                        |
+|                                   | -   REQ PROV                      |
+|                                   | -   over key the incorrect        |
+|                                   |     details with correct details  |
+|                                   |     and press [Enter]             |
+|                                   |                                   |
+|                                   | The system returns the DHSC       |
+|                                   | screen which displays:            |
+|                                   |                                   |
+|                                   | the original line that was        |
+|                                   | adjusted – all fields are         |
+|                                   | protected, except field A which   |
+|                                   | contains ‘O’ to indicate the      |
+|                                   | ‘Original’ line                   |
+|                                   |                                   |
+|                                   | a restated line with correct      |
+|                                   | details- all fields are           |
+|                                   | unprotected and ‘R’ is displayed  |
+|                                   | in field A to indicate the        |
+|                                   | ‘Restated’ line:                  |
+|                                   |                                   |
+|                                   | -   The system inserts 0 in the   |
+|                                   |     Fee and Benefit fields.       |
+|                                   | -   Other PIs and all reason      |
+|                                   |     codes are not restated (with  |
+|                                   |     the exception of RSN 366)     |
+|                                   |     which allows the adjusted     |
+|                                   |     line to be completely         |
+|                                   |     re-assessed.                  |
+|                                   | -   Any error messages that       |
+|                                   |     relate to the accuracy of new |
+|                                   |     details. See also: DHSC       |
+|                                   |     sample screen.                |
++-----------------------------------+-----------------------------------+
+| 3                                 | Inserting lines for online claims |
+|                                   | only + Read more ...              |
+|                                   |                                   |
+|                                   | A new line needs to be inserted   |
+|                                   | to include any additional items   |
+|                                   | for online claims:                |
+|                                   |                                   |
+|                                   | -   over key R with I in field A  |
+|                                   |     of any restated line and      |
+|                                   |     press [Enter]                 |
+|                                   | -   when more than 1 new line is  |
+|                                   |     required, over key 'N' with   |
+|                                   |     'I' in field A and press      |
+|                                   |     [Enter]                       |
+|                                   |                                   |
+|                                   | The message INSERT is returned,   |
+|                                   | together with a new line which    |
+|                                   | enables new details to be keyed.  |
+|                                   | 'N' in the field A indicates that |
+|                                   | this is a new line. See also:     |
+|                                   | Restated line with correct        |
+|                                   | details DHSC sample screen.       |
+|                                   |                                   |
+|                                   | Note:                             |
+|                                   |                                   |
+|                                   | Nine service lines can be         |
+|                                   | displayed on the DHSC screen.     |
+|                                   | When 'I' is entered in field A on |
+|                                   | the 9th line, the new line is     |
+|                                   | positioned on the next DHSC       |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | For example, item 65120 must be   |
+|                                   | inserted as this item was also    |
+|                                   | part of the patient episode in    |
+|                                   | claim A0024. The date of service  |
+|                                   | 030111 and benefit assigned have  |
+|                                   | also been added. See also:        |
+|                                   | Message insert returned sample    |
+|                                   | screen 6.                         |
++-----------------------------------+-----------------------------------+
+| 4                                 | Reassess item numbers on new line |
+|                                   | for online claims only + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | To reassesses the new item        |
+|                                   | numbers as part of the patient    |
+|                                   | episode and apply the patient     |
+|                                   | episode coning (PEC) rule         |
+|                                   | correctly, over key payee code    |
+|                                   | with 6 to recall all other        |
+|                                   | associated lines with the         |
+|                                   | adjustment screen for that        |
+|                                   | patient episode.                  |
++-----------------------------------+-----------------------------------+
+| 5                                 | When all adjustment details have  |
+|                                   | been entered in the claim + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | -   Press [F3] to close the claim |
+|                                   |     and press [Enter].            |
+|                                   | -   Resolve any error messages    |
+|                                   |     that may display, check the   |
+|                                   |     correct fields have been      |
+|                                   |     adjusted, and the correct     |
+|                                   |     benefits have been applied.   |
+|                                   | -   Over key C with U in DHAC to  |
+|                                   |     update adjustment and press   |
+|                                   |     [Enter]. See also: Payment to |
+|                                   |     provider final update sample  |
+|                                   |     screen 9.                     |
+|                                   |                                   |
+|                                   | Key:                              |
+|                                   |                                   |
+|                                   | -   MQRI to return to the online  |
+|                                   |     claims queue and recall       |
+|                                   |     parked claim                  |
+|                                   | -   'S' in field A against the    |
+|                                   |     appropriate claim to select   |
+|                                   |     the claim and complete the    |
+|                                   |     payment process               |
+|                                   | -   'P' to pay the claim          |
+|                                   |                                   |
+|                                   | See also: Online claims sample    |
+|                                   | screen 10.                        |
+|                                   |                                   |
+|                                   | Procedure complete for online     |
+|                                   | claims.                           |
++-----------------------------------+-----------------------------------+
+
+Manual bulk bill claims coned and non-coned patient episodes for bulk bill LDA
+
+Manual bulk bill claims coned and non-coned patient episodes for bulk bill LDA
+
+This table describes how to action latter day adjustments (LDA) on
+pathology claims for coned and non-coned patient episodes when the 6-RST
+ADJ message is displayed for manual claims.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Manual bulk bill claims + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | When a patient episode initiation |
+|                                   | (PEI) and bulk bill incentive     |
+|                                   | item has:                         |
+|                                   |                                   |
+|                                   | previously been paid for the      |
+|                                   | patient episode, reject the:      |
+|                                   |                                   |
+|                                   | -   PEI with RSN 160              |
+|                                   | -   bulk bill incentive item with |
+|                                   |     RSN 550                       |
+|                                   | -   pathology tests with RSN 151  |
+|                                   | -   then photocopy the bulk bill  |
+|                                   |     voucher and the claim header  |
+|                                   |                                   |
+|                                   | not been previously paid, reject  |
+|                                   | all items on the pathology        |
+|                                   | voucher with RSN 151. The PEI and |
+|                                   | incentive items do not pay as the |
+|                                   | associated pathology items have   |
+|                                   | been rejected.                    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Forward claim information to MPS  |
+|                                   | Assessing + Read more ...         |
+|                                   |                                   |
+|                                   | Forward:                          |
+|                                   |                                   |
+|                                   | -   the photocopy of the bulk     |
+|                                   |     bill header and vouchers      |
+|                                   | -   a screenshot of the           |
+|                                   |     processing screen             |
+|                                   | -   the reason for the adjustment |
+|                                   |                                   |
+|                                   | to MPS Assessing for adjustment.  |
++-----------------------------------+-----------------------------------+
+| 3                                 | Process and pay the claim + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Continue to process and pay the   |
+|                                   | claim.                            |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

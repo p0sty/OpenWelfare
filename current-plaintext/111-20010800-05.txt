@@ -1,0 +1,970 @@
+
+Quality Management Application (QMA) in Process Direct 111-20010800
+
+-   Background
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+Intranet links
+
+Quality Management Application
+
+QMA Dashboard Guide
+
+SAP Role Request
+
+ESSentials
+
+QMA auto sampling model
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| 1                                 | QMA applies accuracy data         |
+|                                   |                                   |
+|                                   | QMA automatically calculates and  |
+|                                   | adjusts the sampling rate for     |
+|                                   | each staff member.                |
+|                                   |                                   |
+|                                   | QMA selects work items based on   |
+|                                   | an algorithm. The algorithm uses  |
+|                                   | the staff member's accuracy data  |
+|                                   | from the last 20 sampled          |
+|                                   | transitions under the relevant    |
+|                                   | variant.                          |
+|                                   |                                   |
+|                                   | Under the auto sampling model,    |
+|                                   | line managers do not need to      |
+|                                   | record and adjust staff           |
+|                                   | proficiency levels in ESSentials  |
+|                                   | to update QMA sampling rates.     |
+|                                   | This includes where new staff or  |
+|                                   | existing staff start new work     |
+|                                   | (not yet proficient). QMA         |
+|                                   | sampling will start at 100% for   |
+|                                   | these staff by default.           |
+|                                   |                                   |
+|                                   | Line managers still need to       |
+|                                   | record a staff member's skill     |
+|                                   | tags in Essentials. This enables  |
+|                                   | correct allocation of work items  |
+|                                   | through Workload Management. This |
+|                                   | includes adding accreditation of  |
+|                                   | quality checkers (Quality         |
+|                                   | Management Officer skill tag).    |
++-----------------------------------+-----------------------------------+
+| 2                                 | QMA calculates sampling rates     |
+|                                   |                                   |
+|                                   | Staff will transition at their    |
+|                                   | current sampling rate, based on   |
+|                                   | their QOL proficiency level for   |
+|                                   | the work that is moving into      |
+|                                   | Process Direct.                   |
+|                                   |                                   |
+|                                   | This only occurs at:              |
+|                                   |                                   |
+|                                   | -   the initial rollout, where    |
+|                                   |     the work type is not subject  |
+|                                   |     to a Pilot, or                |
+|                                   | -   national rollout, where the   |
+|                                   |     work type is subject to a     |
+|                                   |     Pilot,                        |
+|                                   |                                   |
+|                                   | Staff who have not gained QOL     |
+|                                   | proficiency at either             |
+|                                   | 'Proficient' or 'Intermediate'    |
+|                                   | level at the time of the rollout, |
+|                                   | or are new to the work, will      |
+|                                   | automatically be sampled under    |
+|                                   | the default 100% sampling rate.   |
+|                                   | These staff must gain their       |
+|                                   | proficiency under the auto        |
+|                                   | sampling model.                   |
+|                                   |                                   |
+|                                   | For example:                      |
+|                                   |                                   |
+|                                   | -   Proficient staff will start   |
+|                                   |     at 2% QMA sampling rate       |
+|                                   | -   Intermediate staff will start |
+|                                   |     at 25% QMA sampling rate      |
+|                                   | -   All others will default to    |
+|                                   |     100% QMA sampling rate        |
+|                                   |                                   |
+|                                   | As work items are sampled for     |
+|                                   | checking, the QMA sampling rate   |
+|                                   | can change. As a general guide,   |
+|                                   | an accuracy result of:            |
+|                                   |                                   |
+|                                   | -   80% and above triggers a      |
+|                                   |     decrease in sampling rate by  |
+|                                   |     10% (down to 2%)              |
+|                                   | -   between 70 and 80% does not   |
+|                                   |     change the sampling rate      |
+|                                   | -   70% and below triggers an     |
+|                                   |     increase in sampling rate by  |
+|                                   |     10% (up to 100%)              |
+|                                   |                                   |
+|                                   | Example                           |
+|                                   |                                   |
+|                                   | Sampling starts at 100%.          |
+|                                   |                                   |
+|                                   | Lucy was at 100% sampling rate    |
+|                                   | for QMA:                          |
+|                                   |                                   |
+|                                   | -   Lucy completes 10 Youth       |
+|                                   |     Allowance Student claims in   |
+|                                   |     Process Direct, which have    |
+|                                   |     been quality checked in QMA   |
+|                                   | -   Lucy had a proficiency        |
+|                                   |     affecting error in 1 of the   |
+|                                   |     10 claims, so the overall     |
+|                                   |     accuracy result is 90%        |
+|                                   | -   As a result, Lucy’s sampling  |
+|                                   |     rate has now decreased by     |
+|                                   |     10%, from 100% to 90%.        |
+|                                   |                                   |
+|                                   | A person's accuracy rate will     |
+|                                   | recalculate every time a QMA work |
+|                                   | item is quality checked in QMA.   |
+|                                   | This may then trigger a sampling  |
+|                                   | movement. This happens on an      |
+|                                   | ongoing basis.                    |
+|                                   |                                   |
+|                                   | Note: the system applies a QMA    |
+|                                   | auto-sampling rate adjustment     |
+|                                   | after the QMA check is completed  |
+|                                   | and the work item is finalised.   |
+|                                   | The status will be either         |
+|                                   | Completed or Cancelled.           |
++-----------------------------------+-----------------------------------+
+| 3                                 | Where to find accuracy results    |
+|                                   | and sampling rate                 |
+|                                   |                                   |
+|                                   | Managers and line managers can    |
+|                                   | access QMA data from the QMA      |
+|                                   | Dashboard - Team Leader in        |
+|                                   | Process Direct. This will also    |
+|                                   | apply to QMO accreditation        |
+|                                   | assessments.                      |
+|                                   |                                   |
+|                                   | A Service Support Officer (SSO)   |
+|                                   | or Quality Development Officer    |
+|                                   | (QDO) can access QMA data at an   |
+|                                   | organisational/site level from    |
+|                                   | the QMA Dashboard - Helpdesk tile |
+|                                   | in Process Direct.                |
+|                                   |                                   |
+|                                   | Business/Support Teams can access |
+|                                   | national QMA data from the QMA    |
+|                                   | Dashboard - Helpdesk tile in      |
+|                                   | Process Direct. This will require |
+|                                   | an access request in ESSentials.  |
+|                                   | See Table 4                       |
+|                                   |                                   |
+|                                   | If the SSO/QDO identifies a       |
+|                                   | sampling data issue, they should  |
+|                                   | consult their Team Leader/Quality |
+|                                   | and Performance Manager (QPM) in  |
+|                                   | the first instance.               |
+|                                   |                                   |
+|                                   | Line managers, QPM,               |
+|                                   | Business/Support Teams or team    |
+|                                   | leaders can contact QMA QOL Tools |
+|                                   | if they have any concerns with    |
+|                                   | the sampling data.                |
++-----------------------------------+-----------------------------------+
+| 4                                 | Queries about sampling rate       |
+|                                   |                                   |
+|                                   | Staff members can view their      |
+|                                   | current sampling rates using the  |
+|                                   | QMA Dashboard – Service Officer   |
+|                                   | in Process Direct.                |
+|                                   |                                   |
+|                                   | Note: QMA sampling rates for work |
+|                                   | under the Skill Tag model remain  |
+|                                   | aligned to the proficiency level  |
+|                                   | recorded by line managers in      |
+|                                   | Essentials.                       |
+|                                   |                                   |
+|                                   | If staff members think the        |
+|                                   | sampling rate is wrong, they      |
+|                                   | should speak with their team      |
+|                                   | leader or SSO/QDO.                |
+|                                   |                                   |
+|                                   | If the SSO/QDO identifies a       |
+|                                   | sampling data issue, they should  |
+|                                   | consult their Team Leader/Quality |
+|                                   | and Performance Manager (QPM) in  |
+|                                   | the first instance.               |
+|                                   |                                   |
+|                                   | The team leader or Quality and    |
+|                                   | Performance Manager can review    |
+|                                   | the data and contact QMA QOL      |
+|                                   | Tools if needed.                  |
+|                                   |                                   |
+|                                   | The auto sampler can be adjusted  |
+|                                   | for staff receiving targeted      |
+|                                   | performance support, if static    |
+|                                   | sampling for a specified          |
+|                                   | timeframe is needed. Team         |
+|                                   | Leaders/Line Managers will need   |
+|                                   | to review and remove the sampling |
+|                                   | override once the targeted        |
+|                                   | performance support ceases.       |
+|                                   |                                   |
+|                                   | For more information about auto   |
+|                                   | sampling override see:            |
+|                                   |                                   |
+|                                   | -   QMA for Team Leaders          |
+|                                   | -   QMA Sampling Override tool    |
++-----------------------------------+-----------------------------------+
+| 5                                 | More help                         |
+|                                   |                                   |
+|                                   | Report any issues using Business  |
+|                                   | As Usual (BAU) procedures.        |
+|                                   |                                   |
+|                                   | If QMA issues are not covered by  |
+|                                   | BAU procedures, contact the team  |
+|                                   | leader or SSO/QDO.                |
+|                                   |                                   |
+|                                   | Contact QMA QOL Tools when the    |
+|                                   | issue is urgent and cannot be     |
+|                                   | resolved by the team leader or    |
+|                                   | SSO/QDO.                          |
+|                                   |                                   |
+|                                   | If applicable, escalate the issue |
+|                                   | via normal channels (ROXY or      |
+|                                   | mySupport). Provide the incident  |
+|                                   | number with the escalation        |
+|                                   | details so the QMA QOL team can   |
+|                                   | investigate.                      |
++-----------------------------------+-----------------------------------+
+
+Proficiency levels and manual assessments for QMA under the skill tag model
+
+Table 2: manual proficiency assessments need to be undertaken by the
+Team Leader/Line Manager for work completed under the QMA skill tag
+model. See Staff QMA Proficiency Policy for details.
+
++-----------------------+-----------------------+-----------------------+
+| QMA Proficiency       | Correctness rate      | Sampling rate         |
++-----------------------+-----------------------+-----------------------+
+| Entry                 | For new staff,        | 100% of activities    |
+|                       | undertaking new       | are selected for      |
+|                       | activities, and/or    | sampling.             |
+|                       | where the correctness |                       |
+|                       | rate is below 85%.    |                       |
++-----------------------+-----------------------+-----------------------+
+| Established           | Correctness rate      | 25% of activities are |
+|                       | between 85% to <95%.  | selected for          |
+|                       |                       | sampling.             |
++-----------------------+-----------------------+-----------------------+
+| Experienced           | Correctness rate of   | 2% of activities are  |
+|                       | 95% or higher.        | selected for          |
+|                       |                       | sampling.             |
++-----------------------+-----------------------+-----------------------+
+
+Access to the QMA Dashboard for SSO/QDO
+
+Table 3: Service Support Officers (SSO) and Quality Development Officers
+(QDO) can request access to the QMA Dashboard – Helpdesk to support
+staff for their organisation unit/site to:
+
+undertake performance analysis and reporting requirements
+
+support staff with identified learning needs
+
+use the replay function on selected work items to help with QMA Disputes
+
++-----------------------------------+-----------------------------------+
+| Item                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Roles and Responsibilities        |
+|                                   |                                   |
+|                                   | To ensure the integrity of QMA    |
+|                                   | Dashboard, SSOs and QDOs need to: |
+|                                   |                                   |
+|                                   | -   Have an appropriate business  |
+|                                   |     need to access and manage the |
+|                                   |     QMA Dashboard data for which  |
+|                                   |     they are accountable          |
+|                                   | -   Only view the information     |
+|                                   |     that is required to undertake |
+|                                   |     my role                       |
+|                                   | -   Ensure data accessed and      |
+|                                   |     obtained from the QMA         |
+|                                   |     Dashboard is only used for    |
+|                                   |     its intended purpose, that is |
+|                                   |     for performance, quality and  |
+|                                   |     analysis purposes             |
+|                                   | -   Privacy and secrecy of the    |
+|                                   |     data must be maintained at    |
+|                                   |     all times                     |
+|                                   | -    Reports obtained from the    |
+|                                   |     QMA Dashboard are to be kept  |
+|                                   |     in a secure location and      |
+|                                   |     should be disposed of         |
+|                                   |     accordingly, where required   |
+|                                   | -   If distributing reports, it   |
+|                                   |     should only be for the        |
+|                                   |     intended audience and should  |
+|                                   |     be marked “Official:          |
+|                                   |     Sensitive”                    |
+|                                   | -    If you are no longer in the  |
+|                                   |     SSO/QDO position and your     |
+|                                   |     access is still available,    |
+|                                   |     you must advise QMA QOL Tools |
+|                                   |     to remove the access, if it   |
+|                                   |     hasn’t already been actioned  |
+|                                   |     for you                       |
++-----------------------------------+-----------------------------------+
+| 2                                 | Requesting access to the QMA      |
+|                                   | Dashboard                         |
+|                                   |                                   |
+|                                   | To request access SSO/QDO must:   |
+|                                   |                                   |
+|                                   | Review the:                       |
+|                                   |                                   |
+|                                   | -   Roles and Responsibilities    |
+|                                   |     (above)                       |
+|                                   | -   QMA Dashboard Guide           |
+|                                   | -   QMA Dispute Escalation Policy |
+|                                   | -   Aim for Accuracy Policy       |
+|                                   |                                   |
+|                                   | Complete the QMA Dashboard Access |
+|                                   | Request for SSO/QDO Webform, and  |
+|                                   |                                   |
+|                                   | Request access via ESSentials for |
+|                                   | Role Name:                        |
+|                                   | ZC.C4.CF.QMA.SAMPLING.BO          |
+|                                   |                                   |
+|                                   | The QMA team will review the      |
+|                                   | request and approve access as     |
+|                                   | appropriate. Access to the QMA    |
+|                                   | Dashboard is limited to 3 months. |
+|                                   | When it expires, SSO/QDO will     |
+|                                   | need to reapply in the same way.  |
+|                                   | This also includes if staff lose  |
+|                                   | access due to positional changes  |
+|                                   | or extension of Temporary         |
+|                                   | Performance Allowance (TPA).      |
+|                                   |                                   |
+|                                   | Note: the QMA Team does not code  |
+|                                   | the ESS role access request for   |
+|                                   | staff. The SSO/QDO must complete  |
+|                                   | the webform and the ESSentials    |
+|                                   | role request at the same time.    |
+|                                   | This avoids delays in assessing   |
+|                                   | the QMA Dashboard request and/or  |
+|                                   | rejections.                       |
++-----------------------------------+-----------------------------------+
+
+Access to the QMA Dashboard for Business/Support Teams
+
+Table 4: Business/Support Teams can request access to the QMA Dashboard
+– Helpdesk to:
+
+undertake analysis and reporting requirements
+
+identify trends and continuous improvement opportunities
+
+use the replay function on selected work items to assist with analysis
+
++-----------------------------------+-----------------------------------+
+| Item                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Roles and Responsibilities        |
+|                                   |                                   |
+|                                   | To ensure the integrity of QMA    |
+|                                   | Dashboard, Business/Support staff |
+|                                   | need to:                          |
+|                                   |                                   |
+|                                   | -   have an appropriate business  |
+|                                   |     need to access and manage the |
+|                                   |     QMA Dashboard data for which  |
+|                                   |     they are accountable          |
+|                                   | -   only view the information     |
+|                                   |     that is required to undertake |
+|                                   |     their role                    |
+|                                   | -   ensure data accessed and      |
+|                                   |     obtained from the QMA         |
+|                                   |     Dashboard is only used for    |
+|                                   |     its intended purpose, that is |
+|                                   |     for performance, quality and  |
+|                                   |     analysis purposes             |
+|                                   | -   privacy and secrecy of the    |
+|                                   |     data must be maintained at    |
+|                                   |     all times                     |
+|                                   | -   reports obtained from the QMA |
+|                                   |     Dashboard are to be kept in a |
+|                                   |     secure location and should be |
+|                                   |     disposed of accordingly,      |
+|                                   |     where required                |
+|                                   | -   if distributing reports, it   |
+|                                   |     should only be for the        |
+|                                   |     intended audience and should  |
+|                                   |     be marked 'Official:          |
+|                                   |     Sensitive'                    |
+|                                   |                                   |
+|                                   | If you no longer require this     |
+|                                   | access, you must advise           |
+|                                   | QMA.QOL.TOOLS to remove it, if it |
+|                                   | hasn’t already been actioned for  |
+|                                   | you.                              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Requesting access to the QMA      |
+|                                   | Dashboard                         |
+|                                   |                                   |
+|                                   | The access request is via         |
+|                                   | ESSentials in the Access          |
+|                                   | Management tab                    |
+|                                   |                                   |
+|                                   | Role name:                        |
+|                                   | ZC.C4.CF.QMA.SAMPLING.BO          |
+|                                   |                                   |
+|                                   | Enter detailed notes outlining    |
+|                                   | why this access is required.      |
+|                                   | Requests without this information |
+|                                   | will be rejected.                 |
+|                                   |                                   |
+|                                   | The QMA team will review the      |
+|                                   | request and approve access as     |
+|                                   | appropriate.                      |
+|                                   |                                   |
+|                                   | Note: the QMA Team does not code  |
+|                                   | the ESS role access request for   |
+|                                   | staff. Staff will need to do this |
+|                                   | themselves and get their line     |
+|                                   | manager to approve it before the  |
+|                                   | QMA team can assess the request   |
+|                                   | in ESS.                           |
++-----------------------------------+-----------------------------------+
+
+Status Resolution Support Services (SRSS)
+
+Table 5
+
++-----------------+-----------------+-----------------+-----------------+
+| Work item       | Work Item ID    | Skill ID        | QMA Proficiency |
+|                 |                 |                 | and Current     |
+|                 |                 |                 | Sampling        |
++-----------------+-----------------+-----------------+-----------------+
+| SRSS Payment    | NV_CLK_NCL_SRSS | 50506321        | Entry - 100%    |
+|                 |                 |                 |                 |
+|                 |                 |                 | Established -   |
+|                 |                 |                 | 10%             |
+|                 |                 |                 |                 |
+|                 |                 |                 | Experienced -   |
+|                 |                 |                 | 2%              |
++-----------------+-----------------+-----------------+-----------------+
+
+Comparison tables
+
+Skill Tag Model
+
+Table 6
+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Variant   | De        | S         | I         | Replay    | Number of |
+|           | scription | tandalone | ntegrated | Function  | work      |
+|           |           | QMA       | QMA       |           | items     |
+|           |           |           | workflow  |           | completed |
+|           |           |           |           |           | before    |
+|           |           |           |           |           | auto      |
+|           |           |           |           |           | sampling  |
+|           |           |           |           |           | applies   |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| N/A       | Status    | Y         |           | N         | N/A       |
+|           | R         |           |           |           |           |
+|           | esolution |           |           |           |           |
+|           | Support   |           |           |           |           |
+|           | Services  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+Auto Sampling Model
+
+Table 7
+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Variant   | <Des      | S         | I         | Replay    | Number of |
+|           | cription> | tandalone | ntegrated | Function  | work      |
+|           |           | QMA       | QMA       |           | items     |
+|           |           |           | workflow  |           | completed |
+|           |           |           |           |           | before    |
+|           |           |           |           |           | auto      |
+|           |           |           |           |           | sampling  |
+|           |           |           |           |           | applies   |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | AGE       |           | Y         | Y         | 10        |
+| CLMAGES01 | Pension   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Youth     |           | Y         | Y         | 10        |
+| CLMAPPR01 | Allowanc  |           |           |           |           |
+|           | e/Austudy |           |           |           |           |
+|           | A         |           |           |           |           |
+|           | pprentice |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Austudy   |           | Y         | Y         | 10        |
+| CLMASS030 | Student   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | ABSTUDY   |           | Y         | Y         | 10        |
+| CLMBAI004 | A         |           |           |           |           |
+|           | pprentice |           |           |           |           |
+|           | In        |           |           |           |           |
+|           | cidentals |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | ABSTUDY   |           | Y         | Y         | 10        |
+| CLMBSI004 | Tertiary  |           |           |           |           |
+|           | In        |           |           |           |           |
+|           | cidentals |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | ABSTUDY   |           | Y         | Y         | 10        |
+| CLMBSL004 | Tertiary  |           |           |           |           |
+|           | Living    |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | A         |           | Y         | Y         | 10        |
+| CLMDRP001 | ustralian |           |           |           |           |
+|           | G         |           |           |           |           |
+|           | overnment |           |           |           |           |
+|           | Disaster  |           |           |           |           |
+|           | Recovery  |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | (AGDRP)   |           |           |           |           |
+|           | and NZ    |           |           |           |           |
+|           | Disaster  |           |           |           |           |
+|           | Recovery  |           |           |           |           |
+|           | Payment   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Assurance |           | Y         | Y         | 10        |
+| REGAOS001 | of        |           |           |           |           |
+|           | Support   |           |           |           |           |
+|           | (AoS)     |           |           |           |           |
+|           | claims    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CP -      | Y         |           | N         | 10        |
+| CLMCAR002 | Carer     |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | Over 16   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CP & CA - | Y         |           | N         | 10        |
+| CLMCAR003 | Carer     |           |           |           |           |
+|           | Combined  |           |           |           |           |
+|           | Over 16   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CP & CA - | Y         |           | N         | 10        |
+| CLMCAR004 | Carer     |           |           |           |           |
+|           | Combined  |           |           |           |           |
+|           | Under 16  |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CP -      | Y         |           | N         | 10        |
+| CLMCAR005 | Carer     |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | Under 16  |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CA -      | Y         |           | N         | 10        |
+| CLMCAR014 | Carer     |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | Over 16   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CA -      | Y         |           | N         | 10        |
+| CLMCAR015 | Carer     |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | Under 16  |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CRP NHE – |           | Y         | Y         | 10        |
+| CLMNHE004 | Crisis    |           |           |           |           |
+|           | Payment – |           |           |           |           |
+|           | National  |           |           |           |           |
+|           | Health    |           |           |           |           |
+|           | Emergency |           |           |           |           |
+|           | Claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CRP EXV – |           | Y         | Y         | 10        |
+| CLMCFDS02 | Crisis    |           |           |           |           |
+|           | Payment – |           |           |           |           |
+|           | Family    |           |           |           |           |
+|           | and       |           |           |           |           |
+|           | Domestic  |           |           |           |           |
+|           | Violence  |           |           |           |           |
+|           | Claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CRP EXO – |           | Y         | Y         | 10        |
+| CLMCEXS02 | Crisis    |           |           |           |           |
+|           | Payment – |           |           |           |           |
+|           | Other     |           |           |           |           |
+|           | Extreme   |           |           |           |           |
+|           | Circ      |           |           |           |           |
+|           | umstances |           |           |           |           |
+|           | Claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CRP PRI – |           | Y         | Y         | 10        |
+| CLMCPRS02 | Crisis    |           |           |           |           |
+|           | Payment – |           |           |           |           |
+|           | Prison or |           |           |           |           |
+|           | Ps        |           |           |           |           |
+|           | ychiatric |           |           |           |           |
+|           | Co        |           |           |           |           |
+|           | nfinement |           |           |           |           |
+|           | release   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CRP HUM – |           | Y         | Y         | 10        |
+| CLMCHUS02 | Crisis    |           |           |           |           |
+|           | Payment – |           |           |           |           |
+|           | Hum       |           |           |           |           |
+|           | anitarian |           |           |           |           |
+|           | Entrants  |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | DAP - Dad |           | Y         | Y         | 10        |
+| CLMDAPA01 | and       |           |           |           |           |
+|           | Partner   |           |           |           |           |
+|           | Pay claim |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | DRA -     |           | Y         | Y         | 10        |
+| CLMDRA001 | Disaster  |           |           |           |           |
+|           | Recovery  |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | DSP -     |           | Y         | Y         | 10        |
+| CLMDSPS01 | D         |           |           |           |           |
+|           | isability |           |           |           |           |
+|           | Support   |           |           |           |           |
+|           | Pension   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | DSP SAD   |           | Y         | Y         | 10        |
+| CLMDSPS03 | A         |           |           |           |           |
+|           | ctivity - |           |           |           |           |
+|           | Selective |           |           |           |           |
+|           | Ap        |           |           |           |           |
+|           | plication |           |           |           |           |
+|           | Data      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Farm      |           | Y         | Y         | 10        |
+| CLMFHASAM | Household |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | Claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Farm      |           | Y         | Y         | 10        |
+| COCFHASAM | Household |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | CoC       |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PES -     |           | Y         | Y         | 10        |
+| CLMEPF001 | Pension   |           |           |           |           |
+|           | Education |           |           |           |           |
+|           | S         |           |           |           |           |
+|           | upplement |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PPL -     |           | Y         | Y         | 10        |
+| CLMFTOA01 | Parental  |           |           |           |           |
+|           | Leave Pay |           |           |           |           |
+|           | New born  |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | HCC       |           | Y         | Y         | 10        |
+| CLMHCC001 | Health    |           |           |           |           |
+|           | Care Card |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | JSP -     |           | Y         | Y         | 10        |
+| CLMJSP007 | JobSeeker |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Mobility  |           | Y         | Y         | 10        |
+| CLMMOBS01 | Allowance |           |           |           |           |
+|           | (MOB)     |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PLDP –    |           | Y         | Y         | 10        |
+| CLMPLD001 | Pandemic  |           |           |           |           |
+|           | Leave     |           |           |           |           |
+|           | Disaster  |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PLS -     | Y         |           | N         | 10        |
+| CLMPLS004 | Home      |           |           |           |           |
+|           | Equity    |           |           |           |           |
+|           | Access    |           |           |           |           |
+|           | Scheme    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PPL -     |           | Y         | Y         | 10        |
+| CLMPPLA01 | Parental  |           |           |           |           |
+|           | Leave Pay |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PPP -     |           | Y         | Y         | 10        |
+| CLMPPP004 | Parenting |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | Partnered |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | PPS -     |           | Y         | Y         | 10        |
+| CLMPPS005 | Parenting |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | Single    |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | CSHC -    |           | Y         | Y         | 10        |
+| CLMSHC004 | Com       |           |           |           |           |
+|           | monwealth |           |           |           |           |
+|           | Seniors   |           |           |           |           |
+|           | Health    |           |           |           |           |
+|           | Card      |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | SpB -     |           | Y         | Y         | 10        |
+| CLMSPL013 | Special   |           |           |           |           |
+|           | Benefit   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Youth     |           | Y         | Y         | 10        |
+| CLMSTUTFR | Allowanc  |           |           |           |           |
+|           | e/Austudy |           |           |           |           |
+|           | Student   |           |           |           |           |
+|           | Transfer  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TAP -     | Y         |           | N         | 10        |
+| CLMTAP001 | Tertiary  |           |           |           |           |
+|           | Access    |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TTA -     |           | Y         | Y         | 10        |
+| CLMTTAS01 | Transfer  |           |           |           |           |
+|           | to Age    |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Youth     |           | Y         | Y         | 10        |
+| CLMYAO007 | Allowance |           |           |           |           |
+|           | Jobseeker |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | YAL       |           | Y         | Y         | 10        |
+| CLMYAS037 | Student   |           |           |           |           |
+|           | UNDER 22  |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | YAL       |           | Y         | Y         | 10        |
+| CLMYAS038 | Student   |           |           |           |           |
+|           | OVER 22   |           |           |           |           |
+|           | claim     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Address & |           | Y         | Y         | 5         |
+| COCCLIS01 | Acco      |           |           |           |           |
+|           | mmodation |           |           |           |           |
+|           | PD        |           |           |           |           |
+|           | Workflow  |           |           |           |           |
+|           | COC –     |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Address & |           | Y         | Y         | 10        |
+| COCCLIS02 | Acco      |           |           |           |           |
+|           | mmodation |           |           |           |           |
+|           | Online    |           |           |           |           |
+|           | Update –  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TCSI -    |           | Y         | Y         | 10        |
+| COCCUES01 | Course    |           |           |           |           |
+|           | C         |           |           |           |           |
+|           | ompletion |           |           |           |           |
+|           | Review -  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only.     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | A         | Y         |           | N         | 10        |
+| COCCWBSAM | dditional |           |           |           |           |
+|           | Child     |           |           |           |           |
+|           | Care      |           |           |           |           |
+|           | Subsidy   |           |           |           |           |
+|           | Child     |           |           |           |           |
+|           | Wellbeing |           |           |           |           |
+|           | Dete      |           |           |           |           |
+|           | rmination |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TCSI -    |           | Y         | Y         | 10        |
+| COCEDRS01 | Enrolment |           |           |           |           |
+|           | Details   |           |           |           |           |
+|           | Review -  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Generic   |           | Y         | Y         | 10        |
+| COCGENS01 | Cir       |           |           |           |           |
+|           | cumstance |           |           |           |           |
+|           | Update in |           |           |           |           |
+|           | Process   |           |           |           |           |
+|           | Direct –  |           |           |           |           |
+|           | some      |           |           |           |           |
+|           | updates   |           |           |           |           |
+|           | are in    |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Income &  |           | Y         | Y         | 10        |
+| COCIAAS01 | Asset     |           |           |           |           |
+|           | Update    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | AISR -    |           | Y         | Y         | 10        |
+| COCISR004 | A         |           |           |           |           |
+|           | utomation |           |           |           |           |
+|           | of Income |           |           |           |           |
+|           | Stream    |           |           |           |           |
+|           | Review    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | AOIS –    |           | Y         | Y         | 30        |
+| COCL32001 | A         |           |           |           |           |
+|           | utomation |           |           |           |           |
+|           | of Income |           |           |           |           |
+|           | Stream    |           |           |           |           |
+|           | C         |           |           |           |           |
+|           | ompliance |           |           |           |           |
+|           | h         |           |           |           |           |
+|           | istorical |           |           |           |           |
+|           | rate      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | AOIS –    |           | Y         | Y         | 30        |
+| COCL31001 | A         |           |           |           |           |
+|           | utomation |           |           |           |           |
+|           | of Income |           |           |           |           |
+|           | Stream    |           |           |           |           |
+|           | C         |           |           |           |           |
+|           | ompliance |           |           |           |           |
+|           | On-going  |           |           |           |           |
+|           | rate      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Medical   |           | Y         | Y         | 5         |
+| COCMEDS01 | Ce        |           |           |           |           |
+|           | rtificate |           |           |           |           |
+|           | Update    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Part      |           | Y         | Y         | 10        |
+| COCCMPS01 | icipation |           |           |           |           |
+|           | C         |           |           |           |           |
+|           | ompliance |           |           |           |           |
+|           | W         |           |           |           |           |
+|           | orkflows: |           |           |           |           |
+|           |           |           |           |           |           |
+|           | -   C     |           |           |           |           |
+|           | ompliance |           |           |           |           |
+|           |     Inve  |           |           |           |           |
+|           | stigation |           |           |           |           |
+|           | -   Comp  |           |           |           |           |
+|           | rehensive |           |           |           |           |
+|           |     C     |           |           |           |           |
+|           | ompliance |           |           |           |           |
+|           |     A     |           |           |           |           |
+|           | ssessment |           |           |           |           |
+|           | -   Re-e  |           |           |           |           |
+|           | ngagement |           |           |           |           |
+|           | -         |           |           |           |           |
+|           |    Review |           |           |           |           |
+|           |     of    |           |           |           |           |
+|           |           |           |           |           |           |
+|           |  Decision |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Single    | Y         |           | N         | 10        |
+| COCNLRSAM | Touch     |           |           |           |           |
+|           | Payroll - |           |           |           |           |
+|           | N         |           |           |           |           |
+|           | on-lodger |           |           |           |           |
+|           | Update –  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TCSI - No |           | Y         | Y         | 10        |
+| COCNUES01 | Match     |           |           |           |           |
+|           | Review -  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | MOD JY -  | Y         |           | N         | 10        |
+| COCPITS01 | Parental  |           |           |           |           |
+|           | Income    |           |           |           |           |
+|           | Test      |           |           |           |           |
+|           | Review    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Online    | Y         |           | N         | 10        |
+| COCSEP001 | S         |           |           |           |           |
+|           | eparation |           |           |           |           |
+|           | Update    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Single    | Y         |           | N         | 10        |
+| COCSTPSAM | Touch     |           |           |           |           |
+|           | Payroll - |           |           |           |           |
+|           | Earnings  |           |           |           |           |
+|           | Update    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Single    | Y         |           | N         | 10        |
+| COCSINSAM | Touch     |           |           |           |           |
+|           | Payroll – |           |           |           |           |
+|           | Inter     |           |           |           |           |
+|           | vention - |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | Only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TCSI -    |           | Y         | Y         | 10        |
+| COCSUES01 | Sc        |           |           |           |           |
+|           | holarship |           |           |           |           |
+|           | Review –  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TAP -     | Y         |           | N         | 10        |
+| COCTAPS01 | Tertiary  |           |           |           |           |
+|           | Access    |           |           |           |           |
+|           | Payment   |           |           |           |           |
+|           | CoC       |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | TCSI      |           | Y         | Y         | 10        |
+| COCWUES01 | Cessation |           |           |           |           |
+|           | review –  |           |           |           |           |
+|           | Pilot     |           |           |           |           |
+|           | only      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Travel    | Y         |           | N         | 10        |
+| TRQTRV007 | M         |           |           |           |           |
+|           | anagement |           |           |           |           |
+|           | Ap        |           |           |           |           |
+|           | plication |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Q         | Travel    | Y         |           | N         | 10        |
+| TRQTRV008 | M         |           |           |           |           |
+|           | anagement |           |           |           |           |
+|           | Ap        |           |           |           |           |
+|           | plication |           |           |           |           |
+|           | Away from |           |           |           |           |
+|           | Base      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

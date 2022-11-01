@@ -1,0 +1,1294 @@
+
+Cancellation, suspension and rejection codes for Sickness Allowance (SA) 008-04090040
+
+-   Background
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+This file is for historical assessments/information only.
+
+The tables below lists all the suspension, rejection and cancellation
+codes for SA. The following table indicates which
+suspension/cancellation reasons are restorable and any conditions for
+restoration. The Document List (DL) screen should always be checked for
+information regarding the suspension as in some cases it may not be
+appropriate to restore at the first point of contact.
+
+On this Page:
+
+Legend - explanation of reason code fields
+
+Explanation of reason code fields used on this page
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Code + Read more ...              |
+|                                   |                                   |
+|                                   | Three letter code using the       |
+|                                   | pension system (PEN).             |
++-----------------------------------+-----------------------------------+
+| 2                                 | Description + Read more ...       |
+|                                   |                                   |
+|                                   | Expanded meaning of the code.     |
++-----------------------------------+-----------------------------------+
+| 3                                 | Valid Action codes + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | REJ = Rejection - Rejections can  |
+|                                   | only be reassessed not restored.  |
+|                                   |                                   |
+|                                   | SUS = Suspension - Suspensions    |
+|                                   | can always be restored. Note: G   |
+|                                   | means the suspension can be       |
+|                                   | manually restored where there is  |
+|                                   | a gap in payment.                 |
+|                                   |                                   |
+|                                   | CAN = Cancellation - Cancelled    |
+|                                   | records can sometimes be manually |
+|                                   | or automatically restored as      |
+|                                   | indicated in the RES column.      |
+|                                   |                                   |
+|                                   | -   No = Cancelled record not     |
+|                                   |     restorable                    |
+|                                   | -   M = Can be manually restored  |
+|                                   |     on the BA screen              |
+|                                   | -   A = Can only be restored by   |
+|                                   |     automatic action              |
+|                                   | -   M/A = Can be manually         |
+|                                   |     restored, or restored by      |
+|                                   |     automatic action              |
++-----------------------------------+-----------------------------------+
+| 4                                 | Initiation + Read more ...        |
+|                                   |                                   |
+|                                   | M = reasons can be manually input |
+|                                   | on the BA screen                  |
+|                                   |                                   |
+|                                   | A = automatically occurring       |
+|                                   | cancellation, suspension and      |
+|                                   | rejection codes (cannot be keyed  |
+|                                   | manually)                         |
+|                                   |                                   |
+|                                   | M/A = can be manually or          |
+|                                   | automatically initiated           |
++-----------------------------------+-----------------------------------+
+| 5                                 | Restoration + Read more ...       |
+|                                   |                                   |
+|                                   | RES = Restoration - suspended     |
+|                                   | records can be restored.          |
++-----------------------------------+-----------------------------------+
+| 6                                 | Benefit Type (Ben Type) + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Benefit Type is specified if the  |
+|                                   | reason can only be used with      |
+|                                   | certain types of payments. An     |
+|                                   | edit will occur if these reasons  |
+|                                   | are used with other benefit       |
+|                                   | types. Where NSA, AUS, YAL, PTA,  |
+|                                   | WDA and SKA (YTA Historical) are  |
+|                                   | specified, the processing is also |
+|                                   | allowable on Special (SPL)        |
+|                                   | Benefit paid under those          |
+|                                   | conditions.                       |
++-----------------------------------+-----------------------------------+
+
+A-L status codes for SA
+
+A - L list of status codes for SA
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Letter                            | Terms                             |
++-----------------------------------+-----------------------------------+
+| A-L                               | AGD, AGE, AOS, ASS, ATN, BTR,     |
+|                                   | CCM, CLR, CMI, CMP, COM, COP,     |
+| See also: M - Z                   | CPP, DDN, DEA, DLT, DNL, DNR,     |
+|                                   | DOP, DOT, DPA, DPI, DVA, E6F,     |
+|                                   | ENN, ETA, FAI, FCC, FME, FOE,     |
+|                                   | FRC, FRP, FSD, FSS, GWN, GWR,     |
+|                                   | H6H, IMP, INC, IND, INE, INM,     |
+|                                   | ITO, LLF                          |
++-----------------------------------+-----------------------------------+
+
+A - L List of cancellation codes, rejection codes and restoration options
+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Reason    | De        | Valid     | I         | Re        | Benefit   |
+| code      | scription | Action    | nitiation | storation | Type      |
+|           |           | Codes     |           | (does not |           |
+|           |           |           |           | apply to  |           |
+|           |           |           |           | REJ)      |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| AGD       | Does not  | REJ, CAN  | A         | No        | All       |
+|           | Meet age  |           |           |           |           |
+|           | Req       |           |           |           |           |
+|           | uirements |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| AGE       | Customer  | REJ, CAN  | A         | No        | All       |
+|           | has       |           |           |           | except    |
+|           | reached   |           |           |           | SPL under |
+|           | Age       |           |           |           | any       |
+|           | Pension   |           |           |           | condition |
+|           | Age       |           |           |           | and YAL   |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| AOS       | Assurance | REJ, CAN  | M         | No        | All - not |
+|           | of        |           |           |           | FHS, DRP  |
+|           | Support   |           |           |           |           |
+|           | in force  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| ASS       | Assets    | REJ, CAN  | M (REJ    | A         | All       |
+|           | over      |           | only) / A |           |           |
+|           | limit     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| ATN       | School    | SUS, CAN  | M/A       | H         | All       |
+|           | Enrolment |           |           | istorical |           |
+|           | and       |           |           | display   |           |
+|           | A         |           |           | only.     |           |
+|           | ttendance |           |           |           |           |
+|           | Measure   |           |           | Use of    |           |
+|           | (SEAM) -  |           |           | this code |           |
+|           | Child's   |           |           | ceased    |           |
+|           | A         |           |           | from 16   |           |
+|           | ttendance |           |           | December  |           |
+|           | not       |           |           | 2017.     |           |
+|           | sat       |           |           | This code |           |
+|           | isfactory |           |           | should    |           |
+|           |           |           |           | not be    |           |
+|           |           |           |           | used.     |           |
+|           |           |           |           |           |           |
+|           |           |           |           | SEAM ATN  |           |
+|           |           |           |           | canc      |           |
+|           |           |           |           | ellations |           |
+|           |           |           |           | are       |           |
+|           |           |           |           | non-re    |           |
+|           |           |           |           | storable. |           |
+|           |           |           |           | A         |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | whose     |           |
+|           |           |           |           | payment   |           |
+|           |           |           |           | has been  |           |
+|           |           |           |           | cancelled |           |
+|           |           |           |           | for       |           |
+|           |           |           |           | reason    |           |
+|           |           |           |           | ATN must  |           |
+|           |           |           |           | lodge a   |           |
+|           |           |           |           | new claim |           |
+|           |           |           |           | should    |           |
+|           |           |           |           | they wish |           |
+|           |           |           |           | to        |           |
+|           |           |           |           | r         |           |
+|           |           |           |           | ecommence |           |
+|           |           |           |           | payment.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| BTR       | Cancelled | CAN       | A         | No        | All       |
+|           | on        |           |           |           |           |
+|           | transfer  |           |           |           |           |
+|           | to        |           |           |           |           |
+|           | another   |           |           |           |           |
+|           | common    |           |           |           |           |
+|           | platform  |           |           |           |           |
+|           | payment   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| CCM       | Course /  | CAN       | A         | M         | SPL, SKA  |
+|           | Program   |           |           |           |           |
+|           | completed |           |           |           |           |
+|           | (for      |           |           |           |           |
+|           | non-inca  |           |           |           |           |
+|           | pacitated |           |           |           |           |
+|           | Rehab     |           |           |           |           |
+|           | only)     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| CLR       | Client    | REJ, CAN  | M         | M         | All       |
+|           | Request - |           |           |           |           |
+|           | claim     |           |           |           |           |
+|           | withdrawn |           |           |           |           |
+|           | / vol.    |           |           |           |           |
+|           | surrender |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| CMI       | Comp      | REJ,      | M         | M         | All       |
+|           | s         | SUS(G),   |           |           |           |
+|           | ettlement | CAN       |           |           |           |
+|           | under     |           |           |           |           |
+|           | Inve      |           |           |           |           |
+|           | stigation |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| CMP       | Precluded | REJ, CAN  | A         | A         | All       |
+|           | due to    |           |           |           |           |
+|           | regular   |           |           |           |           |
+|           | p         |           |           |           |           |
+|           | recluding |           |           |           |           |
+|           | com       |           |           |           |           |
+|           | pensation |           |           |           |           |
+|           | payments  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| COM       | Customer  | REJ, SUS, | A         | A         | All (not  |
+|           | in        | CAN       |           |           | FHS, DRP) |
+|           | com       |           |           |           |           |
+|           | pensation |           |           |           |           |
+|           | p         |           |           |           |           |
+|           | reclusion |           |           |           |           |
+|           | period    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| COP       | Another   | REJ, CAN  | M         | M         | All       |
+|           | payment   |           |           |           |           |
+|           | is more   |           |           |           |           |
+|           | ap        |           |           |           |           |
+|           | propriate |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| CPP       | Customer  | REJ       | M         |           | All       |
+|           | in        |           |           |           |           |
+|           | Receipt   |           |           |           |           |
+|           | of a      |           |           |           |           |
+|           | P         |           |           |           |           |
+|           | recluding |           |           |           |           |
+|           | DSS       |           |           |           |           |
+|           | Payment   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DDN       | Direct    | REJ, CAN  | A         | A         | All       |
+|           | Deduction |           |           |           |           |
+|           | Income    |           |           |           |           |
+|           | too       |           |           |           |           |
+|           | high -    |           |           |           |           |
+|           | not       |           |           |           |           |
+|           | com       |           |           |           |           |
+|           | pensation |           |           |           |           |
+|           | income    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DEA       | Death     | REJ, CAN  | A         | See       | All       |
+|           |           |           |           | Undoing a |           |
+|           |           |           |           | Death     |           |
+|           |           |           |           | Action.   |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DLT       | Di        | REJ, CAN  | M         | M         | NSA, SKA, |
+|           | sability/ |           |           |           | YAL, AUS  |
+|           | I         |           |           |           |           |
+|           | ncapacity |           |           |           |           |
+|           | is        |           |           |           |           |
+|           | Long-Term |           |           |           |           |
+|           | / not     |           |           |           |           |
+|           | temporary |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DNL       | Customers | REJ, CAN  | A         | Only      | All (not  |
+|           | coded as  |           |           | restore   | FHS)      |
+|           | S19       |           |           | if the    |           |
+|           | reporters |           |           | customer  |           |
+|           | on        |           |           | has met   |           |
+|           | Reporting |           |           | all       |           |
+|           | Regime    |           |           | req       |           |
+|           | (RPRD)    |           |           | uirements |           |
+|           | screen    |           |           | or it is  |           |
+|           | and who   |           |           | clear     |           |
+|           | failed to |           |           | their     |           |
+|           | lodge     |           |           | record    |           |
+|           | SU19 form |           |           | has not   |           |
+|           | or report |           |           | been      |           |
+|           | within 14 |           |           | updated   |           |
+|           | days of   |           |           | correctly |           |
+|           | Due To    |           |           | resulting |           |
+|           | Lodge     |           |           | in        |           |
+|           | (DTL)     |           |           | canc      |           |
+|           |           |           |           | ellation, |           |
+|           |           |           |           | where the |           |
+|           |           |           |           | in        |           |
+|           |           |           |           | formation |           |
+|           |           |           |           | is        |           |
+|           |           |           |           | captured  |           |
+|           |           |           |           | on the    |           |
+|           |           |           |           | record in |           |
+|           |           |           |           | a DOC     |           |
+|           |           |           |           | from a    |           |
+|           |           |           |           | failed    |           |
+|           |           |           |           | self      |           |
+|           |           |           |           | service   |           |
+|           |           |           |           | tr        |           |
+|           |           |           |           | ansaction |           |
+|           |           |           |           | that has  |           |
+|           |           |           |           | not been  |           |
+|           |           |           |           | f         |           |
+|           |           |           |           | inalised, |           |
+|           |           |           |           | or where  |           |
+|           |           |           |           | a scanned |           |
+|           |           |           |           | image is  |           |
+|           |           |           |           | available |           |
+|           |           |           |           | of the    |           |
+|           |           |           |           | SU19.     |           |
+|           |           |           |           |           |           |
+|           |           |           |           | Con       |           |
+|           |           |           |           | firmation |           |
+|           |           |           |           | of        |           |
+|           |           |           |           | e         |           |
+|           |           |           |           | mployment |           |
+|           |           |           |           | income    |           |
+|           |           |           |           | can be    |           |
+|           |           |           |           | accepted  |           |
+|           |           |           |           | verbally. |           |
+|           |           |           |           |           |           |
+|           |           |           |           | See Early |           |
+|           |           |           |           | or late   |           |
+|           |           |           |           | lodgement |           |
+|           |           |           |           | of job    |           |
+|           |           |           |           | seeker    |           |
+|           |           |           |           | reports.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DNR       | Did not   | REJ, SUS, | A         | M/A       | All       |
+|           | lodge     | CAN       |           | Restore   |           |
+|           | Review    |           |           | only if   |           |
+|           | form      |           |           | lodgement |           |
+|           |           |           |           | of review |           |
+|           |           |           |           | form is   |           |
+|           |           |           |           | either    |           |
+|           |           |           |           | do        |           |
+|           |           |           |           | cumented, |           |
+|           |           |           |           | coded or  |           |
+|           |           |           |           | available |           |
+|           |           |           |           | as a      |           |
+|           |           |           |           | digital   |           |
+|           |           |           |           | image.    |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DOP       | Departur  | REJ, CAN  | A         |           | All       |
+|           | e/Absence |           |           |           |           |
+|           | o         |           |           |           |           |
+|           | verseas - |           |           |           |           |
+|           | Permanent |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DOT       | Departure | REJ, SUS, | A         | M         | All       |
+|           | / Absence | CAN       |           |           | (except   |
+|           | O         |           |           | If SUS    | NMA, PTA  |
+|           | verseas - |           |           | restore   | & WDA)    |
+|           | Temporary |           |           | when      |           |
+|           | but not   |           |           | customer  |           |
+|           | for       |           |           | has       |           |
+|           | a         |           |           | returned. |           |
+|           | cceptable |           |           | See       |           |
+|           | medical   |           |           | Returning |           |
+|           | reason    |           |           | to        |           |
+|           |           |           |           | A         |           |
+|           |           |           |           | ustralia. |           |
+|           |           |           |           |           |           |
+|           |           |           |           | If CAN,   |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | has to    |           |
+|           |           |           |           | reclaim   |           |
+|           |           |           |           | except if |           |
+|           |           |           |           | the       |           |
+|           |           |           |           | can       |           |
+|           |           |           |           | cellation |           |
+|           |           |           |           | was       |           |
+|           |           |           |           | clearly   |           |
+|           |           |           |           | i         |           |
+|           |           |           |           | ncorrect. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DPA       | Assets    | REJ, CAN  | M/A       | A         | All       |
+|           | preclude  |           |           |           | (except   |
+|           | on Death  |           |           |           | WDA)      |
+|           | of        |           |           |           |           |
+|           | Partner   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DPI       | Income    | REJ, CAN  | M/A       | A         | All       |
+|           | precludes |           |           |           | (except   |
+|           | on Death  |           |           |           | WDA)      |
+|           | of        |           |           |           |           |
+|           | Partner   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| DVA       | In        | REJ, CAN  | A         | M         | All       |
+|           | receipt   |           |           |           |           |
+|           | of a      |           |           |           |           |
+|           | p         |           |           |           |           |
+|           | recluding |           |           |           |           |
+|           | DVA       |           |           |           |           |
+|           | payment   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| ENN       | School    | SUS       | M         | H         | All       |
+|           | Enrolment |           |           | istorical |           |
+|           | and       |           |           | display   |           |
+|           | A         |           |           | only.     |           |
+|           | ttendance |           |           |           |           |
+|           | Measure   |           |           | Use of    |           |
+|           | (SEAM) -  |           |           | this code |           |
+|           | Child's   |           |           | ceased    |           |
+|           | Enrolment |           |           | from 16   |           |
+|           | details   |           |           | December  |           |
+|           | not       |           |           | 2017.     |           |
+|           | provided  |           |           | This code |           |
+|           |           |           |           | should    |           |
+|           |           |           |           | not be    |           |
+|           |           |           |           | used.     |           |
+|           |           |           |           |           |           |
+|           |           |           |           | SEAM ENN  |           |
+|           |           |           |           | canc      |           |
+|           |           |           |           | ellations |           |
+|           |           |           |           | are       |           |
+|           |           |           |           | non-re    |           |
+|           |           |           |           | storable. |           |
+|           |           |           |           | A         |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | whose     |           |
+|           |           |           |           | payment   |           |
+|           |           |           |           | has been  |           |
+|           |           |           |           | cancelled |           |
+|           |           |           |           | for       |           |
+|           |           |           |           | reason    |           |
+|           |           |           |           | ENN must  |           |
+|           |           |           |           | lodge a   |           |
+|           |           |           |           | new claim |           |
+|           |           |           |           | should    |           |
+|           |           |           |           | they wish |           |
+|           |           |           |           | to        |           |
+|           |           |           |           | r         |           |
+|           |           |           |           | ecommence |           |
+|           |           |           |           | payment.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| ETA       | In        | REJ, CAN  | M/A       | M         | All       |
+|           | Receipt   |           |           |           |           |
+|           | of        |           |           |           |           |
+|           | Education |           |           |           |           |
+|           | Allowance |           |           |           |           |
+|           | (Until    |           |           |           |           |
+|           | 1/7/98)   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| E6F       | Combined  | CAN       | A         | No        | All       |
+|           | 70 hrs    |           |           |           |           |
+|           | work/e    |           |           |           |           |
+|           | mployment |           |           |           |           |
+|           | income    |           |           |           |           |
+|           | p         |           |           |           |           |
+|           | recluding |           |           |           |           |
+|           | payment   |           |           |           |           |
+|           | for six   |           |           |           |           |
+|           | f         |           |           |           |           |
+|           | ortnights |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FAI       | Failed to | REJ, SUS, | M         | M         |           |
+|           | Attend    | CAN       |           |           |           |
+|           | Interview |           |           | To        |           |
+|           | (no       |           |           | restore   |           |
+|           | Part      |           |           | only if:  |           |
+|           | icipation |           |           |           |           |
+|           | Failure)  |           |           | -   a     |           |
+|           |           |           |           | ttendance |           |
+|           |           |           |           |     at    |           |
+|           |           |           |           |           |           |
+|           |           |           |           | interview |           |
+|           |           |           |           |     (no   |           |
+|           |           |           |           |     Part  |           |
+|           |           |           |           | icipation |           |
+|           |           |           |           |           |           |
+|           |           |           |           |  Failure) |           |
+|           |           |           |           |     is    |           |
+|           |           |           |           |     d     |           |
+|           |           |           |           | ocumented |           |
+|           |           |           |           |     or    |           |
+|           |           |           |           |     coded |           |
+|           |           |           |           |           |           |
+|           |           |           |           |    unless |           |
+|           |           |           |           |     dete  |           |
+|           |           |           |           | rmination |           |
+|           |           |           |           |     is    |           |
+|           |           |           |           |     made  |           |
+|           |           |           |           |     that  |           |
+|           |           |           |           |     the   |           |
+|           |           |           |           |           |           |
+|           |           |           |           |  customer |           |
+|           |           |           |           |     is in |           |
+|           |           |           |           |           |           |
+|           |           |           |           | hardship, |           |
+|           |           |           |           |     or    |           |
+|           |           |           |           | -   where |           |
+|           |           |           |           |     it is |           |
+|           |           |           |           |     clear |           |
+|           |           |           |           |     the   |           |
+|           |           |           |           |           |           |
+|           |           |           |           |  customer |           |
+|           |           |           |           |     did   |           |
+|           |           |           |           |     not   |           |
+|           |           |           |           |           |           |
+|           |           |           |           |   receive |           |
+|           |           |           |           |     ap    |           |
+|           |           |           |           | propriate |           |
+|           |           |           |           |     not   |           |
+|           |           |           |           | ification |           |
+|           |           |           |           |     of    |           |
+|           |           |           |           |     the   |           |
+|           |           |           |           |           |           |
+|           |           |           |           | interview |           |
+|           |           |           |           |           |           |
+|           |           |           |           | All       |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FCC       | Failed to | REJ,      | M         |           | All - not |
+|           | Claim     | SUS(G),   |           |           | FHS, DRP  |
+|           | Com       | REJ       |           |           |           |
+|           | pensation |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FME       | Failed to | REJ,      | M         |           | SKA &     |
+|           | Undergo   | SUS(G),   |           |           | NSA, YAL  |
+|           | Medical   | CAN       |           |           | inca      |
+|           | Ex        |           |           |           | pacitated |
+|           | amination |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FOE       | Returned  | REJ, CAN  | A         |           | All       |
+|           | to work   |           |           |           |           |
+|           | (via IES  |           |           |           |           |
+|           | i         |           |           |           |           |
+|           | nterface) |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FRC       | Failed to | REJ, SUS, | M         | M         | All       |
+|           | Reply to  | CAN       |           |           |           |
+|           | Corre     |           |           | REJ –     |           |
+|           | spondence |           |           | claim can |           |
+|           |           |           |           | be        |           |
+|           |           |           |           | r         |           |
+|           |           |           |           | eassessed |           |
+|           |           |           |           | if        |           |
+|           |           |           |           | corre     |           |
+|           |           |           |           | spondence |           |
+|           |           |           |           | is either |           |
+|           |           |           |           | d         |           |
+|           |           |           |           | ocumented |           |
+|           |           |           |           | and coded |           |
+|           |           |           |           | or        |           |
+|           |           |           |           | available |           |
+|           |           |           |           | as a      |           |
+|           |           |           |           | digital   |           |
+|           |           |           |           | image.    |           |
+|           |           |           |           |           |           |
+|           |           |           |           | SUS,      |           |
+|           |           |           |           | CAN -     |           |
+|           |           |           |           | restore   |           |
+|           |           |           |           | if        |           |
+|           |           |           |           | corre     |           |
+|           |           |           |           | spondence |           |
+|           |           |           |           | DOC'd as  |           |
+|           |           |           |           | being     |           |
+|           |           |           |           | received  |           |
+|           |           |           |           | or        |           |
+|           |           |           |           | contact   |           |
+|           |           |           |           | has been  |           |
+|           |           |           |           | made with |           |
+|           |           |           |           | the       |           |
+|           |           |           |           | relevant  |           |
+|           |           |           |           | officer   |           |
+|           |           |           |           | or if     |           |
+|           |           |           |           | available |           |
+|           |           |           |           | as a      |           |
+|           |           |           |           | digital   |           |
+|           |           |           |           | image.    |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FRP       | Customers | CAN       | A         | Only      | All       |
+|           | coded as  |           |           | restore   |           |
+|           | S19       |           |           | if the    |           |
+|           | reporters |           |           | customer  |           |
+|           | on        |           |           | has met   |           |
+|           | Reporting |           |           | all       |           |
+|           | Regime    |           |           | req       |           |
+|           | (RPRD)    |           |           | uirements |           |
+|           | screen    |           |           | or it is  |           |
+|           | who did   |           |           | clear     |           |
+|           | not have  |           |           | their     |           |
+|           | a status  |           |           | record    |           |
+|           | of        |           |           | has not   |           |
+|           | current   |           |           | been      |           |
+|           | i.e.      |           |           | updated   |           |
+|           | suspended |           |           | correctly |           |
+|           | or        |           |           | resulting |           |
+|           | current   |           |           | in        |           |
+|           | zero rate |           |           | canc      |           |
+|           | (CZR) and |           |           | ellation, |           |
+|           | failed to |           |           | where the |           |
+|           | report    |           |           | in        |           |
+|           | within 14 |           |           | formation |           |
+|           | days of   |           |           | is        |           |
+|           | Due To    |           |           | captured  |           |
+|           | Lodge     |           |           | on the    |           |
+|           | (DTL), or |           |           | record in |           |
+|           |           |           |           | a DOC     |           |
+|           | Customers |           |           | from a    |           |
+|           | coded as  |           |           | failed    |           |
+|           | 12 weekly |           |           | self      |           |
+|           | reporting |           |           | service   |           |
+|           | statement |           |           | tr        |           |
+|           | (RIA)     |           |           | ansaction |           |
+|           | reporters |           |           | that has  |           |
+|           | on RPRD   |           |           | not been  |           |
+|           | screen    |           |           | f         |           |
+|           | who       |           |           | inalised, |           |
+|           | failed to |           |           | or where  |           |
+|           | report    |           |           | a scanned |           |
+|           | within 14 |           |           | image is  |           |
+|           | days of   |           |           | available |           |
+|           | DTL       |           |           | of the    |           |
+|           |           |           |           | SU19.     |           |
+|           |           |           |           |           |           |
+|           |           |           |           | Con       |           |
+|           |           |           |           | firmation |           |
+|           |           |           |           | of        |           |
+|           |           |           |           | e         |           |
+|           |           |           |           | mployment |           |
+|           |           |           |           | income    |           |
+|           |           |           |           | can be    |           |
+|           |           |           |           | accepted  |           |
+|           |           |           |           | verbally. |           |
+|           |           |           |           |           |           |
+|           |           |           |           | See Early |           |
+|           |           |           |           | or late   |           |
+|           |           |           |           | lodgement |           |
+|           |           |           |           | of job    |           |
+|           |           |           |           | seeker    |           |
+|           |           |           |           | reports.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FSD       | Failed to | REJ, SUS, | M         | M         | All       |
+|           | Supply    | CAN       |           |           |           |
+|           | Documents |           |           | To        |           |
+|           |           |           |           | reassess  |           |
+|           |           |           |           | or        |           |
+|           |           |           |           | restore   |           |
+|           |           |           |           | only if   |           |
+|           |           |           |           | return of |           |
+|           |           |           |           | form      |           |
+|           |           |           |           | /document |           |
+|           |           |           |           | is either |           |
+|           |           |           |           | d         |           |
+|           |           |           |           | ocumented |           |
+|           |           |           |           | and coded |           |
+|           |           |           |           | or        |           |
+|           |           |           |           | available |           |
+|           |           |           |           | as a      |           |
+|           |           |           |           | digital   |           |
+|           |           |           |           | image.    |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| FSS       | No reply  | SUS, CAN  | A         | To        | All       |
+|           | to income |           |           | restore   |           |
+|           | stream    |           |           | if all    |           |
+|           | review    |           |           | details   |           |
+|           |           |           |           | supplied  |           |
+|           |           |           |           | and       |           |
+|           |           |           |           | coded.    |           |
+|           |           |           |           | For more  |           |
+|           |           |           |           | in        |           |
+|           |           |           |           | formation |           |
+|           |           |           |           | see       |           |
+|           |           |           |           | February  |           |
+|           |           |           |           | review of |           |
+|           |           |           |           | income    |           |
+|           |           |           |           | streams.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| GWN       | Customer  | CAN, SUS  | M         |           | All       |
+|           | gone      |           |           |           |           |
+|           | overseas  |           |           |           |           |
+|           | without   |           |           |           |           |
+|           | notifying |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| GWR       | Rent      | CAN, SUS  | M         |           | All       |
+|           | A         |           |           |           |           |
+|           | ssistance |           |           |           |           |
+|           | po        |           |           |           |           |
+|           | rtability |           |           |           |           |
+|           | review    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| H6H       | employed  | CAN       | A         | No        | All       |
+|           | 70 hours  |           |           |           |           |
+|           | for six   |           |           |           |           |
+|           | co        |           |           |           |           |
+|           | nsecutive |           |           |           |           |
+|           | f         |           |           |           |           |
+|           | ortnights |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| IMP       | I         | REJ,      | M/A       |           | All       |
+|           | mprisoned | SUS(G),   |           |           |           |
+|           | / On      | CAN       |           |           |           |
+|           | Remand    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| INC       | Income    | REJ, CAN  | M (REJ    | A         | All       |
+|           | too High  |           | only) / A |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| IND       | Customer  | REJ, CAN  | M         |           | NSA, PTA, |
+|           | Involved  |           |           |           | AUS, YAL, |
+|           | in        |           |           |           | SKA       |
+|           | I         |           |           |           |           |
+|           | ndustrial |           |           |           |           |
+|           | Action    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| INE       | Partner   | REJ, CAN  | M (REJ    | A         | ALL       |
+|           | Excess    |           | only) / A |           | (except   |
+|           | Income    |           |           |           | WDA)      |
+|           | precludes |           |           |           |           |
+|           | customer  |           |           |           |           |
+|           | payment   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| INM       | Customer  | SUS, CAN  | A         | Should    |           |
+|           | failed to |           |           | only be   |           |
+|           | contact   |           |           | restored  |           |
+|           | after     |           |           | if        |           |
+|           | auto      |           |           | customer  |           |
+|           | Income    |           |           | has had   |           |
+|           | M         |           |           | their     |           |
+|           | anagement |           |           | ass       |           |
+|           |           |           |           | essment/a |           |
+|           |           |           |           | llocation |           |
+|           |           |           |           | interview |           |
+|           |           |           |           | to        |           |
+|           |           |           |           | discuss   |           |
+|           |           |           |           | their     |           |
+|           |           |           |           | expenses  |           |
+|           |           |           |           | and       |           |
+|           |           |           |           | priority  |           |
+|           |           |           |           | needs.    |           |
+|           |           |           |           | For       |           |
+|           |           |           |           | details   |           |
+|           |           |           |           | see:      |           |
+|           |           |           |           |           |           |
+|           |           |           |           | -         |           |
+|           |           |           |           |   Initial |           |
+|           |           |           |           |     A     |           |
+|           |           |           |           | ssessment |           |
+|           |           |           |           |           |           |
+|           |           |           |           | interview |           |
+|           |           |           |           |     for   |           |
+|           |           |           |           |     D     |           |
+|           |           |           |           | isengaged |           |
+|           |           |           |           |     Youth |           |
+|           |           |           |           |     and   |           |
+|           |           |           |           |     Long  |           |
+|           |           |           |           |     Term  |           |
+|           |           |           |           |           |           |
+|           |           |           |           |   Welfare |           |
+|           |           |           |           |           |           |
+|           |           |           |           |   Payment |           |
+|           |           |           |           |     R     |           |
+|           |           |           |           | ecipients |           |
+|           |           |           |           | -         |           |
+|           |           |           |           |   Initial |           |
+|           |           |           |           |     A     |           |
+|           |           |           |           | ssessment |           |
+|           |           |           |           |           |           |
+|           |           |           |           | interview |           |
+|           |           |           |           |     for   |           |
+|           |           |           |           |     Child |           |
+|           |           |           |           |     P     |           |
+|           |           |           |           | rotection |           |
+|           |           |           |           |           |           |
+|           |           |           |           |    Income |           |
+|           |           |           |           |     M     |           |
+|           |           |           |           | anagement |           |
+|           |           |           |           |           |           |
+|           |           |           |           |    (CPIM) |           |
+|           |           |           |           | -   Auto  |           |
+|           |           |           |           |           |           |
+|           |           |           |           |    Income |           |
+|           |           |           |           |     M     |           |
+|           |           |           |           | anagement |           |
+|           |           |           |           |     and   |           |
+|           |           |           |           |     s     |           |
+|           |           |           |           | uspension |           |
+|           |           |           |           |     of    |           |
+|           |           |           |           |           |           |
+|           |           |           |           |  payments |           |
+|           |           |           |           |     when  |           |
+|           |           |           |           |     a     |           |
+|           |           |           |           |           |           |
+|           |           |           |           |  customer |           |
+|           |           |           |           |     fails |           |
+|           |           |           |           |     to    |           |
+|           |           |           |           |           |           |
+|           |           |           |           |    attend |           |
+|           |           |           |           |           |           |
+|           |           |           |           |   Initial |           |
+|           |           |           |           |     A     |           |
+|           |           |           |           | ssessment |           |
+|           |           |           |           |           |           |
+|           |           |           |           | interview |           |
+|           |           |           |           |           |           |
+|           |           |           |           | All       |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| ITO       | I         | REJ, CAN  | A         | No        |           |
+|           | nterstate |           |           |           |           |
+|           | Transfer  |           |           |           |           |
+|           | Out       |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| LLF       | SU19 Late | REJ, CAN  | M         | M         | All       |
+|           | Lodged    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+M-Z status codes for SA
+
+M - Z list of status codes for SA
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Letter                            | Terms                             |
++-----------------------------------+-----------------------------------+
+| M - Z                             | MCC, MCL, MCX, NAR, NAU, NEI,     |
+|                                   | NIW, NMG, NNB, NRQ, NTB, NTC,     |
+| See also: A - L                   | NTP, NW2, NWA, O3M, OTH, OVP,     |
+|                                   | PAH, PDD, PER, PIA, PIH, PIM,     |
+|                                   | PIT, POC, POI, PSY, RDC, RFR,     |
+|                                   | RFS, RHB, RNP, ROL, SNJ, SSS,     |
+|                                   | SST, STU, USY, WUK                |
++-----------------------------------+-----------------------------------+
+
+M - Z List of cancellation codes, rejection codes and restoration options
+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Reason    | De        | Valid     | I         | Re        | Benefit   |
+| code      | scription | Action    | nitiation | storation | Type      |
+|           |           | Codes     |           | (does not |           |
+|           |           |           |           | apply to  |           |
+|           |           |           |           | REJ)      |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| MCC       | Medical   | REJ, CAN  | M/A       | M         | SKA, NSA, |
+|           | Evidence  |           |           |           | AUS & YAL |
+|           | Not       |           |           |           |           |
+|           | Provided  |           |           |           |           |
+|           | (Treating |           |           |           |           |
+|           | Doctors   |           |           |           |           |
+|           | Report,   |           |           |           |           |
+|           | etc.)     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| MCL       | Medical   | REJ       | M         |           | SKA       |
+|           | Ce        |           |           |           |           |
+|           | rtificate |           |           |           |           |
+|           | lodged    |           |           |           |           |
+|           | more than |           |           |           |           |
+|           | five      |           |           |           |           |
+|           | weeks     |           |           |           |           |
+|           | after     |           |           |           |           |
+|           | i         |           |           |           |           |
+|           | ncapacity |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| MCX       | Medical   | REJ, CAN  | M/A       | M/A       | SKA       |
+|           | Ce        |           |           |           |           |
+|           | rtificate |           |           |           |           |
+|           | Expired   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NAR       | Not       | REJ       | M         | No        | All       |
+|           | Resident  |           |           |           |           |
+|           | in        |           |           |           |           |
+|           | Australia |           |           |           |           |
+|           | when      |           |           |           |           |
+|           | claiming  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NAU       | Not       | REJ, CAN  | A         | Only      | All       |
+|           | residing  |           |           | restore   |           |
+|           | in        |           |           | if        |           |
+|           | Australia |           |           | can       |           |
+|           |           |           |           | cellation |           |
+|           |           |           |           | is due to |           |
+|           |           |           |           | an error  |           |
+|           |           |           |           | and the   |           |
+|           |           |           |           | error has |           |
+|           |           |           |           | been      |           |
+|           |           |           |           | c         |           |
+|           |           |           |           | orrected. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NEI       | Customer  | REJ, CAN  | M/A       | M         | All,      |
+|           | is        |           |           |           | except    |
+|           | Self      |           |           |           | NMA, FHS, |
+|           | -Employed |           |           |           | DRP       |
+|           | under     |           |           |           |           |
+|           | NEIS      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NIW       | Not       | REJ, CAN  | M         | M         | SKA       |
+|           | Inca      |           |           |           |           |
+|           | pacitated |           |           |           |           |
+|           | for Work  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NMG       | Customer  | REJ       | A         | No        | All       |
+|           | is a      |           |           |           | except    |
+|           | Newly     |           |           |           | FHS, DRP  |
+|           | Arrived   |           |           |           |           |
+|           | Migrant - |           |           |           |           |
+|           | two year  |           |           |           |           |
+|           | Waiting   |           |           |           |           |
+|           | Period    |           |           |           |           |
+|           | applies   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NNB       | Date of   | REJ       | A         | No        | All       |
+|           | com       |           |           |           |           |
+|           | mencement |           |           |           |           |
+|           | is more   |           |           |           |           |
+|           | than 15   |           |           |           |           |
+|           | weeks in  |           |           |           |           |
+|           | the       |           |           |           |           |
+|           | future    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NRQ       | Not       | REJ, CAN  | M/A       | Only      | All       |
+|           | Resi      |           |           | restore   | except    |
+|           | dentially |           |           | if        | FHS, DRP  |
+|           | Qu        |           |           | can       |           |
+|           | alified - |           |           | cellation |           |
+|           | p         |           |           | was due   |           |
+|           | rohibited |           |           | to an     |           |
+|           | migrant   |           |           | error and |           |
+|           | e.g.      |           |           | error is  |           |
+|           | entered   |           |           | c         |           |
+|           | on        |           |           | orrected. |           |
+|           | working   |           |           |           |           |
+|           | visa      |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NTB       | Client &  | REJ, CAN  | A         | M         | All       |
+|           | Partner   |           |           |           | except    |
+|           | TFN not   |           |           | Restore   | FHS, DRP  |
+|           | Provided  |           |           | where the | / WDA     |
+|           |           |           |           | customer  |           |
+|           |           |           |           | and       |           |
+|           |           |           |           | partner   |           |
+|           |           |           |           | give      |           |
+|           |           |           |           | authority |           |
+|           |           |           |           | to use    |           |
+|           |           |           |           | TFN that  |           |
+|           |           |           |           | is        |           |
+|           |           |           |           | already   |           |
+|           |           |           |           | recorded. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NTC       | Client    | REJ, CAN  | A         | M         | All       |
+|           | TFN not   |           |           |           | except    |
+|           | Provided  |           |           | Restore   | FHS, DRP  |
+|           |           |           |           | where the |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | gives     |           |
+|           |           |           |           | authority |           |
+|           |           |           |           | to use    |           |
+|           |           |           |           | TFN that  |           |
+|           |           |           |           | is        |           |
+|           |           |           |           | already   |           |
+|           |           |           |           | recorded. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NTP       | Partner   | REJ, CAN  | A         | M         | All       |
+|           | TFN not   |           |           |           | except    |
+|           | Provided  |           |           | Restore   | FHS, DRP, |
+|           |           |           |           | (when     | WDA       |
+|           |           |           |           | can       |           |
+|           |           |           |           | cellation |           |
+|           |           |           |           | of        |           |
+|           |           |           |           | payment   |           |
+|           |           |           |           | occurs)   |           |
+|           |           |           |           | where the |           |
+|           |           |           |           | partner   |           |
+|           |           |           |           | gives     |           |
+|           |           |           |           | authority |           |
+|           |           |           |           | to use    |           |
+|           |           |           |           | TFN that  |           |
+|           |           |           |           | is        |           |
+|           |           |           |           | already   |           |
+|           |           |           |           | recorded. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NW2       | Residency | REJ, CAN  | A         | Only      | SKA       |
+|           | less than |           |           | restore   |           |
+|           | 104 weeks |           |           | if        |           |
+|           |           |           |           | can       |           |
+|           |           |           |           | cellation |           |
+|           |           |           |           | is due to |           |
+|           |           |           |           | an error  |           |
+|           |           |           |           | and the   |           |
+|           |           |           |           | error has |           |
+|           |           |           |           | been      |           |
+|           |           |           |           | c         |           |
+|           |           |           |           | orrected. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| NWA       | NARWP     | REJ, CAN  | A         | Only      | SKA       |
+|           | a         |           |           | restore   |           |
+|           | ssessment |           |           | if        |           |
+|           | not met   |           |           | can       |           |
+|           |           |           |           | cellation |           |
+|           |           |           |           | is due to |           |
+|           |           |           |           | an error  |           |
+|           |           |           |           | and the   |           |
+|           |           |           |           | error has |           |
+|           |           |           |           | been      |           |
+|           |           |           |           | c         |           |
+|           |           |           |           | orrected. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| OTH       | Other     | REJ,      | M         | M         | All       |
+|           | Reasons   | SUS(G),   |           |           |           |
+|           |           | CAN       |           | Check     |           |
+|           |           |           |           | S         |           |
+|           |           |           |           | uspension |           |
+|           |           |           |           | DOC for   |           |
+|           |           |           |           | more      |           |
+|           |           |           |           | inf       |           |
+|           |           |           |           | ormation, |           |
+|           |           |           |           | some      |           |
+|           |           |           |           | enquires  |           |
+|           |           |           |           | can be    |           |
+|           |           |           |           | resolved  |           |
+|           |           |           |           | over the  |           |
+|           |           |           |           | phone.    |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| OVP       | Ov        | SUS       | M         |           | All       |
+|           | erpayment |           |           |           | except    |
+|           | Inve      |           |           |           | FHS       |
+|           | stigation |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| O3M       | Overseas  | CAN       | A         | M         | All       |
+|           | more than |           |           |           |           |
+|           | three     |           |           |           |           |
+|           | months    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PAH       | Parental  | REJ, CAN  | M/A       | M         | SKA, NSA, |
+|           | Assets    |           |           |           | YAL       |
+|           | Too High  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PDD       | No        | REJ, SUS  | A         | SUS only  | All       |
+|           | Payment   |           |           |           | except    |
+|           | de        |           |           |           | ECP, FFR  |
+|           | stination |           |           |           |           |
+|           | details   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PER       | Failure   | SUS, CAN  | M         | Restore   | SKA       |
+|           | to supply |           |           | where it  |           |
+|           | Income    |           |           | is        |           |
+|           | and       |           |           | d         |           |
+|           | Assets    |           |           | ocumented |           |
+|           | update    |           |           | that the  |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | has       |           |
+|           |           |           |           | supplied  |           |
+|           |           |           |           | the       |           |
+|           |           |           |           | Income    |           |
+|           |           |           |           | and       |           |
+|           |           |           |           | Assets    |           |
+|           |           |           |           | update.   |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PIA       | Parental  | REJ, CAN  | M/A       | M         | SKA, NSA, |
+|           | Income    |           |           |           | YAL       |
+|           | and       |           |           |           |           |
+|           | Assets    |           |           |           |           |
+|           | not       |           |           |           |           |
+|           | provided  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PIH       | Parental  | REJ, CAN  | M/A       | M         | SKA, NSA, |
+|           | Income    |           |           |           | YAL       |
+|           | Too High  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PIM       | Income    | SUS       | A         | A         | SKA, NSA, |
+|           | Ma        |           |           |           | PTA, WDA, |
+|           | intenance |           |           |           | YAL, AUS  |
+|           | Period    |           |           |           |           |
+|           | p         |           |           |           |           |
+|           | reclusion |           |           |           |           |
+|           | applied   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PIT       | Parental  | REJ, CAN  | M/A       | M         | SKA, SPL, |
+|           | Income    |           |           |           | YAL       |
+|           | details   |           |           |           |           |
+|           | not known |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| POC       | P         | SUS, CAN  | M/A       | If SUS -  |           |
+|           | ayability |           |           | restore   |           |
+|           | overseas  |           |           | but only  |           |
+|           | ceased    |           |           | where     |           |
+|           |           |           |           | confident |           |
+|           |           |           |           | that the  |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | has       |           |
+|           |           |           |           | returned  |           |
+|           |           |           |           | (see      |           |
+|           |           |           |           | Returning |           |
+|           |           |           |           | to        |           |
+|           |           |           |           | Au        |           |
+|           |           |           |           | stralia), |           |
+|           |           |           |           | or        |           |
+|           |           |           |           | po        |           |
+|           |           |           |           | rtability |           |
+|           |           |           |           | was       |           |
+|           |           |           |           | granted   |           |
+|           |           |           |           | for an    |           |
+|           |           |           |           | approved  |           |
+|           |           |           |           | reason    |           |
+|           |           |           |           | and       |           |
+|           |           |           |           | allowable |           |
+|           |           |           |           | po        |           |
+|           |           |           |           | rtability |           |
+|           |           |           |           | period is |           |
+|           |           |           |           | extended. |           |
+|           |           |           |           |           |           |
+|           |           |           |           | If CAN -  |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | has to    |           |
+|           |           |           |           | reclaim.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| POI       | Proof of  | REJ, CAN  | A         | See       | All       |
+|           | Identity  |           |           | Identity  |           |
+|           | not       |           |           | Review    |           |
+|           | Provided  |           |           | Period.   |           |
+|           |           |           |           |           |           |
+|           |           |           |           | To        |           |
+|           |           |           |           | restore   |           |
+|           |           |           |           | only if   |           |
+|           |           |           |           | Identity  |           |
+|           |           |           |           | Con       |           |
+|           |           |           |           | firmation |           |
+|           |           |           |           | has been  |           |
+|           |           |           |           | f         |           |
+|           |           |           |           | inalised. |           |
+|           |           |           |           | Use the   |           |
+|           |           |           |           | Identity  |           |
+|           |           |           |           | Summary,  |           |
+|           |           |           |           | located   |           |
+|           |           |           |           | in the    |           |
+|           |           |           |           | Customer  |           |
+|           |           |           |           | Identity  |           |
+|           |           |           |           | and       |           |
+|           |           |           |           | Authe     |           |
+|           |           |           |           | ntication |           |
+|           |           |           |           | a         |           |
+|           |           |           |           | ssignment |           |
+|           |           |           |           | block in  |           |
+|           |           |           |           | Workspace |           |
+|           |           |           |           | to check  |           |
+|           |           |           |           | whether a |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | has a     |           |
+|           |           |           |           | confirmed |           |
+|           |           |           |           | identity  |           |
+|           |           |           |           | status.   |           |
+|           |           |           |           | If status |           |
+|           |           |           |           | is not    |           |
+|           |           |           |           | c         |           |
+|           |           |           |           | onfirmed, |           |
+|           |           |           |           | advise    |           |
+|           |           |           |           | customer  |           |
+|           |           |           |           | of any    |           |
+|           |           |           |           | ou        |           |
+|           |           |           |           | tstanding |           |
+|           |           |           |           | identity  |           |
+|           |           |           |           | req       |           |
+|           |           |           |           | uirements |           |
+|           |           |           |           | as        |           |
+|           |           |           |           | outlined  |           |
+|           |           |           |           | in        |           |
+|           |           |           |           | Identity  |           |
+|           |           |           |           | Conf      |           |
+|           |           |           |           | irmation. |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| PSY       | In Mental | REJ, CAN  | M         | M         | All       |
+|           | In        |           |           |           |           |
+|           | stitution |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| RDC       | Returned  | SUS, CAN  | M         | M         | All       |
+|           | Direct    |           |           |           |           |
+|           | Credit    |           |           |           |           |
+|           | Payment   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| RFR       | failed to | SUS, CAN  | M         | If SUS -  | SKA       |
+|           | reply to  |           |           | re        |           |
+|           | recovery  |           |           | storation |           |
+|           | fee       |           |           | can only  |           |
+|           | letter    |           |           | be done   |           |
+|           |           |           |           | by staff  |           |
+|           |           |           |           | re        |           |
+|           |           |           |           | sponsible |           |
+|           |           |           |           | for       |           |
+|           |           |           |           | debts.    |           |
+|           |           |           |           |           |           |
+|           |           |           |           | If CAN -  |           |
+|           |           |           |           | CUS has   |           |
+|           |           |           |           | to        |           |
+|           |           |           |           | reclaim.  |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| RFS       | Returned  | REJ, CAN  | A         | M         | NSA, SKA, |
+|           | to Full   |           |           |           | FHS, DRP, |
+|           | Time      |           |           |           | WDA, YAL  |
+|           | Studies   |           |           |           |           |
+|           | (via IES  |           |           |           |           |
+|           | i         |           |           |           |           |
+|           | nterface) |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| RHB       | No longer | REJ, CAN  | M/A       | M/A       | SKA       |
+|           | attending |           |           |           |           |
+|           | a         |           |           |           |           |
+|           | Rehab     |           |           |           |           |
+|           | ilitation |           |           |           |           |
+|           | Program   |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| RNP       | Residence | REJ       | M         |           | All       |
+|           | Details   |           |           |           |           |
+|           | not       |           |           |           |           |
+|           | Provided  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| ROL       | Failed to | REJ, CAN  | M         | M         | All       |
+|           | Return    |           |           |           |           |
+|           | ROLA/MLR  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| SNJ       | Customer  | REJ, CAN  | M         | M         | SKA       |
+|           | no longer |           |           |           |           |
+|           | has job   |           |           |           |           |
+|           | to return |           |           |           |           |
+|           | to        |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| SSS       | Customer  | REJ, CAN  | M         | M         | SKA       |
+|           | no longer |           |           |           |           |
+|           | intends   |           |           |           |           |
+|           | returning |           |           |           |           |
+|           | to study  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| SST       | Customer  | REJ, CAN  | A         | A         | SKA       |
+|           | no longer |           |           |           |           |
+|           | has a job |           |           |           |           |
+|           | to return |           |           |           |           |
+|           | to or no  |           |           |           |           |
+|           | longer    |           |           |           |           |
+|           | intends   |           |           |           |           |
+|           | returning |           |           |           |           |
+|           | to study  |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STU       | Customer  | REJ, CAN  | A         | M         | NSA, SKA, |
+|           | will      |           |           |           | FHS, DRP  |
+|           | commence  |           |           |           |           |
+|           | / resume  |           |           |           | (YTA      |
+|           | Studies   |           |           |           | historic) |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| USY       | Claimant  | REJ       | M         |           | All       |
+|           | <16       |           |           |           | except    |
+|           | doesn't   |           |           |           | NMA, PTA, |
+|           | meet Spec |           |           |           | WDA       |
+|           | Ben       |           |           |           |           |
+|           | Guideline |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| WUK       | Wh        | REJ, CAN  | A         | M         | All       |
+|           | ereabouts |           |           |           |           |
+|           | Unknown   |           |           | Proof of  |           |
+|           |           |           |           | address   |           |
+|           |           |           |           | details   |           |
+|           |           |           |           | may be    |           |
+|           |           |           |           | required  |           |
+|           |           |           |           | before    |           |
+|           |           |           |           | re        |           |
+|           |           |           |           | storation |           |
+|           |           |           |           | of        |           |
+|           |           |           |           | payment   |           |
+|           |           |           |           | can       |           |
+|           |           |           |           | occur.    |           |
+|           |           |           |           |           |           |
+|           |           |           |           | If the    |           |
+|           |           |           |           | c         |           |
+|           |           |           |           | ustomer's |           |
+|           |           |           |           | address   |           |
+|           |           |           |           | details   |           |
+|           |           |           |           | have not  |           |
+|           |           |           |           | changed,  |           |
+|           |           |           |           | but mail  |           |
+|           |           |           |           | has been  |           |
+|           |           |           |           | returned, |           |
+|           |           |           |           | proof of  |           |
+|           |           |           |           | address   |           |
+|           |           |           |           | details   |           |
+|           |           |           |           | are       |           |
+|           |           |           |           | required  |           |
+|           |           |           |           | before    |           |
+|           |           |           |           | re        |           |
+|           |           |           |           | storation |           |
+|           |           |           |           | of        |           |
+|           |           |           |           | payment   |           |
+|           |           |           |           | can       |           |
+|           |           |           |           | occur.    |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

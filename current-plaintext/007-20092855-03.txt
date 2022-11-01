@@ -1,0 +1,396 @@
+
+Family Tax Benefit (FTB) and income support payment new claim processing interactions 007-20092855
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Action when FTB and income support payment claim to be processed
+
+Assessment of Care Arrangements referrals
+
+Action when FTB and income support payment claim to be processed
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | FTB and income support payment    |
+|                                   | claim lodged + Read more ...      |
+|                                   |                                   |
+|                                   | This process is to be followed    |
+|                                   | where a customer has submitted a  |
+|                                   | new claim for both Family Tax     |
+|                                   | Benefit (FTB) and one of the      |
+|                                   | following income support          |
+|                                   | payments:                         |
+|                                   |                                   |
+|                                   | -   Parenting Payment Single      |
+|                                   |     (PPS)                         |
+|                                   | -   Parenting Payment Partnered   |
+|                                   |     (PPP)                         |
+|                                   | -   JobSeeker Payment (JSP)       |
+|                                   | -   Youth Allowance (YA) –        |
+|                                   |     Jobseeker                     |
+|                                   |                                   |
+|                                   | Is a care determination required  |
+|                                   | before either claim can be        |
+|                                   | processed?                        |
+|                                   |                                   |
+|                                   | Yes, for Service Officers         |
+|                                   | processing:                       |
+|                                   |                                   |
+|                                   | -   FTB claims go to Step 2       |
+|                                   | -   income support payment claims |
+|                                   |     go to Step 5                  |
+|                                   |                                   |
+|                                   | No for Service Officers           |
+|                                   | processing:                       |
+|                                   |                                   |
+|                                   | -   FTB claims, go to Step 3      |
+|                                   | -   income support payment        |
+|                                   |     claims, go to Step 6          |
++-----------------------------------+-----------------------------------+
+| 2                                 | FTB processing Service Officers + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Make a care determination, or     |
+|                                   | hand-off disputed or disagreed    |
+|                                   | care                              |
+|                                   |                                   |
+|                                   | Code this in a standalone         |
+|                                   | activity:                         |
+|                                   |                                   |
+|                                   | -   in Customer First             |
+|                                   | -   in Process Direct using the   |
+|                                   |     Families Care Assessment task |
+|                                   |     selector accessed via         |
+|                                   |     Customer Summary              |
+|                                   |                                   |
+|                                   | Document the care determination   |
+|                                   |                                   |
+|                                   | Complete the Assessment of Care   |
+|                                   | Arrangements (ZCRF_AOCA_REFERRAL) |
+|                                   | work item, if there is one see    |
+|                                   | Table 2                           |
+|                                   |                                   |
+|                                   | Completing the work item will     |
+|                                   | automatically take the income     |
+|                                   | support payment claim off hold    |
+|                                   |                                   |
+|                                   | Note: if the customer advises     |
+|                                   | they have separated from the      |
+|                                   | other carer, but they are still   |
+|                                   | recorded as partnered to the      |
+|                                   | other carer on the Marital Status |
+|                                   | (MS) screen:                      |
+|                                   |                                   |
+|                                   | -   Make the care determination   |
+|                                   |     based on the customer’s       |
+|                                   |     separated status              |
+|                                   | -   Document the determination    |
+|                                   | -   Care coding applied can be    |
+|                                   |     reversed if a determination   |
+|                                   |     is later made that the        |
+|                                   |     customer is not to be treated |
+|                                   |     as separated                  |
+|                                   | -   If error E082CH presents on   |
+|                                   |     the FTB Shared Care (FSC)     |
+|                                   |     screen, in Customer First or  |
+|                                   |     the Shared Care Assessment    |
+|                                   |     (SCA) screen in Process       |
+|                                   |     Direct, the coding for the    |
+|                                   |     other carer is to be          |
+|                                   |     completed during claim        |
+|                                   |     processing, once the marital  |
+|                                   |     status has been updated       |
++-----------------------------------+-----------------------------------+
+| 3                                 | Process the FTB Claim + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | The FTB claim can be processed    |
+|                                   | before the income support payment |
+|                                   | claim if the following apply:     |
+|                                   |                                   |
+|                                   | the claim is actionable           |
+|                                   |                                   |
+|                                   | income will not preclude          |
+|                                   | entitlement, and                  |
+|                                   |                                   |
+|                                   | -   there is no change in marital |
+|                                   |     status, or                    |
+|                                   | -   the income support payment or |
+|                                   |     FTB Progress of Claim (PoC)   |
+|                                   |     DOC has been annotated with   |
+|                                   |     confirmed marital status      |
+|                                   |                                   |
+|                                   | Is FTB claim actionable?          |
+|                                   |                                   |
+|                                   | -   Yes, process the claim,       |
+|                                   |     Procedure ends here           |
+|                                   | -   No go to Step 4               |
++-----------------------------------+-----------------------------------+
+| 4                                 | FTB claim not actionable + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | -   Request any other outstanding |
+|                                   |     information or documentation  |
+|                                   |     required                      |
+|                                   | -   If unable to determine a      |
+|                                   |     marital status change (for    |
+|                                   |     example, MOCA assessment      |
+|                                   |     required) place the FTB claim |
+|                                   |     on hold for 22 days if        |
+|                                   |     additional information has    |
+|                                   |     been requested, or for 2 days |
+|                                   |     if the FTB claim is otherwise |
+|                                   |     actionable                    |
+|                                   | -   Annotate the FTB Progress of  |
+|                                   |     Claim (PoC) DOC with the      |
+|                                   |     action taken                  |
+|                                   | -   Where appropriate, request    |
+|                                   |     urgent or immediate income    |
+|                                   |     support payment claim         |
+|                                   |     processing following existing |
+|                                   |     protocols                     |
+|                                   | -   Procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 5                                 | Income support payment processing |
+|                                   | Service Officer + Read more ...   |
+|                                   |                                   |
+|                                   | If suitably trained in making     |
+|                                   | care determinations, and shared   |
+|                                   | care or change of care is agreed  |
+|                                   | by all carers but not yet         |
+|                                   | recorded, in Process Direct:      |
+|                                   |                                   |
+|                                   | -   Within the income support     |
+|                                   |     payment claim code this on    |
+|                                   |     both the FSC and SSC tables   |
+|                                   |     on the Shared Care Assessment |
+|                                   |     (SCA) screen                  |
+|                                   | -   Update the Care Alignment     |
+|                                   |     Details (CADDS) screen        |
+|                                   | -   Go to Step 6                  |
+|                                   |                                   |
+|                                   | If not suitably trained in making |
+|                                   | care determinations, or if care   |
+|                                   | is disputed or disagreed, check   |
+|                                   | if an Assessment of Care          |
+|                                   | Arrangements referral has already |
+|                                   | been sent or finalised:           |
+|                                   |                                   |
+|                                   | Check the Status screen to see if |
+|                                   | the claim has been placed On Hold |
+|                                   | pending an ‘Assessment of Care    |
+|                                   | Arrangements’ referral            |
+|                                   |                                   |
+|                                   | On the Notes/DL screen, if an     |
+|                                   | Assessment of Care Arrangements   |
+|                                   | (care assessment) has already     |
+|                                   | been completed a DOC will be      |
+|                                   | listed with one of the following  |
+|                                   | titles:                           |
+|                                   |                                   |
+|                                   | -   Change in Care Status         |
+|                                   | -   Changes in Child - No         |
+|                                   |     Decision Shared Care Decision |
+|                                   | -   Add child coming into care    |
+|                                   | -   Care Decision                 |
+|                                   | -   Care details update per Child |
+|                                   |     Support Agency (CSA), or      |
+|                                   | -   Care assessment not required  |
+|                                   |                                   |
+|                                   | If:                               |
+|                                   |                                   |
+|                                   | the care assessment is still in   |
+|                                   | progress, hold the claim for a    |
+|                                   | further 7 days                    |
+|                                   |                                   |
+|                                   | the care assessment has already   |
+|                                   | been finalised, review the claim  |
+|                                   | notes on the Notes and Document   |
+|                                   | List (DL) screen for key          |
+|                                   | information to determine the      |
+|                                   | correct assessment result for the |
+|                                   | income support payment claim.     |
+|                                   | This includes child name, date of |
+|                                   | birth and care percentage         |
+|                                   | details. Go to Step 6             |
+|                                   |                                   |
+|                                   | an ‘Assessment of Care            |
+|                                   | Arrangements’ referral has not    |
+|                                   | yet been sent:                    |
+|                                   |                                   |
+|                                   | -   hand-off to Families staff to |
+|                                   |     make a care determination via |
+|                                   |     the [more options] >          |
+|                                   |     Referral > Referral Type:     |
+|                                   |     Assessment of Care            |
+|                                   |     Arrangements Referral in      |
+|                                   |     Process Direct                |
+|                                   | -   Request any other outstanding |
+|                                   |     information /documentation    |
+|                                   |     required for the income       |
+|                                   |     support payment claim         |
+|                                   | -   Annotate the income support   |
+|                                   |     payment Progress of Claim     |
+|                                   |     (PoC) DOC with the action     |
+|                                   |     taken                         |
+|                                   | -   Procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 6                                 | Process income support payment    |
+|                                   | claim + Read more ...             |
+|                                   |                                   |
+|                                   | Process income support payment    |
+|                                   | claim, see:                       |
+|                                   |                                   |
+|                                   | -   Processing Parenting Payment  |
+|                                   |     (PP) claims                   |
+|                                   | -   Processing JobSeeker Payment  |
+|                                   |     (JSP) claims                  |
+|                                   | -   Processing Youth Allowance    |
+|                                   |     (YA) (job seeker) claims      |
+|                                   |                                   |
+|                                   | Complete coding for the other     |
+|                                   | carer if required - for example   |
+|                                   | where error E082CH prevented this |
+|                                   | at the time the care assessment   |
+|                                   | was finalised                     |
+|                                   |                                   |
+|                                   | If income support payment claim   |
+|                                   | is not actionable, but            |
+|                                   | relationship status can be        |
+|                                   | verified, annotate the FTB        |
+|                                   | Progress of Claim (PoC) DOC with  |
+|                                   | confirmed marital status, request |
+|                                   | required information and place    |
+|                                   | the income support payment claim  |
+|                                   | on hold                           |
+|                                   |                                   |
+|                                   | Reverse the care coding if a      |
+|                                   | determination was made that the   |
+|                                   | customer is not to be treated as  |
+|                                   | separated and a care              |
+|                                   | determination was made and coded  |
+|                                   | based on the separation           |
+|                                   |                                   |
+|                                   | Regenerate the FTB claim in       |
+|                                   | Customer First if claim activity  |
+|                                   | had been cancelled                |
+|                                   |                                   |
+|                                   | Take the FTB claim off hold via   |
+|                                   | the Activity List (AL) screen in  |
+|                                   | Customer First if actionable      |
+|                                   |                                   |
+|                                   | Hand-off actionable FTB claim for |
+|                                   | priority processing if the        |
+|                                   | customer meets the definition of  |
+|                                   | a family in crisis or a family    |
+|                                   | experiencing financial hardship   |
+|                                   |                                   |
+|                                   | Procedure ends here               |
++-----------------------------------+-----------------------------------+
+
+Assessment of Care Arrangements referrals
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Locating the work item + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | To locate an Assessment of Care   |
+|                                   | Arrangements Referral             |
+|                                   | (ZCRF_AOCA_REFERRAL) work item in |
+|                                   | Customer First:                   |
+|                                   |                                   |
+|                                   | -   In Workspace, select Online   |
+|                                   |     Interaction Summary (under    |
+|                                   |     Customer Online Account)      |
+|                                   | -   Insert the Work Item ID into  |
+|                                   |     Activity ID field or the      |
+|                                   |     Customer’s CRN and select     |
+|                                   |     Search                        |
+|                                   | -   Identify Customer Referral    |
+|                                   |     activity under Activity Type  |
+|                                   |     and select the customer       |
+|                                   |     hyperlink under Description   |
+|                                   | -   Click on the Notes tab, and   |
+|                                   |     the hyperlink under Text to   |
+|                                   |     read any relevant details     |
+|                                   |     that have been input into the |
+|                                   |     referral                      |
++-----------------------------------+-----------------------------------+
+| 2                                 | Completing the care assessment +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Families Service Officers must    |
+|                                   | take the following action in      |
+|                                   | Customer First when allocated an  |
+|                                   | Assessment of Care Arrangements   |
+|                                   | Referral work item:               |
+|                                   |                                   |
+|                                   | -   Locate the FA012 document and |
+|                                   |     other relevant information    |
+|                                   |     and documentation on the      |
+|                                   |     customer’s record.            |
+|                                   | -   Make a care determination in  |
+|                                   |     accordance with Notification  |
+|                                   |     and assessment of shared care |
+|                                   |     arrangements for Family Tax   |
+|                                   |     Benefit (FTB)                 |
+|                                   | -   Update the care decision for  |
+|                                   |     each carer                    |
+|                                   | -   DOC the record                |
+|                                   | -   Finalise the Assessment of    |
+|                                   |     Care Arrangements Referral    |
+|                                   |     work item                     |
+|                                   |                                   |
+|                                   | Note: a DOC must be recorded in   |
+|                                   | all cases, as this is used by     |
+|                                   | processing Service Officers to    |
+|                                   | progress the claim.               |
++-----------------------------------+-----------------------------------+
+| 3                                 | Finalising the work item in       |
+|                                   | Customer First + Read more ...    |
+|                                   |                                   |
+|                                   | Once the care assessment has been |
+|                                   | completed, finalise the work item |
+|                                   | in Customer First:                |
+|                                   |                                   |
+|                                   | -   In Workspace, select Online   |
+|                                   |     Interaction Summary (Customer |
+|                                   |     online Account)               |
+|                                   | -   Insert the Work Item ID into  |
+|                                   |     Activity ID field or the      |
+|                                   |     Customer’s CRN and select     |
+|                                   |     Search                        |
+|                                   | -   Identify Customer Referral    |
+|                                   |     activity under Activity Type  |
+|                                   |     and select the customer       |
+|                                   |     hyperlink under Description   |
+|                                   | -   On Referral Details page,     |
+|                                   |     select Referral Type tab      |
+|                                   | -   Select Edit                   |
+|                                   | -   Change Status to Completed    |
+|                                   | -   Select Save                   |
+|                                   |                                   |
+|                                   | By completing the work item, the  |
+|                                   | associated income support payment |
+|                                   | claim will be automatically taken |
+|                                   | off hold and allocated for        |
+|                                   | processing.                       |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

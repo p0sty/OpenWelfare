@@ -1,0 +1,443 @@
+
+Inter-environment Change of Address (ICoA) facility edits 102-03020090
+
+-   Background
+-   
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+On this page:
+
+Edits impacting the finalisation of an ICoA activity
+
+Clearing edits within the ICoA activity
+
+Edits impacting the finalisation of an ICoA activity
+
+Table 1:
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Editing transfer failures + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Edits are the way that the        |
+|                                   | Inter-environment Change of       |
+|                                   | Address (ICoA) facility indicates |
+|                                   | that there are situations which   |
+|                                   | are preventing a transfer.        |
+|                                   |                                   |
+|                                   | Edits may be encountered by the   |
+|                                   | user during the                   |
+|                                   | starting/scheduling ICoA screen   |
+|                                   | flow, or when monitoring a        |
+|                                   | transfer.                         |
++-----------------------------------+-----------------------------------+
+| 2                                 | Edits encountered in the          |
+|                                   | starting/scheduling ICoA screen   |
+|                                   | flow + Read more ...              |
+|                                   |                                   |
+|                                   | When edits are encountered in the |
+|                                   | starting/scheduling ICoA screen   |
+|                                   | flow, the user has the following  |
+|                                   | options:                          |
+|                                   |                                   |
+|                                   | leaving (cancelling) the transfer |
+|                                   | screen flow as the edit indicates |
+|                                   | that the ICoA transfer should not |
+|                                   | have been started - for example,  |
+|                                   | the customer is already scheduled |
+|                                   | for transfer                      |
+|                                   |                                   |
+|                                   | continuing the ICoA screen flow   |
+|                                   | until the transfer is at          |
+|                                   | scheduled status, then fixing the |
+|                                   | edits, and/or waiting until the   |
+|                                   | edits automatically clear to      |
+|                                   | allow the transfer to complete    |
+|                                   | automatically, usually on the     |
+|                                   | next day. Examples of activities  |
+|                                   | that will complete automatically  |
+|                                   | are:                              |
+|                                   |                                   |
+|                                   | -   activities in the background  |
+|                                   |     awaiting Batch 2 to transfer  |
+|                                   |     them to the History Activity  |
+|                                   |     List (HAL) screen with a      |
+|                                   |     status of HST, or             |
+|                                   | -   activities awaiting a payment |
+|                                   |     strip                         |
+|                                   |                                   |
+|                                   | leaving (cancelling) the transfer |
+|                                   | screen flow after being shown the |
+|                                   | edits, adjusting the customer     |
+|                                   | record to clear the edits, then   |
+|                                   | starting a new transfer for the   |
+|                                   | customer. This option should only |
+|                                   | be used if it is essential for    |
+|                                   | the transfer to complete on the   |
+|                                   | same day                          |
++-----------------------------------+-----------------------------------+
+| 3                                 | A listing of the number of        |
+|                                   | edits + Read more ...             |
+|                                   |                                   |
+|                                   | When monitoring a transfer, the   |
+|                                   | ICOA Log Information (ITLG)       |
+|                                   | screen will display the number of |
+|                                   | edits present for the transfer.   |
+|                                   |                                   |
+|                                   | -   the Edit List (ITED) screen   |
+|                                   |     displays the edits and is     |
+|                                   |     viewed from both the transfer |
+|                                   |     screen flow and when          |
+|                                   |     monitoring a transfer         |
+|                                   | -   when edits are displayed on   |
+|                                   |     the ITED screen the user can  |
+|                                   |     select edit message help to   |
+|                                   |     display information about     |
+|                                   |     what action, if any, needs to |
+|                                   |     be taken. (Not all edits need |
+|                                   |     user action. Some edits will  |
+|                                   |     clear without user action)    |
++-----------------------------------+-----------------------------------+
+| 4                                 | Types of edits categories + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Edits fall into three categories: |
+|                                   |                                   |
+|                                   | -   edits that require some user  |
+|                                   |     action external to the ICoA   |
+|                                   |     process and do not prevent    |
+|                                   |     transfer, for example, a      |
+|                                   |     third party withholding       |
+|                                   | -   edits which require no user   |
+|                                   |     action (or which the user can |
+|                                   |     do nothing about), but        |
+|                                   |     indicate that the transfer    |
+|                                   |     will be delayed, for example, |
+|                                   |     for a payment strip           |
+|                                   | -   edits which require user      |
+|                                   |     intervention on the customer  |
+|                                   |     record before a transfer will |
+|                                   |     be completed, for example,    |
+|                                   |     the customer or partner or    |
+|                                   |     child has outstanding         |
+|                                   |     activities                    |
++-----------------------------------+-----------------------------------+
+| 5                                 | Common edits requiring user       |
+|                                   | intervention + Read more ...      |
+|                                   |                                   |
+|                                   | The most common edits that        |
+|                                   | require user intervention are     |
+|                                   | those where there are outstanding |
+|                                   | activities.                       |
+|                                   |                                   |
+|                                   | Outstanding activities can be     |
+|                                   | found on the following screens:   |
+|                                   |                                   |
+|                                   | -   the Activity List (AL)        |
+|                                   |     screen. Activities on this    |
+|                                   |     screen will need to be        |
+|                                   |     completed or deleted in the   |
+|                                   |     losing environment for the    |
+|                                   |     transfer to complete          |
+|                                   | -   the All Activities Details    |
+|                                   |     (XPAA) screen. This screen is |
+|                                   |     similar to the AL screen as   |
+|                                   |     it identifies what activities |
+|                                   |     are in the background         |
+|                                   |     awaiting Batch 2 to transfer  |
+|                                   |     them to the History Activity  |
+|                                   |     List (HAL) screen with a      |
+|                                   |     status of HST. It also shows  |
+|                                   |     activities that are not       |
+|                                   |     completed, awaiting           |
+|                                   |     submit/determination action.  |
+|                                   |     Some activities that have     |
+|                                   |     been completed and removed    |
+|                                   |     from the AL screen may still  |
+|                                   |     be preventing the transfer    |
+|                                   |     because they have not yet     |
+|                                   |     been processed by Batch 2. If |
+|                                   |     any activities remain on the  |
+|                                   |     XPAA screen for more than 3   |
+|                                   |     days, See Inter-environment   |
+|                                   |     Change of Address (ICoA)      |
+|                                   |     facility problem escalation   |
+|                                   |     process                       |
+|                                   | -   the All Debt Records via SSR  |
+|                                   |     (XPDC) screen (Note: SSR is   |
+|                                   |     now referred to as CRN). This |
+|                                   |     screen shows cases awaiting   |
+|                                   |     Batch 2 processing where      |
+|                                   |     withholdings have been made   |
+|                                   |     from a payment but the        |
+|                                   |     withholdings are still to be  |
+|                                   |     transferred to the Debt       |
+|                                   |     Management Information System |
+|                                   |     (DMIS). Once Batch 2 has      |
+|                                   |     cleared activities from the   |
+|                                   |     XPDC screen the transfer will |
+|                                   |     occur                         |
+|                                   |                                   |
+|                                   | Note: any DOC recorded on a       |
+|                                   | customer's record is an activity  |
+|                                   | and must be completed/deleted and |
+|                                   | processed by Batch 2 before the   |
+|                                   | transfer will occur.              |
++-----------------------------------+-----------------------------------+
+| 6                                 | Failed Inter-environment          |
+|                                   | transfer + Read more ...          |
+|                                   |                                   |
+|                                   | An Inter-environment transfer     |
+|                                   | fails, with error code 'EO761T,   |
+|                                   | Appeals Incomplete ODM            |
+|                                   | Reconsideration exists', where    |
+|                                   | the review officer                |
+|                                   | reconsideration is bypassed at    |
+|                                   | the customer's request.           |
+|                                   |                                   |
+|                                   | Has the customer requested that   |
+|                                   | the review officer                |
+|                                   | reconsideration be bypassed?      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 7             |
+|                                   | -   No, see Step 1 in the         |
+|                                   |     Clearing edits within the     |
+|                                   |     ICoA activity table           |
++-----------------------------------+-----------------------------------+
+| 7                                 | Transferring a customer record to |
+|                                   | the gaining environment + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | To transfer the customer record   |
+|                                   | to the gaining environment:       |
+|                                   |                                   |
+|                                   | -   navigate to the APL system,   |
+|                                   |     'S'elect the relevant record  |
+|                                   |     from the Case List (ACL)      |
+|                                   |     screen, and print its Modify  |
+|                                   |     Reconsideration (MR) screen   |
+|                                   | -   change the Recons. Outcome:   |
+|                                   |     field from 'BYPASSED AT CUS   |
+|                                   |     REQ' to 'AFFIRMED', then      |
+|                                   |     complete the New Info         |
+|                                   |     Received: and Date Recons.    |
+|                                   |     Finalised: fields             |
+|                                   | -   navigate to the ICOA/File     |
+|                                   |     Transfer system and complete  |
+|                                   |     the inter-environment         |
+|                                   |     transfer                      |
+|                                   | -   navigate to the APL system in |
+|                                   |     the gaining environment and   |
+|                                   |     update the MR screen to       |
+|                                   |     reflect the information on    |
+|                                   |     the screen you printed at the |
+|                                   |     first dot point above         |
+|                                   |                                   |
+|                                   | See Step 1 in the Clearing edits  |
+|                                   | within the ICoA activity table.   |
++-----------------------------------+-----------------------------------+
+
+Clearing edits within the ICoA activity
+
+Table 2:
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | How to clear edits + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | The following are common edits:   |
+|                                   |                                   |
+|                                   | Note: #### is being used to       |
+|                                   | represent either                  |
+|                                   | customer/partner/child the first  |
+|                                   | time it is mentioned in the       |
+|                                   | example messages below. It also   |
+|                                   | represents activity or edit the   |
+|                                   | second time it is mentioned in    |
+|                                   | the example messages.             |
+|                                   |                                   |
+|                                   | -   E041IT - #### has Outstanding |
+|                                   |     ####, go to Step 2            |
+|                                   | -   E061IT - Customer single in   |
+|                                   |     losing Environment but        |
+|                                   |     married in gaining            |
+|                                   |     Environment, go to Step 3     |
+|                                   | -   E008DB - #### has a DMN       |
+|                                   |     recovery arrangement. This    |
+|                                   |     must be ceased, go to Step 4  |
+|                                   | -   E069IT - #### has a current   |
+|                                   |     #### benefit, go to Step 5    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Outstanding activities + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | E041IT - #### has Outstanding     |
+|                                   | ####:                             |
+|                                   |                                   |
+|                                   | -   the transfer will not occur   |
+|                                   |     while there are any           |
+|                                   |     outstanding activities for    |
+|                                   |     customer/partner/child in     |
+|                                   |     either the gaining or losing  |
+|                                   |     environment. Either complete  |
+|                                   |     or delete these activities in |
+|                                   |     both environments.            |
+|                                   | -   these activities, once        |
+|                                   |     completed or deleted, will    |
+|                                   |     still need to be processed by |
+|                                   |     Batch 2. The transfer could   |
+|                                   |     therefore take a further two  |
+|                                   |     or three days to complete     |
+|                                   | -   Hint - if the Debt Management |
+|                                   |     System (DMN) activity showing |
+|                                   |     on the XPDC screen is more    |
+|                                   |     than a few days old and the   |
+|                                   |     withholdings have been        |
+|                                   |     credited to the debt. See     |
+|                                   |     Inter-environment Change of   |
+|                                   |     Address (ICoA) facility       |
+|                                   |     problem escalation process    |
++-----------------------------------+-----------------------------------+
+| 3                                 | Differing marital status in       |
+|                                   | multiple environments + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | E061IT - Customer single in       |
+|                                   | losing Environment but married in |
+|                                   | gaining Environment               |
+|                                   |                                   |
+|                                   | if a customer has a previous      |
+|                                   | (cancelled) record in the gaining |
+|                                   | environment and is linked to a    |
+|                                   | partner, but has a current record |
+|                                   | in the losing environment as a    |
+|                                   | single person, and is not         |
+|                                   | reconciling, unlink the records   |
+|                                   | in the gaining Environment before |
+|                                   | scheduling the transfer:          |
+|                                   |                                   |
+|                                   | -   code the correct relationship |
+|                                   |     status (single/separated) on  |
+|                                   |     the Marital Status (MS)       |
+|                                   |     screen                        |
+|                                   | -   unlink partner via the Link   |
+|                                   |     Person (LP) screen            |
+|                                   |                                   |
+|                                   | if the customer is reconciling    |
+|                                   | with their previous partner, who  |
+|                                   | also has a current record as a    |
+|                                   | single person in the same losing  |
+|                                   | environment, link the customers'  |
+|                                   | records in the losing environment |
+|                                   | before scheduling the transfer:   |
+|                                   |                                   |
+|                                   | -   code the correct relationship |
+|                                   |     status (married) on the       |
+|                                   |     Marital Status (MS) screen    |
+|                                   | -   code PPE: field to ‘N’ unless |
+|                                   |     verbal permission has been    |
+|                                   |     given                         |
+|                                   | -   link partner via the Link     |
+|                                   |     Person (LP) screen            |
+|                                   |                                   |
+|                                   | Hint: when a record with this     |
+|                                   | edit is selected, the edit will   |
+|                                   | disappear but will still be       |
+|                                   | preventing the transfer. That is, |
+|                                   | when monitoring outstanding       |
+|                                   | transfers with this edit,         |
+|                                   | remember that as soon as the      |
+|                                   | record is selected from the       |
+|                                   | Display Scheduled Transfers       |
+|                                   | (ITSC) screen, the edit will no   |
+|                                   | longer be displayed. Therefore,   |
+|                                   | there may be some transfers that  |
+|                                   | appear to have no edits but will  |
+|                                   | not transfer. See                 |
+|                                   | Inter-environment Change of       |
+|                                   | Address (ICoA) facility problem   |
+|                                   | escalation process                |
++-----------------------------------+-----------------------------------+
+| 4                                 | Recovery arrangements in DMIS +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | E008DB - #### has a DMN recovery  |
+|                                   | arrangement. This must be ceased: |
+|                                   |                                   |
+|                                   | -   this edit occurs when there   |
+|                                   |     is already a current recovery |
+|                                   |     arrangement in DMIS, for      |
+|                                   |     either the customer and/or    |
+|                                   |     partner, in the gaining       |
+|                                   |     environment. This arrangement |
+|                                   |     must be ceased before the     |
+|                                   |     transfer can be completed.    |
+|                                   |     The arrangement that is       |
+|                                   |     transferred in from the       |
+|                                   |     losing environment will       |
+|                                   |     become the current recovery   |
+|                                   |     arrangement                   |
+|                                   | -   this edit often occurs when   |
+|                                   |     the record has already        |
+|                                   |     transferred successfully but  |
+|                                   |     the user reschedules the      |
+|                                   |     transfer in error             |
+|                                   | -   check that the record has     |
+|                                   |     transferred in successfully   |
+|                                   |     for both customer and partner |
+|                                   |     and then cancel the transfer  |
++-----------------------------------+-----------------------------------+
+| 5                                 | Existing benefit for customer +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | 069IT - #### has a current ####   |
+|                                   | benefit:                          |
+|                                   |                                   |
+|                                   | this edit occurs when either the  |
+|                                   | customer or the partner has a     |
+|                                   | current benefit                   |
+|                                   |                                   |
+|                                   | it usually occurs when a claim    |
+|                                   | has been registered and payment   |
+|                                   | has been made in the gaining      |
+|                                   | environment before the record has |
+|                                   | transferred in from the losing    |
+|                                   | environment                       |
+|                                   |                                   |
+|                                   | -   in these cases the user will  |
+|                                   |     need to cancel the payment in |
+|                                   |     the gaining environment so    |
+|                                   |     that the record will transfer |
+|                                   | -   however, record details in    |
+|                                   |     the gaining environment will  |
+|                                   |     be overwritten with the       |
+|                                   |     losing environment details    |
+|                                   |     once the record transfers -   |
+|                                   |     that is, any payment details  |
+|                                   |     made in the gaining           |
+|                                   |     environment, before the       |
+|                                   |     record transfers, will need   |
+|                                   |     to be recorded on a DOC after |
+|                                   |     the record has transferred    |
+|                                   |                                   |
+|                                   | Hint: do not register any new     |
+|                                   | claims until the record has       |
+|                                   | transferred otherwise data will   |
+|                                   | be lost                           |
+|                                   |                                   |
+|                                   | this edit also occurs when the    |
+|                                   | transfer has been scheduled twice |
+|                                   | in error and the record has       |
+|                                   | already transferred successfully  |
+|                                   | via the first scheduled transfer  |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

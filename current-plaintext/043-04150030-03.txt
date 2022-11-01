@@ -1,0 +1,153 @@
+
+Deleting trust and company organisation links 043-04150030
+
+-   Background
+-   
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+For Complex Assessment Officer (CAO) use only
+
+This page contains information for Complex Assessment Officers (CAO) on
+the action taken to delete links relating to the assessment of income
+and assets from a private trust or private company.
+
+Income and assets
+
+Deleting trust and company links
+
+This table describes the steps for CAOs to follow when assessing if
+links relating to the assessment of the income and assets from a private
+trust or private company should be deleted.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Have any income or assets been    |
+|                                   | recorded? + Read more ...         |
+|                                   |                                   |
+|                                   | Has any attribution or            |
+|                                   | distribution data (including      |
+|                                   | zeros) been recorded on the       |
+|                                   | Trust/Company Attribution (TRA),  |
+|                                   | Trust/Company Distribution (TRD)  |
+|                                   | or Trust/Company Liabilities      |
+|                                   | (TRLD) screens?                   |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 3             |
+|                                   | -   No, go to Step 2              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Determine if link is to be        |
+|                                   | deleted + Read more ...           |
+|                                   |                                   |
+|                                   | Was link created incorrectly (for |
+|                                   | example, the wrong CRN was        |
+|                                   | coded)?                           |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Link not to be deleted + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Code '0' (zero) in the            |
+|                                   | attribution and distribution      |
+|                                   | fields (and liabilities, if       |
+|                                   | appropriate) on the Trust/Company |
+|                                   | Attribution (TRA), Trust/Company  |
+|                                   | Distribution (TRD) and            |
+|                                   | Trust/Company Liabilities (TRLD)  |
+|                                   | screens.                          |
+|                                   |                                   |
+|                                   | If this is a final distribution   |
+|                                   | and it is confirmed that the      |
+|                                   | entity has been wound up, code a  |
+|                                   | 'Y' on the Wound-up Indicator on  |
+|                                   | the T&C Miscellaneous Details     |
+|                                   | (TRMD) screen.                    |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 4                                 | Check ripple triggers on          |
+|                                   | Trans/Trigger List (TTL) screen + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Before deleting a trust or        |
+|                                   | company link, check the TTL       |
+|                                   | screen to ensure any ripples to   |
+|                                   | the customers have been received  |
+|                                   | and are completed.                |
+|                                   |                                   |
+|                                   | Go to the TTL screen of the       |
+|                                   | customer record.                  |
+|                                   |                                   |
+|                                   | The ripple triggers from an       |
+|                                   | entity (organisation) to a        |
+|                                   | customer show up in the           |
+|                                   | 'EDX/Trig' column on the TTL      |
+|                                   | screen as a 'RIPUPD' trigger. No  |
+|                                   | other types of triggers will      |
+|                                   | affect the deletion of these      |
+|                                   | links.                            |
+|                                   |                                   |
+|                                   | If the status of the 'RIPUPD' is  |
+|                                   | #COM, then the rippled data       |
+|                                   | should show on the Trust/Company  |
+|                                   | Income/Assets Summary (TRCIAS)    |
+|                                   | screen of the customer. The       |
+|                                   | trigger has completed and the     |
+|                                   | links can be deleted.             |
+|                                   |                                   |
+|                                   | If the status of the 'RIPUPD' is  |
+|                                   | not #COM, take action to ensure   |
+|                                   | the 'RIPUPD' trigger is finalised |
+|                                   | before deleting the links.        |
++-----------------------------------+-----------------------------------+
+| 5                                 | Delete Trust and Company (TAC)    |
+|                                   | link + Read more ...              |
+|                                   |                                   |
+|                                   | LS screen                         |
+|                                   |                                   |
+|                                   | Go to Links Summary (LS) screen   |
+|                                   | of the organisation record (in    |
+|                                   | Environment 'A').                 |
+|                                   |                                   |
+|                                   | -   Code 'S' in the line to be    |
+|                                   |     deleted                       |
+|                                   |                                   |
+|                                   | OCL screen                        |
+|                                   |                                   |
+|                                   | The Other Customer Links (OCL)    |
+|                                   | screen will then be displayed:    |
+|                                   |                                   |
+|                                   | -   Code 'D' in the Action:       |
+|                                   |     field. The Confirm Delete:    |
+|                                   |     field will appear             |
+|                                   | -   Code 'Y' in the Confirm       |
+|                                   |     Delete: field                 |
+|                                   |                                   |
+|                                   | The link will remain on the LS    |
+|                                   | screen, but it will be hidden.    |
++-----------------------------------+-----------------------------------+
+| 6                                 | Confirm deletion + Read more ...  |
+|                                   |                                   |
+|                                   | Check that the link has been      |
+|                                   | deleted by coding a 'Y' in the    |
+|                                   | Display all: field on the LS      |
+|                                   | screen of the organisation        |
+|                                   | record.                           |
+|                                   |                                   |
+|                                   | The deleted link will be shown in |
+|                                   | a different colour and will be    |
+|                                   | protected.                        |
++-----------------------------------+-----------------------------------+
+| 7                                 | Recording details + Read more ... |
+|                                   |                                   |
+|                                   | Record the details of deletion on |
+|                                   | a DOC.                            |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

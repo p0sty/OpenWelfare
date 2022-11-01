@@ -1,0 +1,1069 @@
+
+Patient Claims quality checking processing 111-22090020
+
+-   Background
+-   
+-   Process
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+This page contains information about the error status codes (including
+the non-error code), attachments and a list of links to the Intranet.
+
+On this Page:
+
+Status code categories
+
+Categories of patient claims status codes
+
+Table 1: This table lists the categories of status codes for patient
+claims quality checking.
+
++-----------------------------------+-----------------------------------+
+| Category                          | Displayed in QCS as…              |
++-----------------------------------+-----------------------------------+
+| Error-free                        | OK                                |
++-----------------------------------+-----------------------------------+
+| Document status codes             | ADM                               |
++-----------------------------------+-----------------------------------+
+| Processing status codes           | PRO                               |
++-----------------------------------+-----------------------------------+
+| Referred for further attention    | REF                               |
++-----------------------------------+-----------------------------------+
+
+Error-free status code
+
+Error-free status code for patient claims quality checking
+
+Table 2: This table lists the error free status code for manual and
+online patient claims quality checking.
+
++-----------------------+-----------------------+-----------------------+
+| Error-free status     | Definition            | Processing Tip        |
+| code                  |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| 001                   | Error-free            | Quality check did not |
+|                       |                       | detect errors         |
++-----------------------+-----------------------+-----------------------+
+
+Document error status codes
+
+Document error status codes for patient claims quality checking
+
+Table 3:This table lists the document error status codes for patient
+claims quality checking.
+
+Note: the following processing tips apply to all channels unless
+otherwise stated.
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| 100                   | Address change not    | Statement of Benefit  |
+|                       | notated or the        |                       |
+|                       | address section of    | It is an error when   |
+|                       | the claim form not    | the Statement of      |
+|                       | completed.            | Benefit (Thermal      |
+|                       |                       | Print) is not         |
+|                       |                       | endorsed indicating   |
+|                       |                       | an address change.    |
+|                       |                       |                       |
+|                       |                       | Claim form            |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the address section   |
+|                       |                       | of the claim form is  |
+|                       |                       | partially complete    |
+|                       |                       | and there is no       |
+|                       |                       | notation of a         |
+|                       |                       | confirmed address.    |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | an address change has |
+|                       |                       | not been notated.     |
++-----------------------+-----------------------+-----------------------+
+| 101                   | Claim form not        | Claim form            |
+|                       | attached to           |                       |
+|                       | supporting            | It is an error when:  |
+|                       | documentation or      |                       |
+|                       | account not endorsed  | -   a claim form is   |
+|                       | by claimant.          |     not attached to   |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       |     when required     |
+|                       |                       | -   the claim form    |
+|                       |                       |     does not relate   |
+|                       |                       |     to the supporting |
+|                       |                       |     documentation     |
+|                       |                       |     when required     |
+|                       |                       |                       |
+|                       |                       | Telephone claiming    |
+|                       |                       |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the account/receipt   |
+|                       |                       | for claims received   |
+|                       |                       | via the telephone are |
+|                       |                       | not endorsed by the   |
+|                       |                       | claimant and no       |
+|                       |                       | contact was made by   |
+|                       |                       | the Service Officer.  |
+|                       |                       |                       |
+|                       |                       | Note: Access Point    |
+|                       |                       | (MAAP)                |
+|                       |                       |                       |
+|                       |                       | As there is no        |
+|                       |                       | paperwork to check    |
+|                       |                       | against any claims    |
+|                       |                       | selected for quality  |
+|                       |                       | checking, these are   |
+|                       |                       | currently being       |
+|                       |                       | entered 001           |
+|                       |                       | (error-free) on the   |
+|                       |                       | QBBI screen.          |
++-----------------------+-----------------------+-----------------------+
+| 102                   | Agent's authority     | It is an error when   |
+|                       | section of claim form | the Agent's Authority |
+|                       | not completed in      | Section has not been  |
+|                       | full.                 | fully completed and   |
+|                       |                       | is not detected by    |
+|                       |                       | the Service Officer.  |
++-----------------------+-----------------------+-----------------------+
+| 103                   | Claimant cannot be    | It is an error when   |
+|                       | uniquely identified   | the claimant details  |
+|                       | from details          | section does not have |
+|                       | supplied.             | sufficient            |
+|                       |                       | information to        |
+|                       |                       | uniquely identify the |
+|                       |                       | claimant and no       |
+|                       |                       | contact was made by   |
+|                       |                       | the Service Officer.  |
++-----------------------+-----------------------+-----------------------+
+| 104                   | S4B(3) item paid      | It is an error when a |
+|                       | without the           | delegate's approval   |
+|                       | delegate's approval.  | is not endorsed on    |
+|                       |                       | the documentation for |
+|                       |                       | payment of an item    |
+|                       |                       | under the S4B(3) rule |
+|                       |                       | and it is not         |
+|                       |                       | detected by Service   |
+|                       |                       | Officer.              |
++-----------------------+-----------------------+-----------------------+
+| 105                   | Patient's/Claimant's  | It is an error when   |
+|                       | Medicare card number  | the source documents  |
+|                       | cannot be uniquely    | do not have           |
+|                       | identified from       | sufficient            |
+|                       | details supplied.     | information to        |
+|                       |                       | uniquely identify the |
+|                       |                       | patient's or          |
+|                       |                       | claimant's Medicare   |
+|                       |                       | card number and no    |
+|                       |                       | contact was made by   |
+|                       |                       | Service Officer.      |
++-----------------------+-----------------------+-----------------------+
+| 106                   | No evidence of        | It is an error when   |
+|                       | confirmation of       | the Service Officer   |
+|                       | service or claim      | failed to record      |
+|                       | details recorded.     | details of            |
+|                       |                       | confirmation to       |
+|                       |                       | support action taken. |
++-----------------------+-----------------------+-----------------------+
+| 108                   | Statement of Benefit  | It is an error when   |
+|                       | (thermal print) not   | the Statement of      |
+|                       | signed.               | Benefit (thermal      |
+|                       |                       | print) has not been   |
+|                       |                       | signed by the:        |
+|                       |                       |                       |
+|                       |                       | -   claimant, or      |
+|                       |                       | -   agent, or         |
+|                       |                       | -   a person on the   |
+|                       |                       |     same card 14      |
+|                       |                       |     years and over    |
++-----------------------+-----------------------+-----------------------+
+| 110                   | Claimant's signature  | It is an error when:  |
+|                       | omitted or mismatched |                       |
+|                       | to claimant details.  | -   there is no       |
+|                       |                       |     claimant          |
+|                       |                       |     signature present |
+|                       |                       | -   the claimant's    |
+|                       |                       |     signature does    |
+|                       |                       |     not match the     |
+|                       |                       |     claimant's name   |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error if the claimant |
+|                       |                       | details have been     |
+|                       |                       | verified and there is |
+|                       |                       | a VG4 form to support |
+|                       |                       | action taken.         |
++-----------------------+-----------------------+-----------------------+
+| 111                   | Inapp                 | It is an error when:  |
+|                       | ropriate/insufficient |                       |
+|                       | documentation to      | -   the accounts      |
+|                       | support payment.      |     supplied by the   |
+|                       |                       |     claimant are      |
+|                       |                       |     insufficient to   |
+|                       |                       |     process a         |
+|                       |                       |     Medicare claim    |
+|                       |                       | -   there is no NPOC  |
+|                       |                       |     print in the      |
+|                       |                       |     batch to support  |
+|                       |                       |     the payment of a  |
+|                       |                       |     telephone claim   |
+|                       |                       | -   there is no print |
+|                       |                       |     in the batch to   |
+|                       |                       |     support the       |
+|                       |                       |     substantiation    |
+|                       |                       |     for an online     |
+|                       |                       |     claim             |
++-----------------------+-----------------------+-----------------------+
+| 112                   | Agent's ID not        | It is an error when   |
+|                       | notated.              | there is no notation  |
+|                       |                       | on the claim form (or |
+|                       |                       | thermal print)        |
+|                       |                       | indicating that agent |
+|                       |                       | identification was    |
+|                       |                       | sighted.              |
++-----------------------+-----------------------+-----------------------+
+| 114                   | Credit EFTPOS         | It is an error when a |
+|                       | terminal receipt not  | Service Officer has   |
+|                       | attached to claim     | not attached the      |
+|                       |                       | Credit EFTPOS         |
+|                       |                       | terminal receipt to   |
+|                       |                       | the claim.            |
++-----------------------+-----------------------+-----------------------+
+| 115                   | Staff or staff        | It is an error when a |
+|                       | related claim         | Service Officer       |
+|                       | processed without     | processes a:          |
+|                       | manager's             |                       |
+|                       | endorsement.          | -   personal claim    |
+|                       |                       | -   claim for an      |
+|                       |                       |     immediate family  |
+|                       |                       |     member            |
+|                       |                       | -   claim for a staff |
+|                       |                       |     member or the     |
+|                       |                       |     staff member’s    |
+|                       |                       |     immediate family  |
+|                       |                       |                       |
+|                       |                       | without the Manager's |
+|                       |                       | endorsement.          |
++-----------------------+-----------------------+-----------------------+
+| 118                   | Statement of Benefit  | It is an error when   |
+|                       | not attached to       | a:                    |
+|                       | supporting            |                       |
+|                       | documentation.        | -   Statement of      |
+|                       |                       |     Benefit is not    |
+|                       |                       |     attached to       |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   Statement of      |
+|                       |                       |     Benefit does not  |
+|                       |                       |     relate to the     |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
++-----------------------+-----------------------+-----------------------+
+| 119                   | Manual Statement of   | It is an error when   |
+|                       | Benefit details not   | one or more of the    |
+|                       | recorded or recorded  | following manual      |
+|                       | incorrectly.          | Statement of Benefit  |
+|                       |                       | details are not       |
+|                       |                       | recorded or are       |
+|                       |                       | recorded incorrectly: |
+|                       |                       |                       |
+|                       |                       | -   Medicare card     |
+|                       |                       |     number            |
+|                       |                       | -   claimant name     |
+|                       |                       | -   current mailing   |
+|                       |                       |     address           |
+|                       |                       | -   claim date        |
+|                       |                       | -   patient name      |
+|                       |                       | -   patient reference |
+|                       |                       |     number            |
+|                       |                       | -   item number       |
+|                       |                       | -   service date      |
+|                       |                       | -   provider name and |
+|                       |                       |     number            |
+|                       |                       | -   charge            |
+|                       |                       | -   schedule fee      |
+|                       |                       | -   benefit           |
+|                       |                       | -   total benefit     |
+|                       |                       | -   signature of      |
+|                       |                       |     claimant or agent |
+|                       |                       | -   date              |
+|                       |                       | -   benefit received  |
+|                       |                       | -   how the benefit   |
+|                       |                       |     is received       |
++-----------------------+-----------------------+-----------------------+
+| 199                   | More than four        | When four document    |
+|                       | document errors.      | errors are detected,  |
+|                       |                       | key all four error    |
+|                       |                       | codes.                |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | document errors are   |
+|                       |                       | detected, key the     |
+|                       |                       | first three error     |
+|                       |                       | codes followed by     |
+|                       |                       | error code 199.       |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | errors are made and   |
+|                       |                       | there is a            |
+|                       |                       | combination of        |
+|                       |                       | processing and        |
+|                       |                       | document errors, use  |
+|                       |                       | 299 as the fourth     |
+|                       |                       | error code.           |
++-----------------------+-----------------------+-----------------------+
+
+Processing error status codes
+
+Processing error status codes for patient claims quality checking
+
+Table 4: This table lists the processing error status codes for patient
+claims quality checking.
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| 200                   | Patient keyed or      | It is an error when   |
+|                       | selected incorrectly. | the patient details   |
+|                       |                       | on claims history     |
+|                       |                       | does not match the    |
+|                       |                       | supporting documents. |
++-----------------------+-----------------------+-----------------------+
+| 201                   | Item keyed            | Manual                |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the:                  |
+|                       |                       |                       |
+|                       |                       | -   item number keyed |
+|                       |                       |     does not match    |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   supporting        |
+|                       |                       |     documentation     |
+|                       |                       |     does not have a   |
+|                       |                       |     sufficient        |
+|                       |                       |     description to    |
+|                       |                       |     uniquely identify |
+|                       |                       |     the item number   |
+|                       |                       |     processed         |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when a |
+|                       |                       | Service Officer has   |
+|                       |                       | inserted or copied a  |
+|                       |                       | line and keyed the    |
+|                       |                       | item number           |
+|                       |                       | incorrectly.          |
++-----------------------+-----------------------+-----------------------+
+| 202                   | Date of service keyed | Manual                |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the date of service   |
+|                       |                       | does not match        |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Online                |
+|                       |                       |                       |
+|                       |                       | It is an error when a |
+|                       |                       | Service Officer has   |
+|                       |                       | inserted or copied a  |
+|                       |                       | line and keyed the    |
+|                       |                       | date of service       |
+|                       |                       | incorrectly.          |
++-----------------------+-----------------------+-----------------------+
+| 204                   | Charge keyed          | It is an error when:  |
+|                       | incorrectly.          |                       |
+|                       |                       | -   the charge keyed  |
+|                       |                       |     does not match    |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   a discount has    |
+|                       |                       |     been applied to   |
+|                       |                       |     an account but    |
+|                       |                       |     the original      |
+|                       |                       |     charge has been   |
+|                       |                       |     keyed             |
+|                       |                       |                       |
+|                       |                       | Note: it would not be |
+|                       |                       | considered a 204      |
+|                       |                       | error when an account |
+|                       |                       | or receipt indicated  |
+|                       |                       | that a notional       |
+|                       |                       | charge should have    |
+|                       |                       | been keyed. Refer to  |
+|                       |                       | error code 211.       |
++-----------------------+-----------------------+-----------------------+
+| 205                   | Item paid incorrectly | It is an error when   |
+|                       | as outpatient.        | an ‘H’ suffix has not |
+|                       |                       | been keyed at the end |
+|                       |                       | of the relevant item  |
+|                       |                       | numbers and there is  |
+|                       |                       | indication of the     |
+|                       |                       | service being         |
+|                       |                       | performed in          |
+|                       |                       | hospital.             |
++-----------------------+-----------------------+-----------------------+
+| 206                   | Incorrect processing  | Manual and online     |
+|                       | indicator (PI) keyed. |                       |
+|                       |                       | It is an error when   |
+|                       |                       | the incorrect PI has  |
+|                       |                       | been keyed.           |
+|                       |                       |                       |
+|                       |                       | Note: only the        |
+|                       |                       | highest PI code used  |
+|                       |                       | is stored by the      |
+|                       |                       | system.               |
++-----------------------+-----------------------+-----------------------+
+| 207                   | Reason code not       | Manual and online     |
+|                       | keyed, keyed          |                       |
+|                       | incorrectly or keyed  | It is an error when a |
+|                       | when not required.    | reason code is        |
+|                       |                       |                       |
+|                       |                       | -   not keyed         |
+|                       |                       | -   keyed incorrectly |
+|                       |                       | -   keyed when not    |
+|                       |                       |     required          |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when the system |
+|                       |                       | has automatically     |
+|                       |                       | inserted a reason     |
+|                       |                       | code.                 |
++-----------------------+-----------------------+-----------------------+
+| 208                   | Medicare card number  | It is an error when   |
+|                       | for claimant or       | the:                  |
+|                       | patient keyed         |                       |
+|                       | incorrectly or        | -   patient's         |
+|                       | consumer ID for       |     Medicare card     |
+|                       | claimant keyed        |     number            |
+|                       | incorrectly.          | -   claimant’s        |
+|                       |                       |     Medicare card     |
+|                       |                       |     number or         |
+|                       |                       |     consumer ID       |
+|                       |                       |                       |
+|                       |                       | has been keyed        |
+|                       |                       | incorrectly.          |
+|                       |                       |                       |
+|                       |                       | Note: when both       |
+|                       |                       | fields are in error   |
+|                       |                       | this would be         |
+|                       |                       | considered one error  |
+|                       |                       | for quality checking  |
+|                       |                       | purposes.             |
++-----------------------+-----------------------+-----------------------+
+| 209                   | LSPN keyed            | It is an error when   |
+|                       | incorrectly.          | the Location Specific |
+|                       |                       | Practice Number       |
+|                       |                       | (LSPN) for a          |
+|                       |                       | diagnostic or         |
+|                       |                       | oncology item does    |
+|                       |                       | not match:            |
+|                       |                       |                       |
+|                       |                       | -   manual -          |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   online - the      |
+|                       |                       |     transmission or   |
+|                       |                       |     LSPN register     |
++-----------------------+-----------------------+-----------------------+
+| 210                   | Service provider      | It is an error when   |
+|                       | keyed incorrectly.    | the service provider  |
+|                       |                       | keyed or selected     |
+|                       |                       | does not match        |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| 211                   | Notional charge not   | It is an error when a |
+|                       | applied or applied    | notional charge has:  |
+|                       | incorrectly.          |                       |
+|                       |                       | -   been applied when |
+|                       |                       |     it should not     |
+|                       |                       | -   not been applied  |
+|                       |                       |     when it should    |
+|                       |                       |                       |
+|                       |                       | Note: when a Service  |
+|                       |                       | Officer has applied a |
+|                       |                       | notional charge,      |
+|                       |                       | reason code 113 will  |
+|                       |                       | be displayed on the   |
+|                       |                       | patient's history in  |
+|                       |                       | the RSN field.        |
+|                       |                       |                       |
+|                       |                       | When a system         |
+|                       |                       | generated notional    |
+|                       |                       | charge has been       |
+|                       |                       | applied reason code   |
+|                       |                       | 241 or 242 will be    |
+|                       |                       | displayed on the      |
+|                       |                       | patient's history in  |
+|                       |                       | the RSN field.        |
++-----------------------+-----------------------+-----------------------+
+| 212                   | Text transmitted not  | It is an error when   |
+|                       | actioned              | the transmitted text  |
+|                       | appropriately.        | requested:            |
+|                       |                       |                       |
+|                       |                       | -   a change in item  |
+|                       |                       |     number            |
+|                       |                       | -   a change in       |
+|                       |                       |     provider          |
+|                       |                       | -   a change in       |
+|                       |                       |     service location  |
+|                       |                       |                       |
+|                       |                       | and the Service       |
+|                       |                       | Officer did not       |
+|                       |                       | action appropriately. |
++-----------------------+-----------------------+-----------------------+
+| 213                   | Telephone claim paid  | It is an error when a |
+|                       | incorrectly.          | telephone claim has   |
+|                       |                       | been paid, and:       |
+|                       |                       |                       |
+|                       |                       | -   the benefit is    |
+|                       |                       |     over $100         |
+|                       |                       | -   the account has   |
+|                       |                       |     not been paid by  |
+|                       |                       |     the claimant      |
++-----------------------+-----------------------+-----------------------+
+| 214                   | Items not keyed.      | It is an error when   |
+|                       |                       | one or more items on  |
+|                       |                       | supporting            |
+|                       |                       | documentation have    |
+|                       |                       | not been keyed.       |
++-----------------------+-----------------------+-----------------------+
+| 215                   | SCP keyed             | It is an error when   |
+|                       | incorrectly.          | the Specimen          |
+|                       |                       | Collection Point      |
+|                       |                       | (SCP) for a pathology |
+|                       |                       | item does not match:  |
+|                       |                       |                       |
+|                       |                       | -   manual -          |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   online - the      |
+|                       |                       |     transmission      |
++-----------------------+-----------------------+-----------------------+
+| 216                   | Radiation oncology    | It is an error when:  |
+|                       | fields not keyed or   |                       |
+|                       | keyed incorrectly.    | -   fields are not    |
+|                       |                       |     keyed             |
+|                       |                       | -   fields keyed do   |
+|                       |                       |     not match the     |
+|                       |                       |     number of fields  |
+|                       |                       |     indicated on      |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
++-----------------------+-----------------------+-----------------------+
+| 217                   | Over two year old     | It is an error when   |
+|                       | claim paid            | an over two year old  |
+|                       | incorrectly.          | claim has been paid   |
+|                       |                       | without checking the  |
+|                       |                       | patient's culled      |
+|                       |                       | history.              |
++-----------------------+-----------------------+-----------------------+
+| 218                   | PAYP line not keyed   | It is an error when   |
+|                       | or keyed incorrectly. | the:                  |
+|                       |                       |                       |
+|                       |                       | -   PAYP line is      |
+|                       |                       |     omitted           |
+|                       |                       | -   PAYP details are  |
+|                       |                       |     keyed incorrectly |
+|                       |                       |                       |
+|                       |                       | Note: PAYP line must  |
+|                       |                       | only be keyed where   |
+|                       |                       | 'Locum' or 'LT' is    |
+|                       |                       | indicated on the      |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| 220                   | Miscellaneous line    | It is an error when a |
+|                       | keyed.                | miscellaneous line is |
+|                       |                       | keyed and the charge  |
+|                       |                       | is not greater than   |
+|                       |                       | $9999.99.             |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | does not apply to     |
+|                       |                       | online claiming.      |
++-----------------------+-----------------------+-----------------------+
+| 221                   | Incorrect or          | Manual and online     |
+|                       | inappropriate manual  |                       |
+|                       | calculation of        | It is an error when:  |
+|                       | schedule fee.         |                       |
+|                       |                       | -   a processing      |
+|                       |                       |     indicator (PI)    |
+|                       |                       |     has been used to  |
+|                       |                       |     amend a schedule  |
+|                       |                       |     fee which has     |
+|                       |                       |     caused an         |
+|                       |                       |     incorrect benefit |
+|                       |                       |     to be paid        |
+|                       |                       | -   the fee has been  |
+|                       |                       |     adjusted when a   |
+|                       |                       |     latter day        |
+|                       |                       |     adjustment should |
+|                       |                       |     have been         |
+|                       |                       |     performed         |
+|                       |                       | -   a modifier has    |
+|                       |                       |     not been keyed or |
+|                       |                       |     keyed incorrectly |
++-----------------------+-----------------------+-----------------------+
+
+Processing error status codes (continued)
+
+Processing error status codes for patient claims quality checking (continued)
+
+Table 5: This table lists the processing error status codes for patient
+claims quality checking.
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| 224                   | Provider location     | It is an error when   |
+|                       | keyed or selected     | the provider location |
+|                       | incorrectly.          | keyed or selected     |
+|                       |                       | does not match        |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| 228                   | Address not changed   | It is an error when   |
+|                       | or changed            | the:                  |
+|                       | incorrectly.          |                       |
+|                       |                       | -   address keyed     |
+|                       |                       |     does not match    |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   claimant has      |
+|                       |                       |     requested a       |
+|                       |                       |     temporary address |
+|                       |                       |     change or has not |
+|                       |                       |     indicated on the  |
+|                       |                       |     claim form, and   |
+|                       |                       |     the address has   |
+|                       |                       |     been changed      |
+|                       |                       |     permanently       |
+|                       |                       | -   claimant has      |
+|                       |                       |     requested a       |
+|                       |                       |     permanent address |
+|                       |                       |     change and the    |
+|                       |                       |     address has been  |
+|                       |                       |     changed           |
+|                       |                       |     temporarily       |
++-----------------------+-----------------------+-----------------------+
+| 229                   | Restrictive item paid | Manual and online     |
+|                       | incorrectly.          |                       |
+|                       |                       | It is an error when a |
+|                       |                       | restriction has been  |
+|                       |                       | overridden without    |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when the rooms  |
+|                       |                       | have transmitted a    |
+|                       |                       | NNAC override and the |
+|                       |                       | system has            |
+|                       |                       | automatically         |
+|                       |                       | inserted a PI 44.     |
++-----------------------+-----------------------+-----------------------+
+| 232                   | Cancel and re-issue   | It is an error when   |
+|                       | cheque issue          | the request for the   |
+|                       |                       | cancellation of a     |
+|                       |                       | Medicare cheque was:  |
+|                       |                       |                       |
+|                       |                       | -   re-issued without |
+|                       |                       |     a valid request   |
+|                       |                       | -   not re-issued     |
+|                       |                       |     when requested    |
++-----------------------+-----------------------+-----------------------+
+| 233                   | EFT or Credit EFTPOS  | It is an error when   |
+|                       | paid inappropriately. | an EFT or Credit      |
+|                       |                       | EFTPOS:               |
+|                       |                       |                       |
+|                       |                       | -   payment has been  |
+|                       |                       |     made and the      |
+|                       |                       |     claim has not     |
+|                       |                       |     been processed    |
+|                       |                       |     under payee code  |
+|                       |                       |     7                 |
+|                       |                       | -   payment has been  |
+|                       |                       |     made and the      |
+|                       |                       |     amount paid (on   |
+|                       |                       |     the terminal      |
+|                       |                       |     receipt) differs  |
+|                       |                       |     to the benefit on |
+|                       |                       |     the mainframe     |
+|                       |                       |     receipt           |
+|                       |                       | -   benefit paid      |
+|                       |                       |     exceeded the      |
+|                       |                       |     approved limit    |
+|                       |                       |     for Credit EFTPOS |
+|                       |                       | -   payment was made  |
+|                       |                       |     on an unpaid      |
+|                       |                       |     account           |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when this was   |
+|                       |                       | identified through    |
+|                       |                       | the end of day        |
+|                       |                       | reconciliation        |
+|                       |                       | process.              |
++-----------------------+-----------------------+-----------------------+
+| 234                   | Cheque paid to        | It is an error when a |
+|                       | claimant on unpaid    | benefit was paid via  |
+|                       | account.              | cheque to the         |
+|                       |                       | claimant when an      |
+|                       |                       | account is unpaid.    |
+|                       |                       |                       |
+|                       |                       | Note: this error code |
+|                       |                       | also applies to       |
+|                       |                       | manual cheque.        |
++-----------------------+-----------------------+-----------------------+
+| 235                   | Cheque paid to        | It is an error when a |
+|                       | provider on paid      | benefit was paid via  |
+|                       | account.              | cheque to the         |
+|                       |                       | provider and an       |
+|                       |                       | account has been      |
+|                       |                       | paid.                 |
++-----------------------+-----------------------+-----------------------+
+| 236                   | Cheque paid to        | It is an error when a |
+|                       | claimant when EFT     | benefit was paid via  |
+|                       | details were          | cheque when EFT       |
+|                       | available.            | details were          |
+|                       |                       | available.            |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when a          |
+|                       |                       | claimant:             |
+|                       |                       |                       |
+|                       |                       | -   has requested to  |
+|                       |                       |     use stored EFT    |
+|                       |                       |     details to pay a  |
+|                       |                       |     benefit but there |
+|                       |                       |     are no current    |
+|                       |                       |     EFT details       |
+|                       |                       |     stored and the    |
+|                       |                       |     Service Officer   |
+|                       |                       |     has issued a      |
+|                       |                       |     cheque with       |
+|                       |                       |     reason code 450   |
+|                       |                       | -   specifically      |
+|                       |                       |     indicates payment |
+|                       |                       |     is required by    |
+|                       |                       |     cheque            |
++-----------------------+-----------------------+-----------------------+
+| 237                   | Radiation oncology    | It is an error when   |
+|                       | equipment number      | an equipment number   |
+|                       | keyed incorrectly.    | does not match:       |
+|                       |                       |                       |
+|                       |                       | -   manual -          |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   online - the      |
+|                       |                       |     transmission      |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when '0' was    |
+|                       |                       | entered to complete   |
+|                       |                       | the equipment number  |
+|                       |                       | field.                |
++-----------------------+-----------------------+-----------------------+
+| 238                   | Item paid incorrectly | It is an error when   |
+|                       | as inpatient.         | an 'H' suffix has     |
+|                       |                       | been keyed at the end |
+|                       |                       | of an item number and |
+|                       |                       | there is no           |
+|                       |                       | indication of the     |
+|                       |                       | service being         |
+|                       |                       | performed in          |
+|                       |                       | hospital.             |
++-----------------------+-----------------------+-----------------------+
+| 239                   | Referral details (SR  | It is an error when   |
+|                       | and AH) keyed         | the referral details  |
+|                       | incorrectly.          | (FST DT, LST DT,      |
+|                       |                       | Provider number,      |
+|                       |                       | sub/con) are keyed    |
+|                       |                       | incorrectly.          |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   when more than    |
+|                       |                       |     one field on the  |
+|                       |                       |     SR line is in     |
+|                       |                       |     error it is       |
+|                       |                       |     considered one    |
+|                       |                       |     error for quality |
+|                       |                       |     control purposes  |
+|                       |                       | -   this error code   |
+|                       |                       |     applies to        |
+|                       |                       |     specialist (SR)   |
+|                       |                       |     and allied health |
+|                       |                       |     (AH) referral     |
+|                       |                       |     lines that appear |
+|                       |                       |     on history        |
+|                       |                       | -   it is not an      |
+|                       |                       |     error when the    |
+|                       |                       |     system has        |
+|                       |                       |     generated a       |
+|                       |                       |     referral line     |
+|                       |                       |     with reason code  |
+|                       |                       |     SGN               |
++-----------------------+-----------------------+-----------------------+
+| 240                   | Diagnostic request    | It is an error when   |
+|                       | details (DI) keyed    | the diagnostic        |
+|                       | incorrectly.          | request details keyed |
+|                       |                       | do not match          |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| 241                   | Pathology request     | It is an error when   |
+|                       | details (PA) keyed    | the pathology request |
+|                       | incorrectly.          | details keyed do not  |
+|                       |                       | match supporting      |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| 242                   | ACRF details keyed    | It is an error when   |
+|                       | incorrectly.          | the ACRF details      |
+|                       |                       | keyed are not         |
+|                       |                       | identifiable on       |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
+|                       |                       |                       |
+|                       |                       | Note: when ACRF is    |
+|                       |                       | requested and there   |
+|                       |                       | is no information on  |
+|                       |                       | supporting            |
+|                       |                       | documentation the     |
+|                       |                       | Service Officer       |
+|                       |                       | should key '0' or     |
+|                       |                       | 'No'.                 |
++-----------------------+-----------------------+-----------------------+
+| 245                   | Claimant’s name or    | It is an error when   |
+|                       | claimant's reference  | the claimant keyed or |
+|                       | number keyed or       | claimant selected     |
+|                       | selected incorrectly. | does not match        |
+|                       |                       | supporting            |
+|                       |                       | documentation.        |
++-----------------------+-----------------------+-----------------------+
+| 247                   | Service substantiated | It is an error when:  |
+|                       | inappropriately or    |                       |
+|                       | has not been          | -   services are not  |
+|                       | substantiated.        |     substantiated     |
+|                       |                       |     when they should  |
+|                       |                       |     have been         |
+|                       |                       | -   services are      |
+|                       |                       |     substantiated     |
+|                       |                       |     when they should  |
+|                       |                       |     not have been     |
+|                       |                       |                       |
+|                       |                       | Note: substantiation  |
+|                       |                       | also refers to        |
+|                       |                       | recording of gaps and |
+|                       |                       | partial payments.     |
++-----------------------+-----------------------+-----------------------+
+| 248                   | Substantiated amount  | It is an error when   |
+|                       | incorrect.            | the:                  |
+|                       |                       |                       |
+|                       |                       | -   amount            |
+|                       |                       |     substantiated     |
+|                       |                       |     does not match    |
+|                       |                       |     supporting        |
+|                       |                       |     documentation     |
+|                       |                       | -   provider has      |
+|                       |                       |     accepted less     |
+|                       |                       |     than the balance  |
+|                       |                       |     of the account,   |
+|                       |                       |     indicated that no |
+|                       |                       |     further payment   |
+|                       |                       |     is required and   |
+|                       |                       |     the Service       |
+|                       |                       |     Officer has not   |
+|                       |                       |     changed the SUBS  |
+|                       |                       |     amount            |
+|                       |                       |                       |
+|                       |                       | Note: substantiation  |
+|                       |                       | also refers to        |
+|                       |                       | recording of gaps and |
+|                       |                       | recording of partial  |
+|                       |                       | payments.             |
++-----------------------+-----------------------+-----------------------+
+| 249                   | Additional item lines | It is an error if     |
+|                       | keyed without         | additional lines have |
+|                       | justification.        | been keyed without    |
+|                       |                       | justification.        |
+|                       |                       |                       |
+|                       |                       | Note: it is not an    |
+|                       |                       | error when additional |
+|                       |                       | lines have been keyed |
+|                       |                       | in accordance with    |
+|                       |                       | business rules.       |
++-----------------------+-----------------------+-----------------------+
+| 250                   | Item lines rejected   | It is an error when   |
+|                       | in error.             | item lines have been  |
+|                       |                       | rejected when not in  |
+|                       |                       | accordance with       |
+|                       |                       | business rules.       |
++-----------------------+-----------------------+-----------------------+
+| 253                   | EFT details keyed or  | It is an error when   |
+|                       | stored incorrectly.   | the claimant’s EFT    |
+|                       |                       | details keyed and/or  |
+|                       |                       | stored do not match   |
+|                       |                       | supporting            |
+|                       |                       | documentation, this   |
+|                       |                       | includes:             |
+|                       |                       |                       |
+|                       |                       | -   Account name      |
+|                       |                       | -   Account number    |
+|                       |                       | -   BSB number        |
+|                       |                       | -   EFT storage       |
+|                       |                       |     indicator         |
+|                       |                       |     (C,T,P,U)         |
+|                       |                       |                       |
+|                       |                       | Note:                 |
+|                       |                       |                       |
+|                       |                       | -   if more than one  |
+|                       |                       |     field is          |
+|                       |                       |     incorrect in the  |
+|                       |                       |     same claim this   |
+|                       |                       |     would be          |
+|                       |                       |     considered one    |
+|                       |                       |     error for quality |
+|                       |                       |     control purposes  |
+|                       |                       | -   this error code   |
+|                       |                       |     does not apply to |
+|                       |                       |     online claiming.  |
++-----------------------+-----------------------+-----------------------+
+| 299                   | More than four        | When four processing  |
+|                       | processing errors.    | errors are detected   |
+|                       |                       | key all four error    |
+|                       |                       | codes in the status   |
+|                       |                       | value available.      |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | processing errors are |
+|                       |                       | detected key the      |
+|                       |                       | first three errors    |
+|                       |                       | with applicable code  |
+|                       |                       | followed by error     |
+|                       |                       | code 299 in the       |
+|                       |                       | fourth field.         |
+|                       |                       |                       |
+|                       |                       | When more than four   |
+|                       |                       | errors are made and   |
+|                       |                       | there is a            |
+|                       |                       | combination of        |
+|                       |                       | processing and        |
+|                       |                       | document errors, use  |
+|                       |                       | 299 as the fourth     |
+|                       |                       | error.                |
++-----------------------+-----------------------+-----------------------+
+
+Referral error status codes
+
+Referral error status codes for patient claims quality checking
+
+Table 6: This table lists the referral error status codes for patient
+claims quality checking.
+
++-----------------------+-----------------------+-----------------------+
+| Error status codes    | Definition            | Processing tip        |
++-----------------------+-----------------------+-----------------------+
+| 301                   | Photocopied or        | It is an error when:  |
+|                       | altered accounts or   |                       |
+|                       | receipts not          | -   photocopied or    |
+|                       | certified.            |     altered accounts  |
+|                       |                       |     or receipts have  |
+|                       |                       |     been processed    |
+|                       |                       |     without           |
+|                       |                       |     appropriate       |
+|                       |                       |     certification or  |
+|                       |                       |     verification      |
+|                       |                       | -   original account  |
+|                       |                       |     or receipt is     |
+|                       |                       |     returned to the   |
+|                       |                       |     claimant and the  |
+|                       |                       |     photocopy held by |
+|                       |                       |     Services          |
+|                       |                       |     Australia does    |
+|                       |                       |     not have          |
+|                       |                       |     appropriate       |
+|                       |                       |     certification     |
+|                       |                       |                       |
+|                       |                       | Note: this may        |
+|                       |                       | require referral to   |
+|                       |                       | National Compliance   |
+|                       |                       | Operations.           |
++-----------------------+-----------------------+-----------------------+
+| 302                   | No documents to       | It is an error when:  |
+|                       | support payment.      |                       |
+|                       |                       | -   photocopied or    |
+|                       |                       |     altered accounts  |
+|                       |                       |     or receipts have  |
+|                       |                       |     been processed    |
+|                       |                       |     without           |
+|                       |                       |     appropriate       |
+|                       |                       |     certification or  |
+|                       |                       |     verification      |
+|                       |                       | -   original account  |
+|                       |                       |     or receipt is     |
+|                       |                       |     returned to the   |
+|                       |                       |     claimant and the  |
+|                       |                       |     photocopy held by |
+|                       |                       |     Services          |
+|                       |                       |     Australia does    |
+|                       |                       |     not have          |
+|                       |                       |     appropriate       |
+|                       |                       |     certification     |
+|                       |                       |                       |
+|                       |                       | Note: this may        |
+|                       |                       | require referral to   |
+|                       |                       | National Compliance   |
+|                       |                       | Operations.           |
++-----------------------+-----------------------+-----------------------+
+
+Attachments
+
+Do not share these attachments externally. See Freedom of Information -
+Information Publication Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Guide to completing the online
+Error Explanation Sheet
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare pre-check form for new
+starters
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png]The
+Quality Control System (QCS) for Medicare
+
+Intranet links
+
+Error Explanation Sheet
+
+Undertaking Root Cause Analysis
+
+Quality Processes, which includes Quality Checking Contacts
+
+Quality Framework and Resources
+
+Other resources - 'Quality Policies' includes:
+
+-   Aim for Accuracy Guidelines
+-   Aim for Accuracy Policy for Health Programmes
+-   Security roles for authorising changes to quality checking
+    controls - Policy
+-   Quality Checking Own Work Policy
+-   Quality Checking New Starters Policy
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

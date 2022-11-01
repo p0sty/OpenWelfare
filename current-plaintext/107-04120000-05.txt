@@ -1,0 +1,181 @@
+
+Raising and attribution of Service Update debts 107-04120000
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Combining multiple debts with Debt Action Script scenarios
+
++-----------------------------------+-----------------------------------+
+| Item                              | Circumstances                     |
++-----------------------------------+-----------------------------------+
+| 1                                 | Automated Attribution of Service  |
+|                                   | Update debts in Integrated Review |
+|                                   | System (IRS) using the Debt       |
+|                                   | Action Script + Read more ...     |
+|                                   |                                   |
+|                                   | The Debt Action script gives the  |
+|                                   | option to combine two overlapping |
+|                                   | debt shells. The script will:     |
+|                                   |                                   |
+|                                   | -   finalise the non-Service      |
+|                                   |     Profile debt as 'Finalised -  |
+|                                   |     No debt' (FND)                |
+|                                   | -   raise a combined debt on the  |
+|                                   |     Service Profile linked debt   |
+|                                   |     shell that will attribute the |
+|                                   |     value of the combined debt to |
+|                                   |     the Service Update            |
+|                                   |                                   |
+|                                   | Do not 'no debt' the Service      |
+|                                   | Update debt shell when it is      |
+|                                   | first received. The debt shell is |
+|                                   | used by the script to attribute   |
+|                                   | debts to the Service Update       |
+|                                   | review.                           |
+|                                   |                                   |
+|                                   | Identify the Service Update debt  |
+|                                   | shell. This shell has a Service   |
+|                                   | Profiling project code on the     |
+|                                   | Modify/Assess Debt (OPMA) screen. |
+|                                   | Note the Debt ID                  |
+|                                   |                                   |
+|                                   | Open the Debt action Script in    |
+|                                   | the customer record and select    |
+|                                   | the Debt ID for the Service       |
+|                                   | Update debt identified            |
+|                                   |                                   |
+|                                   | The script looks at the OPMA      |
+|                                   | screen of the selected debt. The  |
+|                                   | script will search for other      |
+|                                   | actionable debts on the           |
+|                                   | customer's record. A second debt  |
+|                                   | can be attributed to the Service  |
+|                                   | Update review                     |
+|                                   |                                   |
+|                                   | Selecting the other debt causes   |
+|                                   | the script to:                    |
+|                                   |                                   |
+|                                   | -   copy that debt's details from |
+|                                   |     the OPMA and Component Amount |
+|                                   |     (OPCA) screens                |
+|                                   | -   finalise the other debt as a  |
+|                                   |     'no debt', and                |
+|                                   | -   create a DOC explaining the   |
+|                                   |     finalisation                  |
+|                                   |                                   |
+|                                   | The script then presents the user |
+|                                   | with a dialogue box displaying:   |
+|                                   |                                   |
+|                                   | -   the details of the Service    |
+|                                   |     Update debt                   |
+|                                   | -   the details of the other      |
+|                                   |     debt, and                     |
+|                                   | -   fields for the combined debt  |
+|                                   |                                   |
+|                                   | The user must enter the:          |
+|                                   |                                   |
+|                                   | -   start date                    |
+|                                   | -   end date                      |
+|                                   | -   debt amount, and              |
+|                                   | -   amount received for the       |
+|                                   |     combined debt                 |
+|                                   |                                   |
+|                                   | The script then flows as normal   |
+|                                   | to allow for:                     |
+|                                   |                                   |
+|                                   | -   the assessment of any         |
+|                                   |     Recovery Fee                  |
+|                                   | -   input DOC text, and           |
+|                                   | -   the Advice of Debt text       |
+|                                   |                                   |
+|                                   | The script will pause on the OPCA |
+|                                   | screen. A dialogue box presents   |
+|                                   | with the components of the        |
+|                                   | finalised debt that the user must |
+|                                   | add to the OPCA screen            |
+|                                   |                                   |
+|                                   | The script proceeds to finalise   |
+|                                   | the debt activity                 |
+|                                   |                                   |
+|                                   | It adds details to the DOC it     |
+|                                   | creates including:                |
+|                                   |                                   |
+|                                   | -   that the debt has been        |
+|                                   |     combined with the finalised   |
+|                                   |     'no debt'                     |
+|                                   | -   details of the attributed     |
+|                                   |     Service Update review         |
++-----------------------------------+-----------------------------------+
+| 2                                 | Manual Attribution of Service     |
+|                                   | Update debts in Integrated Review |
+|                                   | System (IRS) + Read more ...      |
+|                                   |                                   |
+|                                   | Manual attribution is required    |
+|                                   | when the Debt Action Script       |
+|                                   | cannot be used.                   |
+|                                   |                                   |
+|                                   | IRS allows a Service Update debt  |
+|                                   | to be manually attributed to the  |
+|                                   | IRS Service Update. The IRS       |
+|                                   | Service Update must:              |
+|                                   |                                   |
+|                                   | -   have a Review Status of FIN   |
+|                                   |     (Finalised) or COM            |
+|                                   |     (Completed), and              |
+|                                   | -   the debt must be manually     |
+|                                   |     added within 56 days of the   |
+|                                   |     date that the IRS Service     |
+|                                   |     Update was finalised          |
+|                                   |                                   |
+|                                   | This date can be found on the     |
+|                                   | Review Details (IRRD) screen. A   |
+|                                   | debt cannot be manually added     |
+|                                   | once the 56 day period has        |
+|                                   | passed. The debt can be estimated |
+|                                   | or raised.                        |
+|                                   |                                   |
+|                                   | To manually attribute a debt to a |
+|                                   | Service Update in IRS:            |
+|                                   |                                   |
+|                                   | -   go to the Review Summary      |
+|                                   |     (IRRS) screen                 |
+|                                   | -   code an 'O' next to the       |
+|                                   |     relevant IRS Service Update.  |
+|                                   |     Press [ENTER]                 |
+|                                   | -   the Debt Attribute (IRDA)     |
+|                                   |     screen will be displayed      |
+|                                   | -   enter an 'S' in the Select    |
+|                                   |     field next to the debt which  |
+|                                   |     is to be attributed to the    |
+|                                   |     IRS Service Update            |
+|                                   | -   confirm the selection         |
+|                                   |                                   |
+|                                   | The debt will be attributed to    |
+|                                   | the IRS Service Update.           |
+|                                   |                                   |
+|                                   | Some debts are not attributable   |
+|                                   | to a Review or Service Update,    |
+|                                   | such as Advance Payment debts.    |
+|                                   | Debts which are excluded from     |
+|                                   | attribution will not be included  |
+|                                   | in the list of attributable debts |
+|                                   | on the IRDA screen.               |
+|                                   |                                   |
+|                                   | The manual selection of debt      |
+|                                   | activities for attribution to the |
+|                                   | IRS Service Update must be        |
+|                                   | recorded on a DOC.                |
++-----------------------------------+-----------------------------------+
+
+Services Australia website
+
+Services Australia Service Commitments
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

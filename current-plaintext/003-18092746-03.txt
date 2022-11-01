@@ -1,0 +1,849 @@
+
+Immediate payment by payment method New Payments Platform (NPP) 003-18092746
+
+-   Background
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+On this page:
+
+Issuing immediate payments to customers by NPP
+
+Issuing emergency payments via NPP
+
+Manually coding an NPP payment
+
+Reissuing an NPP payment
+
+Issuing immediate payments to customers by NPP
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Immediate payment to customer via |
+|                                   | priority direct credit + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Delivery of an immediate payment  |
+|                                   | via a priority direct credit      |
+|                                   | method (NPP or RTGS) should be    |
+|                                   | considered if the customer is     |
+|                                   | unable to wait for the payment to |
+|                                   | be available on the next working  |
+|                                   | day, or in 2 working days         |
+|                                   | (depending on the payment type).  |
+|                                   |                                   |
+|                                   | When considering a payment by     |
+|                                   | NPP, remember:                    |
+|                                   |                                   |
+|                                   | -   Immediate payments cannot be  |
+|                                   |     issued if the customer's      |
+|                                   |     record is in the I            |
+|                                   |     (International) environment   |
+|                                   | -   Urgent payments cannot be     |
+|                                   |     issued if the customer's      |
+|                                   |     payment type is an ineligible |
+|                                   |     payment. These payments       |
+|                                   |     include Family Tax Benefit    |
+|                                   |     (FTB) only, Pension Bonus     |
+|                                   |     Scheme and Advance payments.  |
+|                                   |     See Urgent payments due to    |
+|                                   |     exceptional and unforeseen or |
+|                                   |     extraordinary circumstances   |
+|                                   |     for a list of ineligible      |
+|                                   |     payments                      |
+|                                   | -   The customer must have        |
+|                                   |     already been approved for an  |
+|                                   |     urgent payment (the service   |
+|                                   |     officer must have already     |
+|                                   |     determined the customer is    |
+|                                   |     eligible for the urgent       |
+|                                   |     payment)                      |
+|                                   | -   Only emergency, crisis,       |
+|                                   |     anticipated release,          |
+|                                   |     immediate, and one-off Income |
+|                                   |     Management payments in ISIS   |
+|                                   |     can be delivered through the  |
+|                                   |     NPP. Farm Household Allowance |
+|                                   |     (FHA) payments and Status     |
+|                                   |     Resolution Support Services   |
+|                                   |     (SRSS) payments cannot be     |
+|                                   |     delivered via NPP. See        |
+|                                   |     Immediate payment by payment  |
+|                                   |     method Real Time Gross        |
+|                                   |     Settlement (RTGS)             |
+|                                   |                                   |
+|                                   | An account also cannot be used    |
+|                                   | for NPP if:                       |
+|                                   |                                   |
+|                                   | -   the bank account is not       |
+|                                   |     reachable via the NPP (option |
+|                                   |     will not display)             |
+|                                   | -   an NPP payment made to that   |
+|                                   |     account on the same day was   |
+|                                   |     not successful (option will   |
+|                                   |     not display)                  |
+|                                   | -   it is closed (payment will    |
+|                                   |     reject)                       |
+|                                   | -   it is a new payment           |
+|                                   |     destination (warning message  |
+|                                   |     will display to staff)        |
+|                                   |                                   |
+|                                   | If the customer is requesting an  |
+|                                   | urgent payment in a self-service  |
+|                                   | channel, their payment will       |
+|                                   | deliver via NPP if it is          |
+|                                   | available if they select the      |
+|                                   | Priority Direct Credit option.    |
+|                                   |                                   |
+|                                   | -   For emergency payments, see   |
+|                                   |     Table 2 Issuing emergency     |
+|                                   |     payments via NPP table        |
+|                                   | -   For Crisis payments, see      |
+|                                   |     Table 3 Manually coding an    |
+|                                   |     NPP payment                   |
+|                                   | -   For all other payments, the   |
+|                                   |     Immediate Payment requests    |
+|                                   |     script should be used to      |
+|                                   |     issue the payment if it is    |
+|                                   |     available. Go to Step 2       |
+|                                   | -   If the Immediate Payment      |
+|                                   |     requests script is not        |
+|                                   |     available, see Table 3        |
++-----------------------------------+-----------------------------------+
+| 2                                 | NPP displayed as a payment        |
+|                                   | option + Read more ...            |
+|                                   |                                   |
+|                                   | Is NPP displayed as a payment     |
+|                                   | option in the script?             |
+|                                   |                                   |
+|                                   | NPP will not display as a payment |
+|                                   | option if the destination account |
+|                                   | is:                               |
+|                                   |                                   |
+|                                   | -   a passbook account            |
+|                                   | -   not enabled to utilise the    |
+|                                   |     NPP                           |
+|                                   |                                   |
+|                                   | If the customer advises the       |
+|                                   | account is overdrawn, it is the   |
+|                                   | customer's choice as to whether   |
+|                                   | the payment is made to the        |
+|                                   | account.                          |
+|                                   |                                   |
+|                                   | The customer should be advised    |
+|                                   | that:                             |
+|                                   |                                   |
+|                                   | -   the financial institution may |
+|                                   |     retain some or all of the     |
+|                                   |     overdrawn amount; and         |
+|                                   | -   it will take longer for the   |
+|                                   |     payment to be available as    |
+|                                   |     manual processing may be      |
+|                                   |     required by the financial     |
+|                                   |     institution                   |
+|                                   |                                   |
+|                                   | An account also cannot be used    |
+|                                   | for NPP if:                       |
+|                                   |                                   |
+|                                   | -   an NPP payment made to that   |
+|                                   |     account on the same day was   |
+|                                   |     not successful (option will   |
+|                                   |     not display)                  |
+|                                   | -   it is closed (payment will    |
+|                                   |     reject)                       |
+|                                   | -   it is a new payment           |
+|                                   |     destination (error message    |
+|                                   |     will display)                 |
+|                                   |                                   |
+|                                   | Is NPP an appropriate method of   |
+|                                   | payment?                          |
+|                                   |                                   |
+|                                   | Yes, go to Step 3                 |
+|                                   |                                   |
+|                                   | No, the account is not            |
+|                                   | NPP-reachable:                    |
+|                                   |                                   |
+|                                   | -   RTGS will be presented as the |
+|                                   |     next preferred payment option |
+|                                   | -   IF RTGS is not appropriate,   |
+|                                   |     consider issuing the payment  |
+|                                   |     by Electronic Benefit         |
+|                                   |     Transfer (EBT) card           |
+|                                   | -   Procedure ends here           |
++-----------------------------------+-----------------------------------+
+| 3                                 | Process payment via Immediate     |
+|                                   | Payments script + Read more ...   |
+|                                   |                                   |
+|                                   | Do not use the Immediate Payment  |
+|                                   | script for Crisis Payments. (See  |
+|                                   | Step 1 in Table 3, Manually       |
+|                                   | Coding an NPP payment).           |
+|                                   |                                   |
+|                                   | The Immediate Payment request     |
+|                                   | script will pause on the Issue    |
+|                                   | Future Payment (IFP) screen to    |
+|                                   | allow insertion of the correct    |
+|                                   | reason                            |
+|                                   |                                   |
+|                                   | Reason: for urgent payment and    |
+|                                   | immediate payment grants use      |
+|                                   | field help '?' to change the      |
+|                                   | reason to:                        |
+|                                   |                                   |
+|                                   | -   DEP - Centrelink/Departmental |
+|                                   |     Delay                         |
+|                                   | -   ECI - Extraordinary           |
+|                                   |     Circumstances                 |
+|                                   | -   EXC - Exceptional and         |
+|                                   |     Unforeseen                    |
+|                                   | -   FNL - Funeral Expenses        |
+|                                   | -   For any payment reason that   |
+|                                   |     falls outside of the above,   |
+|                                   |     choose the most appropriate   |
+|                                   |     reason from the list          |
+|                                   |     available in the field help.  |
+|                                   |     More details about the        |
+|                                   |     appropriate code reasons is   |
+|                                   |     available on the Resources    |
+|                                   |     page                          |
+|                                   |                                   |
+|                                   | Once the reason code has been     |
+|                                   | input, press [Enter], then select |
+|                                   | OK on the script. The script will |
+|                                   | complete the activity and record  |
+|                                   | a DOC including:                  |
+|                                   |                                   |
+|                                   | -   Outcome and reason for the    |
+|                                   |     immediate payment request     |
+|                                   | -   Documentation or verifiable   |
+|                                   |     evidence provided by the      |
+|                                   |     customer (where requested)    |
+|                                   | -   Amount and method of payment. |
+|                                   |     Note: urgent payments are     |
+|                                   |     limited to $200 for an urgent |
+|                                   |     payment (this is early        |
+|                                   |     payment of fortnightly        |
+|                                   |     entitlement), and $1,000 for  |
+|                                   |     an urgent payment due to      |
+|                                   |     Centrelink delay              |
+|                                   | -   Any other assistance offered  |
+|                                   |     or referrals made             |
+|                                   | -   Note: a reference to SSAA     |
+|                                   |     1999 Section 55 (payment into |
+|                                   |     bank account etc.) can be     |
+|                                   |     included, but as payment      |
+|                                   |     delivery is not the           |
+|                                   |     significant decision, it is   |
+|                                   |     not compulsory                |
+|                                   | -   Go to Step 4                  |
++-----------------------------------+-----------------------------------+
+| 4                                 | Outcome + Read more ...           |
+|                                   |                                   |
+|                                   | If the customer's account is      |
+|                                   | reachable via the NPP, the        |
+|                                   | payment will deliver to the       |
+|                                   | customer's account immediately,   |
+|                                   | regardless of the time or day of  |
+|                                   | request. If an account is NPP     |
+|                                   | reachable, but the payment fails  |
+|                                   | to deliver, it will automatically |
+|                                   | re-issue via RTGS if available,   |
+|                                   | or via direct credit. Check the   |
+|                                   | Payment Summary (PS) screen to    |
+|                                   | confirm delivery.                 |
+|                                   |                                   |
+|                                   | Advise the customer:              |
+|                                   |                                   |
+|                                   | -   For an urgent payment from    |
+|                                   |     the customer's next           |
+|                                   |     entitlement, the amount       |
+|                                   |     issued will be deducted in    |
+|                                   |     full from the customer's next |
+|                                   |     payday                        |
+|                                   | -   For an urgent payment due to  |
+|                                   |     Centrelink delay or error,    |
+|                                   |     the remaining amount will be  |
+|                                   |     issued to their financial     |
+|                                   |     institution. Advise the       |
+|                                   |     customer when their next      |
+|                                   |     regular payment will be       |
+|                                   | -   The payment should be         |
+|                                   |     available from the payment    |
+|                                   |     destination immediately, but  |
+|                                   |     may take up to 30 minutes     |
+|                                   |                                   |
+|                                   | Note: if the customer has not     |
+|                                   | received the payment in their     |
+|                                   | account within 30 minutes, and    |
+|                                   | the payment shows as successfully |
+|                                   | delivered via NPP on the PS       |
+|                                   | screen, it may have timed out     |
+|                                   | from being delivered. In these    |
+|                                   | instances an automatic            |
+|                                   | notification will have been sent  |
+|                                   | to the ICT Service Desk, who will |
+|                                   | reissue the payment to the        |
+|                                   | customer as soon as possible.     |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Issuing emergency payments via NPP
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Issue the emergency payment via   |
+|                                   | NPP + Read more ...               |
+|                                   |                                   |
+|                                   | See Current emergency management  |
+|                                   | events for a list of emergency    |
+|                                   | payments and further information  |
+|                                   | on how to assess eligibility      |
+|                                   |                                   |
+|                                   | Note: while there is no payment   |
+|                                   | limit for emergency payments,     |
+|                                   | payments made via priority direct |
+|                                   | credit (NPP and RTGS) are limited |
+|                                   | to a maximum of $3,000            |
+|                                   |                                   |
+|                                   | Go to the FSP system (code        |
+|                                   | 'SVAAA' in the Next field and     |
+|                                   | ensure system is ISS)             |
+|                                   |                                   |
+|                                   | If:                               |
+|                                   |                                   |
+|                                   | the customer has already been     |
+|                                   | granted an emergency payment to   |
+|                                   | be paid via direct credit, but    |
+|                                   | requires an immediate payment, go |
+|                                   | to Step 2                         |
+|                                   |                                   |
+|                                   | the emergency payment is a        |
+|                                   | Disaster Recovery Allowance (DRA) |
+|                                   | or NZ DRA claim, and has not yet  |
+|                                   | been granted, go to Step 2        |
+|                                   |                                   |
+|                                   | the emergency payment is an       |
+|                                   | Australian Government Disaster    |
+|                                   | Recovery Payment (AGDRP) or NZ    |
+|                                   | DRP claim, and it has not yet     |
+|                                   | been granted:                     |
+|                                   |                                   |
+|                                   | -   run the Disaster Recovery     |
+|                                   |     Workflow. See Processing      |
+|                                   |     AGDRP and NZ DRP claims in    |
+|                                   |     Customer First                |
+|                                   | -   on the Claim Decision screen  |
+|                                   |     of the workflow, choose Yes   |
+|                                   |     and Priority Direct Credit    |
+|                                   |     under 'Immediate Payments     |
+|                                   |     Options'. Enter the amount to |
+|                                   |     be delivered immediately      |
+|                                   | -   if the customer is not        |
+|                                   |     current on any other payment, |
+|                                   |     enter in the bank details in  |
+|                                   |     the Immediate and             |
+|                                   |     Non-Immediate options         |
+|                                   | -   the system will automatically |
+|                                   |     issue the payment via NPP if  |
+|                                   |     the account is NPP reachable, |
+|                                   |     once the claim is finalised   |
+|                                   |                                   |
+|                                   | If the payment fails to deliver   |
+|                                   | via NPP, or the account is not    |
+|                                   | NPP reachable, it will            |
+|                                   | automatically issue via RTGS.     |
+|                                   | Check the Payment Summary (PS)    |
+|                                   | screen to confirm the method of   |
+|                                   | delivery.                         |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Payment is DRA or NZ DRA, or      |
+|                                   | customer already granted an       |
+|                                   | emergency payment to be paid via  |
+|                                   | direct credit, but requires an    |
+|                                   | immediate payment + Read more ... |
+|                                   |                                   |
+|                                   | If the emergency payment is a DRA |
+|                                   | or NZ DRA claim, and has not yet  |
+|                                   | been granted, run the Disaster    |
+|                                   | Recovery Workflow, see Recording  |
+|                                   | and coding DRA and NZ DRA claims  |
+|                                   |                                   |
+|                                   | After an emergency payment has    |
+|                                   | been granted, run the Issue       |
+|                                   | Emergency Payment workflow        |
+|                                   | accessed via Customer First -     |
+|                                   | Workspace.                        |
+|                                   |                                   |
+|                                   | -   Select the emergency payment. |
+|                                   |     NPP will display as a payment |
+|                                   |     method option if the          |
+|                                   |     customer's account is NPP     |
+|                                   |     reachable                     |
+|                                   | -   Enter the amount to be issued |
+|                                   |     as an immediate payment       |
+|                                   | -   The payment will be reissued  |
+|                                   |     via NPP on completion of the  |
+|                                   |     workflow                      |
+|                                   |                                   |
+|                                   | If the Issue Emergency Payment    |
+|                                   | Workflow is not available,        |
+|                                   | manually reissue the emergency    |
+|                                   | payment via an immediate payment  |
+|                                   | method:                           |
+|                                   |                                   |
+|                                   | Go to Payment Summary (PS) screen |
+|                                   |                                   |
+|                                   | Select the emergency payment by   |
+|                                   | typing 'R' next to the payment    |
+|                                   | line and press [Enter]            |
+|                                   |                                   |
+|                                   | The Issue Payment Select (IPPRE)  |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | -   The system will automatically |
+|                                   |     'S'elect the Early Payment    |
+|                                   |     from current Pay Period field |
+|                                   |     (or the most appropriate      |
+|                                   |     option) and the Default       |
+|                                   |     Destination will be direct    |
+|                                   |     credit                        |
+|                                   | -   Update the Default            |
+|                                   |     Destination field to 'New     |
+|                                   |     Payments Platform (NPP)' and  |
+|                                   |     select Continue               |
+|                                   |                                   |
+|                                   | The Issue Future Payment (IFP)    |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | The system will automatically     |
+|                                   | 'S'elect the Immediate/Arrears    |
+|                                   | Payment field                     |
+|                                   |                                   |
+|                                   | The Default Destination field     |
+|                                   | must be changed to the payment    |
+|                                   | method needed                     |
+|                                   |                                   |
+|                                   | Press [Enter]                     |
+|                                   |                                   |
+|                                   | The IFP screen will display       |
+|                                   |                                   |
+|                                   | Complete the following fields:    |
+|                                   |                                   |
+|                                   | -   Issue Amt: - this will be the |
+|                                   |     amount of the payment         |
+|                                   | -   Reason: - DEP (Departmental   |
+|                                   |     Delay)                        |
+|                                   | -   Notes: - (why payment is      |
+|                                   |     being issued)                 |
+|                                   | -   Source: - (method the         |
+|                                   |     customer has used to contact) |
+|                                   | -   DOR: - (Date of Receipt)      |
+|                                   | -   Finished (Y/Q/N):             |
+|                                   |                                   |
+|                                   | If the payment fails to deliver   |
+|                                   | via NPP, or the account is not    |
+|                                   | NPP reachable, it will            |
+|                                   | automatically issue via RTGS.     |
+|                                   | Check the Payment Summary (PS)    |
+|                                   | screen to confirm the method of   |
+|                                   | delivery.                         |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Manually coding an NPP payment
+
+Table 3: Follow this process when paying Crisis Payments via NPP or the
+Immediate Payment requests script is not available. This process does
+not apply to payments made in the Customer First (SAP) system.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Manually issue NPP payment + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | When a Crisis Payment (CrP) has   |
+|                                   | been granted or the Immediate     |
+|                                   | Payment requests script is not    |
+|                                   | available.                        |
+|                                   |                                   |
+|                                   | Make sure payments are only made  |
+|                                   | for eligible payments (for        |
+|                                   | example, Urgent Payments should   |
+|                                   | not be paid for FTB) and that the |
+|                                   | payment is processed in the       |
+|                                   | correct system.                   |
+|                                   |                                   |
+|                                   | CrP claims selected for QMA must  |
+|                                   | be checked before undertaking the |
+|                                   | following steps. (Noting the QMO  |
+|                                   | will need to complete the         |
+|                                   | additional steps to issue the     |
+|                                   | payment via NPP).                 |
+|                                   |                                   |
+|                                   | Go to Customer First              |
+|                                   |                                   |
+|                                   | Go to Payment Summary (PS) screen |
+|                                   |                                   |
+|                                   | Select the payment that has not   |
+|                                   | been received by typing 'R' next  |
+|                                   | to the payment line and press     |
+|                                   | [Enter]                           |
+|                                   |                                   |
+|                                   | The Issue Payment Select (IPPRE)  |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | -   the system will automatically |
+|                                   |     'S'elect the most appropriate |
+|                                   |     type of issue payment (i.e.,  |
+|                                   |     'Early Payment from current   |
+|                                   |     Pay Period' and the Default   |
+|                                   |     Destination will be direct    |
+|                                   |     credit                        |
+|                                   | -   Update the Default            |
+|                                   |     Destination field to 'New     |
+|                                   |     Payments Platform (NPP)' and  |
+|                                   |     select Continue               |
+|                                   |                                   |
+|                                   | The Issue Future Payment (IFP)    |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | -   For Crisis Payment, go to     |
+|                                   |     Step 2                        |
+|                                   | -   If the Immediate Payment      |
+|                                   |     script is unavailable, go to  |
+|                                   |     Step 3                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Completing coding for a Crisis    |
+|                                   | Payment + Read more ...           |
+|                                   |                                   |
+|                                   | Code the following fields on the  |
+|                                   | Issue future Payment (IFP)        |
+|                                   | screen:                           |
+|                                   |                                   |
+|                                   | Issue amount: add the full amount |
+|                                   | of the payment to be delivered    |
+|                                   |                                   |
+|                                   | Reason: for Crisis Payment grants |
+|                                   | use field help '?' to change the  |
+|                                   | reason to:                        |
+|                                   |                                   |
+|                                   | -   CRI - Crisis Payment          |
+|                                   |                                   |
+|                                   | Finished (Y/Q/N): 'Y'             |
+|                                   |                                   |
+|                                   | Notes: the reason for issue, for  |
+|                                   | example, 'pay Crisis Payment via  |
+|                                   | NPP'                              |
+|                                   |                                   |
+|                                   | Source: and DOR: fields           |
+|                                   |                                   |
+|                                   | This will create a zero amount in |
+|                                   | the original Crisis Payment entry |
+|                                   | on the PS screen, as well as a    |
+|                                   | new 'NPP' line of the full amount |
+|                                   | to be delivered immediately to    |
+|                                   | the customer via the NPP.         |
+|                                   |                                   |
+|                                   | Note: when a payment is issued    |
+|                                   | via NPP, a DOC will be generated  |
+|                                   | including the ‘reason for issue’  |
+|                                   | entered on the IFP screen. As     |
+|                                   | granting the Crisis Payment is    |
+|                                   | the significant decision, not the |
+|                                   | method in which the payment is    |
+|                                   | delivered, this DOC is            |
+|                                   | sufficient.                       |
+|                                   |                                   |
+|                                   | A reference to SSAA 1999 Section  |
+|                                   | 55 (payment into bank account     |
+|                                   | etc.) can be included, but it is  |
+|                                   | not compulsory.                   |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Completing coding when the        |
+|                                   | Immediate payment request script  |
+|                                   | is not available + Read more ...  |
+|                                   |                                   |
+|                                   | For an urgent payment, code the   |
+|                                   | following fields on the IFP       |
+|                                   | screen:                           |
+|                                   |                                   |
+|                                   | Issue amount: the amount of the   |
+|                                   | payment to be delivered           |
+|                                   |                                   |
+|                                   | Reason: for urgent payment grants |
+|                                   | use field help '?' to change the  |
+|                                   | reason to:                        |
+|                                   |                                   |
+|                                   | -   DEP - Departmental Delay      |
+|                                   | -   ECI - Extraordinary           |
+|                                   |     Circumstances                 |
+|                                   | -   EXC - Exceptional and         |
+|                                   |     Unforeseen                    |
+|                                   | -   FNL - Funeral Expenses        |
+|                                   | -   For any payment reason that   |
+|                                   |     falls outside of the above,   |
+|                                   |     choose the most appropriate   |
+|                                   |     reason from the list          |
+|                                   |     available in the field help.  |
+|                                   |     More details about the        |
+|                                   |     appropriate code reasons is   |
+|                                   |     available on the Resources    |
+|                                   |     page                          |
+|                                   |                                   |
+|                                   | Finished (Y/Q/N): 'Y'             |
+|                                   |                                   |
+|                                   | Notes: the reason for issue       |
+|                                   |                                   |
+|                                   | Source: and DOR: fields           |
+|                                   |                                   |
+|                                   | Select Continue to complete the   |
+|                                   | activity.                         |
+|                                   |                                   |
+|                                   | Record details of immediate       |
+|                                   | payment on a DOC.                 |
+|                                   |                                   |
+|                                   | Include the following DOC text if |
+|                                   | it is not automatically           |
+|                                   | generated:                        |
+|                                   |                                   |
+|                                   | -   To be paid Urgent payment of  |
+|                                   |     $ {amount}                    |
+|                                   | -   Method of payment: {payment   |
+|                                   |     method}                       |
+|                                   | -   The customer is in financial  |
+|                                   |     hardship as a result of an    |
+|                                   |     (urgent payment reason)       |
+|                                   | -   Alternative assistance to     |
+|                                   |     alleviate this hardship was   |
+|                                   |     deemed unsuitable and an      |
+|                                   |     Urgent Payment has been       |
+|                                   |     approved, as per 8.4.2.10 of  |
+|                                   |     the Guide to the Social       |
+|                                   |     Security Act and Section 55   |
+|                                   |     of the Social Security        |
+|                                   |     Administration Act            |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Reissuing an NPP payment
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Customer advises payment not      |
+|                                   | received + Read more ...          |
+|                                   |                                   |
+|                                   | If an account is NPP reachable,   |
+|                                   | but the payment fails to deliver, |
+|                                   | it will automatically re-issue    |
+|                                   | via RTGS if available, or via     |
+|                                   | direct credit. Check the Payment  |
+|                                   | Summary (PS) screen to confirm    |
+|                                   | how the payment has been          |
+|                                   | processed and issued.             |
+|                                   |                                   |
+|                                   | Has the payment been processed    |
+|                                   | and issued to the account on the  |
+|                                   | customer's record?                |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, process the activity that |
+|                                   |     will issue the payment (for   |
+|                                   |     example, this may be a        |
+|                                   |     reporting activity,           |
+|                                   |     restoration from suspension   |
+|                                   |     or cancellation). Procedure   |
+|                                   |     ends here                     |
++-----------------------------------+-----------------------------------+
+| 2                                 | Payment issued to customer's      |
+|                                   | account + Read more ...           |
+|                                   |                                   |
+|                                   | Has the payment been issued to    |
+|                                   | the customer's account and is not |
+|                                   | showing as returned or rejected?  |
+|                                   |                                   |
+|                                   | -   Yes, see Replacing direct     |
+|                                   |     credit, NPP or RTGS payments  |
+|                                   |     at a customer's request.      |
+|                                   |     Procedure ends here           |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Payment returned from financial   |
+|                                   | institution + Read more ...       |
+|                                   |                                   |
+|                                   | Has the payment been returned     |
+|                                   | from the financial institution?   |
+|                                   |                                   |
+|                                   | Check the PS screen. A returned   |
+|                                   | payment is labelled as RTN        |
+|                                   | (returned).                       |
+|                                   |                                   |
+|                                   | -   Yes, see Replacing direct     |
+|                                   |     credit, NPP or RTGS payments  |
+|                                   |     returned from financial       |
+|                                   |     institution. Procedure ends   |
+|                                   |     here                          |
+|                                   | -   No, go to Step 4              |
++-----------------------------------+-----------------------------------+
+| 4                                 | Rejection by financial            |
+|                                   | information + Read more ...       |
+|                                   |                                   |
+|                                   | Has the NPP payment been rejected |
+|                                   | by the financial institution?     |
+|                                   |                                   |
+|                                   | Check the PS screen. A rejected   |
+|                                   | NPP payment will show on the PS   |
+|                                   | screen, with:                     |
+|                                   |                                   |
+|                                   | -   Type field either being New   |
+|                                   |     Payments Platform or NPP      |
+|                                   | -   Sent to field will display    |
+|                                   |     Rejected Payment rather than  |
+|                                   |     Financial Institution account |
+|                                   |     details                       |
+|                                   |                                   |
+|                                   | Check the customer's account      |
+|                                   | details are correct. If           |
+|                                   | incorrect, see Changing Payment   |
+|                                   | Destination.                      |
++-----------------------------------+-----------------------------------+
+| 5                                 | To reissue the rejected NPP       |
+|                                   | payment + Read more ...           |
+|                                   |                                   |
+|                                   | A rejected NPP payment must first |
+|                                   | be reissued via Direct Credit,    |
+|                                   | and then if the customer needs    |
+|                                   | the funds urgently, the payment   |
+|                                   | can be issued via RTGS or EBT     |
+|                                   | card.                             |
+|                                   |                                   |
+|                                   | To reissue the payment via Direct |
+|                                   | Credit:                           |
+|                                   |                                   |
+|                                   | Go to the system that applies to  |
+|                                   | the payment to be reissued:       |
+|                                   |                                   |
+|                                   | -   PEN - Age Pension, Disability |
+|                                   |     Support Pension, Carer        |
+|                                   |     Payment, Parenting Payment    |
+|                                   |     Single                        |
+|                                   | -   NSS - JobSeeker Payment,      |
+|                                   |     Youth Allowance, Widow        |
+|                                   |     Allowance                     |
+|                                   | -   FAO - Family Tax Benefit      |
+|                                   |     (FTB)                         |
+|                                   | -   ISS - Dad and Partner Pay     |
+|                                   |     (DAP) - (code 'SVDAP' in the  |
+|                                   |     Next field to access the PS   |
+|                                   |     screen)                       |
+|                                   | -   ISS - Pensioner Education     |
+|                                   |     Supplement (PES) - (code      |
+|                                   |     'SVPES' in the Next field to  |
+|                                   |     access the PS screen)         |
+|                                   | -   PGA - Parenting Payment       |
+|                                   |     Partnered                     |
+|                                   |                                   |
+|                                   | Access the PS screen              |
+|                                   |                                   |
+|                                   | Select the payment that has been  |
+|                                   | rejected by typing 'R' next to    |
+|                                   | the payment line and press        |
+|                                   | [Enter]                           |
+|                                   |                                   |
+|                                   | The Issue Payment Select (IPPRE)  |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | -   The system will automatically |
+|                                   |     'S'elect the Re-deliver       |
+|                                   |     Rejected Payment: field       |
+|                                   | -   The Default Destination:      |
+|                                   |     field will be Direct Credit   |
+|                                   | -   Press [Enter]                 |
+|                                   | -   The Re-Deliver Returned       |
+|                                   |     Payment (RDRP) screen will    |
+|                                   |     display                       |
+|                                   |                                   |
+|                                   | On the RDRP screen code the       |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   Using the next and back       |
+|                                   |     buttons, locate the page that |
+|                                   |     has the Reissue All field     |
+|                                   | -   Key 'Y' in the Reissue All    |
+|                                   |     (Y/N): field                  |
+|                                   | -   Finish the activity           |
+|                                   |                                   |
+|                                   | Payment will now display on the   |
+|                                   | PS screen as Immediate and will   |
+|                                   | be paid by direct credit.         |
+|                                   |                                   |
+|                                   | To issue the payment via NPP,     |
+|                                   | RTGS or EBT card:                 |
+|                                   |                                   |
+|                                   | -   Access the PS screen          |
+|                                   | -   Select the payment that shows |
+|                                   |     as Immediate in the Delivery  |
+|                                   |     Date field, by typing 'R'     |
+|                                   |     next to the payment line and  |
+|                                   |     press [Enter]                 |
+|                                   | -   The IPPRE screen will display |
+|                                   |                                   |
+|                                   | On the IPPRE screen:              |
+|                                   |                                   |
+|                                   | The system will automatically     |
+|                                   | 'S'elect the Immediate/Arrears    |
+|                                   | Payment: field                    |
+|                                   |                                   |
+|                                   | The Default Destination: field    |
+|                                   | must be changed to the payment    |
+|                                   | method needed                     |
+|                                   |                                   |
+|                                   | Press [Enter]                     |
+|                                   |                                   |
+|                                   | The Issue Future Payment (IFP)    |
+|                                   | screen will display               |
+|                                   |                                   |
+|                                   | Complete the following fields     |
+|                                   |                                   |
+|                                   | -   Issue Amt: - this will be the |
+|                                   |     amount of the payment         |
+|                                   | -   Reason: - REJ                 |
+|                                   | -   Notes: - (why payment is      |
+|                                   |     being issued)                 |
+|                                   | -   Source: - (method the         |
+|                                   |     customer has used to contact) |
+|                                   | -   DOR: - (Date of Receipt)      |
+|                                   | -   Finished (Y/Q/N):             |
+|                                   |                                   |
+|                                   | DOC the record to advising        |
+|                                   | payment has been reissued.        |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

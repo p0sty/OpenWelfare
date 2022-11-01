@@ -1,0 +1,168 @@
+
+Centrelink Restricted Update Record 102-13030090
+
+-   Background
+-   Process
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+This page contains information fort Data Quality Unit (DQU) staff when
+actioning a Restricted Update Record (RUR).
+
+Actioning an RUR
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | ISP Resource required + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | To request a resource, go to the  |
+|                                   | ICT Security Portal. See the      |
+|                                   | Resources page for a link.        |
+|                                   |                                   |
+|                                   | -   Select Work Dashboard         |
+|                                   | -   Select Make a Process Request |
+|                                   | -   The Process Request Category  |
+|                                   |     will default to All. Select   |
+|                                   |     Continue                      |
+|                                   | -   Select Request Resource to go |
+|                                   |     to the Make a Process Request |
+|                                   |     form                          |
+|                                   | -   Enter a Reason for requiring  |
+|                                   |     the access                    |
+|                                   | -   In the Search Criteria,       |
+|                                   |     select Mainframe Application, |
+|                                   |     then Reference Data Facility. |
+|                                   |     Select the Search button      |
+|                                   | -   From the Search Results,      |
+|                                   |     select RDFTAB - RDF TABLE     |
+|                                   |     SCREEN then select > to move  |
+|                                   |     it under the Resources to     |
+|                                   |     Request table                 |
+|                                   |                                   |
+|                                   | Select Submit.                    |
++-----------------------------------+-----------------------------------+
+| 2                                 | Accessing the RDF Row List (RDRL) |
+|                                   | screen + Read more ...            |
+|                                   |                                   |
+|                                   | In Customer Record (not Customer  |
+|                                   | First), key:                      |
+|                                   |                                   |
+|                                   | -   System: 'RDF'                 |
+|                                   | -   Environment: 'C' and [Enter]  |
+|                                   | -   'RDTL' in Nxt:,               |
+|                                   | -   'DIN' in the Search:          |
+|                                   |     field/box and [Enter]         |
+|                                   | -   Select the                    |
+|                                   |     DIN.CRN.RSTRCT.UPDT.TABLE     |
+|                                   |     line and press [Enter]. Press |
+|                                   |     [Enter] twice to go through   |
+|                                   |     the RDF Table Definition      |
+|                                   |     Enquiry (RDTD) screen and RDF |
+|                                   |     Column Definition Enquiry     |
+|                                   |     (RDCD) screens. [Enter] again |
+|                                   |     to go to the RDRL screen      |
++-----------------------------------+-----------------------------------+
+| 3                                 | Restricting a record + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | After accessing the RDRL screen,  |
+|                                   | key 'A' in any of the selector    |
+|                                   | fields next to any Customer       |
+|                                   | Reference Number (CRN).           |
+|                                   |                                   |
+|                                   | The RDF Row Details (RDRD) screen |
+|                                   | will display. Key the following   |
+|                                   | fields:                           |
+|                                   |                                   |
+|                                   | -   RECORD.ID (CRN): CRN to be    |
+|                                   |     restricted with no spaces     |
+|                                   | -   USER.IDS: the logon IDs of    |
+|                                   |     the users. Separate the       |
+|                                   |     logons by a comma, no spaces  |
+|                                   | -   MESSAGE.CODE: 'W003DI' (zero  |
+|                                   |     and a capital i)              |
+|                                   | -   DISPLAY.USERS: 'Y' to display |
+|                                   |     authorised users on the RUR   |
+|                                   |     screen. If left blank, it     |
+|                                   |     will default to N             |
+|                                   | -   TEST.INSTANCE: optional       |
+|                                   |     field, leave blank            |
+|                                   | -   ENVIRONMENT.ID: optional      |
+|                                   |     field, leave blank            |
+|                                   | -   Press [Enter].                |
+|                                   |                                   |
+|                                   | For partnered customers, apply    |
+|                                   | the restriction to both records.  |
+|                                   |                                   |
+|                                   | Key 'END' in the Nxt: field.      |
+|                                   |                                   |
+|                                   | Complete details required in the  |
+|                                   | Spurious Records spreadsheet.     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Adding or removing a logon to an  |
+|                                   | already restricted record + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Access to a restricted record is  |
+|                                   | limited to a maximum of 5 logons  |
+|                                   | at any time.                      |
+|                                   |                                   |
+|                                   | After accessing the RDRL screen:  |
+|                                   |                                   |
+|                                   | -   'S'elect the CRN for which    |
+|                                   |     access needs to be added or   |
+|                                   |     removed. This will display    |
+|                                   |     the RDRD screen               |
+|                                   | -   In the USER.IDS: field, add   |
+|                                   |     or remove the logon to be     |
+|                                   |     updated. Separate the logons  |
+|                                   |     by a comma, no spaces         |
+|                                   |                                   |
+|                                   | For partnered customers, apply    |
+|                                   | the restriction and access to     |
+|                                   | both records.                     |
+|                                   |                                   |
+|                                   | Complete details required in the  |
+|                                   | Spurious Records spreadsheet.     |
++-----------------------------------+-----------------------------------+
+| 5                                 | Browse a row + Read more ...      |
+|                                   |                                   |
+|                                   | After accessing the RDRL screen,  |
+|                                   | key 'B' in the selector fields    |
+|                                   | next to the CRN.                  |
+|                                   |                                   |
+|                                   | This displays the RDRD screen,    |
+|                                   | which is protected.               |
+|                                   |                                   |
+|                                   | No updates can be made using this |
+|                                   | option.                           |
++-----------------------------------+-----------------------------------+
+| 6                                 | Removing a record from restricted |
+|                                   | update + Read more ...            |
+|                                   |                                   |
+|                                   | After accessing the RDRL screen:  |
+|                                   |                                   |
+|                                   | -   Key 'D' in the selector       |
+|                                   |     fields next to the CRN that   |
+|                                   |     restricted access is being    |
+|                                   |     removed from                  |
+|                                   | -   Key 'Y' in the Delete Y/N:    |
+|                                   |     field                         |
+|                                   | -   Message 10011RD - NNN NNN     |
+|                                   |     NNNA deleted will display on  |
+|                                   |     a successful deletion         |
+|                                   |                                   |
+|                                   | For partnered customers,          |
+|                                   | restriction will need to be       |
+|                                   | removed from both records         |
+|                                   |                                   |
+|                                   | Complete details required in the  |
+|                                   | Spurious Records spreadsheet      |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

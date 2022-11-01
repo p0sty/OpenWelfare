@@ -1,0 +1,471 @@
+
+Process Medicare Safety Net claims 011-43080040
+
+-   Background
+-   Process
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+This page contains examples of how the system calculates the benefit for
+varying account paid amounts when the Medicare safety net has been met,
+calculations when verification (substantiation) is required and examples
+when an unpaid account is claimed. It contains a description of
+transaction codes, examples of when a person is unable to confirm their
+family composition at a service centre and links to Medicare Safety Net
+templates and standard letter templates. There are also links to
+Medicare Safety Net user help guides. Links on this page may be
+unavailable to external audiences.
+
+On this Page:
+
+Calculation of benefit for fully paid accounts when Medicare Safety net met
+
+Example of system calculated benefit on fully paid accounts
+
+Table 1: This table provides an example of how the system calculates the
+benefit on fully paid accounts when the Medicare Safety Net has been
+met.
+
++-----------------------------------+-----------------------------------+
+| Billing scenario                  | Amount paid                       |
++-----------------------------------+-----------------------------------+
+| Doctor’s charge                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Patient payment                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Standard Medicare benefit         | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient (Standard      | $50.30                            |
+| benefit + Additional benefit)     |                                   |
+|                                   |                                   |
+| Note: where an extended Medicare  |                                   |
+| Safety Net (EMSN) benefit cap     |                                   |
+| applies, the additional benefit   |                                   |
+| may be less than the 80%          |                                   |
+| out-of-pocket expense.            |                                   |
++-----------------------------------+-----------------------------------+
+| Pay doctor via claimant (PDVC)    | NIL                               |
++-----------------------------------+-----------------------------------+
+
+Accounts where 20% have been paid and Medicare Safety Net met
+
+Example of an account where 20% has been paid and the Medicare Safety Net met
+
+Table 2: This table provides an example of the calculation of an account
+where 20% has been paid.
+
++-----------------------------------+-----------------------------------+
+| Billing scenario                  | Amount paid                       |
++-----------------------------------+-----------------------------------+
+| Doctor’s charge                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Patient payment                   | $4.70                             |
++-----------------------------------+-----------------------------------+
+| Standard Medicare benefit         | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient                | NIL                               |
++-----------------------------------+-----------------------------------+
+| Pay doctor via claimant (PDVC)    | $50.30                            |
++-----------------------------------+-----------------------------------+
+
+Less than 20% of accounts paid and Medicare Safety Net met
+
+Example of an account where less than 20% has been paid and the Medicare Safety Net met
+
+Table 3: This table provides an example of the calculation of an account
+where less than 20% has been paid.
+
++-----------------------------------+-----------------------------------+
+| Billing scenario                  | Amount paid                       |
++-----------------------------------+-----------------------------------+
+| Doctor’s charge                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Patient payment                   | $4.00                             |
++-----------------------------------+-----------------------------------+
+| Standard Medicare benefit         | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient                | NIL                               |
++-----------------------------------+-----------------------------------+
+| Pay doctor via claimant (PDVC)    | $31.45                            |
++-----------------------------------+-----------------------------------+
+
+Accounts where less than 20% have been paid and substantiation is required
+
+Example of an account where less than 20% has been paid and substantiation is required
+
+Table 4: This table provides an example of the calculation of an account
+where less than 20% has been paid and substantiation is required for a
+further benefit to be paid.
+
++-----------------------------------+-----------------------------------+
+| Billing scenario                  | Amount paid                       |
++-----------------------------------+-----------------------------------+
+| Doctor’s charge                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Initial patient payment           | $4.00                             |
++-----------------------------------+-----------------------------------+
+| Standard Medicare benefit         | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient                | NIL                               |
++-----------------------------------+-----------------------------------+
+| Pay doctor via claimant (PDVC)    | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Additional patient payment        | $19.55                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient (Standard      | $18.85                            |
+| benefit + Additional benefit)     |                                   |
+|                                   |                                   |
+| Note: where an extended Medicare  |                                   |
+| Safety Net (ESMN) benefit cap     |                                   |
+| applies, the additional benefit   |                                   |
+| may be less than the 80%          |                                   |
+| out-of-pocket (OOP) expense.      |                                   |
++-----------------------------------+-----------------------------------+
+
+Accounts where more than 20% have been paid and Medicare Safety Net met
+
+Example of an account where more than 20% has been paid and the Medicare Safety Net met
+
+Table 5: This table provides an example of the calculation of an account
+where more than 20% has been paid.
+
++-----------------------------------+-----------------------------------+
+| Billing scenario                  | Amount paid                       |
++-----------------------------------+-----------------------------------+
+| Doctor’s charge                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Patient payment                   | $10.00                            |
++-----------------------------------+-----------------------------------+
+| Standard Medicare benefit         | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient                | $5.30                             |
++-----------------------------------+-----------------------------------+
+| Pay doctor via claimant (PDVC)    | $45.00                            |
++-----------------------------------+-----------------------------------+
+
+Unpaid accounts when Medicare Safety Net met
+
+Example of unpaid accounts when Medicare Safety Net met
+
+Table 6: This table provides an example of the calculation when an
+unpaid account is claimed.
+
++-----------------------------------+-----------------------------------+
+| Billing scenario                  | Amount paid                       |
++-----------------------------------+-----------------------------------+
+| Doctor’s charge                   | $55.00                            |
++-----------------------------------+-----------------------------------+
+| Patient payment                   | NIL                               |
++-----------------------------------+-----------------------------------+
+| Standard Medicare benefit         | $31.45                            |
++-----------------------------------+-----------------------------------+
+| Benefit to patient                | NIL                               |
++-----------------------------------+-----------------------------------+
+| Pay doctor via claimant (PDVC)    | $31.45                            |
++-----------------------------------+-----------------------------------+
+
+Transaction codes for Medicare Safety Net
+
+Description of transaction codes and modifiers for Medicare Safety Net
+
+Table 7: This table provides a description of the control lines and
+modifiers for the Medicare Safety Net Family Registration and Enquiry
+system.
+
++-----------------------+-----------------------+-----------------------+
+| Transaction           | Consumer Directory    | Description           |
+|                       | Maintenance System    |                       |
+|                       | (CDMS)                |                       |
++-----------------------+-----------------------+-----------------------+
+| Inquire on a Safety   | Inquire on Consumer   | Service Officers see: |
+| Net record            | Details link on CDMS  |                       |
+|                       |                       | -   Registration      |
+|                       |                       |     summary           |
+|                       |                       | -   Consumer details  |
+|                       |                       | -   Family Safety Net |
+|                       |                       |     Registration      |
+|                       |                       |     details           |
+|                       |                       | -   Threshold details |
+|                       |                       | -   Confirmation      |
+|                       |                       |     details           |
+|                       |                       | -   Letter details    |
+|                       |                       | -   Comments          |
++-----------------------+-----------------------+-----------------------+
+| Amend a Safety Net    | Amend on Consumer     | Service Officers can: |
+| registration          | Details link on the   |                       |
+|                       | CDMS home page        | -   Amend consumer    |
+|                       |                       |     details           |
+|                       |                       | -   Amend family      |
+|                       |                       |     member type       |
+|                       |                       | -   Remove a family   |
+|                       |                       |     member            |
+|                       |                       | -   Add a family      |
+|                       |                       |     member            |
+|                       |                       | -   End date a family |
+|                       |                       | -   Request a letter  |
+|                       |                       | -   Add comments      |
++-----------------------+-----------------------+-----------------------+
+| Register a Safety Net | Register New Consumer | Service Officers can  |
+| family                | link on the CDMS home | register a new        |
+|                       | page                  | Medicare Safety Net   |
+|                       |                       | family.               |
++-----------------------+-----------------------+-----------------------+
+| Confirm a registered  |                       | Service Officers can: |
+| safety net family     |                       |                       |
+|                       |                       | -   confirm a family  |
+|                       |                       |     composition       |
+|                       |                       | -   print a           |
+|                       |                       |     confirmation form |
++-----------------------+-----------------------+-----------------------+
+
+Confirm family composition for Medicare Safety Net purposes
+
+Person unable to verify their family composition at a service centre
+
+Table 8: This table provides examples of when a person is unable to
+verify their family composition at a service centre.
+
++-----------------------+-----------------------+-----------------------+
+| If the patient and    | and are…              | then…                 |
+| claimant are on…      |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| the same Medicare     | able to be contacted  | confirm the Medicare  |
+| card                  |                       | Safety Net family     |
+|                       |                       | composition over the  |
+|                       |                       | phone:                |
+|                       |                       |                       |
+|                       |                       | -   complete a        |
+|                       |                       |     security check    |
+|                       |                       | -   check safety net  |
+|                       |                       |     registration      |
+|                       |                       |     details           |
+|                       |                       | -   make any required |
+|                       |                       |     adjustments       |
+|                       |                       | -   confirm safety    |
+|                       |                       |     net registration  |
+|                       |                       | -   process claim     |
++-----------------------+-----------------------+-----------------------+
+| the same Medicare     | not able to be        | Manual claim:         |
+| card                  | contacted             |                       |
+|                       |                       | -   return the claim  |
+|                       |                       |     to the claimant   |
+|                       |                       |     with both a       |
+|                       |                       |     Medicare Safety   |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form and a letter |
+|                       |                       |     advising them     |
+|                       |                       |     that they may be  |
+|                       |                       |     entitled to a     |
+|                       |                       |     higher benefit if |
+|                       |                       |     they confirm      |
+|                       |                       |     their family      |
+|                       |                       |     composition prior |
+|                       |                       |     to the claim      |
+|                       |                       |     being processed   |
+|                       |                       |                       |
+|                       |                       | Express Plus Medicare |
+|                       |                       | app claim:            |
+|                       |                       |                       |
+|                       |                       | -   send the claimant |
+|                       |                       |     a Medicare Safety |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form and a letter |
+|                       |                       |     advising them     |
+|                       |                       |     that they may be  |
+|                       |                       |     entitled to a     |
+|                       |                       |     higher benefit    |
+|                       |                       |     when they confirm |
+|                       |                       |     their family      |
+|                       |                       |     composition prior |
+|                       |                       |     to the claim      |
+|                       |                       |     being processed   |
+|                       |                       |                       |
+|                       |                       | Online claim:         |
+|                       |                       |                       |
+|                       |                       | -   [F9] to           |
+|                       |                       |     acknowledge the   |
+|                       |                       |     8-CONFIRM message |
+|                       |                       |     and continue to   |
+|                       |                       |     process the claim |
++-----------------------+-----------------------+-----------------------+
+| different Medicare    | on the same Safety    | confirm the Medicare  |
+| cards                 | Net registration and  | Safety Net over the   |
+|                       | able to be contacted  | phone:                |
+|                       |                       |                       |
+|                       |                       | -   complete a        |
+|                       |                       |     security check    |
+|                       |                       | -   check safety net  |
+|                       |                       |     details           |
+|                       |                       | -   make any required |
+|                       |                       |     adjustments       |
+|                       |                       | -   confirm safety    |
+|                       |                       |     net               |
+|                       |                       | -   confirm the       |
+|                       |                       |     family            |
+|                       |                       |     composition over  |
+|                       |                       |     the phone         |
+|                       |                       | -   process claim     |
++-----------------------+-----------------------+-----------------------+
+| different Medicare    | on the same Safety    | Manual claim:         |
+| cards                 | Net registration and  |                       |
+|                       | not able to be        | -   return the claim  |
+|                       | contacted             |     to the claimant   |
+|                       |                       |     with both a       |
+|                       |                       |     Medicare Safety   |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form and a letter |
+|                       |                       |     advising them     |
+|                       |                       |     that they may be  |
+|                       |                       |     entitled to a     |
+|                       |                       |     higher benefit    |
+|                       |                       |     when they confirm |
+|                       |                       |     their family      |
+|                       |                       |     composition prior |
+|                       |                       |     to the claim      |
+|                       |                       |     being processed   |
+|                       |                       |                       |
+|                       |                       | Express Plus Medicare |
+|                       |                       | app claim:            |
+|                       |                       |                       |
+|                       |                       | -   send the claimant |
+|                       |                       |     a Medicare Safety |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form and a letter |
+|                       |                       |     advising them     |
+|                       |                       |     that they may be  |
+|                       |                       |     entitled to a     |
+|                       |                       |     higher benefit    |
+|                       |                       |     when they confirm |
+|                       |                       |     their family      |
+|                       |                       |     composition prior |
+|                       |                       |     to the claim      |
+|                       |                       |     being processed   |
+|                       |                       |                       |
+|                       |                       | Online claim:         |
+|                       |                       |                       |
+|                       |                       | -   [F9] to           |
+|                       |                       |     acknowledge the   |
+|                       |                       |     8-CONFIRM message |
+|                       |                       |     and continue to   |
+|                       |                       |     process the claim |
++-----------------------+-----------------------+-----------------------+
+| different Medicare    | not on the same       | confirm the Medicare  |
+| cards                 | Safety Net            | Safety Net with the   |
+|                       | registration and able | patient over the      |
+|                       | to contact the        | phone:                |
+|                       | patient               |                       |
+|                       |                       | -   complete a        |
+|                       |                       |     security check    |
+|                       |                       | -   check safety net  |
+|                       |                       |     details           |
+|                       |                       | -   make any required |
+|                       |                       |     adjustments       |
+|                       |                       | -   confirm safety    |
+|                       |                       |     net               |
+|                       |                       | -   confirm the       |
+|                       |                       |     family            |
+|                       |                       |     composition over  |
+|                       |                       |     the phone         |
+|                       |                       | -   process claim     |
++-----------------------+-----------------------+-----------------------+
+| different Medicare    | not on the same       | Manual claim:         |
+| cards                 | Safety Net            |                       |
+|                       | registration and      | -   return the claim  |
+|                       | unable to contact the |     to the claimant   |
+|                       | patient               |     with both a       |
+|                       |                       |     Medicare Safety   |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form and a letter |
+|                       |                       |     advising them     |
+|                       |                       |     that they may be  |
+|                       |                       |     entitled to a     |
+|                       |                       |     higher benefit    |
+|                       |                       |     when they confirm |
+|                       |                       |     their family      |
+|                       |                       |     composition prior |
+|                       |                       |     to the claim      |
+|                       |                       |     being processed   |
+|                       |                       |                       |
+|                       |                       | Express Plus Medicare |
+|                       |                       | app claim:            |
+|                       |                       |                       |
+|                       |                       | -   send the claimant |
+|                       |                       |     a Medicare Safety |
+|                       |                       |     Net confirmation  |
+|                       |                       |     form and a letter |
+|                       |                       |     advising them     |
+|                       |                       |     that they may be  |
+|                       |                       |     entitled to a     |
+|                       |                       |     higher benefit    |
+|                       |                       |     when they confirm |
+|                       |                       |     their family      |
+|                       |                       |     composition prior |
+|                       |                       |     to the claim      |
+|                       |                       |     being processed   |
+|                       |                       |                       |
+|                       |                       | Online claim:         |
+|                       |                       |                       |
+|                       |                       | -   [F9] to           |
+|                       |                       |     acknowledge the   |
+|                       |                       |     8-CONFIRM message |
+|                       |                       |     and continue to   |
+|                       |                       |     process the claim |
++-----------------------+-----------------------+-----------------------+
+
+Intranet links
+
+Medicare Safety Net templates
+
+Standard Letters Template
+
+User help guides
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Safety Net - Add Member to
+Existing Registration
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Safety Net - Confirm
+Family
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Safety Net - Inquire on
+Medicare Card Number
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Safety Net - Register
+Family
+
+This attachment may not be printed, broadcast or released externally.
+For contact details and more information, see Information Publication
+Scheme.
+
+[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
+Blueprint Migration\RDT Release
+Icons\32w\icon-hidden-attachment.png]Medicare Safety Net - Request a
+Letter
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

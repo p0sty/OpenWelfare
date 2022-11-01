@@ -1,0 +1,292 @@
+
+Medicare history statement request for Medicare Compensation Recovery 011-15030050
+
+-   Background
+-   
+-   Process
+-   References
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Issue a Medicare history statement
+
+This table outlines the process for Service Officers to issue a Medicare
+History statement in the CCMS, via the 'Request Ntc Pbenefit' queue.
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Determine if case is to be        |
+|                                   | referred to supervisor + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Refer case to supervisor if:      |
+|                                   |                                   |
+|                                   | -   The injured person or         |
+|                                   |     claimant’s name has changed   |
+|                                   |     in the Consumer Directory     |
+|                                   |     Maintenance System (CDMS), or |
+|                                   | -   'Other information' needs to  |
+|                                   |     be updated e.g. if a minor    |
+|                                   |     has turned 14 years of age    |
+|                                   |     and the parent is no longer   |
+|                                   |     the claimant, to add or       |
+|                                   |     change a case flag, or if a   |
+|                                   |     valid notice of past benefits |
+|                                   |     exists and an amendment is    |
+|                                   |     required so the 'dates' can   |
+|                                   |     be deleted                    |
+|                                   |                                   |
+|                                   | Does the case need to be referred |
+|                                   | to supervisor?                    |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   Select 'Yes' in the workflow  |
+|                                   | -   Go to Step 8 to add a case    |
+|                                   |     note before releasing the     |
+|                                   |     work form                     |
+|                                   | -   Go to the CCMS supervisor     |
+|                                   |     queue                         |
+|                                   | -   Select the case               |
+|                                   | -   Update the details            |
+|                                   | -   Return to the 'Request Ntc    |
+|                                   |     Pbenefit' workflow to         |
+|                                   |     continue processing until the |
+|                                   |     case is suspended             |
+|                                   |                                   |
+|                                   | No, go to Step 2                  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Identify if case is a class       |
+|                                   | action suit + Read more ...       |
+|                                   |                                   |
+|                                   | Is this case a class action suit? |
+|                                   |                                   |
+|                                   | Note: this field is only used to  |
+|                                   | identify Advance Payment Option   |
+|                                   | (APO) or Non Advance Payment      |
+|                                   | Option (Non-APO).                 |
+|                                   |                                   |
+|                                   | Select APO or Non APO (if         |
+|                                   | applicable), go to Step 3.        |
++-----------------------------------+-----------------------------------+
+| 3                                 | Claimant's address + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Can the claimant’s address be     |
+|                                   | verified?                         |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   Only select 'Yes' if Services |
+|                                   |     Australia has been advised of |
+|                                   |     a change of address (via      |
+|                                   |     phone or in writing), or if   |
+|                                   |     other agency records have     |
+|                                   |     been updated with new address |
+|                                   |     details                       |
+|                                   | -   Enter new address in the      |
+|                                   |     Address field box             |
+|                                   | -   Go to Step 4                  |
+|                                   |                                   |
+|                                   | No, go to Step 4                  |
++-----------------------------------+-----------------------------------+
+| 4                                 | Assess request + Read more ...    |
+|                                   |                                   |
+|                                   | Do not issue a Medicare history   |
+|                                   | statement where:                  |
+|                                   |                                   |
+|                                   | The Section 33D date has passed   |
+|                                   | for settled cases with an advance |
+|                                   | payment                           |
+|                                   |                                   |
+|                                   | Re-route the case to the          |
+|                                   | appropriate Statement or Judgment |
+|                                   | queue for finalisation. See       |
+|                                   | Process steps in Statement by     |
+|                                   | claimant for Medicare             |
+|                                   | Compensation Recovery or Notice   |
+|                                   | of judgment or settlement for     |
+|                                   | Medicare Compensation Recovery.   |
+|                                   |                                   |
+|                                   | Continue processing here where    |
+|                                   | the case:                         |
+|                                   |                                   |
+|                                   | -   has settled with an advance   |
+|                                   |     payment but 33D date has not  |
+|                                   |     passed                        |
+|                                   | -   no advance payment, or        |
+|                                   | -   has not settled               |
+|                                   |                                   |
+|                                   | The request must be:              |
+|                                   |                                   |
+|                                   | -   Fully completed with all      |
+|                                   |     required information          |
+|                                   | -   On the Medicare Compensation  |
+|                                   |     Recovery Medicare history     |
+|                                   |     statement request (MO026)     |
+|                                   |     form                          |
+|                                   | -   Valid signature by injured    |
+|                                   |     person, claimant, legal       |
+|                                   |     representative, authorised    |
+|                                   |     third party (we have a valid  |
+|                                   |     third party authority),       |
+|                                   |     compensation payer, or        |
+|                                   |     compensation payer's          |
+|                                   |     solicitor or agent            |
+|                                   |                                   |
+|                                   | Does the request meet these       |
+|                                   | criteria?                         |
+|                                   |                                   |
+|                                   | Yes, go to Step 5                 |
+|                                   |                                   |
+|                                   | No,                               |
+|                                   |                                   |
+|                                   | -   Unless previously issued at   |
+|                                   |     mail validation, issue a      |
+|                                   |     ‘z2279 - More information is  |
+|                                   |     needed to register or process |
+|                                   |     a compensation case’ manual   |
+|                                   |     letter                        |
+|                                   | -   Select option(s) as required, |
+|                                   |     the Resources page contains a |
+|                                   |     link to the letter            |
+|                                   | -   Go to step 7 to suspend work  |
+|                                   |     item                          |
++-----------------------------------+-----------------------------------+
+| 5                                 | Send notice to claimant or a      |
+|                                   | notice of past benefit + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Select 'Yes'.                     |
+|                                   |                                   |
+|                                   | If a copy of an existing Medicare |
+|                                   | history statement that has        |
+|                                   | already been issued in CCMS is    |
+|                                   | required, an information message  |
+|                                   | is returned asking if:            |
+|                                   |                                   |
+|                                   | -   An exact copy of the original |
+|                                   |     notice to claimant is to be   |
+|                                   |     sent, or                      |
+|                                   | -   An exact copy of the original |
+|                                   |     notice to claimant with an    |
+|                                   |     address change is to be sent  |
+|                                   |                                   |
+|                                   | Select the appropriate option.    |
+|                                   |                                   |
+|                                   | Produce a copy of the notice to   |
+|                                   | claimant, press [Enter].          |
+|                                   |                                   |
+|                                   | Go to Step 7.                     |
+|                                   |                                   |
+|                                   | -   If there is no existing       |
+|                                   |     Medicare history statement in |
+|                                   |     the workflow, go to Step 6    |
++-----------------------------------+-----------------------------------+
+| 6                                 | Request for a notice of past      |
+|                                   | benefit details + Read more ...   |
+|                                   |                                   |
+|                                   | -   Date request for notice of    |
+|                                   |     past benefit issued - Enter   |
+|                                   |     today’s date and press        |
+|                                   |     [Enter]                       |
+|                                   | -   Date request for notice of    |
+|                                   |     past benefit received - Enter |
+|                                   |     the date stamp on the         |
+|                                   |     document or the date the      |
+|                                   |     telephone request was         |
+|                                   |     received and press [Enter]    |
+|                                   | -   Request for production of a   |
+|                                   |     notice to claimant - Press    |
+|                                   |     [Enter]                       |
+|                                   |                                   |
+|                                   | The system automatically returns  |
+|                                   | the:                              |
+|                                   |                                   |
+|                                   | -   Date statement issued         |
+|                                   | -   Date statement is to be       |
+|                                   |     returned by claimant          |
+|                                   | -   Go to Step 7                  |
++-----------------------------------+-----------------------------------+
+| 7                                 | Determine if work item is to be   |
+|                                   | suspended + Read more ...         |
+|                                   |                                   |
+|                                   | Suspend this work item?           |
+|                                   |                                   |
+|                                   | Yes,                              |
+|                                   |                                   |
+|                                   | -   If issuing the Medicare       |
+|                                   |     history statement, case will  |
+|                                   |     automatically suspend         |
+|                                   |     allowing sufficient time for  |
+|                                   |     injured person or claimant to |
+|                                   |     return the statement, or      |
+|                                   | -   If not issuing the Medicare   |
+|                                   |     history statement, suspend    |
+|                                   |     case for 28 days awaiting     |
+|                                   |     valid request for Medicare    |
+|                                   |     history statement             |
+|                                   | -   Press [Enter]                 |
+|                                   | -   Do not release the work form, |
+|                                   |     go to Step 9 to add a case    |
+|                                   |     note                          |
+|                                   |                                   |
+|                                   | No, go to Step 8                  |
++-----------------------------------+-----------------------------------+
+| 8                                 | Go to next transaction + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | -   Yes, select which work queue  |
+|                                   |     the case needs to go to for   |
+|                                   |     further action, then press    |
+|                                   |     [Enter]. Do not release the   |
+|                                   |     work form, go to Step 9 to    |
+|                                   |     add a case note               |
+|                                   | -   No, never select 'No' for     |
+|                                   |     both 'suspend' and 'go to     |
+|                                   |     next transaction'. If         |
+|                                   |     selected the case will not    |
+|                                   |     suspend and will simply       |
+|                                   |     reactivate at the bottom of   |
+|                                   |     the current work queue        |
++-----------------------------------+-----------------------------------+
+| 9                                 | Add a case note + Read more ...   |
+|                                   |                                   |
+|                                   | If the Case Notes screen has not  |
+|                                   | opened automatically, select the  |
+|                                   | Add notes button from the list on |
+|                                   | the right hand side of the main   |
+|                                   | CCMS screen.                      |
+|                                   |                                   |
+|                                   | The top box shows all notes       |
+|                                   | previously recorded on this case  |
+|                                   |                                   |
+|                                   | In the blank bottom box, record   |
+|                                   | the actions taken, information    |
+|                                   | requested and from whom, reasons  |
+|                                   | for a decision. Use case notes    |
+|                                   | macro where possible, or standard |
+|                                   | case notes                        |
+|                                   |                                   |
+|                                   | Select Add to save notes. A       |
+|                                   | confirmation box will appear,     |
+|                                   | select 'Yes' to add case note     |
+|                                   |                                   |
+|                                   | Press [F4] to release the work    |
+|                                   | item, and:                        |
+|                                   |                                   |
+|                                   | -   If this is the end of the     |
+|                                   |     process, case will suspend on |
+|                                   |     CCMS, or                      |
+|                                   | -   If further actions are        |
+|                                   |     required in other CCMS work   |
+|                                   |     queues, follow through on     |
+|                                   |     case until further actions    |
+|                                   |     are complete                  |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

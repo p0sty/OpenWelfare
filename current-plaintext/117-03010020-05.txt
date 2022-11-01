@@ -1,0 +1,203 @@
+
+Coding and raising debts for periodic compensation payments 117-03010020
+
+-   Background
+-   Process
+-   References
+-   Resources
+-   Training & Support
+
+[Expand/Collapse all sections]Expand all
+
+Business rules for compensation charges
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | CMM - Compensation charge to      |
+|                                   | compensation payer                |
+|                                   |                                   |
+|                                   | The debt is raised:               |
+|                                   |                                   |
+|                                   | -   under section 1184G when the  |
+|                                   |     compensation payer is under   |
+|                                   |     preliminary notice            |
+|                                   | -   for both the customer and     |
+|                                   |     their partner due to ongoing  |
+|                                   |     and arrears of periodic       |
+|                                   |     payments, or for the customer |
+|                                   |     due to getting a lump sum     |
+|                                   |     settlement                    |
++-----------------------------------+-----------------------------------+
+| 2                                 | CMB - Compensation charge to      |
+|                                   | compensation payer                |
+|                                   |                                   |
+|                                   | This debt is raised:              |
+|                                   |                                   |
+|                                   | to the compensation payer under   |
+|                                   | section 1184H when the            |
+|                                   | compensation payer is under       |
+|                                   | preliminary notice but they did   |
+|                                   | not:                              |
+|                                   |                                   |
+|                                   | -   notify of a settlement and/or |
+|                                   |     periodic payment, or          |
+|                                   | -   comply with a recovery notice |
+|                                   |     (they failed to comply with   |
+|                                   |     section 1184D)                |
+|                                   |                                   |
+|                                   | Raise any overpayment incurred by |
+|                                   | the partner under section         |
+|                                   | 1223(1).                          |
++-----------------------------------+-----------------------------------+
+| 3                                 | CMC - Compensation charge to      |
+|                                   | customer                          |
+|                                   |                                   |
+|                                   | This debt is raised to the        |
+|                                   | customer under section 1184F      |
+|                                   | when:                             |
+|                                   |                                   |
+|                                   | -   ongoing and/or arrears of     |
+|                                   |     periodic payments are paid,   |
+|                                   |     or                            |
+|                                   | -   lump sum settlement received, |
+|                                   |     and                           |
+|                                   | -   no preliminary notice was     |
+|                                   |     issued to the compensation    |
+|                                   |     payer, or                     |
+|                                   | -   the customer failed to notify |
+|                                   |     of compensation payments      |
+|                                   |                                   |
+|                                   | Raise any overpayment incurred by |
+|                                   | the partner under section         |
+|                                   | 1223(1).                          |
++-----------------------------------+-----------------------------------+
+| 4                                 | CMA - Compensation charge to      |
+|                                   | customer                          |
+|                                   |                                   |
+|                                   | This debt is raised to the        |
+|                                   | customer under section 1184I      |
+|                                   | when:                             |
+|                                   |                                   |
+|                                   | -   compensation payer is not     |
+|                                   |     under preliminary notice, and |
+|                                   | -   due to the customer getting a |
+|                                   |     lump sum arrears of periodic  |
+|                                   |     compensation for a fixed      |
+|                                   |     period. That is, the specific |
+|                                   |     dates of the periodic         |
+|                                   |     payments are known            |
+|                                   |                                   |
+|                                   | Raise any overpayment incurred by |
+|                                   | the partner under section         |
+|                                   | 1223(1).                          |
++-----------------------------------+-----------------------------------+
+
+Recipient Assessment Benefit/Pension Rate: field
+
+Valid Codes:
+
+-   BENEFIT: Maximum basic member of a couple rate of allowance
+-   PENSION: Maximum basic member of a couple rate of pension
+
+If the customer is partnered, enter either the:
+
+-   compensation recipient’s current payment stream, or
+-   partner’s current payment stream
+
+Recipient Assessment CAP Qualified: field
+
+This field records if the customer is:
+
+-   deemed to be qualified, and
+-   getting a compensation affected payment (CAP) at the time of the
+    incident
+
+If the customer lodges a claim for payment or becomes CAP Qualified:
+
+-   do a new assessment
+-   change the CAP Qualified field to Yes
+
+Table 2: This table shows how to update the Recipient Assessment CAP
+Qualified: field when the compensation recipient has a partner.
+
++-----------------+-----------------+-----------------+-----------------+
+| ‘Incident After | CAP Qualified   | INC or DDN      | Explanation     |
+| CAP Grant’      |                 | Assessment for  |                 |
+|                 |                 | Customer and    |                 |
+|                 |                 | Partner         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Yes             | Yes             | Income - Income | Income          |
+|                 |                 |                 | compensation    |
+|                 |                 |                 | r               |
+|                 |                 |                 | ecipient/Income |
+|                 |                 |                 | Partner         |
++-----------------+-----------------+-----------------+-----------------+
+| Yes             | No              | Income - Income | Income          |
+|                 |                 |                 | compensation    |
+|                 |                 |                 | r               |
+|                 |                 |                 | ecipient/Income |
+|                 |                 |                 | Partner         |
++-----------------+-----------------+-----------------+-----------------+
+| No              | Yes             | Direct          | Direct          |
+|                 |                 | Deductions -    | Deductions      |
+|                 |                 | Income          | compensation    |
+|                 |                 |                 | r               |
+|                 |                 |                 | ecipient/Excess |
+|                 |                 |                 | income assessed |
+|                 |                 |                 | for partner     |
++-----------------+-----------------+-----------------+-----------------+
+| No              | No              | Income - Income | Income          |
+|                 |                 |                 | compensation    |
+|                 |                 |                 | r               |
+|                 |                 |                 | ecipient/Income |
+|                 |                 |                 | partner         |
++-----------------+-----------------+-----------------+-----------------+
+
+How to request CMS02 access through ICT Security Portal (ISP)
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | CMS02 access can be requested by  |
+|                                   | selecting the ICT Security Portal |
+|                                   | (ISP) from the Intranet homepage. |
+|                                   |                                   |
+|                                   | On the Application page, under    |
+|                                   | Request Management heading:       |
+|                                   |                                   |
+|                                   | -   Select Request Resource tile  |
+|                                   |     to open the Request Access to |
+|                                   |     Resource form                 |
+|                                   | -   Select Access for: select the |
+|                                   |     appropriate option            |
+|                                   | -   StartDate: leave default date |
+|                                   | -   EndDate: leave default date   |
+|                                   | -   Complete Reason box:          |
+|                                   |     ‘required for basic           |
+|                                   |     compensation updates’         |
+|                                   | -   Category: select Mainframe    |
+|                                   |     Applications and highlight    |
+|                                   |     Compliance Applications       |
+|                                   | -   Filter By: Name               |
+|                                   | -   Containing: CMS02*            |
+|                                   | -   Select [Search]               |
+|                                   | -   Search Results: highlight     |
+|                                   |     CMS02 – ASSESSOR (ISP         |
+|                                   |     Category: Mainframe           |
+|                                   |     Applications – COMPLIANCE     |
+|                                   |     APPLICATIONS)                 |
+|                                   | -   Select: right arrow [>] to    |
+|                                   |     move resource to Resources to |
+|                                   |     Request box                   |
+|                                   | -   Resource Details will show    |
+|                                   | -   Select Mainframe: ALL         |
+|                                   |     MAINFRAME DOMAINS             |
+|                                   | -   Select [Submit]               |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 
