@@ -223,7 +223,7 @@ Leave Employer Processing Team (PPLEPT) only.
 |                                   |     has a link                    |
 |                                   |                                   |
 |                                   | Note: the template allows the     |
-|                                   | employer to provide their own     |
+|                                   | employer to give their own        |
 |                                   | details and those of their        |
 |                                   | overseas users who they nominate  |
 |                                   | to act on behalf of the           |
@@ -313,11 +313,16 @@ Leave Employer Processing Team (PPLEPT) only.
 | 7                                 | Search for the organisation +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | Access the Organisation List (OL) |
-|                                   | screen to search for any matches. |
+|                                   | In Customer First, access the     |
+|                                   | Organisation List (OL) screen to  |
+|                                   | search for any matches.           |
 |                                   |                                   |
 |                                   | Are both PPE and PPX records for  |
-|                                   | the organisation located?         |
+|                                   | the organisation located? If      |
+|                                   | currently in an Employers PPE     |
+|                                   | record, check the Linked          |
+|                                   | Organisations (ORGL) screen for   |
+|                                   | any existing linked PPX records.  |
 |                                   |                                   |
 |                                   | Yes:                              |
 |                                   |                                   |
@@ -354,56 +359,34 @@ Leave Employer Processing Team (PPLEPT) only.
 |                                   |     (ABN)                         |
 |                                   | -   business name                 |
 |                                   | -   address                       |
-|                                   | -   authorised person contact     |
+|                                   | -   Access Manager contact        |
 |                                   |     details, and                  |
 |                                   | -   payment destination details   |
+|                                   | -   pay cycle details             |
 |                                   |                                   |
 |                                   | To create a new PPE organisation  |
-|                                   | record, in Environment B:         |
+|                                   | record, in Customer First         |
+|                                   | Environment B:                    |
 |                                   |                                   |
 |                                   | -   access the Organisation       |
 |                                   |     Search (ON) screen            |
+|                                   | -   enter PPL in the Stakeholder  |
+|                                   |     Code: field                   |
 |                                   | -   enter the full name of the    |
 |                                   |     organisation in the Org Name: |
 |                                   |     field                         |
 |                                   | -   enter ADD in the Act: field   |
-|                                   | -   enter PPL in the Stakeholder  |
-|                                   |     Code: field                   |
 |                                   | -   complete the Source: and DOR: |
 |                                   |     fields                        |
-|                                   | -   enter PPE in the Svc Rsns:    |
+|                                   | -   enter PPE in the Svc Rsn:     |
 |                                   |     fields                        |
 |                                   | -   press [Enter]                 |
 |                                   | -   a message should appear       |
 |                                   |     I046CU - No records found     |
 |                                   |     meeting the search criteria   |
-|                                   | -   enter AO in the Nxt: field    |
-|                                   | -   press [Enter]                 |
-|                                   |                                   |
-|                                   | To create a new PPX organisation  |
-|                                   | record, in Environment B:         |
-|                                   |                                   |
-|                                   | -   access the Organisation       |
-|                                   |     Search (ON) screen            |
-|                                   | -   enter the full name of the    |
-|                                   |     organisation in the Org Name: |
-|                                   |     field                         |
-|                                   | -   enter ADD in the Act: field   |
-|                                   | -   enter PPL in the Stakeholder  |
-|                                   |     Code: field                   |
-|                                   | -   complete the Source: and DOR: |
-|                                   |     fields                        |
-|                                   | -   enter PPX in the Svc Rsns:    |
-|                                   |     fields                        |
-|                                   | -   press [Enter]                 |
-|                                   | -   enter Payment Destination     |
-|                                   |     Name                          |
-|                                   | -   enter Payment Delivery        |
-|                                   |     Frequency                     |
-|                                   | -   enter Pay Cycle details       |
-|                                   | -   enter Processing cut-off date |
-|                                   | -   enter the employee’s next pay |
-|                                   |     date and paid to date         |
+|                                   | -   select Add Organisation, or   |
+|                                   |     enter AO in the Nxt: field    |
+|                                   |     and press [Enter]             |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Add organisation details + Read   |
 |                                   | more ...                          |
@@ -411,32 +394,144 @@ Leave Employer Processing Team (PPLEPT) only.
 |                                   | Access the Add Organisation (AO)  |
 |                                   | screen and complete:              |
 |                                   |                                   |
-|                                   | -   the BUS Name: and TRA name:   |
-|                                   |     fields if required            |
-|                                   | -   add the organisation’s        |
-|                                   |     physical and postal addresses |
-|                                   | -   add the nominated overseas    |
-|                                   |     user’s details and their      |
-|                                   |     position from the email sent  |
-|                                   |     by the associate of the       |
-|                                   |     organisation. Services        |
-|                                   |     Officers must code the        |
-|                                   |     Position: field               |
+|                                   | the BUS Name: TRA name: and ABN   |
+|                                   | fields                            |
+|                                   |                                   |
+|                                   | add the organisation’s physical   |
+|                                   | and postal addresses              |
+|                                   |                                   |
+|                                   | if required, add the nominated    |
+|                                   | overseas user’s details and their |
+|                                   | position from the email sent by   |
+|                                   | the associate of the              |
+|                                   | organisation. Services Officers   |
+|                                   | must code the Position: field     |
+|                                   |                                   |
 |                                   | -   add the phone number or       |
 |                                   |     follow up with organisation   |
-|                                   |     if it has not been provided   |
+|                                   |     if not provided               |
 |                                   | -   add the email details of the  |
 |                                   |     nominated overseas user       |
-|                                   | -   type Y in the Add             |
-|                                   |     Organisation (Y/N): field     |
-|                                   | -   press [Enter]                 |
-+-----------------------------------+-----------------------------------+
-| 10                                | Additional organisation details + |
-|                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | -   The Organisation Task         |
-|                                   |     Selector (OTS) screen will    |
-|                                   |     display                       |
+|                                   | select Add Organisation, or type  |
+|                                   | Y in the Add Organisation (Y/N):  |
+|                                   | field, and press [Enter]          |
+|                                   |                                   |
+|                                   | The Paid Parental Leave           |
+|                                   | Organisation Selector (P1OTS)     |
+|                                   | screen will be displayed:         |
+|                                   |                                   |
+|                                   | The following options will be     |
+|                                   | pre-selected on this screen:      |
+|                                   |                                   |
+|                                   | -   OSCS Organisation Contact     |
+|                                   | -   ADS Organisation Address      |
+|                                   | -   P1BL Paid Parental Leave      |
+|                                   |     Business Line                 |
+|                                   |                                   |
+|                                   | Select the Complete Activity      |
+|                                   | check box, then select Continue   |
+|                                   |                                   |
+|                                   | -   The Organisation Contact      |
+|                                   |     Summary (!OSCS) screen will   |
+|                                   |     display, complete the details |
+|                                   |     for the contact person on the |
+|                                   |     business. Select Continue     |
+|                                   | -   The Organisation Address      |
+|                                   |     (!ADS) screen will display,   |
+|                                   |     complete the address details  |
+|                                   |     for the business. Note: only  |
+|                                   |     a postal address is required. |
+|                                   |     Select Continue               |
+|                                   | -   The Paid Parental Leave       |
+|                                   |     Business Line (P1BL) screen   |
+|                                   |     will display, select the      |
+|                                   |     relevant option from the      |
+|                                   |     employer opt in status and    |
+|                                   |     number of employees dropdown. |
+|                                   |     Select Continue               |
+|                                   |                                   |
+|                                   | If the Complete Activity check    |
+|                                   | box was selected on the P1OTS     |
+|                                   | screen, this activity will auto   |
+|                                   | complete, otherwise manually      |
+|                                   | select the activity from the AL   |
+|                                   | screen to be finalised.           |
++-----------------------------------+-----------------------------------+
+| 10                                | To create a new PPX organisation  |
+|                                   | record + Read more ...            |
+|                                   |                                   |
+|                                   | In Customer First Environment B:  |
+|                                   |                                   |
+|                                   | -   access the Organisation       |
+|                                   |     Search (ON) screen            |
+|                                   | -   enter PPL in the Stakeholder  |
+|                                   |     Code: field                   |
+|                                   | -   enter the full name of the    |
+|                                   |     organisation in the Org Name: |
+|                                   |     field                         |
+|                                   | -   enter ADD in the Act: field   |
+|                                   | -   complete the Source: and DOR: |
+|                                   |     fields                        |
+|                                   | -   enter PPX in the Svc Rsns:    |
+|                                   |     fields                        |
+|                                   | -   select Add Organisation or    |
+|                                   |     enter AO in the Nxt: field    |
+|                                   |     and press [Enter]             |
+|                                   | -   on the Add Organisation (!AO) |
+|                                   |     screen select Continue        |
+|                                   |                                   |
+|                                   | The Paid Parental Leave           |
+|                                   | Organisation Task Selector        |
+|                                   | (P1OTS) screen will be displayed. |
+|                                   |                                   |
+|                                   | The following options will be     |
+|                                   | pre-selected on this screen:      |
+|                                   |                                   |
+|                                   | -   P1PD Paid Parental Leave      |
+|                                   |     Payment Destination Details   |
+|                                   | -   OSRM Report Output Method     |
+|                                   |     Screen                        |
+|                                   | -   OSBD Organisation Service     |
+|                                   |     Bank Details                  |
+|                                   |                                   |
+|                                   | Select the Complete Activity      |
+|                                   | check box, then select Continue   |
+|                                   |                                   |
+|                                   | The Paid Parental Leave Payment   |
+|                                   | Destination Details (P1PD) screen |
+|                                   | will display, complete all of the |
+|                                   | fields                            |
+|                                   |                                   |
+|                                   | The Report Output Method (OSRM)   |
+|                                   | screen will display, enter the    |
+|                                   | employers chosen report format/s. |
+|                                   | Select Continue                   |
+|                                   |                                   |
+|                                   | The Org Service Bank Details      |
+|                                   | (OBSD) screen will display,       |
+|                                   | complete the:                     |
+|                                   |                                   |
+|                                   | -   Start Date                    |
+|                                   | -   Financial Inst Code           |
+|                                   | -   Account Number                |
+|                                   | -   Abbrev Account Title          |
+|                                   | -   Account Title fields          |
+|                                   |                                   |
+|                                   | Enter I in the Action: field,     |
+|                                   | then select Continue              |
+|                                   |                                   |
+|                                   | If the Complete Activity check    |
+|                                   | box was selected on the P1OTS     |
+|                                   | screen this activity will auto    |
+|                                   | complete, otherwise manually      |
+|                                   | select the activity from the AL   |
+|                                   | screen to be finalised.           |
+|                                   |                                   |
+|                                   | Additional organisation details   |
+|                                   |                                   |
+|                                   | -   Go to the Organisation Task   |
+|                                   |     Selector (OTS) screen         |
 |                                   | -   Review and if required update |
 |                                   |     the following selections      |
 |                                   |     which will default by the     |
@@ -507,9 +602,9 @@ Leave Employer Processing Team (PPLEPT) only.
 |                                   | via Organisational Online Mail    |
 |                                   | (OOM). See Step 2 in Table 2.     |
 |                                   |                                   |
-|                                   | Ensure employers who are unable   |
-|                                   | or refuse to register for         |
-|                                   | business online services receive  |
+|                                   | Note: ensure employers who are    |
+|                                   | unable or refuse to register for  |
+|                                   | business online services get      |
 |                                   | correspondence via mail. Navigate |
 |                                   | to and take action in Customer    |
 |                                   | First:                            |
@@ -553,16 +648,16 @@ overseas.
 |                                   | The associate of the organisation |
 |                                   | has:                              |
 |                                   |                                   |
-|                                   | -   registered for PRODA and PPL  |
+|                                   | -   Registered for PRODA and PPL  |
 |                                   |     Services in Business Hub and  |
-|                                   | -   responded to the email        |
+|                                   | -   Responded to the email        |
 |                                   |     Request for information to    |
 |                                   |     access CBOS for PPL purposes  |
 |                                   |     email template                |
 +-----------------------------------+-----------------------------------+
 | 2                                 | DOC the record + Read more ...    |
 |                                   |                                   |
-|                                   | In Customer First use the         |
+|                                   | In Customer First, use the        |
 |                                   | Customer Reference Number (CRN)   |
 |                                   | listed in the PPL CBOS            |
 |                                   | registration. The CRN is found in |
@@ -813,10 +908,10 @@ details for users located overseas.
 |                                   | the overseas user has an existing |
 |                                   | user ID:                          |
 |                                   |                                   |
-|                                   | -   check the user’s record in    |
+|                                   | -   Check the user’s record in    |
 |                                   |     RAMB and                      |
-|                                   | -   update if required:           |
-|                                   | -   enter International as the    |
+|                                   | -   Update if required:           |
+|                                   | -   Enter International as the    |
 |                                   |     employee ID and               |
 |                                   | -   PPL as the service code       |
 |                                   |                                   |
@@ -834,7 +929,7 @@ details for users located overseas.
 |                                   | No, the user cannot be added. Do  |
 |                                   | not create a user ID              |
 |                                   |                                   |
-|                                   | -   Make 1 genuine attempt to     |
+|                                   | -   Make one genuine attempt to   |
 |                                   |     contact the employer to       |
 |                                   |     advise of the information     |
 |                                   |     required to add a user. If    |
@@ -887,9 +982,9 @@ details for users located overseas.
 |                                   | users                             |
 |                                   |                                   |
 |                                   | If the new overseas contact does  |
-|                                   | not exist they must give details  |
-|                                   | so their identity can be checked. |
-|                                   | This is so a user ID can be       |
+|                                   | not exist, they must give details |
+|                                   | so their identity can be checked, |
+|                                   | this is so a user ID can be       |
 |                                   | created. Proof of identity can be |
 |                                   | done verbally, and can include:   |
 |                                   |                                   |
@@ -912,7 +1007,7 @@ details for users located overseas.
 |                                   | Once sufficient information has   |
 |                                   | been provided:                    |
 |                                   |                                   |
-|                                   | -   select Register User under    |
+|                                   | -   Select Register User under    |
 |                                   |     the Manage User section       |
 |                                   |                                   |
 |                                   | Enter the user’s details:         |
@@ -997,10 +1092,10 @@ details for users located overseas.
 |                                   |                                   |
 |                                   | If the overseas user:             |
 |                                   |                                   |
-|                                   | -   needs a new user ID or        |
+|                                   | -   Needs a new user ID or        |
 |                                   |     temporary password, go to     |
 |                                   |     Step 5                        |
-|                                   | -   does not need a new user ID   |
+|                                   | -   Does not need a new user ID   |
 |                                   |     or temporary password, go to  |
 |                                   |     Step 6                        |
 +-----------------------------------+-----------------------------------+
@@ -1041,7 +1136,7 @@ details for users located overseas.
 |                                   | -   DOC the record. Do not record |
 |                                   |     the password in the DOC       |
 |                                   | -   Create a new temporary        |
-|                                   |     password, if required.        |
+|                                   |     password, if required         |
 |                                   | -   Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Final check and DOC the record +  |
@@ -1092,16 +1187,16 @@ organisation’s PPL obligations.
 |                                   |                                   |
 |                                   | If the request is to:             |
 |                                   |                                   |
-|                                   | -   remove the overseas user for  |
+|                                   | -   Remove the overseas user for  |
 |                                   |     PPL – RAMB, go to Step 2      |
-|                                   | -   update details for a          |
+|                                   | -   Update details for a          |
 |                                   |     registered overseas user for  |
 |                                   |     PPL – RAMB, go to Step 3      |
-|                                   | -   reset password reset – RAMB,  |
+|                                   | -   Reset password reset – RAMB,  |
 |                                   |     go to Step 5                  |
-|                                   | -   lock the overseas user for    |
+|                                   | -   Lock the overseas user for    |
 |                                   |     PPL – RAMB, go to Step 6      |
-|                                   | -   unlock the overseas user for  |
+|                                   | -   Unlock the overseas user for  |
 |                                   |     PPL – RAMB, go to Step 7      |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Remove the overseas user for      |
@@ -1172,11 +1267,11 @@ organisation’s PPL obligations.
 |                                   | If PPLEFT is not satisfied with   |
 |                                   | the identity details:             |
 |                                   |                                   |
-|                                   | try to contact the user. Use the  |
+|                                   | Try to contact the user. Use the  |
 |                                   | known contact details already on  |
 |                                   | record                            |
 |                                   |                                   |
-|                                   | -   if a phone attempt is         |
+|                                   | -   If a phone attempt is         |
 |                                   |     unsuccessful, send the        |
 |                                   |     'Please contact us' approved  |
 |                                   |     email text from the PPLINFO   |
@@ -1187,12 +1282,12 @@ organisation’s PPL obligations.
 |                                   |                                   |
 |                                   | Yes:                              |
 |                                   |                                   |
-|                                   | -   follow normal procedures to   |
+|                                   | -   Follow normal procedures to   |
 |                                   |     identify the user             |
-|                                   | -   confirm the requested         |
+|                                   | -   Confirm the requested         |
 |                                   |     information and update        |
 |                                   |     overseas user details in RAMB |
-|                                   | -   go to Step 4                  |
+|                                   | -   Go to Step 4                  |
 |                                   |                                   |
 |                                   | No:                               |
 |                                   |                                   |
@@ -1227,7 +1322,7 @@ organisation’s PPL obligations.
 |                                   |                                   |
 |                                   | -   Update the OSCS screen        |
 |                                   | -   DOC the record using Fast     |
-|                                   |     Note, including all details   |
+|                                   |     Note, include all details     |
 |                                   |     that have been updated        |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
@@ -1341,10 +1436,10 @@ organisation’s PPL obligations.
 |                                   | user is located overseas by       |
 |                                   | identifying the:                  |
 |                                   |                                   |
-|                                   | -   country where the user is     |
+|                                   | -   Country where the user is     |
 |                                   |     located                       |
-|                                   | -   user’s address                |
-|                                   | -   user’s phone number. For      |
+|                                   | -   User’s address                |
+|                                   | -   User’s phone number. For      |
 |                                   |     example it includes an        |
 |                                   |     international prefix          |
 |                                   |                                   |
@@ -1361,10 +1456,9 @@ organisation’s PPL obligations.
 |                                   |     available, select Continue    |
 |                                   | -   Select the user ID to be      |
 |                                   |     unlocked                      |
-|                                   | -   Check that the word           |
-|                                   |     International is in the       |
-|                                   |     employee ID field. Update if  |
-|                                   |     required                      |
+|                                   | -   Check the word International  |
+|                                   |     is in the employee ID field.  |
+|                                   |     Update if required            |
 |                                   | -   Select Activate Password      |
 |                                   | -   Tick the box Do you want to   |
 |                                   |     Activate the user’s Password  |
@@ -1378,10 +1472,10 @@ organisation’s PPL obligations.
 |                                   | DOC the employer record, include  |
 |                                   | the:                              |
 |                                   |                                   |
-|                                   | -   name of the person who has    |
+|                                   | -   Name of the person who has    |
 |                                   |     requested the unlocking of    |
-|                                   |     the user and                  |
-|                                   | -   user details that satisfied   |
+|                                   |     the user, and                 |
+|                                   | -   User details that satisfied   |
 |                                   |     overseas requirements. For    |
 |                                   |     example, location             |
 +-----------------------------------+-----------------------------------+
@@ -1408,14 +1502,14 @@ Table 6: This process is for PPLEPT staff only
 |                                   | Access Management tile in Process |
 |                                   | Direct.                           |
 |                                   |                                   |
-|                                   | -   if an existing authorised     |
+|                                   | -   If an existing authorised     |
 |                                   |     contact is no longer a        |
 |                                   |     contact for the organisation, |
 |                                   |     go to Step 2                  |
-|                                   | -   if an authorised contact is   |
+|                                   | -   If an authorised contact is   |
 |                                   |     displaying multiple times on  |
 |                                   |     the OSCS screen, go to Step 3 |
-|                                   | -   if the organisation has       |
+|                                   | -   If the organisation has       |
 |                                   |     Business Hub access, but the  |
 |                                   |     individual authorised contact |
 |                                   |     has not transitioned to       |
@@ -1503,7 +1597,7 @@ Table 6: This process is for PPLEPT staff only
 |                                   |                                   |
 |                                   | Yes, end date contacts not listed |
 |                                   | in Business Hub Access            |
-|                                   | Management, go to Step 5          |
+|                                   | Management. Go to Step 5          |
 |                                   |                                   |
 |                                   | No:                               |
 |                                   |                                   |
@@ -1514,7 +1608,7 @@ Table 6: This process is for PPLEPT staff only
 |                                   |     in Business Hub               |
 |                                   | -   DOC the record, including no  |
 |                                   |     updates required              |
-|                                   | -   procedure ends here           |
+|                                   | -   Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Updating Organisation Contact     |
 |                                   | Summary (OSCS) screen + Read more |
@@ -1522,12 +1616,12 @@ Table 6: This process is for PPLEPT staff only
 |                                   |                                   |
 |                                   | In Customer First:                |
 |                                   |                                   |
-|                                   | -   select the Organisation       |
+|                                   | -   Select the Organisation       |
 |                                   |     Contact Summary (OSCS) screen |
 |                                   |     to end date the contact       |
 |                                   | -   DOC the record, including the |
 |                                   |     contact details updated       |
-|                                   | -   procedure ends here           |
+|                                   | -   Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 
                                    
