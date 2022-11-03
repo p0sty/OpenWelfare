@@ -189,7 +189,7 @@
 			
 				<!-- start pageDataHeading -->
 				<h1>Ripple manager consequences 110-06090020</h1>
-<ul id="tabs-primary"><li><a href="../compliance-and-reviews/110-06090020-01.html">Background</a></li><li><a href="../compliance-and-reviews/110-06090020-02.html">Process Summary</a></li><li><a class="active students" href="../compliance-and-reviews/110-06090020-03.html">Process</a></li><li><a href="../compliance-and-reviews/110-06090020-06.html">Training &amp; Support</a></li></ul>
+<ul id="tabs-primary"><li><a href="../compliance-and-reviews/110-06090020-01.html">Background</a></li><li></li><li><a class="active students" href="../compliance-and-reviews/110-06090020-03.html">Process</a></li><li><a href="../compliance-and-reviews/110-06090020-06.html">Training &amp; Support</a></li></ul>
 				<!-- end pageDataHeading -->
 				
 				<!-- start pageDataContent -->
@@ -218,7 +218,7 @@
 <h2 id="bp03_L2GT_Ripple_Manager">Ripple Manager</h2>
 
 <a class="anchor" name="bp03_L3TT_Automated_chang"></a>
-<h3>Automated changes to customers' assessments</h3>
+<h3></h3>
 
 
 <p>Table 1&#58; This table describes information about Ripple Manager, a background task which automates changes to customer's assessments.</p>
@@ -273,7 +273,15 @@ merge with an existing activity</li>		</ul>
 
 <p>Reference will be made to ripples on the History Activity List (<strong>HAL</strong>), History Activity Details (<strong>HAY</strong>) and Event Summary (<strong>ES</strong>) screens. A ripple activity will have a source code of '<strong>RIP</strong>'. The receipt date will be the same as that on the originating activity.</p>
 
-<p>The ripple activity can be viewed from either&#58;</p>
+<p>The ripple activity can be viewed&#58;</p>
+
+<p>In <strong>Process Direct</strong>, from either&#58;</p>
+		<ul>		<li>
+the Activity History List (<strong>HAL</strong>) screen</li>
+		<li>
+the Ripple Activities (<strong>RMC</strong>) screen</li>
+		</ul>
+<p>In <strong>Customer First</strong>, from either&#58;</p>
 		<ul>		<li>
 the Event Summary (<strong>ES</strong>) screen - Select the ripple activity by highlighting the activity and choosing the '<strong>(S) Select an activity</strong>' option from within the '<strong>Selection Options</strong>' list and press [<strong>Enter</strong>] or select the '<strong>Continue</strong>' button. Navigate to go to the Event Circumstance Selection (<strong>ECS</strong>) screen or</li>
 		<li>
@@ -287,11 +295,87 @@ the Ripple Manager Consequence (<strong>RMC</strong>) screen</li>		</ul>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Automated_chang_3"></a>
+
 <p>3</p></td>
 <td>
 
-<p><strong>RMC screen fields</strong> <a title="Read more 3" class="showhead bp03_tbl_Automated_chang_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Automated_chang_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>RMC screen fields in Process Direct</strong> <a title="Read more 3" class="showhead bp03_tbl_Automated_chang_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Automated_chang_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The <strong>RMC</strong> screen displays the following details about the ripple&#58;</p>
+		<ul>		<li>
+<strong>Source CRN</strong> - The CRN of the customer from whom the ripple originated</li>
+		<li>
+<strong>Ripple CRN</strong> - The CRN of the ripple destination (other customer)</li>
+		<li>
+<strong>Source Activity ID</strong> - The activity ID from which the ripple originated</li>
+		<li>
+<strong>Ripple Type Code</strong> - The type of ripple being generated, For example, 'Standard'</li>
+		<li>
+<strong>Ripple Status Code</strong> - For example, 'Requested'</li>
+		<li>
+<strong>Partner CRN</strong> - The CRN of the customer’s partner</li>
+		<li>
+<strong>Participant CRN</strong> - The CRN of the ripple participant that has had a circumstance and/or relationship change made in the ripple</li>
+		<li>
+<strong>Participant Srv Rsn Code</strong> - the relevant service reason for the participants that have been updated and require rippling</li>
+		<li>
+<strong>Partner Activity ID</strong> - The activity ID for the partner of the customer from which the ripple originated</li>
+		<li>
+<strong>Ripple Instr. Code</strong> - Complete/Started/Merge</li>
+		<li>
+<strong>Merge to Activity ID</strong> - the Activity ID of the activity to which the ripple is to be merged. The field is to be completed when an assessment of 'MRG' is chosen</li>
+		<li>
+<strong>Merge to Activity text</strong></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+
+<p>4</p></td>
+<td>
+
+<p><strong>Coding the RMC screen in Process Direct</strong> <a title="Read more 4" class="showhead bp03_tbl_Automated_chang_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Automated_chang_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The Ripple Activities (<strong>RMC</strong>) screen displays before the Entitlements (<strong>ELD</strong>) screen where a customer has shared care of child(ren) and changes have been made to the child(ren)'s status within a Family Tax Benefit (FTB) claim or Change of Circumstance activity coded using the <strong>Families - Care Assessment</strong> workflow on the<strong> Task Selector</strong>.</p>
+
+<p>The ripple Instruction Code will default to <strong>COM</strong> - completed.</p>
+
+<p>If ripple management is required&#58;</p>
+		<ul>		<li>
+On the <strong>RMC</strong> screen, select the edit icon to open the ‘Change Ripple Activity’ dialogue box if ripple management is required. The following options are available for selection&#58;</li>
+			<ul>			<li>
+<strong>MRG</strong> - Merge. The updated child data will merge with a designated activity on the other custodian's Activity List (AL) screen in Customer First. The Merge to Activity ID field must be completed</li>
+			<li>
+<strong>COM</strong> - Completed. The child data will be sent to the other custodian(s), the changes automatically applied and the activity taken through to completion</li>
+			<li>
+<strong>STA</strong> - Started. The assessment on the other custodian's record will remain as started to be completed by a Service Officer in Customer First. These ripples are mandatory and cannot be deleted by a Service Officer</li>		</ul>
+		<li>
+Select <strong>Save</strong></li>
+		<li>
+Select <strong>Update</strong></li>
+		<li>
+Select <strong>Next</strong> to go to the <strong>ELD</strong> screen</li>
+		</ul>
+<p>If ripple management is not required, select Next on the <strong>RMC</strong> screen to go to the <strong>ELD</strong> screen.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Automated_chang_3"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>RMC screen fields in Customer First</strong> <a title="Read more 5" class="showhead bp03_tbl_Automated_chang_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Automated_chang_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -332,10 +416,10 @@ The <strong>RMC</strong> screen will also display the following only when there 
 <tr>
 <td>
 <a class="anchor" name="bp03_tbl_Automated_chang_4"></a>
-<p>4</p></td>
+<p>6</p></td>
 <td>
 
-<p><strong>Coding the RMC screen</strong> <a title="Read more 4" class="showhead bp03_tbl_Automated_chang_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Automated_chang_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Coding the RMC screen in Customer First</strong> <a title="Read more 6" class="showhead bp03_tbl_Automated_chang_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Automated_chang_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -362,9 +446,6 @@ Press [<strong>Enter</strong>] or select the '<strong>Continue</strong>' button 
 <a class="anchor" name="bp03_L2GT_Ripple_manager_"></a>
 <h2 id="bp03_L2GT_Ripple_manager_">Ripple manager To Do Indicator (TDI) errors</h2>
 
-<a class="anchor" name="bp03_L3TT_TDI_E001RQ_w"></a>
-<h3>TDI&#58; E001RQ - waiting for background refresh from CRN</h3>
-
 
 <p>Table 2&#58; This table describes the steps to correct TDI error E001RQ – waiting for background refresh from CRN.</p>
 <table caption="Table 2&#58; This table describes the steps to correct TDI error E001RQ – waiting for background refresh from CRN. " width="100%">
@@ -382,7 +463,7 @@ Press [<strong>Enter</strong>] or select the '<strong>Continue</strong>' button 
 <p>1</p></td>
 <td>
 
-<p><strong>TDI error scenario</strong> <a title="Read more 5" class="showhead bp03_tbl_TDI_E001RQ_w_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>TDI error scenario</strong> <a title="Read more 7" class="showhead bp03_tbl_TDI_E001RQ_w_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -408,18 +489,30 @@ If none of the above apply, <a href="../compliance-and-reviews/110-06090020-03.h
 <p>2</p></td>
 <td>
 
-<p><strong>Marital Status (MS) screen updated within a new claim activity</strong> <a title="Read more 6" class="showhead bp03_tbl_TDI_E001RQ_w_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Marital Status (MS) screen updated within a new claim activity</strong> <a title="Read more 8" class="showhead bp03_tbl_TDI_E001RQ_w_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>If the TDI error scenario is the Marital Status (<strong>MS</strong>) screen is being updated within a new claim activity&#58;</p>
 		<ul>		<li>
+In <strong>Process Direct</strong>,</li>
+			<ul>			<li>
+Regenerate the claim</li>
+			<li>
+Delete any provisional Marital Status (<strong>MS</strong>) screen changes</li>
+			<li>
+Update the <strong>MS</strong> screen in a separate activity in Customer First</li>
+			<li>
+Regenerate the claim in Process Direct and continue processing</li>		</ul>
+		<li>
+In <strong>Customer First</strong>,</li>
+			<ul>			<li>
 Cancel the claim</li>
-		<li>
+			<li>
 Make the Marital Status (<strong>MS</strong>) screen change in a separate activity</li>
-		<li>
+			<li>
 Re-code the claim</li>
-		</ul>
+			</ul>			</ul>
 <p>Procedure ends here</p>
 </div>
 
@@ -432,13 +525,13 @@ Re-code the claim</li>
 <p>3</p></td>
 <td>
 
-<p><strong>Marital Status (MS) screen shows customer linked to a deleted CRN</strong> <a title="Read more 7" class="showhead bp03_tbl_TDI_E001RQ_w_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Marital Status (MS) screen shows customer linked to a deleted CRN</strong> <a title="Read more 9" class="showhead bp03_tbl_TDI_E001RQ_w_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>If the customer had previously been linked to another partner correctly, <a href="../compliance-and-reviews/110-06090020-03.html#bp03_tbl_TDI_E001RQ_w_Step08">go to Step 8</a>.</p>
 
-<p>In all other cases&#58;</p>
+<p>In all other cases, in Customer First&#58;</p>
 		<ul>		<li>
 Cancel the current activity</li>
 		<li>
@@ -462,11 +555,11 @@ Re-code the cancelled activity</li>
 <p>4</p></td>
 <td>
 
-<p><strong>Ripple to/from the PIT linked parent not completed in a Youth Allowance (YAL) claim</strong> <a title="Read more 8" class="showhead bp03_tbl_TDI_E001RQ_w_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Ripple to/from the PIT linked parent not completed in a Youth Allowance (YAL) claim</strong> <a title="Read more 10" class="showhead bp03_tbl_TDI_E001RQ_w_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Check the Trans/Trigger List (<strong>TTL</strong>) screen on the PIT linked parent’s record and on the customer’s/sibling’s record.</p>
+<p>Check the Trans/Trigger List (<strong>TTL</strong>) screen in Customer First on the PIT linked parent’s record and on the customer’s/sibling’s record.</p>
 		<ul>		<li>
 If the trigger code is <strong>RIPRQST-N</strong> and status is <strong>#NOW</strong>, <a href="../compliance-and-reviews/110-06090020-03.html#bp03_tbl_TDI_E001RQ_w_Step05">go to Step 5</a></li>
 		<li>
@@ -484,7 +577,7 @@ If none of the above, <a href="../compliance-and-reviews/110-06090020-03.html#bp
 <p>5</p></td>
 <td>
 
-<p><strong>Incomplete ripple that has not aborted</strong> <a title="Read more 9" class="showhead bp03_tbl_TDI_E001RQ_w_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Incomplete ripple that has not aborted</strong> <a title="Read more 11" class="showhead bp03_tbl_TDI_E001RQ_w_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -508,20 +601,20 @@ Re-code the Youth Allowance (YAL) claim</li>
 <p>6</p></td>
 <td>
 
-<p><strong>Complete activity on parent’s record</strong> <a title="Read more 10" class="showhead bp03_tbl_TDI_E001RQ_w_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Complete activity on parent’s record</strong> <a title="Read more 12" class="showhead bp03_tbl_TDI_E001RQ_w_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
-
-<p>Check for ripple activity on the parent’s record, e.g. NSS/REA RPI activity.</p>
-
-<p>Select the activity from the PIT linked parent’s Activity List (AL) screen.</p>
-
-<p>Check the details and update where required.</p>
-
-<p>Finalise activity.</p>
-
-<p>Clear out of both records to allow time for the ripples to complete.</p>
-
+		<ul>		<li>
+Check for ripple activity on the parent’s record, e.g. NSS/REA RPI activity</li>
+		<li>
+Select the activity from the PIT linked parent’s Activity List (<strong>AL</strong>) screen in Customer First</li>
+		<li>
+Check the details and update where required</li>
+		<li>
+Finalise activity</li>
+		<li>
+Clear out of both records to allow time for the ripples to complete</li>
+		</ul>
 <p>Procedure ends here.</p>
 </div>
 
@@ -534,7 +627,7 @@ Re-code the Youth Allowance (YAL) claim</li>
 <p>7</p></td>
 <td>
 
-<p><strong>Ripple sent to a deleted child record</strong> <a title="Read more 11" class="showhead bp03_tbl_TDI_E001RQ_w_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Ripple sent to a deleted child record</strong> <a title="Read more 13" class="showhead bp03_tbl_TDI_E001RQ_w_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -554,11 +647,15 @@ Re-code the Youth Allowance (YAL) claim</li>
 <p>8</p></td>
 <td>
 
-<p><strong>Refer the issue to ICT Service Desk</strong> <a title="Read more 12" class="showhead bp03_tbl_TDI_E001RQ_w_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Refer the issue to ICT Service Desk</strong> <a title="Read more 14" class="showhead bp03_tbl_TDI_E001RQ_w_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Refer to ICT Service Desk via mySupport webform based on the customer’s affected payment type.</p>
+<p>If using&#58;</p>
+
+<p>Customer First, refer to ICT Service Desk via mySupport webform based on the customer’s affected payment type</p>
+
+<p>Process Direct, report the issue via <a href="../specialist-manuals-and-system-tools/111-20050133-03.html">Digital Assistant Roxy</a></p>
 </div>
 
 
@@ -570,7 +667,7 @@ Re-code the Youth Allowance (YAL) claim</li>
 <p>9</p></td>
 <td>
 
-<p><strong>No action required</strong> <a title="Read more 13" class="showhead bp03_tbl_TDI_E001RQ_w_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>No action required</strong> <a title="Read more 15" class="showhead bp03_tbl_TDI_E001RQ_w_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_TDI_E001RQ_w_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

@@ -209,17 +209,17 @@
 <p class="info-box warning">If you have concerns about a child’s safety, conduct the <a href="../help-in-an-emergency/003-19050609-03.html">risk and referral process</a>.</p>
 
 <p>This page contains the Maintenance Action Test (MAT) codes and how they are recorded and updated. To update maintenance action outside a new claim activity and for periods after 2007-08, use the <strong>Maintenance Action</strong> workflow. These tables may be used if the workflow is unavailable, to code maintenance action within a claim activity or to manually record maintenance action.</p>
+<a class="anchor" name="bp03_L3TT_Manual_MAT_code"></a>
+<h2 id="bp03_L3TT_Manual_MAT_code">On this page&#58;</h2>
 
-<h2 id="On this Page&#58;">On this Page&#58;</h2>
 
-
-<p><a href="../separated-parents/277-51070030-03.html#bp03_L3TT_Manual_MAT_code">Manual automatic MAT code updates</a></p>
+<p><a href="../separated-parents/277-51070030-03.html#bp03_L3TT_Manual_MAT_code">Manual and automatic MAT code updates</a></p>
 
 <p><a href="../separated-parents/277-51070030-03.html#bp03_L3TT_Maintenance_Act">Maintenance Action Test codes</a></p>
 
 <p></p>
-<a class="anchor" name="bp03_L3TT_Manual_MAT_code"></a>
-<h3>Manual automatic MAT code updates</h3>
+
+<h3>Manual and automatic MAT code updates</h3>
 
 
 <p>Table 1</p>
@@ -254,7 +254,7 @@
 <p>2</p></td>
 <td>
 
-<p><strong>Updating MAT code for FTB instalment customers</strong> <a title="Read more 2" class="showhead bp03_tbl_Manual_MAT_code_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Updating MAT code for FTB instalment customers in Customer First</strong> <a title="Read more 2" class="showhead bp03_tbl_Manual_MAT_code_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -322,11 +322,11 @@ Record details on a <strong>DOC</strong> and finalise activity on Assessment Res
 
 <p>Customers could choose to provide child support details, or to give permission for Centrelink to obtain details electronically from Child Support in which case details did not need to be manually coded.</p>
 
-<p>If the customer advised child support details on their lump sum claim, the MAT code is recorded/displayed on the Maint LSC Maint Action (<strong>MLMA</strong>) screen after selecting the child from the Maint LSC Group Summary (<strong>MLGS</strong>) screen.</p>
+<p>If the customer advised child support details on their lump sum claim, the MAT code is recorded/displayed on the Maint LSC Maint Action (<strong>MLMA</strong>) screen in Customer First after selecting the child from the Maint LSC Group Summary (<strong>MLGS</strong>) screen.</p>
 
 <p><strong>For 2007-08 and earlier years</strong></p>
 
-<p>If the customer advised child support details on their lump sum claim, the MAT code is recorded/displayed on the Child Maintenance Previous Year (<strong>CHMPY</strong>) <strong>after selecting the child from the</strong> Child Selection (<strong>CHS</strong>) screen.</p>
+<p>If the customer advised child support details on their lump sum claim, the MAT code is recorded/displayed in Customer First on the Child Maintenance Previous Year (<strong>CHMPY</strong>) <strong>after selecting the child from the</strong> Child Selection (<strong>CHS</strong>) screen.</p>
 
 <p>Not all MAT codes used for FTB instalment claims are relevant for lump sum claims. For lump sum claims, the MAT code is recorded according to details advised by the customer.</p>
 
@@ -338,11 +338,89 @@ Record details on a <strong>DOC</strong> and finalise activity on Assessment Res
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Manual_MAT_code_4"></a>
+
 <p>4</p></td>
 <td>
 
-<p><strong>Automatic MAT code updates</strong> <a title="Read more 4" class="showhead bp03_tbl_Manual_MAT_code_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Updating MAT code within a FTB new claim in Process Direct</strong>  <a title="Read more 4" class="showhead bp03_tbl_Manual_MAT_code_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p><strong>Maintenance coding</strong></p>
+
+<p>Maintenance coding in Process Direct is done on the Maint Ent Grp Summary (<strong>MNGS</strong>) screen&#58;</p>
+		<ul>		<li>
+This screen is a post assess screen. All other claim coding must be completed prior to coding <strong>MNGS</strong></li>
+		<li>
+Complete all claim updates and select <strong>Assess</strong>&#58;</li>
+			<ul>			<li>
+If a new maintenance group is required, an error displays on Errors (<strong>SWE</strong>) screen. Go to the <strong>MNGS</strong> screen and code the necessary updates</li>
+			<li>
+If other updates are required on <strong>MNGS</strong> screen for children already grouped, go to the <strong>MNGS</strong> screen from the Entitlements (<strong>ELD</strong>) screen</li>
+			<li>
+See the Process Direct tab on <a href="../families/007-17100603-01.html">Processing standalone and combined claims for family assistance and/or Paid Parental Leave scheme payments</a> for details on how to create a new maintenance group or manage existing maintenance grouping in a FTB new claim in Process Direct</li>
+			</ul>			</ul>
+<p><strong>Child support details</strong> for an FTB child from a previous relationship</p>
+		<ul>		<li>
+Ensure children are grouped correctly on <strong>MNGS</strong> screen</li>
+		<li>
+If there is a requirement to obtain child support, a Maintenance Action Requirement letter will automatically issue to the customer if they are in the 13 week (91 day) <strong>DMA</strong> (deciding maintenance action) grace period when the FTB claim is granted. In most cases, a customer will be given an automatic DMA period of 13 weeks (91 days) for a child from the relevant date of event. A manual workaround may be required to simulate a DMA period for the customer</li>
+		<li>
+On the <strong>MNGS</strong> screen, select the <strong>Maintenance Group</strong>, and select the relevant <strong>Maintenance Child</strong> using the drop down option. Scroll down to the Maintenance Action Results (<strong>MNMA</strong>) table. </li>
+		<li>
+On <strong>MNMA </strong>table, if the DMA period has not stimulated correctly, escalate the case via the Digital Assistant Roxy. See <a href="../separated-parents/277-51070000-01.html">Maintenance Action Test (MAT) for FTB customers</a></li>
+		<li>
+For shared care, Child Support will register 1 child support case instead of 2. See <a href="../separated-parents/277-51070080-01.html">MAT for customers with shared care</a></li>
+		<li>
+If the customer has indicated they have taken action to obtain child support, update maintenance data using current procedures. See <a href="../separated-parents/277-51070000-01.html">MAT for FTB customers</a>.</li>
+		</ul>
+<p><strong>MNMA table coding</strong></p>
+		<ul>		<li>
+Select <strong>Add</strong> to update the <strong>Event Date</strong> and <strong>Action Status Reason</strong></li>
+		<li>
+Use <strong>Edit</strong> or <strong>Delete</strong> to update as required</li>
+		<li>
+In <strong>Event date</strong> field, code the date the customer took action. If the customer is applying for a Child Support assessment, code the date proof is available that the customer has contacted Child Support to apply</li>
+		<li>
+In <strong>Maintenance Action</strong> field, key the relevant MAT code depending on whether the customer&#58;</li>
+			<ul>			<li>
+<a href="../separated-parents/277-51070030-03.html#bp03_tbl_Maintenance_Act_1">has taken action to obtain child support</a></li>
+			<li>
+<a href="../separated-parents/277-51070030-03.html#bp03_tbl_Maintenance_Act_2">is exempt from taking action to obtain child support</a></li>
+			<li>
+<a href="../separated-parents/277-51070030-03.html#bp03_tbl_Maintenance_Act_3">has been granted an exemption from taking action to obtain child support by a Social Worker</a></li>
+			<li>
+<a href="../separated-parents/277-51070030-03.html#bp03_tbl_Maintenance_Act_5">has made an informed decision not to take action to obtain child support (AXB)</a></li>
+			<li>
+<a href="../separated-parents/277-51070030-03.html#bp03_tbl_Maintenance_Act_5">has failed to take the required action to obtain child support</a></li>
+			<li>
+<a href="../separated-parents/277-51070030-03.html#bp03_tbl_Maintenance_Act_4">requires a manual workaround to correctly apply the MAT</a></li>
+			</ul>			</ul>
+<p><strong>Note&#58;</strong> if a maintenance exemption has been assessed and granted from an earlier DOV than the MXR (maintenance exemption requested) was coded from on the <strong>MNMA</strong> screen, the MXR coding must be deleted. </p>
+		<ul>		<li>
+Go to <strong>SWE </strong>and select <strong>Assess&#58;</strong></li>
+			<ul>			<li>
+a warning message may present 'SR913 - Please navigate to MNGS to ensure grouping remains correct'. Go to the <strong>MNGS</strong> screen then select <strong>Assess</strong> again. No changes are required if the maintenance grouping remains correct</li>
+			</ul>			</ul>
+<p></p>
+		<ul>		<li>
+Go to the <strong>ELD </strong>screen and finalise the claim as per <a href="../families/007-17100603-01.html">Processing standalone and combined claims for family assistance and/or Paid Parental Leave scheme payments</a></li>
+		</ul>
+<p></p>
+
+<p><strong>Note&#58;</strong> due to <a href="../separated-parents/277-51070030-03.html#bp03_L3TT_Maintenance_Act">auto-processing</a>, the action to obtain child support result may differ from the MAT code that was manually input</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Manual_MAT_code_4"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Automatic MAT code updates</strong> <a title="Read more 5" class="showhead bp03_tbl_Manual_MAT_code_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -354,13 +432,13 @@ Record details on a <strong>DOC</strong> and finalise activity on Assessment Res
 		<li>
 <strong>DMA</strong> (deciding maintenance action for a Stage 2 child) if it is within the 13 week (91 day) timeframe to take action to obtain child support. MAT has been met</li>
 		</ul>
-<p>Where voluntary maintenance is received and</p>
+<p>The voluntary maintenance must be coded manually when it is received and</p>
 		<ul>		<li>
 the MAT code is <strong>DMA</strong> or</li>
 		<li>
 the child is over 18</li>
 		</ul>
-<p>the voluntary maintenance must be coded manually. See Step 3 in the Recording private Child Support income table on the Process page in <a target="_blank" href="../separated-parents/277-51030010-03.html#bp03_tbl_Recording_priva_Step03">Recording private maintenance income on Centrelink systems</a>.</p>
+<p>See Step 3 in the Recording private Child Support income table on the Process page in <a target="_blank" href="../separated-parents/277-51030010-03.html#bp03_tbl_Recording_priva_Step03">Recording private maintenance income on Centrelink systems</a>.</p>
 
 <p><strong>Customer reconciles with payer</strong></p>
 
@@ -399,10 +477,10 @@ information transferred from Child Support. For example, <strong>PPW</strong> (P
 <tr>
 <td>
 <a class="anchor" name="bp03_tbl_Manual_MAT_code_5"></a>
-<p>5</p></td>
+<p>6</p></td>
 <td>
 
-<p><strong>Information displayed on the Maintenance Action (MNMA) screen</strong> <a title="Read more 5" class="showhead bp03_tbl_Manual_MAT_code_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Information displayed on the Maintenance Action (MNMA) screen in Customer First</strong> <a title="Read more 6" class="showhead bp03_tbl_Manual_MAT_code_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Manual_MAT_code_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -454,7 +532,7 @@ Payer's CRN followed by '<strong>Name unvlb</strong>' (Name unavailable if the N
 <h3>Maintenance Action Test codes</h3>
 
 
-<p>Table 2&#58; This table describes the different Maintenance Action Test (MAT) codes when the Maintenance Action Test (MAT) has been met, failed or the customer is exempt or a child support case update.</p>
+<p>Table 2</p>
 <table caption="Table 2&#58; This table describes the different Maintenance Action Test (MAT) codes when the Maintenance Action Test (MAT) has been met, failed or the customer is exempt or a Child Support case update. " width="100%">
 <tr>
 <td width="11%">
@@ -470,7 +548,7 @@ Payer's CRN followed by '<strong>Name unvlb</strong>' (Name unavailable if the N
 <p>1</p></td>
 <td>
 
-<p><strong>MAT met codes</strong> <a title="Read more 6" class="showhead bp03_tbl_Maintenance_Act_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...
+<p><strong>MAT met codes</strong> <a title="Read more 7" class="showhead bp03_tbl_Maintenance_Act_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...
 </a></p>
 <div class="showcont">
 
@@ -478,7 +556,7 @@ Payer's CRN followed by '<strong>Name unvlb</strong>' (Name unavailable if the N
 <p>Under Direct Phone Registration, '<strong>APP</strong>' (Applied for a child support assessment) and '<strong>CAC</strong>' (Applied for Child Support assessment and collection) should only be re-coded if it is verified with Child Support that the customer has <a href="../separated-parents/277-51010010-01.html">applied for child support and the application is pending</a>. If it is confirmed with Child Support that a case has been started but has not yet loaded, see <a href="../separated-parents/277-51130120-01.html">Child Support data has not loaded onto Centrelink system or is incorrectly affecting customer's record</a>.</p>
 
 <p>Use the Maintenance Action workflow to update maintenance action for a child or maintenance group.</p>
-		<ul>		<li><a class="anchor" name="_Hlt112081792"></a><a class="anchor" name="_Hlt112081791"></a>
+		<ul>		<li>
 '<strong>APP</strong>' manually recorded from the earlier of; the date proof is available that the customer has applied for a child support assessment, or the date the customer lodged an application for child support payments, as confirmed by Child Support or the customer verbally providing their online application ID number, and date and time from their online application receipt. An auto review is created 42 days from event date to update the code to '<strong>DMA</strong> (deciding maintenance action for a Stage 2 child) /<strong>NMA</strong>'(no maintenance action) if entitlement data is not received. Where APP, CAC or PRP previously coded, see Step 8 in the Establish if a child support assessment is required table in <a target="_blank" href="../separated-parents/277-51010010-03.html">Applications for child support assessment through Centrelink</a></li>
 		<li>
 '<strong>CAC</strong>' manually recorded from the earlier of; the date proof is available that the customer has applied for a child support assessment, or the date the customer lodged an application for child support payments, as confirmed by Child Support or the customer verbally providing their online application ID number, and date and time from their online application. Auto review set for 42 days to change code to '<strong>DMA/NMA</strong>'</li>
@@ -541,7 +619,7 @@ Seeking Court Order (Stage 1 only) can no longer be input from 10 December 2007.
 <p>2</p></td>
 <td>
 
-<p><strong>MAT exempt codes</strong> <a title="Read more 7" class="showhead bp03_tbl_Maintenance_Act_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>MAT exempt codes</strong> <a title="Read more 8" class="showhead bp03_tbl_Maintenance_Act_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -625,7 +703,7 @@ a family law order or registered parenting plan is in force which gives them con
 <p>3</p></td>
 <td>
 
-<p><strong>MAT exempt codes, social worker assessment</strong> <a title="Read more 8" class="showhead bp03_tbl_Maintenance_Act_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>MAT exempt codes, social worker assessment</strong> <a title="Read more 9" class="showhead bp03_tbl_Maintenance_Act_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -657,7 +735,7 @@ a family law order or registered parenting plan is in force which gives them con
 <p>4</p></td>
 <td>
 
-<p><strong>MAT manual workarounds</strong> <a title="Read more 9" class="showhead bp03_tbl_Maintenance_Act_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>MAT manual workarounds</strong> <a title="Read more 10" class="showhead bp03_tbl_Maintenance_Act_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -737,7 +815,7 @@ Use the '<strong>MWP</strong>' MAT code to override <a href="../ongoing-contact/
 <p>5</p></td>
 <td>
 
-<p><strong>MAT fail codes</strong> <a title="Read more 10" class="showhead bp03_tbl_Maintenance_Act_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>MAT fail codes</strong> <a title="Read more 11" class="showhead bp03_tbl_Maintenance_Act_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -779,7 +857,7 @@ Use the '<strong>MWP</strong>' MAT code to override <a href="../ongoing-contact/
 <p>6</p></td>
 <td>
 
-<p><strong>Child Support case end codes</strong> <a title="Read more 11" class="showhead bp03_tbl_Maintenance_Act_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child Support case end codes</strong> <a title="Read more 12" class="showhead bp03_tbl_Maintenance_Act_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -813,7 +891,7 @@ Use the '<strong>MWP</strong>' MAT code to override <a href="../ongoing-contact/
 <p>7</p></td>
 <td>
 
-<p><strong>Child Support child end codes</strong> <a title="Read more 12" class="showhead bp03_tbl_Maintenance_Act_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child Support child end codes</strong> <a title="Read more 13" class="showhead bp03_tbl_Maintenance_Act_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Maintenance_Act_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

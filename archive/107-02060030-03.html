@@ -195,21 +195,493 @@
 				<!-- start pageDataContent -->
 				<div id="bgtab" class="">
 					
-<div id=""breadcrumbsDiv""></div>
-	<P></P>
-	<P>The guideline you have requested is potentially FOI exempt.</P>
-	<P>You have a right to apply for the document through FOI legislation.</P>
-	<P>You can request a copy from the department's Information Publication Scheme by:</P>
-	<UL>
-		<LI>sending an email to <a href="mailto:freedomofinformation@servicesaustralia.gov.au">freedomofinformation@servicesaustralia.gov.au</a></LI>
-		<LI>or writing to us at:<BR>
-			Freedom of Information<BR>
-			FOI and Information Release Branch<BR>
-			PO Box 7820<BR>
-			Canberra Mail Centre ACT 2610</li>
-	</UL>
+<div id="relatedMessagesDiv"></div>
+
+
+					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
+
+					<body>
+<a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
+
+<a class="anchor" name="bp03_L3TT_Data_transfer_b01"></a>
+<h3>Data transfer between Debt Management and Information System (DMIS) and ESSentials</h3>
+
+
+<p></p>
+<table caption="This table describes the interface that exists between the Debt Management and Information System (DMIS) and ESSentials. " class="" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_Item"></a>
+<p><strong>Item</strong></p></td>
+<td>
+
+<p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_1"></a>
+<p>1</p></td>
+<td>
+
+<p><strong>Overview - DMIS/ESSentials interface</strong> <a title="Read more 1" class="showhead bp03_tbl_Data_transfer_b01_1" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_1" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>There are 2 types of receipts recorded on DMIS, internal receipts and external receipts.</p>
+
+<p><strong>External receipts</strong></p>
+
+<p>ESSentials records repayments and passes the details to DMIS. The 2 types of payments are&#58;</p>
+		<ul>		<li>
+Cheque payments (for example cheques posted by customers, compensation companies and from wage garnishees)</li>
+		<li>
+External Agency payments&#58;</li>
+			<ul>			<li>
+Australia Post</li>
+			<li>
+Direct Debits</li>
+			<li>
+External Collection Agent (ECA)</li>
+			<li>
+BPAY®</li>
+			<li>
+Australian Taxation Office (ATO) garnishee payments</li>
+			</ul>			</ul>
+<p><strong>Internal receipts</strong></p>
+
+<p>Internal receipts are from&#58;</p>
+		<ul>		<li>
+Host systems (that is, withholdings) or are manually added on DMIS using the Adjust Repayment (<strong>OPAR</strong>) screen</li>
+		<li>
+On-line payments via Centrelink online account or Express Plus Centrelink mobile app</li>
+		</ul>
+<p>ESSentials must record all payments for accounting purposes. DMIS has a facility for the recording of payments. Only record payments in DMIS when&#58;</p>
+		<ul>		<li>
+the money has already been receipted and verified within ESSentials, and</li>
+		<li>
+the details have not, and will not, be credited to DMIS via the interface</li>
+		</ul>
+<p>The interface between DMIS and ESSentials can be broken down into 4 categories&#58;</p>
+		<ul>		<li>
+<a href="../debts/107-02060030-03.html#bp03_tbl_Data_transfer_b_2">DMIS transfers debt data to ESSentials</a></li>
+		<li>
+<a href="../debts/107-02060030-03.html#bp03_tbl_Data_transfer_b_3">ESSentials receipting</a></li>
+		<li>
+<a href="../debts/107-02060030-03.html#bp03_tbl_Data_transfer_b_4">ESSentials transfers data to DMIS</a></li>
+		<li>
+<a href="../debts/107-02060030-03.html#bp03_tbl_Data_transfer_b_5">DMIS transfers journal data to ESSentials</a></li>		</ul>
 </div>
-<!-- end primary tab container -->
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_2"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>DMIS transfers debt data to ESSentials</strong> <a title="Read more 2" class="showhead bp03_tbl_Data_transfer_b01_2" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_2" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>DMIS provides ESSentials with a data file. This includes details for all debtors and debts. Occurs for debts with a status of&#58;</p>
+		<ul>		<li>
+'<strong>Determined</strong>' or </li>
+		<li>
+that have been finalised within the last 3 months</li>
+		</ul>
+<p>Debts are <strong>excluded</strong> if&#58;</p>
+		<ul>		<li>
+'<strong>Finalised - No Debt</strong>'</li>
+		<li>
+<strong>'Other Government Department</strong>' (<strong>OGD</strong>)</li>
+		</ul>
+<p>The data file updates daily. Essentials uses this data file to&#58;</p>
+		<ul>		<li>
+identify existing debts</li>
+		<li>
+perform edit validation</li>
+		<li>
+field consistency and</li>
+		<li>
+data integrity checks used for&#58;</li>
+		<li>
+Australia Post Payments</li>
+		<li>
+Direct Debits</li>
+		<li>
+BPAY®</li>
+		<li>
+External Collection Agent (ECA) and</li>
+		<li>
+ESSentials screen validations</li>
+		</ul>
+<p>The following details are passed from DMIS to ESSentials&#58;</p>
+		<ul>		<li>
+Customer Reference Number (CRN)</li>
+		<li>
+customer title, surname, given name and middle initial</li>
+		<li>
+customer address (generally the postal address)</li>
+		<li>
+DMIS Debt ID</li>
+		<li>
+account Benefit Type</li>
+		<li>
+amount owing</li>
+		<li>
+recovery hierarchy</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_3"></a>
+<p>3</p></td>
+<td>
+
+<p><strong>ESSentials receipting (for Finance team only)</strong> <a title="Read more 3" class="showhead bp03_tbl_Data_transfer_b01_3" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_3" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>This process is entirely within the ESSentials system. On receipt of a customer's payment, the details are coded into ESSentials.</p>
+		<ul>		<li>
+Logon to ESSentials Production</li>
+		<li>
+Code transaction type '<strong>YFR1</strong>' in the white box</li>
+		<li>
+select the tick in the top left hand corner</li>
+		</ul>
+<p>Records include&#58;</p>
+		<ul>		<li>
+<strong>Document Type</strong> -<strong> </strong></li>
+			<ul>			<li>
+Australia Post Payment - <strong>DZ</strong></li>
+			<li>
+Direct Debits (Voluntary Deductions) - <strong>DY</strong></li>
+			<li>
+Collection agent - <strong>DX</strong></li>
+			<li>
+Australian Taxation Office (ATO) garnishee - <strong>DV</strong></li>
+			<li>
+BPay - <strong>DW</strong></li>		</ul>
+		<li>
+<strong>Posting Date</strong> - the date the payment is coded into ESSentials</li>
+		<li>
+<strong>Date Received</strong> - the date when the payment was made</li>
+		<li>
+<strong>AR Customer No.</strong> - leave blank. This is the customer's ESSentials Reference Number, entry is optional</li>
+		<li>
+<strong>CRN</strong> - CRN of the person that the payment is for. This is a required entry</li>
+		<li>
+<strong>DEBT ID</strong> - leave blank. This is the debt to which the payment is to be credited, entry is optional</li>
+		<li>
+<strong>Remittance Amount</strong> - the amount of the payment from/for the customer</li>
+		<li>
+<strong>Remittance Mode</strong> - this is the type of payment (Select from drop down menu)</li>
+		<li>
+<strong>MO No</strong> - the Money Order number</li>
+		<li>
+<strong>Remittance Source</strong> - Valid values include&#58;</li>
+		<li>
+<strong>BPY</strong> BillPay</li>
+		<li>
+<strong>CRT</strong> Court Payment</li>
+		<li>
+<strong>CUS</strong> Payment from the customer or their family</li>
+		<li>
+<strong>DIV</strong> Dividend payment</li>
+		<li>
+<strong>GRN</strong> Garnishee Payment (employer)</li>
+		<li>
+<strong>ME2</strong> Milton Graham payment</li>
+		<li>
+<strong>ME3</strong> Recoveries Corporation payment</li>
+		<li>
+<strong>OGD</strong> Agency Payment</li>
+		<li>
+<strong>PYC</strong> Australia Post Payment</li>
+		<li>
+<strong>VOL</strong> Direct Debits</li>
+		<li>
+<strong>TGN</strong> Tax Garnishee payment</li>
+		</ul>
+<p></p>
+
+<p>Check all details are correct. Click on the <strong>Process Payment</strong> button. For repayment of an Advance Payment click on the <strong>Advances/GL/Ben Acct</strong> button, at the top of the screen.</p>
+
+<p>For Advance Payments&#58;</p>
+		<ul>		<li>
+enter the customer's name and address details only. Do <strong>not</strong> enter their CRN</li>
+		<li>
+in the text box, type in what the payment is for. For example, Repayment of JobSeeker Payment JSP/PEN Advance</li>
+		<li>
+select <strong>proceed</strong> at the bottom of this box</li>
+		<li><a class="anchor" name="_Hlt62117504"></a><a class="anchor" name="_Hlt62117503"></a>
+complete the Repayments of Advances Box - Benefit Account. See list of Benefit Account Codes on the <a target="_blank" href="https&#58;//intranet.internal.dept.local/Pages/branch/financial-accounting-branch.html">Financial Accounting Branch homepage</a>. The Cost Centre will be the code of the receipting office</li>
+		<li>
+select <strong>proceed</strong> at the bottom of this box</li>
+		<li>
+If processed, the receipt number will come up at the bottom of the screen. Manual receipts are issued when the ESSentials receipting is unavailable, due to a system outage or system error. Do <strong>not</strong> issue a manual receipt due to problems with password.</li>
+		</ul>
+<p>If a Service Officer cannot reset the password in password manager, submit the <strong>Desktop Login Errors</strong> mySupport webform for them. See <a href="../debts/107-02060030-05.html">Resources</a> page for link to mySupport.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_4"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>ESSentials transfers data to DMIS</strong> <a title="Read more 4" class="showhead bp03_tbl_Data_transfer_b01_4" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_4" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Each night after ESSentials processing, all remittance details pass to DMIS. Transfer of details include&#58;</p>
+		<ul>		<li>
+<strong>Record Type</strong> - </li>
+		<li>
+Debt remittance (<strong>DBR</strong>) or</li>
+		<li>
+Negative remittance (<strong>DBN</strong>). <strong>DBN</strong> is used when ESSentials passes details of dishonoured payments (for example, dishonoured cheque) or a payment incorrectly processed to a debt</li>
+		<li>
+<strong>CRN</strong> - </li>
+			<ul>			<li>
+The CRN of the person that the payment is for displays on the Repayment History (<strong>OPRH</strong>) screen in the <strong>CRN</strong> column</li>
+			<li>
+More than 1 person may be liable for a debt, so multiple CRNs can be recorded on the <strong>OPRH</strong> screen</li>
+			<li>
+When manual adjustments are made in DMIS the balance of the debt is sent back to ESSentials which will adjust its record accordingly</li>		</ul>
+		<li>
+<strong>Debt ID</strong> - </li>
+			<ul>			<li>
+If there is more than 1 debt, the Debt ID dictates which debt the payment goes to. An ESSentials user has the choice of which Debt ID to apply the payment against</li>
+			<li>
+Details of the payment display on the <strong>OPRH</strong> screen and on the customer's record in ESSentials</li>		</ul>
+		<li>
+<strong>Remittance Source</strong> - displays on the <strong>OPRH</strong> screen in the <strong>Source</strong> column (for example Australia Post, BPAY, collection agent)</li>
+		<li>
+<strong>Date Received</strong> - </li>
+			<ul>			<li>
+the ESSentials payment receipt date</li>
+			<li>
+displays on the <strong>OPRH</strong> screen in the Date column.</li>
+			<li>
+ESSentials does not pass to DMIS the posting date that the payment was loaded into ESSentials</li>		</ul>
+		<li>
+<strong>Receipt Number</strong> - </li>
+			<ul>			<li>
+the numbers transferred from ESSentials to DMIS</li>
+			<li>
+they display on the <strong>OPRH</strong> screen in the <strong>Receipt Number/WH Ben Type</strong> column</li>
+			<li>
+the receipt number received by the customer can be found by locating the receipt number in ESSentials, see <a href="../debts/107-02060030-03.html#bp03_tbl_Data_transfer_b01_9">Item 9</a></li>		</ul>
+		<li>
+<strong>Amount</strong> - </li>
+			<ul>			<li>
+this is the amount of money credited to the Debt ID</li>
+			<li>
+is displayed on the <strong>OPRH</strong> screen in the <strong>Amount</strong> column</li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_5"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>DMIS transfers journal data to ESSentials</strong> <a title="Read more 5" class="showhead bp03_tbl_Data_transfer_b01_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>ESSentials maintains details of all program expenditure made by Services Australia. The payment systems provide details of the net amount paid to customers from each benefit/allowance/pension. It is a function of DMIS to provide details of withholdings from these payments to repay an account.</p>
+
+<p>DMIS passes a 'journal' file to ESSentials on a weekly basis. This shows&#58;</p>
+		<ul>		<li>
+withholdings information</li>
+		<li>
+details of payments made by customers to repay&#58;</li>
+			<ul>			<li>
+interest and administrative charges</li>
+			<li>
+over recovered accounts of $10 or less</li>
+			</ul>			</ul>
+<p>The withholdings information passed to ESSentials&#58;</p>
+		<ul>		<li>
+the benefit type from which the amount was withheld</li>
+		<li>
+the debt benefit type to which the withholding was credited</li>
+		<li>
+the amount of the withholding</li>
+		</ul>
+<p>Information passed for Interest and Administrative charges&#58;</p>
+		<ul>		<li>
+debt benefit type</li>
+		<li>
+amount</li>
+		<li>
+total credit amount</li>
+		</ul>
+<p>Information passed to ESSentials for over recovered debts of $10 or less&#58;</p>
+		<ul>		<li>
+debt benefit type</li>
+		<li>
+amount</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_6"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>Locating a CRN using the Compensation Claim ID</strong> <a title="Read more 6" class="showhead bp03_tbl_Data_transfer_b01_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To locate a customer’s CRN when the only information provided is a Compensation Claim ID&#58;</p>
+		<ul>		<li>
+go to the <strong>Next</strong>&#58; field in Customer First</li>
+		<li>
+type in <strong>CMCLMCRN</strong> and press [<strong>Enter</strong>]</li>
+		<li>
+in the <strong>Compensation Claim CRN</strong> screen go to the <strong>Claim ID</strong>&#58; field, type the Claim ID and select <strong>continue</strong> or <strong>enter</strong></li>
+		<li>
+the CRN will display in the <strong>CRN</strong> field</li>
+		</ul>
+<p>If a valid response does not display, repeat procedure using different environment codes. See <a href="../debts/107-02060030-05.html">Resources</a> page to view the list of environment codes.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_7"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Unidentified payments</strong> <a title="Read more 7" class="showhead bp03_tbl_Data_transfer_b01_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Any customer payment processed in ESSentials but cannot be allocated against a customer debt, is sent to the Unidentified Administered Receipts (<strong>UAR</strong>). The details of the payment record in the <strong>'In register'</strong> in ESSentials.</p>
+
+<p>Do <strong>not</strong> use the <strong>OPAR</strong> function in DMIS to add the payment manually to the <strong>OPRH</strong> screen. The payment must be identified, and processed in ESSentials.</p>
+<a class="anchor" name="_Hlt62117028"></a><a class="anchor" name="_Hlt62117027"></a>
+<p>A customer may claim to have made a payment via an external agency (for example, Australia Post). Check the repayment history. The customer needs to provide the information from their receipt, if their payment is not displaying. Direct further investigations to the Collections Administration Team for Debt Management Branch in Toowong, Queensland. See <a target="_blank" href="../debts/107-05150000-01.html">Debt repayments not on the customer's record</a></p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_8"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Displaying customer records in ESSentials</strong> <a title="Read more 8" class="showhead bp03_tbl_Data_transfer_b01_8" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_8" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>ESSentials receipt all customer repayments.</p>
+		<ul>		<li>
+Use transaction code ‘<strong>YDMD</strong>’ to display a customer's repayment history in ESSentials Production.</li>
+		<li>
+Enter the customer's CRN and select the <strong>DMIS Debt Details</strong> button. A list of debts recorded in ESSentials displays.</li>
+		<li>
+You can select both the <strong>Repayment History</strong> and <strong>Debt Details</strong>.</li>
+		<li>
+The <strong>Debt Details</strong> screen displays all information from DMIS. This includes&#58;</li>
+		<li>
+Debt Benefit Type</li>
+		<li>
+Environment</li>
+		<li>
+Balance</li>
+		<li>
+Priority</li>
+		<li>
+The Payments screen displays all information relating to payments made by the customer. Information includes&#58;</li>
+		<li>
+Document Number</li>
+		<li>
+Document Type</li>
+		<li>
+Pay Date</li>
+		<li>
+Manual Receipt</li>
+		<li>
+Payment Amount</li>
+		<li>
+Positive or Negative Payment indicator</li>
+		<li>
+Prior Balance</li>
+		<li>
+Entry Date</li>
+		<li>
+Time</li>
+		<li>
+Account</li>
+		<li>
+Date when sent to DMIS</li>
+		<li>
+The actual payment document displays when clicking anywhere on the payment information line</li>
+		</ul>
+<p><strong>Note&#58;</strong> the <a href="../debts/107-02060030-05.html">Resources</a> page contains a link to the ESSentials task cards.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Data_transfer_b01_9"></a>
+<p>9</p></td>
+<td>
+
+<p><strong>Locating the receipt number in ESSentials</strong> <a title="Read more 9" class="showhead bp03_tbl_Data_transfer_b01_9" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Data_transfer_b01_9" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The receipt number recorded in DMIS (<strong>OPRH</strong> screen) is the payment document created in ESSentials.</p>
+
+<p>To locate the customer's actual receipt number&#58;</p>
+		<ul>		<li>
+drop the first zero and code the remaining numbers into ESSentials Production</li>
+		<li>
+the transaction code required to display receipts in ESSentials is '<strong>FB03</strong>'.</li>
+		</ul>
+<p>The <a href="../debts/107-02060030-05.html">Resources</a> page contains a link to the ESSentials task cards.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+
+</table>
+
+<p></p>
+<a class="anchor" name="bp05_L1RT_Resources"></a>
+</div><div class="rightpanel">
+   
+</div>
+
+				</div>
+				<!-- end primary tab container -->
 				
 				<!-- end pageDataContent -->
 			</div>
