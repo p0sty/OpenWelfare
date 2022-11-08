@@ -349,14 +349,27 @@ Table 1
 |                                   | manually via the Benefit Action   |
 |                                   | (BA) screen:                      |
 |                                   |                                   |
-|                                   | -   Service Reason: field, 'YAL'  |
-|                                   | -   Action: field, 'CAN'          |
-|                                   | -   Reason: field, 'ATC' (Ceased  |
-|                                   |     Apprenticeship)               |
-|                                   | -   Effect Date: field, the date  |
-|                                   |     the customer ceased their     |
-|                                   |     Australian Apprenticeship     |
-|                                   |     plus one day                  |
+|                                   | Service Reason: field, 'YAL'      |
+|                                   |                                   |
+|                                   | Action: field, 'CAN'              |
+|                                   |                                   |
+|                                   | Reason: field, if the customer    |
+|                                   | has:                              |
+|                                   |                                   |
+|                                   | -   notified within 14 days of    |
+|                                   |     ceasing the apprenticeship    |
+|                                   |     but does not want to continue |
+|                                   |     to be registered as a job     |
+|                                   |     seeker, 'CLR' (Client         |
+|                                   |     request - voluntary           |
+|                                   |     surrender)                    |
+|                                   | -   not notified within 14 days   |
+|                                   |     of ceasing the                |
+|                                   |     apprenticeship, 'OTH' (Other) |
+|                                   |                                   |
+|                                   | Effect Date: field, the date the  |
+|                                   | customer ceased their Australian  |
+|                                   | Apprenticeship plus one day       |
 |                                   |                                   |
 |                                   | Insert a new NES screen:          |
 |                                   |                                   |
@@ -454,8 +467,8 @@ Table 2
 |                                   | completed the Australian          |
 |                                   | Apprenticeship + Read more ...    |
 |                                   |                                   |
-|                                   | If the Access Apprenticeshipslink |
-|                                   | has not worked to end the         |
+|                                   | If the Access Apprenticeships     |
+|                                   | link has not worked to end the    |
 |                                   | apprenticeship:                   |
 |                                   |                                   |
 |                                   | -   The Access Apprenticeships    |
