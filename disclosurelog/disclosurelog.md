@@ -46,6 +46,33 @@ after 12 months unless the information has enduring public value.
 |                                   | 22\                               |
 |                                   | **Exemptions:** N/A               |
 +-----------------------------------+-----------------------------------+
+| 20 October 2022                   | -   Internal correspondence       |
+|                                   |     relating to the approval of   |
+|                                   |     forms used as part of the     |
+|                                   |     'Life Event Redesign: Birth   |
+|                                   |     of a Child' Pilot Program     |
+|                                   | -   Services Australia's          |
+|                                   |     submission document to the    |
+|                                   |     Aids Council of New South     |
+|                                   |     Wales (ACON) 2022 Pride in    |
+|                                   |     Diversity Australian          |
+|                                   |     Workplace Equality Index      |
+|                                   |     Scheme, and                   |
+|                                   | -   Correspondence between the    |
+|                                   |     Agency and ACON - March 2021  |
+|                                   |     to March 2022 (LEX 69109).    |
+|                                   |                                   |
+|                                   | 5 documents released in full. 16  |
+|                                   | documents released in part. he    |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act:** Sections |
+|                                   | 22, 47C, 47E(c), 47F(1) and       |
+|                                   | 24A(1)\                           |
+|                                   | **Exemptions:** Sections 47C,     |
+|                                   | 47E(c), and 47F(1)                |
++-----------------------------------+-----------------------------------+
 | 19 October 2022                   | Operational Blueprint documents   |
 |                                   | (LEX 69575):                      |
 |                                   |                                   |
@@ -2305,7 +2332,7 @@ us by:
 </div>
 :::
 
-Page last updated: 28 October 2022
+Page last updated: 9 November 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2313,7 +2340,7 @@ Page last updated: 28 October 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 8 November 2022 from
+This information was printed 9 November 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
