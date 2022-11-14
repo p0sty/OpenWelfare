@@ -24,7 +24,8 @@ Table 1
 
 A to K debt reason types and the codes used to explain why the debt occurred
 
-Table 2: * = code is not active for new debts
+Table 2: * = code is not active for new debts. Note: staff cannot
+manually input debt reason codes showing as ‘Auto Only’.
 
 +-----------------------------------+-----------------------------------+
 | Item                              | Description                       |
@@ -331,8 +332,7 @@ Table 3: * = code is not active for new debts
 |                                   |                                   |
 |                                   | CTD - Centrepay debt              |
 |                                   |                                   |
-|                                   | DUP - Duplicate payment (auto     |
-|                                   | only)                             |
+|                                   | DUP - Duplicate payment           |
 |                                   |                                   |
 |                                   | ETR - False or misleading         |
 |                                   | statement (ETR)                   |
@@ -905,30 +905,34 @@ and debt scenarios under the clean screen policy.
 |                                   | Support Officer.                  |
 +-----------------------------------+-----------------------------------+
 
-Duplicate payment example
+System generated duplicate payment debt example
 
 Scenario
 
 Customer contacted Services Australia to advise they had not received
 their payment for the period 9 to 22 March 2022. The payment was
-reissued, however the original payment was not returned by the financial
-institution. This resulted in the customer receiving 2 payments for
-exactly the same entitlement period. The payment reissued to the
-customer is a duplicate payment.
+reissued and subsequently delivered to the customer’s account on 25
+March 2022, however the original payment was not returned by the
+financial institution. This resulted in the customer receiving 2
+payments for the same entitlement period. The system generates an
+undetermined duplicate payment debt for the payment that was reissued to
+the customer.
 
-While the customer received a second (reissued) payment to replace the
-payment not initially received for the entitlement period 9 to 22 March
-2022, the event that led to the duplicate payment and the start and end
-date of the debt, all occur on the same day of 25 March 2022.
+The customer received a second (reissued) payment to replace the payment
+not initially received for the entitlement period 9 to 22 March 2022.
+The event that led to the duplicate payment and the start and end date
+of the debt, all occur on the same day of 25 March 2022, the date the
+duplicate payment was delivered to the customer.
 
 Coding this scenario on the Modify/Assess Debt (OPMA) screen would show
 in the following fields as:
 
-Date of Event: 25 March 2022 (date of the event that led to the debt)
-
-Start Date: 25 March 2022 (date of the first incorrect payment)
-
-End Date: 25 March 2022 (date of the last incorrect payment)
+-   Date of Event (DOV): 25 March 2022 (date of the event that led to
+    the debt)
+-   Start Date: 25 March 2022 (date of the first incorrect payment – as
+    per ADEX activity details)
+-   End Date: 25 March 2022 (date of the last incorrect payment – as per
+    ADEX activity details)
 
                                    
 

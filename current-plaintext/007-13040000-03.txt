@@ -170,11 +170,18 @@ Table 1
 |                                   |                                   |
 |                                   | This MFU is created when an       |
 |                                   | 'open' early claim exists on the  |
-|                                   | FAO Early Claim Details (FECD)    |
-|                                   | screen accessed via FECS screen   |
-|                                   | that may need to be updated with  |
-|                                   | the child's CRN (and any other    |
-|                                   | relevant information).            |
+|                                   | FAO Early Claims Summary (FECS)   |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | Action:                           |
+|                                   |                                   |
+|                                   | -   Select the MFU and go to the  |
+|                                   |     FECS screen                   |
+|                                   | -   Select the ‘open’ claim line  |
+|                                   |     and enter the child's CRN on  |
+|                                   |     the FAO Early Claim Details   |
+|                                   |     (FECD) screen                 |
+|                                   | -   Finalise the MFU              |
 +-----------------------------------+-----------------------------------+
 | A036F1                            | Multiple open early claims that   |
 |                                   | have the same Date of Birth       |
@@ -188,25 +195,42 @@ Table 1
 |                                   | Summary (FECS) screen was not     |
 |                                   | updated correctly.                |
 |                                   |                                   |
-|                                   | Action: Select the MFU, enter the |
-|                                   | child's CRN into the pre-claim on |
-|                                   | the FECS screen, and finalise the |
-|                                   | MFU.                              |
+|                                   | Action:                           |
 |                                   |                                   |
-|                                   | If there is more than 1           |
-|                                   | FAO/Parental Leave Pay (PPL)      |
-|                                   | early claim that has the same     |
-|                                   | expected DOB/entry into care      |
-|                                   | date, check the FECS/FECD screen  |
-|                                   | and if required, select one of    |
-|                                   | the Child Ref IDs on the FECS     |
-|                                   | screen. If there is both a PPL    |
-|                                   | and a FAO ID, select the PPL ID   |
-|                                   | and correct the Claimed Benefit   |
-|                                   | with 'Y' for both PPL and FTB (if |
-|                                   | eligible). In the same activity,  |
-|                                   | delete the other 'multiple' Child |
-|                                   | Ref ID.                           |
+|                                   | Post birth:                       |
+|                                   |                                   |
+|                                   | -   Select the MFU and go to the  |
+|                                   |     FECS screen                   |
+|                                   | -   Select the ‘open’ claim line  |
+|                                   |     and enter the child's CRN on  |
+|                                   |     the FAO Early Claim Details   |
+|                                   |     (FECD) screen                 |
+|                                   | -   Finalise the MFU              |
+|                                   | -   Check the child has been      |
+|                                   |     assessed for all benefits     |
+|                                   |     claimed. If the child has     |
+|                                   |     not, see Processing proof of  |
+|                                   |     a child’s birth               |
+|                                   |                                   |
+|                                   | Pre-birth:                        |
+|                                   |                                   |
+|                                   | Select the MFU and go to the FECS |
+|                                   | screen                            |
+|                                   |                                   |
+|                                   | If there is an 'open' claim PPL   |
+|                                   | and an 'open' claim FTB line:     |
+|                                   |                                   |
+|                                   | -   select the PPL line and       |
+|                                   |     correct the Claimed Benefit   |
+|                                   |     with 'Y' for both PPL and FTB |
+|                                   |     (if eligible)                 |
+|                                   | -   in the same activity, delete  |
+|                                   |     the other multiple ‘open’ FTB |
+|                                   |     line                          |
+|                                   | -   finalise the MFU              |
+|                                   |                                   |
+|                                   | if there is not an 'open' PPL and |
+|                                   | FTB line, finalise the MFU        |
 +-----------------------------------+-----------------------------------+
 | FAOABY                            | FTB child off ABSTUDY + Read more |
 |                                   | ...                               |
@@ -221,7 +245,7 @@ Table 1
 |                                   | -   their ABSTUDY payment has     |
 |                                   |     cancelled                     |
 |                                   |                                   |
-|                                   | Action required                   |
+|                                   | Action:                           |
 |                                   |                                   |
 |                                   | Contact the FTB customer and      |
 |                                   | confirm if:                       |
@@ -236,11 +260,9 @@ Table 1
 |                                   |     care)                         |
 |                                   |                                   |
 |                                   | If the child has stopped          |
-|                                   | studying, see                     |
-|                                   |                                   |
-|                                   | Study requirements for Family Tax |
-|                                   | Benefit (FTB) children aged 16    |
-|                                   | years and over.                   |
+|                                   | studying, see Study requirements  |
+|                                   | for Family Tax Benefit (FTB)      |
+|                                   | children aged 16 years and over.  |
 |                                   |                                   |
 |                                   | If the child is continuing        |
 |                                   | full-time secondary study, no     |
@@ -466,7 +488,7 @@ Table 1
 
 Alignment of Care MFUs
 
-Table 2: This table describes the Alignment of Care MFUs that can be
+Table 2: this table describes the Alignment of Care MFUs that can be
 created as a result of information transferred electronically between
 Child Support and Centrelink in relation to care assessments.
 
@@ -695,7 +717,7 @@ Child Support and Centrelink in relation to care assessments.
 
 Child Support MFUs
 
-Table 3: This table describes the Child Support MFUs that are generated
+Table 3: this table describes the Child Support MFUs that are generated
 on a customer's Centrelink record in relation to child
 support/maintenance. These MFUs are necessary to ensure that the
 Maintenance Action Test (MAT) and Maintenance Income Test (MIT) are
@@ -832,7 +854,7 @@ Benefit (FTB) Part A.
 
 Data Matching MFUs
 
-Table 4: This table describes the Data Matching MFUs that are generated
+Table 4: this table describes the Data Matching MFUs that are generated
 on a customer's Centrelink record when the customer/child fails
 authentication when data is exchanged from Child Support to Centrelink.
 
