@@ -954,14 +954,16 @@ red, the course details have <strong>not</strong> been confirmed in SAP</li>		</
 			<li>
 <strong>Student Start Date&#58;</strong> field, update to reflect Inst Course Start Date + 1</li>
 			<li>
-<strong>Allowable Time End Date&#58;</strong> field, 1 day before the actual course start date<br>Service Officers may see error '<strong>E949NS - Allowable Time can't be before Inst Course Start Date</strong>'. The error occurs if the <strong>Allowable Time End Date</strong> is before the <strong>Inst Course Start Date</strong>. Complete the coding below if the <strong>E949NS</strong> error occurs, and the customer's payment must be Rejected or Suspended for reason Allowable Time Reached (<strong>ATR</strong>), or Allowable Time End date Reached (<strong>AED</strong>). On the <strong>EDC</strong> screen&#58;</li>
-			<li>
+<strong>Allowable Time End Date&#58;</strong> field, 1 day before the actual course start date<br></li>
+			</ul>			</ul>
+<p><strong>Note&#58;</strong> Service Officers may see error '<strong>E949NS - Allowable Time can't be before Inst Course Start Date</strong>'. The error occurs if the <strong>Allowable Time End Date</strong> is before the <strong>Inst Course Start Date</strong>. Complete the coding below if the <strong>E949NS</strong> error occurs, for the customer's payment to be Rejected or Suspended for reason Allowable Time Reached (<strong>ATR</strong>), or Allowable Time End date Reached (<strong>AED</strong>). On the <strong>EDC</strong> screen&#58;</p>
+			<ul>			<li>
 <strong>Inst Course Start Date&#58;</strong> field, 1 day prior to the actual course start date</li>
 			<li>
 <strong>Student Start Date&#58;</strong> field, update to reflect Inst Course Start Date + 1</li>
 			<li>
-<strong>Allowable Time End Date&#58;</strong> field, as per the Inst Course Start Date as above</li>
-			</ul>			</ul>
+<strong>Allowable Time End Date&#58;</strong> field, use same date as Inst Course Start Date</li>
+			</ul>
 <p>For new claims, the claim will reject&#58;</p>
 		<ul>		<li>
 <strong>ATR</strong> for YA and Austudy</li>
@@ -1172,7 +1174,7 @@ it needs to be updated with the actual course, or</li>
 			<li>
 the customer is no longer going to study</li>
 			</ul>			</ul>
-<p><strong>Note&#58;</strong> if the customer knows the new course they are intending to study, or can advise their first course preference, this must be coded.</p>
+<p><strong>Note&#58;</strong> if the customer knows the new course they are intending to study, or can advise their first course preference, this must be coded. Intention to study can only be coded for a maximum of 20 weeks. If the intention to study is for longer than 20 weeks, the student must nominate a course.</p>
 </div>
 
 
@@ -1280,7 +1282,7 @@ select <strong>Save</strong></li>
 
 <p>Has the customer been granted the Away from Home rate or are they independent students who qualify for Relocation Scholarship?</p>
 		<ul>		<li>
-<strong>Yes</strong>, the student may <a href="../students-and-trainees/010-07030020-01.html">qualify for a Relocation Scholarship</a>. The Regional Location Details (<strong>RLD</strong>) screen needs to be coded for the regional classification. For help, see <a href="../students-and-trainees/010-07030010-03.html">Relocation Scholarship (RS) payment and coding</a>. When the <strong>RLD</strong> screen has been coded, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step05">go to Step 5</a></li>
+<strong>Yes</strong>, the student may <a href="../students-and-trainees/010-07030020-01.html">qualify for a Relocation Scholarship</a>. The Regional Location Details (<strong>RLD</strong>) screen needs to be coded for the regional classification. For help, see <a href="../students-and-trainees/010-07030010-03.html">Relocation Scholarship (RS) payment and coding</a>. When the <strong>RLD</strong> screen has been coded, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step03">go to Step 3</a></li>
 		<li>
 <strong>No</strong>, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step03">go to Step 3</a></li>		</ul>
 </div>
@@ -1302,11 +1304,11 @@ select <strong>Save</strong></li>
 
 <p>If the customer is&#58;</p>
 		<ul>		<li>
-not currently receiving the LTIS rate of YA or Austudy, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step05">go to Step 5</a></li>
+not currently receiving the LTIS rate of YA or Austudy, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step04">go to Step 4</a></li>
 		<li>
-currently receiving the LTIS rate of YA, <a href="../students-and-trainees/010-06040030-01.html">assess their continuing entitlement</a>. Once LTIS has been reassessed, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step05">go to Step 5</a></li>
+currently receiving the LTIS rate of YA, <a href="../students-and-trainees/010-06040030-01.html">assess their continuing entitlement</a>. Once LTIS has been reassessed, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step04">go to Step 4</a></li>
 		<li>
-currently receiving the LTIS rate of Austudy, <a href="../students-and-trainees/010-04040000-01.html">assess their continuing entitlement</a>. Once LTIS has been reassessed, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step05">go to Step 5</a></li>		</ul>
+currently receiving the LTIS rate of Austudy, <a href="../students-and-trainees/010-04040000-01.html">assess their continuing entitlement</a>. Once LTIS has been reassessed, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_other_fa_Step04">go to Step 4</a></li>		</ul>
 </div>
 
 
@@ -1318,7 +1320,43 @@ currently receiving the LTIS rate of Austudy, <a href="../students-and-trainees/
 <p>4</p></td>
 <td>
 
-<p><strong>Customer is applying for the Testing and Assessment Award</strong> <a title="Read more 31" class="showhead bp03_tbl_Coding_other_fa_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Coding_other_fa_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Restore payment after cancellation or suspension</strong> <a title="Read more 31" class="showhead bp03_tbl_Coding_other_fa_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Coding_other_fa_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Service Officers are to determine if the payment can be restored on initial contact. If there have been changes in the customer’s circumstances it is necessary to update any relevant information on the customer’s record before restoring the payment to avoid incorrect arrears being generated.</p>
+		<ul>		<li>
+Go to the Service Reason Summary (SRS) screen or the Allowance/Benefit History (ABH) screen to view suspension/cancellation code</li>
+		<li>
+Check the <a href="../ongoing-contact/102-10010180-03.html">list of rejection/suspension and cancellation codes</a>, find the relevant code and check if restorable</li>
+		</ul>
+<p>Smart Centre staff should only continue with this procedure if the suspension/cancellation reason is restorable by a Smart Centre Service Officer.</p>
+
+<p><strong>Note&#58;</strong> rejections can never be restored. The reclaim process must be used. </p>
+
+<p>Is the reason restorable? </p>
+		<ul>		<li>
+Yes. Restore the payment&#58;</li>
+			<ul>			<li>
+For YA and Austudy see <a href="../ongoing-contact/102-10040180-01.html">Restoration of Youth Allowance (YA) or Austudy for full-time students and Australian Apprentices</a></li>
+			<li>
+For ABSTUDY, see <a href="../ongoing-contact/102-10040020-01.html">Restoration of ABSTUDY payments</a></li>
+			<li>
+For Pensioner Education Supplement (PES) or ABSTUDY PES. See <a href="../ongoing-contact/102-10040200-01.html">Restoration of Pensioner Education Supplement (PES), ABSTUDY PES and Assistance for Isolated Children (AIC) PES payments</a></li>		</ul>
+		<li>
+No. Record decision in a DOC and advise the customer of claiming procedures</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Coding_other_fa_Step05"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Customer is applying for the Testing and Assessment Award</strong> <a title="Read more 32" class="showhead bp03_tbl_Coding_other_fa_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Coding_other_fa_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1346,11 +1384,11 @@ Education Payments Start Date (<strong>EPDC</strong>) – the date of commenceme
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Coding_other_fa_Step05"></a>
-<p>5</p></td>
+<a class="anchor" name="bp03_tbl_Coding_other_fa_Step06"></a>
+<p>6</p></td>
 <td>
 
-<p><strong>Complete the process</strong> <a title="Read more 32" class="showhead bp03_tbl_Coding_other_fa_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Coding_other_fa_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Complete the process</strong> <a title="Read more 33" class="showhead bp03_tbl_Coding_other_fa_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Coding_other_fa_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>

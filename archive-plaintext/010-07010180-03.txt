@@ -1026,21 +1026,21 @@ Table 3: coding the education course details on the system.
 |                                   | -   Allowable Time End Date:      |
 |                                   |     field, 1 day before the       |
 |                                   |     actual course start date      |
-|                                   |     Service Officers may see      |
-|                                   |     error 'E949NS - Allowable     |
-|                                   |     Time can't be before Inst     |
-|                                   |     Course Start Date'. The error |
-|                                   |     occurs if the Allowable Time  |
-|                                   |     End Date is before the Inst   |
-|                                   |     Course Start Date. Complete   |
-|                                   |     the coding below if the       |
-|                                   |     E949NS error occurs, and the  |
-|                                   |     customer's payment must be    |
-|                                   |     Rejected or Suspended for     |
-|                                   |     reason Allowable Time Reached |
-|                                   |     (ATR), or Allowable Time End  |
-|                                   |     date Reached (AED). On the    |
-|                                   |     EDC screen:                   |
+|                                   |                                   |
+|                                   | Note: Service Officers may see    |
+|                                   | error 'E949NS - Allowable Time    |
+|                                   | can't be before Inst Course Start |
+|                                   | Date'. The error occurs if the    |
+|                                   | Allowable Time End Date is before |
+|                                   | the Inst Course Start Date.       |
+|                                   | Complete the coding below if the  |
+|                                   | E949NS error occurs, for the      |
+|                                   | customer's payment to be Rejected |
+|                                   | or Suspended for reason Allowable |
+|                                   | Time Reached (ATR), or Allowable  |
+|                                   | Time End date Reached (AED). On   |
+|                                   | the EDC screen:                   |
+|                                   |                                   |
 |                                   | -   Inst Course Start Date:       |
 |                                   |     field, 1 day prior to the     |
 |                                   |     actual course start date      |
@@ -1048,8 +1048,8 @@ Table 3: coding the education course details on the system.
 |                                   |     update to reflect Inst Course |
 |                                   |     Start Date + 1                |
 |                                   | -   Allowable Time End Date:      |
-|                                   |     field, as per the Inst Course |
-|                                   |     Start Date as above           |
+|                                   |     field, use same date as Inst  |
+|                                   |     Course Start Date             |
 |                                   |                                   |
 |                                   | For new claims, the claim will    |
 |                                   | reject:                           |
@@ -1338,7 +1338,11 @@ Details (EDC) screen for a new course.
 |                                   | new course they are intending to  |
 |                                   | study, or can advise their first  |
 |                                   | course preference, this must be   |
-|                                   | coded.                            |
+|                                   | coded. Intention to study can     |
+|                                   | only be coded for a maximum of 20 |
+|                                   | weeks. If the intention to study  |
+|                                   | is for longer than 20 weeks, the  |
+|                                   | student must nominate a course.   |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Coding intention to study -       |
 |                                   | Austudy and YA only + Read more   |
@@ -1448,7 +1452,7 @@ course of study.
 |                                   |     Relocation Scholarship (RS)   |
 |                                   |     payment and coding. When the  |
 |                                   |     RLD screen has been coded, go |
-|                                   |     to Step 5                     |
+|                                   |     to Step 3                     |
 |                                   | -   No, go to Step 3              |
 +-----------------------------------+-----------------------------------+
 | 3                                 | YA or Austudy Long Term Income    |
@@ -1466,19 +1470,78 @@ course of study.
 |                                   |                                   |
 |                                   | -   not currently receiving the   |
 |                                   |     LTIS rate of YA or Austudy,   |
-|                                   |     go to Step 5                  |
+|                                   |     go to Step 4                  |
 |                                   | -   currently receiving the LTIS  |
 |                                   |     rate of YA, assess their      |
 |                                   |     continuing entitlement. Once  |
 |                                   |     LTIS has been reassessed, go  |
-|                                   |     to Step 5                     |
+|                                   |     to Step 4                     |
 |                                   | -   currently receiving the LTIS  |
 |                                   |     rate of Austudy, assess their |
 |                                   |     continuing entitlement. Once  |
 |                                   |     LTIS has been reassessed, go  |
-|                                   |     to Step 5                     |
+|                                   |     to Step 4                     |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Customer is applying for the      |
+| 4                                 | Restore payment after             |
+|                                   | cancellation or suspension + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Service Officers are to determine |
+|                                   | if the payment can be restored on |
+|                                   | initial contact. If there have    |
+|                                   | been changes in the customer’s    |
+|                                   | circumstances it is necessary to  |
+|                                   | update any relevant information   |
+|                                   | on the customer’s record before   |
+|                                   | restoring the payment to avoid    |
+|                                   | incorrect arrears being           |
+|                                   | generated.                        |
+|                                   |                                   |
+|                                   | -   Go to the Service Reason      |
+|                                   |     Summary (SRS) screen or the   |
+|                                   |     Allowance/Benefit History     |
+|                                   |     (ABH) screen to view          |
+|                                   |     suspension/cancellation code  |
+|                                   | -   Check the list of             |
+|                                   |     rejection/suspension and      |
+|                                   |     cancellation codes, find the  |
+|                                   |     relevant code and check if    |
+|                                   |     restorable                    |
+|                                   |                                   |
+|                                   | Smart Centre staff should only    |
+|                                   | continue with this procedure if   |
+|                                   | the suspension/cancellation       |
+|                                   | reason is restorable by a Smart   |
+|                                   | Centre Service Officer.           |
+|                                   |                                   |
+|                                   | Note: rejections can never be     |
+|                                   | restored. The reclaim process     |
+|                                   | must be used.                     |
+|                                   |                                   |
+|                                   | Is the reason restorable?         |
+|                                   |                                   |
+|                                   | Yes. Restore the payment:         |
+|                                   |                                   |
+|                                   | -   For YA and Austudy see        |
+|                                   |     Restoration of Youth          |
+|                                   |     Allowance (YA) or Austudy for |
+|                                   |     full-time students and        |
+|                                   |     Australian Apprentices        |
+|                                   | -   For ABSTUDY, see Restoration  |
+|                                   |     of ABSTUDY payments           |
+|                                   | -   For Pensioner Education       |
+|                                   |     Supplement (PES) or ABSTUDY   |
+|                                   |     PES. See Restoration of       |
+|                                   |     Pensioner Education           |
+|                                   |     Supplement (PES), ABSTUDY PES |
+|                                   |     and Assistance for Isolated   |
+|                                   |     Children (AIC) PES payments   |
+|                                   |                                   |
+|                                   | No. Record decision in a DOC and  |
+|                                   | advise the customer of claiming   |
+|                                   | procedures                        |
++-----------------------------------+-----------------------------------+
+| 5                                 | Customer is applying for the      |
 |                                   | Testing and Assessment Award +    |
 |                                   | Read more ...                     |
 |                                   |                                   |
@@ -1529,7 +1592,7 @@ course of study.
 |                                   | adjustment. See Calculating the   |
 |                                   | start date for ABSTUDY            |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Complete the process + Read more  |
+| 6                                 | Complete the process + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | -   Complete the Source: and Date |
