@@ -8,11 +8,8 @@
     dhs-analytics-label="unable_to_access_information_in_the_log"}
 :::
 
-[ ![](/sites/default/files/images/foi-logo_0.gif){loading="lazy"
-width="148" height="62"}]{.media-element .file-full .embedded-entity
-delta="1" embed-button="link_files" entity-embed-display="image:image"
-entity-type="file" entity-uuid="db475780-6ce8-5a1f-9072-74ce54e2204a"
-langcode="en"}
+![](/sites/default/files/images/foi-logo_0.gif){loading="lazy"
+width="148" height="62"}
 
 Information published on the Disclosure Log can include documents from:
 
@@ -2332,7 +2329,7 @@ us by:
 </div>
 :::
 
-Page last updated: 9 November 2022
+Page last updated: 17 November 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2340,7 +2337,7 @@ Page last updated: 9 November 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 16 November 2022 from
+This information was printed 17 November 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
