@@ -30,6 +30,9 @@ withdrawing a request or application for the same decision
 Customer has lodged an explanation or formal review of a decision form
 (SS351 or SY054)
 
+ZDMS AROACT or ZDMS AROREF work item has been allocated for action via
+Workload Manager (WOM)
+
 Customer requests an explanation or applies for a formal review of a decision
 
 Table 1
@@ -49,7 +52,7 @@ Table 1
 |                                   |     the customer to discuss an    |
 |                                   |     unfavourable decision, go to  |
 |                                   |     Step 2                        |
-|                                   | -   lodged the Explanation or     |
+|                                   | -    lodged the Explanation or    |
 |                                   |     formal review of a decision   |
 |                                   |     (SS351) form or ABSTUDY and   |
 |                                   |     Assistance for isolated       |
@@ -625,15 +628,10 @@ Table 2
 |                                   | if they want to apply for a       |
 |                                   | formal review of the decision.    |
 |                                   |                                   |
-|                                   | If the customer would like to     |
-|                                   | discuss the decision further,     |
-|                                   | create a CALLDOC to be referred   |
-|                                   | to the decision making team       |
-|                                   |                                   |
 |                                   | Does the customer want to apply   |
 |                                   | for a formal review?              |
 |                                   |                                   |
-|                                   | -   Yes, see Table 1              |
+|                                   | -    Yes, see Table 1             |
 |                                   | -   No, check what the customer   |
 |                                   |     wants and follow the relevant |
 |                                   |     process to resolve their      |
@@ -646,7 +644,7 @@ Table 2
 |                                   |                                   |
 |                                   | -   an explanation of the         |
 |                                   |     decision, go to Step 5        |
-|                                   | -   to apply for a formal review  |
+|                                   | -    to apply for a formal review |
 |                                   |     of the decision, see Step 9   |
 |                                   |     in Table 1                    |
 |                                   | -   something else, follow the    |
@@ -918,12 +916,16 @@ Table 4
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Create an ACTDOC with the     |
-|                                   |     keywords URGENT and !ARO      |
-|                                   | -   Note the customer has         |
-|                                   |     withdrawn their application   |
-|                                   |     for a formal review of the    |
-|                                   |     decision                      |
+|                                   | -   Request action using a Fast   |
+|                                   |     Note - select Auto Text, use  |
+|                                   |     Appeals > AROWD > Withdraw    |
+|                                   |     Formal Review                 |
+|                                   | -   Record the relevant           |
+|                                   |     information in the body of    |
+|                                   |     the Fast Note, including that |
+|                                   |     the customer has asked to     |
+|                                   |     withdraw their formal review  |
+|                                   |     request                       |
 |                                   | -   Use Work Optimiser to         |
 |                                   |     reassign the work item to the |
 |                                   |     logon found in the text of    |
@@ -942,8 +944,8 @@ Table 4
 |                                   |     - customer’s CRN              |
 |                                   |     - APL number                  |
 |                                   |     - the customer has asked to   |
-|                                   |     withdraw their ARO review     |
-|                                   |     request                       |
+|                                   |     withdraw their ARO formal     |
+|                                   |     review request                |
 |                                   |     - it has been explained that  |
 |                                   |     the application for a formal  |
 |                                   |     review will be taken to have  |
@@ -1106,6 +1108,14 @@ Table 6
 |                                   |     customer’s record. See        |
 |                                   |     Scanning Centrelink documents |
 |                                   |     using an MFD                  |
+|                                   | -   if the request/application    |
+|                                   |     relates to a debt decision    |
+|                                   |     and recovery is not paused,   |
+|                                   |     contact the customer to       |
+|                                   |     discuss the pause. See        |
+|                                   |     Recovery of debts pending a   |
+|                                   |     reassessment, explanation or  |
+|                                   |     review of decision            |
 |                                   |                                   |
 |                                   | To process the SS351/SY054 form,  |
 |                                   | including if a form work item has |
@@ -1283,10 +1293,10 @@ Table 6
 |                                   | for a formal review. If the       |
 |                                   | request for explanation has:      |
 |                                   |                                   |
-|                                   | -   been completed, see Step 7 in |
+|                                   | -    not been completed, see Step |
+|                                   |     7 in Table 1                  |
+|                                   | -   been completed, see Step 9 in |
 |                                   |     Table 1                       |
-|                                   | -   not been completed, see Step  |
-|                                   |     9 in Table 1                  |
 |                                   |                                   |
 |                                   | If the customer is applying for a |
 |                                   | formal review of a decision, and  |
@@ -1311,6 +1321,93 @@ Table 6
 |                                   |     completed. Close the form     |
 |                                   |     work item. Procedure ends     |
 |                                   |     here                          |
++-----------------------------------+-----------------------------------+
+
+ZDMS AROACT or ZDMS AROREF work item has been allocated for action via Workload Manager (WOM)
+
+Table 7
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | ZDMS_AROACT or ZDMS_AROREF work   |
+|                                   | item has been allocated for       |
+|                                   | action via Workload Manager       |
+|                                   | (WLM) + Read more ...             |
+|                                   |                                   |
+|                                   | For:                              |
+|                                   |                                   |
+|                                   | -   ZDMS_AROACT, go to Step 2     |
+|                                   | -   ZDMS_AROREF, go to Step 3     |
++-----------------------------------+-----------------------------------+
+| 2                                 | ZDMS_AROACT work item has been    |
+|                                   | allocated + Read more ...         |
+|                                   |                                   |
+|                                   | This work item is created when a  |
+|                                   | document relating to an           |
+|                                   | unfinalised formal review is      |
+|                                   | scanned to the customer’s record. |
+|                                   |                                   |
+|                                   | When allocating the ZDMS_AROACT   |
+|                                   | work item, find the scanned       |
+|                                   | document. Check if the            |
+|                                   | information relates to an         |
+|                                   | unfinalised application for a     |
+|                                   | formal review. See Viewing        |
+|                                   | Centrelink customer’s digital     |
+|                                   | images.                           |
+|                                   |                                   |
+|                                   | If the information:               |
+|                                   |                                   |
+|                                   | -   relates to an unfinalised     |
+|                                   |     application for a formal      |
+|                                   |     review, finalise the          |
+|                                   |     ZDMS_AROACT work item. The    |
+|                                   |     ARO will consider this        |
+|                                   |     information when undertaking  |
+|                                   |     the review                    |
+|                                   | -   does not relate to an         |
+|                                   |     unfinalised application for a |
+|                                   |     formal review, re-categorise  |
+|                                   |     the ZDMS_AROACT work item.    |
+|                                   |     See Work Optimiser for staff  |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 3                                 | ZDMS_AROREF work item has been    |
+|                                   | allocated + Read more ...         |
+|                                   |                                   |
+|                                   | This work item is created when a  |
+|                                   | letter or statement requesting an |
+|                                   | explanation or applying for a     |
+|                                   | formal review of a decision       |
+|                                   | (other than an SS351 or SY054     |
+|                                   | form) is scanned to a customer’s  |
+|                                   | record.                           |
+|                                   |                                   |
+|                                   | When allocating a ZDMS_AROREF     |
+|                                   | work item, find the scanned       |
+|                                   | document. Check if the document   |
+|                                   | is a request for an explanation   |
+|                                   | or an application for a formal    |
+|                                   | review of a decision. See Viewing |
+|                                   | Centrelink customer’s digital     |
+|                                   | images.                           |
+|                                   |                                   |
+|                                   | If the document is:               |
+|                                   |                                   |
+|                                   | -    a request for an explanation |
+|                                   |     or an application for a       |
+|                                   |     formal review of a decision,  |
+|                                   |     go to Table 6                 |
+|                                   | -   not a request for an          |
+|                                   |     explanation or an application |
+|                                   |     for a formal review of a      |
+|                                   |     decision, re-categorise the   |
+|                                   |     work item. See Work Optimiser |
+|                                   |     for staff                     |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
 Customer requested an explanation, quality check or review before 15 May 2021
@@ -1346,11 +1443,11 @@ Table 1
 |                                   | -   wants to provide more         |
 |                                   |     information or an error is    |
 |                                   |     identified, go to Step 3      |
-|                                   | -   wants to withdraw their       |
+|                                   | -    wants to withdraw their      |
 |                                   |     request for a quality check   |
 |                                   |     or ARO review, see Step 1 in  |
 |                                   |     Table 2                       |
-|                                   | -   asks about an explanation or  |
+|                                   | -    asks about an explanation or |
 |                                   |     formal review after           |
 |                                   |     withdrawing a request for the |
 |                                   |     same decision, see Step 5 in  |
@@ -1396,8 +1493,8 @@ Table 1
 |                                   |     enquiry referral, see         |
 |                                   |     Requests or applications on   |
 |                                   |     or after 15 May 2021 tab      |
-|                                   | -   any other decision, see Table |
-|                                   |     2                             |
+|                                   | -    any other decision, see      |
+|                                   |     Table 2                       |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
@@ -1414,11 +1511,12 @@ Table 1
 |                                   |     the new information           |
 |                                   | -   If unable to correct or       |
 |                                   |     reassess at the point of      |
-|                                   |     contact, use the relevant     |
-|                                   |     Fast Note workflow or create  |
-|                                   |     an ACTDOC work item for an    |
+|                                   |     contact, use Operational      |
+|                                   |     Blueprint to find the         |
+|                                   |     relevant Fast Note or create  |
+|                                   |     a work item for an            |
 |                                   |     appropriately skilled         |
-|                                   |     officer. Ensure all           |
+|                                   |     officer. Make sure all        |
 |                                   |     documentation has been added  |
 |                                   |     to the customer record        |
 |                                   | -   Record all details on a DOC   |
@@ -1503,7 +1601,7 @@ Table 1
 |                                   |     Evidence (GIS)                |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Action ‘request for explanation   |
-|                                   | only’ ACTDOC + Read more ...      |
+|                                   | only’ DOC + Read more ...         |
 |                                   |                                   |
 |                                   | Make genuine attempts to contact  |
 |                                   | the customer.                     |
@@ -1683,7 +1781,7 @@ Table 1
 |                                   | Has the SME quality check been    |
 |                                   | completed?                        |
 |                                   |                                   |
-|                                   | -   Yes, record the customer's    |
+|                                   | -    Yes, record the customer's   |
 |                                   |     application for a formal      |
 |                                   |     review of the decision. See   |
 |                                   |     Step 9 in Table 1 on Request  |
@@ -1693,67 +1791,11 @@ Table 1
 |                                   |     will have the option to apply |
 |                                   |     for a formal review when the  |
 |                                   |     quality check is completed.   |
-|                                   |     Go to Step 8                  |
-+-----------------------------------+-----------------------------------+
-| 8                                 | Create an ACTDOC for a SME to     |
-|                                   | refer the decision for formal     |
-|                                   | review + Read more ...            |
-|                                   |                                   |
-|                                   | Create an ACTDOC using the        |
-|                                   | Callback/ACTDOC guided procedure: |
-|                                   |                                   |
-|                                   | -   Service Reason: payment type  |
-|                                   |     of the decision the customer  |
-|                                   |     has asked be reviewed         |
-|                                   | -   Office: Office/Region of the  |
-|                                   |     SME who completed the quality |
-|                                   |     check                         |
-|                                   | -   Category: Generic             |
-|                                   | -   Item Name: ODM – refer papers |
-|                                   |     to ARO                        |
-|                                   |                                   |
-|                                   | Document content:                 |
-|                                   |                                   |
-|                                   | -   quality check number          |
-|                                   | -   date the customer contacted   |
-|                                   |     to request a formal review    |
-|                                   | -   the reason(s) why the         |
-|                                   |     customer has requested a      |
-|                                   |     formal review of the          |
-|                                   |     decision, and                 |
-|                                   | -   if they require any           |
-|                                   |     explanation by the SME        |
-|                                   |                                   |
-|                                   | Do not run the Internal           |
-|                                   | Review/Explanation script to      |
-|                                   | record a new review. The existing |
-|                                   | review will be actioned by the    |
-|                                   | SME to refer for ARO review.      |
-|                                   |                                   |
-|                                   | Re-enter the DOC and add the      |
-|                                   | following keywords:               |
-|                                   |                                   |
-|                                   | -   !ODMAPL                       |
-|                                   | -   ACTXXX (XXX is the payment    |
-|                                   |     type, example: ACTRET,        |
-|                                   |     ACTDIS, ACTFAO etc.)          |
-|                                   | -   RODXXX (XXX is the Region of  |
-|                                   |     Decision of the SME, example: |
-|                                   |     RODFCC, RODDIS)               |
-|                                   |                                   |
-|                                   | Tell the customer the matter will |
-|                                   | be forwarded to a SME who will    |
-|                                   | contact them if they require      |
-|                                   | further explanation, otherwise it |
-|                                   | will be forwarded to an ARO for   |
-|                                   | review.                           |
-|                                   |                                   |
-|                                   | Check contact details with the    |
-|                                   | customer and note in a DOC if     |
-|                                   | there are times they are          |
-|                                   | unavailable.                      |
-|                                   |                                   |
-|                                   | Procedure ends here.              |
+|                                   |     They can apply for a formal   |
+|                                   |     review after a skilled        |
+|                                   |     officer contacts them about   |
+|                                   |     the decision or they receive  |
+|                                   |     a letter. Procedure ends here |
 +-----------------------------------+-----------------------------------+
 
 Customer contacts about the progress of a quality check or ARO review
@@ -1982,19 +2024,22 @@ Table 3
 |                                   | withdraw their quality check      |
 |                                   | request:                          |
 |                                   |                                   |
-|                                   | Create an ACTDOC using the        |
-|                                   | Callback/ACTDOC guided procedure. |
-|                                   | Include the quality check number  |
-|                                   |                                   |
-|                                   | add the following keywords:       |
-|                                   |                                   |
-|                                   | -   !ODMAPL                       |
-|                                   | -   ACTXXX (XXX is the payment    |
-|                                   |     type, e.g. ACTRET, ACTDIS,    |
-|                                   |     ACTFAO etc.)                  |
-|                                   | -   RODXXX (XXX is the Region of  |
-|                                   |     Decision of the SME, e.g.     |
-|                                   |     RODFCC, RODDIS)               |
+|                                   | -   Navigate to the ACL screen in |
+|                                   |     the APL system                |
+|                                   | -   ‘S’elect the relevant APL     |
+|                                   |     number                        |
+|                                   | -   key today’s date in the Date  |
+|                                   |     Finalised field               |
+|                                   | -   key WDN in the Outcome field  |
+|                                   | -   key Y or N in the New Info    |
+|                                   |     Received field (if not        |
+|                                   |     already populated)            |
+|                                   | -   Annotate the APL PENDING DOC  |
+|                                   |     to advise that the customer   |
+|                                   |     has asked to withdraw their   |
+|                                   |     request for a quality check   |
+|                                   |     on <date> and complete the    |
+|                                   |     DOC                           |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
@@ -2031,10 +2076,15 @@ Table 3
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Create an ACTDOC with the     |
-|                                   |     keywords URGENT and !ARO      |
-|                                   | -   Note the customer has         |
-|                                   |     withdrawn their review        |
+|                                   | -   Request withdrawal using a    |
+|                                   |     Fast Note - select Auto Text, |
+|                                   |     use Appeals > AROWD >         |
+|                                   |     Withdraw Formal Review        |
+|                                   | -   Update the relevant           |
+|                                   |     information in the body of    |
+|                                   |     the Fast Note, including that |
+|                                   |     the customer has asked to     |
+|                                   |     withdraw their ARO review     |
 |                                   |     request                       |
 |                                   | -   Use Work Optimiser to         |
 |                                   |     reassign the work item to the |

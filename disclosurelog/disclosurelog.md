@@ -39,9 +39,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 20 October 2022                   | -   Internal correspondence       |
 |                                   |     relating to the approval of   |
@@ -60,14 +60,14 @@ after 12 months unless the information has enduring public value.
 |                                   |     to March 2022 (LEX 69109).    |
 |                                   |                                   |
 |                                   | 5 documents released in full. 16  |
-|                                   | documents released in part. he    |
+|                                   | documents released in part. The   |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 47C, 47E(c), 47F(1) and       |
 |                                   | 24A(1)\                           |
-|                                   | **Exemptions:** Sections 47C,     |
+|                                   | **Exemptions**: Sections 47C,     |
 |                                   | 47E(c), and 47F(1)                |
 +-----------------------------------+-----------------------------------+
 | 19 October 2022                   | Operational Blueprint documents   |
@@ -84,9 +84,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 37(2)(b) and 47E(d)\              |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 13 October 2022                   | COVID-19 Vaccine Claims Scheme    |
@@ -97,9 +97,37 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
++-----------------------------------+-----------------------------------+
+| 13 October 2022                   | Documents and incident logs       |
+|                                   | regarding incident 'KM5119' and   |
+|                                   | any associated incidents (LEX     |
+|                                   | 68812).                           |
+|                                   |                                   |
+|                                   | 3 documents released in full and  |
+|                                   | 22 documents released in part.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 38, 47C, 47E(d), and 47F(1)\      |
+|                                   | **Exemptions**: Sections 38, 47C, |
+|                                   | 47E(d), and 47F(1)                |
++-----------------------------------+-----------------------------------+
+| 12 October 2022                   | Staff communications regarding    |
+|                                   | incident 'KM5119' where the       |
+|                                   | delivery of some letters was      |
+|                                   | delayed in MyGov (LEX 68815).     |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 16 September 2022                 | Operational Blueprint documents   |
 |                                   | (LEX 67704):                      |
@@ -113,9 +141,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 12 September 2022                 | Document pertaining to the        |
 |                                   | COVID-19 Vaccine Claims Scheme -  |
@@ -125,9 +153,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47F\                              |
-|                                   | **Exemptions:** Section 47F       |
+|                                   | **Exemptions**: Section 47F       |
 +-----------------------------------+-----------------------------------+
 | 9 September 2022                  | Operational Blueprint documents   |
 |                                   | (LEX 69093):                      |
@@ -142,9 +170,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 37(2)(b) and 47E(d)\              |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 9 September 2022                  | Operational Blueprint document    |
@@ -159,9 +187,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 37(2)(b) and 47E(d)\              |
-|                                   | **Exemptions:** Section 37(2)(b)  |
+|                                   | **Exemptions**: Section 37(2)(b)  |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 5 September 2022                  | Documents pertaining to the       |
@@ -173,9 +201,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22 and 47F(1)\                    |
-|                                   | **Exemptions:** Section 47F(1)    |
+|                                   | **Exemptions**: Section 47F(1)    |
 +-----------------------------------+-----------------------------------+
 | 15 August 2022                    | Operational Blueprint document    |
 |                                   | (LEX 68168):                      |
@@ -199,9 +227,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47F and 47E(d)\                   |
-|                                   | **Exemptions:** Sections 47F and  |
+|                                   | **Exemptions**: Sections 47F and  |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 5 August 2022                     | Incoming ministerial briefing     |
@@ -215,9 +243,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47C and 47E(d)\                   |
-|                                   | **Exemptions:** Sections 47C and  |
+|                                   | **Exemptions**: Sections 47C and  |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 12 July 2022                      | Operational Blueprint document    |
@@ -231,8 +259,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 1 June 2022                       | Operational Blueprint document    |
 |                                   | (LEX 67641):                      |
@@ -245,9 +273,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 47E(c) and 47E(d)\            |
-|                                   | **Exemptions:** Sections 47E(c)   |
+|                                   | **Exemptions**: Sections 47E(c)   |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 23 May 2022                       | Operational Blueprint document    |
@@ -261,9 +289,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 17 May 2022                       | Australian Immunisation Register  |
 |                                   | (AIR) medical exemption forms     |
@@ -288,8 +316,8 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 13 May 2022                       | Operational Blueprint documents   |
 |                                   | (LEX 67005):                      |
@@ -303,8 +331,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 12 May 2022                       | Operational Blueprint documents   |
 |                                   | (LEX 66300):                      |
@@ -322,9 +350,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22 and 47E(d)\                    |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 9 May 2022                        | Operational Blueprint documents   |
 |                                   | (LEX 61113):                      |
@@ -382,8 +410,8 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 22\      |
-|                                   | **Exemptions:** 22                |
+|                                   | **Sections of the Act**: 22\      |
+|                                   | **Exemptions**: 22                |
 +-----------------------------------+-----------------------------------+
 | 5 May 2022                        | Documents pertaining to the       |
 |                                   | Covid-19 Vaccine Claims Scheme    |
@@ -393,8 +421,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 47F\     |
-|                                   | **Exemptions:** 47F               |
+|                                   | **Sections of the Act**: 47F\     |
+|                                   | **Exemptions**: 47F               |
 +-----------------------------------+-----------------------------------+
 | 5 May 2022                        | Operational Blueprint document    |
 |                                   | (LEX 67034):                      |
@@ -406,8 +434,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 47E(d)\  |
-|                                   | **Exemptions:** 47E(d)            |
+|                                   | **Sections of the Act**: 47E(d)\  |
+|                                   | **Exemptions**: 47E(d)            |
 +-----------------------------------+-----------------------------------+
 | 20 April 2022                     | Decision notices to applicants    |
 |                                   | for Australian Victim of          |
@@ -418,8 +446,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 47F(1)\  |
-|                                   | **Exemptions:** 47F(1)            |
+|                                   | **Sections of the Act**: 47F(1)\  |
+|                                   | **Exemptions**: 47F(1)            |
 +-----------------------------------+-----------------------------------+
 | 15 March 2022                     | Operational Blueprint document    |
 |                                   | (LEX 66593):                      |
@@ -431,9 +459,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 37(2)(b)\                         |
-|                                   | **Exemptions:** Section 37(2)(b)  |
+|                                   | **Exemptions**: Section 37(2)(b)  |
 +-----------------------------------+-----------------------------------+
 | 4 March 2022                      | Operational Blueprint document    |
 |                                   | (LEX 66373):                      |
@@ -446,8 +474,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 47E(d)\  |
-|                                   | **Exemptions:** 47E(d)            |
+|                                   | **Sections of the Act**: 47E(d)\  |
+|                                   | **Exemptions**: 47E(d)            |
 +-----------------------------------+-----------------------------------+
 | 1 March 2022                      | Australian Workplace Equality     |
 |                                   | Index scorecard (LEX 65866).      |
@@ -456,8 +484,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 20 January 2022                   | Document concerning Centrelink    |
 |                                   | appeals (LEX 66071).              |
@@ -466,9 +494,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 17 January 2022                   | Operational Blueprint documents   |
 |                                   | (LEX 65445):                      |
@@ -487,9 +515,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 22 December 2021                  | Operational Blueprint documents   |
 |                                   | (LEX 65547):                      |
@@ -525,9 +553,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 37(2)(b) and 47E(d)\          |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 29 November 2021                  | Operational Blueprint documents   |
 |                                   | (LEX 65136):                      |
@@ -543,9 +571,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 26 November 2021                  | Operational Blueprint document    |
 |                                   | (LEX 65102):                      |
@@ -557,9 +585,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 24 November 2021                  | Operational Blueprint documents   |
 |                                   | (LEX 64554):                      |
@@ -580,9 +608,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 22 November 2021                  | Documents relating to (LEX        |
 |                                   | 63498):                           |
@@ -600,9 +628,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 10 November 2021                  | Operational Blueprint documents   |
 |                                   | (LEX 63282):                      |
@@ -639,9 +667,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 37(2)(b) and and 47E(d)\      |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 13 October 2021                   | Minister's Office: Office of the  |
@@ -664,9 +692,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47C and 47E(d)\                   |
-|                                   | **Exemptions:** Sections 47C and  |
+|                                   | **Exemptions**: Sections 47C and  |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 11 October 2021                   | Operational Blueprint documents   |
@@ -682,9 +710,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 27 September 2021                 | Guidance on valuations, including |
 |                                   | valuing house and curtilage (LEX  |
@@ -694,8 +722,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 13 September 2021                 | Operational Blueprint document    |
 |                                   | (LEX 63436):                      |
@@ -708,9 +736,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 37(2)(b) and 47E(d)\              |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 6 September 2021                  | Operational Blueprint document    |
@@ -723,9 +751,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22 and 47E(d)\                    |
-|                                   | **Exemptions:** Sections 22 and   |
+|                                   | **Exemptions**: Sections 22 and   |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 30 August 2021                    | Documents relating to Centrepay:  |
@@ -739,9 +767,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 9 August 2021                     | Document relating to a 'random    |
 |                                   | sample' of welfare debts (LEX     |
@@ -751,9 +779,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 15 July 2021                      | KPMG report "Returned Repayments  |
 |                                   | Project" (LEX 62249):             |
@@ -762,9 +790,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47E(d), 47C and 47F(1)\           |
-|                                   | **Exemptions:** Sections 47E(d),  |
+|                                   | **Exemptions**: Sections 47E(d),  |
 |                                   | 47C and 47F(1)                    |
 +-----------------------------------+-----------------------------------+
 | 28 June 2021                      | Operational Blueprint documents   |
@@ -778,9 +806,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 27 April 2021                     | Document showing the approval     |
 |                                   | dates for:                        |
@@ -796,8 +824,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 12 February 2021                  | Operational Blueprint documents   |
 |                                   | (LEX 60269):                      |
@@ -809,9 +837,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47E(c) and 47E(d)\                |
-|                                   | **Exemptions:** Sections 47E(c)   |
+|                                   | **Exemptions**: Sections 47E(c)   |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 17 December 2020                  | Operational Blueprint documents   |
@@ -827,9 +855,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 4 September 2020                  | Minister's Office: Office of the  |
 |                                   | Minister for the National         |
@@ -846,8 +874,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 47F\     |
-|                                   | **Exemptions:** 47F               |
+|                                   | **Sections of the Act**: 47F\     |
+|                                   | **Exemptions**: 47F               |
 +-----------------------------------+-----------------------------------+
 | 20 July 2020                      | Contractor Work Health and Safety |
 |                                   | Management forms (LEX 54984):     |
@@ -861,8 +889,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 13 July 2020                      | Random sample of 500 debts        |
 |                                   | conducted by Services Australia   |
@@ -872,9 +900,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | Decision made: 22 June 2020\      | Briefing points, talking points   |
 | Documents released: 2 July 2020   | and communications sent to the    |
@@ -894,9 +922,9 @@ after 12 months unless the information has enduring public value.
 |                                   | are [available upon               |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47, 47C, 47E(d) and 47F(1)\       |
-|                                   | **Exemptions:** Sections 47, 47C, |
+|                                   | **Exemptions**: Sections 47, 47C, |
 |                                   | 47E(d) and 47F(1)                 |
 +-----------------------------------+-----------------------------------+
 | 10 June 2020                      | A Risk Management Plan, Open      |
@@ -908,8 +936,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** 47F(1)\  |
-|                                   | **Exemptions:** 47F(1)            |
+|                                   | **Sections of the Act**: 47F(1)\  |
+|                                   | **Exemptions**: 47F(1)            |
 +-----------------------------------+-----------------------------------+
 | 3 June 2020                       | Operational Blueprint document:   |
 |                                   | Nominees 104-04090000 (LEX        |
@@ -919,8 +947,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 3 June 2020                       | Operational Blueprint documents   |
 |                                   | (LEX 54111):                      |
@@ -941,9 +969,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 2 June 2020                       | Operational Blueprints (LEX       |
 |                                   | 53956):                           |
@@ -954,9 +982,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** Sections 37E(a)   |
+|                                   | **Exemptions**: Sections 37E(a)   |
 |                                   | and 37E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 8 April 2020                      | Documents that concern the actual |
@@ -970,9 +998,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 47C and 47E(d)\               |
-|                                   | **Exemptions:** Sections 47C and  |
+|                                   | **Exemptions**: Sections 47C and  |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 6 April 2020                      | Guidelines for the release of     |
@@ -983,8 +1011,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 7 February 2020                   | Age Pension Statistics for        |
 |                                   | 2018-19 (LEX 50335).              |
@@ -993,9 +1021,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 7 February 2020                   | Documents showing the job         |
 |                                   | description for a CAO within      |
@@ -1005,8 +1033,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 3 February 2020                   | Documents regarding Program       |
 |                                   | Protocols and related Operational |
@@ -1018,9 +1046,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 30 January 2020                   | Operational Blueprint documents   |
 |                                   | as at 29 November 2017 (LEX       |
@@ -1039,9 +1067,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 22 January 2020                   | 'The Scheme for Compensation for  |
 |                                   | Detriment caused by Defective     |
@@ -1053,8 +1081,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 17 January 2020                   | Documents relating to             |
 |                                   | CN3553520-A1 (LEX 48727).         |
@@ -1063,10 +1091,10 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 47(1)(b), 47C, 47D, 47E(d)    |
 |                                   | and 47F(1)\                       |
-|                                   | **Exemptions:** Sections          |
+|                                   | **Exemptions**: Sections          |
 |                                   | 47(1)(b), 47C, 47D, 47E(d) and    |
 |                                   | 47F(1)                            |
 +-----------------------------------+-----------------------------------+
@@ -1099,9 +1127,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 23 December 2019                  | Operational Blueprint documents   |
 |                                   | relating to Unearned Income       |
@@ -1111,9 +1139,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 20 December 2019                  | Agency: Minister for Government   |
 |                                   | Services and National Disability  |
@@ -1127,8 +1155,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A\     |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 10 December 2019                  | Guidance for compliance officers  |
 |                                   | (LEX 49097).                      |
@@ -1137,9 +1165,9 @@ after 12 months unless the information has enduring public value.
 |                                   | is [available upon                |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 3 December 2019                   | Possible data breach              |
 |                                   | notifications made to the Office  |
@@ -1152,9 +1180,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 47E(d) and 47F\               |
-|                                   | **Exemptions:** Sections 47E(d)   |
+|                                   | **Exemptions**: Sections 47E(d)   |
 |                                   | and 47F                           |
 +-----------------------------------+-----------------------------------+
 | 2 December 2019                   | Guidelines for the release of     |
@@ -1166,9 +1194,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 25 November 2019                  | Operational Blueprint documents   |
 |                                   | (LEX 48621):                      |
@@ -1186,9 +1214,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 47E(d)\                           |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 18 November 2019                  | External Review of Decision       |
 |                                   | Analysis (LEX 48332)              |
@@ -1197,9 +1225,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47E(d) and 47C\                   |
-|                                   | **Exemptions:** Sections 47E(d)   |
+|                                   | **Exemptions**: Sections 47E(d)   |
 |                                   | and 47C                           |
 +-----------------------------------+-----------------------------------+
 | 4 November 2019                   | Document relating to Japanese     |
@@ -1208,9 +1236,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
+|                                   | **Sections of the Act**: Section  |
 |                                   | 22\                               |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 28 October 2019                   | Documents relating to foreign     |
 |                                   | exchange rates (LEX 47985).       |
@@ -1219,10 +1247,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 22                                |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 21 October 2019                   | Document regarding the Code of    |
 |                                   | Operation 2002 (LEX 47795).       |
@@ -1231,10 +1258,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47F(1)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47F(1)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47F(1)\                           |
+|                                   | **Exemptions**: Section 47F(1)    |
 +-----------------------------------+-----------------------------------+
 | 16 October 2019                   | Operational Blueprint documents   |
 |                                   | (LEX 47701):                      |
@@ -1255,10 +1281,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22 and 47E(d)                     |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22 and 47E(d)\                    |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 15 October 2019                   | Work order documents (LEX 45499). |
 |                                   |                                   |
@@ -1266,11 +1291,10 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47(1)(b), 47E(c), 47E(d) and      |
-|                                   | 47F(1)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections          |
+|                                   | 47F(1)\                           |
+|                                   | **Exemptions**: Sections          |
 |                                   | 47(1)(b), 47E(c), 47E(d) and      |
 |                                   | 47F(1)                            |
 +-----------------------------------+-----------------------------------+
@@ -1305,10 +1329,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 30 September 2019                 | Online Compliance information and |
 |                                   | statistics July 2016-December     |
@@ -1318,9 +1341,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 27 September 2019                 | Privacy Impact Assessment on the  |
 |                                   | DHS Response to the Independent   |
@@ -1331,10 +1353,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** sections |
-|                                   | 37(2)(b) and 47E(d)               |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Sections of the Act**: sections |
+|                                   | 37(2)(b) and 47E(d)\              |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 24 September 2019                 | Number of Disability Support      |
@@ -1350,9 +1371,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 23 September 2019                 | Operational Blueprint documents   |
 |                                   | (LEX 45796):                      |
@@ -1396,10 +1416,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 23 September 2019                 | Documents regarding Centrelink    |
 |                                   | Express Plus app (LEX 47026)      |
@@ -1408,8 +1427,7 @@ after 12 months unless the information has enduring public value.
 |                                   | These documents are [available    |
 |                                   | upon request](#contactus).        |
 |                                   |                                   |
-|                                   | **Sections of the Act**: N/A      |
-|                                   |                                   |
+|                                   | **Sections of the Act**: N/A\     |
 |                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 10 September 2019                 | Documents sent to the             |
@@ -1428,8 +1446,7 @@ after 12 months unless the information has enduring public value.
 |                                   | request](#contactus).             |
 |                                   |                                   |
 |                                   | **Sections of the Act**: Section  |
-|                                   | 22 and 47E(d)                     |
-|                                   |                                   |
+|                                   | 22 and 47E(d)\                    |
 |                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 10 September 2019                 | Ministerial brief dated 28        |
@@ -1439,8 +1456,7 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act**: N/A      |
-|                                   |                                   |
+|                                   | **Sections of the Act**: N/A\     |
 |                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 5 September 2019                  | Operational Blueprint documents   |
@@ -1461,10 +1477,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 37(2)(b) and 47E(d)               |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 37(2)(b) and 47E(d)\              |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 20 August 2019                    | Question Time Brief relating to   |
@@ -1475,10 +1490,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 19 August 2019                    | Operational Blueprint document:   |
 |                                   | Common and specialised activities |
@@ -1489,9 +1503,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 12 August 2019                    | Operational Blueprint documents   |
 |                                   | (LEX 45956):                      |
@@ -1511,10 +1524,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 12 August 2019                    | Meeting agendas and other notes   |
 |                                   | for meetings held with the        |
@@ -1531,10 +1543,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 34(3), 47F(1) and 47E(d)          |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 34(3),   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 34(3), 47F(1) and 47E(d)\         |
+|                                   | **Exemptions**: Sections 34(3),   |
 |                                   | 47F(1) and 47E(d)                 |
 +-----------------------------------+-----------------------------------+
 | 9 August 2019                     | Operational Blueprint document:   |
@@ -1548,10 +1559,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: ection 47E(d)     |
 +-----------------------------------+-----------------------------------+
 | 30 July 2019                      | Documents relating to Operational |
 |                                   | Blueprint 108-07010010 assessing  |
@@ -1562,9 +1572,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 30 July 2019                      | Documents relating to Leave       |
 |                                   | Payment training package. (LEX    |
@@ -1574,9 +1583,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 29 July 2019                      | Agency: Minister for Government   |
 |                                   | Services                          |
@@ -1589,11 +1597,10 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 34(1)(c), 34(3), 37(2)(b), 47C    |
-|                                   | and 47E(d)                        |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections          |
+|                                   | and 47E(d)\                       |
+|                                   | **Exemptions**: Sections          |
 |                                   | 34(1)(c), 34(3), 37(2)(b), 47C    |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
@@ -1606,10 +1613,9 @@ after 12 months unless the information has enduring public value.
 |                                   | [available upon                   |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 24(a)                             |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 24(a)     |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 24(a)\                            |
+|                                   | **Exemptions**: Section 24(a)     |
 +-----------------------------------+-----------------------------------+
 | 22 July 2019                      | Operational Blueprint document:   |
 |                                   | Calculating financial capacity    |
@@ -1620,9 +1626,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 17 July 2019                      | Documents relating to our staff   |
 |                                   | policies for records management   |
@@ -1633,9 +1638,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 12 July 2019                      | Document relating to the          |
 |                                   | assessment of assets hardship,    |
@@ -1651,10 +1655,9 @@ after 12 months unless the information has enduring public value.
 |                                   | version is also available to the  |
 |                                   | public.                           |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 12 July 2019                      | Disclosure log request, documents |
 |                                   | relating to records management    |
@@ -1664,10 +1667,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 22                                |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 22        |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: Section 22        |
 +-----------------------------------+-----------------------------------+
 | 4 July 2019                       | Customer Committee meetings and   |
 |                                   | internal consultations concerning |
@@ -1678,10 +1680,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 47F and 47E(d)                |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 47F and  |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47F and 47E(d)\               |
+|                                   | **Exemptions**: Sections 47F and  |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 2 July 2019                       | Document relating to FOI          |
@@ -1692,10 +1693,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22 and 47F(1)                     |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47F       |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22 and 47F(1)\                    |
+|                                   | **Exemptions**: Section 47F       |
 +-----------------------------------+-----------------------------------+
 | 17 June 2019                      | Document relating to compensation |
 |                                   | policy. (LEX44466)                |
@@ -1704,10 +1704,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 12 June 2019                      | Document relating to records      |
 |                                   | management policy. (LEX44341)     |
@@ -1716,10 +1715,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 22                                |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 22        |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: Section 22        |
 +-----------------------------------+-----------------------------------+
 | 5 June 2019                       | Document relating to portability  |
 |                                   | and assessment of payments.       |
@@ -1730,10 +1728,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 24A and 47E(d)                    |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 24A and 47E(d)\                   |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 20 May 2019                       | Document relating to aggregation  |
 |                                   | of study load rules.(LEX 43822)   |
@@ -1742,10 +1739,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22 and 47E(d)                     |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 22 and   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22 and 47E(d)\                    |
+|                                   | **Exemptions**: Sections 22 and   |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 6 May 2019                        | Commonwealth Bank of Australia    |
@@ -1759,9 +1755,8 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 30 April 2019                     | Documents relating to the         |
 |                                   | provision of KPMG providing a     |
@@ -1773,10 +1768,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 22                                |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections          |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: Sections          |
 |                                   | 47(1)(b), 47E(d), 47F(1) and      |
 |                                   | 47G(1)(a)                         |
 +-----------------------------------+-----------------------------------+
@@ -1794,9 +1788,8 @@ after 12 months unless the information has enduring public value.
 |                                   | are [available upon               |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:**                   |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**:                   |
 |                                   |                                   |
 |                                   | -   Policy and Standard for Staff |
 |                                   |     Email and Messaging (release  |
@@ -1820,9 +1813,8 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 6 March 2019                      | Amendment of the document         |
 |                                   | described as: the plan to         |
@@ -1836,10 +1828,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22 and 47E(d)                     |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 22 and   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22 and 47E(d)\                    |
+|                                   | **Exemptions**: Sections 22 and   |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
 | 5 March 2019                      | Documents relating to the         |
@@ -1855,10 +1846,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 47F(1) and 47E(d)             |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 47F(1)   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47F(1) and 47E(d)\            |
+|                                   | **Exemptions**: Sections 47F(1)   |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 28 February 2019                  | Financial Information Service -   |
@@ -1869,9 +1859,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 28 February 2019                  | Recruitment Approval Form for     |
 |                                   | Quality Checker (APS 4) Position  |
@@ -1882,10 +1871,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 47E(c) and 47C                |
-|                                   |                                   |
-|                                   | **Exemptions:** 47E(c) and 47C    |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47E(c) and 47C\               |
+|                                   | **Exemptions**: 47E(c) and 47C    |
 +-----------------------------------+-----------------------------------+
 | 11 February 2019                  | Procedures for determining        |
 |                                   | breaches of the APS Code of       |
@@ -1896,9 +1884,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 23 January 2019                   | Documents relating to the         |
 |                                   | provision of KPMG providing a     |
@@ -1910,11 +1897,10 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 47(1)(b), 47E(d), 47F(1) and      |
-|                                   | 47G(1)(a)                         |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections          |
+|                                   | 47G(1)(a)\                        |
+|                                   | **Exemptions**: Sections          |
 |                                   | 47(1)(b), 47E(d), 47F(1) and      |
 |                                   | 47G(1)(a)                         |
 +-----------------------------------+-----------------------------------+
@@ -1928,10 +1914,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 7 December 2018                   | Operational Blueprint document    |
 |                                   | Calculating financial capacity    |
@@ -1942,10 +1927,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 37(2)(b) and 47E(d)               |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 37(2)(b) |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 37(2)(b) and 47E(d)\              |
+|                                   | **Exemptions**: Sections 37(2)(b) |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 7 December 2018                   | Public Interest Certificate       |
@@ -1957,10 +1941,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 22                                |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 26 November 2018                  | Operational blueprint document:   |
 |                                   | Circumstances affecting capacity  |
@@ -1972,10 +1955,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 15 November 2018                  | Documents formerly available on   |
 |                                   | the AusTender website under RFT   |
@@ -1987,9 +1969,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 9 November 2018                   | Documents outlining the change    |
 |                                   | history related to mylT Article   |
@@ -2015,10 +1996,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 47E(c) and 47E(d)             |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 47E(c)   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47E(c) and 47E(d)\            |
+|                                   | **Exemptions**: Sections 47E(c)   |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 4 July 2018                       | Contracts, in force during the    |
@@ -2036,10 +2016,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 27(1)(b), 47E(d) and 47F(1)   |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections          |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 27(1)(b), 47E(d) and 47F(1)\  |
+|                                   | **Exemptions**: Sections          |
 |                                   | 27(1)(b), 47E(d) and 47F(1)       |
 +-----------------------------------+-----------------------------------+
 | 28 June 2018                      | Any documents which show the      |
@@ -2061,10 +2040,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 22                                |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 7 June 2018                       | The Services Australia website    |
 |                                   | 'Reciprocal Health Care Agreement |
@@ -2083,9 +2061,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 16 April 2018                     | Ministerial briefs since 1        |
 |                                   | October 2017 on the Modernising   |
@@ -2097,10 +2074,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 34(3) and 47F(1).             |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 34(3)    |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 34(3) and 47F(1).\            |
+|                                   | **Exemptions**: Sections 34(3)    |
 |                                   | and 47F(1)                        |
 +-----------------------------------+-----------------------------------+
 | 13 March 2018                     | Operational blueprint documents   |
@@ -2164,10 +2140,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are [available upon |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47E(d)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47E(d)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 2 March 2018                      | Services Australia Incoming Brief |
 |                                   | for Minister Keenan (LEX34602)    |
@@ -2176,10 +2151,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The document is [available upon   |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 47C, 47E(d), 47E(c) and 47F(1)    |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 47C,     |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47C, 47E(d), 47E(c) and 47F(1)\   |
+|                                   | **Exemptions**: Sections 47C,     |
 |                                   | 47E(d), 47E(c) and 47F(1)         |
 +-----------------------------------+-----------------------------------+
 | 23 February 2018                  | Data specifying the total number  |
@@ -2197,9 +2171,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 19 January 2018                   | National Indigenous Coalition     |
 |                                   | meeting minutes and agenda items. |
@@ -2210,10 +2183,9 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 47C, 47F and 47E(d)               |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 47C, 47F |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47C, 47F and 47E(d)\              |
+|                                   | **Exemptions**: Sections 47C, 47F |
 |                                   | and 47E(d)                        |
 +-----------------------------------+-----------------------------------+
 | 18 January 2018                   | Statistics relating to the Online |
@@ -2224,10 +2196,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 24A and 17                        |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 24A and 17\                       |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 21 December 2017                  | Operational Blueprint             |
 |                                   | 108-04080040 - Exempt lump sums   |
@@ -2237,10 +2208,9 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Section  |
-|                                   | 47G(1)                            |
-|                                   |                                   |
-|                                   | **Exemptions:** Section 47G(1)    |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47G(1)\                           |
+|                                   | **Exemptions**: Section 47G(1)    |
 +-----------------------------------+-----------------------------------+
 | 28 November 2017                  | Operational Blueprint             |
 |                                   | 107-03040000 - Perpetual          |
@@ -2250,9 +2220,8 @@ after 12 months unless the information has enduring public value.
 |                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 15 November 2017                  | Statistics relating to Farm       |
 |                                   | Household Allowance recipients as |
@@ -2262,9 +2231,8 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** N/A      |
-|                                   |                                   |
-|                                   | **Exemptions:** N/A               |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
 | 8 November 2017                   | Internal correspondence regarding |
 |                                   | Medicare (LEX 30613)              |
@@ -2273,11 +2241,10 @@ after 12 months unless the information has enduring public value.
 |                                   | documents are [available upon     |
 |                                   | request](#contactus).             |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 37(1)(a), 37(2)(b), 47G ,     |
-|                                   | 47C(1) and 47E(d)                 |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 37(1)(a) |
+|                                   | 47C(1) and 47E(d)\                |
+|                                   | **Exemptions**: Sections 37(1)(a) |
 |                                   | , 37(2)(b), 47G, 47C(1) and       |
 |                                   | 47E(d)                            |
 +-----------------------------------+-----------------------------------+
@@ -2289,10 +2256,9 @@ after 12 months unless the information has enduring public value.
 |                                   | The documents are available upon  |
 |                                   | request.                          |
 |                                   |                                   |
-|                                   | **Sections of the Act:** Sections |
-|                                   | 22, 37 and 47C(1)                 |
-|                                   |                                   |
-|                                   | **Exemptions:** Sections 37 and   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 37 and 47C(1)\                |
+|                                   | **Exemptions**: Sections 37 and   |
 |                                   | 47C(1)                            |
 +-----------------------------------+-----------------------------------+
 
@@ -2329,7 +2295,7 @@ us by:
 </div>
 :::
 
-Page last updated: 17 November 2022
+Page last updated: 21 November 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2337,7 +2303,7 @@ Page last updated: 17 November 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 20 November 2022 from
+This information was printed 21 November 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
