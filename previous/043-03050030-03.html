@@ -204,8 +204,6 @@
 <a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
 
 
-<p>This page contains information on the employment status of a customer who advises they are in receipt of commission or contract income. They may be employed, self-employed or unemployed, and it is sometimes not easy to determine if the income received is either commission or contract income.</p>
-
 <h2 id="On this page&#58;">On this page&#58;</h2>
 
 
@@ -542,35 +540,43 @@ contract workers who are self-employed, <a href="../business-and-employers/043-0
 
 <p>For customers who are commission workers and regarded as employees, use the Earnings and Reporting workflow to add new, edit, or <a href="../income-assests-and-rates-of-payment/108-07010010-01.html">update income details</a>.</p>
 
-<p>If the employee is paid an advance of a future commission, a review of their contract should determine if the advance is a repayable loan - no income is assessed if it is a loan.</p>
-
 <p>If the Earnings and Reporting workflow is not available, code manually on the Employment Income Paid Details (<strong>EAPP</strong>) screen.</p>
 
-<p>If employer details are already recorded, record multiple instances of new commission income against the same employer.</p>
+<p>If the employee is paid an advance of a future commission, a review of their contract should determine if the advance is a repayable loan - no income is assessed if it is a loan.</p>
 
-<p>If employer details are not already recorded, add new employer and code the following fields&#58;</p>
+<p>If <strong>SAC</strong> (Sales Commission) employer details are already recorded, multiple instances of new commission income can be recorded against the same employer.</p>
+
+<p>If employer details are not already recorded, add a new employer and code the following fields&#58;</p>
 		<ul>		<li>
-<strong>Type&#58;</strong> key '<strong>SAC</strong>' (sales commission)</li>
+<strong>Type&#58;</strong> key <strong>SAC</strong> (Sales Commission)</li>
 		<li>
-<strong>Description&#58;</strong> key the source of the commission (free text)</li>
+<strong>Description&#58;</strong> the source of the commission (free text)</li>
 		</ul>
 <p>The following fields must also be recorded for each new instance of commission&#58;</p>
 		<ul>		<li>
-<strong>Event Date&#58;</strong> key the date the commission income was paid (more than one event date can be coded)</li>
+<strong>Event Date&#58;</strong> the date the commission income was paid (more than one event date can be coded)</li>
 		<li>
 <strong>Amount $&#58;</strong> key the amount of commission income paid</li>
 		<li>
-<strong>Freq&#58;</strong> if the income paid is for a period covering a fortnight or less, the frequency will be IOP and the customer will be a statement reporter. If the period is more than the duration of their reporting period&#58;</li>
+<strong>Frequency&#58;</strong> if the income paid is for a period covering a fortnight or less, the frequency will be <strong>IOP</strong> and the customer will be a statement reporter. If the period is more than the duration of their reporting period&#58;</li>
 			<ul>			<li>
-use the frequency code of LOP, and</li>
+use the frequency code of <strong>LOP</strong>, and</li>
 			<li>
 code the start date and end dates of the period the commission income is paid for</li>
 			<li>
-if the period is greater than 52 weeks or unknown (this may require Service Officer speaking with the customer to determine the correct period), code with frequency of LOP with start and end dates. For periods of more than 52 weeks, the system will automatically cease assessment of the income after 52 weeks</li>		</ul>
+if the period is greater than 52 weeks or unknown (this may require Service Officer speaking with the customer to determine the correct period), code with frequency of <strong>LOP</strong> with start and end dates. For periods of more than 52 weeks, assessment of the income is automatically ceased after 52 weeks</li>
+			<li>
+if an income assessment period cannot be determined, see <a target="_blank" href="../income-assests-and-rates-of-payment/108-07010010-03.html">Recording and correcting employment income details</a> </li>		</ul>
 		<li>
-<strong>Hrs f/n&#58;</strong> key if hours are known. If unknown, for payments which have a mandatory requirement to code this field, code one hour. For all other payments, leave blank</li>
-		</ul>
-<p>Record a <strong>DOC</strong> on the customer's record.</p>
+<strong>Hours</strong>/<strong>Fortnightly&#58;</strong></li>
+			<ul>			<li>
+if required (See <a target="_blank" href="../income-assests-and-rates-of-payment/108-07010010-03.html">Recording and correcting employment income details</a> for details of when hours must be recorded), can be coded with continuous income, that is, <strong>DAY</strong>, <strong>1WE</strong>, <strong>2WE</strong>, <strong>MTE</strong>  </li>
+			<li>
+if using a one-off frequency (for example, <strong>IOP</strong>/<strong>LOP</strong>) any hours worked in the entitlement period must be coded separately using Hours for one period (<strong>HOP</strong>) frequency </li>
+			<li>
+do not record a nil entry if there are no applicable hours worked </li>
+			</ul>			</ul>
+<p>Record a <strong>DOC</strong> or <strong>Note</strong> on the customer record.</p>
 
 <p>Procedure ends here.</p>
 </div>
@@ -590,25 +596,27 @@ if the period is greater than 52 weeks or unknown (this may require Service Offi
 
 <p>For customers who are contract workers and regarded as employees, use the Earnings and Reporting workflow to add new, edit or <a href="../income-assests-and-rates-of-payment/108-07010010-01.html">update income details</a>.</p>
 
-<p>Check to ensure any employment income coded previously on EAN using an ongoing assessment code, for example, MTH, ANN. etc. have been removed at the end of their assessment period.</p>
-
 <p>If the Earnings and Reporting workflow is not available, add new employer, code the following fields on the Employment Income Paid Details (<strong>EAPP</strong>) screen&#58;</p>
 		<ul>		<li>
-<strong>Type&#58;</strong> key <strong>EAR - </strong>Earnings from employment</li>
+<strong>Type&#58;</strong> key <strong>EAR  (</strong>Earnings from employment) </li>
 		<li>
-<strong>Employer Name/Description&#58;</strong> key the source of the income</li>
+<strong>Employer Name/Description&#58;</strong> the source of the income</li>
 		<li>
-<strong>Event Date&#58;</strong> key the date the income was paid (more than one event date can be coded)</li>
+<strong>Event Date&#58;</strong> the date the income was paid (more than one event date can be coded)</li>
 		<li>
-<strong>Amount $&#58;</strong> key the amount of income assessed</li>
+<strong>Amount $&#58;</strong> the amount of income assessed</li>
 		<li>
-<strong>Freq&#58;</strong> key the income paid is for a period covering a fortnight or less, the frequency will be IOP. If the period is more than the duration of their reporting period&#58; use the frequency code of LOP, and code the start date and end dates of the period for which the commission income is paid</li>
-		<li>
-If the customer is assessed as an employee and eligible for Working Credit, apply the <a href="../income-assests-and-rates-of-payment/108-07020000-01.html">Working Credit rules</a> to the total ordinary income before applying the Income Test</li>
-		<li>
-If the customer is a pensioner, over Age Pension age and eligible for the <a href="../income-assests-and-rates-of-payment/108-07010130-01.html">Work Bonus</a>, the Work Bonus will automatically be applied to their employment income</li>
-		</ul>
-<p>Record a <strong>DOC</strong> on the customer's record.</p>
+<strong>Frequency&#58;</strong> If the income paid is for a period covering a fortnight or less, the frequency will be <strong>IOP</strong> and the customer will be a statement reporter. If the period is more than the duration of their reporting period&#58; </li>
+			<ul>			<li>
+use the frequency code of <strong>LOP</strong>, and </li>
+			<li>
+code the start date and end dates of the period for which the commission income is paid </li>
+			<li>
+if the period is greater than 52 weeks or unknown (this may involve Service Officer speaking with the customer to determine the correct period), code with frequency of <strong>LOP</strong> with start and end dates. For periods of more than 52 weeks, assessment of the income is automatically ceased after 52 weeks</li>
+			<li>
+if an assessment period cannot be determined, see <a target="_blank" href="../income-assests-and-rates-of-payment/108-07010010-03.html">Recording and correcting employment income details</a> </li>
+			</ul>			</ul>
+<p>Record a <strong>DOC</strong> or <strong>Note</strong> on the customer record.</p>
 
 <p>Procedure ends here.</p>
 </div>

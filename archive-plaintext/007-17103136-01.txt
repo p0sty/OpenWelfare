@@ -7,9 +7,6 @@ Processing Child Care Subsidy (CCS) claims 007-17103136
 -   Resources
 -   Training & Support
 
-This procedure is under review. An Operational Message about this
-content exists.
-
 [Expand/Collapse all sections]Expand all
 
 This document outlines how to process CCS claims using Process Direct.
@@ -22,8 +19,10 @@ the customer's record in Process Direct when:
 -   an online claim is submitted by a customer or their correspondence
     nominee
 -   an Assisted Customer Claim (ACC) is submitted, or
--   a paper claim is scanned to the customer's record and the details
-    are manually recorded via the ACC
+-   a paper claim (FA084) is scanned to the customer's record and the
+    details are manually recorded. The new claim activities contains no
+    claim information apart from the Customer Reference Number (CRN),
+    personal details and the receipt date (date of claim)
 
 Note: if documentation is provided separately, scan the documents to the
 customer's record and update the relevant Task in Process Direct to show
@@ -56,8 +55,10 @@ Processing claims
 Appropriately skilled staff are allocated claims that do not meet
 criteria for straight through processing. Their role is to:
 
--   review and update customer and claim relationships
+-   review and update claim relationships
 -   review warnings against customer circumstances
+-   ensure claim data is applied to the customer record accurately for
+    all relevant screens
 -   action any errors
 -   validate evidence as prompted, and
 -   ensure the claim outcome aligns with payment eligibility and
@@ -108,30 +109,35 @@ All CCS claims are processed in Process Direct which:
 -   is used to check and record claim progress
 -   contains the claim information provided by the customer online or
     collected through the Assisted Customer Claim (ACC) workflow
-    (including ACCs completed from information provided in a paper
-    claim)
 -   lists documents the customer has been asked to provide
--   uploads claim data into a CCS claim activity
+-   uploads claim data into a CCS claim activity or CCS Social Online
+    Application (SOA)
 -   includes staff tasks that need to be completed before the claim can
     be finalised
 
-Although Process Direct has been built to assess and finalise the
-majority of claims without the need for staff intervention, there is
-still a requirement to confirm assessment results before finalising
-claims.
+Although Process Direct has functionality to assess and finalise claims
+without the need for staff intervention, staff must confirm assessment
+results before finalising claims allocated for processing.
 
 Reindex CCS claims
 
-There is no reindex function currently available in Process Direct for
-CCS. To reindex a CCS claim:
+CCS claims can be re-indexed where the benefit level is either rejected
+or cancelled (CCS-CAN/CCS/REJ). Where a claim is rejected or cancelled
+at the child level (CCS benefit will be current (CCS-CUR)), a CCS Social
+Online Application (SOA) may be generated to reassess any entitlement if
+the original claim was not assessed correctly.
 
--   use Assisted Customer Claims (ACC) to recreate the claim
--   see Reindexing a CCS claim (Table 1, Step 2) on the Process page
+Claims that have been withdrawn cannot be re-indexed. The customer will
+need to lodge a new claim.
+
+See Cancelling claim activities and re-indexing claims for reasons for
+re-indexing claims.
 
 Start date for CCS
 
 The Date of Receipt (DOR) for CCS claims is the actual date the claim is
-lodged.
+lodged. This displays in Process Direct claims as the Claim submission
+date.
 
 The start date or Date of Effect (DOE) can only be backdated a maximum
 of 28 days, however the start date must be the Monday of a CCS
@@ -141,6 +147,9 @@ date they meet residency requirements.
 
 The start date is determined by the system when the claim is processed.
 This is known as the Deemed Date of Receipt (DDOR).
+
+When processing a CCS claim, the Receipt Date field at the top of the
+screen shows the DDOR.
 
 Shared care percentage system issues - P24845 Workaround
 

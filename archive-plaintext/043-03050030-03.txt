@@ -9,12 +9,6 @@ Income for an independent contractor and commission income 043-03050030
 
 [Expand/Collapse all sections]Expand all
 
-This page contains information on the employment status of a customer
-who advises they are in receipt of commission or contract income. They
-may be employed, self-employed or unemployed, and it is sometimes not
-easy to determine if the income received is either commission or
-contract income.
-
 On this page:
 
 Initial determination of employment status
@@ -355,6 +349,11 @@ Table 2
 |                                   | Reporting workflow to add new,    |
 |                                   | edit, or update income details.   |
 |                                   |                                   |
+|                                   | If the Earnings and Reporting     |
+|                                   | workflow is not available, code   |
+|                                   | manually on the Employment Income |
+|                                   | Paid Details (EAPP) screen.       |
+|                                   |                                   |
 |                                   | If the employee is paid an        |
 |                                   | advance of a future commission, a |
 |                                   | review of their contract should   |
@@ -362,41 +361,38 @@ Table 2
 |                                   | repayable loan - no income is     |
 |                                   | assessed if it is a loan.         |
 |                                   |                                   |
-|                                   | If the Earnings and Reporting     |
-|                                   | workflow is not available, code   |
-|                                   | manually on the Employment Income |
-|                                   | Paid Details (EAPP) screen.       |
-|                                   |                                   |
-|                                   | If employer details are already   |
-|                                   | recorded, record multiple         |
-|                                   | instances of new commission       |
-|                                   | income against the same employer. |
+|                                   | If SAC (Sales Commission)         |
+|                                   | employer details are already      |
+|                                   | recorded, multiple instances of   |
+|                                   | new commission income can be      |
+|                                   | recorded against the same         |
+|                                   | employer.                         |
 |                                   |                                   |
 |                                   | If employer details are not       |
-|                                   | already recorded, add new         |
+|                                   | already recorded, add a new       |
 |                                   | employer and code the following   |
 |                                   | fields:                           |
 |                                   |                                   |
-|                                   | -   Type: key 'SAC' (sales        |
-|                                   |     commission)                   |
-|                                   | -   Description: key the source   |
-|                                   |     of the commission (free text) |
+|                                   | -   Type: key SAC (Sales          |
+|                                   |     Commission)                   |
+|                                   | -   Description: the source of    |
+|                                   |     the commission (free text)    |
 |                                   |                                   |
 |                                   | The following fields must also be |
 |                                   | recorded for each new instance of |
 |                                   | commission:                       |
 |                                   |                                   |
-|                                   | Event Date: key the date the      |
+|                                   | Event Date: the date the          |
 |                                   | commission income was paid (more  |
 |                                   | than one event date can be coded) |
 |                                   |                                   |
 |                                   | Amount $: key the amount of       |
 |                                   | commission income paid            |
 |                                   |                                   |
-|                                   | Freq: if the income paid is for a |
-|                                   | period covering a fortnight or    |
-|                                   | less, the frequency will be IOP   |
-|                                   | and the customer will be a        |
+|                                   | Frequency: if the income paid is  |
+|                                   | for a period covering a fortnight |
+|                                   | or less, the frequency will be    |
+|                                   | IOP and the customer will be a    |
 |                                   | statement reporter. If the period |
 |                                   | is more than the duration of      |
 |                                   | their reporting period:           |
@@ -414,20 +410,36 @@ Table 2
 |                                   |     period), code with frequency  |
 |                                   |     of LOP with start and end     |
 |                                   |     dates. For periods of more    |
-|                                   |     than 52 weeks, the system     |
-|                                   |     will automatically cease      |
-|                                   |     assessment of the income      |
-|                                   |     after 52 weeks                |
+|                                   |     than 52 weeks, assessment of  |
+|                                   |     the income is automatically   |
+|                                   |     ceased after 52 weeks         |
+|                                   | -   if an income assessment       |
+|                                   |     period cannot be determined,  |
+|                                   |     see Recording and correcting  |
+|                                   |     employment income details     |
 |                                   |                                   |
-|                                   | Hrs f/n: key if hours are known.  |
-|                                   | If unknown, for payments which    |
-|                                   | have a mandatory requirement to   |
-|                                   | code this field, code one hour.   |
-|                                   | For all other payments, leave     |
-|                                   | blank                             |
+|                                   | Hours/Fortnightly:                |
 |                                   |                                   |
-|                                   | Record a DOC on the customer's    |
-|                                   | record.                           |
+|                                   | -   if required (See Recording    |
+|                                   |     and correcting employment     |
+|                                   |     income details for details of |
+|                                   |     when hours must be recorded), |
+|                                   |     can be coded with continuous  |
+|                                   |     income, that is, DAY, 1WE,    |
+|                                   |     2WE, MTE                      |
+|                                   | -   if using a one-off frequency  |
+|                                   |     (for example, IOP/LOP) any    |
+|                                   |     hours worked in the           |
+|                                   |     entitlement period must be    |
+|                                   |     coded separately using Hours  |
+|                                   |     for one period (HOP)          |
+|                                   |     frequency                     |
+|                                   | -   do not record a nil entry if  |
+|                                   |     there are no applicable hours |
+|                                   |     worked                        |
+|                                   |                                   |
+|                                   | Record a DOC or Note on the       |
+|                                   | customer record.                  |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
@@ -441,54 +453,56 @@ Table 2
 |                                   | Reporting workflow to add new,    |
 |                                   | edit or update income details.    |
 |                                   |                                   |
-|                                   | Check to ensure any employment    |
-|                                   | income coded previously on EAN    |
-|                                   | using an ongoing assessment code, |
-|                                   | for example, MTH, ANN. etc. have  |
-|                                   | been removed at the end of their  |
-|                                   | assessment period.                |
-|                                   |                                   |
 |                                   | If the Earnings and Reporting     |
 |                                   | workflow is not available, add    |
 |                                   | new employer, code the following  |
 |                                   | fields on the Employment Income   |
 |                                   | Paid Details (EAPP) screen:       |
 |                                   |                                   |
-|                                   | -   Type: key EAR - Earnings from |
-|                                   |     employment                    |
-|                                   | -   Employer Name/Description:    |
-|                                   |     key the source of the income  |
-|                                   | -   Event Date: key the date the  |
-|                                   |     income was paid (more than    |
-|                                   |     one event date can be coded)  |
-|                                   | -   Amount $: key the amount of   |
-|                                   |     income assessed               |
-|                                   | -   Freq: key the income paid is  |
-|                                   |     for a period covering a       |
-|                                   |     fortnight or less, the        |
-|                                   |     frequency will be IOP. If the |
-|                                   |     period is more than the       |
-|                                   |     duration of their reporting   |
-|                                   |     period: use the frequency     |
-|                                   |     code of LOP, and code the     |
-|                                   |     start date and end dates of   |
-|                                   |     the period for which the      |
-|                                   |     commission income is paid     |
-|                                   | -   If the customer is assessed   |
-|                                   |     as an employee and eligible   |
-|                                   |     for Working Credit, apply the |
-|                                   |     Working Credit rules to the   |
-|                                   |     total ordinary income before  |
-|                                   |     applying the Income Test      |
-|                                   | -   If the customer is a          |
-|                                   |     pensioner, over Age Pension   |
-|                                   |     age and eligible for the Work |
-|                                   |     Bonus, the Work Bonus will    |
-|                                   |     automatically be applied to   |
-|                                   |     their employment income       |
+|                                   | Type: key EAR (Earnings from      |
+|                                   | employment)                       |
 |                                   |                                   |
-|                                   | Record a DOC on the customer's    |
-|                                   | record.                           |
+|                                   | Employer Name/Description: the    |
+|                                   | source of the income              |
+|                                   |                                   |
+|                                   | Event Date: the date the income   |
+|                                   | was paid (more than one event     |
+|                                   | date can be coded)                |
+|                                   |                                   |
+|                                   | Amount $: the amount of income    |
+|                                   | assessed                          |
+|                                   |                                   |
+|                                   | Frequency: If the income paid is  |
+|                                   | for a period covering a fortnight |
+|                                   | or less, the frequency will be    |
+|                                   | IOP and the customer will be a    |
+|                                   | statement reporter. If the period |
+|                                   | is more than the duration of      |
+|                                   | their reporting period:           |
+|                                   |                                   |
+|                                   | -   use the frequency code of     |
+|                                   |     LOP, and                      |
+|                                   | -   code the start date and end   |
+|                                   |     dates of the period for which |
+|                                   |     the commission income is paid |
+|                                   | -   if the period is greater than |
+|                                   |     52 weeks or unknown (this may |
+|                                   |     involve Service Officer       |
+|                                   |     speaking with the customer to |
+|                                   |     determine the correct         |
+|                                   |     period), code with frequency  |
+|                                   |     of LOP with start and end     |
+|                                   |     dates. For periods of more    |
+|                                   |     than 52 weeks, assessment of  |
+|                                   |     the income is automatically   |
+|                                   |     ceased after 52 weeks         |
+|                                   | -   if an assessment period       |
+|                                   |     cannot be determined, see     |
+|                                   |     Recording and correcting      |
+|                                   |     employment income details     |
+|                                   |                                   |
+|                                   | Record a DOC or Note on the       |
+|                                   | customer record.                  |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
