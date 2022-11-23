@@ -195,12 +195,7 @@
 				<!-- start pageDataContent -->
 				<div id="bgtab" class="">
 					
-
-<div id="relatedMessagesDiv">
-	<P class="info-box warning">This procedure is under review.  An Operational Message about this content exists.</P>
-</div>
-
-
+<div id="relatedMessagesDiv"></div>
 
 
 					<div class="unitRight"><a href="javascript:expandCollapseSections()" id="toggleText" alt="Expand/Collapse all sections" title="Expand/Collapse all sections"><img src="../../supportingContent/images/icons/toggle_plus.gif"align="top" id="toggleImage"border="0" alt="Expand/Collapse all sections"width="16" height="16">Expand all</a></div><br><br>
@@ -226,7 +221,7 @@ an online claim is submitted by a customer or their correspondence nominee</li>
 		<li>
 an Assisted Customer Claim (ACC) is submitted, or</li>
 		<li>
-a paper claim is scanned to the customer's record and the details are manually recorded via the ACC</li>
+a paper claim (FA084) is scanned to the customer's record and the details are manually recorded. The new claim activities contains no claim information apart from the Customer Reference Number (CRN), personal details and the receipt date (date of claim)</li>
 		</ul>
 <p><strong>Note&#58;</strong> if documentation is provided separately, scan the documents to the customer's record and update the relevant <strong>Task</strong> in Process Direct to show the information has been provided.</p>
 		</div>
@@ -268,9 +263,11 @@ are allocated via Workload Management to a staff member to manage</li>
 
 <p>Appropriately skilled staff are allocated claims that do not meet criteria for straight through processing. Their role is to&#58;</p>
 		<ul>		<li>
-review and update customer and claim relationships</li>
+review and update claim relationships</li>
 		<li>
 review warnings against customer circumstances</li>
+		<li>
+ensure claim data is applied to the customer record accurately for all relevant screens</li>
 		<li>
 action any errors</li>
 		<li>
@@ -278,8 +275,6 @@ validate evidence as prompted, and</li>
 		<li>
 ensure the claim outcome aligns with payment eligibility and entitlement</li>
 		</ul>
-<p></p>
-
 <p>Exception management, where the claim needs staff assessment, may include&#58;</p>
 		<ul>		<li>
 checking all required evidence has been provided, and requesting further information if necessary</li>
@@ -336,15 +331,15 @@ any outstanding CCS debts are repaid or an adequate debt repayment arrangement i
 		<ul>		<li>
 is used to check and record claim progress</li>
 		<li>
-contains the claim information provided by the customer online or collected through the Assisted Customer Claim (ACC) workflow (including ACCs completed from information provided in a paper claim)</li>
+contains the claim information provided by the customer online or collected through the Assisted Customer Claim (ACC) workflow</li>
 		<li>
 lists documents the customer has been asked to provide</li>
 		<li>
-uploads claim data into a CCS claim activity</li>
+uploads claim data into a CCS claim activity or CCS Social Online Application (SOA)</li>
 		<li>
 includes staff tasks that need to be completed before the claim can be finalised</li>
 		</ul>
-<p>Although Process Direct has been built to assess and finalise the majority of claims without the need for staff intervention, there is still a requirement to confirm assessment results before finalising claims.</p>
+<p>Although Process Direct has functionality to assess and finalise claims without the need for staff intervention, staff must confirm assessment results before finalising claims allocated for processing.</p>
 		</div>
 	</div>
 </div>
@@ -359,15 +354,15 @@ includes staff tasks that need to be completed before the claim can be finalised
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>There is no reindex function currently available in Process Direct for CCS. To reindex a CCS claim&#58;</p>
-		<ul>		<li>
-use Assisted Customer Claims (ACC) to recreate the claim</li>
-		<li>
-see Reindexing a CCS claim (Table 1, Step 2) on the <a href="../families/007-17103136-03.html">Process</a> page</li>
+<p>CCS claims can be re-indexed where the benefit level is either rejected or cancelled (CCS-CAN/CCS/REJ). Where a claim is rejected or cancelled at the child level (CCS benefit will be current (CCS-CUR)), a CCS Social Online Application (SOA) may be generated to reassess any entitlement if the original claim was not assessed correctly.</p>
+
+<p>Claims that have been withdrawn cannot be re-indexed. The customer will need to lodge a new claim.</p>
+
+<p>See <a href="../initial-contact-general/106-07030050-01.html">Cancelling claim activities and re-indexing claims</a> for reasons for re-indexing claims.</p>
 		</div>
 	</div>
 </div>
-		</ul>
+
 
 <p></p>
 <div class="twisty">
@@ -378,11 +373,13 @@ see Reindexing a CCS claim (Table 1, Step 2) on the <a href="../families/007-171
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>The Date of Receipt (<strong>DOR</strong>) for CCS claims is the actual date the claim is lodged.</p>
+<p>The Date of Receipt (<strong>DOR</strong>) for CCS claims is the actual date the claim is lodged. This displays in Process Direct claims as the <strong>Claim submission date</strong>.</p>
 
 <p>The start date or Date of Effect (<strong>DOE</strong>) can only be backdated a maximum of 28 days, however the start date must be the Monday of a CCS fortnight. This is unless residency requirements have been met from a later date. In this instance, the customer will be eligible from the date they meet residency requirements.</p>
 
 <p>The start date is determined by the system when the claim is processed. This is known as the Deemed Date of Receipt (DDOR).</p>
+
+<p>When processing a CCS claim, the <strong>Receipt Date</strong> field at the top of the screen shows the DDOR.</p>
 		</div>
 	</div>
 </div>
@@ -406,6 +403,8 @@ see Reindexing a CCS claim (Table 1, Step 2) on the <a href="../families/007-171
 	</div>
 </div>
 
+
+<p></p>
 <div class="twisty">
 	
 <a class="anchor" name="bp01_L2GT_Reclaiming_CCS_"></a>
