@@ -124,7 +124,7 @@ Action for broken arrangements
 |                                   | debit arrangement for when the    |
 |                                   | customer's wage is paid.          |
 |                                   |                                   |
-|                                   | Go to step 8                      |
+|                                   | Go to Step 8.                     |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Contact the customer + Read more  |
 |                                   | ...                               |
@@ -217,7 +217,7 @@ Action for broken arrangements
 |                                   |                                   |
 |                                   | See Updating payment arrangement  |
 |                                   | schedule and code the missed      |
-|                                   | payment, go to Step 13.           |
+|                                   | payment, go to Step 14.           |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
@@ -258,20 +258,54 @@ Action for broken arrangements
 |                                   |                                   |
 |                                   | Is another arrangement needed?    |
 |                                   |                                   |
-|                                   | Yes                               |
+|                                   | Yes,                              |
 |                                   |                                   |
 |                                   | -   If customer contact has been  |
 |                                   |     made, see Arranging cash      |
 |                                   |     repayments to recover debts   |
-|                                   | -   If there’s no customer        |
-|                                   |     contact, see Outbound         |
-|                                   |     customer contact and          |
-|                                   |     gathering information when    |
-|                                   |     recovering debts              |
+|                                   | -   If there is no customer       |
+|                                   |     contact and the debt value is |
+|                                   |     over $1,500 a no arrangement  |
+|                                   |     (NOARR) activity will         |
+|                                   |     generate after 1 day.         |
+|                                   |     Procedure ends here           |
+|                                   | -   If there is no customer       |
+|                                   |     contact and the debt value is |
+|                                   |     under $1,500 go to Step 13    |
 |                                   |                                   |
-|                                   | No, go to Step 13                 |
+|                                   | No, go to Step 14                 |
 +-----------------------------------+-----------------------------------+
-| 13                                | Record all details on a DOC +     |
+| 13                                | Customer contact for debts under  |
+|                                   | $1,500 + Read more ...            |
+|                                   |                                   |
+|                                   | When a broken arrangement is      |
+|                                   | ceased for debts under $1,500 a   |
+|                                   | no arrangement (NOARR) activity   |
+|                                   | will not generate.                |
+|                                   |                                   |
+|                                   | Staff must make a reasonable      |
+|                                   | effort to contact the customer.   |
+|                                   |                                   |
+|                                   | Was customer contact successful?  |
+|                                   |                                   |
+|                                   | Yes, see Arranging cash           |
+|                                   | repayments to recover debts       |
+|                                   |                                   |
+|                                   | No, staff must:                   |
+|                                   |                                   |
+|                                   | -   DOC the attempt using the     |
+|                                   |     Unsuccessful Engagement Fast  |
+|                                   |     Note                          |
+|                                   | -   Send a 'Request client to     |
+|                                   |     contact office by phone'      |
+|                                   |     (Q164) letter                 |
+|                                   | -   DOC the record and include    |
+|                                   |     the address to which the      |
+|                                   |     letter was sent to            |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 14                                | Record all details on a DOC +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | When an arrangement has been      |
@@ -319,8 +353,6 @@ Action for broken arrangements
 |                                   | -   any relevant details of the   |
 |                                   |     discussion if the customer    |
 |                                   |     was contacted                 |
-|                                   |                                   |
-|                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
                                    
