@@ -366,10 +366,10 @@ Income and Assets (<strong>ITS)</strong> - for capacity to pay the debt in full<
 
 
 <p>If the customer has a poor payment history, consider different payment methods. For example, if a payment method breaks more than once, it may not be suitable to use this method again. An option may be a direct debit arrangement for when the customer's wage is paid.</p>
+
+<p><a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step08">Go to Step 8</a>.</p>
 </div>
 
-
-<p><a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step08">Go to step 8</a></p>
 
 <p></p></td>
 </tr>
@@ -477,7 +477,7 @@ of the recovery actions that may take place under the <a href="../debts/107-0501
 		</ul>
 <p>If there is no contact with the customer, coding a missed payment can reset the arrangement status from BKN to CUR allowing the customer to continue the existing arrangement.</p>
 
-<p>See <a href="../debts/107-05140040-01.html">Updating payment arrangement schedule</a> and code the missed payment, <a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step13">go to  Step 13</a>.</p>
+<p>See <a href="../debts/107-05140040-01.html">Updating payment arrangement schedule</a> and code the missed payment, <a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step14">go to  Step 14</a>.</p>
 
 <p>Procedure ends here.</p>
 </div>
@@ -523,13 +523,15 @@ the cash arrangement will show on <strong>OPAL</strong> as <strong>CSH CAN</stro
 		</ul>
 <p><strong>Is another arrangement needed?</strong></p>
 		<ul>		<li>
-Yes</li>
+<strong>Yes</strong>,</li>
 			<ul>			<li>
 If customer contact has been made, see <a href="../debts/107-05020050-01.html">Arranging cash repayments to recover debts</a></li>
 			<li>
-If there’s no customer contact, see <a href="../debts/107-05010010-01.html">Outbound customer contact and gathering information when recovering debts</a></li>		</ul>
+If there is no customer contact and the debt value is <strong>over</strong> $1,500 a no arrangement (<strong>NOARR</strong>) activity will generate after 1 day. Procedure ends here</li>
+			<li>
+If there is no customer contact and the debt value is <strong>under</strong> $1,500 <a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step13">go to  Step 13</a></li>		</ul>
 		<li>
-No, <a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step13">go to  Step 13</a></li>		</ul>
+<strong>No</strong>, <a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step14">go to  Step 14</a></li>		</ul>
 </div>
 
 
@@ -541,7 +543,39 @@ No, <a href="../debts/107-05040010-03.html#bp03_tbl_Action_for_brok_Step13">go t
 <p>13</p></td>
 <td>
 
-<p><strong>Record all details on a DOC</strong> <a title="Read more 13" class="showhead bp03_tbl_Action_for_brok_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Action_for_brok_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer contact for debts under $1,500</strong> <a title="Read more 13" class="showhead bp03_tbl_Action_for_brok_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Action_for_brok_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>When a broken arrangement is ceased for debts under $1,500 a no arrangement (<strong>NOARR</strong>) activity will not generate.</p>
+
+<p>Staff must make a reasonable effort to contact the customer.</p>
+
+<p>Was customer contact successful?</p>
+		<ul>		<li>
+<strong>Yes</strong>, see <a href="../debts/107-05020050-01.html">Arranging cash repayments to recover debts</a></li>
+		<li>
+<strong>No</strong>, staff must&#58;</li>
+			<ul>			<li>
+<strong>DOC</strong> the attempt using the <strong>Unsuccessful Engagement Fast Note</strong></li>
+			<li>
+Send a 'Request client to contact office by phone' (Q164) letter</li>
+			<li>
+<strong>DOC</strong> the record and include the address to which the letter was sent to</li>
+			</ul>			</ul>
+<p>Procedure ends here.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Action_for_brok_Step14"></a>
+<p>14</p></td>
+<td>
+
+<p><strong>Record all details on a DOC</strong> <a title="Read more 14" class="showhead bp03_tbl_Action_for_brok_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Action_for_brok_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -581,7 +615,7 @@ specific details of warnings of other recovery action</li>
 			<li>
 any relevant details of the discussion if the customer was contacted</li>
 			</ul>			</ul>
-<p>Procedure ends here.</p>
+<p></p>
 </div>
 
 
