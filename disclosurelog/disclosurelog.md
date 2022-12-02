@@ -29,6 +29,24 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 21 November 2022                  | Documents relating to Services    |
+|                                   | Australia's assessment in         |
+|                                   | determining the community need    |
+|                                   | for and location of face to face  |
+|                                   | services in Benalla VIC 3672 (LEX |
+|                                   | 69569).                           |
+|                                   |                                   |
+|                                   | 7 documents released in full. 4   |
+|                                   | documents released in part. The   |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47C, 47D, 47E(d), 47F(1), and     |
+|                                   | 47G\                              |
+|                                   | **Exemptions**: Sections 47C,     |
+|                                   | 47D, 47E(d), 47F(1), and 47G      |
++-----------------------------------+-----------------------------------+
 | 11 November 2022                  | Operational Blueprint document    |
 |                                   | (LEX 69954):                      |
 |                                   |                                   |
@@ -2310,7 +2328,7 @@ us by:
 </div>
 :::
 
-Page last updated: 29 November 2022
+Page last updated: 2 December 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2318,7 +2336,7 @@ Page last updated: 29 November 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 1 December 2022 from
+This information was printed 2 December 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
