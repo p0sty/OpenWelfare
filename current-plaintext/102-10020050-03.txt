@@ -80,10 +80,15 @@ Cancellation of payments for Austudy and Youth Allowance (YA) students
 |                                   | Where a customer has used the     |
 |                                   | Cancel my current payment online  |
 |                                   | service, their payment will       |
-|                                   | either cancel automatically with  |
-|                                   | reason Client Request (CLR) or a  |
-|                                   | work item will be created to      |
-|                                   | manually action the request.      |
+|                                   | either:                           |
+|                                   |                                   |
+|                                   | -   cancel automatically with     |
+|                                   |     reason CLR                    |
+|                                   |     (withdrawn/voluntary          |
+|                                   |     surrender), or                |
+|                                   | -   a work item will be created   |
+|                                   |     to manually action the        |
+|                                   |     request                       |
 |                                   |                                   |
 |                                   | If the payment has successfully   |
 |                                   | cancelled automatically,          |
@@ -104,12 +109,27 @@ Cancellation of payments for Austudy and Youth Allowance (YA) students
 |                                   | -   'YAL' for YA                  |
 |                                   |                                   |
 |                                   | Reason field, select the drop     |
-|                                   | down option Client Request (CLR)  |
+|                                   | down option CLR                   |
+|                                   | (withdrawn/voluntary surrender)   |
 |                                   |                                   |
 |                                   | Effect Date field, code the date  |
 |                                   | the customer requested the        |
 |                                   | cancellation using the Cancel my  |
 |                                   | current payment online service    |
+|                                   |                                   |
+|                                   | Note: do not cancel payments      |
+|                                   | ‘CLR’ (withdrawn/voluntary        |
+|                                   | surrender) when a customer is no  |
+|                                   | longer entitled to a student      |
+|                                   | payment. For example if customer  |
+|                                   | has ceased fulltime study, follow |
+|                                   | the appropriate process to cancel |
+|                                   | the payment 'NST' (not a          |
+|                                   | full-time student). See Payment   |
+|                                   | of Youth Allowance (YA) and       |
+|                                   | Austudy when a student is         |
+|                                   | deferring or discontinuing study  |
+|                                   | before the end of the course.     |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
@@ -199,16 +219,17 @@ Cancellation of payments for Austudy and Youth Allowance (YA) students
 |                                   | cancelled because:                |
 |                                   |                                   |
 |                                   | -   There is a change in the      |
-|                                   |     customer's details, go to     |
-|                                   |     Step 6                        |
+|                                   |     customer's circumstances, go  |
+|                                   |     to Step 6                     |
 |                                   | -   The customer requests over    |
 |                                   |     the phone or in person that   |
 |                                   |     their payment be cancelled,   |
 |                                   |     go to Step 7. Note: the       |
 |                                   |     payment can only be recorded  |
 |                                   |     as 'cancelled at the          |
-|                                   |     customer's request' Client    |
-|                                   |     Request (CLR) where no other  |
+|                                   |     customer's request' ‘CLR’     |
+|                                   |     (withdrawn/voluntary          |
+|                                   |     surrender) where no other     |
 |                                   |     reason for cancellation (for  |
 |                                   |     example, ceased study)        |
 |                                   |     applies. For more             |
@@ -272,14 +293,21 @@ Cancellation of payments for Austudy and Youth Allowance (YA) students
 |                                   | a cancellation, see Coding a      |
 |                                   | cancellation.                     |
 |                                   |                                   |
-|                                   | When coding the cancellation, in  |
-|                                   | the:                              |
+|                                   | To code the cancellation, go to   |
+|                                   | the Benefit Action (BA) screen    |
+|                                   | and complete the following        |
+|                                   | fields:                           |
 |                                   |                                   |
-|                                   | Svc Rsn field, record the         |
-|                                   | appropriate payment type:         |
+|                                   | Svc Rsn  field, record either:    |
 |                                   |                                   |
 |                                   | -   'AUS' for Austudy, or         |
 |                                   | -   'YAL' for YA                  |
+|                                   |                                   |
+|                                   | Action field: ‘CAN’               |
+|                                   |                                   |
+|                                   | Reason field: Use field help (?)  |
+|                                   | or see Cancellation, Suspension   |
+|                                   | and Rejection reason codes (CLK)  |
 |                                   |                                   |
 |                                   | Effect Date field, enter the      |
 |                                   | earlier of:                       |
@@ -316,27 +344,36 @@ Cancellation of payments for Austudy and Youth Allowance (YA) students
 |                                   | next reporting date to stimulate  |
 |                                   | any final payment.                |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Finalise activity on the          |
-|                                   | Assessment Results (AR) screen +  |
-|                                   | Read more ...                     |
-|                                   |                                   |
-|                                   | Finalise the cancellation         |
-|                                   | activity on the Assessment        |
-|                                   | Results (AR) screen.              |
-|                                   |                                   |
-|                                   | If the assessment creates a debt  |
-|                                   | activity for investigation, go to |
-|                                   | Debt ownership to determine what  |
-|                                   | action must be undertaken with    |
-|                                   | the debt activity.                |
-+-----------------------------------+-----------------------------------+
-| 10                                | Record decision on DOC + Read     |
-|                                   | more ...                          |
+| 9                                 | Finalise cancellation and record  |
+|                                   | decision on DOC   + Read more ... |
 |                                   |                                   |
 |                                   | Record details of the decision on |
 |                                   | a DOC.                            |
+|                                   |                                   |
+|                                   | To code a voluntary cancellation: |
+|                                   |                                   |
+|                                   | -   select CANC CLR - requested   |
+|                                   |     by CUS for (PAYMENT TYPE)     |
+|                                   |     Fast Note                     |
+|                                   | -   record all relevant details   |
+|                                   |     of the cancellation in the    |
+|                                   |     template. Document the        |
+|                                   |     conversation with the         |
+|                                   |     customer and the reason they  |
+|                                   |     want to cancel their payment  |
+|                                   | -   attach the Fast Note to the   |
+|                                   |     CAN activity                  |
+|                                   | -   'S'elect the CAN activity and |
+|                                   |     complete the Assessment       |
+|                                   |     Results (AR) process          |
+|                                   |                                   |
+|                                   | If the assessment creates a debt  |
+|                                   | activity for investigation, go to |
+|                                   | Debt ownership to determine the   |
+|                                   | action to be undertaken with the  |
+|                                   | debt activity.                    |
 +-----------------------------------+-----------------------------------+
-| 11                                | Cancellation of payments using    |
+| 10                                | Cancellation of payments using    |
 |                                   | other (OTH) reason + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
@@ -370,9 +407,9 @@ Cancellation of payments for Austudy and Youth Allowance (YA) students
 |                                   |     part of the assessment on the |
 |                                   |     previous business day.        |
 |                                   |     Procedure ends here           |
-|                                   | -   No, go to Step 12             |
+|                                   | -   No, go to Step 11             |
 +-----------------------------------+-----------------------------------+
-| 12                                | Inform the customer of the        |
+| 11                                | Inform the customer of the        |
 |                                   | decision + Read more ...          |
 |                                   |                                   |
 |                                   | When a decision is made to cancel |
