@@ -39,7 +39,8 @@ experience.
 Single Touch Payroll data
 
 Services Australia can access the STP data of customers who are a mutual
-client of the ATO and Services Australia. The data can include:
+client of the ATO and Services Australia. The data can include, but is
+not limited to:
 
 -   employer name and ABN/WPN
 -   employment commencement date
@@ -48,6 +49,7 @@ client of the ATO and Services Australia. The data can include:
 -   allowances
 -   bonuses and commission
 -   voluntary superannuation deductions
+-   salary sacrifice deductions
 -   reportable fringe benefits
 -   workers compensation
 -   leave and redundancy payments
@@ -59,21 +61,67 @@ and in determining family income estimates, through payment accuracy.
 
 STP Service Profiling
 
-When an STP employer reports employment income data for a notification
-reporter, the system will automatically place the customer onto
-statement reporting. This can be viewed on the Reporting Regime Summary
-(RPRS) screen, where the reason will show as STP.
+When an STP employer reports employment income data for a customer
+receiving an income support payment (ISP), service profiling will
+automatically place the customer onto 2 weekly statement reporting. This
+can be viewed on the Reporting Regime Summary (RPRS) screen, where the
+reason will show as STP.
 
-If the customer confirms cessation of work with an STP employer, and is
-in receipt of a payment with no mutual obligation requirements, they
-will be taken off statement reporting 28 days after their cessation
-date, unless the customer and/or partner has other employment income.
+If a customer advises they do not work after being placed on reporting
+for the STP reason, Service Officers are not to take the customer off
+reporting until the STP Employer Update Workflow in Process Direct has
+been run, to check for any employer details. If an STP Employer is
+presented, discuss this with the customer and either accept or reject
+the employer details and complete the update. Note: where there is no
+pre-filled STP employer details available, cancel the activity.
 
-Note: if a customer contacts after being placed on reporting and advises
-they do not work, Service Officers are not to take them off reporting
-without discussing the STP employer details available. This can be done
-by running the Earnings and Reporting workflow in Process Direct if it
-is their reporting day, or the standalone STP Employer Update workflow.
+Service profiling can also take some customers off reporting. Customers
+with no mutual obligations and with no other employment income, will be
+taken off reporting or reverted back to their prior reporting
+requirements:
+
+-   6 fortnights after confirming their STP cessation details including
+    the cessation date, or
+-   if there is no STP cessation details, after having no STP pay events
+    for 6 consecutive fortnights.
+
+If customers are automatically taken off reporting for the above
+reasons, or manually by a Service Officer and a subsequent STP pay event
+is available, the customer will be placed back onto 2 weekly statement
+reporting.
+
+STP Confirmation Service
+
+When STP data is available when reporting through self service channels,
+the customer is advised there is information reported by their employer
+through Single Touch Payroll. This means the reporting task will be a 2
+step process.
+
+First step: Customers are directed to the STP Confirmation Service in
+the Report Employment Income (REI) workflow to review, accept or change
+the pre-filled STP data and submit the information with the STP
+Declaration. Once submitted, they are unable to make any additional
+changes to the confirmed STP data, however they can add further pay
+details that may not have pre-filled yet for the STP employer. If there
+is more than one STP employer, the customer will need to review the STP
+data for each employer separately. The STP income details will then
+update to EAPP/IMPS.
+
+Second step: After submitting the STP data, the customer will enter the
+REI service of the workflow to continue with their reporting. They will
+see the confirmed STP data pre-filled into their report. They can then
+add employment income for non-STP employers, income for their partner
+and report any hours worked, if required. The fortnightly report is only
+finalised once the customer also submits the REI Declaration.
+
+After the customer submits the REI Declaration, a DOC will generate with
+the captured STP data and other details. If the customer exits the
+reporting service after only submitting the STP data at the first step,
+a DOC will generate with the STP data only. If a Service Officer assists
+the customer to complete their reporting, a separate DOC is generated.
+This DOC may show ‘no income declared’ if no further income details are
+reported because the customer has already confirmed STP data and will be
+viewable on EAPP and EMGI.
 
 Reviewing and confirming STP data
 
@@ -92,38 +140,61 @@ Direct:
 -   manual navigation to the STP Employer Update (EMCF) or STP Employer
     Wage Items (EMGI) screens (view only)
 
+STP Employers
+
 When STP data is available at the time a customer is reporting or
 claiming certain income support payments and benefits, the employer’s
 name and ABN/WPN will present for the customer to review and either
 confirm or reject that they are working for the STP employer.
 
-When confirmed, the customer can merge the STP employer with an existing
-employer where it matches on the record, to avoid any duplication of
-employers
+When confirmed, the customer can link as a New Employer or merge with an
+existing employer where it matches on the record, to avoid any
+duplication of employers
 
 -   The customer only needs to confirm each STP employer once
+-   if linked as a New Employer, it will pre-fill to EAPP with a pay
+    event of 0.00 with DOV that the update is being made
 
 If rejected, the STP employer details are added to EMCF with a status of
 ‘Rejected’
 
--   Do not take the customer off reporting
 -   If STP data is available when next reporting, the STP employer name
     and ABN/WPN will present again for the customer to review
 -   If the customer rejects the employer a second time, an STP
     intervention activity will be created for follow up by compliance
     staff
 
+Note: when an STP employer has been confirmed on EMCF and linked to an
+existing employer from EAPP, the pre-filled ABN will override the
+Employer ABN field of the linked employer. If an incorrect employer was
+selected from EAPP, the STP Employer Update workflow must be run to
+reject the status. Once the activity is completed, the Employer ABN
+field of the incorrectly linked employer will revert to its previous
+status. See Process tab.
+
+STP Employment income
+
 Once a customer confirms an STP employer, each pay event that occurs in
 the customer’s entitlement period pre-fills when reporting, for the
-customer to check, confirm or change. Where there are multiple STP
+customer to check, confirm or change. The pay event data may include
+more than one type of income component. Where there are multiple STP
 employers, the STP income must be reviewed and accepted separately.
+
+There may be instances where pre-filled STP data may not match the gross
+figure of what was paid in a customer’s reporting period. Remind the
+customer that if the information does not match their payslip details,
+the amounts can be adjusted before accepting the data.
+
+Service Officers who are assisting the customer with their reporting
+through the Earnings and Reporting workflow in Process Direct can add
+notes about any variations made before finalising the activity.
 
 Once STP data is confirmed and accepted by the customer, it is
 automatically loaded onto the appropriate screens on the customer’s
-record. All employment income components that update to the Employment
-Income Paid Details (EAPP) screen will be under the one employer name
-with a frequency of LOP. See Recording and correcting employment income
-details.
+record. The Employment Income Paid Details (EAPP) screen will display
+each assessable employment income component under the one employer name
+with a frequency of LOP and DOV of when it was paid. See Recording and
+correcting employment income details.
 
 If STP data has not pre-filled at the time of reporting, customers can
 manually add the pay components, by selecting ‘add pay event’. Manually
@@ -134,10 +205,20 @@ The EMGI screen displays Gross STP Income reported by the STP employer
 and Gross Income Reported by the customer. Income Variation will advise
 whether income has been varied downward, varied upward or not varied.
 
-Note: remind the customer that if the information does not match their
-payslip details, the amounts can be adjusted. Service Officers who are
-using the Earnings and Reporting workflow in Process Direct can add
-notes about any variations made before finalising the activity.
+Note: Salary Sacrifice components will pre-fill for display purposes
+only and will not be used in the PayPP calculation, as the amount is
+already included in the Gross Income. Reportable Fringe Benefits will
+pre-fill with the non-grossed up amount, however the grossed-up amount
+will map to EAPP without Service Officers needing to make any
+adjustments. See Resources for examples.
+
+Early and holiday reporting
+
+When a customer is required to report earlier than their usual reporting
+day due to a public holiday or overseas departure, any available STP
+data will pre-fill. If the employer has not yet run their payroll, the
+customer will be required to manually add any components that they
+expect to be paid for the reporting period. See Resources.
 
 Correcting confirmed STP data amounts
 
@@ -149,11 +230,30 @@ Service Officers. Do not manually make any updates directly on EAPP or
 IMPS.
 
 Corrections to these confirmed amounts must be made using the Earnings
-and Reporting workflow in Process Direct, and selecting Yes to wanting
-to ‘update income for a past period’. After selecting the relevant
-periods from the Past Period Range, the EMGI screen appears. The pay
-events for each reporting period will display one at a time and once the
-corrections are made, will update the coding on EAPP or IMPS.
+and Reporting workflow in Process Direct, selecting Update past periods
+and then Yes to wanting to ‘Update income for a past period’. After
+selecting the relevant periods from the Past Period Range, the EMGI
+screen appears. Each reporting period will display one at a time and
+once the corrections are made and Accept Income is selected, the changes
+will update the coding on EAPP or IMPS.
+
+When updating a past period where employment income was manually coded
+on EAPP, but STP data is available and hasn’t been accepted, the
+workflow will navigate to EMGI to check, confirm or change the STP
+details. The confirmed STP data will update to EAPP, so the manually
+coded income will need to be deleted. This is because updates to EMGI
+will only update the relevant reporting period that had previously been
+mapped to EAPP.
+
+Where a customer has confirmed and accepted pay events which have been
+duplicated, Service Officers will need to Update past periods and zero
+out each duplicated pay component on EMGI so that only the singular pay
+event remains. Once Accept income is selected, the Gross STP Income
+field will display the duplicated total and the Gross Income Reported
+field will show the correct singular total for the reporting period.
+Service Officers will need to delete the duplicated components when
+navigated to EAPP as system functionality doesn’t allow a correction of
+$0 to be inserted.
 
 Note: if the Earnings and Reporting workflow task in Process Direct is
 not selected, the edit option on EMGI will not be enabled so Service
@@ -176,11 +276,11 @@ Customers will be asked to provide an explanation when:
 -   the STP employer advises the cessation reason is dismissal or
     voluntary
 
-An unemployment failure will automatically generate for PST-skilled
+An unemployment failure will need to be generated for PST-skilled
 Service Officers to investigate.
 
 When leave and redundancy payments are reported with cessation data, the
-customer will be asked to provide the amount of days the leave covers or
+customer is asked to provide the amount of days the leave covers or
 their average weekly wage, to determine the duration of any potential
 Income Maintenance Period (IMP). Service Officers must ensure that the
 leave period is reasonable.
@@ -191,14 +291,14 @@ would be considered unreasonable but 5 days would be reasonable.
 The customer will not need to supply an Employment Separation
 Certificate (SU1) when there are no changes made to the cessation data.
 However, if there are changes to amounts paid or there is any doubt
-about the number of days of the leave or termination payments, an SU1 or
-letter from the employer will be required.
+about the number of days of the leave or termination payments, an SU1,
+final payslip or letter from the employer will be required.
 
 Note: some employers may pay their employees Unused leave on Termination
-with no actual cessation date or reason being pre-filled. If this
-occurs, the customer will be asked if they are still working for that
-employer and may need to provide an SU1 where they confirm they have
-ceased working. This may occur for the following scenarios:
+with no cessation date or reason being pre-filled. If this occurs, the
+customer will be asked if they are still working for that employer and
+may need to provide an SU1 where they confirm they have ceased working.
+This may occur for the following scenarios:
 
 Transition to Phase 2 PayEvent 2020 (PE2020)
 
@@ -213,8 +313,8 @@ will be required for payments subject to mutual obligation requirements.
 
 Employment basis changes from permanent to casual
 
-Where an employee changes from a permanent employment basis (full time
-or part time) to casual. When paid, these entitlements are correctly
+An employee may change from a permanent employment status (full time or
+part time) to casual. When paid, these entitlements are correctly
 classified in STP as unused leave on termination but because the
 individual remains a casual employee of the same employer the payment is
 assessed as a lump sum and coded on EAPP.
@@ -238,21 +338,36 @@ Services Australia uses the STP data from Pay Events to calculate a Pay
 Per Period (PayPP) amount. This is done by comparing the gross YTD (Year
 to Date) figure of all income components from the previous Pay Event
 with that of the current Pay Event. The difference between these amounts
-will display as the PayPP amount.
+is the PayPP amount, and displays as Gross STP Income .
 
 When presented with pre-filled STP data, customers must review and
 either confirm or change the PayPP information before the system will
-code and apply the amounts. Confirmed PayPP amounts are used to
-calculate a customer’s entitlement.
+code and apply the amounts. Assessable PayPP amounts that have been
+confirmed are used to calculate a customer’s entitlement and are
+indicated under Used in PayPP Calculation.
 
 For further information about the different types of income components
 refer to Assessment of employment income for Centrelink payments.
 
 Income components that are assessable and included in the PayPP
 calculation are displayed to customers when they are reporting through
-their Centrelink online account or the Express Plus mobile app, and to
-Services Officers on the EMGI screen in Process Direct. See Resources to
-view which allowances are assessable.
+their Centrelink online account or the Express Plus mobile app. See
+Resources to view which allowances are assessable.
+
+When a customer reports through self service channels and has the
+allowance type Other allowances, they are asked if the allowance is a
+reimbursement of a work related expense. This will determine whether the
+amount is assessable or not. Service Officers using the Earnings and
+Reporting workflow in Process Direct need to
+
+select the pencil icon for the Other allowances component
+
+select the twisty for Additional Information and then
+
+select the option the customer advises
+
+-   Other Allowances - Not Reimbursement of employment related costs
+-   Other Allowances - Reimbursement of employment related costs
 
 Compensation payments reported via STP
 
@@ -275,20 +390,28 @@ paper form.
 
 STP Interventions
 
-A compliance team will manage interaction activities that trigger due to
-certain variations made by customers to their STP data.
+A compliance team manages intervention activities that trigger when
+customers make certain variations o their STP data.
 
-There are currently 3 STP intervention activity types to address the
-following actions:
+There are currently 8 STP intervention activity types to address where a
+customer:
 
--   a customer has rejected the STP employer a second time
--   a customer varies the STP reported employment income that is
-    presented for the first time
--   a customer varies the STP reported employment income downward by at
-    least $299 across a 6 month period
+-   rejected an STP employer twice
+-   varied first income for a STP employer
+-   varied income down in two consecutive fortnights by more than $299
+-   varied income down in two non-consecutive fortnights across 6 months
+    by more than $299  
+-   manually declared income however the Single Touch Payroll data
+    varies by more than $299
+-   is receiving JobSeeker Payment and rejected full-time ongoing status
+    in two consecutive fortnights for a new employer
+-   is receiving Disability Support Pension or Carer Payment and
+    confirmed full-time ongoing status (carer customer is not receiving
+    ex-wife pension (XWP))
+-   is receiving Disability Support Pension or Carer Payment and
+    rejected full-time ongoing status in two consecutive fortnights
 
-There will be further triggers released to expand the total interaction
-activity types to 8. The purpose of our STP interventions is to prevent
+The purpose of STP interventions is to prevent underpayments and
 unnecessary overpayments for our customers with early education
 regarding correct reporting of employment circumstances.
 
