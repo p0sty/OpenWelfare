@@ -255,8 +255,12 @@ the customer requests cancellation using the <a href="../self-service/133-190719
 <div class="showcont">
 
 
-<p>Where a customer has used the <a href="../self-service/133-19071919-01.html">Cancel my current payment</a> online service, their payment will either cancel automatically with reason Client Request (<strong>CLR</strong>) or a work item will be created to manually action the request.</p>
-
+<p>Where a customer has used the <a href="../self-service/133-19071919-01.html">Cancel my current payment</a> online service, their payment will either&#58;</p>
+		<ul>		<li>
+cancel automatically with reason <strong>CLR</strong> (withdrawn/voluntary surrender), or </li>
+		<li>
+a work item will be created to manually action the request</li>
+		</ul>
 <p>If the payment has successfully cancelled automatically, procedure ends here.</p>
 
 <p>If a manual work item has been created to manually action the request, see <a href="../ongoing-contact/102-10020010-01.html">Coding a cancellation</a>.</p>
@@ -269,10 +273,12 @@ the customer requests cancellation using the <a href="../self-service/133-190719
 			<li>
 '<strong>YAL</strong>' for YA</li>		</ul>
 		<li>
-<strong>Reason</strong> field, select the drop down option <strong>Client Request (CLR)</strong></li>
+<strong>Reason</strong> field, select the drop down option <strong>CLR</strong> (withdrawn/voluntary surrender) </li>
 		<li>
 <strong>Effect Date</strong> field, code the date the customer requested the cancellation using the Cancel my current payment online service</li>
 		</ul>
+<p><strong>Note</strong>&#58; do not cancel payments ‘<strong>CLR</strong>’ (withdrawn/voluntary surrender) when a customer is no longer entitled to a student payment. For example if customer has ceased fulltime study, follow the appropriate process to cancel the payment 'NST' (not a full-time student). See <a href="../ongoing-contact/102-07020050-01.html">Payment of Youth Allowance (YA) and Austudy when a student is deferring or discontinuing study before the end of the course</a>.</p>
+
 <p>Procedure ends here.</p>
 </div>
 
@@ -337,9 +343,9 @@ there is no nominee arrangement or contact with the nominee is <strong>not requi
 
 <p>If the payments are to be cancelled because&#58;</p>
 		<ul>		<li>
-There is a <strong>change in the customer's details</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step06">go to Step 6</a></li>
+There is a <strong>change in the customer's circumstances</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step06">go to Step 6</a></li>
 		<li>
-The customer requests <strong>over the phone or in person that their payment be cancelled</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step07">go to Step 7</a>. <strong>Note&#58;</strong> the payment can only be recorded as 'cancelled at the customer's request' <strong>Client Request (CLR)</strong> where <strong>no</strong> other reason for cancellation (for example, ceased study) applies. For more information, see the <a href="../ongoing-contact/102-10020050-05.html">Resources</a> page</li>
+The customer requests <strong>over the phone or in person that their payment be cancelled</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step07">go to Step 7</a>. <strong>Note&#58;</strong> the payment can only be recorded as 'cancelled at the customer's request' ‘<strong>CLR</strong>’ (withdrawn/voluntary surrender) where <strong>no</strong> other reason for cancellation (for example, ceased study) applies. For more information, see the <a href="../ongoing-contact/102-10020050-05.html">Resources</a> page</li>
 		<li>
 The <strong>Service Officer has made a decision to cancel payments</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step07">go to Step 7</a></li>		</ul>
 </div>
@@ -389,13 +395,17 @@ The <strong>Service Officer has made a decision to cancel payments</strong>, <a 
 
 <p>For general instructions to code a cancellation, see <a href="../ongoing-contact/102-10020010-01.html">Coding a cancellation</a>.</p>
 
-<p>When coding the cancellation, in the&#58;</p>
+<p>To code the cancellation, go to the Benefit Action (<strong>BA</strong>) screen and complete the following fields&#58;</p>
 		<ul>		<li>
-<strong>Svc Rsn</strong> field, record the appropriate payment type&#58;</li>
+<strong>Svc Rsn</strong> &#160;field, record either&#58;</li>
 			<ul>			<li>
 '<strong>AUS</strong>' for Austudy, or</li>
 			<li>
 '<strong>YAL</strong>' for YA</li>		</ul>
+		<li>
+<strong>Action</strong> field&#58; ‘<strong>CAN</strong>’</li>
+		<li>
+<strong>Reason</strong> field&#58; Use field help (?) or see <a href="../ongoing-contact/102-10010000-01.html">Cancellation, Suspension and Rejection reason codes (CLK)</a></li>
 		<li>
 <strong>Effect Date</strong> field, enter the earlier of&#58;</li>
 			<ul>			<li>
@@ -431,13 +441,23 @@ the date they are no longer eligible. See <a href="../ongoing-contact/102-100200
 <p>9</p></td>
 <td>
 
-<p><strong>Finalise activity on the Assessment Results (AR) screen</strong> <a title="Read more 9" class="showhead bp03_tbl_Cancellation_of01_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalise cancellation and record decision on DOC &#160;</strong> <a title="Read more 9" class="showhead bp03_tbl_Cancellation_of01_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Finalise the cancellation activity on the Assessment Results (<strong>AR</strong>) screen.</p>
+<p>Record details of the decision on a <strong>DOC</strong>.</p>
 
-<p>If the assessment creates a debt activity for investigation, go to <a href="../debts/107-02050030-01.html">Debt ownership</a> to determine what action must be undertaken with the debt activity.</p>
+<p>To code a voluntary cancellation&#58;</p>
+		<ul>		<li>
+select CANC CLR - requested by CUS for (PAYMENT TYPE) Fast Note</li>
+		<li>
+record all relevant details of the cancellation in the template. <a href="../specialist-manuals-and-system-tools/111-15000000-01.html">Document the conversation</a> with the customer and the reason they want to cancel their payment</li>
+		<li>
+attach the Fast Note to the <strong>CAN </strong>activity</li>
+		<li>
+'S'elect the <strong>CAN</strong> activity and complete the Assessment Results (<strong>AR</strong>) process</li>
+		</ul>
+<p>If the assessment creates a debt activity for investigation, go to <a href="../debts/107-02050030-01.html">Debt ownership</a> to determine the action to be undertaken with the debt activity.</p>
 </div>
 
 
@@ -449,11 +469,17 @@ the date they are no longer eligible. See <a href="../ongoing-contact/102-100200
 <p>10</p></td>
 <td>
 
-<p><strong>Record decision on DOC</strong> <a title="Read more 10" class="showhead bp03_tbl_Cancellation_of01_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Cancellation of payments using other (OTH) reason</strong> <a title="Read more 10" class="showhead bp03_tbl_Cancellation_of01_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Record details of the decision on a <strong>DOC</strong>.</p>
+<p>If the reason for cancellation used on the <strong>BA</strong> screen was other (OTH), the system is unable to generate an online advice (OLA) to the customer to inform them of the cancellation.</p>
+
+<p>Is the reason for cancellation Other (OTH)?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../specialist-manuals-and-system-tools/111-14010000-01.html">create an online advice</a> using the Q134 letter, detailing the date and reasons for the cancellation and advising the customer of their review and appeal rights. If the customer has a correspondence nominee, ensure a copy of the letter is sent to the nominee. A Manual Follow-up (MFU) to issue a manual letter will appear on the Activity List (<strong>AL</strong>) screen the following day. This MFU can be cancelled as the Q134 letter was created and issued as part of the assessment on the previous business day. Procedure ends here</li>
+		<li>
+<strong>No</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step11">go to  Step 11</a></li>		</ul>
 </div>
 
 
@@ -465,29 +491,7 @@ the date they are no longer eligible. See <a href="../ongoing-contact/102-100200
 <p>11</p></td>
 <td>
 
-<p><strong>Cancellation of payments using other (OTH) reason</strong> <a title="Read more 11" class="showhead bp03_tbl_Cancellation_of01_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If the reason for cancellation used on the <strong>BA</strong> screen was other (OTH), the system is unable to generate an online advice (OLA) to the customer to inform them of the cancellation.</p>
-
-<p>Is the reason for cancellation Other (OTH)?</p>
-		<ul>		<li>
-<strong>Yes</strong>, <a href="../specialist-manuals-and-system-tools/111-14010000-01.html">create an online advice</a> using the Q134 letter, detailing the date and reasons for the cancellation and advising the customer of their review and appeal rights. If the customer has a correspondence nominee, ensure a copy of the letter is sent to the nominee. A Manual Follow-up (MFU) to issue a manual letter will appear on the Activity List (<strong>AL</strong>) screen the following day. This MFU can be cancelled as the Q134 letter was created and issued as part of the assessment on the previous business day. Procedure ends here</li>
-		<li>
-<strong>No</strong>, <a href="../ongoing-contact/102-10020050-03.html#bp03_tbl_Cancellation_of01_Step12">go to  Step 12</a></li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Cancellation_of01_Step12"></a>
-<p>12</p></td>
-<td>
-
-<p><strong>Inform the customer of the decision</strong> <a title="Read more 12" class="showhead bp03_tbl_Cancellation_of01_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Inform the customer of the decision</strong> <a title="Read more 11" class="showhead bp03_tbl_Cancellation_of01_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Cancellation_of01_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
