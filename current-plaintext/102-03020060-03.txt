@@ -10,18 +10,44 @@ Monitoring the Inter-environment Change of Address (ICoA) facility for started t
 This page contains the process to monitor started Inter-environment
 Change of Address (ICoA) activities.
 
-Monitoring started ICoA activities
-
-Checking transfers of customer records between environments
-
-This table describes the process used to transfer customer records
-between environments.
+Monitor started ICoA activities
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Checks in both environments +     |
-|                                   | Read more ...                     |
+| 1                                 | Monitor transfer + Read more ...  |
+|                                   |                                   |
+|                                   | To check the ICoA in:             |
+|                                   |                                   |
+|                                   | -   Process Direct, go to Step 2  |
+|                                   | -   Customer First, go to Step 3  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Process Direct - monitor          |
+|                                   | transfer + Read more ...          |
+|                                   |                                   |
+|                                   | Once Transfer is scheduled the    |
+|                                   | Inter Environment Transfer (ICOA) |
+|                                   | screen will display:              |
+|                                   |                                   |
+|                                   | -   Losing environment            |
+|                                   | -   Gaining environment           |
+|                                   | -   Requested by (SO logon)       |
+|                                   | -   Requested on (Date)           |
+|                                   | -   Status (Scheduled)            |
+|                                   |                                   |
+|                                   | Note: with Child and Partner      |
+|                                   | records, the Status field will    |
+|                                   | not display as Scheduled. The     |
+|                                   | status will show in the Requested |
+|                                   | on field as Scheduled. Requested  |
+|                                   | under XXX (the Parent/Carer CRN). |
+|                                   | When completed, these fields will |
+|                                   | return to blank.                  |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Customer First/Customer Record -  |
+|                                   | monitor transfer + Read more ...  |
 |                                   |                                   |
 |                                   | Regular checks for started (STA)  |
 |                                   | transfers need to be performed in |
@@ -46,7 +72,7 @@ between environments.
 |                                   | Note: transfers can be one of     |
 |                                   | four status types.                |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Checks in the gaining             |
+| 4                                 | Checks in the gaining             |
 |                                   | environment + Read more ...       |
 |                                   |                                   |
 |                                   | In the gaining environment, go to |
@@ -62,10 +88,10 @@ between environments.
 |                                   | Are there any activities listed   |
 |                                   | with a status of STA?             |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 3             |
-|                                   | -   No, go to Step 4              |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, go to Step 6              |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Transfers with STA status in the  |
+| 5                                 | Transfers with STA status in the  |
 |                                   | gaining environment + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
@@ -107,7 +133,7 @@ between environments.
 |                                   | child record to recommence the    |
 |                                   | transfer.                         |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Checks in the losing              |
+| 6                                 | Checks in the losing              |
 |                                   | environment + Read more ...       |
 |                                   |                                   |
 |                                   | In the losing environment:        |
@@ -128,10 +154,10 @@ between environments.
 |                                   | Are there any activities with a   |
 |                                   | status of 'STA'?                  |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 5             |
+|                                   | -   Yes, go to Step 7             |
 |                                   | -   No, procedure ends here       |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Transfers with STA status in the  |
+| 7                                 | Transfers with STA status in the  |
 |                                   | losing environment + Read more    |
 |                                   | ...                               |
 |                                   |                                   |

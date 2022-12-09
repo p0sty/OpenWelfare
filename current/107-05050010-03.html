@@ -418,6 +418,8 @@ the date the information was provided or obtained</li>
 		<li>
 privacy, only use debt recovery data matches for recovery purposes. For example, DBM Tax Declaration Form (TDF) matches</li>
 		<li>
+Single Touch Payroll (STP) debt recovery data match</li>
+		<li>
 any new claims for Income Support payment, with associated employer separation certificate indicating employment has ceased</li>
 		<li>
 that the information relates to the customer and not the partner</li>
@@ -654,7 +656,7 @@ if it is appropriate to attempt contact with the customer through the new detail
 
 <p>A garnishee is not appropriate for customers who had a negative excess from a financial circumstances assessment within the last 3 months.</p>
 
-<p>Did the customer have an agreed payment arrangement within the last 3 months?</p>
+<p>Did the customer have an agreed payment arrangement that met acceptable cash levels within the last 3 months?</p>
 		<ul>		<li>
 <strong>Yes</strong>, set the garnishee instalment rate at the previously agreed rate, <a href="../debts/107-05050010-03.html#bp03_tbl_Finalise_the_ga_Step04">go to Step 4</a></li>
 		<li>
@@ -710,9 +712,9 @@ Once the instalment rate has been determined, <a href="../debts/107-05050010-03.
 
 <p>Go to the Debt List (<strong>OPDL</strong>) to find out which debts can be included in the garnishee notice amount. Take into account&#58;</p>
 		<ul>		<li>
-interest accrued and yet to be applied to the outstanding debt</li>
+interest accrued and yet to be applied to the outstanding debt, manually update the interest charge to ensure the garnishee notice reflects the correct debt amount, see <a href="../debts/107-02030030-01.html">Viewing and updating Interest Charge (IC) via Financial Customer Care in Customer First</a> </li>
 		<li>
-debts due and payable</li>
+debts due and payable. <strong>Note</strong>&#58; if there are additional debts on the record that fall due <strong>within the next 28 days</strong>, <strong>Hold the activity until all debts are due</strong></li>
 		<li>
 Public Governance Performance and Accountability Act debts cannot be included</li>
 		<li>
@@ -738,17 +740,21 @@ debts written off under Non-lodger separated (NLS) couple provisions cannot be i
 <div class="showcont">
 
 
-<p>Use the Debt Recovery script to code the garnishee arrangement. If the script is not available, the following details will help to manually code a garnishee.</p>
+<p>Use the Debt Recovery script to code the garnishee arrangement. </p>
 
-<p><strong>Always check the contents of the letter</strong></p>
+<p>The script will ask ‘<strong>OLAs&#58; do you want the script to pause to allow the checking of the Q439 garnishee letter before printing?</strong>’ when coding a wage garnishee. Select ‘<strong>Y</strong>’. Check the garnishee letter and select the correct appeals clause. </p>
 
-<p>The script will ask ‘<strong>OLAs&#58; do you want the script to pause to allow the checking of a letter before printing?</strong>’ when coding a wage garnishee. <strong>Select</strong> ‘<strong>Y</strong>’. Check the garnishee letter and select the correct appeals clause.</p>
+<p><strong>Always check the contents of the letter</strong>.</p>
+
+<p><strong>Note</strong>&#58; the Q439 letter must be printed locally.</p>
+
+<p>If the script is not available, the following details will help to manually code a garnishee&#58;</p>
 		<ul>		<li>
 Go to the Activity List (<strong>AL</strong>) screen, and key '<strong>S</strong>' in the DMN/RCV activity, Press [<strong>Enter</strong>]</li>
 		<li>
-If there is no DMN/RCV activity on <strong>AL</strong>, access the Payment Arrangement List (<strong>OPAL</strong>) screen. Press [<strong>Enter</strong>]</li>
+If there is no DMN/RCV activity on <strong>AL</strong>, go to the Payment Arrangement List (<strong>OPAL</strong>) screen. Press [<strong>Enter</strong>]</li>
 		<li>
-Code '<strong>GRN</strong>' (for garnishee) in the <strong>Create new arrangement type</strong> field. Press [<strong>Enter</strong>]</li>		</ul>
+In the <strong>Create new arrangement type</strong> field, key '<strong>GRN</strong>' (for garnishee). Press [<strong>Enter</strong>]</li>		</ul>
 </div>
 
 
@@ -809,9 +815,9 @@ key '<strong>Q439</strong>' in the <strong>Letter Code</strong> field and press 
 key '<strong>DMN</strong>' in <strong>Service Reason</strong> field and press [<strong>Enter</strong>]</li>
 		<li>
 complete the letter and make sure the notice amount, instalment amount and frequency are the same as <strong>OPGD</strong></li>
-		<li>
-send customer copies of garnishee notices to the last known address of the customer. This includes addresses that are end-dated</li>
 		</ul>
+<p><strong>Note</strong>&#58; send the customer a copy/copies of garnishee notices to the last known address of the customer. <strong>Do not</strong> send garnishee notices to an end-dated address on the customer’s record. </p>
+
 <p><strong>Do not finalise the letter</strong>.</p>
 </div>
 
@@ -850,18 +856,18 @@ send customer copies of garnishee notices to the last known address of the custo
 
 <p>If the garnishee employer knows the customer by another name, issue the notice in the customer's name as well as the other known name or alias.</p>
 
-<p>Only include a customer's alias on a notice when the employer advises they do not know the customer by the main name on the customer's record&#58;</p>
-		<ul>		<li>
-To add the customer's alias&#58;</li>
+<p>Only include a customer's alias on a notice when the employer advises they do not know the customer by the main name on the customer's record.</p>
+
+<p>To add the customer's alias&#58;</p>
 			<ul>			<li>
 key '<strong>DATA</strong>' in the <strong>COMMAND</strong> field, and</li>
 			<li>
-insert the customer's alias after the customer's name in the <strong>CLIENT.FULL.NAME</strong> field</li>		</ul>
-		<li>
-Record the customer's alias in the <strong>Comments </strong>field on the Garnishee Details (<strong>OPGD</strong>) screen</li>
-		<li>
-If the Customer Person Detail Summary (<strong>CPDS</strong>) screen does not display the other name the customer is known by, update <strong>CPDS</strong>. Record the source of these details on a <strong>DOC</strong></li>
-		</ul>
+insert the customer's alias after the customer's name in the <strong>CLIENT.FULL.NAME</strong> field</li>
+			</ul>
+<p>Record the customer's alias in the <strong>Comments </strong>field on the Garnishee Details (<strong>OPGD</strong>) screen.</p>
+
+<p>If the Customer Person Detail Summary (<strong>CPDS</strong>) screen does not display the other name the customer is known by, update <strong>CPDS</strong>. Record the source of these details on a <strong>DOC</strong>.</p>
+
 <p>For example, 'Confirmation from ABC Pty Ltd received that Judy Citizen is also known as Judy Resident - CPDS updated'. See <a href="../ongoing-contact/102-04010030-01.html">Aliases and other names (legal, preferred, sex and gender diverse customers, cultural considerations etc.)</a>.</p>
 </div>
 
@@ -877,10 +883,12 @@ If the Customer Person Detail Summary (<strong>CPDS</strong>) screen does not di
 <p><strong>Finalise the garnishee and notice</strong> <a title="Read more 23" class="showhead bp03_tbl_Finalise_the_ga_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_the_ga_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
+
+<p>When the letter is complete&#58;</p>
 		<ul>		<li>
-When the letter is complete, code '<strong>OPAF</strong>' in the <strong>Nxt</strong> field and press [<strong>Enter</strong>]</li>
+Key '<strong>OPAF</strong>' in the <strong>Nxt</strong> field and press [<strong>Enter</strong>]</li>
 		<li>
-Code '<strong>Y</strong>' in the <strong>Finished?</strong> field and press [<strong>Enter</strong>]</li>
+Key '<strong>Y</strong>' in the <strong>Finished?</strong> field and press [<strong>Enter</strong>]</li>
 		<li>
 Record details on a <strong>DOC</strong>. Explain the garnishee reason clearly. The summary line should commence, Recovery&#58; New Garnishee</li>		</ul>
 </div>
