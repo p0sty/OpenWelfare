@@ -83,10 +83,16 @@ Table 1:
 | 3                                 | A listing of the number of        |
 |                                   | edits + Read more ...             |
 |                                   |                                   |
-|                                   | When monitoring a transfer, the   |
-|                                   | ICOA Log Information (ITLG)       |
-|                                   | screen will display the number of |
-|                                   | edits present for the transfer.   |
+|                                   | In Process Direct, edits will     |
+|                                   | display during transfer process   |
+|                                   | on the Inter Environment Transfer |
+|                                   | (ICOA) screen.                    |
+|                                   |                                   |
+|                                   | In Customer First when monitoring |
+|                                   | a transfer, the ICOA Log          |
+|                                   | Information (ITLG) screen will    |
+|                                   | display the number of edits       |
+|                                   | present for the transfer.         |
 |                                   |                                   |
 |                                   | -   the Edit List (ITED) screen   |
 |                                   |     displays the edits and is     |
@@ -135,52 +141,11 @@ Table 1:
 |                                   | activities.                       |
 |                                   |                                   |
 |                                   | Outstanding activities can be     |
-|                                   | found on the following screens:   |
-|                                   |                                   |
-|                                   | -   the Activity List (AL)        |
-|                                   |     screen. Activities on this    |
-|                                   |     screen will need to be        |
-|                                   |     completed or deleted in the   |
-|                                   |     losing environment for the    |
-|                                   |     transfer to complete          |
-|                                   | -   the All Activities Details    |
-|                                   |     (XPAA) screen. This screen is |
-|                                   |     similar to the AL screen as   |
-|                                   |     it identifies what activities |
-|                                   |     are in the background         |
-|                                   |     awaiting Batch 2 to transfer  |
-|                                   |     them to the History Activity  |
-|                                   |     List (HAL) screen with a      |
-|                                   |     status of HST. It also shows  |
-|                                   |     activities that are not       |
-|                                   |     completed, awaiting           |
-|                                   |     submit/determination action.  |
-|                                   |     Some activities that have     |
-|                                   |     been completed and removed    |
-|                                   |     from the AL screen may still  |
-|                                   |     be preventing the transfer    |
-|                                   |     because they have not yet     |
-|                                   |     been processed by Batch 2. If |
-|                                   |     any activities remain on the  |
-|                                   |     XPAA screen for more than 3   |
-|                                   |     days, See Inter-environment   |
-|                                   |     Change of Address (ICoA)      |
-|                                   |     facility problem escalation   |
-|                                   |     process                       |
-|                                   | -   the All Debt Records via SSR  |
-|                                   |     (XPDC) screen (Note: SSR is   |
-|                                   |     now referred to as CRN). This |
-|                                   |     screen shows cases awaiting   |
-|                                   |     Batch 2 processing where      |
-|                                   |     withholdings have been made   |
-|                                   |     from a payment but the        |
-|                                   |     withholdings are still to be  |
-|                                   |     transferred to the Debt       |
-|                                   |     Management Information System |
-|                                   |     (DMIS). Once Batch 2 has      |
-|                                   |     cleared activities from the   |
-|                                   |     XPDC screen the transfer will |
-|                                   |     occur                         |
+|                                   | found on the Activity List (AL)   |
+|                                   | screen. Activities on this screen |
+|                                   | will need to be completed or      |
+|                                   | deleted in the losing environment |
+|                                   | for the transfer to complete.     |
 |                                   |                                   |
 |                                   | Note: any DOC recorded on a       |
 |                                   | customer's record is an activity  |
@@ -212,26 +177,39 @@ Table 1:
 |                                   | the gaining environment + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | To transfer the customer record   |
-|                                   | to the gaining environment:       |
+|                                   | Transfer the customer record to   |
+|                                   | the gaining environment.          |
 |                                   |                                   |
-|                                   | -   navigate to the APL system,   |
+|                                   | In Process Direct:                |
+|                                   |                                   |
+|                                   | -   Key 'ICOA' in Super Key,      |
+|                                   |     select Enter                  |
+|                                   | -   Select Request transfer       |
+|                                   | -   Select Gaining environment    |
+|                                   | -   Select Customer's new office  |
+|                                   |     code & gaining region         |
+|                                   | -   Edit children if required     |
+|                                   | -   Select Transfer               |
+|                                   | -   Go to Step 6                  |
+|                                   |                                   |
+|                                   | In Customer First:                |
+|                                   |                                   |
+|                                   | -   Go to the APL system,         |
 |                                   |     'S'elect the relevant record  |
 |                                   |     from the Case List (ACL)      |
 |                                   |     screen, and print its Modify  |
 |                                   |     Reconsideration (MR) screen   |
-|                                   | -   change the Recons. Outcome:   |
+|                                   | -   Change the Recons. Outcome:   |
 |                                   |     field from 'BYPASSED AT CUS   |
 |                                   |     REQ' to 'AFFIRMED', then      |
 |                                   |     complete the New Info         |
 |                                   |     Received: and Date Recons.    |
 |                                   |     Finalised: fields             |
-|                                   | -   navigate to the ICOA/File     |
-|                                   |     Transfer system and complete  |
-|                                   |     the inter-environment         |
-|                                   |     transfer                      |
-|                                   | -   navigate to the APL system in |
-|                                   |     the gaining environment and   |
+|                                   | -   Go to the ICOA/File Transfer  |
+|                                   |     system and complete the       |
+|                                   |     inter-environment transfer    |
+|                                   | -   Go to the APL system in the   |
+|                                   |     gaining environment and       |
 |                                   |     update the MR screen to       |
 |                                   |     reflect the information on    |
 |                                   |     the screen you printed at the |
@@ -296,8 +274,9 @@ Table 2:
 |                                   |     or three days to complete     |
 |                                   | -   Hint - if the Debt Management |
 |                                   |     System (DMN) activity showing |
-|                                   |     on the XPDC screen is more    |
-|                                   |     than a few days old and the   |
+|                                   |     on the XPDC screen in         |
+|                                   |     Customer First is more than a |
+|                                   |     few days old and the          |
 |                                   |     withholdings have been        |
 |                                   |     credited to the debt. See     |
 |                                   |     Inter-environment Change of   |
@@ -340,7 +319,7 @@ Table 2:
 |                                   | -   code the correct relationship |
 |                                   |     status (married) on the       |
 |                                   |     Marital Status (MS) screen    |
-|                                   | -   code PPE: field to ‘N’ unless |
+|                                   | -   code PPE: field to 'N' unless |
 |                                   |     verbal permission has been    |
 |                                   |     given                         |
 |                                   | -   link partner via the Link     |

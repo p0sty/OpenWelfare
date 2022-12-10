@@ -1,5 +1,5 @@
 
-Inter-environment change of address (ICoA) transfer of a customer record using Customer First or Customer Record 102-03020020
+Inter-environment change of address (ICoA) transfer of a customer record 102-03020020
 
 -   Background
 -   
@@ -11,18 +11,362 @@ Inter-environment change of address (ICoA) transfer of a customer record using C
 This page contains the process to use to update a customer's address
 details when moving from one environment to another.
 
-On this Page:
+Process Direct
 
-Steps to be taken before starting the transfer of a customer's details
+On this page:
+
+Pre-transfer checks
 
 Transfer customer's details
 
-Finalising and monitoring the transfer
+Pre-transfer checks
 
-Steps to be taken before starting the transfer of a customer's details
+Table 1
 
-Table 1: This table describes the actions to be taken prior to
-commencing the transfer process.
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Before starting activity + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Before starting the               |
+|                                   | inter-environment change of       |
+|                                   | address (ICoA) activity:          |
+|                                   |                                   |
+|                                   | Determine the losing and gaining  |
+|                                   | environments. The current         |
+|                                   | environment is found on the Inter |
+|                                   | Environment Transfer (ICOA)       |
+|                                   | screen. The environment ID will   |
+|                                   | be in the Current environment     |
+|                                   | field                             |
+|                                   | Note: if the customer is          |
+|                                   | transferring into or out of       |
+|                                   | environment I, consider the       |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   If a customer is leaving      |
+|                                   |     Australia to live overseas,   |
+|                                   |     Centrelink International      |
+|                                   |     Services (CIS) will complete  |
+|                                   |     all action to cancel 'DOS'    |
+|                                   |     the record in the local       |
+|                                   |     environment from date last    |
+|                                   |     paid to +1, complete the ICoA |
+|                                   |     and restore in I environment  |
+|                                   | -   Where a customer has returned |
+|                                   |     to reside in Australia and    |
+|                                   |     they or their partner are in  |
+|                                   |     receipt of a payment (current |
+|                                   |     or suspended) their I         |
+|                                   |     environment record must be    |
+|                                   |     cancelled 'RTA' from date     |
+|                                   |     last paid to +1 by CIS. Once  |
+|                                   |     payment is cancelled for the  |
+|                                   |     customer and any linked       |
+|                                   |     partner, care provider or     |
+|                                   |     care receiver, the ICoA,      |
+|                                   |     updates and restoration can   |
+|                                   |     be done. Generally the        |
+|                                   |     complete process will be      |
+|                                   |     completed by CIS              |
+|                                   | -   If the record is already      |
+|                                   |     showing as CAN-RTA any        |
+|                                   |     Service Officer can complete  |
+|                                   |     the transfer from I to local  |
+|                                   |     environment and restore the   |
+|                                   |     payment                       |
+|                                   | -   If the record of a            |
+|                                   |     non-current customer          |
+|                                   |     (including new claims) has    |
+|                                   |     been created in Environment I |
+|                                   |     any Service Officer can       |
+|                                   |     complete an ICoA transfer.    |
+|                                   |     Environment I records created |
+|                                   |     through a new claim process   |
+|                                   |     in Process Direct for         |
+|                                   |     non-pension payments do not   |
+|                                   |     need to be referred to CIS    |
+|                                   |                                   |
+|                                   | If the customer record is in      |
+|                                   | Environment Y, see Environment Y  |
+|                                   | for inactive deleted and deceased |
+|                                   | customer records                  |
+|                                   |                                   |
+|                                   | Check and clarify customer        |
+|                                   | circumstances (such as income,    |
+|                                   | assets, Centrepay/rent, partner   |
+|                                   | and/or children transferring with |
+|                                   | the customer) by locating the     |
+|                                   | customer record in the current    |
+|                                   | environment. Note any details     |
+|                                   | which require changes, including  |
+|                                   | new address details and payment   |
+|                                   | destination details               |
+|                                   |                                   |
+|                                   | The ICOA screen will identify     |
+|                                   | children, but if a 'child as a    |
+|                                   | customer' is present they will    |
+|                                   | not be included in this transfer  |
+|                                   | and they will have to be          |
+|                                   | processed using a separate        |
+|                                   | transfer, see Inter-environment   |
+|                                   | change of address (ICoA) transfer |
+|                                   | for a child record                |
+|                                   |                                   |
+|                                   | Check if the customer has an      |
+|                                   | existing record in the gaining    |
+|                                   | environment to ensure that the    |
+|                                   | customer does not have a          |
+|                                   | duplicate record. If a duplicate  |
+|                                   | record does exist, see Types of   |
+|                                   | Centrelink records to correct     |
+|                                   | this situation. Continue with     |
+|                                   | this procedure once any duplicate |
+|                                   | CRN has been fixed                |
+|                                   |                                   |
+|                                   | Check if the customer and partner |
+|                                   | have any outstanding activities   |
+|                                   | in the gaining and losing         |
+|                                   | environments. These activities    |
+|                                   | may need to be completed or       |
+|                                   | deleted before the transfer will  |
+|                                   | occur. The transfer can still be  |
+|                                   | scheduled, but these activities   |
+|                                   | may need to be cleared before the |
+|                                   | transfer will complete. Not all   |
+|                                   | 'STA' activities and/or DOCs will |
+|                                   | prevent the transfer from         |
+|                                   | completing                        |
+|                                   |                                   |
+|                                   | If the customer is required to    |
+|                                   | lodge an SU19, do not schedule a  |
+|                                   | transfer on the same day. Input   |
+|                                   | the SU19 and schedule the         |
+|                                   | transfer the next day             |
++-----------------------------------+-----------------------------------+
+| 2                                 | Change of address issues + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Check for change of address       |
+|                                   | issues, including:                |
+|                                   |                                   |
+|                                   | -   Becoming partnered            |
+|                                   | -   Eligibility for Remote Area   |
+|                                   |     Allowance (RAA)               |
+|                                   | -   Centrepay                     |
+|                                   |                                   |
+|                                   | Ensure any details requiring an   |
+|                                   | update, including address and     |
+|                                   | postal address if applicable, are |
+|                                   | actioned and finalised prior to   |
+|                                   | commencing the ICoA transfer.     |
+|                                   |                                   |
+|                                   | Go to the Address (AD) screen:    |
+|                                   |                                   |
+|                                   | Select Add and update:            |
+|                                   |                                   |
+|                                   | -   Start Date: Date address      |
+|                                   |     changed                       |
+|                                   | -   Address Type: Home,           |
+|                                   |     Temporary, Term/Semester,     |
+|                                   |     Postal                        |
+|                                   | -   Send All Mail Here: Yes/No    |
+|                                   | -   Address Line 1: Auto prompt   |
+|                                   |     will activate                 |
+|                                   |                                   |
+|                                   | Select Save                       |
+|                                   |                                   |
+|                                   | Select Date of Receipt and        |
+|                                   | Channel                           |
+|                                   |                                   |
+|                                   | Select Save                       |
+|                                   |                                   |
+|                                   | Go to the Accommodation (AC)      |
+|                                   | screen:                           |
+|                                   |                                   |
+|                                   | Select Add and update:            |
+|                                   |                                   |
+|                                   | -   Address Type: Home,           |
+|                                   |     Temporary, Term/Semester      |
+|                                   | -   Event Date: Date              |
+|                                   |     accommodation details changed |
+|                                   | -   Details For:                  |
+|                                   |     Customer/Customer and Partner |
+|                                   | -   Home Ownership:               |
+|                                   | -   Type of Rent:                 |
+|                                   | -   Sharer Status:                |
+|                                   | -   Gross and Net Rent amounts    |
+|                                   |     and frequency                 |
+|                                   | -   Rent Verification:            |
+|                                   |                                   |
+|                                   | Select Save                       |
+|                                   |                                   |
+|                                   | Go to the Office Code (OC)        |
+|                                   | screen:                           |
+|                                   |                                   |
+|                                   | Select Add and update:            |
+|                                   |                                   |
+|                                   | -   Contact Region Office: update |
+|                                   |     to the gaining office         |
+|                                   | -   Update Date                   |
+|                                   |                                   |
+|                                   | Select Save                       |
+|                                   |                                   |
+|                                   | Select Assess and address any     |
+|                                   | Warning/Errors                    |
+|                                   |                                   |
+|                                   | Select Assess                     |
+|                                   |                                   |
+|                                   | Select Finalise and record        |
+|                                   | information in Note               |
+|                                   |                                   |
+|                                   | Select Finish                     |
+|                                   |                                   |
+|                                   | If an Arrears payment is          |
+|                                   | generated, allow the pay strip to |
+|                                   | run before actioning the ICoA     |
+|                                   | this usually means doing the ICoA |
+|                                   | the next day.                     |
+|                                   |                                   |
+|                                   | If a Debt is generated, it must   |
+|                                   | be actioned before doing the      |
+|                                   | ICoA, either waiving or raising   |
+|                                   | it. If under $50 waive it, if     |
+|                                   | over $50, raise the debt.         |
++-----------------------------------+-----------------------------------+
+| 3                                 | Payment specifics + Read more ... |
+|                                   |                                   |
+|                                   | Check for payment specific        |
+|                                   | issues, see:                      |
+|                                   |                                   |
+|                                   | For JobSeeker Payment (JSP) and   |
+|                                   | Youth Allowance (YA), see also:   |
+|                                   |                                   |
+|                                   | -   Moving to an Area of Lower    |
+|                                   |     Employment Prospects (MALEP)  |
+|                                   |     employment related exclusion  |
+|                                   |     period                        |
+|                                   | -   Rent Assistance (RA)          |
+|                                   |                                   |
+|                                   | For YA:                           |
+|                                   |                                   |
+|                                   | -   UTLAH assessments, see        |
+|                                   |     Assessing unreasonable to     |
+|                                   |     live at home (UTLAH) for      |
+|                                   |     customers claiming or         |
+|                                   |     receiving Youth Allowance     |
+|                                   |     (YA), Disability Support      |
+|                                   |     Pension (DSP), Special        |
+|                                   |     Benefit (SpB) or Tertiary     |
+|                                   |     Access Payment (TAP)          |
+|                                   | -   At home or away from home     |
+|                                   |     rate. See The away from home  |
+|                                   |     rate for Youth Allowance (YA) |
+|                                   |     customers                     |
+|                                   |                                   |
+|                                   | For customers receiving CP and/or |
+|                                   | CA, see Carer Payment (CP) and    |
+|                                   | Carer Allowance (CA)              |
+|                                   | inter-environment change of       |
+|                                   | address. Procedure ends here      |
+|                                   |                                   |
+|                                   | For Age Pension customers, check: |
+|                                   |                                   |
+|                                   | -   Granny Flat Provisions        |
+|                                   | -   Permanent vacation of         |
+|                                   |     principal home                |
+|                                   | -   Temporary vacation of         |
+|                                   |     principal home                |
+|                                   | -   Vacation of principal home    |
+|                                   |     due to illness                |
+|                                   |                                   |
+|                                   | For customers in care of state    |
+|                                   | guardianship, see Changing        |
+|                                   | address for customers in care of  |
+|                                   | a state guardianship authority    |
+|                                   |                                   |
+|                                   | For child related issues - Family |
+|                                   | Tax Benefit (FTB), Child Care     |
+|                                   | Benefit (CCB), check:             |
+|                                   |                                   |
+|                                   | -   Estimating income for family  |
+|                                   |     assistance and Paid Parental  |
+|                                   |     Leave scheme payments, and    |
+|                                   | -   Dependent child changes       |
+|                                   |                                   |
+|                                   | Once payment specific issues are  |
+|                                   | addressed, or if there are no     |
+|                                   | payment specific issues, see      |
+|                                   | Table 2                           |
++-----------------------------------+-----------------------------------+
+
+Transfer customer's details
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Start/Schedule the transfer +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | -   Go to the Inter Environment   |
+|                                   |     Transfer (ICOA) screen        |
+|                                   | -   Select Request Transfer       |
+|                                   | -   Select Gaining environment    |
+|                                   | -   Select Customer's new office  |
+|                                   |     code & gaining region         |
+|                                   |                                   |
+|                                   | Are there any child records       |
+|                                   | linked to the customer?           |
+|                                   |                                   |
+|                                   | -   Yes, they will display. go to |
+|                                   |     Step 2                        |
+|                                   | -   No, select Transfer, go to    |
+|                                   |     Step 3                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Transfer child + Read more ...    |
+|                                   |                                   |
+|                                   | If the customer is linked to      |
+|                                   | children, the child will display  |
+|                                   | on Transfer request.              |
+|                                   |                                   |
+|                                   | -   Confirm that the children     |
+|                                   |     transferring with the         |
+|                                   |     customer are marked as Y in   |
+|                                   |     the Transfer: field           |
+|                                   | -   Ensure that the children not  |
+|                                   |     transferring with the         |
+|                                   |     customer are marked as N in   |
+|                                   |     the Transfer: field           |
+|                                   | -   Select Edit to modify as      |
+|                                   |     required                      |
+|                                   | -   Select Transfer               |
++-----------------------------------+-----------------------------------+
+| 3                                 | Check Transfer + Read more ...    |
+|                                   |                                   |
+|                                   | Monitor the transfer on ICOA      |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | Select Refresh if transfer has    |
+|                                   | not occurred within acceptable    |
+|                                   | time frame.                       |
++-----------------------------------+-----------------------------------+
+
+Customer First/Customer Record
+
+On this page:
+
+Pre-transfer checks
+
+Transfer customer's details
+
+Finalise and monitor the transfer
+
+Pre-transfer checks
+
+Table 1
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -71,7 +415,7 @@ commencing the transfer process.
 |                                   |     completed by CIS              |
 |                                   | -   If the record is already      |
 |                                   |     showing as CAN-RTA any        |
-|                                   |     service officer can complete  |
+|                                   |     Service Officer can complete  |
 |                                   |     the transfer from I to local  |
 |                                   |     environment and restore the   |
 |                                   |     payment                       |
@@ -79,7 +423,7 @@ commencing the transfer process.
 |                                   |     non-current customer          |
 |                                   |     (including new claims) has    |
 |                                   |     been created in Environment I |
-|                                   |     any service officer can       |
+|                                   |     any Service Officer can       |
 |                                   |     complete an ICoA transfer.    |
 |                                   |     Environment I records created |
 |                                   |     through a new claim process   |
@@ -118,7 +462,7 @@ commencing the transfer process.
 |                                   | environment to ensure that the    |
 |                                   | customer does not have a          |
 |                                   | duplicate record. If a duplicate  |
-|                                   | record does exists, see Types of  |
+|                                   | record does exist, see Types of   |
 |                                   | Centrelink records to correct     |
 |                                   | this situation. Continue with     |
 |                                   | this procedure once any duplicate |
@@ -285,8 +629,7 @@ commencing the transfer process.
 
 Transfer customer's details
 
-Table 2: This table describes the actions to be taken to action the
-inter-environment transfer process.
+Table 2
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -473,10 +816,9 @@ inter-environment transfer process.
 |                                   | -   No, see Step 2 in Table 3     |
 +-----------------------------------+-----------------------------------+
 
-Finalising and monitoring the transfer
+Finalise and monitor the transfer
 
-Table 3: This table describes the actions to be taken to monitor the
-successful transfer of the inter-environment transfer process.
+Table 3
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |

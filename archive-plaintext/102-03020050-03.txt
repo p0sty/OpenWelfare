@@ -10,25 +10,55 @@ Monitoring the Inter-environment Change of Address (ICoA) facility for scheduled
 This page contains details on how to monitor scheduled Inter-environment
 Change of Address (ICoA) activities.
 
-On this Page:
+On this page:
 
 Monitoring scheduled ICoA activities
 
 Child transfers
 
-Edits required scheduled ICoA activities
+Customer First/Customer Record ICoA transfer edits
 
 Monitoring scheduled ICoA activities
 
-Commencing the ICoA transfer
-
-Table 1: This table describes the process to commence a scheduled
-Inter-environment Change of Address activity.
+Table 1
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Regular checks + Read more ...    |
+| 1                                 | Monitor scheduled transfer + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | To check the ICoA in:             |
+|                                   |                                   |
+|                                   | -   Process Direct, go to Step 2  |
+|                                   | -   Customer First, go to Step 3  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Process Direct - monitor          |
+|                                   | transfer + Read more ...          |
+|                                   |                                   |
+|                                   | Once Transfer is scheduled, the   |
+|                                   | Inter Environment Transfer (ICOA) |
+|                                   | screen will display:              |
+|                                   |                                   |
+|                                   | -   Losing environment            |
+|                                   | -   Gaining environment           |
+|                                   | -   Requested by (SO logon)       |
+|                                   | -   Requested on (Date)           |
+|                                   | -   Status (Scheduled)            |
+|                                   |                                   |
+|                                   | Note: with Child and Partner      |
+|                                   | records, the Status field will    |
+|                                   | not display as Scheduled. The     |
+|                                   | status will show in the Requested |
+|                                   | on field as Scheduled. Requested  |
+|                                   | under XXX (the Parent/Carer CRN). |
+|                                   | When completed, these fields will |
+|                                   | return to blank.                  |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Customer First/Customer Record +  |
+|                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Regular checks for Scheduled      |
 |                                   | (SCH) transfers need to be        |
@@ -46,12 +76,11 @@ Inter-environment Change of Address activity.
 |                                   | transfers of:                     |
 |                                   |                                   |
 |                                   | -   customer records, go to Step  |
-|                                   |     2                             |
+|                                   |     4                             |
 |                                   | -   child records, see Step 1 of  |
-|                                   |     the ICoA transfer for child   |
-|                                   |     records table                 |
+|                                   |     Table 2                       |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Gaining environment + Read more   |
+| 4                                 | Gaining environment + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Check the gaining environment for |
@@ -85,7 +114,7 @@ Inter-environment Change of Address activity.
 |                                   | Log Information (ITLG) screen     |
 |                                   | will be displayed.                |
 +-----------------------------------+-----------------------------------+
-| 3                                 | On the ICOA Log Information       |
+| 5                                 | On the ICOA Log Information       |
 |                                   | (ITLG) screen + Read more ...     |
 |                                   |                                   |
 |                                   | -   Check the Edit status: and    |
@@ -97,16 +126,16 @@ Inter-environment Change of Address activity.
 |                                   |     field, then there is no       |
 |                                   |     situation in the gaining      |
 |                                   |     environment preventing the    |
-|                                   |     transfer. Go to Step 5        |
+|                                   |     transfer. Go to Step 7        |
 |                                   | -   If the ITLG screen shows a    |
 |                                   |     warning or an error, go to    |
-|                                   |     Step 4                        |
+|                                   |     Step 6                        |
 |                                   | -   If the record has not         |
 |                                   |     transferred within 2 days of  |
 |                                   |     the last edit being cleared,  |
-|                                   |     go to Step 5                  |
+|                                   |     go to Step 7                  |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Still in the ICOA Log Information |
+| 6                                 | Still in the ICOA Log Information |
 |                                   | (ITLG) screen + Read more ...     |
 |                                   |                                   |
 |                                   | If the Edit status: field value   |
@@ -128,7 +157,7 @@ Inter-environment Change of Address activity.
 |                                   |     required by the user after    |
 |                                   |     the transfer is complete      |
 |                                   | -   Return to the ITLG screen and |
-|                                   |     go to Step 5                  |
+|                                   |     go to Step 7                  |
 |                                   |                                   |
 |                                   | If the Edit status: field value   |
 |                                   | on the ITLG screen is 'Error',    |
@@ -155,9 +184,9 @@ Inter-environment Change of Address activity.
 |                                   |     to be taken before the        |
 |                                   |     transfer will complete        |
 |                                   | -   Return to the ITLG screen and |
-|                                   |     go to Step 5                  |
+|                                   |     go to Step 7                  |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Check the losing environment for  |
+| 7                                 | Check the losing environment for  |
 |                                   | customer scheduled (SCH)          |
 |                                   | transfers + Read more ...         |
 |                                   |                                   |
@@ -172,11 +201,10 @@ Inter-environment Change of Address activity.
 |                                   |     there is no situation in the  |
 |                                   |     losing environment preventing |
 |                                   |     the transfer. See Step 1 of   |
-|                                   |     the Edits required in a ICoA  |
-|                                   |     transfer table                |
+|                                   |     Table 3                       |
 |                                   | -   If the ITLG screen shows a    |
 |                                   |     warning or error, go to Step  |
-|                                   |     6                             |
+|                                   |     8                             |
 |                                   | -   If the record has not         |
 |                                   |     transferred within 2 days of  |
 |                                   |     the last edit being cleared,  |
@@ -210,9 +238,7 @@ Inter-environment Change of Address activity.
 |                                   |     required by the user after    |
 |                                   |     the transfer is complete      |
 |                                   | -   Return to the ITLG screen and |
-|                                   |     see Step 1 of the Edits       |
-|                                   |     required in a ICoA transfer   |
-|                                   |     table                         |
+|                                   |     see Step 1 of Table 3         |
 |                                   |                                   |
 |                                   | If the Edit status: field value   |
 |                                   | on the ITLG screen is 'Error',    |
@@ -239,22 +265,48 @@ Inter-environment Change of Address activity.
 |                                   |     to be taken before the        |
 |                                   |     transfer will complete        |
 |                                   | -   Return to the ITLG screen and |
-|                                   |     see Step 1 of the Edits       |
-|                                   |     required in a ICoA transfer   |
-|                                   |     table                         |
+|                                   |     see Step 1 of Table 3         |
 +-----------------------------------+-----------------------------------+
 
 Child transfers
 
-ICoA transfer for child records
-
-Table 2: This table describes the process to transfer a child's records
-in a scheduled Inter-environment Change of Address activity.
+Table 2
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Check the gaining environment for |
+| 1                                 | Monitor transfer + Read more ...  |
+|                                   |                                   |
+|                                   | To check the ICoA in:             |
+|                                   |                                   |
+|                                   | -   Process Direct, go to Step 2  |
+|                                   | -   Customer First, go to Step 3  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Process Direct - monitor          |
+|                                   | transfer + Read more ...          |
+|                                   |                                   |
+|                                   | Once Transfer is scheduled the    |
+|                                   | Inter Environment Transfer (ICOA) |
+|                                   | screen will display:              |
+|                                   |                                   |
+|                                   | -   Losing environment            |
+|                                   | -   Gaining environment           |
+|                                   | -   Requested by (SO logon)       |
+|                                   | -   Requested on (Date)           |
+|                                   | -   Status (Scheduled)            |
+|                                   |                                   |
+|                                   | Note: with Child and Partner      |
+|                                   | records, the Status field will    |
+|                                   | not display as Scheduled. The     |
+|                                   | status will show in the Requested |
+|                                   | on field as Scheduled. Requested  |
+|                                   | under XXX (the Parent/Carer CRN). |
+|                                   | When completed, these fields will |
+|                                   | return to blank.                  |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 3                                 | Check the gaining environment for |
 |                                   | scheduled (SCH) transfers of      |
 |                                   | child records + Read more ...     |
 |                                   |                                   |
@@ -285,7 +337,7 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   | The ICOA Log Information (ITLG)   |
 |                                   | screen will be displayed          |
 +-----------------------------------+-----------------------------------+
-| 2                                 | In the ICOA Log Information       |
+| 4                                 | In the ICOA Log Information       |
 |                                   | (ITLG) screen in the gaining      |
 |                                   | environment + Read more ...       |
 |                                   |                                   |
@@ -297,7 +349,7 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   | Yes, then there is no situation   |
 |                                   | in the gaining environment        |
 |                                   | preventing the transfer. Go to    |
-|                                   | Step 5                            |
+|                                   | Step 7                            |
 |                                   |                                   |
 |                                   | -   However, if the record has    |
 |                                   |     not transferred within 2 days |
@@ -308,9 +360,9 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   |     problem escalation process.   |
 |                                   |     Procedure ends here           |
 |                                   |                                   |
-|                                   | No, go to Step 3                  |
+|                                   | No, go to Step 5                  |
 +-----------------------------------+-----------------------------------+
-| 3                                 | In the ICOA Log Information       |
+| 5                                 | In the ICOA Log Information       |
 |                                   | (ITLG) screen + Read more ...     |
 |                                   |                                   |
 |                                   | Check the Edit status: and        |
@@ -336,11 +388,11 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   |     required by the user after    |
 |                                   |     the transfer is complete      |
 |                                   | -   Return to the ITLG screen and |
-|                                   |     go to Step 5                  |
+|                                   |     go to Step 7                  |
 |                                   |                                   |
-|                                   | No, go to Step 4                  |
+|                                   | No, go to Step 6                  |
 +-----------------------------------+-----------------------------------+
-| 4                                 | In the ICOA Log Information       |
+| 6                                 | In the ICOA Log Information       |
 |                                   | (ITLG) screen + Read more ...     |
 |                                   |                                   |
 |                                   | Check the Edit status: and        |
@@ -372,7 +424,7 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   |     transfer will complete        |
 |                                   | -   Return to the ITLG screen     |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Check the losing environment for  |
+| 7                                 | Check the losing environment for  |
 |                                   | child scheduled (SCH) transfers + |
 |                                   | Read more ...                     |
 |                                   |                                   |
@@ -395,8 +447,7 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   | '0', then there is no situation   |
 |                                   | in the losing environment         |
 |                                   | preventing the transfer. See Step |
-|                                   | 2 of Edits required in a ICoA     |
-|                                   | transfer table                    |
+|                                   | 2 of Table 3                      |
 |                                   |                                   |
 |                                   | -   However, if the record has    |
 |                                   |     not transferred within 2 days |
@@ -407,7 +458,7 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   |     problem escalation process.   |
 |                                   |     The procedure ends here       |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Still in the losing environment   |
+| 8                                 | Still in the losing environment   |
 |                                   | ITSC screen checking for child    |
 |                                   | transfers + Read more ...         |
 |                                   |                                   |
@@ -432,12 +483,11 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   |     required by the user after    |
 |                                   |     the transfer is complete.     |
 |                                   |     Return to the ITLG screen and |
-|                                   |     see Step 1 of Edits required  |
-|                                   |     in a ICoA transfer table      |
+|                                   |     see Step 1 of Table 3         |
 |                                   |                                   |
-|                                   | No, go to Step 7                  |
+|                                   | No, go to Step 9                  |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Still in the losing environment   |
+| 9                                 | Still in the losing environment   |
 |                                   | ITSC screen checking for child    |
 |                                   | transfers + Read more ...         |
 |                                   |                                   |
@@ -466,16 +516,12 @@ in a scheduled Inter-environment Change of Address activity.
 |                                   |     to be taken before the        |
 |                                   |     transfer will complete.       |
 |                                   |     Return to the ITLG screen and |
-|                                   |     see Step 1 of Edits required  |
-|                                   |     in a ICoA transfer table      |
+|                                   |     see Step 1 of Table 3         |
 +-----------------------------------+-----------------------------------+
 
-Edits required scheduled ICoA activities
+Customer First/Customer Record ICoA transfer edits
 
-Edits required in an ICoA transfer
-
-Table 3: This table describes the process to deal with edits required in
-a scheduled Inter-environment Change of Address activity.
+Table 3
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |

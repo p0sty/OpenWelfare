@@ -167,6 +167,8 @@ Table 2
 |                                   |     recovery purposes. For        |
 |                                   |     example, DBM Tax Declaration  |
 |                                   |     Form (TDF) matches            |
+|                                   | -   Single Touch Payroll (STP)    |
+|                                   |     debt recovery data match      |
 |                                   | -   any new claims for Income     |
 |                                   |     Support payment, with         |
 |                                   |     associated employer           |
@@ -388,7 +390,8 @@ Table 3
 |                                   | the last 3 months.                |
 |                                   |                                   |
 |                                   | Did the customer have an agreed   |
-|                                   | payment arrangement within the    |
+|                                   | payment arrangement that met      |
+|                                   | acceptable cash levels within the |
 |                                   | last 3 months?                    |
 |                                   |                                   |
 |                                   | -   Yes, set the garnishee        |
@@ -448,8 +451,20 @@ Table 3
 |                                   |                                   |
 |                                   | -   interest accrued and yet to   |
 |                                   |     be applied to the outstanding |
-|                                   |     debt                          |
-|                                   | -   debts due and payable         |
+|                                   |     debt, manually update the     |
+|                                   |     interest charge to ensure the |
+|                                   |     garnishee notice reflects the |
+|                                   |     correct debt amount, see      |
+|                                   |     Viewing and updating Interest |
+|                                   |     Charge (IC) via Financial     |
+|                                   |     Customer Care in Customer     |
+|                                   |     First                         |
+|                                   | -   debts due and payable. Note:  |
+|                                   |     if there are additional debts |
+|                                   |     on the record that fall due   |
+|                                   |     within the next 28 days, Hold |
+|                                   |     the activity until all debts  |
+|                                   |     are due                       |
 |                                   | -   Public Governance Performance |
 |                                   |     and Accountability Act debts  |
 |                                   |     cannot be included            |
@@ -470,32 +485,37 @@ Table 3
 |                                   |                                   |
 |                                   | Use the Debt Recovery script to   |
 |                                   | code the garnishee arrangement.   |
-|                                   | If the script is not available,   |
-|                                   | the following details will help   |
-|                                   | to manually code a garnishee.     |
-|                                   |                                   |
-|                                   | Always check the contents of the  |
-|                                   | letter                            |
 |                                   |                                   |
 |                                   | The script will ask ‘OLAs: do you |
 |                                   | want the script to pause to allow |
-|                                   | the checking of a letter before   |
+|                                   | the checking of the Q439          |
+|                                   | garnishee letter before           |
 |                                   | printing?’ when coding a wage     |
 |                                   | garnishee. Select ‘Y’. Check the  |
 |                                   | garnishee letter and select the   |
 |                                   | correct appeals clause.           |
+|                                   |                                   |
+|                                   | Always check the contents of the  |
+|                                   | letter.                           |
+|                                   |                                   |
+|                                   | Note: the Q439 letter must be     |
+|                                   | printed locally.                  |
+|                                   |                                   |
+|                                   | If the script is not available,   |
+|                                   | the following details will help   |
+|                                   | to manually code a garnishee:     |
 |                                   |                                   |
 |                                   | -   Go to the Activity List (AL)  |
 |                                   |     screen, and key 'S' in the    |
 |                                   |     DMN/RCV activity, Press       |
 |                                   |     [Enter]                       |
 |                                   | -   If there is no DMN/RCV        |
-|                                   |     activity on AL, access the    |
+|                                   |     activity on AL, go to the     |
 |                                   |     Payment Arrangement List      |
 |                                   |     (OPAL) screen. Press [Enter]  |
-|                                   | -   Code 'GRN' (for garnishee) in |
-|                                   |     the Create new arrangement    |
-|                                   |     type field. Press [Enter]     |
+|                                   | -   In the Create new arrangement |
+|                                   |     type field, key 'GRN' (for    |
+|                                   |     garnishee). Press [Enter]     |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Complete the Garnishee Details    |
 |                                   | (OPGD) screen details + Read more |
@@ -562,11 +582,13 @@ Table 3
 |                                   |     instalment amount and         |
 |                                   |     frequency are the same as     |
 |                                   |     OPGD                          |
-|                                   | -   send customer copies of       |
-|                                   |     garnishee notices to the last |
-|                                   |     known address of the          |
-|                                   |     customer. This includes       |
-|                                   |     addresses that are end-dated  |
+|                                   |                                   |
+|                                   | Note: send the customer a         |
+|                                   | copy/copies of garnishee notices  |
+|                                   | to the last known address of the  |
+|                                   | customer. Do not send garnishee   |
+|                                   | notices to an end-dated address   |
+|                                   | on the customer’s record.         |
 |                                   |                                   |
 |                                   | Do not finalise the letter.       |
 +-----------------------------------+-----------------------------------+
@@ -593,7 +615,7 @@ Table 3
 |                                   | on a notice when the employer     |
 |                                   | advises they do not know the      |
 |                                   | customer by the main name on the  |
-|                                   | customer's record:                |
+|                                   | customer's record.                |
 |                                   |                                   |
 |                                   | To add the customer's alias:      |
 |                                   |                                   |
@@ -605,14 +627,14 @@ Table 3
 |                                   |                                   |
 |                                   | Record the customer's alias in    |
 |                                   | the Comments field on the         |
-|                                   | Garnishee Details (OPGD) screen   |
+|                                   | Garnishee Details (OPGD) screen.  |
 |                                   |                                   |
 |                                   | If the Customer Person Detail     |
 |                                   | Summary (CPDS) screen does not    |
 |                                   | display the other name the        |
 |                                   | customer is known by, update      |
 |                                   | CPDS. Record the source of these  |
-|                                   | details on a DOC                  |
+|                                   | details on a DOC.                 |
 |                                   |                                   |
 |                                   | For example, 'Confirmation from   |
 |                                   | ABC Pty Ltd received that Judy    |
@@ -626,10 +648,11 @@ Table 3
 | 10                                | Finalise the garnishee and        |
 |                                   | notice + Read more ...            |
 |                                   |                                   |
-|                                   | -   When the letter is complete,  |
-|                                   |     code 'OPAF' in the Nxt field  |
+|                                   | When the letter is complete:      |
+|                                   |                                   |
+|                                   | -   Key 'OPAF' in the Nxt field   |
 |                                   |     and press [Enter]             |
-|                                   | -   Code 'Y' in the Finished?     |
+|                                   | -   Key 'Y' in the Finished?      |
 |                                   |     field and press [Enter]       |
 |                                   | -   Record details on a DOC.      |
 |                                   |     Explain the garnishee reason  |

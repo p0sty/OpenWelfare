@@ -280,7 +280,9 @@ leaving (cancelling) the transfer screen flow after being shown the edits, adjus
 <div class="showcont">
 
 
-<p>When monitoring a transfer, the ICOA Log Information (ITLG) screen will display the number of edits present for the transfer.</p>
+<p>In Process Direct, edits will display during transfer process on the Inter Environment Transfer (<strong>ICOA</strong>) screen.</p>
+
+<p>In Customer First when monitoring a transfer, the ICOA Log Information (<strong>ITLG</strong>) screen will display the number of edits present for the transfer.</p>
 		<ul>		<li>
 the Edit List (<strong>ITED</strong>) screen displays the edits and is viewed from both the transfer screen flow and when monitoring a transfer</li>
 		<li>
@@ -324,14 +326,8 @@ edits which require user intervention on the customer record before a transfer w
 
 <p>The most common edits that require user intervention are those where there are outstanding activities.</p>
 
-<p>Outstanding activities can be found on the following screens&#58;</p>
-		<ul>		<li>
-the Activity List (<strong>AL</strong>) screen. Activities on this screen will need to be completed or deleted in the losing environment for the transfer to complete</li>
-		<li>
-the All Activities Details (<strong>XPAA</strong>) screen. This screen is similar to the <strong>AL</strong> screen as it identifies what activities are in the background awaiting Batch 2 to transfer them to the History Activity List (<strong>HAL</strong>) screen with a status of HST. It also shows activities that are not completed, awaiting submit/determination action. Some activities that have been completed and removed from the <strong>AL</strong> screen may still be preventing the transfer because they have not yet been processed by Batch 2. If any activities remain on the <strong>XPAA</strong> screen for more than 3 days, See <a href="../ongoing-contact/102-03020070-01.html">Inter-environment Change of Address (ICoA) facility problem escalation process</a></li>
-		<li>
-the All Debt Records via SSR (<strong>XPDC</strong>) screen (<strong>Note&#58;</strong> SSR is now referred to as CRN). This screen shows cases awaiting Batch 2 processing where withholdings have been made from a payment but the withholdings are still to be transferred to the Debt Management Information System (DMIS). Once Batch 2 has cleared activities from the <strong>XPDC</strong> screen the transfer will occur</li>
-		</ul>
+<p>Outstanding activities can be found on the Activity List (<strong>AL</strong>) screen. Activities on this screen will need to be completed or deleted in the losing environment for the transfer to complete.</p>
+
 <p><strong>Note&#58;</strong> any <strong>DOC</strong> recorded on a customer's record is an activity and must be completed/deleted and processed by Batch 2 before the transfer will occur.</p>
 </div>
 
@@ -370,15 +366,33 @@ the All Debt Records via SSR (<strong>XPDC</strong>) screen (<strong>Note&#58;</
 <div class="showcont">
 
 
-<p>To transfer the customer record to the gaining environment&#58;</p>
+<p>Transfer the customer record to the gaining environment.</p>
+
+<p><strong>In Process Direct&#58;</strong></p>
 		<ul>		<li>
-navigate to the APL system, '<strong>S</strong>'elect the relevant record from the Case List (<strong>ACL</strong>) screen, and print its Modify Reconsideration (<strong>MR</strong>) screen</li>
+Key 'ICOA' in <strong>Super Key</strong>, select <strong>Enter</strong></li>
 		<li>
-change the <strong>Recons. Outcome&#58;</strong> field from '<strong>BYPASSED AT CUS REQ</strong>' to '<strong>AFFIRMED</strong>', then complete the <strong>New Info Received&#58;</strong> and <strong>Date Recons. Finalised&#58;</strong> fields</li>
+Select <strong>Request transfer</strong></li>
 		<li>
-navigate to the ICOA/File Transfer system and complete the inter-environment transfer</li>
+Select <strong>Gaining environment</strong></li>
 		<li>
-navigate to the APL system in the gaining environment and update the <strong>MR</strong> screen to reflect the information on the screen you printed at the first dot point above</li>
+Select <strong>Customer's new office code &amp; gaining region</strong></li>
+		<li>
+Edit children if required</li>
+		<li>
+Select <strong>Transfer</strong></li>
+		<li>
+<a href="../ongoing-contact/102-03020090-03.html#bp03_tbl_Edits_impacting_Step06">Go to Step 6</a></li>
+		</ul>
+<p><strong>In Customer First&#58;</strong></p>
+		<ul>		<li>
+Go to the APL system, '<strong>S</strong>'elect the relevant record from the Case List (<strong>ACL</strong>) screen, and print its Modify Reconsideration (<strong>MR</strong>) screen</li>
+		<li>
+Change the <strong>Recons. Outcome&#58;</strong> field from '<strong>BYPASSED AT CUS REQ</strong>' to '<strong>AFFIRMED</strong>', then complete the <strong>New Info Received&#58;</strong> and <strong>Date Recons. Finalised&#58;</strong> fields</li>
+		<li>
+Go to the ICOA/File Transfer system and complete the inter-environment transfer</li>
+		<li>
+Go to the APL system in the gaining environment and update the <strong>MR</strong> screen to reflect the information on the screen you printed at the first dot point above</li>
 		</ul>
 <p>See <a href="../ongoing-contact/102-03020090-03.html#bp03_tbl_Clearing_edits_Step01">Step 1 in the Clearing edits within the ICoA activity</a> table.</p>
 </div>
@@ -446,7 +460,7 @@ the transfer will not occur while there are any outstanding activities for custo
 		<li>
 these activities, once completed or deleted, will still need to be processed by Batch 2. The transfer could therefore take a further two or three days to complete</li>
 		<li>
-<strong>Hint</strong> - if the Debt Management System (DMN) activity showing on the <strong>XPDC</strong> screen is more than a few days old and the withholdings have been credited to the debt. See <a href="../ongoing-contact/102-03020070-01.html">Inter-environment Change of Address (ICoA) facility problem escalation process</a></li>		</ul>
+<strong>Hint</strong> - if the Debt Management System (DMN) activity showing on the <strong>XPDC</strong> screen in Customer First is more than a few days old and the withholdings have been credited to the debt. See <a href="../ongoing-contact/102-03020070-01.html">Inter-environment Change of Address (ICoA) facility problem escalation process</a></li>		</ul>
 </div>
 
 
@@ -474,7 +488,7 @@ if the customer is reconciling with their previous partner, who also has a curre
 			<ul>			<li>
 code the correct relationship status (married) on the Marital Status (<strong>MS</strong>) screen</li>
 			<li>
-code <strong>PPE&#58;</strong> field to ‘<strong>N</strong>’ unless verbal permission has been given</li>
+code <strong>PPE&#58;</strong> field to '<strong>N</strong>' unless verbal permission has been given</li>
 			<li>
 link partner via the Link Person (<strong>LP</strong>) screen</li>		</ul>
 		<li>

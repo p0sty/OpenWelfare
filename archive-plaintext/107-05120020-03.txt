@@ -18,7 +18,7 @@ Process Direct table in Raising Child Care Subsidy (CCS) debts in
 Process Direct.
 
 +-----------------------------------+-----------------------------------+
-| Item                              | Description                       |
+| Step                              | Description                       |
 +-----------------------------------+-----------------------------------+
 | 1                                 | Debt recovery script + Read more  |
 |                                   | ...                               |
@@ -26,11 +26,10 @@ Process Direct.
 |                                   | The Debt Action script, Debt      |
 |                                   | Recovery script or the Debt       |
 |                                   | Repayment guided procedure (Smart |
-|                                   | Centres and Service Centres) must |
+|                                   | Centres and service centres) must |
 |                                   | be used when actioning a debt.    |
 |                                   |                                   |
-|                                   | Use a Fast Note to create a DOC,  |
-|                                   | Callback or ACTDOC.               |
+|                                   | Use a Fast Note to create a DOC.  |
 |                                   |                                   |
 |                                   | Where a manual process is         |
 |                                   | included in the following table,  |
@@ -38,7 +37,27 @@ Process Direct.
 |                                   | when the script, guided procedure |
 |                                   | or Fast Note are unavailable      |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Family Tax Benefit (FTB) debts    |
+| 2                                 | Debt value + Read more ...        |
+|                                   |                                   |
+|                                   | Is the debt value less than $50?  |
+|                                   |                                   |
+|                                   | Yes, and the debt:                |
+|                                   |                                   |
+|                                   | -   is a Family Tax Benefit (FTB) |
+|                                   |     qualification debt, go to     |
+|                                   |     Step 3                        |
+|                                   | -   is not a FTB qualification    |
+|                                   |     debt, go to Step 4            |
+|                                   |                                   |
+|                                   | No, and the debt value is:        |
+|                                   |                                   |
+|                                   | -   less than $200, go to Step 8  |
+|                                   | -   $200 or more, raise the debt. |
+|                                   |     See Actioning an undetermined |
+|                                   |     debt on the Debt Management   |
+|                                   |     and Information System (DMIS) |
++-----------------------------------+-----------------------------------+
+| 3                                 | Family Tax Benefit (FTB) debts    |
 |                                   | before reconciliation + Read more |
 |                                   | ...                               |
 |                                   |                                   |
@@ -55,37 +74,34 @@ Process Direct.
 |                                   | than fifty).                      |
 |                                   |                                   |
 |                                   | When actioning a new debt (NDB)   |
-|                                   | activity and:                     |
+|                                   | activity and the debt is:         |
 |                                   |                                   |
-|                                   | -   the debt is a qualification   |
-|                                   |     debt, waive the debt with a   |
-|                                   |     reason code 'LTF' (less than  |
-|                                   |     fifty)                        |
-|                                   | -   the debt is not a             |
-|                                   |     qualification debt, finalise  |
-|                                   |     the debt as 'no debt' (FND)   |
-|                                   |     with a reason code of 'FAM'.  |
-|                                   |     This will include the amount  |
-|                                   |     in reconciliation             |
+|                                   | -   a qualification debt, waive   |
+|                                   |     the debt with a reason code   |
+|                                   |     'LTF' (less than fifty)       |
+|                                   | -   not a qualification debt,     |
+|                                   |     finalise the debt as 'no      |
+|                                   |     debt' (FND) with a reason     |
+|                                   |     code of 'FAM'. This will      |
+|                                   |     include the amount in         |
+|                                   |     reconciliation                |
 |                                   |                                   |
 |                                   | Record the details on a DOC as    |
 |                                   | per the minimum DOC standards for |
 |                                   | debt waivers.                     |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Manually raising and waiving a    |
+| 4                                 | Manually raising and waiving a    |
 |                                   | debt + Read more ...              |
 |                                   |                                   |
-|                                   | -   Use the Debt Action script    |
+|                                   | Use the Debt Action script, or:   |
 |                                   |                                   |
-|                                   | or                                |
+|                                   | to action a started debt          |
+|                                   | activity, go to the Debt List     |
+|                                   | (OPDL), or                        |
 |                                   |                                   |
-|                                   | go to the Debt List (OPDL) to     |
-|                                   | action a started debt activity,   |
-|                                   | or                                |
-|                                   |                                   |
-|                                   | go to the Add Debt (OPAD) screen  |
-|                                   | and complete the following fields |
-|                                   | to raise a new debt:              |
+|                                   | to raise a new debt, go to the    |
+|                                   | Add Debt (OPAD) screen and        |
+|                                   | complete the following:           |
 |                                   |                                   |
 |                                   | -   Benefit Type field, use field |
 |                                   |     help (?) to find the          |
@@ -102,7 +118,7 @@ Process Direct.
 |                                   | -   press [Enter] again to        |
 |                                   |     confirm the details           |
 |                                   |                                   |
-|                                   | Complete the Component Amount     |
+|                                   | complete the Component Amount     |
 |                                   | (OPCA) screen, use field help (?) |
 |                                   | to find the appropriate codes if  |
 |                                   | required.                         |
@@ -111,7 +127,7 @@ Process Direct.
 |                                   | -   press [Enter] again to        |
 |                                   |     confirm the component details |
 |                                   |                                   |
-|                                   | The Debt Management and           |
+|                                   | the Debt Management and           |
 |                                   | Information System (DMIS) will    |
 |                                   | then automatically go to the Add  |
 |                                   | Waiver (OPWAA) screen where the   |
@@ -119,7 +135,7 @@ Process Direct.
 |                                   | reason code of 'LTF' (less than   |
 |                                   | fifty)                            |
 |                                   |                                   |
-|                                   | On the Assessment Finalisation    |
+|                                   | on the Assessment Finalisation    |
 |                                   | (OPAF) screen, key 'Y' in the     |
 |                                   | Finished? field. Press [Enter] to |
 |                                   | finalise the activity             |
@@ -129,28 +145,25 @@ Process Direct.
 |                                   | is required as per the minimum    |
 |                                   | DOC standards for debt waivers.   |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Waive a determined debt after     |
+| 5                                 | Waive a determined debt after     |
 |                                   | review + Read more ...            |
 |                                   |                                   |
 |                                   | []                                |
 |                                   |                                   |
-|                                   | -   Use the Debt Action script    |
-|                                   |                                   |
-|                                   | or                                |
+|                                   | Use the Debt Action script, or:   |
 |                                   |                                   |
 |                                   | go to the Debt List (OPDL) screen |
 |                                   | and select the debt that is to be |
 |                                   | actioned                          |
 |                                   |                                   |
-|                                   | go to the OPDA and enter the new  |
-|                                   | debt amount                       |
+|                                   | go to the OPDA and key the new    |
+|                                   | debt amount:                      |
 |                                   |                                   |
-|                                   | -   enter the Reason Changed as   |
-|                                   |     REV                           |
-|                                   | -   enter the Calculated Amount   |
+|                                   | -   key the Reason Changed as REV |
+|                                   | -   key the Calculated Amount     |
 |                                   | -   press [Enter]                 |
 |                                   |                                   |
-|                                   | Update the Component Amount       |
+|                                   | update the Component Amount       |
 |                                   | (OPCA) screen                     |
 |                                   |                                   |
 |                                   | -   press [Enter]                 |
@@ -163,12 +176,12 @@ Process Direct.
 |                                   | a reason code of 'LTF' (less than |
 |                                   | fifty)                            |
 |                                   |                                   |
-|                                   | On the Assessment Finalisation    |
+|                                   | on the Assessment Finalisation    |
 |                                   | (OPAF) screen, key 'Y' in the     |
 |                                   | Finished? field. Press [Enter] to |
 |                                   | finalise the activity             |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Manually waiving a debt + Read    |
+| 6                                 | Manually waiving a debt + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If a DMN/NDB activity exists on   |
@@ -178,24 +191,24 @@ Process Direct.
 |                                   | -   'S'elect the Debt ID to be    |
 |                                   |     waived from the Debt List     |
 |                                   |     (OPDL) screen                 |
-|                                   | -   Press [Enter]                 |
+|                                   | -   press [Enter]                 |
 |                                   |                                   |
 |                                   | Go to the Add Waiver (OPWAA)      |
 |                                   | screen and complete:              |
 |                                   |                                   |
-|                                   | -   Debt Amount Waived $: field,  |
-|                                   |     code the amount to be waived  |
+|                                   | -   Debt Amount Waived $ field,   |
+|                                   |     key the amount to be waived   |
 |                                   | -   Interest Charge Amount Waived |
-|                                   |     $: field, cost the amount of  |
+|                                   |     $ field, cost the amount of   |
 |                                   |     interest to be waived         |
-|                                   | -   Reason Waived: field, use     |
+|                                   | -   Reason Waived field, use      |
 |                                   |     field help ('?') to locate    |
 |                                   |     the correct code              |
-|                                   | -   Comments: field, code a brief |
+|                                   | -   Comments field, key a brief   |
 |                                   |     explanation of why the debt   |
 |                                   |     is being waived               |
-|                                   | -   Press [Enter]                 |
-|                                   | -   Finalise activity on the      |
+|                                   | -   press [Enter]                 |
+|                                   | -   finalise activity on the      |
 |                                   |     Assessment Finalisation       |
 |                                   |     (OPAF) screen                 |
 |                                   |                                   |
@@ -205,7 +218,7 @@ Process Direct.
 |                                   | Complete the update in 2 separate |
 |                                   | activities.                       |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Waive a finalised fully recovered |
+| 7                                 | Waive a finalised fully recovered |
 |                                   | debt + Read more ...              |
 |                                   |                                   |
 |                                   | For DMIS to allow a waiver, the   |
@@ -223,9 +236,9 @@ Process Direct.
 |                                   | amount to other outstanding       |
 |                                   | debts.                            |
 |                                   |                                   |
-|                                   | Non Debt staff                    |
+|                                   | Non Debt staff:                   |
 |                                   |                                   |
-|                                   | -   Record the details on a DOC   |
+|                                   | -   record the details on a DOC   |
 |                                   |     using Fast Note located in    |
 |                                   |     Customer First. The Fast Note |
 |                                   |     will automatically refer to   |
@@ -234,20 +247,19 @@ Process Direct.
 |                                   |     the repayment history be      |
 |                                   |     adjusted to allow the waiver  |
 |                                   |     to be applied:                |
-|                                   | -   Create a Fast Note, select    |
-|                                   |     Auto Text. Use Debt           |
-|                                   |     Recovery > Debt Recovery      |
-|                                   |     referrals > OPRH Adj Req for  |
-|                                   |     Debt Waiver                   |
-|                                   | -   Select confirm                |
-|                                   | -   Record relevant information   |
+|                                   | -   use Fast Note - select Auto   |
+|                                   |     Text, use Debt Recovery >     |
+|                                   |     Debt Recovery referrals >     |
+|                                   |     OPRH Adj Req for Debt Waiver  |
+|                                   | -   select Confirm                |
+|                                   | -   record relevant information   |
 |                                   |     as required                   |
 |                                   |                                   |
-|                                   | Debt staff                        |
+|                                   | Debt staff:                       |
 |                                   |                                   |
-|                                   | -   Select the debt to waive from |
+|                                   | -   select the debt to waive from |
 |                                   |     the Debt List (OPDL) screen   |
-|                                   | -   Go to the Repayment History   |
+|                                   | -   go to the Repayment History   |
 |                                   |     (OPRH) screen. Adjust the     |
 |                                   |     last payment by $0.01 cent.   |
 |                                   |     Note: reverse this before     |
@@ -260,6 +272,65 @@ Process Direct.
 |                                   | map to Compliance and Debt        |
 |                                   | Operations to follow up whether a |
 |                                   | refund is due to the customer.    |
++-----------------------------------+-----------------------------------+
+| 8                                 | Potential less than $200 waiver + |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Assess the debt against the       |
+|                                   | following criteria:               |
+|                                   |                                   |
+|                                   | check the Authority field on OPMA |
+|                                   | to confirm the debt is raised     |
+|                                   | under the:                        |
+|                                   |                                   |
+|                                   | -   Social Security Act 1991      |
+|                                   | -   New Tax System (Family        |
+|                                   |     Assistance) (Administration)  |
+|                                   |     Act 1999, or                  |
+|                                   | -   Paid Parental Leave Act 2010  |
+|                                   |                                   |
+|                                   | customer is not current on a      |
+|                                   | payment                           |
+|                                   |                                   |
+|                                   | total balance of all outstanding  |
+|                                   | debts on the record is less than  |
+|                                   | $200, and                         |
+|                                   |                                   |
+|                                   | there is no payment arrangement   |
+|                                   | in place                          |
+|                                   |                                   |
+|                                   | If all the above criteria are     |
+|                                   | met, the debt may be considered   |
+|                                   | not cost effective to recover and |
+|                                   | eligible for waiver.              |
+|                                   |                                   |
+|                                   | Note: only Debt staff can use     |
+|                                   | waiver code 'LTW' for Paid        |
+|                                   | Parental Leave (PPL) debts.       |
+|                                   |                                   |
+|                                   | For debts raised under the Social |
+|                                   | Security Act 1991 or A New Tax    |
+|                                   | System (Family Assistance)        |
+|                                   | (Administration) Act 1999,        |
+|                                   | escalate the case:                |
+|                                   |                                   |
+|                                   | -   use Fast Note - select Auto   |
+|                                   |     text, use Debts > Updates >   |
+|                                   |     Potential Less Than $200      |
+|                                   |     Waiver                        |
+|                                   | -   link the Fast Note to the     |
+|                                   |     debt shell, select 'Link to   |
+|                                   |     existing activity' in the     |
+|                                   |     Document Completion field     |
+|                                   | -   complete the Fast Note        |
+|                                   |                                   |
+|                                   | Unassign the work item:           |
+|                                   |                                   |
+|                                   | -   use the reason 'Service       |
+|                                   |     Support Referral'             |
+|                                   | -   attach the Fast Note to the   |
+|                                   |     debt shell to prevent the     |
+|                                   |     activity from re-allocating   |
 +-----------------------------------+-----------------------------------+
 
                                    

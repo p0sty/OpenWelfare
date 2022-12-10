@@ -10,8 +10,6 @@ Rejecting a claim for Age Pension 065-03030030
 
 Example letter - Pension rejection letter for deceased customer
 
-Table 1
-
 +-----------------------------------+-----------------------------------+
 | Item                              | Description                       |
 +-----------------------------------+-----------------------------------+
@@ -60,69 +58,6 @@ Table 1
 |                                   |                                   |
 |                                   | This is an information notice     |
 |                                   | given under social security law   |
-+-----------------------------------+-----------------------------------+
-
-Age Pension New Claim (submit and DOC) script workaround
-
-Table 2
-
-+-----------------------------------+-----------------------------------+
-| Item                              | Description                       |
-+-----------------------------------+-----------------------------------+
-| Details                           | The Age Pension New Claim (Submit |
-|                                   | and DOC) script is run from       |
-|                                   | Customer Record when an Age       |
-|                                   | Pension claim is ready to be      |
-|                                   | submitted. The script will submit |
-|                                   | the activity and create a DOC     |
-|                                   | containing relevant information   |
-|                                   | from the record, including income |
-|                                   | and assets with the exception of  |
-|                                   | employment income. A DOC will     |
-|                                   | also be recorded on the partner's |
-|                                   | record if the partner is also     |
-|                                   | claiming Age Pension.             |
-+-----------------------------------+-----------------------------------+
-| Issue                             | Upon completion of the script, a  |
-|                                   | 'Follow Up Action' item           |
-|                                   | 'Verification of Income and       |
-|                                   | Assets data' will present. Staff  |
-|                                   | must select 'Cancel: Do not       |
-|                                   | proceed with this step', to       |
-|                                   | ensure that a 'Risk based claim   |
-|                                   | management' DOC is not created on |
-|                                   | the record, as this Trial has     |
-|                                   | ceased. Removal of this DOC is    |
-|                                   | mandatory to ensure customer      |
-|                                   | records accurately reflect the    |
-|                                   | assessment method used and meet   |
-|                                   | Getting it Right (GIR) Minimum    |
-|                                   | Standards.                        |
-+-----------------------------------+-----------------------------------+
-| Action required                   | Staff must apply the following    |
-|                                   | workarounds to inhibit the 'Risk  |
-|                                   | based claim management' DOC.      |
-|                                   |                                   |
-|                                   | Customer claiming (only) - Select |
-|                                   | Cancel the script once            |
-|                                   | Grant/Reject doc has been         |
-|                                   | generated. Select ok when message |
-|                                   | from pop-up 'Script error has     |
-|                                   | occurred' displays.               |
-|                                   |                                   |
-|                                   | Both customer and partner are     |
-|                                   | claiming (combined claim) - Do    |
-|                                   | not cancel the script until it    |
-|                                   | has created the Grant/Reject docs |
-|                                   | on both records. Once the script  |
-|                                   | has created the 2nd Grant/Reject  |
-|                                   | doc on the partner record, the    |
-|                                   | workaround is to be applied.      |
-|                                   |                                   |
-|                                   | This will result in an incorrect  |
-|                                   | Risk Based claim management DOC   |
-|                                   | on the customer's record which    |
-|                                   | must be deleted.                  |
 +-----------------------------------+-----------------------------------+
 
 Online task inviting customers to claim the CSHC
