@@ -90,6 +90,19 @@ after 12 months unless the information has enduring public value.
 |                                   | 47E(d)\                           |
 |                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
+| 7 November 2022                   | Documents in relation to tender   |
+|                                   | process RFT 1000828659 (LEX       |
+|                                   | 69548).                           |
+|                                   |                                   |
+|                                   | 4 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 42, 47, 47C, 47D, 47F, 47G\       |
+|                                   | **Exemptions**: Sections 42, 47,  |
+|                                   | 47C, 47D, 47F, 47G                |
++-----------------------------------+-----------------------------------+
 | 21 October 2022                   | Information regarding all         |
 |                                   | domestic business class flights   |
 |                                   | taken by employees of Services    |
@@ -2356,7 +2369,7 @@ us by:
 </div>
 :::
 
-Page last updated: 19 December 2022
+Page last updated: 22 December 2022
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2364,7 +2377,7 @@ Page last updated: 19 December 2022
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 21 December 2022 from
+This information was printed 22 December 2022 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
