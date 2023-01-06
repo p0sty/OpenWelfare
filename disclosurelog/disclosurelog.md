@@ -29,6 +29,22 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 22 December 2022                  | Services Australia's estimates    |
+|                                   | briefing pack, including back     |
+|                                   | pocket briefs, for the 2022       |
+|                                   | October and November Budget       |
+|                                   | Estimates (LEX 70537).            |
+|                                   |                                   |
+|                                   | 1 document released in full and   |
+|                                   | 52 documents released in part.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus).             |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47D, 47E(d), and 47F(1)\          |
+|                                   | **Exemptions**: Sections 47D,     |
+|                                   | 47E(d), and 47F(1)                |
++-----------------------------------+-----------------------------------+
 | 21 December 2022                  | Documents pertaining to the       |
 |                                   | COVID-19 Vaccination Scheme (LEX  |
 |                                   | 70204):                           |
@@ -2260,7 +2276,7 @@ after 12 months unless the information has enduring public value.
 |                                   | 2016-17)                          |
 |                                   |                                   |
 |                                   | 1 document released in full. The  |
-|                                   | documents are [available upon     |
+|                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
 |                                   | **Sections of the Act**: N/A\     |
@@ -2320,7 +2336,7 @@ after 12 months unless the information has enduring public value.
 |                                   | at 21 July 2017 (LEX 30864)       |
 |                                   |                                   |
 |                                   | 1 document released in full. The  |
-|                                   | documents are [available upon     |
+|                                   | document is [available upon       |
 |                                   | request](#contactus).             |
 |                                   |                                   |
 |                                   | **Sections of the Act**: N/A\     |
@@ -2343,10 +2359,9 @@ after 12 months unless the information has enduring public value.
 | 17 January 2017                   | Incoming Government Brief as it   |
 |                                   | refers to Medicare (LEX 22819)    |
 |                                   |                                   |
-|                                   | 3 documents released in part.     |
-|                                   |                                   |
-|                                   | The documents are available upon  |
-|                                   | request.                          |
+|                                   | 3 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus).             |
 |                                   |                                   |
 |                                   | **Sections of the Act**: Sections |
 |                                   | 22, 37 and 47C(1)\                |
@@ -2387,7 +2402,7 @@ us by:
 </div>
 :::
 
-Page last updated: 4 January 2023
+Page last updated: 6 January 2023
 
 ::: {.hidden .print:block}
 ::: pt-9
@@ -2395,7 +2410,7 @@ Page last updated: 4 January 2023
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 5 January 2023 from
+This information was printed 6 January 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
