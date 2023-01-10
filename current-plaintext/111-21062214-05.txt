@@ -31,144 +31,312 @@ Error codes - error free
 Table 1
 
 +-----------------------------------+-----------------------------------+
-| Error codes                       | Error definition                  |
+| Error code                        | Error definition                  |
 +-----------------------------------+-----------------------------------+
-| BDPA01                            | Error free.                       |
+| ES01                              | Error free.                       |
 +-----------------------------------+-----------------------------------+
 
-Error status codes
+Error status codes ES02 - ES10
 
 Table 2
 
-+-----------------------------------+-----------------------------------+
-| Error codes                       | Error definition                  |
-+-----------------------------------+-----------------------------------+
-| BDPA02A                           | The provider number does not      |
-|                                   | match the name listed on the      |
-| Critical                          | form.                             |
-+-----------------------------------+-----------------------------------+
-| BDPA02B                           | The incorrect provider number is  |
-|                                   | updated that is not stipulated on |
-| Critical                          | the form.                         |
-+-----------------------------------+-----------------------------------+
-| BDPA02C                           | The provider number and practice  |
-|                                   | address do not match.             |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA02D                           | The provider number is closed and |
-|                                   | bank details have been updated.   |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA02E                           | The provider number has not been  |
-|                                   | supplied on form and details have |
-| Critical                          | been updated.                     |
-+-----------------------------------+-----------------------------------+
-| BDPA03A                           | The Minor ID on the form is not   |
-|                                   | added.                            |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA03B                           | The Minor ID on the form is not   |
-|                                   | created in the Provider Directory |
-| Critical                          | System (PDS).                     |
-+-----------------------------------+-----------------------------------+
-| BDPA03C                           | Minor ID created in PDS           |
-|                                   | incorrectly.                      |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA03D                           | Incorrect Minor ID is recorded.   |
-|                                   |                                   |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA03E                           | Minor ID is recorded before       |
-|                                   | effective date.                   |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA04A                           | The declaration/form has no       |
-|                                   | signature.                        |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA04B                           | Digital signature is not          |
-|                                   | acceptable.                       |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA04C                           | Signature is not                  |
-|                                   | original/signature is copied.     |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA04D                           | The provider who is the           |
-|                                   | applicant, has not signed the     |
-| Critical                          | declaration/form.                 |
-+-----------------------------------+-----------------------------------+
-| BDPA04E                           | Signature date older than 30 days |
-|                                   | or not present.                   |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05A                           | The account number entered does   |
-|                                   | not match the form.               |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05B                           | The BSB number entered does not   |
-|                                   | match the form.                   |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05C                           | The incorrect effective/start     |
-|                                   | date has been entered.            |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05D                           | The bank account details have not |
-|                                   | been recorded.                    |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05E                           | The bank account details end      |
-|                                   | dated in error.                   |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05F                           | The bank account details should   |
-|                                   | not have been recorded.           |
-| Critical                          |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA05G                           | All pages of HW027 or HW052 have  |
-|                                   | not been received and details     |
-| Critical                          | have been recorded.               |
-+-----------------------------------+-----------------------------------+
-| BDPA06A                           | Australian Immunisation Register  |
-|                                   | (AIR) box is ticked but not       |
-| Critical                          | forwarded to AIR.                 |
-+-----------------------------------+-----------------------------------+
-| BDPA07A                           | The account name is not recorded  |
-|                                   | correctly.                        |
-| Non-critical                      |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA08A                           | Provider agreement                |
-|                                   | attached/provider agreement       |
-| Non-critical                      | attached has not been recorded in |
-|                                   | the processing notes.             |
-+-----------------------------------+-----------------------------------+
-| BDPA09A                           | Processing notes not completed,   |
-|                                   | for example, email sent contacted |
-| Non-critical                      | provider.                         |
-+-----------------------------------+-----------------------------------+
-| BDPA09B                           | Notes in PaNDA do not match       |
-|                                   | action taken.                     |
-| Non-critical                      |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA09C                           | Naming convention has not been    |
-|                                   | corrected.                        |
-| Non-critical                      |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA09D                           | Notification sent to provider not |
-|                                   | addressing all issues on form.    |
-| Non-critical                      |                                   |
-+-----------------------------------+-----------------------------------+
-| BDPA10A                           | The attachment with the form has  |
-|                                   | not been signed by the provider   |
-| Critical                          | but has been actioned.            |
-+-----------------------------------+-----------------------------------+
-| BDPA10B                           | The attachment with the form      |
-|                                   | signed by the provider has not    |
-| Critical                          | been actioned nor the provider    |
-|                                   | contacted.                        |
-+-----------------------------------+-----------------------------------+
+Form Related Errors
+
++-----------------------+-----------------------+-----------------------+
+| Error code            | Error definition      | It is an error when   |
++-----------------------+-----------------------+-----------------------+
+| ES02                  | The provider number   | Banking forms have    |
+|                       | does not match the    | been accepted and     |
+| Critical              | name listed on the    | processed when the    |
+|                       | form.                 | provider number does  |
+|                       |                       | not match the name    |
+|                       |                       | listed on the form.   |
+|                       |                       |                       |
+|                       |                       | Abbreviated first and |
+|                       |                       | last names are not    |
+|                       |                       | acceptable.           |
+|                       |                       |                       |
+|                       |                       | This also includes    |
+|                       |                       | the absence of a      |
+|                       |                       | provider number and   |
+|                       |                       | details have been     |
+|                       |                       | updated in PDS.       |
++-----------------------+-----------------------+-----------------------+
+| ES03                  | The incorrect         | Banking forms have    |
+|                       | provider number is    | been accepted and     |
+| Critical              | updated that is not   | processed to the      |
+|                       | stipulated on the     | incorrect provider    |
+|                       | form.                 | number profile in     |
+|                       |                       | PDS.                  |
++-----------------------+-----------------------+-----------------------+
+| ES04                  | The provider number   | Banking forms have    |
+|                       | does not match        | been accepted and     |
+| Critical              | practice address.     | processed where PDS   |
+|                       |                       | records do not match  |
+|                       |                       | the details on the    |
+|                       |                       | form.                 |
++-----------------------+-----------------------+-----------------------+
+| ES05                  | The declaration/form  | Banking forms have    |
+|                       | has not been signed   | been accepted and     |
+| Critical              | by the applicant.     | processed without the |
+|                       |                       | applicant’s           |
+|                       |                       | signature.            |
++-----------------------+-----------------------+-----------------------+
+| ES06                  | Invalid signature     | Banking forms have    |
+|                       | accepted.             | been accepted and     |
+| Critical              |                       | processed without a   |
+|                       |                       | hand written          |
+|                       |                       | signature. Digital    |
+|                       |                       | signatures not        |
+|                       |                       | acceptable. This      |
+|                       |                       | includes signatures   |
+|                       |                       | that are not original |
+|                       |                       | and/or signatures     |
+|                       |                       | that are copied.      |
++-----------------------+-----------------------+-----------------------+
+| ES07                  | Bank details signed   | Banking forms have    |
+|                       | form dated in the     | been accepted and     |
+| Critical              | past or future or     | processed with a      |
+|                       | with no date          | signature, without a  |
+|                       |                       | date or exceeding 30  |
+|                       |                       | days from the date of |
+|                       |                       | lodgement.            |
+|                       |                       |                       |
+|                       |                       | Future dated signed   |
+|                       |                       | forms are not         |
+|                       |                       | accepted. This        |
+|                       |                       | excludes effective    |
+|                       |                       | start dates for       |
+|                       |                       | banking details       |
+|                       |                       | and/or minor id’s.    |
+|                       |                       |                       |
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| ES08                  | All pages of HW027 or | Banking forms have    |
+|                       | HW052 have not been   | been accepted and     |
+| Critical              | received and details  | processed where all   |
+|                       | have been recorded.   | or part of the        |
+|                       |                       | Provider Agreement/   |
+|                       |                       | banking form is       |
+|                       |                       | absent.               |
++-----------------------+-----------------------+-----------------------+
+| ES09                  | The additional        | Additional            |
+|                       | document to authorise | correspondence was    |
+| Critical              | the update provided   | attached requesting   |
+|                       | with the bank details | to update multiple    |
+|                       | form has not been     | providers but the     |
+|                       | signed by the         | attachment was not    |
+|                       | provider but has been | signed by the         |
+|                       | actioned.             | applicant. Banking    |
+|                       |                       | forms have been       |
+|                       |                       | accepted and          |
+|                       |                       | processed.            |
++-----------------------+-----------------------+-----------------------+
+| ES10                  | The additional        | In the instance of    |
+|                       | document with the     | requests to update    |
+| Critical              | form signed by the    | multiple providers    |
+|                       | provider has not been | the documents have    |
+|                       | actioned and no       | been signed by the    |
+|                       | contact was made to   | applicant but was not |
+|                       | the provider          | processed. Provider   |
+|                       |                       | was not contacted to  |
+|                       |                       | confirm date of       |
+|                       |                       | effect.               |
++-----------------------+-----------------------+-----------------------+
+
+Error status codes ES11 - ES16
+
+Table 3
+
+Errors in PDS
+
++-----------------------+-----------------------+-----------------------+
+| Error code            | Error definition      | It is an error when   |
++-----------------------+-----------------------+-----------------------+
+| ES11                  | The provider number   | Banking forms have    |
+|                       | is closed and bank    | been accepted and     |
+| Critical              | details have been     | processed where the   |
+|                       | updated.              | provider number is    |
+|                       |                       | closed in PDS and     |
+|                       |                       | banking details have  |
+|                       |                       | been updated.         |
++-----------------------+-----------------------+-----------------------+
+| ES12                  | Minor ID PDS          | Banking forms have    |
+|                       |                       | been accepted and     |
+| Critical              |                       | processed but the     |
+|                       |                       | minor ID has not been |
+|                       |                       | updated in PDS for    |
+|                       |                       | the provider’s bank   |
+|                       |                       | details.              |
+|                       |                       |                       |
+|                       |                       | Banking forms have    |
+|                       |                       | been accepted and     |
+|                       |                       | processed without     |
+|                       |                       | creating the new      |
+|                       |                       | minor ID in PDS.      |
+|                       |                       |                       |
+|                       |                       | Minor ID registration |
+|                       |                       | details in PDS have   |
+|                       |                       | been created          |
+|                       |                       | incorrectly, but bank |
+|                       |                       | details have been     |
+|                       |                       | accepted and          |
+|                       |                       | processed.            |
+|                       |                       |                       |
+|                       |                       | Banking forms have    |
+|                       |                       | been accepted and     |
+|                       |                       | processed with the    |
+|                       |                       | incorrect Minor ID    |
+|                       |                       | updated to Provider   |
+|                       |                       | Number in PDS.        |
++-----------------------+-----------------------+-----------------------+
+| ES13                  | Minor ID and/or       | Banking forms have    |
+|                       | banking details are   | been accepted and     |
+| Critical              | recorded before       | processed with minor  |
+|                       | effective date on     | ID but with incorrect |
+|                       | form.                 | effective             |
+|                       |                       | commencement date.    |
++-----------------------+-----------------------+-----------------------+
+| ES14                  | Bank Account number   | Banking forms have    |
+|                       | details               | been accepted and     |
+| Critical              |                       | processed with        |
+|                       |                       | incorrect details:    |
+|                       |                       |                       |
+|                       |                       | The account number    |
+|                       |                       | and/or BSB entered    |
+|                       |                       | does not match the    |
+|                       |                       | form.                 |
+|                       |                       |                       |
+|                       |                       | The bank account      |
+|                       |                       | number end/start date |
+|                       |                       | is incorrect.         |
+|                       |                       |                       |
+|                       |                       | The bank account      |
+|                       |                       | details have not been |
+|                       |                       | recorded at all.      |
++-----------------------+-----------------------+-----------------------+
+| ES15                  | Bank details have     | Bank details have     |
+|                       | been updated without  | been updated without  |
+| Critical              | contacting            | following current     |
+|                       | practice/provider     | security checks for   |
+|                       |                       | health professionals  |
+|                       |                       | and their staff.      |
++-----------------------+-----------------------+-----------------------+
+| ES16                  | Bank account name is  | Banking forms have    |
+|                       | not recorded          | been accepted and     |
+| Non-critical          | correctly             | processed where the   |
+|                       |                       | account name is not   |
+|                       |                       | entered correctly,    |
+|                       |                       | excluding             |
+|                       |                       | abbreviations. This   |
+|                       |                       | would include a       |
+|                       |                       | change from an        |
+|                       |                       | individual to another |
+|                       |                       | type of legal entity, |
+|                       |                       | or one type of legal  |
+|                       |                       | entity to another.    |
++-----------------------+-----------------------+-----------------------+
+
+Error status codes ES17 - ES19
+
+Table 4
+
+Errors in PaNDA
+
++-----------------------+-----------------------+-----------------------+
+| Error code            | Error definition      | It is an error when   |
++-----------------------+-----------------------+-----------------------+
+| ES17                  | Incomplete PaNDA WID  | Provider Agreement is |
+|                       | processing notes      | not attached/         |
+| Non-critical          |                       | attached with limited |
+|                       |                       | or no processing      |
+|                       |                       | notes.                |
+|                       |                       |                       |
+|                       |                       | Processing notes on a |
+|                       |                       | PaNDA work item       |
+|                       |                       | should clearly        |
+|                       |                       | explain all action    |
+|                       |                       | taken to complete     |
+|                       |                       | that WID as well as   |
+|                       |                       | identifying what is   |
+|                       |                       | required.             |
++-----------------------+-----------------------+-----------------------+
+| ES18                  | Pended PaNDA WID –    | Pend reason (if       |
+|                       | incorrect Pend        | applicable) -         |
+| Non-critical          | reason/incomplete     | incorrect and/        |
+|                       | processing notes      | limited or no         |
+|                       |                       | processing notes.     |
++-----------------------+-----------------------+-----------------------+
+| ES19                  | Naming convention has | The PaNDA work item,  |
+|                       | not been entered      | has been named to     |
+| Non-critical          | correctly             | include at least one  |
+|                       |                       | of following, name of |
+|                       |                       | practice, provider    |
+|                       |                       | number, Stem, Phone   |
+|                       |                       | number or name of     |
+|                       |                       | doctor.               |
++-----------------------+-----------------------+-----------------------+
+
+Error status codes ES20 - ES23
+
+Table 5
+
+Email errors
+
++-----------------------+-----------------------+-----------------------+
+| Error code            | Error definition      | It is an error when   |
++-----------------------+-----------------------+-----------------------+
+| ES20                  | Australian            | Banking forms have    |
+|                       | Immunisation Register | been accepted and     |
+| Critical              | (AIR) box is ticked   | processed, and AIR    |
+|                       | but not forwarded to  | selected however no   |
+|                       | AIR.                  | evidence email        |
+|                       |                       | forwarded to AIR for  |
+|                       |                       | actioning.            |
+|                       |                       |                       |
+|                       |                       | AIR email must be     |
+|                       |                       | moved from Personal   |
+|                       |                       | inbox to “Sent” inbox |
+|                       |                       | in Provider.Forms.    |
++-----------------------+-----------------------+-----------------------+
+| ES21                  | Email notification    | Email notification    |
+|                       | for Rejected EFT      | sent to provider did  |
+| Critical              | registration          | not state the         |
+|                       | incomplete.           | relevant reason/s for |
+|                       |                       | rejection.            |
+|                       |                       |                       |
+|                       |                       | Email must be moved   |
+|                       |                       | from Personal inbox   |
+|                       |                       | to “Sent” inbox in    |
+|                       |                       | Provider.Forms.       |
++-----------------------+-----------------------+-----------------------+
+| ES22                  | Email to provider     | Banking Details/Minor |
+|                       |                       | ID have been accepted |
+| Critical              |                       | and processed         |
+|                       |                       |                       |
+|                       |                       | and                   |
+|                       |                       |                       |
+|                       |                       | Email sent to         |
+|                       |                       | incorrect email       |
+|                       |                       | address               |
+|                       |                       |                       |
+|                       |                       | Email sent to invalid |
+|                       |                       | email address         |
+|                       |                       |                       |
+|                       |                       | Email not sent to     |
+|                       |                       | provider after any    |
+|                       |                       | updates are made.     |
++-----------------------+-----------------------+-----------------------+
+| ES23                  | Email - General       | Email not sent on     |
+|                       |                       | behalf of             |
+| Non-critical          |                       | Provider.Forms        |
+|                       |                       |                       |
+|                       |                       | EFT emails sent must  |
+|                       |                       | be moved from         |
+|                       |                       | Personal inbox to     |
+|                       |                       | Sent inbox in         |
+|                       |                       | Provider.Forms.       |
++-----------------------+-----------------------+-----------------------+
 
                                    
 

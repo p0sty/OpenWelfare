@@ -1,0 +1,117 @@
+
+General Practitioner Training Payments (GPTP) 133-22121512
+
+-   Background
+-   Process
+
+[Expand/Collapse all sections]Expand all
+
+The document outlines processing GPTP to bank accounts and other payment
+instruction processes.
+
+Organisation Register Banking Details for an Organisation Site Record
+
+The payment to practices, supervisors, salary support and registrars are
+delivered as:
+
+-   Practice payment – can only be paid to an Accredited training
+    practice – the Payment Requestor (Colleges) requires an Organisation
+    Site ID as the payment recipient identifier – therefore the Practice
+    must be in the Organisation Register
+-   Supervisor payment – will be paid to the practice unless the
+    practice directs the Payment Requestor to pay the Supervisor
+    directly. Therefore the Payment Requestor requires either the
+    Organisation Site ID or a Medicare Provider Number (MPN) as a
+    payment recipient identifier
+-   Salary Support Payment – can only be paid to an Accredited training
+    practice hosting a salary support for Aboriginal and Torres Strait
+    Islander health training – the Payment Requestor requires an
+    Organisation Site ID as the payment recipient identifier – therefore
+    the Practice must be in the Organisation Register
+-   Registrar Payment – can only be paid to the Registrar – the Payment
+    Requestor requires either the Registrar’s MPN (8 digits) or STEM (6
+    digits) as the payment recipient identifier
+
+Registered GP training payments must have registered their associated
+bank account details before a payment can be made to a practice,
+supervisor or registrar.
+
+Practice Administrators can assign bank account details for the
+practice.
+
+General Practice Training Payments (GPTP)
+
+The General Practice Training Payments (GPTP) are submitted by payment
+requesters and paid to payment recipients.
+
+The payment requesters that can submit payments are:
+
+-   Royal Australian College of General Practice (RACGP)
+-   Australian College of Rural and Remote Medicine (ACRRM)
+
+The payment type submitted by payment requesters:
+
+-   Australian General Practice Training (AGPT)
+
+The payment recipients who may receive payment are:
+
+-   Supervisors
+-   Practices
+-   Registrars
+
+Security
+
+In addition to existing PRODA and HPOS access, the Organisation Register
+has 3 HPOS attributes that control access and functionality to the
+Organisation and Organisation Site Records including adding new bank
+details and or updating existing bank details.
+
+The new Organisation Register attributes are either automatic, depending
+on PRODA Organisation Membership/role or are delegated by a
+Director/Owner or member with Owner Access in the first instance to
+another PRODA member who may also be given a delegable attribute.
+
+The new attributes control access to View, Add New or Update Existing
+Bank details for GPTP on the Organisation Site record and only become
+available once HPOS has been linked to an Organisation in the
+Organisation Register using the organisation ABN as an Identifier.
+
+The 3 new attributes create 2 levels of security access for banking
+details.
+
+For all Organisation Finance Administration in the Organisation Register
+
+A user must be assigned in PRODA, HPOS attributes
+‘HPOS-Org-Admin’ + ‘HPOS-Org-Finance’
+
+They can:
+
+-   View the bank account details, including the account name
+-   Create new bank account details
+-   Add payment instructions
+
+For Organisation Site Finance Administration in the Organisation
+Register
+
+A user must be assigned in PRODA, HPOS attributes:
+‘HPOS-Org-Site-Admin’ & ‘HPOS-Org-Finance’
+
+They can:
+
+-   View the bank account details,
+-   Select existing banking details for the Organisation Site Record and
+    add /update payment instructions
+
+They cannot create new bank account details.
+
+Note: a user with HPOS Org Site Admin attribute only will not be able to
+action any Org site finance administration without the addition of the
+HPOS-Org Finance Admin attribute.
+
+Related links
+
+Organisation Register
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 
