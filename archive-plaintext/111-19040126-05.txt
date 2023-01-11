@@ -31,6 +31,7 @@ and Work Types.
 | MED1                              | -   Program - Aged Care           |
 |                                   | -   Program – Patient Claims,     |
 |                                   |     Work Type – Banking Details   |
+|                                   | -   Program - eBusiness           |
 |                                   | -   Program - Medicare            |
 |                                   |     Eligibility                   |
 |                                   | -   Program – Medicare Safety Net |
@@ -320,15 +321,15 @@ Work Type – Flex Claim
 |                                   |     ID                            |
 |                                   |     If multiple months and/or     |
 |                                   |     RACSIDs in a single document, |
-|                                   |     e.g. 1607-17328, classify the |
-|                                   |     first document and select     |
-|                                   |     send for splitting check box  |
+|                                   |     e.g. 1607-17328, select send  |
+|                                   |     for splitting check box       |
 |                                   | -   Secondary Index: YYMM-        |
 |                                   |     SERVICE NAME                  |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Claim for Flexible Care       |
 |                                   | -   Claim for Short-term          |
 |                                   |     Restorative Care              |
+|                                   | -   Transition Care Claim         |
 +-----------------------------------+-----------------------------------+
 | Kofax image - things to look for  | -   'flex claim' in email subject |
 |                                   |     line                          |
@@ -349,9 +350,8 @@ Work Type – Home Claim
 |                                   |     ID                            |
 |                                   |     If multiple months and/or     |
 |                                   |     RACSIDs in a single document, |
-|                                   |     e.g. 1607-17328, classify the |
-|                                   |     first document and select     |
-|                                   |     send for splitting check box  |
+|                                   |     e.g. 1607-17328, select send  |
+|                                   |     for splitting check box       |
 |                                   | -   Secondary Index: YYMM-        |
 |                                   |     SERVICE NAME                  |
 +-----------------------------------+-----------------------------------+
@@ -476,9 +476,8 @@ Work Type – Residential Claim
 |                                   |     ID                            |
 |                                   |     If multiple months and/or     |
 |                                   |     RACSIDs in a single document, |
-|                                   |     e.g. 1607-17328, classify the |
-|                                   |     first document and select     |
-|                                   |     send for splitting check box  |
+|                                   |     e.g. 1607-17328, select send  |
+|                                   |     for splitting check box       |
 |                                   | -   Secondary Index: YYMM-        |
 |                                   |     SERVICE NAME                  |
 +-----------------------------------+-----------------------------------+
@@ -523,7 +522,8 @@ Work Type – Supplements
 |                                   |     subject line                  |
 |                                   | -   Form abbreviation: TRANS, DC, |
 |                                   |     OX                            |
-|                                   | -   Form type: AC014, AC011       |
+|                                   | -   Form type: AC014, AC011,      |
+|                                   |     AC013                         |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Unapproved
@@ -702,22 +702,30 @@ Work Type – Manual Encounter
 +-----------------------------------+-----------------------------------+
 | Classification conventions        | -   Program: AIR                  |
 | selected/keyed in Kofax           | -   Work Type: Manual Encounter   |
-|                                   | -   Primary Index: CLAIM ID       |
-|                                   | -   Secondary Index: PROVIDER     |
+|                                   | -   Primary Index: MEDICARE       |
+|                                   |     NUMBER                        |
+|                                   | -   Secondary Index:              |
 |                                   |     SURNAMEFIRSTNAME              |
 |                                   |                                   |
 |                                   | If no claim ID or provider        |
 |                                   | details, use child's              |
 |                                   | SURNAMEFIRSTNAME                  |
+|                                   |                                   |
+|                                   | Note: always use above            |
+|                                   | classification conventions        |
+|                                   | regardless of field names in      |
+|                                   | KOFAX.                            |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Australian Immunisation       |
 |                                   |     Register Immunisation         |
 |                                   |     encounter form (IM018)        |
-|                                   | -   Immunisation encounter header |
-|                                   |     form (IM0001)                 |
 +-----------------------------------+-----------------------------------+
-| Kofax image - things to look for  | -   Form includes header or       |
-|                                   |     encounter in title            |
+| Kofax image - things to look for  | -   Document is named             |
+|                                   |     Immunisation encounter        |
+|                                   | -   Contains record of            |
+|                                   |     immunisation that a provider  |
+|                                   |     has administered for an       |
+|                                   |     individual                    |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Medical Exemption
@@ -745,6 +753,8 @@ Work Type – Medical Exemption
 |                                   |     categorise under Work Type:   |
 |                                   |     Medical Exemption. Do not     |
 |                                   |     split                         |
+|                                   | -   Forms or letters referencing  |
+|                                   |     vaccination exemptions        |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Opt Out and Release of information
@@ -844,8 +854,11 @@ Work Type – Provider Registration
 | Classification conventions        | -   Program:  AIR                 |
 | selected/keyed in Kofax           | -   Work Type:  Provider          |
 |                                   |     Registration                  |
+|                                   | -   Primary Index:  PROVIDER      |
+|                                   |     NUMBER                        |
 |                                   |                                   |
-|                                   | Primary Index:  PROVIDER NUMBER   |
+|                                   | Secondary Index:                  |
+|                                   | Individual/Organisation name      |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | AIR Application to register as a  |
 |                                   | vaccination provider forms        |
@@ -913,6 +926,7 @@ classify a work type.
 | Australian Organ Donor Register   | -   Consent Confirmation          |
 |                                   | -   Donor Objection               |
 |                                   | -   Donor Registration            |
+|                                   | -   Email Enquiry                 |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Consent Confirmation
@@ -1002,6 +1016,27 @@ Work Type – Donor Registration
 |                                   |     Secondary Index               |
 +-----------------------------------+-----------------------------------+
 
+Work Type - Email Enquiry
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: AODR                 |
+| selected/keyed in Kofax           | -   Work Type: Email              |
+|                                   | -   Primary Index:                |
+|                                   |     SURNAMEFIRSTNAME              |
+|                                   | -   Secondary Index: Medicare     |
+|                                   |     number                        |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Emails from TAS.AODR.FAXES    |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | -   Emails from the above email   |
+|                                   |     mailbox will and will have    |
+|                                   |     enquiries about the           |
+|                                   |     Australian Organ Donor        |
+|                                   |     Register                      |
++-----------------------------------+-----------------------------------+
+
 Program – Bulk Bill
 
 These tables link to Bulk Bill example documents. These are compared
@@ -1028,8 +1063,8 @@ Work Type – Adjustments
 |                                   |     at Q9 first)                  |
 |                                   | -   Secondary Index: CLAIM ID     |
 +-----------------------------------+-----------------------------------+
-| Document examples or titles       | -   Application for Bulk Bill     |
-|                                   |     claim adjustment (DB018)      |
+| Document examples or titles       | Application for Bulk Bill claim   |
+|                                   | adjustment (DB018)                |
 +-----------------------------------+-----------------------------------+
 | Kofax image- things to look for   | Application for Bulk Bill claim   |
 |                                   | adjustment forms                  |
@@ -1080,11 +1115,7 @@ Work Type – Claims
 |                                   |     poor image, not in            |
 |                                   |     Operational Blueprint or not  |
 |                                   |     enough data to classify,      |
-|                                   |     suspend the document. See     |
-|                                   |     Suspending a batch for follow |
-|                                   |     up by Canberra DST TPS table  |
-|                                   |     to help with the suspension   |
-|                                   |     keyword to use                |
+|                                   |     suspend the document          |
 +-----------------------------------+-----------------------------------+
 
 Program – Disaster Health Care Assistance Scheme (DHCAS)
@@ -1139,10 +1170,106 @@ These tables link to eBusiness example documents. These are compared
 against the document image in Kofax. Use the classification conventions
 to classify a work type.
 
+Note:
+
+-   work for eBusiness is received from various email queues
+-   if a document is received with multiple applications, send for
+    splitting. Exception: do not send for splitting - Application for a
+    PKI Site Certificate (HW001) and Application for a PKI Individual
+    Certificate (HW002), with an Acceptable Referee Identification for
+    PKI Certificate Applications (HW004)
+-   enter email addresses or usernames exactly as the customer has
+    provided. They do not need to be in capital letters
+
 +-----------------------------------+-----------------------------------+
 | Program                           | Work Types                        |
 +-----------------------------------+-----------------------------------+
-| eBusiness                         | -   PRODA                         |
+| eBusiness                         | -   Enquiry                       |
+|                                   | -   MCDIU - Duplicate Pin         |
+|                                   | -   MCDIU - Intertwined record    |
+|                                   | -   PRODA                         |
+|                                   | -   PRODA enquiry                 |
+|                                   | -   Public Key Infrastructure -   |
+|                                   |     HCI                           |
+|                                   | -   Public Key Infrastructure -   |
+|                                   |     HCL                           |
+|                                   | -   Public Key Infrastructure -   |
+|                                   |     IHC                           |
+|                                   | -   Public Key Infrastructure -   |
+|                                   |     PPA                           |
+|                                   | -   Urgent Enquiry                |
++-----------------------------------+-----------------------------------+
+
+Work Type - Enquiry
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: Enquiry            |
+|                                   | -   Primary Index: Email address  |
+|                                   |     received from                 |
+|                                   | -   Secondary Index: not listed   |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   All emails with no            |
+|                                   |     attachment/customer enquiries |
+|                                   | -   Identification documents (for |
+|                                   |     example, drivers licence or   |
+|                                   |     Medicare cards)               |
+|                                   | -   Emails with screenshots       |
+|                                   | -   Compliments/complaints        |
+|                                   | -   Oversized email message       |
+|                                   |     (reply required for releasing |
+|                                   |     the email) – Example 1        |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | Emails sent to eBusiness Service  |
+|                                   | Centre                            |
++-----------------------------------+-----------------------------------+
+
+Work Type - MCDIU Duplicate Pin
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: Data Integrity     |
+|                                   |     Duplicate Pin                 |
+|                                   | -   Primary Index:                |
+|                                   |     FIRSTNAMESURNAME              |
+|                                   | -   Secondary Index: MEDICARE     |
+|                                   |     NUMBER (if multiple numbers   |
+|                                   |     write as                      |
+|                                   |     C1XXXXXXXX,C2XXXXXXXX)        |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | Duplicate Referral form           |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | If staff have the details to      |
+|                                   | enter both the primary and        |
+|                                   | secondary indexes, they must      |
+|                                   | enter both                        |
++-----------------------------------+-----------------------------------+
+
+Work Type - MCDIU Intertwined record
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: Data Integrity     |
+|                                   |     Intertwined record            |
+|                                   | -   Primary Index:                |
+|                                   |     FIRSTNAMESURNAME              |
+|                                   | -   Secondary Index: MEDICARE     |
+|                                   |     NUMBER (if multiple numbers   |
+|                                   |     write as                      |
+|                                   |     C1XXXXXXXX,C2XXXXXXXX)        |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | Intertwined Referral form         |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | If staff have the details to      |
+|                                   | enter both the primary and        |
+|                                   | secondary indexes, they must      |
+|                                   | enter both                        |
 +-----------------------------------+-----------------------------------+
 
 Work Type – PRODA
@@ -1152,17 +1279,170 @@ Work Type – PRODA
 +-----------------------------------+-----------------------------------+
 | Classification conventions        | -   Program: eBusiness            |
 | selected/keyed in Kofax           | -   Work Type: PRODA              |
-|                                   | -   Primary Index: PRODA ACCOUNT  |
-|                                   |     USERNAME                      |
+|                                   | -   Primary Index: PRODA account  |
+|                                   |     username. Note: enter exactly |
+|                                   |     as provided on the form. For  |
+|                                   |     example, lower or upper case  |
+|                                   | -   Secondary Index: not listed   |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Manual identity verification  |
 |                                   |     for Provider Digital Access   |
 |                                   |     form (HW080)                  |
+|                                   | -   Identification documents,     |
+|                                   |     (e.g. drivers licence or      |
+|                                   |     Medicare card) with and       |
+|                                   |     without username/RA provided  |
 +-----------------------------------+-----------------------------------+
 | Kofax image - things to look for  | -   Do not classify as Provider   |
-|                                   |     Registration, see next column |
-|                                   |     for classification            |
-|                                   |     conventions                   |
+|                                   |     Registration                  |
+|                                   | -   Email sent to PRODA           |
++-----------------------------------+-----------------------------------+
+
+Work Type - PRODA enquiry
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: PRODA enquiry      |
+|                                   | -   Primary Index: PRODA account  |
+|                                   |     username (if this cannot be   |
+|                                   |     identified, leave blank)      |
+|                                   | -   Secondary Index: Email        |
+|                                   |     address sent from             |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   All emails with no            |
+|                                   |     attachment/customer enquiries |
+|                                   | -   Emails with screenshots       |
+|                                   | -   Customer compliments/feedback |
+|                                   | -   Oversized email messages. See |
+|                                   |     eBusiness Work type - enquiry |
+|                                   |     for examples                  |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | -   Email sent to PRODA           |
++-----------------------------------+-----------------------------------+
+
+Work Type - Public Key Infrastructure - HCI
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: PKI HCI            |
+|                                   | -   Primary Index:                |
+|                                   |     SURNAMEFIRSTNAME              |
+|                                   | -   Secondary Index: PROVIDER     |
+|                                   |     STEM (if available, otherwise |
+|                                   |     leave blank)                  |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Application for a PKI         |
+|                                   |     individual certificate        |
+|                                   |     (HW002)                       |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | -   If an Acceptable Referee      |
+|                                   |     Identification for PKI        |
+|                                   |     Infrastructure Certificate    |
+|                                   |     application (HW004) is        |
+|                                   |     received with an Application  |
+|                                   |     for a PKI Site Certificate    |
+|                                   |     form (HW001)/HW002 form -     |
+|                                   |     classify to the HW001-HW002.  |
+|                                   |     The HW004 is supporting       |
+|                                   |     documentation when received   |
+|                                   |     in this way                   |
++-----------------------------------+-----------------------------------+
+
+Work Type - Public Key Infrastructure - HCL
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: PKI HCL            |
+|                                   | -   Primary Index: Trading name   |
+|                                   |     of site/organisation (If      |
+|                                   |     blank use registered name of  |
+|                                   |     site/organisation)            |
+|                                   | -   Secondary Index: POSTCODE     |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Application for a PKI Site    |
+|                                   |     Certificate (HW001) could     |
+|                                   |     have attachments              |
+|                                   | -   Request to renew, revoke or   |
+|                                   |     reissue a PKI certificate     |
+|                                   |     (HW003)                       |
+|                                   | -   Acceptable Referee            |
+|                                   |     Identification for PKI        |
+|                                   |     Certificate applications      |
+|                                   |     (HW004), could have           |
+|                                   |     attachments                   |
+|                                   | -   Medicare PKI renewal letter - |
+|                                   |     signed                        |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | -   If a HW004 is received with a |
+|                                   |     HW001/HW002 – classify to the |
+|                                   |     HW001-HW002. The HW004 is     |
+|                                   |     supporting documentation when |
+|                                   |     received in this way          |
++-----------------------------------+-----------------------------------+
+
+Work Type - Public Key Infrastructure - IHC
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: PKI IHC            |
+|                                   | -   Primary Index: Trading name   |
+|                                   |     of health sector entity - if  |
+|                                   |     blank, use registered name of |
+|                                   |     health sector entity          |
+|                                   | -   Secondary Index: POSTCODE     |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Hospital or Day Procedure     |
+|                                   |     Centre Registration for In    |
+|                                   |     Hospital Claiming (HW025)     |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  |                                   |
++-----------------------------------+-----------------------------------+
+
+Work Type - Public Key Infrastructure - PPA
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: PKI PPA            |
+|                                   | -   Primary Index: Pharmacy       |
+|                                   |     approval number               |
+|                                   | -   Secondary Index: Pharmacy     |
+|                                   |     name                          |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Online Claiming for           |
+|                                   |     Pharmaceutical Benefits       |
+|                                   |     Scheme - Application and      |
+|                                   |     Terms and Conditions (PB010)  |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  |                                   |
++-----------------------------------+-----------------------------------+
+
+Work Type - Urgent Enquiry
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: eBusiness            |
+| selected/keyed in Kofax           | -   Work Type: Urgent Enquiry     |
+|                                   | -   Primary Index: Email address  |
+|                                   | -   Secondary Index: not listed   |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Medicare Easyclaim enquiry    |
+|                                   |     (HW059)                       |
+|                                   | -   Medicare Easyclaim enquiry    |
+|                                   |     template by internal staff    |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | -   Emails sent to eBusiness      |
+|                                   |     Service Centre                |
 +-----------------------------------+-----------------------------------+
 
 Program – External Breast Prosthesis Reimbursement Program (EBPRP)
@@ -1323,10 +1603,6 @@ Work Type - CAPS Application - Manual
 |                                   | -   Continence Aids Payment       |
 |                                   |     Scheme Guidelines and         |
 |                                   |     Application Form 2020         |
-|                                   | -   Return to Sender document     |
-|                                   |     mentioning the CAPS program   |
-|                                   | -   Correspondence referencing    |
-|                                   |     the CAPS program              |
 +-----------------------------------+-----------------------------------+
 
 Work Type - CAPS Correspondence - General
@@ -1517,6 +1793,11 @@ Work Type – Enrolment
 |                                   |     (MS004)                       |
 |                                   | -   Newborn Child Declaration –   |
 |                                   |     pages 1-4 (FA081)             |
+|                                   | -   Unstructured Lifetime         |
+|                                   |     Healthcare Cover letters      |
+|                                   | -   Letter from Public Trustee or |
+|                                   |     Third Parties advising of     |
+|                                   |     death                         |
 |                                   |                                   |
 |                                   | There are too many print versions |
 |                                   | of enrolment forms to have every  |
@@ -1569,6 +1850,19 @@ Work Type – Enrolment
 |                                   | by POI and a letter               |
 |                                   |                                   |
 |                                   | Public Trustee documents          |
+|                                   | including notification of death   |
+|                                   |                                   |
+|                                   | Informal letters or emails        |
+|                                   | advising of notification of death |
+|                                   |                                   |
+|                                   | Letters about Lifetime Healthcare |
+|                                   | cover are received via post or    |
+|                                   | email. If received via:           |
+|                                   |                                   |
+|                                   | -   MES, delete as this is not a  |
+|                                   |     valid lodgement method        |
+|                                   | -   post, classify to Medicare    |
+|                                   |     Eligibility - Enrolment       |
 +-----------------------------------+-----------------------------------+
 
 Program – Medicare Entitlement Statement (MES) and Medicare Exemption Levy
@@ -1608,6 +1902,11 @@ Work Type – Enquiry
 |                                   |     attachments, no application,  |
 |                                   |     no passport/visa and no       |
 |                                   |     immigration documents         |
+|                                   | -   Emails or letters enquiring   |
+|                                   |     how an application is going:  |
+|                                   |     if unsure if MES or           |
+|                                   |     Eligibility, classify to MES  |
+|                                   |     Enquiry                       |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Medicare Entitlement Statement
@@ -1857,9 +2156,38 @@ to classify a work type.
 +-----------------------------------+-----------------------------------+
 | Program                           | Work Types                        |
 +-----------------------------------+-----------------------------------+
-| Miscellaneous                     | -   Healthcare Identifiers        |
+| Miscellaneous                     | -   MISC eService GST (HW055)     |
+|                                   | -   Healthcare Identifiers        |
 |                                   |     Service Consumer Reg MS003    |
 |                                   | -   Provider banking details      |
++-----------------------------------+-----------------------------------+
+
+Work Type - MISC eService GST
+
++-----------------------------------+-----------------------------------+
+| Program                           | Work Types                        |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: Miscellaneous        |
+| selected/keyed in Kofax           | -   Work Type: MISC eService GST  |
+|                                   | -   Primary Index: PROVIDER       |
+|                                   |     NUMBER                        |
+|                                   | -   Secondary Index: ABN (Q5 on   |
+|                                   |     form)                         |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | -   Notification of Australian    |
+|                                   |     Business Number and reference |
+|                                   |     identification for tax        |
+|                                   |     treatment purposes and        |
+|                                   |     recipient created tax invoice |
+|                                   |     agreement (HW055)             |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  | -   Form as listed above (HW055)  |
+|                                   |     Note: this document could     |
+|                                   |     also be received with         |
+|                                   |     Pharmaceutical Benefits       |
+|                                   |     Scheme, e.g. PB010. Split     |
+|                                   |     these documents and classify  |
+|                                   |     accordingly                   |
 +-----------------------------------+-----------------------------------+
 
 Work Type - Healthcare Identifiers Service Consumer Reg MS003
@@ -1884,7 +2212,7 @@ Work Type - Healthcare Identifiers Service Consumer Reg MS003
 |                                   | -   Form as listed above (MS003)  |
 +-----------------------------------+-----------------------------------+
 
-Work Type - Provider banking details
+Work Type - eServices Provider banking details
 
 +-----------------------------------+-----------------------------------+
 | Item                              | Details                           |
@@ -1893,14 +2221,19 @@ Work Type - Provider banking details
 | selected/keyed in Kofax           | -   Work Type: Provider banking   |
 |                                   |     details                       |
 |                                   | -   Primary Index: PROVIDER       |
-|                                   |     SURNAMEFIRSTNAME              |
-|                                   | -   Secondary Index: PROVIDER     |
 |                                   |     NUMBER                        |
+|                                   | -   Secondary Index: PRACTICE     |
+|                                   |     NAME                          |
 |                                   |                                   |
 |                                   | If unable to read any provider    |
 |                                   | details due to poor               |
-|                                   | quality/incomplete form, key      |
-|                                   | 'UNABLETONAME' in Primary Index.  |
+|                                   | quality/incomplete form, use      |
+|                                   | SURNAMEFIRSTNAME as primary       |
+|                                   | index.                            |
+|                                   |                                   |
+|                                   | Note: use the above indexes for   |
+|                                   | classification regardless of the  |
+|                                   | field names in Kofax.             |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Online Claiming Provider      |
 |                                   |     Agreement (HW027)             |
@@ -1910,9 +2243,17 @@ Work Type - Provider banking details
 |                                   | -   Banking Details Online        |
 |                                   |     Claiming (HW052)              |
 +-----------------------------------+-----------------------------------+
-| Kofax image - things to look for  | Documents to do with updating a   |
-|                                   | providers bank details that are   |
-|                                   | not included in the above 3 forms |
+| Kofax image - things to look for  | -   Documents to do with updating |
+|                                   |     a providers bank details that |
+|                                   |     are not included in the above |
+|                                   |     3 forms                       |
+|                                   | -   If multiple banking           |
+|                                   |     applications are received     |
+|                                   |     with different provider       |
+|                                   |     numbers on each, send for     |
+|                                   |     splitting. This includes if   |
+|                                   |     it is the same provider but   |
+|                                   |     multiple locations            |
 +-----------------------------------+-----------------------------------+
 
 Program – Patient Claims
@@ -2035,7 +2376,7 @@ Work Type – Patient Claim
 |                                   |     condition prescribed dental   |
 |                                   |     patient                       |
 |                                   | -   Medicare Claim form (MS014)   |
-|                                   | -   Medicare Two-way claim form   |
+|                                   | -   Medicare Two-way claim        |
 |                                   |     (MS001)                       |
 |                                   | -   Statement of account          |
 |                                   | -   Statement of Benefits         |
@@ -2058,8 +2399,8 @@ Work Type – Patient Claim
 |                                   |                                   |
 |                                   | Statement of Benefits only to be  |
 |                                   | actioned when working out of MED  |
-|                                   | batch. If working in ME,S they    |
-|                                   | are to be suspended               |
+|                                   | batch. If working in MES they are |
+|                                   | to be suspended                   |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Teleclaims
@@ -2098,10 +2439,19 @@ classify a work type.
 | Program                           | Work Type                         |
 +-----------------------------------+-----------------------------------+
 | Pharmaceutical Benefits Scheme    | -   Aboriginal Health Services    |
-| (PBS)                             | -   Doctors bag                   |
+| (PBS)                             | -   Complex Drugs - All           |
+|                                   | -   Complex Drugs - Fibrosing Int |
+|                                   |     Lung Disease                  |
+|                                   | -   Complex Drugs - Severe Growth |
+|                                   |     Failure                       |
+|                                   | -   Complex Drugs - Short Bowel   |
+|                                   |     Syndrome                      |
+|                                   | -   Doctors bag                   |
 |                                   | -   Non-Personalised Prescription |
 |                                   |     Stationery                    |
 |                                   | -   PBS Patient Refund            |
+|                                   | -   PBS Scripts - NSW, QLD, SA,   |
+|                                   |     TAS, VIC, WA                  |
 |                                   | -   Personalised Prescription     |
 |                                   |     Stationery                    |
 |                                   | -   Pharmacy Manual Claim         |
@@ -2140,6 +2490,115 @@ Work Type – Aboriginal Health Services
 |                                   |     the number                    |
 +-----------------------------------+-----------------------------------+
 
+Work Type - Complex Drugs (All)
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: Complex Drugs        |
+| selected/keyed in Kofax           | -   Work Type: This               |
+|                                   |     classification convention     |
+|                                   |     covers all complex drugs work |
+|                                   |     types unless specifically     |
+|                                   |     listed (e.g. Progressive      |
+|                                   |     Fibrosing Int Lung Disease,   |
+|                                   |     Severe Growth Failure and     |
+|                                   |     Short Bowel Syndrome have     |
+|                                   |     different classification      |
+|                                   |     conventions)                  |
+|                                   | -   Primary Index: MEDICARE       |
+|                                   |     NUMBER                        |
+|                                   | -   Secondary Index: PROGRAMME    |
+|                                   |     REFERENCE NUMBER              |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | Will generally be a PBS script    |
+|                                   | with form attached with a code    |
+|                                   | starting with PB                  |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  |                                   |
++-----------------------------------+-----------------------------------+
+
+Work Type - Complex Drugs - Progressive Fibrosing Int Lung Disease
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: Complex Drugs        |
+| selected/keyed in Kofax           | -   Work Type: Progressive        |
+|                                   |     Fibrosing Int Lung Disease -  |
+|                                   |     WRIT                          |
+|                                   | -   Primary Index: MEDICARE       |
+|                                   |     NUMBER                        |
+|                                   | -   Secondary Index:              |
+|                                   |     SURNAMEFIRSTNAME              |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | Will generally be a PBS script    |
+|                                   | and have a form attached with a   |
+|                                   | code starting with:               |
+|                                   |                                   |
+|                                   | -   PB331                         |
+|                                   | -   PB332                         |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  |                                   |
++-----------------------------------+-----------------------------------+
+
+Work Type - Complex Drugs - Severe Growth Failure
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: Complex Drugs        |
+| selected/keyed in Kofax           | -   Work Type: Severe Growth      |
+|                                   |     Failure-WRIT                  |
+|                                   | -   Primary Index: MEDICARE       |
+|                                   |     NUMBER                        |
+|                                   | -   Secondary Index:              |
+|                                   |     SURNAMEFIRSTNAME              |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | Will generally be a PBS script    |
+|                                   | and have a form attached with     |
+|                                   | codes that could include:         |
+|                                   |                                   |
+|                                   | -   PB162                         |
+|                                   | -   PB163                         |
+|                                   | -   PB164                         |
+|                                   | -   PB165                         |
+|                                   | -   PB166                         |
+|                                   | -   PB248                         |
+|                                   | -   PB288                         |
+|                                   | -   PB336                         |
+|                                   | -   PB337                         |
+|                                   | -   PB338                         |
+|                                   | -   PB339                         |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  |                                   |
++-----------------------------------+-----------------------------------+
+
+Work Type - Complex Drugs - Short Bowel Syndrome
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: Complex Drugs        |
+| selected/keyed in Kofax           | -   Work Type: Short Bowel        |
+|                                   |     Syndrome -WRIT                |
+|                                   | -   Primary Index: MEDICARE       |
+|                                   |     NUMBER                        |
+|                                   | -   Secondary Index: PROVIDER     |
+|                                   |     SURNAMEFIRSTNAME              |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | Will generally be a PBS script    |
+|                                   | and have a form attached with     |
+|                                   | codes that could include:         |
+|                                   |                                   |
+|                                   | -   PB275                         |
+|                                   | -   PB276                         |
+|                                   | -   PB277                         |
+|                                   | -   PB278                         |
++-----------------------------------+-----------------------------------+
+| Kofax image - things to look for  |                                   |
++-----------------------------------+-----------------------------------+
+
 Work Type – Doctors Bag
 
 +-----------------------------------+-----------------------------------+
@@ -2151,6 +2610,10 @@ Work Type – Doctors Bag
 |                                   |     NUMBER/DP NUMBER              |
 |                                   | -   Secondary Index: PRESCRIBER   |
 |                                   |     SURNAME FIRST NAME            |
+|                                   |                                   |
+|                                   | If prescriber number or name is   |
+|                                   | not provided or available on the  |
+|                                   | document,e use UNABLETONAME       |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Request for book of emergency |
 |                                   |     treatment supplies forms      |
@@ -2163,6 +2626,11 @@ Work Type – Doctors Bag
 |                                   |     for medical practitioners     |
 |                                   | -   Request for Prescriber bag    |
 |                                   |     supplies order book           |
+|                                   | -   Unstructured emails           |
+|                                   |     requesting any of the above   |
+|                                   |     and usually will contain an   |
+|                                   |     attachment of one of the      |
+|                                   |     forms                         |
 +-----------------------------------+-----------------------------------+
 | Kofax image- things to look for   | -   Form has 'bag' or 'Emergency  |
 |                                   |     treatment supplies' in title  |
@@ -2183,6 +2651,10 @@ Work Type – Non-Personalised Prescription Stationery
 |                                   |     NUMBER/DP NUMBER              |
 |                                   | -   Secondary Index: PRESCRIBER   |
 |                                   |     SURNAME FIRST NAME            |
+|                                   | -   If prescriber number or name  |
+|                                   |     is not provided or available  |
+|                                   |     on the document, use          |
+|                                   |     UNABLETONAME                  |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Order for PBS prescription    |
 |                                   |     pads for all eligible         |
@@ -2199,6 +2671,11 @@ Work Type – Non-Personalised Prescription Stationery
 |                                   |     Medical Practitioners form    |
 |                                   | -   Prescriber Stationery Order   |
 |                                   |     form                          |
+|                                   | -   Unstructured emails           |
+|                                   |     requesting any of the above,  |
+|                                   |     and usually will contain an   |
+|                                   |     attachment of one of the      |
+|                                   |     forms                         |
 +-----------------------------------+-----------------------------------+
 | Kofax image - things to look for  | -   Form usually has 'Prescriber  |
 |                                   |     Stationery Order' in title.   |
@@ -2235,7 +2712,7 @@ Work Type – PBS Patient Refund
 |                                   | -   Secondary Index: CLAIMANT     |
 |                                   |     SURNAME FIRSTNAME             |
 +-----------------------------------+-----------------------------------+
-| Document examples pr titles       | -   Prescription Record Form      |
+| Document examples or titles       | -   Prescription Record Form      |
 |                                   | -   Patient claim for refund form |
 |                                   | -   Patient claim for refund      |
 |                                   |     Pharmaceutical Benefits       |
@@ -2263,6 +2740,30 @@ Work Type – PBS Patient Refund
 |                                   |     Type: PBS Patient Refunds and |
 |                                   |     key SURNAMEFIRSTNAME in       |
 |                                   |     Secondary Index               |
++-----------------------------------+-----------------------------------+
+
+Work Type – PBS Scripts (NSW/QLD/SA/TAS/VIC/WA)
+
++-----------------------------------+-----------------------------------+
+| Item                              | Details                           |
++-----------------------------------+-----------------------------------+
+| Classification conventions        | -   Program: PBS                  |
+| selected/keyed in Kofax           | -   Work Type: Authority Mailed   |
+|                                   |     {state}                       |
+|                                   | -   Primary Index: AUTHORITY      |
+|                                   |     SCRIPT NUMBER                 |
+|                                   | -   Secondary Index: leave blank  |
++-----------------------------------+-----------------------------------+
+| Document examples or titles       | PBS Script Authority example      |
++-----------------------------------+-----------------------------------+
+| Kofax image- things to look for   | -   Document will be a PBS        |
+|                                   |     script. Look for the          |
+|                                   |     Authority form number as      |
+|                                   |     shown in example above        |
+|                                   | -   Note: if unable to identify   |
+|                                   |     authority script number, use  |
+|                                   |     UNABLETONAME as the primary   |
+|                                   |     ID                            |
 +-----------------------------------+-----------------------------------+
 
 Work Type – Personalised Prescription Stationery
@@ -2343,9 +2844,8 @@ Work Type – Pharmacy Manual Claim
 |                                   |     directly behind will be       |
 |                                   |     scanned as 1 whole document   |
 |                                   | -   Batch header states how many  |
-|                                   |     scripts there are for         |
-|                                   |     Canberra DST TPS staff only,  |
-|                                   |     scripts must contain Pharmacy |
+|                                   |     scripts there are             |
+|                                   | -   Scripts must contain Pharmacy |
 |                                   |     Approval Stickers, if         |
 |                                   |     missing, suspend with reason: |
 |                                   |     'SCRIPT'. See Table 3 to help |
@@ -2474,6 +2974,7 @@ conventions to classify a work type.
 +-----------------------------------+-----------------------------------+
 | Provider Registration             | -   Application                   |
 |                                   | -   LSPN Application              |
+|                                   | -   LSPN Accreditation            |
 |                                   | -   PATH                          |
 +-----------------------------------+-----------------------------------+
 
@@ -2651,12 +3152,11 @@ Work Type – LSPN Accreditation
 |                                   |     'UNABLETONAME' in Primary     |
 |                                   |     Index.                        |
 +-----------------------------------+-----------------------------------+
-| Document examples or titles       | Diagnostic Imaging Accreditation  |
-|                                   | Scheme (DIAS) report              |
-|                                   |                                   |
-|                                   | LSPN accreditation report         |
-|                                   |                                   |
-|                                   | LSPN variation report             |
+| Document examples or titles       | -   Diagnostic Imaging            |
+|                                   |     Accreditation Scheme (DIAS)   |
+|                                   |     report                        |
+|                                   | -   LSPN accreditation report     |
+|                                   | -   LSPN variation report         |
 +-----------------------------------+-----------------------------------+
 | Kofax image - things to look for  | Form usually has:                 |
 |                                   |                                   |
@@ -2805,6 +3305,8 @@ Work Type – RTS Correspondence
 |                                   | -   RTS - AIR                     |
 |                                   | -   RTS - child dental            |
 |                                   |     eligibility                   |
+|                                   | -   RTS - LHC - Applicable date   |
+|                                   |     letter                        |
 |                                   | -   RTS - Medicare statement      |
 |                                   | -   RTS - myGov online account    |
 |                                   | -   RTS - statement of benefit    |
@@ -2858,13 +3360,10 @@ conventions to classify a work type.
 +-----------------------------------+-----------------------------------+
 | Program                           | Work Types                        |
 +-----------------------------------+-----------------------------------+
-| Simplified Billing                | -   Work Type - Simplified        |
-|                                   |     Billing Adjustment            |
-|                                   | -   Work Type - Simplified        |
-|                                   |     Billing Claim                 |
-|                                   | -   Work Type - Simplified        |
-|                                   |     Billing Late Lodgement 2      |
-|                                   |     years                         |
+| Simplified Billing                | -   Simplified Billing Adjustment |
+|                                   | -   Simplified Billing Claim      |
+|                                   | -   Simplified Billing Late       |
+|                                   |     Lodgement 2 years             |
 +-----------------------------------+-----------------------------------+
 
 Work Type - Simplified Billing Adjustment
@@ -2872,7 +3371,7 @@ Work Type - Simplified Billing Adjustment
 +-----------------------------------+-----------------------------------+
 | Item                              | Details                           |
 +-----------------------------------+-----------------------------------+
-| National conventions              | -   Program: Simplified Billing   |
+| Classification conventions        | -   Program: Simplified Billing   |
 | selected/keyed in Kofax           | -   Work Type: Adjustment         |
 |                                   | -   Primary Index: FUND ID        |
 |                                   |     ('Minor ID' – Q11 on the form |
@@ -2892,7 +3391,7 @@ Work Type - Simplified Billing Claim
 +-----------------------------------+-----------------------------------+
 | Item                              | Details                           |
 +-----------------------------------+-----------------------------------+
-| National conventions              | -   Program: Simplified Billing   |
+| Classification conventions        | -   Program: Simplified Billing   |
 | selected/keyed in Kofax           | -   Work Type: Claim              |
 |                                   | -   Primary Index: FUND ID        |
 |                                   |     ('Minor ID' – 2nd field on    |
@@ -2904,7 +3403,7 @@ Work Type - Simplified Billing Claim
 |                                   | name fields on this form. Q6      |
 |                                   | 'Reasons for manual process'      |
 |                                   | should contain the Medicare       |
-|                                   | Number. Or it will be lon the     |
+|                                   | Number. Or it will be on the      |
 |                                   | attachments.                      |
 +-----------------------------------+-----------------------------------+
 | Document examples or titles       | -   Approved Billing Agent        |
@@ -2925,7 +3424,7 @@ Work Type - Simplified Billing Late Lodgement 2 years
 +-----------------------------------+-----------------------------------+
 | Item                              | Details                           |
 +-----------------------------------+-----------------------------------+
-| National conventions              | -   Program: Simplified Billing   |
+| Classification conventions        | -   Program: Simplified Billing   |
 | selected/keyed in Kofax           | -   Work Type: Late Lodgement 2   |
 |                                   |     years                         |
 |                                   | -   Primary Index: FUND ID        |
@@ -2976,9 +3475,9 @@ Note: do not use referring provider details when classifying.
 |                                   | VAP documents:                    |
 |                                   |                                   |
 |                                   | -   GPO Box 964 Adelaide SA 5001, |
-|                                   |     addressed to Health Insurance |
-|                                   |     Commission (HIC), see Allied  |
-|                                   |     Health                        |
+|                                   |     addressed to Hpealth          |
+|                                   |     Insurance Commission (HIC),   |
+|                                   |     see Allied Health             |
 |                                   | -   GPO Box 9869 Melbourne VIC    |
 |                                   |     3001, GPO Box 9869 Perth WA   |
 |                                   |     6848, see SPEC                |
@@ -3096,9 +3595,9 @@ Work Type – Community Nursing
 |                                   | Note: always use payee provider   |
 |                                   | first if available.               |
 +-----------------------------------+-----------------------------------+
-| Document examples or titles       | Department of Veterans' Affairs   |
-|                                   | Community Nursing Service         |
-|                                   | Vouchers                          |
+| Document examples or titles       | -   Department of Veterans'       |
+|                                   |     Affairs Community Nursing     |
+|                                   |     Service Vouchers              |
 +-----------------------------------+-----------------------------------+
 | Kofax image - things to look for  | -   A header should be included,  |
 |                                   |     but is not essential with any |
@@ -3168,7 +3667,8 @@ Work Type – Hospital Claim
 |                                   |     codes (even if other codes    |
 |                                   |     are listed on the invoice)    |
 |                                   |     are to be classified as per   |
-|                                   |     next column                   |
+|                                   |     classification conventions    |
+|                                   |     above                         |
 |                                   | -   If multiple claims exist,     |
 |                                   |     they must be separated by     |
 |                                   |     individual claim id, send for |
@@ -3480,8 +3980,8 @@ Pharmaceutical Benefits Scheme - Out of Scope
 |                                   | -   PBS – Psoriatic arthritis     |
 |                                   |     continuing authority          |
 |                                   |     application (PB106)           |
-|                                   | -   Opiod treatment PBS Authority |
-|                                   |     Application (PB294)           |
+|                                   | -   Opioid treatment PBS          |
+|                                   |     Authority Application (PB294) |
 |                                   | -   PBS Payment Advice RTS        |
 |                                   |     address PO BOX 9826 in your   |
 |                                   |     capital city                  |
@@ -3510,7 +4010,7 @@ Pharmaceutical Benefits Scheme - Out of Scope
 |                                   | reason: 'BLANKFORM'               |
 |                                   |                                   |
 |                                   | For blank/unused PB013 and PB014  |
-|                                   | crds returned from pharmacy,      |
+|                                   | cards returned from pharmacy,     |
 |                                   | suspend with reason: 'OUTOFSCOPE' |
 +-----------------------------------+-----------------------------------+
 
@@ -3703,7 +4203,7 @@ A to K Suspension reasons and description
 |                       | correspondence.       |                       |
 |                       |                       |                       |
 |                       | CDBS RTS can be named |                       |
-|                       | under RTS(            |                       |
+|                       | under RTS -           |                       |
 |                       | Correspondence        |                       |
 +-----------------------+-----------------------+-----------------------+
 | CENTRELINK            | Any Centrelink form   |                       |
@@ -3812,7 +4312,7 @@ Suspension reasons –L to Z
 +-----------------------------------+-----------------------------------+
 | Letter                            | Suspension reasons                |
 +-----------------------------------+-----------------------------------+
-| L-Z                               | LATELODGEMENT, LHC,               |
+| L-Z                               | LATELODGEMENT, LHC, MYGOV,        |
 |                                   | NOATTACHMENTS, NODATA,            |
 | See also: A-K                     | NONMEDICARE, NonRBA CHEQUE,       |
 |                                   | NOTONBLUEPRINT, NoTPS,            |
@@ -3836,6 +4336,22 @@ L to Z Suspension reasons and description
 | LHC                   | Lifetime Health Cover |                       |
 |                       | letters and enquiries |                       |
 | [Index]               |                       |                       |
+|                       | Note: delete any LHC  |                       |
+|                       | letters or enquiries  |                       |
+|                       | received through the  |                       |
+|                       | MES mailbox. Only LHC |                       |
+|                       | mail received via     |                       |
+|                       | post are classified   |                       |
+|                       | as Medicare           |                       |
+|                       | Eligibility -         |                       |
+|                       | Enrolment.            |                       |
++-----------------------+-----------------------+-----------------------+
+| MYGOV                 | Emails requesting     |                       |
+|                       | assistance or         |                       |
+| [Index]               | advising of issues    |                       |
+|                       | with MyGov or         |                       |
+|                       | requesting a linking  |                       |
+|                       | code.                 |                       |
 +-----------------------+-----------------------+-----------------------+
 | NOATTACHMENTS         | Document does not     |                       |
 |                       | contain useable       |                       |

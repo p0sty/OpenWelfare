@@ -55,12 +55,15 @@ Table 1
 |                                   |     Summary (HESS) screen - same  |
 |                                   |     conditions as above for       |
 |                                   |     (!HES) screen                 |
-|                                   | -   Education Course Details      |
-|                                   |     (EDC) screen - RS will only   |
-|                                   |     be paid if course type is     |
-|                                   |     MST, HGA, HGB, TGA, TGB, SSN, |
-|                                   |     TSC, DOC (ABSTUDY only) or    |
-|                                   |     UPC (ABSTUDY only) and        |
+|                                   | -   Customer study details (EDC)  |
+|                                   |     screen in Process Direct or   |
+|                                   |     the Education Course Details  |
+|                                   |     (EDC) screen in Customer      |
+|                                   |     First - RS will only be paid  |
+|                                   |     if course type is MST, HGA,   |
+|                                   |     HGB, TGA, TGB, SSN, TSC, DOC  |
+|                                   |     (ABSTUDY only) or UPC         |
+|                                   |     (ABSTUDY only) and            |
 |                                   |     institution type on CODES     |
 |                                   |     screen is U (university), Q   |
 |                                   |     (higher education TAFEs) or H |
@@ -299,11 +302,11 @@ Table 1
 |                                   | RS qualifying year payment.       |
 |                                   |                                   |
 |                                   | Students who are entitled to the  |
-|                                   | ‘regional rate’ of RS will only   |
+|                                   | 'regional rate' of RS will only   |
 |                                   | be paid this rate in the second   |
 |                                   | and third year of study. These    |
-|                                   | students will be paid the ‘lower  |
-|                                   | rate’ in the fourth and           |
+|                                   | students will be paid the 'lower  |
+|                                   | rate' in the fourth and           |
 |                                   | subsequent years of study.        |
 |                                   |                                   |
 |                                   | See Rates and thresholds for the  |
@@ -407,7 +410,7 @@ Table 1
 |                                   | screen to CVR (campus             |
 |                                   | verification required). This      |
 |                                   | should trigger the auto release   |
-|                                   | of SY101                          |
+|                                   | of SY101.                         |
 |                                   |                                   |
 |                                   | Note: if this process is applied  |
 |                                   | and the SY101 is not              |
@@ -427,6 +430,12 @@ Table 1
 |                                   |                                   |
 |                                   | The scripts or workflows that can |
 |                                   | be used are:                      |
+|                                   |                                   |
+|                                   | Process Direct:                   |
+|                                   |                                   |
+|                                   | -   Study and Scholarship Details |
+|                                   |                                   |
+|                                   | Customer First:                   |
 |                                   |                                   |
 |                                   | -   SY073/SY075 End of Course     |
 |                                   |     Study Update                  |
@@ -680,7 +689,7 @@ Table 1
 |                                   | RS family home is located         |
 |                                   | overseas the full overseas        |
 |                                   | address is not required to be     |
-|                                   | obtained or entered. ‘Overseas’   |
+|                                   | obtained or entered. 'Overseas'   |
 |                                   | can be entered into the Country   |
 |                                   | field on the RLD screen.          |
 |                                   |                                   |
@@ -708,17 +717,17 @@ Table 1
 |                                   | declared by the student or        |
 |                                   | parent.                           |
 |                                   |                                   |
-|                                   | -   When a response of ‘No’ is    |
-|                                   |     provided to the question: ‘Is |
+|                                   | -   When a response of 'No' is    |
+|                                   |     provided to the question: 'Is |
 |                                   |     your family home located in   |
-|                                   |     Australia?’ the relevant      |
+|                                   |     Australia?' the relevant      |
 |                                   |     service will attempt to load  |
 |                                   |     Overseas to the Country:      |
 |                                   |     field. The question response  |
 |                                   |     will also be viewable via the |
 |                                   |     Change of Circumstance (CoC)  |
 |                                   |     Interaction receipt page.     |
-|                                   | -   When a response of ‘Yes’ is   |
+|                                   | -   When a response of 'Yes' is   |
 |                                   |     provided to the question: 'Is |
 |                                   |     this your current family home |
 |                                   |     address?' this confirms that  |
@@ -740,11 +749,11 @@ Table 1
 |                                   | suggests that the student has     |
 |                                   | answered No to claim question 'Is |
 |                                   | your family home located in       |
-|                                   | Australia?'. ‘Overseas’ or ‘OS’   |
+|                                   | Australia?', 'Overseas' or 'OS'   |
 |                                   | can be entered into the Address   |
 |                                   | Country Code field in Process     |
-|                                   | Direct via ‘Regional Location     |
-|                                   | Details (RLD)’.                   |
+|                                   | Direct via 'Regional Location     |
+|                                   | Details (RLD)'.                   |
 |                                   |                                   |
 |                                   | Information provided in a claim   |
 |                                   | or online and subsequently        |
@@ -753,13 +762,23 @@ Table 1
 |                                   | determine the RS family home      |
 |                                   | location details required for an  |
 |                                   | RS assessment, a check of the     |
-|                                   | student’s record and/or parent(s) |
-|                                   | details is also recommended       |
-|                                   | (Address History (ADH) screen,    |
-|                                   | Immigration data on the TOAS/RSIM |
-|                                   | screens, Parental information via |
-|                                   | MOD JY, Education Details         |
-|                                   | (EDCH/EDC) screen).               |
+|                                   | student's record and/or parent(s) |
+|                                   | details is also recommended.      |
+|                                   | Check:                            |
+|                                   |                                   |
+|                                   | Address History (ADH) screen      |
+|                                   |                                   |
+|                                   | Immigration data on the:          |
+|                                   |                                   |
+|                                   | -   Travel Outside Australia      |
+|                                   |     (TOAS) screen                 |
+|                                   | -   Immigration Advised Movements |
+|                                   |     (RSIM) screen                 |
+|                                   |                                   |
+|                                   | Parental information via MOD JY   |
+|                                   |                                   |
+|                                   | Study/Education details on the    |
+|                                   | EDC screen                        |
 +-----------------------------------+-----------------------------------+
 | 10                                | RLD screen - regional             |
 |                                   | classification, institution and   |
@@ -783,7 +802,7 @@ Table 1
 |                                   | overseas, it is treated as a      |
 |                                   | regional Australian campus. The   |
 |                                   | regional rate will apply if the   |
-|                                   | student’s family home is not in a |
+|                                   | student's family home is not in a |
 |                                   | major city area within Australia. |
 |                                   |                                   |
 |                                   | Institution                       |
@@ -849,8 +868,8 @@ Table 1
 |                                   | Where the RS family home was      |
 |                                   | located overseas at the time of   |
 |                                   | course commencement there is a    |
-|                                   | requirement to enter ‘regional    |
-|                                   | placement’ in the Campus 1 field. |
+|                                   | requirement to enter 'regional    |
+|                                   | placement' in the Campus 1 field. |
 |                                   | This will assess the student as   |
 |                                   | being qualified for RS. This will |
 |                                   | also ensure the student is not    |
@@ -859,7 +878,7 @@ Table 1
 |                                   |                                   |
 |                                   | Overseas campus coding            |
 |                                   |                                   |
-|                                   | Campus coding of ‘overseas’ will  |
+|                                   | Campus coding of 'overseas' will  |
 |                                   | result in campus being treated as |
 |                                   | a regional area and can result in |
 |                                   | student being qualified to        |
@@ -875,18 +894,18 @@ Table 1
 |                                   | screen entry with a future date   |
 |                                   | of event (end date of Customer    |
 |                                   | Advised Travel Details (RSCD)     |
-|                                   | screen ‘OFS’ coding + 1 day) with |
+|                                   | screen 'OFS' coding + 1 day) with |
 |                                   | the campus details they will      |
 |                                   | study at when they return to      |
 |                                   | Australia. Code the subsequent    |
 |                                   | line in a separate activity. This |
-|                                   | ensures the ‘overseas’ coding     |
+|                                   | ensures the 'overseas' coding     |
 |                                   | will not remain indefinitely and  |
 |                                   | the student is not overpaid.      |
 +-----------------------------------+-----------------------------------+
 | 12                                | Campus Location coding            |
-|                                   | requirements on RLD screen   +    |
-|                                   | Read more ...                     |
+|                                   | requirements on RLD screen + Read |
+|                                   | more ...                          |
 |                                   |                                   |
 |                                   | Ver (Verified field)              |
 |                                   |                                   |
@@ -1088,10 +1107,10 @@ Table 2
 |                                   |     Students, ABSTUDY and         |
 |                                   |     Apprentices > Update >        |
 |                                   |     ABSTUDY Action request        |
-|                                   | -   Add the text - ‘Amount of     |
+|                                   | -   Add the text - 'Amount of     |
 |                                   |     Relocation Scholarship        |
 |                                   |     requires investigation. Refer |
-|                                   |     to OpB 010-07030010’. Include |
+|                                   |     to OpB 010-07030010'. Include |
 |                                   |     any other relevant            |
 |                                   |     information supplied by the   |
 |                                   |     customer                      |
@@ -1126,11 +1145,35 @@ Table 2
 |                                   | To amend the rate of RS (2021     |
 |                                   | figures used in this example):    |
 |                                   |                                   |
+|                                   | Process Direct:                   |
+|                                   |                                   |
+|                                   | -   From the Entitlements (ELD)   |
+|                                   |     screen, key OOP (One Off      |
+|                                   |     Payments) in the Super Key    |
+|                                   |     field to go to the OOP        |
+|                                   |     screen. Select Enter          |
+|                                   | -   In the One Time Payment       |
+|                                   |     field, key the current rate   |
+|                                   |     of RS with one of the other   |
+|                                   |     rates (for example, overtype  |
+|                                   |     $4626 with $1,156, or         |
+|                                   |     overtype $1,156 with $2,314)  |
+|                                   | -   Select the appropriate Change |
+|                                   |     Reason Code, then select      |
+|                                   |     Update                        |
+|                                   | -   The RS payment will be        |
+|                                   |     updated to the correct amount |
+|                                   | -   Select Finish. Record details |
+|                                   |     of the update                 |
+|                                   | -   Select Finalise to complete   |
+|                                   |     the transaction               |
+|                                   |                                   |
+|                                   | Customer First:                   |
+|                                   |                                   |
 |                                   | -   select ('S') the RS activity  |
-|                                   |     on the AR screen and type     |
-|                                   |     'OOP' in the Nxt field        |
-|                                   | -   document action on student    |
-|                                   |     record                        |
+|                                   |     on the Activity List (AL)     |
+|                                   |     screen and type 'OOP' in the  |
+|                                   |     Nxt field                     |
 |                                   | -   on the OOP screen: Overtype   |
 |                                   |     the current rate of RS with   |
 |                                   |     one of the other rates (for   |
@@ -1140,8 +1183,11 @@ Table 2
 |                                   |     [Enter]                       |
 |                                   | -   the RS payment will be        |
 |                                   |     updated to the correct amount |
-|                                   | -   document action on student    |
-|                                   |     record                        |
+|                                   | -   finalise the activity via the |
+|                                   |     Assessment Results (AR)       |
+|                                   |     screen                        |
+|                                   | -   document details of the       |
+|                                   |     update on the record          |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Within a new claim (NCL) activity |
 |                                   | where a warning occurs + Read     |
@@ -1313,10 +1359,12 @@ Table 2
 |                                   |                                   |
 |                                   | Overpayments may also be raised   |
 |                                   | by the system based on coding on  |
-|                                   | the Education Course Details      |
-|                                   | (EDC) screen, and (where          |
-|                                   | applicable) the default study     |
-|                                   | start date.                       |
+|                                   | the Customer Study Details (EDC)  |
+|                                   | screen in Process Direct or the   |
+|                                   | Education Course Details (EDC)    |
+|                                   | screen in Customer First, and     |
+|                                   | (where applicable) the default    |
+|                                   | study start date.                 |
 |                                   |                                   |
 |                                   | The student end date is compared  |
 |                                   | with the student start date to    |
@@ -1448,7 +1496,7 @@ Table 2
 |                                   | qualification criteria at that    |
 |                                   | time. Otherwise, a new FAL        |
 |                                   | activity will be created for the  |
-|                                   | student’s next Entitlement Period |
+|                                   | student's next Entitlement Period |
 |                                   | End Day (EPED) to determine       |
 |                                   | eligibility.                      |
 |                                   |                                   |
@@ -1461,8 +1509,8 @@ Table 2
 |                                   | generate payment. Go to the       |
 |                                   | Benefit Action (BA) screen:       |
 |                                   |                                   |
-|                                   | -   code ‘YAL’ in the Rsn field   |
-|                                   | -   code ‘REA’ in the Action      |
+|                                   | -   code 'YAL' in the Rsn field   |
+|                                   | -   code 'REA' in the Action      |
 |                                   |     field                         |
 |                                   | -   Effect Date field will be     |
 |                                   |     auto populated (leave blank)  |
@@ -1480,13 +1528,13 @@ Table 2
 |                                   | -   go to the Higher Education    |
 |                                   |     Scholarship Details (HESD)    |
 |                                   |     screen                        |
-|                                   | -   code ‘ORS’ in the Type field  |
-|                                   | -   code ‘N’ in the Receives      |
+|                                   | -   code 'ORS' in the Type field  |
+|                                   | -   code 'N' in the Receives      |
 |                                   |     field                         |
 |                                   | -   no data to be entered in the  |
 |                                   |     Start Date and End Date       |
 |                                   |     fields                        |
-|                                   | -   code ‘I’ in the Action field  |
+|                                   | -   code 'I' in the Action field  |
 |                                   | -   finalise the activity on the  |
 |                                   |     AR screen                     |
 +-----------------------------------+-----------------------------------+

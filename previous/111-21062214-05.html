@@ -252,6 +252,8 @@
 	</div>
 </div>
 
+
+<p></p>
 <div class="twisty">
 	
 <a class="anchor" name="bp05_L3TT_Error_codes_e"></a>
@@ -264,15 +266,15 @@
 <tr>
 <td width="21%">
 <a class="anchor" name="bp05_tbl_Error_codes_e_Error_co"></a>
-<p><strong>Error codes</strong></p></td>
+<p><strong>Error code</strong></p></td>
 <td>
 
 <p><strong>Error definition</strong></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_codes_e_BDPA01"></a>
-<p>BDPA01</p></td>
+<a class="anchor" name="bp05_tbl_Error_codes_e_ES01"></a>
+<p>ES01</p></td>
 <td>
 
 <p>Error free.</p>
@@ -290,24 +292,29 @@
 <div class="twisty">
 	
 <a class="anchor" name="bp05_L3TT_Error_status_co"></a>
-<h3 class="collapsible" id="bp05_L3TT_Error_status_co">Error status codes</h3>
+<h3 class="collapsible" id="bp05_L3TT_Error_status_co">Error status codes ES02 - ES10</h3>
 
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 2</p><table caption="Table 2 contains a list of error codes Quality Checkers apply when staff make an  error when processing." width="100%">
+<p>Table 2</p>
+
+<p><strong>Form Related Errors</strong></p><table caption="Table 2 contains a list of error codes Quality Checkers apply when staff make an  error when processing." width="100%">
 <tr>
 <td width="21%">
 <a class="anchor" name="bp05_tbl_Error_status_co_Error_co"></a>
-<p><strong>Error codes</strong></p></td>
-<td>
+<p><strong>Error code</strong></p></td>
+<td width="35%">
 
 <p><strong>Error definition</strong></p></td>
+<td>
+
+<p><strong>It is an error when</strong></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA02A"></a>
-<p>BDPA02A</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES02Cri"></a>
+<p>ES02</p>
 
 <p>Critical</p></td>
 <td>
@@ -315,306 +322,143 @@
 <p>The provider number does not match the name listed on the form.</p>
 
 <p></p></td>
+<td>
+
+<p>Banking forms have been accepted and processed when the provider number does not match the name listed on the form.</p>
+
+<p>Abbreviated first and last names are not acceptable. </p>
+
+<p>This also includes the absence of a provider number and details have been updated in PDS.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA02B"></a>
-<p>BDPA02B</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES03Cri"></a>
+<p>ES03</p>
 
 <p>Critical</p></td>
 <td>
 
 <p>The incorrect provider number is updated that is not stipulated on the form.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed to the incorrect provider number profile in PDS.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA02C"></a>
-<p>BDPA02C</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES04Cri"></a>
+<p>ES04</p>
 
 <p>Critical</p></td>
 <td>
 
-<p>The provider number and practice address do not match.</p></td>
+<p>The provider number does not match practice address.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed where PDS records do not match the details on the form.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA02D"></a>
-<p>BDPA02D</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES05Cri"></a>
+<p>ES05</p>
 
 <p>Critical</p></td>
 <td>
 
-<p>The provider number is closed and bank details have been updated.</p></td>
+<p>The declaration/form has not been signed by the applicant.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed without the applicant’s signature.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA02E"></a>
-<p>BDPA02E</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES06Cri"></a>
+<p>ES06</p>
 
 <p>Critical</p></td>
 <td>
 
-<p>The provider number has not been supplied on form and details have been updated.</p></td>
+<p>Invalid signature accepted.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed without a hand written signature. Digital signatures not acceptable. This includes signatures that are not original and/or signatures that are copied.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA03A"></a>
-<p>BDPA03A</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES07Cri"></a>
+<p>ES07</p>
 
 <p>Critical</p></td>
 <td>
 
-<p>The Minor ID on the form is not added.</p></td>
+<p>Bank details signed form dated in the past or future or with no date</p>
+
+<p></p></td>
+<td>
+
+<p>Banking forms have been accepted and processed with a signature, without a date or exceeding 30 days from the date of lodgement.</p>
+
+<p>Future dated signed forms are not accepted. This excludes effective start dates for banking details and/or minor id’s.</p>
+
+<p>&#160;</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA03B"></a>
-<p>BDPA03B</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The Minor ID on the form is not created in the Provider Directory System (PDS).</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA03C"></a>
-<p>BDPA03C</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>Minor ID created in PDS incorrectly.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA03D"></a>
-<p>BDPA03D</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>Incorrect Minor ID is recorded.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA03E"></a>
-<p>BDPA03E</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>Minor ID is recorded before effective date.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA04A"></a>
-<p>BDPA04A</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The declaration/form has no signature.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA04B"></a>
-<p>BDPA04B</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>Digital signature is not acceptable.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA04C"></a>
-<p>BDPA04C</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>Signature is not original/signature is copied.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA04D"></a>
-<p>BDPA04D</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The provider who is the applicant, has not signed the declaration/form.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA04E"></a>
-<p>BDPA04E</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>Signature date older than 30 days or not present.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05A"></a>
-<p>BDPA05A</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The account number entered does not match the form.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05B"></a>
-<p>BDPA05B</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The BSB number entered does not match the form.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05C"></a>
-<p>BDPA05C</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The incorrect effective/start date has been entered.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05D"></a>
-<p>BDPA05D</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The bank account details have not been recorded.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05E"></a>
-<p>BDPA05E</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The bank account details end dated in error.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05F"></a>
-<p>BDPA05F</p>
-
-<p>Critical</p></td>
-<td>
-
-<p>The bank account details should not have been recorded.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA05G"></a>
-<p>BDPA05G</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES08Cri"></a>
+<p>ES08</p>
 
 <p>Critical</p></td>
 <td>
 
 <p>All pages of HW027 or HW052 have not been received and details have been recorded.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed where all or part of the Provider Agreement/ banking form is absent.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA06A"></a>
-<p>BDPA06A</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES09Cri"></a>
+<p>ES09</p>
 
 <p>Critical</p></td>
 <td>
 
-<p>Australian Immunisation Register (AIR) box is ticked but not forwarded to AIR.</p></td>
+<p>The additional document to authorise the update provided with the bank details form has not been signed by the provider but has been actioned.</p>
+
+<p></p></td>
+<td>
+
+<p>Additional correspondence was attached requesting to update multiple providers but the attachment was not signed by the applicant. Banking forms have been accepted and processed.</p>
+
+<p></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA07A"></a>
-<p>BDPA07A</p>
-
-<p>Non-critical</p></td>
-<td>
-
-<p>The account name is not recorded correctly.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA08A"></a>
-<p>BDPA08A</p>
-
-<p>Non-critical</p></td>
-<td>
-
-<p>Provider agreement attached/provider agreement attached has not been recorded in the processing notes.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA09A"></a>
-<p>BDPA09A</p>
-
-<p>Non-critical</p></td>
-<td>
-
-<p>Processing notes not completed, for example, email sent contacted provider.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA09B"></a>
-<p>BDPA09B</p>
-
-<p>Non-critical</p></td>
-<td>
-
-<p>Notes in PaNDA do not match action taken.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA09C"></a>
-<p>BDPA09C</p>
-
-<p>Non-critical</p></td>
-<td>
-
-<p>Naming convention has not been corrected.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA09D"></a>
-<p>BDPA09D</p>
-
-<p>Non-critical</p></td>
-<td>
-
-<p>Notification sent to provider not addressing all issues on form.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA10A"></a>
-<p>BDPA10A</p>
+<a class="anchor" name="bp05_tbl_Error_status_co_ES10Cri"></a>
+<p>ES10</p>
 
 <p>Critical</p></td>
 <td>
 
-<p>The attachment with the form has not been signed by the provider but has been actioned.</p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Error_status_co_BDPA10B"></a>
-<p>BDPA10B</p>
+<p>The additional document with the form signed by the provider has not been actioned and no contact was made to the provider</p>
 
-<p>Critical</p></td>
+<p></p></td>
 <td>
 
-<p>The attachment with the form signed by the provider has not been actioned nor the provider contacted.</p></td>
+<p>In the instance of requests to update multiple providers the documents have been signed by the applicant but was not processed. Provider was not contacted to confirm date of effect.</p>
+
+<p></p></td>
 </tr>
 
 </table>
@@ -622,6 +466,331 @@
 	</div>
 </div>
 
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05_L3TT_Error_status_co01"></a>
+<h3 class="collapsible" id="bp05_L3TT_Error_status_co01">Error status codes ES11 - ES16</h3>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Table 3</p>
+
+<p><strong>Errors in PDS</strong></p><table caption="" width="100%">
+<tr>
+<td width="21%">
+<a class="anchor" name="bp05_tbl_Error_status_co01_Error_co"></a>
+<p><strong>Error code</strong></p></td>
+<td width="35%">
+
+<p><strong>Error definition</strong></p></td>
+<td>
+
+<p><strong>It is an error when</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co01_ES11Cri"></a>
+<p>ES11</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>The provider number is closed and bank details have been updated.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed where the provider number is closed in PDS and banking details have been updated.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co01_ES12Cri"></a>
+<p>ES12</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Minor ID PDS</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed but the minor ID has not been updated in PDS for the provider’s bank details.</p>
+
+<p>Banking forms have been accepted and processed without creating the new minor ID in PDS.</p>
+
+<p>Minor ID registration details in PDS have been created incorrectly, but bank details have been accepted and processed.</p>
+
+<p></p>
+
+<p>Banking forms have been accepted and processed with the incorrect Minor ID updated to Provider Number in PDS.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co01_ES13Cri"></a>
+<p>ES13</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Minor ID and/or banking details are recorded before effective date on form.</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed with minor ID but with incorrect effective commencement date.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co01_ES14Cri"></a>
+<p>ES14</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Bank Account number details</p></td>
+<td>
+
+<p>Banking forms have been accepted and processed with incorrect details&#58;</p>
+
+<p>The account number and/or BSB entered does not match the form.</p>
+
+<p>The bank account number end/start date is incorrect.</p>
+
+<p>The bank account details have not been recorded at all.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co01_ES15Cri"></a>
+<p>ES15</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Bank details have been updated without contacting practice/provider</p></td>
+<td>
+
+<p>Bank details have been updated without following current security checks for health professionals and their staff.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co01_ES16Non"></a>
+<p>ES16</p>
+
+<p>Non-critical</p></td>
+<td>
+
+<p>Bank account name is not recorded correctly</p>
+
+<p></p></td>
+<td>
+
+<p>Banking forms have been accepted and processed where the account name is not entered correctly, excluding abbreviations. This would include a change from an individual to another type of legal entity, or one type of legal entity to another.</p>
+
+<p></p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05_L3TT_Error_status_co02"></a>
+<h3 class="collapsible" id="bp05_L3TT_Error_status_co02">Error status codes ES17 - ES19</h3>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Table 4</p>
+
+<p><strong>Errors in PaNDA</strong></p><table caption="" width="100%">
+<tr>
+<td width="21%">
+<a class="anchor" name="bp05_tbl_Error_status_co02_Error_co"></a>
+<p><strong>Error code</strong></p></td>
+<td width="35%">
+
+<p><strong>Error definition</strong></p></td>
+<td>
+
+<p><strong>It is an error when</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co02_ES17Non"></a>
+<p>ES17</p>
+
+<p>Non-critical</p></td>
+<td>
+
+<p>Incomplete PaNDA WID processing notes</p>
+
+<p></p>
+
+<p></p></td>
+<td>
+
+<p>Provider Agreement is not attached/ attached with limited or no processing notes.</p>
+
+<p>Processing notes on a PaNDA work item should clearly explain all action taken to complete that WID as well as identifying what is required. </p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co02_ES18Non"></a>
+<p>ES18</p>
+
+<p>Non-critical</p></td>
+<td>
+
+<p>Pended PaNDA WID – incorrect Pend reason/incomplete processing notes</p></td>
+<td>
+
+<p>Pend reason (if applicable)  - incorrect and/ limited or no processing notes.</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co02_ES19Non"></a>
+<p>ES19</p>
+
+<p>Non-critical</p></td>
+<td>
+
+<p>Naming convention has not been entered correctly</p></td>
+<td>
+
+<p>The PaNDA work item, has been named to include at least one of following, name of practice, provider number, Stem, Phone number or name of doctor.</p>
+
+<p></p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05_L3TT_Error_status_co03"></a>
+<h3 class="collapsible" id="bp05_L3TT_Error_status_co03">Error status codes ES20 - ES23</h3>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Table 5</p>
+
+<p><strong>Email errors</strong></p><table caption="" width="100%">
+<tr>
+<td width="21%">
+<a class="anchor" name="bp05_tbl_Error_status_co03_Error_co"></a>
+<p><strong>Error code</strong></p></td>
+<td width="35%">
+
+<p><strong>Error definition</strong></p></td>
+<td>
+
+<p><strong>It is an error when</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co03_ES20Cri"></a>
+<p>ES20</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Australian Immunisation Register (AIR) box is ticked but not forwarded to AIR.</p>
+
+<p></p></td>
+<td>
+
+<p>Banking forms have been accepted and processed, and AIR selected however no evidence email forwarded to AIR for actioning.</p>
+
+<p>AIR email must be moved from Personal inbox to “Sent” inbox in Provider.Forms.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co03_ES21Cri"></a>
+<p>ES21</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Email notification for Rejected EFT registration incomplete.</p></td>
+<td>
+
+<p>Email notification sent to provider did not state the relevant reason/s for rejection.</p>
+
+<p>Email must be moved from Personal inbox to “Sent” inbox in Provider.Forms.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co03_ES22Cri"></a>
+<p>ES22</p>
+
+<p>Critical</p></td>
+<td>
+
+<p>Email to provider</p></td>
+<td>
+
+<p>Banking Details/Minor ID have been accepted and processed</p>
+
+<p>and</p>
+
+<p>Email sent to incorrect email address</p>
+
+<p>Email sent to invalid email address</p>
+
+<p>Email not sent to provider after any updates are made.</p>
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Error_status_co03_ES23Non"></a>
+<p>ES23</p>
+
+<p>Non-critical</p></td>
+<td>
+
+<p>Email - General	</p>
+
+<p></p></td>
+<td>
+
+<p>Email not sent on behalf of Provider.Forms</p>
+
+<p>EFT emails sent must be moved from Personal inbox to Sent inbox in Provider.Forms.</p>
+
+<p></p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
 
 <p></p></div><div class="rightpanel">
    

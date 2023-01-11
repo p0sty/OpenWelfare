@@ -32,6 +32,8 @@ workaround for this issue is available in Network News Update (NNU) -
 Centrelink online and assisted customer claims - 'date of submission'
 issue NNU 10999.
 
+ 
+
 Age Pension claim processing staff only
 
 Table 1
@@ -189,12 +191,12 @@ Table 1
 |                                   |     is submitted, an Age Pension  |
 |                                   |     claim work item is created in |
 |                                   |     Process Direct containing the |
-|                                   |     claim information.            |
+|                                   |     claim information             |
 |                                   | -   If 2 separate individual      |
 |                                   |     claims are received for a     |
 |                                   |     partnered couple these should |
 |                                   |     be processed as individual    |
-|                                   |     claims.                       |
+|                                   |     claims                        |
 |                                   | -   Go to Step 6                  |
 |                                   |                                   |
 |                                   | Paper Claim for Age Pension       |
@@ -210,19 +212,24 @@ Table 1
 |                                   |     the claim information into    |
 |                                   |     the SOA shell using the       |
 |                                   |     scanned claim and             |
-|                                   |     documentation.                |
+|                                   |     documentation                 |
 |                                   | -   If both the customer and      |
 |                                   |     partner have claimed on the   |
 |                                   |     same claim form, the single   |
-|                                   |     SOA shell can be transformed  |
-|                                   |     to a combined                 |
+|                                   |     SOA shell should be           |
+|                                   |     transformed to a combined     |
 |                                   |     customer-partner claim by     |
 |                                   |     using [] > Combined claim     |
-|                                   |     switch >select Switch to      |
-|                                   |     combined claim. This action   |
-|                                   |     can be reversed to return the |
+|                                   |     switch > select Switch to     |
+|                                   |     combined claim. This is to    |
+|                                   |     make sure correct assessment  |
+|                                   |     of the claim and any items    |
+|                                   |     that impact both parties, for |
+|                                   |     example; Work Bonus / Rent    |
+|                                   |     Assistance. This action can   |
+|                                   |     be reversed to return the     |
 |                                   |     claim to an individual claim  |
-|                                   |     if 'switched' in error.       |
+|                                   |     if 'switched' in error        |
 |                                   | -   If the same paper claim is    |
 |                                   |     scanned to both customer and  |
 |                                   |     partner records, 2 SOA shells |
@@ -230,7 +237,7 @@ Table 1
 |                                   |     SOA shells has been switched  |
 |                                   |     to a combined claim, the      |
 |                                   |     other SOA needs to be set to  |
-|                                   |     ’Not required’.               |
+|                                   |     ’Not required’                |
 |                                   | -   Go to Step 5                  |
 |                                   |                                   |
 |                                   | Paper International Age Pension   |
@@ -266,7 +273,7 @@ Table 1
 |                                   | automatically regenerate the      |
 |                                   | claim. The date of receipt must   |
 |                                   | be updated on the Transaction     |
-|                                   | Summary (TS) screen prior to      |
+|                                   | Summary (TS) screen before        |
 |                                   | selecting Process. Select [] and  |
 |                                   | Update DOR.                       |
 |                                   |                                   |
@@ -320,7 +327,7 @@ Table 1
 |                                   |                                   |
 |                                   | Where the customer has pre-claim  |
 |                                   | vulnerable circumstances recorded |
-|                                   | within the eight weeks prior to   |
+|                                   | within the eight weeks before     |
 |                                   | their intent to claim contact     |
 |                                   | date the system will              |
 |                                   | automatically calculate the start |
@@ -456,8 +463,8 @@ Table 1
 |                                   |                                   |
 |                                   | Note: if a customer has lodged a  |
 |                                   | registration for PBS (SA319)      |
-|                                   | prior to 1 July 2014 which was    |
-|                                   | not actioned at the time, or the  |
+|                                   | before 1 July 2014 which was not  |
+|                                   | actioned at the time, or the      |
 |                                   | Pension Bonus registration has    |
 |                                   | been cancelled in error, escalate |
 |                                   | to ICT via mySupport to           |
@@ -555,20 +562,24 @@ Table 1
 |                                   | No, and if their partner may also |
 |                                   | be eligible for Age Pension or    |
 |                                   | another service, attempt to       |
-|                                   | contact the partner by phone to   |
-|                                   | clarify their intentions          |
+|                                   | contact the customer (who lodged  |
+|                                   | the Age Pension claim) to check   |
+|                                   | and clarify if their partner      |
+|                                   | intends on Claiming Age Pension   |
 |                                   |                                   |
-|                                   | -   If the partner is able to be  |
-|                                   |     contacted, invite the partner |
-|                                   |     to complete a claim for Age   |
+|                                   | -   If the customer is able to be |
+|                                   |     contacted, ensure the         |
+|                                   |     appropriate conversation to   |
+|                                   |     invite the partner to         |
+|                                   |     complete a claim for Age      |
 |                                   |     Pension and DOC the outcome,  |
 |                                   |     or                            |
-|                                   | -   If the partner is unable to   |
-|                                   |     be contacted, in the partner  |
-|                                   |     record issue a Q164 and DOC   |
-|                                   |     the record with the contact   |
-|                                   |     attempts and that they should |
-|                                   |     be invited to complete a      |
+|                                   | -   If the customer is unable to  |
+|                                   |     be contacted, issue a Q164    |
+|                                   |     and DOC the record with the   |
+|                                   |     contact attempts and that the |
+|                                   |     suggestion has been made for  |
+|                                   |     the partner to complete a     |
 |                                   |     claim for Age Pension         |
 +-----------------------------------+-----------------------------------+
 | 12                                | Qualification requirements + Read |
@@ -604,7 +615,7 @@ Table 1
 |                                   | Confirmed, see Table 2            |
 |                                   |                                   |
 |                                   | Not confirmed, undertake the      |
-|                                   | following :                       |
+|                                   | following:                        |
 |                                   |                                   |
 |                                   | -   Select the Not Confirmed link |
 |                                   |     to open a Customer Summary    |
@@ -653,8 +664,10 @@ Table 2
 |                                   | Department of Veterans' Affairs   |
 |                                   | (DVA) income, see:                |
 |                                   |                                   |
-|                                   | -   Department of Veterans'       |
-|                                   |     Affairs (DVA) clearances      |
+|                                   | -   Payments from the Department  |
+|                                   |     of Veterans' Affairs (DVA)    |
+|                                   |     and referrals to the DVA      |
+|                                   |     Clearance Team                |
 |                                   | -   Coding Compensation and       |
 |                                   |     damages (Mod C) to request a  |
 |                                   |     clearance                     |
@@ -803,7 +816,7 @@ Table 2
 |                                   |     4). To request the valuation, |
 |                                   |     follow the process in         |
 |                                   |     Valuation of real estate and  |
-|                                   |     other assets.                 |
+|                                   |     other assets                  |
 |                                   | -   No, go to Step 5              |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Ready to process claim + Read     |
@@ -814,7 +827,7 @@ Table 2
 |                                   | valuations and referrals have     |
 |                                   | been completed, the claim is      |
 |                                   | ready to be processed. See Table  |
-|                                   | 3                                 |
+|                                   | 3.                                |
 |                                   |                                   |
 |                                   | If the claim has come off hold    |
 |                                   | and the referral, clearance or    |
@@ -835,7 +848,7 @@ Table 2
 |                                   |     longer duration pending the   |
 |                                   |     outcome, and/or extra days    |
 |                                   |     for mail delivery. See        |
-|                                   |     Requesting information (CLK). |
+|                                   |     Requesting information (CLK)  |
 |                                   |                                   |
 |                                   | Procedure ends here until         |
 |                                   | required valuations, clearances,  |
@@ -871,7 +884,7 @@ Table 3
 |                                   | required before finalising the    |
 |                                   | claim, process the claim in       |
 |                                   | Customer First or Customer        |
-|                                   | Record. See Table 5               |
+|                                   | Record. See Table 5.              |
 |                                   |                                   |
 |                                   | Select Process.                   |
 |                                   |                                   |
@@ -1016,9 +1029,10 @@ Table 3
 |                                   | -   Select Add to insert a new    |
 |                                   |     row for coding the            |
 |                                   |     provisional details           |
-|                                   | -   If more than 1 date of event  |
-|                                   |     needs to be recorded, select  |
-|                                   |     Add to create additional rows |
+|                                   | -   If more than one date of      |
+|                                   |     event needs to be recorded,   |
+|                                   |     select Add to create          |
+|                                   |     additional rows               |
 |                                   | -   Provisional details can be    |
 |                                   |     changed by coding over the    |
 |                                   |     information, or deleted       |
@@ -1268,26 +1282,25 @@ Table 3
 |                                   | their partner is receiving an     |
 |                                   | income support payment, ensure    |
 |                                   | the partner is also on 2 weekly   |
-|                                   | reporting. For more information   |
-|                                   | see Reporting screens.            |
+|                                   | reporting. For more details, see  |
+|                                   | Reporting screens.                |
 |                                   |                                   |
-|                                   | If the customer will be a         |
-|                                   | statement reporter they will be   |
-|                                   | required to report for their      |
-|                                   | payment to be stimulated. Unless  |
-|                                   | the customer meets a continuous   |
-|                                   | coding exception, code any        |
-|                                   | employment income for entitlement |
-|                                   | periods which have already passed |
-|                                   | as Income for One Period (IOP).   |
-|                                   | Do not code any income for the    |
-|                                   | current entitlement period as     |
-|                                   | IOP, because the customer will    |
-|                                   | include this when they complete   |
-|                                   | their first report.               |
+|                                   | If the customer is a statement    |
+|                                   | reporter they will need to report |
+|                                   | for their payment to be           |
+|                                   | stimulated. Code any employment   |
+|                                   | income for entitlement periods    |
+|                                   | which have already passed, see    |
+|                                   | Recording and correcting          |
+|                                   | employment income details. Do not |
+|                                   | code any income for the current   |
+|                                   | entitlement period as Income for  |
+|                                   | One Period (IOP), because the     |
+|                                   | customer will include this when   |
+|                                   | they complete their first report. |
 |                                   |                                   |
-|                                   | Early claims processed prior to   |
-|                                   | Age Pension age may not allow a   |
+|                                   | Early claims processed before Age |
+|                                   | Pension age may not allow a       |
 |                                   | customer to be placed on          |
 |                                   | reporting, which is required to   |
 |                                   | assess payability. Where the      |
@@ -1406,7 +1419,7 @@ Table 4
 |                                   | Note: if an E510RS message        |
 |                                   | 'Assessment under agreement       |
 |                                   | required before rejecting NSR'    |
-|                                   | displays, see Step 11 in Table 3  |
+|                                   | displays, see Step 5 in Table 3.  |
 |                                   |                                   |
 |                                   | After fixing any errors, select   |
 |                                   | Assess again to go the            |
@@ -1428,11 +1441,10 @@ Table 4
 |                                   | Process Direct.                   |
 |                                   |                                   |
 |                                   | Note: handover should only be     |
-|                                   | completed after                   |
-|                                   |                                   |
-|                                   | raising an incident in Roxy and   |
-|                                   | ICT have responded with ‘Claim is |
-|                                   | to be completed in ISIS’.         |
+|                                   | completed after raising an        |
+|                                   | incident in Roxy and ICT have     |
+|                                   | responded with ‘Claim is to be    |
+|                                   | completed in ISIS’.               |
 |                                   |                                   |
 |                                   | Once selected the claim can no    |
 |                                   | longer be accessed in Process     |
@@ -1463,7 +1475,7 @@ Table 4
 |                                   | following screens to ensure the   |
 |                                   | expected results are reflected in |
 |                                   | the provisional data. Both        |
-|                                   | provisional and prior data        |
+|                                   | provisional and before data       |
 |                                   | displays so the changes can be    |
 |                                   | identified:                       |
 |                                   |                                   |
@@ -1482,10 +1494,10 @@ Table 4
 |                                   | payments on the RR screen. See    |
 |                                   | the Earnings and Report Results   |
 |                                   | (EARR) and Report Results (RR)    |
-|                                   | screens table for more            |
-|                                   | information. If the process is    |
-|                                   | not followed correctly, the claim |
-|                                   | needs to be regenerated.          |
+|                                   | screens table for more details.   |
+|                                   | If the process is not followed    |
+|                                   | correctly, the claim needs to be  |
+|                                   | regenerated.                      |
 |                                   |                                   |
 |                                   | If required, check the following  |
 |                                   | screens and make any necessary    |
@@ -1807,9 +1819,8 @@ Table 5
 |                                   | (PTS) screen, select any other    |
 |                                   | relevant screens which have not   |
 |                                   | already been preselected. For     |
-|                                   | more information, see Claiming    |
-|                                   | income support payments from      |
-|                                   | Centrelink.                       |
+|                                   | more details, see Claiming income |
+|                                   | support payments from Centrelink. |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Pension Assessment Date + Read    |
 |                                   | more ...                          |
@@ -1905,9 +1916,8 @@ Table 5
 |                                   | summary and update within the     |
 |                                   | claim if needed.                  |
 |                                   |                                   |
-|                                   | For more information, see         |
-|                                   | Assessing Age Pension (Blind)     |
-|                                   | claims.                           |
+|                                   | For more details, see Assessing   |
+|                                   | Age Pension (Blind) claims.       |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Income and assets + Read more ... |
 |                                   |                                   |
@@ -1948,9 +1958,8 @@ Table 5
 |                                   | employment income as continuous   |
 |                                   | if the customer meets a           |
 |                                   | continuous coding exception, see  |
-|                                   |                                   |
 |                                   | Recording and Correcting          |
-|                                   | Employment Income Details :       |
+|                                   | Employment Income Details:        |
 |                                   |                                   |
 |                                   | -   their record is in            |
 |                                   |     Environment I with an         |
@@ -2012,26 +2021,25 @@ Table 5
 |                                   | their partner is receiving an     |
 |                                   | income support payment, ensure    |
 |                                   | the partner is also on 2 weekly   |
-|                                   | reporting. For more information   |
-|                                   | see Reporting screens.            |
+|                                   | reporting. For more details, see  |
+|                                   | Reporting screens.                |
 |                                   |                                   |
-|                                   | If the customer will be a         |
-|                                   | statement reporter they will be   |
-|                                   | required to report for their      |
-|                                   | payment to be stimulated. Unless  |
-|                                   | the customer meets a continuous   |
-|                                   | coding exception, code any        |
-|                                   | employment income for entitlement |
-|                                   | periods which have already passed |
-|                                   | as Income for One Period (IOP).   |
-|                                   | Do not code any income for the    |
-|                                   | current entitlement period as     |
-|                                   | IOP, because the customer will    |
-|                                   | include this when they complete   |
-|                                   | their first report.               |
+|                                   | If the customer is a statement    |
+|                                   | reporter they will need to report |
+|                                   | for their payment to be           |
+|                                   | stimulated. Code any employment   |
+|                                   | income for entitlement periods    |
+|                                   | which have already passed, see    |
+|                                   | Recording and correcting          |
+|                                   | employment income details. Do not |
+|                                   | code any income for the current   |
+|                                   | entitlement period as Income for  |
+|                                   | One Period (IOP), because the     |
+|                                   | customer will include this when   |
+|                                   | they complete their first report. |
 |                                   |                                   |
-|                                   | Early claims processed prior to   |
-|                                   | Age Pension age may not allow a   |
+|                                   | Early claims processed before Age |
+|                                   | Pension age may not allow a       |
 |                                   | customer to be placed on          |
 |                                   | reporting, which is required to   |
 |                                   | assess payability. Where the      |
@@ -2101,7 +2109,7 @@ Table 5
 |                                   |     For a full list of reasons a  |
 |                                   |     claim can be held to user,    |
 |                                   |     see Hold to User new claim    |
-|                                   |     criteria.                     |
+|                                   |     criteria                      |
 |                                   | -   Procedure ends here until due |
 |                                   |     date                          |
 |                                   |                                   |
@@ -2123,15 +2131,15 @@ Table 6
 |                                   | Assessment Results (AR) screen.   |
 |                                   | Any warnings or errors will       |
 |                                   | present on the AWE screen. Select |
-|                                   | any errors for more information   |
-|                                   | on how to resolve them. Warnings  |
-|                                   | do not need to be resolved to     |
+|                                   | any errors for more details on    |
+|                                   | how to resolve them. Warnings do  |
+|                                   | not need to be resolved to        |
 |                                   | proceed to the AR screen.         |
 |                                   |                                   |
 |                                   | Note: if an E510RS message        |
 |                                   | ‘Assessment under agreement       |
 |                                   | required before rejecting NSR’    |
-|                                   | displays. See Step 5 in Table 5,  |
+|                                   | displays. See Step 4 in Table 5.  |
 |                                   |                                   |
 |                                   | After resolving any errors, the   |
 |                                   | AR screen will display the        |
@@ -2150,7 +2158,7 @@ Table 6
 |                                   | screens to ensure the expected    |
 |                                   | results are reflected in the      |
 |                                   | provisional data. Both            |
-|                                   | provisional and prior data        |
+|                                   | provisional and before data       |
 |                                   | displays so the changes can be    |
 |                                   | identified:                       |
 |                                   |                                   |
@@ -2285,19 +2293,19 @@ Table 6
 |                                   | -   Run the Age Pension New Claim |
 |                                   |     (Submit and DOC) script. This |
 |                                   |     will finalise the claim on    |
-|                                   |     the AR screen.                |
+|                                   |     the AR screen                 |
 |                                   | -   Ignore the warning box about  |
 |                                   |     using the available           |
 |                                   |     employment income workflow,   |
 |                                   |     as employment income is coded |
 |                                   |     manually or when the customer |
-|                                   |     reports.                      |
+|                                   |     reports                       |
 |                                   | -   Annotate the DOC with         |
 |                                   |     employment income details     |
 |                                   |     coded - the script no longer  |
 |                                   |     includes this information in  |
-|                                   |     the DOC.                      |
-|                                   | -   On completion of the script,  |
+|                                   |     the DOC                       |
+|                                   | -    On completion of the script, |
 |                                   |     a 'Follow Up Action' item     |
 |                                   |     'Verification of Income and   |
 |                                   |     Assets data' will present.    |
@@ -2309,7 +2317,7 @@ Table 6
 |                                   |     trial has now ceased. See the |
 |                                   |     Resources page for the Age    |
 |                                   |     Pension New Claim (Submit and |
-|                                   |     DOC) script workaround.       |
+|                                   |     DOC) script workaround        |
 |                                   |                                   |
 |                                   | Note: for Age Pension claims also |
 |                                   | requiring Pension Bonus Claim     |
@@ -2378,11 +2386,11 @@ Table 7
 |                                   |                                   |
 |                                   | -   Select Inbox                  |
 |                                   | -   Select WLM Worklist from the  |
-|                                   |     Main Category drop down box   |
+|                                   |     Main Category dropdown box    |
 |                                   | -   Click the Multi select icon   |
 |                                   | -   Select Unassign               |
-|                                   | -   Select Reason from the drop   |
-|                                   |     down menu: Capability         |
+|                                   | -   Select Reason from the        |
+|                                   |     dropdown menu: Capability     |
 |                                   |     Adjusted                      |
 |                                   | -   Select Add Skill              |
 |                                   | -   Type 50124633 into the empty  |
@@ -2395,8 +2403,8 @@ Table 7
 |                                   | -   Select the work Item from     |
 |                                   |     Worklist                      |
 |                                   | -   Select Unassign               |
-|                                   | -   Select Reason from the drop   |
-|                                   |     down menu: Capability         |
+|                                   | -   Select Reason from the        |
+|                                   |     dropdown menu: Capability     |
 |                                   |     Adjusted                      |
 |                                   | -   Select Add Skill              |
 |                                   | -   Type 50124633 into the empty  |

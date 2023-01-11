@@ -155,9 +155,9 @@ Table 1
 |                                   |     foreign pensions) must be     |
 |                                   |     recorded on the customer's or |
 |                                   |     partner's Other Income (OIN)  |
-|                                   |     screen. See Verifying and     |
-|                                   |     recording other income on the |
-|                                   |     Other Income OIN screen       |
+|                                   |     screen. See Recording other   |
+|                                   |     income on the Other Income    |
+|                                   |     OIN screen                    |
 +-----------------------------------+-----------------------------------+
 
 Assessing and coding lump sums
@@ -250,9 +250,8 @@ Table 2
 |                                   | screen.                           |
 |                                   |                                   |
 |                                   | Update the correct information on |
-|                                   | OINS, see Verifying and recording |
-|                                   | other income on the Other Income  |
-|                                   | OIN screen.                       |
+|                                   | OINS, see Recording other income  |
+|                                   | on the Other Income OIN screen.   |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Back pay for a period of          |
 |                                   | employment + Read more ...        |
@@ -281,7 +280,7 @@ Table 2
 |                                   |     weeks                         |
 |                                   |                                   |
 |                                   | If the back pay spans multiple    |
-|                                   | pay periods which aren’t          |
+|                                   | pay periods which aren't          |
 |                                   | consecutive, determine the total  |
 |                                   | number of pay periods where back  |
 |                                   | pay is relevant. For example,     |
@@ -310,7 +309,7 @@ Table 2
 |                                   | Record back pay on the Employment |
 |                                   | Income Paid Details (EAPP) screen |
 |                                   | using the Employment Type code    |
-|                                   | ‘Earnings from Employment (EAR).  |
+|                                   | 'Earnings from Employment (EAR).  |
 |                                   | Back pay can be recorded under    |
 |                                   | the same employer as usual wages, |
 |                                   | however it is important to record |
@@ -335,7 +334,7 @@ Table 2
 |                                   | covers                            |
 |                                   |                                   |
 |                                   | If the back pay spans multiple    |
-|                                   | pay periods which aren’t          |
+|                                   | pay periods which aren't          |
 |                                   | consecutive:                      |
 |                                   |                                   |
 |                                   | -   code the End Date as the date |
@@ -468,39 +467,34 @@ Table 2
 |                                   |                                   |
 |                                   | Exempt foreign lump sums are      |
 |                                   | coded on the Foreign Income/Asset |
-|                                   | Detail (FID) screen.              |
+|                                   | Detail (FID) screen, see Exempt   |
+|                                   | lump sums for further             |
+|                                   | information.                      |
 |                                   |                                   |
-|                                   | Navigate to the FID screen. Key:  |
-|                                   |                                   |
-|                                   | -   Country of Payment: As        |
-|                                   |     required                      |
-|                                   | -   Type: 'LMP'                   |
-|                                   | -   Reference/Description: As     |
-|                                   |     required                      |
-|                                   | -   Event Date: Date the lump sum |
-|                                   |     was received (as determined   |
-|                                   |     above)                        |
-|                                   | -   Currency: Source currency     |
-|                                   | -   Income Amt: Lump sum amount   |
-|                                   | -   Frequency: 'ONE'              |
-|                                   | -   Asset Amt: As required        |
-|                                   | -   Rural Exempt: Not applicable  |
+|                                   | Remunerative foreign lump sums    |
+|                                   | and foreign employment income are |
+|                                   | coded on the foreign Employment   |
+|                                   | Income Paid Details (FEIP)        |
+|                                   | screen, see Foreign income and    |
+|                                   | assets.                           |
 |                                   |                                   |
 |                                   | If the foreign lump sum is not    |
-|                                   | exempt, it is:                    |
+|                                   | exempt, and is not a remunerative |
+|                                   | lump sum it is:                   |
 |                                   |                                   |
 |                                   | -   treated as a non-remunerative |
 |                                   |     lump sum, and                 |
 |                                   | -   assessed for 52 weeks from    |
 |                                   |     the date is was paid          |
 |                                   |                                   |
-|                                   | Assessable foreign lump sums are  |
-|                                   | keyed on the Foreign Income/Asset |
-|                                   | Detail (FID) screen:              |
+|                                   | Assessable non-remunerative       |
+|                                   | foreign lump sums are keyed on    |
+|                                   | the Foreign Income/Asset Detail   |
+|                                   | (FID) screen:                     |
 |                                   |                                   |
-|                                   | record in the source currency     |
+|                                   | Record in the source currency     |
 |                                   |                                   |
-|                                   | use the exchange rate applicable  |
+|                                   | Use the exchange rate applicable  |
 |                                   | on the date the lump sum amount   |
 |                                   | was paid                          |
 |                                   |                                   |
@@ -520,21 +514,78 @@ Table 2
 |                                   |     and it is in the customer's   |
 |                                   |     favour                        |
 |                                   |                                   |
-|                                   | Navigate to the FID screen. Key:  |
+|                                   | Process Direct:                   |
 |                                   |                                   |
-|                                   | -   Country of Payment: As        |
-|                                   |     required                      |
+|                                   | Go to the Foreign Income (FIPS)   |
+|                                   | screen                            |
+|                                   |                                   |
+|                                   | On the Foreign Income/Asset       |
+|                                   | Details (FID) table, select Add   |
+|                                   | New Row                           |
+|                                   |                                   |
+|                                   | On Create Foreign Financial,      |
+|                                   | update:                           |
+|                                   |                                   |
+|                                   | -   Country of Payment: Enter the |
+|                                   |     source country for the        |
+|                                   |     payment                       |
+|                                   | -   Currency: Enter the source    |
+|                                   |     currency                      |
+|                                   | -   Type: 'LMP' -                 |
+|                                   |     Non-remunerative Lump Sum     |
+|                                   | -   Frequency: 'ANN' - Annually   |
+|                                   | -   Reference/Description: Enter  |
+|                                   |     details of the payment        |
+|                                   |     received                      |
+|                                   | -   Event Date/Start date: Date   |
+|                                   |     the lump sum was received or  |
+|                                   |     able to be received           |
+|                                   | -   Income - Non Pension: Enter   |
+|                                   |     the amount of the payment     |
+|                                   |     received                      |
+|                                   |                                   |
+|                                   | Select Save                       |
+|                                   |                                   |
+|                                   | Complete the Receipt Date and     |
+|                                   | Channel fields and select Save    |
+|                                   |                                   |
+|                                   | Select Assess and address any     |
+|                                   | errors/warnings shown in the      |
+|                                   | Message Log on the SAP Warnings   |
+|                                   | and Errors (SWE) screen           |
+|                                   |                                   |
+|                                   | Go to the Entitlements (ELD)      |
+|                                   | screen by selecting Assess again  |
+|                                   |                                   |
+|                                   | Once satisfied that the outcome   |
+|                                   | shown is correct, select Finish   |
+|                                   |                                   |
+|                                   | Record details of the update in   |
+|                                   | the Note on the Finalise screen   |
+|                                   |                                   |
+|                                   | Customer First:                   |
+|                                   |                                   |
+|                                   | Go to the FID screen and code the |
+|                                   | following fields:                 |
+|                                   |                                   |
+|                                   | -   Country of Payment: Enter the |
+|                                   |     source country for the        |
+|                                   |     payment                       |
 |                                   | -   Type: 'LMP'                   |
-|                                   | -   Reference/Description: As     |
-|                                   |     required                      |
+|                                   | -   Reference/Description: Enter  |
+|                                   |     details of the payment        |
+|                                   |     received                      |
 |                                   | -   Event Date: Date the lump sum |
-|                                   |     was received (as determined   |
-|                                   |     above)                        |
-|                                   | -   Currency: Source currency     |
-|                                   | -   Income Amt: Lump sum amount   |
-|                                   | -   Frequency: 'ANN'              |
-|                                   | -   Asset Amt: As required        |
-|                                   | -   Rural Exempt: Not applicable  |
+|                                   |     was received or able to be    |
+|                                   |     received                      |
+|                                   | -   Currency: Enter the source    |
+|                                   |     currency                      |
+|                                   | -   Income Amt: Enter the amount  |
+|                                   |     of the income received        |
+|                                   | -   Frequency: 'ANN' - Annual     |
+|                                   |                                   |
+|                                   | Record the details of the update  |
+|                                   | in a DOC.                         |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Disability benefits from          |
 |                                   | superannuation + Read more ...    |
@@ -594,9 +645,8 @@ Table 2
 |                                   | commencing regular ongoing        |
 |                                   | payments are going forward for    |
 |                                   | the period the arrears            |
-|                                   | represents. See Verifying and     |
-|                                   | recording other income on the     |
-|                                   | Other Income (OIN) screen.        |
+|                                   | represents. See Assessment of     |
+|                                   | income for Centrelink payments.   |
 +-----------------------------------+-----------------------------------+
 
                                    

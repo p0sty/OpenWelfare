@@ -215,6 +215,13 @@ automatic cancellation of Age Pension.
 |                                   |     proceed to Step 3 in the List |
 |                                   |     of cancellation reasons A - K |
 |                                   |     table                         |
+|                                   | -   ESP and EPP – Extended        |
+|                                   |     employment suspension period  |
+|                                   |     or Partner extended           |
+|                                   |     employment suspension period, |
+|                                   |     proceed to Step 3 in the List |
+|                                   |     of cancellation reasons A - K |
+|                                   |     table                         |
 |                                   | -   FLC - Fail to return family   |
 |                                   |     SITU certificate, go to Step  |
 |                                   |     5                             |
@@ -402,8 +409,9 @@ Pension - A - K.
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Cancellation reason ASS, INC, E6F |
-|                                   | or E6P + Read more ...            |
+| 3                                 | Cancellation reason ASS, INC,     |
+|                                   | ESP, EPP, E6F or E6P + Read more  |
+|                                   | ...                               |
 |                                   |                                   |
 |                                   | For ASS and INC reasons, the      |
 |                                   | system will cancel the pension if |
@@ -417,10 +425,13 @@ Pension - A - K.
 |                                   | nil rate entitlement, and some of |
 |                                   | this income is employment income, |
 |                                   | the pension will enter an         |
-|                                   | employment income nil rate period |
-|                                   | and will cancel with the reason   |
-|                                   | 'E6F' or 'E6P' after 6 full       |
-|                                   | fortnights at nil rate.           |
+|                                   | employment income nil rate        |
+|                                   | period. If the customer is not    |
+|                                   | eligible to enter an extended     |
+|                                   | employment suspension period,     |
+|                                   | their pension will cancel with    |
+|                                   | the reason 'E6F' or 'E6P' after 6 |
+|                                   | full fortnights at nil rate.      |
 |                                   |                                   |
 |                                   | For E6F and E6P, Age Pension is   |
 |                                   | restorable if the customer        |
@@ -428,6 +439,18 @@ Pension - A - K.
 |                                   | entitlement period that           |
 |                                   | immediately follows the 6         |
 |                                   | fortnights at nil rate.           |
+|                                   |                                   |
+|                                   | For ESP and EPP, if the customer  |
+|                                   | entered an extended employment    |
+|                                   | suspension period, their pension  |
+|                                   | will automatically cancel with    |
+|                                   | reason ESP or EPP once the        |
+|                                   | maximum suspension period has     |
+|                                   | been reached. These cancellations |
+|                                   | can only be restored if the       |
+|                                   | customer requested a restoration  |
+|                                   | before the cancellation date of   |
+|                                   | effect.                           |
 |                                   |                                   |
 |                                   | Customer and/or partner may be    |
 |                                   | entitled to the Work Bonus. Note: |
