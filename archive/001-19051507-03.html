@@ -310,29 +310,37 @@ Procedure ends here</li>		</ul>
 <p>3</p></td>
 <td>
 
-<p><strong>Check customer benefit status line</strong> <a title="Read more 3" class="showhead bp03_tbl_Review_claim_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>New or reindexed claim</strong> <a title="Read more 3" class="showhead bp03_tbl_Review_claim_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>For claims generated where the customer is currently on ABY or ABY PES payments, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step04">go to Step 4</a>.</p>
+<p>A JSP new claim or reindexed claim cannot be assessed unless the Participation Interview has been completed and a RapidConnect determination made.</p>
 
-<p>To prevent incorrect claim assessment, there may be a need to update the customer's record outside the new claim.</p>
+<p>The Participation Interview codes a RapidConnect status on the Job Seeker RapidConnect (J<strong>MRC</strong>) screen to determine the customer's start date of payments. See <a href="../job-seekers/001-02030000-01.html">RapidConnect</a>.</p>
 
-<p>Updates may include correcting the previous benefit status so it displays as CAN (cancel). This will prevent incorrect arrears when finalising the claim or end dating student/apprenticeship details.</p>
+<p>If error <strong>E543NM - 'Participation Workflow has not been completed'</strong> appears, the Participation Interview has not been completed successfully, see <a href="../job-seekers/001-03020100-03.html#bp03_L3TT_Reindex_claims_">Troubleshooting reindexed claims, PP or student transfers or new claims with error - E543NM</a> Table before continuing with claim processing.</p>
 
-<p>If the benefit status is <strong>CNP</strong> (cancel next payment)&#58;</p>
+<p><strong>Note</strong>&#58; automation - once Service Officers complete the Participation Interview and '<strong>FINISH</strong>' is selected, they will be exited from the claim transaction. The claim will immediately be streamed into automation, which creates a lock on the customer's record. Depending on system performance, this can take several minutes. If after 5 minutes, the record is no longer locked with the user ID 'Roxy' the claim will either be 'Done' (no further action required) or SO's can continue to assess the claim.</p>
+
+<p>To reassess a previously rejected claim&#58;</p>
 		<ul>		<li>
-go to <strong>Customer Summary</strong> tile</li>
+If rejected <strong>FSD</strong>, <strong>FRC</strong> or <strong>POI</strong>, see <a target="_blank" href="../initial-contact-general/106-07060060-03.html">Requested documentation not provided resulting in rejection of new claim</a></li>
 		<li>
-enter the customer's CRN and select the customer</li>
+If rejected <strong>DNL</strong>/<strong>FRP</strong>, see <a href="../job-seekers/001-18120545-03.html">Early or late lodgement of job seeker reports</a></li>
 		<li>
-go to Payment Summary (<strong>PS</strong>) screen via <strong>Super Key</strong></li>
+To re-index the claim, refer to directions for SAP online claims in <a target="_blank" href="../initial-contact-general/106-07030050-03.html">Cancelling claim activities and re-indexing claims</a></li>
 		<li>
-Key '9999' in the <strong>Number of months in past</strong> field, <strong>Execute</strong></li>
+The Participation Interview must be re-run, see <a href="../job-seekers/001-03020100-01.html">Participation Interview</a></li>
+		</ul>
+<p>If the customer is claiming Disability Support Pension (DSP), assess the claim as JobSeeker Payment provisional, see <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step15">Step 15 in Table 2</a>.</p>
+
+<p>The claim status must be In Process before it can be processed.</p>
+
+<p>Is the claim status <strong>In Process</strong>?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step04">go to Step 4</a></li>
 		<li>
-note the date paid to plus 1</li>
-		<li>
-go to Benefit Action (<strong>BA</strong>) screen via <strong>Super Key</strong> and <a href="../ongoing-contact/102-10020190-03.html">code cancellation</a></li>		</ul>
+<strong>No</strong>, for claim status definitions and action to take, see <a href="../specialist-manuals-and-system-tools/111-20012938-05.html">Process Direct navigation, common screens and functions</a></li>		</ul>
 </div>
 
 
@@ -344,57 +352,17 @@ go to Benefit Action (<strong>BA</strong>) screen via <strong>Super Key</strong>
 <p>4</p></td>
 <td>
 
-<p><strong>Check customer record</strong> <a title="Read more 4" class="showhead bp03_tbl_Review_claim_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Review claim details</strong> <a title="Read more 4" class="showhead bp03_tbl_Review_claim_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>To prevent incorrect claim assessment, there may be a need to update the customer's record outside the new claim.</p>
-		<ul>		<li>
-If the customer is transferring to JSP and was receiving Pensioner Education Supplement (PES) with the income support payment they are transferring from&#58;</li>
-			<ul>			<li>
-update the Education Details (<strong>EDC</strong>) and Education Status (<strong>NES</strong>) screens to cancel PES before processing the JSP claim, then</li>
-			<li>
-restore the PES after the JSP claim has been finalised. See <a href="../ongoing-contact/102-10050000-01.html">Cancellation of, or changes to qualifying payment for Pensioner Education Supplement (PES), ABSTUDY PES or Assistance for Isolated Children PES</a></li>		</ul>
-		<li>
-If the customer was a full-time Youth Allowance or Austudy student/Apprentice before claiming, or current education/apprenticeship details display on their record&#58;</li>
-			<ul>			<li>
-<a href="../ongoing-contact/102-07020050-03.html">end date details for student payment</a>, or</li>
-			<li>
-<a href="../ongoing-contact/102-07030210-03.html">end date details for Apprenticeship payment</a></li>		</ul>
-		<li>
-If a student course end date review activity is started and not completed, a Future Dated Benefit Cancellation activity and JSP lodged claim displays&#58;</li>
-			<ul>			<li>
-complete the Future Dated Benefit Cancellation activity in Process Direct. Once completed the JSP claim status will change.<br><strong>Note&#58;</strong> the Future Dated Benefit Cancellation (ZCOC activity) is identified by keywords <strong>STU2JSP</strong> and <strong>ZYASZJSP</strong> and must be completed prior to claim assessment</li>		</ul>
-		<li>
-If the ABSTUDY customer is&#58;</li>
-			<ul>			<li>
-no longer studying or undertaking an Apprentice, the payment will need to be cancelled. See <a href="../ongoing-contact/102-07020040-01.html">Payment of ABSTUDY when a student is deferring or discontinuing study before the end of the course</a></li>
-			<li>
-continuing in the course as a part-time student, they can remain in receipt of ABSTUDY as they qualify for allowances under the part-time award (No fortnightly payments are made under the part-time award). The ABSTUDY record will need to be checked and the Education Course Details (<strong>EDC</strong>) screen may need updating to reflect the part-time course</li>		</ul>
-		<li>
-If the customer has a voluntary nominee and in their claim they answer No to someone acting or receiving payment on their behalf</li>
-			<ul>			<li>
-Check and update nominee arrangements, see <a href="../complaints-privacy-and-foi/104-04090030-03.html">Cancelling a nominee arrangement</a></li>
-			</ul>			</ul>
-<p>The ABSTUDY claim will remain Current whilst they are a part-time student, and will not affect the JSP claim. To ensure the ABSTUDY record is displaying correctly, see <a href="../ongoing-contact/102-07020190-01.html">Changing study load from full-time to part-time or concessional study load for ABSTUDY or ABSTUDY Pensioner Education Supplement (PES)</a>.</p>
+<p>Check the customer's benefit status line.</p>
 
-<p><strong>Pre-Claim vulnerable circumstance</strong></p>
+<p>If the customer's benefit status is <strong>JSP</strong>/<strong>CUR</strong> indicating that the claim assessment has already been completed, update the claim status to <strong>Completed</strong> via the <strong>Status</strong> icon. If <strong>Completed</strong> is not available, update to <strong>Not Requi</strong>red. Procedure ends here.</p>
 
-<p>Where the customer has pre-claim vulnerable circumstances recorded within the 8 weeks prior to their intent to claim contact date the system will automatically calculate the start date.</p>
-		<ul>		<li>
-Where pre-claim vulnerable circumstances are not able to be automatically determined by the system, they can be manually added&#58;</li>
-			<ul>			<li>
-on the Pre-Claim Vulnerable Circumstance (<strong>PRECLM</strong>) screen in Process Direct, or</li>
-			<li>
-via the <strong>Pre-claim Circumstance</strong> guided procedure in Customer First</li>		</ul>
-		<li>
-If the customer has a pre-claim circumstance displayed on <strong>PRECLM</strong> with a start date that is more than 8 weeks ago and no end date, consider if that pre-claim vulnerable circumstance still exists using available information</li>
-			<ul>			<li>
-Where the vulnerable circumstance is no longer active, consider end dating the vulnerable circumstance from the associated circumstance page and regenerate the claim</li>
-			<li>
-Some circumstances can remain current on a customer's record indefinitely, such as an exemption from seeking child support due to family and domestic violence. In these cases, do not end date the exemption. Manually update the claim start date to the date of submission if required. See Step 2 in Table 1 in <a href="../initial-contact-general/106-18032700-03.html#bp03_tbl_Recording_the_i01_Step02">Intent to claim and vulnerable customers</a> for more information</li>
-			</ul>			</ul>
-<p>After completing any updates, select <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Regenerate claim</strong>.</p>
+<p>To review the information provided by the customer in the online claim or ACC&#58;</p>
+
+<p>Select <img src="../resources/images/process_direct_small/open-left-slider.png" alt="Open left slider; Close right slider" title="Open left slider; Close right slider" /> and <img src="../resources/images/process_direct_small/Enter_Full_Screen_icon.PNG" alt="Enter full screen" title="Enter full screen" /> to view the <strong>Claim Summary</strong> in a new window. If it is <strong>blank</strong>, press [<strong>F5</strong>] to refresh the page</p>
 </div>
 
 
@@ -406,41 +374,33 @@ Some circumstances can remain current on a customer's record indefinitely, such 
 <p>5</p></td>
 <td>
 
-<p><strong>New or reindexed claim</strong> <a title="Read more 5" class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check customer benefit status line</strong> <a title="Read more 5" class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>A JSP new claim or reindexed claim cannot be granted unless the Participation Interview has been completed and a RapidConnect determination made.</p>
+<p>For claims generated where the customer is currently on ABY or ABY PES payments, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step07">go to Step 7</a>.</p>
 
-<p>The Participation Interview codes a RapidConnect status on the Job Seeker RapidConnect (<strong>JMRC</strong>) screen to determine the customer's start date of payments. See <a href="../job-seekers/001-02030000-01.html">RapidConnect</a>.</p>
+<p>To prevent incorrect claim assessment, there may be a need to update the customer's record outside the new claim. Updates may include correcting the previous benefit status so it displays as CAN (cancel). This will prevent incorrect arrears when finalising the claim or end dating student/apprenticeship details.</p>
 
-<p>If error E543NM - 'Participation Workflow has not been completed' appears, the Participation Interview has not been completed successfully, see Table 3 in <a href="../job-seekers/001-03020100-03.html">Participation Interview</a> before continuing with claim processing.</p>
+<p>If the benefit status is <strong>CNP</strong> (cancel next payment)&#58;</p>
 
-<p><strong>Note&#58;</strong> automation - once Service Officers complete the Participation Interview and '<strong>FINISH</strong>' is selected, they will be exited from the claim transaction. The claim will immediately be streamed into automation, which creates a lock on the customer's record. Depending on system performance, this can take several minutes. If after 5 minutes, the record is no longer locked with the user ID 'Roxy' the claim will either be 'Done' (no further action required) or SO's can continue to assess the claim.</p>
-
-<p>The claim status must be <strong>In Process</strong> before it can be processed.</p>
-
-<p>Is the claim status <strong>In Process</strong>?</p>
+<p>Process Direct&#58;</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step06">go to Step 6</a></li>
+Select <strong>Customer Summary</strong> from the <strong>Process Direct</strong> landing page</li>
 		<li>
-<strong>No</strong>, for claim status definitions and action to take, see <a href="../specialist-manuals-and-system-tools/111-20012938-05.html">Process Direct navigation, common screens and functions</a></li>
-		</ul>
-<p>To reassess a previously rejected claim&#58;</p>
-		<ul>		<li>
-If rejected <strong>FSD</strong>, <strong>FRC</strong> or <strong>POI</strong>, see <a target="_blank" href="../initial-contact-general/106-07060060-03.html">Request to reassess a rejected claim</a></li>
+Key the customer's CRN, select <strong>Go</strong></li>
 		<li>
-If rejected <strong>DNL/FRP</strong>, see <a href="../job-seekers/001-18120545-03.html">Early or late lodgement of job seeker reports</a></li>
+Go to Payment Summary (<strong>PS</strong>) screen </li>
 		<li>
-To re-index the claim, refer to directions for SAP online claims in <a href="../initial-contact-general/106-07030050-03.html">Indexing, re-indexing, and cancelling claim activities</a></li>
+Key '9999' in the <strong>Number of months in past</strong> field, <strong>Execute</strong></li>
 		<li>
-The Participation Interview must be re-run, see <a href="../job-seekers/001-03020100-01.html">Participation Interview</a></li>
-		</ul>
-<p>If the customer is claiming Disability Support Pension (DSP), assess the claim as JobSeeker Payment provisional, see <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step15">Step 15 in Table 2</a>.</p>
+Note the date paid to plus 1</li>
+		<li>
+Go to Benefit Action (<strong>BA</strong>) screen via <strong>Super Key</strong> and <a href="../ongoing-contact/102-10020190-03.html">code cancellation</a>. See, <a href="../job-seekers/001-17070600-03.html">Job seeker online claim appointment Table 2 Step 2 for coding</a>.</li>		</ul>
 </div>
 
 
-<p></p></td>
+</td>
 </tr>
 <tr>
 <td>
@@ -448,17 +408,45 @@ The Participation Interview must be re-run, see <a href="../job-seekers/001-0302
 <p>6</p></td>
 <td>
 
-<p><strong>Review claim details</strong> <a title="Read more 6" class="showhead bp03_tbl_Review_claim_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-assessment checks</strong> <a title="Read more 6" class="showhead bp03_tbl_Review_claim_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Check the customer's benefit status line.</p>
-
-<p>If the customer's benefit status is <strong>JSP/CUR</strong> indicating that the claim assessment has already been completed, update the claim status to <strong>Completed</strong> via the <strong>Status</strong> icon. If <strong>Completed</strong> is not available, update to <strong>Not Required</strong>. Procedure ends here.</p>
-
-<p>To review the information provided by the customer in the online claim or ACC&#58;</p>
+<p>Complete all pre-assessment checks in Process Direct using the icons on the Transaction Summary (<strong>TS</strong>) screen. Checks may include selecting&#58;</p>
 		<ul>		<li>
-Select <img src="../resources/images/process_direct_small/open-left-slider.png" alt="Open left slider; Close right slider" title="Open left slider; Close right slider" /> and <img src="../resources/images/process_direct_small/Enter_Full_Screen_icon.PNG" alt="Enter full screen" title="Enter full screen" /> to view the <strong>Claim Summary</strong> in a new window. If it is <strong>blank</strong>, press [<strong>F5</strong>] to refresh the page</li>		</ul>
+<img src="../resources/images/process_direct_small/open-left-slider.png" alt="Open left slider; Close right slider" title="Open left slider; Close right slider" /> to view the claim submitted by the customer</li>
+		<li>
+<strong>Circumstance Data</strong> for customer and claim information including&#58;</li>
+			<ul>			<li>
+<a href="../initial-contact-general/106-09010000-01.html">identity confirmation</a></li>
+			<li>
+claim type, submission date and status</li>
+			<li>
+the Link Summary (<strong>LS</strong>) and Marital Status (<strong>MS</strong>) screen data</li>		</ul>
+		<li>
+<strong>Benefit History</strong> for previous claim dates and benefit history</li>
+		<li>
+<strong>Tasks</strong> to view required tasks, supporting documents requested and their due date</li>
+		<li>
+<strong>Notes</strong> to view&#58;</li>
+			<ul>			<li>
+the Progress of claim note</li>
+			<li>
+any comments made by a previous Service Officer, and</li>
+			<li>
+the Document List (<strong>DL</strong>) screen<br>DL also shows confirmation the customer accepts the verbal declaration where an Assisted Customer Claim (ACC) has been run</li>		</ul>
+		<li>
+<strong>Status</strong> to view or update the claim status</li>
+		<li>
+<strong>Documents</strong> to view documents uploaded or scanned, including&#58;</li>
+			<ul>			<li>
+<a href="../additional-products-and-services/101-05070010-01.html">specific documentation for a CAO assessment</a> &#160;where applicable, and</li>
+			<li>
+additional documents provided<br><strong>Note</strong>&#58; documents relating to the customer's claim may also be attached to the partner's, or parent's record</li>		</ul>
+		<li>
+the <strong>Activity List </strong>(AL) using Super Key to view outstanding activities</li>
+		</ul>
+<p>Immediately process an<strong> Authorising a person or organisation to enquire or act on your behalf</strong> form (SS313) if lodged with a new claim and satisfied of the nominee's identity. This is to ensure the nominee will also receive the outcome of claim letter. See <a href="../complaints-privacy-and-foi/104-04090010-01.html">Appointing nominees</a> and the <a href="../students-and-trainees/010-06020010-05.html">Resources</a> page for a link to the SS313 form.</p>
 </div>
 
 
@@ -470,7 +458,69 @@ Select <img src="../resources/images/process_direct_small/open-left-slider.png" 
 <p>7</p></td>
 <td>
 
-<p><strong>Transfer claims</strong> <a title="Read more 7" class="showhead bp03_tbl_Review_claim_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check customer record</strong> <a title="Read more 7" class="showhead bp03_tbl_Review_claim_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To prevent incorrect claim assessment, there may be a need to update the customer's record outside the new claim.</p>
+		<ul>		<li>
+If the customer is transferring to JSP and was receiving Pensioner Education Supplement (<strong>PES</strong>) with the income support payment they are transferring from&#58;</li>
+			<ul>			<li>
+update the Newstart Education Status (<strong>NES</strong>) screen and Customer Study Details (<strong>EDC</strong>) screen in Process Direct, or the Education Status (<strong>NES</strong>) screen in Customer First, and</li>
+			<li>
+restore the PES after the JSP claim has been finalised. See <a href="../ongoing-contact/102-10050000-01.html">Cancellation of, or changes to qualifying payment for Pensioner Education Supplement (PES), ABSTUDY PES or Assistance for Isolated Children PES</a></li>		</ul>
+		<li>
+If the customer was a full-time Youth Allowance or Austudy student/Apprentice before claiming, or current education/apprenticeship details display on their record&#58;</li>
+			<ul>			<li>
+<a href="../ongoing-contact/102-07020050-03.html">end date details for student payment</a>, or</li>
+			<li>
+<a href="../ongoing-contact/102-07030210-03.html">end date details for Apprenticeship payment</a></li>		</ul>
+		<li>
+If a student course end date review activity is started and not completed, a Future Dated Benefit Cancellation activity and JSP lodged claim displays&#58;</li>
+			<ul>			<li>
+complete the Future Dated Benefit Cancellation activity in Process Direct. Once completed the JSP claim status will change.<br><strong>Note</strong>&#58; the Future Dated Benefit Cancellation (ZCOC activity) is identified by keywords <strong>STU2JSP</strong> and <strong>ZYASZJSP</strong> and must be completed prior to claim assessment</li>		</ul>
+		<li>
+If the ABSTUDY customer is&#58;</li>
+			<ul>			<li>
+no longer studying or undertaking an Apprentice, the payment will need to be cancelled. See <a href="../ongoing-contact/102-07020040-01.html">Payment of ABSTUDY when a student is deferring or discontinuing study before the end of the course</a></li>
+			<li>
+continuing in the course as a part-time student, they can remain in receipt of ABSTUDY as they qualify for allowances under the part-time award (No fortnightly payments are made under the part-time award). The ABSTUDY record will need to be checked and the <strong>EDC</strong> screen may need updating to reflect the part-time course</li>		</ul>
+		<li>
+If the customer has a voluntary nominee and in their claim they answer No to someone acting or receiving payment on their behalf&#58;</li>
+			<ul>			<li>
+Check and update nominee arrangements, see <a href="../complaints-privacy-and-foi/104-04090030-03.html">Cancelling a nominee arrangement</a></li>
+			</ul>			</ul>
+<p>The ABSTUDY claim will remain CURrent whilst they are a part-time student, and will not affect the JSP claim. To ensure the ABSTUDY record is displaying correctly, see <a href="../ongoing-contact/102-07020190-01.html">Changing study load from full-time to part-time or concessional study load for ABSTUDY or ABSTUDY Pensioner Education Supplement (PES)</a>.</p>
+
+<p><strong>Pre-Claim vulnerable circumstance</strong></p>
+
+<p>Where the customer has pre-claim vulnerable circumstances recorded within the 8 weeks prior to their intent to claim contact date the system will automatically calculate the start date&#58;</p>
+		<ul>		<li>
+Where pre-claim vulnerable circumstances are not able to be automatically determined by the system, they can be manually added&#58;</li>
+			<ul>			<li>
+on the Pre-Claim Vulnerable Circumstance (<strong>PRECLM</strong>) screen in Process Direct, or</li>
+			<li>
+via the <strong>Pre-claim Circumstance</strong> guided procedure in Customer First</li>		</ul>
+		<li>
+If the customer has a pre-claim circumstance displayed on <strong>PRECLM</strong> with a start date that is more than 8 weeks ago and no end date, consider if that pre-claim vulnerable circumstance still exists using available information&#58;</li>
+			<ul>			<li>
+Where the vulnerable circumstance is no longer active, consider end dating the vulnerable circumstance from the associated circumstance page and regenerate the claim</li>
+			<li>
+Some circumstances can remain current on a customer's record indefinitely, such as an exemption from seeking child support due to family and domestic violence. In these cases, do not end date the exemption. Manually update the claim start date to the date of submission if required. See Step 2 <a href="../initial-contact-general/106-18032700-03.html#bp03_tbl_Recording_the_i01_Step02">Recording the intent to claim for a payment or concession card</a> table for more information</li>
+			</ul>			</ul>
+<p>After completing any updates, from the Transaction Summary (<strong>TS</strong>) screen select <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Regenerate claim</strong>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Transfer claims</strong> <a title="Read more 8" class="showhead bp03_tbl_Review_claim_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -478,21 +528,11 @@ Select <img src="../resources/images/process_direct_small/open-left-slider.png" 
 
 <p>Eligible customers will be offered a 'task' on the home page of their online account, allowing them to advise that they wish to claim JSP. The task is variable according to the payment type. It is available from up to 28 days before qualification for their current payment ends, up until the date they lose qualification.</p>
 
-<p>Transfer claims can be identified by the <strong>DOC</strong>s on the <strong>DL</strong>. This claim was auto populated from existing verified customer details. This claim can be assessed without the need to review the details in the claim.</p>
+<p>Transfer claims can be identified by the <strong>DOC</strong>s on the <strong>DL</strong>. This claim was auto populated from existing verified customer details. This claim can be assessed without the need to review the details in the claim&#58;</p>
 		<ul>		<li>
-For Parenting Payment Single (PPS) customers transferring to JSP&#58;</li>
+For Parenting Payment customers transferring to JSP&#58;</li>
 			<ul>			<li>
-<strong>DL</strong> will display a PP to JSP Transition Claim <strong>DOC</strong></li>
-			<li>
-The <strong>DOC</strong> will contain the Claim ID</li>
-			<li>
-Advise of any required supporting documentation that is to be provided</li>
-			<li>
-This claim was auto populated from existing verified customer details. This claim can be assessed without the need to review the details in the claim</li>		</ul>
-		<li>
-For Parenting Payment Partnered (PPP) customers transferring to JSP&#58;</li>
-			<ul>			<li>
-<strong>DL</strong> will display a PP to JSP Transition Claim <strong>DOC</strong></li>
+<strong>DL</strong> will display a <strong>PP</strong> to <strong>JSP</strong> Transition Claim <strong>DOC</strong></li>
 			<li>
 The <strong>DOC</strong> will contain the Claim ID</li>
 			<li>
@@ -518,33 +558,7 @@ This claim was auto populated from existing verified customer details. This clai
 		<ul>		<li>
 <strong>Yes</strong>, see <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step01">Step 1 in Table 2</a></li>
 		<li>
-<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step08">go to Step 8</a></li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step08"></a>
-<p>8</p></td>
-<td>
-
-<p><strong>Review scanned documents</strong> <a title="Read more 8" class="showhead bp03_tbl_Review_claim_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>To view supporting documents&#58;</p>
-		<ul>		<li>
-select links at the bottom of the expanded <strong>Claim Summary</strong>, or</li>
-		<li>
-select <img src="../resources/images/process_direct_small/quick-link.png" alt="Quick link" title="Quick link" /> from the bottom of the open Process Direct window, or</li>
-		<li>
-select <strong>Documents</strong> from the Icon Menu</li>
-		</ul>
-<p>Check the date the document was scanned.</p>
-
-<p>There may also be older documents not related to the claim.</p>
+<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step09">go to Step 9</a></li>		</ul>
 </div>
 
 
@@ -556,11 +570,207 @@ select <strong>Documents</strong> from the Icon Menu</li>
 <p>9</p></td>
 <td>
 
-<p><strong>Bank accounts and balances verification exemption</strong> <a title="Read more 9" class="showhead bp03_tbl_Review_claim_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Identity Confirmation </strong> <a title="Read more 9" class="showhead bp03_tbl_Review_claim_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>The online claim may request bank verification as a <strong>Required task</strong>. However, if the customer meets one of the below exemption criteria, it is not required. In these cases, the customer has made a legal declaration that the claim is correct. This is sufficient evidence unless there is doubt about the validity of the information provided in the claim. </p>
+<p>On the TS screen, check the customer's <strong>Identity Status</strong>.</p>
+
+<p>If the <strong>Identity Status</strong> is&#58;</p>
+		<ul>		<li>
+<strong>Confirmed,</strong> <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step10">go to  Step 10</a></li>
+		<li>
+<strong>Not Confirmed</strong>, consider coding alternative proof of identity&#58;</li>
+			<ul>			<li>
+Select the <strong>Not Confirmed</strong> link to open a <strong>Customer Summary</strong> window</li>
+			<li>
+Select <strong>Identity Confirmation</strong> &gt; <strong>Identity Confirmation Dashboard</strong> from the Task Selector. See <a href="../initial-contact-general/106-09010010-03.html#bp03_tbl_Coding_identity01_Step">Coding identity documents</a> Table</li>
+			<li>
+Code the identity documents or consider applying alternative identity. See <a target="_blank" href="../initial-contact-general/106-07040050-01.html">Alternative Identity</a></li>
+			</ul>			</ul>
+<p>Close the <strong>Customer Summary</strong> window to return to the claim.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step10"></a>
+<p>10</p></td>
+<td>
+
+<p><strong>Relationship details</strong> <a title="Read more 10" class="showhead bp03_tbl_Review_claim_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>These details must be reviewed/updated before selecting <strong>Process</strong>.</p>
+
+<p>On the <strong>TS</strong> screen&#58;</p>
+		<ul>		<li>
+<strong>Link Summary</strong> (<strong>LS</strong>) table shows linked records, for example</li>
+			<ul>			<li>
+Partner and any Relationship Qualifier Code</li>
+			<li>
+Children</li>		</ul>
+		<li>
+<strong>Marital Status</strong> (<strong>MS</strong>) table shows the customer's relationship details. For help with coding, see <a target="_blank" href="../specialist-manuals-and-system-tools/111-20012938-03.html#bp03_L3TT_Environment_tra">Process Direct navigation, common screens and functions</a></li>
+		</ul>
+<p>Compare relationship details provided in the claim with the information already recorded in the Marital Status (MS) table. If the customer has provided different information about their relationships in the claim, to the confirmed data in the MS table, attempt to contact the customer by phone to confirm the correct relationship details and dates. If phone contact is unsuccessful, the relationship details supplied in the claim should be applied.</p>
+
+<p>If the customer advises they are separated and living with their previous partner (<a target="_blank" href="../initial-contact-general/106-07120010-01.html">Member of a Couple (MoC) and Separated under one roof (SUOR) assessments</a>), a MoC assessment is required to be finalised before the claim can be processed. The outcome of the MoC assessment will determine the coding required on the MS page.</p>
+
+<p><strong>Note</strong>&#58; take extra care when assessing JSP claims where a customer advises they are separated under one roof or where a customer updates their address only and not their partner's. For more information see&#58;</p>
+		<ul>		<li>
+<a href="../help-in-an-emergency/003-12010000-03.html">Social work service referral</a>, and</li>
+		<li>
+<a href="../help-in-an-emergency/003-15000000-01.html">Family and domestic violence</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step11"></a>
+<p>11</p></td>
+<td>
+
+<p><strong>Qualification for JSP</strong> <a title="Read more 11" class="showhead bp03_tbl_Review_claim_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>When assessing qualification for JSP check the customer&#58;</p>
+		<ul>		<li>
+is of <a href="../job-seekers/001-03010020-01.html">qualifying age for JSP</a></li>
+		<li>
+satisfies the <a href="../job-seekers/001-19051536-01.html">Australian residence requirements </a></li>
+		<li>
+is not in receipt of any other social security benefit, social security pension or a Service Pension, Income Support Payment (ISP) or Veteran Payment</li>
+		<li>
+not receiving ABSTUDY Living Allowance</li>
+		<li>
+is <a href="../job-seekers/001-03010010-01.html">unemployed</a>, or&#58;</li>
+			<ul>			<li>
+unable to look for work due to a medical condition, illness or injury, or</li>
+			<li>
+employed or studying full time and are unable to undertake these due to a medical condition, illness or injury and have a job or study to return to</li>		</ul>
+		<li>
+prepared to negotiate and agree to a <a href="../job-seekers/001-09100010-01.html">Job Plan</a> if required, comply with or renegotiate an existing Job Plan</li>
+		<li>
+satisfy the requirements of a Job Plan</li>
+		</ul>
+<p>Is the customer eligible for JSP or will they become eligible within 13 weeks of the date of lodgement?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step12">go to  Step 12</a></li>
+		<li>
+<strong>No</strong>, reject the claim. See Rejecting a claim for JSP or YA (job seeker)</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step12"></a>
+<p>12</p></td>
+<td>
+
+<p><strong>Payability for JSP</strong> <a title="Read more 12" class="showhead bp03_tbl_Review_claim_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The customer must meet the payability provisions for JSP (or will meet the provisions within 13 weeks of the date of claim). Base the decision on the following&#58;</p>
+		<ul>		<li>
+<a href="../students-and-trainees/010-08010000-01.html">Personal/Partner Income Test</a></li>
+		<li>
+<a href="../ongoing-contact/102-11110020-01.html">Portability provisions</a></li>
+		<li>
+<a href="../compensation/117-01010060-01.html">Compensation preclusion</a></li>
+		<li>
+Assets Test</li>
+		</ul>
+<p>Is the customer payable now, or they will be within 13 weeks of the date of claim?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step13">go to  Step 13</a></li>
+		<li>
+<strong>No</strong>, reject the claim. See <a href="../initial-contact-general/106-07130210-03.html">rejecting a claim for JSP or YA (job seeker)</a> </li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step13"></a>
+<p>13</p></td>
+<td>
+
+<p><strong>Review scanned documents</strong> <a title="Read more 13" class="showhead bp03_tbl_Review_claim_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To view supporting documents&#58;</p>
+		<ul>		<li>
+select links at the bottom of the expanded <strong>Claim Summary</strong></li>
+		<li>
+select <img src="../resources/images/process_direct_small/quick-link.png" alt="Quick link" title="Quick link" /> from the bottom of the open <strong>Process Direct</strong> window, or</li>
+		<li>
+select <strong>Documents</strong> from the Icon Menu</li>
+		</ul>
+<p>When reviewing the supporting documents&#58;</p>
+		<ul>		<li>
+Check all documents are received to process claim</li>
+		<li>
+Check the date the document was scanned</li>
+		<li>
+There may be older documents not related to the claim, but they may be used to verify the customer’s circumstances and remove the need to request other documents</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step14"></a>
+<p>14</p></td>
+<td>
+
+<p><strong>Employment Separation Certificate (SU1)</strong> <a title="Read more 14" class="showhead bp03_tbl_Review_claim_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If the customer states they and/or their partner have ceased work in the previous 12 months an SU1 is required. The online claim will identify if an SU1 is required and request this as part of the Next Steps process within the online claim. </p>
+
+<p>An employer can return an electronic Employment Separation Certificate via the Business Hub. See <a href="../initial-contact-general/106-07060050-01.html">Employment Separation Certificate (SU1)</a> on how to access the information.</p>
+
+<p>A compliance action investigation may be required where the customer has voluntary ceased employment or been dismissed due to misconduct.</p>
+
+<p>Has an SU1 been provided?</p>
+		<ul>		<li>
+<strong>Yes</strong>&#58; </li>
+			<ul>			<li>
+If the SU1 states the reason for unemployment was voluntary or due to misconduct go to <a href="../job-seekers/001-10060000-03.html">Unemployment due to a voluntary act or misconduct</a> and take appropriate action</li>
+			<li>
+If the reason for unemployment was not voluntary or due to misconduct, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step15">go to  step 15</a></li>		</ul>
+		<li>
+<strong>No</strong>, see Step 2 in <a href="../initial-contact-general/106-07060050-03.html#bp03_L3TT_Deciding_when_t">Deciding when to request an SU1</a> Table</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step15"></a>
+<p>15</p></td>
+<td>
+
+<p><strong>Bank accounts and balances verification exemption</strong> <a title="Read more 15" class="showhead bp03_tbl_Review_claim_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The online claim may request bank verification as a <strong>Required task</strong>. However, if the customer meets one of the below exemption criteria, it is not required. In these cases, the customer has made a legal declaration that the claim is correct. This is sufficient evidence unless there is doubt about the validity of the information provided in the claim. Issue an RFI where there is doubt about the validity of the information provided by the customer in the online claim to clarify the customer circumstance. For example, undeclared bank accounts.</p>
 
 <p>The following customers are <strong>exempt</strong> from providing supporting documents confirming bank account balances&#58;</p>
 		<ul>		<li>
@@ -582,13 +792,13 @@ below $5,000 for customers with one or more dependent children</li>		</ul>
 		<li>
 self-served the <a href="../initial-contact-general/106-05020040-01.html">Liquid Assets Waiting Period (LAWP)</a></li>
 		<li>
-served any part of a LAWP (including self served) in the last twelve months</li>
+served any part of a LAWP (including self served) in the last 12 months</li>
 		</ul>
 <p><strong>Is the customer exempt from providing these documents?</strong></p>
 		<ul>		<li>
-<strong>Yes</strong>&#58; <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step11">go to  Step 11</a></li>
+<strong>Yes</strong>&#58; <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step17">go to  Step 17</a></li>
 		<li>
-<strong>No</strong>&#58; <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step10">go to  Step 10</a></li>		</ul>
+<strong>No</strong>&#58; <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step16">go to  Step 16</a></li>		</ul>
 </div>
 
 
@@ -596,11 +806,11 @@ served any part of a LAWP (including self served) in the last twelve months</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step10"></a>
-<p>10</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step16"></a>
+<p>16</p></td>
 <td>
 
-<p><strong>Bank accounts and balances verification</strong> <a title="Read more 10" class="showhead bp03_tbl_Review_claim_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Bank accounts and balances verification</strong> <a title="Read more 16" class="showhead bp03_tbl_Review_claim_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -618,7 +828,7 @@ a bank statement for all accounts held in their or their partner's name</li>
 			<li>
 a copy of the online account information and transactions</li>
 			</ul>			</ul>
-<p>If the customer has supplied bank verification that is sufficient to assess their liquid asset position, do not reject claims FSD for failure to provide bank/investment balances. An example is if they have evidence of bank balances provided from Date last worked (or studied) plus 1 and the claim submission date, but the transaction dates are not complete in between these dates.</p>
+<p>If the customer has supplied bank verification that is sufficient to assess their liquid asset position, do not reject claims FSD for failure to provide bank/investment balances. An example is if they have evidence of bank balances provided from Date last worked (or studied) plus 1 and the claim submission date, but the transaction dates are not complete in between these dates. Issue an RFI where there is doubt about the validity of the information provided by the customer in the online claim to clarify the customer circumstance. For example, undeclared bank accounts.</p>
 
 <p><strong>Note&#58;</strong> an ATM slip is <strong>not</strong> an acceptable supporting document.</p>
 
@@ -630,7 +840,7 @@ the date is earlier than their claim commencement date</li>
 		</ul>
 <p>See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for examples.</p>
 
-<p>Bank account details may be pre-populated into an online claim. If the customer has not zeroed off the balance or advised the account is closed, Service Officers can accept verbal confirmation that the account is closed. See <a target="_blank" href="../initial-contact-general/106-07060000-05.html#bp05_tbl_A_to_C_examples01_7">Documents required for Centrelink new claims</a>.</p>
+<p>Bank account details may be pre-populated into an online claim. Verbal confirmation of account closures can be accepted if the customer has not zeroed off the balance or advised in the claim the account is closed. . See <a target="_blank" href="../initial-contact-general/106-07060000-05.html#bp05_tbl_A_to_C_examples01_7">Documents required for Centrelink new claims</a>.</p>
 
 <p>See <strong>Documents</strong> screen in the <strong>Request for Information</strong> guided procedure.</p>
 </div>
@@ -640,27 +850,23 @@ the date is earlier than their claim commencement date</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step11"></a>
-<p>11</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step17"></a>
+<p>17</p></td>
 <td>
 
-<p><strong>Supporting evidence</strong> <a title="Read more 11" class="showhead bp03_tbl_Review_claim_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Supporting evidence</strong> <a title="Read more 17" class="showhead bp03_tbl_Review_claim_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>When assessing a JSP claim&#58;</p>
-		<ul>		<li>
-Check and code any evidence the customer has provided with their claim</li>
-		<li>
-Check bank documents are acceptable. See <a target="_blank" href="../initial-contact-general/106-07060000-01.html">Documents required for Centrelink new claims</a>.</li>
-		</ul>
-<p>An employer can return an electronic Employment Separation Certificate via the Business Hub. See <a href="../initial-contact-general/106-07060050-01.html">Employment Separation Certificate (SU1)</a> on how to access the information.</p>
+<p>When assessing a JSP claim only request documents required to grant or reject the claim&#58;</p>
 
-<p>If the documents supplied are acceptable, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step14">go to  Step 14</a>.</p>
+<p>Check bank documents are acceptable. See <a target="_blank" href="../initial-contact-general/106-07060000-01.html">Documents required for Centrelink new claims</a>.</p>
+
+<p>If the documents supplied are acceptable, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step20">go to  Step 20</a>.</p>
 
 <p>Otherwise, check the <strong>Tasks</strong> tab. If the task is&#58;</p>
 		<ul>		<li>
-<strong>not displaying</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step13">go to  Step 13</a></li>
+<strong>not displaying</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step19">go to  Step 19</a></li>
 		<li>
 <strong>displaying</strong>&#58;</li>
 			<ul>			<li>
@@ -670,7 +876,7 @@ Select the <strong>Financial documents</strong></li>
 			<li>
 Check the evidence</li>
 			<li>
-<a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step12">Go to  Step 12</a></li>			</ul>			</ul>
+<a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step18">Go to  Step 18</a></li>			</ul>			</ul>
 </div>
 
 
@@ -678,33 +884,35 @@ Check the evidence</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step12"></a>
-<p>12</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step18"></a>
+<p>18</p></td>
 <td>
 
-<p><strong>Make an outbound call to the customer</strong> <a title="Read more 12" class="showhead bp03_tbl_Review_claim_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Insufficient supporting evidence </strong> <a title="Read more 18" class="showhead bp03_tbl_Review_claim_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Make one genuine attempt to contact by phone.</p>
-		<ul>		<li>
-Issue a pre-call notification (SMS only) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to let them know a Service Officer will call them today from a private number, see <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a></li>
-		</ul>
-<p>If the contact is <strong>successful</strong>&#58;</p>
+<p>In some claims the evidence supplied by the customer is insufficient to assess the claim and additional supporting evidence is required. Where further information is required to grant or reject the claim make 1 genuine attempt to contact by phone.</p>
+
+<p>Issue a pre-call notification (SMS only) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to advise a Service Officer will call them today from a private number. See <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a></p>
+
+<p>If contact is <strong>successful</strong>&#58;</p>
 		<ul>		<li>
 tell the customer&#58;</li>
 			<ul>			<li>
 the evidence does not meet the request</li>
 			<li>
-they must upload the evidence via the requested task in the online claim on the day so their claim can be processed as soon as possible. See <a href="../self-service/133-04060000-01.html">Upload documents service</a></li>
+they must upload the evidence via the requested task in the online claim that day so their claim can be processed as soon as possible. See <a href="../self-service/133-04060000-01.html">Upload documents service</a></li>
 			<li>
-the claim will be placed on hold for one day</li>
+the claim will be placed on hold for 1 day</li>
 			<li>
 the claim will be rejected if they do not provide the evidence</li>		</ul>
 		<li>
-place the claim on hold for one day and annotate the Progress Of Claim (POC) <strong>DOC</strong>, with the contact outcome. Procedure end here</li>
+place the claim on hold for 1 day and annotate the Progress Of Claim (POC) DOC, with the contact outcome. Procedure end here</li>
 		</ul>
-<p>If the contact is <strong>unsuccessful</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Review_claim_Step13">go to  Step 13</a>.</p>
+<p>If the contact is <strong>unsuccessful</strong> or the customer is unable to supply the extra information or evidence immediately issue a request for information via <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Request Documents</strong>. For further information see <a href="../self-service/133-02160000-03.html">Circumstance Change Monitor (CCM)</a></p>
+
+<p>Do not request documents again, that have been requested at <strong>Next Step</strong> in the claim, unless further clarification of the customer circumstance is needed to assess the claim. </p>
 </div>
 
 
@@ -712,33 +920,35 @@ place the claim on hold for one day and annotate the Progress Of Claim (POC) <st
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step13"></a>
-<p>13</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step19"></a>
+<p>19</p></td>
 <td>
 
-<p><strong>Requesting documents</strong> <a title="Read more 13" class="showhead bp03_tbl_Review_claim_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Additional supporting documents required</strong> <a title="Read more 19" class="showhead bp03_tbl_Review_claim_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>In some cases, extra evidence may still be needed to complete the claim. For example, information about trusts, companies or compensation.</p>
+<p>In some claims, extra evidence may still be needed to complete the claim. For example, information about trusts, companies or compensation. Before requesting additional documents, check the record. Do not request documents again, that have been requested at <strong>Next Step</strong> in the claim, unless further clarification of the customer circumstance is needed to assess the claim. </p>
 
-<p>Make one genuine attempt to contact the customer.</p>
-		<ul>		<li>
-Issue a pre-call notification (if the customer has SMS notifications enabled) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to let them know a Service Officer will call them today from a private number, see <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a></li>
-		</ul>
+<p>If further essential information is required, make 1 genuine attempt to contact the customer.</p>
+
+<p>Issue a pre-call notification (if the customer has SMS notifications enabled) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to advise a Service Officer will call them today from a private number. See <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a></p>
+
 <p>If contact was successful&#58;</p>
 		<ul>		<li>
 record the details on the conversation in the Progress of Claim <strong>DOC</strong></li>
 		<li>
-encourage them to upload the information via the requested task in the online claim on the day so their claim can be processed as soon as possible, see <a href="../self-service/133-04060000-01.html">Upload documents service</a></li>
+encourage them to upload the information via the requested task in the online claim on the day so their claim can be processed as soon as possible. See <a href="../self-service/133-04060000-01.html">Upload documents service</a></li>
 		</ul>
 <p>If the contact was unsuccessful or the customer is not able to supply the extra information or evidence immediately&#58;</p>
 		<ul>		<li>
-issue a request for information via <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Request Documents</strong>, for further information see <a href="../self-service/133-02160000-03.html">Circumstance Change Monitor (CCM)</a></li>
+issue a request for information via <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Request Documents</strong>.For further information see <a href="../self-service/133-02160000-03.html">Circumstance Change Monitor (CCM)</a></li>
 		</ul>
-<p>If the online claim has not made a request to the customer for evidence and they do not meet any of the claim exceptions, raise an incident via Roxy and issue a RFI.</p>
-
-<p><strong>Note&#58;</strong> documents that have been requested at <strong>Next Step</strong> in the claim should not be requested again.</p>
+<p>Raise an incident via Roxy and issue a RFI, if&#58;</p>
+		<ul>		<li>
+the online claim has not made a request to the customer for evidence, and </li>
+		<li>
+they do not meet any of the claim exceptions</li>		</ul>
 </div>
 
 
@@ -746,11 +956,11 @@ issue a request for information via <img src="../resources/images/process_direct
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step14"></a>
-<p>14</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step20"></a>
+<p>20</p></td>
 <td>
 
-<p><strong>Referrals (if required)</strong> <a title="Read more 14" class="showhead bp03_tbl_Review_claim_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Referrals (if required)</strong> <a title="Read more 20" class="showhead bp03_tbl_Review_claim_Step20" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step20" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -780,7 +990,7 @@ Australian residence assessment, only if immigration data is missing, see <a tar
 
 <p>After a referral is made, the claim remains <strong>on hold</strong> until the assessment has been completed.</p>
 
-<p>Once any relevant change of circumstances have been actioned, see <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step03">Step 3 in Table 2</a>.</p>
+<p>Once any relevant change of circumstances have been actioned, see <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step01">Step 1 in Table 2</a>.</p>
 </div>
 
 
@@ -788,11 +998,11 @@ Australian residence assessment, only if immigration data is missing, see <a tar
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step15"></a>
-<p>15</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step21"></a>
+<p>21</p></td>
 <td>
 
-<p><strong>Identity Confirmation</strong> <a title="Read more 15" class="showhead bp03_tbl_Review_claim_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Identity Confirmation</strong> <a title="Read more 21" class="showhead bp03_tbl_Review_claim_Step21" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step21" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -818,19 +1028,19 @@ Close the <strong>Customer Summary</strong> window to return to the claim</li>		
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step16"></a>
-<p>16</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_Step22"></a>
+<p>22</p></td>
 <td>
 
-<p><strong>Check for other activities</strong> <a title="Read more 16" class="showhead bp03_tbl_Review_claim_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check for other activities</strong> <a title="Read more 22" class="showhead bp03_tbl_Review_claim_Step22" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step22" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>Some activities may stop finalisation of JSP claims or may need action before finalising the JSP claim.</p>
 
-<p>To check, go to the Activity List (<strong>AL</strong>) screen via <strong>Super Key</strong>.</p>
+<p>To check, go to the Activity List (<strong>AL</strong>) screen.</p>
 		<ul>		<li>
-If there is another income support payment pending, <a target="_blank" href="../job-seekers/001-19051556-01.html">check if the customer is eligible for JSP</a></li>
+If there is another income support payment pending, <a target="_blank" href="../job-seekers/001-19051556-01.html">check if the customer is eligible for JSP</a>. Go to <a href="../initial-contact-general/106-07030050-03.html#bp03_tbl_New_claim_NCL01_Step">New claim (NCL) activity preventing updates</a> Table</li>
 		<li>
 Finalise any Parental Leave Pay (PPL) or Dad and Partner Pay (DAP) claim activity, before finalising the JSP claim&#58;</li>
 			<ul>			<li>
@@ -842,43 +1052,9 @@ Check family assistance</li>
 			<ul>			<li>
 If there is an unfinalised FTB claim for the customer or partner see <a href="../families/007-20092855-01.html">Family Tax Benefit (FTB) and income support payment claim processing interactions</a></li>
 			<li>
-If the customer has a dependent child (aged under 19 years) in their care and they or their partner are not in receipt of Family Tax Benefit (FTB), issue a Q888 inviting the customer check their eligibility for family assistance. See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for standard text</li>			</ul>			</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Review_claim_Step17"></a>
-<p>17</p></td>
-<td>
-
-<p><strong>Relationship details</strong> <a title="Read more 17" class="showhead bp03_tbl_Review_claim_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>These details <strong>must</strong> be reviewed/updated <strong>before</strong> selecting <strong>Process</strong>.</p>
-
-<p>On the <strong>TS</strong> screen&#58;</p>
-		<ul>		<li>
-<strong>Link Summary (LS)</strong> table shows linked records, for example</li>
-			<ul>			<li>
-Partner and any Relationship Qualifier Code</li>
-			<li>
-Children</li>		</ul>
-		<li>
-<strong>Marital Status (MS)</strong> table shows the customer's relationship details. For help with coding, see <a target="_blank" href="../specialist-manuals-and-system-tools/111-20012938-03.html#bp03_L3TT_Environment_tra">Process Direct navigation, common screens and functions</a></li>
-		</ul>
-<p>Compare relationship details provided in the claim with the information already recorded in the Marital Status (MS) table. If the customer has provided different information about their relationships in the claim, to the confirmed data in the MS table, attempt to contact the customer by phone to confirm the correct relationship details and dates. If phone contact is unsuccessful, the relationship details supplied in the claim should be applied.</p>
-
-<p>If the customer advises they are separated and living with their previous partner (<a target="_blank" href="../initial-contact-general/106-07120010-01.html">Member of a Couple (MoC) and Separated under one roof (SUOR) assessments</a>), a MoC assessment is required to be finalised before the claim can be processed. The outcome of the MoC assessment will determine the coding required on the MS page.</p>
-
-<p><strong>Note&#58;</strong> Service Officers must take extra care when assessing JSP claims where a customer advises they are separated under one roof or where a customer updates their address only and not their partner's. For more information see&#58;</p>
-		<ul>		<li>
-<a href="../help-in-an-emergency/003-12010000-03.html">Social work service referral</a> and </li>
-		<li>
-<a href="../help-in-an-emergency/003-15000000-01.html">Family and domestic violence</a></li>		</ul>
+If the customer has a dependent child (aged under 19 years) in their care and they or their partner are not in receipt of Family Tax Benefit (FTB), issue a Q888 inviting the customer check their eligibility for family assistance. See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for standard text</li>
+			</ul>			</ul>
+<p>Go to <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step">Table 2</a>.</p>
 </div>
 
 
@@ -908,13 +1084,13 @@ Children</li>		</ul>
 <p>1</p></td>
 <td>
 
-<p><strong>Select Process</strong> <a title="Read more 18" class="showhead bp03_tbl_Process_claim_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Select Process</strong> <a title="Read more 23" class="showhead bp03_tbl_Process_claim_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>Select <strong>Process</strong> at bottom right of the claim to start coding and assess the claim. Do not start coding before selecting <strong>Process</strong>. This will result in errors.</p>
 
-<p>The SAP Warnings and Messages (<strong>SWE</strong>) screen will display.</p>
+<p>The Errors (<strong>SWE</strong>) screen will display.</p>
 
 <p>Before coding any screens&#58;</p>
 		<ul>		<li>
@@ -922,7 +1098,7 @@ Select <strong>Assess</strong> to send the claim details to ISIS. This will allo
 		<li>
 The Entitlement (<strong>ELD</strong>) screen will display</li>
 		<li>
-Return to the <strong>SWE</strong> screen to complete the claim coding by selecting the <strong>Back</strong> button or typing <strong>SWE</strong> in <strong>Super Key</strong></li>
+Return to the <strong>SWE</strong> screen to complete the claim coding by selecting the <strong>Back</strong> button or key <strong>SWE</strong> in <strong>Super Key</strong></li>
 		</ul>
 <p><strong>Message Log</strong></p>
 
@@ -934,13 +1110,13 @@ Return to the <strong>SWE</strong> screen to complete the claim coding by select
 
 <p>Task selectors may not list all screens that must be checked or coded. Check screens to compare historical details with the claim details.</p>
 
-<p>A flag will display against all screens that contain provisional claim data. These may not need to be accessed to process the claim.</p>
+<p>A flag will display against all screens that contain provisional claim data&#58;</p>
 		<ul>		<li>
 Select screens to be checked or updated. There is an option to select all screens</li>
 		<li>
 Select <strong>Next</strong> or press [<strong>Enter</strong>] to go through the selected screens</li>
 		</ul>
-<p>Use <strong>Super Key</strong> to go to screens. Key '<strong>screens</strong>' to view a full list.</p>
+<p>Key '<strong>Screens</strong>' in the <strong>Super Key</strong> to view a full list of screens.</p>
 
 <p>See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for common screens for JSP claims.</p>
 </div>
@@ -954,23 +1130,29 @@ Select <strong>Next</strong> or press [<strong>Enter</strong>] to go through the
 <p>2</p></td>
 <td>
 
-<p><strong>Check if in receipt of PP or PLDP</strong> <a title="Read more 19" class="showhead bp03_tbl_Process_claim_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check if in receipt of PP</strong> <a title="Read more 24" class="showhead bp03_tbl_Process_claim_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Parenting Payment (PP) customers may choose to get JSP if they are single and have a child under 8, or partnered and have a child under 6. They must meet their <a href="../job-seekers/001-09000000-01.html">mutual obligation requirements</a> to be eligible for JSP.</p>
-
-<p>Check if the customer has received Pandemic Leave Disaster Payment (PLDP) using the <strong>PLDP_PS</strong> screen in Process Direct for a period after the customer has claimed JSP, if&#58;</p>
+<p>Parenting Payment (PP) customers may choose to get JSP if they are&#58;</p>
 		<ul>		<li>
-<strong>Yes</strong>, make sure the start date of the JSP new claim is DPT + 1 of PLDP</li>
+single and have a child under 8, or </li>
 		<li>
-<strong>No</strong>, claim can be processed as per business as usual</li>
+partnered and have a child under 6</li>
+		</ul>
+<p>They must meet their <a href="../job-seekers/001-09000000-01.html">mutual obligation requirements</a> to be eligible for JSP.</p>
+
+<p>Check if the customer has received Parenting Payment using the PS screen in Process Direct for a period of time after the customer has claimed JSP. If they have&#58;</p>
+		<ul>		<li>
+received<strong> </strong>Parenting Payment, the start date of the JSP new claim is DPT + 1 of PP</li>
+		<li>
+have not received<strong> </strong>Parenting Payment, process claim as per the normal process</li>
 		</ul>
 <p>Is the claim to be rejected?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step03">go to Step 3</a></li>
+<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step05">go to Step 5</a></li>
 		<li>
-<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step04">go to Step 4</a></li>		</ul>
+<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step03">go to Step 3</a></li>		</ul>
 </div>
 
 
@@ -982,17 +1164,21 @@ Select <strong>Next</strong> or press [<strong>Enter</strong>] to go through the
 <p>3</p></td>
 <td>
 
-<p><strong>Claim rejection</strong> <a title="Read more 20" class="showhead bp03_tbl_Process_claim_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check in receipt of PLDP</strong> <a title="Read more 25" class="showhead bp03_tbl_Process_claim_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p><strong>Note&#58;</strong> if the customer has failed to supply their Tax File Number or Proof Of Identity (POI), <strong>do not</strong> streamline reject FSD. Use discretion when an automatic rejection may be the most appropriate rejection option. See <a href="../initial-contact-general/106-07130210-01.html">Rejecting a claim for JobSeeker Payment or Youth Allowance</a>.</p>
-
-<p>Is the customer getting a precluding payment (CPP) or is another payment more appropriate (COP) or Failed to Supply Documents (FSD)?</p>
+<p>Check if the customer has received Pandemic Leave Disaster Payment (<strong>PLDP</strong>) using the PS screen in Process Direct for a period after the customer has claimed JSP. If they&#58;</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a target="_blank" href="../initial-contact-general/106-07130210-03.html">code a streamlined rejection</a>. Procedure ends here</li>
+have received PLDP, the start date of the JSP new claim is DPT + 1 of PLDP</li>
 		<li>
-<strong>No</strong>, fully code the claim. If the system does not reject the claim at Entitlement (<strong>ELD</strong>) screen, <a target="_blank" href="../initial-contact-general/106-07130210-03.html">code a manual rejection on the Benefit Action (BA) screen</a>. <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step04">Go to Step 4</a></li>		</ul>
+have not received PLDP, process claim as per normal process</li>
+		</ul>
+<p>Has the customer received PLDP?</p>
+		<ul>		<li>
+<strong>Yes,</strong> <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step04">go to Step 4</a></li>
+		<li>
+<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step05">go to Step 5</a></li>		</ul>
 </div>
 
 
@@ -1004,19 +1190,51 @@ Select <strong>Next</strong> or press [<strong>Enter</strong>] to go through the
 <p>4</p></td>
 <td>
 
-<p><strong>Rent verification</strong> <a title="Read more 21" class="showhead bp03_tbl_Process_claim_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Follow up on Pandemic Leave Disaster Payment (PLDP)</strong> <a title="Read more 26" class="showhead bp03_tbl_Process_claim_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>The start date on the <strong>ACS</strong> screen must align with the claim start date, except where the customer or partner are currently in receipt of rent assistance with another payment, for example, Family Tax Benefit.</p>
+<p>Check if the customer has received Pandemic Leave Disaster Payment (PLDP) in the last 12 months using the PS screen in Process Direct. </p>
 
-<p>If verification has been provided, code the appropriate verification code, see <a href="../income-assests-and-rates-of-payment/108-18092631-01.html">Processing proof of rent for the Verification field on the Accommodation Details (AC) screen</a>.</p>
+<p>Customers must have lost at least 8 hours or a full day's work to be eligible for PLDP</p>
 
-<p>If verification has not been provided, see Table 1 in <a target="_blank" href="../income-assests-and-rates-of-payment/108-18092616-03.html">Determining proof of rent for the Verification field on the Accommodation Details (AC) screen</a>.</p>
+<p>If the customer has not received PLDP in the last 12 months, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step05">go to Step 5</a></p>
 
-<p>If the customer is sharing, check the Sharing Details (<strong>SDQ</strong>) screen matches the <strong>ACS</strong> screen. To check, go to the <strong>SDQ</strong> screen via <strong>Super Key</strong>.</p>
+<p>Contact the customer if they were granted PLDP within the last 12 months and their JSP claim does not include</p>
+		<ul>		<li>
+reported employment within the past 12 months </li>
+		<li>
+employment income, or</li>
+		<li>
+separation certificate in their claim</li>
+		</ul>
+<p>Make 1 genuine attempt to contact by phone.</p>
 
-<p><strong>Note&#58;</strong> if the customer or partner already receives Rent Assistance with Family Tax Benefit or another income support payment, rent has previously been verified within the last 12 months and address/accommodation details have not changed, no action is needed. For all other circumstances, see <a href="../income-assests-and-rates-of-payment/108-18092616-01.html">Determining proof of rent for the Verification field on the Accommodation Details (AC) screen</a>.</p>
+<p>Issue a pre-call notification (SMS only) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to let them know a Service Officer will call them today from a private number. See <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a>.</p>
+
+<p>If the contact is <strong>successful</strong>&#58;</p>
+		<ul>		<li>
+Discuss with the customer the mismatch between their PLDP claim and the evidence provided on their JSP claim. This may include asking if they have&#58;</li>
+			<ul>			<li>
+had paid employment in the last 12 months</li>
+			<li>
+lost at least 8 hours or a full day's work. Customers must have lost at least 8 hours or a full day's work to be eligible for PLDP</li>		</ul>
+		<li>
+If the customer indicates they&#58;</li>
+			<ul>			<li>
+had paid employment in the last 12 months (therefore PLDP was legitimate), but did not declare work in their JSP claim, advise them evidence of employment is required to assess their claim. Issue a request for information via <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Request Documents</strong>. For further information see <a href="../self-service/133-02160000-03.html">Circumstance Change Monitor (CCM)</a></li>
+			<li>
+did no paid employment in the last 12 months, the JSP claim can proceed. Advise the customer that this may identify that PLDP was paid incorrectly. If appropriate, initiate a <a href="../help-in-an-emergency/003-22011652-03.html#bp03_tbl_Pandemic_Leave_Step03">review of the decision to pay PLDP</a></li>
+			<li>
+may have claimed PLDP fraudulently, or intentionally misrepresented their circumstances, <a href="../help-in-an-emergency/003-22011652-03.html#bp03_L3TT_Reporting_poten">report the potential fraud</a>. Do not refer to 'fraud' in the discussion with the customer</li>
+			<li>
+may have been incorrectly paid PLDP, but not through misrepresentation of their circumstances or fraud, record a DOC or Note on the customer's record. Flag for potential overpayment. See <a href="../help-in-an-emergency/003-22011652-03.html#bp03_L3TT_Pandemic_Leave_">Pandemic Leave Disaster Payment was incorrectly paid</a> Table </li>
+			</ul>			</ul>
+<p>If the contact is unsuccessful check the Tasks tab. If the SU1 is&#58;</p>
+		<ul>		<li>
+<strong>not displaying</strong>, issue a request for information via <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Request Documents</strong>, for further information. See <a href="../self-service/133-02160000-03.html">Circumstance Change Monitor (CCM)</a>. Procedure ends here</li>
+		<li>
+<strong>displaying</strong>, streamline reject the claim. See <a href="../initial-contact-general/106-07130210-03.html#bp03_tbl_Rejecting_a_cla01_Step05">Step 5 in Rejecting a claim for JobSeeker Payment (JSP) or Youth Allowance (YA) (jobseeker)</a> Table</li>		</ul>
 </div>
 
 
@@ -1028,21 +1246,17 @@ Select <strong>Next</strong> or press [<strong>Enter</strong>] to go through the
 <p>5</p></td>
 <td>
 
-<p><strong>SVS, MIS, SIS, SVDI screen</strong> <a title="Read more 22" class="showhead bp03_tbl_Process_claim_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Claim rejection</strong> <a title="Read more 27" class="showhead bp03_tbl_Process_claim_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Savings Bank Accounts (<strong>SVS</strong>), Direct Investments Accounts (<strong>SVDI</strong>), Managed Investments (<strong>MIS</strong>) <strong>and</strong> Shares and Securities (<strong>SIS</strong>) screens are pre-filled from the online claim.</p>
+<p><strong>Note</strong>&#58; if the customer has failed to supply their Tax File Number or Proof Of Identity (POI), do not streamline reject FSD. See <a href="../initial-contact-general/106-07130210-01.html">Rejecting a claim for JobSeeker Payment or Youth Allowance</a>.</p>
 
-<p>Customers may be required to provide evidence. If evidence has been supplied these screens must be updated to reflect evidence provided. Specific coding may also be required to these screens.</p>
-
-<p>If the customer is not subject to a Liquid Assets Waiting Period (LAWP), Service Officers must request new evidence if&#58;</p>
+<p>Is the customer getting a precluding payment (CPP) or is another payment more appropriate (COP) or Failed to Supply Documents (FSD)?</p>
 		<ul>		<li>
-the date of the bank account balance is older than 14 business days from claim submission date, or</li>
+<strong>Yes</strong>, <a target="_blank" href="../initial-contact-general/106-07130210-03.html">code a streamlined rejection</a>. Procedure ends here</li>
 		<li>
-earlier than claim commencement date. See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for examples.</li>
-		</ul>
-<p>For more information, see <a href="../income-assests-and-rates-of-payment/108-04010000-01.html">Coding income and assets for Centrelink payments and services</a>.</p>
+<strong>No</strong>, code the claim. If the system does not reject the claim at Entitlement (<strong>ELD</strong>) screen, <a href="../initial-contact-general/106-07130210-03.html">code a manual rejection on the Benefit Action (BA) screen</a>. <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step04">Go to Step 4</a></li>		</ul>
 </div>
 
 
@@ -1054,7 +1268,57 @@ earlier than claim commencement date. See the <a href="../job-seekers/001-190515
 <p>6</p></td>
 <td>
 
-<p><strong>OAS screen</strong> <a title="Read more 23" class="showhead bp03_tbl_Process_claim_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Rent verification</strong> <a title="Read more 28" class="showhead bp03_tbl_Process_claim_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>The start date on the ACS screen must align with the claim start date, except where the customer or partner are currently in receipt of rent assistance with another payment, for example, Family Tax Benefit.</p>
+
+<p>If verification has been provided, code the appropriate verification code, see <a href="../income-assests-and-rates-of-payment/108-18092631-01.html">Processing proof of rent for the Verification field on the Accommodation Details (AC) screen</a>.</p>
+
+<p>If verification has not been provided, see <a href="../income-assests-and-rates-of-payment/108-18092616-03.html#bp03_tbl_Determine_if_ve_Step">Determine if verification of rent is needed</a> Table.</p>
+
+<p>If the customer is sharing, check the Sharing Details (<strong>SDQ</strong>) screen matches the ACS screen. To check, go to the <strong>SDQ</strong> screen via <strong>Super Key</strong>.</p>
+
+<p><strong>Note</strong>&#58; if the customer or partner already receives Rent Assistance with Family Tax Benefit or another income support payment, rent has previously been verified within the last 12 months and address/accommodation details have not changed, no action is needed. For all other circumstances, see <a href="../income-assests-and-rates-of-payment/108-18092616-01.html">Determining proof of rent for the Verification field on the Accommodation Details (AC) screen</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step07"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>SVS, MIS, SIS, SVDI screen</strong> <a title="Read more 29" class="showhead bp03_tbl_Process_claim_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Savings Bank Accounts (<strong>SVS</strong>), Direct Investments Accounts (<strong>SVDI</strong>), Managed Investments (MIS) and Shares and Securities (<strong>SIS</strong>) screens are pre-filled from the online claim.</p>
+
+<p>Customers may be required to provide evidence. If evidence has been supplied these screens must be updated to reflect evidence provided. Specific coding may also be required to these screens.</p>
+
+<p>If the customer is not subject to a Liquid Assets Waiting Period (LAWP), Service Officers must request new evidence if&#58;</p>
+		<ul>		<li>
+the date of the bank account balance is older than 14 business days from claim submission date, or</li>
+		<li>
+earlier than claim commencement date. See the <a href="../job-seekers/001-19051507-05.html">Resources</a> page for examples</li>
+		</ul>
+<p>For more information, see <a href="../income-assests-and-rates-of-payment/108-04010000-01.html">Coding income and assets for Centrelink payments and services</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>OAS screen</strong> <a title="Read more 30" class="showhead bp03_tbl_Process_claim_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1068,35 +1332,35 @@ earlier than claim commencement date. See the <a href="../job-seekers/001-190515
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step07"></a>
-<p>7</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step09"></a>
+<p>9</p></td>
 <td>
 
-<p><strong>Earnings</strong> <a title="Read more 24" class="showhead bp03_tbl_Process_claim_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Earnings</strong> <a title="Read more 31" class="showhead bp03_tbl_Process_claim_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Employment income&#58; <strong>EANS</strong> screen is pre-filled from the online claim. Select the down arrow to view earnings for each period.</p>
+<p>Employment income&#58; EANS screen is pre-filled from the online claim.</p>
 
 <p>Check to see if the customer or/and partner has any previous continuous employment income on their record that is not advised within their online claim.</p>
 
-<p>If the customer has declared they are not currently working or not receiving any income but there is continuous employment income on the <strong>NIS</strong> screen, the income must be zero off using the Event Date as the date before the claim was submitted.</p>
+<p>If the customer has declared they are not currently working or not receiving any income but there is continuous employment income on the NIS screen, the income must be zero off using the Event Date as the date before the claim was submitted.</p>
 
-<p>To amend details, select the <strong>Edit</strong> icon. For help, see <a href="../income-assests-and-rates-of-payment/108-07010010-03.html">Recording and correcting employment income details</a>.</p>
+<p>To amend details, select the Edit icon. For help, see <a href="../income-assests-and-rates-of-payment/108-07010010-03.html">Recording and correcting employment income details</a>.</p>
 
 <p>If the customer and/or their partner is to be paid a final employment income in the first entitlement period, code the details within the claim. The claim may reject if the employment income is over the threshold. If information from the customer or in the claim, indicates they and/or their partners paid employment income will preclude payment for the first entitlement period&#58;</p>
 		<ul>		<li>
 Go to the Entitlement Delivery (<strong>RAD</strong>) screen and find out the customer's entitlement period end date, then</li>
 		<li>
-Go to the Start Date Calculator (<strong>NDC</strong>) screen. Update the <strong>Manual Start Date</strong>&#58; with the date the customer becomes payable, This is usually the entitlement period start date following the entitlement period preclusion and update date the comments field on why the Manual start date was changed. Explain any update in the claim finalisation <strong>DOC</strong></li>
+Go to the Start Date Calculator (<strong>NDC</strong>) screen. Update the Manual Start Date&#58; with the date the customer becomes payable. This is usually the entitlement period start date following the entitlement period preclusion and update date the comments field on why the Manual start date was changed. Explain any update in the claim finalisation DOC</li>
 		</ul>
 <p><strong>Partner details</strong></p>
 
 <p>Partner income and assets will not display in the customer's record.</p>
 
-<p>To view and update partner income and assets, select the <img src="../resources/images/process_direct_small/relationships_menu_icon.png" alt="" title="" /> <strong>icon</strong> and select the partner from the menu slider.</p>
+<p>To view and update partner income and assets, select the <img src="../resources/images/process_direct_small/relationships_menu_icon.png" alt="" title="" /> icon and select the partner from the menu slider.</p>
 
-<p>To return to the customer's record via the <img src="../resources/images/process_direct_small/relationships_menu_icon.png" alt="" title="" /> <strong>icon </strong>menu.</p>
+<p>To return to the customer's record via the <img src="../resources/images/process_direct_small/relationships_menu_icon.png" alt="" title="" /> icon menu.</p>
 </div>
 
 
@@ -1104,11 +1368,11 @@ Go to the Start Date Calculator (<strong>NDC</strong>) screen. Update the <stron
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step08"></a>
-<p>8</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step10"></a>
+<p>10</p></td>
 <td>
 
-<p><strong>Waiting periods</strong> <a title="Read more 25" class="showhead bp03_tbl_Process_claim_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Waiting periods</strong> <a title="Read more 32" class="showhead bp03_tbl_Process_claim_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1136,11 +1400,11 @@ Go to the Start Date Calculator (<strong>NDC</strong>) screen. Update the <stron
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step09"></a>
-<p>9</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step11"></a>
+<p>11</p></td>
 <td>
 
-<p><strong>NDC screen</strong> <a title="Read more 26" class="showhead bp03_tbl_Process_claim_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>NDC screen </strong> <a title="Read more 33" class="showhead bp03_tbl_Process_claim_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1150,13 +1414,13 @@ Go to the Start Date Calculator (<strong>NDC</strong>) screen. Update the <stron
 
 <p>Details prefill for the Date Last Worked (DLW), Date Ceased Study (DCS) or Date Paid Prior to Qualification (DPQ). They may need updating.</p>
 
-<p>Where evidence has been supplied, <strong>DLW/DCS/DPQ</strong> fields must be coded to reflect that evidence. Specific coding may be required where backdating provisions are to be applied.</p>
+<p>Where evidence has been supplied, DLW/DCS/DPQ fields must be coded to reflect that evidence. Specific coding may be required where backdating provisions are to be applied.</p>
 
 <p><strong>LAWP field</strong></p>
 
-<p><strong>A total amount will</strong> auto calculate from the <strong>SVS</strong>, <strong>SIS</strong> <strong>MIS</strong> and <strong>SVDI</strong> screens therefore no updates are required to this field. The only time a manual calculation is required is if the customer has LAWP within a Private Company or Private Trust.</p>
+<p>A total amount will &#160;auto calculate from the SVS, SIS MIS and SVDI screens therefore no updates are required to this field. The only time a manual calculation is required is if the customer has LAWP within a Private Company or Private Trust.</p>
 
-<p><strong>Calculate the start date for payment</strong></p>
+<p><strong>Start date field</strong></p>
 
 <p>The system automatically calculates a start date for eligible claims. It is important to confirm this start date is correct because system calculations are not always correct.</p>
 
@@ -1166,13 +1430,29 @@ a backdated cancellation of the payment, and</li>
 		<li>
 a debt raised for the period they were not eligible</li>
 		</ul>
+<p>To calculate the start date of payment, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step12">go to  Step 12</a></p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step12"></a>
+<p>12</p></td>
+<td>
+
+<p><strong>Calculate the start date for payment</strong> <a title="Read more 34" class="showhead bp03_tbl_Process_claim_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
 <p>The system will apply the backdating rule correctly and calculate the date of commencement as Date Paid To (DPT)+1, even if the date of the claim is within 14 days of DPT.</p>
 
 <p>Check the cancellation date and, if it is within 14 days of the claim date, do not apply DPT+1. The start date is the date the customer reclaims payment.</p>
 
 <p>If the system calculates the start date incorrectly and the correct date should be&#58;</p>
 		<ul>		<li>
-after the DPT+1, code the correct start date in the <strong>Manual Start Date</strong> field on <strong>NDC</strong> to override the system calculated start date</li>
+after the DPT+1, code the correct start date in the Manual Start Date field on NDC to override the system calculated start date</li>
 		<li>
 before the DPT+1 (which is very rare), check&#58;</li>
 			<ul>			<li>
@@ -1194,7 +1474,13 @@ code the DPT+1 date in the <strong>Manual Start Date</strong> field on <strong>N
 		<li>
 record a <strong>DOC</strong> detailing the steps taken and the reason for the start date determination</li>
 		</ul>
-<p>Service Officer discretion is required when changing the start date from the one the system calculated.</p>
+<p>Discretion is required when changing the start date from the one the system calculated.</p>
+
+<p><strong>Early Claims</strong></p>
+
+<p>Where a customer has lodged an early claim, the date in the DLW/DCS field will be after the date of receipt/submission of the claim. </p>
+
+<p>In some cases, the start date may not be automatically determined due to the DLW being prior to the DOR. If this occurs, code the <strong>Manual Start Date</strong> field on <strong>NDC </strong>with the start date, with consideration to any waiting periods.</p>
 </div>
 
 
@@ -1202,11 +1488,11 @@ record a <strong>DOC</strong> detailing the steps taken and the reason for the s
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step10"></a>
-<p>10</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step13"></a>
+<p>13</p></td>
 <td>
 
-<p><strong>Tax File Number (TFN)</strong> <a title="Read more 27" class="showhead bp03_tbl_Process_claim_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Tax File Number (TFN)</strong> <a title="Read more 35" class="showhead bp03_tbl_Process_claim_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1214,7 +1500,7 @@ record a <strong>DOC</strong> detailing the steps taken and the reason for the s
 
 <p>Has the customer provided a valid TFN?</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step11">go to  Step 11</a></li>
+<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step14">go to  Step 14</a></li>
 		<li>
 <strong>No</strong>, see <a href="../initial-contact-general/106-07060020-01.html">Requesting a Tax File Number (TFN)</a></li>		</ul>
 </div>
@@ -1224,27 +1510,29 @@ record a <strong>DOC</strong> detailing the steps taken and the reason for the s
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step11"></a>
-<p>11</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step14"></a>
+<p>14</p></td>
 <td>
 
-<p><strong>Employment/Education History (NEEH) screen</strong> <a title="Read more 28" class="showhead bp03_tbl_Process_claim_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Employment/Education History (NEEH) screen</strong> <a title="Read more 36" class="showhead bp03_tbl_Process_claim_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>Update the <strong>NEEH</strong> screen if the customer has a job or study to return to (not including self-employment) and has a temporary incapacity.</p>
 
-<p>If the <strong>NEEH</strong> screen needs updating, to add new details select <strong>Add</strong> icon and code&#58;</p>
+<p>If the <strong>NEEH</strong> screen needs updating, to add new details&#58;</p>
 		<ul>		<li>
-<strong>Event date</strong> - defaults for new claims</li>
+select <strong>Add</strong> on the <strong>Create Employer/Education Institution Details</strong> screen, key these fields</li>
+		<li>
+<strong>Event date</strong> - key the applicable date</li>
 		<li>
 <strong>Employer/Education Institution Name</strong></li>
 		<li>
 <strong>Employer/Education Verified</strong> - select <strong>Y</strong> or <strong>N</strong></li>
 		<li>
-<strong>Employer/Education Status</strong> - select the appropriate reason</li>
+<strong>Employer/Education Status</strong> - select the appropriate status</li>
 		</ul>
-<p>For more information, see <a href="../job-seekers/001-22112401-01.html">Assessing and coding medical evidence for temporary incapacity exemptions</a> and <a href="../job-seekers/001-03020060-01.html">Customers claiming Jobseeker Payment (JSP)/Youth Allowance (YA) (Incapacitated)</a>.</p>
+<p>To code the medical evidence, see <a href="../job-seekers/001-22112401-01.html">Assessing and coding medical evidence for temporary incapacity exemptions</a> and <a href="../job-seekers/001-03020060-01.html">Customers claiming Jobseeker Payment (JSP)/Youth Allowance (YA) (Incapacitated)</a>.</p>
 </div>
 
 
@@ -1252,15 +1540,33 @@ record a <strong>DOC</strong> detailing the steps taken and the reason for the s
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step12"></a>
-<p>12</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step15"></a>
+<p>15</p></td>
 <td>
 
-<p><strong>Principal carers and shared care</strong> <a title="Read more 29" class="showhead bp03_tbl_Process_claim_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Mutual obligation requirement exemptions</strong> <a title="Read more 37" class="showhead bp03_tbl_Process_claim_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>A shared care assessment should be completed in all cases, even if only one person is claiming income support or if each person has another qualifying child solely in their care. The shared care assessment will determine the principal carer status which will determine a customer's entitlement and in some cases, will affect the rate and income test applied for ongoing entitlements for single principal carers.</p>
+<p>Where a job seeker is unable to meet their mutual obligation requirements, there are circumstances where they may be eligible for an exemption from their mutual obligation requirements. If customer supplies evidence to support a mutual obligation requirement exemption assess eligibility for an exemption.</p>
+
+<p>See, <a href="../job-seekers/001-09120000-01.html">Mutual obligation requirements exemptions</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step16"></a>
+<p>16</p></td>
+<td>
+
+<p><strong>Principal carers and shared care</strong> <a title="Read more 38" class="showhead bp03_tbl_Process_claim_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>A shared care assessment should be completed in all cases, even if only one person is claiming income support or if each person has another qualifying child solely in their care. The shared care assessment will determine the principal carer status which will determine a customer's entitlement and, in some cases, will affect the rate and income test applied for ongoing entitlements for single principal carers.</p>
 
 <p>Customers with shared care arrangements, but are not the principal carer may still be entitled to a 'with child' rate of payment for JSP, YA and Special Benefit (SpB).</p>
 
@@ -1290,9 +1596,9 @@ Continue to process the claim. Once the claim is finalised, see <a href="../ongo
 			</ul>			</ul>
 <p><strong>Is the customer a principal carer or shared care assessment completed?</strong></p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step13">go to  Step 13</a></li>
+<strong>Yes</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step17">go to  Step 17</a></li>
 		<li>
-<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step14">go to  Step 14</a></li>
+<strong>No</strong>, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Process_claim_Step18">go to  Step 18</a></li>
 		</ul>
 <p>See <a target="_blank" href="../job-seekers/001-04030010-03.html">Principal carer of a dependent child</a>.</p>
 </div>
@@ -1302,33 +1608,33 @@ Continue to process the claim. Once the claim is finalised, see <a href="../ongo
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step13"></a>
-<p>13</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step17"></a>
+<p>17</p></td>
 <td>
 
-<p><strong>Miscellaneous Circumstance Details (NMIS) screen</strong> <a title="Read more 30" class="showhead bp03_tbl_Process_claim_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Miscellaneous Circumstance Details (NMIS) screen</strong> <a title="Read more 39" class="showhead bp03_tbl_Process_claim_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Updates to the <strong>NMIS</strong> screen may be required if the customer has previously returned to study or have provided evidence that they are an expectant mother.</p>
+<p>Updates to the <strong>NMIS</strong> screen may be required if the customer has previously returned to study or have provided evidence that they are an expectant customer.</p>
 
 <p>If the customer is&#58;</p>
 		<ul>		<li>
 <strong>Not returning to study</strong></li>
 			<ul>			<li>
-To add new details, select <img src="../resources/images/process_direct_small/add-new-line.png" alt="Adding a new line" title="Adding a new line" />&#58;</li>
+Go to the <strong>NMIS</strong> screen</li>
 			<li>
-On the <strong>Create Miscellaneous Details</strong> screen&#58;<br>Enter the Event Date<br>Enter the <strong>Current Circumstances</strong>, Not Returning to Study (NRS)</li>
+Select <strong>Add</strong>. On the <strong>Create miscellaneous details</strong> screen update these fields<br><strong>Event Date&#58;</strong> key the applicable date<br><strong>Current Circumstances&#58; </strong>select <strong>Not Returning to Study (NRS)</strong></li>
 			<li>
-Save</li>		</ul>
+Select <strong>Save</strong></li>		</ul>
 		<li>
-<strong>Expectant Mother</strong>, see <a href="../job-seekers/001-09120020-01.html">Exempting a job seeker from their mutual obligation requirements when they are an expectant mother</a></li>
+<strong>Expectant Customer</strong>, see <a href="../job-seekers/001-09120020-01.html">Exempting a job seeker from their mutual obligation requirements when they are an expectant customer</a></li>
 			<ul>			<li>
-To add new details, select <img src="../resources/images/process_direct_small/add-new-line.png" alt="Adding a new line" title="Adding a new line" />&#58;</li>
+Go to the <strong>NMIS</strong> screen</li>
 			<li>
-On the <strong>Create Miscellaneous Details</strong> screen&#58;<br>Enter the Event Date<br>Expected Date of Confinement<br>Pregnancy Verified</li>
+Select <strong>Add</strong>. On the <strong>Create Miscellaneous Details</strong> screen update these fields&#58;<br><strong>Event Date&#58;</strong><br><strong>Expected Date of Confinement&#58;</strong><br><strong>Pregnancy Verified&#58;</strong></li>
 			<li>
-Save</li>			</ul>			</ul>
+Select <strong>Save</strong></li>			</ul>			</ul>
 </div>
 
 
@@ -1336,11 +1642,11 @@ Save</li>			</ul>			</ul>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step14"></a>
-<p>14</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step18"></a>
+<p>18</p></td>
 <td>
 
-<p><strong>Start or cease tax deductions</strong> <a title="Read more 31" class="showhead bp03_tbl_Process_claim_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Start or cease tax deductions</strong> <a title="Read more 40" class="showhead bp03_tbl_Process_claim_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1356,47 +1662,15 @@ Save</li>			</ul>			</ul>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step15"></a>
-<p>15</p></td>
+<a class="anchor" name="bp03_tbl_Process_claim_Step19"></a>
+<p>19</p></td>
 <td>
 
-<p><strong>Follow up - PLDP</strong> <a title="Read more 32" class="showhead bp03_tbl_Process_claim_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>JSP Provisional claims</strong> <a title="Read more 41" class="showhead bp03_tbl_Process_claim_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>If you have identified the customer was granted PLDP within the last 12 months but their JobSeeker Payment claim does not include reported employment within the past 12 months OR employment income, OR a separation certificate in their claim, ensure you make contact to discuss this with the customer directly. Customers must have lost at least 8 hours or a full day's work to be eligible for PLDP.</p>
-
-<p>Discuss with the customer the mismatch between their PLDP claim and the evidence provided on their JobSeeker Payment claim. You may cover the following points&#58;</p>
-		<ul>		<li>
-Have you worked in paid employment in the last 12 months? If so, this must be declared for this claim and you may be required to provide evidence, such as an Employment Separation Certificate</li>
-		<li>
-Customers must have lost at least 8 hours or a full day's work to be eligible for PLDP. Have you lost at least 8 hours or a full day's work?</li>
-		</ul>
-<p>If the customer indicates they <strong>have not</strong> undertaken paid employment in the last 12 months, the JobSeeker Payment claim can proceed, however you may note to the customer that this may identify payment of the PLDP as incorrect. If appropriate, you can initiate a <a href="../help-in-an-emergency/003-22011652-03.html#bp03_tbl_Pandemic_Leave_Step03">review of the decision to pay PLDP</a>.</p>
-		<ul>		<li>
-If the customer indicates they may have claimed PLDP fraudulently, or intentionally misrepresented their circumstances, you can <a href="../help-in-an-emergency/003-22011652-03.html#bp03_L3TT_Reporting_poten">report potential fraud</a>. It is important you do not refer to 'fraud' in your conversation with the customer</li>
-		<li>
-If the customer indicates they may have been incorrectly paid PLDP, but not through misrepresentation of their circumstances or fraud, you can note this on the customer's record, and flag for potential overpayment. See Table 5 in <a href="../help-in-an-emergency/003-22011652-03.html#bp03_L3TT_Pandemic_Leave_">Processing Pandemic Leave Disaster Payment Claims in Process Direct</a> for instructions</li>
-		</ul>
-<p>If a customer indicates they have undertaken paid employment in the last 12 months (and therefore PLDP was legitimate), but they have not declared work in their ISP claim, staff should inform the customer, evidence of this employment will be required to appropriately assess their ISP claim, see <a href="../complaints-privacy-and-foi/104-04080010-03.html">Requesting information (CLK)</a>.</p>
-
-<p>Rejecting the customer's claim or requesting further evidence of employment/separation <strong>should only be undertaken once you have discussed the customer's circumstances with them</strong> and you have ensured they have correctly declared their information on both PLDP and their income support claim.</p>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_Process_claim_Step16"></a>
-<p>16</p></td>
-<td>
-
-<p><strong>JSP Provisional claims</strong> <a title="Read more 33" class="showhead bp03_tbl_Process_claim_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_claim_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>Customers may be eligible for JSP Provisional when they have an outstanding Disability (DSP) claim. Customers who meet this criteria are exempt from mutual obligation requirements for the period during which the DSP claim is being determined (13 weeks).</p>
+<p>Customers may be eligible for JSP Provisional when they have an outstanding Disability (DSP) claim. Customers who meet these criteria are exempt from mutual obligation requirements for the period during which the DSP claim is being determined (13 weeks).</p>
 
 <p>To determine if the customer is claiming JobSeeker Provisional and exempt from mutual obligations&#58;</p>
 		<ul>		<li>
@@ -1406,13 +1680,17 @@ Select the Review of claim. Under the Circumstance details, the circumstances wi
 		</ul>
 <p>Code the DSP exemption&#58;</p>
 		<ul>		<li>
-Use <strong>Super Key</strong> to go to <strong>AEX</strong> screen</li>
+Go to the Activity and Exemption Summary(<strong>AEX</strong>) screen</li>
 		<li>
-Add new row</li>
+Select <strong>Add</strong>. On the <strong>Create manual activity/exemption</strong> screen, update these fields&#58;</li>
 		<li>
-In the <strong>Activity Type</strong> field, select <strong>DSP - Claiming DSP</strong></li>
+<strong>Activity&#58;</strong> <strong>DSP - Claiming DSP</strong></li>
 		<li>
-Record the start and end dates of the exemption. The start date being the date the DSP Claim was lodged, noted from the Review of Claim or DSP PoC <strong>DOC</strong> and end date 13 weeks from that date.</li>
+<strong>Start Date&#58;</strong> the date the DSP claim was lodged, noted from the Review of Claim or the DSP Progress of Claim <strong>DOC</strong></li>
+		<li>
+<strong>End Date&#58;</strong> the date 13 weeks from the start date</li>
+		<li>
+<strong>Activity Type&#58; DSP - Claiming DSP</strong></li>
 		</ul>
 <p>See <a href="../people-with-disability/008-02080000-01.html">JobSeeker Payment (JSP) and Youth Allowance (YA) (Provisional)</a>.</p>
 
@@ -1446,7 +1724,7 @@ Record the start and end dates of the exemption. The start date being the date t
 <p>1</p></td>
 <td>
 
-<p><strong>Assess claim - ELD screen</strong> <a title="Read more 34" class="showhead bp03_tbl_Assess_and_fina_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Assess claim - ELD screen</strong> <a title="Read more 42" class="showhead bp03_tbl_Assess_and_fina_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1460,7 +1738,7 @@ Record the start and end dates of the exemption. The start date being the date t
 
 <p>Use the <strong>Super Key</strong> to check rate details on screens such as&#58;</p>
 		<ul>		<li>
-Payment Summary (<strong>PS</strong>) - check payments are starting from the right date. Ensure '<strong>Number of months in past</strong>' is changed to '<strong>999</strong>' to view all potential arrears. for example if the customer has had any overlapping Pandemic Leave Disaster Payment (PLDP) periods the start date of the JSP claim is the PLDP Date Paid To (DPT) + 1</li>
+Payment Summary (<strong>PS</strong>) - check payments are starting from the right date. Ensure '<strong>Number of months in past</strong>' is changed to '<strong>999</strong>' to view all potential arrears. For example, if the customer has had any overlapping Pandemic Leave Disaster Payment (PLDP) periods the start date of the JSP claim is the PLDP Date Paid To (DPT) + 1</li>
 		<li>
 Rate Component Override (<strong>RCO</strong>) - warning message will display to check the manual rate, further investigation will be required</li>
 		<li>
@@ -1492,7 +1770,7 @@ Assessment Consequences (<strong>ASC</strong>) - determine debt investigation ac
 <p>2</p></td>
 <td>
 
-<p><strong>Rejecting SEA</strong> <a title="Read more 35" class="showhead bp03_tbl_Assess_and_fina_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Rejecting SEA</strong> <a title="Read more 43" class="showhead bp03_tbl_Assess_and_fina_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1518,13 +1796,13 @@ If the start date of the Self-Employment Allowance is before the cancellation da
 <p>3</p></td>
 <td>
 
-<p><strong>Rejecting FCJ</strong> <a title="Read more 36" class="showhead bp03_tbl_Assess_and_fina_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Rejecting FCJ</strong> <a title="Read more 44" class="showhead bp03_tbl_Assess_and_fina_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>Check to see if the customer has met RapidConnect requirements within 28 days from date of Participation Interview. Has the customer attended?</p>
 		<ul>		<li>
-<strong>Yes</strong>, see <a href="../job-seekers/001-02030010-03.html#bp03_L3TT_Assessment_of_p">Processes for RapidConnect appointments</a>, Step 5 in Table 3</li>
+<strong>Yes</strong>, see Step 5 in <a href="../job-seekers/001-02030010-03.html#bp03_tbl_Assessment_of_p_Step05">Assessment of payability and appointment procedures</a> Table</li>
 		<li>
 <strong>No</strong>, rejection is correct, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Assess_and_fina_Step04">go to Step 4</a></li>		</ul>
 </div>
@@ -1538,7 +1816,7 @@ If the start date of the Self-Employment Allowance is before the cancellation da
 <p>4</p></td>
 <td>
 
-<p><strong>Finalise claim</strong> <a title="Read more 37" class="showhead bp03_tbl_Assess_and_fina_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalise claim</strong> <a title="Read more 45" class="showhead bp03_tbl_Assess_and_fina_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1574,21 +1852,21 @@ The system will reject JSP reason FRP (failed to report) after 22 days from the 
 <p>5</p></td>
 <td>
 
-<p><strong>Customer contact</strong> <a title="Read more 38" class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer contact</strong> <a title="Read more 46" class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Make one genuine attempt to contact the customer once the claim is finalised, regardless of the claim outcome. If the customer is subscribed, issue a pre-call notification (SMS only) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to let them know a Service Officer will call them today from a private number, see <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a>.</p>
+<p>Make 1 genuine attempt to contact the customer once the claim is finalised, regardless of the claim outcome. If the customer is subscribed, issue a pre-call notification (SMS only) between 8&#58;00 am and 8&#58;00 pm using the customer's local time to let them know a Service Officer will call them today from a private number, see <a href="../self-service/133-05000000-03.html">Centrelink letters online and Electronic Messaging</a>.</p>
 </div>
 
 
 <p></p>
 
-<p><strong>Successful</strong> <a title="Read more 39" class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Successful</strong> <a title="Read more 47" class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Annotate the Claim Finalisation <strong>DOC</strong> with the details you have advised the customer.</p>
+<p>Annotate the Claim Finalisation <strong>DOC</strong> with the details given to the customer.</p>
 
 <p>If the claim was granted, tell the customer&#58;</p>
 		<ul>		<li>
@@ -1608,10 +1886,10 @@ complete any immediate or outstanding reports they must action</li>		</ul>
 		<li>
 any <a href="../job-seekers/001-09000000-01.html">mutual obligation requirements</a> where applicable</li>
 		<li>
-if you have identified the customer cancelled their payment to claim Pandemic Leave Disaster Payment (PLDP) but hadn't previously reported employment income, ensure you discuss the potential review of PLDP. If appropriate, you can initiate a <a href="../help-in-an-emergency/003-22011652-03.html#bp03_tbl_Pandemic_Leave_Step03">review of the decision to pay PLDP</a></li>
-			<ul>			<li>
+if the customer cancelled their payment to claim Pandemic Leave Disaster Payment (PLDP) but had not previously reported employment income discuss the potential review of PLDP. If appropriate, initiate a <a href="../help-in-an-emergency/003-22011652-03.html#bp03_tbl_Pandemic_Leave_Step03">review of the decision to pay PLDP</a></li>
+		<li>
 if they have overdue payments, (for example, more than 2 fortnights) they cannot report via Self Service, see <a href="../income-assests-and-rates-of-payment/108-07010010-01.html">Recording and correcting employment income details</a> for more information</li>
-			</ul>			</ul>
+		</ul>
 <p>If the claim was rejected, tell the customer&#58;</p>
 		<ul>		<li>
 about possible alternate income support payments, and/or</li>
@@ -1622,7 +1900,7 @@ their appeal rights</li>
 		</ul>
 <p></p>
 
-<p><strong>Unsuccessful</strong> <a title="Read more 40" class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Unsuccessful</strong> <a title="Read more 48" class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Assess_and_fina_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1662,7 +1940,7 @@ Contact number/s&#58; (what telephone numbers were used to attempt contact)</li>
 <p>1</p></td>
 <td>
 
-<p><strong>Reindexing and backdating job seeker claims </strong> <a title="Read more 41" class="showhead bp03_tbl_Reindexing_and_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reindexing_and_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Reindexing and backdating job seeker claims </strong> <a title="Read more 49" class="showhead bp03_tbl_Reindexing_and_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reindexing_and_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1696,7 +1974,7 @@ No, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Reindexing_and_Step02"
 <p>2</p></td>
 <td>
 
-<p><strong>Manually index a claim activity </strong> <a title="Read more 42" class="showhead bp03_tbl_Reindexing_and_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reindexing_and_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Manually index a claim activity </strong> <a title="Read more 50" class="showhead bp03_tbl_Reindexing_and_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reindexing_and_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1730,7 +2008,7 @@ No, <a href="../job-seekers/001-19051507-03.html#bp03_tbl_Reindexing_and_Step02"
 <p>3</p></td>
 <td>
 
-<p><strong>Finalising the claim activity </strong> <a title="Read more 43" class="showhead bp03_tbl_Reindexing_and_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reindexing_and_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalising the claim activity </strong> <a title="Read more 51" class="showhead bp03_tbl_Reindexing_and_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Reindexing_and_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
