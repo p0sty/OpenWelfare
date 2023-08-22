@@ -1,9 +1,3 @@
-
-Foreign Pension System (FPS) statuses and reviews 106-08010040
-
--   Background
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
@@ -12,13 +6,12 @@ Foreign Pension Systems (FPS) status (A to F)
 
 Explanation of Foreign Pension System (FPS) status and action
 
-Table 1: This table describes the screen code of each Foreign Pension
-System (FPS) status starting with A to F as well as its meaning, use and
-action to be taken. Work item types are assigned to FP MFUs in WLM. For
-further information, see Workload Management in Customer First.
+Table 1: this table describes the FPS screen codes for Comparable
+Foreign Payment (CFP) statuses, A to F, their meanings, use and action
+to be taken.
 
 +-------------+-------------+-------------+-------------+-------------+
-| Status      | Reason      | Use         | Letter      | Review      |
+| Status      | Reason      | Purpose     | Letter      | Review      |
 |             |             |             | Issued      | action      |
 +-------------+-------------+-------------+-------------+-------------+
 | DEF         | FGA         | Obsolete    | n/a         | Review set  |
@@ -27,20 +20,20 @@ further information, see Workload Management in Customer First.
 |             | granted     | longer      |             | months for  |
 |             | future      | applicable  |             | manual      |
 |             | date)       |             |             | action      |
-|             |             | Note: This  |             |             |
+|             |             | Note: this  |             |             |
 |             |             | code is     |             | Review      |
 |             |             | used for    |             | action:     |
 |             |             | approved    |             | In          |
 |             |             | manual      |             | ternational |
 |             |             | workaround  |             | to check    |
 |             |             | where       |             | requirement |
-|             |             | system      |             | to claim    |
-|             |             | problem     |             |             |
-|             |             | screens too |             |             |
-|             |             | early. When |             |             |
-|             |             | review      |             |             |
-|             |             | matures,    |             |             |
-|             |             | set status  |             |             |
+|             |             | system      |             | to claim.   |
+|             |             | problem     |             | See         |
+|             |             | screens too |             | Assisting   |
+|             |             | early. When |             | customers   |
+|             |             | review      |             | to claim a  |
+|             |             | matures,    |             | foreign     |
+|             |             | set status  |             | pension     |
 |             |             | to 'ISS'    |             |             |
 |             |             | for         |             |             |
 |             |             | relevant    |             |             |
@@ -60,119 +53,211 @@ further information, see Workload Management in Customer First.
 |             | bonus       | applicable  |             |             |
 |             | claim)      |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| FIN         | GRA         | Record      | No          | No review*  |
-|             |             | advice of   |             |             |
-| (Finalised) | (Granted)   | grant of a  |             | *MFU        |
-|             |             | foreign     |             | (I04        |
-|             |             | pension     |             | 0FP/I036FP) |
+| FIN         | GRA         | Used to     | No          | No review*  |
+|             |             | record      |             |             |
+| (Finalised) | (Granted)   | advice of   |             | *MFU        |
+|             |             | grant of a  |             | (I04        |
+|             |             | CFP         |             | 0FP/I036FP) |
 |             |             |             |             | created for |
-|             |             |             |             | CIS to      |
-|             |             |             |             | follow up   |
-|             |             |             |             | any debt    |
-|             |             |             |             | action due  |
-|             |             |             |             | to the      |
-|             |             |             |             | arrears of  |
-|             |             |             |             | foreign     |
-|             |             |             |             | pension     |
+|             |             | Note:       |             | CIS to      |
+|             |             | generally   |             | follow up   |
+|             |             | coded       |             | any debt    |
+|             |             | au          |             | action due  |
+|             |             | tomatically |             | to the      |
+|             |             | when a new  |             | arrears of  |
+|             |             | ongoing CFP |             | foreign     |
+|             |             | is recorded |             | pension     |
+|             |             | on FPD      |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| FIN         | REJ         | Record      | No          | No          |
-|             |             | advice of   |             |             |
-|             | (Rejected)  | rejection   |             |             |
-|             |             | of foreign  |             |             |
-|             |             | pension     |             |             |
+| FIN         | REJ         | Used to     | No          | No          |
+|             |             | record      |             |             |
+|             | (Rejected)  | advice of   |             |             |
+|             |             | rejection   |             |             |
+|             |             | of a CFP    |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| FIN         | EXE         | Record      | Yes         | No          |
-|             |             | customer    |             |             |
-|             | (Exempt)    | exempt from |             |             |
+| FIN         | EXE         | Used to     | Yes         | No          |
+|             |             | exempt      |             |             |
+|             | (Exempt)    | customer    |             |             |
+|             |             | from        |             |             |
 |             |             | requirement |             |             |
 |             |             | to claim a  |             |             |
-|             |             | foreign     |             |             |
-|             |             | pension     |             |             |
+|             |             | CFP         |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| FIN         | NOM         | Record      | Yes         | No          |
-|             |             | customer    |             |             |
-|             | (Not        | not         |             |             |
-|             | entit       | entitled to |             |             |
-|             | led-Manual) | foreign     |             |             |
-|             |             | pension -   |             |             |
-|             |             | manual      |             |             |
+| FIN         | NOM         | Used to     | Yes         | No          |
+|             |             | indicate a  |             |             |
+|             | (Not        | manual      |             |             |
+|             | entit       | decision    |             |             |
+|             | led-Manual) | has been    |             |             |
+|             |             | made that a |             |             |
+|             |             | CFP claim   |             |             |
+|             |             | should not  |             |             |
+|             |             | proceed     |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| FIN         | NOA         | Record      | No          | No          |
+| FIN         | NOA         | Used when   | No          | No          |
+|             |             | CFP         |             |             |
+|             | (Not        | screening   |             |             |
+|             | entitled –  | has         |             |             |
+|             | Auto)       | occurred    |             |             |
+|             |             | and         |             |             |
+|             |             | indicate a  |             |             |
 |             |             | customer    |             |             |
-|             | (Not        | not         |             |             |
-|             | entitled –  | entitled to |             |             |
-|             | Auto)       | foreign     |             |             |
-|             |             | pension -   |             |             |
+|             |             | will not    |             |             |
+|             |             | qualify for |             |             |
+|             |             | reasons     |             |             |
+|             |             | other than  |             |             |
+|             |             | cont        |             |             |
+|             |             | ributions - |             |             |
 |             |             | auto        |             |             |
+|             |             |             |             |             |
+|             |             | Notes:      |             |             |
+|             |             |             |             |             |
+|             |             | -   No CFP  |             |             |
+|             |             |     claim   |             |             |
+|             |             |     is sent |             |             |
+|             |             | -   Cannot  |             |             |
+|             |             |     be      |             |             |
+|             |             |     coded   |             |             |
+|             |             |             |             |             |
+|             |             |    manually |             |             |
+|             |             | -   A       |             |             |
+|             |             |             |             |             |
+|             |             |   voluntary |             |             |
+|             |             |     claim   |             |             |
+|             |             |     may     |             |             |
+|             |             |     still   |             |             |
+|             |             |     be      |             |             |
+|             |             |     issued  |             |             |
+|             |             |     (see    |             |             |
+|             |             |             |             |             |
+|             |             |    ISS-VOL) |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| FIN         | NOC         | Record      | No          | No          |
-|             |             | customer    |             |             |
-|             | (Not        | not         |             |             |
-|             | entitled–   | qualified   |             |             |
-|             | Inadequate/ | for a       |             |             |
-|             | i           | foreign     |             |             |
-|             | nsufficient | pension -   |             |             |
-|             | con         | auto        |             |             |
-|             | tributions) |             |             |             |
-+-------------+-------------+-------------+-------------+-------------+
-| FIN         | NLA         | Record      | No          | No          |
-|             |             | customer    |             |             |
-|             | (Cannot     | not able to |             |             |
-|             | lodge)      | lodge a     |             |             |
-|             |             | claim for   |             |             |
-|             |             | foreign     |             |             |
-|             |             | pension -   |             |             |
+| FIN         | NOC         | Used when   | No          | No          |
+|             |             | CFP         |             |             |
+|             | (Not        | screening   |             |             |
+|             | entitled–   | has         |             |             |
+|             | Inadequate/ | occurred    |             |             |
+|             | i           | and         |             |             |
+|             | nsufficient | indicate a  |             |             |
+|             | con         | customer    |             |             |
+|             | tributions) | has         |             |             |
+|             |             | i           |             |             |
+|             |             | nsufficient |             |             |
+|             |             | co          |             |             |
+|             |             | ntributions |             |             |
+|             |             | to          |             |             |
+|             |             | qualify -   |             |             |
 |             |             | auto        |             |             |
+|             |             |             |             |             |
+|             |             | Notes:      |             |             |
+|             |             |             |             |             |
+|             |             | -   No CFP  |             |             |
+|             |             |     claim   |             |             |
+|             |             |     is sent |             |             |
+|             |             | -   Cannot  |             |             |
+|             |             |     be      |             |             |
+|             |             |     coded   |             |             |
+|             |             |             |             |             |
+|             |             |    manually |             |             |
+|             |             | -   A       |             |             |
+|             |             |             |             |             |
+|             |             |   voluntary |             |             |
+|             |             |     claim   |             |             |
+|             |             |     may     |             |             |
+|             |             |     still   |             |             |
+|             |             |     be      |             |             |
+|             |             |     issued  |             |             |
+|             |             |     (see    |             |             |
+|             |             |             |             |             |
+|             |             |    ISS-VOL) |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| FIN         | NLA         | Used when   | No          | No          |
+|             |             | CFP         |             |             |
+|             | (Cannot     | screening   |             |             |
+|             | lodge)      | has         |             |             |
+|             |             | occurred    |             |             |
+|             |             | and a CFP   |             |             |
+|             |             | claim       |             |             |
+|             |             | cannot be   |             |             |
+|             |             | lodged from |             |             |
+|             |             | the country |             |             |
+|             |             | in which    |             |             |
+|             |             | the         |             |             |
+|             |             | customer    |             |             |
+|             |             | lives –     |             |             |
+|             |             | auto        |             |             |
+|             |             |             |             |             |
+|             |             | Notes:      |             |             |
+|             |             |             |             |             |
+|             |             | -   No CFP  |             |             |
+|             |             |     claim   |             |             |
+|             |             |     is sent |             |             |
+|             |             | -   Cannot  |             |             |
+|             |             |     be      |             |             |
+|             |             |     coded   |             |             |
+|             |             |             |             |             |
+|             |             |    manually |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| FIN         | TFR         | Used to     | No          | No          |
+|             |             | indicate a  |             |             |
+|             | (Transfer   | customer    |             |             |
+|             | to other    | has         |             |             |
+|             | pension)    | transferred |             |             |
+|             |             | from one    |             |             |
+|             |             | CFP to      |             |             |
+|             |             | another     |             |             |
+|             |             | (e.g. INV   |             |             |
+|             |             | to AGE)     |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 
 Foreign Pension Systems (FPS) status (G to Z)
 
 Explanation of Foreign Pension System (FPS) status and action
 
-Table 2: This table describes the screen code of each Foreign Pension
-System (FPS) status starting with G to Z as well as its meaning, use and
-action to be taken.
+Table 2: this table describes the screen codes Comparable Foreign
+Payment (CFP) statuses, G to Z, their meanings, use and action to be
+taken.
 
 +-------------+-------------+-------------+-------------+-------------+
-| Status      | Reason      | Use         | Letter      | Review      |
+| Status      | Reason      | Purpose     | Letter      | Review      |
 |             |             |             | Issued      | action      |
 +-------------+-------------+-------------+-------------+-------------+
-| GEP         |             | Record      | Yes         | Review set  |
-|             |             | advice of   |             | to create   |
-| (Granted    |             | grant of a  |             | MFU         |
-| embargo     |             | foreign     |             | (I035FP)    |
-| pending)    |             | pension -   |             | after set   |
+| GEP         |             | Used to     | Yes         | Review set  |
+|             |             | indicate a  |             | to create   |
+| (Granted    |             | CFP has     |             | MFU         |
+| embargo     |             | been        |             | (I035FP)    |
+| pending)    |             | granted and |             | after set   |
 |             |             | embargo     |             | period      |
-|             |             | calculation |             | (varies by  |
-|             |             | in progress |             | country)    |
-|             |             |             |             |             |
+|             |             | processing  |             | (varies by  |
+|             |             | is not yet  |             | country)    |
+|             |             | complete    |             |             |
 |             |             |             |             | Review      |
-|             |             |             |             | action: CIS |
+|             |             | Notes:      |             | action: CIS |
 |             |             |             |             | to follow   |
-|             |             |             |             | up embargo  |
-|             |             |             |             | of arrears  |
-|             |             |             |             | with        |
-|             |             |             |             | customer    |
-|             |             |             |             | and/or      |
-|             |             |             |             | foreign     |
-|             |             |             |             | pension     |
-|             |             |             |             | authority.  |
-|             |             |             |             | See         |
+|             |             | -           |             | up embargo  |
+|             |             |   Generally |             | of arrears  |
+|             |             |     coded   |             | with        |
+|             |             |     au      |             | customer    |
+|             |             | tomatically |             | and/or      |
+|             |             |     when a  |             | foreign     |
+|             |             |     new     |             | pension     |
+|             |             |     ongoing |             | authority.  |
+|             |             |     CFP is  |             | See         |
 |             |             |             |             | Comparable  |
-|             |             |             |             | foreign     |
-|             |             |             |             | payment     |
-|             |             |             |             | lump sum    |
-|             |             |             |             | arrears     |
-|             |             |             |             | debts.      |
+|             |             |    recorded |             | foreign     |
+|             |             |     on FPD  |             | payment     |
+|             |             | -   Only    |             | lump sum    |
+|             |             |     applies |             | arrears     |
+|             |             |     to New  |             | debts.      |
+|             |             |     Zealand |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| ISS         |             | Record      | Yes         | Series of   |
-|             |             | foreign     |             | automated   |
-| (Issued)    |             | claim       |             | reviews set |
-|             |             | information |             | to:         |
-|             |             | sent to     |             |             |
-|             |             | customer    |             | -   Send    |
-|             |             | (           |             |             |
-|             |             | compulsory) |             |    reminder |
+| ISS         |             | Used to     | Yes         | Series of   |
+|             |             | issue a     |             | automated   |
+| (Issued)    |             | customer a  |             | reviews set |
+|             |             | compulsory  |             | to:         |
+|             |             | CFP claim   |             |             |
+|             |             |             |             | -   Send    |
+|             |             |             |             |             |
+|             |             |             |             |    reminder |
 |             |             |             |             |     letter  |
 |             |             |             |             |     after   |
 |             |             |             |             |     42 days |
@@ -181,7 +266,21 @@ action to be taken.
 |             |             |             |             |             |
 |             |             |             |             |   (SUS-CFP) |
 |             |             |             |             |     after   |
-|             |             |             |             |     28 days |
+|             |             |             |             |     22 days |
+|             |             |             |             |     if the  |
+|             |             |             |             |             |
+|             |             |             |             |    customer |
+|             |             |             |             |     resides |
+|             |             |             |             |     inside  |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |     or 44   |
+|             |             |             |             |     days if |
+|             |             |             |             |     they    |
+|             |             |             |             |     reside  |
+|             |             |             |             |     outside |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
 |             |             |             |             |             |
 |             |             |             |             | Cancel      |
 |             |             |             |             | payment     |
@@ -189,28 +288,26 @@ action to be taken.
 |             |             |             |             | after 91    |
 |             |             |             |             | days        |
 +-------------+-------------+-------------+-------------+-------------+
-| ISS         | VOL         | Record      | Yes         | No          |
-|             |             | foreign     |             |             |
-|             | (Voluntary) | claim       |             |             |
-|             |             | information |             |             |
-|             |             | sent to     |             |             |
-|             |             | customer    |             |             |
-|             |             | (voluntary) |             |             |
+| ISS         | VOL         | Used to     | Yes         | No          |
+|             |             | issue a     |             |             |
+|             | (Voluntary) | customer a  |             |             |
+|             |             | voluntary   |             |             |
+|             |             | CFP claim   |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| OVS         |             | Record      | Yes         | Review set  |
-|             |             | claim sent  |             | to mature   |
-| (Overseas)  |             | overseas to |             | after set   |
-|             |             | the foreign |             | period      |
-|             |             | pension     |             | (varies by  |
-|             |             | authority   |             | country).   |
-|             |             | by          |             |             |
-|             |             | In          |             | Review will |
-|             |             | ternational |             | either:     |
-|             |             | Services    |             |             |
-|             |             |             |             | -   Send    |
-|             |             |             |             |             |
-|             |             |             |             |    reminder |
-|             |             |             |             |     after   |
+| OVS         |             | Used to     | Yes         | Review set  |
+|             |             | indicate    |             | to mature   |
+| (Overseas)  |             | that        |             | after set   |
+|             |             | In          |             | period      |
+|             |             | ternational |             | (varies by  |
+|             |             | Services    |             | country).   |
+|             |             | has sent    |             |             |
+|             |             | the CFP     |             | Review will |
+|             |             | claim to    |             | either:     |
+|             |             | the foreign |             |             |
+|             |             | pension     |             | -   Send    |
+|             |             | authority   |             |             |
+|             |             | for         |             |    reminder |
+|             |             | processing  |             |     after   |
 |             |             |             |             |     set     |
 |             |             |             |             |     period  |
 |             |             |             |             | -   Send    |
@@ -218,13 +315,41 @@ action to be taken.
 |             |             |             |             |             |
 |             |             |             |             |    reminder |
 |             |             |             |             |     after   |
-|             |             |             |             |     28 days |
+|             |             |             |             |     22 days |
+|             |             |             |             |     if the  |
+|             |             |             |             |             |
+|             |             |             |             |    customer |
+|             |             |             |             |     resides |
+|             |             |             |             |     inside  |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |     or 44   |
+|             |             |             |             |     days if |
+|             |             |             |             |     they    |
+|             |             |             |             |     reside  |
+|             |             |             |             |     outside |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
 |             |             |             |             | -   Suspend |
 |             |             |             |             |     payment |
 |             |             |             |             |             |
 |             |             |             |             |   (SUS-FRC) |
 |             |             |             |             |     after   |
-|             |             |             |             |     28 days |
+|             |             |             |             |     22 days |
+|             |             |             |             |     if the  |
+|             |             |             |             |             |
+|             |             |             |             |    customer |
+|             |             |             |             |     resides |
+|             |             |             |             |     inside  |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |     or 44   |
+|             |             |             |             |     days if |
+|             |             |             |             |     they    |
+|             |             |             |             |     reside  |
+|             |             |             |             |     outside |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
 |             |             |             |             | -   Cancel  |
 |             |             |             |             |     payment |
 |             |             |             |             |             |
@@ -250,19 +375,25 @@ action to be taken.
 |             |             |             |             | outcome     |
 |             |             |             |             | with        |
 |             |             |             |             | customer.   |
+|             |             |             |             | See         |
+|             |             |             |             | Assisting   |
+|             |             |             |             | customers   |
+|             |             |             |             | to claim a  |
+|             |             |             |             | foreign     |
+|             |             |             |             | pension     |
 +-------------+-------------+-------------+-------------+-------------+
-| OVS         | DIR         | Record      | Yes         | Review set  |
-|             |             | claim sent  |             | to mature   |
-|             | (Direct)    | overseas to |             | after set   |
-|             |             | the foreign |             | period      |
-|             |             | pension     |             | (varies by  |
-|             |             | authority   |             | country).   |
-|             |             | by customer |             |             |
-|             |             |             |             | Review will |
-|             |             |             |             | either:     |
-|             |             |             |             |             |
-|             |             |             |             | -   Send    |
-|             |             |             |             |             |
+| OVS         | DIR         | Used to     | Yes         | Review set  |
+|             |             | indicate    |             | to mature   |
+|             | (Direct)    | the         |             | after set   |
+|             |             | customer    |             | period      |
+|             |             | has sent    |             | (varies by  |
+|             |             | the CFP     |             | country).   |
+|             |             | claim to    |             |             |
+|             |             | the foreign |             | Review will |
+|             |             | pension     |             | either:     |
+|             |             | authority   |             |             |
+|             |             | for         |             | -   Send    |
+|             |             | processing  |             |             |
 |             |             |             |             |    reminder |
 |             |             |             |             |     after   |
 |             |             |             |             |     set     |
@@ -272,13 +403,41 @@ action to be taken.
 |             |             |             |             |             |
 |             |             |             |             |    reminder |
 |             |             |             |             |     after   |
-|             |             |             |             |     28 days |
+|             |             |             |             |     22 days |
+|             |             |             |             |     if the  |
+|             |             |             |             |             |
+|             |             |             |             |    customer |
+|             |             |             |             |     resides |
+|             |             |             |             |     inside  |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |     or 44   |
+|             |             |             |             |     days if |
+|             |             |             |             |     they    |
+|             |             |             |             |     reside  |
+|             |             |             |             |     outside |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
 |             |             |             |             | -   Suspend |
 |             |             |             |             |     payment |
 |             |             |             |             |             |
 |             |             |             |             |   (SUS-FRC) |
 |             |             |             |             |     after   |
-|             |             |             |             |     28 days |
+|             |             |             |             |     22 days |
+|             |             |             |             |     if the  |
+|             |             |             |             |             |
+|             |             |             |             |    customer |
+|             |             |             |             |     resides |
+|             |             |             |             |     inside  |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |     or 44   |
+|             |             |             |             |     days if |
+|             |             |             |             |     they    |
+|             |             |             |             |     reside  |
+|             |             |             |             |     outside |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
 |             |             |             |             | -   Cancel  |
 |             |             |             |             |     payment |
 |             |             |             |             |             |
@@ -303,7 +462,75 @@ action to be taken.
 |             |             |             |             | up claim    |
 |             |             |             |             | outcome     |
 |             |             |             |             | with        |
-|             |             |             |             | customer    |
+|             |             |             |             | customer.   |
+|             |             |             |             | See         |
+|             |             |             |             | Assisting   |
+|             |             |             |             | customers   |
+|             |             |             |             | to claim a  |
+|             |             |             |             | foreign     |
+|             |             |             |             | pension     |
++-------------+-------------+-------------+-------------+-------------+
+| REI         |             | Used to     | Yes         | Series of   |
+|             |             | reissue a   |             | automated   |
+| (Reissued)  |             | compulsory  |             | reviews set |
+|             |             | CFP claim   |             | to:         |
+|             |             | to a        |             |             |
+|             |             | customer    |             | -   Send    |
+|             |             |             |             |             |
+|             |             | Notes:      |             |    reminder |
+|             |             |             |             |     letter  |
+|             |             | -   Aligns  |             |     after   |
+|             |             |     with    |             |     42 days |
+|             |             |     ISS,    |             | -   Suspend |
+|             |             |     with    |             |     payment |
+|             |             |             |             |             |
+|             |             |    matching |             |   (SUS-CFP) |
+|             |             |     lett    |             |     after   |
+|             |             | ers/reviews |             |     22 days |
+|             |             | -   May be  |             |     if the  |
+|             |             |     coded   |             |             |
+|             |             |     more    |             |    customer |
+|             |             |     than    |             |     resides |
+|             |             |     once    |             |     inside  |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |     or 44   |
+|             |             |             |             |     days if |
+|             |             |             |             |     they    |
+|             |             |             |             |     reside  |
+|             |             |             |             |     outside |
+|             |             |             |             |             |
+|             |             |             |             |   Australia |
+|             |             |             |             |             |
+|             |             |             |             | Cancel      |
+|             |             |             |             | payment     |
+|             |             |             |             | (CAN-CFP)   |
+|             |             |             |             | after 91    |
+|             |             |             |             | days        |
++-------------+-------------+-------------+-------------+-------------+
+| REI         | VOL         | Used to     | Yes         | No          |
+|             |             | reissue a   |             |             |
+|             | (Voluntary) | voluntary   |             |             |
+|             |             | CFP claim   |             |             |
+|             |             | to a        |             |             |
+|             |             | customer    |             |             |
+|             |             |             |             |             |
+|             |             | Notes:      |             |             |
+|             |             |             |             |             |
+|             |             | -   Aligns  |             |             |
+|             |             |     with    |             |             |
+|             |             |     ISS     |             |             |
+|             |             |     (VOL),  |             |             |
+|             |             |     with    |             |             |
+|             |             |             |             |             |
+|             |             |    matching |             |             |
+|             |             |     lett    |             |             |
+|             |             | ers/reviews |             |             |
+|             |             | -   May be  |             |             |
+|             |             |     coded   |             |             |
+|             |             |     more    |             |             |
+|             |             |     than    |             |             |
+|             |             |     once    |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | RET         | CSC         | Record      | No          | Review set  |
 |             |             | receipt of  |             | to create   |
@@ -351,7 +578,7 @@ Intranet links
 
 International Services (CIS)
 
-International Programme
+International Program
 
                                    
 

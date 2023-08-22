@@ -1,0 +1,539 @@
+
+[Expand/Collapse all sections]Expand all
+
+General eligibility rules when sending an SMS
+
+Table 1.
+
++-----------------------------------+-----------------------------------+
+| Item                              | Rules                             |
++-----------------------------------+-----------------------------------+
+| Eligible Person rules             | To be considered eligible to have |
+|                                   | a DMIS SMS message sent, the      |
+|                                   | customer must meet all the        |
+|                                   | following rules.                  |
+|                                   |                                   |
+|                                   | The person:                       |
+|                                   |                                   |
+|                                   | does not have any of the          |
+|                                   | following record types:           |
+|                                   |                                   |
+|                                   | -   Child                         |
+|                                   | -   Employer                      |
+|                                   | -   Organisation                  |
+|                                   |                                   |
+|                                   | has a total outstanding debt      |
+|                                   | balance greater than $50          |
+|                                   |                                   |
+|                                   | is over the age of 16             |
+|                                   |                                   |
+|                                   | is not identified as being in     |
+|                                   | prison by temporary write off     |
+|                                   | reason PRI                        |
+|                                   |                                   |
+|                                   | does not have a date of death     |
+|                                   | recorded on the DEA screen        |
+|                                   |                                   |
+|                                   | does not have a restricted access |
+|                                   | record (DAF Record)               |
+|                                   |                                   |
+|                                   | does not have a record protected  |
+|                                   | from updates (DQU record)         |
+|                                   |                                   |
+|                                   | does not have any debts with      |
+|                                   | External Collection Agent         |
+|                                   |                                   |
+|                                   | is subscribed to SMS electronic   |
+|                                   | messages (as recorded via JSSWEB) |
+|                                   |                                   |
+|                                   | has a current Australian or       |
+|                                   | Norfolk Island mobile number      |
+|                                   | (MOB) recorded                    |
+|                                   |                                   |
+|                                   | is not currently in receipt of a  |
+|                                   | Status Resolution Support         |
+|                                   | Services (SRSS) payment           |
+|                                   |                                   |
+|                                   | does not have an Indigenous       |
+|                                   | indicator of A, B, C, E, F or T   |
+|                                   |                                   |
+|                                   | does not have a remote area       |
+|                                   | indicator of Y                    |
++-----------------------------------+-----------------------------------+
+| Eligible debt rules               | To be considered eligible to have |
+|                                   | a DMIS SMS message sent, the debt |
+|                                   | must meet all the following       |
+|                                   | rules.                            |
+|                                   |                                   |
+|                                   | The person has a debt balance of  |
+|                                   | more than $50 or more             |
+|                                   |                                   |
+|                                   | A Formal Account Payable letter   |
+|                                   | has been sent for the debt        |
+|                                   |                                   |
+|                                   | The debt is recoverable under     |
+|                                   | the:                              |
+|                                   |                                   |
+|                                   | -   Family Assistance Act (FAE),  |
+|                                   |     or                            |
+|                                   | -   Family Assistance (Admin) Act |
+|                                   |     (FAO), or                     |
+|                                   | -   Paid Parental Leave Act       |
+|                                   |     (PPL), or                     |
+|                                   | -   PGPA Act (PGR), or            |
+|                                   | -   Social Security Act (SSA), or |
+|                                   | -   Social Security (Admin) Act   |
+|                                   |     (SSA), or                     |
+|                                   | -   Student Assistance Act (STU)  |
+|                                   |                                   |
+|                                   | The debt has not been raised for  |
+|                                   | the following benefit types:      |
+|                                   |                                   |
+|                                   | -   Status Resolution Support     |
+|                                   |     Services (NRR), or            |
+|                                   | -   Farm Household Allowance      |
+|                                   |     (FHA) (FHR), or               |
+|                                   | -   Australian Government         |
+|                                   |     Disaster Relief Payment (AGD  |
+|                                   |     and AGP), or                  |
+|                                   | -   Australian Victim Terrorism   |
+|                                   |     Overseas Payment (AVT), or    |
+|                                   | -   Disaster Relief Allowance     |
+|                                   |     (DRA)                         |
+|                                   |                                   |
+|                                   | The debt has not been raised for  |
+|                                   | the following Compensation reason |
+|                                   | types:                            |
+|                                   |                                   |
+|                                   | -   Failed to comply with a       |
+|                                   |     Compensation Preliminary      |
+|                                   |     Notice (CMB), or              |
+|                                   | -   Compensation Charge           |
+|                                   |     (Compensation Payer CMM), and |
+|                                   |                                   |
+|                                   | The debt has a status of:         |
+|                                   |                                   |
+|                                   | -   Determined (DET), or          |
+|                                   | -   Determined Written Off (DWO)  |
+|                                   |                                   |
+|                                   | The debt is not part of a         |
+|                                   | multiple liability debt           |
++-----------------------------------+-----------------------------------+
+| Working day rules                 | An SMS Nudge message must be sent |
+|                                   | on an eligible working day,       |
+|                                   | between the hours of 9:00 am and  |
+|                                   | 4:55 pm. Saturday, Sunday and     |
+|                                   | National Public holidays are      |
+|                                   | considered non-working days. All  |
+|                                   | other days are considered working |
+|                                   | days.                             |
+|                                   |                                   |
+|                                   | The system tests eligibility      |
+|                                   | daily. If an SMS is not sent      |
+|                                   | because it is a non-working day,  |
+|                                   | eligibility will be tested on the |
+|                                   | following working day, as usual.  |
+|                                   | If any SMS messages are eligible  |
+|                                   | on that day, the highest priority |
+|                                   | SMS will be sent.                 |
++-----------------------------------+-----------------------------------+
+
+Specific eligibility rules when sending an SMS
+
+Table 2.
+
++-----------------------------------+-----------------------------------+
+| Item                              | Rules                             |
++-----------------------------------+-----------------------------------+
+| Immediate SMS Debt Refresh -      | If the customer has completed the |
+| pause applied                     | Situational Hardship pause        |
+|                                   | service, then the ‘Immediate SMS  |
+|                                   | Debt Refresh – pause applied’ SMS |
+|                                   | is scheduled to send.             |
++-----------------------------------+-----------------------------------+
+| Declined payment                  | The 'Declined Payment' SMS will   |
+|                                   | send, provided it is the highest  |
+|                                   | eligible SMS in the hierarchy and |
+|                                   | all of the following apply.       |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | -   has a broken BKN Direct Debit |
+|                                   |     VOL direct debit arrangement  |
+|                                   |     with a repayment declined 7   |
+|                                   |     to 10 days ago, and           |
+|                                   | -   debt does not have a debt     |
+|                                   |     level write off, and          |
+|                                   | -   is not currently in receipt   |
+|                                   |     of a withholdable payment,    |
+|                                   |     and                           |
+|                                   | -   does not currently have any   |
+|                                   |     written off debts under a     |
+|                                   |      customer level (general)     |
+|                                   |     write off code unless that    |
+|                                   |     code is WUN or NCE or DOS,    |
+|                                   |     and                           |
+|                                   | -   has not received a DMIS SMS   |
+|                                   |     message the previous business |
+|                                   |     day, and                      |
+|                                   | -   is not eligible for a higher  |
+|                                   |     priority Nudge Message on the |
+|                                   |     current day, and              |
+|                                   | -   was not sent a declined       |
+|                                   |     payment SMS in the previous 7 |
+|                                   |     days, and                     |
+|                                   | -   does not have a debt recovery |
+|                                   |     pause applied for disaster    |
+|                                   |     purposes in the               |
+|                                   |     DMN.EMG.POSTCODES table in    |
+|                                   |     DMIS                          |
++-----------------------------------+-----------------------------------+
+| Overdue payment                   | The ' Overdue Payment ' SMS will  |
+|                                   | send, provided it is the highest  |
+|                                   | eligible SMS in the hierarchy and |
+|                                   | all of the following apply.       |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has a CSH or IRR repayment        |
+|                                   | overdue by 5 days, and            |
+|                                   |                                   |
+|                                   | is not currently in receipt of a  |
+|                                   | withholdable payment, and         |
+|                                   |                                   |
+|                                   | has a Regular Cash CSH or         |
+|                                   | Irregular Cash IRR arrangement    |
+|                                   | with a status of                  |
+|                                   |                                   |
+|                                   | -   Pending PND                   |
+|                                   | -   Broken BKN                    |
+|                                   | -   Current CUR, and              |
+|                                   |                                   |
+|                                   | does not currently have any       |
+|                                   | written off debts under a         |
+|                                   |  customer level (general) write   |
+|                                   | off code unless that code is      |
+|                                   |                                   |
+|                                   | -   Whereabouts unknown (WUN)     |
+|                                   | -   Not Cost Effective (NCE), or  |
+|                                   | -   Departure Overseas (DOS), and |
+|                                   |                                   |
+|                                   | debt does not have a debt level   |
+|                                   | write off, and                    |
+|                                   |                                   |
+|                                   | was not sent any DMIS SMS Message |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | is not eligible for a higher      |
+|                                   | priority Nudge Message on this    |
+|                                   | day, and                          |
+|                                   |                                   |
+|                                   | was not sent any Overdue Payment  |
+|                                   | SMS in the previous 7 calendar    |
+|                                   | days, and                         |
+|                                   |                                   |
+|                                   | does not have a debt recovery     |
+|                                   | pause applied for disaster        |
+|                                   | purposes in the DMN.EMG.POSTCODES |
+|                                   | table                             |
++-----------------------------------+-----------------------------------+
+| Recovery restarted                | The 'Recovery Restarted' SMS will |
+|                                   | send, provided it is the highest  |
+|                                   | eligible SMS in the hierarchy and |
+|                                   | all of the following apply.       |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has debts temporarily written     |
+|                                   | off, the write off ended 7 days   |
+|                                   | ago or more, and the write off    |
+|                                   | reasons was                       |
+|                                   |                                   |
+|                                   | -   Disaster (DIS)                |
+|                                   | -   Short Term Hardship (STH)     |
+|                                   | -   Outcome of Review/Appeal      |
+|                                   |     (ORA), or                     |
+|                                   | -   Outcome of Overseas Appeal    |
+|                                   |     (OSA), and                    |
+|                                   |                                   |
+|                                   | is not currently in receipt of a  |
+|                                   | withholdable payment, and         |
+|                                   |                                   |
+|                                   | has no repayment arrangement in   |
+|                                   | place with status                 |
+|                                   |                                   |
+|                                   | -   Pending (PND)                 |
+|                                   | -   Current (CUR)                 |
+|                                   | -   Future (FUT) (withholdings    |
+|                                   |     arrangements only)            |
+|                                   | -   Broken (BKN), or              |
+|                                   | -   Provisional (PVL), and        |
+|                                   |                                   |
+|                                   | does not currently have any       |
+|                                   | written off debts under a         |
+|                                   | customer level (general) write    |
+|                                   | off code unless that code is      |
+|                                   |                                   |
+|                                   | -   Whereabouts unknown (WUN)     |
+|                                   | -   Not Cost Effective (NCE) or   |
+|                                   | -   Departure Overseas (DOS), and |
+|                                   |                                   |
+|                                   | was not sent any Nudge Message    |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | is not eligible for a higher      |
+|                                   | priority Nudge Message on this    |
+|                                   | day, and                          |
+|                                   |                                   |
+|                                   | was not sent a Recovery restarted |
+|                                   | SMS in the previous 7 calendar    |
+|                                   | days, and                         |
+|                                   |                                   |
+|                                   | has no debt recovery pause        |
+|                                   | applied for disaster purposes,    |
+|                                   | and                               |
+|                                   |                                   |
+|                                   | does not have a pause on recovery |
+|                                   | due to disaster in the            |
+|                                   | DMN.EMG.POSTCODES table, and      |
+|                                   |                                   |
+|                                   | does not have a current standard  |
+|                                   | or non-standard arrangement, and  |
+|                                   |                                   |
+|                                   | debt does not have a debt level   |
+|                                   | write off                         |
++-----------------------------------+-----------------------------------+
+| Debt overdue                      | The 'Debt Overdue' SMS will send, |
+|                                   | provided it is the highest        |
+|                                   | eligible SMS in the hierarchy and |
+|                                   | all of the following apply.       |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has a debt that is overdue by 7   |
+|                                   | days, and                         |
+|                                   |                                   |
+|                                   | is not currently in receipt of a  |
+|                                   | withholdable payment, and         |
+|                                   |                                   |
+|                                   | has no repayment arrangement in   |
+|                                   | place with status                 |
+|                                   |                                   |
+|                                   | -   Pending (PND)                 |
+|                                   | -   Current (CUR)                 |
+|                                   | -   Future (FUT) (withholdings    |
+|                                   |     arrangements only)            |
+|                                   | -   Broken (BKN), or              |
+|                                   | -   Provisional (PVL), and        |
+|                                   |                                   |
+|                                   | does not currently have any       |
+|                                   | written off debts under a         |
+|                                   |  customer level (general) write   |
+|                                   | off code unless that code is      |
+|                                   |                                   |
+|                                   | -   Whereabouts unknown (WUN)     |
+|                                   | -   Not Cost Effective (NCE), or  |
+|                                   | -   Departure Overseas (DOS), and |
+|                                   |                                   |
+|                                   | was not sent any Nudge Message    |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | is not eligible for a higher      |
+|                                   | priority Nudge Message on the     |
+|                                   | current day, and                  |
+|                                   |                                   |
+|                                   | was not sent any Debt Overdue SMS |
+|                                   | in the previous 7 calendar days,  |
+|                                   | and                               |
+|                                   |                                   |
+|                                   | does not have a debt recovery     |
+|                                   | pause applied for disaster        |
+|                                   | purposes in the                   |
+|                                   | DMN.EMG.POSTCODES, and            |
+|                                   |                                   |
+|                                   | debt does not have a debt level   |
+|                                   | write off                         |
++-----------------------------------+-----------------------------------+
+| Recovery will restart             | The 'Recovery will restart' SMS   |
+|                                   | will send, provided it is the     |
+|                                   | highest eligible SMS in the       |
+|                                   | hierarchy and all of the          |
+|                                   | following apply.                  |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has debts temporarily written     |
+|                                   | off, the write off ends in 6 days |
+|                                   | and the write off reason codes    |
+|                                   | are                               |
+|                                   |                                   |
+|                                   | -   Disaster (DIS),               |
+|                                   | -   Short Term Hardship (STH),    |
+|                                   | -   Outcome of Review/Appeal      |
+|                                   |     (ORA), or                     |
+|                                   | -   Outcome of Overseas Appeal    |
+|                                   |     (OSA), and                    |
+|                                   |                                   |
+|                                   | is not currently in receipt of a  |
+|                                   | withholdable payment, and         |
+|                                   |                                   |
+|                                   | has no repayment arrangement is   |
+|                                   | in place with status              |
+|                                   |                                   |
+|                                   | -   Pending (PND)                 |
+|                                   | -   Current (CUR)                 |
+|                                   | -   Future (FUT) (withholdings    |
+|                                   |     arrangements only)            |
+|                                   | -   Broken (BKN), or              |
+|                                   | -   Provisional (PVL), and        |
+|                                   |                                   |
+|                                   | was not sent any Nudge Message    |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | is not eligible for a higher      |
+|                                   | priority Nudge Message on this    |
+|                                   | day, and                          |
+|                                   |                                   |
+|                                   | was not sent any Recovery will    |
+|                                   | Restart SMS in the previous 7     |
+|                                   | days                              |
++-----------------------------------+-----------------------------------+
+| Withholdings will restart         | The 'Withholdings will Restart'   |
+|                                   | SMS will send, provided it is the |
+|                                   | highest eligible SMS in the       |
+|                                   | hierarchy and all of the          |
+|                                   | following apply.                  |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has debts temporarily written     |
+|                                   | off, the write off ends in 6 days |
+|                                   | and the write off reason is       |
+|                                   |                                   |
+|                                   | -   Disaster (DIS),               |
+|                                   | -   Short Term Hardship (STH),    |
+|                                   | -   Outcome of Review/Appeal      |
+|                                   |     (ORA), or                     |
+|                                   | -   Outcome of Overseas Appeal    |
+|                                   |     (OSA), and                    |
+|                                   |                                   |
+|                                   | is currently in receipt of a      |
+|                                   | withholdable benefit where the    |
+|                                   | current benefit type can recover  |
+|                                   | the eligible debt type (For       |
+|                                   | example CCS and PPL Benefit Types |
+|                                   | can only be used to repay CCS and |
+|                                   | PPL debts respectively)           |
+|                                   |                                   |
+|                                   | has no repayment arrangement in   |
+|                                   | place with status                 |
+|                                   |                                   |
+|                                   | -   Pending (PND)                 |
+|                                   | -   Current (CUR)                 |
+|                                   | -   Future (FUT) (withholdings    |
+|                                   |     arrangements only), or        |
+|                                   | -   Provisional (PVL), and        |
+|                                   |                                   |
+|                                   | was not sent any Nudge Message    |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | is not eligible for a higher      |
+|                                   | priority Nudge Message on this    |
+|                                   | day, and                          |
+|                                   |                                   |
+|                                   | was not sent any Withholdings     |
+|                                   | will Restart SMS in the previous  |
+|                                   | 7 calendar days                   |
++-----------------------------------+-----------------------------------+
+| Withholdings will restart (Auto   | The 'Withholdings will Restart    |
+| Setup)                            | (Auto Setup)' SMS will send,      |
+|                                   | provided it is the highest        |
+|                                   | eligible SMS in the hierarchy and |
+|                                   | all of the following apply.       |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has debts temporarily written     |
+|                                   | off, the write off ends in 6 days |
+|                                   | and the write off reason is       |
+|                                   |                                   |
+|                                   | -   Disaster (DIS),               |
+|                                   | -   Short Term Hardship (STH),    |
+|                                   | -   Outcome of Review/Appeal      |
+|                                   |     (ORA), or                     |
+|                                   | -   Outcome of Overseas Appeal    |
+|                                   |     (OSA), and                    |
+|                                   |                                   |
+|                                   | is currently in receipt of a      |
+|                                   | withholdable benefit where the    |
+|                                   | current benefit type can recover  |
+|                                   | the eligible debt type (for       |
+|                                   | example CCS and PPL Benefit Types |
+|                                   | can only be used to repay CCS and |
+|                                   | PPL debts respectively)           |
+|                                   |                                   |
+|                                   | has a future FUT non-standard     |
+|                                   | withholdings arrangement in       |
+|                                   | place, and                        |
+|                                   |                                   |
+|                                   | was not sent any Nudge Message    |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | was not eligible for a higher     |
+|                                   | priority Nudge Message on the     |
+|                                   | current day, and                  |
+|                                   |                                   |
+|                                   | was not sent any Withholdings     |
+|                                   | will Restart SMS in the previous  |
+|                                   | 7 calendar days                   |
++-----------------------------------+-----------------------------------+
+| Debt due soon                     | The 'Debt Due Soon' SMS will      |
+|                                   | send, provided it is the highest  |
+|                                   | eligible SMS in the hierarchy and |
+|                                   | all of the following apply.       |
+|                                   |                                   |
+|                                   | The customer:                     |
+|                                   |                                   |
+|                                   | has a debt that is due in 3 days, |
+|                                   | and                               |
+|                                   |                                   |
+|                                   | is not currently in receipt of a  |
+|                                   | withholdable payment, and         |
+|                                   |                                   |
+|                                   | has no repayment arrangement in   |
+|                                   | place with status                 |
+|                                   |                                   |
+|                                   | -   Pending (PND)                 |
+|                                   | -   Current (CUR)                 |
+|                                   | -   Future (FUT) (withholdings    |
+|                                   |     arrangements only)            |
+|                                   | -   Broken (BKN), or              |
+|                                   | -   Provisional (PVL), and        |
+|                                   |                                   |
+|                                   | does not currently have any       |
+|                                   | written off debts under a         |
+|                                   | customer level (general) write    |
+|                                   | off code unless that code is      |
+|                                   |                                   |
+|                                   | -   Whereabouts unknown (WUN)     |
+|                                   | -   Not Cost Effective (NCE), or  |
+|                                   | -   Departure Overseas (DOS), and |
+|                                   |                                   |
+|                                   | this debt does not have a debt    |
+|                                   | level write off, and              |
+|                                   |                                   |
+|                                   | was not sent any Nudge Message    |
+|                                   | the previous business day, and    |
+|                                   |                                   |
+|                                   | is not eligible for a higher      |
+|                                   | priority Nudge Message on this    |
+|                                   | day, and                          |
+|                                   |                                   |
+|                                   | was not sent any Debt Due Soon    |
+|                                   | SMS in the previous 7 calendar    |
+|                                   | days                              |
++-----------------------------------+-----------------------------------+
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

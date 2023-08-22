@@ -1,9 +1,3 @@
-
-Australian Immunisation Register (AIR) quality checking in QST 111-22020000
-
--   Background
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 This page contains guides for error status codes (including the
@@ -26,9 +20,9 @@ checking.
 | Error status codes    | Error definition      | Processing tip        |
 +-----------------------+-----------------------+-----------------------+
 | IM02                  | Duplicate record      | It is an error when a |
-|                       | created for an        | duplicate records     |
-| Critical              | individual            | have been created for |
-|                       |                       | an individual on the  |
+|                       | created for an        | duplicate record has  |
+| Critical              | individual            | been created for an   |
+|                       |                       | individual on the     |
 |                       |                       | AIR. This includes    |
 |                       |                       | new SIN records where |
 |                       |                       | end dated Medicare    |
@@ -36,10 +30,13 @@ checking.
 +-----------------------+-----------------------+-----------------------+
 | IM03                  | Provider number not   | It is an error when   |
 |                       | keyed or updated      | the vaccination       |
-| Critical              | correctly             | provider has not been |
-|                       |                       | keyed/updated or      |
-|                       |                       | keyed/updated         |
-|                       |                       | incorrectly           |
+| Critical              | correctly             | provider has          |
+|                       |                       |                       |
+|                       |                       | -   not been          |
+|                       |                       |     keyed/updated, or |
+|                       |                       | -   been              |
+|                       |                       |     keyed/updated     |
+|                       |                       |     incorrectly       |
 +-----------------------+-----------------------+-----------------------+
 | IM04                  | Provider phone number | It is an error when   |
 |                       | not keyed or keyed    | the phone number:     |
@@ -56,7 +53,7 @@ checking.
 |                       |                       | state/territory       |
 |                       |                       | health approval date  |
 +-----------------------+-----------------------+-----------------------+
-| IM06                  | Organisation name,    | If is an error when   |
+| IM06                  | Organisation name,    | It is an error when   |
 |                       | provider name or      | the organisation      |
 | Critical              | contact name not      | name, vaccination     |
 |                       | keyed or keyed        | provider name or      |
@@ -142,11 +139,17 @@ checking.
 |                       |                       |     permissions       |
 +-----------------------+-----------------------+-----------------------+
 | IM15                  | Incorrect individual, | It is an error when   |
-|                       | Medicare card number  | the Medicare card     |
-| Critical              | selected or keyed     | number selected or    |
-|                       |                       | keyed does not match  |
+|                       | Medicare card number  | what is selected or   |
+| Critical              | selected or keyed     | keyed does not match  |
 |                       |                       | supporting            |
-|                       |                       | documentation         |
+|                       |                       | documentation, that   |
+|                       |                       | is:                   |
+|                       |                       |                       |
+|                       |                       | -   the Medicare card |
+|                       |                       |     number, or        |
+|                       |                       | -   the individual    |
+|                       |                       |     Reference (IRN,   |
+|                       |                       |     IHL, AIR, SIN)    |
 |                       |                       |                       |
 |                       |                       | Note: check comments  |
 |                       |                       | for possible twin or  |
@@ -197,7 +200,7 @@ checking.
 |                       |                       | without impact        |
 +-----------------------+-----------------------+-----------------------+
 | IM18                  | Vaccine incorrect     | Manual                |
-|                       | with impact           |                       |
+|                       |                       |                       |
 | Critical              |                       | It is an error when   |
 |                       |                       | the vaccine is not    |
 |                       |                       | keyed or keyed        |
@@ -321,7 +324,7 @@ checking.
 +-----------------------+-----------------------+-----------------------+
 | IM29                  | Manual immunisation   | This is an error when |
 |                       | history statement not | the applicant has     |
-| Non-critical          | requested             | requested an          |
+| Critical              | requested             | requested an          |
 |                       |                       | immunisation history  |
 |                       |                       | statement and this    |
 |                       |                       | has not been created  |
@@ -335,7 +338,7 @@ checking.
 +-----------------------+-----------------------+-----------------------+
 | IM31                  | Return mail indicator | It is an error when   |
 |                       | not selected or       | the return mail is    |
-| Non-critical          | selected in error     | received and the      |
+| Critical              | selected in error     | received and the      |
 |                       |                       | indicator:            |
 |                       |                       |                       |
 |                       |                       | -   has not been      |
@@ -403,17 +406,24 @@ checking.
 |                       |                       | photocopy of a baby   |
 |                       |                       | book                  |
 +-----------------------+-----------------------+-----------------------+
-| IM38                  | PaNDA comment/note    | It is an error when a |
-|                       | not included to       | file note has not     |
-| Critical              | support confirmation  | been included to      |
-|                       |                       | support confirmation  |
-|                       |                       | of details            |
+| IM38                  | Appropriate           | It is an error when a |
+|                       | comment/note not      | file note has not     |
+| Critical              | included on relevant  | been included to      |
+|                       | system/s to support   | support confirmation  |
+|                       | confirmation          | of details/action     |
+|                       |                       | taken                 |
 |                       |                       |                       |
 |                       |                       | It is also an error   |
-|                       |                       | if the comments do    |
-|                       |                       | not adhere to the     |
-|                       |                       | Freedom of            |
-|                       |                       | Information Act       |
+|                       |                       | if the comments       |
+|                       |                       |                       |
+|                       |                       | -   do not adhere to  |
+|                       |                       |     the Freedom of    |
+|                       |                       |     Information Act   |
+|                       |                       | -   Include personal  |
+|                       |                       |     information such  |
+|                       |                       |     as staff names    |
+|                       |                       |     within the        |
+|                       |                       |     comment           |
 +-----------------------+-----------------------+-----------------------+
 | IM39                  | Documentation not     | It is an error when   |
 |                       | signed                | processing has        |
@@ -425,8 +435,12 @@ checking.
 |                       |                       | required              |
 +-----------------------+-----------------------+-----------------------+
 | IM40                  | Document/Form not     | It is an error when a |
-|                       | processed             | document or form has  |
-| Critical              |                       | not been processed    |
+|                       | processed or          | document or form has: |
+| Critical              | processed in error    |                       |
+|                       |                       | -   not been          |
+|                       |                       |     processed, or     |
+|                       |                       | -   not correctly     |
+|                       |                       |     processed         |
 +-----------------------+-----------------------+-----------------------+
 | IM41                  | Duplicate provider    | It is an error when a |
 |                       | registration created  | duplicate AIR         |
@@ -475,30 +489,9 @@ checking.
 | Critical              | contacted via         | occurred including    |
 |                       | telephone, letter not | resolving pends and   |
 |                       | sent and/or incorrect | clarification was not |
-|                       | letter sent           | sort from provider/or |
-|                       |                       | applicant where       |
-|                       |                       | required              |
-+-----------------------+-----------------------+-----------------------+
-| IM48                  | Mainframe comments    | It is an error when a |
-|                       | not entered           | system comment has    |
-| Critical              |                       | not been included in  |
-|                       |                       | the AIR system to     |
-|                       |                       | support confirmation  |
-|                       |                       | of details/action     |
-|                       |                       | taken                 |
-|                       |                       |                       |
-|                       |                       | It is also an error   |
-|                       |                       | if the comments:      |
-|                       |                       |                       |
-|                       |                       | -   do not adhere to  |
-|                       |                       |     the Freedom of    |
-|                       |                       |     Information Act,  |
-|                       |                       |     or                |
-|                       |                       | -   include personal  |
-|                       |                       |     information such  |
-|                       |                       |     as staff names    |
-|                       |                       |     within the        |
-|                       |                       |     comment           |
+|                       | letter sent           | sought from           |
+|                       |                       | provider/or applicant |
+|                       |                       | where required        |
 +-----------------------+-----------------------+-----------------------+
 | IM49                  | Encounter or claim    | It is an error when a |
 |                       | deleted incorrectly   | pend claim and/or     |
@@ -565,12 +558,16 @@ checking.
 | Non-critical          | complete or incorrect | conventions is not    |
 |                       |                       | complete or incorrect |
 +-----------------------+-----------------------+-----------------------+
-| IM54                  | IM011 processed when  | It is an error to     |
-|                       | submitted via         | process an IM011 form |
-| Critical              | unsecure email/HPOS   | that has been         |
-|                       | by the individual     | submitted to AIR by   |
-|                       |                       | the individual the    |
-|                       |                       | form relates to.      |
+| IM54                  | Form processed when   | It is an error to     |
+|                       | submitted via         | process a form        |
+| Critical              | unsecure email/HPOS   | submitted by the      |
+|                       | by the individual     | individual by         |
+|                       |                       | unsecure email/HPOS   |
++-----------------------+-----------------------+-----------------------+
+| IM55                  | Incorrectly           | It is an error to     |
+|                       | re-categorised        | re-categorise to the  |
+| Non-critical          |                       | incorrect work type   |
+|                       |                       | or area               |
 +-----------------------+-----------------------+-----------------------+
 
 Error-free status code
@@ -587,8 +584,6 @@ checking
 +-----------------------+-----------------------+-----------------------+
 
 Intranet links
-
-Root Cause Analysis
 
 Quality Processes Approaches
 

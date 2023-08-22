@@ -1,10 +1,4 @@
 
-Child Override/Claim (CHOC) screen 102-05050140
-
--   Background
--   Process
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 Information relating to the CHOC screen
@@ -14,6 +8,14 @@ Information relating to the CHOC screen
 +-----------------------------------+-----------------------------------+
 | 1                                 | CHOC screen functions + Read more |
 |                                   | ...                               |
+|                                   |                                   |
+|                                   | The Child Override/Claim (CHOC)   |
+|                                   | screen is used to insert, correct |
+|                                   | or delete details for a child for |
+|                                   | correct assessment of a           |
+|                                   | customer's entitlement to         |
+|                                   | payments and services in relation |
+|                                   | to a child.                       |
 |                                   |                                   |
 |                                   | A CLAIM or RECLAIM line must      |
 |                                   | exist on the CHOC screen for all  |
@@ -76,9 +78,9 @@ Information relating to the CHOC screen
 |                                   | reason.                           |
 |                                   |                                   |
 |                                   | When a new claim activity is      |
-|                                   | created, where necessary the      |
-|                                   | system, will automatically add    |
-|                                   | claim details to the CHOC screen  |
+|                                   | created, the system will          |
+|                                   | automatically add claim details   |
+|                                   | to the CHOC screen (if required)  |
 |                                   | for each child selected from the  |
 |                                   | Relations menu in Process Direct  |
 |                                   | or the Child Selection (CHS)      |
@@ -87,18 +89,18 @@ Information relating to the CHOC screen
 |                                   | indexing the claim.               |
 |                                   |                                   |
 |                                   | If an add child activity is       |
-|                                   | coded, the system assumes a claim |
-|                                   | is made for all service reasons   |
-|                                   | current, suspended or assessed,   |
-|                                   | for the customer and where        |
-|                                   | necessary, adds these claim       |
-|                                   | details to the CHOC screen for    |
-|                                   | the child being added. In         |
-|                                   | addition to FTB, the CHOC screen  |
-|                                   | needs to be updated for the       |
-|                                   | service reason PPP when adding a  |
-|                                   | child, if the customer is in      |
-|                                   | receipt of PPP.                   |
+|                                   | created in Customer First, the    |
+|                                   | system assumes a claim is made    |
+|                                   | for all service reasons current,  |
+|                                   | suspended or assessed, for the    |
+|                                   | customer and where necessary,     |
+|                                   | adds these claim details to the   |
+|                                   | CHOC screen for the child being   |
+|                                   | added. In addition to FTB, the    |
+|                                   | CHOC screen needs to be updated   |
+|                                   | for the service reason PPP when   |
+|                                   | adding a child, if the customer   |
+|                                   | is in receipt of PPP.             |
 |                                   |                                   |
 |                                   | The relevant line should be       |
 |                                   | deleted if the child is not to be |
@@ -157,7 +159,7 @@ Information relating to the CHOC screen
 |                                   |     assistance                    |
 |                                   |                                   |
 |                                   | If FTB is current, to restore FTB |
-|                                   | for a particular child, code      |
+|                                   | for a particular child, code a    |
 |                                   | 'RCL' line on the CHOC screen     |
 |                                   | from the date FTB was cancelled   |
 |                                   | for that child.                   |
@@ -177,21 +179,21 @@ Information relating to the CHOC screen
 |                                   |                                   |
 |                                   | NSS payments                      |
 |                                   |                                   |
-|                                   | If a person currently on an NSS   |
-|                                   | payment (JobSeeker Payment (JSP), |
-|                                   | Youth Allowance (YA) or Special   |
-|                                   | Benefit (SpB)) and has a child    |
-|                                   | come into their care or changes   |
-|                                   | their shared care arrangements so |
-|                                   | that they become the principal    |
-|                                   | carer of a child, a CLM claim     |
-|                                   | line must be recorded on the CHOC |
-|                                   | screen so that the Principal      |
-|                                   | Carer Circumstance Details (PCCD) |
-|                                   | screen can be coded. The PCCD     |
-|                                   | screen must be coded so that the  |
-|                                   | customer is placed in the correct |
-|                                   | target group. If a shared care    |
+|                                   | If a person currently in receipt  |
+|                                   | of JobSeeker Payment (JSP), Youth |
+|                                   | Allowance (YA) or Special Benefit |
+|                                   | (SpB) has a child come into their |
+|                                   | care or changes their shared care |
+|                                   | arrangements so that they become  |
+|                                   | the principal carer of a child, a |
+|                                   | CLM claim line must be recorded   |
+|                                   | on the CHOC screen so that the    |
+|                                   | Principal Carer Circumstance      |
+|                                   | Details (PCCD) screen can be      |
+|                                   | coded. The PCCD screen must be    |
+|                                   | coded so that the customer is     |
+|                                   | placed in the correct target      |
+|                                   | group. If a shared care           |
 |                                   | assessment is required to         |
 |                                   | determine which carer is the      |
 |                                   | principal carer of the child, see |
@@ -248,7 +250,67 @@ Information relating to the CHOC screen
 |                                   | being applied within a new claim  |
 |                                   | transaction.                      |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Correct dependent child details   |
+| 4                                 | Parenting Payment Single (PPS)    |
+|                                   | customer gains/loses principal    |
+|                                   | carer status + Read more ...      |
+|                                   |                                   |
+|                                   | Note: CHOC screen coding must be  |
+|                                   | actioned in Customer First if not |
+|                                   | being applied within a new claim  |
+|                                   | activity. An activity can be      |
+|                                   | started from the CHOC screen once |
+|                                   | a child has been selected.        |
+|                                   |                                   |
+|                                   | PPS claimant or customer is the   |
+|                                   | principal carer of a child + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | A claim (CLM)/reclaim (RCL) line  |
+|                                   | must NOT be coded on the CHOC     |
+|                                   | screen for Parenting Payment      |
+|                                   | Single (PPS) purposes.            |
+|                                   |                                   |
+|                                   | For PPS customers, the system     |
+|                                   | does not recognise coding of the  |
+|                                   | Shared Care Assessment (both FSC  |
+|                                   | and SSC tables) to                |
+|                                   | assess/reassess the customer’s    |
+|                                   | principal carer status.           |
+|                                   |                                   |
+|                                   | CHC (Child in customer Care) must |
+|                                   | correctly reflect whether each    |
+|                                   | child is in care, or has left     |
+|                                   | care, or has been assessed as not |
+|                                   | in care. For more details, see    |
+|                                   | Child leaves customer's           |
+|                                   | care/custody.                     |
+|                                   |                                   |
+|                                   | PPS customer: does not have or    |
+|                                   | loses principal carer status for  |
+|                                   | a child + Read more ...           |
+|                                   |                                   |
+|                                   | On the CHOC screen, record:       |
+|                                   |                                   |
+|                                   | -   OTN (Other eligibility-No) -  |
+|                                   |     if the customer does not have |
+|                                   |     principal care of a child,    |
+|                                   |     for example, they have 45%    |
+|                                   |     care or less                  |
+|                                   | -   TOP (Transfer out to Partner  |
+|                                   |     ) - if the child has left     |
+|                                   |     care and the FTB shared care  |
+|                                   |     (FSC)/SSA Shared Care (SSC)   |
+|                                   |     tables have been updated      |
+|                                   |                                   |
+|                                   | PPS customer: re-gains principal  |
+|                                   | carer status for a child + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | EOV (End of override) is to be    |
+|                                   | coded if a previous OTN or TOP    |
+|                                   | line is present.                  |
++-----------------------------------+-----------------------------------+
+| 5                                 | Correct dependent child details   |
 |                                   | on concession card + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
@@ -274,45 +336,58 @@ Information relating to the CHOC screen
 |                                   | -   Code a 'refresh' on the Child |
 |                                   |     Benefit Action (CHBA) screen  |
 |                                   | -   Before finalising this        |
-|                                   |     activity, check the Pensions  |
-|                                   |     Child Summary (PNKDS) screen  |
-|                                   |     or Concession Dependant       |
-|                                   |     Summary (MCDS) screen to      |
-|                                   |     ensure the dependent details  |
-|                                   |     have updated                  |
-|                                   |                                   |
-|                                   | If the details are still not      |
-|                                   | correct, in Customer First:       |
-|                                   |                                   |
-|                                   | -   code a 'refresh' on the       |
-|                                   |     Concession Benefit Action     |
-|                                   |     (MCBA) screen                 |
-|                                   | -   go to the Assessment Results  |
-|                                   |     (AR) screen, then check the   |
-|                                   |     PNKDS or MCDS screen to see   |
-|                                   |     if the child details have     |
-|                                   |     been corrected                |
+|                                   |     activity, check the following |
+|                                   |     screens to ensure dependent   |
+|                                   |     details have updated:         |
+|                                   | -   AX screen for the service     |
+|                                   |     reason. For example, AXNSS    |
+|                                   |     screen for NSS payments       |
+|                                   | -   Pensions Child Summary        |
+|                                   |     (PNKDS) screen for pension    |
+|                                   |     children                      |
+|                                   | -   PPP Child Summary (PGKDS)     |
+|                                   |     screen for pension PPP        |
+|                                   |     children, and                 |
+|                                   | -   Concession Dependant Summary  |
+|                                   |     (MCDS) screen                 |
 |                                   |                                   |
 |                                   | Have the child details been       |
 |                                   | corrected?                        |
 |                                   |                                   |
-|                                   | -   Yes, reissue the concession   |
-|                                   |     card                          |
-|                                   | -   No, leave the refresh         |
-|                                   |     activity started and refer    |
-|                                   |     the case to the Applications  |
-|                                   |     Service Desk using the        |
-|                                   |     relevant mySupport form. The  |
-|                                   |     Resources page contains a     |
-|                                   |     link to mySupport. When the   |
-|                                   |     details are corrected,        |
-|                                   |     reissue the concession card   |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Insert, correct or delete         |
-|                                   | information in Customer First +   |
-|                                   | Read more ...                     |
+|                                   | Yes, reissue the concession card  |
 |                                   |                                   |
-|                                   | To insert information:            |
+|                                   | No, in Customer First: code a     |
+|                                   | 'refresh' on the Concession       |
+|                                   | Benefit Action (MCBA) screen. Go  |
+|                                   | to the Assessment Results (AR)    |
+|                                   | screen, then check:               |
+|                                   |                                   |
+|                                   | -   AX screen for the service     |
+|                                   |     reason. For example, AXNSS    |
+|                                   |     screen for NSS payments       |
+|                                   | -   Pensions Child Summary        |
+|                                   |     (PNKDS) screen for pension    |
+|                                   |     children                      |
+|                                   | -   PPP Child Summary (PGKDS)     |
+|                                   |     screen for PPP children, and  |
+|                                   | -   Concession Dependant Summary  |
+|                                   |     (MCDS) screen                 |
+|                                   |                                   |
+|                                   | If the child details are still    |
+|                                   | not correct, raise an Incident    |
+|                                   | via mySupport. See Resources page |
+|                                   | for a link to mySupport. If an    |
+|                                   | incident has been raised          |
+|                                   | previously, place activity back   |
+|                                   | on hold. Once incident has been   |
+|                                   | resolved, reissue the concession  |
+|                                   | card.                             |
++-----------------------------------+-----------------------------------+
+| 6                                 | Insert, correct or delete         |
+|                                   | information in Customer First     |
+|                                   |                                   |
+|                                   | To insert information + Read more |
+|                                   | ...                               |
 |                                   |                                   |
 |                                   | On the first available blank      |
 |                                   | line, code the following fields:  |
@@ -343,13 +418,15 @@ Information relating to the CHOC screen
 |                                   | Press [Enter] to display the      |
 |                                   | expanded literals.                |
 |                                   |                                   |
-|                                   | To correct information:           |
+|                                   | To correct information + Read     |
+|                                   | more ...                          |
 |                                   |                                   |
 |                                   | Code 'C' next to the incorrect    |
 |                                   | details and code correct details  |
 |                                   | as above.                         |
 |                                   |                                   |
-|                                   | To delete information:            |
+|                                   | To delete information + Read more |
+|                                   | ...                               |
 |                                   |                                   |
 |                                   | Code 'D' next to the incorrect    |
 |                                   | details and then confirm the      |
@@ -379,7 +456,7 @@ Information relating to the CHOC screen
 |                                   | Assessment Results (AR) screen    |
 |                                   | and record details on a DOC.      |
 +-----------------------------------+-----------------------------------+
-| 6                                 | View child eligibility details +  |
+| 7                                 | View child eligibility details +  |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | For each child linked to the      |
@@ -412,20 +489,19 @@ Information relating to the CHOC screen
 |                                   | displaying as a dependent child   |
 |                                   | on the PNKDS screen.              |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Child left care + Read more ...   |
+| 8                                 | Child left care + Read more ...   |
 |                                   |                                   |
-|                                   | When a child leaves care, code    |
-|                                   | this on the In Customer Care      |
-|                                   | (CHC) screen in Customer First.   |
-|                                   | The CHOC screen may also need to  |
-|                                   | be coded if this does not         |
-|                                   | reassess the record correctly. If |
-|                                   | an existing child eligibility     |
-|                                   | override should be ceased, refer  |
-|                                   | to record child left customer's   |
-|                                   | care.                             |
+|                                   | When a child leaves care, in      |
+|                                   | addition to updating the required |
+|                                   | care screens, the CHOC screen may |
+|                                   | also need to be coded if this     |
+|                                   | does not reassess the record      |
+|                                   | correctly. If an existing child   |
+|                                   | eligibility override should be    |
+|                                   | ceased, refer to record child     |
+|                                   | left customer's care.             |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Child residence FTB override +    |
+| 9                                 | Child residence FTB override +    |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | If Family Tax Benefit (FTB) is    |

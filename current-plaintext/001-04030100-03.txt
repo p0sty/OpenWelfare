@@ -1,11 +1,8 @@
-
-Processing Youth Allowance (YA) (job seeker) claims 001-04030100
-
--   Background
--   Process
--   References
 -   Resources
 -   Training & Support
+
+This procedure is under review. An Operational Message about this
+content exists.
 
 [Expand/Collapse all sections]Expand all
 
@@ -26,19 +23,35 @@ Table 1
 +-----------------------------------+-----------------------------------+
 | 1                                 | Locate claim + Read more ...      |
 |                                   |                                   |
-|                                   | Request or search for claim work  |
-|                                   | item via Inbox.                   |
+|                                   | For online claims, Request or     |
+|                                   | search for claim work item via    |
+|                                   | Inbox.                            |
 |                                   |                                   |
-|                                   | -   Select the work item to view  |
-|                                   |     the Customer and Claim        |
-|                                   |     Information table on the      |
-|                                   |     Transaction Summary (TS)      |
-|                                   |     screen                        |
-|                                   | -   Go to Step 3                  |
+|                                   | Select the work item to view the  |
+|                                   | Customer and Claim Information    |
+|                                   | table on the Transaction Summary  |
+|                                   | (TS) screen                       |
+|                                   |                                   |
+|                                   | If the customer is aged:          |
+|                                   |                                   |
+|                                   | -   16 years or over, go to Step  |
+|                                   |     3                             |
+|                                   | -   under 16, go to Step 4        |
 |                                   |                                   |
 |                                   | For paper claims scanned to       |
 |                                   | Documents, an Assisted Customer   |
 |                                   | Claim (ACC) must be run:          |
+|                                   |                                   |
+|                                   | If the customer is under 16,      |
+|                                   | manually create the claim using   |
+|                                   | the SOA Shell application in      |
+|                                   | Process Direct by selecting Youth |
+|                                   | Allowance (Student). The SOA      |
+|                                   | shell must be re-categorised to   |
+|                                   | the correct work item: Youth      |
+|                                   | Allowance job seeker              |
+|                                   | (ZALL_ZJSP_NCL_PAPER). Go to Step |
+|                                   | 4                                 |
 |                                   |                                   |
 |                                   | Use the 'Assisted Customer Claim' |
 |                                   | desktop app to record answers     |
@@ -53,8 +66,8 @@ Table 1
 |                                   | information verbally. See         |
 |                                   | Requesting information (CLK).     |
 |                                   | Issue a pre-call notification     |
-|                                   | (SMS only) between 8:00 am and    |
-|                                   | 8:00 pm using the customer's      |
+|                                   | (SMS only) between the hours of   |
+|                                   | 8:00 am and 8:00 pm customer's    |
 |                                   | local time to let them know a     |
 |                                   | Service Officer will call them    |
 |                                   | today from a private number, see  |
@@ -71,10 +84,21 @@ Table 1
 |                                   |     advising to complete an ACC   |
 |                                   |     when the customer contacts    |
 |                                   |                                   |
+|                                   | Review scanned documents for a    |
+|                                   | Job Seeker Snapshot Offline form. |
+|                                   | This is used to complete the      |
+|                                   | Participation Interview where the |
+|                                   | customer is unable to be          |
+|                                   | contacted by phone                |
+|                                   |                                   |
 |                                   | Go to Step 3                      |
 |                                   |                                   |
-|                                   | For claims generated due to DSP   |
-|                                   | cancellation, go to Step 2        |
+|                                   | For claims generated:             |
+|                                   |                                   |
+|                                   | -   due to DSP cancellation, go   |
+|                                   |     to Step 2                     |
+|                                   | -   not due to DSP cancellation,  |
+|                                   |     go to Step 3                  |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Claim generated due to DSP        |
 |                                   | cancellation - risk based medical |
@@ -128,8 +152,9 @@ Table 1
 | 3                                 | New or reindexed claim + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | A YA jobseeker claim cannot be    |
-|                                   | granted unless the Participation  |
+|                                   | A YA jobseeker new claim or       |
+|                                   | reindexed claim cannot be granted |
+|                                   | unless the Participation          |
 |                                   | Interview has been completed and  |
 |                                   | a RapidConnect determination      |
 |                                   | made.                             |
@@ -145,27 +170,38 @@ Table 1
 |                                   | Workflow has not been completed'  |
 |                                   | appears, the Participation        |
 |                                   | Interview has not been completed  |
-|                                   | successfully, see Table 3 in      |
-|                                   | Participation Interview before    |
+|                                   | successfully, see Troubleshooting |
+|                                   | reindexed claims, PP or student   |
+|                                   | transfers or new claims with      |
+|                                   | error - E543NM table before       |
 |                                   | continuing with claim processing. |
 |                                   |                                   |
-|                                   | Note: automation - once Service   |
-|                                   | Officers complete the             |
-|                                   | Participation Interview and       |
-|                                   | 'FINISH' is selected, they will   |
-|                                   | be exited from the claim          |
-|                                   | transaction. The claim will       |
-|                                   | immediately be streamed into      |
-|                                   | automation, which creates a lock  |
-|                                   | on the customer's record.         |
-|                                   | Depending on system performance,  |
-|                                   | this can take several minutes. If |
-|                                   | after 5 minutes, the record is no |
-|                                   | longer locked with the user ID    |
-|                                   | 'Roxy' the claim will either be   |
-|                                   | 'Done' (no further action         |
-|                                   | required) or SO's can continue to |
-|                                   | assess the claim.                 |
+|                                   | To reassess a previously rejected |
+|                                   | claim:                            |
+|                                   |                                   |
+|                                   | -   If rejected FSD, FRC or POI,  |
+|                                   |     see Requested documentation   |
+|                                   |     not provided resulting in     |
+|                                   |     rejection of new claim        |
+|                                   | -   If rejected DNL/FRP, see      |
+|                                   |     Early or late lodgement of    |
+|                                   |     job seeker reports            |
+|                                   | -   To re-index the claim, refer  |
+|                                   |     to directions for SAP online  |
+|                                   |     claims in Indexing,           |
+|                                   |     re-indexing and cancelling    |
+|                                   |     claim activities              |
+|                                   | -   The Participation interview   |
+|                                   |     must be re-run, see           |
+|                                   |     Participation Interview       |
+|                                   |                                   |
+|                                   | If the customer is claiming       |
+|                                   | Disability Support Pension (DSP), |
+|                                   | assess the claim as Youth         |
+|                                   | Allowance provisional, see        |
+|                                   | JobSeeker Payment (JSP) and Youth |
+|                                   | Allowance (YA) (Provisional) for  |
+|                                   | further information.              |
 |                                   |                                   |
 |                                   | The claim status must be In       |
 |                                   | Process before it can be          |
@@ -179,27 +215,9 @@ Table 1
 |                                   |     take, see Process Direct      |
 |                                   |     navigation, common screens    |
 |                                   |     and functions                 |
-|                                   |                                   |
-|                                   | To reassess a previously rejected |
-|                                   | claim:                            |
-|                                   |                                   |
-|                                   | -   If rejected FSD, FRC or POI,  |
-|                                   |     see Request to reassess a     |
-|                                   |     rejected claim                |
-|                                   | -   If rejected DNL/FRP, see      |
-|                                   |     Early or late lodgement of    |
-|                                   |     job seeker reports            |
-|                                   | -   To re-index the claim, refer  |
-|                                   |     to directions for SAP online  |
-|                                   |     claims in Indexing,           |
-|                                   |     re-indexing and cancelling    |
-|                                   |     claim activities              |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Review claim details + Read more  |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | Check the customer's benefit      |
-|                                   | status line.                      |
+| 4                                 | Check customer benefit status     |
+|                                   | line + Read more ...              |
 |                                   |                                   |
 |                                   | If the customer's benefit status  |
 |                                   | is YAL/CUR indicating the claim   |
@@ -210,15 +228,63 @@ Table 1
 |                                   | available, update to Not          |
 |                                   | Required. Procedure ends here.    |
 |                                   |                                   |
-|                                   | To review the information         |
-|                                   | provided by the customer in the   |
-|                                   | online claim or ACC:              |
+|                                   | For claims generated where the    |
+|                                   | customer is currently on ABY or   |
+|                                   | ABY PES payments, go to Step 7.   |
 |                                   |                                   |
-|                                   | Select [Open left slider; Close   |
-|                                   | right slider] and [Enter full     |
-|                                   | screen] to view the Claim Summary |
-|                                   | in a new window. If it is blank,  |
-|                                   | press [F5] to refresh the page    |
+|                                   | To prevent incorrect claim        |
+|                                   | assessment, there may be a need   |
+|                                   | to update the customer's record   |
+|                                   | outside the new claim. Updates    |
+|                                   | may include correcting the        |
+|                                   | previous benefit status, so it    |
+|                                   | displays as cancel (CAN). This    |
+|                                   | will prevent incorrect arrears    |
+|                                   | when finalising the claim or end  |
+|                                   | dating student/apprenticeship     |
+|                                   | details.                          |
+|                                   |                                   |
+|                                   | Is the benefit status cancel next |
+|                                   | payment (CNP)?                    |
+|                                   |                                   |
+|                                   | Yes, in Process Direct:           |
+|                                   |                                   |
+|                                   | -   If the benefit status shows   |
+|                                   |     the cancellation status as    |
+|                                   |     Cancelled Next Pay (CNP),     |
+|                                   |     cancel payment using reason   |
+|                                   |     'OTH' from DPT+1 via the      |
+|                                   |     Benefit Action (BA) screen.   |
+|                                   |     For assistance, see Coding a  |
+|                                   |     cancellation                  |
+|                                   |     Note: this does not apply to  |
+|                                   |     student or parenting          |
+|                                   |     transfers                     |
+|                                   | -   Inhibit the letter on the     |
+|                                   |     Actions (ASC) screen before   |
+|                                   |     finalising the activity       |
+|                                   | -   Record cancellation details   |
+|                                   |     using Fast Note - select Auto |
+|                                   |     text, use Generic >           |
+|                                   |     SUS/CAN/RES > Suspend Cancel  |
+|                                   |     Reason                        |
+|                                   |                                   |
+|                                   | No, go to Step 5                  |
++-----------------------------------+-----------------------------------+
+| 5                                 | Pre-assessment checks + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Complete all pre-assessment       |
+|                                   | checks in Process Direct using    |
+|                                   | the icons on the Transaction      |
+|                                   | Summary (TS) screen. Checks may   |
+|                                   | include selecting:                |
+|                                   |                                   |
+|                                   | [Open left slider; Close right    |
+|                                   | slider] and [Enter full screen]to |
+|                                   | view the Claim Summary in a new   |
+|                                   | window. If it is blank, press     |
+|                                   | [F5] to refresh the page          |
 |                                   |                                   |
 |                                   | Review the Claim Summary. Key     |
 |                                   | details include:                  |
@@ -226,6 +292,55 @@ Table 1
 |                                   | -   relationship status           |
 |                                   | -   date last worked              |
 |                                   | -   accommodation details         |
+|                                   |                                   |
+|                                   | Circumstance Data for customer    |
+|                                   | and claim information including:  |
+|                                   |                                   |
+|                                   | -   identity confirmation         |
+|                                   | -   claim type, submission date   |
+|                                   |     and status                    |
+|                                   | -   the Link Summary (LS) and     |
+|                                   |     Marital Status (MS) screen    |
+|                                   |     data                          |
+|                                   |                                   |
+|                                   | Benefit History for previous      |
+|                                   | claim dates and benefit history   |
+|                                   |                                   |
+|                                   | Tasks to view required tasks,     |
+|                                   | supporting documents requested    |
+|                                   | and their due date                |
+|                                   |                                   |
+|                                   | Notes to view:                    |
+|                                   |                                   |
+|                                   | -   the Progress of claim note    |
+|                                   | -   any comments made by a        |
+|                                   |     previous Service Officer, and |
+|                                   | -   the Document List (DL)        |
+|                                   |     screen. DL also shows         |
+|                                   |     confirmation the customer     |
+|                                   |     accepts the verbal            |
+|                                   |     declaration where an Assisted |
+|                                   |     Customer Claim (ACC) has been |
+|                                   |     run                           |
+|                                   |                                   |
+|                                   | Status to view or update the      |
+|                                   | claim status                      |
+|                                   |                                   |
+|                                   | Documents to view documents       |
+|                                   | uploaded or scanned, including:   |
+|                                   |                                   |
+|                                   | -   specific documentation for a  |
+|                                   |     CAO assessment where          |
+|                                   |     applicable, and               |
+|                                   | -   additional documents          |
+|                                   |     provided. Note: documents     |
+|                                   |     relating to the customer's    |
+|                                   |     claim may also be attached to |
+|                                   |     the partner's, or parent's    |
+|                                   |     record                        |
+|                                   |                                   |
+|                                   | the Activity List (AL) screen to  |
+|                                   | view outstanding activities       |
 |                                   |                                   |
 |                                   | If the customer originally        |
 |                                   | claimed as a student and the      |
@@ -235,8 +350,327 @@ Table 1
 |                                   | RapidConnect determination        |
 |                                   | applied and be connected with a   |
 |                                   | provider.                         |
+|                                   |                                   |
+|                                   | Immediately process an            |
+|                                   | Authorising a person or           |
+|                                   | organisation to enquire or act on |
+|                                   | your behalf form (SS313) if       |
+|                                   | lodged with a new claim and       |
+|                                   | satisfied of the nominee's        |
+|                                   | identity. This is to ensure the   |
+|                                   | nominee will also receive the     |
+|                                   | outcome of claim letter. See      |
+|                                   | Adding or rejecting a nominee     |
+|                                   | request and the Resources page    |
+|                                   | for a link to the SS313 form.     |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Review scanned documents + Read   |
+| 6                                 | Check customer record + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | To prevent incorrect claim        |
+|                                   | assessment, there may be a need   |
+|                                   | to update the customer's record   |
+|                                   | outside the new claim, for:       |
+|                                   |                                   |
+|                                   | Full time Youth Allowance         |
+|                                   | student/Apprentice where there    |
+|                                   | are current                       |
+|                                   | education/apprenticeship details  |
+|                                   | displayed on their record:        |
+|                                   |                                   |
+|                                   | -   end date details for student  |
+|                                   |     payment, or                   |
+|                                   | -   end date details for          |
+|                                   |     Apprenticeship payment        |
+|                                   |                                   |
+|                                   | ABSTUDY customers:                |
+|                                   |                                   |
+|                                   | -   full time ABSTUDY customers   |
+|                                   |     no longer studying or         |
+|                                   |     undertaking an                |
+|                                   |     Apprenticeship, the payment   |
+|                                   |     will need to be cancelled.    |
+|                                   |     See Payment of ABSTUDY when a |
+|                                   |     student is deferring or       |
+|                                   |     discontinuing study before    |
+|                                   |     the end of the course         |
+|                                   | -   part-time ABSTUDY student     |
+|                                   |     continuing in the course,     |
+|                                   |     remains in receipt of ABSTUDY |
+|                                   |     and will show as ABY CUR.     |
+|                                   |     This will not affect the YA   |
+|                                   |     (jobseeker) claim. These      |
+|                                   |     students qualify for          |
+|                                   |     allowances under the          |
+|                                   |     part-time award and do not    |
+|                                   |     receive fortnightly payments  |
+|                                   |     The ABSTUDY record will need  |
+|                                   |     to be checked and the         |
+|                                   |     Customer Study Details (EDC)  |
+|                                   |     screen may need updating to   |
+|                                   |     reflect the part-time course. |
+|                                   |     See Changing study load from  |
+|                                   |     full-time to part-time or     |
+|                                   |     concessional study load for   |
+|                                   |     ABSTUDY or ABSTUDY Pensioner  |
+|                                   |     Education Supplement (PES)    |
+|                                   |                                   |
+|                                   | When a customer has a voluntary   |
+|                                   | nominee and in their claim, they  |
+|                                   | answer No to someone acting or    |
+|                                   | receiving payment on their behalf |
+|                                   | staff must check and update       |
+|                                   | nominee arrangements, see         |
+|                                   | Cancelling a nominee arrangement  |
+|                                   |                                   |
+|                                   | Pre-Claim vulnerable circumstance |
+|                                   |                                   |
+|                                   | For customers who have pre-claim  |
+|                                   | vulnerable circumstances recorded |
+|                                   | within the 8 weeks prior to their |
+|                                   | intent to claim contact date, the |
+|                                   | system will automatically         |
+|                                   | calculate the start date.         |
+|                                   |                                   |
+|                                   | Pre-claim vulnerable              |
+|                                   | circumstances that are not able   |
+|                                   | to be automatically determined by |
+|                                   | the system, can be manually       |
+|                                   | added:                            |
+|                                   |                                   |
+|                                   | -   on the Pre-Claim Vulnerable   |
+|                                   |     Circumstance (PRECLM) screen  |
+|                                   |     in Process Direct, or         |
+|                                   | -   via the Create Intent to      |
+|                                   |     Claim guided procedure in     |
+|                                   |     Customer First                |
+|                                   |                                   |
+|                                   | Where the PRECLM displays with a  |
+|                                   | start date that is more than 8    |
+|                                   | weeks and no end date consider if |
+|                                   | a pre-claim vulnerable            |
+|                                   | circumstance still exists using   |
+|                                   | the available information.        |
+|                                   |                                   |
+|                                   | In these cases assess if the:     |
+|                                   |                                   |
+|                                   | vulnerable circumstance is no     |
+|                                   | longer active, consider end       |
+|                                   | dating the vulnerable             |
+|                                   | circumstance from the associated  |
+|                                   | circumstance page and regenerate  |
+|                                   | the claim                         |
+|                                   |                                   |
+|                                   | pre claim circumstances are       |
+|                                   | required to remain current on a   |
+|                                   | customer's record indefinitely.   |
+|                                   | This includes exemptions from     |
+|                                   | seeking child support due to      |
+|                                   | family and domestic violence. In  |
+|                                   | these cases assessment for these  |
+|                                   | circumstances is required:        |
+|                                   |                                   |
+|                                   | -   do not end date the exemption |
+|                                   | -   manually update the claim     |
+|                                   |     start date to the date of     |
+|                                   |     submission if required. See   |
+|                                   |     Step 5, Recording the Intent  |
+|                                   |     to claim for a payment or     |
+|                                   |     concession card for more      |
+|                                   |     information.                  |
+|                                   |                                   |
+|                                   | After completing any updates,     |
+|                                   | from the Transaction Summary (TS) |
+|                                   | screen select [More Options] >    |
+|                                   | Regenerate claim.                 |
++-----------------------------------+-----------------------------------+
+| 7                                 | Identity Confirmation + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | On the TS screen, check the       |
+|                                   | customer's Identity Status.       |
+|                                   |                                   |
+|                                   | If the Identity Status is:        |
+|                                   |                                   |
+|                                   | confirmed, go to Step 12          |
+|                                   |                                   |
+|                                   | not confirmed, code alternative   |
+|                                   | proof of identity:                |
+|                                   |                                   |
+|                                   | -   select the Not Confirmed link |
+|                                   |     to open a Customer Summary    |
+|                                   |     window                        |
+|                                   | -   select Identity               |
+|                                   |     Confirmation > Identity       |
+|                                   |     Confirmation Dashboard from   |
+|                                   |     the Task Selector             |
+|                                   | -   code the identity documents   |
+|                                   |     or consider applying          |
+|                                   |     alternative identity          |
+|                                   |                                   |
+|                                   | Close the Customer Summary window |
+|                                   | to return to the claim.           |
++-----------------------------------+-----------------------------------+
+| 8                                 | Relationship details + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | These details must be             |
+|                                   | reviewed/updated before selecting |
+|                                   | Process.                          |
+|                                   |                                   |
+|                                   | On the TS screen:                 |
+|                                   |                                   |
+|                                   | Link Summary (LS) table shows     |
+|                                   | linked records, for example:      |
+|                                   |                                   |
+|                                   | -   Partner and any Relationship  |
+|                                   |     Qualifier Code                |
+|                                   | -   Children                      |
+|                                   | -   Parents for the Parental      |
+|                                   |     Income Test (PIT). This is a  |
+|                                   |     display only. Parental        |
+|                                   |     updates are coded on the PIT  |
+|                                   |     Parent Selection (NPPS)       |
+|                                   |     screen                        |
+|                                   | -   Marital Status (MS) table     |
+|                                   |     shows the customer's          |
+|                                   |     relationship details. For     |
+|                                   |     help with coding, see Process |
+|                                   |     Direct navigation, common     |
+|                                   |     screens and functions         |
+|                                   |                                   |
+|                                   | Check the Marital Status          |
+|                                   |                                   |
+|                                   | Compare relationship details      |
+|                                   | provided in the claim with the    |
+|                                   | information already recorded in   |
+|                                   | the MS table.                     |
+|                                   |                                   |
+|                                   | If the information recorded in MS |
+|                                   | does not match with the claim     |
+|                                   | information, attempt to contact   |
+|                                   | the customer by phone. To record  |
+|                                   | the information for a:            |
+|                                   |                                   |
+|                                   | -   successful phone contact, use |
+|                                   |     the information confirmed by  |
+|                                   |     the customer                  |
+|                                   | -   unsuccessful phone contact,   |
+|                                   |     use the relationship details  |
+|                                   |     supplied in the claim         |
+|                                   |                                   |
+|                                   | YA customers                      |
+|                                   |                                   |
+|                                   | YA customers must only be         |
+|                                   | partnered on the Marital Status   |
+|                                   | (MS) screen if both the customer  |
+|                                   | and their partner have been       |
+|                                   | assessed as independent. For more |
+|                                   | information, see Youth Allowance  |
+|                                   | (YA) or ABSTUDY customer becomes  |
+|                                   | partnered.                        |
+|                                   |                                   |
+|                                   | Go to Table 2.                    |
++-----------------------------------+-----------------------------------+
+| 9                                 | Qualification for YA + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | To qualify for payment a YA (job  |
+|                                   | seeker) must:                     |
+|                                   |                                   |
+|                                   | be of qualifying age for YA (job  |
+|                                   | seeker)                           |
+|                                   |                                   |
+|                                   | meet Australian residence         |
+|                                   | requirements for YA               |
+|                                   |                                   |
+|                                   | be unemployed, or:                |
+|                                   |                                   |
+|                                   | -   unable to look for work due   |
+|                                   |     to a medical condition,       |
+|                                   |     illness or injury, or         |
+|                                   | -   employed and are unable to    |
+|                                   |     undertake these due to a      |
+|                                   |     medical condition, illness or |
+|                                   |     injury and have a job or      |
+|                                   |     study to return to            |
+|                                   |                                   |
+|                                   | be prepared to negotiate and      |
+|                                   | enter into a Job Plan if required |
+|                                   | to do so, or comply with, or      |
+|                                   | renegotiate an existing Job Plan  |
+|                                   |                                   |
+|                                   | not be receiving ABSTUDY Living   |
+|                                   | Allowance                         |
+|                                   |                                   |
+|                                   | satisfy the requirements of their |
+|                                   | Job Plan                          |
+|                                   |                                   |
+|                                   | Customers under 22 years of age   |
+|                                   | and who have not completed Year   |
+|                                   | 12 (or equivalent) or a           |
+|                                   | Certificate III or higher, are    |
+|                                   | identified as Early School        |
+|                                   | Leavers. They are required to     |
+|                                   | undertake approved activities     |
+|                                   | and/or job search in order to     |
+|                                   | qualify for payment of YA.        |
+|                                   |                                   |
+|                                   | Is the customer eligible for YA   |
+|                                   | or will they become eligible      |
+|                                   | within 13 weeks of the date of    |
+|                                   | lodgement?                        |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 10            |
+|                                   | -   No, reject the claim. Go to   |
+|                                   |     Table 2                       |
++-----------------------------------+-----------------------------------+
+| 10                                | Determine if YA is payable + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | The customer must meet the        |
+|                                   | payability provisions for YA (or  |
+|                                   | meet the provisions within 13     |
+|                                   | weeks of the date of claim). Base |
+|                                   | the decision on the following:    |
+|                                   |                                   |
+|                                   | -   Personal/Partner Income Test. |
+|                                   |     For income limits, see Rates  |
+|                                   |     and Thresholds                |
+|                                   | -   Parental Income Test (PIT).   |
+|                                   |     If PIT reduces the rate to    |
+|                                   |     nil from the date of claim,   |
+|                                   |     check if YA would be payable  |
+|                                   |     from 1 January using base tax |
+|                                   |     year income. If so, contact   |
+|                                   |     the customer to confirm they  |
+|                                   |     wish to be assessed from 1    |
+|                                   |     January in the following      |
+|                                   |     calendar year                 |
+|                                   | -   Away from home and            |
+|                                   |     accommodation circumstances   |
+|                                   | -   Independence, including       |
+|                                   |     unreasonable to live at home  |
+|                                   |     (UTLAH)                       |
+|                                   | -   Portability provisions        |
+|                                   | -   Compensation preclusion       |
+|                                   |                                   |
+|                                   | Is the customer payable now, or   |
+|                                   | will be within 13 weeks of the    |
+|                                   | date of claim?                    |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 11            |
+|                                   | -   No, reject the claim. Go to   |
+|                                   |     Table 2                       |
+|                                   |                                   |
+|                                   | Note: if a UTLAH assessment is in |
+|                                   | progress, do not reject the claim |
+|                                   | FSD (failed to supply documents). |
+|                                   | Place the claim on hold pending   |
+|                                   | the outcome of the UTLAH          |
+|                                   | assessment.                       |
++-----------------------------------+-----------------------------------+
+| 11                                | Review scanned documents + Read   |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | To view supporting documents:     |
@@ -247,283 +681,269 @@ Table 1
 |                                   | -   select [Quick link] from the  |
 |                                   |     bottom of the open Process    |
 |                                   |     Direct window, or             |
-|                                   | -   select Documents from the     |
-|                                   |     Icon Menu                     |
+|                                   | -   select Documents icon         |
 |                                   |                                   |
-|                                   | Check the date the document was   |
-|                                   | scanned.                          |
+|                                   | When reviewing the supporting     |
+|                                   | documents:                        |
 |                                   |                                   |
-|                                   | There may also be older documents |
-|                                   | not related to the claim.         |
+|                                   | -   check all required documents  |
+|                                   |     have been received            |
+|                                   | -   check the date the document   |
+|                                   |     was scanned                   |
+|                                   | -   older documents not related   |
+|                                   |     to the claim may be used to   |
+|                                   |     verify the customer's         |
+|                                   |     circumstances and remove the  |
+|                                   |     need to request other         |
+|                                   |     documents                     |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Bank accounts and balances        |
-|                                   | verification exemption + Read     |
-|                                   | more ...                          |
+| 12                                | Employment Separation Certificate |
+|                                   | (SU1) + Read more ...             |
 |                                   |                                   |
-|                                   | The online claim may request bank |
-|                                   | verification as a Required task.  |
-|                                   | However, if the customer meets    |
-|                                   | one of the below exemption        |
-|                                   | criteria, it is not required. In  |
-|                                   | these cases, the customer has     |
-|                                   | made a legal declaration that the |
-|                                   | claim is correct. This is         |
-|                                   | sufficient evidence unless there  |
-|                                   | is doubt about the validity of    |
-|                                   | the information provided in the   |
-|                                   | claim.                            |
+|                                   | If the customer states they       |
+|                                   | and/or their partner have ceased  |
+|                                   | work in the previous 12 months,   |
+|                                   | an SU1 is required. The online    |
+|                                   | claim will request an SU1 as part |
+|                                   | of the Next Steps process within  |
+|                                   | the online claim.                 |
 |                                   |                                   |
-|                                   | The following customers are       |
-|                                   | exempt from providing supporting  |
-|                                   | documents confirming bank account |
-|                                   | balances:                         |
+|                                   | An employer can return an         |
+|                                   | electronic Employment Separation  |
+|                                   | Certificate via the Business Hub. |
+|                                   | See Employment Separation         |
+|                                   | Certificate (SU1) on how to       |
+|                                   | access the information.           |
 |                                   |                                   |
-|                                   | been on income support payment in |
-|                                   | last 13 weeks and did not advise  |
-|                                   | of any new bank accounts          |
+|                                   | A compliance action investigation |
+|                                   | may be required where the         |
+|                                   | customer has ceased employment    |
+|                                   | voluntarily or been dismissed due |
+|                                   | to misconduct.                    |
 |                                   |                                   |
-|                                   | have a partner who currently      |
-|                                   | receives a payment with confirmed |
-|                                   | bank accounts                     |
+|                                   | Has an SU1 been provided?         |
 |                                   |                                   |
-|                                   | are indigenous and living in a    |
-|                                   | remote area                       |
+|                                   | Yes, If the SU1 states the reason |
+|                                   | for unemployment was:             |
 |                                   |                                   |
-|                                   | transitioning from Parenting      |
-|                                   | Payment, Austudy or Youth         |
-|                                   | Allowance (student) to JobSeeker  |
-|                                   | Payment through a transition      |
-|                                   | claim                             |
+|                                   | -   voluntary or due to           |
+|                                   |     misconduct, see Unemployment  |
+|                                   |     due to a voluntary act or     |
+|                                   |     misconduct and take           |
+|                                   |     appropriate action            |
+|                                   | -   not voluntary or due to       |
+|                                   |     misconduct, go to Step 13     |
 |                                   |                                   |
-|                                   | if their combined bank balances   |
-|                                   | from the Date Last Worked or      |
-|                                   | studied plus 1, or the date of    |
-|                                   | claim if they have not previously |
-|                                   | worked or studied, are:           |
-|                                   |                                   |
-|                                   | -   below $2,000 for single       |
-|                                   |     people with no dependent      |
-|                                   |     children                      |
-|                                   | -   below $5,000 for couples      |
-|                                   | -   below $5,000 for customers    |
-|                                   |     with one or more dependent    |
-|                                   |     children                      |
-|                                   |                                   |
-|                                   | self-served the Liquid Assets     |
-|                                   | Waiting Period (LAWP)             |
-|                                   |                                   |
-|                                   | served any part of a LAWP         |
-|                                   | (including self served) in the    |
-|                                   | last twelve months                |
-|                                   |                                   |
-|                                   | Is the customer exempt from       |
-|                                   | providing these documents?        |
-|                                   |                                   |
-|                                   | -   Yes, go to Step 8             |
-|                                   | -   No, go to Step 7              |
+|                                   | No, see Step 2 in Table 1 of      |
+|                                   | Employment Separation Certificate |
+|                                   | (SU1)                             |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Bank accounts and balances        |
+| 13                                | Bank accounts and balance         |
 |                                   | verification + Read more ...      |
 |                                   |                                   |
+|                                   | Customers claiming YA supply      |
+|                                   | details of all bank accounts they |
+|                                   | hold, including balances, as part |
+|                                   | of the claim and make a legal     |
+|                                   | declaration the information is    |
+|                                   | correct. Evidence of bank account |
+|                                   | balances is not required.         |
+|                                   |                                   |
 |                                   | If the customer has claimed       |
-|                                   | online, do not request  proof of  |
-|                                   | bank accounts. The online claim   |
-|                                   | will show this as a Required      |
-|                                   | task.                             |
+|                                   | online and the claim was started  |
+|                                   | prior to 5 August 2023, the       |
+|                                   | online claim may have a Required  |
+|                                   | task for proof of bank accounts.  |
+|                                   | This is not required and evidence |
+|                                   | does not need to be reviewed or   |
+|                                   | requested.                        |
 |                                   |                                   |
-|                                   | Customers may need to provide:    |
+|                                   | Bank balance information is       |
+|                                   | collected to confirm income and   |
+|                                   | asset details and assess any      |
+|                                   | waiting periods.                  |
 |                                   |                                   |
-|                                   | evidence of all bank account      |
-|                                   | balances of all accounts held in  |
-|                                   | the customer and their partner's  |
-|                                   | name. The evidence must cover the |
-|                                   | period from the Date Last Worked  |
-|                                   | (DLW) plus 1 to the claim         |
-|                                   | submission date                   |
+|                                   | Only request bank balance         |
+|                                   | verification where:               |
 |                                   |                                   |
-|                                   | one of the following:             |
-|                                   |                                   |
-|                                   | -   a bank statement for all      |
-|                                   |     accounts held in their or     |
-|                                   |     their partner's name          |
-|                                   | -   a copy of the online account  |
-|                                   |     information and transactions  |
-|                                   |                                   |
-|                                   | If the customer has supplied bank |
-|                                   | verification that is sufficient   |
-|                                   | to assess their liquid asset      |
-|                                   | position, do not reject claims    |
-|                                   | FSD for failure to provide        |
-|                                   | bank/investment balances. An      |
-|                                   | example is if they have evidence  |
-|                                   | of bank balances provided from    |
-|                                   | Date last worked (or studied)     |
-|                                   | plus 1 and the claim submission   |
-|                                   | date, but the transaction dates   |
-|                                   | are not complete in between these |
-|                                   | dates.                            |
-|                                   |                                   |
-|                                   | Note: an ATM slip is not an       |
-|                                   | acceptable supporting document.   |
-|                                   |                                   |
-|                                   | If the customer is not subject to |
-|                                   | a Liquid Assets Waiting Period    |
-|                                   | (LAWP), request new evidence if   |
-|                                   | either of the following apply:    |
-|                                   |                                   |
-|                                   | -   the date of the bank account  |
-|                                   |     balance is older than 14      |
-|                                   |     business days from claim      |
-|                                   |     submission date               |
-|                                   | -   the date is earlier than      |
-|                                   |     their claim commencement date |
-|                                   |                                   |
-|                                   | See the Resources page for        |
-|                                   | examples.                         |
+|                                   | -   there is doubt about the      |
+|                                   |     validity of the information   |
+|                                   |     provided in the claim and the |
+|                                   |     service officer anticipates a |
+|                                   |     different claim outcome       |
+|                                   | -   the balances declared in the  |
+|                                   |     claim indicate the customer   |
+|                                   |     may be experiencing severe    |
+|                                   |     financial hardship, and       |
+|                                   | -   waiver to a Liquid Assets     |
+|                                   |     Waiting Period (LAWP) or      |
+|                                   |     Ordinary Waiting Period (OWP) |
+|                                   |     can be considered             |
 |                                   |                                   |
 |                                   | Bank account details may be       |
 |                                   | pre-populated into an online      |
 |                                   | claim. If the customer has not    |
-|                                   | zero'd off the balance or advised |
+|                                   | zeroed off the balance or advised |
 |                                   | the account is closed, Service    |
 |                                   | Officers can accept verbal        |
 |                                   | confirmation that the account is  |
 |                                   | closed. See Documents required    |
 |                                   | for Centrelink new claims.        |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Supporting evidence + Read more   |
+| 14                                | Supporting evidence + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | When assessing a YA claim:        |
+|                                   | When assessing a YA claim, only   |
+|                                   | request the documents required to |
+|                                   | grant or reject the claim. Do not |
+|                                   | request further evidence if the   |
+|                                   | 'reduced evidence' provisions     |
+|                                   | advise it is not required. See    |
+|                                   | Documents required for Centrelink |
+|                                   | new claims.                       |
 |                                   |                                   |
-|                                   | check and code any evidence the   |
-|                                   | customer has provided with their  |
-|                                   | claim                             |
+|                                   | Customer has supplied documents   |
+|                                   | that are acceptable, go to Step   |
+|                                   | 17.                               |
 |                                   |                                   |
-|                                   | do not request evidence:          |
+|                                   | Where documents have not been     |
+|                                   | supplied or are not acceptable,   |
+|                                   | check the Tasks tab. If the task  |
+|                                   | is:                               |
 |                                   |                                   |
-|                                   | -   if the 'reduced evidence'     |
-|                                   |     provisions advise it is not   |
-|                                   |     currently required            |
-|                                   |                                   |
-|                                   | Check that the bank documents are |
-|                                   | acceptable. See Documents         |
-|                                   | required for Centrelink new       |
-|                                   | claims.                           |
-|                                   |                                   |
-|                                   | If the documents supplied are     |
-|                                   | acceptable, go to Step 12.        |
-|                                   |                                   |
-|                                   | Otherwise, check the Tasks tab.   |
-|                                   | If the task is:                   |
-|                                   |                                   |
-|                                   | not displaying, go to Step 10     |
+|                                   | not displaying, go to Step 16     |
 |                                   |                                   |
 |                                   | displaying:                       |
 |                                   |                                   |
-|                                   | -   Go to the show documents file |
-|                                   | -   Select the Financial          |
-|                                   |     documents                     |
-|                                   | -   Check the evidence            |
-|                                   | -   Go to Step 9                  |
+|                                   | -   select the show documents     |
+|                                   |     file                          |
+|                                   | -   check the evidence            |
+|                                   | -   go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Make an outbound call to the      |
-|                                   | customer + Read more ...          |
+| 15                                | Insufficient supporting           |
+|                                   | evidence + Read more ...          |
 |                                   |                                   |
-|                                   | Make one genuine attempt to       |
-|                                   | contact by phone                  |
+|                                   | If the evidence supplied by the   |
+|                                   | customer is insufficient to       |
+|                                   | assess the claim additional       |
+|                                   | supporting evidence is required.  |
+|                                   | Where further information is      |
+|                                   | required to grant or reject the   |
+|                                   | claim, make one genuine attempt   |
+|                                   | to contact by phone.              |
 |                                   |                                   |
-|                                   | -   Issue a Pre-Call (SMS only)   |
-|                                   |     between 8.00 am and 8.00 pm   |
-|                                   |     using the customer's local    |
-|                                   |     time to let them know a       |
-|                                   |     Service Officer will call     |
-|                                   |     them today from a private     |
-|                                   |     number. See Centrelink        |
-|                                   |     letters online and Electronic |
-|                                   |     Messaging                     |
+|                                   | Issue a pre-call notification     |
+|                                   | (SMS only) between the hours of   |
+|                                   | 8:00 am and 8:00 pm customer's    |
+|                                   | local time, to advise a Service   |
+|                                   | Officer will call them today from |
+|                                   | a private number. See Centrelink  |
+|                                   | letters online and Electronic     |
+|                                   | Messaging.                        |
 |                                   |                                   |
-|                                   | If the contact is successful:     |
-|                                   |                                   |
-|                                   | tell the customer:                |
+|                                   | Contact is successful tell the    |
+|                                   | customer:                         |
 |                                   |                                   |
 |                                   | -   the evidence does not meet    |
-|                                   |     the request                   |
-|                                   | -   they must upload the evidence |
-|                                   |     using the requested task in   |
-|                                   |     the online claim see Upload   |
-|                                   |     document service              |
+|                                   |     the requirements              |
+|                                   | -   to upload the evidence via    |
+|                                   |     the requested task in the     |
+|                                   |     online claim on the day of    |
+|                                   |     the call. This will allow     |
+|                                   |     their claim to be processed   |
+|                                   |     as soon as possible. See      |
+|                                   |     Upload documents service      |
 |                                   | -   the claim will be placed on   |
 |                                   |     hold for one day              |
 |                                   | -   the claim will be rejected if |
 |                                   |     they do not provide the       |
 |                                   |     evidence                      |
 |                                   |                                   |
-|                                   | place the claim on hold for one   |
+|                                   | Place the claim on hold for one   |
 |                                   | day and annotate the Progress Of  |
 |                                   | Claim (POC) DOC, with the contact |
-|                                   | outcome. Procedure ends here      |
+|                                   | outcome. Procedure end here.      |
 |                                   |                                   |
-|                                   | If the contact is unsuccessful,   |
-|                                   | see Step 3 in Table 2.            |
+|                                   | Contact is unsuccessful or the    |
+|                                   | customer is unable to supply the  |
+|                                   | extra information or evidence     |
+|                                   | immediately, issue request for    |
+|                                   | information via [More Options] >  |
+|                                   | Request Documents. For further    |
+|                                   | information, see Circumstance     |
+|                                   | Change Monitor (CCM).             |
+|                                   |                                   |
+|                                   | Do not request documents that     |
+|                                   | have already been requested at    |
+|                                   | Next Step in the claim, unless    |
+|                                   | further clarification of the      |
+|                                   | customer circumstance is needed   |
+|                                   | for the claim assessment.         |
 +-----------------------------------+-----------------------------------+
-| 10                                | Requesting documents + Read more  |
-|                                   | ...                               |
+| 16                                | Additional supporting documents   |
+|                                   | required + Read more ...          |
 |                                   |                                   |
-|                                   | In some cases, extra evidence may |
-|                                   | still be needed to complete the   |
-|                                   | claim. For example, they may need |
-|                                   | to provide information about      |
-|                                   | trusts, companies or              |
-|                                   | compensation.                     |
+|                                   | In some claims, additional        |
+|                                   | evidence may be required to       |
+|                                   | complete the claim. For example,  |
+|                                   | information about trusts,         |
+|                                   | companies or compensation. Before |
+|                                   | requesting additional documents,  |
+|                                   | check the record. Do not request  |
+|                                   | documents that have already been  |
+|                                   | requested at Next Step in the     |
+|                                   | claim, unless further             |
+|                                   | clarification of the customer     |
+|                                   | circumstance is needed for the    |
+|                                   | claim assessment.                 |
 |                                   |                                   |
-|                                   | In these cases, try to obtain the |
-|                                   | information verbally.             |
+|                                   | If further essential information  |
+|                                   | is required, make one genuine     |
+|                                   | attempt to contact the customer.  |
+|                                   | Issue a pre-call notification     |
+|                                   | (SMS only) between the hours of   |
+|                                   | 8:00 am and 8:00 pm customer's    |
+|                                   | local time, to advise a Service   |
+|                                   | Officer will call them today from |
+|                                   | a private number. See Centrelink  |
+|                                   | letters online and Electronic     |
+|                                   | Messaging.                        |
 |                                   |                                   |
-|                                   | -   Do not call customers before  |
-|                                   |     8am or after 8pm in their     |
-|                                   |     location of residence         |
-|                                   | -   Issue a Pre-Call SMS to let   |
-|                                   |     them know they will get a     |
-|                                   |     private number call from the  |
-|                                   |     agency                        |
+|                                   | If contact is successful:         |
 |                                   |                                   |
-|                                   | If contact was successful:        |
-|                                   |                                   |
+|                                   | -   if appropriate, try to obtain |
+|                                   |     the information verbally      |
 |                                   | -   record the details of the     |
 |                                   |     conversation in the Progress  |
 |                                   |     of Claim DOC                  |
 |                                   | -   encourage them to upload the  |
 |                                   |     information via the requested |
 |                                   |     task in the online claim on   |
-|                                   |     the day so their claim can be |
+|                                   |     the day of the call. This     |
+|                                   |     will allow their claim to be  |
 |                                   |     processed as soon as          |
-|                                   |     possible.See Upload document  |
-|                                   |     service                       |
+|                                   |     possible. See Upload          |
+|                                   |     documents service             |
 |                                   |                                   |
 |                                   | If the contact was unsuccessful   |
-|                                   | or the customer is not able to    |
-|                                   | supply the extra information or   |
-|                                   | evidence immediately:             |
+|                                   | or the customer is unable to      |
+|                                   | supply the additional information |
+|                                   | or evidence immediately, issue    |
+|                                   | request for information via >     |
+|                                   | Request Documents. For further    |
+|                                   | information, see Circumstance     |
+|                                   | Change Monitor (CCM).             |
 |                                   |                                   |
-|                                   | -   Issue a request for           |
-|                                   |     information via [] > Request  |
-|                                   |     Documents. See Circumstance   |
-|                                   |     Change Monitor                |
+|                                   | Raise an incident via Roxy and    |
+|                                   | issue a RFI, if:                  |
 |                                   |                                   |
-|                                   | If the online claim has not made  |
-|                                   | a request to the customer for     |
-|                                   | evidence and they do not meet any |
-|                                   | of the claim exceptions, raise an |
-|                                   | incident with Roxy and issue a    |
-|                                   | RFI.                              |
-|                                   |                                   |
-|                                   | Note: documents that have been    |
-|                                   | requested at Next Step in the     |
-|                                   | claim should not be requested     |
-|                                   | again.                            |
+|                                   | -   the online claim has not made |
+|                                   |     a request to the customer for |
+|                                   |     evidence, and                 |
+|                                   | -   they do not meet any of the   |
+|                                   |     claim exceptions              |
 +-----------------------------------+-----------------------------------+
-| 11                                | Referrals (if required) + Read    |
+| 17                                | Referrals (if required) + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If a specialist assessment is     |
@@ -559,12 +979,6 @@ Table 1
 |                                   | assessments or if care is         |
 |                                   | disputed or disagreed             |
 |                                   |                                   |
-|                                   | Unreasonable to live at home      |
-|                                   | (UTLAH) assessment. If a UTLAH    |
-|                                   | assessment is in progress, place  |
-|                                   | the claim on hold for 14 days     |
-|                                   | using the Status icon             |
-|                                   |                                   |
 |                                   | Australian residence assessment,  |
 |                                   | only if immigration data is       |
 |                                   | missing. See Referring            |
@@ -578,50 +992,35 @@ Table 1
 |                                   |                                   |
 |                                   | Shared care assessment            |
 |                                   |                                   |
+|                                   | Compensation Clearance request    |
+|                                   |                                   |
 |                                   | Other referrals may need to be    |
-|                                   | made in Customer First, including |
-|                                   | Compensation clearance            |
+|                                   | made in Customer First.           |
+|                                   |                                   |
+|                                   | Unreasonable to live at home      |
+|                                   | (UTLAH) assessments               |
+|                                   |                                   |
+|                                   | If UTLAH assessment is in         |
+|                                   | progress, place the claim on hold |
+|                                   | for 14 days pending the outcome   |
+|                                   | using the Status icon. Do not     |
+|                                   | reject the claim FSD (failed to   |
+|                                   | supply documents).                |
 |                                   |                                   |
 |                                   | After a referral is made, the     |
 |                                   | claim remains on hold until the   |
 |                                   | assessment has been completed.    |
 +-----------------------------------+-----------------------------------+
-| 12                                | Identity Confirmation + Read more |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | On the TS screen, check the       |
-|                                   | customer's Identity Status.       |
-|                                   |                                   |
-|                                   | If the Identity Status is:        |
-|                                   |                                   |
-|                                   | Confirmed, go to Step 13          |
-|                                   |                                   |
-|                                   | Not Confirmed, code alternative   |
-|                                   | proof of identity:                |
-|                                   |                                   |
-|                                   | -   Select the Not Confirmed link |
-|                                   |     to open a Customer Summary    |
-|                                   |     window                        |
-|                                   | -   Select Identity               |
-|                                   |     Confirmation > Identity       |
-|                                   |     Confirmation Dashboard from   |
-|                                   |     the Task Selector             |
-|                                   | -   Code the identity documents   |
-|                                   |     or consider applying          |
-|                                   |     alternative identity          |
-|                                   | -   Close the Customer Summary    |
-|                                   |     window to return to the claim |
-+-----------------------------------+-----------------------------------+
-| 13                                | Check for other activities + Read |
+| 18                                | Check for other activities + Read |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Some activities may stop          |
 |                                   | finalisation of YA claims or may  |
 |                                   | need action before finalising the |
-|                                   | JSP claim.                        |
+|                                   | claim.                            |
 |                                   |                                   |
-|                                   | To check, use Super Key to go to  |
-|                                   | the Activity List (AL) screen.    |
+|                                   | To check, go to the Activity List |
+|                                   | (AL) screen.                      |
 |                                   |                                   |
 |                                   | If there is another income        |
 |                                   | support payment pending, check    |
@@ -659,154 +1058,9 @@ Table 1
 |                                   |     family assistance. See the    |
 |                                   |     Resources page for standard   |
 |                                   |     text                          |
-+-----------------------------------+-----------------------------------+
-| 14                                | Check customer record + Read more |
-|                                   | ...                               |
 |                                   |                                   |
-|                                   | To prevent incorrect claim        |
-|                                   | assessment, there may be a need   |
-|                                   | to update the customer's record   |
-|                                   | outside the new claim.            |
-|                                   |                                   |
-|                                   | Updates may include correcting    |
-|                                   | the previous benefit status so it |
-|                                   | displays as CAN (cancel). This    |
-|                                   | will prevent incorrect arrears    |
-|                                   | when finalising the claim or end  |
-|                                   | dating student/apprenticeship     |
-|                                   | details.                          |
-|                                   |                                   |
-|                                   | If the benefit status is CNP      |
-|                                   | (cancel next payment):            |
-|                                   |                                   |
-|                                   | -   go to Customer Summary tile   |
-|                                   | -   enter the customer's CRN and  |
-|                                   |     select the customer           |
-|                                   | -   go to Payment Summary (PS)    |
-|                                   |     screen via Super Key          |
-|                                   | -   Key '9999' in the Number of   |
-|                                   |     months in past field, Execute |
-|                                   | -   note the date paid to plus 1  |
-|                                   | -   go to Benefit Action (BA)     |
-|                                   |     screen via Super Key and code |
-|                                   |     cancellation                  |
-|                                   |                                   |
-|                                   | If the customer was a full-time   |
-|                                   | student/apprentice before         |
-|                                   | claiming, or if current           |
-|                                   | education/apprenticeship details  |
-|                                   | display on their record, either:  |
-|                                   |                                   |
-|                                   | -   end date details for student  |
-|                                   |     payment                       |
-|                                   | -   end date details for          |
-|                                   |     Apprenticeship payment        |
-|                                   |                                   |
-|                                   | Pre-Claim vulnerable circumstance |
-|                                   |                                   |
-|                                   | Where the customer has pre-claim  |
-|                                   | vulnerable circumstances recorded |
-|                                   | within the 8 weeks prior to their |
-|                                   | intent to claim contact date the  |
-|                                   | system will automatically         |
-|                                   | calculate the start date.         |
-|                                   |                                   |
-|                                   | -   Where pre-claim vulnerable    |
-|                                   |     circumstances are not able to |
-|                                   |     be automatically determined   |
-|                                   |     by the system they can be     |
-|                                   |     manually added on the         |
-|                                   |     Pre-Claim Vulnerable          |
-|                                   |     Circumstance (PRECLM) screen  |
-|                                   |     in Process Direct or via the  |
-|                                   |     Pre-claim Circumstance Guided |
-|                                   |     procedure in Customer First   |
-|                                   | -   If the customer has a         |
-|                                   |     pre-claim circumstance        |
-|                                   |     displayed on PRECLM with a    |
-|                                   |     start date that is more than  |
-|                                   |     8 weeks ago and no end date,  |
-|                                   |     consider if that pre-claim    |
-|                                   |     vulnerable circumstance still |
-|                                   |     exists using available        |
-|                                   |     information. Where the        |
-|                                   |     vulnerable circumstance is no |
-|                                   |     longer active, consider end   |
-|                                   |     dating the vulnerable         |
-|                                   |     circumstance from the         |
-|                                   |     associated circumstance page  |
-|                                   |     and regenerate the claim.     |
-|                                   |     Some circumstances can remain |
-|                                   |     current on a customer's       |
-|                                   |     record indefinitely, such as  |
-|                                   |     an exemption from seeking     |
-|                                   |     child support due to family   |
-|                                   |     and domestic violence. In     |
-|                                   |     these cases, do not end date  |
-|                                   |     the exemption. Manually       |
-|                                   |     update the claim start date   |
-|                                   |     to the date of submission if  |
-|                                   |     required. See Step 2 in Table |
-|                                   |     1 in Intent to claim and      |
-|                                   |     vulnerable customers for more |
-|                                   |     information                   |
-|                                   |                                   |
-|                                   | After completing all updates,     |
-|                                   | select [] > Regenerate claim.     |
-+-----------------------------------+-----------------------------------+
-| 15                                | Relationship details + Read more  |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | These details must be             |
-|                                   | reviewed/updated before selecting |
-|                                   | Process.                          |
-|                                   |                                   |
-|                                   | On the TS screen:                 |
-|                                   |                                   |
-|                                   | Link Summary (LS) table shows     |
-|                                   | linked records, for example:      |
-|                                   |                                   |
-|                                   | -   Partner and any Relationship  |
-|                                   |     Qualifier Code                |
-|                                   | -   Children                      |
-|                                   | -   Parents for the Parental      |
-|                                   |     Income Test. This is display  |
-|                                   |     only. Updates are coded later |
-|                                   |     on the PIT Parent Selection   |
-|                                   |     (NPPS) screen                 |
-|                                   |                                   |
-|                                   | Marital Status (MS) table shows   |
-|                                   | the customer's relationship       |
-|                                   | details. For help with coding,    |
-|                                   | see Process Direct navigation,    |
-|                                   | common screens and functions      |
-|                                   |                                   |
-|                                   | Compare relationship details      |
-|                                   | provided in the claim with the    |
-|                                   | information already recorded in   |
-|                                   | the Marital Status (MS) table. If |
-|                                   | the customer has provided         |
-|                                   | different information about their |
-|                                   | relationships in the claim, to    |
-|                                   | the confirmed data in the MS      |
-|                                   | table, attempt to contact the     |
-|                                   | customer by phone to confirm the  |
-|                                   | correct relationship details and  |
-|                                   | dates. If phone contact is        |
-|                                   | unsuccessful, the relationship    |
-|                                   | details supplied in the claim     |
-|                                   | should be applied.                |
-|                                   |                                   |
-|                                   | YA customers must only be         |
-|                                   | partnered on the Marital Status   |
-|                                   | (MS) screen if both the customer  |
-|                                   | and their partner have been       |
-|                                   | assessed as independent. For more |
-|                                   | information, see Youth Allowance  |
-|                                   | (YA) or ABSTUDY customer becomes  |
-|                                   | partnered.                        |
-|                                   |                                   |
-|                                   | See Table 2.                      |
+|                                   | Once all relevant circumstances   |
+|                                   | have been actioned, see Table 2.  |
 +-----------------------------------+-----------------------------------+
 
 Process claim
@@ -825,8 +1079,8 @@ Table 2
 |                                   | Process. This will result in      |
 |                                   | errors.                           |
 |                                   |                                   |
-|                                   | The SAP Warnings and Messages     |
-|                                   | (SWE) screen will display.        |
+|                                   | The Errors (SWE) screen will      |
+|                                   | display.                          |
 |                                   |                                   |
 |                                   | Before coding any screens:        |
 |                                   |                                   |
@@ -838,8 +1092,8 @@ Table 2
 |                                   |     will display                  |
 |                                   | -   Return to the SWE screen to   |
 |                                   |     complete the claim coding by  |
-|                                   |     selecting the Back button or  |
-|                                   |     typing SWE in the Super Key   |
+|                                   |     selecting Back or typing SWE  |
+|                                   |     in the Super Key              |
 |                                   |                                   |
 |                                   | Message Log                       |
 |                                   |                                   |
@@ -874,164 +1128,101 @@ Table 2
 |                                   |     to go through the selected    |
 |                                   |     screens                       |
 |                                   |                                   |
-|                                   | Use Super Key to go to screens.   |
-|                                   | Key 'screens' to view a full      |
-|                                   | list.                             |
+|                                   | Key Screens in the Super Key to   |
+|                                   | view a full list.                 |
 |                                   |                                   |
-|                                   | See Resources for common screens  |
-|                                   | for YA claims.                    |
+|                                   | See the Resources page for common |
+|                                   | screens for YA claims.            |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Check eligibility and payability  |
-|                                   | for YA + Read more ...            |
+| 2                                 | Claim rejection + Read more ...   |
 |                                   |                                   |
-|                                   | Check the customer's eligibility  |
-|                                   | for YA (Job seeker).              |
+|                                   | Before rejecting a customer's     |
+|                                   | claim, check the customer is not  |
+|                                   | vulnerable, at risk, or in        |
+|                                   | crisis.                           |
 |                                   |                                   |
-|                                   | Does the customer meet the        |
-|                                   | payability provisions for YA, or  |
-|                                   | will they become payable within   |
-|                                   | 13 weeks based on each of the     |
-|                                   | following?                        |
+|                                   | As the customer has not met all   |
+|                                   | the qualification or payability   |
+|                                   | provisions, the claim will be     |
+|                                   | rejected for the most appropriate |
+|                                   | reason. Do not request further    |
+|                                   | information unless this will      |
+|                                   | change the decision.              |
 |                                   |                                   |
-|                                   | -   Personal/Partner Income Test. |
-|                                   |     For income limits, see Rates  |
-|                                   |     and Thresholds                |
-|                                   | -   Parental Income Test (PIT).   |
-|                                   |     If PIT reduces the rate to    |
-|                                   |     nil from the date of claim,   |
-|                                   |     check if YA would be payable  |
-|                                   |     from 1 January using base tax |
-|                                   |     year income. If so, contact   |
-|                                   |     the customer to confirm they  |
-|                                   |     wish to be assessed from 1    |
-|                                   |     January in the following      |
-|                                   |     calendar year                 |
-|                                   | -   Away from home and            |
-|                                   |     accommodation circumstances   |
-|                                   | -   Independence, including       |
-|                                   |     unreasonable to live at home  |
-|                                   |     (UTLAH)                       |
-|                                   | -   Portability provisions        |
-|                                   | -   Compensation preclusion       |
+|                                   | A streamlined rejection can only  |
+|                                   | be coded if:                      |
 |                                   |                                   |
-|                                   | Is the claim to be rejected?      |
+|                                   | -   the customer is in receipt of |
+|                                   |     precluding payment (CPP)      |
+|                                   | -   another payment is more       |
+|                                   |     appropriate (COP), or         |
+|                                   | -   the customer failed to supply |
+|                                   |     documents (FSD)               |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
-|                                   | -   No, go to Step 5              |
+|                                   | If the customer has failed to     |
+|                                   | supply their Tax File Number or   |
+|                                   | Proof of Identity (POI), do not   |
+|                                   | streamline reject FSD.            |
+|                                   |                                   |
+|                                   | To reject the claim, go to        |
+|                                   | Rejecting a claim for JobSeeker   |
+|                                   | Payment (JSP) or Youth Allowance  |
+|                                   | (YA) (jobseeker). Procedure ends  |
+|                                   | here.                             |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Check if in receipt of PLDP +     |
-|                                   | Read more ...                     |
+| 3                                 | Rent verification + Read more ... |
 |                                   |                                   |
-|                                   | Check if the customer has         |
-|                                   | received Pandemic Leave Disaster  |
-|                                   | Payment (PLDP) using the PLDP_PS  |
-|                                   | screen in Process Direct.         |
+|                                   | The date of event on the          |
+|                                   | Accommodation Details (ACS)       |
+|                                   | screen depends on the customers   |
+|                                   | circumstance and if the customer  |
+|                                   | or partner are receiving another  |
+|                                   | payment, such as Family Tax       |
+|                                   | Benefit. To determine the correct |
+|                                   | DOV, see Completing the           |
+|                                   | Accommodation Details (AC) screen |
+|                                   | and assessing Rent Assistance     |
+|                                   | (RA).                             |
 |                                   |                                   |
-|                                   | Has the customer received PLDP    |
-|                                   | for a period after they have      |
-|                                   | claimed YA (job seeker)?          |
+|                                   | If verification has been          |
+|                                   | provided, code the appropriate    |
+|                                   | verification code, see Processing |
+|                                   | proof of rent for the             |
+|                                   | Verification field on the         |
+|                                   | Accommodation Details (AC)        |
+|                                   | screen. If verification has not   |
+|                                   | been provided, determine if       |
+|                                   | verification of rent is needed.   |
 |                                   |                                   |
-|                                   | -   Yes, make sure the start date |
-|                                   |     of the YA (job seeker) new    |
-|                                   |     claim is DPT + 1 of PLDP      |
-|                                   | -   No, claim can be processed as |
-|                                   |     per business as usual         |
+|                                   | To confirm the customers sharing  |
+|                                   | details match the accommodation   |
+|                                   | details, go to the Sharing        |
+|                                   | Details (SDQ) screen.             |
 |                                   |                                   |
-|                                   | Note: customers are not entitled  |
-|                                   | to PLDP where YAL status is CUR,  |
-|                                   | ASS or CZR. See Processing        |
-|                                   | Pandemic Leave Disaster Payment   |
-|                                   | claims in Process Direct.         |
+|                                   | Rent Verification is not required |
+|                                   | if:                               |
 |                                   |                                   |
-|                                   | Is the claim to be rejected?      |
+|                                   | -   customer or partner already   |
+|                                   |     receives Rent Assistance with |
+|                                   |     Family Tax Benefit or another |
+|                                   |     income support payment        |
+|                                   | -   customer or partner already   |
+|                                   |     receives Rent Assistance with |
+|                                   |     another income support        |
+|                                   |     payment                       |
+|                                   | -   rent has previously been      |
+|                                   |     verified within the last 12   |
+|                                   |     months and                    |
+|                                   |     address/accommodation details |
+|                                   |     have not changed              |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
-|                                   | -   No, go to Step 5              |
-+-----------------------------------+-----------------------------------+
-| 4                                 | Claim rejection + Read more ...   |
-|                                   |                                   |
-|                                   | Is the customer getting a         |
-|                                   | precluding payment (CPP) or is    |
-|                                   | another payment more appropriate  |
-|                                   | (COP) or Failed to Supply         |
-|                                   | documents (FSD)?                  |
-|                                   |                                   |
-|                                   | -   Yes, code a streamlined       |
-|                                   |     rejection.                    |
-|                                   |     Note: if the customer has     |
-|                                   |     failed to supply their Tax    |
-|                                   |     File Number (TFN), Proof Of   |
-|                                   |     Identity (POI) or Parental    |
-|                                   |     income (PIA), do not          |
-|                                   |     streamline reject FSD. Use    |
-|                                   |     discretion when an automatic  |
-|                                   |     rejection may be the most     |
-|                                   |     appropriate rejection option. |
-|                                   |     See Rejecting a claim for     |
-|                                   |     JobSeeker Payment or Youth    |
-|                                   |     Allowance                     |
-|                                   |     Procedure ends here           |
-|                                   | -   No, code the claim. If the    |
-|                                   |     system does not reject the    |
-|                                   |     claim at the Entitlement      |
-|                                   |     (ELD) screen, code a manual   |
-|                                   |     rejection on the Benefit      |
-|                                   |     Action (BA) screen. Go to     |
-|                                   |     Step 4                        |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Rent verification + Read more ... |
-|                                   |                                   |
-|                                   | The start date on the             |
-|                                   | Accommodation History (ACS)       |
-|                                   | screen must align with the claim  |
-|                                   | start date except where the       |
-|                                   | customer or partner are currently |
-|                                   | in receipt of rent assistance     |
-|                                   | with another payment e.g. Family  |
-|                                   | Tax Benefit.                      |
-|                                   |                                   |
-|                                   | If the customer is renting:       |
-|                                   |                                   |
-|                                   | -   Select Edit icon next to the  |
-|                                   |     data line with the same event |
-|                                   |     date as the claim start date  |
-|                                   | -   If verification has been      |
-|                                   |     provided, code the            |
-|                                   |     appropriate verification      |
-|                                   |     code, see Processing proof of |
-|                                   |     rent for the Verification     |
-|                                   |     field on the Accommodation    |
-|                                   |     Details (AC) screen           |
-|                                   | -   If verification has not been  |
-|                                   |     provided, see Step 1 in Table |
-|                                   |     1 of Determining proof of     |
-|                                   |     rent for the Verification     |
-|                                   |     field on the Accommodation    |
-|                                   |     Details (AC) screen           |
-|                                   | -   Save to return to the ACS     |
-|                                   |     screen                        |
-|                                   |                                   |
-|                                   | If the customer is sharing:       |
-|                                   |                                   |
-|                                   | -   Check the Sharing Details     |
-|                                   |     (SDQ) screen matches the ACS  |
-|                                   |     screen. To check, go to the   |
-|                                   |     SDQ screen via Super Key      |
-|                                   |                                   |
-|                                   | Note: if the customer or partner  |
-|                                   | already receives Rent Assistance  |
-|                                   | with Family Tax Benefit or        |
-|                                   | another income support payment,   |
-|                                   | rent has previously been verified |
-|                                   | and address/accommodation details |
-|                                   | have not changed, no action is    |
-|                                   | needed. See Step 12 in Table 1 of |
+|                                   | For all other circumstances, see  |
 |                                   | Determining proof of rent for the |
 |                                   | Verification field on the         |
 |                                   | Accommodation Details (AC)        |
 |                                   | screen.                           |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Bank account details for          |
+| 4                                 | Bank account details for          |
 |                                   | customers under 18 + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
@@ -1063,10 +1254,10 @@ Table 2
 |                                   | Has the customer provided         |
 |                                   | appropriate bank account details? |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 7             |
+|                                   | -   Yes, go to Step 5             |
 |                                   | -   No, see Payment Destination   |
 +-----------------------------------+-----------------------------------+
-| 7                                 | SVS, MIS, SIS, SVDI screen + Read |
+| 5                                 | SVS, MIS, SIS, SVDI screen + Read |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Savings Bank Accounts (SVS),      |
@@ -1088,17 +1279,17 @@ Table 2
 |                                   | Coding income and assets for      |
 |                                   | Centrelink payments and services. |
 +-----------------------------------+-----------------------------------+
-| 8                                 | OAS screen + Read more ...        |
+| 6                                 | OAS screen + Read more ...        |
 |                                   |                                   |
 |                                   | Other Assets Details (OAS) screen |
 |                                   | is pre-filled from the online     |
 |                                   | claim.                            |
 |                                   |                                   |
 |                                   | For further information, see      |
-|                                   | Assessing assets at their net     |
-|                                   | market value.                     |
+|                                   | Coding income and assets for      |
+|                                   | Centrelink payments and services. |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Earnings + Read more ...          |
+| 7                                 | Earnings + Read more ...          |
 |                                   |                                   |
 |                                   | Employment income: Employment     |
 |                                   | Income Summary (EANS) screen is   |
@@ -1122,8 +1313,8 @@ Table 2
 |                                   | date before the claim was         |
 |                                   | submitted.                        |
 |                                   |                                   |
-|                                   | To amend details, select the Edit |
-|                                   | icon. For help, see Recording and |
+|                                   | To amend details, select Edit.    |
+|                                   | For help, see Recording and       |
 |                                   | correcting employment income      |
 |                                   | details.                          |
 |                                   |                                   |
@@ -1141,12 +1332,12 @@ Table 2
 |                                   | will preclude payment for the     |
 |                                   | first entitlement period:         |
 |                                   |                                   |
-|                                   | -   Go to the Payment Delivery    |
+|                                   | -   go to the Payment Delivery    |
 |                                   |     Summary (RAD) screen and find |
 |                                   |     out the customer's            |
 |                                   |     entitlement period end date,  |
 |                                   |     then                          |
-|                                   | -   Go to the Start Date          |
+|                                   | -   go to the Start Date          |
 |                                   |     Calculator (NDC) screen.      |
 |                                   |     Update the Manual Start Date: |
 |                                   |     with the date the customer    |
@@ -1158,7 +1349,7 @@ Table 2
 |                                   |     comments field on why the     |
 |                                   |     manual start date was         |
 |                                   |     changed. Explain any update   |
-|                                   |     in the claim finalisation DOC |
+|                                   |     in the Claim Finalisation DOC |
 |                                   |                                   |
 |                                   | Partner details                   |
 |                                   |                                   |
@@ -1167,35 +1358,35 @@ Table 2
 |                                   | record.                           |
 |                                   |                                   |
 |                                   | To view and update partner income |
-|                                   | and assets, select the [] icon    |
-|                                   | and select the partner from the   |
-|                                   | menu slider.                      |
+|                                   | and assets, select [Relations     |
+|                                   | menu] and select the partner from |
+|                                   | the menu slider.                  |
 |                                   |                                   |
 |                                   | Return to the customer's record   |
-|                                   | via the [] icon.                  |
+|                                   | via [Relations menu].             |
 +-----------------------------------+-----------------------------------+
-| 10                                | Waiting periods + Read more ...   |
+| 8                                 | Waiting periods + Read more ...   |
 |                                   |                                   |
+|                                   | -   Ordinary Waiting Period (OWP) |
 |                                   | -   Income Maintenance Period     |
-|                                   |     (IMP)                         |
-|                                   | -   Compensation Preclusion       |
-|                                   |     Period                        |
+|                                   |     (IMP).The Income Maintenance  |
+|                                   |     Period Summary (IMPS) screen  |
+|                                   |     is pre-filled with customer   |
+|                                   |     claim responses. Where these  |
+|                                   |     differ from the Employment    |
+|                                   |     Separation Certificate (SU1)  |
+|                                   |     or equivalent, staff must     |
+|                                   |     code the details from the SU1 |
+|                                   |     or equivalent                 |
 |                                   | -   Liquid Assets Waiting Period  |
 |                                   | -   Seasonal Worker Preclusion    |
 |                                   |     Period                        |
 |                                   | -   Newly Arrived Resident's      |
 |                                   |     Waiting Period (NARWP)        |
-|                                   | -   Ordinary Waiting Period (OWP) |
-|                                   | -   Note: do not waive the OWP    |
-|                                   |     where the system has not      |
-|                                   |     automatically applied the     |
-|                                   |     waiver to recipients of the   |
-|                                   |     CDP within 13 weeks of        |
-|                                   |     lodging an ISP claim. In this |
-|                                   |     case the error is to be       |
-|                                   |     reported via mySupport. The   |
-|                                   |     Resources page contains a     |
-|                                   |     link to mySupport.            |
+|                                   | -   Compensation Preclusion       |
+|                                   |     Period                        |
+|                                   | -   Unemployment due to a         |
+|                                   |     voluntary act or misconduct   |
 |                                   |                                   |
 |                                   | For assessment of waiting         |
 |                                   | periods, see:                     |
@@ -1205,7 +1396,7 @@ Table 2
 |                                   | -   Unemployment due to a         |
 |                                   |     voluntary act or misconduct   |
 +-----------------------------------+-----------------------------------+
-| 11                                | Check NES screen coding + Read    |
+| 9                                 | Check NES screen coding + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Go to the Newstart Education      |
@@ -1236,11 +1427,21 @@ Table 2
 |                                   | (Certificate III or higher)       |
 |                                   | qualification.                    |
 |                                   |                                   |
-|                                   | Failure to do this may result in  |
-|                                   | an incorrect grant date or        |
-|                                   | rejection of the claim.           |
+|                                   | If the claim is assessed and the  |
+|                                   | user returns to the claim from    |
+|                                   | the Entitlement (ELD) screen, the |
+|                                   | NES coding may be lost. This must |
+|                                   | be checked and re-coded if        |
+|                                   | required.                         |
+|                                   |                                   |
+|                                   | Failure to do this may result in: |
+|                                   |                                   |
+|                                   | -   payment incorrectly granted   |
+|                                   |     as a student                  |
+|                                   | -   an incorrect grant date, or   |
+|                                   | -   rejection of the claim        |
 +-----------------------------------+-----------------------------------+
-| 12                                | NDC screen + Read more ...        |
+| 10                                | NDC screen + Read more ...        |
 |                                   |                                   |
 |                                   | The Date of Commencement (NDC)    |
 |                                   | screen is prefilled with          |
@@ -1273,12 +1474,131 @@ Table 2
 |                                   | calculation is required is if the |
 |                                   | customer has a LAWP within a      |
 |                                   | Private Company or Private Trust. |
+|                                   | See Liquid Assets Waiting Period  |
+|                                   | (LAWP).                           |
+|                                   |                                   |
+|                                   | Start date field                  |
+|                                   |                                   |
+|                                   | The system automatically          |
+|                                   | calculates a start date for       |
+|                                   | eligible claims. These system     |
+|                                   | calculations are not always       |
+|                                   | correct, therefore it is          |
+|                                   | important to confirm the start    |
+|                                   | date.                             |
+|                                   |                                   |
+|                                   | For example, a customer could     |
+|                                   | reclaim a payment after having:   |
+|                                   |                                   |
+|                                   | -   a backdated cancellation of   |
+|                                   |     the payment, and              |
+|                                   | -   a debt raised for the period  |
+|                                   |     they were not eligible        |
+|                                   |                                   |
+|                                   | To calculate the start date of    |
+|                                   | payment, go to Step 11.           |
 +-----------------------------------+-----------------------------------+
-| 13                                | Tax File Number (TFN) + Read more |
+| 11                                | Calculate the start date for      |
+|                                   | payment + Read more ...           |
+|                                   |                                   |
+|                                   | For a new claim where the         |
+|                                   | customer was not previously on a  |
+|                                   | payment the system will           |
+|                                   | automatically calculate the start |
+|                                   | date.                             |
+|                                   |                                   |
+|                                   | Discretion is required when       |
+|                                   | changing the system calculated    |
+|                                   | start date.                       |
+|                                   |                                   |
+|                                   | The system will apply the         |
+|                                   | backdating rule and calculate the |
+|                                   | date of commencement as Date Paid |
+|                                   | To (DPT)+1, even if the date of   |
+|                                   | the claim is within 14 days of    |
+|                                   | DPT.                              |
+|                                   |                                   |
+|                                   | When the cancellation date is     |
+|                                   | outside 14 days of the claim      |
+|                                   | date, do not apply DPT+1. The     |
+|                                   | correct start date for these      |
+|                                   | claims is the date the customer   |
+|                                   | reclaims payment.                 |
+|                                   |                                   |
+|                                   | To correct the start date where   |
+|                                   | system has applied an incorrect   |
+|                                   | date                              |
+|                                   |                                   |
+|                                   | Where the correct date should be  |
+|                                   | after the DPT+1, code the correct |
+|                                   | start date in the Manual Start    |
+|                                   | Date field on the NDC screen      |
+|                                   |                                   |
+|                                   | Where the start should be before  |
+|                                   | the DPT+1 check the following:    |
+|                                   |                                   |
+|                                   | -   will the customer be paid for |
+|                                   |     a period in which they were   |
+|                                   |     previously receiving a        |
+|                                   |     payment                       |
+|                                   | -   was the previous payment      |
+|                                   |     cancelled as the customer was |
+|                                   |     not eligible, resulting in a  |
+|                                   |     debt being raised             |
+|                                   |                                   |
+|                                   | Once checks are completed, apply  |
+|                                   | the following to correct the      |
+|                                   | date:                             |
+|                                   |                                   |
+|                                   | do not code a Manual Start Date   |
+|                                   | field on the NDC screen. This     |
+|                                   | will cause the start date to      |
+|                                   | overlap with the previous payment |
+|                                   | dates, which may:                 |
+|                                   |                                   |
+|                                   | -   prevent the claim from        |
+|                                   |     granting properly, or         |
+|                                   | -   lead to a data corruption on  |
+|                                   |     the record                    |
+|                                   |                                   |
+|                                   | pay the days the customer was     |
+|                                   | entitled to prior to the DPT+1,   |
+|                                   | as a one-off payment              |
+|                                   |                                   |
+|                                   | code the DPT+1 date in the Manual |
+|                                   | Start Date field on the NDC       |
+|                                   | screen, and                       |
+|                                   |                                   |
+|                                   | record a DOC detailing the steps  |
+|                                   | taken and include the reason for  |
+|                                   | the start date determination      |
+|                                   |                                   |
+|                                   | Early Claims                      |
+|                                   |                                   |
+|                                   | For early claims, the date in the |
+|                                   | DLW/DCS field will be after the   |
+|                                   | date of receipt/submission of the |
+|                                   | claim.                            |
+|                                   |                                   |
+|                                   | In some cases, the start date may |
+|                                   | not be automatically determined   |
+|                                   | due to the DLW being prior to the |
+|                                   | DOR.                              |
+|                                   |                                   |
+|                                   | To code the start date in these   |
+|                                   | circumstances:                    |
+|                                   |                                   |
+|                                   | -   check the automatically       |
+|                                   |     calculated start date on NDC  |
+|                                   | -   consider any waiting periods  |
+|                                   | -   if required, code the Manual  |
+|                                   |     Start Date on the NDC screen  |
++-----------------------------------+-----------------------------------+
+| 12                                | Tax File Number (TFN) + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Before granting YA, customers     |
-|                                   | need to supply a valid TFN. A TFN |
+|                                   | must supply a valid TFN. A TFN    |
 |                                   | exemption may apply in limited    |
 |                                   | circumstances.                    |
 |                                   |                                   |
@@ -1298,59 +1618,57 @@ Table 2
 |                                   | Has the customer provided a valid |
 |                                   | TFN?                              |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 14            |
+|                                   | -   Yes, go to Step 13            |
 |                                   | -   No, see Requesting a Tax File |
 |                                   |     Number (TFN)                  |
 +-----------------------------------+-----------------------------------+
-| 14                                | Principal carers + Read more ...  |
+| 13                                | Employment/Education History      |
+|                                   | (NEEH) screen + Read more ...     |
 |                                   |                                   |
-|                                   | A principal carer is a person     |
-|                                   | with primary care of a dependent  |
-|                                   | child under 16 years. A principal |
-|                                   | carer assessment must be made if  |
-|                                   | one or both customers caring for  |
-|                                   | a child are claiming income       |
-|                                   | support as a principal carer.     |
+|                                   | Update the NEEH screen if the     |
+|                                   | customer has a job or study to    |
+|                                   | return to (not including          |
+|                                   | self-employment) and has a        |
+|                                   | temporary incapacity.             |
 |                                   |                                   |
-|                                   | A step parent may be a principal  |
-|                                   | carer if they live as a member of |
-|                                   | a couple with the parent of the   |
-|                                   | child.                            |
+|                                   | To add new details on the NEEH    |
+|                                   | screen, select Add on the Create  |
+|                                   | Employer/Education Institution    |
+|                                   | Details screen. Update the        |
+|                                   | following fields:                 |
 |                                   |                                   |
-|                                   | A principal carer may be eligible |
-|                                   | for Parenting Payment (PP) as a   |
-|                                   | more appropriate payment.         |
+|                                   | -   Event date - key the          |
+|                                   |     applicable date               |
+|                                   | -   Employer/Education            |
+|                                   |     Institution Name              |
+|                                   | -   Employer/Education Verified - |
+|                                   |     select Y or N                 |
+|                                   | -   Employer/Education Status -   |
+|                                   |     select the appropriate status |
 |                                   |                                   |
-|                                   | If member of a couple with a      |
-|                                   | dependent child in care           |
+|                                   | To code the medical evidence,     |
+|                                   | see:                              |
 |                                   |                                   |
-|                                   | over the age of 6 years           |
+|                                   | -   Assessing and coding medical  |
+|                                   |     evidence for temporary        |
+|                                   |     incapacity exemptions         |
+|                                   | -   Customers claiming JobSeeker  |
+|                                   |     Payment (JSP)/Youth Allowance |
+|                                   |     (YA) (Incapacitated)          |
++-----------------------------------+-----------------------------------+
+| 14                                | Mutual obligation requirement     |
+|                                   | exemptions + Read more ...        |
 |                                   |                                   |
-|                                   | -   Only one member of a couple   |
-|                                   |     can be a principal carer at   |
-|                                   |     one time                      |
-|                                   | -   If both claim or get a social |
-|                                   |     security payment based on or  |
-|                                   |     affected by principal carer   |
-|                                   |     status, they must be advised  |
-|                                   |     in writing who the principal  |
-|                                   |     carer is                      |
+|                                   | In some circumstances, if the     |
+|                                   | jobseeker is unable to meet their |
+|                                   | mutual obligation requirements an |
+|                                   | exemption can be applied.         |
 |                                   |                                   |
-|                                   | under the age of 6 years          |
-|                                   |                                   |
-|                                   | -   Only one member of a couple   |
-|                                   |     can be a principal carer at   |
-|                                   |     one time                      |
-|                                   | -   Continue to process the       |
-|                                   |     claim. Once the claim is      |
-|                                   |     finalised, see Child          |
-|                                   |     Override/Claim (CHOC) screen, |
-|                                   |     Table 3 for coding of the     |
-|                                   |     Principal Carer (PCCD) and    |
-|                                   |     CHOC screens                  |
-|                                   |                                   |
-|                                   | See Principal carer of a          |
-|                                   | dependent child.                  |
+|                                   | If the customer supplies evidence |
+|                                   | to support a mutual obligation    |
+|                                   | exemption, an assessment will be  |
+|                                   | required. See Mutual obligation   |
+|                                   | requirements exemptions.          |
 +-----------------------------------+-----------------------------------+
 | 15                                | Parental income + Read more ...   |
 |                                   |                                   |
@@ -1365,11 +1683,11 @@ Table 2
 |                                   | Updates to parental links are     |
 |                                   | coded on the PIT Parent Selection |
 |                                   | (NPPS) screen. For help, see      |
-|                                   | Linking parent records with       |
-|                                   | dependent student, Australian     |
-|                                   | Apprentice and job seeker         |
-|                                   | recipients or claimants -         |
-|                                   | Parental Income Test (PIT).       |
+|                                   | Creating, updating and ending     |
+|                                   | Parental Income test (PIT) links  |
+|                                   | with dependent student,           |
+|                                   | Australian Apprentice and job     |
+|                                   | seeker recipients or claimants.   |
 |                                   |                                   |
 |                                   | Parental income information is    |
 |                                   | coded on the Parental Income      |
@@ -1402,27 +1720,134 @@ Table 2
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   Living at home, see Step 1 in |
+|                                   | -   living at home, see Step 1 in |
 |                                   |     Table 3                       |
-|                                   | -   Living away from home to work |
+|                                   | -   living away from home to work |
 |                                   |     or study, assess entitlement  |
 |                                   |     to the away from home rate of |
 |                                   |     YA                            |
 |                                   |                                   |
 |                                   | No,                               |
 |                                   |                                   |
-|                                   | -   Assess independence for YA if |
+|                                   | -   assess independence for YA if |
 |                                   |     the customer indicated in     |
 |                                   |     their claim they want to be   |
 |                                   |     assessed as independent       |
-|                                   | -   A decision to grant or reject |
+|                                   | -   a decision to grant or reject |
 |                                   |     UTLAH should only be made by  |
 |                                   |     trained staff with the        |
 |                                   |     delegation to approve         |
 |                                   |     independence under UTLAH      |
 |                                   |     criteria                      |
+|                                   |                                   |
+|                                   | Note: if a UTLAH assessment is in |
+|                                   | progress, do not reject the claim |
+|                                   | FSD (failed to supply documents). |
+|                                   | Place the claim on hold pending   |
+|                                   | the outcome of the UTLAH          |
+|                                   | assessment.                       |
 +-----------------------------------+-----------------------------------+
-| 17                                | Miscellaneous Circumstance        |
+| 17                                | Principal carers and shared       |
+|                                   | care + Read more ...              |
+|                                   |                                   |
+|                                   | A shared care assessment should   |
+|                                   | be completed in all cases, even   |
+|                                   | if only one person is claiming    |
+|                                   | income support or if each person  |
+|                                   | has another qualifying child      |
+|                                   | solely in their care.             |
+|                                   |                                   |
+|                                   | The shared care assessment will   |
+|                                   | determine:                        |
+|                                   |                                   |
+|                                   | -   the principal carer status    |
+|                                   | -   customer's entitlement        |
+|                                   | -   rate and income test applied  |
+|                                   |     in some circumstances, to the |
+|                                   |     ongoing entitlements for      |
+|                                   |     single principal carers       |
+|                                   |                                   |
+|                                   | Customers with shared care        |
+|                                   | arrangements who are not the      |
+|                                   | principal carer may still be      |
+|                                   | entitled to a 'with child' rate   |
+|                                   | of payment for JSP, YA and        |
+|                                   | Special Benefit (SpB).            |
+|                                   |                                   |
+|                                   | If a change of care has occurred  |
+|                                   | or a determination of care is     |
+|                                   | required, see Notification and    |
+|                                   | assessment of shared care         |
+|                                   | arrangements for Family Tax       |
+|                                   | Benefit (FTB).                    |
+|                                   |                                   |
+|                                   | For claims with shared care where |
+|                                   | the determination has not been    |
+|                                   | confirmed, the claim must be      |
+|                                   | placed on hold.                   |
+|                                   |                                   |
+|                                   | A principal carer is a person     |
+|                                   | with primary care of a dependent  |
+|                                   | child under 16 years. A principal |
+|                                   | carer assessment must be made if  |
+|                                   | one or both customers caring for  |
+|                                   | a child are claiming income       |
+|                                   | support as a principal carer.     |
+|                                   |                                   |
+|                                   | A step parent may be a principal  |
+|                                   | carer if they live as a member of |
+|                                   | a couple with the parent of the   |
+|                                   | child.                            |
+|                                   |                                   |
+|                                   | The system does not always        |
+|                                   | automatically cease the Principal |
+|                                   | Carer status on the customer's    |
+|                                   | file. If the file shows there are |
+|                                   | no children under the age of 16   |
+|                                   | in the customer's care, check     |
+|                                   | that the Principal Carer status   |
+|                                   | has been ended on the Principal   |
+|                                   | Carer Circumstance Details (PCCD) |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | Member of a couple with a         |
+|                                   | dependent child in care:          |
+|                                   |                                   |
+|                                   | over the age of 6 years           |
+|                                   |                                   |
+|                                   | -   Only one member of a couple   |
+|                                   |     can be a principal carer at   |
+|                                   |     one time                      |
+|                                   | -   If both claim or get a social |
+|                                   |     security payment based on or  |
+|                                   |     affected by principal carer   |
+|                                   |     status, they must be advised  |
+|                                   |     in writing who the principal  |
+|                                   |     carer is                      |
+|                                   |                                   |
+|                                   | under the age of 6 years          |
+|                                   |                                   |
+|                                   | -   Only one member of a couple   |
+|                                   |     can be a principal carer at   |
+|                                   |     one time                      |
+|                                   | -   Continue to process the       |
+|                                   |     claim. Once the claim is      |
+|                                   |     finalised, see Child          |
+|                                   |     Override/Claim (CHOC) screen, |
+|                                   |     Step 3 for coding of the PCCD |
+|                                   |     and CHOC screens              |
+|                                   |                                   |
+|                                   | Is the customer a principal carer |
+|                                   | or shared care assessment         |
+|                                   | completed?                        |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 18            |
+|                                   | -   No, go to Step 19             |
+|                                   |                                   |
+|                                   | See Principal carer of a          |
+|                                   | dependent child.                  |
++-----------------------------------+-----------------------------------+
+| 18                                | Miscellaneous Circumstance        |
 |                                   | Details (NMIS) screen + Read more |
 |                                   | ...                               |
 |                                   |                                   |
@@ -1437,14 +1862,14 @@ Table 2
 |                                   | Not returning to study            |
 |                                   |                                   |
 |                                   | -   To add new details, select    |
-|                                   |     [Adding a new line]:          |
+|                                   |     Add:                          |
 |                                   | -   On the Create Miscellaneous   |
 |                                   |     Details screen:               |
 |                                   |     Enter the Event Date          |
 |                                   |     Enter the Current             |
 |                                   |     Circumstances, Not Returning  |
 |                                   |     to Study (NRS)                |
-|                                   | -   Save                          |
+|                                   | -   Select Save                   |
 |                                   |                                   |
 |                                   | Expectant Person, see Exempting a |
 |                                   | job seeker from their mutual      |
@@ -1452,108 +1877,13 @@ Table 2
 |                                   | are an expectant customer         |
 |                                   |                                   |
 |                                   | -   To add new details, select    |
-|                                   |     [Adding a new line]:          |
+|                                   |     Add:                          |
 |                                   | -   On the Create Miscellaneous   |
 |                                   |     Details screen:               |
 |                                   |     Enter the Event Date          |
 |                                   |     Expected Date of Confinement  |
 |                                   |     Pregnancy Verified            |
-|                                   | -   Save                          |
-+-----------------------------------+-----------------------------------+
-| 18                                | Follow up - PLDP + Read more ...  |
-|                                   |                                   |
-|                                   | If you have identified the        |
-|                                   | customer was granted PLDP within  |
-|                                   | the last 12 months but their      |
-|                                   | Youth Allowance (job seeker)      |
-|                                   | claim does not include reported   |
-|                                   | employment within the past 12     |
-|                                   | months OR employment income, OR a |
-|                                   | separation certificate in their   |
-|                                   | claim, ensure you make contact to |
-|                                   | discuss this with the customer    |
-|                                   | directly. Customers must have     |
-|                                   | lost at least 8 hours or a full   |
-|                                   | day's work to be eligible for     |
-|                                   | PLDP.                             |
-|                                   |                                   |
-|                                   | Discuss with the customer the     |
-|                                   | mismatch between their PLDP claim |
-|                                   | and the evidence provided on      |
-|                                   | their Youth Allowance (job        |
-|                                   | seeker) claim. You may cover the  |
-|                                   | following points:                 |
-|                                   |                                   |
-|                                   | -   Have you worked in paid       |
-|                                   |     employment in the last 12     |
-|                                   |     months? If so, this must be   |
-|                                   |     declared for this claim and   |
-|                                   |     you may be required to        |
-|                                   |     provide evidence, such as an  |
-|                                   |     Employment Separation         |
-|                                   |     Certificate                   |
-|                                   | -   Customers must have lost at   |
-|                                   |     least 8 hours or a full day's |
-|                                   |     work to be eligible for PLDP. |
-|                                   |     Have you lost at least 8      |
-|                                   |     hours or a full day's work?   |
-|                                   |                                   |
-|                                   | If the customer indicates they    |
-|                                   | have not undertaken paid          |
-|                                   | employment in the last 12 months, |
-|                                   | the Youth Allowance (job seeker)  |
-|                                   | can proceed, however you may note |
-|                                   | to the customer that this may     |
-|                                   | identify payment of the PLDP as   |
-|                                   | incorrect. If appropriate, you    |
-|                                   | can initiate a review of the      |
-|                                   | decision to pay PLDP.             |
-|                                   |                                   |
-|                                   | -   If the customer indicates     |
-|                                   |     they may have claimed PLDP    |
-|                                   |     fraudulently, or              |
-|                                   |     intentionally misrepresented  |
-|                                   |     their circumstances, you can  |
-|                                   |     report potential fraud. It is |
-|                                   |     important you do not refer to |
-|                                   |     'fraud' in your conversation  |
-|                                   |     with the customer             |
-|                                   | -   If the customer indicates     |
-|                                   |     they may have been            |
-|                                   |     incorrectly paid PLDP, but    |
-|                                   |     not through misrepresentation |
-|                                   |     of their circumstances or     |
-|                                   |     fraud, you can note this on   |
-|                                   |     the customer's record, and    |
-|                                   |     flag for potential            |
-|                                   |     overpayment. See Table 5 in   |
-|                                   |     Processing Pandemic Leave     |
-|                                   |     Disaster Payment Claims in    |
-|                                   |     Process Direct for            |
-|                                   |     instructions                  |
-|                                   |                                   |
-|                                   | If a customer indicates they have |
-|                                   | undertaken paid employment in the |
-|                                   | last 12 months (and therefore     |
-|                                   | PLDP was legitimate), but they    |
-|                                   | have not declared work in their   |
-|                                   | ISP claim, staff should inform    |
-|                                   | the customer, evidence of this    |
-|                                   | employment will be required to    |
-|                                   | appropriately assess their ISP    |
-|                                   | claim, see Requesting information |
-|                                   | (CLK).                            |
-|                                   |                                   |
-|                                   | Rejecting the customer's claim or |
-|                                   | requesting further evidence of    |
-|                                   | employment/separation should only |
-|                                   | be undertaken once you have       |
-|                                   | discussed the customer's          |
-|                                   | circumstances with them and you   |
-|                                   | have ensured they have correctly  |
-|                                   | declared their information on     |
-|                                   | both PLDP and their income        |
-|                                   | support claim.                    |
+|                                   | -   Select Save                   |
 +-----------------------------------+-----------------------------------+
 | 19                                | Start or cease tax deductions +   |
 |                                   | Read more ...                     |
@@ -1578,6 +1908,45 @@ Table 2
 |                                   |                                   |
 |                                   | See Step 1 in Table 3.            |
 +-----------------------------------+-----------------------------------+
+| 20                                | YA Provisional claims + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Customers may be eligible for YA  |
+|                                   | Provisional when they have an     |
+|                                   | outstanding Disability (DSP)      |
+|                                   | claim. Customers who meet this    |
+|                                   | criteria are exempt from mutual   |
+|                                   | obligation requirements for the   |
+|                                   | period during which the DSP claim |
+|                                   | is being determined (13 weeks).   |
+|                                   |                                   |
+|                                   | If the customer has an            |
+|                                   | outstanding DSP claim code the    |
+|                                   | DSP exemption:                    |
+|                                   |                                   |
+|                                   | on Activity and Exemption Summary |
+|                                   | (AEX) screen                      |
+|                                   |                                   |
+|                                   | select Add On the Create manual   |
+|                                   | activity/exemption screen, and    |
+|                                   | update:                           |
+|                                   |                                   |
+|                                   | -   Activity: DSP - Claiming DSP  |
+|                                   | -   Start Date: the date the DSP  |
+|                                   |     claim was lodged, from the    |
+|                                   |     Review of Claim or the DSP    |
+|                                   |     Progress of Claim DOC         |
+|                                   | -   End Date: the date 13 weeks   |
+|                                   |     from the start date           |
+|                                   | -   Activity Type: DSP - Claiming |
+|                                   |     DSP                           |
+|                                   |                                   |
+|                                   | See JobSeeker Payment (JSP) and   |
+|                                   | Youth Allowance (YA)              |
+|                                   | (Provisional).                    |
+|                                   |                                   |
+|                                   | Go to Table 3.                    |
++-----------------------------------+-----------------------------------+
 
 Assess and finalise claim
 
@@ -1586,7 +1955,16 @@ Table 3
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Assess claim - ELD screen + Read  |
+| 1                                 | Assess and finalise claim + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Is the customer aged 16 years or  |
+|                                   | over?                             |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, go to Step 5              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Assess claim - ELD screen + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | The Entitlement (ELD) screen      |
@@ -1597,10 +1975,10 @@ Table 3
 |                                   | Assess.                           |
 |                                   |                                   |
 |                                   | Resolve any errors that may       |
-|                                   | present on the SAP Warnings and   |
-|                                   | Messages (SWE) screen. For help,  |
-|                                   | see Using Digital Assistant Roxy  |
-|                                   | in Process Direct.                |
+|                                   | present on the Errors (SWE)       |
+|                                   | screen. For help, see Using       |
+|                                   | Digital Assistant Roxy in Process |
+|                                   | Direct.                           |
 |                                   |                                   |
 |                                   | After fixing any errors, select   |
 |                                   | Assess again to go the            |
@@ -1610,8 +1988,8 @@ Table 3
 |                                   | outcome of the claim and payment  |
 |                                   | date.                             |
 |                                   |                                   |
-|                                   | Use the Super Key to check rate   |
-|                                   | details on screens such as:       |
+|                                   | Check rate details on screens     |
+|                                   | such as:                          |
 |                                   |                                   |
 |                                   | -   Payment Summary (PS) - check  |
 |                                   |     payments are starting from    |
@@ -1633,30 +2011,48 @@ Table 3
 |                                   |     investigation actions and     |
 |                                   |     stop advices                  |
 |                                   |                                   |
-|                                   | Is the claim outcome correct?     |
+|                                   | Ensure arrears are not paid for a |
+|                                   | period of incarceration. These    |
+|                                   | may require manual adjustment.    |
+|                                   | See Payment of arrears after      |
+|                                   | reassessment and stopping a       |
+|                                   | payment.                          |
 |                                   |                                   |
-|                                   | Yes, go to Step 3                 |
+|                                   | If the claim is assessed and the  |
+|                                   | user returns to the claim from    |
+|                                   | the ELD screen, check the NES     |
+|                                   | screen has retained the Student   |
+|                                   | Status provisional entry of NST - |
+|                                   | Not a Student. This must be       |
+|                                   | re-coded if required.             |
 |                                   |                                   |
-|                                   | No:                               |
+|                                   | After all assessment checks are   |
+|                                   | completed and the claim outcome   |
+|                                   | is:                               |
 |                                   |                                   |
-|                                   | -   If rejecting AoS (Assurance   |
-|                                   |     of Support in force for       |
-|                                   |     customer), see Assuree makes  |
-|                                   |     a claim for an Assurance of   |
-|                                   |     Support (AoS) recoverable     |
-|                                   |     payment Step 3 in Table 3     |
-|                                   | -   if rejecting CPP due to the   |
-|                                   |     customer being in receipt of  |
-|                                   |     Self-Employment Allowance, go |
-|                                   |     to Step 2                     |
-|                                   | -   granting PSA, see Youth       |
-|                                   |     Allowance at pending status   |
-|                                   |     (YAL/PSA) and dependent       |
-|                                   |     siblings                      |
+|                                   | correct, go to Step 5             |
+|                                   |                                   |
+|                                   | a rejection for:                  |
+|                                   |                                   |
+|                                   | -   SEA – Customer is receiving   |
+|                                   |     Self-Employment Allowance     |
+|                                   |     under Self-Employment         |
+|                                   |     Assistance, go to Step 3      |
+|                                   | -   FCJ – Failed to connect with  |
+|                                   |     Employment Providers, go to   |
+|                                   |     Step 4                        |
+|                                   | -   AOS – AOS in force for        |
+|                                   |     customer (Assurance of        |
+|                                   |     Support), see Step 3 in Table |
+|                                   |     3 of Assuree makes a claim    |
+|                                   |     for an Assurance of Support   |
+|                                   |     (AoS) recoverable payment     |
+|                                   |                                   |
+|                                   | granting PSA, see Youth Allowance |
+|                                   | at pending status (YAL/PSA) and   |
+|                                   | dependent siblings                |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Rejecting CPP due to              |
-|                                   | Self-Employment Allowance + Read  |
-|                                   | more ...                          |
+| 3                                 | Rejecting SEA + Read more ...     |
 |                                   |                                   |
 |                                   | They must ask their               |
 |                                   | Self-Employment Assistance        |
@@ -1669,17 +2065,17 @@ Table 3
 |                                   | to confirm it has stopped.        |
 |                                   |                                   |
 |                                   | Once the job seeker has evidence  |
-|                                   | from the DEWR that they are no    |
-|                                   | longer receiving Self-Employment  |
+|                                   | from DEWR that they are no longer |
+|                                   | receiving Self-Employment         |
 |                                   | Allowance:                        |
 |                                   |                                   |
-|                                   | -   Go to the Other Government    |
+|                                   | -   go to the Other Government    |
 |                                   |     Payments (OGP) screen         |
-|                                   | -   Zero the Self-Employment      |
+|                                   | -   zero the Self-Employment      |
 |                                   |     Allowance from the relevant   |
 |                                   |     date, code the reason for the |
 |                                   |     action in the Chg Rsn field   |
-|                                   | -   If the start date of the      |
+|                                   | -   if the start date of the      |
 |                                   |     Self-Employment Allowance is  |
 |                                   |     before the cancellation date, |
 |                                   |     zero Self-Employment          |
@@ -1687,8 +2083,28 @@ Table 3
 |                                   |     cancellation date, code the   |
 |                                   |     reason for the action in the  |
 |                                   |     Chg Rsn field                 |
+|                                   |                                   |
+|                                   | Go to Step 5.                     |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Finalise claim + Read more ...    |
+| 4                                 | Rejecting FCJ + Read more ...     |
+|                                   |                                   |
+|                                   | Check to see if the customer has  |
+|                                   | met RapidConnect requirements     |
+|                                   | within 28 days from date of       |
+|                                   | Participation Interview.          |
+|                                   |                                   |
+|                                   | Has the customer met their        |
+|                                   | RapidConnect requirements?        |
+|                                   |                                   |
+|                                   | -   Yes, code a RapidConnect      |
+|                                   |     exemption on the Job Seeker   |
+|                                   |     RapidConnect (JMRC) screen.   |
+|                                   |     See Table 3 of RapidConnect   |
+|                                   |     Exemptions                    |
+|                                   | -   No, rejection is correct, go  |
+|                                   |     to Step 5                     |
++-----------------------------------+-----------------------------------+
+| 5                                 | Finalise claim + Read more ...    |
 |                                   |                                   |
 |                                   | Once the claim is assessing       |
 |                                   | correctly, select Finish.         |
@@ -1717,11 +2133,25 @@ Table 3
 |                                   |                                   |
 |                                   | Note:                             |
 |                                   |                                   |
+|                                   | If the customer's start date of   |
+|                                   | payment is more than 28 days in   |
+|                                   | the future, code a RapidConnect   |
+|                                   | exemption on the Job Seeker       |
+|                                   | RapidConnect (JMRC) screen. See   |
+|                                   | Table 3 of RapidConnect           |
+|                                   | Exemptions                        |
+|                                   |                                   |
 |                                   | If there are outstanding          |
 |                                   | reporting statements use          |
 |                                   | Recording and correcting          |
 |                                   | employment income details to      |
 |                                   | process payments                  |
+|                                   |                                   |
+|                                   | The system will reject YA reason  |
+|                                   | FRP (failed to report) after 22   |
+|                                   | days from the claim assessment    |
+|                                   | date if the customer fails to     |
+|                                   | action outstanding reports        |
 |                                   |                                   |
 |                                   | Check if the customer has been in |
 |                                   | receipt of Double Orphan Pension  |
@@ -1737,13 +2167,56 @@ Table 3
 |                                   | -   If customer is attracting     |
 |                                   |     DOP, cancel the DOP payment   |
 |                                   |                                   |
-|                                   | The system will reject YA reason  |
-|                                   | FRP (failed to report) after 22   |
-|                                   | days from the claim assessment    |
-|                                   | date if the customer fails to     |
-|                                   | action outstanding reports        |
+|                                   | Go to Step 6.                     |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Customer contact + Read more ...  |
+| 6                                 | Customer under 16 + Read more ... |
+|                                   |                                   |
+|                                   | Due to a system limitation within |
+|                                   | the claim, the Participation      |
+|                                   | Interview is unable to be run for |
+|                                   | customer's under 16 and error     |
+|                                   | E543NM - 'Participation Workflow  |
+|                                   | has not been completed' will      |
+|                                   | present.                          |
+|                                   |                                   |
+|                                   | For the claim to be assessed and  |
+|                                   | finalised:                        |
+|                                   |                                   |
+|                                   | Complete all claim coding         |
+|                                   |                                   |
+|                                   | Resolve any errors that may       |
+|                                   | present on the Errors (SWE)       |
+|                                   | screen. For help, see Using       |
+|                                   | Digital Assistant Roxy in Process |
+|                                   | Direct                            |
+|                                   |                                   |
+|                                   | Refer the claim via email to      |
+|                                   | Jobseeker, Emergency and Migrants |
+|                                   | Programme team, include:          |
+|                                   |                                   |
+|                                   | -   Claim ID and CRN              |
+|                                   | -   Expected outcome (grant or    |
+|                                   |     reject including rejection    |
+|                                   |     reason)                       |
+|                                   | -   Expected rate                 |
+|                                   | -   Any other information         |
+|                                   |     relevant to the decision      |
+|                                   |                                   |
+|                                   | Once the claim has been           |
+|                                   | finalised, contact the customer   |
+|                                   | to:                               |
+|                                   |                                   |
+|                                   | -   Advise the claim outcome as   |
+|                                   |     per Step 7                    |
+|                                   | -   Complete the job seeker       |
+|                                   |     registration and connect with |
+|                                   |     a provider. See Step 4 in     |
+|                                   |     Table 1 of Conducting a Job   |
+|                                   |     Seeker Snapshot interview     |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+| 7                                 | Customer contact + Read more ...  |
 |                                   |                                   |
 |                                   | Make one genuine attempt to       |
 |                                   | contact the customer once the     |
@@ -1751,18 +2224,19 @@ Table 3
 |                                   | the claim outcome. If the         |
 |                                   | customer is subscribed, issue a   |
 |                                   | pre-call notification (SMS only)  |
-|                                   | between 8:00 am and 8:00 pm using |
-|                                   | the customer's local time to let  |
-|                                   | them know a Service Officer will  |
-|                                   | call them today from a private    |
-|                                   | number, see Centrelink letters    |
-|                                   | online and Electronic Messaging.  |
+|                                   | between the hours of 8:00 am and  |
+|                                   | 8:00 pm customer's local time to  |
+|                                   | let them know a Service Officer   |
+|                                   | will call them today from a       |
+|                                   | private number, see Centrelink    |
+|                                   | letters online and Electronic     |
+|                                   | Messaging.                        |
 |                                   |                                   |
 |                                   | Successful + Read more ...        |
 |                                   |                                   |
 |                                   | Annotate the Claim Finalisation   |
-|                                   | DOC with the details you have     |
-|                                   | advised the customer:             |
+|                                   | DOC with the details advised to   |
+|                                   | the customer:                     |
 |                                   |                                   |
 |                                   | If the claim was granted, tell    |
 |                                   | the customer:                     |
@@ -1787,23 +2261,19 @@ Table 3
 |                                   |     outstanding reports they need |
 |                                   |     to action                     |
 |                                   |                                   |
+|                                   | where a job seeker's              |
+|                                   | circumstances meet the            |
+|                                   | requirements to be Centrelink     |
+|                                   | managed, negotiate a Job Plan.    |
+|                                   | See Negotiating Centrelink        |
+|                                   | Managed Job Plans                 |
+|                                   |                                   |
 |                                   | any mutual obligation             |
 |                                   | requirements where applicable     |
 |                                   |                                   |
-|                                   | if you have identified the        |
-|                                   | customer cancelled their payment  |
-|                                   | to claim Pandemic Leave disaster  |
-|                                   | Payment (PLDP) but hadn't         |
-|                                   | previously reported employment    |
-|                                   | income, ensure you discuss the    |
-|                                   | potential review of PLDP. If      |
-|                                   | appropriate, you can initiate a   |
-|                                   | review of the decision to pay     |
-|                                   | PLDP                              |
-|                                   |                                   |
 |                                   | if they have overdue payments     |
 |                                   | (for example, more than 2         |
-|                                   | fortnights) they cannot report    |
+|                                   | fortnights), they cannot report   |
 |                                   | via Self Service. See Recording   |
 |                                   | and correcting employment income  |
 |                                   | details for more information      |
@@ -1831,7 +2301,7 @@ Table 3
 |                                   |     telephone numbers were used   |
 |                                   |     to attempt contact)           |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Family Tax Benefit (FTB) + Read   |
+| 8                                 | Family Tax Benefit (FTB) + Read   |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | When an FTB child claims YA, the  |
@@ -1851,9 +2321,9 @@ Table 3
 |                                   | If YA was rejected because FTB is |
 |                                   | a more appropriate payment:       |
 |                                   |                                   |
-|                                   | -   If the parent's FTB cancelled |
+|                                   | -   if the parent's FTB cancelled |
 |                                   |     reason DPP, restore FTB       |
-|                                   | -   For partnered customers, a    |
+|                                   | -   for partnered customers, a    |
 |                                   |     claim for income support      |
 |                                   |     payments may need to be taken |
 |                                   |     and processed                 |

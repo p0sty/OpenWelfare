@@ -1,10 +1,4 @@
 
-Process pended claims in Australian Immunisation Register (AIR) 011-10110000
-
--   Background
--   Process
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 This page contains procedures for Service Officers to process pended
@@ -148,6 +142,9 @@ to go to an A status.
 |                                   |     provider number start date    |
 |                                   | -   Immunisation recorded post    |
 |                                   |     the provider number end date  |
+|                                   |                                   |
+|                                   | Pend 44 Vaccine not valid for     |
+|                                   | encounter date                    |
 |                                   |                                   |
 |                                   | Pend code 50 – 74 + Read more ... |
 |                                   |                                   |
@@ -558,6 +555,8 @@ provider number start date
 
 Pend 43 Immunisation provider not current – immunisation recorded post
 the provider number end date
+
+Pend 44 Vaccine not valid for encounter date
 
 Pend 50/51/54 Immunisation date prior to individual's date of birth
 
@@ -1457,15 +1456,39 @@ Table 8
 |                                   |     episode. Press [F14] to check |
 |                                   |     and correct any further       |
 |                                   |     generated pends               |
-|                                   |                                   |
-|                                   | If an encounter has characters    |
-|                                   | such as, symbols (?) or letters   |
-|                                   | (G) recorded in the dose number   |
-|                                   | field, do not action. Escalate to |
-|                                   | an AIR Programme Support Officer  |
-|                                   | (PSO).                            |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Record a comment + Read more ...  |
+| 4                                 | Unable to contact provider + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | If unable to contact the          |
+|                                   | provider:                         |
+|                                   |                                   |
+|                                   | Leave pend in a P status and make |
+|                                   | a comment on the individual’s     |
+|                                   | Mainframe record stating ‘unable  |
+|                                   | to contact provider on DD/MM/YY   |
+|                                   | to resolve pend’                  |
+|                                   |                                   |
+|                                   | Make a maximum of 3 attempts to   |
+|                                   | contact the provider by phone     |
+|                                   |                                   |
+|                                   | If contact cannot be made, the    |
+|                                   | Service Officer must action the   |
+|                                   | pend:                             |
+|                                   |                                   |
+|                                   | -   Select (/) the pended vaccine |
+|                                   |     line                          |
+|                                   | -   Press [F6]. The YIAN –        |
+|                                   |     Antigens Details screen       |
+|                                   |     displays                      |
+|                                   | -   Over-key the P with ‘R’ and   |
+|                                   |     press [Enter]                 |
+|                                   | -   Over-key the R with ‘Z’ and   |
+|                                   |     press [Enter]                 |
+|                                   | -   Press [F9] to update          |
+|                                   | -   Add comment, go to Step 5     |
++-----------------------------------+-----------------------------------+
+| 5                                 | Record a comment + Read more ...  |
 |                                   |                                   |
 |                                   | Record a comment on the           |
 |                                   | customer's Mainframe record:      |
@@ -1496,11 +1519,16 @@ Table 8
 |                                   | 'unable to contact provider on    |
 |                                   | DD/MM/YY to resolve pend'         |
 |                                   |                                   |
+|                                   | If unable to contact after 3      |
+|                                   | attempts state ‘unable to contact |
+|                                   | provider after 3 attempts R+Z to  |
+|                                   | resolve pend’                     |
+|                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
 |                                   | Press [F9] to update              |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Complete next pend or select next |
+| 6                                 | Complete next pend or select next |
 |                                   | claim + Read more ...             |
 |                                   |                                   |
 |                                   | If there are multiple episodes in |
@@ -2455,9 +2483,238 @@ Table 13
 |                                   |     select the next claim         |
 +-----------------------------------+-----------------------------------+
 
-Pend 50/51/54 Immunisation date prior to individual's date of birth
+Pend 44 Vaccine not valid for encounter date
 
 Table 14
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Confirm immunisation date and     |
+|                                   | vaccine brand name + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | For outbound calls, Service       |
+|                                   | Officers must use the script in   |
+|                                   | Step 5 in Authentication of       |
+|                                   | recognised vaccination providers  |
+|                                   | for AIR enquiries table.          |
+|                                   |                                   |
+|                                   | Contact the provider to confirm   |
+|                                   | the correct immunisation date and |
+|                                   | vaccine brand name.               |
+|                                   |                                   |
+|                                   | Locate provider contact details   |
+|                                   | in the Provider Directory System  |
+|                                   | (PDS). See the Log on to PDS      |
+|                                   | table.                            |
+|                                   |                                   |
+|                                   | Search for provider details in    |
+|                                   | PDS:                              |
+|                                   |                                   |
+|                                   | Program Registration (Medicare    |
+|                                   | provider)                         |
+|                                   |                                   |
+|                                   | Search for the provider number    |
+|                                   | using Program Registration        |
+|                                   |                                   |
+|                                   | -   Select View. The Program      |
+|                                   |     Registration screen displays  |
+|                                   | -   In the *Search ID field, key  |
+|                                   |     provider number stem and      |
+|                                   |     location (first 7 digits      |
+|                                   |     Medicare provider or 6 digits |
+|                                   |     Ancillary provider number)    |
+|                                   | -   In the *ID Type field, select |
+|                                   |     Medicare Stem and Location    |
+|                                   |     from the drop down            |
+|                                   | -   Select the radio button       |
+|                                   |     Program Registrations for     |
+|                                   |     this                          |
+|                                   |                                   |
+|                                   |    Provider/Practice/Organisation |
+|                                   | -   Select Search. The Program    |
+|                                   |     Registration View screen      |
+|                                   |     displays                      |
+|                                   | -   Check the Registration End    |
+|                                   |     Date column for AIR and       |
+|                                   |     Medicare end dates            |
+|                                   | -   Select View from the AIR      |
+|                                   |     Program line. The Program     |
+|                                   |     Registration View screen      |
+|                                   |     displays. This screen         |
+|                                   |     contains contact phone number |
+|                                   |                                   |
+|                                   | Organisation (Ancillary provider) |
+|                                   |                                   |
+|                                   | -   Search for the provider       |
+|                                   |     number using Organisation     |
+|                                   | -   Select View. The Organisation |
+|                                   |     Registration View screen      |
+|                                   |     displays                      |
+|                                   | -   In the *Search ID field, key  |
+|                                   |     provider number stem and      |
+|                                   |     location (first 6 digits of   |
+|                                   |     Ancillary provider number)    |
+|                                   | -   In the *ID Type field, select |
+|                                   |     AIR Provider number from the  |
+|                                   |     drop down                     |
+|                                   | -   Select Search. The            |
+|                                   |     Organisation Registration     |
+|                                   |     Summary screen displays       |
+|                                   | -   Check the End Date. This      |
+|                                   |     screen contains contact phone |
+|                                   |     number                        |
+|                                   |                                   |
+|                                   | Is contact successful?            |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Confirm details and amend the     |
+|                                   | claim encounter + Read more ...   |
+|                                   |                                   |
+|                                   | Confirm:                          |
+|                                   |                                   |
+|                                   | -   vaccine brand                 |
+|                                   | -   dose                          |
+|                                   | -   date vaccine/s given          |
+|                                   |                                   |
+|                                   | If provider confirms details are  |
+|                                   | correct:                          |
+|                                   |                                   |
+|                                   | -   Select (/) the pended vaccine |
+|                                   |     line                          |
+|                                   | -   Press [F6]. The YIAN –        |
+|                                   |     Antigens Details screen       |
+|                                   |     displays                      |
+|                                   | -   Remove dose number, over-key  |
+|                                   |     the P with 'R' and press      |
+|                                   |     [Enter]                       |
+|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     press [Enter]                 |
+|                                   | -   On line below add key generic |
+|                                   |     vaccine brand associated with |
+|                                   |     confirmed vaccine brand ie:   |
+|                                   |     Generic Influenza code        |
+|                                   | -   Press [Enter] and [F9] to     |
+|                                   |     update                        |
+|                                   | -   Add comment, go to Step 4     |
+|                                   |                                   |
+|                                   | If provider cannot confirm        |
+|                                   | details:                          |
+|                                   |                                   |
+|                                   | -   Select (/) the pended vaccine |
+|                                   |     line                          |
+|                                   | -   Press [F6]. The YIAN –        |
+|                                   |     Antigens Details screen       |
+|                                   |     displays                      |
+|                                   | -   Remove dose number, over-key  |
+|                                   |     the P with 'R' and press      |
+|                                   |     [Enter]                       |
+|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     press [Enter]                 |
+|                                   | -   Press [Enter] and [F9] to     |
+|                                   |     update                        |
+|                                   | -   Add comment, go to Step 4     |
+|                                   |                                   |
+|                                   | If providers confirm different    |
+|                                   | vaccine brand:                    |
+|                                   |                                   |
+|                                   | -   Select (/) the pended vaccine |
+|                                   |     line                          |
+|                                   | -   Press [F6]. The YIAN –        |
+|                                   |     Antigens Details screen       |
+|                                   |     displays                      |
+|                                   | -   Over-key using the correct    |
+|                                   |     vaccine brand name (operator  |
+|                                   |     code) provider has given      |
+|                                   | -   Press [Enter] and [F9] to     |
+|                                   |     update                        |
+|                                   | -   Add comment, go to Step 4     |
+|                                   |                                   |
+|                                   | If providers confirm different    |
+|                                   | vaccine date:                     |
+|                                   |                                   |
+|                                   | -   On the YIAE – Encounter       |
+|                                   |     Details screen, press [Enter] |
+|                                   |     then press [F9]               |
+|                                   | -   In the ST field over key the  |
+|                                   |     P with 'R' and press [Enter]  |
+|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     press [Enter]                 |
+|                                   | -   Press [F9] to update          |
+|                                   | -   Ask the provider to re-submit |
+|                                   |     the encounter with the        |
+|                                   |     correct immunisation date     |
+|                                   | -   Add comment, go to Step 4     |
++-----------------------------------+-----------------------------------+
+| 3                                 | Unable to contact provider + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Leave pend in a P status and add  |
+|                                   | a comment on the individual’s     |
+|                                   | Mainframe record: 'unable to      |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend'                     |
+|                                   |                                   |
+|                                   | Make 3 attempts to contact the    |
+|                                   | provider by phone                 |
+|                                   |                                   |
+|                                   | If contact cannot be made, the    |
+|                                   | Service Officer must action the   |
+|                                   | pend:                             |
+|                                   |                                   |
+|                                   | Over-key (R and Z) the second:    |
+|                                   |                                   |
+|                                   | -   Select (/) the pended vaccine |
+|                                   |     line                          |
+|                                   | -   Press [F6]. The YIAN –        |
+|                                   |     Antigens Details screen       |
+|                                   |     displays                      |
+|                                   | -   Remove dose number, over-key  |
+|                                   |     the P with 'R' and press      |
+|                                   |     [Enter]                       |
+|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     press [Enter]                 |
+|                                   | -   Press [F9] to update          |
+|                                   | -   Add comment, go to Step 4     |
++-----------------------------------+-----------------------------------+
+| 4                                 | Record a comment + Read more ...  |
+|                                   |                                   |
+|                                   | Record a comment on the           |
+|                                   | customer's Mainframe record:      |
+|                                   |                                   |
+|                                   | -   Key the Medicare number on    |
+|                                   |     the YCUI – Registration       |
+|                                   |     Amendment Search screen and   |
+|                                   |     press [Enter]. The YCUA –     |
+|                                   |     Amendment Registration screen |
+|                                   |     displays                      |
+|                                   | -   Press [F3]. The YCCO –        |
+|                                   |     Comments List screen displays |
+|                                   | -   Press [F3]. The YCCV –        |
+|                                   |     Comment Details screen        |
+|                                   |     displays                      |
+|                                   | -   Add a comment, include        |
+|                                   |     details from the conversation |
+|                                   |     with the provider             |
+|                                   | -   If unable to contact, state   |
+|                                   |     'unable to contact provider   |
+|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact Provider |
+|                                   |     after 3 attempts comment on   |
+|                                   |     record ‘Three attempts to     |
+|                                   |     contact provider              |
+|                                   |     unsuccessful. Pend actioned   |
+|                                   |     with R&Z’                     |
+|                                   | -   Press [Enter]                 |
+|                                   | -   Press [F9] to update          |
++-----------------------------------+-----------------------------------+
+
+Pend 50/51/54 Immunisation date prior to individual's date of birth
+
+Table 15
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2698,7 +2955,7 @@ Table 14
 
 Pend 52 Date of receipt prior to immunisation date
 
-Table 15
+Table 16
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2877,7 +3134,7 @@ Table 15
 
 Pend 53 The date of immunisation is after the end date recorded on the individual's registration
 
-Table 16: encounters pended with a reason code (RSN) 053 display the
+Table 17: encounters pended with a reason code (RSN) 053 display the
 message INDIVIDUAL'S END DATE PRIOR TO IMMUNISATION DATE.DATE. This
 indicates that the individual is not on the selected Medicare
 registration as at the immunisation date of service.
@@ -3146,7 +3403,7 @@ registration as at the immunisation date of service.
 
 Pend 80 Individual not identified
 
-Table 17
+Table 18
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3338,7 +3595,7 @@ Table 17
 
 Pend 100 Antigen has been administered under the minimum required age
 
-Table 18
+Table 19
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3430,9 +3687,9 @@ Table 18
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   On the YIAE – Encounter       |
-|                                   |     Details screen, press [Enter] |
-|                                   |     then press [F9]               |
+|                                   | -   On the YIAN - Antigen Details |
+|                                   |     screen, press [Enter] then    |
+|                                   |     press [F9]                    |
 |                                   | -   In the ST field over-key the  |
 |                                   |     P with 'C' and press [Enter]  |
 |                                   | -   Over-key the C with 'Y' and   |
@@ -3443,9 +3700,9 @@ Table 18
 |                                   | No, provider advises the wrong    |
 |                                   | immunisation date is recorded:    |
 |                                   |                                   |
-|                                   | -   On the YIAE – Encounter       |
-|                                   |     Details screen, press [Enter] |
-|                                   |     then press [F9]               |
+|                                   | -   On the YIAN - Antigen Details |
+|                                   |     screen, press [Enter] then    |
+|                                   |     press [F9]                    |
 |                                   | -   In the ST field over key the  |
 |                                   |     P with 'R' and press [Enter]  |
 |                                   | -   Over-key the R with 'Z' and   |
@@ -3538,7 +3795,7 @@ Table 18
 
 Pend 101 Period between doses of the same antigen is less than the minimum time required
 
-Table 19
+Table 20
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3753,7 +4010,7 @@ Table 19
 
 Pend 102 Duplicate antigen dose – same provider
 
-Table 20
+Table 21
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4246,7 +4503,7 @@ Table 21
 
 Pend 104 Administered within minimum time required between doses – different provider
 
-Table 22
+Table 23
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4467,7 +4724,7 @@ Table 22
 
 Pend 105/112 Dose greater than maximum allowable dose
 
-Table 23
+Table 24
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4528,7 +4785,7 @@ Table 23
 
 Pend 106/109 Higher dose already administered – same provider
 
-Table 24
+Table 25
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4597,7 +4854,7 @@ Table 24
 
 Pend 107 Dose administered at greater than recommended schedule age
 
-Table 25
+Table 26
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4635,7 +4892,7 @@ Table 25
 
 Pend 110 Same provider – Period between doses less than 6 months
 
-Table 26
+Table 27
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4872,7 +5129,7 @@ Table 26
 
 Pend 111 Different provider – Period between doses less than 6 months
 
-Table 27
+Table 28
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -5112,7 +5369,7 @@ Table 27
 
 Pend 113 Dose given at less than (<) schedule age
 
-Table 28
+Table 29
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -5199,7 +5456,7 @@ Table 28
 
 Pend 115 Antigen has been administered under minimum required age
 
-Table 29
+Table 30
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |

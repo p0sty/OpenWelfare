@@ -1,9 +1,3 @@
-
-Cheque processing in Medicare 011-43090000
-
--   Background
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
@@ -14,15 +8,15 @@ Assessing and Benefits
 
 Cheque extraction requests
 
-Medicare claims helpdesk
+Medicare Claims Helpdesk
 
 Medicare Health Programme Support Officers (PSO)
 
 Write to us - Services Australia
 
-Allied Health providers
+Allied Health professionals
 
-The following is a list of Allied Health providers:
+The following is a list of Allied Health professionals:
 
 -   Aboriginal Health Workers
 -   Audiologists
@@ -50,26 +44,29 @@ Table 1
 | Cheque status         | Date of issue         | Additional            |
 |                       |                       | information           |
 +-----------------------+-----------------------+-----------------------+
-| UNPRES                | < 14 days from the    | Cheque is in transit  |
-|                       | issue date            | and should not be     |
-|                       |                       | stopped.              |
+| UNPRES                | < 14 days from the    | Cheque is             |
+|                       | issue date            | unpresented - in      |
+|                       |                       | transit and must not  |
+|                       |                       | be stopped.           |
 +-----------------------+-----------------------+-----------------------+
-| UNPRES                | > 14 days from the    | Cheque can be stopped |
-|                       | issue date            | if it is not subject  |
-|                       |                       | to the 90 Day Pay     |
-|                       |                       | Doctor Cheque Scheme. |
+| UNPRES                | > 14 days from the    | Cheque is             |
+|                       | issue date            | unpresented - can be  |
+|                       |                       | stopped if it is not  |
+|                       |                       | subject to the 90 Day |
+|                       |                       | Pay Doctor Cheque     |
+|                       |                       | Scheme.               |
 +-----------------------+-----------------------+-----------------------+
 | PRES                  | < or > 14 days        | Cheque has been       |
-|                       |                       | banked.               |
+|                       |                       | presented - banked.   |
 +-----------------------+-----------------------+-----------------------+
 | CANC                  | No details            | Cheque has been       |
 |                       |                       | cancelled -           |
 |                       |                       | Investigate patient   |
 |                       |                       | history.              |
 +-----------------------+-----------------------+-----------------------+
-| CAN/EFT               | DDMMYY                | Payment has been      |
-|                       |                       | deposited into        |
-|                       |                       | providers EFT         |
+| CEFT                  | DDMMYY                | Payment has been      |
+|                       |                       | deposited into health |
+|                       |                       | professionals EFT     |
 |                       |                       | account. Process      |
 |                       |                       | ends.                 |
 +-----------------------+-----------------------+-----------------------+
@@ -103,8 +100,8 @@ Table 1
 |                       |                       | customer’s new        |
 |                       |                       | address.              |
 +-----------------------+-----------------------+-----------------------+
-| STALE                 |                       | Cheque is over 15     |
-|                       |                       | months old.           |
+| STALE                 |                       | Cheque is stale -     |
+|                       |                       | over 15 months old.   |
 |                       |                       |                       |
 |                       |                       | -   If appearing on   |
 |                       |                       |     history payment   |
@@ -115,11 +112,11 @@ Table 1
 |                       |                       |     processing line   |
 |                       |                       |     and the cheque is |
 |                       |                       |     under 6 years     |
-|                       |                       |     old, obtain the   |
+|                       |                       |     old, get the      |
 |                       |                       |     claims history    |
 |                       |                       |                       |
 |                       |                       | Cheque is over 6      |
-|                       |                       | years old, advise     |
+|                       |                       | years old, tell       |
 |                       |                       | customer Medicare is  |
 |                       |                       | unable to validate    |
 |                       |                       | that no replacement   |
@@ -136,6 +133,14 @@ Table 1
 |                       |                       | escalate to Claims    |
 |                       |                       | Policy for advice.    |
 +-----------------------+-----------------------+-----------------------+
+| STOP                  |                       | Cheque has been       |
+|                       |                       | stopped - lost,       |
+|                       |                       | damaged, stolen,      |
+|                       |                       | doctor is not part of |
+|                       |                       | the 90 day Pay Doctor |
+|                       |                       | Via Cheque scheme and |
+|                       |                       | requires reissue.     |
++-----------------------+-----------------------+-----------------------+
 
 Cheque enquiry control lines
 
@@ -151,13 +156,14 @@ screen.
 +-----------------------------------+-----------------------------------+
 | BBEI,provider number (no alpha)   | Cheque enquiry details for direct |
 |                                   | bill claims submitted by the      |
-|                                   | provider.                         |
+|                                   | health professional.              |
 +-----------------------------------+-----------------------------------+
 | BBCI,NB?R,cheque number           | Full details of the:              |
 |                                   |                                   |
 |                                   | -   cheque                        |
 |                                   | -   provider number               |
-|                                   | -   provider name and address     |
+|                                   | -   health professional name and  |
+|                                   |     address                       |
 |                                   | -   cheque location               |
 |                                   | -   cheque status                 |
 +-----------------------------------+-----------------------------------+
@@ -226,7 +232,7 @@ Australia Intranet.
 
 Cheque extraction request form
 
-When a processing error is identified, Service Officers must fill out a
+If a processing error is identified, Service Officers must fill out a
 cheque extraction form.
 
 Use 'Save As' workaround to download/use attachments.

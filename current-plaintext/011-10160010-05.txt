@@ -1,19 +1,17 @@
 
-Navigate Australian Immunisation Register (AIR) system 011-10160010
-
--   Background
--   Process
--   Resources
-
-This procedure is under review. An Operational Message about this
-content exists.
-
 [Expand/Collapse all sections]Expand all
 
 Screen identifier code list
 
 Table 1: this table lists AIR Mainframe screen identifier codes and
 screen names.
+
+Note:
+
+* Service Officers cannot access this screen directly
+
+** This screen is only available to Managers/Team Leaders/Service
+Officers who have access to action the GDES report
 
 +-----------------------+-----------------------+-----------------------+
 | Screen identifier     | Screen name           | How to access screens |
@@ -287,13 +285,6 @@ screen names.
 | YPEI                  | Provider Enquiry      |                       |
 +-----------------------+-----------------------+-----------------------+
 
-Note:
-
-* Service Officers cannot access this screen directly
-
-** This screen is only available to Managers/Team Leaders/Service
-Officers who have access to action the GDES report.
-
 AIR vaccine codes and brand names for the AIR
 
 Table 2: this table describes vaccine codes and brand names for
@@ -309,6 +300,9 @@ recording on the AIR. This includes:
 
 Search the list using [Ctrl] + [F].
 
+Note: * these vaccine brands can only be reported if administered before
+31 January 2023.
+
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Vaccine   | Code      | Resolve   | Antigens  | Antigen   | Du        |
 | brand     |           | to        |           | code      | e/overdue |
@@ -316,6 +310,23 @@ Search the list using [Ctrl] + [F].
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Infanrix  | IH        | IFHX      | D         | DIP       | Y         |
 | Hexa      |           |           | iphtheria |           |           |
+|           |           |           |           | TET       | Y         |
+|           |           |           | Tetanus   |           |           |
+|           |           |           |           | PER       | Y         |
+|           |           |           | Pertussis |           |           |
+|           |           |           |           | HEP       | Y         |
+|           |           |           | Hepatitis |           |           |
+|           |           |           | B         | POL       | Y         |
+|           |           |           |           |           |           |
+|           |           |           | Poli      | HBA       | Y         |
+|           |           |           | omyelitis |           |           |
+|           |           |           |           |           |           |
+|           |           |           | HIB       |           |           |
+|           |           |           | Schedule  |           |           |
+|           |           |           | A         |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Vaxelis   | VAXLIS    | VX        | D         | DIP       | Y         |
+|           |           |           | iphtheria |           |           |
 |           |           |           |           | TET       | Y         |
 |           |           |           | Tetanus   |           |           |
 |           |           |           |           | PER       | Y         |
@@ -862,6 +873,10 @@ Search the list using [Ctrl] + [F].
 | BCG       | BC        | BCG       | Tub       | TUB       | N         |
 |           |           |           | erculosis |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
+| Generic   | XD        | GNTUB     | Tub       | TUB       | N         |
+| Tub       |           |           | erculosis |           |           |
+| erculosis |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
 | Cervarix  | CX        | HPVCX     | Human     | HPV       | Y         |
 |           |           |           | Papil     |           |           |
 |           |           |           | lomavirus |           |           |
@@ -896,8 +911,13 @@ Search the list using [Ctrl] + [F].
 | Vaccine   |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Moderna   | CI        | MODBIV    | COVID-19  | CMB       | N         |
-| Bivalent  |           |           |           |           |           |
 | Spikevax  |           |           |           |           |           |
+| Biv BA.1  |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Moderna   | CK        | MODBBA    | COVID-19  | CMS       | N         |
+| Spikevax  |           |           |           |           |           |
+| Biv       |           |           |           |           |           |
+| BA.4-5    |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Moderna   | CE        | MODERN    | COVID-19  | CMD       | N         |
 | Spikevax  |           |           |           |           |           |
@@ -905,11 +925,16 @@ Search the list using [Ctrl] + [F].
 | Novavax   | CN        | NOVNUV    | COVID-19  | CNN       | N         |
 | NUVAXOVID |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Pfizer    | CM        | COMIRN    | COVID-19  | CPF       | N         |
-| Comirnaty |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
 | Pfizer    | CP        | COMBIV    | COVID-19  | CPB       | N         |
-| Bivalent  |           |           |           |           |           |
+| Comirnaty |           |           |           |           |           |
+| Biv BA.1  |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Pfizer    | CF        | COMBBA    | COVID-19  | CFB       | N         |
+| Comirnaty |           |           |           |           |           |
+| Biv       |           |           |           |           |           |
+| BA.4-5    |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Pfizer    | CM        | COMIRN    | COVID-19  | CPF       | N         |
 | Comirnaty |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Sinopharm | CB        | SINBBI    | COVID-19  | CSB       | N         |
@@ -923,19 +948,58 @@ Search the list using [Ctrl] + [F].
 | Sinovac   | CS        | SINCOR    | COVID-19  | CSC       | N         |
 | Coronavac |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Afluria   | FA        | AFLR      | Influenza | FLU       | N         |
+| *Afluria  | FA        | AFLR      | Influenza | FLU       | N         |
 | Quad      |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluvax    | FV        | FLUVAX    | Influenza | FLU       | N         |
+| *Fluvax   | FV        | FLUVAX    | Influenza | FLU       | N         |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Vaxigrip  | VG        | VAXGRP    | Influenza | FLU       | N         |
+| *Vaxigrip | VG        | VAXGRP    | Influenza | FLU       | N         |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Vaxigrip  | VT        | VAXTET    | Influenza | FLU       | N         |
+| *Fluarix  | FR        | FLRIX     | Influenza | FLU       | N         |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Fluarix  | FT        | FLUTET    | Influenza | FLU       | N         |
 | Tetra     |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluarix   | FR        | FLRIX     | Influenza | FLU       | N         |
+| *         | FD        | FQDJN     | Influenza | FLU       | N         |
+| FluQuadri |           |           |           |           |           |
+| Junior    |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluarix   | FT        | FLUTET    | Influenza | FLU       | N         |
+| *Fluvirin | FN        | FLVRN     | Influenza | FLU       | N         |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Panvax   | PV        | PANVAX    | Influenza | FLU       | N         |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Influvac | FC        | INFLUV    | Influenza | FLU       | N         |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Agrippal | AP        | AGRPAL    | Influenza | FLU       | N         |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Vaxigrip | VJ        | VGRJNR    | Influenza | FLU       | N         |
+| Junior    |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Fluvax   | FJ        | FVXJNR    | Influenza | FLU       | N         |
+| Junior    |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Fluad    | FL        | FLUAD     | Influenza | FLU       | N         |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| *Fluzone  | FH        | FLUHID    | Influenza | FLU       | N         |
+| High-Dose |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Afluria   | AQ        | AFLQUA    | Influenza | FLU       | N         |
+| Quad      |           |           |           |           |           |
+| (NIP)     |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Afluria   | QU        | QUADAF    | Influenza | FLU       | N         |
+| Quad      |           |           |           |           |           |
+| (Non-NIP) |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Fluarix   | FX        | FLXTET    | Influenza | FLU       | N         |
+| Tetra     |           |           |           |           |           |
+| (NIP)     |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Fluarix   | FZ        | ARXFLU    | Influenza | FLU       | N         |
+| Tetra     |           |           |           |           |           |
+| (Non-NIP) |           |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Vaxigrip  | VT        | VAXTET    | Influenza | FLU       | N         |
 | Tetra     |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Flucelvax | CQ        | FCELQD    | Influenza | FLU       | N         |
@@ -943,34 +1007,12 @@ Search the list using [Ctrl] + [F].
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | FluQuadri | FQ        | FQUAD     | Influenza | FLU       | N         |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| FluQuadri | FD        | FQDJN     | Influenza | FLU       | N         |
-| Junior    |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluvirin  | FN        | FLVRN     | Influenza | FLU       | N         |
-+-----------+-----------+-----------+-----------+-----------+-----------+
 | Fluzone   | HQ        | FLHDQD    | Influenza | FLU       | N         |
 | High-Dose |           |           |           |           |           |
 | Quad      |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-| Panvax    | PV        | PANVAX    | Influenza | FLU       | N         |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Influvac  | FC        | INFLUV    | Influenza | FLU       | N         |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Agrippal  | AP        | AGRPAL    | Influenza | FLU       | N         |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Vaxigrip  | VJ        | VGRJNR    | Influenza | FLU       | N         |
-| Junior    |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluvax    | FJ        | FVXJNR    | Influenza | FLU       | N         |
-| Junior    |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluad     | FL        | FLUAD     | Influenza | FLU       | N         |
-+-----------+-----------+-----------+-----------+-----------+-----------+
 | Fluad     | FB        | FLUQAD    | Influenza | FLU       | N         |
 | Quad      |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Fluzone   | FH        | FLUHID    | Influenza | FLU       | N         |
-| High-Dose |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Influvac  | FE        | INFLTA    | Influenza | FLU       | N         |
 | Tetra     |           |           |           |           |           |
@@ -981,6 +1023,11 @@ Search the list using [Ctrl] + [F].
 | Jespect   | JT        | JESPCT    | Japanese  | JEN       | N         |
 |           |           |           | Enc       |           |           |
 |           |           |           | ephalitis |           |           |
++-----------+-----------+-----------+-----------+-----------+-----------+
+| Imojev    | II        | IMOINT    | Japanese  | JEN       | N         |
+| 0.1ml     |           |           | Enc       |           |           |
+| In        |           |           | ephalitis |           |           |
+| tradermal |           |           |           |           |           |
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Imojev    | IJ        | IMOJEV    | Japanese  | JEN       | N         |
 |           |           |           | Enc       |           |           |
@@ -1045,8 +1092,16 @@ System allocated assessment results and payment reason codes
 Table 3: this table describes the assessment results and payment reason
 codes allocated by the system for each episode recorded.
 
-Note: the GPII SIP ceased on 1 October 2008. The SIP codes still apply
-to information received prior to this date.
+Note:
+
+The GPII SIP ceased on 1 October 2008. The SIP codes still apply to
+information received prior to this date.
+
+* Number of the schedule
+
+# Number of schedules completed by the episode
+
+X SIP is not payable
 
 +-----------------+-----------------+-----------------+-----------------+
 | Status          | Asm rslt & Rsn  | Status          | Asm rslt & Rsn  |
@@ -1203,12 +1258,6 @@ to information received prior to this date.
 |                 |                 |                 | not complete    |
 |                 |                 |                 | the schedule.   |
 +-----------------+-----------------+-----------------+-----------------+
-
-* Number of the schedule
-
-# Number of schedules completed by the episode
-
-X SIP is not payable
 
                                    
 

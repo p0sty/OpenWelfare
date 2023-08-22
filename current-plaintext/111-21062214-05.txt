@@ -1,9 +1,3 @@
-
-eServices quality checking in QST 111-21062214
-
--   Background
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 Intranet links
@@ -26,7 +20,7 @@ Contacts
 Health Service Delivery Division - Quality Operations & Technical
 Support
 
-Error codes - error free
+Error codes - Error free
 
 Table 1
 
@@ -36,11 +30,11 @@ Table 1
 | ES01                              | Error free.                       |
 +-----------------------------------+-----------------------------------+
 
-Error status codes ES02 - ES10
+Error status codes - Form related
+
+Error status codes - Form related
 
 Table 2
-
-Form Related Errors
 
 +-----------------------+-----------------------+-----------------------+
 | Error code            | Error definition      | It is an error when   |
@@ -76,23 +70,27 @@ Form Related Errors
 |                       |                       | the details on the    |
 |                       |                       | form.                 |
 +-----------------------+-----------------------+-----------------------+
-| ES05                  | The declaration/form  | Banking forms have    |
-|                       | has not been signed   | been accepted and     |
-| Critical              | by the applicant.     | processed without the |
-|                       |                       | applicant’s           |
-|                       |                       | signature.            |
+| ES05                  | Form incorrectly      | Banking forms have    |
+|                       | rejected.             | been rejected         |
+| Critical              |                       | incorrectly.          |
 +-----------------------+-----------------------+-----------------------+
-| ES06                  | Invalid signature     | Banking forms have    |
-|                       | accepted.             | been accepted and     |
-| Critical              |                       | processed without a   |
-|                       |                       | hand written          |
-|                       |                       | signature. Digital    |
+| ES06                  | The declaration/form  | Banking forms have    |
+|                       | has not been signed   | been accepted and     |
+| Critical              | by the applicant or   | processed without a   |
+|                       | accepted with invalid | hand written          |
+|                       | signature.            | signature. Digital    |
 |                       |                       | signatures not        |
 |                       |                       | acceptable. This      |
 |                       |                       | includes signatures   |
 |                       |                       | that are not original |
 |                       |                       | and/or signatures     |
 |                       |                       | that are copied.      |
+|                       |                       |                       |
+|                       |                       | Banking forms have    |
+|                       |                       | been accepted and     |
+|                       |                       | processed without the |
+|                       |                       | applicant's           |
+|                       |                       | signature.            |
 +-----------------------+-----------------------+-----------------------+
 | ES07                  | Bank details signed   | Banking forms have    |
 |                       | form dated in the     | been accepted and     |
@@ -144,11 +142,9 @@ Form Related Errors
 |                       |                       | effect.               |
 +-----------------------+-----------------------+-----------------------+
 
-Error status codes ES11 - ES16
+Error status codes - PDS
 
 Table 3
-
-Errors in PDS
 
 +-----------------------+-----------------------+-----------------------+
 | Error code            | Error definition      | It is an error when   |
@@ -157,9 +153,10 @@ Errors in PDS
 |                       | is closed and bank    | been accepted and     |
 | Critical              | details have been     | processed where the   |
 |                       | updated.              | provider number is    |
-|                       |                       | closed in PDS and     |
-|                       |                       | banking details have  |
-|                       |                       | been updated.         |
+|                       |                       | closed end dated in   |
+|                       |                       | PDS and banking       |
+|                       |                       | details have been     |
+|                       |                       | updated.              |
 +-----------------------+-----------------------+-----------------------+
 | ES12                  | Minor ID PDS          | Banking forms have    |
 |                       |                       | been accepted and     |
@@ -237,11 +234,9 @@ Errors in PDS
 |                       |                       | entity to another.    |
 +-----------------------+-----------------------+-----------------------+
 
-Error status codes ES17 - ES19
+Error status codes - PaNDA
 
 Table 4
-
-Errors in PaNDA
 
 +-----------------------+-----------------------+-----------------------+
 | Error code            | Error definition      | It is an error when   |
@@ -276,12 +271,20 @@ Errors in PaNDA
 |                       |                       | number or name of     |
 |                       |                       | doctor.               |
 +-----------------------+-----------------------+-----------------------+
+| ES24                  | Alternate PaNDA work  | All relevant work     |
+|                       | items not associated  | items have not been   |
+| Non critical          |                       | associated.           |
++-----------------------+-----------------------+-----------------------+
+| ES25                  | PaNDA WID – Case ID   | The PaNDA work item   |
+|                       | field not saved with  | Case ID field does    |
+| Critical              | Source Work Item      | not display the       |
+|                       | number                | Source Work Item      |
+|                       |                       | number.               |
++-----------------------+-----------------------+-----------------------+
 
-Error status codes ES20 - ES23
+Error status codes - Email
 
 Table 5
-
-Email errors
 
 +-----------------------+-----------------------+-----------------------+
 | Error code            | Error definition      | It is an error when   |
@@ -294,10 +297,12 @@ Email errors
 |                       |                       | forwarded to AIR for  |
 |                       |                       | actioning.            |
 |                       |                       |                       |
-|                       |                       | AIR email must be     |
-|                       |                       | moved from Personal   |
-|                       |                       | inbox to “Sent” inbox |
-|                       |                       | in Provider.Forms.    |
+|                       |                       | AIR email has not     |
+|                       |                       | been moved from your  |
+|                       |                       | personal Sent Items   |
+|                       |                       | folder to ‘Sent       |
+|                       |                       | Items’ folder in      |
+|                       |                       | Provider.Forms.       |
 +-----------------------+-----------------------+-----------------------+
 | ES21                  | Email notification    | Email notification    |
 |                       | for Rejected EFT      | sent to provider did  |
@@ -305,9 +310,11 @@ Email errors
 |                       | incomplete.           | relevant reason/s for |
 |                       |                       | rejection.            |
 |                       |                       |                       |
-|                       |                       | Email must be moved   |
-|                       |                       | from Personal inbox   |
-|                       |                       | to “Sent” inbox in    |
+|                       |                       | Email has not been    |
+|                       |                       | moved from your       |
+|                       |                       | personal Sent Items   |
+|                       |                       | folder to ‘Sent       |
+|                       |                       | Items’ folder in      |
 |                       |                       | Provider.Forms.       |
 +-----------------------+-----------------------+-----------------------+
 | ES22                  | Email to provider     | Banking Details/Minor |
@@ -327,15 +334,25 @@ Email errors
 |                       |                       | provider after any    |
 |                       |                       | updates are made.     |
 +-----------------------+-----------------------+-----------------------+
-| ES23                  | Email - General       | Email not sent on     |
+| ES23                  | All emails            | Email not sent on     |
 |                       |                       | behalf of             |
 | Non-critical          |                       | Provider.Forms        |
 |                       |                       |                       |
-|                       |                       | EFT emails sent must  |
-|                       |                       | be moved from         |
-|                       |                       | Personal inbox to     |
-|                       |                       | Sent inbox in         |
+|                       |                       | Email has not been    |
+|                       |                       | uploaded in the PaNDA |
+|                       |                       | WID.                  |
+|                       |                       |                       |
+|                       |                       | EFT email has not     |
+|                       |                       | been moved from your  |
+|                       |                       | personal Sent Items   |
+|                       |                       | folder to ‘Sent       |
+|                       |                       | Items’ folder in      |
 |                       |                       | Provider.Forms.       |
+|                       |                       |                       |
+|                       |                       | Email notification    |
+|                       |                       | sent to provider did  |
+|                       |                       | not state the         |
+|                       |                       | relevant reason/s.    |
 +-----------------------+-----------------------+-----------------------+
 
                                    

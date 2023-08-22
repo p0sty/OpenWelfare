@@ -1,12 +1,48 @@
-
-Home Equity Access Scheme 065-08000000
-
--   Background
--   References
--   Resources
 -   Training & Support
 
+This procedure is under review. An Operational Message about this
+content exists.
+
 [Expand/Collapse all sections]Expand all
+
+Compound interest calculation
+
+Compound interest:
+
+-   automatically calculates in the customer’s regular fortnightly
+    automatic review
+-   calculates each day, based on the balance ((Principal + Interest
+    from the last entitlement period) + Costs) on the day
+
+Interest compounds at the end of the entitlement period, and adds to the
+interest balance at the end of the entitlement period calculation
+
+HEAS advances are added to the Principal, and accrue interest from the
+Date of Event they are delivered
+
+Repayments reduce the balance, and interest is adjusted from the day
+they are allocated to the legacy system
+
+Payments made via the Payment Adjustment (PYAJ) screen and/or arrears
+payments are added to the Principal at the end of the entitlement
+period. Interest accrues from the end of the entitlement period
+
+Calculation
+
+-   Add the accrued Principal, Interest and Costs
+-   Less repayments made
+-   Multiply by the interest rate, and
+-   Divide by 364
+
+Interest for a Day = (Principal + Costs + Interest) – Repayments) x
+Interest Rate/364
+
+Interest calculates using the previous Entitlement Period End Dates
+(EPED) balance for first 13 days. Then adding the fortnightly payment on
+day 14 of the EPED to complete the fortnight’s interest calculation. If
+there is no fortnightly LON component, each day calculates based on the
+previous balance. The interest is added to the total loan balance on a
+fortnightly basis..
 
 Services Australia website
 
@@ -16,19 +52,18 @@ Payment and Service Finder
 
 Process Direct screens
 
-Staff can action and view the Scheme details in Process Direct.
+Staff can action and view the HEAS details in Process Direct.
 
 Table 1
 
 +-----------------------------------+-----------------------------------+
 | Screen name                       | Description                       |
 +-----------------------------------+-----------------------------------+
-| Pension Loans Summary (PLSS)      | Key PLSS in the Super Key         |
-|                                   |                                   |
-|                                   | Use the more info icon [More      |
-|                                   | info] on the PLSS screen to see   |
-|                                   | the current and historical        |
-|                                   | payment details:                  |
+| Home Equity Access Scheme Summary | Go to the HEASS screen            |
+| (HEASS)                           |                                   |
+|                                   | Use [More info] on the HEASS      |
+|                                   | screen to see the current and     |
+|                                   | historical payment details:       |
 |                                   |                                   |
 |                                   | -   Date of Event                 |
 |                                   | -   Loan Number                   |
@@ -37,9 +72,9 @@ Table 1
 |                                   | -   Costs                         |
 |                                   | -   Loan Balance (Total)          |
 |                                   |                                   |
-|                                   | Select the action icon [Action]to |
-|                                   | go to the Pension Loan (PLS)      |
-|                                   | screen to see and/or update the:  |
+|                                   | Select Edit to go to the Home     |
+|                                   | Equity Access Scheme HEAS screen  |
+|                                   | to see and/or update the:         |
 |                                   |                                   |
 |                                   | -   Date of Effect                |
 |                                   | -   Loan Top Up Type              |
@@ -52,7 +87,7 @@ Table 1
 |                                   | -   Deductions                    |
 |                                   | -   DFISA Customer                |
 |                                   | -   Ceased Loan Indicator         |
-|                                   | -   PLS Only Claim                |
+|                                   | -   HEAS (PLS) Only Claim         |
 |                                   | -   Loan top-up amount per FTN    |
 |                                   | -   Customers advised Maximum     |
 |                                   |     Amount                        |
@@ -63,27 +98,26 @@ Table 1
 |                                   | -   Reject/Cease Reason           |
 |                                   |                                   |
 |                                   | Note: staff can only update the   |
-|                                   | most recent PLS screen. An error  |
+|                                   | most recent HEAS screen. An error |
 |                                   | message occurs if staff attempt   |
 |                                   | to make historical updates on a   |
-|                                   | previous page. Select Refresh     |
-|                                   | [Refresh] to see the most recent  |
-|                                   | PLS screen.                       |
+|                                   | previous page. Select [Refresh]   |
+|                                   | to see the most recent HEAS       |
+|                                   | screen.                           |
 |                                   |                                   |
-|                                   | The PLS screen also shows the     |
+|                                   | The HEAS screen also shows the    |
 |                                   | current:                          |
 |                                   |                                   |
 |                                   | -   Principal amount              |
 |                                   | -   Interest amount, and          |
 |                                   | -   Costs                         |
 +-----------------------------------+-----------------------------------+
-| Pension Loan Scheme Receipts      | The PLSR screen lets staff to     |
-| (PLSR)                            | search for specific receipts      |
+| Home Equity Access Scheme         | The HEASR screen lets staff to    |
+| Receipts (HEASR)                  | search for specific receipts      |
 |                                   | within set periods and shows      |
 |                                   | details about repayments.         |
 |                                   |                                   |
-|                                   | Key PLSR in the Super Key to see  |
-|                                   | the:                              |
+|                                   | This screen displays:             |
 |                                   |                                   |
 |                                   | -   Payment Reference             |
 |                                   | -   Repayment Date                |
@@ -97,8 +131,7 @@ Table 1
 | Home Equity Access Scheme Advance | The HEASADV screen records        |
 | (HEASADV)                         | customer advance payments.        |
 |                                   |                                   |
-|                                   | Key HEASADV in the Super Key to   |
-|                                   | see the:                          |
+|                                   | This screen displays:             |
 |                                   |                                   |
 |                                   | -   Status of Advance             |
 |                                   | -   Advance Payment Amount        |
@@ -109,8 +142,8 @@ Table 1
 |                                   | -   Rejection Reason Code         |
 |                                   |                                   |
 |                                   | See Advance payments for Home     |
-|                                   | Equity Access Scheme loans for    |
-|                                   | more details.                     |
+|                                   | Equity Access Scheme (HEAS) loans |
+|                                   | for more details.                 |
 +-----------------------------------+-----------------------------------+
 
 Consent requirements
@@ -377,10 +410,9 @@ Table 3
 +-----------------------------------+-----------------------------------+
 | Item                              | Description                       |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Question: What is the Home Equity |
-|                                   | Access Scheme?                    |
+| 1                                 | Question: What is the HEAS?       |
 |                                   |                                   |
-|                                   | Answer: The Scheme is a reverse   |
+|                                   | Answer: The HEAS is a reverse     |
 |                                   | mortgage like loan for older      |
 |                                   | Australians secured against real  |
 |                                   | estate they own in Australia.     |
@@ -405,10 +437,10 @@ Table 3
 |                                   | Access Scheme for more details.   |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Question: Am I eligible for a     |
-|                                   | Home Equity Access Scheme loan?   |
+|                                   | HEAS loan?                        |
 |                                   |                                   |
 |                                   | Answer: You may be eligible for   |
-|                                   | the Scheme loan if you:           |
+|                                   | the HEAS loan if you:             |
 |                                   |                                   |
 |                                   | -   are either Age Pension age or |
 |                                   |     the partner of someone who is |
@@ -441,17 +473,16 @@ Table 3
 |                                   |     much they can borrow          |
 |                                   |                                   |
 |                                   | See Eligibility for the Home      |
-|                                   | Equity Access Scheme for more     |
-|                                   | details.                          |
+|                                   | Equity Access Scheme (HEAS) for   |
+|                                   | more details.                     |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Question: Is my partner eligible  |
-|                                   | for a Home Equity Access Scheme   |
-|                                   | loan?                             |
+|                                   | for a HEAS loan?                  |
 |                                   |                                   |
 |                                   | Answer: Both you and your partner |
-|                                   | can get a loan under the Scheme   |
-|                                   | but you both need to be eligible  |
-|                                   | and apply for it.                 |
+|                                   | can get a loan under the HEAS but |
+|                                   | you both need to be eligible and  |
+|                                   | apply for it.                     |
 |                                   |                                   |
 |                                   | To see whether you or your        |
 |                                   | partner may be eligible go to the |
@@ -460,8 +491,8 @@ Table 3
 |                                   | website.                          |
 |                                   |                                   |
 |                                   | See Eligibility for the Home      |
-|                                   | Equity Access Scheme for more     |
-|                                   | details.                          |
+|                                   | Equity Access Scheme (HEAS) for   |
+|                                   | more details.                     |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Question: How much loan can I     |
 |                                   | receive?                          |
@@ -526,6 +557,7 @@ Table 3
 |                                   |                                   |
 |                                   | -   The compound interest rate is |
 |                                   |     currently 3.95% per annum     |
+|                                   |     (from 1 January 2022)         |
 |                                   | -   It is applied to the loan     |
 |                                   |     balance each fortnight        |
 |                                   | -   The interest rate is set by   |
@@ -541,12 +573,12 @@ Table 3
 |                                   | -   through your Centrelink       |
 |                                   |     online account                |
 |                                   |                                   |
-|                                   | See The Scheme loan balance,      |
-|                                   | legal costs and compound interest |
-|                                   | for more details.                 |
+|                                   | See The HEAS loan balance, legal  |
+|                                   | costs and compound interest for   |
+|                                   | more details.                     |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Question: How can I apply for the |
-|                                   | Scheme loan?                      |
+|                                   | HEAS loan?                        |
 |                                   |                                   |
 |                                   | Answer:                           |
 |                                   |                                   |
@@ -571,7 +603,8 @@ Table 3
 |                                   | form (SA497)                      |
 |                                   |                                   |
 |                                   | See Claiming a Home Equity Access |
-|                                   | Scheme loan for more details.     |
+|                                   | Scheme (HEAS) loan for more       |
+|                                   | details.                          |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Question: What documents do I     |
 |                                   | have to provide to support my     |
@@ -601,12 +634,13 @@ Table 3
 |                                   | again.                            |
 |                                   |                                   |
 |                                   | Details of these can be found in  |
-|                                   | the Scheme section of the         |
-|                                   | Services Australia website:       |
-|                                   | Supporting documents.             |
+|                                   | the HEAS section of the Services  |
+|                                   | Australia website: Supporting     |
+|                                   | documents.                        |
 |                                   |                                   |
 |                                   | See Claiming a Home Equity Access |
-|                                   | Scheme loan for more details.     |
+|                                   | Scheme (HEAS) loan for more       |
+|                                   | details.                          |
 +-----------------------------------+-----------------------------------+
 | 10                                | Question: Can I change how much   |
 |                                   | loan I receive each fortnight?    |
@@ -659,9 +693,8 @@ Table 3
 |                                   | valuation costs for the           |
 |                                   | properties offered as security.   |
 |                                   |                                   |
-|                                   | See Home Equity Access Scheme     |
-|                                   | loan balance, legal cost and      |
-|                                   | compound interest for more        |
+|                                   | See HEAS loan balance, legal cost |
+|                                   | and compound interest for more    |
 |                                   | details.                          |
 +-----------------------------------+-----------------------------------+
 | 12                                | Question: Can I stop and start    |
@@ -703,6 +736,7 @@ Table 3
 |                                   | Repayments can be made by:        |
 |                                   |                                   |
 |                                   | -   BPAY®                         |
+|                                   | -   Post Billpay                  |
 |                                   | -   debit or credit card through  |
 |                                   |     the Home Equity Access Scheme |
 |                                   |     summary page in your          |
@@ -719,8 +753,8 @@ Table 3
 |                                   | See No Negative Equity Guarantee  |
 |                                   | for more details.                 |
 +-----------------------------------+-----------------------------------+
-| 14                                | Question: How often do I receive  |
-|                                   | a loan statement?                 |
+| 14                                | Question: Can I get a statement   |
+|                                   | for my loan?                      |
 |                                   |                                   |
 |                                   | Answer: Currently, Services       |
 |                                   | Australia gives an itemised Loan  |
@@ -731,6 +765,9 @@ Table 3
 |                                   | If you are partnered the          |
 |                                   | statement will be sent around the |
 |                                   | birthday of the younger partner.  |
+|                                   |                                   |
+|                                   | Customers that have access to     |
+|                                   | online services                   |
 |                                   |                                   |
 |                                   | View your transaction summary     |
 |                                   | online. Customers can request an  |
@@ -747,32 +784,46 @@ Table 3
 |                                   |     document -> Home Equity       |
 |                                   |     Access Scheme statement       |
 |                                   |                                   |
-|                                   | See Home Equity Access Scheme     |
-|                                   | loan balance, legal cost and      |
-|                                   | compound interest for more        |
+|                                   | Customers that do not have access |
+|                                   | to online services                |
+|                                   |                                   |
+|                                   | Staff can issue an itemised       |
+|                                   | statement using the Home Equity   |
+|                                   | Access Scheme Summary (HEASS) in  |
+|                                   | Process Direct.                   |
+|                                   |                                   |
+|                                   | In the Action field select Edit   |
+|                                   | and then the printer icon         |
+|                                   |                                   |
+|                                   | Print statements:                 |
+|                                   |                                   |
+|                                   | -   to a local printer by adding  |
+|                                   |     the local printer details, or |
+|                                   | -   leave the printer field blank |
+|                                   |     for central printing          |
+|                                   |                                   |
+|                                   | See HEAS loan balance, legal cost |
+|                                   | and compound interest for more    |
 |                                   | details.                          |
 +-----------------------------------+-----------------------------------+
 | 15                                | Question: Is the loan taxable?    |
 |                                   |                                   |
 |                                   | Answer: No.                       |
 +-----------------------------------+-----------------------------------+
-| 16                                | Question: Does a Home Equity      |
-|                                   | Access Scheme loan affect my      |
-|                                   | pension?                          |
+| 16                                | Question: Does a HEAS loan affect |
+|                                   | my pension?                       |
 |                                   |                                   |
-|                                   | Answer: Taking out a Home Equity  |
-|                                   | Access Scheme loan will not       |
-|                                   | reduce your pension. Your pension |
-|                                   | might increase if you are paid    |
-|                                   | under the asset test and the      |
-|                                   | Scheme loan is secured against    |
-|                                   | property that is counted in the   |
-|                                   | assets test.                      |
+|                                   | Answer: Taking out a HEAS loan    |
+|                                   | will not reduce your pension.     |
+|                                   | Your pension might increase if    |
+|                                   | you are paid under the asset test |
+|                                   | and the HEAS loan is secured      |
+|                                   | against property that is counted  |
+|                                   | in the assets test.               |
 +-----------------------------------+-----------------------------------+
-| 17                                | Question: I am a current Home     |
-|                                   | Equity Access Scheme customer;    |
-|                                   | can you tell me my current loan   |
-|                                   | balance?                          |
+| 17                                | Question: I am a current HEAS     |
+|                                   | customer; can you tell me my      |
+|                                   | current loan balance?             |
 |                                   |                                   |
 |                                   | Answer: Yes.                      |
 |                                   |                                   |
@@ -794,8 +845,8 @@ Table 3
 |                                   | -   Search using their name       |
 |                                   |     and/or CRN in the relevant    |
 |                                   |     fields                        |
-|                                   | -   Key ‘PLS’ in Super Key field, |
-|                                   |     select [Enter]                |
+|                                   | -   Key ‘HEAS’ in Super Key       |
+|                                   |     field, select [Enter]         |
 |                                   |                                   |
 |                                   | Customer First/Customer Record    |
 |                                   |                                   |
@@ -823,21 +874,39 @@ Table 3
 |                                   | See No Negative Equity Guarantee  |
 |                                   | for more details.                 |
 +-----------------------------------+-----------------------------------+
+| 19                                | Question: Are customers on Farm   |
+|                                   | Household Allowance entitled to   |
+|                                   | HEAS?                             |
+|                                   |                                   |
+|                                   | Answer:                           |
+|                                   |                                   |
+|                                   | Farm Household Allowance (FHA)    |
+|                                   | customers may be eligible to      |
+|                                   | receive Home Equity Access Scheme |
+|                                   | (Loan Only). It is payable to     |
+|                                   | participants who would not        |
+|                                   | otherwise receive the Age Pension |
+|                                   | because they fail the income      |
+|                                   | and/or assets test, but are       |
+|                                   | current or qualified under Farm   |
+|                                   | Household Allowance (FHA)         |
+|                                   | qualifications and eligibility.   |
++-----------------------------------+-----------------------------------+
 
-Examples - The Scheme fortnightly loan amounts and advance payable
+Examples - the HEAS fortnightly loan amounts and advance payable
 
-Table 4: this table provides examples of the fortnightly Scheme loan
+Table 4: this table provides examples of the fortnightly HEAS loan
 payments (LON component) and lump sum advance payments (LONA component).
-See Advance payments for Home Equity Access Scheme loans for more
+See Advance payments for Home Equity Access Scheme (HEAS) loans for more
 details.
 
 The Maximum Pension Rate (MPR) is the sum of the maximum basic rate of
 pension, and Pension Supplement, Energy Supplement and Rent Assistance
 (RA) the customer is eligible for under the Pension Rate Calculator. RA
 paid with Family Tax Benefit (FTB) is not included in the maximum
-payment rate for the Scheme purposes.
+payment rate for the HEAS purposes.
 
-The maximum Scheme rate is 1.5 times the MPR (150% equivalent).
+The maximum HEAS rate is 1.5 times the MPR (150% equivalent).
 
 These amounts may not be current. They are examples only. For current
 payments, see Rates and thresholds.
@@ -850,30 +919,30 @@ payments, see Rates and thresholds.
 | (I&A test).                       | Age Pension actual rate (after    |
 |                                   | I&A tests) = $800                 |
 | Single customer elects 150% of    |                                   |
-| MPR                               | Max Scheme rate = $1,481.40 (MPR  |
-|                                   | x 1.5)                            |
+| MPR                               | Max HEAS rate = $1,481.40 (MPR x  |
+|                                   | 1.5)                              |
 |                                   |                                   |
 |                                   | Fortnightly LON component (max) = |
-|                                   | $681.40 (Max Scheme rate – actual |
-|                                   | rate) (1,481.40 - $800)           |
+|                                   | $681.40 (Max HEAS rate – actual   |
+|                                   | rate) ($1,481.40 - $800)          |
 +-----------------------------------+-----------------------------------+
 | Customer 2 – Single customer with | Age Pension MPR = $987.60         |
 | a reduced pension payment rate    |                                   |
 | (I&A test) requests the maximum   | Age Pension actual rate (after    |
 | advance                           | I&A tests) = $800                 |
 |                                   |                                   |
-| Single customer elects 150% of    | Max Scheme rate = $1,481.40 (MPR  |
-| MPR                               | x 1.5)                            |
+| Single customer elects 150% of    | Max HEAS rate = $1,481.40 (MPR x  |
+| MPR                               | 1.5)                              |
 |                                   |                                   |
 | Single customer has requested     | Max Advance amount $12,838.80     |
 | maximum advance which is 50% of   | (MPR x 26 x 50%)                  |
 | MPR                               |                                   |
 |                                   | Fortnightly deduction from Max    |
-| Advance payment $12,838.80        | Scheme rate for advance paid      |
+| Advance payment $12,838.80        | HEAS rate for advance paid        |
 |                                   | $493.80 (MPR x 50%)               |
 | Fortnightly payment: $987.60      |                                   |
 |                                   | Fortnightly LON component (max) = |
-| Age $800                          | $187.60 (Max Scheme rate – actual |
+| Age $800                          | $187.60 (Max HEAS rate – actual   |
 |                                   | rate – fortnightly deduction for  |
 | LON $187.60                       | advance) ($1,481.80 - $800 -      |
 |                                   | $493.80)                          |
@@ -882,43 +951,43 @@ payments, see Rates and thresholds.
 | maximum pension payment requests  |                                   |
 | the maximum advance               | Age Pension actual rate = $987.60 |
 |                                   |                                   |
-| Single customer elects 150% of    | Max Scheme rate = $1,481.40 (MPR  |
-| MPR                               | x 1.5)                            |
+| Single customer elects 150% of    | Max HEAS rate = $1,481.40 (MPR x  |
+| MPR                               | 1.5)                              |
 |                                   |                                   |
 | Single customer has requested     | Max Advance amount $12,838.80     |
 | maximum advance which is 50% of   | (MPR x 26 x 50%)                  |
 | MPR                               |                                   |
 |                                   | Fortnightly deduction from Max    |
-| Advance payment $12,838.80        | Scheme rate for advance paid      |
+| Advance payment $12,838.80        | HEAS rate for advance paid        |
 |                                   | $493.80 (MPR x 50%)               |
 | Fortnightly payment: $987.60      |                                   |
 |                                   | Fortnightly LON component (max) = |
-| Age $987.60                       | $0 (Max Scheme rate – actual rate |
-|                                   | – fortnightly deduction for       |
+| Age $987.60                       | $0 (Max HEAS rate – actual rate – |
+|                                   | fortnightly deduction for         |
 | LON $0                            | advance) ($1,481.80 - $987.60 -   |
 |                                   | $493.80)                          |
 +-----------------------------------+-----------------------------------+
 | Customer 4 – Single customer with | Age Pension MPR = $987.60         |
-| no pension payable (Home Equity   |                                   |
-| Access Scheme only) requests the  | Age Pension actual rate (after    |
-| maximum advance                   | I&A tests) = $0                   |
+| no pension payable (HEAS only)    |                                   |
+| requests the maximum advance      | Age Pension actual rate (after    |
+|                                   | I&A tests) = $0                   |
+| Customer elects fixed rate of     |                                   |
+| $800                              | Max HEAS rate = $1,481.40 (MPR x  |
+|                                   | 1.5)                              |
+| Single customer has requested     |                                   |
+| maximum advance which is 50% of   | Max Advance amount $12,838.80     |
+| MPR                               | (MPR x 26 x 50%)                  |
 |                                   |                                   |
-| Customer elects fixed rate of     | Max Scheme rate = $1,481.40 (MPR  |
-| $800                              | x 1.5)                            |
+| Advance payment $12,838.80        | Fortnightly deduction from Max    |
+|                                   | HEAS rate for advance paid        |
+| Maximum fortnightly loan payment  | $493.80 (MPR x 50%)               |
+| available after advance request   |                                   |
+| $987.60                           | Fortnightly LON component (max) = |
+|                                   | $987.60 (Max HEAS rate – actual   |
+| Age $0                            | rate – fortnightly deduction for  |
+|                                   | advance) ($1,481.80 - $987.60 -   |
+| LON $800                          | $493.80)                          |
 |                                   |                                   |
-| Single customer has requested     | Max Advance amount $12,838.80     |
-| maximum advance which is 50% of   | (MPR x 26 x 50%)                  |
-| MPR                               |                                   |
-|                                   | Fortnightly deduction from Max    |
-| Advance payment $12,838.80        | Scheme rate for advance paid      |
-|                                   | $493.80 (MPR x 50%)               |
-| Maximum fortnightly loan payment  |                                   |
-| available after advance request   | Fortnightly LON component (max) = |
-| $987.60                           | $987.60 (Max Scheme rate – actual |
-|                                   | rate – fortnightly deduction for  |
-| Age $0                            | advance) ($1,481.80 - $987.60 -   |
-|                                   | $493.80)                          |
-| LON $800                          |                                   |
 |                                   | Customer will get $800 per        |
 |                                   | fortnight of LON only as this is  |
 |                                   | less than the current maximum     |
@@ -930,11 +999,11 @@ payments, see Rates and thresholds.
 | rate (I&A test).                  | Age Pension actual rate (after    |
 |                                   | I&A tests) = $400                 |
 | Partnered customer elects 150% of |                                   |
-| MPR                               | Max Scheme rate = $1,116.60 (MPR  |
-|                                   | x 1.5)                            |
+| MPR                               | Max HEAS rate = $1,116.60 (MPR x  |
+|                                   | 1.5)                              |
 |                                   |                                   |
 |                                   | Fortnightly LON component (max) = |
-|                                   | $716.60 (Max Scheme rate – actual |
+|                                   | $716.60 (Max HEAS rate – actual   |
 |                                   | rate) ($1,116.60 - $400)          |
 +-----------------------------------+-----------------------------------+
 | Customer 6 – Partnered customer   | Age Pension MPR = $744.40         |
@@ -942,18 +1011,18 @@ payments, see Rates and thresholds.
 | rate (I&A test) requests the      | Age Pension actual rate (after    |
 | maximum advance                   | I&A tests) = $400                 |
 |                                   |                                   |
-| Partnered customer elects 150% of | Max Scheme rate = $1,116.60 (MPR  |
-| MPR                               | x 1.5)                            |
+| Partnered customer elects 150% of | Max HEAS rate = $1,116.60 (MPR x  |
+| MPR                               | 1.5)                              |
 |                                   |                                   |
 | Partnered customer has requested  | Max Advance amount $9,677.20 (MPR |
 | maximum advance which is 50% of   | x 26 x 50%)                       |
 | MPR                               |                                   |
 |                                   | Fortnightly deduction from Max    |
-| Advance payment $9,677.20         | Scheme rate for advance paid      |
+| Advance payment $9,677.20         | HEAS rate for advance paid        |
 |                                   | $372.20 (MPR x 50%)               |
 | Fortnightly payment: $744.40      |                                   |
 |                                   | Fortnightly LON component (max) = |
-| Age $400                          | $344.40 (Max Scheme rate – actual |
+| Age $400                          | $344.40 (Max HEAS rate – actual   |
 |                                   | rate – fortnightly deduction for  |
 | LON $344.40                       | advance) ($1,116.60 - $400 -      |
 |                                   | $372.20)                          |
@@ -962,38 +1031,38 @@ payments, see Rates and thresholds.
 | with a maximum pension payment    |                                   |
 | rate requests the maximum advance | Age Pension actual rate = $744.40 |
 |                                   |                                   |
-| Partnered customer elects 150% of | Max Scheme rate = $1,116.60 (MPR  |
-| MPR                               | x 1.5)                            |
+| Partnered customer elects 150% of | Max HEAS rate = $1,116.60 (MPR x  |
+| MPR                               | 1.5)                              |
 |                                   |                                   |
 | Partnered customer has requested  | Max Advance amount $9,677.20 (MPR |
 | maximum advance which is 50% of   | x 26 x 50%)                       |
 | MPR                               |                                   |
 |                                   | Fortnightly deduction from Max    |
-| Advance payment $9,677.20         | Scheme rate for advance paid      |
+| Advance payment $9,677.20         | HEAS rate for advance paid        |
 |                                   | $372.20 (MPR x 50%)               |
 | Fortnightly payment: $744.40      |                                   |
 |                                   | Fortnightly LON component (max) = |
-| Age $744.40                       | $0 (Max Scheme rate – actual rate |
-|                                   | – fortnightly deduction for       |
+| Age $744.40                       | $0 (Max HEAS rate – actual rate – |
+|                                   | fortnightly deduction for         |
 | LON $0                            | advance) ($1,116.60 - $744.40 -   |
 |                                   | $372.20)                          |
 +-----------------------------------+-----------------------------------+
 | Customer 8 – Partnered customer   | Age Pension MPR = $744.40         |
 | with no pension payable (Home     |                                   |
-| Equity Access Scheme only)        | Age Pension actual rate = $0      |
-| requests the maximum advance      |                                   |
-|                                   | Max Scheme rate = $1,116.60 (MPR  |
-| Partnered customer elects fixed   | x 1.5)                            |
-| Home Equity Access Scheme rate of |                                   |
+| Equity Access HEAS only) requests | Age Pension actual rate = $0      |
+| the maximum advance               |                                   |
+|                                   | Max HEAS rate = $1,116.60 (MPR x  |
+| Partnered customer elects fixed   | 1.5)                              |
+| Home Equity Access HEAS rate of   |                                   |
 | $400                              | Max Advance amount $9,677.20 (MPR |
 |                                   | x 26 x 50%)                       |
 | Partnered customer has requested  |                                   |
 | maximum advance which is 50% of   | Fortnightly deduction from Max    |
-| MPR                               | Scheme rate for advance paid      |
+| MPR                               | HEAS rate for advance paid        |
 |                                   | $372.20 (MPR x 50%)               |
 | Advance payment $9,677.20         |                                   |
 |                                   | Fortnightly LON component (max) = |
-| Fortnightly payment: $400         | $744.40 (Max Scheme rate – actual |
+| Fortnightly payment: $400         | $744.40 (Max HEAS rate – actual   |
 |                                   | rate – fortnightly deduction for  |
 | Age $0                            | advance) ($1,116.60 - $0 -        |
 |                                   | $372.20)                          |
@@ -1005,20 +1074,20 @@ payments, see Rates and thresholds.
 +-----------------------------------+-----------------------------------+
 | Customer 9 – Partnered customer   | Age Pension MPR = $744.40         |
 | with no pension payable (Home     |                                   |
-| Equity Access Scheme only)        | Age Pension actual rate = $0      |
-| requests the maximum advance      |                                   |
-|                                   | Max Scheme rate = $1,116.60 (MPR  |
-| Partnered customer elects 120%    | x 1.5)                            |
+| Equity Access HEAS only) requests | Age Pension actual rate = $0      |
+| the maximum advance               |                                   |
+|                                   | Max HEAS rate = $1,116.60 (MPR x  |
+| Partnered customer elects 120%    | 1.5)                              |
 | rate of fortnightly payment       |                                   |
 |                                   | Max Advance amount $9,677.20 (MPR |
 | Partnered customer has requested  | x 26 x 50%)                       |
 | maximum advance which is 50% of   |                                   |
 | MPR                               | Fortnightly deduction from Max    |
-|                                   | Scheme rate for advance paid      |
+|                                   | HEAS rate for advance paid        |
 | Advance payment $9,677.20         | $372.20 (MPR x 50%)               |
 |                                   |                                   |
 | Fortnightly payment: 120% of MPR  | Fortnightly LON component (max) = |
-| = $893.28                         | $744.40 (Max Scheme rate – actual |
+| = $893.28                         | $744.40 (Max HEAS rate – actual   |
 |                                   | rate – fortnightly deduction for  |
 | Age $0                            | advance) ($1,116.60 - $0 -        |
 |                                   | $372.20)                          |
@@ -1032,20 +1101,20 @@ payments, see Rates and thresholds.
 +-----------------------------------+-----------------------------------+
 | Customer 10 – Partnered customer  | Age Pension MPR = $744.40         |
 | with no pension payable (Home     |                                   |
-| Equity Access Scheme only)        | Age Pension actual rate = $0      |
-| requests partial advance          |                                   |
-|                                   | Max Scheme rate = $1,116.60 (MPR  |
-| Partnered customer elects 120%    | x 1.5)                            |
+| Equity Access HEAS only) requests | Age Pension actual rate = $0      |
+| partial advance                   |                                   |
+|                                   | Max HEAS rate = $1,116.60 (MPR x  |
+| Partnered customer elects 120%    | 1.5)                              |
 | rate of fortnightly payment       |                                   |
 |                                   | Advance amount $5,806.32 (MPR x   |
 | Partnered customer has requested  | 26 x 30%)                         |
 | advance but as they would like to |                                   |
 | retain fortnightly payment of     | Fortnightly deduction from Max    |
-| 120% of MPR, customer would be    | Scheme rate for advance paid      |
+| 120% of MPR, customer would be    | HEAS rate for advance paid        |
 | entitled to 30% of MPR as an      | $223.32 (MPR x 30%)               |
 | advance                           |                                   |
 |                                   | Fortnightly LON component (max) = |
-| Advance payment (30% of MPR)      | $893.28 (Max Scheme rate – actual |
+| Advance payment (30% of MPR)      | $893.28 (Max HEAS rate – actual   |
 | $5,806.32                         | rate – fortnightly deduction for  |
 |                                   | advance) ($1,116.60 - $0 -        |
 | Fortnightly payment: 120% of MPR  | $223.32)                          |
@@ -1060,21 +1129,22 @@ Contacts
 
 Home Equity Access Scheme National team
 
-Calculators
-
-For Service Officers and customers
+Calculators for Service Officers and customers
 
 Home Equity Access Scheme eligibility calculator
 
 Home Equity Access Scheme calculator
 
-For Complex Assessment Officers (CAO)
+Calculator for Complex Assessment Officers (CAO)
+
+Do not share this attachment externally. See Freedom of Information -
+Information Publication Scheme.
+
+[An attachment is available. Do not share it externally: An attachment
+is available. Do not share it externally.]Home Equity Access Scheme
+grant and projection calculator
 
 Use 'Save As' work around to download/use attachment.
-
-[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
-Blueprint Migration\RDT Release Icons\32w\icon-attachment.png]Home
-Equity Access Scheme grant and projection calculator
 
 Forms
 
@@ -1086,7 +1156,7 @@ Home Equity Access Scheme single application form (SA496)
 
 Appeal codes
 
-Benefit type used for Home Equity Access Scheme
+Benefit type used for the HEAS
 
 HEA- Home Equity Access Scheme.
 
@@ -1094,7 +1164,7 @@ Original decision codes
 
 Table 5: this table has valid codes to enter into the Internal
 Review/Explanation Script, when a customer requests a review of decision
-for the Home Equity Access Scheme.
+for the HEAS.
 
   ------ --------------------------
   Code   Description
@@ -1109,7 +1179,7 @@ Reasons for original decision codes
 
 Table 6: this table has valid codes to enter into the Internal
 Review/Explanation Script, when a customer requests a review of decision
-for the Home Equity Access Scheme.
+for the HEAS.
 
   ------ -----------------------------------
   Code   Description

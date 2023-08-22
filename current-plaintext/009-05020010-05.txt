@@ -1,10 +1,3 @@
-
-Calculating the Adult Disability Assessment Tool (ADAT) score 009-05020010
-
--   Background
--   
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
@@ -61,7 +54,283 @@ This table describes the ADAT screens and when they are to be used.
 |                                   | (ADAT).                           |
 +-----------------------------------+-----------------------------------+
 
-Intranet links
+Q888 letter template and approved text
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Q888 Request for Replacement      |
+|                                   | Medical Report letter             |
+|                                   |                                   |
+|                                   | See the template below.           |
++-----------------------------------+-----------------------------------+
+| 2                                 | Approved text                     |
+|                                   |                                   |
+|                                   | If a new/replacement medical      |
+|                                   | report is needed, arrange for     |
+|                                   | Team Leader or SSO to create and  |
+|                                   | issue a Q888 using the template.  |
+|                                   |                                   |
+|                                   | The text contained have been      |
+|                                   | approved and must be used and     |
+|                                   | cannot be altered                 |
+|                                   |                                   |
+|                                   | Some paragraphs contain multiple  |
+|                                   | options, which will need to be    |
+|                                   | altered depending on the reason   |
+|                                   | for requesting the replacement    |
+|                                   | medical report.                   |
+|                                   |                                   |
+|                                   | Note: if the customer has a       |
+|                                   | correspondence nominee, issue a   |
+|                                   | copy of the Q888 to the nominee.  |
++-----------------------------------+-----------------------------------+
+
+Request for Replacement Medical Report - Carers
+
+Follow the instructions below to create a Q888 letter.
+
+The Operational Blueprint (OB) file Creating a Q999 or Q888 letter
+111-14010060 has detailed information and instructions on how to create
+a Q999 or Q888 letter.
+
+Code the LDO screen with the listed option number listed below, then
+copy and paste each individual row into the LDD screen, as follows:
+
+1.  From the LDT screen, code ‘OPT’ in the command field, press Enter.
+2.  Insert the relevant option numbers listed below into the LDO screen,
+    press Enter.
+3.  Code ‘DATA’ in the command field, press Enter.
+4.  Copy and paste the approved text below in the relevant fields in the
+    LDD screen, ensuring you have a space after the last word on each
+    line. Each line has a 74 character limit and you must include a
+    space at the end of each line to make sure that words do not join
+    together in the letter.
+5.  Use ‘next page’ to move to each paragraph (in Customer First).
+6.  Code ‘draft’ in the command field, press Enter. Print a draft of the
+    letter to check that the printed version is correct. The OB file
+    contains instructions on how to do this.
+
+Note: Only copy and paste text in to the specified paragraph. Do not add
+any other text in any available lines for that paragraph text.
+
++-----------------------------------+-----------------------------------+
+| Free text variables               | Format                            |
++-----------------------------------+-----------------------------------+
+| NAME                              | John Smith (use full name in the  |
+|                                   | first instance only)              |
++-----------------------------------+-----------------------------------+
+| EVENT                             | Name of event with correct        |
+|                                   | spelling and capitalisation E.g.  |
+|                                   | Cyclone Tracy                     |
++-----------------------------------+-----------------------------------+
+| DATE                              | Dates should be written as DD     |
+|                                   | Month YYYY or D Month YYYY where  |
+|                                   | the day is a single digit         |
+|                                   | Date example: 19 December 2011 or |
+|                                   | 9 December 2011                   |
++-----------------------------------+-----------------------------------+
+| PERIOD                            | To be inserted numerically, in    |
+|                                   | full (using forward slashes) and  |
+|                                   | separated by an en dash.          |
+|                                   |                                   |
+|                                   | E.g. 19/12/2011–01/02/2012        |
+|                                   |                                   |
+|                                   | 2002–2003 or 2002–03              |
++-----------------------------------+-----------------------------------+
+| AMOUNT                            | Dollar amounts should not display |
+|                                   | decimal places unless there is a  |
+|                                   | cents value.                      |
+|                                   |                                   |
+|                                   | E.g. $250 / $1,000.34 /           |
+|                                   | $10,085.98                        |
++-----------------------------------+-----------------------------------+
+| PHONE NUMBER                      | Phone numbers should not split    |
+|                                   | across lines, with appropriate    |
+|                                   | spacing:                          |
+|                                   |                                   |
+|                                   | 6 digits: 132 717                 |
+|                                   |                                   |
+|                                   | Please enter the 132 717 phone    |
+|                                   | number into the                   |
+|                                   | GEN.ENQ.PHONE.INIT.OFF field.     |
++-----------------------------------+-----------------------------------+
+| NOMINEE                           | If the customer has a             |
+|                                   | correspondence nominee, issue a   |
+|                                   | copy of the Q888 to the nominee   |
++-----------------------------------+-----------------------------------+
+
+The LDO screen presents a list of options. (see Operational Blueprint
+
+111-14010060)
+
+-   On each line select options by coding the relevant number in the
+    field at end of the line (for example, '1', '2').
+-   Once you have selected the correct options and/or completed the free
+    text variables, please remove all symbols e.g. <!> {}
+-   Quotation marks can’t be used in free text fields as it will change
+    to random text.
+-   Only use the approved text in the blue tables below.
+
++-----------------------+-----------------------+-----------------------+
+| Command               | LDO screen options /  | Option number         |
+|                       | LDD Screen free text  |                       |
+|                       |                       |                       |
+|                       | Use the approved text |                       |
+|                       | in the blue table     |                       |
+|                       | below and copy/past   |                       |
+|                       | in LDD screen.        |                       |
+|                       |                       |                       |
+|                       | OASR screen /         |                       |
+|                       | Commands =            |                       |
+|                       | OPT/DATA/DRAFT/FIN    |                       |
++-----------------------+-----------------------+-----------------------+
+| PHN008                | Include 008 Phone     | 2                     |
+|                       | Number = 1, NULL = 2  |                       |
++-----------------------+-----------------------+-----------------------+
+| CLORTP                | Third Party = 1,      | 2                     |
+|                       | Client = 2            |                       |
++-----------------------+-----------------------+-----------------------+
+| NOMCLI                | Nominee = 1, Customer | 2                     |
+|                       | = 2                   |                       |
++-----------------------+-----------------------+-----------------------+
+| NOMCUS                | (Nominee) Cust letter | 2                     |
+|                       | sent = 1, Cust letter |                       |
+|                       | suppressed= 2         |                       |
++-----------------------+-----------------------+-----------------------+
+| SMTS                  | Dear Sir/Madam = 1,   | 2                     |
+|                       | Dear {Title & Last    |                       |
+|                       | Name} = 2             |                       |
++-----------------------+-----------------------+-----------------------+
+| FREE TEXT PARAGRAPH   | Request for           | Doesn’t show on the   |
+|                       | Replacement Medical   | LDO screen            |
+|                       | Report                |                       |
++-----------------------+-----------------------+-----------------------+
+| FRTX1:                | Free Text paragraph   | 1                     |
+|                       | required? Y = 1, N =  |                       |
+| FREE TEXT PARAGRAPH A | 2                     |                       |
+|                       |                       |                       |
+|                       | Thank you for         |                       |
+|                       | providing the medical |                       |
+|                       | report in support of  |                       |
+|                       | your <Carer           |                       |
+|                       |                       |                       |
+|                       | Payment!Carer         |                       |
+|                       | Allowance!Carer       |                       |
+|                       | Payment and Carer     |                       |
+|                       | Allowance>            |                       |
+|                       | <claim!review>.       |                       |
++-----------------------+-----------------------+-----------------------+
+| FRTX2:                | Free Text paragraph   | 1                     |
+|                       | required? Y = 1, N =  |                       |
+| FREE TEXT PARAGRAPH B | 2                     |                       |
+|                       |                       |                       |
+|                       | On review of the      |                       |
+|                       | information supplied, |                       |
+|                       | we have found that    |                       |
+|                       | the medical           |                       |
+|                       |                       |                       |
+|                       | report completed by   |                       |
+|                       | <THP name> for <Care  |                       |
+|                       | receiver name> cannot |                       |
+|                       | be                    |                       |
+|                       |                       |                       |
+|                       | used for your         |                       |
+|                       | <claim/review>.       |                       |
+|                       |                       |                       |
+|                       |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| FRTX3:                | Free Text paragraph   | 1                     |
+|                       | required? Y = 1, N =  |                       |
+| FREE TEXT PARAGRAPH C | 2                     |                       |
+|                       |                       |                       |
+|                       | A replacement Carer   |                       |
+|                       | Payment and/or Carer  |                       |
+|                       | Allowance Medical     |                       |
+|                       | Report for a          |                       |
+|                       |                       |                       |
+|                       | person 16 years or    |                       |
+|                       | over form (SA332A)    |                       |
+|                       | will need to be       |                       |
+|                       | provided for          |                       |
+|                       |                       |                       |
+|                       | <Care receiver name>. |                       |
++-----------------------+-----------------------+-----------------------+
+| FRTX4:                | Free Text paragraph   | 1                     |
+|                       | required? Y = 1, N =  |                       |
+| FREE TEXT PARAGRAPH D | 2                     |                       |
+|                       |                       |                       |
+|                       | This form must be     |                       |
+|                       | completed by <a new   |                       |
+|                       | Treating Health       |                       |
+|                       | Professional!a        |                       |
+|                       |                       |                       |
+|                       | Treating Health       |                       |
+|                       | Professional>.        |                       |
++-----------------------+-----------------------+-----------------------+
+| FRTX5:                | Free Text paragraph   | 1                     |
+|                       | required? Y = 1, N =  |                       |
+| FREE TEXT PARAGRAPH E | 2                     |                       |
+|                       |                       |                       |
+|                       | A list of approved    |                       |
+|                       | Health Professionals  |                       |
+|                       | is detailed on the    |                       |
+|                       | front of the          |                       |
+|                       |                       |                       |
+|                       | Carer Payment and/or  |                       |
+|                       | Carer Allowance       |                       |
+|                       | Medical Report for a  |                       |
+|                       | person 16 years       |                       |
+|                       |                       |                       |
+|                       | or over form (SA332A) |                       |
++-----------------------+-----------------------+-----------------------+
+| FRTX6:                | Free Text paragraph   | 2                     |
+|                       | required? Y = 1, N =  |                       |
+| FREE TEXT PARAGRAPH F | 2                     |                       |
++-----------------------+-----------------------+-----------------------+
+| PPLACT                | PPLACT=1,             | 2                     |
+|                       | Null/Other=2          |                       |
++-----------------------+-----------------------+-----------------------+
+| SSALF                 | SS.ad 1999=1,         | 1                     |
+|                       | SSlaw=2, St As=3,FA   |                       |
+|                       | Ad=4 FA law=5, SSA=6, |                       |
+|                       | N=7                   |                       |
++-----------------------+-----------------------+-----------------------+
+| CHAT (Q888)           | User contact name &   | 2                     |
+|                       | number=1, Teleservice |                       |
+|                       | No=2; for Q999        |                       |
+|                       | only—Null=3           |                       |
+|                       |                       |                       |
+|                       | CHAT = 2              |                       |
+|                       |                       |                       |
+|                       | More information      |                       |
+|                       |                       |                       |
+|                       | For more information, |                       |
+|                       | please go to          |                       |
+|                       | ser                   |                       |
+|                       | vicesaustralia.gov.au |                       |
+|                       | or call us on the     |                       |
+|                       | number shown at the   |                       |
+|                       | top of this letter.   |                       |
++-----------------------+-----------------------+-----------------------+
+| REVCHG                | reverse charges call  | 2                     |
+|                       | necessary?=1, Null=2  |                       |
++-----------------------+-----------------------+-----------------------+
+| APP999                | Include the Appeal    | 2                     |
+|                       | paragraph=1, Null=2   |                       |
+|                       |                       |                       |
+|                       | .                     |                       |
++-----------------------+-----------------------+-----------------------+
+| ABSAIC                | Appeals text,         | 2                     |
+|                       | Standard=1,           |                       |
+|                       | ABSTUDY=2, AIC=3      |                       |
++-----------------------+-----------------------+-----------------------+
+| DAYWKS                | 14days=1, 28days=2,   | 2                     |
+|                       | 13 weeks=3, 52        |                       |
+|                       | weeks=4               |                       |
++-----------------------+-----------------------+-----------------------+
+| PRVACT                | Privacy Act=1, Null=2 | 1                     |
++-----------------------+-----------------------+-----------------------+
 
 Intranet links
 

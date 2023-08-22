@@ -1,0 +1,75 @@
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+This document outlines RDF table coding during an emergency event to
+control debt raising and recovery. Access to these tables is for
+authorised staff only.
+
+For appropriately trained staff only.
+
+Debt pausing for emergency events
+
+Debt raising and recovery can be paused for customers in
+disaster-impacted areas. Services Australia use postcode exclusions or a
+national exclusion to implement this, such as during the activation of
+the:
+
+-   Australian Government Disaster Recovery Payment (AGDRP)
+-   Disaster Recovery Allowance (DRA)
+
+Coding RDF tables for emergency events
+
+Coding the RDF tables with the impacted location postcodes or extending
+emergency events, must be done manually. The following 3 tables are used
+for emergency events:
+
+DMN.EMG.Postcodes table has the impacted postcodes recorded. Only
+customers with an address in those postcodes can have Situational
+Hardship provisions applied. Customers with addresses in these recorded
+postcodes are excluded from the following recovery actions:
+
+-   Tax Garnishee
+-   Automatic over-recovery re-allocation
+-   Further interest charge being applied
+
+DMN.Debt.Recovery.Pause table stores the switch that determines whether
+Situational Hardship is ‘ON’ or Disaster automatic write off
+functionality is ‘ON’. It also holds the configuration details for each
+Debt Recovery pause.
+
+DMN.Sus.Auto.Det.Raise.Debt table pauses some automatic debt raising
+activities and activates flexible due date and informal account payable
+functionality. This table also has the impacted postcodes recorded. This
+table does not affect Families debts or Child Care Subsidy (CCS)
+reconciliation debts, which have separate mechanisms for pausing debts
+during emergencies
+
+Treatment Pathway tool coding in Process Direct for emergency events
+
+The Treatment Pathway tool affects debts in Process Direct. It
+streamlines response to emergencies. It also provides a way to
+specialise recovery treatments for individual or groups of customers.
+
+The functionality is facilitated by rules, rule sets, cohorts and
+campaigns where a:
+
+-   ‘rule’ dictates the changed recovery action
+-   ‘rule set’ is a collection of rules
+-   ‘cohort’ is a group of customers, as defined by business rules
+-   ‘campaign’ is the encompassing reason for wanting to change recovery
+
+Related links
+
+Temporary write off of Centrelink debts
+
+General Centrelink debt recovery information
+
+Sending Account Payable letters
+
+Debt Raising and Recovery for customers in locations affected by
+disaster events
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

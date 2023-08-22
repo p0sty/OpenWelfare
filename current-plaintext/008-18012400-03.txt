@@ -1,13 +1,9 @@
 
-Selective Application of Data (SAD) 008-18012400
-
--   Background
--   Process
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 Process Direct
+
+Accessing the Selective Application of Data (SAD) in Process Direct
 
 Table 1: Accessing the Selective Application of Data (SAD) function in
 Process Direct
@@ -18,17 +14,54 @@ Process Direct
 | 1                                 | Accessing the SAD function + Read |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Use the SAD process when          |
-|                                   | assessing a new claim for         |
+|                                   | The SAD function must be applied  |
+|                                   | when streaming a claim for        |
 |                                   | Disability Support Pension (DSP)  |
-|                                   | where there is insufficient       |
-|                                   | information to finalise the       |
-|                                   | assessment of the entire claim.   |
-|                                   | For example, where more           |
-|                                   | information is required or        |
-|                                   | assessments such as the Job       |
-|                                   | Capacity Assessment (JCA) are not |
-|                                   | available.                        |
+|                                   | where the claim is not ready to   |
+|                                   | be finalised. For example where a |
+|                                   | Job Capacity Assessment (JCA)     |
+|                                   | referral is required. When a      |
+|                                   | customer and/or partner is        |
+|                                   | currently on an existing Income   |
+|                                   | Support Payment all non-medical   |
+|                                   | information received must be      |
+|                                   | coded and SAD function applied    |
+|                                   | when streaming occurs. This is to |
+|                                   | apply any changes of              |
+|                                   | circumstances to the current      |
+|                                   | Income Support Payment received   |
+|                                   | by the customer and/or partner.   |
+|                                   |                                   |
+|                                   | The SAD function is not required  |
+|                                   | when the DSP claim will be        |
+|                                   | rejected or manually granted at   |
+|                                   | the streaming stage. If a         |
+|                                   | customer and/or partner is        |
+|                                   | currently receiving another       |
+|                                   | Income Support Payment all        |
+|                                   | non-medical information or        |
+|                                   | changes to circumstances must be  |
+|                                   | coded before the claim is         |
+|                                   | finalised.                        |
+|                                   |                                   |
+|                                   | See Streaming a new claim for     |
+|                                   | Disability Support Pension (DSP)  |
+|                                   |  for more information about       |
+|                                   | coding changes of circumstances   |
+|                                   | for current Income Support        |
+|                                   | Payment customers and/or          |
+|                                   | partners.                         |
+|                                   |                                   |
+|                                   | SAD activities must not be left   |
+|                                   | ‘Started’ or placed ‘On Hold’.    |
+|                                   | Always check the Transactions tab |
+|                                   | to ensure the SAD activity has    |
+|                                   | been completed. The only time a   |
+|                                   | SAD activity can be placed ‘On    |
+|                                   | Hold’ is when a system issue      |
+|                                   | prevents finalisation of the      |
+|                                   | activity and an incident has been |
+|                                   | raised.                           |
 |                                   |                                   |
 |                                   | DSP new claim (NCL) activities    |
 |                                   |                                   |
@@ -37,10 +70,10 @@ Process Direct
 |                                   | updates must be finalised via SAD |
 |                                   | function:                         |
 |                                   |                                   |
-|                                   | -   key TS in the Super Key       |
-|                                   |     field > select [More          |
-|                                   |     Options] > Selective          |
-|                                   |     Application Data              |
+|                                   | -   Go to the Transaction Summary |
+|                                   |     (TS) screen                   |
+|                                   | -   Select [More Options] >       |
+|                                   |     Selective Application Data    |
 |                                   |                                   |
 |                                   | FIN is not available in Process   |
 |                                   | Direct.                           |
@@ -49,7 +82,7 @@ Process Direct
 |                                   | as it is required after SAD is    |
 |                                   | complete.                         |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Tasks available on the SAD        |
+| 2                                 | Tasks available in the SAD        |
 |                                   | function + Read more ...          |
 |                                   |                                   |
 |                                   | Tasks that can be transferred     |
@@ -114,7 +147,7 @@ Process Direct
 |                                   | SAD tasks.                        |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Selecting and deselecting tasks   |
-|                                   | on the SAD function + Read more   |
+|                                   | in the SAD function + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | The SAD function lists eligible   |
@@ -130,26 +163,27 @@ Process Direct
 |                                   | The default preselects all        |
 |                                   | eligible tasks on the customer,   |
 |                                   | partner and child records.        |
-|                                   | Deselect tasks that should not be |
+|                                   | Deselect tasks that are not being |
 |                                   | transferred/finalised at this     |
-|                                   | time.                             |
+|                                   | time or if any of the information |
+|                                   | needs verification.               |
 |                                   |                                   |
-|                                   | To deselect a task, select on the |
+|                                   | To deselect a task, select the    |
 |                                   | 'ticked' task.                    |
 |                                   |                                   |
 |                                   | If a task is deselected in error  |
 |                                   | it can be reselected prior to the |
-|                                   | continue button being selected.   |
+|                                   | Continue being selected.          |
 |                                   |                                   |
 |                                   | When a task is deselected on the  |
-|                                   | customer's record, that task will |
-|                                   | be automatically deselected where |
-|                                   | it appears under any other record |
-|                                   | (partner and linked children). If |
-|                                   | there are related tasks, deselect |
-|                                   | any related tasks. This is to     |
-|                                   | ensure that data is updated       |
-|                                   | correctly. For example:           |
+|                                   | customer's record, the same task  |
+|                                   | will be automatically deselected  |
+|                                   | where it appears under any other  |
+|                                   | record (partner and linked        |
+|                                   | children). If there are related   |
+|                                   | tasks, deselect any related       |
+|                                   | tasks. This will ensure data is   |
+|                                   | updated correctly. For example:   |
 |                                   |                                   |
 |                                   | -   When a customer and partner   |
 |                                   |     have the same task available  |
@@ -182,11 +216,11 @@ Process Direct
 | 4                                 | Completing the SAD function +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | The SAD process will transfer the |
-|                                   | selected tasks to a new           |
+|                                   | The SAD function will transfer    |
+|                                   | the selected tasks to a new       |
 |                                   | reassessment (REA) activity.      |
 |                                   |                                   |
-|                                   | The system navigates to the       |
+|                                   | The system will navigate to the   |
 |                                   | assessment and finalisation       |
 |                                   | process for the secondary REA     |
 |                                   | activity.                         |
@@ -209,29 +243,37 @@ Process Direct
 |                                   |                                   |
 |                                   | After completing all provisional  |
 |                                   | updates required for both         |
-|                                   | customer and partner in the claim |
-|                                   | activity, key TS in the Super Key |
-|                                   | field to go back to the TS screen |
-|                                   | and:                              |
+|                                   | customer and partner in the DSP   |
+|                                   | claim activity:                   |
+|                                   |                                   |
+|                                   | go to the Transaction Summary     |
+|                                   | (TS) screen                       |
 |                                   |                                   |
 |                                   | select [More Options] > Selective |
 |                                   | Application Data                  |
 |                                   |                                   |
-|                                   | on the Task Selector (TS) screen, |
-|                                   | select or deselect any updates    |
-|                                   | for finalisation as required      |
+|                                   | on the Task Selector screen,      |
+|                                   | select or deselect any updates as |
+|                                   | needed                            |
 |                                   |                                   |
 |                                   | select Submit                     |
 |                                   |                                   |
 |                                   | on the TS screen, the banner will |
 |                                   | display REA as the activity type  |
 |                                   |                                   |
+|                                   | select Process                    |
+|                                   |                                   |
 |                                   | address any edits or warnings     |
-|                                   | from the SWE (Errors) screen      |
+|                                   | from the Errors (SWE) screen      |
+|                                   |                                   |
+|                                   | -   if error E005AM - Receipt     |
+|                                   |     Date can’t be more than 1     |
+|                                   |     year in the past for this     |
+|                                   |     Source, see Item 5            |
 |                                   |                                   |
 |                                   | select Assess                     |
 |                                   |                                   |
-|                                   | on the Entitlements (ELD) screen, |
+|                                   | on the Entitlement (ELD) screen,  |
 |                                   | select Finish. The finalise text  |
 |                                   | box will display:                 |
 |                                   | 'Information provided in the      |
@@ -267,12 +309,49 @@ Process Direct
 |                                   | -   any other referrals or        |
 |                                   |     actions taken                 |
 +-----------------------------------+-----------------------------------+
-| 5                                 | SAD activity is selected for QMA  |
+| 5                                 | Date of receipt more than 1 year  |
+|                                   | in the past + Read more ...       |
+|                                   |                                   |
+|                                   | If the date of receipt of the DSP |
+|                                   | claim is more than 12 months in   |
+|                                   | the past, this date transfers to  |
+|                                   | the SAD activity, and an error    |
+|                                   | may present - E005AM Receipt Date |
+|                                   | can’t be more than 1 year in the  |
+|                                   | past for this Source. If this     |
+|                                   | error occurs within the SAD       |
+|                                   | activity:                         |
+|                                   |                                   |
+|                                   | -   select the Status icon        |
+|                                   | -   change status to Cancelled    |
+|                                   | -   go to  Transactions  tab >    |
+|                                   |      All Transactions  > select   |
+|                                   |     DSP claim ID hyperlink to     |
+|                                   |     return to  TS  screen in the  |
+|                                   |     DSP claim                     |
+|                                   | -   review Date of receipt then   |
+|                                   |     select [More Options] >       |
+|                                   |     Update DOR. This will update  |
+|                                   |     the date of receipt and       |
+|                                   |     regenerate the DSP claim      |
+|                                   | -   select Process                |
+|                                   | -   action all claim updates      |
+|                                   |     making sure PNA date and      |
+|                                   |     provisional data is coded     |
+|                                   |     from the correct date         |
+|                                   | -   go to the TS screen and       |
+|                                   |     select  [More Options] >      |
+|                                   |     Selective Application Data    |
+|                                   |                                   |
+|                                   | Return to Step 4 to continue with |
+|                                   | completion of SAD function.       |
++-----------------------------------+-----------------------------------+
+| 6                                 | SAD activity is selected for QMA  |
 |                                   | and JCA Referral required + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Where the SAD activity is         |
-|                                   | selected for Quality Management   |
+|                                   | If the SAD activity is selected   |
+|                                   | for Quality Management            |
 |                                   | Application (QMA), this must be   |
 |                                   | completed before a JCA Referral   |
 |                                   | is actioned:                      |
@@ -299,7 +378,7 @@ Process Direct
 |                                   | proceed with JCA Referral.        |
 |                                   |                                   |
 |                                   | Note: Quality Management Officers |
-|                                   | (QMO) must not action JCA         |
+|                                   | (QMO) must not action the JCA     |
 |                                   | Referral.                         |
 |                                   |                                   |
 |                                   | See Streaming a new Claim for     |
@@ -310,6 +389,8 @@ Process Direct
 
 Customer First
 
+Accessing the Selective Application of Data (SAD) screen in Customer First
+
 Table 1: Accessing the Selective Application of Data (SAD) screen in
 Customer First
 
@@ -319,12 +400,28 @@ Customer First
 | 1                                 | Accessing the SAD screen + Read   |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | The SAD process should be used by |
+|                                   | The SAD function must be applied  |
+|                                   | when streaming a claim for        |
 |                                   | Disability Support Pension (DSP)  |
-|                                   | new claim processing staff where  |
-|                                   | there is insufficient information |
-|                                   | to finalise the assessment of the |
-|                                   | entire claim in Customer First.   |
+|                                   | where the claim is not ready to   |
+|                                   | be finalised. For example, if a   |
+|                                   | Job Capacity Assessment (JCA)     |
+|                                   | referral is required.             |
+|                                   |                                   |
+|                                   | The SAD function is not required  |
+|                                   | when the DSP claim will be        |
+|                                   | rejected or manually granted at   |
+|                                   | the streaming stage.              |
+|                                   |                                   |
+|                                   | SAD activities must not be left   |
+|                                   | Started or On Hold. Always check  |
+|                                   | Activity List (AL) screen to      |
+|                                   | ensure the SAD activity has been  |
+|                                   | completed. The only time a SAD    |
+|                                   | activity can be held is when an   |
+|                                   | ICT issue prevents finalisation   |
+|                                   | and a mySupport request has been  |
+|                                   | lodged.                           |
 |                                   |                                   |
 |                                   | DSP new claim (NCL) activities    |
 |                                   |                                   |
@@ -352,8 +449,8 @@ Customer First
 |                                   | If attempting to use the FIN      |
 |                                   | process to finalise tasks within  |
 |                                   | a DSP new claim activity which    |
-|                                   | can be finalised within the SAD   |
-|                                   | screen the following error        |
+|                                   | should be finalised within the    |
+|                                   | SAD screen the following error    |
 |                                   | message will display:             |
 |                                   |                                   |
 |                                   | 'E636AM You should finalise tasks |
@@ -491,9 +588,8 @@ Customer First
 |                                   | tasks on the customer's,          |
 |                                   | partner's and child/ren's records |
 |                                   | to be selected. Deselected tasks  |
-|                                   | should not be                     |
-|                                   | transferred/finalised at this     |
-|                                   | time.                             |
+|                                   | will not be transferred/finalised |
+|                                   | at this time.                     |
 |                                   |                                   |
 |                                   | To deselect a task, select on the |
 |                                   | 'ticked' task. The colour will    |
@@ -502,14 +598,14 @@ Customer First
 |                                   |                                   |
 |                                   | When a task is deselected on the  |
 |                                   | customer's record, that task will |
-|                                   | be automatically deselected where |
-|                                   | it appears under any other record |
-|                                   | (partner and linked children). If |
-|                                   | there are related tasks, those    |
-|                                   | related tasks will also be        |
-|                                   | deselected. This is to ensure     |
-|                                   | that data is updated correctly.   |
-|                                   | For example:                      |
+|                                   | also be automatically deselected  |
+|                                   | where it appears under any other  |
+|                                   | record (partner and linked        |
+|                                   | children). If there are related   |
+|                                   | tasks, those related tasks will   |
+|                                   | also be deselected. This is to    |
+|                                   | ensure that data is updated       |
+|                                   | correctly. For example:           |
 |                                   |                                   |
 |                                   | -   When a customer and partner   |
 |                                   |     have the same task available  |

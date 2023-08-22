@@ -1,25 +1,19 @@
-
-Coding the legacy Proof of Identity (POI) screen 106-07040010
-
--   Background
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
 
-This procedure does not apply for for payments and services that require
-Identity Confirmation
-
-For Service Officers in service centres and Smart Centre Processing
-sites only
+This procedure only applies to Centrelink International Services and
+some ABSTUDY claims. For Centrelink payments and services use the
+Identity Confirmation Dashboard in Process Direct, see Identity
+Confirmation.
 
 On this page:
 
 Checking and coding the legacy POI screen upon lodgement of identity
 documents
 
-Identity coding relating to new claims and cancelled claim activities
+Legacy Identity coding relating to new claims and cancelled claim
+activities
 
 Checking and coding the legacy POI screen upon lodgement of identity documents
 
@@ -31,39 +25,28 @@ Table 1
 | 1                                 | Determine correct process + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
+|                                   | Has the customer lodged a claim   |
+|                                   | for an:                           |
 |                                   |                                   |
-|                                   | Is the customer claiming a        |
-|                                   | payment/service which is under    |
-|                                   | the Identity Confirmation model?  |
+|                                   | Australian payment directly with  |
+|                                   | Centrelink from overseas, or      |
 |                                   |                                   |
-|                                   | -   Yes, do not follow this       |
+|                                   | ABSTUDY claim for which           |
+|                                   | additional procedures apply?      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, do not follow this        |
 |                                   |     procedure. See Coding         |
 |                                   |     identity documents            |
-|                                   | -   No, go to Step 2              |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Lodgement of Identity documents   |
 |                                   | or additional documents + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
-|                                   |                                   |
 |                                   | The customer is providing         |
 |                                   | original Identity documents or    |
 |                                   | returning with further documents. |
 |                                   |                                   |
-|                                   | Check which Legacy Tier applies   |
-|                                   | to the customer’s payment type.   |
 |                                   | Check if the customer needs to    |
 |                                   | provide further identity          |
 |                                   | documents to meet requirements.   |
@@ -74,25 +57,29 @@ Table 1
 |                                   |                                   |
 |                                   | -   listed in Legacy POI tiered   |
 |                                   |     model A to Z documents, and   |
-|                                   | -   original and not altered      |
+|                                   | -   original and not altered, or  |
+|                                   | -   copies stamped and certified  |
+|                                   |     by SOC                        |
 |                                   |                                   |
 |                                   | Overseas documents (OD) may be    |
-|                                   | accepted for Identity, However,   |
-|                                   | the documents must be translated  |
-|                                   | into English. If translation is   |
-|                                   | required the document should be   |
-|                                   | copied, certified and forwarded   |
-|                                   | to Language Services for          |
+|                                   | accepted for Identity, however,   |
+|                                   | the documents can be translated   |
+|                                   | into English if required. If      |
+|                                   | translation is required the       |
+|                                   | document should be copied,        |
+|                                   | certified and forwarded to        |
+|                                   | Language Services for             |
 |                                   | translation.                      |
+|                                   |                                   |
+|                                   | Note: for identity documents      |
+|                                   | received from a customer who is   |
+|                                   | outside Australia, see Proof of   |
+|                                   | identity for customers outside    |
+|                                   | Australia, then see Step 1 in     |
+|                                   | Table 2.                          |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Check Customer Person Details     |
 |                                   | (CPD) screen + Read more ...      |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | Icons\32w\icon-face-to-face.png]  |
 |                                   |                                   |
 |                                   | Compare document details with     |
 |                                   | information on the CPD screen.    |
@@ -119,107 +106,19 @@ Table 1
 |                                   | -   Changing the legal name of    |
 |                                   |     customers or their children   |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Non-Services Australia certified  |
-|                                   | documents + Read more ...         |
+| 4                                 | Identity coding + Read more ...   |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
+|                                   | Are legacy POI screens required   |
+|                                   | to be coded for ABSTUDY or a      |
+|                                   | claim lodged directly with        |
+|                                   | Centrelink from overseas?         |
 |                                   |                                   |
-|                                   | Are any of the documents copies   |
-|                                   | certified by a non-Services       |
-|                                   | Australia source, for example, a  |
-|                                   | Justice of the Peace (JP)?        |
-|                                   |                                   |
-|                                   | -   Yes, a POI exemption can be   |
-|                                   |     coded to allow the customer   |
-|                                   |     28 days to provide their POI  |
-|                                   |     documents. For more help to   |
-|                                   |     determine exceptional         |
-|                                   |     circumstances, escalate the   |
-|                                   |     claim to Technical Peer       |
-|                                   |     Support (TPS). See Service    |
-|                                   |     Officer role when seeking     |
-|                                   |     Technical Peer Support (TPS)  |
-|                                   |     in Smart Centres. The         |
-|                                   |     Helpdesk/TPS will advise what |
-|                                   |     further action to take        |
-|                                   | -   No, go to Step 5              |
-+-----------------------------------+-----------------------------------+
-| 5                                 | Photocopy and certify the         |
-|                                   | documents + Read more ...         |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
-|                                   |                                   |
-|                                   | See Sighting, recording and       |
-|                                   | returning original documents.     |
-|                                   |                                   |
-|                                   | Copy (photocopy) original         |
-|                                   | documents provided. Make sure     |
-|                                   | that copies are legible           |
-|                                   |                                   |
-|                                   | Certify the copy:                 |
-|                                   |                                   |
-|                                   | -   note that the original has    |
-|                                   |     been sighted and returned     |
-|                                   | -   sign the copy                 |
-|                                   | -   print your name or Logon ID,  |
-|                                   |     and                           |
-|                                   | -   print date and location       |
-|                                   |     service centre if not         |
-|                                   |     included in stamp             |
-+-----------------------------------+-----------------------------------+
-| 6                                 | Additional identity documents     |
-|                                   | provided to meet claim            |
-|                                   | requirements + Read more ...      |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | Icons\32w\icon-face-to-face.png]  |
-|                                   |                                   |
-|                                   | Is the customer providing further |
-|                                   | identity documents to meet claim  |
-|                                   | requirements?                     |
-|                                   |                                   |
-|                                   | -   Yes, go to Step 7             |
-|                                   | -   No, it may not be appropriate |
-|                                   |     to code identity documents if |
-|                                   |     the customer is not required  |
-|                                   |     to provide identity. Go to    |
-|                                   |     Step 7                        |
-+-----------------------------------+-----------------------------------+
-| 7                                 | Is the claim is finalised? + Read |
-|                                   | more ...                          |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | Icons\32w\icon-face-to-face.png]  |
-|                                   |                                   |
-|                                   | -   Yes, see Step 1 in Table 2    |
-|                                   | -   No, check if the customer     |
-|                                   |     requires an interview for     |
-|                                   |     completion of the claim.      |
-|                                   |     Note: if the customer         |
-|                                   |     requires an interview,        |
-|                                   |     current work practices apply. |
-|                                   |     To code the identity          |
-|                                   |     documents, see Step 1 in      |
-|                                   |     Table 2                       |
+|                                   | -   Yes, see Table 2, Step 1      |
+|                                   | -   No, procedure ends here, see  |
+|                                   |     Coding identity documents     |
 +-----------------------------------+-----------------------------------+
 
-Identity coding relating to new claims and cancelled claim activities
+Legacy identity coding relating to new claims and cancelled claim activities
 
 Table 2
 
@@ -229,32 +128,25 @@ Table 2
 | 1                                 | Determine correct process + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
+|                                   | Has the customer lodged a claim   |
+|                                   | for an:                           |
 |                                   |                                   |
-|                                   | Is the customer claiming a        |
-|                                   | payment/service that is under the |
-|                                   | Identity Confirmation model?      |
+|                                   | Australian payment directly with  |
+|                                   | Centrelink from overseas, or      |
 |                                   |                                   |
-|                                   | -   Yes, do not follow this       |
+|                                   | ABSTUDY claim for which           |
+|                                   | additional procedures apply?      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, do not follow this        |
 |                                   |     procedure. See Coding         |
 |                                   |     identity documents            |
-|                                   | -   No, go to Step 2              |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Is there a new claim activity on  |
-|                                   | the Activity List (AL) screen? +  |
-|                                   | Read more ...                     |
+| 2                                 | Activity List (AL) screen + Read  |
+|                                   | more ...                          |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
+|                                   | Is there a new claim activity on  |
+|                                   | the Activity List (AL) screen?    |
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
@@ -271,27 +163,11 @@ Table 2
 | 3                                 | Find the cancelled Identity DOC + |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
-|                                   |                                   |
-|                                   | -   Search for DOCs with a        |
-|                                   |     keyword of POID               |
-|                                   | -   Recode the identity documents |
-|                                   |     listed on the DOC             |
+|                                   | Recode the required identity      |
+|                                   | documents listed on the DOC       |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Manually code the identity        |
+| 4                                 | Manually code the legacy identity |
 |                                   | documents + Read more ...         |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
 |                                   |                                   |
 |                                   | -   Do not photocopy identity     |
 |                                   |     documents. Documents should   |
@@ -337,17 +213,26 @@ Table 2
 |                                   | -   Press [Enter]                 |
 |                                   | -   Once coded, return the        |
 |                                   |     identity documents to the     |
-|                                   |     customer                      |
+|                                   |     customer, or                  |
+|                                   | -   If processing a claim from a  |
+|                                   |     customer who has lodged a     |
+|                                   |     claim for payment directly    |
+|                                   |     with Centrelink from          |
+|                                   |     overseas, continue with claim |
+|                                   |     assessment. See Claims for    |
+|                                   |     Australian payments under     |
+|                                   |     International Agreements.     |
+|                                   |     Procedure ends here           |
 |                                   |                                   |
 |                                   | Australian citizenship            |
 |                                   |                                   |
 |                                   | If the customer has Australia     |
 |                                   | recorded as their country of      |
-|                                   | citizenship on the Legal          |
-|                                   | Residence Information (RSLEG)     |
-|                                   | screen, the citizenship must be   |
-|                                   | verified, regardless of their     |
-|                                   | country of birth.                 |
+|                                   | citizenship on the Recording      |
+|                                   | legal residence screen, the       |
+|                                   | citizenship must be verified,     |
+|                                   | regardless of their country of    |
+|                                   | birth.                            |
 |                                   |                                   |
 |                                   | The document or other acceptable  |
 |                                   | verification, for example, as     |
@@ -386,25 +271,58 @@ Table 2
 |                                   |     documents are recorded for    |
 |                                   |     the required legacy tier      |
 |                                   |     level, escalate the claim to  |
-|                                   |     Technical Peer Support (TPS). |
-|                                   |     See Service Officer role when |
-|                                   |     seeking Technical Peer        |
-|                                   |     Support (TPS) in Smart        |
-|                                   |     Centres                       |
+|                                   |     Local Peer Support (LPS). See |
+|                                   |     Tier 0 technical support -    |
+|                                   |     self-sufficiency\             |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Check whether customer is an      |
 |                                   | ABSTUDY customer + Read more ...  |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
+|                                   | The following ABSTUDY customer    |
+|                                   | groups are not required to        |
+|                                   | provide any legacy POI documents  |
+|                                   | (though they can still provide    |
+|                                   | POI documents if they have them): |
 |                                   |                                   |
-|                                   | Is the customer an ABSTUDY        |
-|                                   | customer to whom extra procedures |
-|                                   | apply?                            |
+|                                   | Customers claiming ABSTUDY        |
+|                                   | Schooling A Allowance             |
+|                                   |                                   |
+|                                   | Customers in transition -         |
+|                                   | currently getting or transferring |
+|                                   | from Family Tax Benefit or        |
+|                                   | ABSTUDY Schooling A payments      |
+|                                   | because they:                     |
+|                                   |                                   |
+|                                   | -   have turned 16 years, or      |
+|                                   | -   will be living away from home |
+|                                   |     to study                      |
+|                                   |                                   |
+|                                   | Customers changing activity -     |
+|                                   | transferring from a payment such  |
+|                                   | as Youth Allowance (YA) or        |
+|                                   | JobSeeker Payment (JSP), and      |
+|                                   | other transferees known to        |
+|                                   | Services Australia                |
+|                                   |                                   |
+|                                   | Customers not receiving Living    |
+|                                   | Allowance (part-time              |
+|                                   | entitlements, Lawful Custody      |
+|                                   | Allowance or other                |
+|                                   | non-living-allowance benefits)    |
+|                                   |                                   |
+|                                   | All other ABSTUDY customers not   |
+|                                   | in the above category, Identity   |
+|                                   | Confirmation procedures apply     |
+|                                   | (including Alternative Identity). |
+|                                   |                                   |
+|                                   | Note: ABSTUDY Pensioner Education |
+|                                   | Supplement (PES) must meet        |
+|                                   | Identity Confirmation             |
+|                                   | requirements.                     |
+|                                   |                                   |
+|                                   | Is the customer excluded from the |
+|                                   | ABSTUDY customer group to provide |
+|                                   | POI documents?                    |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 6             |
 |                                   | -   No, go to Step 7              |
@@ -413,13 +331,6 @@ Table 2
 |                                   | ABSTUDY customers with            |
 |                                   | insufficient identity + Read more |
 |                                   | ...                               |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
 |                                   |                                   |
 |                                   | As this is an extra procedure for |
 |                                   | ABSTUDY only. The system does not |
@@ -461,13 +372,6 @@ Table 2
 | 7                                 | Check whether the claim can be    |
 |                                   | finalised now + Read more ...     |
 |                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | I                                 |
-|                                   | cons\32w\icon-face-to-face.png][] |
-|                                   |                                   |
 |                                   | Can the claim be finalised?       |
 |                                   |                                   |
 |                                   | Yes, the Service Officer needs to |
@@ -479,48 +383,14 @@ Table 2
 |                                   | -   the Identity Confirmation     |
 |                                   |     model has been met, or        |
 |                                   | -   the claim has been escalated  |
-|                                   |     to Technical Peer Support     |
-|                                   |     (TPS) and they have advised   |
+|                                   |     to LPS and they have advised  |
 |                                   |     that the claim can continue   |
-|                                   | -   Finalise the claim, go to     |
-|                                   |     Step 8                        |
+|                                   | -   Finalise the claim            |
 |                                   |                                   |
 |                                   | No, make sure there is a DOC on   |
 |                                   | the customer record with details  |
 |                                   | of the actions taken and any      |
-|                                   | extra relevant information. Refer |
-|                                   | the claim to the relevant         |
-|                                   | processing team                   |
-+-----------------------------------+-----------------------------------+
-| 8                                 | The activity is finalised and     |
-|                                   | further identity documents have   |
-|                                   | now been coded + Read more ...    |
-|                                   |                                   |
-|                                   | [                                 |
-|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
-|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
-|                                   | Blueprint Migration\RDT Release   |
-|                                   | Icons\32w\icon-face-to-face.png]  |
-|                                   |                                   |
-|                                   | -   All instances of coding the   |
-|                                   |     Legacy POI screen, POI        |
-|                                   |     exemptions or coding          |
-|                                   |     Alternative Identity          |
-|                                   |     Confirmation must be detailed |
-|                                   |     in a DOC on the customer      |
-|                                   |     record                        |
-|                                   | -   If sufficient identity        |
-|                                   |     documents are now coded and a |
-|                                   |     POI exemption is on the       |
-|                                   |     customer record, this review  |
-|                                   |     will cancel itself            |
-|                                   | -   Otherwise, the POI exemption  |
-|                                   |     will cancel the customer      |
-|                                   |     activity after the initial 28 |
-|                                   |     days if sufficient identity   |
-|                                   |     documents are not provided.   |
-|                                   |     Customers should be reminded  |
-|                                   |     of the impending cancellation |
+|                                   | extra relevant information        |
 +-----------------------------------+-----------------------------------+
 
                                    

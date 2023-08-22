@@ -1,73 +1,241 @@
-
-Scanning documents in Medicare Compensation Recovery 011-15070020
-
--   Background
--   
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
 
-This document outlines the policy and procedure for scanning
-Compensation Recovery documents.
+This document outlines how incoming correspondence for Medicare
+Compensation Recovery enters the Medicare Compensation Recovery System
+(MCRS) and how work is allocated to Service Officers for processing.
 
-Document scanning policy
+Incoming mail
 
-Sections 10 and 12 of the Electronic Transactions Act 1999 permits the
-accepting, recording and retention of documents in a form other than
-original, that is, electronic.
+Medicare Compensation Recovery receives the below documents:
 
-All Compensation Recovery standard forms are bar-coded for scanning
-purposes. At the time of mail validation, the barcode can be blocked to
-allow the document to be scanned under a different title.
+hardcopy mail:
 
-All documents, forms and correspondence received by Compensation
-Recovery must be scanned into the Compensation Case Management System
-(CCMS). This allows operators to access the information without having
-to retrieve a manual file.
+-   Service Officers must scan all hardcopy mail received via a
+    Multi-Function Device (MFD) and email it to the Medicare
+    Compensation Recovery mailbox, see Table 1 on the Process page
 
-Mail validated documents are assigned a scanning code. This code
-determines the:
+facsimiles:
 
--   title of the document in CCMS
--   system action that is to be applied to the document
+-   are automatically converted to email, see emails below
 
-Documents are scanned into the folder of the corresponding Work
-Identification Number (WIN) to trigger an action and create a history on
-the record.
+emails, (usually with attachments):
 
-Scanning duplicate documents
+-   are received by the Medicare Compensation Recovery mailbox
+-   forward any relevant external emails to the Medicare Compensation
+    Recovery mailbox and add them to a claim in MCRS. For example,
+    emails sent by Program Management which are relevant to a claim
+-   Service Officers can send additional emails to this mailbox to add a
+    document to a specific claim if required. For example,
+    correspondence sent to finance for action or emails from the
+    Rejection inbox
 
-Services Australia (the Agency) may occasionally receive duplicate
-copies of original documentation that has already been scanned to file.
-It is still necessary for these duplicate documents to be scanned, even
-where both documents are identical.
+Preparation for processing
 
-This is because the duplicate documents may contain additional or
-different information, including handwritten annotations.
+Kofax software automatically captures, identifies incoming
+correspondence received in the Medicare Compensation Recovery mailbox
+and stores it to FileNet.
 
-Archiving scanned documents
+Emails and attachments are:
 
-Any scanned documents received via fax or hard copy mail are placed in
-an archiving box, labelled with:
+-   converted to portable document format (PDF)
+-   batched and named by the form with the highest priority
+-   assigned to MCRS Enquiry cases, and
+-   allocated to Service Officers for processing in MCRS via Work
+    Optimiser – Medicare
 
--   the date
--   serial number, and
--   scanner number
+Note: if a single document contains information for multiple claimants
+and claims, it must be:
 
-Any documents received via email will be electronically stored,
-according to date of receipt, within the relevant year/month folder in
-the HIC inbox. Once scanned, the printed copy of these electronic
-documents will be securely destroyed.
+-   manually redacted for each claim, and
+-   resent to the mailbox as separate documents
 
-Documents are stored for 70 days before being securely destroyed.
+See Table 1 on the Process page.
 
-Documents scanned prior to January 2017 can be retrieved from the
-contracted archive facility with authorisation from a Team Leader.
+See the Correspondence types and KOFAX labelling priority table for
+details about:
 
-The Resources page contains a table of the scanning codes used to title
-a document.
+-   processing and assessing incoming correspondence, including
+-   how to access work, and batch document names when more than one is
+    received together in a single MCRS Enquiry case
+
+Unrecognised email attachments and rejections
+
+Where an email (size, links or imbedded info) or attachments (file type)
+cannot be recognised by Kofax, the message and attachment/s are sent to
+the MCRS Rejections mailbox.
+
+Kofax recognise the emails, or attachment/s when:
+
+only these email attachment file types are used – PDF, JPG, PNG, TIF,
+TIFF, BMP, GIF and TXT
+
+-   file types DOC and DOCX are accepted in most cases depending on how
+    much rich content the document contains e.g. bold, underline,
+    colours, fancy fonts, custom formatting etc
+-   other file types such as ZIP, HEIC or ACCDB will most likely be
+    rejected
+
+the total size of the email including attachments is less than 5MB
+
+-   this is to reduce the risk of customers providing large documents,
+    especially when they use the photo function to take pictures of the
+    documents
+
+emails and attachments do not include
+
+-   embedded images or videos and/or URLs (email or web addresses)
+-   ‘read receipt’ requests
+-   links to documents stored in online storage facilities like Dropbox
+    or Google Docs
+
+attachments are not password protected/encrypted or in a WinZip or RAR
+file
+
+The MCRS Rejections mailbox must be checked daily by the Operational
+Support team to action each email. See Table 2 on the Process page.
+
+Where possible, attachments are converted in-house so that they can be
+read by Kofax, and resent to the Medicare Compensation Recovery mailbox.
+Otherwise, an email will be sent to the originator advising them to
+resend the information, noting the above rules to minimise the
+possibility of email rejections.
+
+Remittance advice
+
+Most remittance advice has details listed in the Email extraction, Kofax
+often assigns remittance advice to claims in MCRS. As per instructions
+on the Notice of Judgement or Settlement form (MO022), stakeholders must
+send remittance advices to the Compensation finance inbox, not to the
+Medicare Compensation Recovery mailbox inbox.
+
+Service Delivery staff do not action remittance advices, unless the
+advice has only been sent to the HIC inbox and not sent to finance.
+
+If a remittance advice is only sent to Medicare Compensation Recovery,
+staff must contact the sender and tell them to re-send the remittance
+advice email directly to the Compensation Finance email address listed
+on the MO022 form.
+
+If multi-remittances are allocated to an enquiry in MCRS, Service
+Officers must follow the unlinking documents or manually separate email
+correspondence process, whichever is appropriate for the scenario. Do
+not add multi-remittances to claims for privacy reasons.
+
+Unclassified enquiries
+
+If Kofax is unable to determine the appropriate work-step for the
+correspondence, the work is allocated in Work Optimiser as an
+‘unclassified document’.
+
+Unclassified documents may contain documents intended for Compensation
+Recovery for action.
+
+There may also be correspondence that is not intended for the program.
+These may include forms for other programs or agencies. For example:
+
+-   Medicare disclosure
+-   National Disability Insurance Scheme (NDIS)
+-   Department of Veterans' Affairs (DVA), or
+-   Medicare Public
+
+Medicare Compensation does not action any correspondence if they are not
+the intended recipient. An automated response is sent to all senders
+(maximum once per day) confirming receipt of their email, which includes
+advice that no action is taken with such correspondence.
+
+Email extraction
+
+Kofax extracts the below information from incoming emails:
+
+Form code
+
+-   Kofax will search the bottom left corner of each page
+-   If Kofax identifies more than one form code, it will label the whole
+    batch based on highest priority, see the Correspondence types and
+    Kofax labelling priority table
+
+Work Identification Number (WIN)
+
+-   Kofax will search whole pages for text which matches the format of
+    WINs – 9 digits (8 numbers and an alpha check letter allocated to
+    each compensation claim by MCRS or the Compensation Case Management
+    System)
+-   If a document contains more than one, Kofax will use the first WIN
+    identified
+
+A form code extraction allows the document batch to be named based on
+the form code with the highest priority. The extracted WIN can be
+searched for in MCRS.
+
+Note: errors in WIN extraction may occur if there are multiple WINs, or
+if handwritten WINs cannot be read.
+
+If the WIN has been misread, details of the attachment/s can be updated
+to link to the correct WIN during the Enquiry case, before it is
+finalised. See Search for or update an existing claim or register a new
+claim.
+
+Storage and retention of hard copies after scanning
+
+Once hard copy documents have been scanned and emailed to the Medicare
+Compensation Recovery mailbox, retain hard copies for 70 days and then
+securely destroy.
+
+Store hard copies temporarily in archive boxes in order by date of
+receipt. Archive boxes must be labelled with the date period covered by
+documents in the box, in line with the Medicare Public scanned document
+retention schedule.
+
+Work Optimiser – Medicare
+
+Medicare Compensation Recovery uses Work Optimiser – Medicare to
+allocate work items created by MCRS.
+
+Work Optimiser – Medicare automatically allocates work items for MCRS to
+Service Officers for action based on:
+
+-   security roles assigned in ESSentials
+-   skill tags assigned in ESSentials
+-   work type processing priorities determined by the Workload
+    Management Health Operations and Planning Branch
+
+MCRS creates work items for allocation in Work Optimiser – Medicare
+when:
+
+-   an email is received (Kofax, FileNet and MCRS process described in
+    preparation for processing)
+-   a work item requires a decision by a staff member with a different
+    skill tag or higher delegation level
+-   a work item needs to be reassigned after being worked on by a staff
+    member with a different skill tag or higher delegation
+
+For:
+
+information about how to access MCRS and Work Optimiser – Medicare,
+skill tags and work types, see Medicare Compensation Recovery System
+(MCRS)
+
+instructions on how to use Work Optimiser – Medicare for MCRS, see Table
+3 on the Process page
+
+general information about how to manage work in Work Optimiser, see:
+
+-   Work Optimiser for staff and
+-   Work Optimiser for Team Leaders and Analysts
+
+Related links
+
+Work Optimiser for staff
+
+Work Optimiser for Team Leaders and Analysts
+
+Workload Management
+
+Process correspondence – Medicare Compensation Recovery
+
+Medicare Compensation Recovery System (MCRS)
 
                                    
 

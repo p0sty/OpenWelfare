@@ -1,9 +1,3 @@
-
-Patient claims processing in Medicare 011-43010000
-
--   Background
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
@@ -111,8 +105,8 @@ Table 1
 
 Control lines for processing patient claims
 
-Table 2: control lines for processing patient claims in the Customer
-Information Control System (CICS). Search the list using Ctrl+F.
+Table 2: control lines for processing patient claims in Mainframe.
+Search the list using Ctrl+F.
 
 +-----------------------+-----------------------+-----------------------+
 | Control line          | Topic                 | Function              |
@@ -123,15 +117,16 @@ Information Control System (CICS). Search the list using Ctrl+F.
 |                       | reversal              |                       |
 |                       |                       | -   NABI,             |
 |                       |                       | cardnumber,DOP/ddmmyy |
-|                       |                       | -   NABI,             |
-|                       |                       |     cardnumber,D      |
+|                       |                       | -   NABI,cardnumber,D |
 |                       |                       | OP/ddmmyy,time/hhmmss |
 +-----------------------+-----------------------+-----------------------+
 | NAOI                  | Same day adjustment   | Used to do the same   |
 |                       |                       | day reversal of       |
 |                       |                       | claims. Returns up to |
 |                       |                       | 10 item lines         |
-|                       |                       | processed on the day  |
+|                       |                       | processed on the day. |
+|                       |                       |                       |
+|                       |                       | -   NAOI,cardnumber   |
 +-----------------------+-----------------------+-----------------------+
 | NAQI                  | Cheque cancellation   | Cheque reversal       |
 |                       | enquiry               |                       |
@@ -229,16 +224,16 @@ Information Control System (CICS). Search the list using Ctrl+F.
 |                       |                       |     overkey NPOC or   |
 |                       |                       |     NPFC with NPND    |
 |                       |                       |     and RSN, then     |
-|                       |                       |     press [Enter] to  |
+|                       |                       |     press Enter to    |
 |                       |                       |     pend the entire   |
 |                       |                       |     claim with the    |
 |                       |                       |     reason code       |
 |                       |                       | -   NPND,cardnumber - |
 |                       |                       |     overkey NPOC or   |
 |                       |                       |     NPFC with NPND,   |
-|                       |                       |     then press        |
-|                       |                       |     [Enter] to pend   |
-|                       |                       |     the entire claims |
+|                       |                       |     then press Enter  |
+|                       |                       |     to pend the       |
+|                       |                       |     entire claims     |
 |                       |                       |     screen            |
 +-----------------------+-----------------------+-----------------------+
 | NPOI                  | Claims payments       | payment screen        |
@@ -296,8 +291,8 @@ Information Control System (CICS). Search the list using Ctrl+F.
 
 Control lines for general processing and enquiries
 
-Table 3: control lines for general processing and enquiries in CICS.
-Search the list using Ctrl+F.
+Table 3: control lines for general processing and enquiries in
+Mainframe. Search the list using Ctrl+F.
 
 +-----------------------+-----------------------+-----------------------+
 | Control line          | Topic                 | Function              |
@@ -361,8 +356,8 @@ Search the list using Ctrl+F.
 
 Control lines for miscellaneous processing
 
-Table 4: control lines for miscellaneous processing in CICS. Search the
-list using Ctrl+F.
+Table 4: control lines for miscellaneous processing in Mainframe. Search
+the list using Ctrl+F.
 
 +-----------------------+-----------------------+-----------------------+
 | Control line          | Topic                 | Function              |
@@ -503,7 +498,7 @@ from the date of services.
 |                                   | old or more and which:            |
 |                                   |                                   |
 |                                   | -   were lodged manually at a     |
-|                                   |     Service Centre- the claim     |
+|                                   |     Service Centre - the claim    |
 |                                   |     documents must be scanned and |
 |                                   |     emailed to MPS Assessing,     |
 |                                   |     where they will be            |
@@ -513,9 +508,9 @@ from the date of services.
 |                                   | -   are within PaNDA- where the   |
 |                                   |     Service Officer cannot        |
 |                                   |     process the claim they should |
-|                                   |     ensure that it is             |
+|                                   |     make sure that it is          |
 |                                   |     re-categorised to the Patient |
-|                                   |     Claims over 5 yrs category    |
+|                                   |     Claims over 5 years category  |
 |                                   |     for assessment                |
 |                                   |                                   |
 |                                   | There is no charge incurred to    |
@@ -559,7 +554,7 @@ Table 6
 |                       |                       |                       |
 |                       |                       | Must contain          |
 |                       |                       | number/name and type  |
-|                       |                       | for example Road,     |
+|                       |                       | for example, Road,    |
 |                       |                       | Crescent, Place       |
 |                       |                       |                       |
 |                       |                       | Abbreviations are     |
@@ -742,11 +737,11 @@ Table 7
 |                       |                       | to the Service        |
 |                       |                       | Officers state        |
 |                       |                       |                       |
-|                       |                       | -   NSW – N1511       |
-|                       |                       | -   VIC – V1511       |
-|                       |                       | -   QLD – Q1500       |
-|                       |                       | -   SA – S1511        |
-|                       |                       | -   WA – W0279        |
+|                       |                       | -   NSW - N1511       |
+|                       |                       | -   VIC - V1511       |
+|                       |                       | -   QLD - Q1500       |
+|                       |                       | -   SA - S1511        |
+|                       |                       | -   WA - W0279        |
 +-----------------------+-----------------------+-----------------------+
 | G                     |                       | Leave blank           |
 +-----------------------+-----------------------+-----------------------+
@@ -769,7 +764,7 @@ Table 7
 |                       |                       | Only a full stop (.)  |
 |                       |                       | can be used, no other |
 |                       |                       | symbols are accepted  |
-|                       |                       | i.e. ($)              |
+|                       |                       | for example, ($)      |
 +-----------------------+-----------------------+-----------------------+
 | M                     | BLINE DATE            | Leave blank           |
 +-----------------------+-----------------------+-----------------------+
@@ -783,7 +778,7 @@ Table 7
 
 Medicare claims circulars (MCC) – historical information
 
-Table 5: MCCs in order of newest to oldest. These provide details of
+Table 8: MCCs in order of newest to oldest. These provide details of
 historical system changes.
 
 Do not share these attachments externally. See Freedom of Information -
@@ -913,7 +908,7 @@ Information Publication Scheme.
 | attachment.png]MCC221 |                       |                       |
 +-----------------------+-----------------------+-----------------------+
 | [\\I                  | Patient claim screen  | 10-Jul-08             |
-| NTERNAL.DEPT.LOCAL\Sh | change to ensure      |                       |
+| NTERNAL.DEPT.LOCAL\Sh | change to make sure   |                       |
 | ared\NAT\SERDELEXCEL\ | claimant bank account |                       |
 | WORKPRODIMP\Operation | details are used      |                       |
 | Blueprint             |                       |                       |

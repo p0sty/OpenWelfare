@@ -1,9 +1,3 @@
-
-Incentive Programs quality checking 111-22140000
-
--   Background
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
@@ -17,35 +11,46 @@ Table 1
 | code                  |                       |                       |
 +-----------------------+-----------------------+-----------------------+
 | INC01                 | Error-free            | Quality check did not |
-|                       |                       | detect errors         |
+|                       |                       | detect errors.        |
 +-----------------------+-----------------------+-----------------------+
 
-Error status codes for Incentive Programs quality checking, error numbers below INC25
+Error status codes for Incentive Programs quality checking, error numbers below INC24
 
 Table 2
 
 +-----------------------+-----------------------+-----------------------+
 | Error status codes    | Definition            | Processing tip        |
 +-----------------------+-----------------------+-----------------------+
-| INC02                 | Application form      | It is an error when   |
-|                       | incomplete            | the incorrect         |
-| Critical              |                       | response to a         |
-|                       |                       | question has been     |
-|                       |                       | selected and source   |
-|                       |                       | documents do not      |
-|                       |                       | match.                |
+| INC02A                | Form incomplete       | It is a critical      |
+|                       |                       | error when all        |
+| Critical              |                       | required fields have  |
+|                       |                       | not been completed on |
+|                       |                       | the form and this     |
+|                       |                       | does affect payment   |
+|                       |                       | or integrity.         |
++-----------------------+-----------------------+-----------------------+
+| INC02B                | Form incomplete       | It is a non-critical  |
+|                       |                       | error/feedback when   |
+| Non-critical          |                       | non-mandatory fields  |
+|                       |                       | have not been         |
+|                       |                       | completed on the form |
+|                       |                       | and this does not     |
+|                       |                       | affect payment or     |
+|                       |                       | integrity.            |
 +-----------------------+-----------------------+-----------------------+
 | INC03                 | Insufficient          | It is an error if     |
-|                       | documentation to      | there is insufficient |
-| Critical              | support application.  | documentation to      |
-|                       |                       | support the           |
-|                       |                       | application, and      |
-|                       |                       | there is no notation  |
-|                       |                       | on PaNDA to support   |
-|                       |                       | the action taken.     |
+|                       | supporting            | there is insufficient |
+| Critical              | documentation         | documentation to      |
+|                       | supplied              | support the request   |
+|                       |                       | and there is no       |
+|                       |                       | comment on PaNDA or   |
+|                       |                       | PIP/WIP-Practice      |
+|                       |                       | Stream Online to      |
+|                       |                       | support the action    |
+|                       |                       | taken.                |
 +-----------------------+-----------------------+-----------------------+
-| INC04                 | Declaration           | It is an error when   |
-|                       | incomplete or         | the Declaration is:   |
+| INC04A                | Declaration           | It is an error when   |
+|                       | incomplete or         | the  Declaration  is: |
 | Critical              | incorrect signatory.  |                       |
 |                       |                       | missing the following |
 |                       |                       | information, and      |
@@ -56,7 +61,7 @@ Table 2
 |                       |                       | -   Signature         |
 |                       |                       | -   Name              |
 |                       |                       | -   Date (where       |
-|                       |                       |     applicable)       |
+|                       |                       |     mandatory)        |
 |                       |                       |                       |
 |                       |                       | not signed by an      |
 |                       |                       | owner or authorised   |
@@ -69,50 +74,90 @@ Table 2
 |                       |                       | or Nurse Practitioner |
 |                       |                       | indicated on the form |
 |                       |                       |                       |
-|                       |                       | Note: This error code |
-|                       |                       | includes when the     |
-|                       |                       | date of the patient   |
-|                       |                       | consent is after the  |
-|                       |                       | date of lodgement.    |
+|                       |                       | Note:  this error     |
+|                       |                       | code includes when    |
+|                       |                       | the date of the       |
+|                       |                       | patient consent is    |
+|                       |                       | after the date of     |
+|                       |                       | lodgement.            |
++-----------------------+-----------------------+-----------------------+
+| INC04B                | Declaration           | It is a non-critical  |
+|                       | incomplete or         | error/feedback where  |
+| Non-critical          | incorrect signatory   | a non-mandatory date  |
+|                       |                       | has not been          |
+|                       |                       | completed.            |
 +-----------------------+-----------------------+-----------------------+
 | INC05                 | University            | It is an error when   |
-|                       | Declaration on        | the University        |
-| Critical              | Teaching Claim Form   | declaration does not  |
-|                       |                       | have the university   |
-|                       |                       | authorised signature. |
+|                       | Certification on      | the  University       |
+| Critical              | Teaching Claim form   | Declaration  is       |
+|                       | is incomplete or      | missing the following |
+|                       | incorrect             | information, and      |
+|                       |                       | there is no notation  |
+|                       |                       | on PIP/WIP – Practice |
+|                       |                       | Stream Online:        |
+|                       |                       |                       |
+|                       |                       | -   University name   |
+|                       |                       | -   University        |
+|                       |                       |     representative’s  |
+|                       |                       |     full name and     |
+|                       |                       |     signature         |
+|                       |                       | -   University        |
+|                       |                       |     declaration date  |
+|                       |                       |                       |
+|                       |                       | Or if the university  |
+|                       |                       | declaration date is:  |
+|                       |                       |                       |
+|                       |                       | -   after the date of |
+|                       |                       |     the first         |
+|                       |                       |     teaching session  |
+|                       |                       | -   invalid           |
+|                       |                       | -   future dated      |
+|                       |                       | -   dated American    |
+|                       |                       |     style             |
 +-----------------------+-----------------------+-----------------------+
 | INC06                 | Practice Name         | It is an error when   |
-|                       | incorrect             | the Practice Name is  |
-| Critical              |                       | keyed incorrectly.    |
+|                       | incorrect             | the  Practice Name    |
+| Critical              |                       |  is keyed             |
+|                       |                       | incorrectly.          |
 +-----------------------+-----------------------+-----------------------+
 | INC07                 | Contact Person        | It is an error when   |
-|                       | Details incorrect     | any of the following  |
-| Critical              |                       | Primary/Secondary     |
-|                       |                       | Contact Details are   |
-|                       |                       | keyed/selected        |
+|                       | Details incorrect,    | any of the following  |
+| Critical              | including contact not |  Primary/Secondary    |
+|                       | added/removed from    | Contact Details  are  |
+|                       | the practice profile  | keyed/selected        |
 |                       |                       | incorrectly, or not   |
-|                       |                       | keyed/selected:       |
+|                       |                       | k                     |
+|                       |                       | eyed/selected/removed |
+|                       |                       | from the practice     |
+|                       |                       | profile:              |
 |                       |                       |                       |
 |                       |                       | -   Family Name       |
 |                       |                       | -   First Given Name  |
 |                       |                       | -   RA Number (if     |
 |                       |                       |     applicable)       |
 +-----------------------+-----------------------+-----------------------+
-| INC08                 | Practice Contact      | It is an error when   |
+| INC08A                | Practice Contact      | It is an error when   |
 |                       | Details incorrect     | any of the following  |
-| Critical              |                       | Practice Contact      |
-|                       |                       | Details have been     |
+| Critical              |                       |  Practice Contact     |
+|                       |                       | Details  have been    |
 |                       |                       | keyed incorrectly or  |
 |                       |                       | not keyed:            |
 |                       |                       |                       |
-|                       |                       | -   Phone number      |
 |                       |                       | -   Fax number        |
 |                       |                       | -   Email address     |
 +-----------------------+-----------------------+-----------------------+
+| INC08B                | Practice Contact      | It is a non-critical  |
+|                       | Details incorrect     | error/feedback where  |
+| Non-critical          |                       | a phone number has    |
+|                       |                       | been keyed            |
+|                       |                       | incorrectly or not    |
+|                       |                       | keyed.                |
++-----------------------+-----------------------+-----------------------+
 | INC09                 | Practice Address      | It is an error when   |
 |                       | details incorrect     | any of the following  |
-| Critical              |                       | Address details have  |
-|                       |                       | been keyed/selected   |
+| Critical              |                       |  Address details      |
+|                       |                       |  have been            |
+|                       |                       | keyed/selected        |
 |                       |                       | incorrectly or not    |
 |                       |                       | updated:              |
 |                       |                       |                       |
@@ -122,58 +167,67 @@ Table 2
 |                       |                       | -   additional        |
 |                       |                       |     location          |
 +-----------------------+-----------------------+-----------------------+
-| INC10                 | Practice              | It is an error when   |
+| INC10A                | Practice              | It is an error when   |
 |                       | Accreditation details | any of the following  |
 | Critical              | incorrect             | have been             |
 |                       |                       | keyed/selected        |
-|                       | or                    | incorrectly:          |
+|                       |                       | incorrectly:          |
 |                       |                       |                       |
-|                       | The address on the    | -   Accreditation     |
-|                       | certificate does not  |     Status            |
-|                       | match the practice    | -   Start and End     |
-|                       | profile               |     Dates             |
+|                       |                       | -   Accreditation     |
+|                       |                       |     Status            |
+|                       |                       | -   Start and End     |
+|                       |                       |     Dates             |
 |                       |                       | -   Address           |
++-----------------------+-----------------------+-----------------------+
+| INC10B                | Practice              | It is a non-critical  |
+|                       | Accreditation details | error/feedback when   |
+| Non-critical          | incorrect             | the following has     |
+|                       |                       | been keyed            |
+|                       |                       | incorrectly or not    |
+|                       |                       | keyed:                |
+|                       |                       |                       |
 |                       |                       | -   Accreditation     |
 |                       |                       |     Body              |
 |                       |                       | -   Accreditation     |
 |                       |                       |     Number            |
 +-----------------------+-----------------------+-----------------------+
-| INC11                 | Additional provider   | It is an error when   |
+| INC11                 | Additional practice   | It is an error when   |
 |                       | locations incorrect   | the additional        |
-| Critical              |                       | provider location has |
+| Critical              |                       | practice location has |
 |                       |                       | been keyed or         |
 |                       |                       | selected incorrectly. |
 +-----------------------+-----------------------+-----------------------+
 | INC12                 | Incorrect Incentive   | It is an error when   |
-|                       | selected              | one or more of the    |
-| Critical              |                       | following incentives  |
-|                       |                       | in the Incentive      |
-|                       |                       | field have not been   |
-|                       |                       | selected or selected  |
-|                       |                       | incorrectly for:      |
-|                       |                       |                       |
-|                       |                       | -   Cervical          |
-|                       |                       |     Screening         |
-|                       |                       | -   Asthma            |
-|                       |                       | -   Diabetes          |
-|                       |                       | -   Indigenous Health |
-|                       |                       | -   After Hours       |
+|                       | selected              | an individual PIP     |
+| Critical              |                       | incentive, payment    |
+|                       |                       | tier or level has not |
+|                       |                       | been selected or has  |
+|                       |                       | been selected         |
+|                       |                       | incorrectly.          |
 +-----------------------+-----------------------+-----------------------+
-| INC13                 | Bank details          | It is an error when   |
+| INC13A                | Bank details          | It is an error when   |
 |                       | incorrect             | any of the following  |
-| Critical              |                       | Bank details have     |
+| Critical              |                       |  Bank details  have   |
 |                       |                       | been keyed            |
 |                       |                       | incorrectly or not    |
 |                       |                       | updated:              |
 |                       |                       |                       |
-|                       |                       | -   Account name      |
 |                       |                       | -   BSB               |
 |                       |                       | -   Account number    |
 +-----------------------+-----------------------+-----------------------+
+| INC13B                | Bank details          | It is a non-critical  |
+|                       | incorrect             | error/feedback when   |
+| Non-critical          |                       | the following has     |
+|                       |                       | been keyed            |
+|                       |                       | incorrectly or not    |
+|                       |                       | keyed:                |
+|                       |                       |                       |
+|                       |                       | -   Account name      |
++-----------------------+-----------------------+-----------------------+
 | INC14                 | Details of Practice   | It is an error when   |
 |                       | Ownership incorrect   | any of the following  |
-| Critical              |                       | Practice Ownership    |
-|                       |                       | details have been     |
+| Critical              |                       |  Practice Ownership   |
+|                       |                       |  details  have been   |
 |                       |                       | keyed/selected        |
 |                       |                       | incorrectly, or not   |
 |                       |                       | keyed/selected:       |
@@ -195,76 +249,64 @@ Table 2
 |                       |                       | -   Nurse             |
 |                       |                       |     Practitioner      |
 +-----------------------+-----------------------+-----------------------+
-| INC16                 | Professional          | It is an error when   |
-|                       | Indemnity insurance   | the Indemnity         |
-| Non-critical          | details               | insurance has been:   |
-|                       | incomplete/incorrect  |                       |
+| INC16                 | Public Liability      | It is an error when   |
+|                       | insurance details     | the  Public Liability |
+| Non-critical          | incomplete/incorrect  | insurance  has been:  |
+|                       |                       |                       |
 |                       |                       | -   selected          |
 |                       |                       |     incorrectly, or   |
 |                       |                       | -   not selected      |
 +-----------------------+-----------------------+-----------------------+
-| INC17                 | Procedural GP details | It is an error when   |
-|                       | incorrect             | the Procedural GP     |
-| Critical              |                       | tier level has been   |
-|                       |                       | updated incorrectly.  |
-+-----------------------+-----------------------+-----------------------+
 | INC18                 | Program status field  | It is an error when   |
-|                       | incorrect             | the a date in the     |
-| Critical              |                       | Practice Program      |
+|                       | incorrect             | the closure date in   |
+| Critical              |                       | the Practice Program  |
 |                       |                       | status field has not  |
-|                       |                       | been keyed/selected   |
+|                       |                       | been keyed correctly  |
 |                       |                       | when a practice has:  |
 |                       |                       |                       |
 |                       |                       | -   ceased operating  |
 |                       |                       |     as a practice     |
-|                       |                       | -   withdrawn from    |
-|                       |                       |     PIP               |
 |                       |                       | -   ceased operating  |
 |                       |                       |     at a practice     |
 |                       |                       |     branch location   |
 +-----------------------+-----------------------+-----------------------+
-| INC19                 | Date practice         | It is an error when   |
-|                       | withdraws from        | the date a practice   |
-| Critical              | PIP/WIP – Practice    | withdraws from        |
-|                       | Stream is incorrect   | PIP/WIP – Practice    |
-|                       |                       | Stream has not been   |
-|                       |                       | keyed, or keyed       |
-|                       |                       | incorrectly.          |
+| INC19                 | Practice incorrectly  | It is an error when   |
+|                       | withdrawn             | the practice has been |
+| Critical              |                       | incorrectly           |
+|                       |                       | withdrawn.            |
 +-----------------------+-----------------------+-----------------------+
 | INC20                 | Relocation or         | It is an error when   |
-|                       | Amalgamation date     | the Relocation or     |
-| Critical              | incorrect             | Amalgamation date has |
-|                       |                       | been keyed            |
+|                       | Amalgamation date     | the  Relocation  or   |
+| Critical              | incorrect             |  Amalgamation  date   |
+|                       |                       | has been keyed        |
 |                       |                       | incorrectly.          |
 +-----------------------+-----------------------+-----------------------+
-| INC21                 | SIP and SIP/ACAI      | It is an error when   |
-|                       | Program incorrectly   | the SIP and SIP/ACAI  |
-| Critical              | selected              | are:                  |
+| INC22                 | GP ACAI Payments      | It is an error when a |
+|                       | failed                | GP ACAI payment has   |
+| Critical              |                       | failed because:       |
 |                       |                       |                       |
-|                       |                       | -   not selected      |
-|                       |                       | -   selected          |
-|                       |                       |     incorrectly       |
-+-----------------------+-----------------------+-----------------------+
-| INC22                 | Service Incentives    | It is an error when a |
-|                       | Payments (SIPS)       | SIPS payment has      |
-| Critical              | failed                | failed because:       |
-|                       |                       |                       |
-|                       |                       | -   SIPS comments     |
+|                       |                       | -   GP ACAI comments  |
 |                       |                       |     have not been     |
 |                       |                       |     removed from the  |
-|                       |                       |     GDES spreadsheet  |
+|                       |                       |     Provider          |
+|                       |                       |     Directory System  |
 |                       |                       | -   new bank details  |
 |                       |                       |     have not been     |
 |                       |                       |     updated on GDES   |
 |                       |                       |     spreadsheet       |
 +-----------------------+-----------------------+-----------------------+
-| INC23                 | Provider number does  | It is an error when   |
-|                       | not match the         | the Provider Number   |
-| Critical              | physical location of  | keyed does not match  |
-|                       | the practice          | the physical location |
-|                       |                       | of the practice where |
-|                       |                       | the service was       |
-|                       |                       | provided.             |
+| INC23                 | Provider has not been | It is an error when   |
+|                       | registered or         | the provider details: |
+| Critical              | registered            |                       |
+|                       | incorrectly,          | -   Do not match the  |
+|                       | including physical    |     physical location |
+|                       | location miss-match   |     or have been      |
+|                       |                       |     registered to the |
+|                       |                       |     incorrect         |
+|                       |                       |     practice location |
+|                       |                       | -   Have not been     |
+|                       |                       |     registered to a   |
+|                       |                       |     practice location |
 +-----------------------+-----------------------+-----------------------+
 | INC24                 | Professional          | It is an error when   |
 |                       | Indemnity insurance   | the Individual GP or  |
@@ -272,74 +314,72 @@ Table 2
 |                       |                       | details (IP003) form  |
 |                       |                       | has been processed    |
 |                       |                       | and the date of the   |
-|                       |                       | Professional          |
-|                       |                       | Indemnity has         |
+|                       |                       |  Professional         |
+|                       |                       | Indemnity  has        |
 |                       |                       | expired.              |
-|                       |                       |                       |
-|                       |                       |                       |
 +-----------------------+-----------------------+-----------------------+
 
-Error status codes for Incentive Programs quality checking, error numbers INC25 and above
+Error status codes for Incentive Programs quality checking, error numbers INC26 and above
 
 Table 3
 
 +-----------------------+-----------------------+-----------------------+
 | Error status codes    | Definition            | Processing tip        |
 +-----------------------+-----------------------+-----------------------+
-| INC25                 | Provider has not been | It is an error when   |
-|                       | registered or         | the provider has:     |
-| Critical              | registered            |                       |
-|                       | incorrectly           | -   been registered   |
-|                       |                       |     to the incorrect  |
-|                       |                       |     practice location |
-|                       |                       | -   not been          |
-|                       |                       |     registered to a   |
-|                       |                       |     practice location |
-+-----------------------+-----------------------+-----------------------+
-| INC26                 | RA number has not     | It is an error when   |
-|                       | been added to correct | the Remote Access     |
-| Critical              | profile               | (RA) number has not   |
-|                       |                       | been added to the     |
-|                       |                       | correct profile.      |
-+-----------------------+-----------------------+-----------------------+
-| INC27                 | Authorised Contact    | It is an error when   |
-|                       | not removed from      | the Authorised        |
-| Critical              | Practice Profile      | contact has not been  |
-|                       |                       | removed from the      |
-|                       |                       | Practice Profile as   |
-|                       |                       | requested.            |
+| INC26                 | RA number has been    | It is an error when   |
+|                       | added to incorrect    | the Registration      |
+| Critical              | profile / person      | Authority (RA) number |
+|                       |                       | or associated person  |
+|                       |                       | has not been added to |
+|                       |                       | the correct profile   |
+|                       |                       | or keyed incorrectly. |
 +-----------------------+-----------------------+-----------------------+
 | INC28                 | Annual/Quarterly      | It is an error when   |
-|                       | statement not         | an Annual/Quarterly   |
+|                       | statement not         | an  Annual/Quarterly  |
 | Critical              | updated/incorrect     | Confirmation          |
-|                       |                       | Statement has been    |
+|                       |                       | Statement  has been   |
 |                       |                       | updated incorrectly   |
 |                       |                       | or not been updated.  |
 +-----------------------+-----------------------+-----------------------+
 | INC29                 | Average weekly hours  | It is an error when   |
-|                       | not updated           | the Average weekly    |
-| Critical              |                       | hours have been       |
+|                       | not updated           | the  Average weekly   |
+| Critical              |                       | hours  have been      |
 |                       |                       | updated incorrectly,  |
 |                       |                       | or not updated.       |
 +-----------------------+-----------------------+-----------------------+
-| INC30                 | Work classification   | It is an error when   |
-|                       | incorrect             | the Work              |
-| Non-critical          |                       | classification has    |
-|                       |                       | been keyed            |
-|                       |                       | incorrectly or not    |
-|                       |                       | updated.              |
+| INC30                 | PaNDA work item       | It is an error when   |
+|                       | details are incorrect | the  Work Item        |
+| Non-critical          |                       | details  have been    |
+|                       |                       | keyed incorrectly or  |
+|                       |                       | not updated:          |
+|                       |                       |                       |
+|                       |                       | -   Work              |
+|                       |                       |     classification    |
+|                       |                       | -   Practice ID       |
+|                       |                       | -   Case ID           |
+|                       |                       | -   Completion reason |
 +-----------------------+-----------------------+-----------------------+
-| INC31                 | IHI Patient incorrect | It is an error if the |
-|                       |                       | incorrect patient has |
-| Critical              |                       | been linked to the    |
-|                       |                       | practice based on the |
-|                       |                       | information supplied. |
+| INC31                 | IHI Patient details   | It is an error if     |
+|                       | incorrect or has not  | the:                  |
+| Critical              | been added to the     |                       |
+|                       | practice profile      | -   Incorrect patient |
+|                       |                       |     has been linked   |
+|                       |                       |     to the practice   |
+|                       |                       |     based on the      |
+|                       |                       |     information       |
+|                       |                       |     supplied.         |
+|                       |                       | -   Patient has not   |
+|                       |                       |     been added to the |
+|                       |                       |     profile           |
+|                       |                       | -   Information       |
+|                       |                       |     provided has not  |
+|                       |                       |     been keyed        |
 +-----------------------+-----------------------+-----------------------+
 | INC32                 | Aboriginal or Torres  | It is an error when   |
-|                       | Strait Islander       | the Aboriginal or     |
+|                       | Strait Islander       | the  Aboriginal or    |
 | Non-critical          | indicator incorrect   | Torres Strait         |
-|                       |                       | Islander indicator is |
-|                       |                       | not selected          |
+|                       |                       | Islander indicator    |
+|                       |                       |  is not selected      |
 |                       |                       | correctly.            |
 +-----------------------+-----------------------+-----------------------+
 | INC33                 | IHI patient           | It is an error when   |
@@ -354,66 +394,67 @@ Table 3
 |                       |                       | -   IHI health check  |
 |                       |                       | -   IHI patient       |
 |                       |                       |     consent           |
-|                       |                       | -   Teaching Payment  |
-|                       |                       |     student           |
-|                       |                       |     attendance        |
 +-----------------------+-----------------------+-----------------------+
-| INC34                 | Practice Profile -    | It is an error when a |
-|                       | incorrect documents   | form or document has  |
-| Critical              | uploaded              | been uploaded to the  |
-|                       |                       | incorrect Practice    |
-|                       |                       | Profile.              |
-+-----------------------+-----------------------+-----------------------+
-| INC35                 | Document not uploaded | It is an error when a |
-|                       |                       | form or document has  |
-| Critical              |                       | not been uploaded to: |
-|                       |                       |                       |
-|                       |                       | -   Practice Profile  |
-|                       |                       | -   PaNDA             |
+| INC34                 | Incorrect documents   | It is an error when a |
+|                       | uploaded to practice  | form or document has: |
+| Critical              | profile or not        |                       |
+|                       | uploaded to practice  | -   been uploaded to  |
+|                       | profile or PaNDA      |     the incorrect     |
+|                       |                       |     Practice Profile  |
+|                       |                       | -   been uploaded and |
+|                       |                       |     practice has not  |
+|                       |                       |     been clearly      |
+|                       |                       |     identified        |
+|                       |                       | -   has not been      |
+|                       |                       |     uploaded to the   |
+|                       |                       |     practice profile  |
+|                       |                       |     or PaNDA          |
 +-----------------------+-----------------------+-----------------------+
 | INC36                 | Letter incorrect      | It is an error when   |
 |                       |                       | information or        |
 | Critical              |                       | content of a letter   |
 |                       |                       | has not been keyed    |
-|                       |                       | correctly.            |
+|                       |                       | correctly, or when a  |
+|                       |                       | letter has been sent  |
+|                       |                       | via the incorrect     |
+|                       |                       | communication         |
+|                       |                       | channel:              |
+|                       |                       |                       |
+|                       |                       | -   Letter sent via   |
+|                       |                       |     HPOS and mail was |
+|                       |                       |     indicated         |
+|                       |                       | -   Letter sent via   |
+|                       |                       |     mail and HPOS was |
+|                       |                       |     indicated         |
 +-----------------------+-----------------------+-----------------------+
 | INC37                 | Outdated form         | It is an error when   |
 |                       |                       | an outdated version   |
-| Critical              |                       | of a form has been    |
+| Non-critical          |                       | of a form has been    |
 |                       |                       | processed after the   |
 |                       |                       | appropriate grace     |
 |                       |                       | period.               |
 +-----------------------+-----------------------+-----------------------+
-| INC38                 | Bank details          | It is an error when   |
-|                       | incorrect (GPRIP)     | any of the following  |
-| Critical              |                       | Bank details have     |
-|                       |                       | been keyed            |
-|                       |                       | incorrectly or not    |
-|                       |                       | updated:              |
+| INC40                 | Incorrect action      | It is an error when a |
+|                       | taken on payment hold | payment hold is not   |
+| Critical              |                       | added or removed      |
+|                       |                       | correctly:            |
 |                       |                       |                       |
-|                       |                       | -   Account name      |
-|                       |                       | -   BSB               |
-|                       |                       | -   Account number    |
+|                       |                       | -   Practice details  |
+|                       |                       |     have been updated |
+|                       |                       |     and the hold has  |
+|                       |                       |     not been removed  |
+|                       |                       | -   Payment hold has  |
+|                       |                       |     not been applied  |
+|                       |                       |     when further      |
+|                       |                       |     information has   |
+|                       |                       |     been requested    |
 +-----------------------+-----------------------+-----------------------+
-| INC39                 | Documents uploaded to | It is an error to     |
-|                       | practice profile when | upload information    |
-| Critical              | practice was not      | when the practice has |
-|                       | identified            | not been clearly      |
-|                       |                       | identified            |
-+-----------------------+-----------------------+-----------------------+
-| INC40                 | Incorrect action      | It is an error to not |
-|                       | taken on payment hold | remove a held payment |
-| Critical              |                       | where relevant forms  |
-|                       |                       | have been supplied    |
-|                       |                       | for change of         |
-|                       |                       | ownership,            |
-|                       |                       | relocation,           |
-|                       |                       | accreditation         |
-+-----------------------+-----------------------+-----------------------+
-| INC41                 | IHI patient has not   | It is an error when   |
-|                       | been added to the     | information provided  |
-| Critical              | practice profile/IHI  | has not been keyed    |
-|                       | form missed           |                       |
+| INC42                 | Duplicate claim       | It is an error when   |
+|                       | process leads to a    | the information       |
+| Critical              | recovery action       | entered results in    |
+|                       |                       | the incorrect         |
+|                       |                       | calculation of        |
+|                       |                       | payments.             |
 +-----------------------+-----------------------+-----------------------+
 | INC43                 | Work item not         | It is an error when:  |
 |                       | processed or          |                       |
@@ -424,41 +465,27 @@ Table 3
 |                       |                       | -   the form details  |
 |                       |                       |     do not match the  |
 |                       |                       |     profile           |
-|                       |                       | -   not all required  |
-|                       |                       |     questions have    |
-|                       |                       |     been              |
-|                       |                       |     answered/form is  |
-|                       |                       |     incomplete        |
 |                       |                       | -   Teaching Payment  |
 |                       |                       |     student           |
 |                       |                       |     attendance not    |
 |                       |                       |     entered correctly |
-|                       |                       | -   Operational       |
-|                       |                       |     Blueprint process |
-|                       |                       |     not followed      |
 +-----------------------+-----------------------+-----------------------+
-
-Forms
-
-Incentive Programs, Consumer Health & Rural Programs Quality Reporting
-Form
 
 Contacts
 
-Health Service Delivery Division - Services Delivery Quality and Support
-Team
-
-Quality Management
+Quality Operations & Technical Support Team
 
 Intranet links
 
 Root Cause Analysis
 
-Quality Processes page, which includes Quality Checking Contacts
+Quality Process Approach
 
-Quality Framework and Resources
+Enterprise Quality Framework
 
-Quality management policies and resources - 'Quality Policies' includes:
+Privacy Incident Notification (PIN)
+
+Quality management policies include:
 
 -   Aim for Accuracy Procedure template
 -   Aim for Accuracy Policy for Health Programmes

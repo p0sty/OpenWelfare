@@ -1,9 +1,3 @@
-
-New claim for Crisis Payment after customer released from prison or psychiatric confinement 003-07030030
-
--   Background
--   Process
--   References
 -   Resources
 -   Training & Support
 
@@ -20,169 +14,499 @@ Table 1
 +-----------------------+-----------------------+-----------------------+
 | Item                  | Rejection code        | Reason                |
 +-----------------------+-----------------------+-----------------------+
-| 1                     | LOD - Claim not       | You did not claim     |
-|                       | lodged within         | within the required   |
-|                       | required period       | timeframe.            |
-+-----------------------+-----------------------+-----------------------+
-| 2                     | NFH - Not in          | You are not in severe |
-|                       | financial hardship    | financial hardship.   |
-+-----------------------+-----------------------+-----------------------+
-| 3                     | NIA - Not in          | You were not in       |
-|                       | Australia on day of   | Australia on the day  |
-|                       | lodgement             | you made a claim.     |
-+-----------------------+-----------------------+-----------------------+
-| 4                     | NQP - Not receiving   | You are not receiving |
-|                       | an ISP                | an income support     |
-|                       |                       | payment or ABSTUDY    |
-|                       |                       | Living Allowance.     |
-+-----------------------+-----------------------+-----------------------+
-| 5                     | PEC - Already paid    | You have already been |
-|                       | for this circumstance | paid a Crisis Payment |
-|                       |                       | for this extreme      |
-|                       |                       | circumstance          |
-+-----------------------+-----------------------+-----------------------+
-| 6                     | L14 - Period of       | You have not been in  |
+| 1                     | L14 - Period of       | You have not been in  |
 |                       | imprisonment is less  | prison or psychiatric |
 |                       | than fourteen (14)    | confinement for 14    |
 |                       | days                  | days or more because  |
 |                       |                       | of being charged with |
 |                       |                       | an offence.           |
 +-----------------------+-----------------------+-----------------------+
+| 2                     | LOD - Claim not       | You did not claim     |
+|                       | lodged within         | within the required   |
+|                       | required period       | timeframe.            |
++-----------------------+-----------------------+-----------------------+
+| 3                     | NFH - Not in          | You are not in severe |
+|                       | financial hardship    | financial hardship.   |
++-----------------------+-----------------------+-----------------------+
+| 4                     | NIA - Not in          | You were not in       |
+|                       | Australia on day of   | Australia on the day  |
+|                       | lodgement             | you made a claim.     |
++-----------------------+-----------------------+-----------------------+
+| 5                     | NQP - Not receiving   | You are not receiving |
+|                       | an Income Support     | a social security     |
+|                       | Payment               | pension, benefit or   |
+|                       |                       | ABSTUDY Living        |
+|                       |                       | Allowance.            |
++-----------------------+-----------------------+-----------------------+
+| 6                     | PEC - Already paid    | You have already been |
+|                       | for this circumstance | paid a Crisis Payment |
+|                       |                       | for this extreme      |
+|                       |                       | circumstance          |
++-----------------------+-----------------------+-----------------------+
 
-Error and warning messages
+Warning messages
 
 Table 2
 
 +-----------------------+-----------------------+-----------------------+
-| Error                 | Message text          | Action                |
-+-----------------------+-----------------------+-----------------------+
-| SR594                 | Crisis Data is        | This will display if  |
-|                       | mandatory for Crisis  | there is no data on   |
-|                       | Payment claim         | the CRISIS_PRI        |
-|                       |                       | screen.               |
-|                       |                       |                       |
-|                       |                       | Staff to update the   |
-|                       |                       | screen with Crisis    |
-|                       |                       | Payment claim data.   |
-+-----------------------+-----------------------+-----------------------+
-| SR598                 | Customer may not be   | This will display if  |
-|                       | in Australia. Refresh | the customer is not   |
-|                       | RSIM.                 | in Australia based on |
-|                       |                       | RSIM but claim has    |
-|                       |                       | come through and the  |
-|                       |                       | customer has said     |
-|                       |                       | ‘yes’ they are in     |
-|                       |                       | Australia.            |
-|                       |                       |                       |
-|                       |                       | Staff to check the    |
-|                       |                       | RSIM screen and call  |
-|                       |                       | the immigration       |
-|                       |                       | datalink for such     |
-|                       |                       | claims to determine   |
-|                       |                       | if in Australia or    |
-|                       |                       | not.                  |
+| Warning               | Message text          | Action                |
 +-----------------------+-----------------------+-----------------------+
 | SR613                 | Qualifying payment    | This will display if  |
-|                       | Claim ( Claim ID ) is | they system           |
-|                       | currently ‘In         | identifies that       |
-|                       | Process’              | customer is not       |
-|                       |                       | current on qualifying |
-|                       |                       | benefit but they have |
-|                       |                       | a claim for a         |
+|                       | Claim (Claim ID) is   | the system identifies |
+|                       | currently ‘In         | the customer is not   |
+|                       | Process’              | current on a          |
 |                       |                       | qualifying payment    |
-|                       |                       | that is 'In Process', |
-|                       |                       | 'On Hold' or          |
-|                       |                       | 'Submitted'.          |
+|                       |                       | but have a claim      |
+|                       |                       | outstanding. 'In      |
+|                       |                       | Process', 'On Hold'   |
+|                       |                       | or 'Submitted'.       |
 |                       |                       |                       |
-|                       |                       | Staff to progress the |
-|                       |                       | qualifying payment    |
-|                       |                       | before finalising the |
-|                       |                       | Crisis Payment or the |
-|                       |                       | Crisis Payment will   |
-|                       |                       | reject. The Crisis    |
-|                       |                       | Payment should not be |
-|                       |                       | finalised until the   |
-|                       |                       | ISP has been granted  |
-|                       |                       | or rejected.          |
-+-----------------------+-----------------------+-----------------------+
-| SR623                 | Prison Actual Release | This warning is       |
-|                       | date is between 8-21  | occurring as customer |
-|                       | days, check contact   | claimed outside the   |
-|                       | date.                 | allowed timeframe     |
-|                       |                       | since the date of     |
-|                       |                       | event. The release    |
-|                       |                       | from prison or        |
-|                       |                       | psychiatric           |
-|                       |                       | confinement was       |
-|                       |                       | between 8 and 21 days |
-|                       |                       | before the date of    |
-|                       |                       | receipt.              |
+|                       |                       | The CrP- PRI must not |
+|                       |                       | be finalised until    |
+|                       |                       | the qualifying        |
+|                       |                       | payment claim has     |
+|                       |                       | been granted or       |
+|                       |                       | rejected. Otherwise,  |
+|                       |                       | CrP-PRI claims will   |
+|                       |                       | be rejected           |
+|                       |                       | incorrectly.          |
 |                       |                       |                       |
-|                       |                       | The customer needs to |
-|                       |                       | contact about         |
-|                       |                       | claiming a payment or |
-|                       |                       | concession card       |
-|                       |                       | within 7 days of the  |
-|                       |                       | extreme circumstance. |
-|                       |                       | The customer then     |
-|                       |                       | needs to lodge their  |
-|                       |                       | claim 14 days after   |
-|                       |                       | the contact date.     |
-|                       |                       |                       |
-|                       |                       | Check the DOC List    |
-|                       |                       | (DL) to see if there  |
-|                       |                       | was contact about     |
-|                       |                       | seeking a payment or  |
-|                       |                       | concession card       |
-|                       |                       | within 14 days of the |
-|                       |                       | start of the          |
-|                       |                       | isolation period. If  |
-|                       |                       | yes, Crisis Payment   |
-|                       |                       | can be granted if the |
-|                       |                       | claim was lodged      |
-|                       |                       | within 14 days of the |
-|                       |                       | contact date.         |
-|                       |                       |                       |
-|                       |                       | Update the Override   |
-|                       |                       | LOD Rejection field   |
-|                       |                       | to allow the claim to |
-|                       |                       | be granted.           |
+|                       |                       | Staff must complete   |
+|                       |                       | the qualifying        |
+|                       |                       | payment claim.        |
 +-----------------------+-----------------------+-----------------------+
 | SR624                 | Cus not SUS or CAN    | This will display if  |
-|                       | before release date.  | the system does not   |
-|                       | Review entitlement to | identify a SUS or CAN |
-|                       | primary payment.      | on the system for the |
-|                       |                       | period the customer   |
+|                       | before release date.  | the there is no       |
+|                       | Review entitlement to | suspension (SUS) or   |
+|                       | primary payment.      | cancellation (CAN)    |
+|                       |                       | while the customer    |
 |                       |                       | was in prison or      |
 |                       |                       | psychiatric           |
 |                       |                       | confinement.          |
 |                       |                       |                       |
-|                       |                       | Staff to check the    |
-|                       |                       | customer’s            |
+|                       |                       | Check the customer’s  |
 |                       |                       | entitlements for the  |
-|                       |                       | period of             |
-|                       |                       | imprisonment and if   |
-|                       |                       | not entitled staff    |
-|                       |                       | should follow the     |
-|                       |                       | admission process to  |
-|                       |                       | update imprisonment   |
-|                       |                       | details followed by   |
-|                       |                       | debt action and       |
-|                       |                       | referrals (Step 12)   |
-|                       |                       | before                |
+|                       |                       | period of custody. If |
+|                       |                       | they are not          |
+|                       |                       | entitled, update      |
+|                       |                       | their entitlements    |
+|                       |                       | appropriately before  |
 |                       |                       | re-establishing       |
-|                       |                       | primary payment       |
 |                       |                       | eligibility.          |
 |                       |                       |                       |
 |                       |                       | The Crisis Payment    |
 |                       |                       | should not be         |
 |                       |                       | finalised until       |
 |                       |                       | review of entitlement |
-|                       |                       | is complete. The      |
-|                       |                       | claim should be       |
-|                       |                       | placed on hold while  |
-|                       |                       | this occurs.          |
+|                       |                       | is complete.          |
 +-----------------------+-----------------------+-----------------------+
+
+How to count the days in custody for CrP-PRI
+
+The following tables outline how to calculate the beginning, ending and
+period of custody for CrP-PRI. The count of days does not start until
+they have spent the whole day (midnight to midnight) imprisoned.
+
+In custody for 14 days or more
+
+Table 3
+
++-------------+-------------+-------------+-------------+-------------+
+| Customer in | Count start | Count end   | Release     | Eligibility |
+| custody     | date (Day   | date (Day   | date-not    | Scenario    |
+| (Day 0)     | 1)          | 14)         | counted     |             |
+|             |             |             | towards     |             |
+|             |             |             | minimum 14  |             |
+|             |             |             | Day period  |             |
++-------------+-------------+-------------+-------------+-------------+
+| Date of     | 4 March     | 17 March    | Release 18  | CrP-PRI     |
+| in          |             |             | March       | Payable     |
+| carceration | The count   | The count   |             |             |
+| 3 March     | of days     | of days     | Customer    | Customer    |
+|             | does not    | ends on the | released    | released    |
+| The first   | start until | last whole  | from prison | from prison |
+| day of      | a customer  | day         | or          | or          |
+| entry is    | has spent a | (midnight   | psychiatric | psychiatric |
+| not counted | whole day   | to          | c           | confinement |
+| towards the | (midnight   | midnight)   | onfinement. | as a result |
+| 14 days for | to          | imprisoned. |             | of being    |
+| CrP-PRI.    | midnight)   |             | The day of  | charged     |
+|             | imprisoned. | Day 14 ends | release is  | with an     |
+|             |             | on 17       | not         | offence and |
+|             | Day 1       | March, the  | counted.    | has claimed |
+|             | starts from | day before  |             | a social    |
+|             | 4 March,    | the         |             | security    |
+|             | the day     | customer    |             | pension or  |
+|             | after the   | leaves      |             | benefit     |
+|             | customer    | custody.    |             | that is     |
+|             | entered     |             |             | payable and |
+|             | custody.    |             |             | has liquid  |
+|             |             |             |             | assets of   |
+|             |             |             |             | less than a |
+|             |             |             |             | fortnight's |
+|             |             |             |             | e           |
+|             |             |             |             | ntitlement. |
+|             |             |             |             |             |
+|             |             |             |             | CrP-PRI     |
+|             |             |             |             | claim 20    |
+|             |             |             |             | March       |
+|             |             |             |             |             |
+|             |             |             |             | In Custody  |
+|             |             |             |             | 3 March     |
+|             |             |             |             |             |
+|             |             |             |             | Day 1       |
+|             |             |             |             | starts 4    |
+|             |             |             |             | March       |
+|             |             |             |             |             |
+|             |             |             |             | Release     |
+|             |             |             |             | date 18     |
+|             |             |             |             | March       |
+|             |             |             |             |             |
+|             |             |             |             | Claim       |
+|             |             |             |             | granted –   |
+|             |             |             |             | CrP-PRI is  |
+|             |             |             |             | payable as  |
+|             |             |             |             | the person  |
+|             |             |             |             | has been in |
+|             |             |             |             | prison for  |
+|             |             |             |             | at least 14 |
+|             |             |             |             | days.       |
++-------------+-------------+-------------+-------------+-------------+
+
+In Table 3, the DSP customer enters prison on 3 March. This is Day 0 and
+is the last day of DSP payment paid to the customer.
+
+The count of days for Crisis Payment then starts on 4 March (Day 1) and
+continues until they are released on 18 March. This is a total of 14
+days.
+
+Less than 14 days in custody
+
+Table 5
+
++-------------+-------------+-------------+-------------+-------------+
+| Customer in | Count start | Count end   | Release     | Eligibility |
+| custody     | date (Day   | date (Day   | date-not    | Scenario    |
+| (Day 0)     | 1)          | 13)         | counted     |             |
+|             |             |             | towards     |             |
+|             |             |             | minimum 14  |             |
+|             |             |             | Day period  |             |
++-------------+-------------+-------------+-------------+-------------+
+| Date of     | 4 March     | 16 March    | Release 17  | CrP-PRI Not |
+| in          |             |             | March       | Payable     |
+| carceration | The count   | The count   |             |             |
+| 3 March     | of days     | of days     | Customer    | Customer    |
+|             | does not    | ends on the | released    | released    |
+| The first   | start until | last whole  | from prison | from prison |
+| day of      | a customer  | day         | or          | or          |
+| entry is    | has spent a | (midnight   | psychiatric | psychiatric |
+| not counted | whole day   | to          | c           | confinement |
+| towards the | (midnight   | midnight)   | onfinement. | as a result |
+| 14 days for | to          | imprisoned. |             | of being    |
+| CrP-PRI.    | midnight)   |             | The day of  | charged     |
+|             | imprisoned. | Day 13 ends | release is  | with an     |
+|             |             | on 16       | not         | offence and |
+|             | Day 1       | March, the  | counted.    | has claimed |
+|             | starts from | day before  |             | a social    |
+|             | 4 March,    | the         |             | security    |
+|             | the day     | customer    |             | pension or  |
+|             | after the   | leaves      |             | benefit     |
+|             | customer    | custody.    |             | that is     |
+|             | entered     |             |             | payable and |
+|             | custody.    |             |             | has liquid  |
+|             |             |             |             | assets of   |
+|             |             |             |             | less than a |
+|             |             |             |             | fortnight's |
+|             |             |             |             | e           |
+|             |             |             |             | ntitlement. |
+|             |             |             |             |             |
+|             |             |             |             | -   CrP-PRI |
+|             |             |             |             |     claim   |
+|             |             |             |             |     20      |
+|             |             |             |             |     March   |
+|             |             |             |             | -   In      |
+|             |             |             |             |     Custody |
+|             |             |             |             |     3 March |
+|             |             |             |             | -   Day 1   |
+|             |             |             |             |     starts  |
+|             |             |             |             |     4 March |
+|             |             |             |             | -   Release |
+|             |             |             |             |     date 17 |
+|             |             |             |             |     March   |
+|             |             |             |             |             |
+|             |             |             |             | Claim       |
+|             |             |             |             | rejected –  |
+|             |             |             |             | CrP-PRI is  |
+|             |             |             |             | not payable |
+|             |             |             |             | as the      |
+|             |             |             |             | person has  |
+|             |             |             |             | not been in |
+|             |             |             |             | prison for  |
+|             |             |             |             | at least 14 |
+|             |             |             |             | days.       |
+|             |             |             |             |             |
+|             |             |             |             | ELD screen  |
+|             |             |             |             | rejection   |
+|             |             |             |             | will show   |
+|             |             |             |             | L14 -       |
+|             |             |             |             | Period of   |
+|             |             |             |             | i           |
+|             |             |             |             | mprisonment |
+|             |             |             |             | is less     |
+|             |             |             |             | than        |
+|             |             |             |             | fourteen    |
+|             |             |             |             | (14) days.  |
++-------------+-------------+-------------+-------------+-------------+
+
+In hospital - not charged with an offence
+
+Table 7
+
++-------------+-------------+-------------+-------------+-------------+
+| Customer in | Count start | Count end   | Release     | Eligibility |
+| Custody     | date (Day   | date (Day   | date-not    | Scenario    |
+| (Day 0)     | 1)          | 15)         | counted     |             |
+|             |             |             | towards     |             |
+|             |             |             | minimum 14  |             |
+|             |             |             | Day period  |             |
++-------------+-------------+-------------+-------------+-------------+
+| A customer  | 4 March     | 18 March    | Release 19  | CrP-PRI Not |
+| is admitted |             |             | March       | Payable     |
+| to the      | The count   | The count   |             |             |
+| psychiatric | of days     | of days     | Customer    | Customer    |
+| wing of a   | does not    | ends on the | released    | released    |
+| hospital    | start until | last whole  | from prison | from        |
+| without     | a customer  | day         | or          | psychiatric |
+| being       | has spent a | (midnight   | psychiatric | wing of     |
+| charged     | whole day   | to          | c           | hospital    |
+| with an     | (midnight   | midnight)   | onfinement. | was not     |
+| offence     | to          | imprisoned. |             | charged     |
+|             | midnight)   |             | The day of  | with an     |
+| Date        | imprisoned. | Day 15 ends | release is  | offence has |
+| admitted 3  |             | on 18       | not         | claimed a   |
+| March       | Day 1       | March, the  | counted.    | social      |
+|             | starts from | day before  |             | security    |
+| The first   | 4 March,    | the         |             | pension or  |
+| day of      | the day     | customer    |             | benefit     |
+| entry in    | after the   | leaves      |             | that is     |
+| custody     | customer    | custody.    |             | payable and |
+| charged     | entered     |             |             | has liquid  |
+| with an     | custody.    |             |             | assets of   |
+| offence is  |             |             |             | less than a |
+| not counted |             |             |             | fortnight's |
+| towards the |             |             |             | e           |
+| 14 days for |             |             |             | ntitlement. |
+| CrP-PRI.    |             |             |             |             |
+|             |             |             |             | -   CrP-PRI |
+|             |             |             |             |     claim   |
+|             |             |             |             |     20      |
+|             |             |             |             |     March   |
+|             |             |             |             | -   Hosp    |
+|             |             |             |             | italisation |
+|             |             |             |             |     3 March |
+|             |             |             |             | -   Release |
+|             |             |             |             |     date 19 |
+|             |             |             |             |     March   |
+|             |             |             |             |             |
+|             |             |             |             | Claim       |
+|             |             |             |             | rejected –  |
+|             |             |             |             | CrP-PRI is  |
+|             |             |             |             | not payable |
+|             |             |             |             | as the      |
+|             |             |             |             | person was  |
+|             |             |             |             | not in      |
+|             |             |             |             | prison or   |
+|             |             |             |             | psychiatric |
+|             |             |             |             | confinement |
+|             |             |             |             | as a result |
+|             |             |             |             | of being    |
+|             |             |             |             | charged     |
+|             |             |             |             | with an     |
+|             |             |             |             | offence.    |
+|             |             |             |             |             |
+|             |             |             |             | Update the  |
+|             |             |             |             | Manual      |
+|             |             |             |             | rejection   |
+|             |             |             |             | field to    |
+|             |             |             |             | L14 -       |
+|             |             |             |             | Period of   |
+|             |             |             |             | i           |
+|             |             |             |             | mprisonment |
+|             |             |             |             | is less     |
+|             |             |             |             | than        |
+|             |             |             |             | fourteen    |
+|             |             |             |             | (14) days.  |
++-------------+-------------+-------------+-------------+-------------+
+
+Comparison - not in custody/in custody
+
+Table 8
+
++-----------------+-----------------+-----------------+-----------------+
+| Customer in     | Count start     | Release         | Eligibility     |
+| Custody (Day 0) | date (Day 1)    | date-not        | Scenario        |
+|                 |                 | counted towards |                 |
+|                 |                 | minimum 14 Day  |                 |
+|                 |                 | period          |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Customer found  | 2 January       | Release 31      | CrP-PRI Not     |
+| not guilty with |                 | December        | Payable         |
+| no conviction   | The count of    |                 |                 |
+| recorded, was   | days does not   | Customer        | Customer        |
+| confined in a   | start until a   | released from   | released from   |
+| psychiatric     | customer has    | prison or       | psychiatric     |
+| institution     | spent a whole   | psychiatric     | confinement was |
+| charged with an | day (midnight   | confinement.    | undertaking     |
+| offence and is  | to midnight)    |                 | course of       |
+| undertaking a   | imprisoned.     | The day of      | rehabilitation, |
+| course of       |                 | release is not  | was receiving   |
+| rehabilitation  | Day 1 starts    | counted.        | DSP while in    |
+|                 | from 2 January, |                 | custody and has |
+| Date of         | the day after   |                 | liquid assets   |
+| incarceration 1 | the customer    |                 | of less than a  |
+| January         | entered         |                 | fortnight's     |
+|                 | custody.        |                 | entitlement.    |
+| The first day   |                 |                 |                 |
+| of entry is not |                 |                 | -   CrP-PRI     |
+| counted towards |                 |                 |     claim 31    |
+| the 14 days for |                 |                 |     December    |
+| CrP-PRI.        |                 |                 | -   In Custody  |
+|                 |                 |                 |     1 January   |
+|                 |                 |                 | -   DSP paid -  |
+|                 |                 |                 |     1 Jan to 31 |
+|                 |                 |                 |     Dec         |
+|                 |                 |                 | -   Day 1       |
+|                 |                 |                 |     starts 2    |
+|                 |                 |                 |     January     |
+|                 |                 |                 | -   Release     |
+|                 |                 |                 |     date 31     |
+|                 |                 |                 |     December    |
+|                 |                 |                 |                 |
+|                 |                 |                 | Claim rejected  |
+|                 |                 |                 | – CrP-PRI is    |
+|                 |                 |                 | not payable as  |
+|                 |                 |                 | the person is   |
+|                 |                 |                 | not being       |
+|                 |                 |                 | released from   |
+|                 |                 |                 | prison or       |
+|                 |                 |                 | psychiatric     |
+|                 |                 |                 | confinement.    |
+|                 |                 |                 |                 |
+|                 |                 |                 | Update the      |
+|                 |                 |                 | Manual          |
+|                 |                 |                 | rejection field |
+|                 |                 |                 | to L14 - Period |
+|                 |                 |                 | of imprisonment |
+|                 |                 |                 | is less than    |
+|                 |                 |                 | fourteen (14)   |
+|                 |                 |                 | days.           |
++-----------------+-----------------+-----------------+-----------------+
+| Customer found  | 2 January       | Release 31      | CrP-PRI Payable |
+| not guilty with |                 | December        |                 |
+| no conviction   | The count of    |                 | Customer        |
+| recorded, was   | days does not   | Customer        | released from   |
+| confined in a   | start until a   | released from   | prison or       |
+| psychiatric     | customer has    | prison or       | psychiatric     |
+| institution     | spent a whole   | psychiatric     | confinement as  |
+| charged with an | day (midnight   | confinement.    | a result of     |
+| offence and is  | to midnight)    |                 | being charged   |
+| not undertaking | imprisoned.     | The day of      | with an offence |
+| a course of     |                 | release is not  | and has claimed |
+| rehabilitation  | Day 1 starts    | counted.        | a social        |
+|                 | from 2 January, |                 | security        |
+| Date of         | the day after   |                 | pension or      |
+| incarceration 1 | the customer    |                 | benefit that is |
+| January         | entered         |                 | payable and has |
+|                 | custody.        |                 | liquid assets   |
+| The first day   |                 |                 | of less than a  |
+| of entry not    |                 |                 | fortnight's     |
+| counted towards |                 |                 | entitlement.    |
+| the 14 days for |                 |                 |                 |
+| CrP-PRI.        |                 |                 | -   CrP-PRI     |
+|                 |                 |                 |     claim 31    |
+|                 |                 |                 |     December    |
+|                 |                 |                 | -   In Custody  |
+|                 |                 |                 |     1 January   |
+|                 |                 |                 | -   Day 1       |
+|                 |                 |                 |     starts 2    |
+|                 |                 |                 |     January     |
+|                 |                 |                 | -   Release     |
+|                 |                 |                 |     date 31     |
+|                 |                 |                 |     December    |
+|                 |                 |                 |                 |
+|                 |                 |                 | Claim granted – |
+|                 |                 |                 | CrP-PRI is      |
+|                 |                 |                 | payable as the  |
+|                 |                 |                 | person has been |
+|                 |                 |                 | in prison for   |
+|                 |                 |                 | at least 14     |
+|                 |                 |                 | days.           |
++-----------------+-----------------+-----------------+-----------------+
+
+Examples of revised release date
+
+CrP-PRI where the revised release date is before or after the original release date
+
+Table 9: This table outlines CrP-PRI payability (or not payable) when
+the original planned released date has been revised by the correctional
+centre.
+
+Crisis Payment is payable if the revised release date is before the
+original planned release date as long as the customer meets all other
+eligibility criteria
+
+Where the customer is released from prison later than originally
+scheduled, for example, after the original release date, Crisis Payment
+is not payable and becomes a recoverable debt
+
+If the release date is revised by the prison and is after the originally
+scheduled release date, and CrP-PRI has been paid, reverse the grant
+decision. The customer has to repay the original payment and make
+another claim for CrP-PRI
+
++-----------------------------------+-----------------------------------+
+| Example                           | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Release date is before the        |
+|                                   | original release                  |
+|                                   |                                   |
+|                                   | Customer lodges a CrP-PRI claim   |
+|                                   | on 1 March (day 1) with an        |
+|                                   | expected release date of 19       |
+|                                   | March. ISP and Crisis Payment     |
+|                                   | granted and finalised on 1        |
+|                                   | (March) (day 1). Date of release  |
+|                                   | changed to 15 March (Day 15 –     |
+|                                   | before the original release       |
+|                                   | date). Crisis Payment is payable  |
+|                                   | if the revised release date is    |
+|                                   | before the original release date  |
+|                                   | and the customer meets all other  |
+|                                   | eligibility criteria.             |
++-----------------------------------+-----------------------------------+
+| 2                                 | Release date is after the         |
+|                                   | original release                  |
+|                                   |                                   |
+|                                   | Customer lodges a CrP-PRI claim   |
+|                                   | on 1 March (day 1) with an        |
+|                                   | expected release date of 14       |
+|                                   | March. ISP and Crisis payment     |
+|                                   | granted and finalised on 14       |
+|                                   | March. Date of release changed to |
+|                                   | 20 March (Day 20 – after the      |
+|                                   | original release date). Crisis    |
+|                                   | Payment is not payable if the     |
+|                                   | release date is revised and comes |
+|                                   | after the originally scheduled    |
+|                                   | release date. Crisis Payment is a |
+|                                   | recoverable debt, regardless of   |
+|                                   | whether or not it is still within |
+|                                   | 21 days of the claim being made.  |
++-----------------------------------+-----------------------------------+
+
+Services Australia website link
+
+Payment and Service Finder
 
 Forms
 

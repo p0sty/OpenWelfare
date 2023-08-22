@@ -1,10 +1,4 @@
 
-Issuing and viewing receipt numbers 111-05040020
-
--   Background
--   
--   Process
-
 [Expand/Collapse all sections]Expand all
 
 Issuing a receipt number to a customer
@@ -57,17 +51,31 @@ Issuing a receipt number to a customer
 |                                   | enquiry + Read more ...           |
 |                                   |                                   |
 |                                   | Person permitted to enquire       |
-|                                   | limits apply:                     |
+|                                   | limits apply.                     |
 |                                   |                                   |
-|                                   | Access the customer's record to   |
-|                                   | check the Enq: field in the       |
-|                                   | screen header. If this field      |
-|                                   | shows:                            |
+|                                   | In Process Direct:                |
 |                                   |                                   |
-|                                   | -   No, a receipt number is not   |
-|                                   |     provided and no action should |
-|                                   |     be taken. Procedure ends here |
+|                                   | Go to the Marital Status (MS)     |
+|                                   | screen                            |
+|                                   |                                   |
+|                                   | Check Partner Permitted field. If |
+|                                   | this field shows:                 |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 5             |
+|                                   | -   No, do not give a receipt     |
+|                                   |     number and take no action.    |
+|                                   |     Procedure ends here           |
+|                                   |                                   |
+|                                   | In Customer First:                |
+|                                   |                                   |
+|                                   | In the customer's record, check   |
+|                                   | the Enq: field in the screen      |
+|                                   | header. If this field shows:      |
+|                                   |                                   |
 |                                   | -   PTR, go to Step 5             |
+|                                   | -   No, do not give a receipt     |
+|                                   |     number and take no action.    |
+|                                   |     Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Has the customer contacted the    |
 |                                   | wrong person or queue? + Read     |
@@ -76,9 +84,9 @@ Issuing a receipt number to a customer
 |                                   | -   Yes, direct the customer to   |
 |                                   |     the appropriate person, or    |
 |                                   |     transfer their call to the    |
-|                                   |     appropriate queue. A receipt  |
-|                                   |     number is not provided.       |
-|                                   |     Procedure ends here.          |
+|                                   |     appropriate queue. Do not     |
+|                                   |     give a receipt number.        |
+|                                   |     Procedure ends here           |
 |                                   | -   No, go to Step 7              |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Is customer being transferred now |
@@ -89,9 +97,9 @@ Issuing a receipt number to a customer
 |                                   |     the specialist officer, or    |
 |                                   |     transfer the call to a        |
 |                                   |     specialist officer (for       |
-|                                   |     example, Social Worker). A    |
-|                                   |     receipt number is not         |
-|                                   |     provided. Procedure ends here |
+|                                   |     example, Social Worker). Do   |
+|                                   |     not give a receipt number.    |
+|                                   |     Procedure ends here           |
 |                                   | -   No, go to Step 7              |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Customer requests a receipt       |
@@ -110,8 +118,8 @@ Issuing a receipt number to a customer
 |                                   | -   To adjust this option, go to  |
 |                                   |     Step 9                        |
 |                                   | -   To access previously issued   |
-|                                   |     receipt numbers, go to Step   |
-|                                   |     10                            |
+|                                   |     receipt numbers in Customer   |
+|                                   |     First, go to Step 10          |
 |                                   |                                   |
 |                                   | Staff in customer service         |
 |                                   | positions can generate and issue  |
@@ -122,11 +130,34 @@ Issuing a receipt number to a customer
 | 8                                 | To manually generate and issue    |
 |                                   | receipt numbers + Read more ...   |
 |                                   |                                   |
+|                                   | In Process Direct                 |
+|                                   |                                   |
+|                                   | Key RCSNUM in Super Key           |
+|                                   |                                   |
+|                                   | The Receipt Summary screen will   |
+|                                   | display. Complete the following:  |
+|                                   |                                   |
+|                                   | -   Description text enter        |
+|                                   |     description                   |
+|                                   | -   Channel select either Phone   |
+|                                   |     any or In person              |
+|                                   |                                   |
+|                                   | Select Issue receipt              |
+|                                   |                                   |
+|                                   | The receipt number will now       |
+|                                   | display in the:                   |
+|                                   |                                   |
+|                                   | -   Receipt number field          |
+|                                   | -   Contact summary table         |
+|                                   |                                   |
+|                                   | Procedure ends here               |
+|                                   |                                   |
 |                                   | [                                 |
 |                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
 |                                   | SERDELEXCEL\WORKPRODIMP\Operation |
 |                                   | Blueprint Migration\RDT Release   |
 |                                   | Icons\32w\icon-face-to-face.png]  |
+|                                   | In Customer First                 |
 |                                   |                                   |
 |                                   | -   Select Receipt numbers >      |
 |                                   |     Issue Receipt Number.         |
@@ -146,12 +177,25 @@ Issuing a receipt number to a customer
 |                                   | automatically generated, go to    |
 |                                   | Step 9.                           |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Option to adjust generating       |
-|                                   | automatic receipt numbers + Read  |
-|                                   | more ...                          |
+| 9                                 | Option to view a receipt number + |
+|                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | In most cases a receipt number is |
-|                                   | generated automatically at the    |
+|                                   | To view details of the relevant   |
+|                                   | receipt number, click on the      |
+|                                   | radio button to the left of the   |
+|                                   | receipt number. All details for   |
+|                                   | that receipt number will then     |
+|                                   | populate the fields under the     |
+|                                   | Contact Details heading. For      |
+|                                   | example, Date, Time, User (or     |
+|                                   | logon ID), Access Details.        |
+|                                   |                                   |
+|                                   | Option to adjust generating       |
+|                                   | automatic receipt numbers in      |
+|                                   | Customer First                    |
+|                                   |                                   |
+|                                   | In most cases, a receipt number   |
+|                                   | is generated automatically at the |
 |                                   | start of the customer             |
 |                                   | interaction.                      |
 |                                   |                                   |
@@ -197,8 +241,8 @@ Issuing a receipt number to a customer
 |                                   |     archived information          |
 |                                   |                                   |
 |                                   | No, go to the Contact Summary     |
-|                                   | screen to see details of the      |
-|                                   | receipt numbers:                  |
+|                                   | screen in Customer First to see   |
+|                                   | details of the receipt numbers:   |
 |                                   |                                   |
 |                                   | -   Select Receipt Numbers >      |
 |                                   |     Validate Receipt Number from  |
@@ -209,16 +253,6 @@ Issuing a receipt number to a customer
 |                                   |     customer are listed. To view  |
 |                                   |     earlier receipt numbers click |
 |                                   |     on the Next button            |
-|                                   | -   To view details of the        |
-|                                   |     relevant receipt number,      |
-|                                   |     click on the radio button to  |
-|                                   |     the left of the receipt       |
-|                                   |     number. All details for that  |
-|                                   |     receipt number will then      |
-|                                   |     populate the fields under the |
-|                                   |     Contact Details heading. For  |
-|                                   |     example, Date, Time, User (or |
-|                                   |     logon ID), Access Details     |
 +-----------------------------------+-----------------------------------+
 
                                    

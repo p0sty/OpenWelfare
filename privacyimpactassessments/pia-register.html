@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
   <head>
-    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VgEPUlRQARAGXFlRBAYGUFw=",licenseKey:"NRJS-56afeaf32ee93d607b1",applicationID:"688337168"};/*! For license information please see nr-loader-full-1220.min.js.LICENSE.txt */
-!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return i}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var i,o=r.getElementsByTagName("div").length;i=4===o?6:3===o?7:2===o?8:1===o?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),i=n(5955),o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new i.I(e,o),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return u},Mt:function(){return s},P_:function(){return c}});var r=n(1424),i=n(5955),o={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new i.I(e,o),(0,r.Qy)(t,a[t],"config")}function s(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=c(t);if(n){for(var r=e.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return b},s:function(){return O}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var i=n(4280),o=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),i=0;i<r.length;i++)if(r[i]!==n[i])return!1;return!0}var d=n(5955),l=n(1424),p=n(4168),h=window.sessionStorage,v="NRBA_SESSION_ID";var g=n(1476),m=window.XMLHttpRequest,y=m&&m.prototype,w={};function b(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!w[t])throw new Error("Runtime for "+t+" was never set");return w[t]}function O(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;w[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===i.H?2e3:3e4,offset:(0,o.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=h.getItem(v))&&(a=(0,p.ky)(16),h.setItem(v,a)),a):"0",xhrWrappable:m&&y&&y.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,w[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return i}});var r={agentIdentifier:""},i=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],i=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=i)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,i=n(1424),o=n(4217),a=n(357),c="nr@context",u=(0,i.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var i={},u={},l={},p={on:g,addEventListener:g,removeEventListener:m,emit:v,get:w,listeners:y,context:h,buffer:b,abort:d,aborted:!1,isBuffering:O,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return p;function h(t){return t&&t instanceof s?t:t?(0,o.X)(t,c,f):f()}function v(t,n,i,o,a){if(!1!==a&&(a=!0),!r.aborted||o){e&&a&&e.emit(t,n,i);for(var c=h(i),s=y(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=x()[u[t]];return l&&l.push([p,t,n,c]),c}}function g(t,e){i[t]=y(t).concat(e)}function m(t,e){var n=i[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function y(t){return i[t]||[]}function w(e){return l[e]=l[e]||t(p,e)}function b(t,e){var n=x();p.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function O(t){return!!x()[u[t]]}function x(){return p.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return i}});var r=n(1776).ee.get("handle");function i(t,e,n,i,o){o?(o.buffer([t],i),o.emit(t,e,n)):(r.buffer([t],i),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=n(7361);o.on=a;var i=o.handlers={};function o(t,e,n,o){a(o||r.E,i,t,e,n)}function a(t,e,n,i,o){o||(o="feature"),t||(t=r.E);var a=e[o]=e[o]||{};(a[n]=a[n]||[]).push([t,i])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return o}});var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(t){}function o(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)a+="x"===(i=o[c])?r().toString(16):"y"===i?(i=3&r()|8).toString(16):i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<t;o++)i.push(a().toString(16));return i.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Ht:function(){return o},M:function(){return i},Rl:function(){return r},ky:function(){return a}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),i=(new Date).getTime(),o=i;function a(){return r.G&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-o}function c(){return i}function u(t){o=t}function s(){return o}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var i=n(6972),o=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(o.I&&o.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,i,o,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?o=c[u].substring(2):0===c[u].indexOf("p=")?";"===(i=c[u].substring(2)).charAt(i.length-1)&&(i=i.substr(0,i.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==i)}if(a&&o){if((new Date).getTime()-o>6e4)return;return o}}}();e&&((0,i.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return o},L:function(){return a}});var r=n(6959),i={};function o(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),i[t]=i[t]||{},i[t][e]=n}function a(t,e,n,r){var o,a,c=t.sharedContext.agentIdentifier,u=null==(o=i[c])?void 0:o[n],s=null==(a=i[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7001:function(t,e,n){"use strict";n.d(e,{e:function(){return i}});var r={};function i(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,i=r;function o(){return i}var a={isFileProtocol:function(){var t=o(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),i=n(1476),o=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return o.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,i.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return i}});var r=n(1776),i=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=Object.prototype.hasOwnProperty;function i(t,e,n){if(r.call(t,e))return t[e];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:i,writable:!0,enumerable:!1}),i}catch(t){}return t[e]=i,i}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return i}});var r=Object.prototype.hasOwnProperty;function i(t,e){var n=[],i="",o=0;for(i in t)r.call(t,i)&&(n[o]=e(i,t[i]),o+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),i=n(3707),o=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var i=r.prototype;return i.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},i.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var i=e[r].regex,o=e[r].replacement||"*";n=n.replace(i,o)}return n},r}(i.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),o.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var i=t[r].replacement;i&&"string"!=typeof i&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return i},fP:function(){return o},gG:function(){return s},mF:function(){return a}});var r=n(6959),i={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=o();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var i,a,c=o(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((i={})[n]=e,i)),a)),c}function u(t,e){o()[t]=e}function s(){var t,e;return t=o(),e=t.info||{},t.info=Object.assign({beacon:i.beacon,errorBeacon:i.errorBeacon},e),function(){var t=o(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=o(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),o()}},5098:function(t,e,n){"use strict";function r(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}n.d(e,{W:function(){return r}})},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}},8118:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}}},r={};function i(t){var e=r[t];if(void 0!==e)return e.exports;var o=r[t]={exports:{}};return n[t](o,o.exports,i),o.exports}i.m=n,i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,{a:e}),e},i.d=function(t,e){for(var n in e)i.o(e,n)&&!i.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},i.f={},i.e=function(t){return Promise.all(Object.keys(i.f).reduce((function(e,n){return i.f[n](t,e),e}),[]))},i.u=function(t){return t+"."+i.h().slice(0,8)+"-1220.js"},i.h=function(){return"2d6a2503b7f18a5b77dd"},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",i.l=function(n,r,o,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==o)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+o){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,i.nc&&c.setAttribute("nonce",i.nc),c.setAttribute("data-webpack",e+o),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(p);var i=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),i&&i.forEach((function(t){return t(r)})),e)return e(r)},p=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",function(){var t={908:0,172:0};i.f.j=function(e,n){var r=i.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise((function(n,i){r=t[e]=[n,i]}));n.push(r[2]=o);var a=i.p+i.u(e),c=new Error;i.l(a,(function(n){if(i.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+o+": "+a+")",c.name="ChunkLoadError",c.type=o,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,o,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)i.o(c,r)&&(i.m[r]=c[r]);if(u)u(i)}for(e&&e(n);s<a.length;s++)o=a[s],i.o(t,o)&&t[o]&&t[o][0](),t[o]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var o={};return function(){"use strict";i.r(o);var t=i(9034),e=i(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=i(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},i=r.iterator||"@@iterator",o=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var i=e&&e.prototype instanceof l?e:l,o=Object.create(i.prototype),a=new j(r||[]);return o._invoke=function(t,e,n){var r="suspendedStart";return function(i,o){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===i)throw o;return P()}for(n.method=i,n.arg=o;;){var a=n.delegate;if(a){var c=O(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),o}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function p(){}function h(){}var v={};c(v,i,(function(){return this}));var g=Object.getPrototypeOf,m=g&&g(g(_([])));m&&m!==e&&n.call(m,i)&&(v=m);var y=h.prototype=l.prototype=Object.create(v);function w(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function b(t,e){function r(i,o,a,c){var u=s(t[i],t,o);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var i;this._invoke=function(t,n){function o(){return new e((function(e,i){r(t,n,e,i)}))}return i=i?i.then(o,o):o()}}function O(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,O(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var i=r.arg;return i?i.done?(e[t.resultName]=i.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):i:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function x(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(x,this),this.reset(!0)}function _(t){if(t){var e=t[i];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,o=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return o.next=o}}return{next:P}}function P(){return{value:void 0,done:!0}}return p.prototype=h,c(y,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(y),t},t.awrap=function(t){return{__await:t}},w(b.prototype),c(b.prototype,o,(function(){return this})),t.AsyncIterator=b,t.async=function(e,n,r,i,o){void 0===o&&(o=Promise);var a=new b(u(e,n,r,i),o);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},w(y),c(y,a,"Generator"),c(y,i,(function(){return this})),c(y,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var i=this.tryEntries.length-1;i>=0;--i){var o=this.tryEntries[i],a=o.completion;if("root"===o.tryLoc)return r("end");if(o.tryLoc<=this.prev){var c=n.call(o,"catchLoc"),u=n.call(o,"finallyLoc");if(c&&u){if(this.prev<o.catchLoc)return r(o.catchLoc,!0);if(this.prev<o.finallyLoc)return r(o.finallyLoc)}else if(c){if(this.prev<o.catchLoc)return r(o.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<o.finallyLoc)return r(o.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var i=this.tryEntries[r];if(i.tryLoc<=this.prev&&n.call(i,"finallyLoc")&&this.prev<i.finallyLoc){var o=i;break}}o&&("break"===t||"continue"===t)&&o.tryLoc<=e&&e<=o.finallyLoc&&(o=null);var a=o?o.completion:{};return a.type=t,a.arg=e,o?(this.method="next",this.next=o.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var i=r.arg;E(n)}return i}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,i,o,a){try{var c=t[o](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,i)}var l=0;function p(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,i.e(552).then(i.bind(i,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,i){var o=e.apply(t,n);function a(t){d(o,r,i,a,c,"next",t)}function c(t){d(o,r,i,a,c,"throw",t)}a(void 0)}))})()}var h=i(8539),v=i.n(h),g=i(1424),m=i(1220),y=i(441),w=i(7361),b=i(357),O=i(6959);var x=i(1476),E=i(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};function P(t){if(!t)throw new Error("All loader-config objects require an agent identifier!");if(!_[t])throw new Error("LoaderConfig for "+t+" was never set");return _[t]}var T=!1;var S=i(6972),L=i(1793),C=i(5023);function I(t,e){return I=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},I(t,e)}var A,R,k,H=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,L.v)(e),(0,S.B)(e,"firstbyte",(0,O.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,I(e,n);var i=r.prototype;return i.measureWindowLoaded=function(){var t=(0,O.zO)();(0,S.B)(this.agentIdentifier,"onload",t+(0,O.os)()),(0,w.p)("timing",["load",t],void 0,void 0,this.ee)},i.measureDomContentLoaded=function(){(0,S.B)(this.agentIdentifier,"domContent",(0,O.zO)()+(0,O.os)())},r}(C.W);void 0!==document.hidden?(A="hidden",R="visibilitychange",k="visibilityState"):void 0!==document.msHidden?(A="msHidden",R="msvisibilitychange"):void 0!==document.webkitHidden&&(A="webkitHidden",R="webkitvisibilitychange",k="webkitVisibilityState");var z=i(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var M=function(t){var n,r;function i(n){var r,i;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return i=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&R&&document.addEventListener(R,(function(){k&&document[k]?i(document[k]):document[A]?i("hidden"):i("visible")}),(0,e.m)(!1)),r}r=t,(n=i).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var o=i.prototype;return o.isEnabled=function(){return!1!==(0,x.Mt)(this.agentIdentifier,"page_view_timing.enabled")},o.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,w.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,w.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},o.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var i=[r],o=this.addConnectionAttributes({});o&&i.push(o),(0,w.p)("lcp",i,void 0,void 0,this.ee)}},o.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,w.p)("cls",[t],void 0,void 0,e.ee)}))},o.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},o.captureInteraction=function(t){if(t instanceof z.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,O.zO)()?n.fid=(0,O.zO)()-e:e>(0,O.os)()&&e<=Date.now()?(e-=(0,O.os)(),n.fid=(0,O.zO)()-e):e=(0,O.zO)(),this.fiRecorded=!0,(0,w.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},o.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,O.zO)(),(0,w.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},i}(C.W),q=i(3350),D="React",B="Angular",F="AngularJS",G="Backbone",U="Ember",X="Vue",Z="Meteor",V="Zepto",W="Jquery";function Y(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(D),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(F),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(B),window.Backbone&&t.push(G),window.Ember&&t.push(U),window.Vue&&t.push(X),window.Meteor&&t.push(Z),window.Zepto&&t.push(V),window.jQuery&&t.push(W)}catch(t){}return t}var Q=i(7299),K=i(603),J=i(158);function $(t,e){return $=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},$(t,e)}var tt=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,$(e,n);var i=r.prototype;return i.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,w.p)("storeMetric",n,null,void 0,this.ee),n},i.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,w.p)("storeEventMetrics",n,null,void 0,this.ee),n},i.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+J.q+"/Detected"),u((function(){Y().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),Q.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),Q.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(C.W),et=i(4217),nt=i(8118),rt=i.n(nt),it=window,ot="fetch-",at="fetch-body-",ct=["arrayBuffer","blob","json","text","formData"],ut=it.Request,st=it.Response,ft="prototype",dt="nr@context",lt={};function pt(t){var e=function(t){return(t||s.ee).get("fetch")}(t);if(!(ut&&st&&window.fetch))return e;if(lt[e.debugId])return e;function n(t,n,r){var i=t[n];"function"==typeof i&&(t[n]=function(){var t,n=rt()(arguments),o={};e.emit(r+"before-start",[n],o),o[dt]&&o[dt].dt&&(t=o[dt].dt);var a=i.apply(this,n);return e.emit(r+"start",[n,t],a),a.then((function(t){return e.emit(r+"end",[null,t],a),t}),(function(t){throw e.emit(r+"end",[t],a),t}))})}return lt[e.debugId]=!0,(0,b.D)(ct,(function(t,e){n(ut[ft],e,at),n(st[ft],e,at)})),n(it,"fetch",ot),e.on("fetch-end",(function(t,n){var r=this;if(n){var i=n.headers.get("content-length");null!==i&&(r.rxSize=i),e.emit("fetch-done",[null,n],r)}else e.emit("fetch-done",[t],r)})),e}var ht="nr@original",vt=Object.prototype.hasOwnProperty,gt=!1;function mt(t,e){return t||(t=s.ee),n.inPlace=function(t,e,r,i,o){r||(r="");var a,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],bt(a=t[c])||(t[c]=n(a,s?c+r:r,i,c,o))},n.flag=ht,n;function n(e,n,i,o,a){return bt(e)?e:(n||(n=""),c[ht]=e,wt(e,c,t),c);function c(){var c,u,s,f;try{u=this,c=rt()(arguments),s="function"==typeof i?i(c,u):i||{}}catch(e){yt([e,"",[c,u,o],s],t)}r(n+"start",[c,u,o],s,a);try{return f=e.apply(u,c)}catch(t){throw r(n+"err",[c,u,t],s,a),t}finally{r(n+"end",[c,u,f],s,a)}}}function r(n,r,i,o){if(!gt||e){var a=gt;gt=!0;try{t.emit(n,r,i,e,o)}catch(e){yt([e,n,r,i],t)}gt=a}}}function yt(t,e){e||(e=s.ee);try{e.emit("internal-error",t)}catch(t){}}function wt(t,e,n){if(Object.defineProperty&&Object.keys)try{return Object.keys(t).forEach((function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})})),e}catch(t){yt([t],n)}for(var r in t)vt.call(t,r)&&(e[r]=t[r]);return e}function bt(t){return!(t&&t instanceof Function&&t.apply&&!t[ht])}var Ot={};function xt(t){var e=function(t){return(t||s.ee).get("timer")}(t);if(Ot[e.debugId])return e;Ot[e.debugId]=!0;var n=mt(e),r="setTimeout",i="setInterval",o="clearTimeout",a="-start";return n.inPlace(window,[r,"setImmediate"],"setTimeout-"),n.inPlace(window,[i],"setInterval-"),n.inPlace(window,[o,"clearImmediate"],"clearTimeout-"),e.on(i+a,(function(t,e,r){t[0]=n(t[0],"fn-",null,r)})),e.on(r+a,(function(t,e,r){this.method=r,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=n(t[0],"fn-",this,r)})),e}var Et={};function jt(t){var e=function(t){return(t||s.ee).get("raf")}(t);if(Et[e.debugId])return e;Et[e.debugId]=!0;var n=mt(e);return n.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),e.on("raf-start",(function(t){t[0]=n(t[0],"fn-")})),e}var _t={};function Pt(t){var e=function(t){return(t||s.ee).get("history")}(t);if(_t[e.debugId])return e;_t[e.debugId]=!0;var n=mt(e),r=window.history&&window.history.constructor&&window.history.constructor.prototype,i=window.history;return r&&r.pushState&&r.replaceState&&(i=r),n.inPlace(i,["pushState","replaceState"],"-"),e}var Tt={};function St(t){var e=function(t){return(t||s.ee).get("events")}(t);if(Tt[e.debugId])return e;Tt[e.debugId]=!0;var n=mt(e,!0),r=XMLHttpRequest,i="addEventListener",o="removeEventListener";function a(t){for(var e=t;e&&!e.hasOwnProperty(i);)e=Object.getPrototypeOf(e);e&&c(e)}function c(t){n.inPlace(t,[i,o],"-",u)}function u(t,e){return t[1]}return"getPrototypeOf"in Object?(a(document),a(window),a(r.prototype)):r.prototype.hasOwnProperty(i)&&(c(window),c(r.prototype)),e.on("addEventListener-start",(function(t,e){var r=t[1];if(null!==r&&("function"==typeof r||"object"==typeof r)){var i=(0,et.X)(r,"nr@wrapped",(function(){var t={object:function(){if("function"!=typeof r.handleEvent)return;return r.handleEvent.apply(r,arguments)},function:r}[typeof r];return t?n(t,"fn-",null,t.name||"anonymous"):r}));this.wrapped=t[1]=i}})),e.on("removeEventListener-start",(function(t){t[1]=this.wrapped||t[1]})),e}var Lt={};function Ct(t){var n=t||s.ee,r=function(t){return(t||s.ee).get("xhr")}(n);if(Lt[r.debugId])return r;Lt[r.debugId]=!0,St(n);var i=mt(r),o=z.Y.XHR,a=z.Y.MO,c=z.Y.PR,u=z.Y.SI,f="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],p=window.XMLHttpRequest.listeners,h=window.XMLHttpRequest=function(t){var n=new o(t);function i(){try{r.emit("new-xhr",[n],n),n.addEventListener(f,g,(0,e.m)(!1))}catch(t){console.error(t);try{r.emit("internal-error",[t])}catch(t){}}}return this.listeners=p?[].concat(p,[i]):[i],this.listeners.forEach((function(t){return t()})),n};function v(t,e){i.inPlace(e,["onreadystatechange"],"fn-",O)}function g(){var t=this,e=r.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,r.emit("xhr-resolved",[],t)),i.inPlace(t,d,"fn-",O)}if(function(t,e){for(var n in t)e[n]=t[n]}(o,h),h.prototype=o.prototype,i.inPlace(h.prototype,["open","send"],"-xhr-",O),r.on("send-xhr-start",(function(t,e){v(t,e),function(t){l.push(t),a&&(m?m.then(b):u?u(b):(y=-y,w.data=y))}(e)})),r.on("open-xhr-start",v),a){var m=c&&c.resolve();if(!u&&!c){var y=1,w=document.createTextNode(y);new a(b).observe(w,{characterData:!0})}}else n.on("fn-end",(function(t){t[0]&&t[0].type===f||b()}));function b(){for(var t=0;t<l.length;t++)v(0,l[t]);l.length&&(l=[])}function O(t,e){return e}return r}function It(t){return St(t)}function At(t){return jt(t)}function Rt(t){return xt(t)}function kt(t){return Ct(t)}function Ht(t,e){return Ht=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},Ht(t,e)}var zt="nr@seenError",Nt=function(t){var e,n;function r(e){var n;(n=t.call(this,e)||this).skipNext=0,n.handleErrors=!1,n.origOnerror=window.onerror;var r=function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(n),i=(0,m.O)(n.agentIdentifier);i.features.err=!0,r.ee.on("fn-start",(function(t,e,n){r.handleErrors&&(r.skipNext+=1)})),r.ee.on("fn-err",(function(t,e,n){r.handleErrors&&!n[zt]&&((0,et.X)(n,zt,(function(){return!0})),this.thrown=!0,qt(n,void 0,r.ee))})),r.ee.on("fn-end",(function(){r.handleErrors&&!this.thrown&&r.skipNext>0&&(r.skipNext-=1)})),r.ee.on("internal-error",(function(t){(0,w.p)("ierr",[t,(0,O.zO)(),!0],void 0,void 0,r.ee)}));var o=window.onerror;window.onerror=function(){var t;return o&&o.apply(void 0,arguments),(t=n).onerrorHandler.apply(t,arguments),!1};try{window.addEventListener("unhandledrejection",(function(t){var e=new Error(""+t.reason);(0,w.p)("err",[e,(0,O.zO)(),!1,{unhandledPromiseRejection:1}],void 0,void 0,n.ee)}))}catch(t){}try{throw new Error}catch(t){"stack"in t&&(Rt(n.ee),At(n.ee),"addEventListener"in window&&It(n.ee),i.xhrWrappable&&kt(n.ee),r.handleErrors=!0)}return n}return n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,Ht(e,n),r.prototype.onerrorHandler=function(t,e,n,r,i){try{this.skipNext?this.skipNext-=1:qt(i||new Mt(t,e,n),!0,this.ee)}catch(t){try{(0,w.p)("ierr",[t,(0,O.zO)(),!0],void 0,void 0,this.ee)}catch(t){}}return"function"==typeof this.origOnerror&&this.origOnerror.apply(this,rt()(arguments))},r}(C.W);function Mt(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function qt(t,e,n){var r=e?null:(0,O.zO)();(0,w.p)("err",[t,r],void 0,void 0,n)}var Dt=1;function Bt(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:(0,et.X)(t,"nr@id",(function(){return Dt++}))}var Ft=i(5973);function Gt(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(t){return}}}var Ut=i(7001),Xt=i(4168),Zt=function(){function t(t){this.agentIdentifier=t,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}var e=t.prototype;return e.generateTracePayload=function(t){if(!this.shouldGenerateTrace(t))return null;var e=P(this.agentIdentifier);if(!e)return null;var n=(e.accountID||"").toString()||null,r=(e.agentID||"").toString()||null,i=(e.trustKey||"").toString()||null;if(!n||!r)return null;var o=(0,Xt.M)(),a=(0,Xt.Ht)(),c=Date.now(),u={spanId:o,traceId:a,timestamp:c};return(t.sameOrigin||this.isAllowedOrigin(t)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(o,a),u.traceContextStateHeader=this.generateTraceContextStateHeader(o,c,n,r,i)),(t.sameOrigin&&!this.excludeNewrelicHeader()||!t.sameOrigin&&this.isAllowedOrigin(t)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(o,a,c,n,r,i)),u},e.generateTraceContextParentHeader=function(t,e){return"00-"+e+"-"+t+"-01"},e.generateTraceContextStateHeader=function(t,e,n,r,i){return i+"@nr=0-1-"+n+"-"+r+"-"+t+"----"+e},e.generateTraceHeader=function(t,e,n,r,i,o){if(!("btoa"in window&&"function"==typeof window.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(a.d.tk=o),btoa(JSON.stringify(a))},e.shouldGenerateTrace=function(t){return this.isDtEnabled()&&this.isAllowedOrigin(t)},e.isAllowedOrigin=function(t){var e=!1,n={};if((0,x.Mt)(this.agentIdentifier,"distributed_tracing")&&(n=(0,x.P_)(this.agentIdentifier).distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=(0,Ut.e)(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e},e.isDtEnabled=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!!t.enabled},e.excludeNewrelicHeader=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!!t.exclude_newrelic_header},e.useNewrelicHeaderForCors=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!1!==t.cors_use_newrelic_header},e.useTraceContextHeadersForCors=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!!t.cors_use_tracecontext_headers},t}();function Vt(t,e){return Vt=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},Vt(t,e)}var Wt=["load","error","abort","timeout"],Yt=Wt.length,Qt=z.Y.REQ,Kt=window.XMLHttpRequest,Jt=function(t){var n,r;function i(n){var r;r=t.call(this,n)||this;var i=(0,m.O)(r.agentIdentifier);return!i.xhrWrappable||i.disabled?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r):(i.features.xhr=!0,r.dt=new Zt(r.agentIdentifier),r.handler=function(t,e,n,i){return(0,w.p)(t,e,n,i,r.ee)},r.wrappedFetch=function(t,e){return n=t,pt(n);var n}(r.ee),kt(r.ee),function(t,n,r,i){function o(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=b,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,n.params=this.params||{},n.metrics=this.metrics||{},t.addEventListener("load",(function(e){E(n,t)}),(0,e.m)(!1)),Ft.I&&(Ft.I>34||Ft.I<10)||t.addEventListener("progress",(function(t){n.lastSize=t.loaded}),(0,e.m)(!1))}function a(t){this.params={method:t[0]},x(this,t[1]),this.metrics={}}function c(e,n){var r=P(t);"xpid"in r&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",r.xpid);var o=i.generateTracePayload(this.parsedOrigin);if(o){var a=!1;o.newrelicHeader&&(n.setRequestHeader("newrelic",o.newrelicHeader),a=!0),o.traceContextParentHeader&&(n.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&n.setRequestHeader("tracestate",o.traceContextStateHeader),a=!0),a&&(this.dt=o)}}function u(t,r){var i=this.metrics,o=t[0],a=this;if(i&&o){var c=Gt(o);c&&(i.txSize=c)}this.startTime=(0,O.zO)(),this.listener=function(t){try{"abort"!==t.type||a.loadCaptureCalled||(a.params.aborted=!0),("load"!==t.type||a.called===a.totalCbs&&(a.onloadCalled||"function"!=typeof r.onload))&&a.end(r)}catch(t){try{n.emit("internal-error",[t])}catch(t){}}};for(var u=0;u<Yt;u++)r.addEventListener(Wt[u],this.listener,(0,e.m)(!1))}function s(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}function f(t,e){var n=""+Bt(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}function d(t,e){var n=""+Bt(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}function l(){this.endTime=(0,O.zO)()}function p(t,e){e instanceof Kt&&"load"===t[0]&&n.emit("xhr-load-added",[t[1],t[2]],e)}function h(t,e){e instanceof Kt&&"load"===t[0]&&n.emit("xhr-load-removed",[t[1],t[2]],e)}function v(t,e,n){e instanceof Kt&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(0,O.zO)()))}function g(t,e){this.xhrCbStart&&n.emit("xhr-cb-time",[(0,O.zO)()-this.xhrCbStart,this.onload,e],e)}function m(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url?e=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(e=t[0].href),e&&(this.parsedOrigin=(0,Ut.e)(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=i.generateTracePayload(this.parsedOrigin);if(r&&(r.newrelicHeader||r.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in n)o[a]=n[a];o.headers=new Headers(n.headers||{}),c(o.headers,r)&&(this.dt=r),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&c(t[0].headers,r)&&(this.dt=r);function c(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}}function y(t,e){this.params={},this.metrics={},this.startTime=(0,O.zO)(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;"string"==typeof i?n=i:"object"==typeof i&&i instanceof Qt?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),x(this,n);var o=(""+(i&&i instanceof Qt&&i.method||r.method||"GET")).toUpperCase();this.params.method=o,this.txSize=Gt(r.body)||0}function w(t,e){var n;this.endTime=(0,O.zO)(),this.params||(this.params={}),this.params.status=e?e.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var i={txSize:this.txSize,rxSize:n,duration:(0,O.zO)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this)}function b(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;i<Yt;i++)t.removeEventListener(Wt[i],this.listener,!1);e.aborted||(n.duration=(0,O.zO)()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):E(this,t),n.cbTime=this.cbTime,r("xhr",[e,n,this.startTime,this.endTime,"xhr"],this))}}function x(t,e){var n=(0,Ut.e)(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function E(t,e){t.params.status=e.status;var n=function(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?Gt(t.response):"text"===n||""===n||void 0===n?Gt(t.responseText):void 0}(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}n.on("new-xhr",o),n.on("open-xhr-start",a),n.on("open-xhr-end",c),n.on("send-xhr-start",u),n.on("xhr-cb-time",s),n.on("xhr-load-added",f),n.on("xhr-load-removed",d),n.on("xhr-resolved",l),n.on("addEventListener-end",p),n.on("removeEventListener-end",h),n.on("fn-end",g),n.on("fetch-before-start",m),n.on("fetch-start",y),n.on("fn-start",v),n.on("fetch-done",w)}(r.agentIdentifier,r.ee,r.handler,r.dt),r)}return r=t,(n=i).prototype=Object.create(r.prototype),n.prototype.constructor=n,Vt(n,r),i}(C.W);var $t=i(5098);function te(t,e){return te=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},te(t,e)}var ee="addEventListener",ne="resourcetimingbufferfull",re="bstResource",ie="-start",oe="-end",ae="fn-start",ce="fn-end",ue="bstTimer",se="pushState",fe=z.Y.EV,de=function(t){var n,r;function i(n){var r;if(r=t.call(this,n)||this,!(window.performance&&window.performance.timing&&window.performance.getEntriesByType))return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);(0,m.O)(r.agentIdentifier).features.stn=!0;var i=r.ee;function o(t){if((0,w.p)(re,[window.performance.getEntriesByType("resource")],void 0,void 0,i),window.performance.clearResourceTimings)try{window.performance.removeEventListener(ne,o,!1)}catch(t){}else try{window.performance.removeEventListener("webkitresourcetimingbufferfull",o,!1)}catch(t){}}return r.timerEE=Rt(r.ee),r.rafEE=At(r.ee),Pt(r.ee),It(r.ee),r.ee.on(ae,(function(t,e){t[0]instanceof fe&&(this.bstStart=(0,O.zO)())})),r.ee.on(ce,(function(t,e){var n=t[0];n instanceof fe&&(0,w.p)("bst",[n,e,this.bstStart,(0,O.zO)()],void 0,void 0,i)})),r.timerEE.on(ae,(function(t,e,n){this.bstStart=(0,O.zO)(),this.bstType=n})),r.timerEE.on(ce,(function(t,e){(0,w.p)(ue,[e,this.bstStart,(0,O.zO)(),this.bstType],void 0,void 0,i)})),r.rafEE.on(ae,(function(){this.bstStart=(0,O.zO)()})),r.rafEE.on(ce,(function(t,e){(0,w.p)(ue,[e,this.bstStart,(0,O.zO)(),"requestAnimationFrame"],void 0,void 0,i)})),r.ee.on(se+ie,(function(t){this.time=(0,O.zO)(),this.startPath=location.pathname+location.hash})),r.ee.on(se+oe,(function(t){(0,w.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,void 0,i)})),(0,$t.W)()?((0,w.p)(re,[window.performance.getEntriesByType("resource")],void 0,void 0,i),function(){var t=new PerformanceObserver((function(t,e){var n=t.getEntries();(0,w.p)(re,[n],void 0,void 0,i)}));try{t.observe({entryTypes:["resource"]})}catch(t){}}()):ee in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener(ne,o,(0,e.m)(!1)):window.performance.addEventListener("webkitresourcetimingbufferfull",o,(0,e.m)(!1))),document.addEventListener("scroll",r.noOp,(0,e.m)(!1)),document.addEventListener("keypress",r.noOp,(0,e.m)(!1)),document.addEventListener("click",r.noOp,(0,e.m)(!1)),r}return r=t,(n=i).prototype=Object.create(r.prototype),n.prototype.constructor=n,te(n,r),i.prototype.noOp=function(t){},i}(C.W);function le(t,e){return le=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},le(t,e)}var pe=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,m.O)(n.agentIdentifier).features.ins=!0,n}return n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,le(e,n),r}(C.W),he=i(847);new Promise((function(e,n){if(T)e(T);else{var r=(0,g.gG)();try{(0,y.L)(t.Z,r.info),(0,x.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,m.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),i="api-",o="api-ixn-";function a(){}(0,b.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(i,n,!0,"api")})),e.addPageAction=u(i,"addPageAction",!0),e.setCurrentRouteName=u(i,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,m.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(i,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,o=(0,y.C)(t);return(0,y.L)(t,Object.assign({},o,{jsAttributes:Object.assign({},o.jsAttributes,(r={},r[e]=n,r))})),u(i,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var i={},o=this,a="function"==typeof e;return(0,w.p)("api-ixn-tracer",[(0,O.zO)(),t,i],o,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,O.zO)(),o,a],i),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],i),t}finally{r.emit("fn-end",[(0,O.zO)()],i)}}}};function u(t,e,r,i){return function(){return(0,w.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,w.p)(t+e,[(0,O.zO)()].concat(v()(arguments)),r?null:this,i,n),r?void 0:this}}(0,b.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(o,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,w.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,w.p)("err",[t,(0,O.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(T=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,i=(0,he.K)(t.Z);i.page_view_event&&new H(t.Z),i.page_view_timing&&new M(t.Z),i.metrics&&new tt(t.Z),i.jserrors&&new Nt(t.Z),i.ajax&&new Jt(t.Z),i.session_trace&&new de(t.Z),i.page_action&&new pe(t.Z),e="pro",n?setTimeout((function(){return p(e)}),r||1e3):c((function(){return p(e)}))}))}(),o}()}));</script>
-<meta name="color-scheme" content="light" />
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VgEPUlRQARAGXFlRBAYGUFw=",licenseKey:"NRJS-56afeaf32ee93d607b1",applicationID:"688337168"};;/*! For license information please see nr-loader-full-1.237.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,r={5763:(e,t,r)=>{r.d(t,{P_:()=>f,Mt:()=>g,C5:()=>s,DL:()=>m,OP:()=>T,lF:()=>j,Yu:()=>y,Dg:()=>h,CX:()=>c,GE:()=>b,sU:()=>_});var n=r(8632),i=r(9567);const a={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,n.Qy)(e,o[e],"info")}var d=r(7056);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function h(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,n.Qy)(e,l[e],"config")}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=f(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const p={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,p),(0,n.Qy)(e,v[e],"loader_config")}const y=(0,n.mF)().o;var w=r(385),x=r(6818);const A={buildEnv:x.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0},E={};function T(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function _(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,A),(0,n.Qy)(e,E[e],"runtime")}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{r.d(t,{Re:()=>i,gF:()=>a,q4:()=>n});const n="1.237.1",i="PROD",a="CDN"},385:(e,t,r)=>{r.d(t,{FN:()=>o,IF:()=>d,Nk:()=>l,Tt:()=>s,_A:()=>a,il:()=>n,pL:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=""+a?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,d=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),u=Boolean(n&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,r)=>{r.d(t,{w:()=>a});var n=r(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{r.d(t,{L:()=>u,R:()=>c});var n=r(2177),i=r(1284),a=r(4322),o=r(3325);const s={};function c(e,t){const r={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const r=[...s[e]];function o(t){const r=e?n.ee.get(e):n.ee,o=a.X.handlers;if(r.backlog&&o){var s=r.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete o[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;o(t)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],a=e[3],o=e[2];i.apply(a,o)}}))}},2177:(e,t,r)=>{r.d(t,{ee:()=>d});var n=r(8632),i=r(2210),a=r(1284),o=r(5763),s="nr@context";let c=(0,n.fP)();var d;function u(){}function l(){return new u}function f(){d.aborted=!0,d.backlog={}}c.ee?d=c.ee:(d=function e(t,r){var n={},c={},h={},g=!1;try{g=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var p={on:b,addEventListener:b,removeEventListener:y,emit:m,get:x,listeners:w,context:v,buffer:A,abort:f,aborted:!1,isBuffering:E,debugId:r,backlog:g?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return p;function v(e){return e&&e instanceof u?e:e?(0,i.X)(e,s,l):l()}function m(e,r,n,i,a){if(!1!==a&&(a=!0),!d.aborted||i){t&&a&&t.emit(e,r,n);for(var o=v(n),s=w(e),u=s.length,l=0;l<u;l++)s[l].apply(o,r);var f=T()[c[e]];return f&&f.push([p,e,r,o]),o}}function b(e,t){n[e]=w(e).concat(t)}function y(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function w(e){return n[e]||[]}function x(t){return h[t]=h[t]||e(p,t)}function A(e,t){var r=T();p.aborted||(0,a.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function E(e){return!!T()[c[e]]}function T(){return p.backlog}}(void 0,"globalEE"),c.ee=d)},5546:(e,t,r)=>{r.d(t,{E:()=>n,p:()=>i});var n=r(2177).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{r.d(t,{X:()=>a});var n=r(5546);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.E,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.E);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},3239:(e,t,r)=>{r.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var n=r(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(r,n))}},4402:(e,t,r)=>{r.d(t,{Ht:()=>d,M:()=>c,Rl:()=>o,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++r).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(r,++i).toString(16));return o.join("")}function c(){return s(16)}function d(){return s(32)}},7056:(e,t,r)=>{r.d(t,{Bq:()=>n,Hb:()=>a,oD:()=>i});const n="NRBA",i=144e5,a=18e5},7894:(e,t,r)=>{function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{r.d(t,{e:()=>a});var n=r(385),i={};function a(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,a={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return a}a.port=t.port;var o=t.href.split("://");!a.port&&o[1]&&(a.port=o[1].split("/")[0].split("@").pop().split(":")[1]),a.port&&"0"!==a.port||(a.port="https"===o[0]?"443":"80"),a.hostname=t.hostname||r.hostname,a.pathname=t.pathname,a.protocol=o[0],"/"!==a.pathname.charAt(0)&&(a.pathname="/"+a.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return a.sameOrigin=s&&(!t.hostname||c),"/"===a.pathname&&(i[e]=a),a}},50:(e,t,r)=>{function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2587:(e,t,r)=>{r.d(t,{N:()=>c,T:()=>d});var n=r(2177),i=r(5546),a=r(8e3),o=r(3325);const s={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]};function c(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,n]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),d[t]=Boolean(n))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),d[e]=!1)})),(0,a.L)(t,o.D.pageViewEvent))}const d={}},2210:(e,t,r)=>{r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{r.d(t,{P:()=>a});var n=r(2177);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{r.d(t,{K:()=>o,b:()=>a});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.bP)("load",e,t)}function o(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{r.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var n=r(7894),i=r(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[r]:t}},i}function d(e,t){o()[e]=t}function u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,r)=>{r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{r.d(t,{em:()=>m,u5:()=>D,QU:()=>P,Kf:()=>z});var n=r(2177);const i="nr@original";var a=Object.prototype.hasOwnProperty,o=!1;function s(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,a){n||(n="");var o,s,c,d="-"===n.charAt(0);for(c=0;c<t.length;c++)u(o=e[s=t[c]])||(e[s]=r(o,d?s+n:n,i,s,a))},r.flag=i,r;function r(t,r,n,o,s){return u(t)?t:(r||(r=""),nrWrapper[i]=t,d(t,nrWrapper,e),nrWrapper);function nrWrapper(){var i,d,u,l;try{d=this,i=[...arguments],u="function"==typeof n?n(i,d):n||{}}catch(t){c([t,"",[i,d,o],u],e)}a(r+"start",[i,d,o],u,s);try{return l=t.apply(d,i)}catch(e){throw a(r+"err",[i,d,e],u,s),e}finally{a(r+"end",[i,d,l],u,s)}}}function a(r,n,i,a){if(!o||t){var s=o;o=!0;try{e.emit(r,n,i,t,a)}catch(t){c([t,r,n,i],e)}o=s}}}function c(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){c([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n]);return t}function u(e){return!(e&&e instanceof Function&&e.apply&&!e[i])}var l=r(2210),f=r(385);const h={},g=XMLHttpRequest,p="addEventListener",v="removeEventListener";function m(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=s(t,!0);function i(e){r.inPlace(e,[p,v],"-",a)}function a(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&b(document,i),b(f._A,i),b(g.prototype,i)),t.on(p+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,"nr@wrapped",(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(v+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function b(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,p);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),a=2;a<n;a++)i[a-2]=arguments[a];r&&t(r,...i)}var y="fetch-",w=y+"body-",x=["arrayBuffer","blob","json","text","formData"],A=f._A.Request,E=f._A.Response,T="prototype",_="nr@context";const j={};function D(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(A&&E&&f._A.fetch))return t;if(j[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(n+"before-start",[r],a),a[_]&&a[_].dt&&(e=a[_].dt);var o=i.apply(this,r);return t.emit(n+"start",[r,e],o),o.then((function(e){return t.emit(n+"end",[null,e],o),e}),(function(e){throw t.emit(n+"end",[e],o),e}))})}return j[t.debugId]=1,x.forEach((e=>{r(A[T],e,w),r(E[T],e,w)})),r(f._A,"fetch",y),t.on(y+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(y+"done",[null,r],n)}else t.emit(y+"done",[e],n)})),t}const C={},S=["pushState","replaceState"];function P(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||C[t.debugId]++||(C[t.debugId]=1,s(t).inPlace(window.history,S,"-")),t}var O=r(3239);var R=r(5763);var I=r(50);const N={},k=["open","send"];function z(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(N[r.debugId]++)return r;N[r.debugId]=1,m(t);var i=s(r),a=R.Yu.XHR,o=R.Yu.MO,c=R.Yu.PR,d=R.Yu.SI,u="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],g=f._A.XMLHttpRequest.listeners,p=f._A.XMLHttpRequest=function(e){var t=new a(e);function n(){try{r.emit("new-xhr",[t],t),t.addEventListener(u,b,(0,O.m$)(!1))}catch(e){(0,I.Z)("An error occured while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}}return this.listeners=g?[...g,n]:[n],this.listeners.forEach((e=>e())),t};function v(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}function b(){var e=this,t=r.context(e);e.readyState>3&&!t.resolved&&(t.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(a,p),p.prototype=a.prototype,i.inPlace(p.prototype,k,"-xhr-",E),r.on("send-xhr-start",(function(e,t){v(e,t),function(e){h.push(e),o&&(y?y.then(A):d?d(A):(w=-w,x.data=w))}(t)})),r.on("open-xhr-start",v),o){var y=c&&c.resolve();if(!d&&!c){var w=1,x=document.createTextNode(w);new o(A).observe(x,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===u||A()}));function A(){for(var e=0;e<h.length;e++)v(0,h[e]);h.length&&(h=[])}function E(e,t){return t}return r}},7825:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{r.d(t,{gF:()=>a,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>o});const n=r(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{r.d(t,{Dz:()=>i,OJ:()=>o,qw:()=>a,t9:()=>n});const n=r(3325).D.pageViewEvent,i="firstbyte",a="domcontent",o="windowload"},9251:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},3614:(e,t,r)=>{r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>d,FN_START:()=>c,PUSH_STATE:()=>u,RESOURCE:()=>a,START:()=>o});const n=r(3325).D.sessionTrace,i="bstResource",a="resource",o="-start",s="-end",c="fn"+o,d="fn"+s,u="pushState"},5938:(e,t,r)=>{r.d(t,{W:()=>a});var n=r(5763),i=r(2177);class a{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1}}},9144:(e,t,r)=>{r.d(t,{j:()=>v});var n=r(3325),i=r(5763),a=r(5546),o=r(2177),s=r(7894),c=r(8e3),d=r(3960),u=r(385),l=r(50),f=r(3081),h=r(8632);function g(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...n))})),a.length>1?a:a[0]}(t,...n)}}))}var p=r(2587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:x={loaderType:v},exposed:A=!0}=t;const E=(0,h.gG)();y||(b=E.init,y=E.info,w=E.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const T=(0,i.P_)(e);x.denyList=[...T.ajax?.deny_list||[],...T.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,x),g();const _=function(e,t){t||(0,c.R)(e,"api");const h={};var g=o.ee.get(e),p=g.get("tracer"),v="api-",m=v+"ixn-";function b(t,r,n,a){const o=(0,i.C5)(e);return null===r?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:r}}),x(v,n,!0,a||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>h[e]=x(v,e,!0,"api"))),h.addPageAction=x(v,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=x(v,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,x(v,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,r],i,n.D.spa,g),function(){if(p.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){throw p.emit("fn-err",[arguments,this,e],r),e}finally{p.emit("fn-end",[(0,s.z)()],r)}}}};function x(e,t,r,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,g),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,g),r?void 0:this}}function A(){r.e(439).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=x(m,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,g),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,g)},u.il?(0,d.b)((()=>A()),!0):A(),h}(e,m);return(0,h.Qy)(e,_,"api"),(0,h.Qy)(e,A,"exposed"),(0,h.EZ)("activatedFeatures",p.T),_}},3325:(e,t,r)=>{r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"467f8594",147:"b86cefcf",193:"ac30a1f3",242:"d080e4cc",317:"319b8300",348:"7b2a53ee",412:"c1052c27",439:"e9f77430",538:"9c5c1546",590:"8b420469",646:"9e7a6b8d",675:"9614fd62",786:"4988d952",860:"95a91211",873:"550eec7b",898:"d95c640e"}[e]+"-1.237.1.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=588,i.p="https://js-agent.newrelic.com/",(()=>{var e={588:0,487:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,d=0;if(o.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var a={};(()=>{i.r(a);var e=i(50);class t{addPageAction(t,r){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,r){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,r,n){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,r){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,r){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var r=i(3325),n=i(5763);const o=Object.values(r.D);function s(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var c=i(9144);var d=i(5546),u=i(385),l=i(8e3),f=i(5938),h=i(3960);class g extends f.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler,this.featAggregate,this.onAggregateImported,n&&(0,l.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const r=u.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let n;try{if(r){const{setupAgentSession:e}=await Promise.all([i.e(860),i.e(242)]).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,l.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(412).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),a(!1)}};u.il?(0,h.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(7633),v=i(7894);class m extends g{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||u.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,n.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,h.K)((()=>t[p.qw]=Math.max((0,v.z)()-t[p.Dz],0))),(0,h.b)((()=>{const e=(0,v.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,d.p)("timing",["load",e],void 0,r.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var b=i(1117),y=i(1284);class w extends b.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var a=this.getBucket(e,t,r,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,y.D)(e,(function(e,r){t[e]=x(r,t[e])})),t}(n,a.metrics),a}merge(e,t,r,n,i){var a=this.getBucket(e,t,n,i);if(a.metrics){var o=a.metrics;o.count+=r.count,(0,y.D)(r,(function(e,t){if("count"!==e){var n=o[e],i=r[e];i&&!i.c?o[e]=x(i.t,n):o[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=x(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=E(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function x(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function E(e){return"object"!=typeof e?[]:(0,y.D)(e,T)}function T(e,t){return t}var _=i(8632),j=i(4402),D=i(4351);var C=i(7956),S=i(3239),P=i(9251);class O extends g{static featureName=P.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,r),u.il&&((0,n.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,C.N)((()=>(0,d.p)("docHidden",[(0,v.z)()],void 0,P.t,this.ee)),!0),(0,S.bP)("pagehide",(()=>(0,d.p)("winPagehide",[(0,v.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var R=i(3081);class I extends g{static featureName=R.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t9,r),this.importAggregator()}}var N=i(6660);class k{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class z extends g{static featureName=N.t;#e=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#e.has(n)&&(this.#e.add(n),(0,d.p)("err",[this.#t(n),(0,v.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,d.p)("ierr",[this.#t(e),(0,v.z)(),!0],void 0,r.D.jserrors,this.ee)})),u._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,d.p)("err",[this.#r(e),(0,v.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,S.m$)(!1,this.removeOnAbort?.signal)),u._A.addEventListener("error",(e=>{this.abortHandler&&(this.#e.has(e.error)?this.#e.delete(e.error):(0,d.p)("err",[this.#n(e),(0,v.z)()],void 0,r.D.jserrors,this.ee))}),(0,S.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.#e.clear(),this.abortHandler=void 0}#t(e){return e instanceof Error?e:void 0!==e?.message?new k(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new k("string"==typeof e?e:(0,D.P)(e))}#r(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new k(t);const r=this.#t(e.reason);return r.message=t+r.message,r}#n(e){return e.error instanceof Error?e.error:new k(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let L=1;const M="nr@id";function B(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===u._A?0:(0,H.X)(e,M,(function(){return L++}))}function U(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,D.P)(e).length}catch(e){return}}}var q=i(1214),F=i(7243);class Z{constructor(e){this.agentIdentifier=e,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,a=(t.trustKey||"").toString()||null;if(!r||!i)return null;var o=(0,j.M)(),s=(0,j.Ht)(),c=Date.now(),d={spanId:o,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(o,s),d.traceContextStateHeader=this.generateTraceContextStateHeader(o,c,r,i,a)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(o,s,c,r,i,a)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,a){if(!("function"==typeof u._A?.btoa))return null;var o={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return a&&n!==a&&(o.d.tk=a),btoa((0,D.P)(o))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var a=(0,F.e)(r.allowed_origins[i]);if(e.hostname===a.hostname&&e.protocol===a.protocol&&e.port===a.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var G=i(7825),V=["load","error","abort","timeout"],X=V.length,W=n.Yu.REQ,Q=u._A.XMLHttpRequest;class K extends g{static featureName=G.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,G.t,i),(0,n.OP)(e).xhrWrappable&&(this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,d.p)(e,t,r,n,this.ee),(0,q.u5)(this.ee),(0,q.Kf)(this.ee),function(e,t,i,a){function o(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=E,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){_(t,e)}),(0,S.m$)(!1)),u.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,S.m$)(!1))}function s(e){this.params={method:e[0]},T(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var o=a.generateTracePayload(this.parsedOrigin);if(o){var s=!1;o.newrelicHeader&&(r.setRequestHeader("newrelic",o.newrelicHeader),s=!0),o.traceContextParentHeader&&(r.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&r.setRequestHeader("tracestate",o.traceContextStateHeader),s=!0),s&&(this.dt=o)}}function d(e,r){var n=this.metrics,i=e[0],a=this;if(n&&i){var o=U(i);o&&(n.txSize=o)}this.startTime=(0,v.z)(),this.listener=function(e){try{"abort"!==e.type||a.loadCaptureCalled||(a.params.aborted=!0),("load"!==e.type||a.called===a.totalCbs&&(a.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof a.end)&&a.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<X;s++)r.addEventListener(V[s],this.listener,(0,S.m$)(!1))}function l(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+B(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+B(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function g(){this.endTime=(0,v.z)()}function p(e,r){r instanceof Q&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof Q&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function b(e,t,r){t instanceof Q&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,v.z)()))}function y(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,v.z)()-this.xhrCbStart,this.onload,r],r)}function w(e){var t,r=e[1]||{};"string"==typeof e[0]?t=e[0]:e[0]&&e[0].url?t=e[0].url:u._A?.URL&&e[0]&&e[0]instanceof URL&&(t=e[0].href),t&&(this.parsedOrigin=(0,F.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=a.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if("string"==typeof e[0]||u._A?.URL&&e[0]&&e[0]instanceof URL){var i={};for(var o in r)i[o]=r[o];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}else e[0]&&e[0].headers&&s(e[0].headers,n)&&(this.dt=n);function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function x(e,t){this.params={},this.metrics={},this.startTime=(0,v.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:u._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),T(this,r);var a=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=a,this.txSize=U(n.body)||0}function A(e,t){var n;this.endTime=(0,v.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var a={txSize:this.txSize,rxSize:n,duration:(0,v.z)()-this.startTime};i("xhr",[this.params,a,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function E(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var a=0;a<X;a++)e.removeEventListener(V[a],this.listener,!1);t.aborted||(n.duration=(0,v.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):_(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function T(e,t){var r=(0,F.e)(t),n=e.params;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}function _(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?U(e.response):"text"===r||""===r||void 0===r?U(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",o),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",d),t.on("xhr-cb-time",l),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",g),t.on("addEventListener-end",p),t.on("removeEventListener-end",m),t.on("fn-end",y),t.on("fetch-before-start",w),t.on("fetch-start",x),t.on("fn-start",b),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator())}}var Y=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:ae,PUSH_STATE:oe}=Y;var se=i(4649);class ce extends g{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);super(),u._A?(this.agentIdentifier=r,this.sharedAggregator=new w({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(m),Object.assign(this,(0,c.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=s(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>n[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(r){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",r);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[m,O,class extends g{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!u.il)return;const n=this.ee;let i;(0,q.QU)(n),this.eventsEE=(0,q.em)(n),this.eventsEE.on(ae,(function(e,t){this.bstStart=(0,v.z)()})),this.eventsEE.on(ie,(function(e,t){(0,d.p)("bst",[e[0],t,this.bstStart,(0,v.z)()],void 0,r.D.sessionTrace,n)})),n.on(oe+te,(function(e){this.time=(0,v.z)(),this.startPath=location.pathname+location.hash})),n.on(oe+re,(function(e){(0,d.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,d.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},K,I,ce,z],loaderType:"pro"})})(),window.NRBA=a})();</script>
 <link href="/webpack/assets/fonts/roboto-v27-latin-regular.4673b4537a.woff2" rel="preload" as="font" crossorigin="" />
 <link href="/webpack/assets/fonts/roboto-v27-latin-300.0109a2ace8.woff2" rel="preload" as="font" crossorigin="" />
 <link href="/webpack/assets/fonts/roboto-v27-latin-500.869888415d.woff2" rel="preload" as="font" crossorigin="" />
 <link href="/webpack/assets/fonts/roboto-v27-latin-700.0682ca7f74.woff2" rel="preload" as="font" crossorigin="" />
 <link href="/webpack/assets/fonts/roboto-v29-latin-900.153ba33142.woff2" rel="preload" as="font" crossorigin="" />
 <link href="/webpack/assets/fonts/MaterialIcons-Regular.1f0f6cdb23.woff2" rel="preload" as="font" crossorigin="" />
-<script>if (
-  localStorage.theme === 'dark' ||
-  (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-) {
-  document.documentElement.classList.add('dark')
-}</script>
-<link rel="canonical" href="https://www.servicesaustralia.gov.au/privacy-impact-assessment-register?context=1" />
 <meta name="description" content="We publish the titles of Privacy Impact Assessments we’ve completed since 1 July 2018." />
+<link rel="canonical" href="https://www.servicesaustralia.gov.au/privacy-impact-assessment-register?context=1" />
 <link rel="icon" sizes="16x16" href="/themes/custom/dhs/images/icons/icon-16x16.png" />
 <link rel="icon" sizes="32x32" href="/themes/custom/dhs/images/icons/icon-32x32.png" />
 <link rel="icon" sizes="96x96" href="/themes/custom/dhs/images/icons/icon-96x96.png" />
@@ -30,11 +23,11 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/dhs/images/icons/icon-144x144.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/dhs/images/icons/icon-152x152.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/dhs/images/icons/icon-180x180.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <meta property="og:image" content="https://www.servicesaustralia.gov.au/themes/custom/dhs/images/default-share-image.png" />
 <meta name="msvalidate.01" content="0ECE1A9CFEB091AC3CA8F5140BF7FD1A" />
 <meta name="facebook-domain-verification" content="a3dzyad0kj4oxe3xcjl2tl5awdefcm" />
 <meta name="google-site-verification" content="Y3ZnN27KzqZ5Y4W_b_47BhXAS1KWtyBuxYjVMH4nAcQ" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <script type="application/ld+json">{
@@ -68,9 +61,54 @@
 
     <title>Privacy Impact Assessment Register - Services Australia</title>
 
+        <meta name="theme-color" content="#66d3ee" />
+
+        <script type="text/javascript">
+      var darkModePreference = localStorage.getItem('Drupal.lit.darkMode.theme');
+      if (
+        darkModePreference &&
+        (
+          darkModePreference === 'dark' ||
+          (
+            darkModePreference === 'auto' &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+          )
+        )
+      ) {
+        document.documentElement.classList.add('dark');
+        var metaTag = document.querySelector('meta[name="theme-color"]');
+        if (metaTag) {
+                    metaTag.setAttribute('content', '#091c2a')
+        }
+      }
+
+            var beforePrint = function() {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.add('dark-print');
+          document.documentElement.classList.remove('dark');
+        }
+      };
+      var afterPrint = function() {
+        if (document.documentElement.classList.contains('dark-print')) {
+          console.log('afterPrint');
+          document.documentElement.classList.remove('dark-print');
+          document.documentElement.classList.add('dark');
+        }
+      };
+      window
+        .matchMedia('print')
+        .addEventListener('change', function (mediaQueryList) {
+          if (mediaQueryList.matches) {
+            beforePrint();
+          } else {
+            afterPrint();
+          }
+        });
+    </script>
+
         <script type="text/javascript">document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_mIckjjWGT8LQ5eeopviXXhPmOspjvYo38JgwRI4dCpc.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_PHXrNxr7etKsEqjjeUHCYq1ggitCf4ynHT8ALu06AAA.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_8Wi-E5BcxLowrLyQpj0pOud8-zdXZ2_2SHDhTyuMaJI.css" />
 
     
 
@@ -78,7 +116,7 @@
     <script>
       window.dataLayer = window.dataLayer || [];
 
-            window.dataLayer.push({"context":"production","environment":"production","node":{"accountTeam":{"id":424,"label":"Executive Communication"},"audiences":[{"id":156,"label":"About us"}],"brands":[{"id":176,"label":"Medicare"},{"id":181,"label":"Child Support"},{"id":186,"label":"Centrelink"}],"context":1,"dateReview":"20210916","dateUpdated":"20230112","digitalAssistant":false,"hierarchy":[{"id":1,"title":"Services Australia"},{"id":22,"title":"About us"},{"id":54677,"title":"Contact and feedback"},{"id":36001,"title":"Access to information"},{"id":48361,"title":"Privacy Impact Assessment Register"}],"id":48361,"lifeEventPrimary":[],"lifeEventsSecondary":[],"revisionId":540253,"sharedContent":false,"title":"Privacy Impact Assessment Register","type":{"id":"dhs_page","label":"Generic page"}},"siteVersion":"2.038"});
+            window.dataLayer.push({"context":"production","environment":"production","node":{"accountTeam":{"id":424,"label":"Executive Communication"},"audiences":[{"id":156,"label":"About us"}],"brands":[{"id":176,"label":"Medicare"},{"id":181,"label":"Child Support"},{"id":186,"label":"Centrelink"}],"context":1,"dateIssued":null,"dateReview":"20210916","dateUpdated":"20230615","digitalAssistant":false,"hierarchy":[{"id":1,"title":"Services Australia"},{"id":22,"title":"About us"},{"id":54677,"title":"Contact and feedback"},{"id":36001,"title":"Access to information"},{"id":48361,"title":"Privacy Impact Assessment Register"}],"id":48361,"lifeEventPrimary":[],"lifeEventsSecondary":[],"revisionId":549357,"sharedContent":false,"title":"Privacy Impact Assessment Register","type":{"id":"dhs_page","label":"Generic page"}},"siteVersion":"2.060"});
       
       var gtmRegister = (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -89,8 +127,12 @@
             gtmRegister(window,document,'script','dataLayer','GTM-P4CCPCZ');
           </script>
     <!-- End Google Tag Manager -->
-      </head>
-  <body class="lit-node-type-dhs_page node--dhs_page bg-white">
+    
+    <script src="https://f1-oc.readspeaker.com/script/5525/webReader/webReader.js?pids=wr"
+            type="text/javascript"
+            id="rs_req_Init"></script>
+  </head>
+  <body class="lit-node-type-dhs_page node--dhs_page bg-white text-black dark:bg-dark-teal-100 dark:text-grey-seashell">
         <!-- Google Tag Manager (noscript) -->
     <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4CCPCZ"
@@ -101,41 +143,229 @@
     <!-- End Google Tag Manager (noscript) -->
     
         <nav class="uikit-skip-link">
-      <a id="lit-skip-link" href="#main-content">
+      <a id="lit-skip-link" class="block p-5" href="#main-content">
         Skip to main content
       </a>
     </nav>
     
-      <div class="dialog-off-canvas-main-canvas bg-white min-h-full flex flex-col items-stretch print:block" data-off-canvas-main-canvas>
+      <div class="dialog-off-canvas-main-canvas bg-white dark:bg-dark-teal-100 min-h-full flex flex-col items-stretch print:block" data-off-canvas-main-canvas>
     
 <div id="lit-ui-overlay">
   
     <div id="lit-toolbar-container" class="hidden print:hidden">
-    <div id="lit-toolbar" >
+    <div
+       class="bg-black dark:bg-grey-blue-70 border-solid border-t-2 border-white text-white justify-around trans flex pt-4 flex-wrap z-100 pointer-events-auto md:flex-col md:rounded-l-lg md:border-t md:border-l md:border-b md:py-6 md:pl-2 md:right-0"
+      id="lit-toolbar"
+    >
         <div id="lit-toolbar-listen">
     
         
-    <button class="lit-toolbar-widget" data-lit-widget-name="listen">
+    <button class="lit-toolbar-widget" data-lit-widget-id="listen" data-lit-original-text="Listen">
   <span class="lit-toolbar-widget-icon pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="104" viewBox="0 0 100 104">
   <path id="ReadSpeaker" d="M68.918,104,33.336,78.766V28.3L68.809,0h7.855V104ZM6.668,78A6.59,6.59,0,0,1,0,71.5V35.75a6.6,6.6,0,0,1,6.668-6.516H26.66V78Zm79.367-6.9a28.671,28.671,0,0,0,0-38.219l5.051-4.258a35.084,35.084,0,0,1,0,46.734Z" fill="currentColor"/>
 </svg></span>
   <span class="lit-toolbar-widget-label pointer-events-none">Listen</span>
 </button>
 
+
+  </div>
+  <div id="lit-toolbar-dark-mode">
+    
+        
+    <button class="lit-toolbar-widget" data-lit-widget-id="dark-mode" data-lit-original-text="Dark mode">
+  <span class="lit-toolbar-widget-icon pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
+  <path fill="currentColor" d="M203.9,192.8c8.7,1.2,17.6,1.5,26.4,0.7c-9.7,13.9-22.5,25.9-38.2,34.9c-28.6,16.4-61.2,19.7-90.7,11.6 c-15-4.1-29.2-11.1-41.6-20.8c-11.9-9.2-22.2-20.8-30.1-34.7c-0.1-0.2-0.2-0.3-0.3-0.5c-7.9-13.8-12.7-28.5-14.6-43.4 c-2.1-15.8-0.9-31.7,3.2-46.8c8-29.2,27.1-55.5,55.5-71.8c15.7-9,32.5-14,49.4-15.4c-5.1,7.3-9.3,15-12.6,23.2 c-2.2,5.3-4,10.7-5.3,16.3c-1.3,5.2-2.2,10.5-2.8,15.8c-0.3,2.9-0.5,5.8-0.6,8.8c0,0.7,0,1.5,0,2.3c-0.3,15.3,2.4,30.8,8.3,45.7 c1.2,2.9,2.5,5.9,3.9,8.7c1.1,2.2,2.2,4.3,3.4,6.4c0.1,0.2,0.2,0.3,0.3,0.5c1.1,2,2.3,3.9,3.6,5.8c1.7,2.7,3.6,5.3,5.5,7.8 c10,12.9,22.2,23.3,35.9,30.9c0.7,0.4,1.3,0.7,2,1.1c2.6,1.4,5.2,2.7,7.9,3.8c4.9,2.2,10,4,15.1,5.5 C192.7,190.8,198.3,192,203.9,192.8L203.9,192.8L203.9,192.8z"/>
+</svg>
+</span>
+  <span class="lit-toolbar-widget-label pointer-events-none">Dark mode</span>
+</button>
+
+  <div class="hidden rs-skip" data-lit-widget-block-content="dark-mode"><div>
+  <form class="p-5 bg-system-blue-20 dark:bg-grey-blue-brand" action="#">
+    <input
+      type="radio"
+      id="lit-dark-mode-dark"
+      name="lit-dark-mode"
+      value="dark"
+      data-lit-original-text="On"
+    >
+    <label for="lit-dark-mode-dark">On</label>
+
+    <input
+      type="radio"
+      id="lit-dark-mode-light"
+      name="lit-dark-mode"
+      value="light"
+      data-lit-original-text="Off"
+    >
+    <label for="lit-dark-mode-light">Off</label>
+
+    <input
+      type="radio"
+      id="lit-dark-mode-auto"
+      name="lit-dark-mode"
+      value="auto"
+      data-lit-original-text="Auto"
+    >
+    <label for="lit-dark-mode-auto">Auto</label>
+
+    <p class="mt-5">Choosing the Auto option turns on dark mode based on your browser or operating system settings.</p>
+  </form>
+
+  <div
+    id="lit-dark-mode-dark-survey"
+    class="mt-7"
+  >
+    <h3 id="lit-dark-mode-dark-survey-heading" class="heading-3">
+      Would you use dark mode again
+    </h3>
+
+    <form id="lit-dark-mode-dark-survey-form" action="#" class="body mt-5">
+      <div id="lit-dark-mode-dark-survey-useful" class="flex mt-5">
+        <div class="mr-5">
+          <input
+            type="radio"
+            class="sr-only"
+            id="lit-dark-mode-survey-useful-yes"
+            name="lit-dark-mode-survey-useful"
+            value="yes"
+            data-lit-original-text="Yes"
+          >
+          <label
+            for="lit-dark-mode-survey-useful-yes"
+            class="btn btn-tertiary mb-0 px-5"
+          >Yes</label>
+        </div>
+
+        <div class="mr-5">
+          <input
+            type="radio"
+            class="sr-only"
+            id="lit-dark-mode-survey-useful-no"
+            name="lit-dark-mode-survey-useful"
+            value="no"
+            data-lit-original-text="No"
+          >
+          <label
+            for="lit-dark-mode-survey-useful-no"
+            class="btn btn-tertiary mb-0 px-5"
+          >No</label>
+        </div>
+      </div>
+
+      <div id="lit-dark-mode-dark-survey-details" class="body mt-7 hidden">
+        <p class="font-bold">
+          <span id="lit-dark-mode-dark-survey-details-heading">
+            Which feature(s) work well/need improving?
+          </span>
+        </p>
+
+        <div class="mt-5">
+                    <div id="lit-dark-mode-dark-survey-details-answers">
+            <div>
+              <input
+                  type="checkbox"
+                  id="lit-dark-mode-survey-feedback-colours"
+                  value="colours"
+                  data-lit-original-text="Colours"
+              />
+              <label for="lit-dark-mode-survey-feedback-colours">
+                Colours
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="lit-dark-mode-survey-feedback-text"
+                value="text"
+                data-lit-original-text="Headings and text styles"
+              />
+              <label for="lit-dark-mode-survey-feedback-text">
+                Headings and text styles
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="lit-dark-mode-survey-feedback-icons"
+                value="icons"
+                data-lit-original-text="Icon styles"
+              />
+              <label for="lit-dark-mode-survey-feedback-icons">
+                Icon styles
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="lit-dark-mode-survey-feedback-controls"
+                value="controls"
+                data-lit-original-text="The button for turning dark mode on"
+              />
+              <label for="lit-dark-mode-survey-feedback-controls">
+                The button for turning dark mode on
+              </label>
+            </div>
+          </div>
+
+          <input
+            type="checkbox"
+            id="lit-dark-mode-survey-feedback-other"
+            value="other"
+            data-lit-original-text="Something else"
+          />
+          <label for="lit-dark-mode-survey-feedback-other">
+            Something else
+          </label>
+        </div>
+
+        <div class="mt-7">
+          <button id="lit-dark-mode-dark-survey-submit" class="btn btn-tertiary">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <h3 class="mt-7 heading-3">What is dark mode?</h3>
+
+  <div class="mt-5 body">
+    <p>Turning on dark mode will change the colour theme of this website to darker colours. It can help reduce eye strain and battery usage.</p>
+
+          <p>Read more about <a href="/site-notices?context=1#darkmode">dark mode</a>.</p>
+      </div>
+</div>
+</div>
+
   </div>
 
     </div>
-    <div id="lit-toolbar-area"></div>
+    <div id="lit-toolbar-area" class="
+      bg-white dark:bg-dark-teal-100
+      border
+      border-black dark:border-white
+      w-full
+      h-full
+      hidden md:block
+      flex-grow
+      overflow-y-auto
+      pointer-events-auto
+      relative
+    "></div>
   </div>
 
 </div>
 
 
 
-<header class="bg-blue-60 print:bg-white justify-center">
-  <div id="lit-banner" class="relative lg:flex flex-col print:flex-col print:items-start lg:flex-row flex-initial flex-shrink-0">
+<header class="bg-blue-60 dark:bg-dark-blue-2-100 print:bg-white justify-center">
+  <div id="lit-banner" class="relative lg:flex flex-col print:block lg:flex-row flex-initial flex-shrink-0">
 
-    <div id="lit-header-logo" class="print:w-full lg:w-sm lg:mr-auto flex-shrink-0 mb-5 lg:mb-0">
+    <div id="lit-header-logo" class="print:w-full lg:w-sm lg:mr-auto flex-shrink-0 mb-5 print:mb-0 lg:mb-0">
               
     <a
     aria-label="Services Australia home page"
@@ -390,7 +620,7 @@
   
     </div>
 
-              <div class="lg:w-1/3 bg-blue-40 md:bg-transparent has-js:hidden lg:p-0 print:hidden z-50 mt-0" data-drupal-selector="lit-search-bar-form" id="lit-search-bar">
+              <div class="lg:w-1/3 bg-blue-40 dark:bg-grey-blue-70 md:bg-transparent md:dark:bg-transparent has-js:hidden lg:p-0 print:hidden z-50 mt-0" data-drupal-selector="lit-search-bar-form" id="lit-search-bar">
     
         
     <form action="/search" method="get" id="lit-search-bar-form" accept-charset="UTF-8">
@@ -399,7 +629,7 @@
         <input class="search-box trans form-search" autocomplete="on" aria-label="Search content" required="required" data-drupal-selector="edit-search" type="search" id="edit-search" name="search" value="" size="60" maxlength="128" />
 
         </div>
-<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><button class="search-button btn icon-a-search button js-form-submit form-submit" data-twig-suggestion="as_button" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" /><span>Search</span></button></div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><button class="search-button btn icon-a-search button js-form-submit form-submit" data-twig-suggestion="as_button" data-lit-original-text="Search" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" /><span>Search</span></button></div>
 </div>
 
 </form>
@@ -412,78 +642,160 @@
                 <div data-behaviour="vue" id="lit-logon">
     
         
-    <div class="flex lg:relative">
+    <div
+  class="flex md:relative"
+  data-lit-logon-reaction="none">
   <button
-      id="lit-logon-toggle"
-      class="flex icon-mygov-black mygov-alttext flex md:w-64 h-10 w-auto cursor-pointer px-4 sm:px-6 icon-lg icon-a-caret-down font-normal rounded-l-sm border-2 border-black btn-base justify-self-end"
-      aria-controls="lit-logon-menu"
-      aria-expanded="false"
-      aria-haspopup="true">
-        <span class="pointer-events-none hidden md:inline text-base">
-          Individuals
-        </span>
+    id="lit-logon-toggle"
+    class="
+      flex icon-mygov-black mygov-alttext
+      flex
+      md:w-64
+      h-10
+      w-auto
+      cursor-pointer
+      px-4
+      sm:px-6
+      icon-lg
+      icon-a-caret-down
+      font-normal
+      rounded-l-sm
+      border-2
+      border-black dark:border-white
+      dark:hover:bg-grey-seashell dark:hover:text-black
+      dark:focus:bg-grey-seashell dark:focus:text-black
+      btn-base
+      justify-self-end"
+    aria-controls="lit-logon-menu"
+    aria-expanded="false"
+    aria-haspopup="true"
+    data-lit-original-text="Individuals">
+      <span class="pointer-events-none hidden md:inline text-base">
+        Individuals
+      </span>
   </button>
 
   <a
     id="lit-logon-sign-in"
-    class="h-10 btn btn-primary px-5 sm:px-7 border-l-0 rounded-l-none rounded-r-sm justify-center"
+    class="
+      h-10
+      btn
+      btn-primary
+      px-5
+      sm:px-7
+      border-l-0
+      rounded-l-none
+      rounded-r-sm
+      justify-center"
     href="https://my.gov.au"
     data-dhs-analytics-behavior="onclick"
     data-dhs-analytics-category="sign_in_button"
     data-dhs-analytics-action="link"
-    data-dhs-analytics-label="">
-      Sign in
+    data-dhs-analytics-label=""
+    data-lit-original-text="Sign in"
+  >
+    Sign in
   </a>
 
     <ul id="lit-logon-menu"
     role="menu"
     aria-label="Select a service to sign in to."
-    class="hidden absolute overflow-hidden lg:top-full w-full lg:w-auto bg-full-w mt-4 lg:mx-0 lg:p-0 right-0 bg-white rounded-b shadow-md z-500">
+    class="
+      absolute
+      bg-full-w
+      bg-white dark:bg-dark-blue-2-100
+      hidden
+      mt-4
+      overflow-hidden
+      right-0
+      rounded-b
+      shadow-md
+      w-full
+      z-500
+      md:top-full
+      md:mx-0
+      md:w-auto
+      md:p-0
+      dark:border-solid dark:border-grey-seashell dark:border-t dark:md:border-x
+    "
+  >
           <li role="none">
-                    <a
-             class="bg-grey-light block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-7 lg:px-6 lg:m-0"
-            id="lit-logon-mygov"
-            role="menuitem"
-            href="https://my.gov.au"
-          >
-                          <lit-logon-alert-list class="pointer-events-none" api-endpoint="/api/v1/alerts/active" :platform-tids="[371,376,381,386,391,396,401,466,569]" active-logon></lit-logon-alert-list>
-                        <div class="flex icon-mygov-black mygov-alttext pointer-events-none">Individuals</div>
-                          <div class="pointer-events-none font-light text-md mt-3">myGov is a simple and secure way to access online government services.</div>
-                      </a>
+        
+                  <lit-logon-alert-list
+            api-endpoint="/api/v1/alerts/active"
+            :platform-tids="[371,376,381,386,391,396,401,466,569]"
+            :active-logon="true"
+          ></lit-logon-alert-list>
+        
+        <a
+           class="block text-base font-medium hover:bg-grey-light dark:hover:bg-grey-blue-70 focus:bg-grey-light dark:focus:bg-grey-blue-70 justify-between items-center border-grey-light border-b bg-full-w py-7 md:px-6 md:m-0 dark:bg-dark-teal-100 dark:text-grey-seashell bg-grey-light dark:bg-black"
+          id="lit-logon-mygov"
+          role="menuitem"
+          href="https://my.gov.au"
+          data-lit-original-text="Individuals"
+        >
+          <div class="flex icon-mygov-black mygov-alttext pointer-events-none">Individuals</div>
+                      <div class="pointer-events-none font-light text-md mt-3">
+              myGov is a simple and secure way to access online government services.
+            </div>
+                  </a>
       </li>
           <li role="none">
-                    <a
-             class="block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-7 lg:px-6 lg:m-0"
-            id="lit-logon-proda"
-            role="menuitem"
-            href="/proda-provider-digital-access"
-          >
-                          <lit-logon-alert-list class="pointer-events-none" api-endpoint="/api/v1/alerts/active" :platform-tids="[351,356,361,558,567,568]" ></lit-logon-alert-list>
-                        <div class="pointer-events-none">PRODA</div>
-                          <div class="pointer-events-none font-light text-md mt-3">Log in to access HPOS, Business Hub, Aged Care Provider Portal and a range of other government online services.</div>
-                      </a>
+        
+                  <lit-logon-alert-list
+            api-endpoint="/api/v1/alerts/active"
+            :platform-tids="[351,356,361,558,567,568]"
+            :active-logon="false"
+          ></lit-logon-alert-list>
+        
+        <a
+           class="block text-base font-medium hover:bg-grey-light dark:hover:bg-grey-blue-70 focus:bg-grey-light dark:focus:bg-grey-blue-70 justify-between items-center border-grey-light border-b bg-full-w py-7 md:px-6 md:m-0 dark:bg-dark-teal-100 dark:text-grey-seashell"
+          id="lit-logon-proda"
+          role="menuitem"
+          href="/proda-provider-digital-access"
+          data-lit-original-text="PRODA"
+        >
+          <div class="pointer-events-none">PRODA</div>
+                      <div class="pointer-events-none font-light text-md mt-3">
+              Log in to access HPOS, Business Hub, Aged Care Provider Portal and a range of other government online services.
+            </div>
+                  </a>
       </li>
           <li role="none">
-                    <a
-             class="block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-7 lg:px-6 lg:m-0"
-            id="lit-logon-centrelink-business-online"
-            role="menuitem"
-            href="https://business.centrelink.gov.au/"
-          >
-                          <lit-logon-alert-list class="pointer-events-none" api-endpoint="/api/v1/alerts/active" :platform-tids="[565]" ></lit-logon-alert-list>
-                        <div class="pointer-events-none">Centrelink Business Online</div>
-                      </a>
+        
+                  <lit-logon-alert-list
+            api-endpoint="/api/v1/alerts/active"
+            :platform-tids="[565]"
+            :active-logon="false"
+          ></lit-logon-alert-list>
+        
+        <a
+           class="block text-base font-medium hover:bg-grey-light dark:hover:bg-grey-blue-70 focus:bg-grey-light dark:focus:bg-grey-blue-70 justify-between items-center border-grey-light border-b bg-full-w py-7 md:px-6 md:m-0 dark:bg-dark-teal-100 dark:text-grey-seashell"
+          id="lit-logon-centrelink-business-online"
+          role="menuitem"
+          href="https://business.centrelink.gov.au/"
+          data-lit-original-text="Centrelink Business Online"
+        >
+          <div class="pointer-events-none">Centrelink Business Online</div>
+                  </a>
       </li>
           <li role="none">
-                    <a
-             class="block text-base font-medium hover:bg-grey-light focus:bg-grey-light justify-between items-center border-grey-light border-b bg-full-w py-7 lg:px-6 lg:m-0"
-            id="lit-logon-child-support-business-online"
-            role="menuitem"
-            href="https://services.csa.gov.au/cleartrust/ct_logon.asp?CTAuthMode=BASIC&amp;amp%3Blanguage=en"
-          >
-                          <lit-logon-alert-list class="pointer-events-none" api-endpoint="/api/v1/alerts/active" :platform-tids="[566]" ></lit-logon-alert-list>
-                        <div class="pointer-events-none">Child Support Business Online</div>
-                      </a>
+        
+                  <lit-logon-alert-list
+            api-endpoint="/api/v1/alerts/active"
+            :platform-tids="[566]"
+            :active-logon="false"
+          ></lit-logon-alert-list>
+        
+        <a
+           class="block text-base font-medium hover:bg-grey-light dark:hover:bg-grey-blue-70 focus:bg-grey-light dark:focus:bg-grey-blue-70 justify-between items-center border-grey-light border-b bg-full-w py-7 md:px-6 md:m-0 dark:bg-dark-teal-100 dark:text-grey-seashell"
+          id="lit-logon-child-support-business-online"
+          role="menuitem"
+          href="https://services.csa.gov.au/"
+          data-lit-original-text="Child Support Business Online"
+        >
+          <div class="pointer-events-none">Child Support Business Online</div>
+                  </a>
       </li>
       </ul>
 
@@ -493,26 +805,37 @@
   <div id="lit-logon-links" class="ms-row-2">
     
         
-    <div class="flex justify-center mt-4">
-      <a
-      id="lit-logon-create-account"
-      href="/create-online-account"
-      data-dhs-analytics-behavior="onclick"
-      data-dhs-analytics-category="sign_in_individuals"
-      data-dhs-analytics-action="link"
-      data-dhs-analytics-label="create">
-      Create account
-    </a>
-      <a
-      id="lit-logon-help"
-      href="/help-for-mygov-online-accounts-and-mobile-apps"
-      data-dhs-analytics-behavior="onclick"
-      data-dhs-analytics-category="sign_in_individuals"
-      data-dhs-analytics-action="link"
-      data-dhs-analytics-label="help">
-      Online help
-    </a>
-  </div>
+    
+<div class="flex justify-center mt-4 dark:text-grey-seashell">
+  <a
+     class="flex underline hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black dark:focus:bg-white focus:text-white dark:focus:text-black" data-dhs-analytics-behavior="onclick" data-dhs-analytics-category="sign_in_individuals" data-dhs-analytics-action="link"
+    id="lit-logon-create-account"
+    href="/create-online-account"
+    data-dhs-analytics-label="create"
+    data-lit-original-text="Create account"
+  >
+    Create account
+  </a>
+
+  <span class="
+    border
+    border-black dark:border-white
+    border-left
+    inline-block
+    mx-2
+    md:mx-4"
+  ></span>
+
+  <a
+     class="flex underline hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black dark:focus:bg-white focus:text-white dark:focus:text-black" data-dhs-analytics-behavior="onclick" data-dhs-analytics-category="sign_in_individuals" data-dhs-analytics-action="link"
+    id="lit-logon-help"
+    href="/help-for-mygov-online-accounts-and-mobile-apps"
+    data-dhs-analytics-label="help"
+    data-lit-original-text="Online help"
+  >
+    Online help
+  </a>
+</div>
 
   </div>
 
@@ -520,60 +843,72 @@
     </div>
 
     <div id="lit-header-utils" class="print:hidden">
-      <button id="lit-menu-toggle" class="font-normal uppercase btn-base px-6 text-md -ml-6 md:px-7 md:-ml-7 sm:text-base icon-a-menu">Menu</button>
-      <button id="lit-search-toggle" class="font-normal -mr-6 md:hidden btn-base justify-self-end icon-a-search">Search</button>
+      <button
+        id="lit-menu-toggle"
+        class="font-normal uppercase btn-base px-6 text-md -ml-6 md:px-7 md:-ml-7 sm:text-base icon-a-menu"
+        data-lit-original-text="Menu"
+      >
+        Menu
+      </button>
+      <button
+        id="lit-search-toggle"
+        class="font-normal -mr-6 md:hidden btn-base justify-self-end icon-a-search"
+        data-lit-original-text="Search"
+      >
+        Search
+      </button>
     </div>
   </div>
 </header>
 
-<div id="lit-content" class="bg-white relative print:block xl:p-0 xl:w-full">
+<div id="lit-content" class="bg-white dark:bg-dark-teal-100 relative print:block xl:p-0 xl:w-full">
 
   
   <div id="lit-navigation-bar" class="w-full mb-8 print:hidden">
-            <nav aria-label="Navigation bar" id="lit-navigation-bar-menu">
-        
-        <ul class="menu">
-                <li class="menu-item">
-                        <a href="/raising-kids" data-drupal-link-system-path="node/60000">          <span>Raising kids</span>
-        </a>
-
-        
-              </li>
-                <li class="menu-item">
-                        <a href="/living-arrangements" data-drupal-link-system-path="node/60022">          <span>Living arrangements</span>
-        </a>
-
-        
-              </li>
-                <li class="menu-item">
-                        <a href="/ageing" data-drupal-link-system-path="node/60043">          <span>Ageing</span>
-        </a>
-
-        
-              </li>
-                <li class="menu-item">
-                        <a href="/work" data-drupal-link-system-path="node/60058">          <span>Work</span>
-        </a>
-
-        
-              </li>
-                <li class="menu-item">
-                        <a href="/education" data-drupal-link-system-path="node/60076">          <span>Education</span>
-        </a>
-
-        
-              </li>
-                <li class="menu-item">
-                        <a href="/health-and-disability" data-drupal-link-system-path="node/60090">          <span>Health and disability</span>
-        </a>
-
-        
-              </li>
-        </ul>
+              
+    
   
 
 
-  </nav>
+<nav
+  id="lit-navigation-bar-menu"
+  class="hidden lg:flex lg:justify-center lg:relative"
+  aria-label="Navigation bar"
+>
+  <ul class="flex flex-wrap justify-center z-[1]">
+          <li class="mx-[1px]">
+        <a href="/raising-kids" data-lit-original-text="Raising kids" class="block border-solid border-b-3 p-5 hover:bg-blue-20 hover:dark:bg-system-dark-blue-100 hover:border-blue-brand hover:trans focus:bg-blue-20 focus:dark:bg-system-dark-blue-100 focus:border-blue-brand focus:trans active:bg-blue-20 active:dark:bg-system-dark-blue-100 active:border-blue-brand active:trans border-transparent">Raising kids</a>
+      </li>
+          <li class="mx-[1px]">
+        <a href="/living-arrangements" data-lit-original-text="Living arrangements" class="block border-solid border-b-3 p-5 hover:bg-blue-20 hover:dark:bg-system-dark-blue-100 hover:border-blue-brand hover:trans focus:bg-blue-20 focus:dark:bg-system-dark-blue-100 focus:border-blue-brand focus:trans active:bg-blue-20 active:dark:bg-system-dark-blue-100 active:border-blue-brand active:trans border-transparent">Living arrangements</a>
+      </li>
+          <li class="mx-[1px]">
+        <a href="/ageing" data-lit-original-text="Ageing" class="block border-solid border-b-3 p-5 hover:bg-blue-20 hover:dark:bg-system-dark-blue-100 hover:border-blue-brand hover:trans focus:bg-blue-20 focus:dark:bg-system-dark-blue-100 focus:border-blue-brand focus:trans active:bg-blue-20 active:dark:bg-system-dark-blue-100 active:border-blue-brand active:trans border-transparent">Ageing</a>
+      </li>
+          <li class="mx-[1px]">
+        <a href="/work" data-lit-original-text="Work" class="block border-solid border-b-3 p-5 hover:bg-blue-20 hover:dark:bg-system-dark-blue-100 hover:border-blue-brand hover:trans focus:bg-blue-20 focus:dark:bg-system-dark-blue-100 focus:border-blue-brand focus:trans active:bg-blue-20 active:dark:bg-system-dark-blue-100 active:border-blue-brand active:trans border-transparent">Work</a>
+      </li>
+          <li class="mx-[1px]">
+        <a href="/education" data-lit-original-text="Education" class="block border-solid border-b-3 p-5 hover:bg-blue-20 hover:dark:bg-system-dark-blue-100 hover:border-blue-brand hover:trans focus:bg-blue-20 focus:dark:bg-system-dark-blue-100 focus:border-blue-brand focus:trans active:bg-blue-20 active:dark:bg-system-dark-blue-100 active:border-blue-brand active:trans border-transparent">Education</a>
+      </li>
+          <li class="mx-[1px]">
+        <a href="/health-and-disability" data-lit-original-text="Health and disability" class="block border-solid border-b-3 p-5 hover:bg-blue-20 hover:dark:bg-system-dark-blue-100 hover:border-blue-brand hover:trans focus:bg-blue-20 focus:dark:bg-system-dark-blue-100 focus:border-blue-brand focus:trans active:bg-blue-20 active:dark:bg-system-dark-blue-100 active:border-blue-brand active:trans border-transparent">Health and disability</a>
+      </li>
+      </ul>
+</nav>
+
+<div class="hidden lg:block relative top-[-1px]">
+  <div class="
+    absolute
+    border-b
+    border-solid
+    border-grey-1c dark:border-blue-20
+    w-[100vw]
+    left-[calc(-50vw+50%)]
+  "></div>
+</div>
+
+
   <div data-behaviour="vue">
     
         
@@ -585,25 +920,67 @@
   
   </div>
 
-  <div id="lit-sidebar-left" class="bg-white lg:max-w-full inset-0 z-100 print:hidden lg:relative lg:mr-10 md:pr-4 md:-ml-5 md:mr-6 flex-shrink-0 xl:ml-0">
-    <nav id="lit-navigation" aria-label="Sections menu" class="lg:w-full">
-      <div class="w-full h-full bg-white">
-                  
+  <div id="lit-sidebar-left" class="lg:max-w-full inset-0 z-100 print:hidden bg-white dark:bg-dark-teal-100 lg:relative lg:mr-10 md:pr-4 md:-ml-5 md:mr-6 flex-shrink-0 xl:ml-0">
+              
     
-  <ul><li class="lit-navigation-item" id="lit-navigation-parent"><a href="/access-to-information?context=1" class="lit-navigation-link p-5 flex icon-b-caret-left icon-lg icon-grey-4c">Access to information</a>
-</li><li class="lit-navigation-item"><a class="lit-navigation-link" href="/freedom-information?context=1">Freedom of information</a>
-</li><li class="lit-navigation-item"><a class="lit-navigation-link" href="/pay-for-access-to-information-using-government-easypay?context=1">Pay for access to information using Government EasyPay</a>
-</li><li class="lit-navigation-item"><a class="lit-navigation-link" href="/personal-information-releases?context=1">Personal information releases</a>
-</li><li class="lit-navigation-item" id="lit-navigation-current"><a class="lit-navigation-link" href="/privacy-impact-assessment-register?context=1" aria-current="location">Privacy Impact Assessment Register</a>
-</li><li class="lit-navigation-item"><a class="lit-navigation-link" href="/request-information-using-subpoenas-and-other-court-orders?context=1">Request information using subpoenas and other court orders</a>
-</li></ul>
+  
+
+
+
+
+
+<nav
+  id="lit-navigation"
+  aria-label="Sections menu"
+  class="text-base font-light border-b md:border-x border-solid border-grey-1c lg:w-full mb-8"
+>
+  <div class="w-full h-full">
+    <ul>
+                      <li  class="md:border-t border-grey-1c border-b">
+          <a href="/access-to-information?context=1" class="border-b-3 border-solid border-transparent hover:bg-grey-light dark:hover:bg-dark-teal-100 focus:bg-grey-light dark:focus:bg-dark-teal-100 active:bg-grey-light dark:active:bg-dark-teal-100 hover:border-blue-brand active:border-blue-brand focus:border-blue-brand font-bold flex icon-b-caret-left icon-grey-4c icon-lg p-5 dark:bg-grey-blue-70" data-lit-original-text="Access to information">Access to information</a>
+        </li>
+      
+              <li
+                    
+        >
+          <a href="/freedom-information?context=1" aria-current="location" class="border-b-3 border-solid border-transparent hover:bg-grey-light dark:hover:bg-dark-teal-100 focus:bg-grey-light dark:focus:bg-dark-teal-100 active:bg-grey-light dark:active:bg-dark-teal-100 hover:border-blue-brand active:border-blue-brand focus:border-blue-brand bg-white dark:bg-grey-blue-80 block p-5 pb-4" data-lit-original-text="Freedom of information">Freedom of information</a>
+
+                  </li>
+              <li
+                    
+        >
+          <a href="/pay-for-access-to-information-using-government-easypay?context=1" aria-current="location" class="border-b-3 border-solid border-transparent hover:bg-grey-light dark:hover:bg-dark-teal-100 focus:bg-grey-light dark:focus:bg-dark-teal-100 active:bg-grey-light dark:active:bg-dark-teal-100 hover:border-blue-brand active:border-blue-brand focus:border-blue-brand bg-white dark:bg-grey-blue-80 block p-5 pb-4" data-lit-original-text="Pay for access to information using Government EasyPay">Pay for access to information using Government EasyPay</a>
+
+                  </li>
+              <li
+                    
+        >
+          <a href="/personal-information-releases?context=1" aria-current="location" class="border-b-3 border-solid border-transparent hover:bg-grey-light dark:hover:bg-dark-teal-100 focus:bg-grey-light dark:focus:bg-dark-teal-100 active:bg-grey-light dark:active:bg-dark-teal-100 hover:border-blue-brand active:border-blue-brand focus:border-blue-brand bg-white dark:bg-grey-blue-80 block p-5 pb-4" data-lit-original-text="Personal information releases">Personal information releases</a>
+
+                  </li>
+              <li
+                     class="border-b border-t border-grey-1c"
+        >
+          <a href="/privacy-impact-assessment-register?context=1" aria-current="location" class="border-b-3 border-solid border-transparent hover:bg-grey-light dark:hover:bg-dark-teal-100 focus:bg-grey-light dark:focus:bg-dark-teal-100 active:bg-grey-light dark:active:bg-dark-teal-100 hover:border-blue-brand active:border-blue-brand focus:border-blue-brand bg-blue-5 dark:bg-dark-teal-100 block font-bold p-5 pb-4" data-lit-original-text="Privacy Impact Assessment Register">Privacy Impact Assessment Register</a>
+
+                  </li>
+              <li
+                    
+        >
+          <a href="/request-information-using-subpoenas-and-other-court-orders?context=1" aria-current="location" class="border-b-3 border-solid border-transparent hover:bg-grey-light dark:hover:bg-dark-teal-100 focus:bg-grey-light dark:focus:bg-dark-teal-100 active:bg-grey-light dark:active:bg-dark-teal-100 hover:border-blue-brand active:border-blue-brand focus:border-blue-brand bg-white dark:bg-grey-blue-80 block p-5 pb-4" data-lit-original-text="Request information using subpoenas and other court orders">Request information using subpoenas and other court orders</a>
+
+                  </li>
+          </ul>
+  </div>
+</nav>
+
 
   
-      </div>
-    </nav>
   </div>
 
-  <div id="lit-content-above" class="order-first lg:order-none"><nav aria-label="You are here" class="lit-breadcrumb" id="lit-page-breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/about-us?context=1">About us</a></li><li><a href="/contact-and-feedback?context=1">Contact and feedback</a></li><li><a href="/access-to-information?context=1">Access to information</a></li><li>Privacy Impact Assessment Register</li></ol></nav><div id="lit-readspeaker"><div class="open-readspeaker-ui"><div id="readspeaker_button" class="rs_preserve rs_skip rs_addtools rs_splitbutton rs_exp rsbtn"><button type="button"
+  <div id="lit-content-above" class="order-first lg:order-none"><nav aria-label="You are here" class="lit-breadcrumb" id="lit-page-breadcrumb"><ol><li><a href="/services-australia" hreflang="en" data-lit-original-text="Home">Home</a></li><li><a href="/about-us?context=1" hreflang="en" data-lit-original-text="About us">About us</a></li><li><a href="/contact-and-feedback?context=1" hreflang="en" data-lit-original-text="Contact and feedback">Contact and feedback</a></li><li><a href="/access-to-information?context=1" hreflang="en" data-lit-original-text="Access to information">Access to information</a></li><li>
+                  Privacy Impact Assessment Register
+              </li></ol></nav><div id="lit-readspeaker"><div class="open-readspeaker-ui"><div id="readspeaker_button" class="rs_preserve rs_skip rs_addtools rs_splitbutton rs_exp rsbtn"><button type="button"
             class="rsbtn_tooltoggle"
             data-rslang="title/arialabel:menu"
             title="Menu" aria-label="Menu"
@@ -644,22 +1021,58 @@
   
     
   
-  
-    
-  
                     <p>We do a Privacy Impact Assessment for all projects that:</p>
 
 <ul><li>involve a significant change to how we manage personal information</li>
 	<li>might have a significant impact on the privacy of individuals.</li>
-</ul><table data-lit-table-sort="false"><thead><tr><th data-lit-original-text="Reference number">Reference number</th>
+</ul><table data-lit-table-sort="true"><thead><tr><th data-lit-original-text="Reference number">Reference number</th>
 			<th data-lit-original-text="Date posted">Date posted</th>
 			<th data-lit-original-text="Title">Title</th>
-		</tr></thead><tbody><tr><td>39159</td>
+		</tr></thead><tbody><tr><td>49691</td>
+			<td>15 June 2023</td>
+			<td>Vulnerability Support Model</td>
+		</tr><tr><td>49678</td>
+			<td>13 June 2023</td>
+			<td>Streamlining Medicare Entitlement Statements Initiative -&nbsp;Release 1</td>
+		</tr><tr><td>49637</td>
+			<td>7 June 2023</td>
+			<td>myGov Sign-in Notification</td>
+		</tr><tr><td>49494</td>
+			<td>9 May 2023</td>
+			<td>Digital Identity Exchange</td>
+		</tr><tr><td>49493</td>
+			<td>9 May 2023</td>
+			<td>myGov as an Attribute Provider</td>
+		</tr><tr><td>49492</td>
+			<td>9 May 2023</td>
+			<td>The Exchange (Identity Hub)</td>
+		</tr><tr><td>35552</td>
+			<td>11 April 2023</td>
+			<td>GovPass Identity Exchange</td>
+		</tr><tr><td>49243</td>
+			<td>5 April 2023</td>
+			<td>myGov App and Digital Wallet - Medicare Cards</td>
+		</tr><tr><td>38261</td>
+			<td>7 February 2023</td>
+			<td>Contemporary Connected Face to Face Services Project</td>
+		</tr><tr><td>48941</td>
+			<td>2 February 2023</td>
+			<td>Voluntary Patient Registration (MyGP) Project - Stage 2 - Release 8</td>
+		</tr><tr><td>48939</td>
+			<td>2 February 2023</td>
+			<td>Voluntary Patient Registration Stage 2 - Releases 6 and 7</td>
+		</tr><tr><td>48925</td>
+			<td>1 February 2023</td>
+			<td>Voluntary Patient Registration (MyGP and GP Training Payments) Project - Stage 2 - Release 9</td>
+		</tr><tr><td>44492</td>
+			<td>19 January 2023</td>
+			<td>The COVID-19 Vaccine Claims Scheme</td>
+		</tr><tr><td>39159</td>
 			<td>23 November 2022</td>
 			<td>COVID-19 Immunisation Readiness Project</td>
 		</tr><tr><td>48538</td>
 			<td>23 November 2022</td>
-			<td>COVID-19 Readiness Project &ndash; State and Territory Check-In Apps</td>
+			<td>COVID-19 Readiness Project - State and Territory Check-In Apps</td>
 		</tr><tr><td>48447</td>
 			<td>18 November 2022</td>
 			<td>myGov App and Digital Wallet - November 2022 Release</td>
@@ -867,7 +1280,7 @@
 		</tr><tr><td>26247</td>
 			<td>25 January 2019</td>
 			<td>Disability Support Pension - Online Claim</td>
-		</tr></tbody></table><p>You can request a copy of a Privacy Impact Assessment by making a <a href="/freedom-information?context=1#howtomakeanfoirequest">Freedom of Information</a> request.</p>
+		</tr></tbody></table><p>You can request a copy of a Privacy Impact Assessment by making a <a href="/freedom-information?context=1#howtomakeanfoirequest" data-lit-original-text="Freedom of Information">Freedom of Information</a> request.</p>
             
 
 
@@ -877,8 +1290,54 @@
   
   </main>
 
-  <div id="lit-content-below" class="relative flex flex-wrap justify-between w-full py-8 border-t border-grey-1c"><div data-behaviour="vue" id="lit-page-poll"><div><lit-page-poll :poll-question="&quot;Was this page useful?&quot;" :poll-reasons-yes="{&quot;helpful_to_me&quot;:&quot;It was helpful to me&quot;,&quot;content_makes_sense&quot;:&quot;The content makes sense&quot;,&quot;well_written&quot;:&quot;It was well written&quot;,&quot;easy_layout_to_read&quot;:&quot;The layout or style made it easy to read&quot;,&quot;something_else&quot;:&quot;Something else&quot;}" :poll-reasons-no="{&quot;not_helpful_to_me&quot;:&quot;It was not helpful to me&quot;,&quot;technical_error&quot;:&quot;I got a technical error&quot;,&quot;difficult_layout_to_read&quot;:&quot;The layout or style made it difficult to read&quot;,&quot;confusing_content&quot;:&quot;The content is confusing&quot;,&quot;poorly_written&quot;:&quot;It was poorly written&quot;,&quot;something_else&quot;:&quot;Something else&quot;}"></lit-page-poll></div></div><p id="lit-page-updated" class="body mt-5 pt-2 text-md text-grey-dark">Page last updated: 12 January 2023</p><div class="hidden print:block"><div class="pt-9"><img class="break-auto float-left mb-5 mr-5" src="https://chart.apis.google.com/chart?chs=150x150&amp;cht=qr&amp;chld=L|0&amp;chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Fprivacy-impact-assessment-register%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package" alt="QR code" title="QR code" /><p class="break-words clearfix print:text-md">This information was printed 12 January 2023 from <strong>https://www.servicesaustralia.gov.au/privacy-impact-assessment-register</strong>. It may not include all of the relevant information on this topic. Please consider any relevant site notices at <strong>https://www.servicesaustralia.gov.au/site-notices</strong> when using this material.</p><div class="lit-print-info-links mt-8 body"><h2>Printed link references</h2><ol class="print:text-md"></ol></div></div></div></div>
+  <div id="lit-content-below" class="relative md:flex md:flex-nowrap md:justify-between md:items-center w-full py-8 border-t border-grey-1c"><div data-behaviour="vue"><div><lit-page-poll :poll-question="&quot;Was this page useful?&quot;" :poll-reasons-yes="{&quot;helpful_to_me&quot;:&quot;It was helpful to me&quot;,&quot;content_makes_sense&quot;:&quot;The content makes sense&quot;,&quot;well_written&quot;:&quot;It was well written&quot;,&quot;easy_layout_to_read&quot;:&quot;The layout or style made it easy to read&quot;,&quot;something_else&quot;:&quot;Something else&quot;}" :poll-reasons-no="{&quot;not_helpful_to_me&quot;:&quot;It was not helpful to me&quot;,&quot;technical_error&quot;:&quot;I got a technical error&quot;,&quot;difficult_layout_to_read&quot;:&quot;The layout or style made it difficult to read&quot;,&quot;confusing_content&quot;:&quot;The content is confusing&quot;,&quot;poorly_written&quot;:&quot;It was poorly written&quot;,&quot;something_else&quot;:&quot;Something else&quot;}"></lit-page-poll></div></div><div><div class="mt-6 md:mt-0 md:text-right text-grey-dark dark:text-grey-seashell"><div class="lg:flex"><div
+      id="lit-page-updated"
+      class="body text-md"
+    >
+      Page last updated: 15 June 2023.
+    </div></div><div class="body mt-2 text-sm">QC 48361</div></div></div><div id="lit-print-info" class="hidden print:block"><div class="pt-9"><img class="break-auto float-left mb-5 mr-5" src="https://chart.apis.google.com/chart?chs=150x150&amp;cht=qr&amp;chld=L|0&amp;chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Fprivacy-impact-assessment-register%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package" alt="QR code" title="QR code" /><p class="break-words clearfix print:text-md">
+    This information was printed 22 August 2023 from <strong>https://www.servicesaustralia.gov.au/privacy-impact-assessment-register</strong>. It may not include all of the relevant information on this topic. Please consider any relevant site notices at <strong>https://www.servicesaustralia.gov.au/site-notices</strong> when using this material.
+  </p><div class="lit-print-info-links mt-8 body"><h2>Printed link references</h2><ol class="print:text-md"></ol></div></div></div></div>
 </div>
+
+  
+<div
+  id="lit-invite-banner"
+  class="
+    bg-system-blue-20 dark:bg-grey-blue-brand
+    py-6
+    text-black dark:text-grey-seashell
+    print:hidden
+      "
+>
+  <div class="body justify-center md:flex md:items-center">
+    <div class="mb-8 md:mr-8 md:mb-0 max-w-[200px]">
+      <svg role="img" aria-hidden="true" class="w-full" viewBox="0 0 250 250">
+  <g class="lit-svg-primary-fill">
+    <path d="m199.3,61.4s-3.16-6.47-17.35-2.87c0,0,6.99-10.81,3.58-21.69,0,0,4.85,9.44,16.8,6.23,0,0-5.47,2.49-3.03,18.32h0Z" fill="none" stroke="#2196f3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="m171,108.64c1.8-3.85-1.11-6.05-1.11-6.05,3.48,1.8,7.55.08,7.55.08-2.06,4.59-.06,6.04-.06,6.04-5.21-1.77-6.38-.07-6.38-.07Z" fill="none" stroke="#2196f3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="m134.29,42.47s-1.71,2.33,2.21,6.71c0,0-5.14-.48-8.38,2.76,0,0,2.46-3.48-.91-7.13,0,0,1.9,1.48,7.08-2.33h0Z" fill="none" stroke="#2196f3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="m211.32,143.49s-1.58,2.14,2.03,6.17c0,0-4.74-.44-7.72,2.54,0,0,2.26-3.2-.84-6.57,0,0,1.75,1.36,6.52-2.15h0Z" fill="none" stroke="#2196f3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+  <g class="lit-svg-outline">
+    <path d="m189.75,181.14c7.2,1.02,14.53,1.23,21.84.62-8.02,11.49-18.64,21.43-31.59,28.88-23.67,13.6-50.62,16.28-75.03,9.61-12.39-3.4-24.13-9.2-34.44-17.22-9.82-7.62-18.35-17.24-24.93-28.68-.07-.13-.15-.27-.22-.4-6.51-11.43-10.47-23.6-12.06-35.89-1.71-13.05-.75-26.23,2.67-38.73,6.63-24.19,22.43-45.88,45.9-59.37,12.95-7.45,26.89-11.62,40.85-12.77-4.22,6.01-7.72,12.44-10.45,19.18-1.8,4.37-3.28,8.89-4.42,13.48-1.07,4.3-1.86,8.67-2.34,13.07-.28,2.41-.45,4.81-.53,7.24-.02.62-.04,1.25-.04,1.87-.24,12.66,1.99,25.49,6.85,37.77.96,2.43,2.03,4.85,3.21,7.23.87,1.79,1.8,3.55,2.8,5.29.07.14.15.27.22.4.94,1.64,1.92,3.24,2.96,4.81,1.44,2.23,2.97,4.38,4.57,6.45,8.24,10.67,18.4,19.26,29.69,25.56.54.31,1.09.61,1.64.9,2.12,1.14,4.3,2.2,6.51,3.18,4.06,1.81,8.23,3.33,12.49,4.56,4.54,1.32,9.17,2.32,13.86,2.97h-.01Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>
+
+    </div>
+
+    <div class="md:flex-grow mb-5 md:mr-8 md:mb-0">
+      <h2 class="mb-0">Try our new dark mode</h2>
+      <div class="mt-3 font-normal"><p>We're testing a darker colour scheme. Try it and let us know what you think.</p></div>
+    </div>
+
+    <div class="md:flex md:items-center whitespace-nowrap">
+      
+              <a href="#toolbar-dark-mode" class="btn btn-primary py-4 px-5">Try it</a>
+          </div>
+  </div>
+</div>
+
 
 <footer class="relative bg-black text-white print:hidden flex-grow-0">
             
@@ -893,22 +1352,24 @@
                 class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md w-full hover:bg-blue-60 hover:text-black"
                 data-lit-accordion
                 aria-controls="lit-footer-accordion-0"
-                aria-label="Services Australia">
+                aria-label="Services Australia"
+                data-lit-original-text="Services Australia"
+              >
                 Services Australia
               </button>
               <ul class="pb-5" id="lit-footer-accordion-0">
                                 
                                   <li >
-                    <a  href="/about-us" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">About us</a>
+                    <a href="/about-us" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="About us">About us</a>
                   </li>
                                   <li >
-                    <a  href="/forms" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Forms</a>
+                    <a href="/forms" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Forms">Forms</a>
                   </li>
                                   <li >
-                    <a  href="/media" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Media</a>
+                    <a href="/media" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Media">Media</a>
                   </li>
                                   <li >
-                    <a  href="https://ministers.dss.gov.au/bill-shorten" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Our Minister</a>
+                    <a href="https://ministers.dss.gov.au/bill-shorten" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Our Minister">Our Minister</a>
                   </li>
                               </ul>
                       </li>
@@ -917,22 +1378,21 @@
                 class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md w-full hover:bg-blue-60 hover:text-black"
                 data-lit-accordion
                 aria-controls="lit-footer-accordion-1"
-                aria-label="Contact">
+                aria-label="Contact"
+                data-lit-original-text="Contact"
+              >
                 Contact
               </button>
               <ul class="pb-5" id="lit-footer-accordion-1">
-                                                  <li>
-                    <a  href="/contact-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60 py-5">Contact</a>
-                  </li>
-                
-                                  <li  class="hidden md:block">
-                    <a  href="/contact-us" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact us</a>
+                                
+                                  <li >
+                    <a href="/contact-us" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Contact us">Contact us</a>
                   </li>
                                   <li >
-                    <a  href="https://findus.servicesaustralia.gov.au" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Find us</a>
+                    <a href="https://findus.servicesaustralia.gov.au" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Find us">Find us</a>
                   </li>
                                   <li >
-                    <a  href="/complaints-and-feedback" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Complaints and feedback</a>
+                    <a href="/complaints-and-feedback" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Complaints and feedback">Complaints and feedback</a>
                   </li>
                               </ul>
                       </li>
@@ -941,22 +1401,21 @@
                 class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md w-full hover:bg-blue-60 hover:text-black"
                 data-lit-accordion
                 aria-controls="lit-footer-accordion-2"
-                aria-label="Business">
+                aria-label="Business"
+                data-lit-original-text="Business"
+              >
                 Business
               </button>
               <ul class="pb-5" id="lit-footer-accordion-2">
-                                                  <li>
-                    <a  href="/running-business" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60 py-5">Business</a>
-                  </li>
-                
+                                
                                   <li >
-                    <a  href="/proda-provider-digital-access" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">PRODA</a>
+                    <a href="/proda-provider-digital-access" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="PRODA">PRODA</a>
                   </li>
                                   <li >
-                    <a  href="/business-hub" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business Hub</a>
+                    <a href="/business-hub" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Business Hub">Business Hub</a>
                   </li>
                                   <li >
-                    <a  href="/paid-parental-leave-scheme-for-employers" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Paid Parental Leave scheme for employers</a>
+                    <a href="/paid-parental-leave-scheme-for-employers" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Paid Parental Leave scheme for employers">Paid Parental Leave scheme for employers</a>
                   </li>
                               </ul>
                       </li>
@@ -965,22 +1424,21 @@
                 class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md w-full hover:bg-blue-60 hover:text-black"
                 data-lit-accordion
                 aria-controls="lit-footer-accordion-3"
-                aria-label="Community groups">
+                aria-label="Community groups"
+                data-lit-original-text="Community groups"
+              >
                 Community groups
               </button>
               <ul class="pb-5" id="lit-footer-accordion-3">
-                                                  <li>
-                    <a  href="/community" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60 py-5">Community groups</a>
-                  </li>
-                
+                                
                                   <li >
-                    <a  href="/community-resources-and-help" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Community resources and help</a>
+                    <a href="/community-resources-and-help" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Community resources and help">Community resources and help</a>
                   </li>
                                   <li >
-                    <a  href="/providing-voluntary-work-opportunities" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Providing voluntary work opportunities</a>
+                    <a href="/providing-voluntary-work-opportunities" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Providing voluntary work opportunities">Providing voluntary work opportunities</a>
                   </li>
                                   <li >
-                    <a  href="/family-organisations" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Family organisations</a>
+                    <a href="/family-organisations" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Family organisations">Family organisations</a>
                   </li>
                               </ul>
                       </li>
@@ -989,22 +1447,21 @@
                 class="flex font-bold icon-accordion icon-white items-center justify-between py-6 text-md w-full hover:bg-blue-60 hover:text-black"
                 data-lit-accordion
                 aria-controls="lit-footer-accordion-4"
-                aria-label="Health professionals">
+                aria-label="Health professionals"
+                data-lit-original-text="Health professionals"
+              >
                 Health professionals
               </button>
               <ul class="pb-5" id="lit-footer-accordion-4">
-                                                  <li>
-                    <a  href="/health-professionals" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60 py-5">Health professionals</a>
-                  </li>
-                
+                                
                                   <li >
-                    <a  href="/hpos" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health Professionals Online Services</a>
+                    <a href="/hpos" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Health Professionals Online Services">Health Professionals Online Services</a>
                   </li>
                                   <li >
-                    <a  href="/aged-care-provider-portal" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Aged Care Provider Portal</a>
+                    <a href="/aged-care-provider-portal" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Aged Care Provider Portal">Aged Care Provider Portal</a>
                   </li>
                                   <li >
-                    <a  href="/medicare-benefits-for-health-professionals" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Medicare benefits for health professionals</a>
+                    <a href="/medicare-benefits-for-health-professionals" class="py-5 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Medicare benefits for health professionals">Medicare benefits for health professionals</a>
                   </li>
                               </ul>
                       </li>
@@ -1022,84 +1479,84 @@
 
                           <ul>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/about-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">About us</a>
+                    <a href="/about-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="About us">About us</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/forms" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Forms</a>
+                    <a href="/forms" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Forms">Forms</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/media" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Media</a>
+                    <a href="/media" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Media">Media</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="https://ministers.dss.gov.au/bill-shorten" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Our Minister</a>
+                    <a href="https://ministers.dss.gov.au/bill-shorten" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Our Minister">Our Minister</a>
                   </li>
                               </ul>
                       </li>
                   <li  class="mb-0 pb-9 flex-1 border-b border-white">
             <span class="font-bold text-md">
-                          <a  href="/contact-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact</a>
+                          <a href="/contact-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Contact">Contact</a>
                         </span>
 
                           <ul>
-                                  <li  class="hidden md:block mt-7 w-11/12">
-                    <a  href="/contact-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Contact us</a>
+                                  <li  class="mt-7 w-11/12">
+                    <a href="/contact-us" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Contact us">Contact us</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="https://findus.servicesaustralia.gov.au" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Find us</a>
+                    <a href="https://findus.servicesaustralia.gov.au" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Find us">Find us</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/complaints-and-feedback" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Complaints and feedback</a>
+                    <a href="/complaints-and-feedback" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Complaints and feedback">Complaints and feedback</a>
                   </li>
                               </ul>
                       </li>
                   <li  class="mb-0 pb-9 flex-1 border-b border-white">
             <span class="font-bold text-md">
-                          <a  href="/running-business" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business</a>
+                          <a href="/running-business" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Business">Business</a>
                         </span>
 
                           <ul>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/proda-provider-digital-access" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">PRODA</a>
+                    <a href="/proda-provider-digital-access" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="PRODA">PRODA</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/business-hub" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Business Hub</a>
+                    <a href="/business-hub" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Business Hub">Business Hub</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/paid-parental-leave-scheme-for-employers" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Paid Parental Leave scheme for employers</a>
+                    <a href="/paid-parental-leave-scheme-for-employers" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Paid Parental Leave scheme for employers">Paid Parental Leave scheme for employers</a>
                   </li>
                               </ul>
                       </li>
                   <li  class="mb-0 pb-9 flex-1 border-b border-white">
             <span class="font-bold text-md">
-                          <a  href="/community" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Community groups</a>
+                          <a href="/community-groups" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Community groups">Community groups</a>
                         </span>
 
                           <ul>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/community-resources-and-help" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Community resources and help</a>
+                    <a href="/community-resources-and-help" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Community resources and help">Community resources and help</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/providing-voluntary-work-opportunities" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Providing voluntary work opportunities</a>
+                    <a href="/providing-voluntary-work-opportunities" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Providing voluntary work opportunities">Providing voluntary work opportunities</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/family-organisations" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Family organisations</a>
+                    <a href="/family-organisations" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Family organisations">Family organisations</a>
                   </li>
                               </ul>
                       </li>
                   <li  class="mb-0 pb-9 flex-1 border-b border-white">
             <span class="font-bold text-md">
-                          <a  href="/health-professionals" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health professionals</a>
+                          <a href="/health-professionals" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Health professionals">Health professionals</a>
                         </span>
 
                           <ul>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/hpos" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Health Professionals Online Services</a>
+                    <a href="/hpos" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Health Professionals Online Services">Health Professionals Online Services</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/aged-care-provider-portal" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Aged Care Provider Portal</a>
+                    <a href="/aged-care-provider-portal" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Aged Care Provider Portal">Aged Care Provider Portal</a>
                   </li>
                                   <li  class="mt-7 w-11/12">
-                    <a  href="/medicare-benefits-for-health-professionals" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Medicare benefits for health professionals</a>
+                    <a href="/medicare-benefits-for-health-professionals" class="block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Medicare benefits for health professionals">Medicare benefits for health professionals</a>
                   </li>
                               </ul>
                       </li>
@@ -1112,53 +1569,68 @@
       <nav aria-label="Utility links">
         <ul class="md:flex md:flex-wrap">
                       <li  class="whitespace-no-wrap md:my-5 md:mr-8">
-              <a  href="/your-right-to-privacy" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Privacy</a>
+              <a href="/your-right-to-privacy" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Privacy">Privacy</a>
             </li>
                       <li  class="whitespace-no-wrap md:my-5 md:mr-8">
-              <a  href="/site-notices" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Site notices</a>
+              <a href="/site-notices" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Site notices">Site notices</a>
             </li>
                       <li  class="whitespace-no-wrap md:my-5 md:mr-8">
-              <a  href="/accessibility" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Accessibility</a>
+              <a href="/accessibility" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Accessibility">Accessibility</a>
             </li>
                       <li  class="whitespace-no-wrap md:my-5 md:mr-8">
-              <a  href="/access-to-information" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60">Access to information</a>
+              <a href="/access-to-information" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Access to information">Access to information</a>
+            </li>
+                      <li  class="whitespace-no-wrap md:my-5 md:mr-8">
+              <a href="/accessing-our-services" class="py-6 md:py-0 block md:inline border-b border-black hover:border-blue-60 hover:text-blue-60 focus:border-blue-60 focus:text-blue-60" data-lit-original-text="Accessing our services">Accessing our services</a>
             </li>
                   </ul>
       </nav>
     </div>
 
-        <div class="md:flex lg:w-2/5">
-      <div class="mb-6 md:mb-0 md:mr-6 lg:mr-0 lg:w-1/2">
+        <div class="md:flex md:w-2/5">
+      <div class="mb-6 md:mb-0 md:w-1/2">
         <div class="text-md font-medium mb-3">Languages</div>
-        <a href="/information-your-language" class="lit-footer-languages-link" aria-label="Languages">
+        <a
+          href="/information-your-language"
+          class="lit-footer-languages-link"
+          aria-label="Languages"
+          data-lit-original-text="Languages"
+        >
           <span class="a11y">Languages</span>
         </a>
       </div>
 
-      <div class=" lg:w-1/2">
+      <div class=" md:w-1/2">
         <div class="text-md font-medium mb-3">Follow us</div>
-        <a href="/connect-with-us-social-media" class="lit-footer-social-link" aria-label="Follow us">
+        <a
+          href="/connect-with-us-social-media"
+          class="lit-footer-social-link"
+          aria-label="Follow us"
+          data-lit-original-text="Follow us"
+        >
           <span class="a11y">Follow us</span>
-          <div class="flex justify-between">
-            <svg role="img" width="50" height="50" viewBox="0 0 50 50">
+          <div class="flex justify-between gap-x-3">
+            <svg role="img" class="w-[50px]" viewBox="0 0 50 50">
   <title>Facebook</title>
-  <path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M32.5,24h-4.4v14.6h-6.2V24h-4.1v-4.1h4.1v-2.4 c0-2.3,0.8-5.9,5.5-5.9h4.9v4.8h-3c-0.6,0-1.2,0.5-1.2,1.1v0.2v2.1h4.9L32.5,24z"/>
+  <path fill="black" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M32.5,24h-4.4v14.6h-6.2V24h-4.1v-4.1h4.1v-2.4 c0-2.3,0.8-5.9,5.5-5.9h4.9v4.8h-3c-0.6,0-1.2,0.5-1.2,1.1v0.2v2.1h4.9L32.5,24z"/>
 </svg>
 
-            <svg role="img" width="50" height="50" viewBox="0 0 50 50">
+            <svg role="img" class="w-[50px]" viewBox="0 0 50 50">
   <title>Instagram</title>
-  <path d="M25,21.14c-2.47,0-4.48,2.01-4.48,4.48s2.01,4.48,4.48,4.48,4.48-2.01,4.48-4.48-2.01-4.48-4.48-4.48Zm0,0c-2.47,0-4.48,2.01-4.48,4.48s2.01,4.48,4.48,4.48,4.48-2.01,4.48-4.48-2.01-4.48-4.48-4.48ZM25,0C11.19,0,0,11.19,0,25s11.19,25,25,25,25-11.19,25-25C49.99,11.2,38.8,.01,25,0Zm13.35,31.16c-.11,2.16-.6,4.06-2.17,5.64-1.58,1.57-3.48,2.07-5.64,2.17-2.22,.12-8.87,.12-11.09,0-2.16-.11-4.06-.6-5.64-2.17-1.57-1.58-2.07-3.48-2.17-5.64-.12-2.22-.12-8.87,0-11.09,.11-2.16,.6-4.06,2.17-5.64,1.58-1.57,3.49-2.06,5.64-2.16,2.22-.13,8.87-.13,11.09,0,2.16,.11,4.06,.6,5.64,2.17,1.57,1.57,2.07,3.48,2.17,5.63,.12,2.22,.12,8.87,0,11.09Zm-2.87-13.47c-.47-1.18-1.38-2.09-2.56-2.55-1.76-.7-5.97-.54-7.92-.54s-6.16-.17-7.93,.54c-1.18,.47-2.09,1.38-2.55,2.55-.7,1.77-.54,5.97-.54,7.93s-.17,6.15,.54,7.92c.47,1.19,1.38,2.09,2.55,2.56,1.77,.7,5.97,.54,7.93,.54s6.15,.16,7.92-.54c1.19-.47,2.09-1.38,2.56-2.56,.7-1.76,.54-5.97,.54-7.92s.16-6.16-.54-7.93Zm-10.48,14.82c-3.82,0-6.9-3.08-6.9-6.89s3.08-6.9,6.9-6.9,6.89,3.08,6.89,6.9-3.08,6.89-6.89,6.89Zm7.17-12.46c-.89,0-1.6-.72-1.6-1.61s.72-1.61,1.6-1.61,1.61,.72,1.61,1.61-.72,1.61-1.61,1.61Zm-7.17,1.09c-2.47,0-4.48,2.01-4.48,4.48s2.01,4.48,4.48,4.48,4.48-2.01,4.48-4.48-2.01-4.48-4.48-4.48Z"/>
+  <path fill="black" d="M25,21.14c-2.47,0-4.48,2.01-4.48,4.48s2.01,4.48,4.48,4.48,4.48-2.01,4.48-4.48-2.01-4.48-4.48-4.48Zm0,0c-2.47,0-4.48,2.01-4.48,4.48s2.01,4.48,4.48,4.48,4.48-2.01,4.48-4.48-2.01-4.48-4.48-4.48ZM25,0C11.19,0,0,11.19,0,25s11.19,25,25,25,25-11.19,25-25C49.99,11.2,38.8,.01,25,0Zm13.35,31.16c-.11,2.16-.6,4.06-2.17,5.64-1.58,1.57-3.48,2.07-5.64,2.17-2.22,.12-8.87,.12-11.09,0-2.16-.11-4.06-.6-5.64-2.17-1.57-1.58-2.07-3.48-2.17-5.64-.12-2.22-.12-8.87,0-11.09,.11-2.16,.6-4.06,2.17-5.64,1.58-1.57,3.49-2.06,5.64-2.16,2.22-.13,8.87-.13,11.09,0,2.16,.11,4.06,.6,5.64,2.17,1.57,1.57,2.07,3.48,2.17,5.63,.12,2.22,.12,8.87,0,11.09Zm-2.87-13.47c-.47-1.18-1.38-2.09-2.56-2.55-1.76-.7-5.97-.54-7.92-.54s-6.16-.17-7.93,.54c-1.18,.47-2.09,1.38-2.55,2.55-.7,1.77-.54,5.97-.54,7.93s-.17,6.15,.54,7.92c.47,1.19,1.38,2.09,2.55,2.56,1.77,.7,5.97,.54,7.93,.54s6.15,.16,7.92-.54c1.19-.47,2.09-1.38,2.56-2.56,.7-1.76,.54-5.97,.54-7.92s.16-6.16-.54-7.93Zm-10.48,14.82c-3.82,0-6.9-3.08-6.9-6.89s3.08-6.9,6.9-6.9,6.89,3.08,6.89,6.9-3.08,6.89-6.89,6.89Zm7.17-12.46c-.89,0-1.6-.72-1.6-1.61s.72-1.61,1.6-1.61,1.61,.72,1.61,1.61-.72,1.61-1.61,1.61Zm-7.17,1.09c-2.47,0-4.48,2.01-4.48,4.48s2.01,4.48,4.48,4.48,4.48-2.01,4.48-4.48-2.01-4.48-4.48-4.48Z"/>
 </svg>
 
-            <svg role="img" width="50" height="50" viewBox="0 0 50 50">
+            <svg role="img" class="w-[50px]" viewBox="0 0 50 50">
   <title>Twitter</title>
-  <path d="M25,0.1C11.2,0.1,0,11.4,0,25.1S11.2,50,25,50s25-11.2,25-24.9S38.8,0.3,25,0.1z M35.9,19.7v0.7c0,8.6-7,15.6-15.6,15.6 c-3,0-5.9-0.9-8.4-2.5c2.9,0.4,5.9-0.5,8.1-2.2c-2.4,0-4.4-1.6-5.1-3.7c0.9,0.1,1.6,0.1,2.5-0.1c-2.5-0.5-4.4-2.7-4.4-5.4 c0.7,0.4,1.6,0.6,2.5,0.6c-1.5-1-2.5-2.7-2.4-4.5c0-1,0.2-1.9,0.7-2.7c2.7,3.4,6.9,5.5,11.4,5.7c-0.1-0.4-0.1-0.9-0.1-1.2 c0-3,2.5-5.5,5.5-5.5c1.5,0,3,0.6,4,1.7c1.2-0.2,4.1-0.5,4.1-0.5C37.7,16.6,37,19,35.9,19.7z"/>
+  <path fill="black" d="M25,0.1C11.2,0.1,0,11.4,0,25.1S11.2,50,25,50s25-11.2,25-24.9S38.8,0.3,25,0.1z M35.9,19.7v0.7c0,8.6-7,15.6-15.6,15.6 c-3,0-5.9-0.9-8.4-2.5c2.9,0.4,5.9-0.5,8.1-2.2c-2.4,0-4.4-1.6-5.1-3.7c0.9,0.1,1.6,0.1,2.5-0.1c-2.5-0.5-4.4-2.7-4.4-5.4 c0.7,0.4,1.6,0.6,2.5,0.6c-1.5-1-2.5-2.7-2.4-4.5c0-1,0.2-1.9,0.7-2.7c2.7,3.4,6.9,5.5,11.4,5.7c-0.1-0.4-0.1-0.9-0.1-1.2 c0-3,2.5-5.5,5.5-5.5c1.5,0,3,0.6,4,1.7c1.2-0.2,4.1-0.5,4.1-0.5C37.7,16.6,37,19,35.9,19.7z"/>
 </svg>
 
-            <svg role="img" width="50" height="50" viewBox="0 0 50 50">
+            <svg role="img" class="w-[50px]" viewBox="0 0 50 50">
   <title>YouTube</title>
-  <path d="M21.9,18.1c-0.4-0.2-0.9-0.2-1.1,0c-0.4,0.2-0.6,0.6-0.6,1v11.6c0,0.4,0.2,0.8,0.6,1c0.1,0.1,0.4,0.1,0.6,0.1s0.4,0,0.6-0.1 l10.1-5.6c0.4-0.3,0.6-0.6,0.6-1c0-0.4-0.2-0.9-0.6-1L21.9,18.1z"/>
-  <path d="M25.1,0C11.5,0,0.3,11.2,0.3,25s11.2,25,24.9,25S50,38.8,50,25S38.8,0.1,25.1,0z M39.6,29.8c0,3.1-2.5,5.8-5.7,5.8H16.3 c-3.1,0-5.7-2.5-5.7-5.8v-9.4c0-3.1,2.5-5.8,5.7-5.8H34c3.1,0,5.7,2.5,5.7,5.8L39.6,29.8z"/>
+  <g fill="black">
+    <path d="M21.9,18.1c-0.4-0.2-0.9-0.2-1.1,0c-0.4,0.2-0.6,0.6-0.6,1v11.6c0,0.4,0.2,0.8,0.6,1c0.1,0.1,0.4,0.1,0.6,0.1s0.4,0,0.6-0.1 l10.1-5.6c0.4-0.3,0.6-0.6,0.6-1c0-0.4-0.2-0.9-0.6-1L21.9,18.1z"/>
+    <path d="M25.1,0C11.5,0,0.3,11.2,0.3,25s11.2,25,24.9,25S50,38.8,50,25S38.8,0.1,25.1,0z M39.6,29.8c0,3.1-2.5,5.8-5.7,5.8H16.3 c-3.1,0-5.7-2.5-5.7-5.8v-9.4c0-3.1,2.5-5.8,5.7-5.8H34c3.1,0,5.7,2.5,5.7,5.8L39.6,29.8z"/>
+  </g>
 </svg>
 
           </div>
@@ -1389,7 +1861,7 @@
   </g>
 </svg>
 </div>
-        <svg role="img" width="50" height="56" viewBox="0 0 50 56"><title>Services Australia</title>
+        <svg role="img" height="56" width="50" viewBox="0 0 50 56"><title>Services Australia</title>
 
   <path d="M16.65,11.69V44.31L5.7,55a3.38,3.38,0,0,1-2.37,1A3.31,3.31,0,0,1,0,52.73V3.26A3.29,3.29,0,0,1,3.33,0h0A3.27,3.27,0,0,1,5.66.94ZM22.35,1A3.35,3.35,0,0,0,20,0a3.29,3.29,0,0,0-3.33,3.25h0v8.43L33.33,28,16.67,44.29v8.44A3.29,3.29,0,0,0,20,56,3.33,3.33,0,0,0,22.35,55L50,28Z"/>
 </svg>
@@ -1433,8 +1905,7 @@
 
     
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/48361","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"context":"1"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"lit":{"analytics":{"debug":false},"node":{"id":48361,"bundle":"dhs_page","title":"Privacy Impact Assessment Register"},"readSpeaker":{"url":"\/\/app-oc.readspeaker.com\/cgi-bin\/rsent?customerid=5525\u0026lang=en_au\u0026readclass=lit-readspeaker-target\u0026url="},"pageTitle":"Privacy Impact Assessment Register - Services Australia"},"breakpoints":{"xs":"320","sm":"480","md":"840","lg":"1152","xl":"1366"},"ajaxTrustedUrl":{"\/search":true},"user":{"uid":0,"permissionsHash":"fcef7e89fad295f0d8ef79d7154c40ef75fa34f5948afb637aebb9665192a3e6"}}</script>
-<script src="/sites/default/files/js/js_qXhU6d-5wP4FC-dW_9YxMy0cUnUmaX1o4iLs-zPC668.js"></script>
-<script src="//f1-oc.readspeaker.com/script/5525/webReader/webReader.js?pids=wr"></script>
+<script src="/sites/default/files/js/js_kmlw-8DgO6Kwxx3wCK2IpFAO6SMGFkbB3xG3RalBG64.js"></script>
 
 
     <script type="text/javascript">
@@ -1486,5 +1957,5 @@
       }
     </script>
     <!-- End IE11 -->
-  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-56afeaf32ee93d607b1","applicationID":"688337168","transactionName":"NlBWZUtQXRBUAkNZWw8aYUNQHloNUQRPHkQJRQ==","queueTime":0,"applicationTime":2673,"atts":"GhdVEwNKTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-56afeaf32ee93d607b1","applicationID":"688337168","transactionName":"NlBWZUtQXRBUAkNZWw8adVJNWFwNGiVFRUQAWWhfVlVWP3YOWURGDllYVEttfQxRBGFZURZ2W19NQ1wPWQRFHQoXXFFG","queueTime":0,"applicationTime":368,"atts":"GhdVEwNKTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>

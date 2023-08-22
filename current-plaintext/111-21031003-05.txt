@@ -1,10 +1,4 @@
 
-PBS Safety Net quality checking in QST 111-21031003
-
--   Background
--   References
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 Services Australia website
@@ -32,7 +26,7 @@ Pharmaceutical Benefits Scheme (PBS)
 
 Forms
 
-Privacy Incident Notification form
+Privacy Incident Portal
 
 Contact details
 
@@ -43,7 +37,7 @@ Pharmaceutical Benefits Scheme (PBS) - Tier 3 Claiming Support
 
 Medicare Health Programme Support Officers (PSO)
 
-Error codes – error free
+Error codes - error free
 
 Table 1:
 
@@ -55,11 +49,11 @@ Table 1:
 | Error free                        |                                   |
 +-----------------------------------+-----------------------------------+
 
-Error codes – B status codes – Mainframe system
+Error codes - B status codes - PBS Safety Net Claims system
 
-Table 2:describes the error codes for the Mainframe system. The
-processes can be found in Pharmaceutical Benefits Scheme (PBS) Safety
-Net Processing and enquiries.
+Table 2: describes the error codes for the PBS Safety Net Claims system.
+The processes can be found in Pharmaceutical Benefits Scheme (PBS)
+Safety Net Processing and enquiries.
 
 +-----------------------------------+-----------------------------------+
 | Error codes                       | Error definition                  |
@@ -71,7 +65,7 @@ Net Processing and enquiries.
 |                                   | type or Supplement Card not       |
 |                                   | issued.                           |
 +-----------------------------------+-----------------------------------+
-| B02S                              | Applicant or dependent error.     |
+| B02S                              | Applicant or dependant error.     |
 |                                   |                                   |
 | Critical                          | Safety Net registration status    |
 |                                   | for the applicant or a family     |
@@ -80,30 +74,23 @@ Net Processing and enquiries.
 |                                   |                                   |
 |                                   | Records not linked.               |
 +-----------------------------------+-----------------------------------+
-| B03S                              | Relationship code error.          |
+| B03S                              | Dependant listed as card holder   |
+|                                   | error.                            |
+| Critical                          |                                   |
+|                                   | Dependant child or student        |
+|                                   | incorrectly added as Card Holder. |
 |                                   |                                   |
-| Critical                          | Incorrect relationship code.      |
-+-----------------------------------+-----------------------------------+
-| B04S                              | Address error.                    |
-|                                   |                                   |
-| Non-critical                      | Patient address not updated or    |
-|                                   | updated incorrectly.              |
-|                                   |                                   |
-|                                   | Note: only applies to Safety Net  |
-|                                   | card issue work.                  |
+|                                   | Note: it is not an error when the |
+|                                   | correct card holder (CH) and      |
+|                                   | spouse (SP) are transposed in the |
+|                                   | Safety Net Claims system (SNCS)   |
+|                                   | according to the prescription     |
+|                                   | record form (PRF).                |
 +-----------------------------------+-----------------------------------+
 | B05S                              | Pharmacy approval number error.   |
 |                                   |                                   |
 | Critical                          | Incorrect pharmacy assigned to    |
 |                                   | Safety Net registration.          |
-+-----------------------------------+-----------------------------------+
-| B06S                              | Issue date error.                 |
-|                                   |                                   |
-| Critical                          | Date of issue for Safety Net      |
-|                                   | threshold keyed incorrectly.      |
-|                                   |                                   |
-|                                   | Note: if assessed incorrectly,    |
-|                                   | only select EO2S.                 |
 +-----------------------------------+-----------------------------------+
 | B14S                              | Record not updated.               |
 |                                   |                                   |
@@ -119,16 +106,11 @@ Net Processing and enquiries.
 |                                   |                                   |
 | Non-critical                      | Recorded lodgement date           |
 |                                   | incorrectly.                      |
-|                                   |                                   |
-|                                   | Note: this is not an error when   |
-|                                   | processed after 60 days from date |
-|                                   | received. This is a system        |
-|                                   | limitation.                       |
 +-----------------------------------+-----------------------------------+
 
-Error codes – C status codes – application form
+Error codes - C status codes - application form
 
-Table 3:describes the error codes for the application form. The
+Table 3: describes the error codes for the application form. The
 processes can be found in:
 
 -   Pharmaceutical Benefits Scheme (PBS) Safety Net processing and
@@ -162,6 +144,11 @@ processes can be found in:
 |                                   | -   item code                     |
 |                                   | -   approval number               |
 |                                   | -   Safety Net value              |
+|                                   | -   Pharmacist signed as the      |
+|                                   |     applicant’s agent or          |
+|                                   |     certified the PRF in absence  |
+|                                   |     of the applicant/agent        |
+|                                   |     signature                     |
 |                                   |                                   |
 |                                   | Safety Net card missing           |
 |                                   | information:                      |
@@ -178,9 +165,9 @@ processes can be found in:
 |                                   | card holder (not on original PRF) |
 +-----------------------------------+-----------------------------------+
 
-Error codes – D status codes – letters
+Error codes - D status codes - letters
 
-Table 4:describes the error codes for letters. The processes can be
+Table 4: describes the error codes for letters. The processes can be
 found in:
 
 -   Quality assurance for external mail in Medicare
@@ -234,18 +221,17 @@ found in:
 |                                   |     incorrect                     |
 |                                   | -   Spelling errors in free text  |
 |                                   |     areas                         |
-|                                   | -   Patient name or date of birth |
-|                                   |     keyed incorrectly             |
+|                                   | -   Patient name keyed            |
+|                                   |     incorrectly                   |
 +-----------------------------------+-----------------------------------+
 
-Error codes – E status codes – assessing errors
+Error codes - E status codes - assessing errors
 
 Table 5. assessment errors relate to an incorrect eligibility
 assessment. For example, this might include failure to recognise the
 correct issue date or to exclude ineligible prescriptions.
 
-If it is a recording error these are listed under B Mainframe system
-errors.
+Recording errors are listed under B PBS Safety Net Claim system errors.
 
 Processes can be found in Pharmaceutical Benefits Scheme (PBS) Safety
 Net processing and enquiries.
@@ -260,24 +246,24 @@ Net processing and enquiries.
 |                                   |     threshold for Safety Net      |
 |                                   |     registration type             |
 |                                   | -   Eligible - rejected in error  |
-|                                   |                                   |
-|                                   | Note: it is an error when the     |
-|                                   | staff member has not used the     |
-|                                   | Safety Net Claims system (SNCS)   |
-|                                   | to assess the claim. This may     |
-|                                   | also result in an error under     |
-|                                   | F03S, Panda comments not made.    |
 +-----------------------------------+-----------------------------------+
 | E02S                              | Date of issue error.              |
 |                                   |                                   |
-| Critical                          | Eligible, but incorrectly         |
-|                                   | determined date of issue.         |
+| Non-Critical                      | Eligible, but:                    |
+|                                   |                                   |
+|                                   | -   incorrectly determined date   |
+|                                   |     of issue from manual review,  |
+|                                   |     or                            |
+|                                   | -   failed to correct the Safety  |
+|                                   |     Net Claims system (SNCS)      |
+|                                   |     where issue date returned is  |
+|                                   |     before 1 July 2022            |
 +-----------------------------------+-----------------------------------+
 
-Error codes – F status codes – PaNDA
+Error codes - F status codes - PaNDA
 
 Table 6: processes can be found in Processing and National Demand
-Allocation (PaNDA). and Work Optimiser for staff.
+Allocation (PaNDA) and Work Optimiser for staff.
 
 +-----------------------------------+-----------------------------------+
 | Error codes                       | Error definition                  |
@@ -301,14 +287,6 @@ Allocation (PaNDA). and Work Optimiser for staff.
 |                                   |                                   |
 | Non-critical                      | Required comments omitted or      |
 |                                   | incorrect.                        |
-|                                   |                                   |
-|                                   | Note: it is an error when the     |
-|                                   | Service Officer fails to add a    |
-|                                   | note in PaNDA that the Safety Net |
-|                                   | Claims system (SNCS) has been     |
-|                                   | used, or a manual calculation was |
-|                                   | needed. For example; hospital     |
-|                                   | scripts.                          |
 +-----------------------------------+-----------------------------------+
 | F04S                              | Documentation missing.            |
 |                                   |                                   |
@@ -324,8 +302,9 @@ Allocation (PaNDA). and Work Optimiser for staff.
 | F06S                              | Work Items not separated.         |
 |                                   |                                   |
 | Non-critical                      | Did not separate multiple Work    |
-|                                   | Items in PaNDA or extract a       |
-|                                   | different Work Type for separate  |
+|                                   | Items from different pharmacies   |
+|                                   | in PaNDA or extract a different   |
+|                                   | Work Type for separate            |
 |                                   | processing.                       |
 +-----------------------------------+-----------------------------------+
 
