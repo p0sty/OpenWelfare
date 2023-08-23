@@ -1,16 +1,10 @@
 
-Bulk bill latter day adjustment (LDA) claims in Medicare 011-43040000
-
--   Background
--   Process
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 This page contains basic procedures to assist in completing Latter Day
 Adjustment (LDA) claims for Medicare.
 
-On this Page:
+On this page:
 
 Order of entry
 
@@ -40,13 +34,16 @@ Insert a line during adjustment
 
 Bulk bill adjustments voluntary recovery
 
+Co-claiming Matrix - Process for claims that return 1-PREV CON message -
+Bulk bill
+
 Order of entry
 
 Note: if the order of entry is not followed, the system may return the
 error message '1-TOO MANY'. In this case, delete the adjustments and
 start again in the preferred order.
 
-Table 1: This table describes the order for entry of bulk bill
+Table 1: this table describes the order for entry of bulk bill
 adjustments to claim lines for each patient.
 
 +-----------------------------------+-----------------------------------+
@@ -79,7 +76,7 @@ adjustments to claim lines for each patient.
 
 Recall claim for adjustment
 
-Table 2: This table describes how Service Officers recall a bulk bill
+Table 2: this table describes how Service Officers recall a bulk bill
 LDA claim.
 
 +-----------------------------------+-----------------------------------+
@@ -97,7 +94,7 @@ LDA claim.
 
 Enter adjustment details
 
-Table 3: This table describes how Service Officers enter specific
+Table 3: this table describes how Service Officers enter specific
 adjustment types for bulk bill LDA claims.
 
 +-----------------------------------+-----------------------------------+
@@ -108,7 +105,7 @@ adjustment types for bulk bill LDA claims.
 |                                   |                                   |
 |                                   | Key:                              |
 |                                   |                                   |
-|                                   | -   Item                          |
+|                                   | -   item                          |
 |                                   | -   DOS                           |
 |                                   | -   BN ASG                        |
 |                                   | -   referring/requesting details  |
@@ -118,7 +115,7 @@ adjustment types for bulk bill LDA claims.
 |                                   | Over key:                         |
 |                                   |                                   |
 |                                   | -   card number and/or            |
-|                                   | -   patient name                  |
+|                                   | -   patient's name                |
 +-----------------------------------+-----------------------------------+
 | Suppress                          | Action codes + Read more ...      |
 |                                   |                                   |
@@ -138,7 +135,7 @@ adjustment types for bulk bill LDA claims.
 |                                   | Use action code T.                |
 |                                   |                                   |
 |                                   | Note: this has replaced action    |
-|                                   | code ‘D’.                         |
+|                                   | code D.                           |
 +-----------------------------------+-----------------------------------+
 | Insert                            | Action code + Read more ...       |
 |                                   |                                   |
@@ -153,9 +150,9 @@ adjustment types for bulk bill LDA claims.
 |                                   | -   O - replaces the action code  |
 |                                   |     entered by the Service        |
 |                                   |     Officer                       |
-|                                   | -   R - must have a matching ‘O’  |
-|                                   |     line can be overtyped with    |
-|                                   |     ‘X’ or ‘I’ action codes       |
+|                                   | -   R - must have a matching O    |
+|                                   |     line can be overtyped with X  |
+|                                   |     or I action codes             |
 +-----------------------------------+-----------------------------------+
 | Adjust                            | Action code + Read more ...       |
 |                                   |                                   |
@@ -170,7 +167,7 @@ adjustment types for bulk bill LDA claims.
 
 Close a bulk bill LDA claim
 
-Table 4: This table describes how Service Officers close a bulk bill LDA
+Table 4: this table describes how Service Officers close a bulk bill LDA
 claim.
 
 +-----------------------------------+-----------------------------------+
@@ -184,23 +181,84 @@ claim.
 
 Recall a bulk bill LDA claim
 
-Table 5: This table describes how Service Officers recall a bulk bill
-LDA claim from pend.
+Table 5: this table describes how Service Officers recall a bulk bill
+LDA claim from pend and further steps required if adjustment results in
+an overpayment (OPAY).
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
 | 1                                 | Key control line + Read more ...  |
 |                                   |                                   |
-|                                   | Key control line 'DHAI,PROVIDER   |
-|                                   | NO,CLAIM ID,DOL=DDMMYY'.          |
+|                                   | Key control line DHAI,PROVIDER    |
+|                                   | NO,CLAIM ID,DOL=DDMMYY.           |
 |                                   |                                   |
 |                                   | This will re-assesses the claim.  |
++-----------------------------------+-----------------------------------+
+| 2                                 | Assess + Read more ...            |
+|                                   |                                   |
+|                                   | Apply MBS restrictions and        |
+|                                   | rulings as normal.                |
+|                                   |                                   |
+|                                   | Complete adjustment and U to      |
+|                                   | Update and finalise the           |
+|                                   | adjustment.                       |
++-----------------------------------+-----------------------------------+
+| 3                                 | If adjustment results in an       |
+|                                   | overpayment + Read more ...       |
+|                                   |                                   |
+|                                   | Navigate to the Health Service    |
+|                                   | Delivery Division SharePoint      |
+|                                   | page:                             |
+|                                   |                                   |
+|                                   | -   Open the Medicare Provider    |
+|                                   |     Services Library              |
+|                                   | -   Select the MPS Claims and     |
+|                                   |     Assessing page                |
+|                                   | -   Select the link to the        |
+|                                   |     interactive DAN form and      |
+|                                   |     complete                      |
++-----------------------------------+-----------------------------------+
+| 4                                 | Navigate to mainframe screen and  |
+|                                   | enter + Read more ...             |
+|                                   |                                   |
+|                                   | DCEI,provider number,claim ID,DOL |
+|                                   |                                   |
+|                                   | insert one of the following codes |
+|                                   | in the RSN field:                 |
+|                                   |                                   |
+|                                   | VRC - Voluntary Recovery          |
+|                                   |                                   |
+|                                   | -   VRC applies if the health     |
+|                                   |     professional submits a cheque |
+|                                   |     or money order in relation to |
+|                                   |     a bulk bill overpayment       |
+|                                   |                                   |
+|                                   | DRI - Doctor Refund Initiated     |
+|                                   |                                   |
+|                                   | -   DRI applies if recovery       |
+|                                   |     action needs to be pursued as |
+|                                   |     monies are owed to Services   |
+|                                   |     Australia as a result of the  |
+|                                   |     overpayment                   |
+|                                   |                                   |
+|                                   | DRD - Debt Received               |
+|                                   |                                   |
+|                                   | -   DRD applies if the health     |
+|                                   |     professional has indicated    |
+|                                   |     that they have paid the       |
+|                                   |     overpayment and Debt Recovery |
+|                                   |     can confirm the amounts have  |
+|                                   |     been received                 |
+|                                   |                                   |
+|                                   | select [Enter]                    |
+|                                   |                                   |
+|                                   | key U to Update                   |
 +-----------------------------------+-----------------------------------+
 
 Reset a bulk bill LDA claim
 
-Table 6: This table describes how Service Officers reset a bulk bill
+Table 6: this table describes how Service Officers reset a bulk bill
 claim to start again.
 
 +-----------------------------------+-----------------------------------+
@@ -208,8 +266,8 @@ claim to start again.
 +-----------------------------------+-----------------------------------+
 | 1                                 | Key control line + Read more ...  |
 |                                   |                                   |
-|                                   | Key control line 'DHAC,PROVIDER   |
-|                                   | NO, CLAIM ID,DOL=DDMMYY,RESET'.   |
+|                                   | Key control line DHAC,PROVIDER    |
+|                                   | NO, CLAIM ID,DOL=DDMMYY,RESET.    |
 |                                   |                                   |
 |                                   | This action resets the claim to   |
 |                                   | start again with the first        |
@@ -218,7 +276,7 @@ claim to start again.
 
 Delete a bulk bill LDA claim
 
-Table 7: This table describes how Service Officers delete a bulk bill
+Table 7: this table describes how Service Officers delete a bulk bill
 LDA claim.
 
 +-----------------------------------+-----------------------------------+
@@ -227,8 +285,8 @@ LDA claim.
 | 1                                 | Key control line or select        |
 |                                   | DELETE + Read more ...            |
 |                                   |                                   |
-|                                   | Key control line 'DHSI,PROVIDER   |
-|                                   | NO,CLAIM ID,DOL=DDMMYY,DELETE'.   |
+|                                   | Key control line DHSI,PROVIDER    |
+|                                   | NO,CLAIM ID,DOL=DDMMYY,DELETE.    |
 |                                   |                                   |
 |                                   | This action will delete the       |
 |                                   | claim.                            |
@@ -243,7 +301,7 @@ LDA claim.
 
 Action a same day bulk bill LDA claim reversal
 
-Table 8: This table describes how Service Officers action a same day
+Table 8: this table describes how Service Officers action a same day
 bulk bill LDA claim reversal.
 
 +-----------------------------------+-----------------------------------+
@@ -251,8 +309,8 @@ bulk bill LDA claim reversal.
 +-----------------------------------+-----------------------------------+
 | 1                                 | Key control line + Read more ...  |
 |                                   |                                   |
-|                                   | Key control line 'DHRI,PROVIDER   |
-|                                   | NO,CLAIM ID,DOL=DDMMYY'.          |
+|                                   | Key control line DHRI,PROVIDER    |
+|                                   | NO,CLAIM ID,DOL=DDMMYY.           |
 |                                   |                                   |
 |                                   | This action reverses the claim to |
 |                                   | the ADJUST status. The claim can  |
@@ -262,7 +320,7 @@ bulk bill LDA claim reversal.
 
 Recall an original bulk bill LDA claim
 
-Table 9: This table describes how Service Officers recall an original
+Table 9: this table describes how Service Officers recall an original
 bulk bill LDA claim.
 
 Note: the claim ID (to be adjusted) and date of lodgement (DOL) are
@@ -273,8 +331,8 @@ equal to the original claim.
 +-----------------------------------+-----------------------------------+
 | 1                                 | Key control line + Read more ...  |
 |                                   |                                   |
-|                                   | Key control line 'DHSI,PROVIDER   |
-|                                   | NO,CLAIM ID,DOL=DDMMYY'.          |
+|                                   | Key control line DHSI,PROVIDER    |
+|                                   | NO,CLAIM ID,DOL=DDMMYY.           |
 |                                   |                                   |
 |                                   | DHSC screen returns displaying    |
 |                                   | the message 'CARD' indicating the |
@@ -304,7 +362,7 @@ equal to the original claim.
 
 Check edits for errors and corrections
 
-Table 10: This table describes how Service Officers action bulk bill LDA
+Table 10: this table describes how Service Officers action bulk bill LDA
 claim edits for checking and correction.
 
 Note: any errors are highlighted and must be corrected before
@@ -341,7 +399,7 @@ proceeding.
 
 Over key incorrect details
 
-Table 11: This table describes how Service Officers over key incorrect
+Table 11: this table describes how Service Officers over key incorrect
 details on a DHSC screen line for bulk bill LDA claims.
 
 +-----------------------------------+-----------------------------------+
@@ -349,19 +407,19 @@ details on a DHSC screen line for bulk bill LDA claims.
 +-----------------------------------+-----------------------------------+
 | 1                                 | DHSC Screen + Read more ...       |
 |                                   |                                   |
-|                                   | Over key incorrect fields with    |
-|                                   | correct details and press         |
-|                                   | [Enter].                          |
+|                                   | -   over key incorrect fields     |
+|                                   |     with correct details          |
+|                                   | -   press [Enter]                 |
 |                                   |                                   |
 |                                   | The system returns a DHSC screen. |
 +-----------------------------------+-----------------------------------+
 
 Delete a DHSC line
 
-Table 12: This table describes how Service Officers delete a line on the
+Table 12: this table describes how Service Officers delete a line on the
 DHSC screen for bulk bill LDA claims.
 
-Note: the FEE and BENEFIT fields contain zero amounts and H is displayed
+Note: the Fee and Benefit fields contain zero amounts and H is displayed
 in the PAYEE field, indicating that this line will be recorded for
 history purposes only, as a total overpayment.
 
@@ -374,7 +432,7 @@ history purposes only, as a total overpayment.
 |                                   | -   Press [Enter]                 |
 |                                   |                                   |
 |                                   | The system returns the message    |
-|                                   | 'LINE DLTD' and displays:         |
+|                                   | LINE DLTD and displays:           |
 |                                   |                                   |
 |                                   | -   the original deleted line -   |
 |                                   |     all fields are protected,     |
@@ -387,7 +445,7 @@ history purposes only, as a total overpayment.
 
 Insert a line during adjustment
 
-Table 13: This table describes how Service Officers insert a line during
+Table 13: this table describes how Service Officers insert a line during
 a bulk bill adjustment.
 
 +-----------------------------------+-----------------------------------+
@@ -409,9 +467,9 @@ a bulk bill adjustment.
 |                                   | Press [Enter].                    |
 |                                   |                                   |
 |                                   | The system returns the message    |
-|                                   | 'INSERT', together with a new     |
-|                                   | line that enables new details to  |
-|                                   | be keyed.                         |
+|                                   | Insert, together with a new line  |
+|                                   | that enables new details to be    |
+|                                   | keyed.                            |
 |                                   |                                   |
 |                                   | Note: an N appears in the A field |
 |                                   | to indicate a new line.           |
@@ -421,7 +479,7 @@ a bulk bill adjustment.
 |                                   | Key details in the following      |
 |                                   | fields:                           |
 |                                   |                                   |
-|                                   | -   ITEM                          |
+|                                   | -   Item                          |
 |                                   | -   DOS                           |
 |                                   | -   BN ASSG                       |
 |                                   |                                   |
@@ -437,7 +495,7 @@ a bulk bill adjustment.
 |                                   |     restated line and these       |
 |                                   |     fields are protected          |
 |                                   | -   inserts PAYEE Code 6 and      |
-|                                   |     zeros in the FEE and BENEFIT  |
+|                                   |     zeros in the Fee and Benefit  |
 |                                   |     fields, these fields are      |
 |                                   |     protected                     |
 |                                   | -   leaves the PI, RSN and TX     |
@@ -458,15 +516,15 @@ a bulk bill adjustment.
 |                                   |     details                       |
 |                                   |                                   |
 |                                   | Note: a new line can also be      |
-|                                   | inserted over an 'N' once a new   |
+|                                   | inserted over an N once a new     |
 |                                   | line has been generated.          |
 +-----------------------------------+-----------------------------------+
 
 Bulk bill adjustments voluntary recovery
 
-Table 14: The table below describes the process for when Services
-Australia receives a payment, that is cheque or money order from a
-health professional in relation to a bulk bill over payment.
+Table 14: this table describes the process for when the agency receives
+a payment, that is cheque or money order from a health professional in
+relation to a bulk bill over payment.
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -474,21 +532,19 @@ health professional in relation to a bulk bill over payment.
 | 1                                 | Confirm adjustment has been       |
 |                                   | actioned + Read more ...          |
 |                                   |                                   |
-|                                   | Check Mainframe to confirm if an  |
-|                                   | adjustment has been actioned.     |
+|                                   | -   Check Mainframe to confirm if |
+|                                   |     an adjustment has been        |
+|                                   |     actioned                      |
+|                                   | -   Key NHSI,MEDICARE CARD        |
+|                                   |     NUMBER,ADJ/BB                 |
 |                                   |                                   |
-|                                   | Key, NHSI,MEDICARE CARD           |
-|                                   | NUMBER,ADJ/BB.                    |
-|                                   |                                   |
-|                                   | Note: if adjustment has not been  |
-|                                   | actioned, see Bulk bill latter    |
-|                                   | day adjustment (LDA) claims in    |
-|                                   | Medicare.                         |
+|                                   | Note: if adjustment was not       |
+|                                   | actioned, see Table 3.            |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Once claim has been adjusted +    |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | Key, DCEI,PROVIDER NO, CLAIM ID   |
+|                                   | Key DCEI,PROVIDER NO, CLAIM ID    |
 |                                   |                                   |
 |                                   | This will display basic           |
 |                                   | information on both the original  |
@@ -498,7 +554,7 @@ health professional in relation to a bulk bill over payment.
 |                                   | claim:                            |
 |                                   |                                   |
 |                                   | -   Key VRC                       |
-|                                   | -   Press [Alt P] to Print Screen |
+|                                   | -   Press [Alt P] to print screen |
 |                                   | -   Key U to Update               |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Debt Advice Notice (DAN) + Read   |
@@ -525,6 +581,179 @@ health professional in relation to a bulk bill over payment.
 |                                   | -   press Submit                  |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
+Co-claiming Matrix - Process for claims that return 1-PREV CON message - Bulk bill
+
+Table 15: processing Steps for surgery claims that return a 1-PREV CON
+message
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Co-claiming 1-PREV CON warning    |
+|                                   | message + Read more ...           |
+|                                   |                                   |
+|                                   | Co-claiming 1-PREV CON warning    |
+|                                   | message displays on Medicare      |
+|                                   | Mainframe when certain            |
+|                                   | consultation items are on a       |
+|                                   | patient’s history and restrict    |
+|                                   | with a Group T8 item.             |
+|                                   |                                   |
+|                                   | -   Telephony staff unable to     |
+|                                   |     perform overpayment or same   |
+|                                   |     day reversal (SDR) in Bulk    |
+|                                   |     Bill, go to Step 2            |
+|                                   | -   Face to face staff unable to  |
+|                                   |     perform overpayment or same   |
+|                                   |     day reversal (SDR) in Bulk    |
+|                                   |     Bill, go to Step 3            |
+|                                   | -   Service Officer able to       |
+|                                   |     perform overpayment, or SDR   |
+|                                   |     in Simplified Billing, go to  |
+|                                   |     Step 4                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Service Officer unable to perform |
+|                                   | overpayment, or same day reversal |
+|                                   | (SDR) in Bulk Bill + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | When the consultation on history  |
+|                                   | has been processed via the bulk   |
+|                                   | bill channel and you are unsure   |
+|                                   | about processing an overpayment:  |
+|                                   |                                   |
+|                                   | -   Park Online or Pend manual    |
+|                                   |     surgical T8 claim             |
+|                                   | -   Complete 1 PREV CON           |
+|                                   |     escalation template           |
+|                                   | -   Upload template and assign to |
+|                                   |     BB Helpdesk in PaNDA with the |
+|                                   |     title 1-PREV CON – BB OPAY –  |
+|                                   |     <M/C NUMBER>                  |
+|                                   |                                   |
+|                                   | Once advised that overpayment has |
+|                                   | been actioned:                    |
+|                                   |                                   |
+|                                   | -   Select parked/pended Surgical |
+|                                   |     T8 claim                      |
+|                                   | -   finalise claim                |
++-----------------------------------+-----------------------------------+
+| 3                                 | Face to Face staff without PaNDA  |
+|                                   | access + Read more ...            |
+|                                   |                                   |
+|                                   | -   Park, Pend or Action as       |
+|                                   |     required, the manual surgical |
+|                                   |     T8 claim                      |
+|                                   | -   Complete the 1 PREV CON       |
+|                                   |     escalation template           |
+|                                   | -   Email to Medicare Claims      |
+|                                   |     Helpdesk                      |
++-----------------------------------+-----------------------------------+
+| 4                                 | Service Officer able to perform   |
+|                                   | overpayment, or same day reversal |
+|                                   | (SDR) in Bulk Bill + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | When a SDR of the consultation on |
+|                                   | history is possible (DOP =        |
+|                                   | today):                           |
+|                                   |                                   |
+|                                   | -   complete the SDR to reverse   |
+|                                   |     the consultation using DSDI   |
+|                                   | -   when claim is reversed, use   |
+|                                   |     reason code 506 to reject the |
+|                                   |     consultation item             |
+|                                   | -   Select parked/pended Surgical |
+|                                   |     T8 claim                      |
+|                                   | -   process the claim             |
+|                                   |                                   |
+|                                   | Where the SDR is not possible:    |
+|                                   |                                   |
+|                                   | Complete the OPAY                 |
+|                                   |                                   |
+|                                   | Key DHSI, provider no, claim      |
+|                                   | ID,DOL=DDMMYY                     |
+|                                   |                                   |
+|                                   | Key T in the Action (A) field     |
+|                                   |                                   |
+|                                   | Original item line (O) and        |
+|                                   | Reversed item line (R) will be    |
+|                                   | displayed                         |
+|                                   |                                   |
+|                                   | Select [F3] to display total OPAY |
+|                                   | line                              |
+|                                   |                                   |
+|                                   | Key U to update                   |
+|                                   |                                   |
+|                                   | Add the following text to the     |
+|                                   | overpayment letter All recoveries |
+|                                   | – bulk bill Standard recovery     |
+|                                   | letter:                           |
+|                                   |                                   |
+|                                   | -   From 1 November 2017,         |
+|                                   |     subsequent attendance items   |
+|                                   |     were not payable with any     |
+|                                   |     Group T8 surgical items with  |
+|                                   |     a schedule fee of equal to or |
+|                                   |     greater than $300, provided   |
+|                                   |     by the same medical           |
+|                                   |     practitioner on the same day  |
+|                                   |                                   |
+|                                   | Complete Debt Advice Notice       |
+|                                   | ‘DAN’:                            |
+|                                   |                                   |
+|                                   | On the Health Service Delivery    |
+|                                   | Division SharePoint page:         |
+|                                   |                                   |
+|                                   | -   Open the Medicare Provider    |
+|                                   |     Services Library              |
+|                                   | -   Select the Claims and         |
+|                                   |     Assessing page                |
+|                                   |                                   |
+|                                   | This page will contain a:         |
+|                                   |                                   |
+|                                   | -   PowerPoint on how to use the  |
+|                                   |     DAN form                      |
+|                                   | -   Link to the interactive DAN   |
+|                                   |     form                          |
+|                                   | -   Key the business reason on    |
+|                                   |     the pop-up if you need access |
+|                                   |     to the DAN homepage           |
+|                                   | -   Key details into the DAN form |
+|                                   | -   Press Submit                  |
+|                                   |                                   |
+|                                   | Once complete:                    |
+|                                   |                                   |
+|                                   | -   select parked/pended Surgical |
+|                                   |     T8 claim                      |
+|                                   | -   process to finalise the claim |
+|                                   |                                   |
+|                                   | For:                              |
+|                                   |                                   |
+|                                   | -   Bulk Bill Helpdesk            |
+|                                   |     processing, go to Step 5      |
++-----------------------------------+-----------------------------------+
+| 5                                 | Bulk Bill Helpdesk processing +   |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | -   Action SDR/overpayment        |
+|                                   |     following the steps in Step 4 |
+|                                   | -   Send an email to originating  |
+|                                   |     telephony staff advising      |
+|                                   |     overpayment has been          |
+|                                   |     completed using below script: |
+|                                   |                                   |
+|                                   | Hi XX,                            |
+|                                   |                                   |
+|                                   | Please be advised that your Bulk  |
+|                                   | Bill overpayment adjustment       |
+|                                   | request as per attached PREV CON  |
+|                                   | template for mc number XXXX has   |
+|                                   | been actioned. You can now        |
+|                                   | finalise your parked/pended       |
+|                                   | surgical claim.                   |
 +-----------------------------------+-----------------------------------+
 
                                    

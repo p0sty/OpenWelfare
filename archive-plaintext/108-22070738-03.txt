@@ -1,8 +1,3 @@
-
-Single Touch Payroll (STP) 108-22070738
-
--   Background
--   Process
 -   Resources
 -   Training & Support
 
@@ -11,26 +6,242 @@ content exists.
 
 [Expand/Collapse all sections]Expand all
 
-STP Employers
+STP Employer Update (EMCF) screen
+
+Table 1
 
 +-----------------------------------+-----------------------------------+
 | Item                              | Description                       |
 +-----------------------------------+-----------------------------------+
-| 1                                 | STP employer information + Read   |
+| 1                                 | STP employer information in       |
+|                                   | Process Direct (EMCF) + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | The EMCF screen shows the:        |
+|                                   |                                   |
+|                                   | STP Employer Update table         |
+|                                   |                                   |
+|                                   | Employment Income data table      |
+|                                   |                                   |
+|                                   | STP Employer Update table Action  |
+|                                   | field: an edit and delete button  |
+|                                   | show when in the STP Employer     |
+|                                   | Update or Earnings and Reporting  |
+|                                   | workflows                         |
+|                                   |                                   |
+|                                   | Record Status field: the status   |
+|                                   | when employer information has     |
+|                                   | been reviewed by the customer:    |
+|                                   |                                   |
+|                                   | -   Confirmed                     |
+|                                   | -   Unconfirmed                   |
+|                                   | -   Provisional                   |
+|                                   |                                   |
+|                                   | STP Employer Name field: shows    |
+|                                   | the employer’s registered         |
+|                                   | business name                     |
+|                                   |                                   |
+|                                   | ABN field: shows the employer’s   |
+|                                   | 11 digit ABN or 9 Digit WPN       |
+|                                   |                                   |
+|                                   | Status field: shows the status of |
+|                                   | the employer relationship:        |
+|                                   |                                   |
+|                                   | -   Confirmed (CNF): customer     |
+|                                   |     confirms they are working for |
+|                                   |     that employer                 |
+|                                   | -   Rejected (REJ): customer      |
+|                                   |     advises they do not work for  |
+|                                   |     that employer                 |
+|                                   | -   Auto-matched (AUT): system    |
+|                                   |     has automatically matched the |
+|                                   |     pre-filled employer ABN/WPN   |
+|                                   |     with that of an existing      |
+|                                   |     employer ABN/WPN from EANS    |
+|                                   |     (auto-matching no longer      |
+|                                   |     occurs, but this status may   |
+|                                   |     still show)                   |
+|                                   | -   Blank: the customer has not   |
+|                                   |     reviewed the pre-filled       |
+|                                   |     employer details              |
+|                                   |                                   |
+|                                   | Submitted On field: the date of   |
+|                                   | the last update to the Record     |
+|                                   | Status. This may also revert to   |
+|                                   | the previous update date if       |
+|                                   | re-confirming the status as part  |
+|                                   | of a correction                   |
+|                                   |                                   |
+|                                   | Linked Employer field: the name   |
+|                                   | of the matched employer from the  |
+|                                   | customer’s existing employer list |
+|                                   | on EANS. This may also be a brand |
+|                                   | new employer entry                |
+|                                   |                                   |
+|                                   | Note: if either the Status,       |
+|                                   | Submitted On or Linked Employer   |
+|                                   | fields are blank, the STP         |
+|                                   | Employer Update workflow must be  |
+|                                   | run to re-confirm the employer    |
+|                                   | status. See Item 3                |
+|                                   |                                   |
+|                                   | Employment Income data table:     |
+|                                   |                                   |
+|                                   | -   A view only reference table   |
+|                                   |     of existing employers on the  |
+|                                   |     customer’s record (EANS)      |
+|                                   | -   Select the twisty for         |
+|                                   |     relevant employers to view    |
+|                                   |     historical income from (EAN)  |
+|                                   |     to help determine the correct |
+|                                   |     employer to link to.          |
++-----------------------------------+-----------------------------------+
+| 2                                 | EMCF table shows in the Earnings  |
+|                                   | and Reporting workflow + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | STP employer information is       |
-|                                   | displayed on the STP Employer     |
-|                                   | Update (EMCF) screen in Process   |
+|                                   | When new STP employer data is     |
+|                                   | available at the time a customer  |
+|                                   | is reporting, the EMCF screen     |
+|                                   | will show with the STP employer   |
+|                                   | details in the Earnings and       |
+|                                   | Reporting workflow in Process     |
 |                                   | Direct.                           |
 |                                   |                                   |
+|                                   | Service Officers must discuss the |
+|                                   | pre-filled details with the       |
+|                                   | customer and either confirm or    |
+|                                   | reject the details. See Item 3.   |
+|                                   |                                   |
+|                                   | If the customer:                  |
+|                                   |                                   |
+|                                   | -   confirms the STP employer,    |
+|                                   |     the EMCF screen is not shown  |
+|                                   |     again in future reports       |
+|                                   | -   rejects the STP employer and  |
+|                                   |     STP data is available in the  |
+|                                   |     next reporting period, the    |
+|                                   |     STP employer details are      |
+|                                   |     pre-filled again for the      |
+|                                   |     customer to review            |
+|                                   | -   rejects the STP employer a    |
+|                                   |     second time, the STP          |
+|                                   |     employer’s details will not   |
+|                                   |     pre-fill again and an STP     |
+|                                   |     Intervention is generated for |
+|                                   |     further investigation by      |
+|                                   |     trained staff. See Single     |
+|                                   |     Touch Payroll (STP)           |
+|                                   |     interventions                 |
++-----------------------------------+-----------------------------------+
+| 3                                 | Updating STP employer information |
+|                                   | on the EMCF screen + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Before STP employment income can  |
+|                                   | pre-fill for customers and staff, |
+|                                   | a successfully linked STP         |
+|                                   | employer status is needed.        |
+|                                   |                                   |
 |                                   | The standalone STP Employer       |
-|                                   | Update workflow is used to        |
+|                                   | Update workflow can be used to    |
 |                                   | confirm or reject a new STP       |
 |                                   | employer, or update an existing   |
-|                                   | STP employer. Service Officers    |
-|                                   | may need to update an existing    |
-|                                   | STP employer when:                |
+|                                   | STP employer’s record status.     |
+|                                   | Service Officers can also make    |
+|                                   | the same updates on the EMCF      |
+|                                   | screen when using the Earnings    |
+|                                   | and Reporting workflow.           |
+|                                   |                                   |
+|                                   | Key START into the Super Key      |
+|                                   |                                   |
+|                                   | Select the STP Employer Update    |
+|                                   | workflow from Task Selector       |
+|                                   |                                   |
+|                                   | Select Start                      |
+|                                   |                                   |
+|                                   | On the EMCF screen, select Edit   |
+|                                   | to launch an STP Employer Update  |
+|                                   | window.                           |
+|                                   |                                   |
+|                                   | Select Confirmed or Rejected from |
+|                                   | the Status drop down:             |
+|                                   |                                   |
+|                                   | -   If confirming, the Employer   |
+|                                   |     drop down will list all       |
+|                                   |     current employers from EANS.  |
+|                                   | -   Select the existing employer  |
+|                                   |     name or New Employer, then    |
+|                                   |     Save. Selecting Cancel will   |
+|                                   |     go back to the original       |
+|                                   |     screen                        |
+|                                   | -   If linking as a New Employer, |
+|                                   |     it will pre-fill to EAPP with |
+|                                   |     a pay event of 0.00 with DOV  |
+|                                   |     as the Entitlement period     |
+|                                   |     start date (EPSD) that the    |
+|                                   |     update is being made          |
+|                                   |                                   |
+|                                   | When selecting Save, a Receipt    |
+|                                   | Date and Channel window shows.    |
+|                                   | Complete the details and select   |
+|                                   | Save                              |
+|                                   |                                   |
+|                                   | The EMCF screen will show the     |
+|                                   | provisional updates. Check the    |
+|                                   | details are correct, then select  |
+|                                   | Next to continue                  |
+|                                   |                                   |
+|                                   | The EANS screen will show the     |
+|                                   | updated employer with Employer    |
+|                                   | Verification field as STP         |
+|                                   |                                   |
+|                                   | Select Assess and Finalise the    |
+|                                   | task                              |
+|                                   |                                   |
+|                                   | If the STP employer status is     |
+|                                   | rejected and STP data is          |
+|                                   | available when next reporting,    |
+|                                   | the STP employer name and ABN/WPN |
+|                                   | will show again for the customer  |
+|                                   | to review. If the customer        |
+|                                   | rejects the employer a second     |
+|                                   | time, an STP intervention         |
+|                                   | activity will be created for      |
+|                                   | follow up by trained staff.       |
+|                                   |                                   |
+|                                   | Note: when an STP employer has    |
+|                                   | been confirmed and linked to an   |
+|                                   | existing employer from EANS, the  |
+|                                   | pre-filled ABN will override the  |
+|                                   | Employer ABN field of the linked  |
+|                                   | employer. The ABN field of the    |
+|                                   | STP verified employer will become |
+|                                   | greyed out and unable to be       |
+|                                   | updated from EANS.                |
+|                                   |                                   |
+|                                   | If an incorrect employer was      |
+|                                   | linked, run the STP Employer      |
+|                                   | Update workflow to update the STP |
+|                                   | employer status to rejected. This |
+|                                   | will remove the overridden        |
+|                                   | pre-filled ABN. When the activity |
+|                                   | is complete, the Employer ABN     |
+|                                   | field of the incorrectly linked   |
+|                                   | employer will revert to its       |
+|                                   | previous status. The STP Employer |
+|                                   | Update workflow may need to be    |
+|                                   | run again to re-confirm the STP   |
+|                                   | employer and link the correct     |
+|                                   | employer from the existing        |
+|                                   | employer list or select New       |
+|                                   | Employer.                         |
++-----------------------------------+-----------------------------------+
+| 4                                 | When to correct an STP Employer   |
+|                                   | Status on EMCF + Read more ...    |
+|                                   |                                   |
+|                                   | An update to an existing STP      |
+|                                   | employer may be required when:    |
 |                                   |                                   |
 |                                   | -   a customer contacts to        |
 |                                   |     correct their previous        |
@@ -41,105 +252,1892 @@ STP Employers
 |                                   |     list has been linked to the   |
 |                                   |     STP employer                  |
 |                                   | -   a fix is required to resolve  |
-|                                   |     an error that may present     |
-|                                   |     when there are multiple       |
-|                                   |     employer entries (STP and     |
-|                                   |     non-STP) for the same         |
-|                                   |     employer and ABN/WPN that is  |
-|                                   |     preventing the customer from  |
-|                                   |     reporting in self service     |
+|                                   |     an error that may show when   |
+|                                   |     there are multiple employer   |
+|                                   |     entries (STP and non-STP) for |
+|                                   |     the same employer and ABN/WPN |
+|                                   |     that is preventing the        |
+|                                   |     customer from reporting in    |
+|                                   |     self service                  |
+|                                   | -   the previously confirmed      |
+|                                   |     status appears incomplete,    |
+|                                   |     for example Status, Confirmed |
+|                                   |     On and/or Linked Employer     |
+|                                   |     fields are blank              |
+|                                   |                                   |
+|                                   | The STP Employer Update workflow  |
+|                                   | must be run to either re-confirm  |
+|                                   | or reject the employer status.    |
+|                                   | See Item 3.                       |
+|                                   |                                   |
+|                                   | Note: if the workflow is run to   |
+|                                   | reject the link of an incorrect   |
+|                                   | employer, the workflow must be    |
+|                                   | run again to re-confirm the STP   |
+|                                   | Employer and link to the correct  |
+|                                   | employer. Staff cannot reject and |
+|                                   | confirm in the same transaction.  |
+|                                   | Each action must be completed     |
+|                                   | separately before the next action |
+|                                   | can occur.                        |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Update STP Employer status + Read |
-|                                   | more ...                          |
+| 5                                 | Resolve errors caused by multiple |
+|                                   | employer entries + Read more ...  |
 |                                   |                                   |
-|                                   | To update the STP employer        |
-|                                   | status:                           |
-|                                   |                                   |
-|                                   | -   Go to Customer Summary in     |
-|                                   |     Process Direct                |
-|                                   | -   Select the STP Employer       |
-|                                   |     Update workflow from the Task |
-|                                   |     Selector                      |
-|                                   | -   A pop up task selector window |
-|                                   |     will auto-select two screens: |
-|                                   |     EMCF and EANS. Select Next    |
-|                                   | -   Use Edit to launch an STP     |
-|                                   |     Employer Update window to     |
-|                                   |     update the employer status    |
-|                                   |     and details, then select      |
-|                                   |     Save. Selecting Cancel will   |
-|                                   |     take the user back to the     |
-|                                   |     original screen               |
-|                                   | -   When selecting Save, a        |
-|                                   |     Receipt Date and Channel      |
-|                                   |     window displays. Complete the |
-|                                   |     details and select Save       |
-|                                   | -   The EMCF screen will display  |
-|                                   |     the provisional updates.      |
-|                                   |     Check the details are         |
-|                                   |     correct, then select Next to  |
-|                                   |     continue                      |
-|                                   | -   The EANS screen will display, |
-|                                   |     showing the entry created as  |
-|                                   |     part of the 'confirm' or      |
-|                                   |     'reject' action               |
-|                                   | -   Select Assess and Finalise    |
-|                                   |     the task                      |
-|                                   |                                   |
-|                                   | If the workflow is run to remove  |
-|                                   | an incorrect employer that was    |
-|                                   | linked to the STP employer, the   |
-|                                   | workflow must be run again to     |
-|                                   | re-confirm the STP Employer and   |
-|                                   | link to the correct employer from |
-|                                   | the existing employer list.       |
-+-----------------------------------+-----------------------------------+
-| 3                                 | Resolve errors caused by multiple |
-|                                   | entries + Read more ...           |
-|                                   |                                   |
-|                                   | To resolve errors when multiple   |
+|                                   | To resolve errors, including      |
+|                                   | E009EA - You cannot enter a       |
+|                                   | duplicate ABN/WPN and E016CQ -    |
+|                                   | Details for this type of income   |
+|                                   | already exist when multiple       |
 |                                   | entries of the same employer and  |
-|                                   | ABN exist, the following steps    |
-|                                   | must be taken:                    |
+|                                   | ABN/WPN exist, complete these     |
+|                                   | steps:                            |
 |                                   |                                   |
 |                                   | Review the employer and ABN       |
 |                                   | entries on EANS. Identify all     |
 |                                   | matching employer entries         |
 |                                   |                                   |
 |                                   | Identify the correct employer     |
-|                                   | entry. Factors to consider are:   |
+|                                   | entry. Things to consider are:    |
 |                                   |                                   |
 |                                   | -   Do any of the employer        |
 |                                   |     entries have an Employer      |
 |                                   |     Verification status of 'STP'? |
+|                                   | -   Is there a recently added     |
+|                                   |     employer entry with Employer  |
+|                                   |     Verification status of STP    |
+|                                   |     when there was already an     |
+|                                   |     existing employer entry with  |
+|                                   |     income coded?                 |
 |                                   | -   Earliest income recorded and  |
 |                                   |     volume of data on each        |
 |                                   |     employer entry                |
 |                                   | -   Evidence of previously        |
 |                                   |     verified employment income    |
-|                                   |     (eg random samples survey,    |
-|                                   |     employment income reviews)    |
+|                                   |     (for example, random samples  |
+|                                   |     survey, employment income     |
+|                                   |     reviews)                      |
 |                                   |                                   |
-|                                   | If it is determined that an STP   |
-|                                   | verified employer entry is not    |
-|                                   | the correct employer record, the  |
-|                                   | STP Employer Update workflow must |
-|                                   | be run to reject the STP          |
-|                                   | employer. See Item 2.             |
-|                                   |                                   |
-|                                   | Merge all the historical pay      |
-|                                   | events onto the correct employer  |
-|                                   | entry. See Recording and          |
-|                                   | correcting employment income      |
-|                                   | details for coding instructions   |
-|                                   | Note: all employment income       |
-|                                   | recorded prior to 7 December 2020 |
-|                                   | must be coded on the Employment   |
-|                                   | Income Details (EAN) screen       |
+|                                   | Once determined that an incorrect |
+|                                   | employer was selected, or         |
+|                                   | duplicated employer details are   |
+|                                   | causing E009EA, reject the STP    |
+|                                   | employer details on EMCF and then |
+|                                   | re-confirm                        |
 |                                   |                                   |
 |                                   | Run the STP Employer Update       |
-|                                   | workflow to re-confirm the STP    |
-|                                   | Employer, if required             |
+|                                   | workflow                          |
+|                                   |                                   |
+|                                   | If EMCF shows multiple employers  |
+|                                   | with the same ABN on the          |
+|                                   | Employment Income data table:     |
+|                                   |                                   |
+|                                   | -   go to EANS                    |
+|                                   | -   select edit for the employer  |
+|                                   |     that is not STP verified and  |
+|                                   |     remove the ABN, select Save   |
+|                                   |     and go back to EMCF           |
+|                                   |                                   |
+|                                   | From EMCF, select the edit button |
+|                                   | to reject the current STP         |
+|                                   | employer status, select Save and  |
+|                                   | finalise the activity             |
+|                                   |                                   |
+|                                   | -   If E016CQ occurs, check if    |
+|                                   |     there is another employer     |
+|                                   |     entry on EANS with the        |
+|                                   |     duplicated ABN. If so, make   |
+|                                   |     sure the ABN is updated on    |
+|                                   |     EANS before making updates to |
+|                                   |     EMCF, or if there is no ABN   |
+|                                   |     duplication                   |
+|                                   | -   Check there was an existing   |
+|                                   |     employer entry on EANS for    |
+|                                   |     the STP employer. After       |
+|                                   |     rejecting the employer status |
+|                                   |     on EMCF, it removes the       |
+|                                   |     linked ABN to the existing    |
+|                                   |     employer that the STP         |
+|                                   |     employer was linked to. Copy  |
+|                                   |     the ABN from the ABN field on |
+|                                   |     EMCF and enter it in the ABN  |
+|                                   |     field of the existing         |
+|                                   |     employer entry on EANS, and   |
+|                                   |     select Save                   |
+|                                   | -   When all troubleshooting has  |
+|                                   |     been applied, finalise the    |
+|                                   |     activity                      |
+|                                   |                                   |
+|                                   | Run the STP Employer Update       |
+|                                   | workflow again to confirm the     |
+|                                   | employer status and link the      |
+|                                   | correct STP employer. See Item 3. |
+|                                   | Select Save and Next              |
+|                                   |                                   |
+|                                   | When on EANS, merge any pay       |
+|                                   | events that were coded on the     |
+|                                   | incorrect or duplicate employer   |
+|                                   | entry onto the correct STP        |
+|                                   | employer entry. To do this, use   |
+|                                   | the Snipping Tool to take a snip  |
+|                                   | of the income details coded on    |
+|                                   | the ‘incorrect or duplicate’      |
+|                                   | employer. Replicate the coding    |
+|                                   | from the snip onto the STP        |
+|                                   | employer record. When income is   |
+|                                   | merged to the correct STP         |
+|                                   | employer entry, delete the income |
+|                                   | from the incorrect or duplicate   |
+|                                   | employer. For more help with      |
+|                                   | coding employment income, see     |
+|                                   | Recording and correcting          |
+|                                   | employment income details         |
+|                                   |                                   |
+|                                   | When all employment income        |
+|                                   | updates have been made, finalise  |
+|                                   | the activity                      |
++-----------------------------------+-----------------------------------+
+| 6                                 | Provisional STP employer status   |
+|                                   | on EMCF + Read more ...           |
+|                                   |                                   |
+|                                   | If a previously confirmed STP     |
+|                                   | employer has reverted to a        |
+|                                   | ‘provisional’ record status, it   |
+|                                   | may prevent STP data from         |
+|                                   | pre-filling for customers or      |
+|                                   | staff. The record status must be  |
+|                                   | updated.                          |
+|                                   |                                   |
+|                                   | Service Officers can identify     |
+|                                   | this by the Record Status being   |
+|                                   | 'Provisional' without there being |
+|                                   | a started transaction. The Status |
+|                                   | field will also show as Confirmed |
+|                                   | but the Submitted On and/or the   |
+|                                   | Linked Employer fields may be     |
+|                                   | blank.                            |
+|                                   |                                   |
+|                                   | -   Launch the Earnings and       |
+|                                   |     Reporting workflow or the STP |
+|                                   |     Employer Update workflow      |
+|                                   | -   Select the delete icon next   |
+|                                   |     to the relevant STP employer  |
+|                                   |     on the EMCF screen            |
+|                                   | -   If the Record Status remains  |
+|                                   |     as Provisional, select the    |
+|                                   |     delete icon again             |
+|                                   | -   If error Row with the index 1 |
+|                                   |     is not in the table shows,    |
+|                                   |     perform a SAP refresh via the |
+|                                   |     SAP refresh button in the top |
+|                                   |     right                         |
+|                                   | -   Go back to EMCF screen to     |
+|                                   |     confirm the employer now      |
+|                                   |     shows as Confirmed            |
+|                                   | -   Finalise the activity         |
++-----------------------------------+-----------------------------------+
+| 7                                 | Unconfirmed STP employer status   |
+|                                   | on EMCF + Read more ...           |
+|                                   |                                   |
+|                                   | If a previously confirmed STP     |
+|                                   | employer’s record status reverts  |
+|                                   | to ‘unconfirmed’ on EMCF, Service |
+|                                   | Officers can refresh the record   |
+|                                   | status.                           |
+|                                   |                                   |
+|                                   | Select Retrigger located above    |
+|                                   | the STP employer table on the     |
+|                                   | EMCF screen.                      |
++-----------------------------------+-----------------------------------+
+
+STP Employer Wage Items (EMGI) screen
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | STP Employer Wage Items (EMGI)    |
+|                                   | screen + Read more ...            |
+|                                   |                                   |
+|                                   | STP data that has been reported   |
+|                                   | by the employer can only be       |
+|                                   | accessed on the EMGI screen in    |
+|                                   | Process Direct. This information  |
+|                                   | is provided across 3 levels of    |
+|                                   | tables where each level provides  |
+|                                   | more details of the data. To      |
+|                                   | access each level of data, select |
+|                                   | the twisty of each table.         |
+|                                   |                                   |
+|                                   | Pre-filled STP data cannot be     |
+|                                   | deleted on EMGI, however it can   |
+|                                   | be adjusted when using the        |
+|                                   | Earnings and Reporting workflow.  |
+|                                   | Information can only be edited on |
+|                                   | the Income Details table at the   |
+|                                   | third level. If Service Officers  |
+|                                   | do not use the workflow, this     |
+|                                   | screen will have view only        |
+|                                   | access.                           |
+|                                   |                                   |
+|                                   | First level - STP Income Details  |
+|                                   | table + Read more ...             |
+|                                   |                                   |
+|                                   | A high level view of total gross  |
+|                                   | employment income details that    |
+|                                   | have been reported for a certain  |
+|                                   | period. If using the Earnings and |
+|                                   | Reporting workflow to complete a  |
+|                                   | report or to update past periods, |
+|                                   | the reported income paid in the   |
+|                                   | reporting period(s) or past       |
+|                                   | periods will show one at a time.  |
+|                                   | Otherwise, it will show all       |
+|                                   | available STP data for a date     |
+|                                   | range that has been manually      |
+|                                   | selected on EMGI outside the      |
+|                                   | workflow.                         |
+|                                   |                                   |
+|                                   | -   STP Employer Name: the        |
+|                                   |     registered business name with |
+|                                   |     the ATO                       |
+|                                   | -   ABN: the 11 digit ABN or 9    |
+|                                   |     Digit WPN of the employer     |
+|                                   | -   Linked Employer: the name of  |
+|                                   |     the matched employer from the |
+|                                   |     customer’s existing employer  |
+|                                   |     list on EAN                   |
+|                                   | -   Gross STP Income: total gross |
+|                                   |     income reported by the STP    |
+|                                   |     employer                      |
+|                                   | -   Gross Income Reported: the    |
+|                                   |     total gross income paid that  |
+|                                   |     is confirmed by the customer. |
+|                                   |     If the customer has not made  |
+|                                   |     any changes, this figure will |
+|                                   |     be the same as the Gross STP  |
+|                                   |     Income                        |
+|                                   | -   Income Variation: this        |
+|                                   |     indicates if the initial      |
+|                                   |     pre-filled total of Gross STP |
+|                                   |     Income has been adjusted. It  |
+|                                   |     will show as either Upward    |
+|                                   |     varied, Downward varied or    |
+|                                   |     Not varied                    |
+|                                   | -   Reporting Period Start Date:  |
+|                                   |     the start date of the         |
+|                                   |     Services Australia reporting  |
+|                                   |     period (EPSD)                 |
+|                                   | -   Reporting Period End Date:    |
+|                                   |     the end date of the Services  |
+|                                   |     Australia reporting period    |
+|                                   |     (EPED)                        |
+|                                   |                                   |
+|                                   | Second Level- Pay Events table +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | A view of the individual pay      |
+|                                   | events within a reporting         |
+|                                   | period/s or past periods. Where a |
+|                                   | customer is paid weekly, there    |
+|                                   | may be 2 pay event tables to be   |
+|                                   | viewed for each reporting period  |
+|                                   | or when updating a past period.   |
+|                                   | Otherwise, it will show all pay   |
+|                                   | events for a date range that has  |
+|                                   | been manually selected on EMGI    |
+|                                   | outside the workflow.             |
+|                                   |                                   |
+|                                   | -   Action: the edit option is    |
+|                                   |     currently deactivated         |
+|                                   | -   Pay Event Accepted: Yes/No    |
+|                                   |     advises if the customer has   |
+|                                   |     accepted the pay details,     |
+|                                   |     with or without changes       |
+|                                   | -   Pay Event Date: this is the   |
+|                                   |     date employment income was    |
+|                                   |     paid, as advised by the       |
+|                                   |     employer (not necessarily the |
+|                                   |     date the income was received  |
+|                                   |     by the customer). See         |
+|                                   |     Determining the Date of Event |
+|                                   |     for employment income         |
+|                                   | -   Pay Period Start Date: the    |
+|                                   |     start date of the employer’s  |
+|                                   |     pay period                    |
+|                                   | -   Pay Period End Date: the end  |
+|                                   |     date of the employer’s pay    |
+|                                   |     period                        |
+|                                   | -   Gross STP Income: total gross |
+|                                   |     income reported by the STP    |
+|                                   |     employer                      |
+|                                   | -   Gross Income Reported: the    |
+|                                   |     total gross income confirmed  |
+|                                   |     by the customer. If the       |
+|                                   |     customer has not made any     |
+|                                   |     changes, this figure will be  |
+|                                   |     the same as the Gross STP     |
+|                                   |     Income                        |
+|                                   | -   Commencement Date: the        |
+|                                   |     employer reported date of     |
+|                                   |     when the employee commenced   |
+|                                   |     work                          |
+|                                   | -   Employment Status: full time, |
+|                                   |     part time, casual, contract   |
+|                                   |     or labour hire                |
+|                                   | -   Cessation Date: the employer  |
+|                                   |     reported date that the        |
+|                                   |     employee ceased work          |
+|                                   | -   Cessation Reason – the        |
+|                                   |     employer reported reason of   |
+|                                   |     why the employee ceased work  |
+|                                   | -   Record Status: a default of   |
+|                                   |     Confirmed                     |
+|                                   |                                   |
+|                                   | Third Level- Income Details       |
+|                                   | table + Read more ...             |
+|                                   |                                   |
+|                                   | A detailed view of the individual |
+|                                   | pay components that have been     |
+|                                   | reported for each pay event       |
+|                                   | within a reporting period/s or    |
+|                                   | past periods.                     |
+|                                   |                                   |
+|                                   | -   Action: the Pencil icon is    |
+|                                   |     selected to edit the data     |
+|                                   | -   Record Status: a default of   |
+|                                   |     Confirmed                     |
+|                                   | -   Wage item: the type of wage   |
+|                                   |     item that has been paid, for  |
+|                                   |     example, Salary and Wages,    |
+|                                   |     Reportable Fringe Benefit     |
+|                                   |     Amount                        |
+|                                   | -   Component: a breakdown of the |
+|                                   |     type of component that the    |
+|                                   |     wage item is. For example,    |
+|                                   |     Gross Income, Paid leave,     |
+|                                   |     Overtime                      |
+|                                   | -   Subcomponent: more detail     |
+|                                   |     about the component. For      |
+|                                   |     example, unused leave on      |
+|                                   |     termination, other paid       |
+|                                   |     leave. This is an indication  |
+|                                   |     more information may be       |
+|                                   |     needed                        |
+|                                   | -   Additional information: this  |
+|                                   |     will advise if Other          |
+|                                   |     allowances is a reimbursement |
+|                                   |     of work related expenses or   |
+|                                   |     not                           |
+|                                   | -   RFB Free Acco or Avg. Weekly  |
+|                                   |     Wage: this will indicate the  |
+|                                   |     value of free accommodation   |
+|                                   |     as part of Fringe Benefits,   |
+|                                   |     or the average weekly wage of |
+|                                   |     the customer’s recent income  |
+|                                   |     when paid a redundancy        |
+|                                   |     payment after ceasing         |
+|                                   |     employment                    |
+|                                   | -   STP Income Received: gross    |
+|                                   |     income of the pay component   |
+|                                   |     reported by the STP employer. |
+|                                   |     Note: when a customer adds a  |
+|                                   |     pay component that didn’t     |
+|                                   |     pre-fill, this will show as   |
+|                                   |     0.00                          |
+|                                   | -   Income Reported: gross income |
+|                                   |     of the pay component          |
+|                                   |     confirmed by the customer.    |
+|                                   |     Note: when a customer adds a  |
+|                                   |     pay component that didn’t     |
+|                                   |     pre-fill, this will show the  |
+|                                   |     amount the customer has added |
+|                                   | -   Adjusted Period Start Date:   |
+|                                   |     adjusted employer pay period  |
+|                                   |     start date, if applicable.    |
+|                                   |     This is required when Other   |
+|                                   |     paid leave is reported        |
+|                                   | -   Adjusted Period End Date:     |
+|                                   |     adjusted employer pay period  |
+|                                   |     end date, if applicable. This |
+|                                   |     is required when Other paid   |
+|                                   |     leave is reported             |
+|                                   | -   Used in PayPP Calculation:    |
+|                                   |     Yes/No. Indicates if a pay    |
+|                                   |     component is assessable. If   |
+|                                   |     not assessable, the pay       |
+|                                   |     component is not included in  |
+|                                   |     the data mapped to EAPP. For  |
+|                                   |     example, some allowances. See |
+|                                   |     Resources for details         |
+|                                   | -   Amount Mapped to: where       |
+|                                   |     income is assessable, this    |
+|                                   |     field advises the screen that |
+|                                   |     the confirmed income is       |
+|                                   |     coded, as either EAPP or      |
+|                                   |     IMPS. Otherwise it will be    |
+|                                   |     blank                         |
++-----------------------------------+-----------------------------------+
+| 2                                 | View only access of EMGI + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Going to EMGI outside of a        |
+|                                   | workflow will give a view of STP  |
+|                                   | pay events that have already been |
+|                                   | retrieved. STP data is retrieved  |
+|                                   | when a customer has completed a   |
+|                                   | reporting task through self       |
+|                                   | service or where a Service        |
+|                                   | Officer has used the Earnings and |
+|                                   | Reporting workflow in Process     |
+|                                   | Direct.                           |
+|                                   |                                   |
+|                                   | To refresh the view of available  |
+|                                   | STP data, select the date range   |
+|                                   | in the From and To fields. Select |
+|                                   | search to view all STP data in    |
+|                                   | the relevant period.              |
+|                                   |                                   |
+|                                   | There may be times where EMGI     |
+|                                   | does not show any or only some    |
+|                                   | pay events. This may be because   |
+|                                   | the STP pay events have not yet   |
+|                                   | been retrieved due to the         |
+|                                   | following reasons:                |
+|                                   |                                   |
+|                                   | -   Service Officers have         |
+|                                   |     completed a reporting task    |
+|                                   |     using Customer First          |
+|                                   | -   STP data wasn’t available at  |
+|                                   |     the time the reporting task   |
+|                                   |     was actioned                  |
+|                                   | -   STP data was available, but   |
+|                                   |     didn’t pre-fill to the        |
+|                                   |     customer online, for example, |
+|                                   |     data anomalies, non-EAR       |
+|                                   |     employers, partner reported   |
+|                                   |                                   |
+|                                   | To check if other STP data is     |
+|                                   | available, Service Officers must  |
+|                                   | run the Earnings and Reporting    |
+|                                   | workflow:                         |
+|                                   |                                   |
+|                                   | -   select Update past periods    |
+|                                   |     and select the date range to  |
+|                                   |     query                         |
+|                                   | -   select Search. The Past       |
+|                                   |     Period Range table will show  |
+|                                   |     Yes in the STP data present   |
+|                                   |     field for any reporting       |
+|                                   |     periods that STP pay event    |
+|                                   |     data is available             |
+|                                   | -   select the relevant reporting |
+|                                   |     periods, then Next. This will |
+|                                   |     show the STP pay events on    |
+|                                   |     EMGI for review, one          |
+|                                   |     entitlement period at a time  |
++-----------------------------------+-----------------------------------+
+
+Processing STP data
+
+Table 3
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Customers with STP data + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Where STP data is available at    |
+|                                   | the time a customer reports, it   |
+|                                   | may pre-fill in the reporting     |
+|                                   | task in all self service          |
+|                                   | channels:                         |
+|                                   |                                   |
+|                                   | -   Centrelink online account     |
+|                                   | -   Express Plus Centrelink       |
+|                                   |     mobile app                    |
+|                                   | -   Interactive Voice Response    |
+|                                   |     (IVR)                         |
+|                                   |                                   |
+|                                   | A message advises there are       |
+|                                   | details available from their      |
+|                                   | employer. The customer enters the |
+|                                   | STP confirmation service to       |
+|                                   | review the pre-filled             |
+|                                   | information. The customer submits |
+|                                   | the STP data before continuing    |
+|                                   | into the Report employment income |
+|                                   | (REI) service and finalising      |
+|                                   | their report.                     |
+|                                   |                                   |
+|                                   | Depending how often a customer is |
+|                                   | paid, each pay event will show    |
+|                                   | one at a time with an indication  |
+|                                   | of 1 of 1, 1 of 2 or 2 of 2 etc   |
+|                                   | for each employer.                |
+|                                   |                                   |
+|                                   | Customers have control over the   |
+|                                   | STP data that is applied in their |
+|                                   | reporting task. They can adjust   |
+|                                   | the pre-filled details and add    |
+|                                   | pay components that have not      |
+|                                   | pre-filled yet if required,       |
+|                                   | before confirming the STP         |
+|                                   | employment details and continuing |
+|                                   | with their report. Customers can  |
+|                                   | check their payslips if they are  |
+|                                   | unsure about the pre-filled       |
+|                                   | details. Customers should only be |
+|                                   | encouraged to talk to their       |
+|                                   | employers if they have questions  |
+|                                   | about details on their payslip.   |
+|                                   |                                   |
+|                                   | When a customer selects Submit    |
+|                                   | and continue in the STP           |
+|                                   | confirmation service, they have   |
+|                                   | confirmed their STP data. They    |
+|                                   | cannot go back to make changes.   |
+|                                   |                                   |
+|                                   | Customers can see the confirmed   |
+|                                   | details from the STP confirmation |
+|                                   | service added to the next step of |
+|                                   | the reporting task. Customers     |
+|                                   | have a further opportunity to     |
+|                                   | review their income details       |
+|                                   | before they finalise their        |
+|                                   | report. If needed, they can add   |
+|                                   | the following in the REI service: |
+|                                   |                                   |
+|                                   | -   additional pay events         |
+|                                   | -   income from non-STP employers |
+|                                   | -   hours worked, and             |
+|                                   | -   partner income                |
+|                                   |                                   |
+|                                   | For more details, see Item 3.     |
+|                                   |                                   |
+|                                   | Online guides for customers and   |
+|                                   | staff simulations can help with   |
+|                                   | customer enquiries. See Resources |
+|                                   | for links.                        |
++-----------------------------------+-----------------------------------+
+| 2                                 | Customers can change provisional  |
+|                                   | STP data + Read more ...          |
+|                                   |                                   |
+|                                   | When STP data is available when   |
+|                                   | reporting, it has a provisional   |
+|                                   | status. Customers can change the  |
+|                                   | pre-filled STP details, if        |
+|                                   | required, before confirming the   |
+|                                   | data. It is important that        |
+|                                   | customers check their payslip/s   |
+|                                   | carefully, if they are unsure     |
+|                                   | about the pre-filled details.     |
+|                                   |                                   |
+|                                   | Customers can select Edit or add  |
+|                                   | pay to change each pay event that |
+|                                   | has pre-filled. For example, they |
+|                                   | can adjust the amount of a        |
+|                                   | pre-filled pay component or add   |
+|                                   | an additional pay component paid  |
+|                                   | in the same pay event. If a       |
+|                                   | customer is paid weekly and only  |
+|                                   | one pay event has pre-filled,     |
+|                                   | they can select Add pay to add    |
+|                                   | the second weekly pay event       |
+|                                   | details.                          |
+|                                   |                                   |
+|                                   | If a customer has more than one   |
+|                                   | STP employer, the details will    |
+|                                   | pre-fill one employer at a time.  |
+|                                   | Customers are required to check   |
+|                                   | and confirm the pre-filled        |
+|                                   | details from the first STP        |
+|                                   | employer, before details from the |
+|                                   | second STP employer can be shown. |
+|                                   | Customers can only make updates   |
+|                                   | to the STP data for the employer  |
+|                                   | they are currently reviewing in   |
+|                                   | the workflow.                     |
+|                                   |                                   |
+|                                   | Customers are not able to declare |
+|                                   | other non-STP employment income   |
+|                                   | or hours worked while in the STP  |
+|                                   | confirmation service. This can be |
+|                                   | done after the STP data has been  |
+|                                   | reviewed and accepted, and the    |
+|                                   | customer has continued to the REI |
+|                                   | service to complete their report. |
+|                                   |                                   |
+|                                   | Employees may have their          |
+|                                   | employment status reported by     |
+|                                   | their STP employer. A full time   |
+|                                   | employment status may pre-fill up |
+|                                   | to two times of the data first    |
+|                                   | being reported. Customers can     |
+|                                   | select Edit employment status to  |
+|                                   | update this, if needed. Note: the |
+|                                   | definition of Full time           |
+|                                   | employment is not the same for    |
+|                                   | the ATO and Services Australia.   |
+|                                   |                                   |
+|                                   | When the STP declaration is       |
+|                                   | accepted, no more changes to the  |
+|                                   | confirmed pre-filled STP data can |
+|                                   | be made by the customer.          |
+|                                   |                                   |
+|                                   | Customers do not need to upload   |
+|                                   | payslips if they make a change to |
+|                                   | the STP data, but Services        |
+|                                   | Australia may ask for more        |
+|                                   | information later.                |
++-----------------------------------+-----------------------------------+
+| 3                                 | Customers reporting through       |
+|                                   | online channels + Read more ...   |
+|                                   |                                   |
+|                                   | When reporting through online     |
+|                                   | channels and STP data is          |
+|                                   | available, details will show to   |
+|                                   | the customer in the STP           |
+|                                   | confirmation service. This means  |
+|                                   | the reporting task will be a      |
+|                                   | 2-step process.                   |
+|                                   |                                   |
+|                                   | The customer needs to review the  |
+|                                   | pre-filled information, make any  |
+|                                   | required changes and confirm the  |
+|                                   | details before they enter the     |
+|                                   | Report employment income (REI)    |
+|                                   | service to complete their         |
+|                                   | reporting task.                   |
+|                                   |                                   |
+|                                   | First step: + Read more ...       |
+|                                   |                                   |
+|                                   | Customers are directed to the STP |
+|                                   | confirmation service to review    |
+|                                   | and accept or change the          |
+|                                   | pre-filled STP data. After        |
+|                                   | reviewing the pre-filled details, |
+|                                   | the customer is taken to the STP  |
+|                                   | declaration where they select     |
+|                                   | Submit and continue to confirm    |
+|                                   | the details. When submitted,      |
+|                                   | customers are not able to make    |
+|                                   | any more changes to the confirmed |
+|                                   | STP data. If the customer         |
+|                                   | realises after that a separate    |
+|                                   | pay event didn’t pre-fill from    |
+|                                   | their STP employer, the customer  |
+|                                   | can add this in the second part   |
+|                                   | of their report.                  |
+|                                   |                                   |
+|                                   | If there is more than one STP     |
+|                                   | employer, the STP data will show  |
+|                                   | one employer at a time for the    |
+|                                   | customer to review and confirm.   |
+|                                   | The customer must confirm the STP |
+|                                   | data paid from the first employer |
+|                                   | before the employment details     |
+|                                   | reported by the second employer   |
+|                                   | can be shown to review and        |
+|                                   | confirm.                          |
+|                                   |                                   |
+|                                   | If a customer is paid more than   |
+|                                   | once in a reporting period by     |
+|                                   | their STP employer, the pay       |
+|                                   | events are shown one at a time    |
+|                                   | for the customer to check. For    |
+|                                   | example, Pay 1 of 2, Pay 2 of 2.  |
+|                                   |                                   |
+|                                   | Customers are not able to add pay |
+|                                   | events for non STP employers in   |
+|                                   | this part of the workflow.        |
+|                                   |                                   |
+|                                   | When the customer confirms the    |
+|                                   | STP income details, the data will |
+|                                   | be automatically applied to the   |
+|                                   | EAPP/IMPS screens.                |
+|                                   |                                   |
+|                                   | Second step: + Read more ...      |
+|                                   |                                   |
+|                                   | After submitting the STP data,    |
+|                                   | the customer will enter the REI   |
+|                                   | service of the workflow to        |
+|                                   | continue with their reporting.    |
+|                                   | They will see the confirmed STP   |
+|                                   | data that is assessed as          |
+|                                   | employment income, pre-filled     |
+|                                   | under My pay in their report.     |
+|                                   | Customers can select Add more pay |
+|                                   | to add more pay events that have  |
+|                                   | not pre-filled from the STP       |
+|                                   | employer. However, they are not   |
+|                                   | able to change the STP data that  |
+|                                   | has already been confirmed.       |
+|                                   |                                   |
+|                                   | They can add any other employment |
+|                                   | income paid by non-STP employers  |
+|                                   | for themselves and their partner  |
+|                                   | and report any hours worked, if   |
+|                                   | required. The fortnightly report  |
+|                                   | is only finalised when the        |
+|                                   | customer also submits the REI     |
+|                                   | declaration.                      |
+|                                   |                                   |
+|                                   | After the customer submits the    |
+|                                   | REI declaration successfully,     |
+|                                   | they will see the Receipt page    |
+|                                   | confirming their report has been  |
+|                                   | finalised. It will include, a     |
+|                                   | receipt number and details of     |
+|                                   | their next payment.               |
+|                                   |                                   |
+|                                   | A DOC will generate on their      |
+|                                   | record with the captured STP data |
+|                                   | and other details. If the         |
+|                                   | customer exits the reporting      |
+|                                   | service after only submitting the |
+|                                   | STP data at the first step, a DOC |
+|                                   | will still generate with the STP  |
+|                                   | data only. If a Service Officer   |
+|                                   | helps the customer complete their |
+|                                   | reporting, a separate DOC is      |
+|                                   | generated. This DOC may show no   |
+|                                   | income declared if no more income |
+|                                   | details are added by Service      |
+|                                   | Officers. This is because the     |
+|                                   | customer has already confirmed    |
+|                                   | STP data which can be viewed on   |
+|                                   | EAPP and EMGI, as well as the     |
+|                                   | earlier DOC.                      |
+|                                   |                                   |
+|                                   | Service Officers can view         |
+|                                   | simulations of the customer       |
+|                                   | reporting process on the Staff    |
+|                                   | Training Simulations page.        |
++-----------------------------------+-----------------------------------+
+| 4                                 | Customers cannot change confirmed |
+|                                   | STP data + Read more ...          |
+|                                   |                                   |
+|                                   | When a customer reviews their STP |
+|                                   | data and selects Submit and       |
+|                                   | continue in the STP confirmation  |
+|                                   | service, they are unable to       |
+|                                   | change the STP data through self  |
+|                                   | service channels. This includes   |
+|                                   | where they have not yet completed |
+|                                   | their report. If the pre-filled   |
+|                                   | gross amount should have been     |
+|                                   | adjusted before it was confirmed, |
+|                                   | the customer must contact on      |
+|                                   | their regular payment line to     |
+|                                   | discuss.                          |
+|                                   |                                   |
+|                                   | If a customer realises they       |
+|                                   | needed to add further income      |
+|                                   | details for their STP employer,   |
+|                                   | they can select Add more pay      |
+|                                   | under My pay in the Report        |
+|                                   | employment income service. They   |
+|                                   | will then be able to add pay      |
+|                                   | amounts that did not pre-fill,    |
+|                                   | before finalising their report.   |
+|                                   |                                   |
+|                                   | Employment income reported in the |
+|                                   | last 6 reporting periods can be   |
+|                                   | viewed by customers through self  |
+|                                   | service. Once confirmed,          |
+|                                   | customers are not able to change  |
+|                                   | STP data in a previous report.    |
+|                                   | They must contact Services        |
+|                                   | Australia and give evidence of    |
+|                                   | the changes (payslip/s, a payroll |
+|                                   | report or a letter from the       |
+|                                   | employer) before staff make any   |
+|                                   | updates.                          |
+|                                   |                                   |
+|                                   | Evidence is not required where it |
+|                                   | is clear the changes are only     |
+|                                   | where there has been a            |
+|                                   | duplication of income. Service    |
+|                                   | Officers must clearly DOC this    |
+|                                   | decision and conversation with    |
+|                                   | the customer.                     |
++-----------------------------------+-----------------------------------+
+| 5                                 | STP data for staff in Process     |
+|                                   | Direct + Read more ...            |
+|                                   |                                   |
+|                                   | STP data is only available to     |
+|                                   | staff when using the following in |
+|                                   | Process Direct:                   |
+|                                   |                                   |
+|                                   | -   Earnings and Reporting        |
+|                                   |     workflow                      |
+|                                   | -   STP Employer Update workflow  |
+|                                   | -   STP Interventions workflow    |
+|                                   | -   manual navigation to the STP  |
+|                                   |     Employer Update (EMCF) or STP |
+|                                   |     Employer Wage Items (EMGI)    |
+|                                   |     screens (view only)           |
++-----------------------------------+-----------------------------------+
+| 6                                 | Confirmed STP data on EAPP and    |
+|                                   | IMPS + Read more ...              |
+|                                   |                                   |
+|                                   | When STP data is confirmed and    |
+|                                   | accepted by the customer, it is   |
+|                                   | automatically loaded onto the     |
+|                                   | appropriate screens on the        |
+|                                   | customer’s record.                |
+|                                   |                                   |
+|                                   | The Employment Income Paid        |
+|                                   | Details (EAPP) screen will show:  |
+|                                   |                                   |
+|                                   | -   each assessable employment    |
+|                                   |     income component under the    |
+|                                   |     one employer name             |
+|                                   | -   a frequency of LOP with start |
+|                                   |     and end dates of the employer |
+|                                   |     pay period or the duration    |
+|                                   |     that certain pay components   |
+|                                   |     were paid for (as advised by  |
+|                                   |     the customer)                 |
+|                                   | -   DOV as the date the           |
+|                                   |     employment income was paid,   |
+|                                   |     as reported by the employer.  |
+|                                   |     See Determining the Date of   |
+|                                   |     Event for employment income   |
+|                                   | -   a verification code of STV    |
+|                                   |     for confirmed STP details, or |
+|                                   |     NVE for manually added income |
+|                                   |     by the customer               |
+|                                   |                                   |
+|                                   | Confirmed unused leave and        |
+|                                   | termination payments paid when a  |
+|                                   | customer ceases work are mapped   |
+|                                   | to the IMPS screen with a         |
+|                                   | verification code of STP. See     |
+|                                   | Cessation Data.                   |
++-----------------------------------+-----------------------------------+
+| 7                                 | Customer contacts to correct      |
+|                                   | their confirmed STP data + Read   |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Discuss with the customer why the |
+|                                   | confirmed STP data needs to be    |
+|                                   | changed. Evidence must be         |
+|                                   | provided (payslip/s, a payroll    |
+|                                   | report or a letter from the       |
+|                                   | employer) to verify the confirmed |
+|                                   | STP data was incorrect.           |
+|                                   |                                   |
+|                                   | Do not manually make updates to   |
+|                                   | the STP data directly on the EAPP |
+|                                   | or IMPS screens.                  |
+|                                   |                                   |
+|                                   | All updates to STP data must be   |
+|                                   | actioned in the Earnings and      |
+|                                   | Reporting workflow in Process     |
+|                                   | Direct, selecting the Update Past |
+|                                   | Periods option from the Task      |
+|                                   | Selector and selecting Yes when   |
+|                                   | asked to update past periods.     |
+|                                   |                                   |
+|                                   | After selecting the relevant      |
+|                                   | periods from the Past Period      |
+|                                   | Range, the EMGI screen shows.     |
+|                                   | Each reporting period will show   |
+|                                   | one at a time. When the           |
+|                                   | correction for the reporting      |
+|                                   | period is made, select Accept     |
+|                                   | Income, then Next. This action    |
+|                                   | applies the changes to the EAPP   |
+|                                   | and/or IMPS screens.              |
+|                                   |                                   |
+|                                   | Check the following:              |
+|                                   |                                   |
+|                                   | -   Changes on EMGI are being     |
+|                                   |     correctly applied to EAPP.    |
+|                                   |     Where duplicated amounts have |
+|                                   |     been adjusted to 0.00, the    |
+|                                   |     income that had mapped to     |
+|                                   |     EAPP must be deleted          |
+|                                   | -   Income hasn’t been doubled up |
+|                                   |     from having STP data applied  |
+|                                   |     and manually coded income,    |
+|                                   |     with NVE code. Where manually |
+|                                   |     coded income results in       |
+|                                   |     duplication of a pay event,   |
+|                                   |     delete the manually added     |
+|                                   |     entries. Any updates to       |
+|                                   |     cessation payments on EMGI    |
+|                                   |     may insert a new entry on     |
+|                                   |     IMPS. Make sure to delete the |
+|                                   |     previous coding that had      |
+|                                   |     mapped                        |
+|                                   |                                   |
+|                                   | If multiple reporting periods     |
+|                                   | need updating, the workflow       |
+|                                   | repeats until all reporting       |
+|                                   | periods have been actioned.       |
+|                                   |                                   |
+|                                   | Any changes to confirmed data     |
+|                                   | must be discussed with the        |
+|                                   | customer and noted in a DOC.      |
+|                                   |                                   |
+|                                   | Duplicated STP data               |
+|                                   |                                   |
+|                                   | Where a customer has accepted pay |
+|                                   | events that have been duplicated, |
+|                                   | evidence is not required when it  |
+|                                   | is clear the data has been        |
+|                                   | duplicated. Service Officers must |
+|                                   | Update past periods and zero out  |
+|                                   | each duplicated pay component on  |
+|                                   | EMGI so that only the singular    |
+|                                   | pay event remains.                |
+|                                   |                                   |
+|                                   | Once Accept income is selected,   |
+|                                   | the Gross STP Income field will   |
+|                                   | show the duplicated total and the |
+|                                   | Gross Income Reported field will  |
+|                                   | show the correct singular total   |
+|                                   | for the reporting period.         |
+|                                   |                                   |
+|                                   | When going to EAPP, Service       |
+|                                   | Officers must delete the          |
+|                                   | duplicated components so only the |
+|                                   | singular pay event remains, as    |
+|                                   | system functionality doesn’t      |
+|                                   | allow a correction of $0 to be    |
+|                                   | inserted.                         |
+|                                   |                                   |
+|                                   | Service Officers using the        |
+|                                   | Earnings and Reporting workflow   |
+|                                   | in Process Direct must add notes  |
+|                                   | about any changes made before     |
+|                                   | finalising the reporting          |
+|                                   | activity. Staff must also         |
+|                                   | consider requesting payslips      |
+|                                   | where the customer consistently   |
+|                                   | makes changes to the pre-filled   |
+|                                   | STP data that is reported by the  |
+|                                   | employer.                         |
++-----------------------------------+-----------------------------------+
+| 8                                 | Correcting manually added         |
+|                                   | employment income when STP data   |
+|                                   | is available later + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | If updating a past period of      |
+|                                   | employment income that was        |
+|                                   | manually coded on EAPP, and STP   |
+|                                   | data is now available that wasn’t |
+|                                   | previously accepted, the workflow |
+|                                   | will go to EMGI to check, confirm |
+|                                   | or change the STP details.        |
+|                                   |                                   |
+|                                   | Once Accept income is selected,   |
+|                                   | the confirmed STP data will       |
+|                                   | update on EAPP. The income that   |
+|                                   | was manually coded must be        |
+|                                   | deleted. This is because updates  |
+|                                   | to EMGI will only update the      |
+|                                   | relevant pay events that had      |
+|                                   | previously been confirmed and     |
+|                                   | mapped to EAPP.                   |
+|                                   |                                   |
+|                                   | Note: if the Earnings and         |
+|                                   | Reporting workflow task in        |
+|                                   | Process Direct is not selected,   |
+|                                   | the edit option on EMGI is not    |
+|                                   | functional. Service Officers will |
+|                                   | only be able to view STP data     |
+|                                   | outside of a workflow.            |
+|                                   |                                   |
+|                                   | See Recording and correcting      |
+|                                   | employment income details for     |
+|                                   | coding instructions               |
++-----------------------------------+-----------------------------------+
+
+Common questions and troubleshooting
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | STP data pre-fills in the         |
+|                                   | workflow, but doesn’t update to   |
+|                                   | EAPP + Read more ...              |
+|                                   |                                   |
+|                                   | Check the employer status on EMCF |
+|                                   | is confirmed and all fields are   |
+|                                   | completed, for example, date      |
+|                                   | submitted and linked employer.    |
+|                                   | See Item 4 in Table 1.            |
+|                                   |                                   |
+|                                   | After viewing and confirming the  |
+|                                   | STP data, check that Accept       |
+|                                   | income is selected. Once the      |
+|                                   | Accept income button has been     |
+|                                   | selected, it will be greyed out.  |
+|                                   |                                   |
+|                                   | Check if the STP employer has     |
+|                                   | been linked to an existing        |
+|                                   | employer that is an SWS/ADE       |
+|                                   | employment type. Confirmed STP    |
+|                                   | income will not map to EAPP.      |
+|                                   | Service Officers must manually    |
+|                                   | code the confirmed STP data on    |
+|                                   | EAPP.                             |
+|                                   |                                   |
+|                                   | If the income was mapped to EAPP  |
+|                                   | but has been inadvertently        |
+|                                   | deleted:                          |
+|                                   |                                   |
+|                                   | -   go back to EMGI               |
+|                                   | -   select the pay event/s that   |
+|                                   |     need to be mapped to EAPP     |
+|                                   |     again                         |
+|                                   | -   select the edit button and    |
+|                                   |     then Save without any         |
+|                                   |     changes. This will reactivate |
+|                                   |     the Accept income button      |
+|                                   | -   once selecting Accept income, |
+|                                   |     the pay event details will    |
+|                                   |     map back to EAPP              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Why STP data does not pre-fill +  |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | STP data reported by employers to |
+|                                   | the ATO is prepared by Services   |
+|                                   | Australia in near real time to    |
+|                                   | pre-fill in reporting channels.   |
+|                                   | For more details, see Data and    |
+|                                   | Digital Gateway.                  |
+|                                   |                                   |
+|                                   | The below circumstances may       |
+|                                   | result in STP data not            |
+|                                   | pre-filling in a reporting        |
+|                                   | statement:                        |
+|                                   |                                   |
+|                                   | -   the employer does not report  |
+|                                   |     payroll via Phase 2 STP       |
+|                                   |     enabled software yet          |
+|                                   | -   no match was established on   |
+|                                   |     the Mutual Client Register    |
+|                                   |     (MCR).See Mutual Client       |
+|                                   |     Register (MCR) for Service    |
+|                                   |     Delivery staff                |
+|                                   | -   the customer has rejected the |
+|                                   |     STP employer twice            |
+|                                   | -   the customer has previously   |
+|                                   |     had an employment type of     |
+|                                   |     SWS, ADE, AOE, SAC, PSS or    |
+|                                   |     PSG recorded on EANS. STP     |
+|                                   |     data will only pre-fill in a  |
+|                                   |     customer’s report when there  |
+|                                   |     is only an EAR employment     |
+|                                   |     type on EANS. (STP data would |
+|                                   |     then only be accessed through |
+|                                   |     staff assisted reporting in   |
+|                                   |     Process Direct)               |
+|                                   | -   the confirmed STP employer    |
+|                                   |     reports payroll later on the  |
+|                                   |     day that the customer         |
+|                                   |     reports. This may include     |
+|                                   |     where one weekly pay event is |
+|                                   |     pre-filled, but a second      |
+|                                   |     weekly pay event is not       |
+|                                   |     available                     |
+|                                   | -   the confirmed STP employer    |
+|                                   |     has not reported payroll yet  |
+|                                   |     when the customer reports     |
+|                                   |     early due to a public holiday |
+|                                   |     or travelling overseas.       |
+|                                   |     Employers may delay reporting |
+|                                   |     payroll during shutdown       |
+|                                   |     periods                       |
+|                                   | -   inconsistent reporting dates  |
+|                                   |     from the employer             |
+|                                   | -   missing data attributes       |
+|                                   |     resulting in filtering out of |
+|                                   |     pay events                    |
+|                                   | -   unusual data may trigger a    |
+|                                   |     Low Confidence Indicator      |
+|                                   |     which will prevent STP data   |
+|                                   |     pre-filling                   |
+|                                   | -   known system issue where the  |
+|                                   |     STP employer’s record status  |
+|                                   |     reverts to provisional during |
+|                                   |     the reporting task. See Item  |
+|                                   |     6 in Table 1 to resolve       |
+|                                   | -   data transfer delays between  |
+|                                   |     the employer, the ATO and/or  |
+|                                   |     Services Australia. Check     |
+|                                   |     NNUs                          |
+|                                   | -   data preparation issues.      |
+|                                   |     Check NNUs                    |
+|                                   |                                   |
+|                                   | Note: STP pay events reported     |
+|                                   | after the relevant reporting      |
+|                                   | period do not pre-fill for the    |
+|                                   | customer to review when next      |
+|                                   | reporting.                        |
++-----------------------------------+-----------------------------------+
+| 3                                 | Why can’t I see the STP data in   |
+|                                   | the Earnings and Reporting        |
+|                                   | workflow? + Read more ...         |
+|                                   |                                   |
+|                                   | STP data will only pre-fill in    |
+|                                   | the workflow when there is a      |
+|                                   | current reporting task. This      |
+|                                   | means that when a customer’s      |
+|                                   | report has been completed, the    |
+|                                   | workflow doesn’t automatically go |
+|                                   | to EMGI if it is run again.       |
+|                                   |                                   |
+|                                   | If needing to view or update the  |
+|                                   | current or past STP data, select  |
+|                                   | Update past periods and select    |
+|                                   | the date range to check. This     |
+|                                   | action is needed even when        |
+|                                   | updating an STP pay event         |
+|                                   | confirmed earlier on the same     |
+|                                   | day.                              |
++-----------------------------------+-----------------------------------+
+| 4                                 | The Accept Income button is       |
+|                                   | greyed out + Read more ...        |
+|                                   |                                   |
+|                                   | If the Accept Income button is    |
+|                                   | greyed out when completing a      |
+|                                   | reporting task, it means the STP  |
+|                                   | data has already been confirmed.  |
+|                                   | DL will have a DOC with details   |
+|                                   | of the accepted STP data and if   |
+|                                   | there were any variations made.   |
+|                                   |                                   |
+|                                   | If no changes are needed to the   |
+|                                   | already accepted income, check    |
+|                                   | the income has mapped to EAPP and |
+|                                   | finalise the activity.            |
+|                                   |                                   |
+|                                   | If the customer has contacted as  |
+|                                   | they confirmed the pre-filled     |
+|                                   | income before they could make     |
+|                                   | changes, refer to Item 6 in Table |
+|                                   | 3 about whether evidence is       |
+|                                   | required. Select the edit button  |
+|                                   | for the component that needs to   |
+|                                   | be changed, make the updates and  |
+|                                   | select Save. This will reactivate |
+|                                   | the Accept income button.         |
++-----------------------------------+-----------------------------------+
+| 5                                 | Missing STP data + Read more ...  |
+|                                   |                                   |
+|                                   | Depending on when a customer      |
+|                                   | reports, there may be times when  |
+|                                   | all pay events paid in the        |
+|                                   | reporting period are not          |
+|                                   | pre-filled. The most common       |
+|                                   | scenarios are where customers are |
+|                                   | paid weekly, or fortnightly       |
+|                                   | payroll which is reported by the  |
+|                                   | employer to the ATO on the same   |
+|                                   | day the customer reports.         |
+|                                   |                                   |
+|                                   | Customers who are paid weekly by  |
+|                                   | their STP employer, may have only |
+|                                   | one pay event pre-filled at the   |
+|                                   | time of their report. Even if an  |
+|                                   | employer has reported their       |
+|                                   | payroll data on the same day, the |
+|                                   | STP data needs time to be         |
+|                                   | prepared for it to pre-fill.      |
+|                                   |                                   |
+|                                   | The customer must add pay details |
+|                                   | that haven’t pre-filled. In some  |
+|                                   | cases, it may be appropriate to   |
+|                                   | discuss with the customer about   |
+|                                   | changing their reporting day. See |
+|                                   | Changing Entitlement Period End   |
+|                                   | Dates (EPED)                      |
++-----------------------------------+-----------------------------------+
+| 6                                 | Date paid is incorrect + Read     |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | The date of event used to assess  |
+|                                   | employment income is the date the |
+|                                   | employer pays the employee, not   |
+|                                   | necessarily when the employee     |
+|                                   | receives the payment. See         |
+|                                   | Determining the Date of Event for |
+|                                   | employment income.                |
+|                                   |                                   |
+|                                   | Customers and staff are not able  |
+|                                   | to edit the date paid reported by |
+|                                   | the employer through STP.         |
+|                                   | Usually, the date is correct as   |
+|                                   | it is reported by the employer.   |
+|                                   |                                   |
+|                                   | If the customer advises the       |
+|                                   | provisional STP date paid is not  |
+|                                   | correct and needs to be changed,  |
+|                                   | the pre-filled pay event          |
+|                                   | amount(s) can be zeroed and then  |
+|                                   | re-coded as a new pay event with  |
+|                                   | the date paid as advised by the   |
+|                                   | customer.                         |
++-----------------------------------+-----------------------------------+
+| 7                                 | Why does STP data seem            |
+|                                   | incorrect + Read more ...         |
+|                                   |                                   |
+|                                   | Customers have control over the   |
+|                                   | STP data that pre-fills and can   |
+|                                   | make adjustments when the pay     |
+|                                   | details do not match their        |
+|                                   | payslip.                          |
+|                                   |                                   |
+|                                   | There may be times when the data  |
+|                                   | doesn’t match, due to but not     |
+|                                   | limited to:                       |
+|                                   |                                   |
+|                                   | -   the employer having made a    |
+|                                   |     mistake when reporting pay    |
+|                                   |     components                    |
+|                                   | -   the employer reporting final  |
+|                                   |     pay details at the end of the |
+|                                   |     financial year, for a         |
+|                                   |     previous period already paid  |
+|                                   | -   the employer making a later   |
+|                                   |     correction to an amount       |
+|                                   |     already reported to the ATO   |
+|                                   | -   missing data attributes       |
+|                                   |     filtered out a previous pay   |
+|                                   |     event(s). When this is        |
+|                                   |     resolved, the missing STP pay |
+|                                   |     event(s) are included in the  |
+|                                   |     total of a later pay event    |
+|                                   | -   the employer reporting        |
+|                                   |     multiple pay events in the    |
+|                                   |     same report                   |
+|                                   |                                   |
+|                                   | In all cases where a customer     |
+|                                   | advises the pre-filled amounts    |
+|                                   | don’t match their payslip,        |
+|                                   | corrections must be made.         |
++-----------------------------------+-----------------------------------+
+| 8                                 | When to escalate an issue + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Customers have control over the   |
+|                                   | STP data that pre-fills and can   |
+|                                   | make corrections when the pay     |
+|                                   | details do not match their        |
+|                                   | payslip.                          |
+|                                   |                                   |
+|                                   | In some cases, there may be       |
+|                                   | one-off events where pre-filled   |
+|                                   | data may not match the details on |
+|                                   | the payslip. Contact Local Peer   |
+|                                   | Support if unsure about the pay   |
+|                                   | components as they may show       |
+|                                   | differently through STP compared  |
+|                                   | to the payslip, but the total     |
+|                                   | gross income may be the same.     |
+|                                   |                                   |
+|                                   | Where a customer has advised the  |
+|                                   | STP data is consistently          |
+|                                   | incorrect, payslips must be       |
+|                                   | provided to clarify the           |
+|                                   | discrepancies. Once uploaded,     |
+|                                   | Service Officers must lodge a     |
+|                                   | mySupport request through the     |
+|                                   | Single Touch Payroll (STP)        |
+|                                   | pre-filled employment data        |
+|                                   | request form. See Resources for a |
+|                                   | link.                             |
+|                                   |                                   |
+|                                   | Where staff are helping a         |
+|                                   | customer report and they advise   |
+|                                   | the pre-filled amount is          |
+|                                   | incorrect, Service Officers must  |
+|                                   | DOC the discussion. Where staff   |
+|                                   | can see the customer has varied   |
+|                                   | pre-filled data in previous       |
+|                                   | reports, make sure payslips have  |
+|                                   | been requested and uploaded, and  |
+|                                   | lodge a mySupport request.        |
+|                                   |                                   |
+|                                   | The STP program monitor employer  |
+|                                   | behaviour and will escalate       |
+|                                   | discrepancies to the ATO when     |
+|                                   | needed.                           |
++-----------------------------------+-----------------------------------+
+| 9                                 | FTO Employment status has         |
+|                                   | incorrectly cancelled a jobseeker |
+|                                   | customer + Read more ...          |
+|                                   |                                   |
+|                                   | Where an employee is regarded as  |
+|                                   | full-time by their employer, the  |
+|                                   | full-time employment status is    |
+|                                   | reported for the first 2 cases.   |
+|                                   | If the customer then reports 70+  |
+|                                   | hours in their reporting task,    |
+|                                   | their payment may cancel.         |
+|                                   |                                   |
+|                                   | The definition of full time       |
+|                                   | employment is not the same for    |
+|                                   | the ATO and Services Australia.   |
+|                                   |                                   |
+|                                   | If a customer contacts about      |
+|                                   | cancellation (CAN-FTE) of their   |
+|                                   | payment:                          |
+|                                   |                                   |
+|                                   | -   check the employment status   |
+|                                   |     reported by the STP employer  |
+|                                   |     on the STP Employer Wage      |
+|                                   |     Items (EMGI) screen in        |
+|                                   |     Process Direct                |
+|                                   | -   discuss with the customer if  |
+|                                   |     they have ongoing full time   |
+|                                   |     employment                    |
+|                                   | -   check the Customer Employment |
+|                                   |     Status Update (EAES) screen   |
+|                                   |     for any FTO entries           |
+|                                   | -   check the EAPP screen for     |
+|                                   |     previous FTO status coding on |
+|                                   |     the HOP line                  |
+|                                   | -   review the number of hours    |
+|                                   |     reported by the customer in   |
+|                                   |     recent reporting periods      |
+|                                   |                                   |
+|                                   | Correct the employment status to  |
+|                                   | PTC for each HOP line impacted    |
+|                                   | where the customer:               |
+|                                   |                                   |
+|                                   | -   advises they do not have      |
+|                                   |     ongoing full time employment, |
+|                                   |     or                            |
+|                                   | -   employment income does not    |
+|                                   |     appear to be full-time        |
+|                                   |     employment                    |
+|                                   |                                   |
+|                                   | Do not delete the FTO entries on  |
+|                                   | the EAES screen. To correct the   |
+|                                   | EAES screen and restore payment,  |
+|                                   | see Step 7 in the Possible        |
+|                                   | reasons for                       |
+|                                   | suspension/cancellation of JSP,   |
+|                                   | YA and SpB table.                 |
++-----------------------------------+-----------------------------------+
+| 10                                | Why are negative amounts          |
+|                                   | displayed? + Read more ...        |
+|                                   |                                   |
+|                                   | The PayPP amount that pre-fills   |
+|                                   | in a report is the difference     |
+|                                   | between the previous pay event    |
+|                                   | and the recent pay event. Pay     |
+|                                   | components with a negative amount |
+|                                   | may pre-fill after the employer   |
+|                                   | has made an adjustment to a       |
+|                                   | previous pay event.               |
+|                                   |                                   |
+|                                   | Customers must confirm if they    |
+|                                   | have been paid an amount of the   |
+|                                   | pre-filled pay component(s) in    |
+|                                   | their current reporting period    |
+|                                   | and if needed, the amount can be  |
+|                                   | adjusted. If no updates are made  |
+|                                   | to the negative amount that has   |
+|                                   | pre-filled, no amount is          |
+|                                   | assessed.                         |
+|                                   |                                   |
+|                                   | Note: no changes are required to  |
+|                                   | a salary sacrifice pay component  |
+|                                   | with a negative adjustment.       |
+|                                   | Salary Sacrifice components       |
+|                                   | pre-fill for display purposes     |
+|                                   | only and are not used in the      |
+|                                   | PayPP calculation, as the amount  |
+|                                   | is already included in the Gross  |
+|                                   | Income.                           |
++-----------------------------------+-----------------------------------+
+| 11                                | Customer has more than one STP    |
+|                                   | employer + Read more ...          |
+|                                   |                                   |
+|                                   | When customers are reporting      |
+|                                   | through self service channels,    |
+|                                   | STP data will show for each       |
+|                                   | employer one at a time. Customers |
+|                                   | are only able to report           |
+|                                   | employment income in the STP      |
+|                                   | confirmation service for the STP  |
+|                                   | employer they are currently       |
+|                                   | reviewing. Once all pay details   |
+|                                   | are confirmed for one employer,   |
+|                                   | the next STP employer’s details   |
+|                                   | will pre-fill.                    |
+|                                   |                                   |
+|                                   | Service Officers using the        |
+|                                   | Earnings and Reporting workflow   |
+|                                   | will also see each employer       |
+|                                   | appear one at a time. Selecting   |
+|                                   | Next after Accept income for the  |
+|                                   | first employer will go to EAPP    |
+|                                   | before going back to EMGI to view |
+|                                   | the next employer details.        |
++-----------------------------------+-----------------------------------+
+| 12                                | Assessable income pre-fills in    |
+|                                   | the Report employment income      |
+|                                   | (REI) service + Read more ...     |
+|                                   |                                   |
+|                                   | After a customer confirms the STP |
+|                                   | data in the STP confirmation      |
+|                                   | service, a message in the REI     |
+|                                   | service tells the customer that   |
+|                                   | pay details have been added to    |
+|                                   | their record. The customer will   |
+|                                   | see that only the assessable      |
+|                                   | employment income components that |
+|                                   | update to EAPP are populated      |
+|                                   | under My pay.                     |
+|                                   |                                   |
+|                                   | If a customer contacts to query   |
+|                                   | why amounts pre-filled through    |
+|                                   | STP are different to what has     |
+|                                   | pre-filled under My pay, Service  |
+|                                   | Officers can explain how          |
+|                                   | non-assessable components and an  |
+|                                   | Income Assessment Period (IMP)    |
+|                                   | are assessed.                     |
++-----------------------------------+-----------------------------------+
+| 13                                | Customer contacts as they have    |
+|                                   | been placed on reporting because  |
+|                                   | of STP data + Read more ...       |
+|                                   |                                   |
+|                                   | STP service profiling triggers    |
+|                                   | will place customers on 2 weekly  |
+|                                   | reporting when STP data is        |
+|                                   | available, if they are not        |
+|                                   | already on reporting.             |
+|                                   |                                   |
+|                                   | Service Officers can check if the |
+|                                   | change to reporting requirements  |
+|                                   | are due to STP data:              |
+|                                   |                                   |
+|                                   | go to the Profile Summary (PQS)   |
+|                                   | screen in Customer First          |
+|                                   |                                   |
+|                                   | where the current profile shows a |
+|                                   | line with a Profile Description   |
+|                                   | of Reporting Profile –Income -2WE |
+|                                   | stim:                             |
+|                                   |                                   |
+|                                   | -   place S in the checkbox and   |
+|                                   |     enter to go to the Profile    |
+|                                   |     Details (PQD) screen          |
+|                                   |                                   |
+|                                   | an STP pay event will trigger     |
+|                                   | predictor code 1790 STP data      |
+|                                   | suggests 2WE reporting            |
+|                                   |                                   |
+|                                   | If this predictor code is         |
+|                                   | present, Service Officers must    |
+|                                   | run the STP Employer Update or    |
+|                                   | the Earnings and Reporting        |
+|                                   | workflow to review the STP data,  |
+|                                   | and discuss the information       |
+|                                   | available on EMCF and/or EMGI.    |
+|                                   |                                   |
+|                                   | If a new employer has pre-filled  |
+|                                   | on EMCF and the customer states   |
+|                                   | they do not work, the employer    |
+|                                   | status should be rejected. If the |
+|                                   | customer confirms the new         |
+|                                   | employer details, the STP         |
+|                                   | employer should be confirmed. See |
+|                                   | Item 3 in Table 1.                |
+|                                   |                                   |
+|                                   | If the customer confirms the      |
+|                                   | employment details, Service       |
+|                                   | Officers must discuss the         |
+|                                   | customer’s reporting              |
+|                                   | requirements, self service        |
+|                                   | reporting options and how STP     |
+|                                   | data can be reviewed through self |
+|                                   | service channels. See Reporting   |
+|                                   | employment income online or       |
+|                                   | Reporting using phone self        |
+|                                   | service.                          |
+|                                   |                                   |
+|                                   | If a customer claims they do not  |
+|                                   | work and staff take them off      |
+|                                   | reporting, any further STP data   |
+|                                   | reported will automatically put   |
+|                                   | them back on reporting.           |
++-----------------------------------+-----------------------------------+
+| 14                                | Students and scholarship income   |
+|                                   | reported through STP + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | When a student is paid a          |
+|                                   | scholarship or stipend payment    |
+|                                   | from their study provider, it is  |
+|                                   | assessed as Other income and      |
+|                                   | coded on the OINS screen. This    |
+|                                   | allows the exempt portion to be   |
+|                                   | excluded from assessment for      |
+|                                   | Equity or Merit based             |
+|                                   | Scholarships so only the excess   |
+|                                   | is assessed as income. See        |
+|                                   | Assessing scholarship income for  |
+|                                   | more details.                     |
+|                                   |                                   |
+|                                   | The scholarship or stipend may be |
+|                                   | reported through STP as Salary    |
+|                                   | and wages, Allowances or combined |
+|                                   | with their usual pay. At this     |
+|                                   | stage, there is no separate       |
+|                                   | process for this to be reported   |
+|                                   | through STP. If Service Officers  |
+|                                   | identify this situation, confirm  |
+|                                   | that the scholarship or stipend   |
+|                                   | is coded on OINS. Customers will  |
+|                                   | need to adjust the pre-filled     |
+|                                   | amount to exclude the scholarship |
+|                                   | or stipend amount.                |
++-----------------------------------+-----------------------------------+
+| 15                                | Other Paid Leave + Read more ...  |
+|                                   |                                   |
+|                                   | Other paid leave can be reported  |
+|                                   | when an employee has taken a      |
+|                                   | period of leave or been paid for  |
+|                                   | an absence. For example, a sick   |
+|                                   | day, public holiday, annual       |
+|                                   | leave, paid day off etc.          |
+|                                   | Customers must advise the         |
+|                                   | duration that the other paid      |
+|                                   | leave was paid for.               |
+|                                   |                                   |
+|                                   | When reported through STP, staff  |
+|                                   | may encounter SR353: Enter        |
+|                                   | mandatory field Adjusted – Start  |
+|                                   | Date & End Date for Other paid    |
+|                                   | leave. The field that requires    |
+|                                   | the duration of leave to be coded |
+|                                   | will be highlighted with a red    |
+|                                   | outline. Staff must enter the     |
+|                                   | period that the paid leave was    |
+|                                   | paid for. For example, was the    |
+|                                   | leave for 1 day, a week, the full |
+|                                   | employer pay period etc.          |
+|                                   |                                   |
+|                                   | Select the Earnings and Reporting |
+|                                   | workflow in Process Direct. When  |
+|                                   | on the EMGI screen:               |
+|                                   |                                   |
+|                                   | -   select edit for the Other     |
+|                                   |     paid leave component          |
+|                                   | -   enter the start date for the  |
+|                                   |     period in Adjusted Period     |
+|                                   |     Start Date field              |
+|                                   | -   enter the end date for the    |
+|                                   |     period in Adjusted Period End |
+|                                   |     Date field                    |
+|                                   | -   select Save                   |
++-----------------------------------+-----------------------------------+
+| 16                                | Other allowances + Read more ...  |
+|                                   |                                   |
+|                                   | Some allowances do not fall under |
+|                                   | their own category through STP,   |
+|                                   | so the employer will report as    |
+|                                   | Other allowances. Customers must  |
+|                                   | advise if the allowance is a      |
+|                                   | reimbursement for out of pocket   |
+|                                   | work expenses they have had. See  |
+|                                   | Allowances paid with employment   |
+|                                   | income for more details.          |
+|                                   |                                   |
+|                                   | If the additional information is  |
+|                                   | not coded, SR353: Enter mandatory |
+|                                   | field Additional Information for  |
+|                                   | Other allowances will show.       |
+|                                   |                                   |
+|                                   | Select the Earnings and Reporting |
+|                                   | workflow in Process Direct. When  |
+|                                   | on the EMGI screen:               |
+|                                   |                                   |
+|                                   | select edit for the Other         |
+|                                   | allowances component              |
+|                                   |                                   |
+|                                   | select the twisty for Additional  |
+|                                   | Information                       |
+|                                   |                                   |
+|                                   | select the option the customer    |
+|                                   | advises:                          |
+|                                   |                                   |
+|                                   | -   Other Allowances - Not        |
+|                                   |     Reimbursement of employment   |
+|                                   |     related costs                 |
+|                                   | -   Other Allowances -            |
+|                                   |     Reimbursement of employment   |
+|                                   |     related costs                 |
+|                                   |                                   |
+|                                   | Select Save                       |
++-----------------------------------+-----------------------------------+
+| 17                                | Bonus and commission + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Customers must advise the         |
+|                                   | duration that bonus or commission |
+|                                   | income was paid for. This may be  |
+|                                   | the same duration of the employer |
+|                                   | pay period or a monthly or        |
+|                                   | quarterly period etc. See         |
+|                                   | Assessment of income for          |
+|                                   | Centrelink payments for more      |
+|                                   | details.                          |
+|                                   |                                   |
+|                                   | When reported through STP, staff  |
+|                                   | may encounter SR353: Enter        |
+|                                   | mandatory field Adjusted – Start  |
+|                                   | Date & End Date for Bonus or      |
+|                                   | commission. The field that        |
+|                                   | requires the duration of the      |
+|                                   | payment to be coded will be       |
+|                                   | highlighted with a red outline.   |
+|                                   | Staff must enter the period that  |
+|                                   | the bonus or commission was paid  |
+|                                   | for.                              |
+|                                   |                                   |
+|                                   | Select the Earnings and Reporting |
+|                                   | workflow in Process Direct. When  |
+|                                   | on the EMGI screen:               |
+|                                   |                                   |
+|                                   | -   select edit for the Bonus or  |
+|                                   |     commission component          |
+|                                   | -   enter the start date for the  |
+|                                   |     period in Adjusted Period     |
+|                                   |     Start Date field              |
+|                                   | -   enter the end date for the    |
+|                                   |     period in Adjusted Period End |
+|                                   |     Date field                    |
+|                                   | -   select Save                   |
++-----------------------------------+-----------------------------------+
+| 18                                | Reportable fringe benefits + Read |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Customers who have Reportable     |
+|                                   | Fringe Benefits are asked if the  |
+|                                   | arrangement includes free or      |
+|                                   | discounted accommodation. If Yes, |
+|                                   | the customer can advise this      |
+|                                   | through self service channels.    |
+|                                   |                                   |
+|                                   | Where staff are using the         |
+|                                   | Earnings and Reporting workflow,  |
+|                                   | and the additional information is |
+|                                   | not coded, SR353: Enter mandatory |
+|                                   | field Additional Information for  |
+|                                   | Reportable Fringe Benefits will   |
+|                                   | show.                             |
+|                                   |                                   |
+|                                   | Select the Earnings and Reporting |
+|                                   | workflow in Process Direct. When  |
+|                                   | on the EMGI screen:               |
+|                                   |                                   |
+|                                   | select edit for the Reportable    |
+|                                   | Fringe Benefits component         |
+|                                   |                                   |
+|                                   | select the twisty for Additional  |
+|                                   | Information                       |
+|                                   |                                   |
+|                                   | select the option the customer    |
+|                                   | advises:                          |
+|                                   |                                   |
+|                                   | -   Reportable Fringe Benefits-   |
+|                                   |     Include free or discounted    |
+|                                   |     accommodation                 |
+|                                   |     Add the accommodation value   |
+|                                   |     in the RFB accommodation      |
+|                                   |     field                         |
+|                                   | -   Reportable Fringe Benefits-   |
+|                                   |     Do not include free or        |
+|                                   |     discounted accommodation      |
+|                                   |                                   |
+|                                   | select Save                       |
+|                                   |                                   |
+|                                   | A message shows in the workflow,  |
+|                                   | that 53% of Reportable Fringe     |
+|                                   | Benefits will be calculated and   |
+|                                   | mapped. Reportable Fringe         |
+|                                   | Benefits pre-fill as the grossed  |
+|                                   | up amount, however the            |
+|                                   | non-grossed-up amount (less free  |
+|                                   | or discounted accommodation       |
+|                                   | amounts) will map to EAPP without |
+|                                   | Service Officers needing to make  |
+|                                   | any adjustments. See Resources.   |
++-----------------------------------+-----------------------------------+
+| 19                                | Salary Sacrifice + Read more ...  |
+|                                   |                                   |
+|                                   | Salary Sacrifice components       |
+|                                   | pre-fill for display purposes     |
+|                                   | only and are not used in the      |
+|                                   | PayPP calculation, as the amount  |
+|                                   | is already included in the Gross  |
+|                                   | Income. Any updates made to       |
+|                                   | pre-filled salary sacrifice       |
+|                                   | amounts will not change the total |
+|                                   | assessable income.                |
+|                                   |                                   |
+|                                   | If a customer contacts to discuss |
+|                                   | the total pre-filled amount,      |
+|                                   | advise how Salary Sacrifice       |
+|                                   | arrangements do not reduce the    |
+|                                   | total assessable income for       |
+|                                   | Centrelink purposes. See          |
+|                                   | Resources.                        |
++-----------------------------------+-----------------------------------+
+| 20                                | Unused leave and termination      |
+|                                   | payments reported by STP          |
+|                                   | employers + Read more ...         |
+|                                   |                                   |
+|                                   | Unused leave and termination      |
+|                                   | payments may pre-fill in a        |
+|                                   | reporting task when a customer    |
+|                                   | ceases work. The cessation date   |
+|                                   | and reason may also pre-fill. The |
+|                                   | cessation reason cannot be        |
+|                                   | changed. Customers subject to     |
+|                                   | mutual obligation requirements    |
+|                                   | will be required to give an       |
+|                                   | explanation of why they ceased    |
+|                                   | work, when the cessation reason   |
+|                                   | is voluntary or dismissal.        |
+|                                   | Service Officers must manually    |
+|                                   | generate a UNPP, where required.  |
+|                                   |                                   |
+|                                   | When customers are reporting      |
+|                                   | through self service channels,    |
+|                                   | they will be asked to give the    |
+|                                   | number of days the unused leave   |
+|                                   | or termination payments are paid  |
+|                                   | for, or their average weekly      |
+|                                   | wage. This will determine the     |
+|                                   | duration of an Income Maintenance |
+|                                   | Period (IMP) for customers and/or |
+|                                   | partners on an IMP affected       |
+|                                   | payment.                          |
+|                                   |                                   |
+|                                   | For staff using the Earnings and  |
+|                                   | Reporting workflow, enter the     |
+|                                   | start and end dates for the       |
+|                                   | duration of each of the cessation |
+|                                   | payments, as advised by the       |
+|                                   | customer:                         |
+|                                   |                                   |
+|                                   | -   select edit for the cessation |
+|                                   |     payment/s component           |
+|                                   | -   enter the start date for the  |
+|                                   |     period in Adjusted Period     |
+|                                   |     Start Date field              |
+|                                   | -   enter the end date for the    |
+|                                   |     period in Adjusted Period End |
+|                                   |     Date field                    |
+|                                   | -   select Save                   |
+|                                   |                                   |
+|                                   | Staff must make sure the duration |
+|                                   | provided is reasonable. for       |
+|                                   | example, for an unused leave      |
+|                                   | payment of $900 (annual leave), a |
+|                                   | 1 day duration would be           |
+|                                   | considered unreasonable, but 5    |
+|                                   | days would be reasonable.         |
+|                                   |                                   |
+|                                   | Verification, such as an SU1,     |
+|                                   | payslip or letter form the        |
+|                                   | employer is required where:       |
+|                                   |                                   |
+|                                   | -   the customer makes changes to |
+|                                   |     the cessation payments        |
+|                                   | -   there is doubt about the      |
+|                                   |     number of days/duration       |
+|                                   |     provided.                     |
+|                                   |                                   |
+|                                   | When unused leave or redundancy   |
+|                                   | payments are pre-filled, the      |
+|                                   | confirmed data will map to the    |
+|                                   | IMPS screen when a cessation date |
+|                                   | and reason are also pre-filled.   |
+|                                   | Customers or their partners who   |
+|                                   | are not subject to an Income      |
+|                                   | Maintenance Period assessment     |
+|                                   | will not be affected by the       |
+|                                   | coding on the IMPS screen.        |
+|                                   |                                   |
+|                                   | Where unused leave and/or         |
+|                                   | redundancy payments are           |
+|                                   | pre-filled and there is no        |
+|                                   | cessation reason and date         |
+|                                   | reported, the amounts will map to |
+|                                   | EAPP. For customers reporting     |
+|                                   | online, they will be asked if     |
+|                                   | they are still working for the    |
+|                                   | employer. If they answer No, an   |
+|                                   | online task is created to provide |
+|                                   | an SU1. When the SU1 is returned, |
+|                                   | the employment cessation details  |
+|                                   | can be updated, as needed.        |
+|                                   | Customers who are not subject to  |
+|                                   | an IMP will also be asked Do you  |
+|                                   | need to advise of any change to   |
+|                                   | your income and assets details?   |
+|                                   | in the reporting workflow, to     |
+|                                   | prompt them to update their       |
+|                                   | circumstances. If they answer     |
+|                                   | Yes, a new Update your income and |
+|                                   | assets task is added in self      |
+|                                   | service.                          |
+|                                   |                                   |
+|                                   | When a customer has confirmed     |
+|                                   | ceasing employment with the STP   |
+|                                   | employer, the Employer            |
+|                                   | verification field on EANS will   |
+|                                   | update from STP to STC.           |
++-----------------------------------+-----------------------------------+
+| 21                                | Why has STP workers compensation  |
+|                                   | income mapped to the EAPP         |
+|                                   | screen? + Read more ...           |
+|                                   |                                   |
+|                                   | Compensation reported through STP |
+|                                   | will update to EAPP for the first |
+|                                   | 2 reporting periods when there    |
+|                                   | are no compensation details       |
+|                                   | recorded for that employer on the |
+|                                   | Compensation Management Summary   |
+|                                   | (CMS) screen. This allows time    |
+|                                   | for the customer to provide a MOD |
+|                                   | C and for it to be assessed by    |
+|                                   | the Compensation Recovery Team    |
+|                                   | (CRT).                            |
+|                                   |                                   |
+|                                   | Where compensation income has     |
+|                                   | already been assessed on CMS and  |
+|                                   | the amount has updated to EAPP,   |
+|                                   | it may be how the employer has    |
+|                                   | reported it to the ATO.           |
+|                                   | Compensation components should be |
+|                                   | reported as Paid leave - worker’s |
+|                                   | compensation. If it has been      |
+|                                   | reported as Salary and Wages –    |
+|                                   | Income Gross Amount, adjust the   |
+|                                   | pre-filled amount to 0.00 and     |
+|                                   | consider escalating through       |
+|                                   | mySupport. See Item 8.            |
 +-----------------------------------+-----------------------------------+
 
                                    

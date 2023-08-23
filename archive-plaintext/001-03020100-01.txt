@@ -1,9 +1,3 @@
-
-Participation Interview 001-03020100
-
--   Background
--   
--   Process
 -   References
 -   Resources
 
@@ -29,6 +23,7 @@ The Participation Interview:
 
 -   Interacts with Department of Employment and Workplace Relations
     (DEWR) through web services
+-   Enables registration of job seekers in the DEWR system
 -   Loads information from the customer's online claim or ACC into
     certain Participation Interview questions where DEWR requires these
     questions to be asked. This information can be edited if required by
@@ -39,12 +34,16 @@ The Participation Interview:
     Widow Allowance (SWA) exemption
 -   Displays the result of the Job Seeker Snapshot where it has been
     completed online during the new claim process
+-   Facilitates staff access to the DEWR system to conduct the Job
+    Seeker Snapshot
+-   Establishes RapidConnect eligibility or exemption for JSP and YA new
+    claimants
 -   Enables booking appointments with Workforce Australia Employment
-    Services Providers, including booking and rebooking of RapidConnect
+    Services Providers, including booking and rebooking RapidConnect
     appointments
--   Identifies customers from information provided in the online claim
-    or ACC, who are ineligible for RapidConnect due to residence or high
-    employment income
+-   Allows staff to flag potential referrals of job seekers for
+    Employment Services Assessments (ESAts) where recommended by the Job
+    Seeker Snapshot
 
 Accessing the Participation Interview
 
@@ -58,11 +57,12 @@ The Participation Interview includes the following individual processes:
 
 -   Job seeker registration
 -   Job Seeker Snapshot
+-   Referrals to ESAts, SEE and AMEP programmes
 -   RapidConnect questions, referral and appointment rebooking
 -   Deferred referrals
 -   Online Diary
 -   Reapply Job Seeker Snapshot functionality
--   Activity Management (that is JSR/UPD activities etc.)
+-   Activity Management (JSR/UPD activities etc)
 -   Discuss the security benefits of recording a voiceprint and voice
     biometrics technology
 
@@ -88,15 +88,19 @@ Job Seeker Registration only (JSRO)/No Remote Referral Required (NRRR)
 The Participation Interview helps Service Officers identify potential
 JSRO and NRRR job seekers.
 
+Job seekers who are registered as JSRO/NRRR are not required to have the
+Job Seeker Snapshot completed, the Participation Interview workflow will
+allow it to be skipped and completed as required.
+
 If a customer is identified as a JSRO/NRRR job seeker, Service Officers
-can complete the Job Seeker Snapshot if the job seeker wants to access a
-Workforce Australia or CDP provider or other assistance. For example,
-Skills for Education and Employment (SEE) and Adult Migrant English
-Program (AMEP).
+can still complete the Job Seeker Snapshot if the job seeker wants to
+access a Workforce Australia or CDP provider or other assistance. For
+example, Skills for Education and Employment (SEE) and Adult Migrant
+English Program (AMEP).
 
 If this is the case, register the job seeker as a Fully Eligible
 Participant (FEP), complete the Job Seeker Snapshot and refer them to a
-provider.
+provider using the Participation Interview workflow.
 
 YA (job seekers)
 
@@ -107,15 +111,15 @@ See Registering a customer as a job seeker.
 
 Job Seeker Snapshot
 
-The Job Seeker Snapshot questions and responses determine the level of
-employment assistance the job seeker may be eligible to receive. Be
-mindful that this information is personal and sensitive. Ensure the job
-seeker understands the importance of disclosing information relevant to
-their personal circumstances to facilitate the most appropriate service
-offer.
+The Job Seeker Snapshot questions and responses determine the level and
+type of employment assistance the job seeker may be eligible to receive.
+Be mindful that this information is personal and sensitive. Ensure the
+job seeker understands the importance of disclosing information relevant
+to their personal circumstances to facilitate the most appropriate
+service offer.
 
-The Participation Interview will load certain questions into the Job
-Seeker Snapshot from the online claim:
+The Participation Interview will load the answers to certain questions
+into the Job Seeker Snapshot from the online claim:
 
 -   Are you Aboriginal or Torres Strait Islander?
 -   Indigenous status?
@@ -133,10 +137,37 @@ completed the Job Seeker Snapshot online , during the Participation
 Interview the workflow will bypass the Job Seeker Snapshot questions and
 go straight to the Job Seeker Snapshot Results screen.
 
-If the job seeker says the information is incorrect, correct it as part
-of the interview.
+If the job seeker says the information is incorrect or has changed since
+they completed it online, correct it as part of the interview by running
+the Job Seeker Snapshot questions again.
 
 See Conducting a Job Seeker Snapshot interview.
+
+Referring a job seeker for an Employment Services Assessment (ESAt)
+
+Based on answers to the Job Seeker Snapshot questions, the system may
+display a recommendation for the job seeker to be referred for an
+Employment Services Assessment (ESAt). Using the Participation Interview
+worklflow, a Service Officer can agree with this recommendation and
+trigger a referral, or decide that it is not appropriate. A job seeker
+may have an existing assessment of their work capacity from a previous
+ESAt.
+
+See Determining when an Employment Services Assessment (ESAt) is
+required.
+
+Deferred referrals
+
+A job seeker's referral to a Workforce Australia Employment Services
+Provider or Disability Employment Services provider may need to be
+deferred in some circumstances. This is usually due to a job seeker
+firstly needing a referral for an Employment Services Assessment (ESAt).
+Once the ESAt is finalised, and the job seeker’s employment service
+eligibility is determined, they will be referred as necessary.
+
+Deferred referrals to Employment Services Providers are either recorded
+automatically by the system or manually by Service Officers where
+appropriate.
 
 RapidConnect
 
@@ -157,16 +188,21 @@ questions relating to RapidConnect eligibility may also be asked during
 the Participation Interview to determine if the job seekers has a
 RapidConnect exemption.
 
+Some job seekers who are exempt from RapidConnect requirements must
+still be referred to employment services. However, their payments will
+not be delayed pending their attendance with a provider or agreeing to a
+Workforce Australia online Job Plan.
+
 -   Most job seekers who are subject to RapidConnect are automatically
-    referred to the Workforce Australia Online for individuals during
-    the Participation Interview. These job seekers are not required to
+    referred to Workforce Australia Online for Individuals during the
+    Participation Interview. These job seekers are not required to
     attend a RapidConnect appointment with a provider. Instead, they
     will meet their RapidConnect obligation by agreeing to their Job
     Plan online. Job seekers who are referred to Workforce Australia
     Online under RapidConnect provisions will need to complete their
     Career Profile before they can agree to their Job Plan online
 -   If a job seeker who is subject to RapidConnect is not automatically
-    referred to the Workforce Australia Online during the Participation
+    referred to Workforce Australia Online during the Participation
     Interview, then they will require an appointment to be booked for
     them with a provider. They will need to attend this appointment to
     meet their RapidConnect obligation
@@ -186,16 +222,6 @@ start the RapidConnect Online Diary appointment workflow.
 
 To reschedule and rebook an appointment, see RapidConnect.
 
-Deferred referrals
-
-A job seeker's referral to Workforce Australia Employment Services
-Provider or Disability Employment Services provider may need to be
-deferred in some circumstances.
-
-Deferred referral to Employment Services Providers are either recorded
-automatically by the system or manually by Service Officers where
-appropriate.
-
 Online Diary
 
 Use the Online Diary to initiate referrals, check current appointments
@@ -204,8 +230,9 @@ outcomes.
 
 During the interview, the Online Diary may be required to book
 appointments for job seekers with Employment Services Providers. This
-includes Workforce Australia Employment Services Providers, Disability
-Employment Services (DES) and Community Development Program (CDP).
+includes Workforce Australia Services Providers, Workforce Australia
+Transition to Work (TtW), Disability Employment Services (DES) and
+Community Development Program (CDP).
 
 The Online Diary will not feature in registration and referral workflows
 for job seekers selected for Workforce Australia Online for Individuals.
@@ -214,14 +241,9 @@ and given instructions by the Department of Employment and Workplace
 Relations on how to participate and meet their mutual obligation
 requirements.
 
-Reapply Job Seeker Snapshot functionality
-
-If it continues to reflect the customer's current circumstances, use the
-Participation Interview to reapply a current and valid Employment
-Services Assessment (ESAt) or Job Capacity Assessment (JCA) result.
-
-See Determining when an Employment Services Assessment (ESAt) is
-required.
+Where a job seeker is being referred for an ESAt, the Online Diary is
+not to be used to book an ESAt appointment. This will be automatically
+handled by the system or if needed manually by Assessment Services.
 
 Re-indexed job seeker claim
 
@@ -243,6 +265,20 @@ if the job seeker declines to complete the Participation Interview or to
 be linked with Workforce Australia Employment Services
 Provider/Disability Employment Services.
 
+Correspondence nominee
+
+[A self service option is available for customers: Placed under section
+headings or general content where self service options are available.]
+Correspondence nominees can submit an online claim on behalf of the
+customer. The nominee cannot complete the Participation Interview on
+behalf of the customer, but can attend the interview with the customer.
+For more information see Obligations of nominees.
+
+In exceptional circumstances, a customer may not be able to complete the
+interview. This could be due to a speech impediment or other medical
+incapacity. In these cases, use discretion to allow the nominee to
+complete the interview on the customer's behalf.
+
 The Resources page contains links to the Services Australia website and
 the privacy notice shown to customers when they complete an online
 claim.
@@ -251,8 +287,9 @@ Related links
 
 Job seeker online claim appointment
 
-Access to Centrelink self service - set up, checking, locking and
-resetting
+Accessing and using Centrelink self service
+
+Checking, locking and unlocking Centrelink self service access
 
 Using Digital Assistant Roxy in Process Direct
 

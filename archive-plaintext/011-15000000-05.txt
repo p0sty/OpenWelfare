@@ -1,245 +1,659 @@
-
-Medicare Compensation Recovery 011-15000000
-
--   Background
--   References
 -   Resources
+-   Training & Support
 
 [Expand/Collapse all sections]Expand all
 
 System letters
 
+MCRS issues letters during claim processing. Service Officers must not
+use locally produced letters.
+
+Letter recipients may include:
+
+Claimant:
+
+-   injured person (14 years or over and able to manage their own
+    affairs)
+-   parent, guardian, power of attorney, legal representative, public
+    trustee, or
+-   an authorised third party. For example, a solicitor
+
+Notifiable person – compensation payer or insurer, or their solicitor or
+agent
+
+Standard letter template manual letters should only be used in limited
+circumstances. See Using Standard Letter Templates (SLT).
+
 Table 1
 
-+-----------------------------------+-----------------------------------+
-| CCMS system letter code           | System letter name                |
-+-----------------------------------+-----------------------------------+
-| z1934/CP003M                      | Information about your            |
-|                                   | compensation claim                |
-|                                   |                                   |
-|                                   | Letter to claimant advising that  |
-|                                   | Medicare Compensation Recovery    |
-|                                   | has been notified of a            |
-|                                   | compensation claim.               |
-+-----------------------------------+-----------------------------------+
-| z1935/CP005M                      | Identify your past medical and    |
-|                                   | care benefits                     |
-| (attaches z2245, MO028 and MO024) |                                   |
-|                                   | Letter to claimant that together  |
-|                                   | with the enclosed Medicare        |
-|                                   | history statement and declaration |
-|                                   | are the notice to claimant. It    |
-|                                   | gives instructions:               |
-|                                   |                                   |
-|                                   | -   for how to complete the       |
-|                                   |     documents                     |
-|                                   | -   to tick services              |
-|                                   | -   advise of care costs about    |
-|                                   |     the injury/illness            |
-+-----------------------------------+-----------------------------------+
-| z2050/CP006M                      | Confirm your past care benefits   |
-|                                   | and subsidies                     |
-| (attaches MO028 and MO024)        |                                   |
-|                                   | Letter to claimant that together  |
-|                                   | with the enclosed declaration are |
-|                                   | the notice to claimant. It gives  |
-|                                   | instructions for how to complete  |
-|                                   | and return the declaration about  |
-|                                   | care costs. As the injured person |
-|                                   | has not received any Medicare     |
-|                                   | benefits since the date of        |
-|                                   | injury, no history statement is   |
-|                                   | attached.                         |
-+-----------------------------------+-----------------------------------+
-| z2051/CP007M                      | Notice of past benefits or notice |
-|                                   | of charge                         |
-| (attaches z2140)                  |                                   |
-|                                   | Letter to compensation payer with |
-|                                   | a total amount payable should     |
-|                                   | case settle within 6 months of    |
-|                                   | issue. Includes list of           |
-|                                   | identified Medicare benefits.     |
-+-----------------------------------+-----------------------------------+
-| z1936/CP008L                      | Compensation claim-information    |
-|                                   | sent to <Compensation payer>      |
-| (attaches z2051)                  |                                   |
-|                                   | Letter issued to claimant or      |
-|                                   | their authorised third party      |
-|                                   | (usually a solicitor) includes    |
-|                                   | copy of notice of past benefits   |
-|                                   | or notice of charge.              |
-+-----------------------------------+-----------------------------------+
-| z2571/CP042K                      | Payment withheld pending issue of |
-|                                   | notice of charge                  |
-|                                   |                                   |
-|                                   | Letter advising the compensation  |
-|                                   | payer not to release settlement   |
-|                                   | funds until they receive the      |
-|                                   | notice of charge. Issued when     |
-|                                   | there is no valid notice of       |
-|                                   | charge at settlement and the      |
-|                                   | notice of judgment or settlement  |
-|                                   | is processed that shows there is  |
-|                                   | no intention of paying an advance |
-|                                   | payment.                          |
-+-----------------------------------+-----------------------------------+
-| z1931/CP055M                      | Finalised compensation claim -    |
-|                                   | statement of account              |
-| (attaches z2140 if applicable)    |                                   |
-|                                   | Statement of account issued to    |
-|                                   | the claimant on finalisation of   |
-|                                   | advance payment case that settled |
-|                                   | without a valid notice of past    |
-|                                   | benefits. Advises of any refund   |
-|                                   | due or amount payable by the      |
-|                                   | claimant. Includes a list of      |
-|                                   | identified benefits.              |
-+-----------------------------------+-----------------------------------+
-| z2572/CP064K                      | Compensation claim document/s     |
-|                                   | enclosed                          |
-|                                   |                                   |
-|                                   | Authority cover letter            |
-|                                   | redirecting all mail to the       |
-|                                   | claimant via their authorised     |
-|                                   | third party (usually a            |
-|                                   | solicitor).                       |
-+-----------------------------------+-----------------------------------+
-| z2053/CP077M                      | Notice of charge                  |
-|                                   |                                   |
-| (attaches z2140)                  | Notice of charge issued to the    |
-|                                   | compensation payer when no        |
-|                                   | advance payment has been made and |
-|                                   | a section 23A statement has been  |
-|                                   | accepted.                         |
-+-----------------------------------+-----------------------------------+
-| z2054/CP207M                      | Notice of past benefits or notice |
-|                                   | of charge - all services taken    |
-|                                   |                                   |
-|                                   | All services taken (deemed)       |
-|                                   | notice of past benefits issued to |
-|                                   | the compensation payer when       |
-|                                   | history statement was not         |
-|                                   | returned by the claimant.         |
-+-----------------------------------+-----------------------------------+
-| z2055/CP277M                      | Notice of charge - all services   |
-|                                   | taken                             |
-|                                   |                                   |
-|                                   | All services taken (deemed)       |
-|                                   | notice of past benefits issued to |
-|                                   | the compensation payer when       |
-|                                   | section 23A statement is accepted |
-|                                   | reinstating expired notice of     |
-|                                   | past benefits - all services      |
-|                                   | taken.                            |
-+-----------------------------------+-----------------------------------+
-| z2245/ ATT01/SD001M               | Medicare history statement        |
-|                                   |                                   |
-|                                   | List of Medicare subsidised       |
-|                                   | medical services that the injured |
-|                                   | person has received from the date |
-|                                   | of injury for completion by       |
-|                                   | claimant by placing a tick in the |
-|                                   | box next to services that relate  |
-|                                   | to the injury or illness.         |
-+-----------------------------------+-----------------------------------+
-| z2140/ ATT02/SD002M               | Compensation related medical      |
-|                                   | benefits and/or care services     |
-|                                   |                                   |
-|                                   | List of identified benefits that  |
-|                                   | make up the notice of past        |
-|                                   | benefits or notice of charge.     |
-+-----------------------------------+-----------------------------------+
-| CP020M                            | System generated internal email   |
-|                                   | sent to the nursing home mailbox  |
-|                                   | for a nursing home, residential   |
-|                                   | care or home care check for       |
-|                                   | recoverable care cost amounts.    |
-+-----------------------------------+-----------------------------------+
-| z2469/CP083K                      | Request for Medicare history      |
-|                                   | statement and declaration         |
-| (attaches z2245 and MO028)        |                                   |
-|                                   | Note: this letter is not          |
-|                                   | currently in use but may be seen  |
-|                                   | in the view folder.               |
-|                                   |                                   |
-|                                   | ‘Not Substantially Correct’       |
-|                                   | notice issued to claimant when    |
-|                                   | S23A statement not accepted - do  |
-|                                   | not issue - delete from the print |
-|                                   | queue.                            |
-+-----------------------------------+-----------------------------------+
-| CP057K                            | We cannot process your intended   |
-|                                   | advance payment                   |
-|                                   |                                   |
-|                                   | Note: this letter is not          |
-|                                   | currently in use but may be seen  |
-|                                   | in the view folder.               |
-|                                   |                                   |
-|                                   | Letter to compensation payer      |
-|                                   | advising that the advance payment |
-|                                   | cannot be processed. Still        |
-|                                   | generated by the system where     |
-|                                   | advance payment amount is not     |
-|                                   | 10%. As per workflow              |
-|                                   | instructions, delete from the     |
-|                                   | print queue.                      |
-+-----------------------------------+-----------------------------------+
++-----------------------+-----------------------+-----------------------+
+| System letter code    | Recipient             | System letter name    |
+|                       |                       | and brief description |
++-----------------------+-----------------------+-----------------------+
+| Z2797                 | Any (informant)       | (Two options, 3       |
+|                       |                       | different headings)   |
+|                       |                       |                       |
+|                       |                       | You do not need to    |
+|                       |                       | tell us about the     |
+|                       |                       | compensation          |
+|                       |                       | claim/reimbursement   |
+|                       |                       | arrangement           |
+|                       |                       |                       |
+|                       |                       | Tells recipients      |
+|                       |                       | that:                 |
+|                       |                       |                       |
+|                       |                       | -   the compensation  |
+|                       |                       |     claim is not      |
+|                       |                       |     notifiable under  |
+|                       |                       |     the HOSC Act, or  |
+|                       |                       | -   the injured       |
+|                       |                       |     person has told   |
+|                       |                       |     us that there was |
+|                       |                       |     not a notifiable  |
+|                       |                       |     claim under the   |
+|                       |                       |     HOSC Act          |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Compensation claim    |
+|                       |                       | cannot be registered  |
+|                       |                       |                       |
+|                       |                       | Tells them that no    |
+|                       |                       | Medicare record was   |
+|                       |                       | found for injured     |
+|                       |                       | person details as     |
+|                       |                       | provided.             |
++-----------------------+-----------------------+-----------------------+
+| Z2798                 | Any (informant)       | We need more          |
+|                       |                       | information to        |
+|                       |                       | register a            |
+|                       |                       | compensation claim    |
+|                       |                       |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | the submitted form    |
+|                       |                       | was missing           |
+|                       |                       | information and asks  |
+|                       |                       | them to submit a new  |
+|                       |                       | completed form and/or |
+|                       |                       | supporting documents. |
++-----------------------+-----------------------+-----------------------+
+| Z2799                 | Injured person or     | (Two options, same    |
+|                       | Claimant              | heading)              |
+|                       |                       |                       |
+|                       |                       | Information about a   |
+|                       |                       | compensation claim    |
+|                       |                       |                       |
+|                       |                       | Tells recipients      |
+|                       |                       | that:                 |
+|                       |                       |                       |
+|                       |                       | -   a compensation    |
+|                       |                       |     claim has been    |
+|                       |                       |     registered and    |
+|                       |                       |     that they need to |
+|                       |                       |     visit our website |
+|                       |                       |     to find out their |
+|                       |                       |     responsibilities, |
+|                       |                       |     or                |
+|                       |                       | -   injury date       |
+|                       |                       |     and/or            |
+|                       |                       |     description has   |
+|                       |                       |     been updated on   |
+|                       |                       |     an existing claim |
+|                       |                       |     and shows         |
+|                       |                       |     previously        |
+|                       |                       |     advised and new   |
+|                       |                       |     details           |
++-----------------------+-----------------------+-----------------------+
+| Z2800                 | Injured person or     | Identify related      |
+|                       | Claimant              | Medicare history and/ |
+|                       |                       | care services         |
+|                       |                       |                       |
+|                       |                       | Asks recipients to    |
+|                       |                       | complete the attached |
+|                       |                       | Medicare history      |
+|                       |                       | statement (if         |
+|                       |                       | relevant), care       |
+|                       |                       | services statement    |
+|                       |                       | and declaration.      |
++-----------------------+-----------------------+-----------------------+
+| Z2801                 | Injured person or     | Medicare history and/ |
+|                       | Claimant              | care services         |
+|                       |                       | statements            |
+|                       |                       |                       |
+|                       |                       | Asks recipients to    |
+|                       |                       | tick yes or no for    |
+|                       |                       | each listed service   |
+|                       |                       | (Medicare or care)    |
+|                       |                       | and to sign the       |
+|                       |                       | declaration.          |
++-----------------------+-----------------------+-----------------------+
+| Z2802                 | Any (sender)          | We are unable to      |
+|                       |                       | process the notice of |
+|                       |                       | past benefits         |
+|                       |                       | request/third party   |
+|                       |                       | authority/ notice of  |
+|                       |                       | judgment or           |
+|                       |                       | set                   |
+|                       |                       | tlement/reimbursement |
+|                       |                       | arrangement           |
+|                       |                       |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | we cannot process the |
+|                       |                       | form because it is    |
+|                       |                       | missing information   |
+|                       |                       | or supporting         |
+|                       |                       | documents. Asks them  |
+|                       |                       | to submit a new       |
+|                       |                       | completed form and/or |
+|                       |                       | supporting documents. |
++-----------------------+-----------------------+-----------------------+
+| Z2803                 | Injured person or     | Compensation claim    |
+|                       | Claimant (case        | document enclosed     |
+|                       | processing)           |                       |
+|                       |                       | When issued via case  |
+|                       | or                    | processing. Tells     |
+|                       |                       | recipients that the   |
+|                       | Any (resend)          | enclosed document was |
+|                       |                       | sent to the           |
+|                       |                       | compensation payer or |
+|                       |                       | insurer, and is only  |
+|                       |                       | sent for their        |
+|                       |                       | information.          |
+|                       |                       |                       |
+|                       |                       | Sent with copy of     |
+|                       |                       | Z2807, Z2808, Z2809,  |
+|                       |                       | Z2810, Z2811 or       |
+|                       |                       | Z2812.                |
+|                       |                       |                       |
+|                       |                       | When issued via       |
+|                       |                       | resend action. Tells  |
+|                       |                       | recipients that the   |
+|                       |                       | enclosed document was |
+|                       |                       | sent as requested.    |
++-----------------------+-----------------------+-----------------------+
+| Z2804                 | Injured person or     | (Five options, 5      |
+|                       | Claimant              | headings)             |
+|                       |                       |                       |
+|                       |                       | Extension of period   |
+|                       |                       | to give a statement – |
+|                       |                       | request               |
+|                       |                       | granted/refused       |
+|                       |                       |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | an extension has been |
+|                       |                       | granted (approved) or |
+|                       |                       | refused (rejected).   |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Reconsideration of    |
+|                       |                       | decision to extend a  |
+|                       |                       | period to give a      |
+|                       |                       | statement - decision  |
+|                       |                       | affirmed/             |
+|                       |                       | substituted/varied    |
+|                       |                       |                       |
+|                       |                       | Tells claimant or     |
+|                       |                       | authorised third      |
+|                       |                       | party that the        |
+|                       |                       | decision to grant or  |
+|                       |                       | refuse has been       |
+|                       |                       | reviewed and affirmed |
+|                       |                       | (decision stays the   |
+|                       |                       | same), substituted    |
+|                       |                       | (opposite decision)   |
+|                       |                       | or varied (same       |
+|                       |                       | decision with altered |
+|                       |                       | conditions).          |
++-----------------------+-----------------------+-----------------------+
+| Z2805                 | Injured person or     | (Two options, 2       |
+|                       | Claimant              | headings)             |
+|                       |                       |                       |
+|                       |                       | First/Second notice – |
+|                       |                       | statement not         |
+|                       |                       | substantially correct |
+|                       |                       |                       |
+|                       |                       | Asks recipients:      |
+|                       |                       |                       |
+|                       |                       | -   for a letter from |
+|                       |                       |     a treating doctor |
+|                       |                       |     letter to remove  |
+|                       |                       |     previously        |
+|                       |                       |     verified services |
+|                       |                       |     that have now     |
+|                       |                       |     been changed to   |
+|                       |                       |     no, and/or        |
+|                       |                       | -   to complete new   |
+|                       |                       |     Medicare history  |
+|                       |                       |     statement and/    |
+|                       |                       |     care statement    |
+|                       |                       |     and declaration   |
++-----------------------+-----------------------+-----------------------+
+| Z2806                 | Injured person or     | (Three options, 3     |
+|                       | Claimant              | headings)             |
+|                       |                       |                       |
+|                       |                       | Notice of refusal     |
+|                       |                       |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | their request for us  |
+|                       |                       | to issue a new notice |
+|                       |                       | of past               |
+|                       |                       | benefits/charge was   |
+|                       |                       | refused.              |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Reconsideration of    |
+|                       |                       | decision to refuse to |
+|                       |                       | issue a notice -      |
+|                       |                       | affirmed/varied       |
+|                       |                       |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | the decision to       |
+|                       |                       | refuse has been       |
+|                       |                       | reviewed and affirmed |
+|                       |                       | (stays the same) or   |
+|                       |                       | varied (changed).     |
++-----------------------+-----------------------+-----------------------+
+| Z2807                 | Notifiable person     | (Two options, 2       |
+|                       |                       | headings)             |
+|                       | A copy is sent to the |                       |
+|                       | Injured person or     | Notice of past        |
+|                       | Claimant with Z2803   | benefits or charge    |
+|                       |                       |                       |
+|                       |                       | Tells recipients the  |
+|                       |                       | amount to be          |
+|                       |                       | recovered after       |
+|                       |                       | compensation amount   |
+|                       |                       | is fixed within the   |
+|                       |                       | next 6 months. Amount |
+|                       |                       | based on ticked       |
+|                       |                       | services on a         |
+|                       |                       | returned statement by |
+|                       |                       | claimant. Sent        |
+|                       |                       | pre-settlement.       |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Notice of past        |
+|                       |                       | benefits or charge –  |
+|                       |                       | all services taken    |
+|                       |                       |                       |
+|                       |                       | Tells recipients the  |
+|                       |                       | amount to be          |
+|                       |                       | recovered after       |
+|                       |                       | compensation amount   |
+|                       |                       | is fixed within the   |
+|                       |                       | next 6 months. Amount |
+|                       |                       | includes all services |
+|                       |                       | as a statement by     |
+|                       |                       | claimant was not      |
+|                       |                       | returned. Sent        |
+|                       |                       | pre-settlement.       |
++-----------------------+-----------------------+-----------------------+
+| Z2808                 | Notifiable person     | Compensation related  |
+|                       |                       | Medicare benefits     |
+|                       | A copy is sent to the | and/or care services  |
+|                       | Injured person or     |                       |
+|                       | Claimant with Z2803   | An itemised list of   |
+|                       |                       | all services the      |
+|                       |                       | claimant has          |
+|                       |                       | identified are        |
+|                       |                       | related to the        |
+|                       |                       | compensable           |
+|                       |                       | injury/illness. This  |
+|                       |                       | list is not sent if   |
+|                       |                       | statement by claimant |
+|                       |                       | was not returned.     |
+|                       |                       | Sent pre or post      |
+|                       |                       | settlement with the   |
+|                       |                       | Z2807 or Z2811.       |
++-----------------------+-----------------------+-----------------------+
+| Z2809                 | Notifiable person     | Compensation payer    |
+|                       |                       | has not complied with |
+|                       | A copy is sent to the | legislated notice     |
+|                       | Injured person or     | requirements          |
+|                       | Claimant with Z2803   |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | they are liable to    |
+|                       |                       | pay any outstanding   |
+|                       |                       | charge, and not to    |
+|                       |                       | pay any of the        |
+|                       |                       | compensation amount   |
+|                       |                       | until the charge has  |
+|                       |                       | been paid. Sent       |
+|                       |                       | post-settlement.      |
++-----------------------+-----------------------+-----------------------+
+| Z2810                 | Notifiable person     | Advance payment       |
+|                       |                       | criteria not          |
+|                       | A copy is sent to the | satisfied             |
+|                       | Injured person or     |                       |
+|                       | Claimant with Z2803   | Tells recipients that |
+|                       |                       | they have not         |
+|                       |                       | discharged their      |
+|                       |                       | liability. They may   |
+|                       |                       | not pay any part of   |
+|                       |                       | the compensation      |
+|                       |                       | amount to the         |
+|                       |                       | claimant until the    |
+|                       |                       | charge has been paid. |
++-----------------------+-----------------------+-----------------------+
+| Z2811                 | NOC:                  | (Four options, 4      |
+|                       |                       | headings)             |
+|                       | Notifiable person     |                       |
+|                       |                       | Notice of charge      |
+|                       | A copy is sent to the |                       |
+|                       | Injured person or     | Tells recipients the  |
+|                       | Claimant with Z2803   | amount to be          |
+|                       |                       | recovered, there is   |
+|                       | NOPB-AP:              | no amount to pay, or  |
+|                       |                       | a refund is due.      |
+|                       | Injured person or     | Amount based on       |
+|                       | Claimant              | ticked services on a  |
+|                       |                       | returned statement by |
+|                       |                       | claimant. Sent        |
+|                       |                       | post-settlement.      |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Notice of charge –    |
+|                       |                       | all services included |
+|                       |                       |                       |
+|                       |                       | Tells recipients the  |
+|                       |                       | amount to be          |
+|                       |                       | recovered, there is   |
+|                       |                       | no amount to pay, or  |
+|                       |                       | a refund is due.      |
+|                       |                       | Amount includes all   |
+|                       |                       | services as a         |
+|                       |                       | statement by claimant |
+|                       |                       | was not returned.     |
+|                       |                       | Sent post-settlement. |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Notice of past        |
+|                       |                       | benefits – advance    |
+|                       |                       | payment / Notice of   |
+|                       |                       | past benefits –       |
+|                       |                       | advance payment – all |
+|                       |                       | services included     |
+|                       |                       |                       |
+|                       |                       | Tells recipients an   |
+|                       |                       | advance payment was   |
+|                       |                       | made and there is     |
+|                       |                       |                       |
+|                       |                       | -   no amount to pay  |
+|                       |                       | -   a refund due, or  |
+|                       |                       | -   a remaining       |
+|                       |                       |     amount to pay as  |
+|                       |                       |     it was not enough |
+|                       |                       |                       |
+|                       |                       | Amount based on       |
+|                       |                       | ticked services on a  |
+|                       |                       | returned statement by |
+|                       |                       | claimant. Sent        |
+|                       |                       | post-settlement.      |
+|                       |                       |                       |
+|                       |                       | Or                    |
+|                       |                       |                       |
+|                       |                       | Notice of past        |
+|                       |                       | benefits – advance    |
+|                       |                       | payment – all         |
+|                       |                       | services included     |
+|                       |                       |                       |
+|                       |                       | Tells recipients an   |
+|                       |                       | advance payment was   |
+|                       |                       | made and there is no  |
+|                       |                       | amount to pay, a      |
+|                       |                       | refund due, or a      |
+|                       |                       | remaining amount to   |
+|                       |                       | pay as it was not     |
+|                       |                       | enough. Amount        |
+|                       |                       | includes all services |
+|                       |                       | as a statement by     |
+|                       |                       | claimant was not      |
+|                       |                       | returned. Sent        |
+|                       |                       | post-settlement.      |
++-----------------------+-----------------------+-----------------------+
+| Z2812                 | Notifiable person     | Past benefits and     |
+|                       |                       | subsidies will not be |
+|                       | A copy is sent to the | recovered             |
+|                       | Injured person or     |                       |
+|                       | Claimant with Z2803   | Tells recipients      |
+|                       |                       | that:                 |
+|                       |                       |                       |
+|                       |                       | -   more than 3       |
+|                       |                       |     months have       |
+|                       |                       |     passed since NOJS |
+|                       |                       |     or Advance        |
+|                       |                       |     Payment was       |
+|                       |                       |     received          |
+|                       |                       |     (whichever is     |
+|                       |                       |     later)            |
+|                       |                       | -   any payments will |
+|                       |                       |     be returned, and  |
+|                       |                       | -   no amount will be |
+|                       |                       |     recovered         |
+|                       |                       |                       |
+|                       |                       | This letter is issued |
+|                       |                       | in relation to HOSC   |
+|                       |                       | Act sections 24(4),   |
+|                       |                       | 25(4) or 33D/33K.     |
++-----------------------+-----------------------+-----------------------+
+| Z2813                 | Any (stale cheque     | Medicare Compensation |
+|                       | recipient)            | Recovery funds        |
+|                       |                       |                       |
+|                       |                       | Tells recipients:     |
+|                       |                       |                       |
+|                       |                       | -   cheque has gone   |
+|                       |                       |     stale, or         |
+|                       |                       | -   compensation      |
+|                       |                       |     payer wants to    |
+|                       |                       |     redirect NOC      |
+|                       |                       |     refund to the     |
+|                       |                       |     injured person    |
+|                       |                       | -   requests a        |
+|                       |                       |     completed bank    |
+|                       |                       |     account details   |
+|                       |                       |     form so we can    |
+|                       |                       |     deposit money via |
+|                       |                       |     EFT               |
++-----------------------+-----------------------+-----------------------+
 
 Manual letters
 
-The letter templates available via this link are endorsed for use by
-Services Australia and are the latest versions. Staff should not use
-locally produced letters.
+The Standard Letter Templates (SLT) available via this link are endorsed
+for use by the agency and are the latest versions. Do not use locally
+produced letters.
 
-The full list of available Medicare Compensation Recovery letters is
-available from the Letters and electronic messaging sub-site.
+The full list of available Medicare Compensation Recovery manual letters
+is available from the Letters and electronic messaging sub-site.
+
+Table 2
+
++-----------------------+-----------------------+-----------------------+
+| Manual letter code    | Recipient             | Manual letter name    |
+|                       |                       | and brief description |
++-----------------------+-----------------------+-----------------------+
+| Z2277                 | Any (payer)           | We need more          |
+|                       |                       | information to        |
+|                       |                       | process a payment     |
+|                       |                       |                       |
+|                       |                       | Tells recipients that |
+|                       |                       | money has been        |
+|                       |                       | received but there    |
+|                       |                       | was no remittance     |
+|                       |                       | advice to tell us     |
+|                       |                       | who/what it was for.  |
++-----------------------+-----------------------+-----------------------+
+| Z2451                 | Any (requester)       | Compensation claim    |
+|                       |                       | document enclosed     |
+|                       |                       |                       |
+|                       |                       | See Table 1 above for |
+|                       |                       | detail on when to use |
+|                       |                       | this letter.          |
+|                       |                       |                       |
+|                       |                       | This is the manual    |
+|                       |                       | version of the Z2803. |
++-----------------------+-----------------------+-----------------------+
 
 Forms
 
--   Bank account details collection (MO024) - for injured person or
-    claimant
--   Commonwealth of Australia Declaration Criminal Code Act 1995
-    (MO028) - link not available to external audiences
--   Compensation payer’s Electronic Funds Transfer details collection
-    (MO025)
--   Medicare history statement request (MO026)
--   Notice of judgment or settlement (MO022)
--   Notice of reimbursement arrangement (MO027)
--   Section 23A statement (MO023)
--   Third party authority (MO021)
--   Services Australia Forms - Medicare
+Table 3
+
++-----------------------+-----------------------+-----------------------+
+| Form                  | Who can sign          | What the agency       |
+|                       |                       | requires              |
++-----------------------+-----------------------+-----------------------+
+| Third party authority | -   Injured person 14 | If not the injured    |
+| (MO021)               |     years or over     | person:               |
+|                       | -   Parent of a       |                       |
+| For injured person or |     minor, or         | -   Medicare card to  |
+| claimant to authorise | -   Legal             |     show parent or    |
+| a person or entity to |     representative    |     guardian          |
+| receive information   |     (i.e. guardian,   |     relationship, or  |
+| about their           |     executor, public  | -   Legal doc to show |
+| compensation claim    |     trustee, power of |     parent            |
+| and sign documents on |     attorney or       |     relationship or   |
+| their behalf.         |     financial         |     court appointed   |
+|                       |     manager)          |     power/authority   |
+|                       |                       |     if relevant       |
+|                       | Not the authorised    |                       |
+|                       | third party or        |                       |
+|                       | solicitor.            |                       |
++-----------------------+-----------------------+-----------------------+
+| Notice of judgment or | -   Notifiable person | Copy of the judgment  |
+| settlement (MO022)    | -   Notifiable        | or settlement docs.   |
+|                       |     person’s          |                       |
+| For notifiable person |     solicitor         |                       |
+| (compensation payer   | -   Compensation      |                       |
+| or insurer) to advise |     payer             |                       |
+| the agency that a     | -   Insurer           |                       |
+| compensation amount   |                       |                       |
+| has been fixed by     |                       |                       |
+| judgment or           |                       |                       |
+| settlement.           |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| Section 23A statement | -   Injured person 14 | If not the injured    |
+| (MO023)               |     years or over     | person:               |
+|                       | -   Parent of a       |                       |
+| For injured person or |     minor, or         | -   Medicare card to  |
+| claimant to declare   | -   Legal             |     show parent or    |
+| that:                 |     representative    |     guardian          |
+|                       |     (i.e. guardian,   |     relationship, or  |
+| -   since the last    |     executor, public  | -   Legal document to |
+|     NOPB they have    |     trustee, power of |     show parent       |
+|     not received any  |     attorney or       |     relationship or   |
+|     further related   |     financial         |     court appointed   |
+|     benefits          |     manager)          |     power/authority   |
+|                       |                       |     if relevant       |
+| Or                    | Not the authorised    |                       |
+|                       | third party or        |                       |
+| they have never       | solicitor.            |                       |
+| received any related  |                       |                       |
+| benefits (if a NOPB   |                       |                       |
+| has never been        |                       |                       |
+| issued)               |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| Bank account details  | -   Injured person 14 | If not the injured    |
+| collection (MO024)    |     years or over     | person:               |
+|                       | -   Parent of a       |                       |
+| For injured person or |     minor, or         | -   Medicare card to  |
+| claimant to provide   | -   Legal             |     show parent or    |
+| bank account details  |     representative    |     guardian          |
+| if entitled to a      |     (i.e. guardian,   |     relationship, or  |
+| refund.               |     executor, public  | -   Legal document to |
+|                       |     trustee, power of |     show parent       |
+|                       |     attorney or       |     relationship or   |
+|                       |     financial         |     court appointed   |
+|                       |     manager)          |     power/authority   |
+|                       |                       |     if relevant       |
+|                       | Not the authorised    |                       |
+|                       | third party or        |                       |
+|                       | solicitor.            |                       |
++-----------------------+-----------------------+-----------------------+
+| Compensation payer’s  | Compensation payer    | Nil                   |
+| Electronic Funds      | only                  |                       |
+| Transfer details      |                       |                       |
+| collection (MO025)    |                       |                       |
+|                       |                       |                       |
+| For compensation      |                       |                       |
+| payer to provide bank |                       |                       |
+| account details if    |                       |                       |
+| entitled to a refund. |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| Notice of past        | -   Injured person 14 | Nil (Notice to        |
+| benefits request      |     years or over     | claimant will be sent |
+| (MO026)               | -   Parent of a minor | to the injured person |
+|                       | -   Legal             | or claimant)          |
+| For any party to a    |     representative    |                       |
+| claim to request that |     (i.e. guardian,   |                       |
+| a statement be issued |     executor, public  |                       |
+| to the injured person |     trustee, power of |                       |
+| or claimant for them  |     attorney or       |                       |
+| to identify related   |     financial         |                       |
+| services, and a       |     manager)          |                       |
+| notice of past        | -   Authorised third  |                       |
+| benefits or charge    |     party             |                       |
+| can be issued to the  | -   Notifiable person |                       |
+| notifiable person.    | -   Notifiable        |                       |
+|                       |     person’s          |                       |
+|                       |     solicitor         |                       |
+|                       | -   Compensation      |                       |
+|                       |     payer             |                       |
+|                       | -   Insurer           |                       |
++-----------------------+-----------------------+-----------------------+
+| Notice of             | -   Notifiable person | Copy of appeal        |
+| reimbursement         | -   Notifiable        | decision if relevant  |
+| arrangement (MO027)   |     person’s          |                       |
+|                       |     solicitor         |                       |
+| For notifiable person | -   Compensation      |                       |
+| to advise the agency  |     payer             |                       |
+| that a reimbursement  | -   Insurer           |                       |
+| arrangement was made  |                       |                       |
+| (accepting liability  |                       |                       |
+| to pay medical        |                       |                       |
+| expenses as they are  |                       |                       |
+| incurred) more than 6 |                       |                       |
+| months after a        |                       |                       |
+| compensation claim    |                       |                       |
+| was made.             |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| Commonwealth of       | -   Injured person 14 | If not the injured    |
+| Australia Declaration |     years or over     | person:               |
+| Criminal Code Act     | -   Parent of a minor |                       |
+| 1995 (MO028) – link   | -   Legal             | -   Medicare card to  |
+| not available to      |     representative    |     show parent or    |
+| external audiences    |     (i.e. guardian,   |     guardian          |
+| Only to be used for   |     executor, public  |     relationship, or  |
+| certain legacy CCMS   |     trustee, power of | -   Legal document to |
+| cases.                |     attorney or       |     show parent       |
+|                       |     financial         |     relationship or   |
+| For injured person or |     manager)          |     court appointed   |
+| claimant to declare   | -   Authorised third  |     power/authority   |
+| if related care       |     party             |     if relevant       |
+| services were         |                       |                       |
+| received and that     |                       |                       |
+| identified items      |                       |                       |
+| ticked on the         |                       |                       |
+| accompanying Medicare |                       |                       |
+| history statement are |                       |                       |
+| true and correct.     |                       |                       |
++-----------------------+-----------------------+-----------------------+
 
 Email templates
 
-These attachments may not be printed, broadcast or released externally.
-For contact details and more information, see Information Publication
-Scheme.
+Do not share these attachments externally. See Freedom of Information -
+Information Publication Scheme.
 
-The email templates available via this link are endorsed for use by
-Services Australia and are the latest versions. Staff should not use
-locally produced emails.
+The email templates available via this link are endorsed for use by the
+agency and are the latest versions. Staff should not use locally
+produced emails.
 
 The full list of available Medicare Compensation Recovery email
 templates are available from the Letters and electronic messaging
 sub-site.
-
-Tools
-
-This attachment may not be printed, broadcast or released externally.
-For contact details and more information, see Information Publication
-Scheme.
-
-[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
-Blueprint Migration\RDT Release
-Icons\32w\icon-hidden-attachment.png]Calculator - Settlement
-
-This attachment may not be printed, broadcast or released externally.
-For contact details and more information, see Information Publication
-Scheme.
-
-[\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
-Blueprint Migration\RDT Release
-Icons\32w\icon-hidden-attachment.png]Calculator - Manual refunds
 
 Contact details
 
@@ -247,102 +661,117 @@ Medicare Compensation Recovery
 
 Terminology used in Medicare Compensation Recovery
 
-A to L - index of terms
+A to H – index of terms
 
-Table 2: These tables provide a list of common terminology used in
-Medicare Compensation Recovery. Note: this list is not exhaustive. Ask a
-Programme Support Officer if a term is identified which is not in this
-list.
+Table 4: these tables provide a list of common terminology used in the
+program. This list is not exhaustive. Ask a Programme Support Officer if
+a term is identified which is not in this list. Many of these terms are
+defined in section 3 ‘Definitions’ of the HOSC Act.
 
 +-----------------------------------+-----------------------------------+
 | Letter                            | Terms                             |
 +-----------------------------------+-----------------------------------+
-| A-L                               | advance payment (AP)              |
-|                                   |                                   |
-| See also: M-Z                     | Aged Care Management Payment      |
-|                                   | System (ACMPS)                    |
-|                                   |                                   |
-|                                   | all services taken                |
-|                                   |                                   |
-|                                   | authorised third party            |
-|                                   |                                   |
-|                                   | care costs                        |
-|                                   |                                   |
-|                                   | case notes                        |
-|                                   |                                   |
-|                                   | claimant                          |
-|                                   |                                   |
+| A-H                               | ad-hoc payment, advance payment   |
+|                                   | (AP), Aged Care Management        |
+| See also: I-R, S-Z                | Payment System (ACMPS), all       |
+|                                   | services included, authorised     |
+|                                   | third party (ATP), care costs,    |
+|                                   | care services statement, case,    |
+|                                   | case notes, claim, claimant,      |
 |                                   | Client and Service Provider       |
-|                                   | eAnalysis Reporting (CASPER)      |
-|                                   |                                   |
-|                                   | Compensation payer                |
-|                                   |                                   |
+|                                   | eAnalysis Reporting (CASPER),     |
+|                                   | closed (claim), compensable       |
+|                                   | person, compensation agent,       |
 |                                   | Compensation Case Management      |
-|                                   | System (CCMS)                     |
-|                                   |                                   |
-|                                   | completed history statement       |
-|                                   |                                   |
-|                                   | Consumer Directory Maintenance    |
-|                                   | System (CDMS)                     |
-|                                   |                                   |
-|                                   | declaration                       |
-|                                   |                                   |
-|                                   | history statement                 |
-|                                   |                                   |
-|                                   | injured person                    |
-|                                   |                                   |
-|                                   | injury                            |
-|                                   |                                   |
-|                                   | insurer                           |
-|                                   |                                   |
-|                                   | legal representative              |
+|                                   | System (CCMS), compensation       |
+|                                   | payer, consent judgment, Consumer |
+|                                   | Directory Maintenance System      |
+|                                   | (CDMS), date of birth (DoB),      |
+|                                   | declaration, Government           |
+|                                   | regulatory authority              |
 +-----------------------------------+-----------------------------------+
 
-A to L - terminology used in Medicare Compensation Recovery
+A to H – terminology used in Medicare Compensation Recovery
 
-Table 3: This table contains a list of common terminology (A to L) used
-in Medicare Compensation Recovery. It includes links to relevant
-Operational Blueprint documents.
+Table 5: this table contains a list of common terminology (A to H) used
+in the program. It includes links to relevant Operational Blueprint
+documents.
 
 +-----------------------------------+-----------------------------------+
 | Term                              | Description                       |
 +-----------------------------------+-----------------------------------+
-| advance payment (AP)              | A payment which represents a      |
-|                                   | portion of a judgment or          |
-|                                   | settlement amount, where there is |
-|                                   | no valid notice of past benefits  |
-|                                   | at date of judgment or            |
+| advance payment (AP)              | Equal to 10 percent of the        |
+|                                   | compensation amount fixed under   |
+|                                   | judgment or settlement, where     |
+|                                   | there is no valid Notice of past  |
+|                                   | benefits at date of judgment or   |
 |                                   | settlement.                       |
 |                                   |                                   |
-|                                   | Is received by Services           |
-|                                   | Australia, and both the agency    |
-|                                   | and the injured person (or        |
-|                                   | claimant) have received written   |
-|                                   | notifications that the insurer    |
-|                                   | intends to make that advance      |
-|                                   | payment.                          |
+|                                   | Is received by Services Australia |
+|                                   | within 28 days from date of       |
+|                                   | judgment or settlement, and both  |
+|                                   | the agency and the injured person |
+|                                   | (or claimant) have received       |
+|                                   | written notifications that the    |
+|                                   | insurer intends to make that      |
+|                                   | advance payment.                  |
 |                                   |                                   |
-|                                   | See also: Payments, refunds and   |
-|                                   | debts for Medicare Compensation   |
-|                                   | Recovery.                         |
+|                                   | See Payments, refunds and debts.  |
 +-----------------------------------+-----------------------------------+
-| Aged Care Management Payment      | ACMPS is a SAP HANA^(TM) database |
-| System (ACMPS)                    | accessed via ESSentials used to   |
-|                                   | confirm if any home care          |
-|                                   | subsidies have been paid on       |
-|                                   | behalf of a specific person. See  |
-|                                   | care costs.                       |
+| ad-hoc payment                    | Any payment received which does   |
+|                                   | not match a notice of charge      |
+|                                   | amount, and where there was no    |
+|                                   | intention advised to either the   |
+|                                   | agency or injured person of       |
+|                                   | making an advance payment.        |
+|                                   |                                   |
+|                                   | Was previously known as a         |
+|                                   | Voluntary recovery or voluntary   |
+|                                   | payment. Listed as ‘other claim   |
+|                                   | related payments’ on a notice of  |
+|                                   | past benefits or notice of        |
+|                                   | charge.                           |
+|                                   |                                   |
+|                                   | See Payments, refunds and debts.  |
 +-----------------------------------+-----------------------------------+
-| all services taken                | See Notice of charge -            |
-|                                   | (Individual).                     |
+| Aged Care Management Payment      | ACMPS is a SAP database accessed  |
+| System (ACMPS)                    | via ESSentials used by Medicare   |
+|                                   | Compensation Recovery to confirm  |
+|                                   | if any home care subsidies have   |
+|                                   | been paid on behalf of a specific |
+|                                   | person. For nursing home or       |
+|                                   | residential care see care costs.  |
 +-----------------------------------+-----------------------------------+
-| authorised third party            | Either an organisation (such as a |
-|                                   | solicitor) or an individual (such |
-|                                   | as a friend or relative) who is   |
-|                                   | authorised to act on behalf of    |
-|                                   | the injured person or claimant on |
-|                                   | a Third Party Authority form      |
-|                                   | (MO021).                          |
+| all services included             | All services that were listed on  |
+|                                   | the notice to claimant are        |
+|                                   | considered to be related to the   |
+|                                   | claim because the claimant did    |
+|                                   | not return a statement by the due |
+|                                   | date.                             |
+|                                   |                                   |
+|                                   | May apply to a notice of past     |
+|                                   | benefits – all services included  |
+|                                   | or a notice of charge – all       |
+|                                   | services included.                |
+|                                   |                                   |
+|                                   | See Notice of past benefits and   |
+|                                   | notice of charge.                 |
++-----------------------------------+-----------------------------------+
+| authorised third party            | Either an organisation (such as   |
+|                                   | an injured person’s solicitor) or |
+| (ATP)                             | an individual (such as a friend   |
+|                                   | or relative) who is authorised by |
+|                                   | the injured person (or claimant)  |
+|                                   | to act on their behalf on a Third |
+|                                   | Party Authority form (MO021). See |
+|                                   | third party.                      |
+|                                   |                                   |
+|                                   | An insurer's solicitor or         |
+|                                   | compensation administrator is     |
+|                                   | considered a delegate and/or      |
+|                                   | agent and may act on behalf of    |
+|                                   | the notifiable                    |
+|                                   | person/compensation payer.        |
 |                                   |                                   |
 |                                   | Also may be known as the:         |
 |                                   |                                   |
@@ -350,17 +779,15 @@ Operational Blueprint documents.
 |                                   | -   claimant’s authorised         |
 |                                   |     solicitor                     |
 |                                   |                                   |
-|                                   | See also: Authority to release    |
-|                                   | information and acting on a       |
-|                                   | person’s behalf for Medicare      |
-|                                   | Compensation Recovery             |
+|                                   | Note: an authorised third party   |
+|                                   | may sign documents on behalf of   |
+|                                   | the injured person or claimant as |
+|                                   | per the authority given to them   |
+|                                   | on the MO021 form.                |
 |                                   |                                   |
-|                                   | Note: an insurer's solicitor or   |
-|                                   | compensation administrator is     |
-|                                   | considered a delegate and/or      |
-|                                   | agent and may act on behalf of    |
-|                                   | the notifiable                    |
-|                                   | person/compensation payer.        |
+|                                   | See Enquiries and authenticating  |
+|                                   | a customer and Authority to       |
+|                                   | access a claim.                   |
 +-----------------------------------+-----------------------------------+
 | care costs                        | Nursing home benefits,            |
 |                                   | residential care subsidies and    |
@@ -370,8 +797,33 @@ Operational Blueprint documents.
 |                                   | Act 1995. Previously referred to  |
 |                                   | as a 'nursing home check'.        |
 |                                   |                                   |
-|                                   | See also: Care costs for Medicare |
-|                                   | Compensation Recovery.            |
+|                                   | See Statement by claimant and     |
+|                                   | care costs.                       |
++-----------------------------------+-----------------------------------+
+| care services statement           | Advises if an injured person was  |
+|                                   | admitted to care or received an   |
+|                                   | increase in level of care due to  |
+|                                   | the compensable injury or         |
+|                                   | illness. Covers the period from   |
+|                                   | the date of injury to the date    |
+|                                   | the statement was issued or the   |
+|                                   | date of judgment or settlement,   |
+|                                   | whichever is earlier. This        |
+|                                   | question previously formed part   |
+|                                   | of the MO028 form.                |
+|                                   |                                   |
+|                                   | This forms part of the statement  |
+|                                   | by claimant together with a       |
+|                                   | completed Medicare history        |
+|                                   | statement and declaration.        |
+|                                   |                                   |
+|                                   | See Statement by claimant and     |
+|                                   | care costs.                       |
++-----------------------------------+-----------------------------------+
+| case                              | A term used in MCRS to describe a |
+|                                   | work item or task within a        |
+|                                   | compensation claim that requires  |
+|                                   | processing.                       |
 +-----------------------------------+-----------------------------------+
 | case notes                        | A public record of information    |
 |                                   | created, sent and received in the |
@@ -383,87 +835,183 @@ Operational Blueprint documents.
 |                                   | provisions.                       |
 |                                   |                                   |
 |                                   | Where possible, staff should use  |
-|                                   | the case notes macro on           |
-|                                   | Sharepoint or the case notes      |
-|                                   | template to ensure all important  |
-|                                   | information about a process has   |
-|                                   | been included.                    |
+|                                   | the case notes template to ensure |
+|                                   | all important information about a |
+|                                   | process has been included.        |
 +-----------------------------------+-----------------------------------+
-| claimant                          | The person seeking compensation.  |
+| claim                             | A claim for compensation in       |
+|                                   | writing.                          |
++-----------------------------------+-----------------------------------+
+| claimant                          | The person seeking compensation   |
+|                                   | either                            |
+|                                   |                                   |
+|                                   | -   on his/her own behalf or      |
+|                                   | -   on behalf of another person   |
+|                                   |                                   |
 |                                   | The claimant is either the        |
-|                                   | injured person or someone else    |
-|                                   | such as a parent/guardian or a    |
-|                                   | legal representative. Referred to |
-|                                   | in the Health and Other Services  |
-|                                   | (Compensation) Act 1995, use      |
-|                                   | 'injured person' instead wherever |
-|                                   | possible to be specific.          |
+|                                   | injured person or                 |
 |                                   |                                   |
-|                                   | Also may be known as the:         |
+|                                   | -   a parent/guardian (if injured |
+|                                   |     person under 14 years –       |
+|                                   |     minor, or over 14 years and a |
+|                                   |     treating doctor has confirmed |
+|                                   |     they are mentally unable to   |
+|                                   |     manage their own affairs)     |
+|                                   | -   a legal representative e.g.   |
+|                                   |     executor, public trustee,     |
+|                                   |     power of attorney or          |
+|                                   |     financial manager             |
 |                                   |                                   |
-|                                   | -   authorised representative     |
-|                                   | -   parent/guardian of an under   |
-|                                   |     14 year old injured person    |
-|                                   |     (minor)                       |
-|                                   | -   power of attorney             |
-|                                   | -   public trustee                |
-|                                   | -   executor                      |
-|                                   | -   administrator                 |
+|                                   | See compensable person.           |
 +-----------------------------------+-----------------------------------+
-| Client and Service Provider       | CASPER is the Department of       |
-| eAnalysis Reporting (CASPER)      | Health and Aged Care's data       |
-|                                   | warehouse and reports on data     |
-|                                   | from the Aged Care Management     |
-|                                   | Payment System (ACMPS). See care  |
-|                                   | costs.                            |
+| closed (claim)                    | A claim is automatically closed   |
+|                                   | by MCRS when all processing on a  |
+|                                   | claim has been finalised and a    |
+|                                   | charge has been issued.           |
+|                                   |                                   |
+|                                   | A claim may be manually closed    |
+|                                   | (terminated) by a Service Officer |
+|                                   | in MCRS before all processing has |
+|                                   | been completed. See Close,        |
+|                                   | terminate, update or reopen a     |
+|                                   | claim.                            |
++-----------------------------------+-----------------------------------+
+| Client and Service Provider       | Owned by the Australian           |
+| eAnalysis Reporting (CASPER)      | Government Department of Health   |
+|                                   | and Aged Care, this Cognos        |
+|                                   | database draws information from   |
+|                                   | the Aged Care Management Payment  |
+|                                   | System (ACMPS).                   |
+|                                   |                                   |
+|                                   | This information is used to       |
+|                                   | calculate recoverable care costs. |
++-----------------------------------+-----------------------------------+
+| compensable person                | An individual who is entitled to  |
+|                                   | receive compensation for an       |
+|                                   | injury or illness. If the         |
+|                                   | individual has died, the          |
+|                                   | individual’s estate.              |
+|                                   |                                   |
+|                                   | Use 'injured person' wherever     |
+|                                   | possible to be specific.          |
++-----------------------------------+-----------------------------------+
+| compensation agent                | Manages claims on behalf of       |
+|                                   | insurers, brokers, government     |
+|                                   | bodies and self-insured           |
+|                                   | organisations.                    |
+|                                   |                                   |
+|                                   | Also includes compensation        |
+|                                   | delegate and compensation         |
+|                                   | administrator. They may act for   |
+|                                   | the compensation payer,           |
+|                                   | notifiable person or insurer and  |
+|                                   | do not require a Third Party      |
+|                                   | Authority.                        |
 +-----------------------------------+-----------------------------------+
 | compensation payer                | The person who is liable to make  |
 |                                   | a payment of compensation. Can be |
 |                                   | a notifiable person or insurer.   |
 +-----------------------------------+-----------------------------------+
-| Compensation Case Management      | The Staffware^(TM) based database |
-| System (CCMS)                     | system used by the agency to      |
-|                                   | manage Medicare compensation      |
-|                                   | recovery cases, including to      |
-|                                   | register a case, enter details of |
-|                                   | relevant parties and enter case   |
-|                                   | notes of actions.                 |
-+-----------------------------------+-----------------------------------+
-| completed Medicare history        | This forms part of the statement  |
-| statement                         | by claimant together with a       |
-|                                   | completed declaration regarding   |
-|                                   | care costs.                       |
+| Compensation Case Management      | CCMS was decommissioned in 2023.  |
+| System (CCMS)                     | CCMS was a suite of               |
+|                                   | Staffware^(TM) workflow           |
+|                                   | applications that was used to     |
+|                                   | manage the business processes of  |
+|                                   | Medicare Compensation Recovery.   |
 |                                   |                                   |
-|                                   | See also: Statement by claimant   |
-|                                   | for Medicare Compensation         |
-|                                   | Recovery.                         |
+|                                   | See Medicare Compensation         |
+|                                   | Recovery System (MCRS). Legacy    |
+|                                   | CCMS claim data can be imported   |
+|                                   | to MCRS if needed.                |
++-----------------------------------+-----------------------------------+
+| consent judgment                  | A consent judgment may be made    |
+|                                   | when parties come to an agreement |
+|                                   | about a settlement, and ask the   |
+|                                   | court to make orders based on     |
+|                                   | that agreement.                   |
+|                                   |                                   |
+|                                   | It is different to a decision by  |
+|                                   | a court. See Notice of judgment   |
+|                                   | or settlement.                    |
 +-----------------------------------+-----------------------------------+
 | Consumer Directory Maintenance    | A database used by the agency to  |
 | System (CDMS)                     | manage Medicare enrolment data,   |
 |                                   | including demographic information |
 |                                   | such as names, date of birth,     |
-|                                   | gender and addresses.             |
+|                                   | gender and addresses. See Search  |
+|                                   | for or update an existing claim   |
+|                                   | or register a new claim.          |
 |                                   |                                   |
-|                                   | See also: Consumer Directory      |
+|                                   | See Consumer Directory            |
 |                                   | Maintenance System (CDMS) for     |
 |                                   | Medicare.                         |
 +-----------------------------------+-----------------------------------+
-| declaration                       | A written statement signed by the |
-|                                   | injured person or the claimant    |
-|                                   | that something is true.           |
-|                                   |                                   |
-|                                   | See also: Declarations for        |
-|                                   | Medicare Compensation Recovery.   |
+| date of birth (DoB)               | The date of birth of the injured  |
+|                                   | person as recorded by an official |
+|                                   | institution, for example in       |
+|                                   | Australia the state or territory  |
+|                                   | registry of Births, Deaths and    |
+|                                   | Marriages.                        |
 +-----------------------------------+-----------------------------------+
-| history statement                 | Also known as a Medicare history  |
-|                                   | statement or a 'Request for a     |
-|                                   | notice to claimant'. Previously   |
-|                                   | known as a 'Claims History        |
-|                                   | Statement'.                       |
+| declaration                       | A written statement in which the  |
+|                                   | signatory swears that the         |
+|                                   | contents are true.                |
 |                                   |                                   |
-|                                   | See also: Medicare history        |
-|                                   | statement request for Medicare    |
-|                                   | Compensation Recovery.            |
+|                                   | For Medicare Compensation         |
+|                                   | Recovery purposes, the signatory  |
+|                                   | acknowledges that they understand |
+|                                   | that giving false or misleading   |
+|                                   | information is a serious offence  |
+|                                   | under the Criminal Code Act 1995  |
+|                                   | (punishable by imprisonment for   |
+|                                   | 12 months).                       |
+|                                   |                                   |
+|                                   | Note: only a statutory            |
+|                                   | declaration needs to be signed    |
+|                                   | and declared in the presence of   |
+|                                   | an authorised witness.            |
++-----------------------------------+-----------------------------------+
+| Government regulatory authority   | An autonomous authority or agency |
+|                                   | established by a federal, state   |
+|                                   | or provincial government with the |
+|                                   | power to enforce regulations      |
+|                                   | regarding occupational health and |
+|                                   | safety.                           |
+|                                   |                                   |
+|                                   | For example, SafeWork NSW,        |
+|                                   | WorkSafe VIC, WorkCover QLD etc.  |
++-----------------------------------+-----------------------------------+
+
+I to R – index of terms
+
+Table 6: these tables provide a list of common terminology used in the
+program. This list is not exhaustive. Ask a Programme Support Officer if
+a term is identified which is not in this list. Many of these terms are
+defined in section 3 ‘Definitions’ of the HOSC Act.
+
++-----------------------------------+-----------------------------------+
+| Letter                            | Terms                             |
++-----------------------------------+-----------------------------------+
+| I-R                               | injured person, injury, insurer,  |
+|                                   | judgment, legal representative,   |
+| See also: A-H, S-Z                | Medicare Compensation Recovery    |
+|                                   | System (MCRS), Medicare history   |
+|                                   | statement, Notice of charge       |
+|                                   | (NOC), Notice of past benefits    |
+|                                   | (NOPB), Notice to claimant,       |
+|                                   | notifiable compensation claim,    |
+|                                   | notifiable person, parent,        |
+|                                   | reimbursement arrangement         |
++-----------------------------------+-----------------------------------+
+
+I to R – terminology used in Medicare Compensation Recovery
+
+Table 7: this table contains a list of common terminology (I to R) used
+in the program. It includes links to relevant Operational Blueprint
+documents.
+
++-----------------------------------+-----------------------------------+
+| Term                              | Description                       |
 +-----------------------------------+-----------------------------------+
 | injured person                    | The individual who has suffered   |
 |                                   | an injury or illness. Also known  |
@@ -473,9 +1021,11 @@ Operational Blueprint documents.
 |                                   | claimant unless the claim is      |
 |                                   | being made on their behalf.       |
 +-----------------------------------+-----------------------------------+
-| injury                            | Injury, illness or disease        |
-|                                   | relating to the compensation      |
-|                                   | claim.                            |
+| injury                            | Harm, damage or impairment to the |
+|                                   | injured person. May be physical   |
+|                                   | or psychological and includes an  |
+|                                   | illness or disease relating to    |
+|                                   | the compensation claim.           |
 +-----------------------------------+-----------------------------------+
 | insurer                           | Referred to in the Health and     |
 |                                   | Other Services (Compensation) Act |
@@ -485,166 +1035,234 @@ Operational Blueprint documents.
 |                                   | 'insurer' in the strict sense in  |
 |                                   | all instances.                    |
 +-----------------------------------+-----------------------------------+
-| legal representative              | The person who has been appointed |
-|                                   | by law to act on the injured      |
-|                                   | person’s behalf (such as an       |
-|                                   | executor, court order or Power of |
-|                                   | Attorney). Not to be confused     |
-|                                   | with claimant’s solicitor.        |
+| judgment                          | An order by a court or            |
+|                                   | compensation authority that fixes |
+|                                   | a compensation amount. It does    |
+|                                   | not include a reimbursement       |
+|                                   | arrangement or a consent judgment |
+|                                   | (or an order in the nature of a   |
+|                                   | consent judgment)                 |
 +-----------------------------------+-----------------------------------+
-
-M to Z - index of terms
-
-Table 4: These tables provide a list of common terminology used in
-Medicare Compensation Recovery. Note: this list is not exhaustive. Ask a
-Programme Support Officer if a term is identified which is not in this
-list.
-
+| legal representative              | A person or entity who has been   |
+|                                   | appointed by law to act on the    |
+|                                   | injured person’s behalf such as:  |
+|                                   |                                   |
+|                                   | -   guardian                      |
+|                                   | -   estate executor (if the       |
+|                                   |     injured person has died)      |
+|                                   | -   administrator (letters of     |
+|                                   |     administration)               |
+|                                   | -   public trustee                |
+|                                   | -   power of attorney             |
+|                                   | -   financial manager             |
+|                                   |                                   |
+|                                   | Note: this is not the claimant’s  |
+|                                   | solicitor or lawyer.              |
 +-----------------------------------+-----------------------------------+
-| Letter                            | Terms                             |
+| Medicare Compensation Recovery    | The claim processing system used  |
+| System (MCRS)                     | in Medicare Compensation Recovery |
+|                                   | to calculate recoverable amounts, |
+|                                   | and to issue letters and notices. |
 +-----------------------------------+-----------------------------------+
-| M-Z                               | Medicare Compensation Recovery    |
+| Medicare history statement        | An itemised list of professional  |
+|                                   | services received by an           |
+|                                   | individual for which Medicare     |
+|                                   | benefit was paid. Covers the      |
+|                                   | period from the date of injury to |
+|                                   | the date the statement was issued |
+|                                   | or the date of judgment or        |
+|                                   | settlement, whichever is earlier. |
 |                                   |                                   |
-| See also: A-L                     | Medicare history statement        |
+|                                   | Previously known as a 'Claims     |
+|                                   | History Statement', it is         |
+|                                   | different to a Medicare claims    |
+|                                   | history available via myGov,      |
+|                                   | because it only lists services    |
+|                                   | between the date of injury and    |
+|                                   | the date of statement issue and   |
+|                                   | is only for Medicare Compensation |
+|                                   | Recovery purposes.                |
 |                                   |                                   |
-|                                   | Notice of past benefits - all     |
-|                                   | services taken                    |
+|                                   | This forms part of the statement  |
+|                                   | by claimant together with a       |
+|                                   | completed care services statement |
+|                                   | and declaration.                  |
 |                                   |                                   |
-|                                   | Notice of past benefits (NoPB)    |
+|                                   | See:                              |
 |                                   |                                   |
-|                                   | Notice to claimant                |
-|                                   |                                   |
-|                                   | notifiable person                 |
-|                                   |                                   |
-|                                   | Section 23A statement             |
-|                                   |                                   |
-|                                   | Solicitor - injured person's      |
-|                                   |                                   |
-|                                   | Solicitor - insurer's             |
-|                                   |                                   |
-|                                   | Statement by claimant             |
-|                                   |                                   |
-|                                   | System for the Payment of Aged    |
-|                                   | Residential Care (SPARC)          |
-|                                   |                                   |
-|                                   | third party                       |
-|                                   |                                   |
-|                                   | third party - authorised          |
-|                                   |                                   |
-|                                   | voluntary recovery                |
-|                                   |                                   |
-|                                   | work identification number (WIN)  |
+|                                   | -   Statement by claimant and     |
+|                                   |     care costs                    |
+|                                   | -   Notice of past benefit        |
+|                                   |     request and notice to         |
+|                                   |     claimant                      |
 +-----------------------------------+-----------------------------------+
-
-M to Z - terminology used in Medicare Compensation Recovery
-
-Table 5: This table contains a list of common terminology (M to Z) used
-in Medicare Compensation Recovery. It includes links to relevant
-Operational Blueprint documents.
-
-+-----------------------------------+-----------------------------------+
-| Term                              | Description                       |
-+-----------------------------------+-----------------------------------+
-| Medicare Compensation Recovery    | A Commonwealth program            |
-|                                   | administered by Services          |
-|                                   | Australia, to recover Medicare    |
-|                                   | benefits, nursing home benefits,  |
-|                                   | residential care subsidies and    |
-|                                   | home care subsidies paid on       |
-|                                   | behalf of a person in relation to |
-|                                   | an injury/illness where more than |
-|                                   | $5,000 has been awarded in        |
-|                                   | compensation or where a           |
-|                                   | reimbursement arrangement has     |
-|                                   | been entered into more than 6     |
-|                                   | months after a compensation claim |
-|                                   | has been lodged.                  |
+| Notice of charge (NOC)            | A final notice that does not      |
+|                                   | expire. Provides the total amount |
+|                                   | of recoverable Medicare benefits  |
+|                                   | and care costs (nursing home      |
+|                                   | benefits, residential care        |
+|                                   | subsidies and home care           |
+|                                   | subsidies) which the agency       |
+|                                   | believes were paid in respect of  |
+|                                   | treatment for, or as a result of, |
+|                                   | a compensable injury.             |
 |                                   |                                   |
-|                                   | This is to prevent double-dipping |
-|                                   | in compensation cases. That is,   |
-|                                   | so the Commonwealth is reimbursed |
-|                                   | for subsidies and benefits paid   |
-|                                   | for medical services which were   |
-|                                   | provided to a person (bulk-billed |
-|                                   | or subsidised) by the government  |
-|                                   | who has been compensated for      |
-|                                   | those services.                   |
-+-----------------------------------+-----------------------------------+
-| Medicare history statement        | An itemised list of the services  |
-|                                   | received by an individual that    |
-|                                   | were paid for in whole or part by |
-|                                   | the Commonwealth.                 |
+|                                   | A notice of charge takes into     |
+|                                   | account any payments already      |
+|                                   | received for that claim and is    |
+|                                   | based on the statement by         |
+|                                   | claimant (or notice to claimant   |
+|                                   | if the statement was not          |
+|                                   | returned).                        |
 |                                   |                                   |
-|                                   | Also may be known as history      |
-|                                   | statement or a 'Request for a     |
-|                                   | notice to claimant'. Previously   |
-|                                   | known as a 'Claims History        |
-|                                   | Statement'.                       |
+|                                   | A notice of charge is payable     |
+|                                   | within 28 days of issue because   |
+|                                   | the compensation amount has been  |
+|                                   | fixed.                            |
 |                                   |                                   |
-|                                   | See also: Medicare history        |
-|                                   | statement request for Medicare    |
-|                                   | Compensation Recovery.            |
+|                                   | See Notice of past benefit        |
+|                                   | request and notice to claimant.   |
 +-----------------------------------+-----------------------------------+
-| Notice of past benefits (NoPB)    | An interim statement which lists  |
-|                                   | the Medicare benefits, nursing    |
-|                                   | home benefits, residential care   |
-|                                   | subsidies and home care subsidies |
-|                                   | which the agency believes were    |
-|                                   | paid in respect of treatment for, |
-|                                   | or as a result of, a compensable  |
-|                                   | injury. A notice of past benefits |
-|                                   | is not payable until a case       |
-|                                   | settles.                          |
+| Notice of past benefits (NOPB)    | An interim notice valid for 6     |
+|                                   | months. Provides the total amount |
+|                                   | of recoverable Medicare benefits  |
+|                                   | and care costs (nursing home      |
+|                                   | benefits, residential care        |
+|                                   | subsidies and home care           |
+|                                   | subsidies) which the agency       |
+|                                   | believes were paid in respect of  |
+|                                   | treatment for, or as a result of, |
+|                                   | a compensable injury.             |
 |                                   |                                   |
 |                                   | A notice of past benefits takes   |
 |                                   | into account any payments already |
-|                                   | received for that case. At        |
-|                                   | settlement, a valid notice of     |
-|                                   | past benefits becomes the notice  |
-|                                   | of charge for that case.          |
+|                                   | received for that claim and is    |
+|                                   | based on the statement by         |
+|                                   | claimant (or notice to claimant   |
+|                                   | if the statement was not          |
+|                                   | returned).                        |
 |                                   |                                   |
-|                                   | See also: Notice of charge –      |
-|                                   | (Individual).                     |
-+-----------------------------------+-----------------------------------+
-| Notice of past benefits - all     | All services included in a        |
-| services taken                    | Medicare history statement are    |
-|                                   | taken as related to an injury or  |
-|                                   | illness because the time to reply |
-|                                   | has expired. The Statement by     |
-|                                   | claimant was not returned in time |
-|                                   | or at all. Note: this was         |
-|                                   | previously known as 'deemed'.     |
+|                                   | A notice of past benefits is only |
+|                                   | payable if a claim settles while  |
+|                                   | it is still valid - it then       |
+|                                   | becomes the notice of charge for  |
+|                                   | that claim.                       |
+|                                   |                                   |
+|                                   | See Notice of past benefit        |
+|                                   | request and notice to claimant.   |
 +-----------------------------------+-----------------------------------+
 | Notice to claimant                | Referred to in section 17 of the  |
 |                                   | Health and Other Services         |
 |                                   | (Compensation) Act 1995.          |
 |                                   |                                   |
-|                                   | Sent to the injured person (or    |
-|                                   | the claimant) to advise of their  |
-|                                   | requirement to repay Medicare     |
-|                                   | benefits, nursing home benefits,  |
-|                                   | residential care subsidies or     |
-|                                   | home care subsidies related to    |
-|                                   | their compensation claim. It      |
-|                                   | contains a Medicare history       |
-|                                   | statement to identify services    |
-|                                   | related to the injury/illness and |
-|                                   | a declaration for the injured     |
-|                                   | person (or claimant) or           |
-|                                   | authorised third party to         |
-|                                   | complete regarding related care   |
-|                                   | costs.                            |
+|                                   | Sent to the claimant to advise of |
+|                                   | their requirement to repay        |
+|                                   | Medicare benefits and care costs  |
+|                                   | related to their compensation     |
+|                                   | claim. It contains a Medicare     |
+|                                   | history statement to identify     |
+|                                   | services related to the           |
+|                                   | injury/illness and a declaration  |
+|                                   | for the claimant or authorised    |
+|                                   | third party to complete regarding |
+|                                   | related care costs.               |
 |                                   |                                   |
-|                                   | See also: Medicare history        |
-|                                   | statement request for Medicare    |
-|                                   | Compensation Recovery.            |
+|                                   | See Notice of past benefit        |
+|                                   | request and notice to claimant.   |
 +-----------------------------------+-----------------------------------+
-| notifiable person                 | Referred to in the Health and     |
-|                                   | Other Services (Compensation) Act |
-|                                   | 1995 and is usually an insurance  |
-|                                   | company. Also known as the        |
-|                                   | 'compensation payer' after        |
-|                                   | judgment or settlement.           |
+| notifiable compensation claim     | -   A claim for a compensation    |
+|                                   |     amount of more than $5,000    |
+|                                   |     (including legal costs for    |
+|                                   |     settlements), or              |
+|                                   | -   A reimbursement arrangement   |
+|                                   |     made more than 6 months after |
+|                                   |     the claim for compensation    |
+|                                   |     was made                      |
+|                                   |                                   |
+|                                   | See Notifiable and not notifiable |
+|                                   | claims.                           |
++-----------------------------------+-----------------------------------+
+| notifiable person                 | Usually an insurance company, but |
+|                                   | in relation to a compensation     |
+|                                   | claim may be:                     |
+|                                   |                                   |
+|                                   | -   the insurer, if the person    |
+|                                   |     against whom the claim was    |
+|                                   |     made was/is insured for       |
+|                                   |     liable claims                 |
+|                                   | -   a representative              |
+|                                   |     organisation, if the person   |
+|                                   |     against whom the compensation |
+|                                   |     claim was made was/is a       |
+|                                   |     member and covered for liable |
+|                                   |     claims, or                    |
+|                                   | -   the person against whom the   |
+|                                   |     claim was made                |
+|                                   |                                   |
+|                                   | Referred to as the compensation   |
+|                                   | payer after judgment or           |
+|                                   | settlement.                       |
++-----------------------------------+-----------------------------------+
+| parent                            | Care giver/Father/Mother of a     |
+|                                   | child.                            |
+|                                   |                                   |
+|                                   | Relationship can be confirmed by  |
+|                                   | Medicare card that includes the   |
+|                                   | child or copy of birth            |
+|                                   | certificate of the child. An      |
+|                                   | MO021 must be completed by an     |
+|                                   | injured person 14 years or over   |
+|                                   | that is mentally capable of       |
+|                                   | handling their own affairs.       |
++-----------------------------------+-----------------------------------+
+| reimbursement arrangement         | An agreement in writing, an order |
+|                                   | of a court, or a decision of a    |
+|                                   | person or body, that the person   |
+|                                   | against whom the claim is made is |
+|                                   | liable to pay compensation to     |
+|                                   | reimburse the claimant for        |
+|                                   | expenses as they are incurred and |
+|                                   |                                   |
+|                                   | -   are incurred in respect of    |
+|                                   |     services or care provided to  |
+|                                   |     treat or as a result of the   |
+|                                   |     injury or illness             |
+|                                   | -   are expenses for which an     |
+|                                   |     eligible benefit is or may    |
+|                                   |     become payable                |
+|                                   |                                   |
+|                                   | Payment under a reimbursement     |
+|                                   | arrangement is made by the        |
+|                                   | notifiable person.                |
++-----------------------------------+-----------------------------------+
+
+S to Z – index of terms
+
+Table 8: these tables provide a list of common terminology used in the
+program. This list is not exhaustive. Ask a Programme Support Officer if
+a term is identified which is not in this list. Many of these terms are
+defined in section 3 ‘Definitions’ of the HOSC Act.
+
++-----------------------------------+-----------------------------------+
+| Letter                            | Terms                             |
++-----------------------------------+-----------------------------------+
+| S-Z                               | Section 23A statement,            |
+|                                   | settlement, solicitor – injured   |
+| See also: A-H, I-R                | person's, solicitor – insurer's,  |
+|                                   | Statement by claimant, System for |
+|                                   | the Payment of Aged Residential   |
+|                                   | Care (SPARC), third party, work   |
+|                                   | item number (WIN)                 |
++-----------------------------------+-----------------------------------+
+
+S to Z – terminology used in Medicare Compensation Recovery
+
+Table 9: this table contains a list of common terminology (S to Z) used
+in the program. It includes links to relevant Operational Blueprint
+documents.
+
++-----------------------------------+-----------------------------------+
+| Term                              | Description                       |
 +-----------------------------------+-----------------------------------+
 | Section 23A statement             | A declaration by an injured       |
 |                                   | person or claimant that:          |
@@ -658,69 +1276,143 @@ Operational Blueprint documents.
 |                                   |     illness since the expired     |
 |                                   |     notice of past benefits       |
 +-----------------------------------+-----------------------------------+
-| Solicitor - injured person's      | Nominated by the injured person   |
+| settlement                        | An agreement that fixes a         |
+|                                   | compensation amounts that parties |
+|                                   | to the agreement will pay. It     |
+|                                   | does not include a reimbursement  |
+|                                   | arrangement. It includes:         |
+|                                   |                                   |
+|                                   | -   an agreement for redemption   |
+|                                   |     of a fixed amount entitlement |
+|                                   |     to compensation by periodic   |
+|                                   |     payments                      |
+|                                   | -   a consent judgment, or an     |
+|                                   |     order in the nature of a      |
+|                                   |     consent judgment by a court   |
+|                                   |     or compensation authority     |
++-----------------------------------+-----------------------------------+
+| solicitor – injured person's      | Nominated by the injured person   |
 |                                   | or claimant to send us            |
 |                                   | correspondence relating to their  |
-|                                   | compensation case.                |
+|                                   | compensation claim. Must be       |
+|                                   | authorised on an MO021 by a       |
+|                                   | claimant to act on their behalf.  |
+|                                   |                                   |
+|                                   | Has studied law, completed        |
+|                                   | practical legal training, and     |
+|                                   | been admitted to the Supreme      |
+|                                   | Court of their state or           |
+|                                   | territory. They must have a       |
+|                                   | current practising certificate    |
+|                                   | and be insured.                   |
 +-----------------------------------+-----------------------------------+
-| Solicitor - insurer's             | Nominated by the insurer to       |
-|                                   | represent them for the case. A    |
+| solicitor – insurer's             | Nominated by the insurer to       |
+|                                   | represent them for the claim. A   |
 |                                   | third party authority form is not |
 |                                   | required.                         |
+|                                   |                                   |
+|                                   | See compensation agent.           |
 +-----------------------------------+-----------------------------------+
 | Statement by claimant             | Referred to in section 18 of the  |
 |                                   | Health and Other Services         |
 |                                   | (Compensation) Act 1995. This is  |
 |                                   | the returned Medicare history     |
+|                                   | statement, care services          |
 |                                   | statement and declaration signed  |
 |                                   | by the injured person, claimant   |
 |                                   | or authorised third party. It     |
 |                                   | verifies the Medicare services    |
 |                                   | they believe relate to their      |
-|                                   | case, and whether they have       |
-|                                   | received nursing home benefits,   |
-|                                   | residential care subsidies or     |
-|                                   | home care subsidies as a result   |
-|                                   | of their injury or illness.       |
+|                                   | compensation claim, and whether   |
+|                                   | they have received related care   |
+|                                   | in a nursing home, residential    |
+|                                   | care facility, or home care       |
+|                                   | services.                         |
 |                                   |                                   |
-|                                   | See also: Statement by claimant   |
-|                                   | for Medicare Compensation         |
-|                                   | Recovery.                         |
+|                                   | See Statement by claimant and     |
+|                                   | care costs.                       |
 +-----------------------------------+-----------------------------------+
-| System for the Payment of Aged    | SPARC was a Medicare mainframe    |
-| Residential Care (SPARC)          | database used to confirm if any   |
-|                                   | nursing home benefits or          |
-|                                   | residential care subsidies were   |
-|                                   | paid on behalf of a specific      |
-|                                   | person. Service Officers must use |
+| System for the Payment of Aged    | SPARC was decommissioned on 20    |
+| Residential Care (SPARC)          | August 2022. SPARC was a Medicare |
+|                                   | mainframe database used by        |
+|                                   | Medicare Compensation Recovery to |
+|                                   | confirm if any nursing home       |
+|                                   | benefits or residential care      |
+|                                   | subsidies have been paid on       |
+|                                   | behalf of a specific person.      |
+|                                   | Service Officers must use the     |
 |                                   | Aged Care Staff Portal (ACSP) to  |
 |                                   | obtain residential care           |
 |                                   | information from 20 August 2022.  |
+|                                   | For home care subsidies see       |
+|                                   | ACMPS.                            |
++-----------------------------------+-----------------------------------+
+| third party                       | A person or group with an         |
+|                                   | interest in the claim, other than |
+|                                   | the injured person (or the        |
+|                                   | claimant) and Services Australia. |
+|                                   | May also be known as 'claimant's  |
+|                                   | solicitor', compensation payer,   |
+|                                   | notifiable person or insurer. See |
+|                                   | also authorised third party.      |
 |                                   |                                   |
-|                                   | See care costs.                   |
+|                                   | Note: a claimant’s solicitor must |
+|                                   | be authorised (MO021) by the      |
+|                                   | claimant before they can access   |
+|                                   | information about the claim on    |
+|                                   | behalf of their client.           |
 +-----------------------------------+-----------------------------------+
-| third party                       | Anyone with an interest in the    |
-|                                   | case, other than the injured      |
-|                                   | person (or the claimant) and      |
-|                                   | Services Australia. May also be   |
-|                                   | known as 'claimant's solicitor',  |
-|                                   | 'compensation payer', notifiable  |
-|                                   | person or insurer.                |
-+-----------------------------------+-----------------------------------+
-| voluntary recovery                | Any payment received where there  |
-|                                   | was no intention advised of       |
-|                                   | making an advance payment. May    |
-|                                   | also be known as a voluntary      |
-|                                   | payment.                          |
+| work item number (WIN)            | An individual claim identifier    |
+|                                   | allocated by MCRS at claim        |
+|                                   | registration.                     |
 |                                   |                                   |
-|                                   | See also: Payments, refunds and   |
-|                                   | debts for Medicare Compensation   |
-|                                   | Recovery.                         |
+|                                   | Provisional WINs are created when |
+|                                   | sufficient information is not     |
+|                                   | received to fully register.       |
 +-----------------------------------+-----------------------------------+
-| work identification number (WIN)  | An individual case identifier     |
-|                                   | allocated by the Compensation     |
-|                                   | Case Management System (CCMS) at  |
-|                                   | time of registration.             |
+
+General processing abbreviations and acronyms
+
+See General processing abbreviations and acronyms table for a list of
+standard abbreviations and acronyms used in Medicare Compensation
+Recovery.
+
+Notifiable date of injury or illness
+
+Table 10: this table contains information to help Service Officers to
+give advice to compensation payers in order to determine the notifiable
+date of injury or illness.
+
++-----------------------------------+-----------------------------------+
+| Type of injury or illness         | Notifiable date of injury or      |
+|                                   | illness                           |
++-----------------------------------+-----------------------------------+
+| General injuries or illnesses     | Date the injury or illness was    |
+|                                   | sustained or occurred             |
++-----------------------------------+-----------------------------------+
+| Diseases for example, industrial  | Date the disease was first        |
+| deafness/hearing loss             | diagnosed                         |
++-----------------------------------+-----------------------------------+
+| Medical Negligence                | Date of the failed procedure or   |
+|                                   | misdiagnosis                      |
++-----------------------------------+-----------------------------------+
+| Mesothelioma or Pleural diseases  | Date of diagnosis                 |
++-----------------------------------+-----------------------------------+
+| Alveolitis, Asbestosis,           | First day a service was definably |
+| Pneumoconiosis, Pulmonary         | directed to the treatment or      |
+| Fibrosis, Siderosis, Silicosis    | alleviation of symptoms           |
+|                                   | associated with the disease       |
++-----------------------------------+-----------------------------------+
+| Historical abuse claims with      |                                   |
+| only:                             |                                   |
+|                                   |                                   |
+| -   date range                    |                                   |
+| -   month and year, or            |                                   |
+| -   year                          |                                   |
+|                                   |                                   |
+| If exact date is unknown, write   |                                   |
+| the 1st of the month and year or  |                                   |
+| date of the first treatment.      |                                   |
 +-----------------------------------+-----------------------------------+
 
                                    

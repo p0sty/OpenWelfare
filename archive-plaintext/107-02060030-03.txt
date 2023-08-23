@@ -1,10 +1,4 @@
 
-ESSentials/Debt Management and Information System (DMIS) interface 107-02060030
-
--   Background
--   Process
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 Data transfer between Debt Management and Information System (DMIS) and ESSentials
@@ -25,17 +19,15 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | passes the details to DMIS. The 2 |
 |                                   | types of payments are:            |
 |                                   |                                   |
-|                                   | Cheque payments (for example      |
+|                                   | cheque payments (for example      |
 |                                   | cheques posted by customers,      |
 |                                   | compensation companies and from   |
 |                                   | wage garnishees)                  |
 |                                   |                                   |
-|                                   | External Agency payments:         |
+|                                   | external agency payments:         |
 |                                   |                                   |
 |                                   | -   Australia Post                |
 |                                   | -   Direct Debits                 |
-|                                   | -   External Collection Agent     |
-|                                   |     (ECA)                         |
 |                                   | -   BPAY®                         |
 |                                   | -   Australian Taxation Office    |
 |                                   |     (ATO) garnishee payments      |
@@ -44,12 +36,12 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   |                                   |
 |                                   | Internal receipts are from:       |
 |                                   |                                   |
-|                                   | -   Host systems (that is,        |
+|                                   | -   host systems (that is,        |
 |                                   |     withholdings) or are manually |
 |                                   |     added on DMIS using the       |
 |                                   |     Adjust Repayment (OPAR)       |
 |                                   |     screen                        |
-|                                   | -   On-line payments via          |
+|                                   | -   online payments via           |
 |                                   |     Centrelink online account or  |
 |                                   |     Express Plus Centrelink       |
 |                                   |     mobile app                    |
@@ -101,16 +93,17 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | Essentials uses this data file    |
 |                                   | to:                               |
 |                                   |                                   |
-|                                   | -   identify existing debts       |
-|                                   | -   perform edit validation       |
-|                                   | -   field consistency and         |
-|                                   | -   data integrity checks used    |
-|                                   |     for:                          |
+|                                   | identify existing debts           |
+|                                   |                                   |
+|                                   | perform edit validation           |
+|                                   |                                   |
+|                                   | field consistency and             |
+|                                   |                                   |
+|                                   | data integrity checks used for:   |
+|                                   |                                   |
 |                                   | -   Australia Post Payments       |
 |                                   | -   Direct Debits                 |
-|                                   | -   BPAY®                         |
-|                                   | -   External Collection Agent     |
-|                                   |     (ECA) and                     |
+|                                   | -   BPAY®, and                    |
 |                                   | -   ESSentials screen validations |
 |                                   |                                   |
 |                                   | The following details are passed  |
@@ -137,79 +130,69 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | details are coded into            |
 |                                   | ESSentials.                       |
 |                                   |                                   |
-|                                   | -   Logon to ESSentials           |
+|                                   | -   logon to ESSentials           |
 |                                   |     Production                    |
-|                                   | -   Code transaction type 'YFR1'  |
+|                                   | -   key transaction type 'YFR1'   |
 |                                   |     in the white box              |
 |                                   | -   select the tick in the top    |
 |                                   |     left hand corner              |
 |                                   |                                   |
 |                                   | Records include:                  |
 |                                   |                                   |
-|                                   | Document Type -                   |
+|                                   | Document Type:                    |
 |                                   |                                   |
 |                                   | -   Australia Post Payment - DZ   |
 |                                   | -   Direct Debits (Voluntary      |
 |                                   |     Deductions) - DY              |
-|                                   | -   Collection agent - DX         |
 |                                   | -   Australian Taxation Office    |
 |                                   |     (ATO) garnishee - DV          |
 |                                   | -   BPay - DW                     |
 |                                   |                                   |
-|                                   | Posting Date - the date the       |
+|                                   | Posting Date, the date the        |
 |                                   | payment is coded into ESSentials  |
 |                                   |                                   |
-|                                   | Date Received - the date when the |
+|                                   | Date Received, the date when the  |
 |                                   | payment was made                  |
 |                                   |                                   |
-|                                   | AR Customer No. - leave blank.    |
+|                                   | AR Customer No., leave blank.     |
 |                                   | This is the customer's ESSentials |
 |                                   | Reference Number, entry is        |
 |                                   | optional                          |
 |                                   |                                   |
-|                                   | CRN - CRN of the person that the  |
+|                                   | CRN, CRN of the person that the   |
 |                                   | payment is for. This is a         |
 |                                   | required entry                    |
 |                                   |                                   |
-|                                   | DEBT ID - leave blank. This is    |
-|                                   | the debt to which the payment is  |
-|                                   | to be credited, entry is optional |
+|                                   | DEBT ID, leave blank. This is the |
+|                                   | debt to which the payment is to   |
+|                                   | be credited, entry is optional    |
 |                                   |                                   |
-|                                   | Remittance Amount - the amount of |
+|                                   | Remittance Amount, the amount of  |
 |                                   | the payment from/for the customer |
 |                                   |                                   |
-|                                   | Remittance Mode - this is the     |
-|                                   | type of payment (Select from drop |
-|                                   | down menu)                        |
+|                                   | Remittance Mode, this is the type |
+|                                   | of payment (Select from drop down |
+|                                   | menu)                             |
 |                                   |                                   |
-|                                   | MO No - the Money Order number    |
+|                                   | MO No, the Money Order number     |
 |                                   |                                   |
-|                                   | Remittance Source - Valid values  |
+|                                   | Remittance Source, valid values   |
 |                                   | include:                          |
 |                                   |                                   |
-|                                   | BPY BillPay                       |
-|                                   |                                   |
-|                                   | CRT Court Payment                 |
-|                                   |                                   |
-|                                   | CUS Payment from the customer or  |
-|                                   | their family                      |
-|                                   |                                   |
-|                                   | DIV Dividend payment              |
-|                                   |                                   |
-|                                   | GRN Garnishee Payment (employer)  |
-|                                   |                                   |
-|                                   | ME2 Milton Graham payment         |
-|                                   |                                   |
-|                                   | ME3 Recoveries Corporation        |
-|                                   | payment                           |
-|                                   |                                   |
-|                                   | OGD Agency Payment                |
-|                                   |                                   |
-|                                   | PYC Australia Post Payment        |
-|                                   |                                   |
-|                                   | VOL Direct Debits                 |
-|                                   |                                   |
-|                                   | TGN Tax Garnishee payment         |
+|                                   | -   BPY BillPay                   |
+|                                   | -   CRT Court Payment             |
+|                                   | -   CUS Payment from the customer |
+|                                   |     or their family               |
+|                                   | -   DIV Dividend payment          |
+|                                   | -   GRN Garnishee Payment         |
+|                                   |     (employer)                    |
+|                                   | -   ME2 Milton Graham payment     |
+|                                   | -   ME3 Recoveries Corporation    |
+|                                   |     payment                       |
+|                                   | -   OGD Agency Payment            |
+|                                   | -   PYC Australia Post Payment    |
+|                                   | -   VOL Direct Debits             |
+|                                   | -   TGN Tax Garnishee payment     |
 |                                   |                                   |
 |                                   | Check all details are correct.    |
 |                                   | Click on the Process Payment      |
@@ -220,17 +203,16 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   |                                   |
 |                                   | For Advance Payments:             |
 |                                   |                                   |
-|                                   | -   enter the customer's name and |
+|                                   | -   key the customer's name and   |
 |                                   |     address details only. Do not  |
-|                                   |     enter their CRN               |
-|                                   | -   in the text box, type in what |
-|                                   |     the payment is for. For       |
-|                                   |     example, Repayment of         |
-|                                   |     JobSeeker Payment JSP/PEN     |
-|                                   |     Advance                       |
+|                                   |     key their CRN                 |
+|                                   | -   in the text box, key what the |
+|                                   |     payment is for. For example,  |
+|                                   |     Repayment of JobSeeker        |
+|                                   |     Payment JSP/PEN Advance       |
 |                                   | -   select proceed at the bottom  |
 |                                   |     of this box                   |
-|                                   | -    complete the Repayments of   |
+|                                   | -   complete the Repayments of    |
 |                                   |     Advances Box - Benefit        |
 |                                   |     Account. See list of Benefit  |
 |                                   |     Account Codes on the          |
@@ -240,8 +222,8 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   |     receipting office             |
 |                                   | -   select proceed at the bottom  |
 |                                   |     of this box                   |
-|                                   | -   If processed, the receipt     |
-|                                   |     number will come up at the    |
+|                                   | -   if processed, the receipt     |
+|                                   |     number will display at the    |
 |                                   |     bottom of the screen. Manual  |
 |                                   |     receipts are issued when the  |
 |                                   |     ESSentials receipting is      |
@@ -266,64 +248,64 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | details pass to DMIS. Transfer of |
 |                                   | details include:                  |
 |                                   |                                   |
-|                                   | Record Type -                     |
+|                                   | Record Type:                      |
 |                                   |                                   |
-|                                   | Debt remittance (DBR) or          |
+|                                   | -   debt remittance (DBR), or     |
+|                                   | -   negative remittance (DBN).    |
+|                                   |     DBN is used when ESSentials   |
+|                                   |     passes details of dishonoured |
+|                                   |     payments (for example,        |
+|                                   |     dishonoured cheque) or a      |
+|                                   |     payment incorrectly processed |
+|                                   |     to a debt                     |
 |                                   |                                   |
-|                                   | Negative remittance (DBN). DBN is |
-|                                   | used when ESSentials passes       |
-|                                   | details of dishonoured payments   |
-|                                   | (for example, dishonoured cheque) |
-|                                   | or a payment incorrectly          |
-|                                   | processed to a debt               |
+|                                   | CRN:                              |
 |                                   |                                   |
-|                                   | CRN -                             |
-|                                   |                                   |
-|                                   | -   The CRN of the person that    |
+|                                   | -   the CRN of the person that    |
 |                                   |     the payment is for displays   |
 |                                   |     on the Repayment History      |
 |                                   |     (OPRH) screen in the CRN      |
 |                                   |     column                        |
-|                                   | -   More than 1 person may be     |
+|                                   | -   more than 1 person may be     |
 |                                   |     liable for a debt, so         |
 |                                   |     multiple CRNs can be recorded |
 |                                   |     on the OPRH screen            |
-|                                   | -   When manual adjustments are   |
+|                                   | -   when manual adjustments are   |
 |                                   |     made in DMIS the balance of   |
 |                                   |     the debt is sent back to      |
 |                                   |     ESSentials which will adjust  |
 |                                   |     its record accordingly        |
 |                                   |                                   |
-|                                   | Debt ID -                         |
+|                                   | Debt ID:                          |
 |                                   |                                   |
-|                                   | -   If there is more than 1 debt, |
+|                                   | -   if there is more than 1 debt, |
 |                                   |     the Debt ID dictates which    |
 |                                   |     debt the payment goes to. An  |
 |                                   |     ESSentials user has the       |
 |                                   |     choice of which Debt ID to    |
 |                                   |     apply the payment against     |
-|                                   | -   Details of the payment        |
+|                                   | -   details of the payment        |
 |                                   |     display on the OPRH screen    |
 |                                   |     and on the customer's record  |
 |                                   |     in ESSentials                 |
 |                                   |                                   |
-|                                   | Remittance Source - displays on   |
+|                                   | Remittance Source, displays on    |
 |                                   | the OPRH screen in the Source     |
 |                                   | column (for example Australia     |
-|                                   | Post, BPAY, collection agent)     |
+|                                   | Post, BPAY)                       |
 |                                   |                                   |
-|                                   | Date Received -                   |
+|                                   | Date Received:                    |
 |                                   |                                   |
 |                                   | -   the ESSentials payment        |
 |                                   |     receipt date                  |
 |                                   | -   displays on the OPRH screen   |
-|                                   |     in the Date column.           |
+|                                   |     in the Date column            |
 |                                   | -   ESSentials does not pass to   |
 |                                   |     DMIS the posting date that    |
 |                                   |     the payment was loaded into   |
 |                                   |     ESSentials                    |
 |                                   |                                   |
-|                                   | Receipt Number -                  |
+|                                   | Receipt Number:                   |
 |                                   |                                   |
 |                                   | -   the numbers transferred from  |
 |                                   |     ESSentials to DMIS            |
@@ -336,7 +318,7 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   |     number in ESSentials, see     |
 |                                   |     Item 9                        |
 |                                   |                                   |
-|                                   | Amount -                          |
+|                                   | Amount:                           |
 |                                   |                                   |
 |                                   | -   this is the amount of money   |
 |                                   |     credited to the Debt ID       |
@@ -395,7 +377,7 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | -   debt benefit type             |
 |                                   | -   amount                        |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Locating a CRN using the          |
+| 6                                 | Locate a CRN using the            |
 |                                   | Compensation Claim ID + Read more |
 |                                   | ...                               |
 |                                   |                                   |
@@ -403,14 +385,14 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | the only information provided is  |
 |                                   | a Compensation Claim ID:          |
 |                                   |                                   |
-|                                   | -   go to the Next: field in      |
-|                                   |     Customer First                |
-|                                   | -   type in CMCLMCRN and press    |
+|                                   | -   in Customer First, go to the  |
+|                                   |     Next field                    |
+|                                   | -   key CMCLMCRN and press        |
 |                                   |     [Enter]                       |
 |                                   | -   in the Compensation Claim CRN |
-|                                   |     screen go to the Claim ID:    |
-|                                   |     field, type the Claim ID and  |
-|                                   |     select continue or enter      |
+|                                   |     screen, go to the Claim ID    |
+|                                   |     field, key the Claim ID and   |
+|                                   |     select continue or [Enter]    |
 |                                   | -   the CRN will display in the   |
 |                                   |     CRN field                     |
 |                                   |                                   |
@@ -446,41 +428,42 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | if their payment is not           |
 |                                   | displaying. Direct further        |
 |                                   | investigations to the Collections |
-|                                   | Administration Team for Debt      |
-|                                   | Management Branch in Toowong,     |
-|                                   | Queensland. See Debt repayments   |
-|                                   | not on the customer's record      |
+|                                   | Administration Team. See Debt     |
+|                                   | repayments not on the customer's  |
+|                                   | record                            |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Displaying customer records in    |
 |                                   | ESSentials + Read more ...        |
 |                                   |                                   |
 |                                   | ESSentials receipt all customer   |
-|                                   | repayments.                       |
+|                                   | repayments:                       |
 |                                   |                                   |
-|                                   | -   Use transaction code ‘YDMD’   |
-|                                   |     to display a customer's       |
-|                                   |     repayment history in          |
-|                                   |     ESSentials Production.        |
-|                                   | -   Enter the customer's CRN and  |
-|                                   |     select the DMIS Debt Details  |
-|                                   |     button. A list of debts       |
-|                                   |     recorded in ESSentials        |
-|                                   |     displays.                     |
-|                                   | -   You can select both the       |
-|                                   |     Repayment History and Debt    |
-|                                   |     Details.                      |
-|                                   | -   The Debt Details screen       |
-|                                   |     displays all information from |
-|                                   |     DMIS. This includes:          |
+|                                   | use transaction code ‘YDMD’ to    |
+|                                   | display a customer's repayment    |
+|                                   | history in ESSentials Production  |
+|                                   |                                   |
+|                                   | key the customer's CRN and select |
+|                                   | the DMIS Debt Details button. A   |
+|                                   | list of debts recorded in         |
+|                                   | ESSentials displays               |
+|                                   |                                   |
+|                                   | select both the Repayment History |
+|                                   | and Debt Details                  |
+|                                   |                                   |
+|                                   | the Debt Details screen displays  |
+|                                   | all information from DMIS. This   |
+|                                   | includes:                         |
+|                                   |                                   |
 |                                   | -   Debt Benefit Type             |
 |                                   | -   Environment                   |
 |                                   | -   Balance                       |
 |                                   | -   Priority                      |
-|                                   | -   The Payments screen displays  |
-|                                   |     all information relating to   |
-|                                   |     payments made by the          |
-|                                   |     customer. Information         |
-|                                   |     includes:                     |
+|                                   |                                   |
+|                                   | the Payments screen displays all  |
+|                                   | information relating to payments  |
+|                                   | made by the customer. Information |
+|                                   | includes:                         |
+|                                   |                                   |
 |                                   | -   Document Number               |
 |                                   | -   Document Type                 |
 |                                   | -   Pay Date                      |
@@ -493,10 +476,10 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | -   Time                          |
 |                                   | -   Account                       |
 |                                   | -   Date when sent to DMIS        |
-|                                   | -   The actual payment document   |
-|                                   |     displays when clicking        |
-|                                   |     anywhere on the payment       |
-|                                   |     information line              |
+|                                   |                                   |
+|                                   | the actual payment document       |
+|                                   | displays when clicking anywhere   |
+|                                   | on the payment information line   |
 |                                   |                                   |
 |                                   | Note: the Resources page contains |
 |                                   | a link to the ESSentials task     |
@@ -512,7 +495,7 @@ Data transfer between Debt Management and Information System (DMIS) and ESSentia
 |                                   | To locate the customer's actual   |
 |                                   | receipt number:                   |
 |                                   |                                   |
-|                                   | -   drop the first zero and code  |
+|                                   | -   drop the first zero and key   |
 |                                   |     the remaining numbers into    |
 |                                   |     ESSentials Production         |
 |                                   | -   the transaction code required |

@@ -1,0 +1,423 @@
+-   Resources
+
+[Expand/Collapse all sections]Expand all
+
+Access requirements
+
+Access requirements for updating Treatment Pathway tool for Process
+Direct debts
+
+To create ‘Rule set’, ‘Cohort’ and ‘Campaign’, access the following
+roles in PROD (apply through ESSentials):
+
+-   ZC.C4.TREATMENT.PATH.OFFICER
+-   ZC.C4.TREATMENT.PATH.VIEW
+
+Access requirements for updating RDF tables
+
+Access is requested via ISP, which will highlight a step-by-step process
+of gaining access. Staff must state the specific table or cluster (first
+3 characters of an online table) when requesting online table access.
+
+Apply for access to the following mainframe resources via the ICT
+security portal:
+
+-   RDFENQ - RDF ENQUIRY
+-   RDFTAB - RDF TABLE SCREEN
+-   RDFNAT - RDF NATIONAL ACCESS FOR SELECTED APPLICATIONS
+
+RDF table for DMN.EMG.Postcodes
+
+To apply a write off, the EMG table requires a status change (such as a
+debt becoming determined or a customer circumstance changing). Manual
+bulk-write offs must be applied to remaining customers within identified
+disaster areas where auto processes were blocked. For example, where
+there is no change to a status of a debt (where a customer already has a
+debt written off to an earlier date than the new disaster end date).
+
+Note: postcode exclusions are often extended past the original end date.
+Update the RDF table when this occurs.
+
+Table 1
+
++-----------------------------------+-----------------------------------+
+| Function                          | Applies                           |
++-----------------------------------+-----------------------------------+
+| Customer automatically written    | N                                 |
+| off based on having a postcode in |                                   |
+| the Emergency Postcode RDF Table  |                                   |
+| (EPC)                             |                                   |
++-----------------------------------+-----------------------------------+
+| Emergency payment received in     | Y                                 |
+| past 6 months                     |                                   |
++-----------------------------------+-----------------------------------+
+| New debts if customer had an      | Y                                 |
+| existing DIS write off            |                                   |
++-----------------------------------+-----------------------------------+
+| Existing debts that are already   | N                                 |
+| written off                       |                                   |
++-----------------------------------+-----------------------------------+
+| The emergency postcode RDF table  | Y                                 |
+| prevents GIC via an interest      |                                   |
+| exclusion and tax garnishee based |                                   |
+| on their own existing exclusion   |                                   |
+| rules for emergency payments      |                                   |
++-----------------------------------+-----------------------------------+
+| If customer changes postcode, a   | Y                                 |
+| check was undertaken via the      |                                   |
+| DMNEPC trigger to see if they are |                                   |
+| in an emergency postcode and      |                                   |
+| therefore apply the GIC exclusion |                                   |
++-----------------------------------+-----------------------------------+
+| Debt status change for customer   | Y                                 |
+| living in the postcode in the EPC |                                   |
+| table or receiving an emergency   |                                   |
+| payment within the last 6 months  |                                   |
++-----------------------------------+-----------------------------------+
+
+Coding example
+
+Table 2
+
+  --------------------- ------------------------------------ ----------------------------------------- ------------------
+  Column name           Description                          Format                                    Example
+  Start.Date            Emergency start date                 YYYYMMDD                                  20170403
+  End.Date              Can be blank for current events      YYYYMMDD                                  20170919
+  Description           Emergency description                Text                                      TC Debbie 2017
+  Postcodes             List of postcodes                    Use comma to separate list of postcodes   2372, 2469, 2470
+  Duration              In months                            Number                                    12
+  Cancel.Arrangements   Y will cancel current arrangements   Y/N                                       Y
+  Debtor.Writeoff       Y will write off applicable debts    Y/N                                       Y
+  --------------------- ------------------------------------ ----------------------------------------- ------------------
+
+RDF table for DMN.Debt.Recovery.Pause
+
+When the Pause.Enabled field has the value of:
+
+-   ‘Y’, the Situational Hardship debt pause functionality is ‘on’, with
+    the corresponding automatic write off (AWO) functionality ‘OFF’ –
+    DMNAWO is not invoked
+-   ‘N’, the Situational Hardship debt pause functionality is ‘off’.
+    DMIS invokes the corresponding automatic write off (AWO) processing
+    – DMNAWO to undertake the debt pause write off
+
+The banner message in MYO will change depending on the Pause.Enabled
+choice.
+
+Coding example
+
+Table 3
+
++-----------------+-----------------+-----------------+-----------------+
+| Column name     | Description     | Format          | Example         |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Id        | A unique ID     | NUM             | 1               |
+|                 | associated with |                 |                 |
+|                 | the pause type  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Type      | Identifier for  | Text            | DIS             |
+|                 | the type of     |                 |                 |
+|                 | pause           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Sub.Type  | Identifier for  | Text            | ABC             |
+|                 | the pause       |                 |                 |
+|                 | sub-type (if    |                 |                 |
+|                 | any)            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Desc      | Text that       | Text            | Situational     |
+|                 | provides a      |                 | Hardship        |
+|                 | description of  |                 |                 |
+|                 | the pause type  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Max.Durtn | The maximum     | NUM             | 3               |
+|                 | possible        |                 |                 |
+|                 | duration of     |                 |                 |
+|                 | months that an  |                 |                 |
+|                 | individual can  |                 |                 |
+|                 | pause for       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pa              | The months in   | NUM, NUM        | 1,2,3           |
+| use.Durtn.Incrm | increments to   |                 |                 |
+|                 | be provided as  |                 |                 |
+|                 | an option for   |                 |                 |
+|                 | the customer to |                 |                 |
+|                 | pause for       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Exp       | The expiry      | NUM             | 12              |
+|                 | timeframe to    |                 |                 |
+|                 | which customers |                 |                 |
+|                 | can use their   |                 |                 |
+|                 | maximum number  |                 |                 |
+|                 | of pauses       |                 |                 |
+|                 | within          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Paus            | How many times  | NUM             | 2               |
+| e.Atmpt.Per.Exp | the customer    |                 |                 |
+|                 | can pause       |                 |                 |
+|                 | within the      |                 |                 |
+|                 | expiry          |                 |                 |
+|                 | timeframe       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Ce        | Denotes the     | Text            | WHS, CHS, VOL,  |
+| ase.Arngmt.Type | types of        |                 | IRR             |
+|                 | arrangements to |                 |                 |
+|                 | be ceased       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Rei       | Denotes the     | Text            | WHS             |
+| nst.Arngmt.Type | types of        |                 |                 |
+|                 | arrangements to |                 |                 |
+|                 | be reinstated   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Pause.Enabled   | Switch that     | Y/N             | Y               |
+|                 | determines      |                 |                 |
+|                 | whether         |                 |                 |
+|                 | Situational     |                 |                 |
+|                 | Hardship is     |                 |                 |
+|                 | enabled, or     |                 |                 |
+|                 | automatic DIS   |                 |                 |
+|                 | WOs are         |                 |                 |
+|                 | enabled.        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+RDF table for DMN.Sus.Auto.Det.Raise.Debt
+
+Table 4
+
++-----------------------+-----------------------+-----------------------+
+| Pause options         | Auto Debt Raising     | Flexible Due date /   |
+|                       |                       | Informal Account      |
+|                       |                       | payable               |
++-----------------------+-----------------------+-----------------------+
+| Pause auto debt       | Debts controlled by   | Debts raised during   |
+| raising – ON          | the RDF table will    | the pause will have a |
+|                       | not be raised for the | formal account        |
+| Flexible Due date /   | duration of the pause | payable issued with   |
+| Informal Account      | for customers in the  | the standard 28 day   |
+| payable - OFF         | relevant postcode     | due date              |
+|                       | area                  |                       |
+| Note: this is the     |                       | Applies to all        |
+| current system        | Debts will be raised  | customers, including  |
+| configuration for the | for customers outside | those in a postcode   |
+| WA bushfire and NSW   | the relevant postcode | area covered by a     |
+| Flood events.         | area                  | debt pause            |
++-----------------------+-----------------------+-----------------------+
+| Pause auto debt       | Debts controlled by   | Debts raised during   |
+| raising – ON          | the RDF table will    | the pause for         |
+|                       | not be raised for the | customers in the      |
+| Flexible Due date /   | duration of the pause | relevant postcode     |
+| Informal Account      | for customers in the  | area will have:       |
+| payable – ON          | relevant postcode     |                       |
+|                       | area                  | -   an informal       |
+|                       |                       |     account payable   |
+|                       | Debts will be raised  |     issued            |
+|                       | for customers outside | -   an extended due   |
+|                       | the relevant postcode |     date              |
+|                       | area                  |                       |
+|                       |                       | Debts for customers   |
+|                       |                       | outside the relevant  |
+|                       |                       | postcode area will    |
+|                       |                       | have a formal account |
+|                       |                       | payable issued with   |
+|                       |                       | the standard 28 day   |
+|                       |                       | due date              |
++-----------------------+-----------------------+-----------------------+
+| Pause auto debt       | Debts controlled by   | Debts raised during   |
+| raising – OFF         | the RDF table will    | the pause for         |
+|                       | continue to be raised | customers in the      |
+| Flexible Due date /   | for all customers,    | relevant postcode     |
+| Informal Account      | including those in    | area will:            |
+| payable – ON          | the relevant postcode |                       |
+|                       | area                  | -   have an informal  |
+|                       |                       |     account payable   |
+|                       |                       |     issued            |
+|                       |                       | -   an extended due   |
+|                       |                       |     date              |
+|                       |                       |                       |
+|                       |                       | Debts for customers   |
+|                       |                       | outside the relevant  |
+|                       |                       | postcode area will    |
+|                       |                       | have a formal account |
+|                       |                       | payable issued with   |
+|                       |                       | the standard 28 day   |
+|                       |                       | due date              |
++-----------------------+-----------------------+-----------------------+
+| Pause auto debt       |                       |                       |
+| raising – OFF         |                       |                       |
+|                       |                       |                       |
+| Flexible Due date /   |                       |                       |
+| Informal Account      |                       |                       |
+| payable – OFF         |                       |                       |
++-----------------------+-----------------------+-----------------------+
+
+Coding example
+
+Table 5
+
++-----------------+-----------------+-----------------+-----------------+
+| Column name     | Description     | Format          | Example         |
++-----------------+-----------------+-----------------+-----------------+
+| Record ID       | Keyword and     | Text            | DMNCOVID        |
+| (keyword)       | debt attribute  |                 |                 |
+|                 | applied         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Switch          | Whether the     | ON/OFF          | ON              |
+|                 | pause is on or  |                 |                 |
+|                 | off             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Start.Date      | If this date is | YYYYMMDD        | 20210321        |
+|                 | in the future   |                 |                 |
+|                 | and the switch  |                 |                 |
+|                 | is off, the     |                 |                 |
+|                 | switch will     |                 |                 |
+|                 | turn on when    |                 |                 |
+|                 | the future date |                 |                 |
+|                 | is reached.     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| End.Date        | If this date is | YYYYMMDD        | 20210823        |
+|                 | in the future   |                 |                 |
+|                 | and the switch  |                 |                 |
+|                 | is on, the      |                 |                 |
+|                 | switch will     |                 |                 |
+|                 | turn off when   |                 |                 |
+|                 | the future date |                 |                 |
+|                 | is reached. If  |                 |                 |
+|                 | HLD AUTO DET is |                 |                 |
+|                 | on, this date   |                 |                 |
+|                 | appears as the  |                 |                 |
+|                 | date held to    |                 |                 |
+|                 | for affected    |                 |                 |
+|                 | activities.     |                 |                 |
+|                 |                 |                 |                 |
+|                 | Note: this date |                 |                 |
+|                 | must be a       |                 |                 |
+|                 | minimum of 30   |                 |                 |
+|                 | days before Due |                 |                 |
+|                 | Start Date if   |                 |                 |
+|                 | it was keyed    |                 |                 |
+|                 | (28 days for    |                 |                 |
+|                 | the due date +  |                 |                 |
+|                 | 1 day for       |                 |                 |
+|                 | sending the     |                 |                 |
+|                 | letter the day  |                 |                 |
+|                 | before + 1 for  |                 |                 |
+|                 | the DMNFAP MFU  |                 |                 |
+|                 | to run).        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Postcodes       | List of         | Comma separates | 4000, 4115      |
+|                 | postcodes       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Due.Start.Date  | Due dates on    | YYYYMMDD        | 20210922        |
+|                 | informal        |                 |                 |
+|                 | account         |                 |                 |
+|                 | payables will   |                 |                 |
+|                 | be contain this |                 |                 |
+|                 | date or the     |                 |                 |
+|                 | next date       |                 |                 |
+|                 | available       |                 |                 |
+|                 | considering the |                 |                 |
+|                 | Max Due Per Day |                 |                 |
+|                 | field.          |                 |                 |
+|                 |                 |                 |                 |
+|                 | Note: this      |                 |                 |
+|                 | functionality   |                 |                 |
+|                 | is driven by    |                 |                 |
+|                 | control records |                 |                 |
+|                 | that are        |                 |                 |
+|                 | controlled      |                 |                 |
+|                 | within DMIS.    |                 |                 |
+|                 | DMIS ICT should |                 |                 |
+|                 | be engaged to   |                 |                 |
+|                 | ensure that     |                 |                 |
+|                 | they are in     |                 |                 |
+|                 | place.          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Max.Due.Per.Day | The maximum     | 10000           |                 |
+|                 | number debts    |                 |                 |
+|                 | allowed to fall |                 |                 |
+|                 | due by this     |                 |                 |
+|                 | process before  |                 |                 |
+|                 | incrementing    |                 |                 |
+|                 | the due date on |                 |                 |
+|                 | account         |                 |                 |
+|                 | payables.       |                 |                 |
+|                 |                 |                 |                 |
+|                 | There are 2     |                 |                 |
+|                 | options:        |                 |                 |
+|                 |                 |                 |                 |
+|                 | -   Automatic – |                 |                 |
+|                 |     Engage DMIS |                 |                 |
+|                 |     ICT to      |                 |                 |
+|                 |     determine   |                 |                 |
+|                 |     the         |                 |                 |
+|                 |     proportion  |                 |                 |
+|                 |     that will   |                 |                 |
+|                 |     apply to    |                 |                 |
+|                 |     each        |                 |                 |
+|                 |     relevant    |                 |                 |
+|                 |     environment |                 |                 |
+|                 |     per day.    |                 |                 |
+|                 |     For         |                 |                 |
+|                 |     example,    |                 |                 |
+|                 |     10,000      |                 |                 |
+|                 |     across 2    |                 |                 |
+|                 |                 |                 |                 |
+|                 |    environments |                 |                 |
+|                 |     can be set  |                 |                 |
+|                 |     to a % or a |                 |                 |
+|                 |     number,     |                 |                 |
+|                 |     noting that |                 |                 |
+|                 |     there are   |                 |                 |
+|                 |     occasions   |                 |                 |
+|                 |     where the   |                 |                 |
+|                 |     amount      |                 |                 |
+|                 |     raised      |                 |                 |
+|                 |     across      |                 |                 |
+|                 |                 |                 |                 |
+|                 |    environments |                 |                 |
+|                 |     is uneven   |                 |                 |
+|                 | -   Manual      |                 |                 |
+|                 |     (more       |                 |                 |
+|                 |     labour      |                 |                 |
+|                 |     intensive). |                 |                 |
+|                 |     Select the  |                 |                 |
+|                 |                 |                 |                 |
+|                 |  DUE.START.DATE |                 |                 |
+|                 |     +1 day each |                 |                 |
+|                 |     time an     |                 |                 |
+|                 |     agreed      |                 |                 |
+|                 |     threshold   |                 |                 |
+|                 |     is reached  |                 |                 |
+|                 |                 |                 |                 |
+|                 | NUM             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| HLD.Auto.Det    | Switch for      | ON/OFF          | ON              |
+|                 | whether         |                 |                 |
+|                 | affected auto   |                 |                 |
+|                 | determined new  |                 |                 |
+|                 | debt activities |                 |                 |
+|                 | will be held    |                 |                 |
+|                 | instead of      |                 |                 |
+|                 | completed.      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| DFR.Due.Date    | Turns on the    | ON/OFF          | ON              |
+|                 | informal        |                 |                 |
+|                 | functionality   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+Treatment Pathway Tool coding example for Rule Attribute
+
+Table 6
+
+  ------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------ ------------
+  Column name                                             Description                                                                                                                                                             Format       Example
+  Informal Period Start Date                              Start Date of Informal Period                                                                                                                                           DD.MM.YYYY   21.06.2021
+  Informal Period End Date                                End Date of Informal Period                                                                                                                                             DD.MM.YYYY   20.08.2021
+  Informal Due Date                                       This is the minimum due date of a debt, if it is raised during informal period.                                                                                         DD.MM.YYYY   21.06.2021
+  Max daily limit for due date                            Maximum number of debts to be raised with the same due date. This can be updated and an updated value will be applied to quota going forward, and not on past values.   NUM          20000
+  Minimum number of due days from raised date             Minimum number of days difference between raised date and due date (if debt is raised in the informal period).                                                          NUM          56
+  Maximum number of rolling days from informal due date   Maximum number of rolling days defines how far due date can be moved. That is, the maximum due date value if a debt is raised during the informal period.               NUM          60
+  ------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------ ------------
+
+                                   
+
+-   Services Australia ABN 90 794 605 008 

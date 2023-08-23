@@ -1,9 +1,3 @@
-
-Patient claims processing in Medicare 011-43010000
-
--   Background
--   Process
--   References
 -   Resources
 
 [Expand/Collapse all sections]Expand all
@@ -11,6 +5,9 @@ Patient claims processing in Medicare 011-43010000
 On this page:
 
 How to process a Medicare patient claim
+
+How to process a Medicare patient claim where the claimant and patient
+are on different Medicare cards
 
 How to process a Medicare patient claim for a business or organisation
 
@@ -62,9 +59,12 @@ Table 1
 |                                   |                                   |
 |                                   | -   In Mainframe, key NPOI,       |
 |                                   |     Medicare card number          |
-|                                   | -   Press [Enter], blank claimant |
+|                                   | -   Press Enter, blank claimant   |
 |                                   |     identification fields are     |
 |                                   |     displayed                     |
+|                                   | -   Check if patient claim is     |
+|                                   |     using a previously issued     |
+|                                   |     card number                   |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Follow the prompts + Read more    |
 |                                   | ...                               |
@@ -72,7 +72,7 @@ Table 1
 |                                   | -   Identify the claimant (REF)   |
 |                                   | -   Confirm if the claim is paid  |
 |                                   |     (Y) or Unpaid (N)             |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Confirming address + Read more    |
 |                                   | ...                               |
@@ -98,7 +98,7 @@ Table 1
 |                                   |     field line (for a PO Box key  |
 |                                   |     the first 2 letters of the    |
 |                                   |     suburb                        |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | Go to Step 6                      |
 +-----------------------------------+-----------------------------------+
@@ -110,7 +110,7 @@ Table 1
 |                                   | -   Key (T) for temporary use of  |
 |                                   |     address or (P) for permanent  |
 |                                   |     updating                      |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Add, amend or confirm Electronic  |
 |                                   | Funds Transfer (EFT) details +    |
@@ -144,7 +144,7 @@ Table 1
 |                                   |     the addition of EFT details   |
 |                                   |     where none were previously    |
 |                                   |     supplied                      |
-|                                   | -   N – EFT details unavailable,  |
+|                                   | -   N - EFT details unavailable,  |
 |                                   |     if the claimant cannot        |
 |                                   |     provide bank account details  |
 |                                   |     at time of lodgement this     |
@@ -180,13 +180,36 @@ Table 1
 |                                   |                                   |
 |                                   | -   Key date of lodgement in the  |
 |                                   |     DOL field                     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | The date of lodgement is the date |
 |                                   | Services Australia received the   |
 |                                   | claim for Medicare benefits.      |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Key service details using the     |
+| 9                                 | Payee Provider or Locum + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Is there a Payee Provider or      |
+|                                   | Locum on the claim?               |
+|                                   |                                   |
+|                                   | No, go to Step 10                 |
+|                                   |                                   |
+|                                   | Yes, on the first line in the:    |
+|                                   |                                   |
+|                                   | -   PATIENT field, key the        |
+|                                   |     patient's name                |
+|                                   | -   ITEM field, key PAYP          |
+|                                   | -   NO field, key number of       |
+|                                   |     services, e.g. 01. If NO line |
+|                                   |     is not displayed, press [F2]  |
+|                                   | -   PROVIDER field, key the       |
+|                                   |     provider number for payee     |
+|                                   |     provider/ locum               |
+|                                   |                                   |
+|                                   | For details of what to key in the |
+|                                   | second line, go to Step 10.       |
++-----------------------------------+-----------------------------------+
+| 10                                | Key service details using the     |
 |                                   | account or invoice + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
@@ -201,26 +224,27 @@ Table 1
 |                                   |     service                       |
 |                                   | -   PROVIDER field, key the       |
 |                                   |     provider number               |
-|                                   | -   Payee code, e.g. 2 for unpaid |
-|                                   |     claim and 9 for a paid claim  |
+|                                   | -   Payee code, for example, 2    |
+|                                   |     for unpaid claim and 9 for a  |
+|                                   |     paid claim                    |
 |                                   | -   CHARGE field, key the amount  |
 |                                   |     charge                        |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | The Medicare system correctly     |
 |                                   | calculates the maximum amount of  |
 |                                   | the Medicare benefit payable to   |
 |                                   | the claimant.                     |
 +-----------------------------------+-----------------------------------+
-| 10                                | Referral details + Read more ...  |
+| 11                                | Referral details + Read more ...  |
 |                                   |                                   |
 |                                   | Does the account/invoice include  |
 |                                   | referral details?                 |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 11            |
-|                                   | -   No, go to Step 12             |
+|                                   | -   Yes, go to Step 12            |
+|                                   | -   No, go to Step 13             |
 +-----------------------------------+-----------------------------------+
-| 11                                | Key referral details + Read more  |
+| 12                                | Key referral details + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | In the PATIENT field, key the     |
@@ -245,8 +269,9 @@ Table 1
 |                                   |     will determine the end date   |
 |                                   |     of the referral.              |
 |                                   | -   a period other than 12        |
-|                                   |     months, e.g. 3 months, 24     |
-|                                   |     months or indefinite          |
+|                                   |     months. For example, 3        |
+|                                   |     months, 24 months or          |
+|                                   |     indefinite                    |
 |                                   |     In the LAST DT field, key the |
 |                                   |     number of months on the       |
 |                                   |     referral line. For example,   |
@@ -261,7 +286,7 @@ Table 1
 |                                   | In the PROVIDER field, key the    |
 |                                   | referring provider number         |
 +-----------------------------------+-----------------------------------+
-| 12                                | Assessing the claim + Read more   |
+| 13                                | Assessing the claim + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | -   Review and apply assessing    |
@@ -279,33 +304,347 @@ Table 1
 |                                   | see Process Medicare Safety Net   |
 |                                   | claims and action accordingly.    |
 +-----------------------------------+-----------------------------------+
-| 13                                | Two-way claims + Read more ...    |
+| 14                                | Two-way claims + Read more ...    |
 |                                   |                                   |
-|                                   | Is the claim a Medicare Two-way   |
-|                                   | claim?                            |
+|                                   | Where the claim is a Medicare     |
+|                                   | Two-way claim:                    |
 |                                   |                                   |
-|                                   | -   Yes, key ‘Y’ in the FUND      |
-|                                   |     field to get the gap          |
-|                                   |     statement                     |
-|                                   | -   No, key ‘N’ in the FUND field |
+|                                   | -   key Y in the FUND field to    |
+|                                   |     get the gap statement, if     |
+|                                   |     required                      |
+|                                   | -   key N in the FUND field, if   |
+|                                   |     no gap statement is required  |
 |                                   |                                   |
 |                                   | If in-hospital items are keyed,   |
 |                                   | Service Officers will be prompted |
 |                                   | to complete the FUND field.       |
 |                                   |                                   |
 |                                   | See Medicare Two-way and claims   |
-|                                   | processing for more information.  |
+|                                   | processing for more details.      |
 +-----------------------------------+-----------------------------------+
-| 14                                | Finalise the claim + Read more    |
+| 15                                | Finalise the claim + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
+|                                   | -   Key P to pay claim            |
++-----------------------------------+-----------------------------------+
+| 16                                | Finalise the claim in PaNDA +     |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Add processing notes where        |
+|                                   | required                          |
+|                                   |                                   |
+|                                   | On Work Item and Document details |
+|                                   | page complete the following:      |
+|                                   |                                   |
+|                                   | -   Medicare Number field - if    |
+|                                   |     not included already          |
+|                                   | -   Surname First Name: this is   |
+|                                   |     the claimants surname and     |
+|                                   |     first name with no spaces     |
+|                                   | -   Case ID: this is the Work ID  |
+|                                   |     number                        |
+|                                   | -   Status: Completed, Pended     |
+|                                   | -   Complete Reason: Requested    |
+|                                   |     Reject, Request Approved,     |
+|                                   |     Already Completed             |
+|                                   | -   Press Save                    |
+|                                   | -   Process ends here             |
+|                                   |                                   |
+|                                   | Note: see Work Optimiser for      |
+|                                   | staff for more details using      |
+|                                   | PaNDA.                            |
++-----------------------------------+-----------------------------------+
+
+How to process a Medicare patient claim where the claimant and patient are on different Medicare cards
+
+Table 2
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Navigate to claimant processing   |
+|                                   | screen + Read more ...            |
+|                                   |                                   |
+|                                   | Using details on the Medicare     |
+|                                   | claim form (MS014):               |
+|                                   |                                   |
+|                                   | -   In Mainframe key NPOI,        |
+|                                   |     Medicare card number of the   |
+|                                   |     patient                       |
+|                                   | -   Press Enter, blank claimant   |
+|                                   |     identification fields will    |
+|                                   |     show                          |
++-----------------------------------+-----------------------------------+
+| 2                                 | Follow the prompts + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   Identify the claimants        |
+|                                   |     Medicare card number          |
+|                                   | -   In the claimant field enter   |
+|                                   |     the claimants Medicare card   |
+|                                   |     number                        |
+|                                   | -   Press Enter                   |
+|                                   | -   In the REF field key the      |
+|                                   |     claimants reference number as |
+|                                   |     per their Medicare card       |
+|                                   | -   Confirm if the claim is paid  |
+|                                   |     (Y) or Unpaid (N)             |
+|                                   | -   Press Enter                   |
++-----------------------------------+-----------------------------------+
+| 3                                 | Confirming address + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is the address on the claim form  |
+|                                   | the same as what is recorded on   |
+|                                   | the system?                       |
+|                                   |                                   |
+|                                   | If the claimant's address         |
+|                                   | requires updating, place curser   |
+|                                   | under the return message 8-ADDR   |
+|                                   | CK, select [F1] and action per    |
+|                                   | message.                          |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, go to Step 5              |
++-----------------------------------+-----------------------------------+
+| 4                                 | Confirm address already           |
+|                                   | recorded + Read more ...          |
+|                                   |                                   |
+|                                   | -   Key the first 2 letters of    |
+|                                   |     the street name in the ADR    |
+|                                   |     field line (for a PO Box key  |
+|                                   |     the first 2 letters of the    |
+|                                   |     suburb                        |
+|                                   | -   Press Enter                   |
+|                                   | -   Go to Step 6                  |
++-----------------------------------+-----------------------------------+
+| 5                                 | Update the address + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   Key the postal address of the |
+|                                   |     claimant in the ADR field     |
+|                                   | -   Key (T) for temporary use of  |
+|                                   |     address or (P) for permanent  |
+|                                   |     updating                      |
+|                                   | -   Press Enter                   |
++-----------------------------------+-----------------------------------+
+| 6                                 | Add, amend or confirm Electronic  |
+|                                   | Funds Transfer (EFT) details +    |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | Key 1 of the following values in  |
+|                                   | the EFT field on line 6 of the    |
+|                                   | screen to add, amend or confirm   |
+|                                   | the claimant 's Electronic Funds  |
+|                                   | Transfer (EFT) details:           |
+|                                   |                                   |
+|                                   | -   C - claimant has confirmed    |
+|                                   |     the use of EFT details        |
+|                                   |     previously stored as per      |
+|                                   |     claim form                    |
+|                                   | -   T - EFT details keyed are     |
+|                                   |     temporary and used for this   |
+|                                   |     claim only. For example, a    |
+|                                   |     claimant requests a one-off   |
+|                                   |     EFT payment into a different  |
+|                                   |     bank account to the details   |
+|                                   |     stored and the claimant has   |
+|                                   |     indicated this on the         |
+|                                   |     Medicare claim form           |
+|                                   | -   P - EFT details keyed are     |
+|                                   |     permanently stored for this   |
+|                                   |     claimant. Using this          |
+|                                   |     indicator results in          |
+|                                   |     overwriting of any previously |
+|                                   |     supplied banking details or   |
+|                                   |     the addition of EFT details   |
+|                                   |     where none were previously    |
+|                                   |     supplied                      |
+|                                   | -   N - EFT details unavailable,  |
+|                                   |     if the claimant cannot        |
+|                                   |     provide bank account details  |
+|                                   |     at time of lodgement this     |
+|                                   |     will allow validation of the  |
+|                                   |     EFT details to be bypassed,   |
+|                                   |     and for the assessment of the |
+|                                   |     claim to continue. The        |
+|                                   |     Medicare benefit will be held |
+|                                   |     until bank account details    |
+|                                   |     are provided. Once bank       |
+|                                   |     account details are provided, |
+|                                   |     the payment will be           |
+|                                   |     automatically released        |
+|                                   |     overnight                     |
++-----------------------------------+-----------------------------------+
+| 7                                 | EFT statement + Read more ...     |
+|                                   |                                   |
+|                                   | Is EFT Statement required?        |
+|                                   |                                   |
+|                                   | -   Yes, key 'P' in the STM field |
+|                                   |     to issue a statement to the   |
+|                                   |     claimant                      |
+|                                   | -   No, key 'N' in the STM field  |
+|                                   |     if no statement is required   |
+|                                   |                                   |
+|                                   | For claims processed in a Service |
+|                                   | Centre, key ‘R’ in the STM field  |
+|                                   | to print a receipt for the        |
+|                                   | customer to verify bank details   |
+|                                   | and sign.                         |
++-----------------------------------+-----------------------------------+
+| 8                                 | Date of lodgement + Read more ... |
+|                                   |                                   |
+|                                   | -   Key date of lodgement in the  |
+|                                   |     DOL field                     |
+|                                   | -   Press Enter                   |
+|                                   |                                   |
+|                                   | The date of lodgement is the date |
+|                                   | Services Australia received the   |
+|                                   | claim for Medicare benefits.      |
++-----------------------------------+-----------------------------------+
+| 9                                 | Payee Provider or Locum + Read    |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Is there a Payee Provider or      |
+|                                   | Locum on the claim?               |
+|                                   |                                   |
+|                                   | No, go to Step 10                 |
+|                                   |                                   |
+|                                   | Yes, on the first line in the:    |
+|                                   |                                   |
+|                                   | -   PATIENT field, key the        |
+|                                   |     patient's name                |
+|                                   | -   ITEM field, key PAYP          |
+|                                   | -   NO field, key number of       |
+|                                   |     services, e.g. 01. If NO line |
+|                                   |     is not displayed, press [F2]  |
+|                                   | -   PROVIDER field, key the       |
+|                                   |     provider number for payee     |
+|                                   |     provider/ locum               |
+|                                   |                                   |
+|                                   | For details of what to key in the |
+|                                   | second line, go to Step 10.       |
++-----------------------------------+-----------------------------------+
+| 10                                | Key service details using the     |
+|                                   | account or invoice + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Key all the service details, in   |
+|                                   | the:                              |
+|                                   |                                   |
+|                                   | -   PATIENT field, key the        |
+|                                   |     patient's name                |
+|                                   | -   ITEM field, key the item      |
+|                                   |     number                        |
+|                                   | -   FST DT field, key the date of |
+|                                   |     service                       |
+|                                   | -   PROVIDER field, key the       |
+|                                   |     provider number               |
+|                                   | -   Payee code, for example, 2    |
+|                                   |     for unpaid claim and 9 for a  |
+|                                   |     paid claim                    |
+|                                   | -   CHARGE field, key the amount  |
+|                                   |     charge                        |
+|                                   | -   Press Enter                   |
+|                                   |                                   |
+|                                   | The Medicare system correctly     |
+|                                   | calculates the maximum amount of  |
+|                                   | the Medicare benefit payable to   |
+|                                   | the claimant.                     |
++-----------------------------------+-----------------------------------+
+| 11                                | Referral details + Read more ...  |
+|                                   |                                   |
+|                                   | Does the account/invoice include  |
+|                                   | referral details?                 |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 12            |
+|                                   | -   No, go to Step 13             |
++-----------------------------------+-----------------------------------+
+| 12                                | Key referral details + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | In the PATIENT field, key the     |
+|                                   | patient's name                    |
+|                                   |                                   |
+|                                   | In the ITEM field, key the        |
+|                                   | appropriate referral code:        |
+|                                   |                                   |
+|                                   | -   SR - Specialist referral      |
+|                                   | -   AH - Allied health referral   |
+|                                   | -   DI - Diagnostic Imaging       |
+|                                   | -   PA - Pathology                |
+|                                   |                                   |
+|                                   | In the FST DT field, key the date |
+|                                   | the referral was written          |
+|                                   |                                   |
+|                                   | If the referral period is for:    |
+|                                   |                                   |
+|                                   | 12 months, the Service Officer is |
+|                                   | not required to key this field.   |
+|                                   | The system will determine the end |
+|                                   | date of the referral              |
+|                                   |                                   |
+|                                   | a period other than 12 months,    |
+|                                   | for example, 3 months, 24 months  |
+|                                   | or indefinite                     |
+|                                   |                                   |
+|                                   | In the LAST DT field, key the     |
+|                                   | number of months on the referral  |
+|                                   | line. For example, where the      |
+|                                   | referral is 3 months, key 3, for  |
+|                                   | 24 months key 24                  |
+|                                   |                                   |
+|                                   | For indefinite referrals, key 99. |
+|                                   | The system will determine the end |
+|                                   | date of the referral              |
+|                                   |                                   |
+|                                   | -   In the PROVIDER field, key    |
+|                                   |     the referring provider number |
++-----------------------------------+-----------------------------------+
+| 13                                | Assessing the claim + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   Review and apply assessing    |
+|                                   |     restrictions by following     |
+|                                   |     warning messages              |
+|                                   | -   Warning messages must be      |
+|                                   |     actioned in order from left   |
+|                                   |     to right and further          |
+|                                   |     explanations can be viewed by |
+|                                   |     placing the cursor at the     |
+|                                   |     beginning of the return       |
+|                                   |     message and pressing [F1]     |
++-----------------------------------+-----------------------------------+
+| 14                                | Two-way claims + Read more ...    |
+|                                   |                                   |
+|                                   | Where the claim is a Medicare     |
+|                                   | Two-way claim:                    |
+|                                   |                                   |
+|                                   | -   key Y in the FUND field to    |
+|                                   |     get the gap statement, if     |
+|                                   |     required                      |
+|                                   | -   key N in the FUND field, if   |
+|                                   |     no gap statement is required  |
+|                                   |                                   |
+|                                   | If in-hospital items are keyed,   |
+|                                   | Service Officers will be prompted |
+|                                   | to complete the FUND field.       |
+|                                   |                                   |
+|                                   | See Medicare Two-way and claims   |
+|                                   | processing for more details.      |
++-----------------------------------+-----------------------------------+
+| 15                                | Finalise the claim + Read more    |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | -   Press Enter                   |
 |                                   | -   Key 'P' to pay claim          |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 
 How to process a Medicare patient claim for a business or organisation
 
-Table 2
+Table 3
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -318,7 +657,7 @@ Table 2
 |                                   |                                   |
 |                                   | -   In Mainframe, key NPOI,       |
 |                                   |     Medicare card number (MS014)  |
-|                                   | -   Press [Enter], blank claimant |
+|                                   | -   Press Enter, blank claimant   |
 |                                   |     identification fields will    |
 |                                   |     show                          |
 +-----------------------------------+-----------------------------------+
@@ -329,25 +668,34 @@ Table 2
 |                                   |     business or organisation      |
 |                                   | -   In the CTYPE field key B      |
 |                                   |     (business/organisation)       |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   In the POSTAL NAME key the    |
 |                                   |     name of the organisation      |
 |                                   |     followed by a comma           |
 |                                   | -   Confirm if the claim is paid  |
 |                                   |     (Y) or Unpaid (N)             |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Confirm address + Read more ...   |
 |                                   |                                   |
 |                                   | -   Key the postal address of the |
-|                                   |     claimant in the ADR field     |
+|                                   |     claimant (business or         |
+|                                   |     organisation) in the ADR      |
+|                                   |     field                         |
 |                                   | -   Key [T] for temporary storage |
 |                                   |     of address                    |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
-|                                   | The address cannot be stored      |
-|                                   | permanently when the claimant is  |
-|                                   | a business or organisation.       |
+|                                   | Note: Businesses and              |
+|                                   | organisations cannot have banking |
+|                                   | details stored permanently in     |
+|                                   | CDMS, unless the customer is      |
+|                                   | under financial management or     |
+|                                   | other guardianship order. See,    |
+|                                   | Power of Attorney, Guardianship,  |
+|                                   | Administrative Orders and         |
+|                                   | Authorised Representative for     |
+|                                   | Medicare.                         |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Business/Organisation Bank        |
 |                                   | account details + Read more ...   |
@@ -402,15 +750,15 @@ Table 2
 |                                   | Key ‘P’ in the STM field to issue |
 |                                   | a statement to the claimant,      |
 |                                   |                                   |
-|                                   | A statement must be issued when   |
-|                                   | the claimant is a business or     |
-|                                   | organisation.                     |
+|                                   | Note: a statement must be issued  |
+|                                   | when the claimant is a business   |
+|                                   | or organisation.                  |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Date of lodgement + Read more ... |
 |                                   |                                   |
 |                                   | -   Key date of lodgement in the  |
 |                                   |     DOL field                     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | The date of lodgement is the date |
 |                                   | Services Australia received the   |
@@ -431,19 +779,22 @@ Table 2
 |                                   |     service                       |
 |                                   | -   PROVIDER field, key the       |
 |                                   |     provider number               |
-|                                   | -   Payee code, e.g. 2 for unpaid |
-|                                   |     claim and 9 for a paid claim  |
+|                                   | -   Payee code, for example, 2    |
+|                                   |     for unpaid claim and 9 for a  |
+|                                   |     paid claim                    |
 |                                   | -   CHARGE field, key the amount  |
 |                                   |     charged                       |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | Repeat this step for each service |
 |                                   | being claimed.                    |
 |                                   |                                   |
-|                                   | The Medicare system calculates    |
-|                                   | the maximum amount of the         |
-|                                   | Medicare benefit payable to the   |
-|                                   | claimant.                         |
+|                                   | Has the Medicare system           |
+|                                   | calculated the maximum amount of  |
+|                                   | the Medicare benefit payable to   |
+|                                   | the claimant without returning    |
+|                                   | any restriction or warning        |
+|                                   | messages?                         |
 |                                   |                                   |
 |                                   | -   Yes, see Step 11 in Table 1   |
 |                                   | -   No, go to Step 10             |
@@ -465,20 +816,21 @@ Table 2
 |                                   |     placing the cursor at the     |
 |                                   |     beginning of the return       |
 |                                   |     message and pressing [F1]     |
-|                                   | -   For more information on       |
-|                                   |     pathology items, see          |
-|                                   |     Assessing Pathology claims    |
+|                                   | -   For more details on pathology |
+|                                   |     items, see Assessing          |
+|                                   |     Pathology claims              |
 +-----------------------------------+-----------------------------------+
 | 11                                | Finalise the claim + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Key ‘P’ to pay claim          |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 
 How to process a claim for customers experiencing financial hardship
 
-Table 3
+Table 4
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -522,7 +874,7 @@ Table 3
 |                                   |     domestic violence concerns,   |
 |                                   |     add a Sensitive Information   |
 |                                   |     Indicator for Family and      |
-|                                   |     Domestic Violence.            |
+|                                   |     Domestic Violence             |
 |                                   |                                   |
 |                                   | See Sensitive information         |
 |                                   | indicators in the CDMS for more   |
@@ -573,7 +925,7 @@ Table 3
 
 Unauthorised agents or carers acting on behalf of claimants with a disability
 
-Table 4
+Table 5
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -630,7 +982,7 @@ Table 4
 
 Late lodgement of patient claim - date of service more than 2-5 years ago and Medicare benefit is equal to or less than $100
 
-Table 5
+Table 6
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -659,7 +1011,7 @@ Table 5
 |                                   | than $100 + Read more ...         |
 |                                   |                                   |
 |                                   | -   Key QITI, item number, DOS    |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Press [F5], schedule fee and  |
 |                                   |     benefit amount will display   |
 |                                   |     for that date of service      |
@@ -682,7 +1034,7 @@ Table 5
 |                                   | less than $100?                   |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 3             |
-|                                   | -   No, see Step 2 in Table 6     |
+|                                   | -   No, see Step 2 in Table 7     |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Process claim + Read more ...     |
 |                                   |                                   |
@@ -702,9 +1054,9 @@ Table 5
 |                                   | 6-REJ/PEND is also displayed.     |
 |                                   |                                   |
 |                                   | -   Over key NPBC with ‘NPSC’     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Key ‘17’ in the PI line       |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Assessing and finalising the      |
 |                                   | claim + Read more ...             |
@@ -714,6 +1066,7 @@ Table 5
 |                                   | messages.                         |
 |                                   |                                   |
 |                                   | -   Key ‘P’ to pay claim          |
+|                                   | -   Press Enter                   |
 |                                   | -   Warning messages must be      |
 |                                   |     actioned in order from left   |
 |                                   |     to right and further          |
@@ -725,7 +1078,7 @@ Table 5
 
 Late lodgement of patient claim - date of service more than 2-5 years ago Medicare benefit is more than $100
 
-Table 6
+Table 7
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -759,7 +1112,7 @@ Table 6
 |                                   |                                   |
 |                                   | -   Key NHSI, Medicare card       |
 |                                   |     number                        |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | The Cull history line indicates   |
 |                                   | the date the patients Medicare    |
@@ -787,7 +1140,7 @@ Table 6
 |                                   | If there is no evidence of a      |
 |                                   | duplicate payment on the history, |
 |                                   | the claim can be processed and    |
-|                                   | paid. See Step 1 in Table 1.      |
+|                                   | paid. See Table 1.                |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Return message GT-2YR + Read more |
 |                                   | ...                               |
@@ -795,13 +1148,13 @@ Table 6
 |                                   | The return message GT-2YR will    |
 |                                   | display for claims with a date of |
 |                                   | service greater than 2 years      |
-|                                   | prior, 6-REJ/PEND is also         |
+|                                   | before, 6-REJ/PEND is also        |
 |                                   | displayed.                        |
 |                                   |                                   |
 |                                   | -   Over key NPBC with ‘NPSC’     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Key ‘17’ in the PI line       |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Assessing and finalising the      |
 |                                   | claim + Read more ...             |
@@ -842,7 +1195,7 @@ Table 6
 |                                   | and have access to use SAS        |
 |                                   | Portal?                           |
 |                                   |                                   |
-|                                   | -   Yes, see Step 1 in Table 7    |
+|                                   | -   Yes, see Table 8              |
 |                                   | -   No, go to Step 7              |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Changing proficiency level on a   |
@@ -865,7 +1218,8 @@ Table 6
 
 Processing late lodgement of patient claims with a date of service 2-5 years ago requiring SAS report
 
-Table 7
+Table 8: this table is for Service Officers who have access to the SAS
+Information Delivery Portal
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -873,8 +1227,8 @@ Table 7
 | 1                                 | Proof of payment/account + Read   |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Ensure all relevant paperwork has |
-|                                   | been received - claim form,       |
+|                                   | Make sure all relevant paperwork  |
+|                                   | has been received - claim form,   |
 |                                   | accounts and corresponding        |
 |                                   | receipts if required.             |
 +-----------------------------------+-----------------------------------+
@@ -949,7 +1303,7 @@ Table 7
 |                                   |                                   |
 |                                   | -   In Mainframe, key NPOI,       |
 |                                   |     Medicare card number          |
-|                                   | -   Press [Enter]- blank claimant |
+|                                   | -   Press Enter - blank claimant  |
 |                                   |     identification fields are     |
 |                                   |     displayed                     |
 |                                   |                                   |
@@ -958,7 +1312,7 @@ Table 7
 |                                   | -   Identify the claimant (REF)   |
 |                                   | -   Confirm if the claim is paid  |
 |                                   |     (Y) or Unpaid (N)             |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | Confirming address:               |
 |                                   |                                   |
@@ -998,7 +1352,7 @@ Table 7
 |                                   |     the addition of EFT details   |
 |                                   |     where none were previously    |
 |                                   |     supplied                      |
-|                                   | -   N – EFT details unavailable.  |
+|                                   | -   N - EFT details unavailable.  |
 |                                   |     If the claimant cannot        |
 |                                   |     provide bank account details  |
 |                                   |     at time of lodgement this     |
@@ -1025,7 +1379,7 @@ Table 7
 |                                   |                                   |
 |                                   | -   Key date of lodgement in the  |
 |                                   |     DOL field                     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   |                                   |
 |                                   | The date of lodgement is the date |
 |                                   | Services Australia received the   |
@@ -1080,7 +1434,7 @@ Table 7
 |                                   | on SAS history, the Medicare      |
 |                                   | benefit is payable.               |
 |                                   |                                   |
-|                                   | See Step 1 in Table 1.            |
+|                                   | See Table 1.                      |
 |                                   |                                   |
 |                                   | The return message GT-2YR will    |
 |                                   | display for claims with a date of |
@@ -1088,9 +1442,9 @@ Table 7
 |                                   | 6-REJ/PEND is also displayed.     |
 |                                   |                                   |
 |                                   | -   Over key NPBC with ‘NPSC’     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Key ‘17’ in the PI line       |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 +-----------------------------------+-----------------------------------+
 | 9                                 | Assessing and finalising the      |
 |                                   | claim and work item + Read more   |
@@ -1109,20 +1463,21 @@ Table 7
 |                                   | -   When assessment of the claim  |
 |                                   |     is completed and warning      |
 |                                   |     messages actioned, Press      |
-|                                   |     [Enter]                       |
+|                                   |     Enter                         |
 |                                   | -   Key 'P' to pay claim          |
+|                                   | -   Press Enter                   |
 |                                   | -   Attach any SAS reports to the |
 |                                   |     work item in PaNDA, add       |
 |                                   |     relevant notes, and mark the  |
 |                                   |     work item as ‘Complete’       |
-|                                   | -   For more information on       |
-|                                   |     pathology items, see          |
-|                                   |     Assessing Pathology claims    |
+|                                   | -   For more details on pathology |
+|                                   |     items, see Assessing          |
+|                                   |     Pathology claims              |
 +-----------------------------------+-----------------------------------+
 
 Late lodgement of patient claim with date of service more than 5-7 years ago
 
-Table 8
+Table 9
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -1173,14 +1528,14 @@ Table 8
 |                                   | the Reason field                  |
 |                                   |                                   |
 |                                   | Select the Re-categorise to       |
-|                                   | field. A drop down menu will      |
+|                                   | field. A dropdown menu will       |
 |                                   | display a list of work types.     |
 |                                   | Search and select the relevant    |
 |                                   | work type:                        |
 |                                   |                                   |
-|                                   | -   PaNDA system work type –      |
+|                                   | -   PaNDA system work type -      |
 |                                   |     PC_PCLL5                      |
-|                                   | -   PaNDA work type name –        |
+|                                   | -   PaNDA work type name -        |
 |                                   |     PC_CLAIM_OVER_5YEARS          |
 |                                   |                                   |
 |                                   | Once the work item has been moved |
@@ -1198,7 +1553,7 @@ Table 8
 
 Assessing process for late lodgement of patient claims with a date of service over 5 years ago
 
-Table 9
+Table 10
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -1214,7 +1569,7 @@ Table 9
 |                                   | and then key and pend the claim   |
 |                                   | (NPND)                            |
 |                                   |                                   |
-|                                   | See Step 1 in Table 1.            |
+|                                   | See Table 1.                      |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Obtain the pin number of each     |
 |                                   | patient + Read more ...           |
@@ -1249,7 +1604,7 @@ Table 9
 |                                   |                                   |
 |                                   | -   Delete unwanted patients by   |
 |                                   |     selecting the check box next  |
-|                                   |     to the patient.               |
+|                                   |     to the patient                |
 |                                   | -   Select Submit Request to save |
 |                                   |     and submit the request        |
 |                                   |                                   |
@@ -1258,14 +1613,14 @@ Table 9
 |                                   | Request and Report date           |
 |                                   | available.                        |
 |                                   |                                   |
-|                                   | To ensure no time restrictions,   |
-|                                   | the time range requested must     |
-|                                   | reflect the time dependency of    |
-|                                   | the item claimed. For example,    |
-|                                   | item 2715 can only be claimed     |
-|                                   | once every 12 months. The report  |
-|                                   | needs to cover the 12 months      |
-|                                   | prior and post item being         |
+|                                   | To make sure no time              |
+|                                   | restrictions, the time range      |
+|                                   | requested must reflect the time   |
+|                                   | dependency of the item claimed.   |
+|                                   | For example, item 2715 can only   |
+|                                   | be claimed once every 12 months.  |
+|                                   | The report needs to cover the 12  |
+|                                   | months before and post item being |
 |                                   | claimed.                          |
 |                                   |                                   |
 |                                   | Culled history report may take up |
@@ -1344,11 +1699,11 @@ Table 9
 |                                   | by the Service Officer.           |
 |                                   |                                   |
 |                                   | If the report does not appear,    |
-|                                   | ensure the date range is correct. |
-|                                   | The system will only display a    |
-|                                   | date range 2 weeks from the       |
-|                                   | current date. If the report was   |
-|                                   | ordered prior to the 2 weeks,     |
+|                                   | make sure the date range is       |
+|                                   | correct. The system will only     |
+|                                   | display a date range 2 weeks from |
+|                                   | the current date. If the report   |
+|                                   | was ordered before the 2 weeks,   |
 |                                   | expand the date range to include  |
 |                                   | the date the report was ordered.  |
 +-----------------------------------+-----------------------------------+
@@ -1382,7 +1737,7 @@ Table 9
 |                                   | Recall claim from pend            |
 |                                   |                                   |
 |                                   | -   NPRI, Medicare card number    |
-|                                   | -   Press [Enter], recalls item   |
+|                                   | -   Press Enter, recalls item     |
 |                                   |     lines that have been pended   |
 +-----------------------------------+-----------------------------------+
 | 10                                | Update claim + Read more ...      |
@@ -1409,7 +1764,7 @@ Table 9
 |                                   | and rejected with RSN 162.        |
 |                                   |                                   |
 |                                   | Claims where restrictive items    |
-|                                   | have been previously paid         |
+|                                   | have been previously paid.        |
 |                                   |                                   |
 |                                   | Where restrictive services appear |
 |                                   | on SAS history report and there   |
@@ -1440,10 +1795,7 @@ Table 9
 |                                   |     be paid via mainframe, go to  |
 |                                   |     Step 11                       |
 |                                   | -   For claims over 7 years old,  |
-|                                   |     See Step 1 in Table 10,       |
-|                                   |     Service Officer (SO) -        |
-|                                   |     requesting a manual EFT       |
-|                                   |     payment                       |
+|                                   |     See Table 11                  |
 +-----------------------------------+-----------------------------------+
 | 11                                | Assessing and finalising the      |
 |                                   | claim + Read more ...             |
@@ -1461,8 +1813,9 @@ Table 9
 |                                   | -   When assessment of the claim  |
 |                                   |     is completed and warning      |
 |                                   |     messages actioned, Press      |
-|                                   |     [Enter]                       |
+|                                   |     Enter                         |
 |                                   | -   Key 'P' to pay claim          |
+|                                   | -   Press Enter                   |
 |                                   | -   Attach any SAS reports to the |
 |                                   |     work item in PaNDA, add       |
 |                                   |     relevant notes, and mark the  |
@@ -1471,7 +1824,7 @@ Table 9
 
 Service Officer – requesting a manual EFT payment
 
-Table 10: for Service Officers who have received appropriate training
+Table 11: for Service Officers who have received appropriate training
 and granted access to the relevant folders.
 
 +-----------------------------------+-----------------------------------+
@@ -1483,15 +1836,15 @@ and granted access to the relevant folders.
 |                                   |                                   |
 |                                   | Determine from SAS (culled        |
 |                                   | history report) the service(s)    |
-|                                   | has not been previously paid.     |
+|                                   | was not previously paid.          |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Check QITI + Read more ...        |
 |                                   |                                   |
-|                                   | Log on to CICS                    |
+|                                   | Log on to Mainframe:              |
 |                                   |                                   |
 |                                   | -   Key QITI, item number, date   |
 |                                   |     of service (DOS)              |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   [F5] to display the schedule  |
 |                                   |     fee and benefit amount for    |
 |                                   |     the date of service           |
@@ -1548,12 +1901,12 @@ and granted access to the relevant folders.
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Complete the Your statement of    |
-|                                   | Medicare Be nefits template       |
+|                                   | Medicare Benefits template        |
 |                                   | (Z2261).                          |
 |                                   |                                   |
 |                                   | Complete the statement of         |
 |                                   | benefits table with the following |
-|                                   | information:                      |
+|                                   | details:                          |
 |                                   |                                   |
 |                                   | Addressee and Signatory tab       |
 |                                   |                                   |
@@ -1590,9 +1943,9 @@ and granted access to the relevant folders.
 |                                   | -   If the service was            |
 |                                   |     in-hospital tick the          |
 |                                   |     Inpatient box- RSN code 000   |
-|                                   |     will auto-populate.           |
+|                                   |     will auto-populate            |
 |                                   | -   Explanation: Key any relevant |
-|                                   |     RSN code (e.g.                |
+|                                   |     RSN code (for example,        |
 |                                   |     241,242,154,179 etc.)         |
 |                                   | -   CHARGE: amount charged for    |
 |                                   |     item as per the account       |
@@ -1633,10 +1986,10 @@ and granted access to the relevant folders.
 |                                   |     to the list of items to be    |
 |                                   |     included on the statement,    |
 |                                   |     and clears the fields so that |
-|                                   |     the next item can be keyed.   |
+|                                   |     the next item can be keyed    |
 |                                   | -   Repeat these steps on the     |
 |                                   |     benefits details tab for each |
-|                                   |     individual item performed.    |
+|                                   |     individual item performed     |
 |                                   |                                   |
 |                                   | There are also Remove and Edit    |
 |                                   | Information buttons in the Z2261  |
@@ -1653,7 +2006,7 @@ and granted access to the relevant folders.
 |                                   |     the items that is             |
 |                                   |     automatically calculated, and |
 |                                   |     the Explanation of the reason |
-|                                   |     codes will be visible.        |
+|                                   |     codes will be visible         |
 |                                   | -   Service Officers must save a  |
 |                                   |     copy of the statement as a    |
 |                                   |     PDF, using ‘Save As Adobe     |
@@ -1663,8 +2016,7 @@ and granted access to the relevant folders.
 |                                   |     to save it to, and changing   |
 |                                   |     the ‘Save as Type’ from ‘Word |
 |                                   |     Macro-Enabled Document’ to    |
-|                                   |     ‘PDF’ using the drop-down     |
-|                                   |     list                          |
+|                                   |     ‘PDF’ using the dropdown list |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Complete Manual EFT Payment       |
 |                                   | Request form and add Comments to  |
@@ -1682,11 +2034,12 @@ and granted access to the relevant folders.
 |                                   | then changing the Printer to      |
 |                                   | ‘Microsoft Print to PDF’.         |
 |                                   |                                   |
-|                                   | -   Combine the Manual EFT        |
-|                                   |     request form (PP048) and the  |
-|                                   |     Manual Statement of Benefits  |
-|                                   |     (Z2261) to a single PDF,      |
-|                                   |     named in the format of:       |
+|                                   | Combine the Manual EFT request    |
+|                                   | form (PP048) and the Manual       |
+|                                   | Statement of Benefits (Z2261) to  |
+|                                   | a single PDF, named in the format |
+|                                   | of:                               |
+|                                   |                                   |
 |                                   | -   Date of lodgement             |
 |                                   |     YYYYMMDD.claimantsu           |
 |                                   | rnamefirstname.PCLL5.yourloginID, |
@@ -1694,20 +2047,21 @@ and granted access to the relevant folders.
 |                                   | -   add that combined document to |
 |                                   |     the claim, and update notes   |
 |                                   |     in PaNDA                      |
-|                                   | -   Add a comment to CDMS in      |
-|                                   |     personal (claimant)           |
-|                                   |     indicating the manual EFT     |
-|                                   |     amount and the Service        |
-|                                   |     details                       |
-|                                   | -   Save the combined PDF version |
-|                                   |     of the documents to           |
-|                                   |     R                             |
+|                                   |                                   |
+|                                   | Add a comment to CDMS in personal |
+|                                   | (claimant) indicating the manual  |
+|                                   | EFT amount and the Service        |
+|                                   | details                           |
+|                                   |                                   |
+|                                   | Save the combined PDF version of  |
+|                                   | the documents to                  |
+|                                   | R                                 |
 |                                   | :\NAT\HLTHSERDEL\DELSUPPORT\MPS-N |
 |                                   | ational\MPS_Claims_&_Assessing\1. |
-|                                   |     Manual EFT Payment            |
-|                                   |     Requests\insert state from    |
-|                                   |     list below \4. FORMS PCBB     |
-|                                   |     (week ending accordingly)     |
+|                                   | Manual EFT Payment                |
+|                                   | Requests\insert state from list   |
+|                                   | below \4. FORMS PCBB (week ending |
+|                                   | accordingly)                      |
 |                                   |                                   |
 |                                   | The state codes are as follows:   |
 |                                   |                                   |
@@ -1825,7 +2179,7 @@ and granted access to the relevant folders.
 
 Claims and Assessing Team Leader (TL) – managing requests for manual EFT payments
 
-Table 11
+Table 12
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -1855,13 +2209,13 @@ Table 11
 |                                   | blank                             |
 |                                   |                                   |
 |                                   | File must contain only numbers    |
-|                                   | and letters.                      |
+|                                   | and letters                       |
 |                                   |                                   |
 |                                   | Hyphens (-) are accepted in the   |
 |                                   | name or address columns only      |
 |                                   |                                   |
 |                                   | Backslash (/) is accepted in the  |
-|                                   | address column only.              |
+|                                   | address column only               |
 |                                   |                                   |
 |                                   | No other symbols are permitted    |
 |                                   | including:                        |
@@ -1871,7 +2225,7 @@ Table 11
 |                                   | -   And (&)                       |
 |                                   | -   Full stop (.)x`               |
 |                                   |                                   |
-|                                   | Ensure the template has been      |
+|                                   | Make sure the template has been   |
 |                                   | completed correctly so all the    |
 |                                   | details match the related Manual  |
 |                                   | EFT Payment request forms.        |
@@ -1906,11 +2260,11 @@ Table 11
 |                                   |     benefit (as well as the       |
 |                                   |     details on the request        |
 |                                   |     templates)                    |
-|                                   | -   Ensure statement of benefits  |
-|                                   |     has been actioned and is      |
-|                                   |     correct                       |
-|                                   | -   Ensure comments were added in |
-|                                   |     CDMS and PaNDA                |
+|                                   | -   Make sure statement of        |
+|                                   |     benefits has been actioned    |
+|                                   |     and is correct                |
+|                                   | -   Make sure comments were added |
+|                                   |     in CDMS and PaNDA             |
 |                                   | -   Add notes in PaNDA to the     |
 |                                   |     file indicating the form has  |
 |                                   |     been checked                  |
@@ -1960,7 +2314,7 @@ Table 11
 
 Checking Officer – managing requests for manual EFT payments
 
-Table 12
+Table 13
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -1993,7 +2347,7 @@ Table 12
 |                                   | number has been received, access  |
 |                                   | the Payment Run Request Template  |
 |                                   | and complete the following field: |
-|                                   | A – VENDOR: key vendor number     |
+|                                   | A - VENDOR: key vendor number     |
 |                                   | assigned to the claimant/provider |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Obtain delegate approval for      |
@@ -2022,7 +2376,7 @@ Table 12
 |                                   |     request for <insert number of |
 |                                   |     payments> manual EFT payments |
 |                                   |     for the total amount of       |
-|                                   |     $<insert total amount>.       |
+|                                   |     $<insert total amount>        |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Forward payment run request       |
 |                                   | template + Read more ...          |
@@ -2074,7 +2428,7 @@ Table 12
 
 How to issue a duplicate statement of benefit
 
-Table 13
+Table 14
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2084,7 +2438,7 @@ Table 13
 |                                   |                                   |
 |                                   | -   Key NHSI, card number,        |
 |                                   |     patient name in Mainframe     |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Medicare Patient History      |
 |                                   |     screen will display, locate   |
 |                                   |     the claim                     |
@@ -2095,18 +2449,17 @@ Table 13
 |                                   |     CHARGE for that date of claim |
 |                                   |     and press [F1]- the claimants |
 |                                   |     details will display at the   |
-|                                   |     bottom of the screen.         |
+|                                   |     bottom of the screen          |
 |                                   |                                   |
 |                                   | If a Latter Day Adjustment (LDA)  |
 |                                   | has been undertaken or the claim  |
 |                                   | is for an amount over $9999.00,   |
 |                                   | duplicate statements cannot be    |
-|                                   | issued. See Step1 in Table 14 to  |
-|                                   | issue a manual statement of       |
-|                                   | benefit. The date of processing   |
-|                                   | of the claim is required for      |
-|                                   | issuing a duplicate statement of  |
-|                                   | benefit.                          |
+|                                   | issued. See Table 15 to issue a   |
+|                                   | manual statement of benefit. The  |
+|                                   | date of processing of the claim   |
+|                                   | is required for issuing a         |
+|                                   | duplicate statement of benefit.   |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Check group contact + Read more   |
 |                                   | ...                               |
@@ -2124,7 +2477,7 @@ Table 13
 |                                   |                                   |
 |                                   | -   Key NDSI, card number, date   |
 |                                   |     of processing (DDMMYY)        |
-|                                   | -   Press [Enter]                 |
+|                                   | -   Press Enter                   |
 |                                   | -   Duplicate Statement screen    |
 |                                   |     displays                      |
 |                                   |                                   |
@@ -2148,7 +2501,7 @@ Table 13
 |                                   |                                   |
 |                                   | -   key NDSI, card number, date   |
 |                                   |     of processing (DDMMYY)        |
-|                                   | -   press [Enter]                 |
+|                                   | -   press Enter                   |
 |                                   | -   Duplicate Statement screen    |
 |                                   |     displays                      |
 |                                   |                                   |
@@ -2191,17 +2544,18 @@ Table 13
 |                                   | print statement in a service      |
 |                                   | centre.                           |
 |                                   |                                   |
-|                                   | Press [Enter].                    |
+|                                   | Press Enter.                      |
 |                                   |                                   |
 |                                   | When printing statement on site,  |
 |                                   | an additional screen will present |
 |                                   | and the Service Officer will be   |
-|                                   | required to press [Ctrl] + [P].   |
+|                                   | required to press [Ctrl]  + [Alt] |
+|                                   |  + [P].                           |
 +-----------------------------------+-----------------------------------+
 
 How to issue a manual statement of benefit
 
-Table 14
+Table 15
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2286,8 +2640,7 @@ Table 14
 |                                   |     unable to transmit two-way    |
 |                                   |     claim letter (HW038). See     |
 |                                   |     Medicare Two-way and claims   |
-|                                   |     processing for more           |
-|                                   |     information.                  |
+|                                   |     processing for more details.  |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Continue with the Benefits        |
 |                                   | Details tab + Read more ...       |
@@ -2310,7 +2663,8 @@ Table 14
 |                                   | -   Select if the service is      |
 |                                   |     fully paid or unpaid          |
 |                                   | -   Key the relevant RSN code     |
-|                                   |     (e.g. 888, 816, 242,179 etc.) |
+|                                   |     (for example, 888, 816,       |
+|                                   |     242,179 etc.)                 |
 |                                   | -   If the service was            |
 |                                   |     in-hospital tick the          |
 |                                   |     Inpatient box- RSN code 000   |
@@ -2343,8 +2697,12 @@ Table 14
 |                                   |     any rejected services         |
 |                                   |                                   |
 |                                   | Any previous assessing RSN codes  |
-|                                   | will be overwritten when a Latter |
+|                                   | will be overwritten if a Latter   |
 |                                   | Day Adjustment has been actioned. |
+|                                   |                                   |
+|                                   | See Charges $10,000 or more       |
+|                                   | (greater than $999.99) for        |
+|                                   | Medicare patient claims.          |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Multiple Operation Rules (MOR)    |
 |                                   | and Multiple Service Rules        |
@@ -2384,7 +2742,7 @@ Table 14
 |                                   | See Indicators, codes, modifiers  |
 |                                   | and control lines for claims      |
 |                                   | processing in Medicare for more   |
-|                                   | information.                      |
+|                                   | details.                          |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Continue with the Benefits        |
 |                                   | Details tab + Read more ...       |
@@ -2422,24 +2780,6 @@ Table 14
 |                                   | The rest of the MBS Items will    |
 |                                   | have a ‘0’ value for charge,      |
 |                                   | schedule fee and benefit.         |
-+-----------------------------------+-----------------------------------+
-| 8                                 | Continue with the Benefits        |
-|                                   | Details tab + Read more ...       |
-|                                   |                                   |
-|                                   | Do not refer to the QITI as there |
-|                                   | will be derived fees for          |
-|                                   | operations with more than one     |
-|                                   | item, as the Multiple Operation   |
-|                                   | Rule (MOR) has been applied on    |
-|                                   | each service.                     |
-|                                   |                                   |
-|                                   | The Notional charges will be      |
-|                                   | placed for the first item only    |
-|                                   | with the derived schedule fee and |
-|                                   | benefit where the MOR has been    |
-|                                   | applied. The rest of the MBS      |
-|                                   | Items will have a ‘0’ value for   |
-|                                   | charge, schedule fee and benefit. |
 |                                   |                                   |
 |                                   | If there are any remaining items, |
 |                                   | enter them individually and add   |
@@ -2449,15 +2789,15 @@ Table 14
 |                                   | Information buttons in the Z2261  |
 |                                   | template.                         |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Quality assurance + Read more ... |
+| 8                                 | Quality assurance + Read more ... |
 |                                   |                                   |
 |                                   | Service Officers in telephony     |
 |                                   |                                   |
 |                                   | Service Officers in telephony     |
-|                                   | should follow the quality         |
-|                                   | assurance process before mailing  |
-|                                   | out the manual statement of       |
-|                                   | benefit to the customer.          |
+|                                   | must follow the quality assurance |
+|                                   | process before mailing out the    |
+|                                   | manual statement of benefit to    |
+|                                   | the customer.                     |
 |                                   |                                   |
 |                                   | See Quality assurance for         |
 |                                   | external mail in Medicare         |
@@ -2474,22 +2814,45 @@ Table 14
 |                                   |                                   |
 |                                   | See Quality assurance for         |
 |                                   | external mail in Medicare         |
++-----------------------------------+-----------------------------------+
+| 9                                 | Upload a copy of the manual       |
+|                                   | statement of benefits to PaNDA    |
+|                                   | and update comments + Read more   |
+|                                   | ...                               |
 |                                   |                                   |
-|                                   | Note:                             |
+|                                   | Service Officers are to upload a  |
+|                                   | copy of the manual statement of   |
+|                                   | benefit and attach it to the      |
+|                                   | PaNDA work item.                  |
 |                                   |                                   |
-|                                   | -   Upload a copy of the          |
-|                                   |     Statement of Benefits to      |
-|                                   |     PaNDA and update the notes    |
-|                                   | -   A comment against the         |
-|                                   |     claimant must be left in CDMS |
-|                                   |     stating, “Manual statement of |
-|                                   |     benefit issued for DOS        |
-|                                   |     DD/MM/YY patient FULL NAME.”  |
+|                                   | Add a processing comment in       |
+|                                   | PaNDA.                            |
++-----------------------------------+-----------------------------------+
+| 10                                | Record comments in Consumer       |
+|                                   | Directory Maintenance System      |
+|                                   | (CDMS) + Read more ...            |
+|                                   |                                   |
+|                                   | Record a comment against the      |
+|                                   | claimant advising that a manual   |
+|                                   | statement of benefit has been     |
+|                                   | issued by:                        |
+|                                   |                                   |
+|                                   | -   Select comments tab in        |
+|                                   |     personal                      |
+|                                   | -   Record comment advising that  |
+|                                   |     the manual statement of       |
+|                                   |     benefit has been issued       |
+|                                   |     including for which patient   |
+|                                   |     and date of service           |
+|                                   |                                   |
+|                                   | For example - “Manual statement   |
+|                                   | of benefit issued for DOS         |
+|                                   | DD/MM/YY patient FULL NAME.”      |
 +-----------------------------------+-----------------------------------+
 
 Permanent address change during claim processing
 
-Table 15
+Table 16
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2523,7 +2886,7 @@ Table 15
 |                                   | claimant card number + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | The exception when a permanent    |
+|                                   | The exception if a permanent      |
 |                                   | address change is reversed during |
 |                                   | claims processing is when the     |
 |                                   | reason for reversal was incorrect |

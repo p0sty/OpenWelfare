@@ -1,9 +1,3 @@
-
-eBusiness quality checking in QST 111-20080652
-
--   Background
--   Resources
-
 [Expand/Collapse all sections]Expand all
 
 Intranet links
@@ -12,7 +6,7 @@ Enterprise Quality Framework
 
 Health Provider Support and Education Section
 
-Privacy Incident Portal)
+Privacy Incident Portal
 
 Report a Privacy Incident
 
@@ -109,7 +103,7 @@ Table 3
 +-----------------------+-----------------------+-----------------------+
 | EB07                  | Alternate PANDA       | The PaNDA work item   |
 |                       | enquiries not         | has been marked as    |
-| Non- critical         | associated.           | 'Complete' without    |
+| Non-critical          | associated.           | 'Complete' without    |
 |                       |                       | first associating all |
 |                       |                       | relevant work items.  |
 |                       |                       | This could (but not   |
@@ -121,6 +115,12 @@ Table 3
 |                       |                       | are associated        |
 |                       |                       | incorrectly by the    |
 |                       |                       | Service Officer.      |
++-----------------------+-----------------------+-----------------------+
+| EB24                  | PaNDA WID – Case ID   | The PaNDA work item   |
+|                       | field not saved with  | Case ID field does    |
+| Non-critical          | Source Work Item      | not display the       |
+|                       | number                | Source Work Item      |
+|                       |                       | number.               |
 +-----------------------+-----------------------+-----------------------+
 
 Error codes - PRODA
@@ -185,7 +185,7 @@ Table 4
 |                       | incorrectly/with      | coded to the PRODA    |
 | Critical              | errors.               | account contrary to   |
 |                       |                       | Operational           |
-|                       |                       | Blueprint, eBsuiness  |
+|                       |                       | Blueprint, eBusiness  |
 |                       |                       | Branch communications |
 |                       |                       | or Program Support    |
 |                       |                       | Officer (PSO) advice. |
@@ -222,19 +222,21 @@ Table 4
 |                       |                       | error).               |
 +-----------------------+-----------------------+-----------------------+
 
-Error codes - email
+Error codes - Email
 
 Table 5
 
 +-----------------------+-----------------------+-----------------------+
 | Error code            | Error definition      | It is an error when   |
 +-----------------------+-----------------------+-----------------------+
-| EB16                  | Customers name is     | The email sent to the |
-|                       | incorrect/in          | account holder does   |
-| Critical              | complete/Registration | not contain the       |
-|                       | Authority (RA)# in    | correct identifying   |
-|                       | subject line          | information (RA &     |
-|                       | incorrect.            | account holder name). |
+| EB16                  | Information           | The email sent to the |
+|                       | incorrect/incomplete  | account holder does   |
+| Critical              | in email.             | not contain the       |
+|                       |                       | correct identifying   |
+|                       |                       | information RA,       |
+|                       |                       | account holder name,  |
+|                       |                       | Source Work item      |
+|                       |                       | number.               |
 +-----------------------+-----------------------+-----------------------+
 | EB17                  | Incorrect email       | The email sent to the |
 |                       | template used.        | account holder was    |
@@ -257,23 +259,12 @@ Table 5
 |                       | highlighting.         | has then been sent to |
 |                       |                       | the account holder.   |
 +-----------------------+-----------------------+-----------------------+
-| EB20                  | Not signed by agent   | An email has been     |
-|                       | (name and/or P        | sent to the account   |
-| Critical              | Number).              | holder without the    |
-|                       |                       | Service Officer       |
-|                       |                       | identifying           |
-|                       |                       | themselves. All       |
-|                       |                       | emails sent to        |
-|                       |                       | account holders must  |
-|                       |                       | contain either a name |
-|                       |                       | or P number (or       |
-|                       |                       | both).                |
-+-----------------------+-----------------------+-----------------------+
-| EB21                  | Not moved to PRODA    | An email has been     |
-|                       | Sent folder.          | sent to an account    |
-| Critical              |                       | holder but not moved  |
-|                       |                       | to the Sent folder in |
-|                       |                       | the PRODA mailbox.    |
+| EB21                  | Not moved to nominal  | An email has been     |
+|                       | positional inbox      | sent to an account    |
+| Critical              | ‘Sent Items’.         | holder but not moved  |
+|                       |                       | to the nominal        |
+|                       |                       | positional inbox      |
+|                       |                       | ‘Sent Items’.         |
 +-----------------------+-----------------------+-----------------------+
 | EB22                  | Documents requested   | An email has been     |
 |                       | incorrectly.          | sent to the account   |
@@ -287,6 +278,10 @@ Table 5
 |                       | item.                 | documents not         |
 |                       |                       | relating to a work    |
 |                       |                       | item.                 |
++-----------------------+-----------------------+-----------------------+
+| EB25                  | All emails.           | Email has not been    |
+|                       |                       | uploaded in the PaNDA |
+| Non-critical          |                       | work item.            |
 +-----------------------+-----------------------+-----------------------+
 
                                    

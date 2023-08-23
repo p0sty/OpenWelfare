@@ -1,9 +1,3 @@
-
-Actioning broken voluntary deduction (direct debit) arrangements 107-05040020
-
--   Background
--   Process
--   References
 -   Training & Support
 
 [Expand/Collapse all sections]Expand all
@@ -98,7 +92,7 @@ Action for broken direct debit arrangements
 |                                   | when raising and recovering       |
 |                                   | debts.                            |
 |                                   |                                   |
-|                                   | Was the customer contacted?       |
+|                                   | Was customer contact successful?  |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 5             |
 |                                   | -   No, go to Step 7              |
@@ -147,8 +141,12 @@ Action for broken direct debit arrangements
 | 7                                 | End the direct debit              |
 |                                   | arrangement + Read more ...       |
 |                                   |                                   |
-|                                   | Use the Debt Recovery Script to   |
-|                                   | action a broken direct debit:     |
+|                                   | Use the Debt Recovery script to   |
+|                                   | action a broken direct debit      |
+|                                   | arrangement.                      |
+|                                   |                                   |
+|                                   | If the script is unavailable,     |
+|                                   | manually end the arrangement:     |
 |                                   |                                   |
 |                                   | -   on the Activity List (AL)     |
 |                                   |     screen, 'S'elect the DMN/RCV  |
@@ -164,7 +162,7 @@ Action for broken direct debit arrangements
 |                                   |                                   |
 |                                   | If another arrangement is needed  |
 |                                   | and attempts to contact the       |
-|                                   | customer has been:                |
+|                                   | customer have been:               |
 |                                   |                                   |
 |                                   | successful, see Arranging cash    |
 |                                   | repayments to recover debts       |
@@ -174,11 +172,14 @@ Action for broken direct debit arrangements
 |                                   |                                   |
 |                                   | -   over $1,500, a no arrangement |
 |                                   |     (NOARR) activity will         |
-|                                   |     generate after one day.       |
-|                                   |     Procedure ends here           |
+|                                   |     generate after one day. DOC   |
+|                                   |     the attempt using the         |
+|                                   |     Unsuccessful Engagement Fast  |
+|                                   |     Note. Procedure ends here     |
 |                                   | -   under $1,500, go to Step 8    |
 |                                   |                                   |
-|                                   | No, go to Step 9                  |
+|                                   | If another arrangement is not     |
+|                                   | needed, go to Step 9.             |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Customer contact for debts under  |
 |                                   | $1,500 + Read more ...            |
@@ -203,7 +204,7 @@ Action for broken direct debit arrangements
 |                                   |     Note                          |
 |                                   | -   send a ‘Request client to     |
 |                                   |     contact office by phone’      |
-|                                   |     (Q614) letter                 |
+|                                   |     (Q164) letter                 |
 |                                   | -   DOC the record and include    |
 |                                   |     the address to which the      |
 |                                   |     letter was sent to            |
@@ -230,6 +231,8 @@ Action for broken direct debit arrangements
 |                                   | -   all relevant details of the   |
 |                                   |     discussion if the customer    |
 |                                   |     was contacted                 |
+|                                   |                                   |
+|                                   | close the DOC                     |
 +-----------------------------------+-----------------------------------+
 
                                    
