@@ -237,7 +237,7 @@ $(document).ready(function() {
 
 <p>An online or Assisted Customer Claim (ACC) for CCS/Additional Child Care Subsidy (ACCS) cannot be submitted until all required supporting documents have been uploaded.</p>
 
-<p>The exception is where the customer will provide bank account or Tax File Number details within 28 days. See <a href="../families/007-17103105-01.html">Exemption from providing Tax File Numbers when claiming Child Care Subsidy (CCS)</a></p>
+<p>The exception is where the customer will provide bank account or Tax File Number details within 28 days. See <a href="../families/007-17103105-01.html">Exemption from providing Tax File Numbers when claiming Child Care Subsidy (CCS)</a>.</p>
 
 <p>When a paper claim is scanned to the customer's record, a Social Online Application (SOA) is created. Staff must manually code the information directly into the SOA using details from the paper claim.</p>
 
@@ -423,7 +423,7 @@ Check the <a target="_blank" href="../Process-direct/ProcessDirect.html">Process
 		<ul>		<li>
 Where reindex claim functionality is unable to be used due to the CCS Benefit Status. For example, when the customer has a <strong>Cur</strong>rent Benefit Status</li>
 		<li>
-A claim requires a backdated Date of Receipt (DOR). <strong>Note&#58;</strong> for claims or SOAs requiring a Deemed Date of Receipt (DDOR) more than 3 years in the past, see Item 4</li>
+A claim requires a backdated Date of Receipt (DOR). <strong>Note&#58;</strong> for claims or SOAs requiring a Deemed Date of Receipt (DDOR) more than 3 years in the past, see <strong><a href="../families/007-17103136-03.html#bp03_tbl_Regenerate_re_4">I</strong>tem 4</a></li>
 		</ul>
 <p>A CCS SOA should not be used&#58;</p>
 		<ul>		<li>
@@ -440,14 +440,22 @@ Go to the Process Direct home page and select <strong>SOA Shell</strong> under t
 <strong>Date of Receipt&#58;</strong> Enter the date the claim was lodged as DD/MM/YYYY. <strong>Note&#58; </strong>the date of receipt of the original claim will display as the <strong>Submitted</strong> date. Use this date, <strong>not</strong> the <strong>Received</strong> date, to ensure claim correctness</li>		</ul>
 		<li>
 Where a CCS SOA is indexed, a CCP Claim Progress <strong>Note/DOC</strong> is auto-created. Record the reason, outlining why the claim requires reassessment, in Progress and Claim Assessment <strong>Note/DOC</strong></li>
-		<li>
-When processing a CCS SOA&#58;</li>
+		</ul>
+<p>When processing a CCS SOA&#58;</p>
+		<ul>		<li>
+manually get the AIR data for each child in the claim to avoid gaps and ensure correct backdating of entitlement. While in the claim;</li>
 			<ul>			<li>
+take note of the postcode of the parent</li>
+			<li>
+from the child/ren record, go to the <strong>CIM</strong> table via the <strong>Super Key</strong> and select <strong>Add </strong></li>
+			<li>
+select <strong>Get AIR Data</strong> and <strong>Save</strong> the result, confirming the provisional AIR date of notification now matches the date of receipt (<strong>DDOR</strong>) of the claim. <strong>Note&#58;</strong> the immunisation link should already be established but if linking issues present enter the customer postcode first then, if needed, include the Medicare number if available</li>		</ul>
+		<li>
 check the Service Reason is CCP before selecting assess, and </li>
-			<li>
+		<li>
 ensure the outcome is correct before finalising, including checking any CCS arrears generated</li>
-			<li>
-See <a href="../income-assests-and-rates-of-payment/108-08170000-01.html">Payment of arrears after reassessment and stopping a payment</a></li>		</ul>
+		<li>
+See <a href="../income-assests-and-rates-of-payment/108-08170000-01.html">Payment of arrears after reassessment and stopping a payment</a></li>
 		<li>
 If the incorrect outcome presents at <strong>Assessment Results</strong>, do not finalise the claim</li>
 		<li>
@@ -565,11 +573,11 @@ The claim will auto-regenerate</li>
 </tr>
 <tr>
 <td>
-
+<a class="anchor" name="bp03_tbl_Regenerate_re_6"></a>
 <p>6</p></td>
 <td>
 
-<p><strong>Cancellation of VSR activity in Customer First</strong> <a title="Read more 8" class="showhead bp03_tbl_Regenerate_re_5" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Regenerate_re_5" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Cancellation of VSR activity in Customer First</strong> <a title="Read more 8" class="showhead bp03_tbl_Regenerate_re_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Regenerate_re_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -597,11 +605,11 @@ Select <strong>Continue</strong></li>		</ul>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Regenerate_re_6"></a>
-<p>6</p></td>
+<a class="anchor" name="bp03_tbl_Regenerate_re_7"></a>
+<p>7</p></td>
 <td>
 
-<p><strong>Error WS999</strong> <a title="Read more 9" class="showhead bp03_tbl_Regenerate_re_6" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Regenerate_re_6" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Error WS999</strong> <a title="Read more 9" class="showhead bp03_tbl_Regenerate_re_7" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Regenerate_re_7" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -731,11 +739,11 @@ the relevant document icons at the bottom of the expanded <strong>Claim Summary<
 <div class="showcont">
 
 
-<p>Before assessing the CCS claim, processing staff will check Transactions in Process Direct for any additional CCS claims and then Search Online Claims in Customer First for lodgement of other Family Assistance claims.</p>
+<p>Before assessing the CCS claim, processing staff will check Transactions in Process Direct for any additional CCS claims and then Search Online Claims in Customer First for lodgement of other Family Assistance claims. A further indicator that the CCS claim was lodged as a combined CCS/Families (e.g. Family Tax Benefit (FTB)) claim is other families question sets in the CCS claim data. For example, Payment Choices for FTB appearing in the CCS claim overview.</p>
 
-<p>If the customer has lodged multiple claims with different submission dates, claims will be processed in order of date submitted. Start with the earlier date. For example, Family Tax Benefit (FTB) and CCS.</p>
+<p>If the customer has lodged multiple claims with different submission dates, claims will be processed in order of date submitted. Start with the earlier date. For example, FTB and CCS.</p>
 
-<p>If there is a CCS claim and a Families claim (e.g. FTB) on the record with the same submission date, the Families claim must be processed first.</p>
+<p>If there is a CCS claim and a Families claim  on the record with the same submission date, the Families claim must be processed first.</p>
 
 <p>If the customer has lodged more than one CCS claim, they will be processed in the order submitted (earliest date first).</p>
 </div>
@@ -823,21 +831,23 @@ Select <img src="../resources/images/process_direct_small/more%20options.png" al
 <p>5</p></td>
 <td>
 
-<p><strong>Hand off processes</strong></p>
+<p><strong>Hand off processes</strong> <a title="Read more 14" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
 
 <p>Review the claim data to determine if there are any necessary processing hand off points. Expand one of the following sections if a hand off is required.</p>
+</div>
+
 
 <p></p>
 
-<p><strong>CCS/Additional Child Care Subsidy (ACCS) combined claims</strong> <a title="Read more 14" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS/Additional Child Care Subsidy (ACCS) combined claims</strong> <a title="Read more 15" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>CCS/ACCS combined claims are processed by the ACCS Processing Team (ACCSPT). Staff have no delegation to process ACCS claims unless they are members of an ACCSPT. This includes combined CCS/ACCS claims where the ACCS component is embedded within the CCS claim.</p>
 
-<p>There is no need to reallocate the work item as it will be mapped to appropriately trained staff. If a staff member is allocated an ACCS work item they are not appropriately skilled to action, unassign it with reason User Unavailable. This returns it back to the national allocation pool.</p>
-
-<p></p>
+<p>There is no need to reallocate the work item as it will be mapped to appropriately trained staff. If a staff member is allocated an ACCS work item they are not appropriately skilled to action, unassign it with reason User Unavailable. This returns it back to the national allocation pool. See <a href="../specialist-manuals-and-system-tools/111-06060000-01.html">Work Optimiser for staff</a> for further information on unassigning a claim.</p>
 
 <p><strong>Note&#58;</strong> if unsure a CCS claim has a combined ACCS component after reviewing the claim details, check for an ACCS keyword&#58;</p>
 		<ul>		<li>
@@ -852,12 +862,14 @@ TFH (Temporary Financial Hardship)</li>
 TTW (Transition to Work)</li>
 			<li>
 GRDPT (Grandparent)</li>
+			</ul>			</ul>
+<p>Close the <strong>Plse action CCS Claim in PD Note/DOC</strong>.</p>
 </div>
 
-			</ul>			</ul>
+
 <p></p>
 
-<p><strong>Families claim handoff process for CCS only trained Service Officers</strong> <a title="Read more 15" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Families claim handoff process for CCS only trained Service Officers</strong> <a title="Read more 16" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -899,21 +911,23 @@ Select <strong>Save</strong> and complete the <strong>Note</strong>. Do not leav
 
 <p></p>
 
-<p><strong>Advice of shared care or change of care arrangement</strong> <a title="Read more 16" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Advice of shared care or change of care arrangement</strong> <a title="Read more 17" class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>If the customer has advised of a shared care arrangement or change of care in the claim, the shared care coding cannot be completed within the CCS Claim in Process Direct.</p>
+</div>
+
+
+<p></p>
 
 <p>If no hand off is required, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step10">go to  Step 10</a>.</p>
 
-<p>Has the customer advised in the claim they are a step parent, have a shared care arrangement, or a change of care?</p>
+<p><strong>Has the customer advised in the claim they are a step parent, have a shared care arrangement, or a change of care?</strong></p>
 		<ul>		<li>
 <strong>Yes</strong>, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step06">go to Step 6</a></li>
 		<li>
 <strong>No</strong>, continue to process claim. <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step10">Go to  Step 10</a></li>		</ul>
-</div>
-
 
 <p></p></td>
 </tr>
@@ -923,7 +937,7 @@ Select <strong>Save</strong> and complete the <strong>Note</strong>. Do not leav
 <p>6</p></td>
 <td>
 
-<p><strong>Customer advises of shared care arrangement or a change of care</strong> <a title="Read more 17" class="showhead bp03_tbl_Review_claim_an_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer advises of shared care arrangement or a change of care</strong> <a title="Read more 18" class="showhead bp03_tbl_Review_claim_an_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -949,7 +963,7 @@ Select <strong>Save</strong> and complete the <strong>Note</strong>. Do not leav
 <p>7</p></td>
 <td>
 
-<p><strong>Step parent assessment</strong> <a title="Read more 18" class="showhead bp03_tbl_Review_claim_an_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Step parent assessment</strong> <a title="Read more 19" class="showhead bp03_tbl_Review_claim_an_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -979,7 +993,7 @@ is not required, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim
 <p>8</p></td>
 <td>
 
-<p><strong>Customer is not a step parent</strong> <a title="Read more 19" class="showhead bp03_tbl_Review_claim_an_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer is not a step parent</strong> <a title="Read more 20" class="showhead bp03_tbl_Review_claim_an_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -999,13 +1013,17 @@ is not required, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim
 <p>9</p></td>
 <td>
 
-<p><strong>Action based on skill set level</strong></p>
+<p><strong>Action based on skill set level</strong> <a title="Read more 21" class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
 
 <p>Expand one of the following sections based on relevant skillset.</p>
+</div>
+
 
 <p></p>
 
-<p><strong>Staff not skilled in shared/change of care</strong> <a title="Read more 20" class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Staff not skilled in shared/change of care</strong> <a title="Read more 22" class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -1039,7 +1057,7 @@ For more details, see <a href="../specialist-manuals-and-system-tools/111-060500
 		</ul>
 <p></p>
 
-<p><strong>FTB/CCS shared care/ change of care skill set</strong> <a title="Read more 21" class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>FTB/CCS shared care/ change of care skill set</strong> <a title="Read more 23" class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1069,7 +1087,7 @@ continue with claim processing</li>
 <p>10</p></td>
 <td>
 
-<p><strong>Claim Application screen and second deadline cancellation check</strong> <a title="Read more 22" class="showhead bp03_tbl_Review_claim_an_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Claim Application screen and second deadline cancellation check</strong> <a title="Read more 24" class="showhead bp03_tbl_Review_claim_an_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1093,7 +1111,7 @@ continue with claim processing</li>
 <p>11</p></td>
 <td>
 
-<p><strong>Customer re-claiming CCS after cancelled second deadline (2DL)</strong> <a title="Read more 23" class="showhead bp03_tbl_Review_claim_an_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer re-claiming CCS after cancelled second deadline (2DL)</strong> <a title="Read more 25" class="showhead bp03_tbl_Review_claim_an_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1149,7 +1167,7 @@ Key the CRN or claim id, then</li>
 <p>12</p></td>
 <td>
 
-<p><strong>Customer nominates a payment nominee</strong> <a title="Read more 24" class="showhead bp03_tbl_Review_claim_an_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer nominates a payment nominee</strong> <a title="Read more 26" class="showhead bp03_tbl_Review_claim_an_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1163,7 +1181,7 @@ NOC (Correspondence Nominee), or</li>
 			<li>
 NOB (Correspondence and Payment Nominee)</li>		</ul>
 		<li>
-Select <strong>Snapshot</strong>. On the top row, check <strong>Corres Nominee</strong> and <strong>Pay Nominee</strong>. If the customer does not have a current nominee arrangement, both will display as <strong>No</strong></li>
+Go to the Nominee link summary (<strong>NOLS</strong>) </li>
 		</ul>
 <p>Check the claim data to determine if the customer has appointed a new payment nominee or has cancelled a previous arrangement.</p>
 
@@ -1189,7 +1207,7 @@ Select <strong>Snapshot</strong>. On the top row, check <strong>Corres Nominee</
 <p>13</p></td>
 <td>
 
-<p><strong>Tax File Number (TFN)</strong> <a title="Read more 25" class="showhead bp03_tbl_Review_claim_an_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Tax File Number (TFN)</strong> <a title="Read more 27" class="showhead bp03_tbl_Review_claim_an_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1215,7 +1233,7 @@ Select <strong>Snapshot</strong>. On the top row, check <strong>Corres Nominee</
 <p>14</p></td>
 <td>
 
-<p><strong>Foreign sponsored student</strong> <a title="Read more 26" class="showhead bp03_tbl_Review_claim_an_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Foreign sponsored student</strong> <a title="Read more 28" class="showhead bp03_tbl_Review_claim_an_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1247,7 +1265,7 @@ the Level 2 Policy Help Desk has confirmed the customer is undertaking a course 
 <p>15</p></td>
 <td>
 
-<p><strong>Child school status, and age and school status exemptions</strong> <a title="Read more 27" class="showhead bp03_tbl_Review_claim_an_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child school status, and age and school status exemptions</strong> <a title="Read more 29" class="showhead bp03_tbl_Review_claim_an_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1291,7 +1309,7 @@ evidence requirements <strong>are sufficient</strong>, though a referral has not
 <p>16</p></td>
 <td>
 
-<p><strong>Income estimate</strong> <a title="Read more 28" class="showhead bp03_tbl_Review_claim_an_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Income estimate</strong> <a title="Read more 30" class="showhead bp03_tbl_Review_claim_an_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1319,7 +1337,7 @@ evidence requirements <strong>are sufficient</strong>, though a referral has not
 <p>17</p></td>
 <td>
 
-<p><strong>CCS claim crossing financial years</strong> <a title="Read more 29" class="showhead bp03_tbl_Review_claim_an_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS claim crossing financial years</strong> <a title="Read more 31" class="showhead bp03_tbl_Review_claim_an_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1329,33 +1347,11 @@ does not have a family income estimate recorded on FAO Taxable Income (FTI) befo
 		<li>
 they lodge a Child Care Subsidy (CCS) claim between 1 July and the second CCS Monday in the new year</li>
 		</ul>
-<p>Check the customer's record for&#58;</p>
-		<ul>		<li>
-Actual income recorded on the FAO Income for Previous Year (<strong>FIPY</strong>) for customer and partner (if applicable)</li>
-		<li>
-A Family Tax Benefit (FTB) Lump Sum Claim (LSC)</li>
-		</ul>
-<p>This information can be used for the income estimate to assess the CCS claim portion before the start of the new CCS year.</p>
+<p>Finalise the claim with the nil rate period.</p>
 
-<p>Where there is no income estimate for the relevant financial year available, use the <a href="../families/007-17022800-03.html">Desktop Electronic Messaging Capability</a> to&#58;</p>
-		<ul>		<li>
-create a 'pre-call' notification</li>
-		<li>
-try to contact the customer once to get the relevant financial year estimate (<strong>Tip&#58;</strong> check if any other information is required to finalise the claim before attempting to contact)</li>
-		</ul>
-<p><strong>Has an income estimate been obtained?</strong></p>
-		<ul>		<li>
-<strong>Yes</strong>, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step18">go to  Step 18</a></li>
-		<li>
-<strong>No&#58;</strong></li>
-			<ul>			<li>
-Finalise the claim with the nil rate period</li>
-			<li>
-Any gap in entitlement is adjusted during the CCS Balancing for the financial year when actual income is known</li>
-			<li>
-If the customer contacts and provides an income estimate after the claim is finalised, record an income estimate from the Deemed Date of Receipt (DDOR) of the CCS claim</li>
-			<li>
-<a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step18">Go to  Step 18</a></li>			</ul>			</ul>
+<p>Any gap in entitlement is adjusted during the CCS Balancing for the financial year when actual income is known.</p>
+
+<p><a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step18">Go to  Step 18</a>.</p>
 </div>
 
 
@@ -1367,7 +1363,7 @@ If the customer contacts and provides an income estimate after the claim is fina
 <p>18</p></td>
 <td>
 
-<p><strong>Check marital status</strong> <a title="Read more 30" class="showhead bp03_tbl_Review_claim_an_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check marital status</strong> <a title="Read more 32" class="showhead bp03_tbl_Review_claim_an_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1397,7 +1393,7 @@ information supplied within the customer's claim</li>
 <p>19</p></td>
 <td>
 
-<p><strong>Check partner CCS</strong> <a title="Read more 31" class="showhead bp03_tbl_Review_claim_an_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check partner CCS</strong> <a title="Read more 33" class="showhead bp03_tbl_Review_claim_an_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1449,7 +1445,7 @@ Determine which member of the couple should cancel their CCS by checking attenda
 <p>20</p></td>
 <td>
 
-<p><strong>Ongoing CCS entitlement</strong> <a title="Read more 32" class="showhead bp03_tbl_Review_claim_an_Step20" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step20" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Ongoing CCS entitlement</strong> <a title="Read more 34" class="showhead bp03_tbl_Review_claim_an_Step20" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step20" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1519,19 +1515,13 @@ Level 2 Policy Helpdesk will refer to Level 3 Policy</li>
 <p>21</p></td>
 <td>
 
-<p><strong>Requesting documents</strong> <a title="Read more 33" class="showhead bp03_tbl_Review_claim_an_Step21" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step21" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Activity Test Details </strong> <a title="Read more 35" class="showhead bp03_tbl_Review_claim_an_Step21" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step21" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>If more information is required to assess the claim (e.g. further evidence required to support an age/school status exemption), request documents from the customer.</p>
+<p>Customers are responsible for self-assessing their (and their partner's) hours of recognised activity. See <a href="../families/007-17103115-01.html">Activity Test for Child Care Subsidy (CCS)</a> for more information. </p>
 
-<p>If a CCS claim has come off hold after a request for information has already been sent and the required documents have not been provided, the claim is to be made Not Effective. <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step23">Go to  Step 23</a>.</p>
-
-<p><strong>Can the claim be processed without further documentation/evidence?</strong></p>
-		<ul>		<li>
-<strong>Yes</strong>, see <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step01">Step 1 in Table 4</a></li>
-		<li>
-<strong>No</strong>, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step22">go to  Step 22</a></li>		</ul>
+<p><a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step22">Go to  Step 22</a>.</p>
 </div>
 
 
@@ -1543,7 +1533,31 @@ Level 2 Policy Helpdesk will refer to Level 3 Policy</li>
 <p>22</p></td>
 <td>
 
-<p><strong>Request further documentation from the customer</strong> <a title="Read more 34" class="showhead bp03_tbl_Review_claim_an_Step22" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step22" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Requesting documents</strong> <a title="Read more 36" class="showhead bp03_tbl_Review_claim_an_Step22" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step22" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If more information is required to assess the claim (e.g. further evidence required to support an age/school status exemption), request documents from the customer.</p>
+
+<p>If a CCS claim has come off hold after a request for information has already been sent and the required documents have not been provided, the claim is to be made Not Effective. <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step24">Go to  Step 24</a>.</p>
+
+<p><strong>Can the claim be processed without further documentation/evidence?</strong></p>
+		<ul>		<li>
+<strong>Yes</strong>, see <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step01">Step 1 in Table 4</a></li>
+		<li>
+<strong>No</strong>, <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step23">go to  Step 23</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_claim_an_Step23"></a>
+<p>23</p></td>
+<td>
+
+<p><strong>Request further documentation from the customer</strong> <a title="Read more 37" class="showhead bp03_tbl_Review_claim_an_Step23" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step23" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1567,11 +1581,11 @@ record<strong> Notes</strong> to indicate what information was requested. Place 
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_claim_an_Step23"></a>
-<p>23</p></td>
+<a class="anchor" name="bp03_tbl_Review_claim_an_Step24"></a>
+<p>24</p></td>
 <td>
 
-<p><strong>Claim NEF because request for information has previously been sent but documents have not been provided</strong> <a title="Read more 35" class="showhead bp03_tbl_Review_claim_an_Step23" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step23" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Claim NEF because request for information has previously been sent but documents have not been provided</strong> <a title="Read more 38" class="showhead bp03_tbl_Review_claim_an_Step24" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_claim_an_Step24" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1621,7 +1635,7 @@ Change <strong>Status</strong> to <strong>Not Effective</strong></li>
 <p>1</p></td>
 <td>
 
-<p><strong>CCS New Claims</strong> <a title="Read more 36" class="showhead bp03_tbl_Review_relation_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS New Claims</strong> <a title="Read more 39" class="showhead bp03_tbl_Review_relation_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1643,7 +1657,7 @@ a CCS only claim, <a href="../families/007-17103136-03.html#bp03_tbl_Review_rela
 <p>2</p></td>
 <td>
 
-<p><strong>Child has been adopted</strong> <a title="Read more 37" class="showhead bp03_tbl_Review_relation_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child has been adopted</strong> <a title="Read more 40" class="showhead bp03_tbl_Review_relation_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1665,7 +1679,7 @@ any other Customer Reference Number (CRN) issues regarding pre-adoptive care, ch
 <p>3</p></td>
 <td>
 
-<p><strong>Relationships</strong> <a title="Read more 38" class="showhead bp03_tbl_Review_relation_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Relationships</strong> <a title="Read more 41" class="showhead bp03_tbl_Review_relation_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1709,7 +1723,7 @@ there is an <strong>LS</strong> line for all children the customer is claiming C
 		<li>
 the <strong>LS</strong> and <strong>MS</strong> lines are displaying as <strong>Confirmed</strong>/<strong>Provisional</strong></li>
 		</ul>
-<p>Are all relationship details, including dates, displaying correct?</p>
+<p><strong>Are all relationship details, including dates, displaying correct?</strong></p>
 		<ul>		<li>
 <strong>Yes</strong>, go to <a href="../families/007-17103136-03.html#bp03_tbl_Actions_require_Step01">Table 5</a></li>
 		<li>
@@ -1725,7 +1739,7 @@ the <strong>LS</strong> and <strong>MS</strong> lines are displaying as <strong>
 <p>4</p></td>
 <td>
 
-<p><strong>Review/update child relationships</strong> <a title="Read more 39" class="showhead bp03_tbl_Review_relation_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Review/update child relationships</strong> <a title="Read more 42" class="showhead bp03_tbl_Review_relation_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1803,9 +1817,13 @@ the child's DOB</li>		</ul>
 		<li>
 Select <strong>Save</strong></li>
 		</ul>
-<p>Are any partner relationship updates required?</p>
+<p><strong>Are any partner relationship updates required?</strong></p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step05">go to Step 5</a></li>
+<strong>Yes</strong>, and the customer is advising they are now&#58;</li>
+			<ul>			<li>
+partnered, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step05">go to Step 5</a></li>
+			<li>
+separated, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step10">go to  Step 10</a></li>		</ul>
 		<li>
 <strong>No</strong>, see <a href="../families/007-17103136-03.html#bp03_tbl_Actions_require_Step01">Step 1 in Table 5</a></li>		</ul>
 </div>
@@ -1819,51 +1837,33 @@ Select <strong>Save</strong></li>
 <p>5</p></td>
 <td>
 
-<p><strong>Customer advises partnered in claim</strong> <a title="Read more 40" class="showhead bp03_tbl_Review_relation_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer advises partnered in claim</strong> <a title="Read more 43" class="showhead bp03_tbl_Review_relation_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Where a customer advises they are partnered and the customer or partner are currently in receipt of another payment, all linking activities must be finalised before assessing the CCS claim. See <a href="../ongoing-contact/102-05010000-01.html">Change in relationship status from single to partnered</a>.</p>
-
-<p>Check the information provided in the claim and compare to partner data on the Marital Status (<strong>MS</strong>) screen to determine if there are any updates, including historical, which need to be completed in Customer First.</p>
-
-<p><strong>Note&#58;</strong> do a thorough search for the partner's/child's record. See <a href="../initial-contact-general/106-07030010-01.html">Searching for a customer on the system</a>.</p>
-
-<p>Multiple records increase the risk of payment errors, intertwining and potentially fraud. Multiple records may also impact the confidence people have in the quality and correctness of the information Services Australia holds.</p>
-
-<p><strong>Customer advises separated in claim</strong></p>
-
-<p>If a customer advises they have separated in their claim, refer to <a href="../separated-parents/277-50080000-01.html">Change in relationship status from partnered to single</a>. Use this to work out if the separation will need to be verified and if any further action is needed.</p>
-
-<p>If the separation verification requires follow up, place the claim on hold for 14 days&#58;</p>
+<p>Check the information provided in the claim and compare to partner data on the Marital Status (<strong>MS</strong>) screen.</p>
 		<ul>		<li>
-Select <strong>Status </strong>icon</li>
+Where a customer advises they are partnered and&#58;</li>
+			<ul>			<li>
+the customer or partner are currently in receipt of another payment, </li>
+			<li>
+the customer or partner is linked to a previous partner, or </li>
+			<li>
+the partner is/was CCS current from the marital status start date onwards,</li>		</ul>
 		<li>
-Select <strong>Edit</strong></li>
-		<li>
-Change<strong> Status</strong> to <strong>On Hold</strong></li>
-		<li>
-Select <strong>Awaiting ripple confirmation from Legacy System</strong></li>
-		<li>
-Key the <strong>On Hold Expiry Date</strong></li>
-		<li>
-<strong>Save</strong> the status</li>
+all linking activities must be finalised in Customer First before assessing the CCS claim in Process Direct</li>
 		</ul>
-<p>If it is determined the claim meets conditions where separation does not need to be verified, review the marital status details provided in the claim and in the <strong>MS</strong> table. Update if necessary.</p>
-
-<p><strong>Regenerate claim</strong></p>
-
-<p>If any updates are completed in Customer First, a claim regeneration will be required in Process Direct to continue processing&#58;</p>
-
-<p>Select <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Regenerate Claim</strong>.</p>
-
-<p></p>
-
-<p><strong>Has all required child and partner linking/unlinking been completed?</strong></p>
+<p>If the&#58;</p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step07">go to Step 7</a></li>
+customer/partner is&#58;</li>
+			<ul>			<li>
+in receipt of another payment, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step06">go to Step 6</a></li>
+			<li>
+still linked to previous partner, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step07">go to Step 7</a></li>		</ul>
 		<li>
-<strong>No</strong>, customer has advised of a new partner but is still linked to their previous partner, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step06">go to Step 6</a></li>		</ul>
+partner CCS current from the marital status start date, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step08">go to Step 8</a></li>
+		</ul>
+<p>Otherwise, <a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step09">go to Step 9</a>.</p>
 </div>
 
 
@@ -1875,15 +1875,15 @@ Key the <strong>On Hold Expiry Date</strong></li>
 <p>6</p></td>
 <td>
 
-<p><strong>New partner advised in claim, customer still linked to previous partner</strong> <a title="Read more 41" class="showhead bp03_tbl_Review_relation_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer/partner in receipt of another payment</strong> <a title="Read more 44" class="showhead bp03_tbl_Review_relation_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>End date the previous relationship outside Process Direct before linking the new partner in Process Direct. In Customer First, <a href="../separated-parents/277-50080000-03.html">unlink the previous partner</a> on the Marital Status (<strong>MS</strong>) screen and finalise activity on the Assessments Results (<strong>AR</strong>) screen.</p>
+<p>Where the customer or partner is in receipt of another payment, see <a href="../ongoing-contact/102-05010000-01.html">Change in relationship status from single to partnered</a> to confirm the relationship and undertake any pre-linking action required. </p>
 
-<p>If the new partner is linked to another person on the system, separate the records using the date of separation. If a separation date cannot be provided, use the day before the customer became partnered to the new partner. If either the new partner or the person they are linked to is currently in receipt of payment, contact them to confirm separation details before making further updates.</p>
+<p>Once the marital status is updated, in Process Direct, select  <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Regenerate Claim</strong> and continue processing.</p>
 
-<p>Once the previous relationship has been ended, relationship details need to be refreshed within Process Direct to continue processing.</p>
+<p><a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step09">Go to Step 9</a>.</p>
 </div>
 
 
@@ -1895,7 +1895,145 @@ Key the <strong>On Hold Expiry Date</strong></li>
 <p>7</p></td>
 <td>
 
-<p><strong>Relationship errors</strong> <a title="Read more 42" class="showhead bp03_tbl_Review_relation_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer/partner still linked to previous partner</strong> <a title="Read more 45" class="showhead bp03_tbl_Review_relation_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>See <a href="../ongoing-contact/102-05010000-01.html">Change in relationship status from single to partnered</a> to confirm the relationship and undertake any pre-linking action required. </p>
+
+<p>Once the relationship is confirmed, end date the previous relationship outside Process Direct before linking the new partner in Process Direct&#58;</p>
+		<ul>		<li>
+In Customer First, unlink the previous partner on the Marital Status (<strong>MS</strong>) screen.</li>
+			<ul>			<li>
+If the new partner is linked to another person on the system, separate the records using the date of separation</li>
+			<li>
+If a separation date cannot be provided, use the day before the customer became partnered to the new partner</li>		</ul>
+		<li>
+Finalise activity on the Assessments Results (<strong>AR</strong>) screen.</li>
+		</ul>
+<p>Once the previous relationship has been ended, relationship details need to be refreshed within Process Direct. Select <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" /> &gt; <strong>Regenerate Claim</strong>.</p>
+
+<p><a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step09">Go to Step 9</a> to link new partner.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_relation_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Partner CCS current from the marital status start date</strong> <a title="Read more 46" class="showhead bp03_tbl_Review_relation_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Where the partner is or was CCS current from any period following the partnering date, see <a href="../families/007-03030090-01.html">Family assistance customer becomes partnered</a> to ensure&#58;</p>
+		<ul>		<li>
+Activity Test details are updated correctly, and </li>
+		<li>
+there are no overlapping periods of CCS for the same child</li>
+		</ul>
+<p>Once the marital status is updated, in Process Direct, select <img src="../resources/images/process_direct_small/more%20options.png" alt="" title="" />  &gt; <strong>Regenerate Claim</strong> and continue processing.</p>
+
+<p><a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step09">Go to Step 9</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_relation_Step09"></a>
+<p>9</p></td>
+<td>
+
+<p><strong>Marital Status updating in Process Direct for claims including SOAs</strong> <a title="Read more 47" class="showhead bp03_tbl_Review_relation_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>See <a href="../ongoing-contact/102-05010000-01.html">Change in relationship status from single to partnered</a> to&#58;</p>
+		<ul>		<li>
+confirm the relationship, and </li>
+		<li>
+undertake any pre-linking action required</li>
+		</ul>
+<p>Before linking, search for the partner's record. See <a href="../initial-contact-general/106-07030010-01.html">Searching for a customer on the system</a>.</p>
+
+<p>Multiple records&#58;</p>
+		<ul>		<li>
+increase the risk of payment errors, intertwining and potentially fraud, and</li>
+		<li>
+may also impact the confidence people have in the quality and correctness of the information Services Australia holds</li>
+		</ul>
+<p>Within the Marital Status (<strong>MS</strong>) table on the Transaction Summary (<strong>TS</strong>) screen&#58;</p>
+		<ul>		<li>
+<strong>Edit</strong> the relevant line, including any<strong> Unconfirmed</strong> lines, and </li>
+		<li>
+record any necessary updates</li>
+		</ul>
+<p>If a new line is necessary, which will be common for SOA processing, select <strong>Add</strong> in the Marital Status (<strong>MS</strong>) table on the Transaction Summary <strong>(TS</strong>) screen. </p>
+		<ul>		<li>
+<strong>Event date&#58;</strong> Record the Marital Status DOV in dd/mm/yyyy</li>
+		<li>
+<strong>Marital Status&#58;</strong> select the relevant status from the drop down box </li>
+		<li>
+<strong>Partner CRN&#58;</strong> select the field to populate the <strong>Search</strong> and select CRN popup. Select the partner record </li>
+		<li>
+<strong>Partner Permitted to Enquire&#58;</strong> Select from the drop down list</li>
+		<li>
+<strong>Relationship Qualifier Code&#58;</strong> leave blank unless customer is to be assessed for a Qualifier code. See <a href="../initial-contact-general/106-07120000-01.html">Assessment of relationship status - processes, roles and responsibilities</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_relation_Step10"></a>
+<p>10</p></td>
+<td>
+
+<p><strong>Customer advises separated in claim</strong> <a title="Read more 48" class="showhead bp03_tbl_Review_relation_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If a customer advises they have separated in their claim, see <a href="../separated-parents/277-50080000-01.html">Change in relationship status from partnered to single</a>. Use this to work out if&#58;</p>
+		<ul>		<li>
+the separation will need to be verified, and </li>
+		<li>
+any further action is needed</li>
+		</ul>
+<p>If the separation verification requires follow up, place the claim on hold for 14 days&#58;</p>
+		<ul>		<li>
+Select <strong>Status</strong> icon</li>
+		<li>
+Select <strong>Edit</strong></li>
+		<li>
+Change Status to <strong>On Hold</strong></li>
+		<li>
+Select <strong>Awaiting ripple confirmation from Legacy System</strong></li>
+		<li>
+Key the <strong>On Hold Expiry Date</strong></li>
+		<li>
+<strong>Save</strong> the status</li>
+		</ul>
+<p>If it is determined the claim meets conditions where separation does not need to be verified, review the marital status details provided in the claim and in the <strong>MS</strong> table. Update if necessary.</p>
+
+<p><a href="../families/007-17103136-03.html#bp03_tbl_Review_relation_Step11">Go to  Step 11</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Review_relation_Step11"></a>
+<p>11</p></td>
+<td>
+
+<p><strong>Relationship errors</strong> <a title="Read more 49" class="showhead bp03_tbl_Review_relation_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1913,11 +2051,11 @@ Key the <strong>On Hold Expiry Date</strong></li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Review_relation_Step08"></a>
-<p>8</p></td>
+<a class="anchor" name="bp03_tbl_Review_relation_Step12"></a>
+<p>12</p></td>
 <td>
 
-<p><strong>SR146 and E587CU errors</strong> <a title="Read more 43" class="showhead bp03_tbl_Review_relation_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>SR146 and E587CU errors</strong> <a title="Read more 50" class="showhead bp03_tbl_Review_relation_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Review_relation_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1971,11 +2109,11 @@ Select <strong>Back</strong> to return to the<strong> LS</strong> screen</li>
 <p>1</p></td>
 <td>
 
-<p><strong>CCS Message Log and Task Selector</strong> <a title="Read more 44" class="showhead bp03_tbl_Actions_require_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS Message Log and Task Selector</strong> <a title="Read more 51" class="showhead bp03_tbl_Actions_require_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>The claim will display the <strong>Message Log</strong> and <strong>Task Selector</strong> tables on the SAP Warning and Errors (<strong>SWE</strong>) screen.</p>
+<p>Select <strong>Process</strong>. The claim will display the <strong>Message Log</strong> and <strong>Task Selector</strong> tables on the SAP Warning and Errors (<strong>SWE</strong>) screen.</p>
 
 <p><strong>Message Log</strong></p>
 
@@ -2013,7 +2151,7 @@ an online claim, <a href="../families/007-17103136-03.html#bp03_tbl_Actions_requ
 <p>2</p></td>
 <td>
 
-<p><strong>CCS Task Selector for SOA</strong> <a title="Read more 45" class="showhead bp03_tbl_Actions_require_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS Task Selector for SOA</strong> <a title="Read more 52" class="showhead bp03_tbl_Actions_require_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2071,7 +2209,7 @@ an online claim, <a href="../families/007-17103136-03.html#bp03_tbl_Actions_requ
 <p>3</p></td>
 <td>
 
-<p><strong>CCS Task Selector for Online claim</strong> <a title="Read more 46" class="showhead bp03_tbl_Actions_require_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS Task Selector for Online claim</strong> <a title="Read more 53" class="showhead bp03_tbl_Actions_require_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2129,7 +2267,7 @@ an online claim, <a href="../families/007-17103136-03.html#bp03_tbl_Actions_requ
 <p>4</p></td>
 <td>
 
-<p><strong>Check Activity Test Details (ATD) screen</strong> <a title="Read more 47" class="showhead bp03_tbl_Actions_require_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Activity Test Details (ATD) screen</strong> <a title="Read more 54" class="showhead bp03_tbl_Actions_require_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2181,7 +2319,7 @@ has a partner, review their activity details by selecting their record in <img s
 <p>5</p></td>
 <td>
 
-<p><strong>Check child in CCS claim</strong> <a title="Read more 48" class="showhead bp03_tbl_Actions_require_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check child in CCS claim</strong> <a title="Read more 55" class="showhead bp03_tbl_Actions_require_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2245,7 +2383,7 @@ Change the mid-week end date. Use 31/12/9999 if CCS is to be continuous, otherwi
 <p>6</p></td>
 <td>
 
-<p><strong>Customer cancelled 2DL</strong> <a title="Read more 49" class="showhead bp03_tbl_Actions_require_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer cancelled 2DL</strong> <a title="Read more 56" class="showhead bp03_tbl_Actions_require_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2271,7 +2409,7 @@ Correct the <strong>Start Date</strong> for each child within the claim to the f
 <p>7</p></td>
 <td>
 
-<p><strong>Check Country of Residency (CRES) screen</strong> <a title="Read more 50" class="showhead bp03_tbl_Actions_require_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Country of Residency (CRES) screen</strong> <a title="Read more 57" class="showhead bp03_tbl_Actions_require_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2299,7 +2437,7 @@ Correct the <strong>Start Date</strong> for each child within the claim to the f
 <p>8</p></td>
 <td>
 
-<p><strong>Check Commonwealth Sponsored Student (CWS) screen</strong> <a title="Read more 51" class="showhead bp03_tbl_Actions_require_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Commonwealth Sponsored Student (CWS) screen</strong> <a title="Read more 58" class="showhead bp03_tbl_Actions_require_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2317,13 +2455,13 @@ Correct the <strong>Start Date</strong> for each child within the claim to the f
 <p>9</p></td>
 <td>
 
-<p><strong>Check annual income</strong> <a title="Read more 52" class="showhead bp03_tbl_Actions_require_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check annual income</strong> <a title="Read more 59" class="showhead bp03_tbl_Actions_require_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>The FAO Taxable Income (<strong>FTI</strong>) screen records the adjusted taxable income for CCS purposes for the relevant financial year.</p>
 
-<p>Check the customer's estimate of adjusted taxable income for the relevant financial year. If the estimate is deemed not reasonable, see <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step17">Step 17 in Table 3</a>.</p>
+<p>Check the customer's estimate of adjusted taxable income for the relevant financial year. If the estimate is deemed not reasonable, see <a href="../families/007-17103136-03.html#bp03_tbl_Review_claim_an_Step16">Step 16 in Table 3</a>.</p>
 
 <p>Check/update relevant fields on the <strong>FTI</strong> screen&#58;</p>
 		<ul>		<li>
@@ -2369,7 +2507,7 @@ has a partner, review their income estimate by selecting their record in <img sr
 <p>10 </p></td>
 <td>
 
-<p><strong>Check Payment Destination Details (PAS) screen</strong> <a title="Read more 53" class="showhead bp03_tbl_Actions_require_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Payment Destination Details (PAS) screen</strong> <a title="Read more 60" class="showhead bp03_tbl_Actions_require_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2399,7 +2537,7 @@ has a partner, review their income estimate by selecting their record in <img sr
 <p>11</p></td>
 <td>
 
-<p><strong>Check Immigration Movements (RSIM) screen</strong> <a title="Read more 54" class="showhead bp03_tbl_Actions_require_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Immigration Movements (RSIM) screen</strong> <a title="Read more 61" class="showhead bp03_tbl_Actions_require_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2419,7 +2557,7 @@ has a partner, review their income estimate by selecting their record in <img sr
 <p>12</p></td>
 <td>
 
-<p><strong>Check Immigration Enquiry (RSIMME) screen</strong> <a title="Read more 55" class="showhead bp03_tbl_Actions_require_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Immigration Enquiry (RSIMME) screen</strong> <a title="Read more 62" class="showhead bp03_tbl_Actions_require_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2459,7 +2597,7 @@ Check information held on <strong>RSIM</strong> screen</li>		</ul>
 <p>13</p></td>
 <td>
 
-<p><strong>Check residency details</strong> <a title="Read more 56" class="showhead bp03_tbl_Actions_require_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check residency details</strong> <a title="Read more 63" class="showhead bp03_tbl_Actions_require_Step13" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step13" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2503,7 +2641,7 @@ Select <strong>Assurance of Support</strong> Indicator (for AoS staff only)</li>
 <p>14</p></td>
 <td>
 
-<p><strong>Check Tax File Number Authorisation (TFN) screen</strong> <a title="Read more 57" class="showhead bp03_tbl_Actions_require_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check Tax File Number Authorisation (TFN) screen</strong> <a title="Read more 64" class="showhead bp03_tbl_Actions_require_Step14" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step14" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2543,7 +2681,7 @@ an online claim, <a href="../families/007-17103136-03.html#bp03_tbl_Actions_requ
 <p>15</p></td>
 <td>
 
-<p><strong>Child Task Selector for SOA</strong> <a title="Read more 58" class="showhead bp03_tbl_Actions_require_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child Task Selector for SOA</strong> <a title="Read more 65" class="showhead bp03_tbl_Actions_require_Step15" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step15" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2583,7 +2721,7 @@ an online claim, <a href="../families/007-17103136-03.html#bp03_tbl_Actions_requ
 <p>16</p></td>
 <td>
 
-<p><strong>Child Task Selector for online claims</strong> <a title="Read more 59" class="showhead bp03_tbl_Actions_require_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child Task Selector for online claims</strong> <a title="Read more 66" class="showhead bp03_tbl_Actions_require_Step16" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step16" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2621,7 +2759,7 @@ an online claim, <a href="../families/007-17103136-03.html#bp03_tbl_Actions_requ
 <p>17</p></td>
 <td>
 
-<p><strong>Child Education Details (CED) screen</strong> <a title="Read more 60" class="showhead bp03_tbl_Actions_require_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child Education Details (CED) screen</strong> <a title="Read more 67" class="showhead bp03_tbl_Actions_require_Step17" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step17" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2671,7 +2809,7 @@ No further details need to be entered</li>		</ul>
 <p>18</p></td>
 <td>
 
-<p><strong>Child in Care Details (CHC) screen</strong> <a title="Read more 61" class="showhead bp03_tbl_Actions_require_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child in Care Details (CHC) screen</strong> <a title="Read more 68" class="showhead bp03_tbl_Actions_require_Step18" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step18" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2707,11 +2845,25 @@ If the child is born overseas, and both the child and the parent are newly arriv
 <p>19</p></td>
 <td>
 
-<p><strong>Child immunisation details</strong> <a title="Read more 62" class="showhead bp03_tbl_Actions_require_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Child immunisation details</strong> <a title="Read more 69" class="showhead bp03_tbl_Actions_require_Step19" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step19" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Children must meet the immunisation requirements at the time the new claim for CCS is determined.</p>
+<p>Manually get the AIR data for each child in the claim to avoid gaps and ensure correct backdating of entitlement. </p>
+
+<p>While in the SOA claim;</p>
+		<ul>		<li>
+take note of the postcode of the parent</li>
+		<li>
+from the child/ren record, go to the CIM table via the <strong>Super Key</strong> and select <strong>Add </strong></li>
+		<li>
+select <strong>Get AIR Data</strong> and <strong>Save</strong> the result, confirming the provisional AIR date of notification now matches the date of receipt (<strong>DDOR</strong>) of the claim. <strong>Note&#58;</strong> the immunisation link should already be established but if linking issues present&#58;</li>
+			<ul>			<li>
+enter the customer postcode first then, if needed, </li>
+			<li>
+include the Medicare number if available</li>
+			</ul>			</ul>
+<p> Children must meet the immunisation requirements at the time the new claim for CCS is determined.</p>
 
 <p>CCS will reject for children who do not meet the immunisation requirements at the time of claim determination, unless an immunisation exemption is approved or the child is under 3 months.</p>
 
@@ -2749,7 +2901,7 @@ If the child is born overseas, and both the child and the parent are newly arriv
 <p>20</p></td>
 <td>
 
-<p><strong>Check the Shared Care Assessment (SCA) screen</strong> <a title="Read more 63" class="showhead bp03_tbl_Actions_require_Step20" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step20" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check the Shared Care Assessment (SCA) screen</strong> <a title="Read more 70" class="showhead bp03_tbl_Actions_require_Step20" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step20" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2799,7 +2951,7 @@ Carer</li>
 <p>21</p></td>
 <td>
 
-<p><strong>Return to Child Task Selector</strong> <a title="Read more 64" class="showhead bp03_tbl_Actions_require_Step21" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step21" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Return to Child Task Selector</strong> <a title="Read more 71" class="showhead bp03_tbl_Actions_require_Step21" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step21" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2817,7 +2969,7 @@ Carer</li>
 <p>22</p></td>
 <td>
 
-<p><strong>Errors</strong> <a title="Read more 65" class="showhead bp03_tbl_Actions_require_Step22" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step22" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Errors</strong> <a title="Read more 72" class="showhead bp03_tbl_Actions_require_Step22" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step22" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2857,7 +3009,7 @@ Once all errors have been addressed, select <strong>Assess </strong>then proceed
 <p>23</p></td>
 <td>
 
-<p><strong>Immunisation related warnings</strong> <a title="Read more 66" class="showhead bp03_tbl_Actions_require_Step23" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step23" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Immunisation related warnings</strong> <a title="Read more 73" class="showhead bp03_tbl_Actions_require_Step23" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step23" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2885,7 +3037,7 @@ Once all errors have been addressed, select <strong>Assess </strong>then proceed
 <p>24</p></td>
 <td>
 
-<p><strong>SR906 error</strong> <a title="Read more 67" class="showhead bp03_tbl_Actions_require_Step24" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step24" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>SR906 error</strong> <a title="Read more 74" class="showhead bp03_tbl_Actions_require_Step24" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actions_require_Step24" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2947,7 +3099,7 @@ Go to the <strong>Decision Unit</strong> line to display Change Child in CCS Cla
 <p>1</p></td>
 <td>
 
-<p><strong>Assessment results</strong> <a title="Read more 68" class="showhead bp03_tbl_Finalise_proces_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Assessment results</strong> <a title="Read more 75" class="showhead bp03_tbl_Finalise_proces_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2995,7 +3147,7 @@ is granting with 0% for all children, <a href="../families/007-17103136-03.html#
 <p>2</p></td>
 <td>
 
-<p><strong>Customer cancelled 2DL, all income requirements met for outstanding financial years</strong> <a title="Read more 69" class="showhead bp03_tbl_Finalise_proces_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer cancelled 2DL, all income requirements met for outstanding financial years</strong> <a title="Read more 76" class="showhead bp03_tbl_Finalise_proces_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -3027,7 +3179,7 @@ Select the <strong>Debt</strong> icon then launch <strong>Debt Management</stron
 <p>3</p></td>
 <td>
 
-<p><strong>Customer has more than $0 owing on any CCS debt</strong> <a title="Read more 70" class="showhead bp03_tbl_Finalise_proces_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer has more than $0 owing on any CCS debt</strong> <a title="Read more 77" class="showhead bp03_tbl_Finalise_proces_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -3055,7 +3207,7 @@ if CCS current at more than 0%, automatic nominated withholdings of 20% are dedu
 <p>4</p></td>
 <td>
 
-<p><strong>Customer has CCS debts and no repayment arrangement in place. CCS claim is granting at 0%</strong> <a title="Read more 71" class="showhead bp03_tbl_Finalise_proces_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer has CCS debts and no repayment arrangement in place. CCS claim is granting at 0%</strong> <a title="Read more 78" class="showhead bp03_tbl_Finalise_proces_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -3081,7 +3233,7 @@ Attempt to make one genuine attempt to contact the customer by phone</li>
 <p>5</p></td>
 <td>
 
-<p><strong>Discussing a repayment arrangement with the customer</strong> <a title="Read more 72" class="showhead bp03_tbl_Finalise_proces_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Discussing a repayment arrangement with the customer</strong> <a title="Read more 79" class="showhead bp03_tbl_Finalise_proces_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -3097,7 +3249,7 @@ Their claim will be placed on hold for one day to give them the opportunity to p
 		<li>
 If no payment arrangement is in place when the claim is actioned, the claim will be made not-effective and the customer will need to lodge a new claim</li>
 		</ul>
-<p>Place the claim on hold for two days to allow the repayment arrangement to be put in place, update the progress of claim <strong>Note/DOC</strong> of the discussion with the customer (include in the note the Income Lodgement Date noted). After the 2 days, the claim will be reallocated to a staff member.</p>
+<p>Place the claim on hold for two days to allow the repayment arrangement to be put in place. Use hold reason ‘Customer to Provide Information.’ Update the progress of claim <strong>Note/DOC</strong> of the discussion with the customer (include in the note the Income Lodgement Date noted). After the 2 days, the claim will be reallocated to a staff member.</p>
 
 <p>Where staff are allocated the claim after 2 days, check the <strong>OPAL </strong>screen in Customer First.</p>
 
@@ -3117,7 +3269,7 @@ If no payment arrangement is in place when the claim is actioned, the claim will
 <p>6</p></td>
 <td>
 
-<p><strong>Finish and Finalise claim</strong> <a title="Read more 73" class="showhead bp03_tbl_Finalise_proces_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finish and Finalise claim</strong> <a title="Read more 80" class="showhead bp03_tbl_Finalise_proces_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -3181,7 +3333,7 @@ If CCS has been <strong>rejected</strong> for all or any child/ren, the claim no
 <p>7</p></td>
 <td>
 
-<p><strong>Claim NEF</strong> <a title="Read more 74" class="showhead bp03_tbl_Finalise_proces_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Claim NEF</strong> <a title="Read more 81" class="showhead bp03_tbl_Finalise_proces_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_proces_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

@@ -397,11 +397,11 @@ to go to an A status.
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -441,9 +441,9 @@ to go to an A status.
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -546,6 +546,9 @@ future
 
 Pend 37 The immunisation date is prior to the AIR commencement date
 01/01/96
+
+Pend 38 Date missing (if Medicare number is not supplied, date of birth
+must be supplied)
 
 Pend 43 Immunisation provider not current – provider number not current
 for the state
@@ -713,8 +716,7 @@ Table 1
 |                                   |                                   |
 |                                   | If the record is a test record    |
 |                                   | sent to the AIR, escalate to an   |
-|                                   | AIR Programme Support Officer     |
-|                                   | (PSO).                            |
+|                                   | AIR Local Peer Support (LPS).     |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Complete next pend or select next |
 |                                   | claim + Read more ...             |
@@ -858,8 +860,8 @@ Table 2
 | 6                                 | Error on an existing Medicare     |
 |                                   | customer record + Read more ...   |
 |                                   |                                   |
-|                                   | Escalate to an AIR Programme      |
-|                                   | Support Officer (PSO) when:       |
+|                                   | Escalate to an AIR Local Peer     |
+|                                   | Support (LPS) when:               |
 |                                   |                                   |
 |                                   | -   CDMS contains an invalid      |
 |                                   |     character which has come      |
@@ -1143,8 +1145,7 @@ Table 4
 |                                   | If CDMS has the address recorded  |
 |                                   | correctly, but Mainframe contains |
 |                                   | an invalid character, escalate to |
-|                                   | an AIR Programme Support Officer  |
-|                                   | (PSO).                            |
+|                                   | an AIR Local Peer Support (LPS).  |
 |                                   |                                   |
 |                                   | If there are multiple episodes in |
 |                                   | the claim, the next pend will     |
@@ -1313,9 +1314,9 @@ Table 7
 |                                   | -   Add a comment, include who    |
 |                                   |     was contacted and what        |
 |                                   |     information was confirmed     |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
@@ -1463,11 +1464,11 @@ Table 8
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating ‘unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend’                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -1481,9 +1482,9 @@ Table 8
 |                                   | -   Press [F6]. The YIAN –        |
 |                                   |     Antigens Details screen       |
 |                                   |     displays                      |
-|                                   | -   Over-key the P with ‘R’ and   |
+|                                   | -   Over-key the P with R and     |
 |                                   |     press [Enter]                 |
-|                                   | -   Over-key the R with ‘Z’ and   |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Add comment, go to Step 5     |
@@ -1515,12 +1516,12 @@ Table 8
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | If unable to contact after 3      |
-|                                   | attempts state ‘unable to contact |
+|                                   | attempts write ‘unable to contact |
 |                                   | provider after 3 attempts R+Z to  |
 |                                   | resolve pend’                     |
 |                                   |                                   |
@@ -1637,11 +1638,11 @@ Table 9
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -1681,9 +1682,9 @@ Table 9
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -1749,9 +1750,53 @@ Table 10
 |                                   |     select the next claim         |
 +-----------------------------------+-----------------------------------+
 
-Pend 43 Immunisation provider not current – provider number not current for the state
+Pend 38 Date missing (if Medicare number is not supplied, date of birth must be supplied)
 
 Table 11
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Amend the claim encounter + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Check the YIAE – Encounter        |
+|                                   | Details screen.                   |
+|                                   |                                   |
+|                                   | If Medicare number or name and    |
+|                                   | date of birth is present:         |
+|                                   |                                   |
+|                                   | Press [F11] and then press        |
+|                                   | [Enter] to perform individual     |
+|                                   | search                            |
+|                                   |                                   |
+|                                   | Select (/) the correct record and |
+|                                   | then press [Enter]                |
+|                                   |                                   |
+|                                   | -   The YIAE – Encounter Details  |
+|                                   |     screen displays               |
+|                                   |                                   |
+|                                   | Press [Enter] and the press [F9]  |
+|                                   | to update                         |
+|                                   |                                   |
+|                                   | -   The YIAN – Antigen Details    |
+|                                   |     screen displays               |
+|                                   |                                   |
+|                                   | Press [F9] to update. This may    |
+|                                   | create a new pended episode       |
+|                                   |                                   |
+|                                   | Press [F14] to check and correct  |
+|                                   | any further generated pends       |
+|                                   |                                   |
+|                                   | If both Medicare number, and name |
+|                                   | and date of birth are missing:    |
+|                                   |                                   |
+|                                   | -   Escalate to LPS               |
++-----------------------------------+-----------------------------------+
+
+Pend 43 Immunisation provider not current – provider number not current for the state
+
+Table 12
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -1768,17 +1813,17 @@ Table 11
 |                                   | -   Screenshot the YIAE –         |
 |                                   |     Encounter Details screen      |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'P' with 'R' and press    |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'R' with 'Z' and press    |
+|                                   |     the R with Z and press        |
 |                                   |     [Enter]                       |
 |                                   | -   Press [F9] to update          |
 |                                   | -   On a new screen, key YIEM –   |
 |                                   |     Immunisation Encounters Menu  |
-|                                   | -   Key '5' and press [Enter].    |
-|                                   |     The YIAF – Register History   |
-|                                   |     Form Claim screen displays    |
+|                                   | -   Key 5 and press [Enter]. The  |
+|                                   |     YIAF – Register History Form  |
+|                                   |     Claim screen displays         |
 |                                   | -   reprocess the R and Z vaccine |
 |                                   |     details as history (YIAF)     |
 |                                   |     screen, using details from    |
@@ -1886,11 +1931,10 @@ Table 11
 |                                   | -   Press [Enter] then press [F9] |
 |                                   |     to update encounter           |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'P' with 'R' and press    |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     'R' with 'Z' and press        |
-|                                   |     [Enter]                       |
+|                                   |     R with Z and press [Enter]    |
 |                                   | -   With the correct provider     |
 |                                   |     number, reprocess the unpaid  |
 |                                   |     encounter as a Manual Claim   |
@@ -1909,11 +1953,11 @@ Table 11
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -1945,9 +1989,9 @@ Table 11
 |                                   | -   Add a comment, include who    |
 |                                   |     was contacted and what        |
 |                                   |     information was confirmed     |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
@@ -1975,7 +2019,7 @@ Table 11
 
 Pend 43 Immunisation provider not current – immunisation given prior to provider number start date
 
-Table 12
+Table 13
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2078,17 +2122,16 @@ Table 12
 |                                   | -   Screenshot the YIAE –         |
 |                                   |     Encounter Details screen      |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'P' with 'R' and press    |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     'R' with 'Z' and press        |
-|                                   |     [Enter]                       |
+|                                   |     R with Z and press [Enter]    |
 |                                   | -   Press [F9] to update          |
 |                                   | -   On a new screen, key YIEM –   |
 |                                   |     Immunisation Encounters Menu  |
-|                                   | -   Key '5' and press [Enter].    |
-|                                   |     The YIAF – Register History   |
-|                                   |     Form Claim screen displays    |
+|                                   | -   Key 5 and press [Enter]. The  |
+|                                   |     YIAF – Register History Form  |
+|                                   |     Claim screen displays         |
 |                                   | -   reprocess the R and Z vaccine |
 |                                   |     details as history (YIAF)     |
 |                                   |     screen, using details from    |
@@ -2102,11 +2145,10 @@ Table 12
 |                                   | -   Press [Enter] then press [F9] |
 |                                   |     to update encounter           |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'P' with 'R' and press    |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     'R' with 'Z' and press        |
-|                                   |     [Enter]                       |
+|                                   |     R with Z and press [Enter]    |
 |                                   | -   With the correct provider     |
 |                                   |     number, reprocess the unpaid  |
 |                                   |     encounter as a Manual Claim   |
@@ -2154,11 +2196,11 @@ Table 12
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -2190,9 +2232,9 @@ Table 12
 |                                   | -   Add a comment, include        |
 |                                   |     details from the conversation |
 |                                   |     with the provider             |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
@@ -2220,7 +2262,7 @@ Table 12
 
 Pend 43 Immunisation provider not current – immunisation recorded post the provider number end date
 
-Table 13
+Table 14
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2317,18 +2359,17 @@ Table 13
 |                                   | AIR but not with Medicare + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | -   Contact an AIR Programme      |
-|                                   |     Support Officer (PSO) with    |
-|                                   |     the claim and provider        |
-|                                   |     details                       |
-|                                   | -   PSO to advise AIR Program     |
+|                                   | -   Contact an AIR Local Peer     |
+|                                   |     Support (LPS) with the claim  |
+|                                   |     and provider details          |
+|                                   | -   LPS to advise AIR Program     |
 |                                   |     Support to refresh the        |
 |                                   |     provider number as end date   |
 |                                   |     incorrectly recorded on the   |
 |                                   |     AIR                           |
 |                                   |                                   |
 |                                   | Once refreshed, AIR Program       |
-|                                   | Support advises the PSO so the    |
+|                                   | Support advises the LPS so the    |
 |                                   | claim can be processed.           |
 |                                   |                                   |
 |                                   | Go to Step 8.                     |
@@ -2349,17 +2390,16 @@ Table 13
 |                                   | -   Screenshot the YIAE –         |
 |                                   |     Encounter Details screen      |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'P' with 'R' and press    |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     'R' with 'Z' and press        |
-|                                   |     [Enter]                       |
+|                                   |     R with Z and press [Enter]    |
 |                                   | -   Press [F9] to update          |
 |                                   | -   On a new screen, key YIEM –   |
 |                                   |     Immunisation Encounters Menu  |
-|                                   | -   Key '5' and press [Enter].    |
-|                                   |     The YIAF – Register History   |
-|                                   |     Form Claim screen displays    |
+|                                   | -   Key 5 and press [Enter]. The  |
+|                                   |     YIAF – Register History Form  |
+|                                   |     Claim screen displays         |
 |                                   | -   Reprocess the R and Z vaccine |
 |                                   |     details as history (YIAF)     |
 |                                   |     screen, using details from    |
@@ -2373,11 +2413,10 @@ Table 13
 |                                   | -   Press [Enter] then press [F9] |
 |                                   |     to update encounter           |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     the 'P' with 'R' and press    |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
 |                                   | -   In the Enc St field, over-key |
-|                                   |     'R' with 'Z' and press        |
-|                                   |     [Enter]                       |
+|                                   |     R with Z and press [Enter]    |
 |                                   | -   With the correct provider     |
 |                                   |     number, reprocess the unpaid  |
 |                                   |     encounter as a Manual Claim   |
@@ -2419,11 +2458,11 @@ Table 13
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -2455,9 +2494,9 @@ Table 13
 |                                   | -   Add a comment, include        |
 |                                   |     details from the conversation |
 |                                   |     with the provider             |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
@@ -2485,7 +2524,7 @@ Table 13
 
 Pend 44 Vaccine not valid for encounter date
 
-Table 14
+Table 15
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2589,9 +2628,9 @@ Table 14
 |                                   |     Antigens Details screen       |
 |                                   |     displays                      |
 |                                   | -   Remove dose number, over-key  |
-|                                   |     the P with 'R' and press      |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   On line below add key generic |
 |                                   |     vaccine brand associated with |
@@ -2610,9 +2649,9 @@ Table 14
 |                                   |     Antigens Details screen       |
 |                                   |     displays                      |
 |                                   | -   Remove dose number, over-key  |
-|                                   |     the P with 'R' and press      |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [Enter] and [F9] to     |
 |                                   |     update                        |
@@ -2640,8 +2679,8 @@ Table 14
 |                                   |     Details screen, press [Enter] |
 |                                   |     then press [F9]               |
 |                                   | -   In the ST field over key the  |
-|                                   |     P with 'R' and press [Enter]  |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     P with R and press [Enter]    |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Ask the provider to re-submit |
@@ -2652,11 +2691,11 @@ Table 14
 | 3                                 | Unable to contact provider + Read |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Leave pend in a P status and add  |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record: 'unable to      |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
 |                                   | contact provider on DD/MM/YY to   |
-|                                   | resolve pend'                     |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make 3 attempts to contact the    |
 |                                   | provider by phone                 |
@@ -2673,9 +2712,9 @@ Table 14
 |                                   |     Antigens Details screen       |
 |                                   |     displays                      |
 |                                   | -   Remove dose number, over-key  |
-|                                   |     the P with 'R' and press      |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Add comment, go to Step 4     |
@@ -2699,22 +2738,22 @@ Table 14
 |                                   | -   Add a comment, include        |
 |                                   |     details from the conversation |
 |                                   |     with the provider             |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   If unable to contact Provider |
 |                                   |     after 3 attempts comment on   |
-|                                   |     record ‘Three attempts to     |
+|                                   |     record Three attempts to      |
 |                                   |     contact provider              |
 |                                   |     unsuccessful. Pend actioned   |
-|                                   |     with R&Z’                     |
+|                                   |     with R&Z                      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
 
 Pend 50/51/54 Immunisation date prior to individual's date of birth
 
-Table 15
+Table 16
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -2831,7 +2870,7 @@ Table 15
 |                                   |     will display, or the YXCL –   |
 |                                   |     Possible Duplicate            |
 |                                   |     Registration screen displays  |
-|                                   | -   Key 'Y' in the Continue       |
+|                                   | -   Key Y in the Continue         |
 |                                   |     Processing field and press    |
 |                                   |     [F3]. The YCUA – Amendment    |
 |                                   |     Registration screen displays  |
@@ -2870,10 +2909,10 @@ Table 15
 |                                   | On the YIAE – Encounter Details   |
 |                                   | screen, in the Enc St field:      |
 |                                   |                                   |
-|                                   | -   over-key the 'P' with 'R' and |
+|                                   | -   over-key the P with R and     |
 |                                   |     press [Enter]                 |
-|                                   | -   over-key the 'R' with 'Z',    |
-|                                   |     press [Enter]                 |
+|                                   | -   over-key the R with Z, press  |
+|                                   |     [Enter]                       |
 |                                   |                                   |
 |                                   | Press [F9] to update              |
 |                                   |                                   |
@@ -2889,11 +2928,11 @@ Table 15
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -2925,9 +2964,9 @@ Table 15
 |                                   | -   Add a comment, include        |
 |                                   |     details from the conversation |
 |                                   |     with the provider             |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
@@ -2955,7 +2994,7 @@ Table 15
 
 Pend 52 Date of receipt prior to immunisation date
 
-Table 16
+Table 17
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3050,11 +3089,9 @@ Table 16
 |                                   |     displays                      |
 |                                   | -   Remove the dose number        |
 |                                   | -   In the ST field, over-key the |
-|                                   |     'P' with 'R' and press        |
-|                                   |     [Enter]                       |
+|                                   |     P with R and press [Enter]    |
 |                                   | -   In the ST field, over-key the |
-|                                   |     'R' with 'Z' and press        |
-|                                   |     [Enter]                       |
+|                                   |     R with Z and press [Enter]    |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Tell the provider to          |
 |                                   |     re-submit the correct details |
@@ -3068,11 +3105,11 @@ Table 16
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -3104,9 +3141,9 @@ Table 16
 |                                   | -   Add a comment, include        |
 |                                   |     details from the conversation |
 |                                   |     with the provider             |
-|                                   | -   If unable to contact, state   |
-|                                   |     'unable to contact provider   |
-|                                   |     on DD/MM/YY to resolve pend'  |
+|                                   | -   If unable to contact, write   |
+|                                   |     unable to contact provider on |
+|                                   |     DD/MM/YY to resolve pend      |
 |                                   | -   Press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 +-----------------------------------+-----------------------------------+
@@ -3134,7 +3171,7 @@ Table 16
 
 Pend 53 The date of immunisation is after the end date recorded on the individual's registration
 
-Table 17: encounters pended with a reason code (RSN) 053 display the
+Table 18: encounters pended with a reason code (RSN) 053 display the
 message INDIVIDUAL'S END DATE PRIOR TO IMMUNISATION DATE.DATE. This
 indicates that the individual is not on the selected Medicare
 registration as at the immunisation date of service.
@@ -3145,11 +3182,19 @@ registration as at the immunisation date of service.
 | 1                                 | Display Individual Selection      |
 |                                   | screen + Read more ...            |
 |                                   |                                   |
-|                                   | Search for other registrations:   |
-|                                   | press [F11] - SRCH.               |
+|                                   | -   Press [Enter]                 |
+|                                   | -   Press [F9] to update          |
 |                                   |                                   |
-|                                   | The YXCB - Individual Selection   |
-|                                   | screen displays.                  |
+|                                   | Does this resolve the pend?       |
+|                                   |                                   |
+|                                   | Yes, go to Step 11                |
+|                                   |                                   |
+|                                   | No, to search for other           |
+|                                   | registrations:                    |
+|                                   |                                   |
+|                                   | -   press [F11] - SRCH            |
+|                                   | -   the YXCB - Individual         |
+|                                   |     Selection screen displays     |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Display Medicare registrations +  |
 |                                   | Read more ...                     |
@@ -3161,11 +3206,10 @@ registration as at the immunisation date of service.
 |                                   |     Medicare registrations for    |
 |                                   |     the individual display        |
 |                                   | -   Select (/) a different        |
-|                                   |     registration and press        |
-|                                   |     [Enter]                       |
-|                                   |                                   |
-|                                   | The YIAE – Encounter Details      |
-|                                   | screen displays.                  |
+|                                   |     registration                  |
+|                                   | -   Press [Enter]                 |
+|                                   | -   The YIAE – Encounter Details  |
+|                                   |     screen displays               |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Determine status of the           |
 |                                   | encounter + Read more ...         |
@@ -3241,21 +3285,15 @@ registration as at the immunisation date of service.
 |                                   |                                   |
 |                                   | To check the entitlement end      |
 |                                   | date, compare the entitlement end |
-|                                   | date to the AIR record end date.: |
+|                                   | date to the AIR record end date.  |
 |                                   |                                   |
-|                                   | If the AIR record end date        |
+|                                   | If the AIR record end date:       |
 |                                   |                                   |
-|                                   | is earlier than the entitlement   |
-|                                   | end date:                         |
-|                                   |                                   |
-|                                   | -   Update AIR record end date to |
-|                                   |     match entitlement end date    |
-|                                   | -   Press [Enter]                 |
-|                                   | -   Press [F9] to update          |
-|                                   | -   Go to Step 11                 |
-|                                   |                                   |
-|                                   | matches the entitlement end date, |
-|                                   | go to Step 8                      |
+|                                   | -   does not match the            |
+|                                   |     entitlement end date, go to   |
+|                                   |     Step 11                       |
+|                                   | -   matches the entitlement end   |
+|                                   |     date, go to Step 8            |
 +-----------------------------------+-----------------------------------+
 | 8                                 | Consumer end date reason + Read   |
 |                                   | more ...                          |
@@ -3271,55 +3309,46 @@ registration as at the immunisation date of service.
 |                                   | -   Select Personal button        |
 |                                   | -   Select Comments tab           |
 |                                   |                                   |
-|                                   | If comment states, for example,   |
-|                                   | PIN END SEE CARD (CD) XXX PIN     |
-|                                   | XXX, copy the new PIN (xxx        |
-|                                   | number)                           |
+|                                   | If comment has, for example, PIN  |
+|                                   | END SEE CARD (CD) XXX PIN XXX,    |
+|                                   | copy the new PIN (xxx number)     |
 |                                   |                                   |
 |                                   | Continue to process pend 53 using |
 |                                   | the copied PIN number             |
 |                                   |                                   |
 |                                   | If the PIN does not exist on      |
-|                                   | Mainframe, refer to an AIR        |
-|                                   | Programme Support Officer (PSO).  |
+|                                   | Mainframe, refer to an AIR Local  |
+|                                   | Peer Support (LPS).               |
 |                                   |                                   |
-|                                   | Go to Step 11.                    |
+|                                   | -   Go to Step 11.                |
 |                                   |                                   |
 |                                   | Entitlement end date:             |
 |                                   |                                   |
-|                                   | Check comments in Personal from   |
-|                                   | the CDMS Inquire on Consumer      |
-|                                   | Details screen:                   |
-|                                   |                                   |
-|                                   | -   Key Medicare number           |
-|                                   | -   Select Personal button        |
-|                                   | -   Select Comments tab           |
-|                                   |                                   |
-|                                   | If no comment is displayed,       |
-|                                   | continue to process pend 53       |
-|                                   |                                   |
-|                                   | Check the last immunisation date  |
-|                                   | given on the individual's record  |
-|                                   | on Mainframe                      |
-|                                   |                                   |
-|                                   | Amend the End Date on the YCUA –  |
-|                                   | Amendment Registration screen to  |
-|                                   | 1 day after the immunisation date |
-|                                   | for the pended encounter          |
-|                                   |                                   |
-|                                   | Press [Enter] and [F9] to update  |
+|                                   | -   Press [Enter]                 |
+|                                   | -   Press [F9] to update          |
 |                                   |                                   |
 |                                   | If multiple matching Medicare     |
-|                                   | registrations display pend 53     |
+|                                   | registrations display a pend 53   |
 |                                   | message and/or multiple PINs      |
 |                                   | exist on CDMS, refer to an AIR    |
-|                                   | Programme Support Officer (PSO).  |
+|                                   | Local Peer Support (LPS).         |
 |                                   |                                   |
-|                                   | Go to Step 11.                    |
+|                                   | -   Go to Step 11.                |
+|                                   |                                   |
+|                                   | Refer the following to an AIR     |
+|                                   | Local Peer Support (LPS) for      |
+|                                   | escalation:                       |
+|                                   |                                   |
+|                                   | -   Consumer end date, No         |
+|                                   |     Medicare card issued (C)      |
+|                                   | -   Linked to another consumer    |
+|                                   |     record (L)                    |
+|                                   | -   Record is deleted from CDMS   |
+|                                   |     (R)                           |
+|                                   | -   False identity                |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Date of death record (do not      |
-|                                   | remove end date on the AIR) +     |
-|                                   | Read more ...                     |
+| 9                                 | Date of death record (D) + Read   |
+|                                   | more ...                          |
 |                                   |                                   |
 |                                   | Confirm date of death:            |
 |                                   |                                   |
@@ -3338,7 +3367,7 @@ registration as at the immunisation date of service.
 |                                   |                                   |
 |                                   | -   On the YIAE - Encounter       |
 |                                   |     Details screen, the Enc St    |
-|                                   |     field, over-key with an ‘X’   |
+|                                   |     field, over-key with an X     |
 |                                   | -   Press [Enter] and [F9] to     |
 |                                   |     update                        |
 |                                   |                                   |
@@ -3355,7 +3384,7 @@ registration as at the immunisation date of service.
 |                                   | If the scenarios do not fall      |
 |                                   | under the criteria outlined       |
 |                                   | above, refer scenario to an AIR   |
-|                                   | Programme Support Officer (PSO).  |
+|                                   | Local Peer Support (LPS).         |
 +-----------------------------------+-----------------------------------+
 | 10                                | Record a comment + Read more ...  |
 |                                   |                                   |
@@ -3403,7 +3432,7 @@ registration as at the immunisation date of service.
 
 Pend 80 Individual not identified
 
-Table 18
+Table 19
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3463,8 +3492,7 @@ Table 18
 |                                   |                                   |
 |                                   | -   Program field –Select All     |
 |                                   |     Programs from the drop down   |
-|                                   |     box. ‘Medicare’ is the        |
-|                                   |     default                       |
+|                                   |     box. Medicare is the default  |
 |                                   | -   Family Name (mandatory)       |
 |                                   | -   First Name (also search       |
 |                                   |     without First Name if no      |
@@ -3595,7 +3623,7 @@ Table 18
 
 Pend 100 Antigen has been administered under the minimum required age
 
-Table 19
+Table 20
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3691,8 +3719,8 @@ Table 19
 |                                   |     screen, press [Enter] then    |
 |                                   |     press [F9]                    |
 |                                   | -   In the ST field over-key the  |
-|                                   |     P with 'C' and press [Enter]  |
-|                                   | -   Over-key the C with 'Y' and   |
+|                                   |     P with C and press [Enter]    |
+|                                   | -   Over-key the C with Y and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Go to Step 4                  |
@@ -3704,8 +3732,8 @@ Table 19
 |                                   |     screen, press [Enter] then    |
 |                                   |     press [F9]                    |
 |                                   | -   In the ST field over key the  |
-|                                   |     P with 'R' and press [Enter]  |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     P with R and press [Enter]    |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Ask the provider to re-submit |
@@ -3719,11 +3747,11 @@ Table 19
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -3763,9 +3791,9 @@ Table 19
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -3795,7 +3823,7 @@ Table 19
 
 Pend 101 Period between doses of the same antigen is less than the minimum time required
 
-Table 20
+Table 21
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -3934,11 +3962,11 @@ Table 20
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -3978,9 +4006,9 @@ Table 20
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -4010,7 +4038,7 @@ Table 20
 
 Pend 102 Duplicate antigen dose – same provider
 
-Table 21
+Table 22
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4148,10 +4176,10 @@ Table 21
 |                                   |                                   |
 |                                   | -   Incorrect episode, remove the |
 |                                   |     dose number, over key the P   |
-|                                   |     status with 'R' and press     |
+|                                   |     status with R and press       |
 |                                   |     [Enter]                       |
-|                                   | -   Over key the R status with    |
-|                                   |     'Z' and press [Enter]         |
+|                                   | -   Over key the R status with Z  |
+|                                   |     and press [Enter]             |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |
 |                                   | Go to Step 6.                     |
@@ -4162,11 +4190,11 @@ Table 21
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -4219,9 +4247,9 @@ Table 21
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -4251,7 +4279,7 @@ Table 21
 
 Pend 103 Duplicate antigen dose – different provider
 
-Table 21
+Table 23
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4354,11 +4382,11 @@ Table 21
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -4392,10 +4420,10 @@ Table 21
 |                                   |     press [PF9] to update.        |
 |                                   |     Otherwise remove dose number  |
 |                                   |     [Enter], over-key the P       |
-|                                   |     status with 'R' and press     |
+|                                   |     status with R and press       |
 |                                   |     [Enter]                       |
-|                                   | -   Over-key the R status with    |
-|                                   |     'Z' and press [Enter]         |
+|                                   | -   Over-key the R status with Z  |
+|                                   |     and press [Enter]             |
 |                                   | -   Press [F9] to update          |
 |                                   | -   If over-keying dose number is |
 |                                   |     not accepted, go to Step 5    |
@@ -4407,10 +4435,10 @@ Table 21
 |                                   |     Antigens Details screen       |
 |                                   |     displays                      |
 |                                   | -   Remove dose number [Enter],   |
-|                                   |     over-key the P status with    |
-|                                   |     'R' and press [Enter]         |
-|                                   | -   Over-key the R status with    |
-|                                   |     'Z' and press [Enter]         |
+|                                   |     over-key the P status with R  |
+|                                   |     and press [Enter]             |
+|                                   | -   Over-key the R status with Z  |
+|                                   |     and press [Enter]             |
 |                                   | -   Press [F9] to update          |
 |                                   | -   If over-keying dose number is |
 |                                   |     not accepted, go to Step 5    |
@@ -4428,10 +4456,10 @@ Table 21
 |                                   |     be actioned                   |
 |                                   | -   Remove the dose number and    |
 |                                   |     press [Enter]                 |
-|                                   | -   Over-key the P status with    |
-|                                   |     'R' and press [Enter]         |
-|                                   | -   Over-key the R status with    |
-|                                   |     'Z' and press [Enter]         |
+|                                   | -   Over-key the P status with R  |
+|                                   |     and press [Enter]             |
+|                                   | -   Over-key the R status with Z  |
+|                                   |     and press [Enter]             |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |
 |                                   | Go to Step 6.                     |
@@ -4471,9 +4499,9 @@ Table 21
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -4503,7 +4531,7 @@ Table 21
 
 Pend 104 Administered within minimum time required between doses – different provider
 
-Table 23
+Table 24
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4634,9 +4662,9 @@ Table 23
 |                                   |     Antigens Details screen       |
 |                                   |     displays                      |
 |                                   | -   Remove dose number, over-key  |
-|                                   |     the P with 'R' and press      |
+|                                   |     the P with R and press        |
 |                                   |     [Enter]                       |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |
@@ -4648,11 +4676,11 @@ Table 23
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -4692,9 +4720,9 @@ Table 23
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -4724,7 +4752,7 @@ Table 23
 
 Pend 105/112 Dose greater than maximum allowable dose
 
-Table 24
+Table 25
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4759,8 +4787,8 @@ Table 24
 |                                   |     The YIAN – Antigens Details   |
 |                                   |     screen displays               |
 |                                   | -   In the ST field over-key the  |
-|                                   |     P with 'C' and press [Enter]  |
-|                                   | -   Over-key the C with Y' and    |
+|                                   |     P with C and press [Enter]    |
+|                                   | -   Over-key the C with Y and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |
@@ -4785,7 +4813,7 @@ Table 24
 
 Pend 106/109 Higher dose already administered – same provider
 
-Table 25
+Table 26
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4854,7 +4882,7 @@ Table 25
 
 Pend 107 Dose administered at greater than recommended schedule age
 
-Table 26
+Table 27
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -4892,7 +4920,7 @@ Table 26
 
 Pend 110 Same provider – Period between doses less than 6 months
 
-Table 27
+Table 28
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -5019,8 +5047,8 @@ Table 27
 |                                   |     [F6]. The YIAN – Antigens     |
 |                                   |     Details screen displays       |
 |                                   | -   On the ST field, over-key the |
-|                                   |     P with 'C' and press [Enter]  |
-|                                   | -   Over-key the C with 'Y' and   |
+|                                   |     P with C and press [Enter]    |
+|                                   | -   Over-key the C with Y and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |
@@ -5037,8 +5065,8 @@ Table 27
 |                                   |     [F6]. The YIAN – Antigens     |
 |                                   |     Details screen displays       |
 |                                   | -   On the ST field over-key the  |
-|                                   |     P with 'R' and press [Enter]  |
-|                                   | -   Over-key the R with 'Z' and   |
+|                                   |     P with R and press [Enter]    |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |
@@ -5050,11 +5078,11 @@ Table 27
 |                                   | If unable to contact the          |
 |                                   | provider:                         |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -5097,9 +5125,9 @@ Table 27
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -5129,7 +5157,7 @@ Table 27
 
 Pend 111 Different provider – Period between doses less than 6 months
 
-Table 28
+Table 29
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -5176,8 +5204,8 @@ Table 28
 |                                   |     [F6]. The YIAN – Antigens     |
 |                                   |     Details screen displays       |
 |                                   | -   On the ST field over-key the  |
-|                                   |     P with 'C' and press [Enter]  |
-|                                   | -   Over-key the C with Y' and    |
+|                                   |     P with C and press [Enter]    |
+|                                   | -   Over-key the C with Y and     |
 |                                   |     press [Enter] to update       |
 |                                   |                                   |
 |                                   | Go to Step 7.                     |
@@ -5271,8 +5299,8 @@ Table 28
 |                                   |     [F6]. The YIAN – Antigens     |
 |                                   |     Details screen displays       |
 |                                   | -   On the ST field over-key the  |
-|                                   |     P with 'C' and press [Enter]  |
-|                                   | -   Over-key the C with 'Y' and   |
+|                                   |     P with C and press [Enter]    |
+|                                   | -   Over-key the C with Y and     |
 |                                   |     press [Enter] to update       |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Go to Step 7                  |
@@ -5284,8 +5312,8 @@ Table 28
 |                                   |     [F6]. The YIAN – Antigens     |
 |                                   |     Details screen displays       |
 |                                   | -   On the ST field over-key the  |
-|                                   |     P with 'R' and press [Enter]  |
-|                                   | -   Over-key the R with Z' and    |
+|                                   |     P with R and press [Enter]    |
+|                                   | -   Over-key the R with Z and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Go to Step 7                  |
@@ -5293,11 +5321,11 @@ Table 28
 | 6                                 | Unable to contact provider + Read |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | Leave pend in a P status and make |
-|                                   | a comment on the individual’s     |
-|                                   | Mainframe record stating 'unable  |
-|                                   | to contact provider on DD/MM/YY   |
-|                                   | to resolve pend'                  |
+|                                   | Leave pend in a P status and      |
+|                                   | write the comment unable to       |
+|                                   | contact provider on DD/MM/YY to   |
+|                                   | resolve pend on the individual’s  |
+|                                   | Mainframe record                  |
 |                                   |                                   |
 |                                   | Make a maximum of 3 attempts to   |
 |                                   | contact the provider by phone     |
@@ -5337,9 +5365,9 @@ Table 28
 |                                   |     confirming/providing          |
 |                                   |     information                   |
 |                                   |                                   |
-|                                   | If unable to contact, state       |
-|                                   | 'unable to contact provider on    |
-|                                   | DD/MM/YY to resolve pend'         |
+|                                   | If unable to contact, write       |
+|                                   | unable to contact provider on     |
+|                                   | DD/MM/YY to resolve pend          |
 |                                   |                                   |
 |                                   | Press [Enter]                     |
 |                                   |                                   |
@@ -5369,7 +5397,7 @@ Table 28
 
 Pend 113 Dose given at less than (<) schedule age
 
-Table 29
+Table 30
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -5420,10 +5448,10 @@ Table 29
 |                                   | -   The encounter displays dose 4 |
 |                                   |     of DTP or DTP-Polio given     |
 |                                   | -   Over-key the dose number to 3 |
-|                                   | -   Over-key the ST field P to    |
-|                                   |     'C' and press [Enter]         |
-|                                   | -   Over-key the C to 'Y' and     |
-|                                   |     press [Enter]                 |
+|                                   | -   Over-key the ST field P to C  |
+|                                   |     and press [Enter]             |
+|                                   | -   Over-key the C to Y and press |
+|                                   |     [Enter]                       |
 |                                   | -   Press [F9] to update          |
 |                                   | -   Press [F14]. The YIRD –       |
 |                                   |     Episode History-Basic screen  |
@@ -5456,7 +5484,7 @@ Table 29
 
 Pend 115 Antigen has been administered under minimum required age
 
-Table 30
+Table 31
 
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
@@ -5484,8 +5512,8 @@ Table 30
 |                                   | HIB is the pended vaccine         |
 |                                   |                                   |
 |                                   | -   In the ST field, over-key the |
-|                                   |     P with 'C' and press [Enter]  |
-|                                   | -   Over-key the C with 'Y' and   |
+|                                   |     P with C and press [Enter]    |
+|                                   | -   Over-key the C with Y and     |
 |                                   |     press [Enter]                 |
 |                                   | -   Press [F9] to update          |
 |                                   |                                   |

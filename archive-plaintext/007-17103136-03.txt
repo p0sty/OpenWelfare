@@ -43,7 +43,7 @@ Table 1
 |                                   | details within 28 days. See       |
 |                                   | Exemption from providing Tax File |
 |                                   | Numbers when claiming Child Care  |
-|                                   | Subsidy (CCS)                     |
+|                                   | Subsidy (CCS).                    |
 |                                   |                                   |
 |                                   | When a paper claim is scanned to  |
 |                                   | the customer's record, a Social   |
@@ -333,7 +333,8 @@ Table 2
 |                                   |     for claims or SOAs requiring  |
 |                                   |     a Deemed Date of Receipt      |
 |                                   |     (DDOR) more than 3 years in   |
-|                                   |     the past, see Item 4          |
+|                                   |     the past, see                 |
+|                                   |     Item 4                        |
 |                                   |                                   |
 |                                   | A CCS SOA should not be used:     |
 |                                   |                                   |
@@ -372,16 +373,41 @@ Table 2
 |                                   |                                   |
 |                                   | When processing a CCS SOA:        |
 |                                   |                                   |
-|                                   | -   check the Service Reason is   |
-|                                   |     CCP before selecting assess,  |
-|                                   |     and                           |
-|                                   | -   ensure the outcome is correct |
-|                                   |     before finalising, including  |
-|                                   |     checking any CCS arrears      |
-|                                   |     generated                     |
-|                                   | -   See Payment of arrears after  |
-|                                   |     reassessment and stopping a   |
-|                                   |     payment                       |
+|                                   | manually get the AIR data for     |
+|                                   | each child in the claim to avoid  |
+|                                   | gaps and ensure correct           |
+|                                   | backdating of entitlement. While  |
+|                                   | in the claim;                     |
+|                                   |                                   |
+|                                   | -   take note of the postcode of  |
+|                                   |     the parent                    |
+|                                   | -   from the child/ren record, go |
+|                                   |     to the CIM table via the      |
+|                                   |     Super Key and select Add      |
+|                                   | -   select Get AIR Data and Save  |
+|                                   |     the result, confirming the    |
+|                                   |     provisional AIR date of       |
+|                                   |     notification now matches the  |
+|                                   |     date of receipt (DDOR) of the |
+|                                   |     claim. Note: the immunisation |
+|                                   |     link should already be        |
+|                                   |     established but if linking    |
+|                                   |     issues present enter the      |
+|                                   |     customer postcode first then, |
+|                                   |     if needed, include the        |
+|                                   |     Medicare number if available  |
+|                                   |                                   |
+|                                   | check the Service Reason is CCP   |
+|                                   | before selecting assess, and      |
+|                                   |                                   |
+|                                   | ensure the outcome is correct     |
+|                                   | before finalising, including      |
+|                                   | checking any CCS arrears          |
+|                                   | generated                         |
+|                                   |                                   |
+|                                   | See Payment of arrears after      |
+|                                   | reassessment and stopping a       |
+|                                   | payment                           |
 |                                   |                                   |
 |                                   | If the incorrect outcome presents |
 |                                   | at Assessment Results, do not     |
@@ -601,7 +627,7 @@ Table 2
 |                                   |                                   |
 |                                   | Select Continue                   |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Error WS999 + Read more ...       |
+| 7                                 | Error WS999 + Read more ...       |
 |                                   |                                   |
 |                                   | As CCS claims only exist in       |
 |                                   | Process Direct, there are no      |
@@ -770,21 +796,28 @@ Table 3
 |                                   | for any additional CCS claims and |
 |                                   | then Search Online Claims in      |
 |                                   | Customer First for lodgement of   |
-|                                   | other Family Assistance claims.   |
+|                                   | other Family Assistance claims. A |
+|                                   | further indicator that the CCS    |
+|                                   | claim was lodged as a combined    |
+|                                   | CCS/Families (e.g. Family Tax     |
+|                                   | Benefit (FTB)) claim is other     |
+|                                   | families question sets in the CCS |
+|                                   | claim data. For example, Payment  |
+|                                   | Choices for FTB appearing in the  |
+|                                   | CCS claim overview.               |
 |                                   |                                   |
 |                                   | If the customer has lodged        |
 |                                   | multiple claims with different    |
 |                                   | submission dates, claims will be  |
 |                                   | processed in order of date        |
 |                                   | submitted. Start with the earlier |
-|                                   | date. For example, Family Tax     |
-|                                   | Benefit (FTB) and CCS.            |
+|                                   | date. For example, FTB and CCS.   |
 |                                   |                                   |
 |                                   | If there is a CCS claim and a     |
-|                                   | Families claim (e.g. FTB) on the  |
-|                                   | record with the same submission   |
-|                                   | date, the Families claim must be  |
-|                                   | processed first.                  |
+|                                   | Families claim on the record with |
+|                                   | the same submission date, the     |
+|                                   | Families claim must be processed  |
+|                                   | first.                            |
 |                                   |                                   |
 |                                   | If the customer has lodged more   |
 |                                   | than one CCS claim, they will be  |
@@ -880,7 +913,8 @@ Table 3
 |                                   | incorrect address if a Request    |
 |                                   | for Information needs to be sent. |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Hand off processes                |
+| 5                                 | Hand off processes + Read more    |
+|                                   | ...                               |
 |                                   |                                   |
 |                                   | Review the claim data to          |
 |                                   | determine if there are any        |
@@ -912,7 +946,9 @@ Table 3
 |                                   | action, unassign it with reason   |
 |                                   | User Unavailable. This returns it |
 |                                   | back to the national allocation   |
-|                                   | pool.                             |
+|                                   | pool. See Work Optimiser for      |
+|                                   | staff for further information on  |
+|                                   | unassigning a claim.              |
 |                                   |                                   |
 |                                   | Note: if unsure a CCS claim has a |
 |                                   | combined ACCS component after     |
@@ -931,6 +967,9 @@ Table 3
 |                                   |     Hardship)                     |
 |                                   | -   TTW (Transition to Work)      |
 |                                   | -   GRDPT (Grandparent)           |
+|                                   |                                   |
+|                                   | Close the Plse action CCS Claim   |
+|                                   | in PD Note/DOC.                   |
 |                                   |                                   |
 |                                   | Families claim handoff process    |
 |                                   | for CCS only trained Service      |
@@ -1119,7 +1158,8 @@ Table 3
 |                                   | -   Yes, go to Step 10            |
 |                                   | -   No, go to Step 9              |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Action based on skill set level   |
+| 9                                 | Action based on skill set level + |
+|                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Expand one of the following       |
 |                                   | sections based on relevant        |
@@ -1358,12 +1398,8 @@ Table 3
 |                                   | -   NOB (Correspondence and       |
 |                                   |     Payment Nominee)              |
 |                                   |                                   |
-|                                   | Select Snapshot. On the top row,  |
-|                                   | check Corres Nominee and Pay      |
-|                                   | Nominee. If the customer does not |
-|                                   | have a current nominee            |
-|                                   | arrangement, both will display as |
-|                                   | No                                |
+|                                   | Go to the Nominee link summary    |
+|                                   | (NOLS)                            |
 |                                   |                                   |
 |                                   | Check the claim data to determine |
 |                                   | if the customer has appointed a   |
@@ -1726,58 +1762,15 @@ Table 3
 |                                   |     July and the second CCS       |
 |                                   |     Monday in the new year        |
 |                                   |                                   |
-|                                   | Check the customer's record for:  |
+|                                   | Finalise the claim with the nil   |
+|                                   | rate period.                      |
 |                                   |                                   |
-|                                   | -   Actual income recorded on the |
-|                                   |     FAO Income for Previous Year  |
-|                                   |     (FIPY) for customer and       |
-|                                   |     partner (if applicable)       |
-|                                   | -   A Family Tax Benefit (FTB)    |
-|                                   |     Lump Sum Claim (LSC)          |
+|                                   | Any gap in entitlement is         |
+|                                   | adjusted during the CCS Balancing |
+|                                   | for the financial year when       |
+|                                   | actual income is known.           |
 |                                   |                                   |
-|                                   | This information can be used for  |
-|                                   | the income estimate to assess the |
-|                                   | CCS claim portion before the      |
-|                                   | start of the new CCS year.        |
-|                                   |                                   |
-|                                   | Where there is no income estimate |
-|                                   | for the relevant financial year   |
-|                                   | available, use the Desktop        |
-|                                   | Electronic Messaging Capability   |
-|                                   | to:                               |
-|                                   |                                   |
-|                                   | -   create a 'pre-call'           |
-|                                   |     notification                  |
-|                                   | -   try to contact the customer   |
-|                                   |     once to get the relevant      |
-|                                   |     financial year estimate (Tip: |
-|                                   |     check if any other            |
-|                                   |     information is required to    |
-|                                   |     finalise the claim before     |
-|                                   |     attempting to contact)        |
-|                                   |                                   |
-|                                   | Has an income estimate been       |
-|                                   | obtained?                         |
-|                                   |                                   |
-|                                   | Yes, go to Step 18                |
-|                                   |                                   |
-|                                   | No:                               |
-|                                   |                                   |
-|                                   | -   Finalise the claim with the   |
-|                                   |     nil rate period               |
-|                                   | -   Any gap in entitlement is     |
-|                                   |     adjusted during the CCS       |
-|                                   |     Balancing for the financial   |
-|                                   |     year when actual income is    |
-|                                   |     known                         |
-|                                   | -   If the customer contacts and  |
-|                                   |     provides an income estimate   |
-|                                   |     after the claim is finalised, |
-|                                   |     record an income estimate     |
-|                                   |     from the Deemed Date of       |
-|                                   |     Receipt (DDOR) of the CCS     |
-|                                   |     claim                         |
-|                                   | -   Go to Step 18                 |
+|                                   | Go to Step 18.                    |
 +-----------------------------------+-----------------------------------+
 | 18                                | Check marital status + Read more  |
 |                                   | ...                               |
@@ -2052,7 +2045,19 @@ Table 3
 |                                   |                                   |
 |                                   | Go to Step 21.                    |
 +-----------------------------------+-----------------------------------+
-| 21                                | Requesting documents + Read more  |
+| 21                                | Activity Test Details + Read more |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Customers are responsible for     |
+|                                   | self-assessing their (and their   |
+|                                   | partner's) hours of recognised    |
+|                                   | activity. See Activity Test for   |
+|                                   | Child Care Subsidy (CCS) for more |
+|                                   | information.                      |
+|                                   |                                   |
+|                                   | Go to Step 22.                    |
++-----------------------------------+-----------------------------------+
+| 22                                | Requesting documents + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | If more information is required   |
@@ -2067,16 +2072,16 @@ Table 3
 |                                   | has already been sent and the     |
 |                                   | required documents have not been  |
 |                                   | provided, the claim is to be made |
-|                                   | Not Effective. Go to Step 23.     |
+|                                   | Not Effective. Go to Step 24.     |
 |                                   |                                   |
 |                                   | Can the claim be processed        |
 |                                   | without further                   |
 |                                   | documentation/evidence?           |
 |                                   |                                   |
 |                                   | -   Yes, see Step 1 in Table 4    |
-|                                   | -   No, go to Step 22             |
+|                                   | -   No, go to Step 23             |
 +-----------------------------------+-----------------------------------+
-| 22                                | Request further documentation     |
+| 23                                | Request further documentation     |
 |                                   | from the customer + Read more ... |
 |                                   |                                   |
 |                                   | Requests for information that     |
@@ -2110,7 +2115,7 @@ Table 3
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
-| 23                                | Claim NEF because request for     |
+| 24                                | Claim NEF because request for     |
 |                                   | information has previously been   |
 |                                   | sent but documents have not been  |
 |                                   | provided + Read more ...          |
@@ -2479,54 +2484,209 @@ Table 4
 |                                   | Are any partner relationship      |
 |                                   | updates required?                 |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 5             |
-|                                   | -   No, see Step 1 in Table 5     |
+|                                   | Yes, and the customer is advising |
+|                                   | they are now:                     |
+|                                   |                                   |
+|                                   | -   partnered, go to Step 5       |
+|                                   | -   separated, go to Step 10      |
+|                                   |                                   |
+|                                   | No, see Step 1 in Table 5         |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Customer advises partnered in     |
 |                                   | claim + Read more ...             |
 |                                   |                                   |
-|                                   | Where a customer advises they are |
-|                                   | partnered and the customer or     |
-|                                   | partner are currently in receipt  |
-|                                   | of another payment, all linking   |
-|                                   | activities must be finalised      |
-|                                   | before assessing the CCS claim.   |
-|                                   | See Change in relationship status |
-|                                   | from single to partnered.         |
-|                                   |                                   |
 |                                   | Check the information provided in |
 |                                   | the claim and compare to partner  |
 |                                   | data on the Marital Status (MS)   |
-|                                   | screen to determine if there are  |
-|                                   | any updates, including            |
-|                                   | historical, which need to be      |
-|                                   | completed in Customer First.      |
+|                                   | screen.                           |
 |                                   |                                   |
-|                                   | Note: do a thorough search for    |
-|                                   | the partner's/child's record. See |
-|                                   | Searching for a customer on the   |
-|                                   | system.                           |
+|                                   | Where a customer advises they are |
+|                                   | partnered and:                    |
 |                                   |                                   |
-|                                   | Multiple records increase the     |
-|                                   | risk of payment errors,           |
-|                                   | intertwining and potentially      |
-|                                   | fraud. Multiple records may also  |
-|                                   | impact the confidence people have |
-|                                   | in the quality and correctness of |
-|                                   | the information Services          |
-|                                   | Australia holds.                  |
+|                                   | -   the customer or partner are   |
+|                                   |     currently in receipt of       |
+|                                   |     another payment,              |
+|                                   | -   the customer or partner is    |
+|                                   |     linked to a previous partner, |
+|                                   |     or                            |
+|                                   | -   the partner is/was CCS        |
+|                                   |     current from the marital      |
+|                                   |     status start date onwards,    |
 |                                   |                                   |
-|                                   | Customer advises separated in     |
-|                                   | claim                             |
+|                                   | all linking activities must be    |
+|                                   | finalised in Customer First       |
+|                                   | before assessing the CCS claim in |
+|                                   | Process Direct                    |
+|                                   |                                   |
+|                                   | If the:                           |
+|                                   |                                   |
+|                                   | customer/partner is:              |
+|                                   |                                   |
+|                                   | -   in receipt of another         |
+|                                   |     payment, go to Step 6         |
+|                                   | -   still linked to previous      |
+|                                   |     partner, go to Step 7         |
+|                                   |                                   |
+|                                   | partner CCS current from the      |
+|                                   | marital status start date, go to  |
+|                                   | Step 8                            |
+|                                   |                                   |
+|                                   | Otherwise, go to Step 9.          |
++-----------------------------------+-----------------------------------+
+| 6                                 | Customer/partner in receipt of    |
+|                                   | another payment + Read more ...   |
+|                                   |                                   |
+|                                   | Where the customer or partner is  |
+|                                   | in receipt of another payment,    |
+|                                   | see Change in relationship status |
+|                                   | from single to partnered to       |
+|                                   | confirm the relationship and      |
+|                                   | undertake any pre-linking action  |
+|                                   | required.                         |
+|                                   |                                   |
+|                                   | Once the marital status is        |
+|                                   | updated, in Process Direct,       |
+|                                   | select [] > Regenerate Claim and  |
+|                                   | continue processing.              |
+|                                   |                                   |
+|                                   | Go to Step 9.                     |
++-----------------------------------+-----------------------------------+
+| 7                                 | Customer/partner still linked to  |
+|                                   | previous partner + Read more ...  |
+|                                   |                                   |
+|                                   | See Change in relationship status |
+|                                   | from single to partnered to       |
+|                                   | confirm the relationship and      |
+|                                   | undertake any pre-linking action  |
+|                                   | required.                         |
+|                                   |                                   |
+|                                   | Once the relationship is          |
+|                                   | confirmed, end date the previous  |
+|                                   | relationship outside Process      |
+|                                   | Direct before linking the new     |
+|                                   | partner in Process Direct:        |
+|                                   |                                   |
+|                                   | In Customer First, unlink the     |
+|                                   | previous partner on the Marital   |
+|                                   | Status (MS) screen.               |
+|                                   |                                   |
+|                                   | -   If the new partner is linked  |
+|                                   |     to another person on the      |
+|                                   |     system, separate the records  |
+|                                   |     using the date of separation  |
+|                                   | -   If a separation date cannot   |
+|                                   |     be provided, use the day      |
+|                                   |     before the customer became    |
+|                                   |     partnered to the new partner  |
+|                                   |                                   |
+|                                   | Finalise activity on the          |
+|                                   | Assessments Results (AR) screen.  |
+|                                   |                                   |
+|                                   | Once the previous relationship    |
+|                                   | has been ended, relationship      |
+|                                   | details need to be refreshed      |
+|                                   | within Process Direct. Select     |
+|                                   | [] > Regenerate Claim.            |
+|                                   |                                   |
+|                                   | Go to Step 9 to link new partner. |
++-----------------------------------+-----------------------------------+
+| 8                                 | Partner CCS current from the      |
+|                                   | marital status start date + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | Where the partner is or was CCS   |
+|                                   | current from any period following |
+|                                   | the partnering date, see Family   |
+|                                   | assistance customer becomes       |
+|                                   | partnered to ensure:              |
+|                                   |                                   |
+|                                   | -   Activity Test details are     |
+|                                   |     updated correctly, and        |
+|                                   | -   there are no overlapping      |
+|                                   |     periods of CCS for the same   |
+|                                   |     child                         |
+|                                   |                                   |
+|                                   | Once the marital status is        |
+|                                   | updated, in Process Direct,       |
+|                                   | select [] > Regenerate Claim and  |
+|                                   | continue processing.              |
+|                                   |                                   |
+|                                   | Go to Step 9.                     |
++-----------------------------------+-----------------------------------+
+| 9                                 | Marital Status updating in        |
+|                                   | Process Direct for claims         |
+|                                   | including SOAs + Read more ...    |
+|                                   |                                   |
+|                                   | See Change in relationship status |
+|                                   | from single to partnered to:      |
+|                                   |                                   |
+|                                   | -   confirm the relationship, and |
+|                                   | -   undertake any pre-linking     |
+|                                   |     action required               |
+|                                   |                                   |
+|                                   | Before linking, search for the    |
+|                                   | partner's record. See Searching   |
+|                                   | for a customer on the system.     |
+|                                   |                                   |
+|                                   | Multiple records:                 |
+|                                   |                                   |
+|                                   | -   increase the risk of payment  |
+|                                   |     errors, intertwining and      |
+|                                   |     potentially fraud, and        |
+|                                   | -   may also impact the           |
+|                                   |     confidence people have in the |
+|                                   |     quality and correctness of    |
+|                                   |     the information Services      |
+|                                   |     Australia holds               |
+|                                   |                                   |
+|                                   | Within the Marital Status (MS)    |
+|                                   | table on the Transaction Summary  |
+|                                   | (TS) screen:                      |
+|                                   |                                   |
+|                                   | -   Edit the relevant line,       |
+|                                   |     including any Unconfirmed     |
+|                                   |     lines, and                    |
+|                                   | -   record any necessary updates  |
+|                                   |                                   |
+|                                   | If a new line is necessary, which |
+|                                   | will be common for SOA            |
+|                                   | processing, select Add in the     |
+|                                   | Marital Status (MS) table on the  |
+|                                   | Transaction Summary (TS) screen.  |
+|                                   |                                   |
+|                                   | -   Event date: Record the        |
+|                                   |     Marital Status DOV in         |
+|                                   |     dd/mm/yyyy                    |
+|                                   | -   Marital Status: select the    |
+|                                   |     relevant status from the drop |
+|                                   |     down box                      |
+|                                   | -   Partner CRN: select the field |
+|                                   |     to populate the Search and    |
+|                                   |     select CRN popup. Select the  |
+|                                   |     partner record                |
+|                                   | -   Partner Permitted to Enquire: |
+|                                   |     Select from the drop down     |
+|                                   |     list                          |
+|                                   | -   Relationship Qualifier Code:  |
+|                                   |     leave blank unless customer   |
+|                                   |     is to be assessed for a       |
+|                                   |     Qualifier code. See           |
+|                                   |     Assessment of relationship    |
+|                                   |     status - processes, roles and |
+|                                   |     responsibilities              |
++-----------------------------------+-----------------------------------+
+| 10                                | Customer advises separated in     |
+|                                   | claim + Read more ...             |
 |                                   |                                   |
 |                                   | If a customer advises they have   |
-|                                   | separated in their claim, refer   |
-|                                   | to Change in relationship status  |
+|                                   | separated in their claim, see     |
+|                                   | Change in relationship status     |
 |                                   | from partnered to single. Use     |
-|                                   | this to work out if the           |
-|                                   | separation will need to be        |
-|                                   | verified and if any further       |
-|                                   | action is needed.                 |
+|                                   | this to work out if:              |
+|                                   |                                   |
+|                                   | -   the separation will need to   |
+|                                   |     be verified, and              |
+|                                   | -   any further action is needed  |
 |                                   |                                   |
 |                                   | If the separation verification    |
 |                                   | requires follow up, place the     |
@@ -2548,61 +2708,9 @@ Table 4
 |                                   | provided in the claim and in the  |
 |                                   | MS table. Update if necessary.    |
 |                                   |                                   |
-|                                   | Regenerate claim                  |
-|                                   |                                   |
-|                                   | If any updates are completed in   |
-|                                   | Customer First, a claim           |
-|                                   | regeneration will be required in  |
-|                                   | Process Direct to continue        |
-|                                   | processing:                       |
-|                                   |                                   |
-|                                   | Select [] > Regenerate Claim.     |
-|                                   |                                   |
-|                                   | Has all required child and        |
-|                                   | partner linking/unlinking been    |
-|                                   | completed?                        |
-|                                   |                                   |
-|                                   | -   Yes, go to Step 7             |
-|                                   | -   No, customer has advised of a |
-|                                   |     new partner but is still      |
-|                                   |     linked to their previous      |
-|                                   |     partner, go to Step 6         |
+|                                   | Go to Step 11.                    |
 +-----------------------------------+-----------------------------------+
-| 6                                 | New partner advised in claim,     |
-|                                   | customer still linked to previous |
-|                                   | partner + Read more ...           |
-|                                   |                                   |
-|                                   | End date the previous             |
-|                                   | relationship outside Process      |
-|                                   | Direct before linking the new     |
-|                                   | partner in Process Direct. In     |
-|                                   | Customer First, unlink the        |
-|                                   | previous partner on the Marital   |
-|                                   | Status (MS) screen and finalise   |
-|                                   | activity on the Assessments       |
-|                                   | Results (AR) screen.              |
-|                                   |                                   |
-|                                   | If the new partner is linked to   |
-|                                   | another person on the system,     |
-|                                   | separate the records using the    |
-|                                   | date of separation. If a          |
-|                                   | separation date cannot be         |
-|                                   | provided, use the day before the  |
-|                                   | customer became partnered to the  |
-|                                   | new partner. If either the new    |
-|                                   | partner or the person they are    |
-|                                   | linked to is currently in receipt |
-|                                   | of payment, contact them to       |
-|                                   | confirm separation details before |
-|                                   | making further updates.           |
-|                                   |                                   |
-|                                   | Once the previous relationship    |
-|                                   | has been ended, relationship      |
-|                                   | details need to be refreshed      |
-|                                   | within Process Direct to continue |
-|                                   | processing.                       |
-+-----------------------------------+-----------------------------------+
-| 7                                 | Relationship errors + Read more   |
+| 11                                | Relationship errors + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | After completing pre-claim        |
@@ -2626,7 +2734,7 @@ Table 4
 |                                   | -   Yes, go to Step 8             |
 |                                   | -   No, see Step 1 in Table 5     |
 +-----------------------------------+-----------------------------------+
-| 8                                 | SR146 and E587CU errors + Read    |
+| 12                                | SR146 and E587CU errors + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | 'SR146:MY CHILD CARE:Relationship |
@@ -2670,10 +2778,10 @@ Table 5
 | 1                                 | CCS Message Log and Task          |
 |                                   | Selector + Read more ...          |
 |                                   |                                   |
-|                                   | The claim will display the        |
-|                                   | Message Log and Task Selector     |
-|                                   | tables on the SAP Warning and     |
-|                                   | Errors (SWE) screen.              |
+|                                   | Select Process. The claim will    |
+|                                   | display the Message Log and Task  |
+|                                   | Selector tables on the SAP        |
+|                                   | Warning and Errors (SWE) screen.  |
 |                                   |                                   |
 |                                   | Message Log                       |
 |                                   |                                   |
@@ -3153,7 +3261,7 @@ Table 5
 |                                   | adjusted taxable income for the   |
 |                                   | relevant financial year. If the   |
 |                                   | estimate is deemed not            |
-|                                   | reasonable, see Step 17 in Table  |
+|                                   | reasonable, see Step 16 in Table  |
 |                                   | 3.                                |
 |                                   |                                   |
 |                                   | Check/update relevant fields on   |
@@ -3581,6 +3689,34 @@ Table 5
 +-----------------------------------+-----------------------------------+
 | 19                                | Child immunisation details + Read |
 |                                   | more ...                          |
+|                                   |                                   |
+|                                   | Manually get the AIR data for     |
+|                                   | each child in the claim to avoid  |
+|                                   | gaps and ensure correct           |
+|                                   | backdating of entitlement.        |
+|                                   |                                   |
+|                                   | While in the SOA claim;           |
+|                                   |                                   |
+|                                   | take note of the postcode of the  |
+|                                   | parent                            |
+|                                   |                                   |
+|                                   | from the child/ren record, go to  |
+|                                   | the CIM table via the Super Key   |
+|                                   | and select Add                    |
+|                                   |                                   |
+|                                   | select Get AIR Data and Save the  |
+|                                   | result, confirming the            |
+|                                   | provisional AIR date of           |
+|                                   | notification now matches the date |
+|                                   | of receipt (DDOR) of the claim.   |
+|                                   | Note: the immunisation link       |
+|                                   | should already be established but |
+|                                   | if linking issues present:        |
+|                                   |                                   |
+|                                   | -   enter the customer postcode   |
+|                                   |     first then, if needed,        |
+|                                   | -   include the Medicare number   |
+|                                   |     if available                  |
 |                                   |                                   |
 |                                   | Children must meet the            |
 |                                   | immunisation requirements at the  |
@@ -4102,13 +4238,15 @@ Table 6
 |                                   |                                   |
 |                                   | Place the claim on hold for two   |
 |                                   | days to allow the repayment       |
-|                                   | arrangement to be put in place,   |
-|                                   | update the progress of claim      |
-|                                   | Note/DOC of the discussion with   |
-|                                   | the customer (include in the note |
-|                                   | the Income Lodgement Date noted). |
-|                                   | After the 2 days, the claim will  |
-|                                   | be reallocated to a staff member. |
+|                                   | arrangement to be put in place.   |
+|                                   | Use hold reason ‘Customer to      |
+|                                   | Provide Information.’ Update the  |
+|                                   | progress of claim Note/DOC of the |
+|                                   | discussion with the customer      |
+|                                   | (include in the note the Income   |
+|                                   | Lodgement Date noted). After the  |
+|                                   | 2 days, the claim will be         |
+|                                   | reallocated to a staff member.    |
 |                                   |                                   |
 |                                   | Where staff are allocated the     |
 |                                   | claim after 2 days, check the     |
