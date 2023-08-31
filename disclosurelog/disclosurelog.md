@@ -146,7 +146,7 @@ Search
 ::: {#lit-content-main .lit-readspeaker-target .pb-8 .md:pb-11 .print:max-w-full .print:ml-0 .print:w-full role="main"}
 []{#main-content tabindex="-1"}
 
-::: mb-8
+::: {#lit-content-hero .mb-8}
 # Freedom of Information Disclosure Log {#lit-page-title .heading-1 .mb-6}
 
 ::: {#lit-short-description}
@@ -196,6 +196,24 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 17 August 2023                    | In relation to the COVID-19       |
+|                                   | Vaccine: Type of COVID-19 vaccine |
+|                                   | used in Australia, number of      |
+|                                   | claims made and paid, total       |
+|                                   | amount claimed and paid under the |
+|                                   | Scheme, and a list of all claims  |
+|                                   | showing the amount of each        |
+|                                   | payment (LEX 74496).              |
+|                                   |                                   |
+|                                   | 2 document released in part. The  |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: N/A               |
++-----------------------------------+-----------------------------------+
 | 4 August 2023                     | Operational Blueprints Member of  |
 |                                   | a Couple (MoC) and Separated      |
 |                                   | under one roof (SUOR) assessments |
@@ -3509,7 +3527,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 24 August 2023.
+Page last updated: 31 August 2023.
 :::
 :::
 
@@ -3526,7 +3544,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 30 August 2023 from
+This information was printed 31 August 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
@@ -3537,27 +3555,6 @@ material.
 ## Printed link references
 :::
 :::
-:::
-:::
-:::
-
-::: {#lit-invite-banner .bg-system-blue-20 .dark:bg-grey-blue-brand .py-6 .text-black .dark:text-grey-seashell .print:hidden}
-::: {.body .justify-center .md:flex .md:items-center}
-::: {.mb-8 .md:mr-8 .md:mb-0 .max-w-[200px]}
-![](data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0idy1mdWxsIiB2aWV3Ym94PSIwIDAgMjUwIDI1MCI+CiAgPGcgY2xhc3M9ImxpdC1zdmctcHJpbWFyeS1maWxsIj4KICAgIDxwYXRoIGQ9Im0xOTkuMyw2MS40cy0zLjE2LTYuNDctMTcuMzUtMi44N2MwLDAsNi45OS0xMC44MSwzLjU4LTIxLjY5LDAsMCw0Ljg1LDkuNDQsMTYuOCw2LjIzLDAsMC01LjQ3LDIuNDktMy4wMywxOC4zMmgwWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjE5NmYzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgogICAgPHBhdGggZD0ibTE3MSwxMDguNjRjMS44LTMuODUtMS4xMS02LjA1LTEuMTEtNi4wNSwzLjQ4LDEuOCw3LjU1LjA4LDcuNTUuMDgtMi4wNiw0LjU5LS4wNiw2LjA0LS4wNiw2LjA0LTUuMjEtMS43Ny02LjM4LS4wNy02LjM4LS4wN1oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxOTZmMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Im0xMzQuMjksNDIuNDdzLTEuNzEsMi4zMywyLjIxLDYuNzFjMCwwLTUuMTQtLjQ4LTguMzgsMi43NiwwLDAsMi40Ni0zLjQ4LS45MS03LjEzLDAsMCwxLjksMS40OCw3LjA4LTIuMzNoMFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxOTZmMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Im0yMTEuMzIsMTQzLjQ5cy0xLjU4LDIuMTQsMi4wMyw2LjE3YzAsMC00Ljc0LS40NC03LjcyLDIuNTQsMCwwLDIuMjYtMy4yLS44NC02LjU3LDAsMCwxLjc1LDEuMzYsNi41Mi0yLjE1aDBaIiBmaWxsPSJub25lIiBzdHJva2U9IiMyMTk2ZjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIzIj48L3BhdGg+CiAgPC9nPgogIDxnIGNsYXNzPSJsaXQtc3ZnLW91dGxpbmUiPgogICAgPHBhdGggZD0ibTE4OS43NSwxODEuMTRjNy4yLDEuMDIsMTQuNTMsMS4yMywyMS44NC42Mi04LjAyLDExLjQ5LTE4LjY0LDIxLjQzLTMxLjU5LDI4Ljg4LTIzLjY3LDEzLjYtNTAuNjIsMTYuMjgtNzUuMDMsOS42MS0xMi4zOS0zLjQtMjQuMTMtOS4yLTM0LjQ0LTE3LjIyLTkuODItNy42Mi0xOC4zNS0xNy4yNC0yNC45My0yOC42OC0uMDctLjEzLS4xNS0uMjctLjIyLS40LTYuNTEtMTEuNDMtMTAuNDctMjMuNi0xMi4wNi0zNS44OS0xLjcxLTEzLjA1LS43NS0yNi4yMywyLjY3LTM4LjczLDYuNjMtMjQuMTksMjIuNDMtNDUuODgsNDUuOS01OS4zNywxMi45NS03LjQ1LDI2Ljg5LTExLjYyLDQwLjg1LTEyLjc3LTQuMjIsNi4wMS03LjcyLDEyLjQ0LTEwLjQ1LDE5LjE4LTEuOCw0LjM3LTMuMjgsOC44OS00LjQyLDEzLjQ4LTEuMDcsNC4zLTEuODYsOC42Ny0yLjM0LDEzLjA3LS4yOCwyLjQxLS40NSw0LjgxLS41Myw3LjI0LS4wMi42Mi0uMDQsMS4yNS0uMDQsMS44Ny0uMjQsMTIuNjYsMS45OSwyNS40OSw2Ljg1LDM3Ljc3Ljk2LDIuNDMsMi4wMyw0Ljg1LDMuMjEsNy4yMy44NywxLjc5LDEuOCwzLjU1LDIuOCw1LjI5LjA3LjE0LjE1LjI3LjIyLjQuOTQsMS42NCwxLjkyLDMuMjQsMi45Niw0LjgxLDEuNDQsMi4yMywyLjk3LDQuMzgsNC41Nyw2LjQ1LDguMjQsMTAuNjcsMTguNCwxOS4yNiwyOS42OSwyNS41Ni41NC4zMSwxLjA5LjYxLDEuNjQuOSwyLjEyLDEuMTQsNC4zLDIuMiw2LjUxLDMuMTgsNC4wNiwxLjgxLDguMjMsMy4zMywxMi40OSw0LjU2LDQuNTQsMS4zMiw5LjE3LDIuMzIsMTMuODYsMi45N2gtLjAxWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNCI+PC9wYXRoPgogIDwvZz4KPC9zdmc+){.w-full}
-:::
-
-::: {.md:flex-grow .mb-5 .md:mr-8 .md:mb-0}
-## Try our new dark mode {#try-our-new-dark-mode .mb-0}
-
-::: {.mt-3 .font-normal}
-We\'re testing a darker colour scheme. Try it and let us know what you
-think.
-:::
-:::
-
-::: {.md:flex .md:items-center .whitespace-nowrap}
-[Try it](#toolbar-dark-mode){.btn .btn-primary .py-4 .px-5}
 :::
 :::
 :::
