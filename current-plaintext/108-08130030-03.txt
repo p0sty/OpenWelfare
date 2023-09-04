@@ -8,7 +8,8 @@ Terminating a customer's RDS deduction
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Discuss with customer + Read more |
+| 1                                 | Customer request to terminate     |
+|                                   | their RDS deduction + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Before terminating a Rent         |
@@ -21,6 +22,10 @@ Terminating a customer's RDS deduction
 |                                   |                                   |
 |                                   | -   Yes, where do they live and   |
 |                                   |     who do they now pay rent to?  |
+|                                   |     Help the customer to update   |
+|                                   |     their address if required.    |
+|                                   |     See Updating address details  |
+|                                   |     for more information          |
 |                                   | -   No, how are they going to     |
 |                                   |     continue to meet their rental |
 |                                   |     obligations? Advise the       |
@@ -28,14 +33,14 @@ Terminating a customer's RDS deduction
 |                                   |     contact the Housing Authority |
 |                                   |     to make other arrangements    |
 |                                   |     and to re-start payments in   |
-|                                   |     the future, they need to      |
-|                                   |     contact the Housing           |
-|                                   |     Authority. Services Australia |
-|                                   |     cannot restart RDS deductions |
+|                                   |     the future . Services         |
+|                                   |     Australia cannot restart RDS  |
+|                                   |     deductions                    |
 |                                   |                                   |
 |                                   | Do they need more money now? If   |
-|                                   | they do have they applied for an  |
-|                                   | Advance Payment?                  |
+|                                   | they do, ask if they have they    |
+|                                   | applied for an Advance Payment?   |
+|                                   | For more information see Advances |
 |                                   |                                   |
 |                                   | Do they need budgeting            |
 |                                   | assistance? Do they know about    |
@@ -62,23 +67,28 @@ Terminating a customer's RDS deduction
 |                                   | Payment? See Eligibility for      |
 |                                   | Crisis Payment for more           |
 |                                   | information                       |
+|                                   |                                   |
+|                                   | Does the customer want to         |
+|                                   | continue with terminating their   |
+|                                   | RDS deduction?                    |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, procedure ends here       |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Termination of RDS deductions +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | An instruction is received from a |
-|                                   | Housing Authority (HA) to         |
-|                                   | terminate an RDS deduction for a  |
-|                                   | customer, or, a customer          |
-|                                   | personally contacts Services      |
-|                                   | Australia to request that an RDS  |
-|                                   | deduction be terminated.          |
+|                                   | If a customer or housing          |
+|                                   | authority, contacts Services      |
+|                                   | Australia to ask for termination  |
+|                                   | of an RDS deduction:, the Service |
+|                                   | Officer should:                   |
 |                                   |                                   |
-|                                   | -   From the customer's record    |
-|                                   |     access the Payment            |
-|                                   |     Instruction Summary (PINS)    |
-|                                   |     screen in the relevant host   |
-|                                   |     system (ISS/NSS/PEN/PGA)      |
+|                                   | -   access the customers record,  |
+|                                   |     then the Payment Instruction  |
+|                                   |     Summary (PINS) screen, in the |
+|                                   |     relevant host system          |
+|                                   |     (ISS/NSS/PEN/PGA/FAO)         |
 |                                   | -   Key 'S' to select the         |
 |                                   |     deduction to be cancelled     |
 |                                   | -   Press [Enter]. The Payment    |
@@ -87,9 +97,16 @@ Terminating a customer's RDS deduction
 |                                   |                                   |
 |                                   | If data was keyed in error,       |
 |                                   | delete housing payment details    |
-|                                   | via the PINS screen only. Do not  |
-|                                   | use the 'delete' facility to      |
-|                                   | terminate deductions.             |
+|                                   | via the PIDD screen only. Do not  |
+|                                   | use the action of delete (D) to   |
+|                                   | terminate a deduction.            |
+|                                   |                                   |
+|                                   | Note: housing authorities should  |
+|                                   | contact the National Business     |
+|                                   | Gateway > Confirmation Services   |
+|                                   | helpdesk to request assistance to |
+|                                   | terminate a customer’s RDS        |
+|                                   | deduction                         |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Coding the termination on the     |
 |                                   | PIDD screen + Read more ...       |
@@ -109,7 +126,10 @@ Terminating a customer's RDS deduction
 |                                   |     change reason code must be    |
 |                                   |     given for a termination; use  |
 |                                   |     field help '?' for a list of  |
-|                                   |     acceptable codes)             |
+|                                   |     acceptable codes). Do not     |
+|                                   |     select Customer Request       |
+|                                   |     Online (CRO), it is not       |
+|                                   |     applicable to RDS deductions  |
 |                                   | -   Complete the Source: and DOR: |
 |                                   |     fields                        |
 |                                   | -   Key 'I' for (Insert/Update)   |
@@ -167,19 +187,28 @@ Terminating a customer's RDS deduction
 |                                   |                                   |
 |                                   | In the TXT: field                 |
 |                                   |                                   |
-|                                   | Request cancellation of PINS dedn |
+|                                   | Request cancellation of RDS dedn  |
 |                                   | DOV:                              |
 |                                   |                                   |
 |                                   | -   (HA Name) for (deduction      |
-|                                   |     type: ARR, LON, RNT, OHP)     |
+|                                   |     type: ARR, LON, RNT, OHO,OHP) |
 |                                   |     deduction to be cancelled     |
-|                                   | -   Advised Caller of request to  |
-|                                   |     lodge new activity form with  |
-|                                   |     HA: YES/NO                    |
+|                                   | -   Advised caller to contact the |
+|                                   |     Housing Authority (HA) to     |
+|                                   |     discuss alternative           |
+|                                   |     arrangements to pay their     |
+|                                   |     rent. Add Yes, No, or NA if   |
+|                                   |     the customer is no longer     |
+|                                   |     payment government rent       |
+|                                   | -   Advised caller they must      |
+|                                   |     lodge a new Deduction         |
+|                                   |     Authority form with the HA to |
+|                                   |     restart the RDS deduction:    |
+|                                   |     Add Yes or No                 |
 |                                   | -   A letter will be sent to the  |
 |                                   |     customer advising them that   |
-|                                   |     their deductions have been    |
-|                                   |     terminated                    |
+|                                   |     their RDS deductions have     |
+|                                   |     been terminated               |
 +-----------------------------------+-----------------------------------+
 
                                    

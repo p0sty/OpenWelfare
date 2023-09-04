@@ -314,7 +314,7 @@ if the customer <strong>does not</strong> have a current loan, <a href="../older
 			<ul>			<li>
 the customer cannot get an advance payment as they have reached their MLA</li>
 			<li>
-if the customer wishes to increase their MLA by offering more equity in their Australian real estate, see <a target="_blank" href="../older-australians/065-08020020-01.html">Security for the Home Equity Access Scheme</a></li>
+if the customer wants to increase their MLA by offering more equity in their Australian real estate, see <a target="_blank" href="../older-australians/065-08020020-01.html">Security for the Home Equity Access Scheme</a></li>
 			<li>
 <a href="../older-australians/065-22051321-03.html#bp03_tbl_Available_advan_Step05">go to Step 5</a></li>			</ul>			</ul>
 </div>
@@ -866,23 +866,75 @@ Procedure ends here for non-CAO staff</li>
 <div class="showcont">
 
 
-<p>Staff must review the HEAS Advance (<strong>HEASADV</strong>) screen as part of the advance payment request.</p>
-
-<p>Updates may be required with the <strong>HEAS</strong> screen if&#58;</p>
+<p>Staff must review the HEAS Advance (<strong>HEASADV</strong>) screen in Process Direct as part of the advance payment request. Once reviewed&#58; Keyword ‘<strong>HEASADV</strong>’ and <strong>complete in this specific order</strong>&#58;</p>
 		<ul>		<li>
-the customer has asked to receive an advance payment, but does not wish to get fortnightly loan payments. Staff must set the <strong>Loan Topup Type</strong> to <strong>ADV</strong> to make sure fortnightly payments are not issued</li>
+Select ‘Add’</li>
 		<li>
-the customer has requested a variation to their loan arrangements at the same time as requesting the advance</li>
+Complete the <strong>HEAS Advance </strong>fields and save</li>
 		<li>
-the <strong>Ceased Loan Indicator</strong> = Y. Advance payments cannot be paid if the indicator is Y. Investigate the record before changing the indicator to N, as this may&#58;</li>
+Enter Receipt Date and Channel information</li>
+		<li>
+Select ‘Assess’ and ‘Finalise’</li>
+		</ul>
+<p>Once the advance is complete, superkey ‘<strong>HEAS</strong>’ to confirm correct details. </p>
+
+<p></p>
+
+<p><strong>IF</strong> the customer is requesting an ‘Advance only’, immediately after coding the advance&#58; </p>
+		<ul>		<li>
+Investigate the record before changing the indicator to N, as this may&#58;</li>
 			<ul>			<li>
 override a prior eligibility decision</li>
 			<li>
-start fortnightly loan payments</li>
+start fortnightly loan payments</li>		</ul>
+		<li>
+Make amendments&#58;</li>
+			<ul>			<li>
+Update the <strong>Ceased Loan Indicator</strong> = Y with reason <strong>‘Voluntary Withdrawal’</strong></li>
+			<li>
+Set the <strong>Loan Topup Type</strong> to <strong>ADV </strong></li>
+			<li>
+Change<strong> Percent </strong>to<strong> 0</strong> </li>
+			<li>
+Change <strong>Loan Topup Amt pf</strong> to be <strong>blank</strong></li>
+			<li>
+Select ‘Assess’ and ‘Finalise’</li>
 			</ul>			</ul>
-<p>If the customer has <strong>not</strong> requested fortnightly loan payments, the <strong>Loan Topup Type</strong> must be set to <strong>ADV</strong> before changing the <strong>Cease Loan Indicator</strong> from Y to N.</p>
+<p>Advance payments cannot be paid if the indicator is already set to Y. </p>
 
-<p>Changing the indicator from Y to N also requires the <strong>Reject/Cease reason</strong> code to be removed. <a href="../older-australians/065-22051321-03.html#bp03_tbl_Processing_adva_Step06">Go to Step 6</a></p>
+<p>If the advance request cannot be completed via Process Direct, updates may be required within customer record under the <strong>PLS</strong> and <strong>PLSS</strong> screen, <strong>complete in this specific order</strong>&#58;</p>
+		<ul>		<li>
+The customer has asked to receive an advance payment, but does not want to get fortnightly loan payments. Within the same activity, staff must&#58;</li>
+			<ul>			<li>
+ensure the D<strong>ate of Effect</strong> is correct </li>
+			<li>
+set the <strong>Loan Topup Type</strong> to <strong>ADV </strong></li>
+			<li>
+change<strong> Percent </strong>to<strong> 0</strong> </li>
+			<li>
+change <strong>Loan Topup Amt pf</strong> to be <strong>blank</strong></li>
+			<li>
+code Advance under <strong>PLSS</strong></li>
+			</ul>			</ul>
+<p>Once the advance is complete, confirm correct details on PLS screen.</p>
+
+<p></p>
+
+<p><strong>IF</strong> customers is requesting an ‘Advance only’, immediately after coding the advance, in a new activity&#58; </p>
+		<ul>		<li>
+Investigate the record before changing the indicator to N, as this may&#58;</li>
+			<ul>			<li>
+override a prior eligibility decision</li>
+			<li>
+start fortnightly loan payments</li>		</ul>
+		<li>
+Under PLS screen, amend the <strong>Ceased Loan Indicator</strong> = Y with reason <strong>‘Voluntary Withdrawal’</strong>. Advance payments cannot be paid if the indicator was already set to Y. </li>
+		</ul>
+<p>If the customer has requested a variation to their loan arrangements at the same time as requesting the advance complete this as a separate activity to address the variation request. </p>
+
+<p>If the customer has <strong>not</strong> requested fortnightly loan payments, the <strong>Loan Topup Type</strong> must be set to <strong>ADV</strong> with <strong>Percent</strong> as <strong>0</strong> before changing the <strong>Cease Loan Indicator</strong> from Y to N.</p>
+
+<p>Changing the indicator from Y to N also requires the <strong>Reject/Cease reason</strong> code to be removed. <a href="../older-australians/065-22051321-03.html#bp03_tbl_Processing_adva_Step06">Go to Step 6</a>.</p>
 </div>
 
 
