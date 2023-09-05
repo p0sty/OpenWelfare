@@ -143,7 +143,7 @@ available advance payment amount through the HEAS.
 |                                   | -   the customer cannot get an    |
 |                                   |     advance payment as they have  |
 |                                   |     reached their MLA             |
-|                                   | -   if the customer wishes to     |
+|                                   | -   if the customer wants to      |
 |                                   |     increase their MLA by         |
 |                                   |     offering more equity in their |
 |                                   |     Australian real estate, see   |
@@ -838,28 +838,28 @@ payment requests under the HEAS.
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Staff must review the HEAS        |
-|                                   | Advance (HEASADV) screen as part  |
-|                                   | of the advance payment request.   |
+|                                   | Advance (HEASADV) screen in       |
+|                                   | Process Direct as part of the     |
+|                                   | advance payment request. Once     |
+|                                   | reviewed: Keyword ‘HEASADV’ and   |
+|                                   | complete in this specific order:  |
 |                                   |                                   |
-|                                   | Updates may be required with the  |
-|                                   | HEAS screen if:                   |
+|                                   | -   Select ‘Add’                  |
+|                                   | -   Complete the HEAS Advance     |
+|                                   |     fields and save               |
+|                                   | -   Enter Receipt Date and        |
+|                                   |     Channel information           |
+|                                   | -   Select ‘Assess’ and           |
+|                                   |     ‘Finalise’                    |
 |                                   |                                   |
-|                                   | the customer has asked to receive |
-|                                   | an advance payment, but does not  |
-|                                   | wish to get fortnightly loan      |
-|                                   | payments. Staff must set the Loan |
-|                                   | Topup Type to ADV to make sure    |
-|                                   | fortnightly payments are not      |
-|                                   | issued                            |
+|                                   | Once the advance is complete,     |
+|                                   | superkey ‘HEAS’ to confirm        |
+|                                   | correct details.                  |
 |                                   |                                   |
-|                                   | the customer has requested a      |
-|                                   | variation to their loan           |
-|                                   | arrangements at the same time as  |
-|                                   | requesting the advance            |
+|                                   | IF the customer is requesting an  |
+|                                   | ‘Advance only’, immediately after |
+|                                   | coding the advance:               |
 |                                   |                                   |
-|                                   | the Ceased Loan Indicator = Y.    |
-|                                   | Advance payments cannot be paid   |
-|                                   | if the indicator is Y.            |
 |                                   | Investigate the record before     |
 |                                   | changing the indicator to N, as   |
 |                                   | this may:                         |
@@ -869,16 +869,88 @@ payment requests under the HEAS.
 |                                   | -   start fortnightly loan        |
 |                                   |     payments                      |
 |                                   |                                   |
+|                                   | Make amendments:                  |
+|                                   |                                   |
+|                                   | -   Update the Ceased Loan        |
+|                                   |     Indicator = Y with reason     |
+|                                   |     ‘Voluntary Withdrawal’        |
+|                                   | -   Set the Loan Topup Type to    |
+|                                   |     ADV                           |
+|                                   | -   Change Percent to 0           |
+|                                   | -   Change Loan Topup Amt pf to   |
+|                                   |     be blank                      |
+|                                   | -   Select ‘Assess’ and           |
+|                                   |     ‘Finalise’                    |
+|                                   |                                   |
+|                                   | Advance payments cannot be paid   |
+|                                   | if the indicator is already set   |
+|                                   | to Y.                             |
+|                                   |                                   |
+|                                   | If the advance request cannot be  |
+|                                   | completed via Process Direct,     |
+|                                   | updates may be required within    |
+|                                   | customer record under the PLS and |
+|                                   | PLSS screen, complete in this     |
+|                                   | specific order:                   |
+|                                   |                                   |
+|                                   | The customer has asked to receive |
+|                                   | an advance payment, but does not  |
+|                                   | want to get fortnightly loan      |
+|                                   | payments. Within the same         |
+|                                   | activity, staff must:             |
+|                                   |                                   |
+|                                   | -   ensure the Date of Effect is  |
+|                                   |     correct                       |
+|                                   | -   set the Loan Topup Type to    |
+|                                   |     ADV                           |
+|                                   | -   change Percent to 0           |
+|                                   | -   change Loan Topup Amt pf to   |
+|                                   |     be blank                      |
+|                                   | -   code Advance under PLSS       |
+|                                   |                                   |
+|                                   | Once the advance is complete,     |
+|                                   | confirm correct details on PLS    |
+|                                   | screen.                           |
+|                                   |                                   |
+|                                   | IF customers is requesting an     |
+|                                   | ‘Advance only’, immediately after |
+|                                   | coding the advance, in a new      |
+|                                   | activity:                         |
+|                                   |                                   |
+|                                   | Investigate the record before     |
+|                                   | changing the indicator to N, as   |
+|                                   | this may:                         |
+|                                   |                                   |
+|                                   | -   override a prior eligibility  |
+|                                   |     decision                      |
+|                                   | -   start fortnightly loan        |
+|                                   |     payments                      |
+|                                   |                                   |
+|                                   | Under PLS screen, amend the       |
+|                                   | Ceased Loan Indicator = Y with    |
+|                                   | reason ‘Voluntary Withdrawal’.    |
+|                                   | Advance payments cannot be paid   |
+|                                   | if the indicator was already set  |
+|                                   | to Y.                             |
+|                                   |                                   |
+|                                   | If the customer has requested a   |
+|                                   | variation to their loan           |
+|                                   | arrangements at the same time as  |
+|                                   | requesting the advance complete   |
+|                                   | this as a separate activity to    |
+|                                   | address the variation request.    |
+|                                   |                                   |
 |                                   | If the customer has not requested |
 |                                   | fortnightly loan payments, the    |
 |                                   | Loan Topup Type must be set to    |
-|                                   | ADV before changing the Cease     |
-|                                   | Loan Indicator from Y to N.       |
+|                                   | ADV with Percent as 0 before      |
+|                                   | changing the Cease Loan Indicator |
+|                                   | from Y to N.                      |
 |                                   |                                   |
 |                                   | Changing the indicator from Y to  |
 |                                   | N also requires the Reject/Cease  |
 |                                   | reason code to be removed. Go to  |
-|                                   | Step 6                            |
+|                                   | Step 6.                           |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Code the HEAS advance details +   |
 |                                   | Read more ...                     |
