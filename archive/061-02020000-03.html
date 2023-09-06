@@ -228,9 +228,13 @@ $(document).ready(function() {
 <div class="showcont">
 
 
-<p>The procedure is to be used by Service Officers in CIS to transfer the customer's record and manually code the portability decision after the <a href="../australians-overseas/061-02010000-01.html">portability script</a> has been run. The script is not able to code the InterEnvironment Change of Address (ICoA) and therefore must be coded manually.</p>
+<p>The procedure is to be used by Service Officers in CIS to transfer the customer's record and manually code the portability decision after the <a href="../australians-overseas/061-02010000-01.html">Portability script</a> has been run. The script is not able to code the InterEnvironment Change of Address (ICoA) and therefore must be coded manually.</p>
 
-<p>Before using this procedure, the Service Officer must ensure that the portability decision has already been made based on the information provided by the customer and it has been confirmed that the customer is going overseas and is payable for more than 12 months.</p>
+<p>Before using this procedure, the Service Officer must make sure&#58;</p>
+		<ul>		<li>
+the portability decision has already been made based on the information provided by the customer, and </li>
+		<li>
+it has been confirmed that the customer is going overseas and is payable for more than 12 months.</li>		</ul>
 </div>
 
 
@@ -246,7 +250,7 @@ $(document).ready(function() {
 <div class="showcont">
 
 
-<p>If further payments are due and yet to be paid to the customer, transfer action should not be started until the payments have been made.</p>
+<p>If further payments are due and yet to be paid to the customer, do not start transfer action until the payments have been made.</p>
 
 <p>Are further payments due before departure?</p>
 		<ul>		<li>
@@ -304,13 +308,9 @@ To avoid cancellation of concession card prior to customer’s overseas departur
 		<ul>		<li>
 direct deposit into an Australian bank account every 4 weeks (available to customers in all countries)</li>
 		<li>
-direct deposit to an overseas bank account every 4 weeks (available in certain countries only), or</li>
-		<li>
-by cheque to an overseas address every 4 weeks (available in certain countries, usually those without direct deposit, or temporarily until the customer has time to open an overseas account)</li>
+direct deposit to an overseas bank account every 4 weeks (available in certain countries only)</li>
 		</ul>
-<p>The payment method available depends on where they live or where they are going to.</p>
-
-<p><strong>Note&#58;</strong> payment method cannot be cheque if the customer has a payment nominee who lives in Australia.</p>
+<p>The <a href="../payment-delivery/103-04020000-01.html">payment method</a> available depends on where they live or where they are going to. </p>
 </div>
 
 
@@ -338,7 +338,7 @@ The <strong>Svc Rsn&#58;</strong> field with the applicable payment type code th
 			<li>
 '<strong>DOS</strong>' (departed overseas) in the <strong>Reason&#58;</strong> field</li>
 			<li>
-Check the PS screen for the date <strong>Paid To</strong>. Code the date after the <strong>Paid To</strong> date in the <strong>Effect Date&#58;</strong> field. For example, if paid to 22 May, the <strong>Effect Date</strong> must be 23 May. <strong>Note&#58;</strong> if an incorrect date is used, and a part payment is generated, the record will not be able to be transferred until the payment has been made</li>
+Check the <strong>PS</strong> screen for the date <strong>Paid To</strong>. Code the date after the <strong>Paid To</strong> date in the <strong>Effect Date&#58;</strong> field. For example, if paid to 22 May, the <strong>Effect Date</strong> must be 23 May. <strong>Note&#58;</strong> if an incorrect date is used, and a part payment is generated, the record will not be able to be transferred until the payment has been made</li>
 			<li>
 The <strong>Source&#58;</strong> and <strong>DOR&#58;</strong> fields</li>		</ul>
 		<li>
@@ -388,10 +388,10 @@ Schedule transfer on the Start InterEnvironment Transfer (<strong>ITST</strong>)
 <div class="showcont">
 
 
-<p>View the Nominee Link Summary (<strong>NOLS</strong>) screen. If a nominee arrangement is in place check that the arrangement is still suitable while they are outside Australia. <a href="../complaints-privacy-and-foi/104-04090030-01.html">Cease the nominee appointment</a> where the arrangement is no longer suitable.  Customers cannot opt for a cheque payment method if they have a nominee who lives in Australia (this includes court appointed nominees)&#58;</p>
+<p>View the Nominee Link Summary (<strong>NOLS</strong>) screen. If a nominee arrangement is in place check that the arrangement is still suitable while they are outside Australia. <a href="../complaints-privacy-and-foi/104-04090030-01.html">Cease the nominee appointment</a> where the arrangement is no longer suitable.</p>
+
+<p>Use the Payment Destination Update - Record Overseas Direct Deposit Details script to code payment to an Australian or overseas bank account. <strong>Note&#58;</strong> If coding an overseas bank account see <a target="_blank" href="../utils/CodesIndex/Overseas-Bank-Account-Details-OBAD.html">Overseas Bank Account Details (OBAD)</a> for country specific coding requirements, for example; U.S. has specific coding requirements for ‘HOM’ (home address)</p>
 		<ul>		<li>
-Use the Payment Destination Update - Record Overseas Direct Deposit Details script to code payment to an Australian or overseas bank account. <strong>Note&#58;</strong> the customer may need to be paid by cheque temporarily until direct deposit details are provided</li>
-		<li>
 Record the change of address on Address Details (AD) screen. Code address as type '<strong>HOM</strong>' (home address) and delete any '<strong>POS</strong>' (postal address) or '<strong>TEM</strong>' (temporary address)</li>
 		<li>
 Code overseas telephone number if available on the Telephone Details (<strong>TD</strong>) screen</li>
@@ -434,7 +434,7 @@ Update the <a target="_blank" class="modal-link" href="../initial-contact-genera
 
 <p>Where the customer is in receipt of&#58;</p>
 		<ul>		<li>
-<strong>Age Pension (AGE)</strong>, see <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_Specific_issues02_Step01">Step 1 in Table 3</a> </li>
+<strong>Age Pension</strong>, see <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_Specific_issues02_Step01">Step 1 in Table 3</a> </li>
 		<li>
 <strong>Disability Support Pension (DSP)</strong>, see <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step01">Step 1 in Table 4</a> </li>		</ul>
 </div>
@@ -486,7 +486,7 @@ Update the <a target="_blank" class="modal-link" href="../initial-contact-genera
 <p>2</p></td>
 <td>
 
-<p><strong>AGE customers paid a proportional rate</strong> <a title="Read more 10" class="showhead bp03_tbl_Specific_issues02_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Specific_issues02_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Age Pension customers paid a proportional rate</strong> <a title="Read more 10" class="showhead bp03_tbl_Specific_issues02_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Specific_issues02_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -544,6 +544,26 @@ See <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step04">St
 
 <p>‘<strong>YES</strong>’ will be coded in the <strong>Severely Disabled Code&#58;</strong> field if the customer is severely disabled or terminally ill. <strong>Note&#58;</strong> if the customer is saved under the <a href="../australians-overseas/061-01040000-01.html">pre 1 July 2004 portability rules</a> and granted before 12 November 1991 the customer does not have to be severely disabled and this field will be coded with '<strong>UNK</strong>'</p>
 
+<p>Is the <strong>PDI</strong> screen coded with ‘<strong>YES</strong>’ or ‘<strong>UNK</strong>’?</p>
+		<ul>		<li>
+<strong>Yes,</strong> the customer is payable indefinitely under the 'no future work capacity' portability provisions. <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step04">Go to Step 4</a></li>
+		<li>
+<strong>No</strong>, <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step02">go to Step 2</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_01_Step02"></a>
+<p>2</p></td>
+<td>
+
+<p><strong>Check for manifest DSP eligibility</strong> <a title="Read more 12" class="showhead bp03_tbl_01_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
 <p>Check the <strong>Manifest Code&#58;</strong> field on the Medical Conditions Details (<strong>MC</strong>) screen for a manifest medical condition&#58;</p>
 		<ul>		<li>
 TRM</li>
@@ -558,35 +578,13 @@ HV4</li>
 		<li>
 DVA/TPI (Disability Compensation Payment at Special Rate (Totally and Permanently Incapacitated (TPI))</li>
 		</ul>
-<p><strong>Note&#58;</strong> if the <strong>Manifest Code&#58;</strong> field displays the discontinued manifest codes ‘<strong>MNF</strong>’or ‘<strong>APP</strong>”, a No Work Capacity (NWC) assessment is required to determine if the customer has a current manifest medical condition.</p>
+<p><strong>Note&#58;</strong> if the <strong>Manifest Code&#58;</strong> field has either of the discontinued manifest codes ‘<strong>MNF</strong>’or ‘<strong>APP</strong>', do a No Work Capacity (NWC) assessment to determine if the customer has a current manifest medical condition.</p>
 
-<p>Is the <strong>PDI</strong> screen coded with ‘<strong>YES</strong>’ or ‘<strong>UNK</strong>’ and/or is the <strong>MC</strong> screen coded with a manifest code?</p>
+<p>Is the <strong>MC</strong> screen coded with a current manifest code?</p>
 		<ul>		<li>
-<strong>Yes,</strong> the customer is payable indefinitely under the 'no future work capacity' portability provisions. <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step02">Go to Step 2</a></li>
+<strong>Yes</strong>, <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step03">go to Step 3</a></li>
 		<li>
-<strong>No</strong>, <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step03">go to Step 3</a></li>		</ul>
-</div>
-
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp03_tbl_01_Step02"></a>
-<p>2</p></td>
-<td>
-
-<p><strong>Check where continuing inability to work/blindness occurred</strong> <a title="Read more 12" class="showhead bp03_tbl_01_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
-<div class="showcont">
-
-
-<p>If <strong>CITW/Blind Residence&#58;</strong> field is coded with&#58;</p>
-		<ul>		<li>
-‘<strong>AUS</strong>’ the inability to work or blindness occurred in Australia, the payment will not be proportional.  Advise the customer of this.  <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step04">Go to Step 4</a></li>
-		<li>
-‘<strong>OVE</strong>’ the inability occurred overseas, the payment will be proportional.  Advise the customer of this.  <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step04">Go to Step 4</a></li>
-		<li>
-‘<strong>NOT</strong>’ if the residence of the customer when the inability occurred has not yet been assessed.  <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step03">Go to Step 3</a>.</li>		</ul>
+<strong>No</strong>, <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step05">go to Step 5</a></li>		</ul>
 </div>
 
 
@@ -598,23 +596,35 @@ DVA/TPI (Disability Compensation Payment at Special Rate (Totally and Permanentl
 <p>3</p></td>
 <td>
 
-<p><strong>Does the customer wish to discuss undergoing the no work capacity assessment?</strong> <a title="Read more 13" class="showhead bp03_tbl_01_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer is manifestly eligible for DSP</strong> <a title="Read more 13" class="showhead bp03_tbl_01_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>To receive indefinite portability under the NWC provisions, a customer must have ‘No future work capacity'.</p>
+<p>A decision that the customer is eligible for indefinite portability must be made before the customer departs Australia. If the customer contacts after they have departed, and did not contact before departure, they cannot be retrospectively approved for indefinite portability for that departure.</p>
 
-<p>The NWC assessment will usually require completion of a medical review, which will include a medical report by the customer's treating doctor and a Job Capacity Assessment (JCA) that must be conducted <strong>before</strong> the customer departs Australia.</p>
-
-<p>Customers who want to test their eligibility under the ‘No future work capacity' portability provisions, must be referred to CIS. </p>
-
-<p>Does the customer wish to discuss undergoing an NWC assessment?</p>
+<p>A NWC portability assessment is considered to have occurred (and the customer is eligible for indefinite portability) if either of the following happens <strong>before</strong> departure&#58;</p>
 		<ul>		<li>
-<strong>Yes,</strong> and you are a Service Officer in CIS, see <a href="../people-with-disability/008-03120040-03.html">Assessment for Disability Support Pension (DSP) customers going overseas under the no future work capacity provisions</a></li>
+the Portability Script is run, or</li>
 		<li>
-<strong>Yes,</strong> and you are not a Service Officer in CIS, <a target="_blank" href="../utils/ContactsList/Contacts-List.html">transfer the call to CIS</a>.  If the customer cannot wait, give them the phone number for CIS so they can call back at a convenient time.</li>
+the customer advises of the departure (normally done online through the Travel Outside Australia Online Service)</li>
+		</ul>
+<p>If a customer only contacts the agency <strong>after</strong> they have departed Australia (including when they have returned to Australia), they&#58;</p>
+		<ul>		<li>
+are not eligible for indefinite portability for that departure</li>
 		<li>
-<strong>No,</strong> <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step04">go to Step 4</a></li>		</ul>
+need to contact before their next departure in order for staff to assess them for indefinite portability</li>
+		</ul>
+<p><strong>Note&#58;</strong> the NWC decision only has to be made once. Once the decision has been made, it applies to all future departures.</p>
+
+<p>Is ‘<strong>NWC</strong>’ coded on the <strong>RSCD</strong> screen and was this coded before this departure </p>
+
+<p><strong>or </strong></p>
+
+<p>it has been coded since departure <strong>because</strong> the customer contacted before departure?</p>
+		<ul>		<li>
+<strong>Yes</strong>, the customer is entitled to indefinite portability. <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step04">Go to Step 4</a>.</li>
+		<li>
+<strong>No</strong>, the customer is not eligible for indefinite portability for this departure. For more information see <a href="../people-with-disability/008-03120040-03.html">Assessment for Disability Support Pension (DSP) customers going overseas under the no future work capacity provisions</a>. Procedure ends here.</li>		</ul>
 </div>
 
 
@@ -626,7 +636,59 @@ DVA/TPI (Disability Compensation Payment at Special Rate (Totally and Permanentl
 <p>4</p></td>
 <td>
 
-<p><strong>Complete procedure and restore payment</strong> <a title="Read more 14" class="showhead bp03_tbl_01_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check where continuing inability to work/blindness occurred</strong> <a title="Read more 14" class="showhead bp03_tbl_01_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>If <strong>CITW/Blind Residence&#58;</strong> field is coded with&#58;</p>
+		<ul>		<li>
+‘<strong>AUS</strong>’ the inability to work or blindness occurred in Australia, the payment will not be proportional.  Advise the customer of this. <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step06">Go to Step 6</a></li>
+		<li>
+‘<strong>OVE</strong>’ the inability occurred overseas, the payment will be proportional. Advise the customer of this. <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step06">Go to Step 6</a></li>
+		<li>
+‘<strong>NOT</strong>’ if the residence of the customer when the inability occurred has not yet been assessed. <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step05">Go to Step 5</a>.</li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_01_Step05"></a>
+<p>5</p></td>
+<td>
+
+<p><strong>Does the customer wish to discuss undergoing the no work capacity (NWC) assessment?</strong> <a title="Read more 15" class="showhead bp03_tbl_01_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>To receive indefinite portability under the NWC provisions, a customer must have ‘No future work capacity'.</p>
+
+<p>The NWC assessment will usually require completion of a medical review, which will include a medical report by the customer's treating doctor and a Job Capacity Assessment (JCA) that must be conducted <strong>before</strong> the customer departs Australia.</p>
+
+<p>Customers who want to test their eligibility under the ‘No future work capacity' portability provisions, must be referred to CIS. </p>
+
+<p>Does the customer wish to discuss undergoing an NWC assessment?</p>
+		<ul>		<li>
+<strong>Yes,</strong> and if </li>
+			<ul>			<li>
+a Service Officer in CIS, see <a href="../people-with-disability/008-03120040-03.html">Assessment for Disability Support Pension (DSP) customers going overseas under the no future work capacity provisions</a></li>
+			<li>
+not a Service Officer in CIS, <a target="_blank" href="../utils/ContactsList/Contacts-List.html">transfer the call to CIS</a>. If the customer cannot wait, give them the phone number for CIS so they can call back at a convenient time.</li>		</ul>
+		<li>
+<strong>No,</strong> <a href="../australians-overseas/061-02020000-03.html#bp03_tbl_01_Step06">go to Step 6</a></li>		</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_01_Step06"></a>
+<p>6</p></td>
+<td>
+
+<p><strong>Complete procedure and restore payment</strong> <a title="Read more 16" class="showhead bp03_tbl_01_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_01_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -646,11 +708,11 @@ Leave the <strong>Reason</strong> and <strong>Effect Date</strong> fields blank.
 		<li>
 Go to the Assessment Results (<strong>AR</strong>) screen</li>
 		<li>
-Check Payment Summary (<strong>PS</strong>) screen. Ensure amount of arrears and destination are correct. <strong>Note&#58;</strong> the arrears <strong>will</strong> be sent to the destination on the <strong>PS</strong> screen once the activity is finalised. There is no way to alter the destination after finalising the activity so ensure it is correct <strong>before</strong> finalising</li>
+Check Payment Summary (<strong>PS</strong>) screen. Check amount of arrears and destination are correct. <strong>Note&#58;</strong> the arrears <strong>will</strong> be sent to the destination on the <strong>PS</strong> screen once the activity is finalised. There is no way to alter the destination after finalising the activity so make sure it is correct <strong>before</strong> finalising. To avoid rejected payments of amounts below the minimum banking limit of USD25.00, arrears less than AUD50.00 should be inhibited and released with next regular 4-weekly payment.</li>
 		<li>
-Finalise the activity on the <strong>AR</strong> screen after ensuring all the correct action has occurred. Inhibit the advice if desired</li>
+Finalise the activity on the <strong>AR</strong> screen after checking that all the correct action has occurred. Inhibit the advice if desired</li>
 		<li>
-Send an 'Information for Pensioners living outside Australia' (XOB075) letter. If the customer is receiving cheque payments temporarily pending opening an overseas bank account, ensure the AUS178 country specific bank form is also issued</li>
+Send an 'Information for Pensioners living outside Australia' (XOB075) letter. Make sure the AUS178 country specific bank form is also issued to enable payment to an overseas bank account</li>
 		<li>
 Record details in a <strong>DOC</strong>. <strong>Note&#58;</strong> if income or assets have been updated or any other changes have been made to pension details this will also need to be recorded in a separate <strong>DOC</strong></li>		</ul>
 </div>
@@ -682,13 +744,13 @@ Record details in a <strong>DOC</strong>. <strong>Note&#58;</strong> if income o
 <p>1</p></td>
 <td>
 
-<p><strong>A CIS Service Officer has been allocated a ‘CIS to assess long term overseas entitlement’ review </strong> <a title="Read more 15" class="showhead bp03_tbl_Actioning_long_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>A CIS Service Officer has been allocated a ‘CIS to assess long term overseas entitlement’ review </strong> <a title="Read more 17" class="showhead bp03_tbl_Actioning_long_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
 Check the Immigration Advised Movements (<strong>RSIM</strong>) screen to see if the customer is still outside of Australia.  </li>
 		<li>
-If the RSIM screen shows the customer has not returned to Australia, refresh the <a href="../initial-contact-general/106-06020030-01.html">Immigration Datalink</a> on the Immigration Enquiry (RSIMME) screen to ensure the most current information is on the record</li>
+If the <strong>RSIM</strong> screen shows the customer has not returned to Australia, refresh the <a href="../initial-contact-general/106-06020030-01.html">Immigration Datalink</a> on the Immigration Enquiry (<strong>RSIMME</strong>) screen to ensure the most current information is on the record</li>
 		</ul>
 <p>Is the customer still outside Australia?</p>
 		<ul>		<li>
@@ -706,27 +768,27 @@ If the RSIM screen shows the customer has not returned to Australia, refresh the
 <p>2</p></td>
 <td>
 
-<p><strong>Check the customer’s rate of payment</strong> <a title="Read more 16" class="showhead bp03_tbl_Actioning_long_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check the customer’s rate of payment</strong> <a title="Read more 18" class="showhead bp03_tbl_Actioning_long_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>Check the customer’s record to determine if they are currently receiving the correct rate of payment.</p>
 
-<p>This includes checking&#58;</p>
+<p>This includes checking the&#58;</p>
 		<ul>		<li>
-the Australian Working Life Residence (AWLR), and </li>
+Australian Working Life Residence (<strong>AWLR</strong>) screen </li>
 		<li>
-Additional Residence Details (ARD) screens </li>
+Additional Residence Details (<strong>ARD</strong>) screen</li>
 		</ul>
 <p>This will ensure the Australian Working Life figure matches for customers paid according to their own AWLR. </p>
 
 <p>Staff must correct the figure so that the customer is receiving the correct proportional rate if the&#58;</p>
 		<ul>		<li>
-figure on the AWLR screen does not match the figure on the ARD screen, and</li>
+figure on the <strong>AWLR</strong> screen does not match the figure on the <strong>ARD</strong> screen, and</li>
 		<li>
 customer cannot use their partner or late partner’s WLR</li>
 		</ul>
-<p>If the customer has less than the maximum amount of AWLR, check the Pensions Rate Calculation (PRC) screen to ensure that the payment is being proportionalised.</p>
+<p>If the customer has less than the maximum amount of AWLR, check the Pensions Rate Calculation (<strong>PRC</strong>) screen to ensure that the payment is being proportionalised.</p>
 
 <p>Correct any issues identified, if possible.</p>
 
@@ -746,7 +808,7 @@ customer cannot use their partner or late partner’s WLR</li>
 <p>3</p></td>
 <td>
 
-<p><strong>Check for previously requested information</strong> <a title="Read more 17" class="showhead bp03_tbl_Actioning_long_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check for previously requested information</strong> <a title="Read more 19" class="showhead bp03_tbl_Actioning_long_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -770,7 +832,7 @@ customer cannot use their partner or late partner’s WLR</li>
 <p>4</p></td>
 <td>
 
-<p><strong>Request additional information from the customer</strong> <a title="Read more 18" class="showhead bp03_tbl_Actioning_long_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Request additional information from the customer</strong> <a title="Read more 20" class="showhead bp03_tbl_Actioning_long_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -792,9 +854,9 @@ which country are they living in, and</li>
 			<li>
 what is their overseas address and phone number</li>
 			</ul>			</ul>
-<p><strong>Note</strong>&#58; staff must send the letter to the current postal address on the ADS screen.  If the customer has not already provided an overseas address, the letter will be sent to their address in Australia.  If they have provided an overseas address, the letter should be sent to that address.</p>
+<p><strong>Note</strong>&#58; staff must send the letter to the current postal address on the <strong>ADS</strong> screen.  If the customer has not already provided an overseas address, the letter will be sent to their address in Australia. If they have provided an overseas address, the letter should be sent to that address.</p>
 
-<p>Staff should place the Manual Follow Up (MFU) on hold for 42 days for return of the questionnaire.  When the MFU is due it will be allocated to the next available officer for actioning.</p>
+<p>Staff should place the Manual Follow Up (MFU) on hold for 42 days for return of the questionnaire. When the MFU is due it will be allocated to the next available officer for actioning.</p>
 
 <p>Procedure ends here.</p>
 </div>
@@ -808,7 +870,7 @@ what is their overseas address and phone number</li>
 <p>5</p></td>
 <td>
 
-<p><strong>Finalise review</strong> <a title="Read more 19" class="showhead bp03_tbl_Actioning_long_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Finalise review</strong> <a title="Read more 21" class="showhead bp03_tbl_Actioning_long_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Actioning_long_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

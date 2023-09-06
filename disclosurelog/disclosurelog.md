@@ -196,6 +196,37 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 28 August 2023                    | Documents relating to (LEX        |
+|                                   | 74075):                           |
+|                                   |                                   |
+|                                   | -   Conduct and Behaviour Policy  |
+|                                   | -   Leadership Behaviours.        |
+|                                   |                                   |
+|                                   | 2 document released in full. The  |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: N/A\     |
+|                                   | **Exemptions**: N/A               |
++-----------------------------------+-----------------------------------+
+| 21 August 2023                    | Correspondence and Agreement      |
+|                                   | between the Aboriginal Community  |
+|                                   | Benefits Fund and Centrelink      |
+|                                   | regarding the Fund's application  |
+|                                   | for the Centrepay deduction       |
+|                                   | program (LEX 74605).              |
+|                                   |                                   |
+|                                   | 2 document released in part. The  |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47F(1), 47E(d), and 47G\          |
+|                                   | **Exemptions**: Sections 47F(1),  |
+|                                   | 47E(d), and 47G                   |
++-----------------------------------+-----------------------------------+
 | 17 August 2023                    | In relation to the COVID-19       |
 |                                   | Vaccine: Type of COVID-19 vaccine |
 |                                   | used in Australia, number of      |
@@ -3527,7 +3558,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 31 August 2023.
+Page last updated: 6 September 2023.
 :::
 :::
 
@@ -3544,7 +3575,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 5 September 2023 from
+This information was printed 6 September 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
