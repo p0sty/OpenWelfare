@@ -196,19 +196,60 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 29 August 2023                    | Documents relating to (LEX        |
+|                                   | 74352):                           |
+|                                   |                                   |
+|                                   | -   Form AUS222.2010              |
+|                                   | -   Operational Blueprint:        |
+|                                   |     Assessment for Disability     |
+|                                   |     Support Pension (DSP)         |
+|                                   |     Customers Going Overseas      |
+|                                   |     Under the No Future work      |
+|                                   |     capacity provisions           |
+|                                   |     008-03120040                  |
+|                                   | -   Operational Blueprint:        |
+|                                   |     Essentials to JCA Report      |
+|                                   |     Writing DSP portability       |
+|                                   |     review and foreign pension.   |
+|                                   |                                   |
+|                                   | 1 document released in full and 2 |
+|                                   | documents released in part. The   |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
++-----------------------------------+-----------------------------------+
 | 28 August 2023                    | Documents relating to (LEX        |
 |                                   | 74075):                           |
 |                                   |                                   |
 |                                   | -   Conduct and Behaviour Policy  |
 |                                   | -   Leadership Behaviours.        |
 |                                   |                                   |
-|                                   | 2 document released in full. The  |
+|                                   | 2 documents released in full. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
 |                                   |                                   |
 |                                   | **Sections of the Act**: N/A\     |
 |                                   | **Exemptions**: N/A               |
++-----------------------------------+-----------------------------------+
+| 22 August 2023                    | Operational Blueprint document    |
+|                                   | (LEX 74770):                      |
+|                                   |                                   |
+|                                   | -   Identifying a staff member    |
+|                                   |     104-04070050.                 |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 21 August 2023                    | Correspondence and Agreement      |
 |                                   | between the Aboriginal Community  |
@@ -217,7 +258,7 @@ after 12 months unless the information has enduring public value.
 |                                   | for the Centrepay deduction       |
 |                                   | program (LEX 74605).              |
 |                                   |                                   |
-|                                   | 2 document released in part. The  |
+|                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -236,7 +277,7 @@ after 12 months unless the information has enduring public value.
 |                                   | showing the amount of each        |
 |                                   | payment (LEX 74496).              |
 |                                   |                                   |
-|                                   | 2 document released in part. The  |
+|                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -245,20 +286,24 @@ after 12 months unless the information has enduring public value.
 |                                   | 22\                               |
 |                                   | **Exemptions**: N/A               |
 +-----------------------------------+-----------------------------------+
-| 4 August 2023                     | Operational Blueprints Member of  |
-|                                   | a Couple (MoC) and Separated      |
-|                                   | under one roof (SUOR) assessments |
-|                                   | 106-07120010, and Confirming the  |
-|                                   | need for a Member of a Couple     |
-|                                   | (MoC) assessment 106-19071608 and |
-|                                   | document outlining Authorised     |
-|                                   | Review Officers training in       |
-|                                   | disability discrimination,        |
-|                                   | reasonable adjustments and        |
-|                                   | procedural fairness (LEX 73988).  |
+| 4 August 2023                     | Operational Blueprint documents   |
+|                                   | (LEX 73988):                      |
 |                                   |                                   |
-|                                   | 2 document released in part and 1 |
-|                                   | document released in full. The    |
+|                                   | -   Member of a Couple (MoC) and  |
+|                                   |     Separated under one roof      |
+|                                   |     (SUOR) assessments            |
+|                                   |     106-07120010                  |
+|                                   | -   Confirming the need for a     |
+|                                   |     Member of a Couple (MoC)      |
+|                                   |     assessment 106-19071608       |
+|                                   | -   document outlining Authorised |
+|                                   |     Review Officers training in   |
+|                                   |     disability discrimination,    |
+|                                   |     reasonable adjustments and    |
+|                                   |     procedural fairness.          |
+|                                   |                                   |
+|                                   | 2 documents released in part and  |
+|                                   | 1 document released in full. The  |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -283,7 +328,7 @@ after 12 months unless the information has enduring public value.
 |                                   |     Legalise Cannabis Party       |
 |                                   |     (NSW).                        |
 |                                   |                                   |
-|                                   | 3 document released in part. The  |
+|                                   | 3 documents released in part. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -293,15 +338,17 @@ after 12 months unless the information has enduring public value.
 |                                   | **Exemptions**: Sections 47E(d),  |
 |                                   | 47F(1) and 47G                    |
 +-----------------------------------+-----------------------------------+
-| 13 July 2023                      | Operational Blueprints            |
-|                                   | Administrative Appeals Tribunal   |
-|                                   | (AAT) 109-03030000, and           |
-|                                   | Requesting non-disclosure of      |
-|                                   | information during an             |
-|                                   | Administrative Appeals Tribunal   |
-|                                   | (AAT) first review (LEX 73830).   |
+| 13 July 2023                      | Operational Blueprint documents   |
+|                                   | (LEX 73830):                      |
 |                                   |                                   |
-|                                   | 2 document released in part. The  |
+|                                   | -   Administrative Appeals        |
+|                                   |     Tribunal (AAT) 109-03030000   |
+|                                   | -   Requesting non-disclosure of  |
+|                                   |     information during an         |
+|                                   |     Administrative Appeals        |
+|                                   |     Tribunal (AAT) first review.  |
+|                                   |                                   |
+|                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -726,7 +773,7 @@ after 12 months unless the information has enduring public value.
 |                                   | 2017-2019 (spreadsheet·data only) |
 |                                   | (LEX 71668).                      |
 |                                   |                                   |
-|                                   | 5 document released in full. The  |
+|                                   | 5 documents released in full. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -803,7 +850,7 @@ after 12 months unless the information has enduring public value.
 |                                   | (Cheaper Childcare) Act 2022 (LEX |
 |                                   | 71589).                           |
 |                                   |                                   |
-|                                   | 3 document released in part. The  |
+|                                   | 3 documents released in part. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -3558,7 +3605,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 6 September 2023.
+Page last updated: 7 September 2023.
 :::
 :::
 
@@ -3575,7 +3622,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 6 September 2023 from
+This information was printed 7 September 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
