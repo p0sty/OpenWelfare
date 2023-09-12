@@ -228,7 +228,7 @@ $(document).ready(function() {
 <div class="twisty">
 	
 <a class="anchor" name="bp05_L3TT_Examples_of_key"></a>
-<h3 class="collapsible" id="bp05_L3TT_Examples_of_key">Examples of item selection for derived fee item 30001</h3>
+<h2 id="bp05_L3TT_Examples_of_key">Examples of item selection for derived fee item 30001</h2>
 
 	<div class="collapsible_container">
 		<div class="block">
@@ -270,7 +270,7 @@ Item C with a schedule fee of $100</li>
 		<li>
 Item D with a schedule fee of $500</li>
 		</ul>
-<p>The operation was abandoned due to equipment failure. The patient had been positioned on the operation table, anaesthetised and draped, however none of the procedures had started.</p>
+<p>The operation was abandoned due to equipment failure. The patient had been positioned on the operation table, anaesthetised and draped, however none of the operations had started. This meets the requirements that the procedure had commenced.</p>
 
 <p>The items should be claimed and keyed in the following order&#58;</p>
 		<ul>		<li>
@@ -300,11 +300,11 @@ Surgical item E (claimed with text or note ‘completed’)</li>
 		<li>
 Surgical item F (claimed with text or note ‘completed’)</li>
 		<li>
-Surgical item G (claimed with text or note ‘completed’)</li>
+Surgical item G (claimed with text or note ‘abandoned’)</li>
 		<li>
 Item 30001</li>
 		<li>
-Surgical item H (claimed with text or note ‘completed’)</li>
+Surgical item H (claimed with text or note ‘abandoned’)</li>
 		<li>
 Item 30001</li>		</ul>
 
@@ -316,9 +316,9 @@ Item 30001</li>		</ul>
 <p>Example D</p></td>
 <td>
 
-<p>A manual claim has been received with a notional charge and multiple surgical items&#58;</p>
+<p>A manual inpatient claim has been received with a notional charge and multiple surgical items&#58;</p>
 		<ul>		<li>
-Total charge $5000.00</li>
+Total charge $5,000.00</li>
 		<li>
 Surgical item I - claimed with text or note “completed”</li>
 		<li>
@@ -332,7 +332,7 @@ Surgical item L - claimed with text or note “abandoned”</li>
 		<li>
 Item 30001</li>
 		</ul>
-<p>If the claim is keyed with $5000.00 as charge for the first item on the claims (item I) and $0.00 as the charge for the other items - the system returns the message 5-REQ CHG. </p>
+<p>If the claim is keyed with $5,000.00 as charge for the first item on the claims (item I) and $0.00 as the charge for the other items - the system returns the message 5-REQ CHG. </p>
 
 <p></p>
 
@@ -348,11 +348,13 @@ Item 30001</li>
 		<ul>		<li>
 Key <strong>0</strong> against the 30001 item(s). The system will automatically add reason code 158 to any item 30001</li>
 		<li>
-Add the schedule fees then take that total from the $5000.00 notional charge and add the balance to the item with the highest schedule fee</li>
+Add the schedule fees then take that total from the $5,000.00 notional charge and add the balance to the item with the highest schedule fee</li>
 		<li>
-After following other return messages, the mainframe system then shows the total charge up the top right of the screen as $5000.00</li>
+After following other return messages, the mainframe system then shows the total charge up the top right of the screen as $5,000.00</li>
 		<li>
-Claim can be paid with P to Pay [Enter]</li>		</ul>
+Claim can be paid with P to Pay [Enter]</li>
+		</ul>
+<p><strong>Note&#58;</strong> for outpatient services, manual patient claims require an invoice/account from the practice displaying the individual charges raised against each item. This ensures the patient’s Extended Medicare Safety Net (EMSN) can be applied correctly.</p>
 
 <p></p></td>
 </tr>
@@ -367,7 +369,7 @@ Claim can be paid with P to Pay [Enter]</li>		</ul>
 <div class="twisty">
 	
 <a class="anchor" name="bp05_L3TT_Item_selection_"></a>
-<h3 class="collapsible" id="bp05_L3TT_Item_selection_">Examples of item selection for assistant items 51300 and 51303</h3>
+<h2 id="bp05_L3TT_Item_selection_">Examples of item selection for assistant items 51300 and 51303</h2>
 
 	<div class="collapsible_container">
 		<div class="block">
@@ -399,7 +401,7 @@ item N with a schedule fee of $50</li>
 		<ul>		<li>
 Item M (Assist) - $300 @50% = $150</li>
 		<li>
-Item N  – because Assist is not in the item description = $0</li>
+Item N – because (Assist) is not in the item description = $0</li>
 		</ul>
 <p>Item selected is 51300 as the fee is below the threshold specified in the item descriptor.</p>
 
@@ -413,13 +415,13 @@ Item N  – because Assist is not in the item description = $0</li>
 
 <p>Dr V assisted at a surgical operation made up of 4 Group T8 items.</p>
 
-<p>The first 2 procedures (item O and item P) were completed in full. The third procedure (item Q) was discontinued on medical grounds, and the fourth procedure (item R) was therefore abandoned. </p>
+<p>The first 2 procedures (item O and item P) were completed in full. The third procedure (item Q) was discontinued on medical grounds, and the fourth procedure (item R) was therefore abandoned. All item descriptions for procedures O, Q and R include ‘(Assist)’.</p>
 
 <p>The assistant fee is calculated below&#58;</p>
 		<ul>		<li>
 Item O (Assist) - $300 @100% (completed) and @100% (multi op) = $300</li>
 		<li>
-Item P - Assist is not in the item description, therefore = $0</li>
+Item P - (Assist) is not in the item description, therefore = $0</li>
 		<li>
 Item Q (Assist) - $200 @ 50% (abandoned) and @50% (multi op) = $50</li>
 		<li>
@@ -439,15 +441,15 @@ Total fee = $368.75</li>
 
 <p>Dr T assisted at a surgical operation made up of 2 Group T8 items&#58;</p>
 		<ul>		<li>
-item S (Assist) with a schedule fee of $2000</li>
+item S (Assist) with a schedule fee of $2,000</li>
 		<li>
-item R (assist) with a schedule fee of $100</li>
+item R (Assist) with a schedule fee of $100</li>
 		</ul>
 <p>The operation was abandoned due to equipment failure. The patient had been positioned on the operation table, anaesthetised and draped however none of the procedures had started.</p>
 
 <p>The assistant fee is calculated below&#58;</p>
 		<ul>		<li>
-Item S (Assist) - $2000 @50% = $1000</li>
+Item S (Assist) - $2,000 @50% = $1,000</li>
 		<li>
 Item T (Assist) – because the procedure is abandoned before an item number was commenced only the item with the highest schedule fee applies = $0</li>
 		</ul>

@@ -155,6 +155,10 @@ Table 1
 |                                   | -   study load                    |
 |                                   | -   start date                    |
 |                                   | -   end date                      |
+|                                   | -   STARTUP-HELP Loan             |
+|                                   |     entitlement - if the customer |
+|                                   |     is studying a Startup Year    |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | Where the customer does not have  |
 |                                   | full course details, advise them  |
@@ -192,7 +196,7 @@ Table 1
 |                                   | No, to code course details:       |
 |                                   |                                   |
 |                                   | -   for ABSTUDY, see Table 2      |
-|                                   | -   for EPA see Table 3           |
+|                                   | -   for ABSTUDY PES see Table 3   |
 +-----------------------------------+-----------------------------------+
 
 Coding education details for ABSTUDY
@@ -233,9 +237,12 @@ Table 2
 |                                   | -   Student Start Date            |
 |                                   | -   Student End Date              |
 |                                   | -   Allowable Time End Date       |
+|                                   | -   STARTUP-HELP Loan Ind - if    |
+|                                   |     the student is studying a     |
+|                                   |     Startup Year Course           |
 |                                   |                                   |
 |                                   | For Testing and Assessment, go to |
-|                                   | Step 18. For all other students   |
+|                                   | Step 19. For all other students   |
 |                                   | go to Step 2                      |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Participation Status Event Date   |
@@ -438,6 +445,38 @@ Table 2
 |                                   | component approved, code the      |
 |                                   | Course Level: field with the      |
 |                                   | lower level.                      |
+|                                   |                                   |
+|                                   | Combined Course with Startup Year |
+|                                   | Course in final year: Students    |
+|                                   | who enrol in a combined course    |
+|                                   | that includes a final year        |
+|                                   | Startup Year Course must provide  |
+|                                   | evidence they have been selected  |
+|                                   | for a STARTUP-HELP loan prior to  |
+|                                   | commencing the Startup Year       |
+|                                   | Course.                           |
+|                                   |                                   |
+|                                   | As students will not be selected  |
+|                                   | for a STARTUP-HELP loan place     |
+|                                   | until the end of their degree,    |
+|                                   | only record the undergraduate     |
+|                                   | component of the combined course  |
+|                                   | on the EDC screen in the first    |
+|                                   | instance.                         |
+|                                   |                                   |
+|                                   | The student will be issued with a |
+|                                   | Course End Date review at the     |
+|                                   | time of completion of their       |
+|                                   | degree. Students must advise if   |
+|                                   | they are undertaking the Startup  |
+|                                   | Year Course component of the      |
+|                                   | Combined Degree. They will be     |
+|                                   | requested to provide evidence     |
+|                                   | they have been selected for a     |
+|                                   | STARTUP-HELP loan by their higher |
+|                                   | education provider. Record the    |
+|                                   | Startup Year Course on the EDC    |
+|                                   | screen as a separate entry.       |
 |                                   |                                   |
 |                                   | Honours: Code HGB where a student |
 |                                   | is undertaking standalone Honours |
@@ -857,7 +896,21 @@ Table 2
 |                                   |     is, the day before their      |
 |                                   |     study load reduced            |
 +-----------------------------------+-----------------------------------+
-| 11                                | Allowable Time End Date + Read    |
+| 11                                | Startup Year Course + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is the student studying a Startup |
+|                                   | Year Course?                      |
+|                                   |                                   |
+|                                   | -   Yes, code the students        |
+|                                   |     STARTUP-HELP loan status in   |
+|                                   |     the STARTUP-HELP Loan Ind:    |
+|                                   |     field. See Startup Year       |
+|                                   |     Courses for further           |
+|                                   |     information. Go to Step 12    |
+|                                   | -   No, go to Step 12             |
++-----------------------------------+-----------------------------------+
+| 12                                | Allowable Time End Date + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | The Allowable Time End Date:      |
@@ -916,13 +969,13 @@ Table 2
 |                                   | Yes:                              |
 |                                   |                                   |
 |                                   | -   For New claim coding, go to   |
-|                                   |     Step 12                       |
+|                                   |     Step 13                       |
 |                                   | -   For Non New claim coding, go  |
-|                                   |     to Step 13                    |
+|                                   |     to Step 14                    |
 |                                   |                                   |
-|                                   | No, go to Step 14                 |
+|                                   | No, go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 12                                | New claim, Exceeded Allowable     |
+| 13                                | New claim, Exceeded Allowable     |
 |                                   | Time + Read more ...              |
 |                                   |                                   |
 |                                   | An ABSTUDY student’s eligibility  |
@@ -967,9 +1020,9 @@ Table 2
 |                                   |     the year which allowable time |
 |                                   |     has been met after that years |
 |                                   |     Institution start date        |
-|                                   | -   go to Step 14                 |
+|                                   | -   go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 13                                | Non New claim, Exceeded Allowable |
+| 14                                | Non New claim, Exceeded Allowable |
 |                                   | Time + Read more ...              |
 |                                   |                                   |
 |                                   | An ABSTUDY student’s eligibility  |
@@ -1019,9 +1072,9 @@ Table 2
 |                                   |     the year which allowable time |
 |                                   |     has been met after that years |
 |                                   |     Institution start date        |
-|                                   | -   go to Step 14                 |
+|                                   | -   go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 14                                | Coding course details + Read more |
+| 15                                | Coding course details + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Only use the Comments field to    |
@@ -1048,7 +1101,7 @@ Table 2
 |                                   | service. Any additional comments  |
 |                                   | must be recorded in a DOC.        |
 +-----------------------------------+-----------------------------------+
-| 15                                | Coding the Footer Details + Read  |
+| 16                                | Coding the Footer Details + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If required, in Customer First,   |
@@ -1063,17 +1116,17 @@ Table 2
 |                                   |     key I to insert the           |
 |                                   |     information recorded          |
 +-----------------------------------+-----------------------------------+
-| 16                                | Combined course with a Masters    |
+| 17                                | Combined course with a Masters    |
 |                                   | component + Read more ...         |
 |                                   |                                   |
 |                                   | Is the student undertaking a      |
 |                                   | combined course that has an       |
 |                                   | approved Masters component?       |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 17            |
+|                                   | -   Yes, go to Step 18            |
 |                                   | -   No, see Step 1 in Table 4     |
 +-----------------------------------+-----------------------------------+
-| 17                                | Coding the EDC screen for a       |
+| 18                                | Coding the EDC screen for a       |
 |                                   | combined course with approved     |
 |                                   | Masters/Doctorate component for   |
 |                                   | ABSTUDY only + Read more ...      |
@@ -1182,7 +1235,7 @@ Table 2
 |                                   |                                   |
 |                                   | See Step 1 in Table 4.            |
 +-----------------------------------+-----------------------------------+
-| 18                                | Testing and Assessment + Read     |
+| 19                                | Testing and Assessment + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | For ABSTUDY customers claiming    |
@@ -1276,6 +1329,9 @@ Table 3
 |                                   | -   Student Start Date            |
 |                                   | -   Student End Date              |
 |                                   | -   Allowable Time End Date       |
+|                                   | -   STARTUP-HELP Loan Ind - if    |
+|                                   |     the student is studying a     |
+|                                   |     Startup Year Course           |
 |                                   |                                   |
 |                                   | For information in coding these   |
 |                                   | fields go to Step 2.              |
@@ -1446,6 +1502,38 @@ Table 3
 |                                   | component approved, code the      |
 |                                   | Course Level: field with the      |
 |                                   | lower level.                      |
+|                                   |                                   |
+|                                   | Combined Course with Startup Year |
+|                                   | Course in final year: Students    |
+|                                   | who enrol in a combined course    |
+|                                   | that includes a final year        |
+|                                   | Startup Year Course must provide  |
+|                                   | evidence they have been selected  |
+|                                   | for a STARTUP-HELP loan prior to  |
+|                                   | commencing the Startup Year       |
+|                                   | Course.                           |
+|                                   |                                   |
+|                                   | As students will not be selected  |
+|                                   | for a STARTUP-HELP loan place     |
+|                                   | until the end of their degree,    |
+|                                   | only record the undergraduate     |
+|                                   | component of the combined course  |
+|                                   | on the EDC screen in the first    |
+|                                   | instance.                         |
+|                                   |                                   |
+|                                   | The student will be issued with a |
+|                                   | Course End Date review at the     |
+|                                   | time of completion of their       |
+|                                   | degree. Students must advise if   |
+|                                   | they are undertaking the Startup  |
+|                                   | Year Course component of the      |
+|                                   | Combined Degree. They will be     |
+|                                   | requested to provide evidence     |
+|                                   | they have been selected for a     |
+|                                   | STARTUP-HELP loan by their higher |
+|                                   | education provider. Record the    |
+|                                   | Startup Year Course on the EDC    |
+|                                   | screen as a separate entry.       |
 |                                   |                                   |
 |                                   | Honours: Code HGB where a student |
 |                                   | is undertaking standalone Honours |
@@ -1874,7 +1962,21 @@ Table 3
 |                                   |     is, the day before their      |
 |                                   |     study load reduced            |
 +-----------------------------------+-----------------------------------+
-| 11                                | Allowable Time End Date + Read    |
+| 11                                | Startup Year Course + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is the student studying a Startup |
+|                                   | Year Course?                      |
+|                                   |                                   |
+|                                   | -   Yes, code the students        |
+|                                   |     STARTUP-HELP loan status in   |
+|                                   |     the STARTUP-HELP Loan Ind:    |
+|                                   |     field. See Startup Year       |
+|                                   |     Courses for further           |
+|                                   |     information. Go to Step 12    |
+|                                   | -   No, go to Step 12             |
++-----------------------------------+-----------------------------------+
+| 12                                | Allowable Time End Date + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | The Allowable Time End Date:      |
@@ -1933,13 +2035,13 @@ Table 3
 |                                   | Yes:                              |
 |                                   |                                   |
 |                                   | -   For New claim coding, go to   |
-|                                   |     step 12                       |
+|                                   |     step 13                       |
 |                                   | -   For Non New claim coding, go  |
-|                                   |     to step 13                    |
+|                                   |     to step 14                    |
 |                                   |                                   |
-|                                   | No, go to Step 14                 |
+|                                   | No, go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 12                                | New claim, Exceeded Allowable     |
+| 13                                | New claim, Exceeded Allowable     |
 |                                   | Time + Read more ...              |
 |                                   |                                   |
 |                                   | An ABSTUDY student’s eligibility  |
@@ -1984,9 +2086,9 @@ Table 3
 |                                   |     the year which allowable time |
 |                                   |     has been met after that years |
 |                                   |     Institution start date        |
-|                                   | -   Go to Step 14                 |
+|                                   | -   Go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 13                                | Non New claim, Exceeded Allowable |
+| 14                                | Non New claim, Exceeded Allowable |
 |                                   | Time + Read more ...              |
 |                                   |                                   |
 |                                   | An ABSTUDY student’s eligibility  |
@@ -2036,9 +2138,9 @@ Table 3
 |                                   |     the year which allowable time |
 |                                   |     has been met after that       |
 |                                   |     year’s Institution start date |
-|                                   | -   Go to Step 14                 |
+|                                   | -   Go to Step 15                 |
 +-----------------------------------+-----------------------------------+
-| 14                                | Coding course details + Read more |
+| 15                                | Coding course details + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Only use the Comments field to    |
@@ -2065,7 +2167,7 @@ Table 3
 |                                   | service. Any additional comments  |
 |                                   | must be recorded in a DOC.        |
 +-----------------------------------+-----------------------------------+
-| 15                                | Coding the Footer Details + Read  |
+| 16                                | Coding the Footer Details + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If required, in Customer First,   |

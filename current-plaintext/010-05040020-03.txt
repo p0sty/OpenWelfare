@@ -414,9 +414,9 @@ Table 1.
 |                                   | Process the PES claim using the   |
 |                                   | manually created SOA Shell        |
 |                                   |                                   |
-|                                   | Ensure the claim finalisation DOC |
-|                                   | has details of workaround used,   |
-|                                   | see Table 2.                      |
+|                                   | Ensure the claim finalisation     |
+|                                   | Note has details of workaround    |
+|                                   | used, see Table 2.                |
 +-----------------------------------+-----------------------------------+
 
 Assessing and coding PES claims
@@ -501,6 +501,17 @@ Table 2
 |                                   |                                   |
 |                                   | Review the information in the PES |
 |                                   | claim to code the claim.          |
+|                                   |                                   |
+|                                   | Note: students undertaking a      |
+|                                   | Startup Year Course to be         |
+|                                   | eligible for a student payment,   |
+|                                   | must:                             |
+|                                   |                                   |
+|                                   | -   provide evidence they are     |
+|                                   |     enrolled in the course, and   |
+|                                   | -   have been selected for a      |
+|                                   |     STARTUP-HELP loan by their    |
+|                                   |     higher education provider     |
 |                                   |                                   |
 |                                   | For information on coding the     |
 |                                   | Customer Study Details (EDCH)     |
@@ -604,6 +615,9 @@ Table 3
 |                                   | NAC – Enrolled in unapproved      |
 |                                   | course                            |
 |                                   |                                   |
+|                                   | SUH - Not entitled to             |
+|                                   | STARTUP-HELP                      |
+|                                   |                                   |
 |                                   | NAI – Not an approved institution |
 |                                   |                                   |
 |                                   | NAS – Not a student               |
@@ -688,11 +702,12 @@ Table 3
 |                                   | the ELD screen, and select Finish |
 |                                   |                                   |
 |                                   | Record the details in the         |
-|                                   | finalisation DOC                  |
+|                                   | finalisation Note                 |
 |                                   | If the rejection reason is Failed |
 |                                   | to Supply Documents (FSD), list   |
 |                                   | all outstanding mandatory         |
-|                                   | documents in the finalisation DOC |
+|                                   | documents in the finalisation     |
+|                                   | Note                              |
 |                                   |                                   |
 |                                   | Select Finalise                   |
 |                                   |                                   |
@@ -755,22 +770,23 @@ Table 3
 |                                   | Finish                            |
 |                                   |                                   |
 |                                   | Record details in the             |
-|                                   | finalisation DOC                  |
+|                                   | finalisation Note                 |
 |                                   |                                   |
 |                                   | Note: if the rejection reason is  |
 |                                   | Failed to Supply Documents (FSD), |
 |                                   | list all outstanding mandatory    |
-|                                   | documents in the finalisation DOC |
+|                                   | documents in the finalisation     |
+|                                   | Note                              |
 |                                   |                                   |
 |                                   | Select 'Finalise'                 |
 |                                   |                                   |
 |                                   | If the claim has not              |
-|                                   | auto-generated a DOC (that is, an |
-|                                   | abridged claim or where the claim |
-|                                   | is both granted and cancelled in  |
-|                                   | the same activity), create a DOC. |
-|                                   | See Online Document Recording     |
-|                                   | (ODR)                             |
+|                                   | auto-generated a Note (that is,   |
+|                                   | an abridged claim or where the    |
+|                                   | claim is both granted and         |
+|                                   | cancelled in the same activity),  |
+|                                   | create a Note. See Online         |
+|                                   | Document Recording (ODR)          |
 |                                   |                                   |
 |                                   | After the rejection activity is   |
 |                                   | finalised go to the AL screen.    |
@@ -796,8 +812,7 @@ Table 3
 |                                   | -   Service Officers, if the      |
 |                                   |     customer is in receipt of     |
 |                                   |     Carer Payment go to Step 7,   |
-|                                   |     otherwise procedure ends      |
-|                                   |     here.                         |
+|                                   |     otherwise procedure ends here |
 |                                   | -   QMA officers go to Step 8     |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Granting of a claim + Read more   |
@@ -809,12 +824,45 @@ Table 3
 |                                   | check the outcome. Is the outcome |
 |                                   | correct?                          |
 |                                   |                                   |
-|                                   | -   Yes, select Finish            |
-|                                   | -   No, correct any screens       |
-|                                   |     causing an incorrect outcome  |
-|                                   |     before selecting Finish       |
+|                                   | Yes, select Finish, go to Step 6  |
 |                                   |                                   |
-|                                   | The Claim Finalisation DOC        |
+|                                   | No, and:                          |
+|                                   |                                   |
+|                                   | -   Error: X511AS - PE date does  |
+|                                   |     not align with customer EPEDC |
+|                                   |     Cluster/PES Cur Navkey:       |
+|                                   |     #PLENT occurs, go to Step 5   |
+|                                   | -   for all other errors, correct |
+|                                   |     any screens required. Select  |
+|                                   |     Finish, go to Step 6          |
++-----------------------------------+-----------------------------------+
+| 5                                 | Work around for X511AS error +    |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | When this error occurs wait until |
+|                                   | after the first entitlement       |
+|                                   | period of the new payment has     |
+|                                   | passed before processing the      |
+|                                   | claim as the bug no longer occurs |
+|                                   | after the end of the first        |
+|                                   | entitlement period.               |
+|                                   |                                   |
+|                                   | For example, if granting from 14  |
+|                                   | April 2009, the first entitlement |
+|                                   | period is 14 April 2009 to 27     |
+|                                   | April 2009. On 28 April 2009 (or  |
+|                                   | later), the bug will not occur    |
+|                                   | and the claim can be finalised.   |
+|                                   |                                   |
+|                                   | Note: the customer will receive   |
+|                                   | their first payment one day late  |
+|                                   | if the claim is finalised on the  |
+|                                   | first day after the end of the    |
+|                                   | entitlement period.               |
++-----------------------------------+-----------------------------------+
+| 6                                 | Finalisation Note + Read more ... |
+|                                   |                                   |
+|                                   | The Claim Finalisation Note       |
 |                                   | displays. Edit or add any extra   |
 |                                   | details required.                 |
 |                                   |                                   |
@@ -831,7 +879,7 @@ Table 3
 |                                   | (EdEP) been granted during the    |
 |                                   | PES claim process?                |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 5             |
+|                                   | -   Yes, go to Step 7             |
 |                                   | -   No, check if the customer     |
 |                                   |     meets eligibility             |
 |                                   |     requirements to receive EdEP, |
@@ -839,16 +887,16 @@ Table 3
 |                                   |     Education Entry Payment       |
 |                                   |     (EdEP). If the customer is    |
 |                                   |     eligible for EdEP, grant the  |
-|                                   |     payment, go to Step 5         |
+|                                   |     payment, go to Step 7         |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Record the outcome of the PES     |
+| 7                                 | Record the outcome of the PES     |
 |                                   | claim and further actions + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If the claim has not              |
-|                                   | auto-generated a DOC create a DOC |
-|                                   | including relevant Guide and Act  |
-|                                   | references and all additional     |
+|                                   | auto-generated a Note create a    |
+|                                   | Note including relevant Guide and |
+|                                   | Act references and all additional |
 |                                   | information. See Online Document  |
 |                                   | Recording (ODR).                  |
 |                                   |                                   |
@@ -858,17 +906,17 @@ Table 3
 |                                   | coded now the claim has been      |
 |                                   | finalised?                        |
 |                                   |                                   |
-|                                   | Yes, go to Step 6                 |
+|                                   | Yes, go to Step 8                 |
 |                                   |                                   |
 |                                   | No, for:                          |
 |                                   |                                   |
 |                                   | -   Service Officers, if the      |
 |                                   |     customer is in receipt of     |
-|                                   |     Carer Payment go to Step 7,   |
+|                                   |     Carer Payment go to Step 9,   |
 |                                   |     otherwise procedure ends here |
-|                                   | -   QMA officers go to Step 8     |
+|                                   | -   QMA officers go to Step 10    |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Allowable time end date (ATED)    |
+| 8                                 | Allowable time end date (ATED)    |
 |                                   | follow up actions + Read more ... |
 |                                   |                                   |
 |                                   | If a claim has been granted for a |
@@ -891,10 +939,10 @@ Table 3
 |                                   |     Apprentices > Pensioner       |
 |                                   |     Education Supplement > PES    |
 |                                   |     Allowable Time End Date       |
-|                                   | -   Select the 'held' option      |
-|                                   |     within the Fast Note template |
-|                                   | -   Code the 'resubmit date' as   |
-|                                   |     the next day                  |
+|                                   | -   Select the held option within |
+|                                   |     the Fast Note template        |
+|                                   | -   Code the resubmit date as the |
+|                                   |     next business day             |
 |                                   | -   Once the template content is  |
 |                                   |     complete, select Continue     |
 |                                   | -   Do not close the open DOC     |
@@ -926,15 +974,15 @@ Table 3
 |                                   | Is the customer in receipt of     |
 |                                   | Carer Payment?                    |
 |                                   |                                   |
-|                                   | Yes, go to Step 7                 |
+|                                   | Yes, go to Step 9                 |
 |                                   |                                   |
 |                                   | No:                               |
 |                                   |                                   |
 |                                   | -   Service Officers, go to Step  |
-|                                   |     8                             |
-|                                   | -   QMA officers, go to Step 9    |
+|                                   |     10                            |
+|                                   | -   QMA officers, go to Step 11   |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Carer Payment (CP) + Read more    |
+| 9                                 | Carer Payment (CP) + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Carer Payment customers hours of  |
@@ -967,10 +1015,10 @@ Table 3
 |                                   | For:                              |
 |                                   |                                   |
 |                                   | -   Service Officers, go to Step  |
-|                                   |     8                             |
-|                                   | -   QMA officers, go to Step 9    |
+|                                   |     10                            |
+|                                   | -   QMA officers, go to Step 11   |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Check eligibility to Education    |
+| 10                                | Check eligibility to Education    |
 |                                   | Entry Payment + Read more ...     |
 |                                   |                                   |
 |                                   | The customer may be eligible to   |
@@ -993,7 +1041,7 @@ Table 3
 |                                   |     the existing reject DOC.      |
 |                                   |     Procedure ends here           |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Quality Management Officers +     |
+| 11                                | Quality Management Officers +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Complete QMA checks as per        |

@@ -55,7 +55,9 @@ Table 1: this table provides examples of scenarios for claiming 30001.
 |                                   | had been positioned on the        |
 |                                   | operation table, anaesthetised    |
 |                                   | and draped, however none of the   |
-|                                   | procedures had started.           |
+|                                   | operations had started. This      |
+|                                   | meets the requirements that the   |
+|                                   | procedure had commenced.          |
 |                                   |                                   |
 |                                   | The items should be claimed and   |
 |                                   | keyed in the following order:     |
@@ -92,17 +94,17 @@ Table 1: this table provides examples of scenarios for claiming 30001.
 |                                   | -   Surgical item F (claimed with |
 |                                   |     text or note ‘completed’)     |
 |                                   | -   Surgical item G (claimed with |
-|                                   |     text or note ‘completed’)     |
+|                                   |     text or note ‘abandoned’)     |
 |                                   | -   Item 30001                    |
 |                                   | -   Surgical item H (claimed with |
-|                                   |     text or note ‘completed’)     |
+|                                   |     text or note ‘abandoned’)     |
 |                                   | -   Item 30001                    |
 +-----------------------------------+-----------------------------------+
-| Example D                         | A manual claim has been received  |
-|                                   | with a notional charge and        |
-|                                   | multiple surgical items:          |
+| Example D                         | A manual inpatient claim has been |
+|                                   | received with a notional charge   |
+|                                   | and multiple surgical items:      |
 |                                   |                                   |
-|                                   | -   Total charge $5000.00         |
+|                                   | -   Total charge $5,000.00        |
 |                                   | -   Surgical item I - claimed     |
 |                                   |     with text or note “completed” |
 |                                   | -   Surgical item J - claimed     |
@@ -115,7 +117,7 @@ Table 1: this table provides examples of scenarios for claiming 30001.
 |                                   | -   Item 30001                    |
 |                                   |                                   |
 |                                   | If the claim is keyed with        |
-|                                   | $5000.00 as charge for the first  |
+|                                   | $5,000.00 as charge for the first |
 |                                   | item on the claims (item I) and   |
 |                                   | $0.00 as the charge for the other |
 |                                   | items - the system returns the    |
@@ -145,16 +147,25 @@ Table 1: this table provides examples of scenarios for claiming 30001.
 |                                   |     158 to any item 30001         |
 |                                   | -   Add the schedule fees then    |
 |                                   |     take that total from the      |
-|                                   |     $5000.00 notional charge and  |
+|                                   |     $5,000.00 notional charge and |
 |                                   |     add the balance to the item   |
 |                                   |     with the highest schedule fee |
 |                                   | -   After following other return  |
 |                                   |     messages, the mainframe       |
 |                                   |     system then shows the total   |
 |                                   |     charge up the top right of    |
-|                                   |     the screen as $5000.00        |
+|                                   |     the screen as $5,000.00       |
 |                                   | -   Claim can be paid with P to   |
 |                                   |     Pay [Enter]                   |
+|                                   |                                   |
+|                                   | Note: for outpatient services,    |
+|                                   | manual patient claims require an  |
+|                                   | invoice/account from the practice |
+|                                   | displaying the individual charges |
+|                                   | raised against each item. This    |
+|                                   | ensures the patient’s Extended    |
+|                                   | Medicare Safety Net (EMSN) can be |
+|                                   | applied correctly.                |
 +-----------------------------------+-----------------------------------+
 
 Examples of item selection for assistant items 51300 and 51303
@@ -180,7 +191,7 @@ assistance items 51300 and 51303 at abandoned procedures.
 |                                   |                                   |
 |                                   | -   Item M (Assist) - $300 @50% = |
 |                                   |     $150                          |
-|                                   | -   Item N – because Assist is    |
+|                                   | -   Item N – because (Assist) is  |
 |                                   |     not in the item description = |
 |                                   |     $0                            |
 |                                   |                                   |
@@ -198,6 +209,9 @@ assistance items 51300 and 51303 at abandoned procedures.
 |                                   | Q) was discontinued on medical    |
 |                                   | grounds, and the fourth procedure |
 |                                   | (item R) was therefore abandoned. |
+|                                   | All item descriptions for         |
+|                                   | procedures O, Q and R include     |
+|                                   | ‘(Assist)’.                       |
 |                                   |                                   |
 |                                   | The assistant fee is calculated   |
 |                                   | below:                            |
@@ -205,9 +219,9 @@ assistance items 51300 and 51303 at abandoned procedures.
 |                                   | -   Item O (Assist) - $300 @100%  |
 |                                   |     (completed) and @100% (multi  |
 |                                   |     op) = $300                    |
-|                                   | -   Item P - Assist is not in the |
-|                                   |     item description, therefore = |
-|                                   |     $0                            |
+|                                   | -   Item P - (Assist) is not in   |
+|                                   |     the item description,         |
+|                                   |     therefore = $0                |
 |                                   | -   Item Q (Assist) - $200 @ 50%  |
 |                                   |     (abandoned) and @50% (multi   |
 |                                   |     op) = $50                     |
@@ -226,8 +240,8 @@ assistance items 51300 and 51303 at abandoned procedures.
 |                                   | items:                            |
 |                                   |                                   |
 |                                   | -   item S (Assist) with a        |
-|                                   |     schedule fee of $2000         |
-|                                   | -   item R (assist) with a        |
+|                                   |     schedule fee of $2,000        |
+|                                   | -   item R (Assist) with a        |
 |                                   |     schedule fee of $100          |
 |                                   |                                   |
 |                                   | The operation was abandoned due   |
@@ -240,8 +254,8 @@ assistance items 51300 and 51303 at abandoned procedures.
 |                                   | The assistant fee is calculated   |
 |                                   | below:                            |
 |                                   |                                   |
-|                                   | -   Item S (Assist) - $2000 @50%  |
-|                                   |     = $1000                       |
+|                                   | -   Item S (Assist) - $2,000 @50% |
+|                                   |     = $1,000                      |
 |                                   | -   Item T (Assist) – because the |
 |                                   |     procedure is abandoned before |
 |                                   |     an item number was commenced  |

@@ -453,24 +453,22 @@ Table 1
 |                                   | students and Australian           |
 |                                   | Apprentices claims.               |
 |                                   |                                   |
-|                                   | Go to the EDC screen and check    |
-|                                   | the following fields:             |
-|                                   |                                   |
-|                                   | -   Participation Status Event    |
-|                                   |     Date                          |
-|                                   | -   Participation Status          |
-|                                   | -   Enrolment Verification        |
-|                                   | -   Course Level                  |
-|                                   | -   Course Start Date             |
-|                                   | -   Course End Date               |
-|                                   | -   Institution Name              |
-|                                   | -   Field of Study                |
-|                                   | -   Education Institution ID      |
-|                                   | -   Student ID                    |
-|                                   | -   Concurrent Institution Id     |
-|                                   | -   Student Start Date            |
-|                                   | -   Student End Date              |
-|                                   | -   Allowable Time End Date       |
+|                                   | -   Key START in the Super Key    |
+|                                   | -   Select the Study and          |
+|                                   |     Scholarship Details workflow  |
+|                                   |     from the Task Selector        |
+|                                   | -   Select Customer Study Details |
+|                                   | -   Select Edit next to the       |
+|                                   |     course being updated. Correct |
+|                                   |     all fields to reflect the     |
+|                                   |     actual study details, see     |
+|                                   |     Coding new study details      |
+|                                   | -   In the Comments field, record |
+|                                   |     the exact name of the course. |
+|                                   |     This field must not be left   |
+|                                   |     blank and must not contain    |
+|                                   |     any information in addition   |
+|                                   |     to the course name            |
 |                                   |                                   |
 |                                   | Note: for ABSTUDY students,       |
 |                                   | Incidentals Allowance entitlement |
@@ -522,31 +520,15 @@ Table 1
 |                                   | -   'SVABY' in the Nxt field to   |
 |                                   |     access ABSTUDY PES screens    |
 |                                   |                                   |
-|                                   | Go to the EDC screen and check    |
-|                                   | the following fields:             |
-|                                   |                                   |
-|                                   | -   Participation Status Event    |
-|                                   |     Date                          |
-|                                   | -   Participation Status          |
-|                                   | -   Enrolment Verification        |
-|                                   | -   Course Level                  |
-|                                   | -   Inst Course Start Date        |
-|                                   | -   Inst Course End Date          |
-|                                   | -   Institution                   |
-|                                   | -   Field of Study                |
-|                                   | -   Institution Course Code       |
-|                                   | -   Student ID Number             |
-|                                   | -   Concurrent Institution for    |
-|                                   |     this course                   |
-|                                   | -   Student Start Date            |
-|                                   | -   Student End Date              |
-|                                   | -   Allowable Time End Date       |
+|                                   | Go to the EDC screen and correct  |
+|                                   | all fields to reflect the actual  |
+|                                   | study details.                    |
 |                                   |                                   |
 |                                   | In the Comments field, record the |
 |                                   | exact name of the course, this    |
-|                                   | field cannot be left blank and    |
-|                                   | cannot contain any information in |
-|                                   | addition to the course name.      |
+|                                   | field must not be left blank and  |
+|                                   | must not contain any information  |
+|                                   | in addition to the course name.   |
 |                                   |                                   |
 |                                   | Note: for ABSTUDY students,       |
 |                                   | Incidentals Allowance entitlement |
@@ -615,9 +597,7 @@ Table 1
 |                                   | details of the change to Student  |
 |                                   | Processing for follow up:         |
 |                                   |                                   |
-|                                   | Create an open work item using    |
-|                                   | the Reassess rejected student     |
-|                                   | claim Fast Note, with the         |
+|                                   | Create Fast Note, with the        |
 |                                   | following information:            |
 |                                   |                                   |
 |                                   | -   Service Reason must match the |
@@ -1008,6 +988,8 @@ Table 3
 |                                   |     Date: the day after the       |
 |                                   |     Student End Date of the       |
 |                                   |     previous course               |
+|                                   | -   For all other fields, see     |
+|                                   |     Coding new study details      |
 |                                   | -   If appropriate, complete the  |
 |                                   |     Allowable Time End Date field |
 |                                   |     with the correct date. See    |
@@ -1021,22 +1003,24 @@ Table 3
 |                                   | Select Next                       |
 |                                   |                                   |
 |                                   | The Newstart Education Status     |
-|                                   | (NES) screen shows. Do not create |
-|                                   | a new NES screen unless the       |
-|                                   | student has completed the         |
-|                                   | previous course and their         |
-|                                   | education level attained has      |
-|                                   | changed                           |
+|                                   | (NES) screen shows                |
 |                                   |                                   |
-|                                   | If a new NES screen is required:  |
+|                                   | Do not create a new NES entry     |
+|                                   | unless:                           |
 |                                   |                                   |
-|                                   | -   Select Add and complete the   |
-|                                   |     following fields              |
-|                                   | -   Participation Status Event    |
-|                                   |     Date: student end date + 1    |
-|                                   | -   Student Status: NST – Not a   |
-|                                   |     Student                       |
-|                                   | -   Select Save                   |
+|                                   | -   the student has completed the |
+|                                   |     previous course and their     |
+|                                   |     education level attained has  |
+|                                   |     changed, or                   |
+|                                   | -   a provisional entry has been  |
+|                                   |     created due to the activity   |
+|                                   |     with the Student Status as    |
+|                                   |     ‘Not a Student’ on the day    |
+|                                   |     after the previous course end |
+|                                   |     date                          |
+|                                   |                                   |
+|                                   | If a new NES entry is required,   |
+|                                   | see Coding New Study Details      |
 |                                   |                                   |
 |                                   | Select Assess and address any     |
 |                                   | errors/warnings                   |
@@ -1128,6 +1112,10 @@ Table 3
 |                                   | Student End Date                  |
 |                                   |                                   |
 |                                   | Allowable Time End Date           |
+|                                   |                                   |
+|                                   | STARTUP-HELP Loan Ind - if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
 |                                   |                                   |
 |                                   | Select Save                       |
 |                                   |                                   |

@@ -188,7 +188,7 @@ $(document).ready(function() {
 <a name="top" class="anchor"></a><div id="contentObp" class="main"><div id="topnav"></div>
 
 
-<p class="info-box warning">For appropriately trained Families and Child Care Smart Centre staff only.</p>
+<p class="info-box warning">For appropriately trained Families and Child Care processing staff only.</p>
 
 <p>For Add Newborn work items created in Process Direct select the <a href="../families/007-07030080-03.html#bp03_L2TT_Process_Direct">Process Direct tab</a></p>
 
@@ -258,17 +258,21 @@ lodged a <strong>FA081</strong> <a href="../families/007-03010030-01.html">proof
 		<li>
 has had their FTB/PPL claim for the child <strong>assessed pending proof of birth</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step06">go to Step 6</a></li>
 		<li>
-had their DAP claim for the child <strong>assessed pending proof of birth</strong> (for children born or adopted before 1 July 2023), <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step08">go to Step 8</a></li>
+had their DAP claim for the child <strong>assessed pending proof of birth</strong> (for children born or adopted before 1 July 2023), <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step09">go to Step 9</a></li>
 		<li>
-lodged a pre-birth online or paper claim for FTB/PPL/DAP that has been finalised as '<strong>NEF</strong>', <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step09">go to Step 9</a></li>
+lodged a pre-birth online or paper claim for FTB/PPL/DAP that has been finalised as '<strong>NEF</strong>', <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step10">go to  Step 10</a></li>
 		<li>
-lodged a <strong>pre-birth claim</strong> online or paper claim for FTB/PPL/DAP that is <strong>not yet assessed</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step10">go to  Step 10</a></li>
+lodged a <strong>pre-birth claim</strong> online or paper claim for FTB/PPL/DAP that is <strong>not yet assessed</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step11">go to  Step 11</a></li>
+		<li>
+lodged a <strong>pre-birth claim and a post-birth claim</strong> for the same birth event, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step07">go to Step 7</a></li>
 		<li>
 lodged a <strong>post-birth claim</strong> online or a paper claim for FTB or PPL that is <strong>not yet assessed</strong>, see <a href="../families/007-17100602-01.html">Pre-processing checks for standalone and combined claims for family assistance and/or Paid Parental Leave scheme payments</a>. Procedure ends here</li>
 		<li>
 lodged a post-birth claim online or a paper claim for DAP that is not yet assessed, see <a href="../families/007-05020010-03.html">Processing Dad and Partner Pay (DAP) claims</a>. Procedure ends here</li>
 		<li>
-lodged a Child Care Subsidy (CCS) claim only, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step11">go to  Step 11</a></li>		</ul>
+lodged a Child Care Subsidy (CCS) claim only, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step12">go to  Step 12</a></li>
+		</ul>
+<p>If the customer and partner both have claims <strong>assessed pending proof of birth</strong> (excluding DAP) and only one member of the couple has completed the Add newborn service or uploaded the fully completed FA081, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step06">go to Step 6</a>.</p>
 </div>
 
 
@@ -319,6 +323,18 @@ Check if the customer's partner already has a claim for payments. If yes, use th
 
 
 <p>Check the FA081 to see if the customer wants to claim payments for their newborn child. Check their response to the PPL question and the Medicare-only question.</p>
+
+<p>When a FA081 is scanned to the customer's record, a Social Application (SOA) shell Work Item is generated. This SOA activity contains no information apart from&#58;</p>
+		<ul>		<li>
+the CRN</li>
+		<li>
+personal details, and </li>
+		<li>
+the receipt date</li>
+		</ul>
+<p>Relevant information will need to be manually updated within the Work Item using information from the scanned FA081 and any associated documentation.</p>
+
+<p>Where a scanned FA081 did not create a SOA activity, manually create a SOA shell via the Process Direct Landing page.</p>
 
 <p>If the customer lodged a FA081 and is&#58;</p>
 		<ul>		<li>
@@ -422,15 +438,21 @@ Ensure that the Date of Receipt (DOR) matches that of the original MAENROL <stro
 <p>6</p></td>
 <td>
 
-<p><strong>FTB/PPL claim assessed pending proof of birth</strong></p>
-
-<p></p>
-
-<p><strong>Customers using the 'Add newborn child' service online or the 'Add child' service via the Express Plus Centrelink mobile app</strong> <a title="Read more 6" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>FTB/PPL claim assessed pending proof of birth</strong> <a title="Read more 6" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>For customers whose pre-birth claim is pending proof of birth and who used the 'Add newborn child' service online or the 'Add child' service via the Express Plus Centrelink mobile app  to provide child details and upload proof of birth&#58;</p>
+<p>Select the appropriate option below&#58;</p>
+</div>
+
+
+<p></p>
+
+<p><strong>Customers using the 'Add newborn child' service online or the 'Add child' service via the Express Plus Centrelink mobile app</strong> <a title="Read more 7" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>For customers whose pre-birth claim is pending proof of birth and who used the 'Add newborn child' service online or the 'Add child' service via the Express Plus Centrelink mobile app to provide child details and upload proof of birth&#58;</p>
 		<ul>		<li>
 Check if the partner has an outstanding DAP pre-birth claim that has not been finalised and attempt to finalise before completing the Add newborn for the customers, See <a href="../families/007-17100603-01.html">Processing standalone and combined claims for family assistance and/or Paid Parental Leave scheme payments</a></li>
 		<li>
@@ -446,7 +468,33 @@ Complete Add Newborn activity updates</li>
 		</ul>
 <p></p>
 
-<p><strong>Customers who have lodged a full FA081</strong> <a title="Read more 7" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span>  Read more ...</a></p>
+<p><strong>Customers who have not used the 'Add newborn child' service online or the 'Add child' service via the Express Plus Centrelink mobile app or lodged a full FA081 but their partner has</strong> <a title="Read more 8" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>Customers whose pre birth claim is pending proof of birth and who have not used the ‘Add newborn child' or the 'Add child' service or lodged a FA081, but their partner has, can have their claim assessed using the details the partner has supplied in their Add newborn/full FA081&#58;</p>
+		<ul>		<li>
+Create a Social Application (SOA) shell with benefit type&#58; Add Newborn from the Process Direct landing page.</li>
+		<li>
+Use the same date of receipt that was used to assess the partner’s Add Newborn/FA081</li>
+		<li>
+<a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step08">Go to Step 8</a></li>
+</div>
+
+		</ul>
+<p></p>
+
+<p><strong>Customers who have not used the ‘Add newborn child’ service online or the ‘Add child’ service via the Express Plus Centrelink mobile app but now have a post birth claim lodged on the record</strong> <a title="Read more 9" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p><a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step07">Go to Step 7</a>.</p>
+</div>
+
+
+<p></p>
+
+<p><strong>Customers who have lodged a full FA081</strong> <a title="Read more 10" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span>  Read more ...</a></p>
 <div class="showcont">
 
 
@@ -456,33 +504,53 @@ minimal questions have been missed and the child's name has been provided, colle
 		<li>
 the customer has the original FA081, ask the customer to complete the missing questions and upload the fully completed FA081</li>
 		</ul>
-<p>Once the FA081 is completed in full, create a Social Application (SOA) with benefit type&#58; <strong>Add Newborn</strong> (if one has not already been created) via the Process Direct landing page. See <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct navigation, common screens and functions</a> for more information. The Add Newborn can be assessed in the newly created activity using the information from the FA081 along with the information from the initial claim.</p>
+<p>When a FA081 is scanned to the customer's record, a Social Application (SOA) shell Work Item is generated. This activity contains no information apart from&#58;</p>
+		<ul>		<li>
+the CRN</li>
+		<li>
+personal details, and </li>
+		<li>
+the receipt date</li>
+		</ul>
+<p>Relevant information will need to be manually updated within the Work Item using information from the scanned FA081 and any associated documentation.</p>
+
+<p>Where a scanned FA081 did not create a SOA, create a SOA with benefit type&#58; <strong>Add Newborn</strong> via the Process Direct landing page. See <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct navigation, common screens and functions</a> for more information. The Add Newborn can be assessed in the newly created activity using the information from the FA081 along with the information from the initial claim.</p>
 
 <p>Contact the customer if there are any concerns that their circumstances have changed since the initial claim was submitted.</p>
 
-<p><a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step07">Go to Step 7</a>.</p>
+<p><a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step08">Go to Step 8</a>.</p>
 </div>
 
 
 <p></p>
 
-<p><strong>Lodged/uploaded FA081 with back page only, or without the back page and without child's name/details or only other acceptable proof of birth provided</strong> <a title="Read more 8" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Lodged/uploaded FA081 with back page only, or without the back page and without child's name/details or only other acceptable proof of birth provided</strong> <a title="Read more 11" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Contact the customer and advise them&#58;</p>
+<p>Contact the customer, <a href="../self-service/133-05000000-01.html">send a pre-call notification SMS through Desktop Messaging</a> before calling, and tell them&#58;</p>
 		<ul>		<li>
 to access the 'Add newborn child' service online or the 'Add child' service via the Express Plus Centrelink mobile app and answer all questions displayed, or</li>
 		<li>
 if the customer has the original FA081, complete it in full and upload all pages of the completed FA081</li>
 		</ul>
+<p>Place the SOA on hold, reason <strong>Pending customer contact</strong>. See <a href="../families/007-07030190-03.html">Information requests for FTB, PPL and DAP claims and Add Newborn activities</a> for further information</p>
+
+<p>Document the record to advise outcome of discussion.</p>
+
 <p><strong>Note&#58;</strong> if the customer provides the back page of the FA081 with the Doctor/Midwife section complete, but the customer section at the top of the back page is incomplete, the back page is acceptable proof of birth providing the full serial number is also included.</p>
 
-<p>If the customer is not available, <a href="../specialist-manuals-and-system-tools/111-14010000-01.html">issue a Q777</a> about completing their claim online. See approved letter text for Q777 on the <a href="../families/007-07030080-05.html">Resources</a> page.</p>
+<p>If the customer is not available&#58;</p>
+		<ul>		<li>
+open the Add Newborn SOA activity and select <img src="../resources/images/process_direct_small/more%20options.png" alt="More Options" title="More Options" /> &gt; Request Documents</li>
+		<li>
+select <strong>FCC Add Newborn required</strong> from the <strong>Available Documents</strong> list. See <a href="../families/007-07030190-03.html">Information requests for FTB, PPL and DAP claims and Add Newborn activities</a> for further information </li>
+		<li>
+document the record with information requested</li>
+		</ul>
+<p>If the customer provides the requested information within the required time, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step08">go to Step 8</a>.</p>
 
-<p> If the customer provides the requested information within the required time, <a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step07">go to Step 7</a>.</p>
-
-<p>Where proof of birth is not provided, the claim will automatically NEF-POB 56 days after the nominated start date. Procedure ends here.</p>
+<p>Where proof of birth is not provided, the claim will automatically NEF-POB 56 days after the nominated start date. The status must be changed to ‘Not Required’ for the SOA created when FA081 lodged and customer has not completed ‘add newborn service’ online or provided FA081 in full. Procedure ends here.</p>
 
 <p><strong>Note&#58;</strong> if the requested information not provided is due to a <a href="../review-of-decision-and-appeals/109-06020000-01.html">secretary initiated review of decision</a> of the pre-birth PPL claim, change the Add Newborn activity status to 'Not Required'. Reassess and reject the pre-birth claim with the relevant rejection code.  See <a href="../families/007-07030160-01.html">Not effective, rejection or withdrawal of claim for Parental Leave Pay (PPL)</a>.</p>
 </div>
@@ -490,7 +558,7 @@ if the customer has the original FA081, complete it in full and upload all pages
 
 <p></p>
 
-<p><strong>For PPL claims when processing the Add newborn service</strong> <a title="Read more 9" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>For PPL claims when processing the Add newborn activity</strong> <a title="Read more 12" class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -520,7 +588,7 @@ before their Add Newborn assessment has been finalised</li>
 		</ul>
 <p>This may result in the NSD displaying on Entitlements (<strong>ELD</strong>) screen to differ from the date recorded on the PPL Claim Details (<strong>P1CLM</strong>). In these cases, check the Expected Date of Care or Nominated Start Date (<strong>P1EDND</strong>) screen to ensure PPL is commencing from the correct date.</p>
 
-<p><a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step07">Go to Step 7</a>.</p>
+<p><a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step08">Go to Step 8</a>.</p>
 </div>
 
 
@@ -532,11 +600,43 @@ before their Add Newborn assessment has been finalised</li>
 <p>7</p></td>
 <td>
 
-<p><strong>Action the Add Newborn activity</strong> <a title="Read more 10" class="showhead bp03_tbl_Process_proof_o_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-birth claim and Post-birth claim lodged for the same birth event</strong> <a title="Read more 13" class="showhead bp03_tbl_Process_proof_o_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+Pre-birth claim for FTB and/or PPL submitted but not yet processed, post-birth claim also submitted for the same birth event but not yet processed&#58;</li>
+			<ul>			<li>
+Mark the pre-birth claim as <strong>Not Required</strong></li>
+			<li>
+Process the Post Birth claim. See <a href="../families/007-17100602-01.html">Pre-processing checks for standalone and combined claims for family assistance and/or Paid Parental Leave scheme payments</a></li>
+			<li>
+Procedure ends here</li>		</ul>
+		<li>
+Pre-birth claim for FTB and/or PPL assessed pending proof of birth, post-birth claim also submitted for the same birth event but not yet processed&#58;</li>
+			<ul>			<li>
+Mark the post-birth claim as <strong>Not Required</strong></li>
+			<li>
+Create a Social Application (SOA) with benefit type&#58; <strong>Add Newborn</strong> via the Process Direct landing page. See <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct navigation, common screens and functions for more information</a></li>
+			<li>
+Action the newly created Add Newborn SOA using the information provided in the post-birth claim</li>
+			<li>
+<a href="../families/007-07030080-03.html#bp03_tbl_Process_proof_o_Step08">Go to Step 8</a></li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Process_proof_o_Step08"></a>
+<p>8</p></td>
+<td>
+
+<p><strong>Action the Add Newborn activity</strong> <a title="Read more 14" class="showhead bp03_tbl_Process_proof_o_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Prior to completing the necessary updates in the Add Newborn activity, on the Transaction Summary (<strong>TS</strong>) screen, <a href="../ongoing-contact/102-05050120-03.html">link the child</a> and complete any partner updates. This action must be completed before selecting <strong>Process</strong> or the data load from the Add Newborn will not complete correctly on the customer's record. See Table 2 in <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct navigation, common screens and functions</a>.</p>
+<p>Prior to completing the necessary updates in the Add Newborn activity, on the Transaction Summary (<strong>TS</strong>) screen, <a href="../ongoing-contact/102-05050120-03.html">link the child</a> and complete any partner updates. This action must be completed before selecting <strong>Process</strong> or the data load from the Add Newborn will not complete correctly on the customer's record. See Table 2 in <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct navigation, common screens and functions</a>. Check Transactions tab in Process Direct. If a SOA activity has been created due to customer lodging a FA081 in addition to the Add Newborn the SOA can be marked ‘<strong>Not Required</strong>’.</p>
 
 <p>Action the <strong>Add Newborn</strong> activity&#58;</p>
 		<ul>		<li>
@@ -604,13 +704,21 @@ If an<strong> FTB current </strong>(FTB/CUR or FTB/CZR) <strong>customer/partner
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_proof_o_Step08"></a>
-<p>8</p></td>
+<a class="anchor" name="bp03_tbl_Process_proof_o_Step09"></a>
+<p>9</p></td>
 <td>
 
-<p><strong>DAP for children born or adopted before 1 July 2023</strong></p>
+<p><strong>DAP for children born or adopted before 1 July 2023</strong> <a title="Read more 15" class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
 
-<p><strong>Customer partnered to birth mother</strong> <a title="Read more 11" class="showhead bp03_tbl_Process_proof_o_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+
+<p>Select the appropriate option below&#58;</p>
+</div>
+
+
+<p></p>
+
+<p><strong>Customer partnered to birth mother</strong> <a title="Read more 16" class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -646,7 +754,7 @@ the DAP claim will automatically reject and the customer can lodge a claim for P
 
 <p></p>
 
-<p><strong>Customer not partnered to birth mother</strong> <a title="Read more 12" class="showhead bp03_tbl_Process_proof_o_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer not partnered to birth mother</strong> <a title="Read more 17" class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -686,11 +794,11 @@ the DAP claim will be rejected once proof of birth/entry to care is provided</li
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_proof_o_Step09"></a>
-<p>9</p></td>
+<a class="anchor" name="bp03_tbl_Process_proof_o_Step10"></a>
+<p>10</p></td>
 <td>
 
-<p><strong>Pre-birth claim finalised as 'NEF'</strong> <a title="Read more 13" class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-birth claim finalised as 'NEF'</strong> <a title="Read more 18" class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -710,13 +818,21 @@ Using information from the pre-birth claim and the FA081 form, create a DAP Soci
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_proof_o_Step10"></a>
-<p>10</p></td>
+<a class="anchor" name="bp03_tbl_Process_proof_o_Step11"></a>
+<p>11</p></td>
 <td>
 
-<p><strong>Pre-birth claim lodged, not yet processed</strong></p>
+<p><strong>Pre-birth claim lodged, not yet processed</strong> <a title="Read more 19" class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
 
-<p><strong>Paper pre-birth claim</strong> <a title="Read more 14" class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+
+<p>Select the appropriate option below.</p>
+</div>
+
+
+<p></p>
+
+<p><strong>Paper pre-birth claim</strong> <a title="Read more 20" class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -732,7 +848,7 @@ Manually enter relevant claim data using the information from the pre-birth and 
 
 <p></p>
 
-<p><strong>Incomplete FA081 or only the back page has been provided</strong> <a title="Read more 15" class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Incomplete FA081 or only the back page has been provided</strong> <a title="Read more 21" class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -750,7 +866,7 @@ the back page only of the FA081, contact them and ask to provide full FA081 or c
 
 <p></p>
 
-<p><strong>Online pre-birth claim</strong> <a title="Read more 16" class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Online pre-birth claim</strong> <a title="Read more 22" class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -792,7 +908,7 @@ Select <strong>Cancel</strong></li>
 			<li>
 Select <strong>OK</strong> to confirm cancellation</li>		</ul>
 		<li>
-create a Social Online Application (SOA) shell using the details from the pre-birth claim and proof of birth. See <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct Navigation, common screens and functions for creating a SOA shell</a></li>
+create a Social Online Application (SOA) shell using the details from the pre-birth claim and proof of birth. Select the relevant claim type (<strong>Paid Parental Leave</strong>, <strong>Family Tax Benefit</strong> or <strong>Combined Families claim</strong>). See <a href="../specialist-manuals-and-system-tools/111-20012938-01.html">Process Direct Navigation, common screens and functions for creating a SOA shell</a></li>
 		</ul>
 <p><strong>Note&#58;</strong> determine the correct date of receipt (DOR) = Date proof of birth (POB) received.</p>
 
@@ -848,7 +964,7 @@ create a Social Online Application (SOA) shell using the details from the pre-bi
 
 <p></p>
 
-<p><strong>Other scenarios</strong> <a title="Read more 17" class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Other scenarios</strong> <a title="Read more 23" class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -862,11 +978,11 @@ create a Social Online Application (SOA) shell using the details from the pre-bi
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Process_proof_o_Step11"></a>
-<p>11</p></td>
+<a class="anchor" name="bp03_tbl_Process_proof_o_Step12"></a>
+<p>12</p></td>
 <td>
 
-<p><strong>CCS only claim</strong> <a title="Read more 18" class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS only claim</strong> <a title="Read more 24" class="showhead bp03_tbl_Process_proof_o_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Process_proof_o_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -920,7 +1036,7 @@ ensure that the Date of Receipt (DOR) matches the original MAENROL <strong>DOC</
 <p>1</p></td>
 <td>
 
-<p><strong>Assess the Add Newborn activity</strong> <a title="Read more 19" class="showhead bp03_tbl_Finalise_Add_Ne_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Assess the Add Newborn activity</strong> <a title="Read more 25" class="showhead bp03_tbl_Finalise_Add_Ne_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -946,7 +1062,7 @@ Once all errors have been addressed select <strong>Assess</strong></li>		</ul>
 <p>2</p></td>
 <td>
 
-<p><strong>Check the outcome</strong> <a title="Read more 20" class="showhead bp03_tbl_Finalise_Add_Ne_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check the outcome</strong> <a title="Read more 26" class="showhead bp03_tbl_Finalise_Add_Ne_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1028,7 +1144,7 @@ Select <strong>Update</strong></li>
 <p>3</p></td>
 <td>
 
-<p><strong>Recording the outcome of the Add Newborn activity</strong> <a title="Read more 21" class="showhead bp03_tbl_Finalise_Add_Ne_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Recording the outcome of the Add Newborn activity</strong> <a title="Read more 27" class="showhead bp03_tbl_Finalise_Add_Ne_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1060,7 +1176,7 @@ To close relevant scans, select the associated scans and select <strong>Save</st
 <p>4</p></td>
 <td>
 
-<p><strong>ISP customers granted PPL/DAP</strong> <a title="Read more 22" class="showhead bp03_tbl_Finalise_Add_Ne_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>ISP customers granted PPL/DAP</strong> <a title="Read more 28" class="showhead bp03_tbl_Finalise_Add_Ne_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Finalise_Add_Ne_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1115,7 +1231,7 @@ To close relevant scans, select the associated scans and select <strong>Save</st
 <p>1</p></td>
 <td>
 
-<p><strong>Check date of receipt</strong> <a title="Read more 23" class="showhead bp03_tbl_Customer_lodged_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check date of receipt</strong> <a title="Read more 29" class="showhead bp03_tbl_Customer_lodged_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1133,7 +1249,7 @@ To close relevant scans, select the associated scans and select <strong>Save</st
 <p>2</p></td>
 <td>
 
-<p><strong>Check claim status or intention to claim</strong> <a title="Read more 24" class="showhead bp03_tbl_Customer_lodged_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Check claim status or intention to claim</strong> <a title="Read more 30" class="showhead bp03_tbl_Customer_lodged_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1145,15 +1261,17 @@ wants to complete <strong>Medicare enrolment only</strong> (not claiming payment
 		<li>
 lodged a <strong>FA081</strong> <a href="../families/007-03010030-01.html">proof of birth (POB)</a> but there is no claim for the child, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step04">go to Step 4</a></li>
 		<li>
-has had their FTB/PPL claim for the child <strong>assessed pending proof of birth</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step06">go to Step 6</a></li>
+has had their FTB/PPL claim for the child <strong>assessed pending proof of birth</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step07">go to Step 7</a></li>
 		<li>
-has had their DAP claim for the child <strong>assessed pending proof of birth</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step08">go to Step 8</a></li>
+has had their DAP claim for the child <strong>assessed pending proof of birth</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step09">go to Step 9</a></li>
 		<li>
-lodged a pre-birth online or paper claim for FTB/PPL/DAP that has been finalised as '<strong>NEF</strong>', <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step09">go to Step 9</a></li>
+lodged a pre-birth online or paper claim for FTB/PPL/DAP that has been finalised as '<strong>NEF</strong>', <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step10">go to  Step 10</a></li>
 		<li>
-lodged a pre-birth claim online or paper claim for FTB/PPL/DAP that is <strong>not yet assessed</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step10">go to  Step 10</a></li>
+lodged a pre-birth claim online or paper claim for FTB/PPL/DAP that is <strong>not yet assessed</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step11">go to  Step 11</a></li>
 		<li>
-lodged a Child Care Subsidy (CCS) claim only, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step11">go to  Step 11</a></li>
+lodged a <strong>pre-birth claim and a post-birth claim</strong> for the same birth event, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step06">go to Step 6</a></li>
+		<li>
+lodged a Child Care Subsidy (CCS) claim only, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step12">go to  Step 12</a></li>
 		<li>
 lodged a post-birth claim online or a paper claim for FTB or PPL that is not yet assessed, see <a href="../families/007-17100602-01.html">Pre-processing checks for standalone and combined claims for family assistance and/or Paid Parental Leave payments</a>. Procedure ends here</li>
 		<li>
@@ -1169,7 +1287,7 @@ lodged a post-birth claim online or a paper claim for DAP that is not yet assess
 <p>3</p></td>
 <td>
 
-<p><strong>Medicare enrolment only</strong> <a title="Read more 25" class="showhead bp03_tbl_Customer_lodged_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Medicare enrolment only</strong> <a title="Read more 31" class="showhead bp03_tbl_Customer_lodged_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1203,7 +1321,7 @@ Check if the customer's partner already has a claim for payments. If they have, 
 <p>4</p></td>
 <td>
 
-<p><strong>No claim for child on record</strong> <a title="Read more 26" class="showhead bp03_tbl_Customer_lodged_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>No claim for child on record</strong> <a title="Read more 32" class="showhead bp03_tbl_Customer_lodged_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1241,7 +1359,7 @@ does not have a pre-birth claim or acceptable Proof of Birth (POB) (e.g. FA081 b
 <p>5</p></td>
 <td>
 
-<p><strong>Customer claiming payments</strong> <a title="Read more 27" class="showhead bp03_tbl_Customer_lodged_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer claiming payments</strong> <a title="Read more 33" class="showhead bp03_tbl_Customer_lodged_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1293,7 +1411,37 @@ Ensure that the Date of Receipt (DOR) matches that of the original MAENROL <stro
 <p>6</p></td>
 <td>
 
-<p><strong>Claim assessed pending proof of birth</strong> <a title="Read more 28" class="showhead bp03_tbl_Customer_lodged_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-birth claim and Post-birth claim lodged for the same birth event</strong> <a title="Read more 34" class="showhead bp03_tbl_Customer_lodged_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+		<ul>		<li>
+Pre-birth claim for FTB and/or PPL <strong>submitted but not yet processed</strong>, post-birth claim also submitted for the same birth event but not yet processed&#58;</li>
+			<ul>			<li>
+Mark the pre-birth claim as <strong>Not Required</strong></li>
+			<li>
+Process the Post Birth claim. See <a href="../families/007-17100602-01.html">Pre-processing checks for standalone and combined claims for family assistance and/or Paid Parental Leave scheme payments</a></li>
+			<li>
+Procedure ends here</li>		</ul>
+		<li>
+Pre-birth claim for FTB and/or PPL <strong>assessed pending proof of birth</strong>, post-birth claim also submitted for the same birth event but not yet processed&#58;</li>
+			<ul>			<li>
+Mark the post-birth claim as <strong>Not Required</strong></li>
+			<li>
+Use the <strong>Add newborn</strong> service through Workspace &gt; Claims Online &gt; Add Newborn and create an Add Newborn activity, using the information provided in the post-birth claim</li>
+			<li>
+<a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step07">Go to Step 7</a></li>			</ul>			</ul>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_Customer_lodged_Step07"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Claim assessed pending proof of birth</strong> <a title="Read more 35" class="showhead bp03_tbl_Customer_lodged_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1365,7 +1513,7 @@ Date of Birth (DOB) inclusive, the system updates the NSD to the DOB. This is th
 		</ul>
 <p><strong>Has an ISP customer been granted PPL?</strong></p>
 		<ul>		<li>
-<strong>Yes</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step07">go to Step 7</a></li>
+<strong>Yes</strong>, <a href="../families/007-07030080-03.html#bp03_tbl_Customer_lodged_Step08">go to Step 8</a></li>
 		<li>
 <strong>No</strong>, procedure ends here</li>		</ul>
 </div>
@@ -1375,11 +1523,11 @@ Date of Birth (DOB) inclusive, the system updates the NSD to the DOB. This is th
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Customer_lodged_Step07"></a>
-<p>7</p></td>
+<a class="anchor" name="bp03_tbl_Customer_lodged_Step08"></a>
+<p>8</p></td>
 <td>
 
-<p><strong>ISP customers granted PPL</strong> <a title="Read more 29" class="showhead bp03_tbl_Customer_lodged_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>ISP customers granted PPL</strong> <a title="Read more 36" class="showhead bp03_tbl_Customer_lodged_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1405,13 +1553,21 @@ Date of Birth (DOB) inclusive, the system updates the NSD to the DOB. This is th
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Customer_lodged_Step08"></a>
-<p>8</p></td>
+<a class="anchor" name="bp03_tbl_Customer_lodged_Step09"></a>
+<p>9</p></td>
 <td>
 
-<p><strong>DAP</strong></p>
+<p><strong>DAP</strong> <a title="Read more 37" class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
 
-<p><strong>Customer partnered to birth mother</strong> <a title="Read more 30" class="showhead bp03_tbl_Customer_lodged_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+
+<p>Select the appropriate option below&#58;</p>
+</div>
+
+
+<p></p>
+
+<p><strong>Customer partnered to birth mother</strong> <a title="Read more 38" class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1439,7 +1595,7 @@ Date of Birth (DOB) inclusive, the system updates the NSD to the DOB. This is th
 
 <p></p>
 
-<p><strong>Customer not partnered to birth mother</strong> <a title="Read more 31" class="showhead bp03_tbl_Customer_lodged_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Customer not partnered to birth mother</strong> <a title="Read more 39" class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1469,11 +1625,11 @@ Date of Birth (DOB) inclusive, the system updates the NSD to the DOB. This is th
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Customer_lodged_Step09"></a>
-<p>9</p></td>
+<a class="anchor" name="bp03_tbl_Customer_lodged_Step10"></a>
+<p>10</p></td>
 <td>
 
-<p><strong>Pre-birth claim finalised as 'NEF'</strong> <a title="Read more 32" class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-birth claim finalised as 'NEF'</strong> <a title="Read more 40" class="showhead bp03_tbl_Customer_lodged_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1499,11 +1655,11 @@ the DAP claim can be re-indexed from the date the agency receives the new inform
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Customer_lodged_Step10"></a>
-<p>10</p></td>
+<a class="anchor" name="bp03_tbl_Customer_lodged_Step11"></a>
+<p>11</p></td>
 <td>
 
-<p><strong>Pre-birth claim not yet processed</strong> <a title="Read more 33" class="showhead bp03_tbl_Customer_lodged_Step10" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step10" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Pre-birth claim not yet processed</strong> <a title="Read more 41" class="showhead bp03_tbl_Customer_lodged_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -1581,11 +1737,11 @@ ACC must assess both the pre-birth claim and the proof of birth together</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_Customer_lodged_Step11"></a>
-<p>11</p></td>
+<a class="anchor" name="bp03_tbl_Customer_lodged_Step12"></a>
+<p>12</p></td>
 <td>
 
-<p><strong>CCS only claim</strong> <a title="Read more 34" class="showhead bp03_tbl_Customer_lodged_Step11" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step11" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>CCS only claim</strong> <a title="Read more 42" class="showhead bp03_tbl_Customer_lodged_Step12" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Customer_lodged_Step12" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

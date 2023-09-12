@@ -137,6 +137,10 @@ Table 1
 |                                   |     did not accept a verbal       |
 |                                   |     declaration                   |
 |                                   |                                   |
+|                                   | check the ‘SUSYC’ keyword has     |
+|                                   | been added if the student is      |
+|                                   | studying a Startup Year Course    |
+|                                   |                                   |
 |                                   | If the Claim Type and Verbal      |
 |                                   | Declaration Keywords have not     |
 |                                   | been added:                       |
@@ -170,6 +174,10 @@ Table 1
 |                                   | -   'VERBNO' - if the applicant   |
 |                                   |     did not accept a verbal       |
 |                                   |     declaration                   |
+|                                   |                                   |
+|                                   | add the ‘SUSYC’ keyword if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
 |                                   |                                   |
 |                                   | If no ABSTUDY NCL activity is on  |
 |                                   | the AL screen                     |
@@ -210,6 +218,10 @@ Table 1
 |                                   | -   'VERBNO' - if the applicant   |
 |                                   |     did not accept a verbal       |
 |                                   |     declaration                   |
+|                                   |                                   |
+|                                   | add the ‘SUSYC’ keyword if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
 |                                   |                                   |
 |                                   | Go to Step 4.                     |
 +-----------------------------------+-----------------------------------+
@@ -296,6 +308,10 @@ Table 1
 |                                   |     'EPANCL' (ABSTUDY Pensioner   |
 |                                   |     Education Supplement) Claim   |
 |                                   |     Type Keyword has been added   |
+|                                   | -   check the ‘SUSYC’ keyword has |
+|                                   |     been added if the student is  |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | If the Claim Type Keyword has not |
 |                                   | been added:                       |
@@ -310,6 +326,9 @@ Table 1
 |                                   |     (ABSTUDY Pensioner Education  |
 |                                   |     Supplement) Claim Type        |
 |                                   |     Keyword                       |
+|                                   | -   add the ‘SUSYC’ keyword if    |
+|                                   |     the student is studying a     |
+|                                   |     Startup Year Course           |
 |                                   |                                   |
 |                                   | If no ABSTUDY NCL activity is on  |
 |                                   | the AL screen                     |
@@ -332,6 +351,9 @@ Table 1
 |                                   |     (ABSTUDY Pensioner Education  |
 |                                   |     Supplement) Claim Type        |
 |                                   |     Keyword                       |
+|                                   | -   add the ‘SUSYC’ keyword if    |
+|                                   |     the student is studying a     |
+|                                   |     Startup Year Course           |
 |                                   |                                   |
 |                                   | Go to Step 7.                     |
 +-----------------------------------+-----------------------------------+
@@ -593,11 +615,38 @@ Table 2
 |                                   |     Destination Details (PASB)    |
 |                                   |     screen                        |
 |                                   |                                   |
-|                                   | Note: transferring customers      |
-|                                   | between different PES types -     |
-|                                   | interim procedure required.       |
+|                                   | If Error: X511AS - PE date does   |
+|                                   | not align with customer EPEDC     |
+|                                   | Cluster/PES Cur Navkey: #PLENT    |
+|                                   | occurs go to Step 2.              |
+|                                   |                                   |
+|                                   | Otherwise, go to Step 3.          |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Date of commencement + Read more  |
+| 2                                 | Work around for X511AS error +    |
+|                                   | Read more ...                     |
+|                                   |                                   |
+|                                   | When this error occurs wait until |
+|                                   | after the first entitlement       |
+|                                   | period of the new payment has     |
+|                                   | passed before processing the      |
+|                                   | claim as the bug no longer occurs |
+|                                   | after the end of the first        |
+|                                   | entitlement period.               |
+|                                   |                                   |
+|                                   | For example, if granting from 14  |
+|                                   | April 2009, the first entitlement |
+|                                   | period is 14 April 2009 to 27     |
+|                                   | April 2009. On 28 April 2009 (or  |
+|                                   | later), the bug will not occur    |
+|                                   | and the claim can be finalised.   |
+|                                   |                                   |
+|                                   | Note: the customer will receive   |
+|                                   | their first payment one day late  |
+|                                   | if the claim is finalised on the  |
+|                                   | first day after the end of the    |
+|                                   | entitlement period.               |
++-----------------------------------+-----------------------------------+
+| 3                                 | Date of commencement + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | The date of commencement for      |
@@ -624,7 +673,7 @@ Table 2
 |                                   |     Supplement (PES), Austudy,    |
 |                                   |     PES, and Youth Allowance (YA) |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Final steps to complete claim +   |
+| 4                                 | Final steps to complete claim +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Finalise the claim via the        |
