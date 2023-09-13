@@ -93,7 +93,9 @@ Table 1
 |                                   |                                   |
 |                                   | Process in Process Direct:        |
 |                                   |                                   |
-|                                   | -   online claims                 |
+|                                   | -   online claims, except if      |
+|                                   |     customer is studying a        |
+|                                   |     Startup Year Course           |
 |                                   | -   Assisted Customer Claims      |
 |                                   |     (ACC)                         |
 |                                   | -   paper claims for ABSTUDY      |
@@ -108,9 +110,17 @@ Table 1
 |                                   | -   all other paper claim forms   |
 |                                   | -   claims submitted through the  |
 |                                   |     ABSTUDY Claiming Tool         |
+|                                   | -   online claims where a         |
+|                                   |     customer is studying a        |
+|                                   |     Startup Year Course           |
 |                                   |                                   |
-|                                   | Claims allocated for processing   |
-|                                   | in:                               |
+|                                   | Is the student studying a Startup |
+|                                   | Year Course?                      |
+|                                   |                                   |
+|                                   | Yes, go to Step 12                |
+|                                   |                                   |
+|                                   | No, claims allocated for          |
+|                                   | processing in:                    |
 |                                   |                                   |
 |                                   | -   Process Direct, see Step 1    |
 |                                   |     Table 5                       |
@@ -306,6 +316,48 @@ Table 1
 |                                   | Complete any open scanned         |
 |                                   | documents relating to the claim.  |
 +-----------------------------------+-----------------------------------+
+| 12                                | Startup Year Course + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Process claims for students       |
+|                                   | studying a Startup Year Course in |
+|                                   | Customer First. The claim will    |
+|                                   | need to be handed over to         |
+|                                   | Customer First.                   |
+|                                   |                                   |
+|                                   | Go to the Name Search (IN) screen |
+|                                   | in Customer First and complete    |
+|                                   | the following fields:             |
+|                                   |                                   |
+|                                   | -   Surname: student's surname    |
+|                                   | -   First Name or Initial:        |
+|                                   |     student's first name or       |
+|                                   |     initial                       |
+|                                   | -   DOB: student's date of birth  |
+|                                   | -   ServRsn: ABY                  |
+|                                   | -   Act: NCL                      |
+|                                   | -   Srce: OLC                     |
+|                                   | -   DOR: date the original claim  |
+|                                   |     was made.                     |
+|                                   | -   Select Continue               |
+|                                   | -   Select the correct customer   |
+|                                   |     from the list                 |
+|                                   | -   select Continue               |
+|                                   | -   The Person Details (PED)      |
+|                                   |     screen displays, key 'Y' to   |
+|                                   |     confirm                       |
+|                                   | -   Select Continue               |
+|                                   | -   The Handover (HOV) screen     |
+|                                   |     displays, 'S'elect the claim  |
+|                                   |     to link the claim being       |
+|                                   |     indexed to the existing claim |
+|                                   |     in SAP                        |
+|                                   | -   Key IMP - Not implemented in  |
+|                                   |     the Select Value field        |
+|                                   | -   Select Continue               |
+|                                   |                                   |
+|                                   | Go to Step 3 in Table 2.          |
++-----------------------------------+-----------------------------------+
 
 ABSTUDY Claiming Tool and paper claims
 
@@ -384,8 +436,14 @@ Table 2
 |                                   | -   select (K) Keywords, and      |
 |                                   | -   select Continue               |
 |                                   |                                   |
-|                                   | check the Claim Type keyword of   |
-|                                   | INCNCL is added                   |
+|                                   | check the appropriate claim type  |
+|                                   | keyword has been added:           |
+|                                   |                                   |
+|                                   | -   ‘INCNCL’ - ABSTUDY            |
+|                                   |     Incidentals Allowance, and    |
+|                                   | -   ‘SUSYC’ if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | check the appropriate Verbal      |
 |                                   | Declaration Keyword is added:     |
@@ -452,6 +510,10 @@ Table 2
 |                                   |     not accept a verbal           |
 |                                   |     declaration                   |
 |                                   |                                   |
+|                                   | add the ‘SUSYC’ keyword if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
+|                                   |                                   |
 |                                   | Go to Step 6.                     |
 +-----------------------------------+-----------------------------------+
 | 5                                 | No new claim activity on Activity |
@@ -497,6 +559,10 @@ Table 2
 |                                   | -   VERBNO - if the applicant did |
 |                                   |     not accept a verbal           |
 |                                   |     declaration                   |
+|                                   |                                   |
+|                                   | add the ‘SUSYC’ keyword if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Customer Declaration Form         |
 |                                   | returned + Read more ...          |
@@ -569,13 +635,20 @@ Table 2
 |                                   |                                   |
 |                                   | To check the Keywords:            |
 |                                   |                                   |
-|                                   | -   select the ABSTUDY/New Claim  |
-|                                   |     activity on the AL screen     |
-|                                   | -   from the Selection Options    |
-|                                   |     screen, select Keywords       |
-|                                   | -   check the appropriate Claim   |
-|                                   |     Type Keyword of INCNCL is     |
-|                                   |     added                         |
+|                                   | select the ABSTUDY/New Claim      |
+|                                   | activity on the AL screen         |
+|                                   |                                   |
+|                                   | from the Selection Options        |
+|                                   | screen, select Keywords           |
+|                                   |                                   |
+|                                   | check the appropriate Claim Type  |
+|                                   | Keyword has been added:           |
+|                                   |                                   |
+|                                   | -   ‘INCNCL’ - ABSTUDY            |
+|                                   |     Incidentals Allowance         |
+|                                   | -   ‘SUSYC’ if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | Is the Claim Type Keyword added?  |
 |                                   |                                   |
@@ -596,8 +669,13 @@ Table 2
 |                                   |     the activity to another       |
 |                                   |     site/region, and select       |
 |                                   |     Continue                      |
-|                                   | -   add the 'INCNCL' Claim Type   |
-|                                   |     Keyword                       |
+|                                   | -   add the appropriate Claim     |
+|                                   |     Type keyword:                 |
+|                                   |     ‘INCNCL’-ABSTUDY Incidentals  |
+|                                   |     Allowance                     |
+|                                   |     ‘SUSYC’ if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   | -   if the customer is claiming   |
 |                                   |     as:                           |
 |                                   |     a student, see Step 1 in      |
@@ -628,8 +706,14 @@ Table 2
 |                                   |     site/region, and              |
 |                                   | -   select Continue               |
 |                                   |                                   |
-|                                   | add the 'INCNCL' Claim Type       |
-|                                   | Keyword                           |
+|                                   | add the appropriate Claim Type    |
+|                                   | keyword:                          |
+|                                   |                                   |
+|                                   | -   ‘INCNCL’ - ABSTUDY            |
+|                                   |     Incidentals Allowance         |
+|                                   | -   ‘SUSYC’ if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | Is the customer claiming as a     |
 |                                   | student?                          |
@@ -1852,9 +1936,8 @@ Table 6
 |                                   |                                   |
 |                                   | The Claim Finalisation Note will  |
 |                                   | appear, see Recording reasons for |
-|                                   | decisions under Getting it Right. |
-|                                   | Edit or add any extra details     |
-|                                   | required                          |
+|                                   | decisions. Edit or add any extra  |
+|                                   | details required                  |
 |                                   |                                   |
 |                                   | Select Finalise to complete the   |
 |                                   | claim                             |
@@ -1888,9 +1971,8 @@ Table 6
 |                                   | the Finalise screen               |
 |                                   |                                   |
 |                                   | See Recording reasons for         |
-|                                   | decisions under Getting it Right. |
-|                                   | Edit or add any extra details     |
-|                                   | required                          |
+|                                   | decisions. Edit or add any extra  |
+|                                   | details required                  |
 |                                   |                                   |
 |                                   | Select Finalise to complete the   |
 |                                   | claim                             |

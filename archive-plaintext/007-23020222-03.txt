@@ -91,20 +91,20 @@ Table 2
 | 1                                 | Approval task workflow + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
-|                                   | When an Approval Seeker is read   |
+|                                   | When an Approval Seeker is ready  |
 |                                   | to submit a claim for a PPL       |
 |                                   | child, an Approval task will be   |
-|                                   | created on the Approval Givers    |
-|                                   | record. This task is created      |
-|                                   | before the Approval Seeker can    |
-|                                   | submit their claim. Once the task |
-|                                   | has been completed by the         |
-|                                   | Approval Giver then the Approval  |
-|                                   | Seeker is able to submit their    |
-|                                   | claim.                            |
+|                                   | created on the Approval Giver's   |
+|                                   | online account. This task is      |
+|                                   | created before the Approval       |
+|                                   | Seeker can submit their claim.    |
+|                                   | Once the task has been completed  |
+|                                   | by the Approval Giver then the    |
+|                                   | Approval Seeker is able to submit |
+|                                   | their claim.                      |
 |                                   |                                   |
 |                                   | An Approval Task is created on    |
-|                                   | the Approval Givers records when  |
+|                                   | the Approval Giver's record when  |
 |                                   | another person claims for their   |
 |                                   | child and has requested some PPL  |
 |                                   | days.                             |
@@ -119,12 +119,13 @@ Table 2
 |                                   |     another person                |
 |                                   |                                   |
 |                                   | When the Approval task is         |
-|                                   | launched from the Approval Givers |
-|                                   | Online Services, the Approval     |
-|                                   | Giver is advised that a PPL claim |
-|                                   | has been made by someone          |
-|                                   | (Approval Seeker) and that they   |
-|                                   | will be caring for their child.   |
+|                                   | launched from the Approval        |
+|                                   | Giver's Online Services, the      |
+|                                   | Approval Giver is advised that a  |
+|                                   | PPL claim has been made by        |
+|                                   | someone (Approval Seeker) and     |
+|                                   | that they will be caring for      |
+|                                   | their child.                      |
 |                                   |                                   |
 |                                   | For pre-birth claims the task     |
 |                                   | will refer to the child as the    |
@@ -138,9 +139,9 @@ Table 2
 |                                   | information when completing the   |
 |                                   | Approval task:                    |
 |                                   |                                   |
-|                                   | -   Relationship to the child     |
-|                                   |     (e.g. birth mother, adoptive  |
-|                                   |     parent)                       |
+|                                   | -   Their relationship to the     |
+|                                   |     child (e.g. birth mother,     |
+|                                   |     adoptive parent)              |
 |                                   | -   Relationship type (displayed  |
 |                                   |     only if Relationship to the   |
 |                                   |     child is ‘none of the above’) |
@@ -173,7 +174,7 @@ Table 2
 |                                   | Leave Pay work test.              |
 |                                   |                                   |
 |                                   | As part of the Approval task      |
-|                                   | workflow the Approval Giver need  |
+|                                   | workflow the Approval Giver needs |
 |                                   | to answer the following           |
 |                                   | questions:                        |
 |                                   |                                   |
@@ -235,62 +236,100 @@ Table 3
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Where an Approval Seeker is       |
-|                                   | claiming PPL and they have not    |
-|                                   | provided enough information to be |
-|                                   | uniquely matched to identify the  |
-|                                   | Approval Giver, the Approval      |
-|                                   | Seeker will be provided with a    |
-|                                   | TAC.                              |
+|                                   | claiming PPL they will be asked   |
+|                                   | in their claim to provide the     |
+|                                   | Approval Giver’s details. The     |
+|                                   | system will use these details to  |
+|                                   | identify the Approval Giver’s     |
+|                                   | online account to create the      |
+|                                   | Approval Task.                    |
 |                                   |                                   |
-|                                   | The Approval Seeker will provide  |
-|                                   | the TAC to the Approval Giver to  |
-|                                   | be able to complete Approval      |
-|                                   | task.                             |
+|                                   | Where the system cannot find a    |
+|                                   | unique match for the Approval     |
+|                                   | Giver, the Approval Giver must    |
+|                                   | authenticate themselves by        |
+|                                   | completing the ‘Parental Leave    |
+|                                   | Pay Verification’ task. This will |
+|                                   | identify their record so the      |
+|                                   | system can create the Approval    |
+|                                   | Task on their online account.     |
 |                                   |                                   |
-|                                   | The system shall trigger a TAC to |
-|                                   | enable the Approval Giver to      |
-|                                   | create a CRN or authenticate      |
-|                                   | themselves via their Centrelink   |
-|                                   | online account to then access the |
-|                                   | Approval task.                    |
+|                                   | In these cases the Approval       |
+|                                   | Seeker will be provided with      |
+|                                   | information in their claim to     |
+|                                   | give to the Approval Giver. The   |
+|                                   | information includes the Claim    |
+|                                   | Number, a Temporary Access Code   |
+|                                   | (TAC) and instructions how the    |
+|                                   | Approval Giver can authenticate   |
+|                                   | themselves.                       |
+|                                   |                                   |
+|                                   | The information will tell the     |
+|                                   | Approval Giver to go to the       |
+|                                   | ‘Giving approval to share         |
+|                                   | Parental Leave Pay’ webpage (the  |
+|                                   | Resources page has a link).       |
+|                                   |                                   |
+|                                   | On this webpage the Approval      |
+|                                   | Giver must select the link for    |
+|                                   | the ‘Parental Leave Pay           |
+|                                   | Verification’ task. The Approval  |
+|                                   | Giver must have a CRN linked to   |
+|                                   | their myGov account before they   |
+|                                   | can complete this task. The       |
+|                                   | customer can access this webpage  |
+|                                   | via the short URL                 |
+|                                   | serviceau                         |
+|                                   | stralia.gov.au/ApprovalToSharePLP |
+|                                   | (do not use spaces) or they can   |
+|                                   | enter the Quick Code QC 65018     |
+|                                   | into the search field.            |
 +-----------------------------------+-----------------------------------+
 | 2                                 | TAC login page + Read more ...    |
+|                                   |                                   |
+|                                   | After the Approval Giver has      |
+|                                   | selected the ‘Parental Leave Pay  |
+|                                   | Verification’ link they will be   |
+|                                   | taken to the login page.          |
 |                                   |                                   |
 |                                   | The Approval Giver will need the  |
 |                                   | Claim Number and TAC to enter the |
 |                                   | service. Both of these numbers    |
 |                                   | will be generated in the Approval |
-|                                   | Seeker’s PPL claim. The Approval  |
-|                                   | Seeker will be able to print this |
-|                                   | information and will be advised   |
-|                                   | in the online claim to provide    |
-|                                   | this information to the Approval  |
-|                                   | Giver.                            |
+|                                   | Seeker’s PPL claim.               |
+|                                   |                                   |
+|                                   | The Approval Seeker will be able  |
+|                                   | to print this information and     |
+|                                   | will be advised in the online     |
+|                                   | claim to provide this information |
+|                                   | to the Approval Giver.            |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Customer Reference Number (CRN)   |
 |                                   | Verification + Read more ...      |
 |                                   |                                   |
-|                                   | The Approval task requires the    |
+|                                   | The ‘Parental Leave Pay           |
+|                                   | Verification’ task requires the   |
 |                                   | Approval Giver to have a CRN.     |
 |                                   |                                   |
-|                                   | Once the TAC and Approval ID is   |
-|                                   | entered, the Approval Giver will  |
-|                                   | be asked to provide their CRN (if |
-|                                   | they have one).                   |
+|                                   | Once the Claim Number and TAC and |
+|                                   | are entered, the Approval Giver   |
+|                                   | will be asked to provide their    |
+|                                   | CRN (if they have one).           |
 |                                   |                                   |
 |                                   | If the Approval Giver does not    |
 |                                   | have a CRN then, they will leave  |
-|                                   | the TAC service to create a CRN.  |
+|                                   | the TAC service to create a CRN   |
+|                                   | via myGov.                        |
 |                                   |                                   |
 |                                   | Once they have created or located |
 |                                   | their CRN, the Approval Giver can |
 |                                   | continue to use the TAC service.  |
-|                                   | The TAC and claim ID will remain  |
-|                                   | valid whilst the Approval Seekers |
-|                                   | claim is in process. If the       |
-|                                   | Approval Seeker withdraws their   |
-|                                   | claim there will no longer be a   |
-|                                   | requirement to complete the       |
+|                                   | The TAC and Claim Number will     |
+|                                   | remain valid whilst the Approval  |
+|                                   | Seekers claim is in process. If   |
+|                                   | the Approval Seeker withdraws     |
+|                                   | their claim there will no longer  |
+|                                   | be a requirement to complete the  |
 |                                   | Approval task.                    |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Personal Details + Read more ...  |
@@ -308,42 +347,13 @@ Table 3
 |                                   | provide their:                    |
 |                                   |                                   |
 |                                   | -   Title                         |
-|                                   | -   First name                    |
+|                                   | -   Given name                    |
 |                                   | -   Middle name(s) (optional)     |
 |                                   | -   Family name                   |
 |                                   | -   Date of birth                 |
-|                                   | -   Current relationship status   |
-|                                   | -   Contact details               |
-|                                   | -   Address                       |
-|                                   | -   Telephone                     |
+|                                   | -   Contact details/Telephone     |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Your Child details + Read more    |
-|                                   | ...                               |
-|                                   |                                   |
-|                                   | The purpose of this page is to    |
-|                                   | collect details from the Approval |
-|                                   | Giver about the PPL child being   |
-|                                   | claimed for.                      |
-|                                   |                                   |
-|                                   | The Approval Giver will need to   |
-|                                   | provide:                          |
-|                                   |                                   |
-|                                   | -   Expected/Actual Date of       |
-|                                   |     Birth/Date of placement       |
-|                                   | -   Approval Giver’s relationship |
-|                                   |     to child                      |
-|                                   | -   Approval Seeker’s             |
-|                                   |     relationship to child         |
-|                                   |                                   |
-|                                   | Additionally for post birth       |
-|                                   | claims:                           |
-|                                   |                                   |
-|                                   | -   First name                    |
-|                                   | -   Middle name(s)                |
-|                                   | -   Family name                   |
-|                                   | -   Child CRN (if known)          |
-+-----------------------------------+-----------------------------------+
-| 6                                 | Review and confirm + Read more    |
+| 5                                 | Review and confirm + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | The Review and Confirm page will  |
@@ -353,14 +363,16 @@ Table 3
 |                                   | to review. Once submitted, the    |
 |                                   | Approval task will generate.      |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Next Steps + Read more ...        |
+| 6                                 | Next Steps + Read more ...        |
 |                                   |                                   |
 |                                   | If match is successful, the       |
-|                                   | Approval Giver can now login      |
-|                                   | their MyGov account to complete   |
+|                                   | Approval Giver can log in to      |
+|                                   | their myGov account to complete   |
 |                                   | the Approval task which will now  |
 |                                   | display in their Centrelink       |
-|                                   | Online Service.                   |
+|                                   | Online Service. It may take       |
+|                                   | several minutes for the task to   |
+|                                   | appear in their online account.   |
 |                                   |                                   |
 |                                   | If the match is unsuccessful, a   |
 |                                   | Failed Online Change in           |

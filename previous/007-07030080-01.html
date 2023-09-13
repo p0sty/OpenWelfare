@@ -266,8 +266,31 @@ complete Medicare enrolment and register child for a My Health Record</li>
 <p></p>
 <div class="twisty">
 	
+<a class="anchor" name="bp01_L2GT_Add_newborn_chi"></a>
+<h2 id="bp01_L2GT_Add_newborn_chi">Add newborn child/Add child services</h2>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>A Customer who has previously finalised their pre-birth claim with a status of assessed and pending proof of birth will be able to access these services. The option will be available for a customer who has any of the following service reasons&#58;</p>
+		<ul>		<li>
+FTB/PND-POB (may not display on the benefit status if FTB/CUR)</li>
+		<li>
+FTB/PND-POP (may not display on the benefit status if FTB/CUR)</li>
+		<li>
+PPL/ASS-PCB</li>
+		</ul>
+<p>Once processing of the pre-birth claim is completed, an Add newborn child task is created in online services and an Add child task in the Express Plus Centrelink mobile App. Where the customer and their partner both lodge pre-birth claims for FTB and/or PPL, they will both receive one of these tasks.</p>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
 <a class="anchor" name="bp01_L2GT_Process_when_pr"></a>
-<h2 id="bp01_L2GT_Process_when_pr">Process when proof of birth received</h2>
+<h2 id="bp01_L2GT_Process_when_pr">Process when proof of birth received and completed the 'Add newborn child' service online</h2>
 
 	<div class="collapsible_container">
 		<div class="block">
@@ -278,12 +301,20 @@ has not yet claimed payments, advise them of their potential entitlement and how
 		<li>
 already has lodged a pre-birth claim that has been assessed pending proof of birth, their claim can be finalised if they&#58;</li>
 			<ul>			<li>
-have <a href="../families/007-03010030-01.html">provided proof of birth</a> and completed the 'Add newborn child' service online,</li>
+have <a href="../families/007-03010030-01.html">provided proof of birth</a>, or</li>
 			<li>
-completed the Add child service or</li>
+the 'Add child' service via the Express Plus Centrelink mobile app, or</li>
 			<li>
 completed the FA081 in full (the 'Add newborn child' service is not available for Dad and Partner Pay (DAP) claims)</li>
 			</ul>			</ul>
+<p>When a Newborn Child Declaration (FA081) is scanned to the customer's record, a Social Application (SOA) shell Work Item is generated. This SOA activity contains no information apart from the Customer Reference Number (CRN), personal details and the receipt date (date of claim).</p>
+		<ul>		<li>
+Relevant information needs to be manually updated within the Work Item using information from the scanned form and associated documentation</li>
+		<li>
+Where a paper FA081 did not create a SOA activity, a SOA shell must be manually created via the Process Direct Landing page</li>
+		</ul>
+<p>Activities must be coded and processed using the correct date of receipt (DOR). The DOR is the first date the customer's FA081 was received. The DOR can sometimes differ from the 'capture date'. Staff can confirm the correct date in <strong>Documents </strong>in Process Direct. This screen displays the 'date of receipt' and 'capture date'.</p>
+
 <p>A letter from an agency confirming proof of birth for a foster care child is not proof of birth. It can be proof of a change in care.</p>
 
 <p>While the agency generally collects gender, for newborn children sex is collected at birth with the options of Male or Female. Staff can record this on the gender field. Customers can request a change of gender for a newborn child; see <a target="_blank" href="../ongoing-contact/102-08020000-01.html">Updating gender details on customer records</a>.</p>

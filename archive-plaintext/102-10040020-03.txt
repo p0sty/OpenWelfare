@@ -24,13 +24,15 @@ restoration of ABSTUDY payments.
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Query about ABSTUDY               |
-|                                   | cancellation + Read more ...      |
+| 1                                 | Query about ABSTUDY cancellation  |
+|                                   | or suspension + Read more ...     |
 |                                   |                                   |
 |                                   | Customer queries ABSTUDY          |
-|                                   | cancellation. Determine the       |
-|                                   | cancellation or suspension        |
-|                                   | reason.                           |
+|                                   | cancellation or suspension.       |
+|                                   | Determine the cancellation or     |
+|                                   | suspension reason. See Codes for  |
+|                                   | ABSTUDY cancellation, suspension  |
+|                                   | and rejection.                    |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Details needed for restoration +  |
 |                                   | Read more ...                     |
@@ -52,18 +54,27 @@ restoration of ABSTUDY payments.
 |                                   | details needed for restoration to |
 |                                   | occur?                            |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 3             |
-|                                   | -   No, see Step 5 in Table 3     |
-+-----------------------------------+-----------------------------------+
-| 3                                 | Has the contact been made through |
-|                                   | the Smart Centre Call + Read more |
-|                                   | ...                               |
+|                                   | Yes, for:                         |
 |                                   |                                   |
-|                                   | Is the customer contacting        |
-|                                   | through the Smart Centre Call?    |
+|                                   | -   [                             |
+|                                   | \\INTERNAL.DEPT.LOCAL\Shared\NAT\ |
+|                                   | SERDELEXCEL\WORKPRODIMP\Operation |
+|                                   |     Blueprint Migration\RDT       |
+|                                   |     Release                       |
+|                                   |     I                             |
+|                                   | cons\32w\icon-phone.png]Telephony |
+|                                   |     staff see Step 1 in Table 2   |
+|                                   | -   [Processing Team: Typically   |
+|                                   |     done by specialised           |
+|                                   |     processing teams in a service |
+|                                   |     centre or Smart Centre.       |
+|                                   |     Unless otherwise stated, all  |
+|                                   |     service delivery staff may    |
+|                                   |     complete this step if they    |
+|                                   |     are trained.] Processing      |
+|                                   |     staff see Step 3 in Table 2   |
 |                                   |                                   |
-|                                   | -   Yes, see Step 1 in Table 2    |
-|                                   | -   No, see Step 3 in Table 2     |
+|                                   | No, see Step 5 in Table 3         |
 +-----------------------------------+-----------------------------------+
 
 Restoration by Smart Centre Call or ABSTUDY Smart Centre Processing
@@ -145,6 +156,15 @@ restore ABSTUDY payments.
 |                                   | -   The Schooling A Award student |
 |                                   |     has been cancelled 'Applicant |
 |                                   |     not qualified' (ANQ)          |
+|                                   | -   The payment has been          |
+|                                   |     cancelled 'Not entitled to    |
+|                                   |     STARTUP-HELP' (SUH) and the   |
+|                                   |     customer has provided POE for |
+|                                   |     their Startup Year Course and |
+|                                   |     evidence they have been       |
+|                                   |     selected for a STARTUP-HELP   |
+|                                   |     loan. See Startup Year        |
+|                                   |     Courses                       |
 |                                   | -   The payment is SUS-IMP go to  |
 |                                   |     Step 4                        |
 |                                   |                                   |
@@ -603,7 +623,7 @@ recorded on the system before restoration.
 |                                   | make sure it is current and not   |
 |                                   | listed under the History section. |
 |                                   |                                   |
-|                                   | See Step 3 in Table 5.            |
+|                                   | See Step 6 in Table 5.            |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Gap in applicant's entitlements   |
 |                                   | or ABSTUDY cancelled for more     |
@@ -768,7 +788,7 @@ details if they are under Income Management.
 |                                   | or CAN-NAS?                       |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 2             |
-|                                   | -   No, go to Step 5              |
+|                                   | -   No, go to Step 6              |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Determining the date of           |
 |                                   | commencement + Read more ...      |
@@ -794,16 +814,47 @@ details if they are under Income Management.
 |                                   | term?                             |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 3             |
-|                                   | -   No, go to Step 5              |
+|                                   | -   No, go to Step 6              |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Boarding in the previous term +   |
+| 3                                 | Late start due to circumstances   |
+|                                   | beyond their control + Read more  |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | If a student's late start was due |
+|                                   | to circumstances beyond their     |
+|                                   | control, they are entitled to     |
+|                                   | Living Allowance from the first   |
+|                                   | day of the term entitlement       |
+|                                   | period.                           |
+|                                   |                                   |
+|                                   | Was the student unable to         |
+|                                   | commence on time due to           |
+|                                   | circumstances beyond their        |
+|                                   | control?                          |
+|                                   |                                   |
+|                                   | Yes, and evidence                 |
+|                                   |                                   |
+|                                   | -   has been provided, go to Step |
+|                                   |     6                             |
+|                                   | -   has not been provided,        |
+|                                   |     payment cannot be issued      |
+|                                   |     until confirmation of         |
+|                                   |     circumstances has been        |
+|                                   |     provided. Advise the customer |
+|                                   |     what evidence is required for |
+|                                   |     payments to be restored.      |
+|                                   |     Procedure ends here           |
+|                                   |                                   |
+|                                   | No, go to Step 4                  |
++-----------------------------------+-----------------------------------+
+| 4                                 | Boarding in the previous term +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Was the student entitled to       |
 |                                   | ABSTUDY boarding instalments in   |
 |                                   | the previous term?                |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 4             |
+|                                   | -   Yes, go to Step 5             |
 |                                   | -   No, due to system limitations |
 |                                   |     the Service Officer will need |
 |                                   |     to reject and re-grant the    |
@@ -813,7 +864,7 @@ details if they are under Income Management.
 |                                   |     a claim for an ABSTUDY        |
 |                                   |     secondary boarder             |
 +-----------------------------------+-----------------------------------+
-| 4                                 | Coding gap in entitlement + Read  |
+| 5                                 | Coding gap in entitlement + Read  |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Students who have commenced       |
@@ -898,9 +949,9 @@ details if they are under Income Management.
 |                                   | -   Household Income and Assets   |
 |                                   |     (NHI)                         |
 |                                   |                                   |
-|                                   | Go to Step 5.                     |
+|                                   | Go to Step 6.                     |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Restore ABSTUDY + Read more ...   |
+| 6                                 | Restore ABSTUDY + Read more ...   |
 |                                   |                                   |
 |                                   | If the customer is under income   |
 |                                   | management (INM on the benefit    |
@@ -978,12 +1029,12 @@ details if they are under Income Management.
 |                                   | Is an excess payment (negative    |
 |                                   | adjustment) identified?           |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 6             |
+|                                   | -   Yes, go to Step 7             |
 |                                   | -   No, record details of contact |
 |                                   |     and restoration on a DOC.     |
 |                                   |     Procedure ends here           |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Determine any excess payment +    |
+| 7                                 | Determine any excess payment +    |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | When a customer's ABSTUDY record  |

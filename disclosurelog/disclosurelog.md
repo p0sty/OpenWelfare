@@ -196,6 +196,28 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 30 August 2023                    | Documents relating to (LEX        |
+|                                   | 73678):                           |
+|                                   |                                   |
+|                                   | -   Minister's Office: Office of  |
+|                                   |     the Hon Bill Shorten MP,      |
+|                                   |     Minister for the National     |
+|                                   |     Disability Insurance Scheme   |
+|                                   |     and Minister for Government   |
+|                                   |     Services                      |
+|                                   | -   Synergy 360.                  |
+|                                   |                                   |
+|                                   | 3 documents released in part. 6   |
+|                                   | documents released in full. The   |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47C and 47F\                  |
+|                                   | **Exemptions**: Sections 47C and  |
+|                                   | 47F                               |
++-----------------------------------+-----------------------------------+
 | 29 August 2023                    | Documents relating to (LEX        |
 |                                   | 74352):                           |
 |                                   |                                   |
@@ -3605,7 +3627,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 7 September 2023.
+Page last updated: 13 September 2023.
 :::
 :::
 
@@ -3622,7 +3644,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 12 September 2023 from
+This information was printed 13 September 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at

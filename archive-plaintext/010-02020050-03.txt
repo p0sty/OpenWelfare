@@ -185,7 +185,10 @@ Table 1
 |                                   | keyword has been added:           |
 |                                   |                                   |
 |                                   | -   'ABYNCL' - ABSTUDY Living     |
-|                                   |     Allowance                     |
+|                                   |     Allowance, and                |
+|                                   | -   'SUSYC' - if the student is   |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | Check the appropriate Verbal      |
 |                                   | Declaration keyword has been      |
@@ -231,6 +234,10 @@ Table 1
 |                                   | -   'VERBDOC'                     |
 |                                   | -   'VERBNO'                      |
 |                                   |                                   |
+|                                   | Add the 'SUSYC' keyword if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
+|                                   |                                   |
 |                                   | If no ABSTUDY NCL activity is on  |
 |                                   | the AL screen                     |
 |                                   |                                   |
@@ -262,6 +269,10 @@ Table 1
 |                                   | -   'VERBNIL'                     |
 |                                   | -   'VERBDOC'                     |
 |                                   | -   'VERBNO'                      |
+|                                   |                                   |
+|                                   | Add the 'SUSYC' keyword if the    |
+|                                   | student is studying a Startup     |
+|                                   | Year Course                       |
 |                                   |                                   |
 |                                   | Has the applicant accepted a      |
 |                                   | verbal declaration?               |
@@ -365,6 +376,9 @@ Table 1
 |                                   |                                   |
 |                                   | -   'ABYNCL' - ABSTUDY Living     |
 |                                   |     Allowance                     |
+|                                   | -   'SUSYC' if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | If the Claim Type keyword has not |
 |                                   | been added:                       |
@@ -381,6 +395,9 @@ Table 1
 |                                   |                                   |
 |                                   | -   'ABYNCL' - ABSTUDY Living     |
 |                                   |     Allowance                     |
+|                                   | -   'SUSYC' if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 |                                   |                                   |
 |                                   | If no ABSTUDY NCL activity is on  |
 |                                   | the AL screen                     |
@@ -406,6 +423,9 @@ Table 1
 |                                   |     Allowance                     |
 |                                   | -   'BOARDER' - ABSTUDY Secondary |
 |                                   |     Boarding                      |
+|                                   | -   'SUSYC' if the student is     |
+|                                   |     studying a Startup Year       |
+|                                   |     Course                        |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Determine eligibility + Read more |
 |                                   | ...                               |
@@ -928,7 +948,56 @@ Table 3
 +-----------------------------------+-----------------------------------+
 | Step                              | Action                            |
 +-----------------------------------+-----------------------------------+
-| 1                                 | Education Entry Payment + Read    |
+| 1                                 | Startup Year Course + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Is the student studying a Startup |
+|                                   | Year Course?                      |
+|                                   |                                   |
+|                                   | -   Yes, go to Step 2             |
+|                                   | -   No, go to Step 3              |
++-----------------------------------+-----------------------------------+
+| 2                                 | Startup Year course + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | Process claims for students       |
+|                                   | studying a Startup Year Course in |
+|                                   | Customer First. The claim will    |
+|                                   | need to be handed over to         |
+|                                   | Customer First.                   |
+|                                   |                                   |
+|                                   | Go to the Name Search (IN) screen |
+|                                   | in Customer First and complete    |
+|                                   | the following fields:             |
+|                                   |                                   |
+|                                   | -   Surname: student's surname    |
+|                                   | -   First Name or Initial:        |
+|                                   |     student's first name or       |
+|                                   |     initial                       |
+|                                   | -   DOB: student's date of birth  |
+|                                   | -   ServRsn: ABY                  |
+|                                   | -   Act: NCL                      |
+|                                   | -   Srce: OLC                     |
+|                                   | -   DOR: date the original claim  |
+|                                   |     was made.                     |
+|                                   | -   Select Continue               |
+|                                   | -   Select the correct customer   |
+|                                   |     from the list                 |
+|                                   | -   Select Continue               |
+|                                   | -   The Person Details (PED)      |
+|                                   |     screen displays, key 'Y' to   |
+|                                   |     confirm                       |
+|                                   | -   Select Continue               |
+|                                   | -   The Handover (HOV) screen     |
+|                                   |     displays, 'S'elect the claim  |
+|                                   |     to link the claim being       |
+|                                   |     indexed to the existing claim |
+|                                   |     in SAP.                       |
+|                                   | -   Key IMP - Not implemented in  |
+|                                   |     the Select Value field        |
+|                                   | -   Select Continue               |
++-----------------------------------+-----------------------------------+
+| 3                                 | Education Entry Payment + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If a student was receiving        |
@@ -943,10 +1012,10 @@ Table 3
 |                                   |                                   |
 |                                   | Is the student a dependent?       |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 2             |
-|                                   | -   No, go to Step 3              |
+|                                   | -   Yes, go to Step 4             |
+|                                   | -   No, go to Step 5              |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Parental Link + Read more ...     |
+| 4                                 | Parental Link + Read more ...     |
 |                                   |                                   |
 |                                   | Complete updates to the parental  |
 |                                   | links on the PIT Parent           |
@@ -959,7 +1028,7 @@ Table 3
 |                                   | Australian Apprentice and job     |
 |                                   | seeker recipients or claimants.   |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Commence claim + Read more ...    |
+| 5                                 | Commence claim + Read more ...    |
 |                                   |                                   |
 |                                   | Select Process on the Claim       |
 |                                   | Application screen.to start       |
@@ -990,7 +1059,7 @@ Table 3
 |                                   |     continue to display until the |
 |                                   |     claim is finalised            |
 +-----------------------------------+-----------------------------------+
-| 4                                 | View claim information in Process |
+| 6                                 | View claim information in Process |
 |                                   | Direct + Read more ...            |
 |                                   |                                   |
 |                                   | Using the Claim Summary, check    |
@@ -1021,7 +1090,7 @@ Table 3
 |                                   | Super Key to go through each      |
 |                                   | mandatory screen.                 |
 +-----------------------------------+-----------------------------------+
-| 5                                 | Address details + Read more ...   |
+| 7                                 | Address details + Read more ...   |
 |                                   |                                   |
 |                                   | Ensure the Address Details (AD)   |
 |                                   | are current.                      |
@@ -1037,7 +1106,7 @@ Table 3
 |                                   | normal Remote Area Allowance      |
 |                                   | (RAA) entitlement provisions.     |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Accommodation details + Read more |
+| 8                                 | Accommodation details + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | For process to code the AC        |
@@ -1053,7 +1122,7 @@ Table 3
 |                                   | ABSTUDY Pensioner Education       |
 |                                   | Supplement (PES).                 |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Tax File Number Details + Read    |
+| 9                                 | Tax File Number Details + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | If the customer is 16 years of    |
@@ -1073,7 +1142,7 @@ Table 3
 |                                   | See Tax File Number for ABSTUDY   |
 |                                   | for further information.          |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Identity confirmation + Read more |
+| 10                                | Identity confirmation + Read more |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | ABSTUDY customers are subject to  |
@@ -1089,11 +1158,11 @@ Table 3
 |                                   |                                   |
 |                                   | If the customer is:               |
 |                                   |                                   |
-|                                   | -   A student, go to Step 10      |
+|                                   | -   A student, go to Step 12      |
 |                                   | -   An Australian Apprentice, go  |
-|                                   |     to Step 9                     |
+|                                   |     to Step 11                    |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Coding for Australian             |
+| 11                                | Coding for Australian             |
 |                                   | Apprentice + Read more ...        |
 |                                   |                                   |
 |                                   | For Australian Apprentices, the   |
@@ -1164,18 +1233,18 @@ Table 3
 |                                   | If the Australian Apprentice is:  |
 |                                   |                                   |
 |                                   | 22 years of age or over, go to    |
-|                                   | Step 16                           |
+|                                   | Step 18                           |
 |                                   |                                   |
 |                                   | under 22 years of age,            |
 |                                   |                                   |
 |                                   | -   applying for away from home   |
 |                                   |     or independence, go to Step   |
-|                                   |     13                            |
+|                                   |     15                            |
 |                                   | -   not applying for away from    |
 |                                   |     home or independence, go to   |
-|                                   |     Step 14                       |
+|                                   |     Step 16                       |
 +-----------------------------------+-----------------------------------+
-| 10                                | Education Course Details + Read   |
+| 12                                | Education Course Details + Read   |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Check the study details are       |
@@ -1184,7 +1253,7 @@ Table 3
 |                                   | See Coding ABSTUDY education      |
 |                                   | details.                          |
 +-----------------------------------+-----------------------------------+
-| 11                                | Education Payments Start Date +   |
+| 13                                | Education Payments Start Date +   |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | The date of commencement for      |
@@ -1197,7 +1266,7 @@ Table 3
 |                                   | See Calculating the start date    |
 |                                   | for ABSTUDY.                      |
 +-----------------------------------+-----------------------------------+
-| 12                                | Student Start-up Loan (SSL) +     |
+| 14                                | Student Start-up Loan (SSL) +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | If the customer has accepted an   |
@@ -1214,18 +1283,18 @@ Table 3
 |                                   | If the student is:                |
 |                                   |                                   |
 |                                   | 22 years of age or over, go to    |
-|                                   | Step 16                           |
+|                                   | Step 13                           |
 |                                   |                                   |
 |                                   | under 22 years of age:            |
 |                                   |                                   |
 |                                   | -   applying for away from home   |
 |                                   |     or independence, go to Step   |
-|                                   |     13                            |
+|                                   |     15                            |
 |                                   | -   not applying for away from    |
 |                                   |     home or independence, go to   |
-|                                   |     Step 14                       |
+|                                   |     Step 16                       |
 +-----------------------------------+-----------------------------------+
-| 13                                | Independent/Homeless/Away From    |
+| 15                                | Independent/Homeless/Away From    |
 |                                   | Home Details (NIH) + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
@@ -1252,9 +1321,9 @@ Table 3
 |                                   |     dependent and must live away  |
 |                                   |     from home                     |
 |                                   |                                   |
-|                                   | Go to Step 15.                    |
+|                                   | Go to Step 17.                    |
 +-----------------------------------+-----------------------------------+
-| 14                                | Household Income and Assets       |
+| 16                                | Household Income and Assets       |
 |                                   | (NHI) + Read more ...             |
 |                                   |                                   |
 |                                   | Note: do not reject the claim for |
@@ -1294,7 +1363,7 @@ Table 3
 |                                   |     Scheme and Youth Allowance    |
 |                                   |     (YA)                          |
 +-----------------------------------+-----------------------------------+
-| 15                                | Payment Destination Details +     |
+| 17                                | Payment Destination Details +     |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | If the customer is a student:     |
@@ -1323,7 +1392,7 @@ Table 3
 |                                   | destination for further           |
 |                                   | information.                      |
 +-----------------------------------+-----------------------------------+
-| 16                                | Savings (SVP) + Read more ...     |
+| 18                                | Savings (SVP) + Read more ...     |
 |                                   |                                   |
 |                                   | Select Product (SVP) - for more   |
 |                                   | information to update the SVP     |
@@ -1334,10 +1403,10 @@ Table 3
 |                                   | Has the customer advised they are |
 |                                   | employed?                         |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 17            |
-|                                   | -   No, go to Step 18             |
+|                                   | -   Yes, go to Step 19            |
+|                                   | -   No, go to Step 20             |
 +-----------------------------------+-----------------------------------+
-| 17                                | Reporting requirements + Read     |
+| 19                                | Reporting requirements + Read     |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | The system does not need RPRD     |
@@ -1383,7 +1452,7 @@ Table 3
 |                                   |                                   |
 |                                   | See Reporting screens.            |
 +-----------------------------------+-----------------------------------+
-| 18                                | Finalise claim + Read more ...    |
+| 20                                | Finalise claim + Read more ...    |
 |                                   |                                   |
 |                                   | If the ABSTUDY customer has       |
 |                                   | transferred from another payment  |
