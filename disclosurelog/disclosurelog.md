@@ -196,6 +196,37 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 4 September 2023                  | Documents held by Services        |
+|                                   | Australia relating to amendments  |
+|                                   | to s 67CC(2) of the *A New Tax    |
+|                                   | System (Family Assistance)        |
+|                                   | (Administration) Act 1999*        |
+|                                   | including (LEX 74480):            |
+|                                   |                                   |
+|                                   | -   Email correspondence sent or  |
+|                                   |     received by SES relating to   |
+|                                   |     LEX 71589                     |
+|                                   | -   Consultation undertaken by    |
+|                                   |     Services Australia            |
+|                                   | -   Higher Child Care Subsidy     |
+|                                   |     First Principles v11          |
+|                                   | -   Family Assistance Legislation |
+|                                   |     Amendment Bill 2022 - Lay     |
+|                                   |     person explanation of         |
+|                                   |     amendments                    |
+|                                   | -   New CCS Rates.                |
+|                                   |                                   |
+|                                   | 2 documents released in full and  |
+|                                   | 3 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 24A, 42, 47F, 47E(d) and 47C\     |
+|                                   | **Exemptions**: Sections 42, 47F, |
+|                                   | 47E(d) and 47C                    |
++-----------------------------------+-----------------------------------+
 | 30 August 2023                    | Documents relating to (LEX        |
 |                                   | 73678):                           |
 |                                   |                                   |
@@ -3627,7 +3658,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 13 September 2023.
+Page last updated: 14 September 2023.
 :::
 :::
 
@@ -3644,7 +3675,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 13 September 2023 from
+This information was printed 14 September 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
