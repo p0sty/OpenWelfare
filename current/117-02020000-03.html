@@ -279,7 +279,7 @@ economic loss or capacity to earn commenced</li>
 <div class="showcont">
 
 
-<p>If periodic payments have ceased, check the following screens&#58;</p>
+<p>If periodic payments have been received, check the following screens&#58;</p>
 		<ul>		<li>
 <strong>Claim Details </strong></li>
 		<li>
@@ -295,24 +295,22 @@ If nothing is recorded the preclusion start date will be the date coded on the <
 		<ul>		<li>
 <strong>ceased</strong> as a result of the lump sum settlement, the preclusion period starts from the day after periodic compensation ceased</li>
 		<li>
-<strong>continued</strong>, the start date of the preclusion period can only be determined when the periodic payments cease or the rate is reduced as a result of the lump sum settlement</li>
+<strong>continued</strong>, the start date of the preclusion period cannot be calculated until the periodic payments stop</li>
 		</ul>
-<p>If the customer receives ongoing periodic payments and a lump sum payment which incurs a future preclusion period&#58;</p>
+<p>If the customer receives ongoing periodic payments <strong>and</strong> a lump sum payment which incurs a future preclusion period&#58;</p>
 		<ul>		<li>
-The preclusion period cannot be calculated until the periodic payments cease</li>
+Send a Q928 Nil Recovery notice to the compensation payer. This will allow the payer to release the lump sum and stop periodic payments </li>
 		<li>
-Send a Q913 letter 'Aggregation ongoing periodic &amp; future preclusion period' to the customer advising of a possible preclusion period </li>
+Place the <strong>CMM/CHG</strong> activity on hold for 7 days</li>
 		<li>
-If lump sum advice received from compensation payer, send a Q928 letter 'Nil Recovery' to the compensation payer. This will allow the funds to be released</li>
-		<li>
-Create a Display on Access <strong>DOC</strong> and include <strong>all relevant details</strong> about the lump sum settlement and the <strong>date</strong> the periodic payments are due to cease</li>
-		<li>
-Create or update the review on the Future Activity List (<strong>FAL</strong>) screen. Include&#58;</li>
+If there is no <strong>CMM/CHG</strong> activity, create the <strong>Compensation Progress Doc Fast Note</strong> and place it on hold for 7 days&#58;</li>
 			<ul>			<li>
-the <strong>date</strong> on which the periodic payments are due to cease</li>
+Select <strong>Auto text</strong>, use <strong>Compensation</strong> &gt; <strong>For use by Compensation Staff only</strong> &gt; <strong>Template&#58;</strong> Compensation Progress Doc. Select <strong>Confirm</strong></li>
 			<li>
- <strong>all relevant details</strong> about the lump sum settlement</li>
-			</ul>			</ul>
+Enter notes (for example, periodic payments continuing until settlement is released, preclusion period to be actioned)</li>		</ul>
+		<li>
+Record all action taken in a <strong>DOC</strong></li>
+		</ul>
 <p>The <a href="../compensation/117-02020000-05.html">Resources</a> page contains examples of the determination of the start date of the lump sum preclusion period.</p>
 
 <p>Procedure ends here.</p>
