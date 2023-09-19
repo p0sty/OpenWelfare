@@ -55,7 +55,8 @@ only.
 |                                   | -   A SOA shell work item is      |
 |                                   |     generated on the carer's      |
 |                                   |     record                        |
-|                                   | -   Claim details will need to be |
+|                                   | -   Claim details, including the  |
+|                                   |     Benefit Type will need to be  |
 |                                   |     manually updated into the     |
 |                                   |     work item using details from  |
 |                                   |     the scanned claim form and    |
@@ -460,7 +461,7 @@ only.
 |                                   | confirmed the relationship using  |
 |                                   | the 'Partner Confirmation Logon'  |
 |                                   | service on the Services Australia |
-|                                   | website, it display as a DMOPD    |
+|                                   | website, it displays as a DMOPD   |
 |                                   | tile. It will be available to     |
 |                                   | view in scanned documents.        |
 |                                   |                                   |
@@ -816,7 +817,7 @@ a new care receiver.
 |                                   |     claim for CP for a new care   |
 |                                   |     receiver                      |
 |                                   |                                   |
-|                                   | Note: system limitations allows   |
+|                                   | Note: system limitations allow    |
 |                                   | only one claim finalisation       |
 |                                   | letter to be generated each day.  |
 |                                   | If a customer has multiple claims |
@@ -842,7 +843,7 @@ a new care receiver.
 |                                   |     decision, after the rejection |
 |                                   |     of a previous claim for CP    |
 |                                   |     and/or CA, go to Step 7       |
-|                                   | -   otherwise, go to Table 3      |
+|                                   | -   otherwise, see Table 3        |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Check if carer qualifies for CP + |
 |                                   | Read more ...                     |
@@ -1061,9 +1062,9 @@ a new care receiver.
 |                                   | -   Select one of the customer’s  |
 |                                   |     claims and reject it          |
 |                                   | -   Place the remaining claims on |
-|                                   |     hold. Note: this may be for   |
-|                                   |     several days if the customer  |
-|                                   |     has lodged more than 2 claims |
+|                                   |     hold. This may be for several |
+|                                   |     days if the customer has      |
+|                                   |     lodged more than 2 claims     |
 |                                   | -   Staff must add the customer’s |
 |                                   |     CRN to their ARM. See Work    |
 |                                   |     Optimiser for staff           |
@@ -1097,8 +1098,8 @@ a new care receiver.
 |                                   |     rejecting a CP claim          |
 |                                   | -   Send a Q134 manual letter to  |
 |                                   |     the carer advising them of    |
-|                                   |     rejection (Note: include all  |
-|                                   |     care receivers in the letter) |
+|                                   |     rejection (include all care   |
+|                                   |     receivers in the letter)      |
 |                                   | -   Set the claim to 'Not         |
 |                                   |     Required'                     |
 |                                   |                                   |
@@ -1147,14 +1148,15 @@ a new care receiver.
 |                                   |     the outcome, discuss          |
 |                                   |     withdrawal of claims for the  |
 |                                   |     second claim                  |
-|                                   | -   If the customer does not wish |
-|                                   |     to withdraw the second claim  |
-|                                   |     or contact is unsuccessful,   |
-|                                   |     follow Step 6 in this table.  |
-|                                   |     Reject the second claim first |
-|                                   |     using OTH (other) and send a  |
-|                                   |     Q134 manual letter to the     |
-|                                   |     carer                         |
+|                                   | -   If the customer does not to   |
+|                                   |     withdraw the second claim or  |
+|                                   |     contact is unsuccessful,      |
+|                                   |     reject the second claim using |
+|                                   |     OTH (other) and send a Q134   |
+|                                   |     manual letter to the carer.   |
+|                                   |     If the claim was processed    |
+|                                   |     first or CP is current follow |
+|                                   |     Step 6 in this table          |
 |                                   | -   Grant CP and/or CA based on   |
 |                                   |     the original claim, a SOA     |
 |                                   |     shell must be created to      |
@@ -1534,8 +1536,8 @@ only.
 |                                   |     provisional coding will also  |
 |                                   |     need to be updated            |
 |                                   |                                   |
-|                                   | Note: where the employment income |
-|                                   | coded for the initial entitlement |
+|                                   | Where the employment income coded |
+|                                   | for the initial entitlement       |
 |                                   | period(s) is too high to grant CP |
 |                                   | from the start date, but the      |
 |                                   | customer will become payable      |
@@ -1837,13 +1839,11 @@ only.
 | 8                                 | Care Load Validation + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | Error is SR737 Please select a    |
-|                                   | Validation Performed reason       |
-|                                   |                                   |
-|                                   | If this error is displayed,       |
-|                                   | follow the validation process via |
-|                                   | the Care Load Validation (CLVL)   |
-|                                   | screen:                           |
+|                                   | If error SR004 Validation of CAN  |
+|                                   | and THP is required is displayed, |
+|                                   | go to the Care Load Validation    |
+|                                   | (CLVL) screen and follow the      |
+|                                   | validation process:               |
 |                                   |                                   |
 |                                   | -   Validation is needed if there |
 |                                   |     are discrepancies between the |
@@ -1997,7 +1997,7 @@ only.
 |                                   | See Calculating the start day     |
 |                                   | general rule.                     |
 |                                   |                                   |
-|                                   | See Table 3.                      |
+|                                   | See Table 6.                      |
 +-----------------------------------+-----------------------------------+
 
 Finalise a CP and/or CA claim in Process Direct
@@ -2343,8 +2343,8 @@ only.
 |                                   |     claim: continue processing    |
 |                                   |     DSP to CP transfer            |
 |                                   | -   Carer wishes to withdraw      |
-|                                   |     their CP claim:  see          |
-|                                   |      Withdrawal of claims.        |
+|                                   |     their CP claim: see           |
+|                                   |     Withdrawal of claims.         |
 |                                   |     Customer will remain on DSP.  |
 |                                   |     Process any CA claim as       |
 |                                   |     required                      |

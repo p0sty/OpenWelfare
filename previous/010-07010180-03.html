@@ -472,7 +472,7 @@ starting a new tertiary course, <a href="../students-and-trainees/010-07010180-0
 <div class="showcont">
 
 
-<p>A <strong>PES</strong> student is entering a new phase of secondary level study, or has returned to secondary level studies after time away from full-time study.</p>
+<p>A <strong>PES</strong> student is entering a new phase of secondary level study or has returned to secondary level studies after time away from full-time study.</p>
 
 <p>Determine if customer is eligible to be paid as a continuing student. If customer meets eligibility criteria, see <a href="../ongoing-contact/102-07020010-01.html">Changing or correcting course of study for Youth Allowance, Austudy and Pensioner Education Supplement students</a></p>
 
@@ -982,55 +982,53 @@ FLX-Flexible Learning</li>
 <div class="showcont">
 
 
+<p>See the <strong><a href="../students-and-trainees/010-07010180-05.html">R</strong>esources</a> page for the <strong>Student Programme Resource Tool</strong>, which includes the <strong>Allowable Time Calculator.</strong> This tool can assist with allowable time assessments.</p>
+
+<p>Use the following resources to calculate the customers remaining allowable time&#58;</p>
+		<ul>		<li>
+<strong><a href="../students-and-trainees/010-07010030-01.html">D</strong>etermining allowable time/reasonable time for a course of study</a></li>
+		<li>
+For Youth Allowance customers, see <strong><a href="../students-and-trainees/010-06070070-01.html">A</strong>ssessing satisfactory progress for Youth Allowance (YA) tertiary students</a></li>
+		<li>
+For Austudy customers, see <strong><a href="../students-and-trainees/010-04050070-01.html">A</strong>ssessing satisfactory progress for tertiary students for Austudy</a></li>
+		</ul>
 <p>Has the customer met or exceeded their Allowable Time?</p>
-		<ul>		<li>
-<strong>No</strong>, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_educatio_Step05">go to Step 5</a></li>
-		<li>
-<strong>Yes</strong>, where the customer has met or exceeded their Allowable Time and a claim is to be Rejected (REJ) Allowable Time Reached (<strong>ATR</strong>) or the customer's payment is to be Suspended (SUS) Allowable Time End date Reached (<strong>AED</strong>) the day before a new course start date, the following coding is required on the <strong>EDC</strong> screen&#58;</li>
-		</ul>
-<p><strong>In Process Direct</strong></p>
-		<ul>		<li>
-Service Officers may see error <strong>'E949NS - Allowable Time can't be before Inst Course Start Date</strong>'. The error occurs if the <strong>Allowable Time End Date</strong> is before the <strong>Course Start Date</strong>. Complete the coding below if the <strong>E949NS</strong> error occurs, and the customer's payment must be Rejected or Suspended for reason Allowable Time Reached (<strong>ATR</strong>), or Allowable Time End date Reached (<strong>AED</strong>). On the <strong>EDC</strong> screen&#58;</li>
-		<li>
-<strong>Course Start Date</strong>&#58; field, one day prior to the actual course start date</li>
-		<li>
-<strong>Student Start Date</strong>&#58; field, update to reflect Inst Course Start Date + 1</li>
-		<li>
-<strong>Allowable Time End Date</strong>&#58; field, as per the Inst Course Start Date as above</li>
-		</ul>
-<p><strong>In Customer First</strong></p>
-		<ul>		<li>
-Service Officers may see error <strong>'E949NS - Allowable Time can't be before Inst Course Start Date</strong>'. The error occurs if the <strong>Allowable Time End Date</strong> is before the <strong>Inst Course Start Date</strong>. Complete the coding below if the <strong>E949NS</strong> error occurs, and the customer's payment must be Rejected or Suspended for reason Allowable Time Reached (<strong>ATR</strong>), or Allowable Time End date Reached (<strong>AED</strong>). On the <strong>EDC</strong> screen&#58;</li>
-		<li>
-<strong>Inst Course Start Date</strong>&#58; field, one day prior to the actual course start date</li>
-		<li>
-<strong>Student Start Date</strong>&#58; field, update to reflect Inst Course Start Date + 1</li>
-		<li>
-<strong>Allowable Time End Date</strong>&#58; field, as per the Inst Course Start Date as above</li>
-		</ul>
-<p>For new claims, the claim will reject <strong>ATR</strong> for YA and Austudy.</p>
 
-<p>For current customers, the payment will suspend <strong>ATR</strong> for YA and Austudy.</p>
+<p><strong>No</strong>, <a href="../students-and-trainees/010-07010180-03.html#bp03_tbl_Coding_educatio_Step05">go to Step 5</a></p>
 
-<p>See the <a href="../students-and-trainees/010-07010180-05.html">Resources</a> page for a coding example and the Student Programme Resource Tool, which includes the Allowable Time Calculator that can assist with allowable time assessments.</p>
-
-<p><strong>Note</strong>&#58; the above workaround will not correctly reject the claim ATR for an Austudy new claim where the customer has</p>
+<p><strong>Yes</strong>, and the&#58;</p>
 		<ul>		<li>
-exceeded allowable time at the date of claim submission</li>
+claim is to be rejected Allowable Time Reached (<strong>ATR</strong>)</li>
+			<ul>			<li>
+For Austudy, see <strong><a href="../students-and-trainees/010-04020000-01.html">A</strong>ssessing and coding student and Australian Apprentice claims for Austudy</a></li>
+			<li>
+For Youth Allowance, see <strong><a href="../students-and-trainees/010-06020010-01.html">A</strong>ssessing and coding student and Australian Apprentice claims for Youth Allowance (YA)</a></li>		</ul>
 		<li>
-is a continuing student </li>
+customer is currently receiving payment&#58;</li>
+			<ul>			<li>
+suspend the payment (<strong>SUS</strong>) Allowable Time End date Reached (<strong>AED</strong>), the day <strong>before</strong> the new course start date</li>
+			<li>
+on the <strong>EDC</strong> screen in Process Direct or Customer First<br>- code the <strong>Allowable time End date</strong>&#58; field, as the date the customer has exceeded their allowable time</li>
+			</ul>			</ul>
+<p>Record the decision&#58;</p>
+		<ul>		<li>
+Use <strong><a href="../specialist-manuals-and-system-tools/111-05050020-03.html">F</strong>ast Note</a>&#58;</li>
+			<ul>			<li>
+Select <strong>Auto Text</strong>, use <strong>Students, ABSTUDY &amp; Apprentices</strong> &gt; <strong>Update</strong> &gt; <strong>Allowable Time Assessment</strong>, or</li>
+			<li>
+Type <strong>Allowable</strong> into the Search field&#58; select <strong>Allowable Time Assessment</strong> from the available menu options</li>		</ul>
 		<li>
-is commencing a new course, and</li>
-		<li>
-has lodged their claim prior to the Course start date</li>
+Select the <strong>Display on Access (DOA) DOC</strong> button, if not already ticked. This automatically populates the <strong>DOA DOC</strong> field with the correct reason of <strong>SCC</strong>, which does not require an expiration date. See <strong><a href="../specialist-manuals-and-system-tools/111-05050020-01.html">C</strong>reating, reviewing and deleting documents (including Fast Notes and DOA DOCs)</a></li>
 		</ul>
-<p>For the above scenario code&#58;</p>
+<p>The DOC must include&#58;</p>
 		<ul>		<li>
-<strong>Course Start Date</strong>&#58; field, 1 day prior to the PSED</li>
+the name, academic level and allowable time of the student's current course</li>
 		<li>
-<strong>Allowable Time End Date</strong>&#58; field, as per the <strong>Inst Course Start Date</strong> as above</li>
+a summary of the student's previous study, semester by semester (include all other levels of study if available - although it will not be counted in this assessment, it may be useful if the customer applies for another course under another payment)</li>
 		<li>
-<strong>Student Start Date</strong>&#58; field, code as the actual course/study start date</li>		</ul>
+details of any study that has been disregarded and the reasons for disregarding the study</li>
+		<li>
+the total of the previous study</li>		</ul>
 </div>
 
 

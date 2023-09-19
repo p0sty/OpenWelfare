@@ -2929,25 +2929,18 @@ Secondary Index - Leave blank
 |                 |     PaNDA       |     and other   |                 |
 |                 |                 |     reasons     |                 |
 |                 | For PB013 and   |     (PB050)     |                 |
-|                 | PB014, suspend  | -   Psoriatic   |                 |
-|                 | with reason     |     arthritis - |                 |
-|                 | 'BLANKFORM'     |     continuing  |                 |
-|                 |                 |     authority   |                 |
-|                 | For             |     application |                 |
-|                 | blank/unused    |     (PB106)     |                 |
-|                 | PB013 and PB014 | -   Opioid      |                 |
-|                 | cards returned  |     treatment   |                 |
-|                 | from pharmacy,  |     PBS         |                 |
-|                 | suspend with    |     Authority   |                 |
-|                 | reason          |     Application |                 |
-|                 | 'OUTOFSCOPE'    |     (PB294)     |                 |
-|                 |                 | -   PBS Payment |                 |
-|                 |                 |     Advice RTS  |                 |
-|                 |                 |     address PO  |                 |
+|                 | PB014, suspend  | -   PBS Payment |                 |
+|                 | with reason     |     Advice RTS  |                 |
+|                 | 'BLANKFORM'     |     address PO  |                 |
 |                 |                 |     BOX 9826 in |                 |
-|                 |                 |     your        |                 |
-|                 |                 |     capital     |                 |
-|                 |                 |     city        |                 |
+|                 | For             |     your        |                 |
+|                 | blank/unused    |     capital     |                 |
+|                 | PB013 and PB014 |     city        |                 |
+|                 | cards returned  |                 |                 |
+|                 | from pharmacy,  |                 |                 |
+|                 | suspend with    |                 |                 |
+|                 | reason          |                 |                 |
+|                 | 'OUTOFSCOPE'    |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Out of Scope |  | -   For         | -   Workforce   | -   Any forms   |
 | Provider        |     Electronic  |     Incentive   |     starting    |
@@ -3431,85 +3424,21 @@ Secondary Index - Leave blank
 |                 |                 |                 |                 |
 |                 |    specifically |                 |                 |
 |                 |     listed      |                 |                 |
-|                 |     (e.g.       |                 |                 |
-|                 |     Progressive |                 |                 |
-|                 |     Fibrosing   |                 |                 |
-|                 |     Int Lung    |                 |                 |
-|                 |     Disease,    |                 |                 |
-|                 |     Severe      |                 |                 |
-|                 |     Growth      |                 |                 |
-|                 |     Failure and |                 |                 |
-|                 |     Short Bowel |                 |                 |
-|                 |     Syndrome    |                 |                 |
-|                 |     have        |                 |                 |
-|                 |     different   |                 |                 |
-|                 |                 |                 |                 |
-|                 |  classification |                 |                 |
-|                 |                 |                 |                 |
-|                 |    conventions) |                 |                 |
 |                 | -   Primary     |                 |                 |
 |                 |     Index:      |                 |                 |
 |                 |     MEDICARE    |                 |                 |
-|                 |     NUMBER      |                 |                 |
+|                 |     NUMBER (use |                 |                 |
+|                 |     S           |                 |                 |
+|                 | URNAMEFIRSTNAME |                 |                 |
+|                 |     if no       |                 |                 |
+|                 |     Medicare    |                 |                 |
+|                 |     card is     |                 |                 |
+|                 |     provided)   |                 |                 |
 |                 | -   Secondary   |                 |                 |
 |                 |     Index:      |                 |                 |
 |                 |     PROGRAMME   |                 |                 |
 |                 |     REFERENCE   |                 |                 |
 |                 |     NUMBER      |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Pharmaceutical  | -   Program:    | Will generally  |                 |
-| Benefits Scheme |     Complex     | be a PBS script |                 |
-| (PBS) | Complex |     Drugs       | and have a form |                 |
-| Drugs -         | -   Work Type:  | attached with a |                 |
-| Fibrosing Int   |     Progressive | code starting   |                 |
-| Lung Disease |  |     Fibrosing   | with:           |                 |
-| MED3            |     Int Lung    |                 |                 |
-|                 |     Disease -   | -   PB331       |                 |
-|                 |     WRIT        | -   PB332       |                 |
-|                 | -   Primary     |                 |                 |
-|                 |     Index:      |                 |                 |
-|                 |     MEDICARE    |                 |                 |
-|                 |     NUMBER      |                 |                 |
-|                 | -   Secondary   |                 |                 |
-|                 |     Index:      |                 |                 |
-|                 |     S           |                 |                 |
-|                 | URNAMEFIRSTNAME |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Pharmaceutical  | -   Program:    | Will generally  |                 |
-| Benefits Scheme |     Complex     | be a PBS script |                 |
-| (PBS) | Complex |     Drugs       | and have a form |                 |
-| Drugs - Severe  | -   Work Type:  | attached with   |                 |
-| Growth Failure  |     Severe      | codes that      |                 |
-| | MED3          |     Growth      | could include:  |                 |
-|                 |                 |                 |                 |
-|                 |    Failure-WRIT | -   PB162       |                 |
-|                 | -   Primary     | -   PB163       |                 |
-|                 |     Index:      | -   PB164       |                 |
-|                 |     MEDICARE    | -   PB165       |                 |
-|                 |     NUMBER      | -   PB166       |                 |
-|                 | -   Secondary   | -   PB248       |                 |
-|                 |     Index:      | -   PB288       |                 |
-|                 |     S           | -   PB336       |                 |
-|                 | URNAMEFIRSTNAME | -   PB337       |                 |
-|                 |                 | -   PB338       |                 |
-|                 |                 | -   PB339       |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Pharmaceutical  | -   Program:    | Will generally  |                 |
-| Benefits Scheme |     Complex     | be a PBS script |                 |
-| (PBS) | Complex |     Drugs       | and have a form |                 |
-| Drugs - Short   | -   Work Type:  | attached with   |                 |
-| Bowel Syndrome  |     Short Bowel | codes that      |                 |
-| | MED3          |     Syndrome    | could include:  |                 |
-|                 |     -WRIT       |                 |                 |
-|                 | -   Primary     | -   PB275       |                 |
-|                 |     Index:      | -   PB276       |                 |
-|                 |     MEDICARE    | -   PB277       |                 |
-|                 |     NUMBER      | -   PB278       |                 |
-|                 | -   Secondary   |                 |                 |
-|                 |     Index:      |                 |                 |
-|                 |     PROVIDER    |                 |                 |
-|                 |     S           |                 |                 |
-|                 | URNAMEFIRSTNAME |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Pharmaceutical  | -   Program:    | -   Request for | -   Form has    |
 | Benefits Scheme |     PBS         |     book of     |     'bag' or    |
@@ -3672,26 +3601,25 @@ Secondary Index - Leave blank
 |                 |                 |                 |     Secondary   |
 |                 |                 |                 |     Index       |
 +-----------------+-----------------+-----------------+-----------------+
-| Pharmaceutical  | -   Program:    | -   PBS Script  | -   Document    |
-| Benefits Scheme |     PBS         |     Authority.  |     will be a   |
-| (PBS) | PBS     | -   Work Type:  |     See         |     PBS script. |
-| Scripts - NSW,  |     Authority   |     screenshot  |     Look for    |
-| QLD, SA, TAS,   |     Mailed      |                 |     the         |
-| VIC, WA | MED3  |     {state}     |                 |     Authority   |
-|                 | -   Primary     |                 |     form number |
-|                 |     Index:      |                 |     as shown in |
-|                 |     AUTHORITY   |                 |     example     |
-|                 |     SCRIPT      |                 |     above       |
-|                 |     NUMBER      |                 | -   Note: if    |
-|                 | -   Secondary   |                 |     unable to   |
-|                 |     Index:      |                 |     identify    |
-|                 |     leave blank |                 |     authority   |
-|                 |                 |                 |     script      |
-|                 |                 |                 |     number, use |
-|                 |                 |                 |                 |
-|                 |                 |                 |    UNABLETONAME |
-|                 |                 |                 |     as the      |
-|                 |                 |                 |     primary ID  |
+| Pharmaceutical  | -   Program:    | PBS authority   |                 |
+| Benefits Scheme |     PBS         | prescription    |                 |
+| (PBS) | PBS     | -   Work Type:  |                 |                 |
+| Scripts - NSW,  |     Authority   |                 |                 |
+| QLD, SA, TAS,   |     Mailed      |                 |                 |
+| VIC, WA | MED3  |     {state}     |                 |                 |
+|                 | -   Primary     |                 |                 |
+|                 |     Index:      |                 |                 |
+|                 |     MEDICARE    |                 |                 |
+|                 |     NUMBER (use |                 |                 |
+|                 |     S           |                 |                 |
+|                 | URNAMEFIRSTNAME |                 |                 |
+|                 |     if no       |                 |                 |
+|                 |     Medicare    |                 |                 |
+|                 |     card        |                 |                 |
+|                 |     provided)   |                 |                 |
+|                 | -   Secondary   |                 |                 |
+|                 |     Index:      |                 |                 |
+|                 |     leave blank |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Pharmaceutical  | -   Program:    | -   Old         | -   Form        |
 | Benefits Scheme |     PBS         |                 |     usually has |
@@ -5083,8 +5011,8 @@ Table 1
 |                                   | enquiries                         |
 |                                   |                                   |
 |                                   | Note: delete any LHC letters or   |
-|                                   | enquiries received through the    |
-|                                   | MES mailbox. Only LHC mail        |
+|                                   | enquiries received through a      |
+|                                   | positional mailbox. Only LHC mail |
 |                                   | received via post are classified  |
 |                                   | as Medicare Eligibility -         |
 |                                   | Enrolment.                        |
