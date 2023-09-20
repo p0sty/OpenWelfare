@@ -196,6 +196,24 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 6 September 2023                  | Documents pertaining to the       |
+|                                   | COVID-19 Vaccine Claims Scheme,   |
+|                                   | including the Dashboard and       |
+|                                   | Medical Indemnity COVID-19 Claims |
+|                                   | (LEX 73620):                      |
+|                                   |                                   |
+|                                   | 1 document released in full, 1    |
+|                                   | document released in part and 1   |
+|                                   | document exempt in full. The      |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22 (out of scope information      |
+|                                   | removed) and 47F(1)\              |
+|                                   | **Exemptions**: Section 47F(1)    |
++-----------------------------------+-----------------------------------+
 | 6 September 2023                  | RFT Disability Medical Assessment |
 |                                   | Services - ATM ID: RFT1000729647  |
 |                                   | (LEX 75099):                      |
@@ -3674,7 +3692,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 19 September 2023.
+Page last updated: 20 September 2023.
 :::
 :::
 
@@ -3691,7 +3709,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 19 September 2023 from
+This information was printed 20 September 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
