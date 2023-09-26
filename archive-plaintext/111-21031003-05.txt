@@ -74,18 +74,21 @@ Safety Net Processing and enquiries.
 |                                   |                                   |
 |                                   | Records not linked.               |
 +-----------------------------------+-----------------------------------+
-| B03S                              | Dependant listed as card holder   |
-|                                   | error.                            |
-| Critical                          |                                   |
-|                                   | Dependant child or student        |
-|                                   | incorrectly added as Card Holder. |
+| B03S                              | Relationship code error.          |
 |                                   |                                   |
-|                                   | Note: it is not an error when the |
-|                                   | correct card holder (CH) and      |
-|                                   | spouse (SP) are transposed in the |
-|                                   | Safety Net Claims system (SNCS)   |
-|                                   | according to the prescription     |
-|                                   | record form (PRF).                |
+| Non Critical                      | Family dependant (dependent child |
+|                                   | or student) incorrectly added as  |
+|                                   | Card Holder or Spouse.            |
+|                                   |                                   |
+|                                   | Card Holder or Spouse incorrectly |
+|                                   | added as a Dependant              |
+|                                   |                                   |
+|                                   | Note: it is not an error if the   |
+|                                   | card holder (CH) and spouse (SP)  |
+|                                   | are added to the Safety Net       |
+|                                   | Claims system (SNCS) opposite the |
+|                                   | information contained on the      |
+|                                   | prescription record form (PRF).   |
 +-----------------------------------+-----------------------------------+
 | B05S                              | Pharmacy approval number error.   |
 |                                   |                                   |
@@ -102,10 +105,20 @@ Safety Net Processing and enquiries.
 |                                   | Claims that should have been      |
 |                                   | paid, rejected or deleted.        |
 +-----------------------------------+-----------------------------------+
-| B15S                              | Date of lodgement error.          |
+| B15S                              | Registration screen error.        |
 |                                   |                                   |
 | Non-critical                      | Recorded lodgement date           |
 |                                   | incorrectly.                      |
+|                                   |                                   |
+|                                   | PaNDA Ref# was excluded.          |
+|                                   |                                   |
+|                                   | Recorded PaNDA Ref# incorrectly   |
+|                                   |                                   |
+|                                   | The claim was registered          |
+|                                   | incorrectly as ‘Reject Whole      |
+|                                   | Claim’. Each PRF must be entered  |
+|                                   | into the SNCS tool and assessed   |
+|                                   | individually.                     |
 +-----------------------------------+-----------------------------------+
 
 Error codes - C status codes - application form
@@ -194,6 +207,9 @@ found in:
 |                                   | -   Incorrect information         |
 |                                   | -   Critical information is       |
 |                                   |     missing                       |
+|                                   | -   Did not cover all rejections  |
+|                                   |     found within the safety net   |
+|                                   |     claim                         |
 +-----------------------------------+-----------------------------------+
 | D04S                              | Patient identification error.     |
 |                                   |                                   |
@@ -294,10 +310,11 @@ Allocation (PaNDA) and Work Optimiser for staff.
 |                                   | Work Item or page/s missing in    |
 |                                   | documentation.                    |
 +-----------------------------------+-----------------------------------+
-| F05S                              | Work Items not merged.            |
-|                                   |                                   |
-| Non-critical                      | Connected Work Items not merged   |
-|                                   | into one.                         |
+| F05S                              | Work Items not merged and/or      |
+|                                   | associated.                       |
+| Non-critical                      |                                   |
+|                                   | Connected Work Items not merged   |
+|                                   | and/or associated into one.       |
 +-----------------------------------+-----------------------------------+
 | F06S                              | Work Items not separated.         |
 |                                   |                                   |

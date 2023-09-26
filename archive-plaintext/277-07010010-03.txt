@@ -44,8 +44,8 @@ Table 1
 |                                   |     change of assessment in       |
 |                                   |     special circumstances         |
 |                                   | -   the customer’s income has     |
-|                                   |     decreased since the last      |
-|                                   |     relevant year of income       |
+|                                   |     decreased since the Last      |
+|                                   |     Relevant Year of Income       |
 |                                   |     (LRYI) - determine if the     |
 |                                   |     customer is eligible to lodge |
 |                                   |     an estimate                   |
@@ -116,8 +116,7 @@ Table 1
 |                                   | non-parent carers.                |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Incorrect taxable income amount   |
-|                                   | sent by Australian Taxation       |
-|                                   | Office (ATO) to Child Support +   |
+|                                   | sent by ATO to Child Support +    |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Two taxable incomes – same        |
@@ -245,25 +244,25 @@ Table 1
 |                                   | Deemed and Default income for     |
 |                                   | child support customers.          |
 |                                   |                                   |
-|                                   | Note: loading an RNN deemed       |
-|                                   | income in the Client income       |
-|                                   | window will not always result in  |
-|                                   | a change to the child support     |
-|                                   | assessment. The RNN deemed income |
-|                                   | must still be loaded to ensure    |
-|                                   | the RNN status is recorded and    |
-|                                   | the customer’s Client of Interest |
-|                                   | (COI) indicator is updated.       |
-|                                   | Otherwise Cuba will not recognise |
-|                                   | the mutual customer has met       |
-|                                   | lodgement compliance for the      |
-|                                   | relevant year.                    |
+|                                   | Loading an RNN deemed income in   |
+|                                   | the Client income window will not |
+|                                   | always result in a change to the  |
+|                                   | child support assessment. The RNN |
+|                                   | deemed income must still be       |
+|                                   | loaded to ensure the RNN status   |
+|                                   | is recorded and the customer’s    |
+|                                   | Client of Interest (COI)          |
+|                                   | indicator is updated. Otherwise   |
+|                                   | Cuba will not recognise the       |
+|                                   | mutual customer has met lodgement |
+|                                   | compliance for the relevant year. |
 |                                   |                                   |
 |                                   | If the customer has not lodged    |
 |                                   | their tax return and there is no  |
 |                                   | Return not Necessary indicator    |
 |                                   | present on the customer's ATO     |
-|                                   | records, obtain an ITD from the   |
+|                                   | records, obtain an Income Tax     |
+|                                   | Declaration (ITD) from the        |
 |                                   | customer and advise the customer  |
 |                                   | to discuss their lodgement        |
 |                                   | requirements with the ATO or a    |
@@ -279,7 +278,7 @@ Table 1
 |                                   |                                   |
 |                                   | Before contacting the customer,   |
 |                                   | check the Client Income window    |
-|                                   | and ATO records (ICP):            |
+|                                   | and ATO records in ICP:           |
 |                                   |                                   |
 |                                   | -   to determine which financial  |
 |                                   |     year’s taxable incomes are    |
@@ -460,7 +459,7 @@ Table 1
 |                                   | For details on how to retrieve    |
 |                                   | ATO issued income details         |
 |                                   | manually see External searches    |
-|                                   | guide (CS).                       |
+|                                   | guide.                            |
 |                                   |                                   |
 |                                   | To load an amended ATO issued     |
 |                                   | income manually, see Income Cuba  |
@@ -561,7 +560,8 @@ Table 1
 |                                   | lodged on time (on or before the  |
 |                                   | parent’s relevant taxation        |
 |                                   | lodgement due date), whether the  |
-|                                   | amended ATI is higher or lower    |
+|                                   | amended Adjustable Taxable Income |
+|                                   | (ATI) is higher or lower          |
 |                                   |                                   |
 |                                   | higher than the                   |
 |                                   | original/preceding tax assessment |
@@ -682,10 +682,11 @@ Table 1
 |                                   | department’s policy is to amend   |
 |                                   | the child support assessment for  |
 |                                   | all the days in the child support |
-|                                   | period the ATI is relevant. This  |
-|                                   | is regardless of whether the      |
-|                                   | income increased or decreased.    |
-|                                   | The amended ATI will replace the  |
+|                                   | period the Adjusted Taxable       |
+|                                   | Income (ATI) is relevant. This is |
+|                                   | regardless of whether the income  |
+|                                   | increased or decreased. The       |
+|                                   | amended ATI will replace the      |
 |                                   | original ATI in its entirety. If  |
 |                                   | there is a provisional income in  |
 |                                   | place prior to the application of |
@@ -699,7 +700,8 @@ Table 1
 |                                   |                                   |
 |                                   | Customers are required to have    |
 |                                   | the other components of their ATI |
-|                                   | amended by the ATO, DVA or        |
+|                                   | amended by the ATO, Department of |
+|                                   | Veteran Affairs (DVA) or          |
 |                                   | Centrelink before the department  |
 |                                   | can amend the assessment. If      |
 |                                   | there is going to be a delay in   |
@@ -832,22 +834,30 @@ Table 1
 |                                   | immediately conduct an ICP search |
 |                                   | and confirm the income being      |
 |                                   | questioned is showing as          |
-|                                   | cancelled in the Received         |
+|                                   | Cancelled in the Received         |
 |                                   | Lodgements section of ICP.        |
 |                                   |                                   |
-|                                   | If the income is cancelled in     |
+|                                   | If the income is not cancelled,   |
+|                                   | refer the customer to the ATO and |
+|                                   | do not escalate to BSI. BSI       |
+|                                   | cannot remove incomes unless they |
+|                                   | have been cancelled by the ATO.   |
+|                                   |                                   |
+|                                   | If the income is cancelled in the |
 |                                   | Received Lodgements in ICP, email |
-|                                   | BSI Issue Management to request   |
-|                                   | this income be removed from Cuba. |
-|                                   | The email should include:         |
+|                                   | BSI.ATO.INCOMES to request this   |
+|                                   | income be removed from Cuba. The  |
+|                                   | email should include:             |
 |                                   |                                   |
 |                                   | -   Customer Name:                |
 |                                   | -   CSID:                         |
 |                                   | -   TFN:                          |
 |                                   | -   Financial year of cancelled   |
+|                                   |     Income Tax Returns (ITR):     |
+|                                   | -   Lodgement Date of cancelled   |
 |                                   |     ITR:                          |
-|                                   | -   Lodgement Date:               |
-|                                   | -   Income Figure:                |
+|                                   | -   Income Figure of cancelled    |
+|                                   |     ITR:                          |
 |                                   | -   Is the cancelled income an    |
 |                                   |     original or amended ITR:      |
 |                                   | -   Additional information (where |
@@ -864,12 +874,11 @@ Table 1
 |                                   | managing any other issues, for    |
 |                                   | example, error correction if an   |
 |                                   | income has deemed off the         |
-|                                   | cancelled income.                 |
-|                                   |                                   |
-|                                   | Staff should lock and monitor the |
-|                                   | customer until the income is      |
-|                                   | deleted and the case is using     |
-|                                   | correct incomes.                  |
+|                                   | cancelled income. Staff should    |
+|                                   | lock and monitor the customer     |
+|                                   | until the income is deleted and   |
+|                                   | the case is using the correct     |
+|                                   | incomes.                          |
 |                                   |                                   |
 |                                   | Example                           |
 |                                   |                                   |
@@ -880,25 +889,36 @@ Table 1
 |                                   | fraudulently. The customer        |
 |                                   | advises the ATO have been advised |
 |                                   | and have confirmed this was not a |
-|                                   | legitimate taxable income. The    |
-|                                   | income is showing as cancelled in |
-|                                   | ICP. Staff member escalates to    |
-|                                   | BSI and has incomes removed from  |
-|                                   | Cuba.                             |
+|                                   | legitimate taxable income. An ICP |
+|                                   | search is conducted and the       |
+|                                   | income is:                        |
+|                                   |                                   |
+|                                   | Showing as cancelled in ICP:      |
+|                                   |                                   |
+|                                   | -   Escalate to BSI               |
+|                                   | -   BSI to remove income from     |
+|                                   |     Cuba                          |
+|                                   |                                   |
+|                                   | Not showing as cancelled in ICP:  |
+|                                   |                                   |
+|                                   | -   Refer customer back to ATO    |
+|                                   | -   No further action can be      |
+|                                   |     taken until income is         |
+|                                   |     cancelled by the ATO          |
 |                                   |                                   |
 |                                   | ATO Cancelled income applied      |
 |                                   | after the child support period    |
-|                                   | (CSP) commenced                   |
+|                                   | (CS period) commenced             |
 |                                   |                                   |
 |                                   | If the cancelled income is for    |
-|                                   | the LRYI in the current CSP and   |
-|                                   | was applied to the assessment     |
-|                                   | after the CSP was created, remove |
-|                                   | the income from the customer’s    |
-|                                   | record. Replace the cancelled     |
-|                                   | income with the income amount     |
-|                                   | that would have applied if the    |
-|                                   | cancelled income had not been     |
+|                                   | the LRYI in the current CS period |
+|                                   | and was applied to the assessment |
+|                                   | after the CS period was created,  |
+|                                   | remove the income from the        |
+|                                   | customer’s record. Replace the    |
+|                                   | cancelled income with the income  |
+|                                   | amount that would have applied if |
+|                                   | the cancelled income had not been |
 |                                   | available at the time the         |
 |                                   | assessment was made. If a new     |
 |                                   | income determination can be made  |
@@ -948,45 +968,14 @@ Table 1
 |                                   | December 2017.                    |
 |                                   |                                   |
 |                                   | Cancelled income triggered a new  |
-|                                   | CSP                               |
+|                                   | CS period                         |
 |                                   |                                   |
 |                                   | If the cancelled income was the   |
-|                                   | trigger for starting a new CSP,   |
-|                                   | consider what effect removing the |
-|                                   | income might have on the case     |
-|                                   | before any error correction       |
-|                                   | occurs. Use the PSM enquiry macro |
-|                                   | to escalate the case to a PSM if: |
-|                                   |                                   |
-|                                   | -   the cancelled income caused   |
-|                                   |     the CSP to start more than 6  |
-|                                   |     months ago                    |
-|                                   | -   the cancelled income has a    |
-|                                   |     financial impact that is      |
-|                                   |     greater than 6 month’s        |
-|                                   |     liability                     |
-|                                   | -   error correction will create  |
-|                                   |     an overpayment                |
-|                                   | -   the correction results in a   |
-|                                   |     role reversal (backdating 3   |
-|                                   |     months or more)               |
-|                                   | -   there is a family violence    |
-|                                   |     indicator                     |
-|                                   | -   replacing the cancelled       |
-|                                   |     income with an updated income |
-|                                   |     will have no financial impact |
-|                                   |     on the assessment, this       |
-|                                   |     includes both collect and     |
-|                                   |     private collect cases         |
-|                                   | -   there is an income amount     |
-|                                   |     order setting either the      |
-|                                   |     customer's income or the      |
-|                                   |     annual rate for the whole     |
-|                                   |     assessment period that would  |
-|                                   |     otherwise use the LRYI        |
-|                                   |     income, for example court     |
-|                                   |     order, COA, agreement         |
-|                                   | -   the case has ended            |
+|                                   | trigger for starting a new CS     |
+|                                   | period, an error correction is    |
+|                                   | required to remove the CS period  |
+|                                   | and return to the previously used |
+|                                   | incomes.                          |
 |                                   |                                   |
 |                                   | Estimate Election made with       |
 |                                   | reference to the ATO cancelled    |
@@ -1006,7 +995,7 @@ Table 1
 |                                   | options.                          |
 +-----------------------------------+-----------------------------------+
 | 13                                | Reportable Fringe Benefits + Read |
-|                                   | more ...                          |
+|                                   | more ... i                        |
 |                                   |                                   |
 |                                   | The customer’s adjusted taxable   |
 |                                   | income includes any Reportable    |
@@ -1057,14 +1046,16 @@ Table 2
 |                                   | RNN deemed income to the Client   |
 |                                   | income window.                    |
 |                                   |                                   |
-|                                   | Note: Pre 2022/2023 relevant      |
-|                                   | years of income RNN deemed income |
-|                                   | is not an option. Use an ITD or   |
-|                                   | other appropriate income.         |
+|                                   | Note:                             |
 |                                   |                                   |
-|                                   | Note: NRL and NOTNEC are          |
-|                                   | historical codes no longer used   |
-|                                   | by the ATO.                       |
+|                                   | -   Pre 2022/2023 relevant years  |
+|                                   |     of income RNN deemed income   |
+|                                   |     is not an option. Use an      |
+|                                   |     Income Tax Declaration (ITD)  |
+|                                   |     or other appropriate income   |
+|                                   | -   NRL and NOTNEC are historical |
+|                                   |     codes no longer used by the   |
+|                                   |     ATO                           |
 |                                   |                                   |
 |                                   | A provisional income will be      |
 |                                   | applied when an ATO assessed      |
@@ -1073,15 +1064,18 @@ Table 2
 |                                   | If the customer has been assessed |
 |                                   | on:                               |
 |                                   |                                   |
-|                                   | -   2/3 MTAWE but was in receipt  |
-|                                   |     of a Centrelink or DVA        |
-|                                   |     pension or benefit for 10 or  |
-|                                   |     more months of the financial  |
-|                                   |     year, and                     |
+|                                   | -   2/3 Male Total Average Weekly |
+|                                   |     Earnings (MTAWE) but was in   |
+|                                   |     receipt of a Centrelink or    |
+|                                   |     Department of Veteran Affairs |
+|                                   |     (DVA) pension or benefit for  |
+|                                   |     10 or more months of the      |
+|                                   |     financial year, and           |
 |                                   | -   this information was          |
 |                                   |     available in the Cuba income  |
 |                                   |     details window at the time    |
-|                                   |     the CSP was created           |
+|                                   |     the Child Support (CS) period |
+|                                   |     was created                   |
 |                                   |                                   |
 |                                   | Cuba should have derived an       |
 |                                   | income based on this information. |
@@ -1109,7 +1103,8 @@ Table 2
 |                                   | assessment:                       |
 |                                   |                                   |
 |                                   | -   accurately reflects the       |
-|                                   |     customer's ATI, go to Step 2  |
+|                                   |     customer's Adjusted Taxable   |
+|                                   |     Income (ATI), go to Step 2    |
 |                                   | -   is more than the self-support |
 |                                   |     amount, go to Step 3          |
 +-----------------------------------+-----------------------------------+
@@ -1139,8 +1134,8 @@ Table 2
 |                                   | A derived income is 1 of the      |
 |                                   | following:                        |
 |                                   |                                   |
-|                                   | A customer supplied income tax    |
-|                                   | declaration (ITD). When           |
+|                                   | A customer supplied Income Tax    |
+|                                   | Declaration (ITD). When           |
 |                                   | contacting the customer to obtain |
 |                                   | an ITD, advise:                   |
 |                                   |                                   |
@@ -1162,8 +1157,8 @@ Table 2
 |                                   | Child Support, or                 |
 |                                   |                                   |
 |                                   | An income automatically applied   |
-|                                   | by Cuba based on Centrelink (CLK) |
-|                                   | or DVA information                |
+|                                   | by Cuba based on Centrelink       |
+|                                   | (CLINK) or DVA information        |
 +-----------------------------------+-----------------------------------+
 
 Reverse cases
