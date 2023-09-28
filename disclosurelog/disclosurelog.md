@@ -202,6 +202,29 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 20 September 2023                 | Operational Blueprint documents   |
+|                                   | (LEX 75345):                      |
+|                                   |                                   |
+|                                   | -   Eligibility for Paid Parental |
+|                                   |     Leave (PPL) for children born |
+|                                   |     or entering care on or after  |
+|                                   |     1 July 2023 007-23020217      |
+|                                   | -   Claiming and managing Paid    |
+|                                   |     Parental Leave (PPL) days for |
+|                                   |     children born or entering     |
+|                                   |     care on or after 1 July 2023  |
+|                                   |     007-23020214.                 |
+|                                   |                                   |
+|                                   | 1 document released in full and 1 |
+|                                   | document released in part. The    |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22, 47E(d)\                       |
+|                                   | **Exemptions**: Section 47E(d)    |
++-----------------------------------+-----------------------------------+
 | 6 September 2023                  | Documents pertaining to the       |
 |                                   | COVID-19 Vaccine Claims Scheme,   |
 |                                   | including the Dashboard and       |
@@ -221,7 +244,7 @@ after 12 months unless the information has enduring public value.
 |                                   | **Exemptions**: Section 47F(1)    |
 +-----------------------------------+-----------------------------------+
 | 6 September 2023                  | RFT Disability Medical Assessment |
-|                                   | Services - ATM ID: RFT1000729647  |
+|                                   | Services - ATM ID: RFT1000729647  |
 |                                   | (LEX 75099):                      |
 |                                   |                                   |
 |                                   | 2 documents released in full and  |
@@ -278,8 +301,8 @@ after 12 months unless the information has enduring public value.
 |                                   |     Services                      |
 |                                   | -   Synergy 360.                  |
 |                                   |                                   |
-|                                   | 3 documents released in part. 6   |
-|                                   | documents released in full. The   |
+|                                   | 3 documents released in part and  |
+|                                   | 6 documents released in full. The |
 |                                   | documents are [available upon     |
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
@@ -3698,7 +3721,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 20 September 2023.
+Page last updated: 28 September 2023.
 :::
 :::
 
@@ -3715,7 +3738,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 27 September 2023 from
+This information was printed 28 September 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
