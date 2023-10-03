@@ -312,8 +312,8 @@ Secondary Index - Leave blank
 | MED1            | -   Work Type:  |                 |     Payments    |
 |                 |     Held Events |                 |     Team that   |
 |                 | -   Primary     |                 |     contain     |
-|                 |     Index:      |                 |     'job        |
-|                 |     Unique      |                 |     agedcare    |
+|                 |     Index:      |                 |     'job aged   |
+|                 |     Unique      |                 |     care        |
 |                 |     Identifier  |                 | _NSF_HLD_EVENT' |
 |                 |                 |                 |     in the      |
 |                 |                 |                 |     subject     |
@@ -435,14 +435,14 @@ Secondary Index - Leave blank
 |                 |     APPLICANT   |     See         |     indigenous  |
 |                 |     RAC         |     screenshot  |     and other   |
 |                 | SID/SERVICENAME | -   Change of   |     homeless    |
-|                 |     Only if     |     nominated   |     forms       |
-|                 |                 |     user's      |                 |
-|                 |    registration |     details for | Form            |
-|                 |     form        |     Aged Care   | abbreviation:   |
-|                 |     includes    |     Online      | Web/B2B         |
-|                 |     'online' in |     Claiming    |                 |
-|                 |     the title   |     form        | Form type:      |
-|                 |                 | -               | AC004, AC006,   |
+|                 |     (for AC004  |     nominated   |     forms       |
+|                 |     form, refer |     user's      |                 |
+|                 |     to question |     details for | Form            |
+|                 |     2)          |     Aged Care   | abbreviation:   |
+|                 |     Enter both  |     Online      | Web/B2B         |
+|                 |     Primary and |     Claiming    |                 |
+|                 |     Secondary   |     form        | Form type:      |
+|                 |     Index       | -               | AC004, AC006,   |
 |                 |                 |    Homelessness | AC024, email    |
 |                 |                 |     and         |                 |
 |                 |                 |     Indigenous  | AC010 (for      |
@@ -518,14 +518,15 @@ Secondary Index - Leave blank
 |                 |     RACSIDs in  |                 |                 |
 |                 |     a single    |                 | -               |
 |                 |     document,   |                 |    'residential |
-|                 |     e.g.        |                 |     aged care'  |
-|                 |     1607-17328, |                 |     in email    |
-|                 |     select send |                 |     subject     |
-|                 |     for         |                 |     line        |
-|                 |     splitting   |                 | -   Form type:  |
-|                 |     check box   |                 |     no form     |
-|                 | -   Secondary   |                 |     number,     |
-|                 |     Index:      |                 |     emails      |
+|                 |     for         |                 |     aged care'  |
+|                 |     example,    |                 |     in email    |
+|                 |     1607-17328, |                 |     subject     |
+|                 |     select send |                 |     line        |
+|                 |     for         |                 | -   Form type:  |
+|                 |     splitting   |                 |     no form     |
+|                 |     check box   |                 |     number,     |
+|                 | -   Secondary   |                 |     emails      |
+|                 |     Index:      |                 |                 |
 |                 |     YYMM-       |                 |                 |
 |                 |     SERVICE     |                 |                 |
 |                 |     NAME        |                 |                 |
@@ -684,7 +685,7 @@ Secondary Index - Leave blank
 |                 |                 |                 |                 |
 |                 |                 |                 |   written/typed |
 |                 |                 |                 |     letters     |
-|                 |                 |                 |     querying    |
+|                 |                 |                 |     with        |
 |                 |                 |                 |     general     |
 |                 |                 |                 |                 |
 |                 |                 |                 |    immunisation |
@@ -2250,24 +2251,24 @@ Secondary Index - Leave blank
 |                 |                 | they have been  | Public Trustee  |
 |                 |                 | received with   | documents       |
 |                 |                 | the appropriate | including       |
-|                 |                 | MES forms (e.g. | notification of |
-|                 |                 | Application for | death           |
-|                 |                 | a Medicare      |                 |
-|                 |                 | Entitlement     | Informal        |
-|                 |                 | Statement       | letters or      |
-|                 |                 | (MS015)).       | emails advising |
-|                 |                 |                 | of notification |
-|                 |                 | There are too   | of death        |
-|                 |                 | many print      |                 |
-|                 |                 | versions of     | Letters about   |
-|                 |                 | enrolment forms | Lifetime        |
-|                 |                 | to have every   | Healthcare      |
-|                 |                 | example. See    | cover are       |
-|                 |                 | below for types | received via    |
-|                 |                 | of forms and    | post or email.  |
-|                 |                 | what to look    | If received     |
-|                 |                 | for.            | via:            |
-|                 |                 |                 |                 |
+|                 |                 | MES forms (for  | notification of |
+|                 |                 | example,        | death           |
+|                 |                 | Application for |                 |
+|                 |                 | a Medicare      | Informal        |
+|                 |                 | Entitlement     | letters or      |
+|                 |                 | Statement       | emails advising |
+|                 |                 | (MS015)).       | of notification |
+|                 |                 |                 | of death        |
+|                 |                 | There are too   |                 |
+|                 |                 | many print      | Letters about   |
+|                 |                 | versions of     | Lifetime        |
+|                 |                 | enrolment forms | Healthcare      |
+|                 |                 | to have every   | cover are       |
+|                 |                 | example. See    | received via    |
+|                 |                 | below for types | post or email.  |
+|                 |                 | of forms and    | If received     |
+|                 |                 | what to look    | via:            |
+|                 |                 | for.            |                 |
 |                 |                 |                 | -   MES, delete |
 |                 |                 |                 |     as this is  |
 |                 |                 |                 |     not a valid |
@@ -2291,43 +2292,48 @@ Secondary Index - Leave blank
 |                 |                 |                 | attachments are |
 |                 |                 |                 | received.       |
 +-----------------+-----------------+-----------------+-----------------+
-| Medicare        | -   Program:    | -   Email only  | -   Kofax MES   |
-| Entitlement     |     MES         |                 |     emails, no  |
-| Statement (MES) | -   Work Type:  |                 |                 |
-| and Medicare    |     Enquiry     |                 |    attachments, |
-| Exemption Levy  | -   Primary     |                 |     no          |
-| | Enquiry |     |     Index:      |                 |                 |
-| MED4            |     SURNAME     |                 |    application, |
-|                 |     FIRST NAME  |                 |     no          |
-|                 |                 |                 |                 |
-|                 |                 |                 |   passport/visa |
-|                 |                 |                 |     and no      |
-|                 |                 |                 |     immigration |
+| Medicare        | -   For         | -   Email only  | -   Kofax MES   |
+| Entitlement     |     enquiries   |                 |     emails, no  |
+| Statement (MES) |     only, do    |                 |                 |
+| and Medicare    |     not         |                 |    attachments, |
+| Exemption Levy  |     classify    |                 |     no          |
+| | Enquiry |     | -   Escalate to |                 |                 |
+| MED4            |     a           |                 |    application, |
+|                 |                 |                 |     no          |
+|                 |  Classification |                 |                 |
+|                 |     Support     |                 |   passport/visa |
+|                 |     Officer for |                 |     and no      |
+|                 |     deletion    |                 |     immigration |
+|                 | -   See Process |                 |     documents   |
+|                 |     Table 3 for |                 | -   Customers   |
+|                 |     help with   |                 |     asking for  |
+|                 |     processing  |                 |     updates on  |
+|                 |                 |                 |     their claim |
+|                 |                 |                 |     progress or |
+|                 |                 |                 |     other       |
+|                 |                 |                 |     general     |
+|                 |                 |                 |     enquiries   |
+|                 |                 |                 | -   Emails      |
+|                 |                 |                 |     where the   |
+|                 |                 |                 |     customer    |
+|                 |                 |                 |     provided    |
+|                 |                 |                 |     the         |
 |                 |                 |                 |     documents   |
-|                 |                 |                 | -   Emails or   |
-|                 |                 |                 |     letters     |
-|                 |                 |                 |     enquiring   |
-|                 |                 |                 |     how an      |
-|                 |                 |                 |     application |
-|                 |                 |                 |     is going:   |
-|                 |                 |                 |     if unsure   |
-|                 |                 |                 |     if MES or   |
+|                 |                 |                 |     in a        |
 |                 |                 |                 |                 |
-|                 |                 |                 |    Eligibility, |
-|                 |                 |                 |     classify to |
-|                 |                 |                 |     MES Enquiry |
-|                 |                 |                 |                 |
-|                 |                 |                 | Some documents  |
-|                 |                 |                 | may be password |
-|                 |                 |                 | protected. To   |
-|                 |                 |                 | view these      |
-|                 |                 |                 | files, use one  |
-|                 |                 |                 | of the          |
-|                 |                 |                 | following       |
-|                 |                 |                 | passwords:      |
-|                 |                 |                 | Enst, Enst1,    |
-|                 |                 |                 | Ernst or        |
-|                 |                 |                 | Ernst1.         |
+|                 |                 |                 |    non-endorsed |
+|                 |                 |                 |     format,     |
+|                 |                 |                 |     that is,    |
+|                 |                 |                 |     zip or      |
+|                 |                 |                 |     password    |
+|                 |                 |                 |     protected   |
+|                 |                 |                 | -               |
+|                 |                 |                 |  Auto-responses |
+|                 |                 |                 |     that        |
+|                 |                 |                 |     haven’t     |
+|                 |                 |                 |     been picked |
+|                 |                 |                 |     up with the |
+|                 |                 |                 |     auto rule   |
 +-----------------+-----------------+-----------------+-----------------+
 | Medicare        | -   Program:    |                 | -   If document |
 | Entitlement     |     MES         |                 |     has no MES  |
@@ -2809,7 +2815,7 @@ Secondary Index - Leave blank
 |                 | ability to find |                 |                 |
 |                 | these documents |                 |                 |
 |                 | when needed.    |                 |                 |
-|                 | However at      |                 |                 |
+|                 | However, at     |                 |                 |
 |                 | times, staff    |                 |                 |
 |                 | may only be     |                 |                 |
 |                 | able to include |                 |                 |
@@ -2858,9 +2864,10 @@ Secondary Index - Leave blank
 |                 |     Document    |                 |                 |
 |                 |                 |                 |                 |
 |                 |  Classification |                 |                 |
-|                 |     TPS will    |                 |                 |
-|                 |     send to     |                 |                 |
-|                 |     SYSTEM      |                 |                 |
+|                 |     Support     |                 |                 |
+|                 |     Officer     |                 |                 |
+|                 |     will send   |                 |                 |
+|                 |     to SYSTEM   |                 |                 |
 |                 |     folder for  |                 |                 |
 |                 |     identi      |                 |                 |
 |                 | fication/action |                 |                 |
@@ -2911,31 +2918,35 @@ Secondary Index - Leave blank
 |                 | Stationery      |     (PB014)     |                 |
 |                 | Orders:         | -   Request for |                 |
 |                 |                 |                 |                 |
-|                 | -   TPS staff,  |  Pharmaceutical |                 |
-|                 |     suspend     |     Benefits    |                 |
-|                 |     with        |     Scheme      |                 |
-|                 |     reason:     |     claims      |                 |
-|                 |                 |     information |                 |
-|                 |    'OUTOFSCOPE' |     (MS040)     |                 |
-|                 | -   Electronic  | -   Stoma       |                 |
-|                 |     Document    |     Appliance   |                 |
+|                 | -               |  Pharmaceutical |                 |
+|                 |  Classification |     Benefits    |                 |
+|                 |     Support     |     Scheme      |                 |
+|                 |     officer     |     claims      |                 |
+|                 |     staff,      |     information |                 |
+|                 |     suspend     |     (MS040)     |                 |
+|                 |     with        | -   Stoma       |                 |
+|                 |     reason:     |     Appliance   |                 |
 |                 |                 |     Scheme      |                 |
-|                 |  Classification |     application |                 |
-|                 |     staff, send |     for         |                 |
-|                 |     to system   |     additional  |                 |
-|                 |     not         |     supplies    |                 |
-|                 |     classified  |     for         |                 |
-|                 |     folder in   |     clinical    |                 |
-|                 |     PaNDA       |     and other   |                 |
-|                 |                 |     reasons     |                 |
-|                 | For PB013 and   |     (PB050)     |                 |
-|                 | PB014, suspend  | -   PBS Payment |                 |
-|                 | with reason     |     Advice RTS  |                 |
-|                 | 'BLANKFORM'     |     address PO  |                 |
-|                 |                 |     BOX 9826 in |                 |
-|                 | For             |     your        |                 |
-|                 | blank/unused    |     capital     |                 |
-|                 | PB013 and PB014 |     city        |                 |
+|                 |    'OUTOFSCOPE' |     application |                 |
+|                 | -   Electronic  |     for         |                 |
+|                 |     Document    |     additional  |                 |
+|                 |                 |     supplies    |                 |
+|                 |  Classification |     for         |                 |
+|                 |     staff, send |     clinical    |                 |
+|                 |     to system   |     and other   |                 |
+|                 |     not         |     reasons     |                 |
+|                 |     classified  |     (PB050)     |                 |
+|                 |     folder in   | -   PBS Payment |                 |
+|                 |     PaNDA       |     Advice RTS  |                 |
+|                 |                 |     address PO  |                 |
+|                 | For PB013 and   |     BOX 9826 in |                 |
+|                 | PB014, suspend  |     your        |                 |
+|                 | with reason     |     capital     |                 |
+|                 | 'BLANKFORM'     |     city        |                 |
+|                 |                 |                 |                 |
+|                 | For             |                 |                 |
+|                 | blank/unused    |                 |                 |
+|                 | PB013 and PB014 |                 |                 |
 |                 | cards returned  |                 |                 |
 |                 | from pharmacy,  |                 |                 |
 |                 | suspend with    |                 |                 |
@@ -2947,16 +2958,16 @@ Secondary Index - Leave blank
 | Registration    |     Document    |     Program -   |     with IP     |
 |                 |                 |     Doctors     |     ranging     |
 |                 |  Classification |     stream Bank |     from IP001  |
-|                 |     TPS staff   |     account     |     through to  |
-|                 |     only,       |     details     |     IP032       |
-|                 |     suspend     |     (IP020)     | -   Practice    |
-|                 |     with reason |                 |     incentives  |
-|                 |     'PIP' see   |                 |     program and |
-|                 |     Process     |                 |     general     |
-|                 |     Table 3 to  |                 |     rural       |
-|                 |     help with   |                 |     incentives  |
-|                 |     processing  |                 |     programmes  |
-|                 |                 |                 |     letters or  |
+|                 |     Support     |     account     |     through to  |
+|                 |     Officer     |     details     |     IP032       |
+|                 |     staff only, |     (IP020)     | -   Practice    |
+|                 |     suspend     |                 |     incentives  |
+|                 |     with reason |                 |     program and |
+|                 |     'PIP' see   |                 |     general     |
+|                 |     Process     |                 |     rural       |
+|                 |     Table 3 to  |                 |     incentives  |
+|                 |     help with   |                 |     programmes  |
+|                 |     processing  |                 |     letters or  |
 |                 |                 |                 |     forms       |
 +-----------------+-----------------+-----------------+-----------------+
 | Out of Scope |  | Suspend with    | -   RTS -       | -   Exception   |
@@ -3051,29 +3062,29 @@ Secondary Index - Leave blank
 |                 | -   Primary     | -   Returned    |     team        |
 |                 |     Index:      |     Payment -   | -   Check       |
 |                 |     MEDICARE    |     from        |     patient     |
-|                 |     CARD NUMBER |     Medicare    |     names       |
-|                 | -   Secondary   |                 |     (split if   |
-|                 |     Index:      |    Administered |     multiple)   |
-|                 |     S           |     Reporting   | -   Check       |
-|                 | URNAMEFIRSTNAME |     and Cash    |     cost - look |
-|                 |                 |     Management  |     for payer   |
-|                 |                 |     mailbox     |     description |
-|                 |                 | -   Adjustment  | -   Look for    |
-|                 |                 |     for Patient |     references  |
-|                 |                 |     Claims      |     to the      |
-|                 |                 |     (PP045)     |     first claim |
-|                 |                 | -   Customer    | -   Most        |
-|                 |                 |     enquiry     |     specialists |
-|                 |                 |     form        |     do not bulk |
-|                 |                 |     (PP040) -   |     bill        |
-|                 |                 |     where the   | -   Will likely |
-|                 |                 |     enquiry     |     have ‘how   |
-|                 |                 |     type check  |     to pay’     |
-|                 |                 |     box for     |     section on  |
-|                 |                 |     patient     |     the invoice |
-|                 |                 |     claims is   |     (BPay       |
-|                 |                 |     ticked      |     option      |
-|                 |                 |                 |     etc.)       |
+|                 |     CARD NUMBER |     T           |     names       |
+|                 | -   Secondary   | reasuryMedicare |     (split if   |
+|                 |     Index:      |                 |     multiple)   |
+|                 |     S           |    Administered | -   Check       |
+|                 | URNAMEFIRSTNAME |     Reporting   |     cost - look |
+|                 |                 |     and Cash    |     for payer   |
+|                 |                 |     Management  |     description |
+|                 |                 |     mailbox     | -   Look for    |
+|                 |                 | -   Adjustment  |     references  |
+|                 |                 |     for Patient |     to the      |
+|                 |                 |     Claims      |     first claim |
+|                 |                 |     (PP045)     | -   Most        |
+|                 |                 | -   Customer    |     specialists |
+|                 |                 |     enquiry     |     do not bulk |
+|                 |                 |     form        |     bill        |
+|                 |                 |     (PP040) -   | -   Will likely |
+|                 |                 |     where the   |     have ‘how   |
+|                 |                 |     enquiry     |     to pay’     |
+|                 |                 |     type check  |     section on  |
+|                 |                 |     box for     |     the invoice |
+|                 |                 |     patient     |     (BPay       |
+|                 |                 |     claims is   |     option      |
+|                 |                 |     ticked      |     etc.)       |
 |                 |                 |                 | -   May refer   |
 |                 |                 |                 |     to          |
 |                 |                 |                 |     rebates     |
@@ -3103,6 +3114,8 @@ Secondary Index - Leave blank
 |                 |                 |                 |     reference   |
 |                 |                 |                 |     email       |
 |                 |                 |                 |     address of  |
+|                 |                 |                 |     from        |
+|                 |                 |                 |     Treasury    |
 |                 |                 |                 |     Medicare    |
 |                 |                 |                 |                 |
 |                 |                 |                 |    Administered |
@@ -3791,41 +3804,47 @@ Secondary Index - Leave blank
 |                 |     Index:      |     card        |                 |
 |                 |     MEDICARE    |     application |                 |
 |                 |     CARD NUMBER |     (PB018)     |                 |
-|                 | -   Secondary   |                 |                 |
-|                 |     Index:      |                 |                 |
+|                 | -   Secondary   | -   PBS/RPBS    |                 |
+|                 |     Index:      |     Safety Net  |                 |
 |                 |     SURNAME     |                 |                 |
-|                 |     FIRST NAME  |                 |                 |
+|                 |     FIRST NAME  |    prescription |                 |
+|                 |                 |     record and  |                 |
+|                 |                 |     Application |                 |
+|                 |                 |     for a       |                 |
+|                 |                 |     Safety Net  |                 |
+|                 |                 |     card        |                 |
+|                 |                 |     (PB240)     |                 |
 +-----------------+-----------------+-----------------+-----------------+
-| Pharmaceutical  | -   Program:    | -   PBS/RPBS    | -   PB017 or    |
-| Benefits Scheme |     PBS         |     Safety Net  |     PB241       |
-| (PBS) | Safety  | -   Work Type:  |                 |     received    |
-| Net Claim |     |     Safety Net  |    prescription |     from        |
-| MED3            |     Claim       |     record and  |     pharmacies  |
+| Pharmaceutical  | -   Program:    | -   PBS         | -   PB017 or    |
+| Benefits Scheme |     PBS         |                 |     PB241       |
+| (PBS) | Safety  | -   Work Type:  |    Prescription |     received    |
+| Net Claim |     |     Safety Net  |     Record Form |     from        |
+| MED3            |     Claim       |     and         |     pharmacies  |
 |                 | -   Primary     |     Application |     may contain |
-|                 |     Index:      |     for a       |     more than 1 |
-|                 |     APPROVED    |     Safety Net  |     claim page  |
-|                 |     SUPPLIER    |     card        |     from the    |
-|                 |     NUMBER      |     (PB240)     |     same        |
-|                 | -   Secondary   | -   PBS         |     pharmacy as |
-|                 |     Index:      |                 |     form only   |
-|                 |     PHARMACY    |    Prescription |     has room    |
-|                 |     NAME        |     Record Form |     for 12      |
-|                 |                 |     and         |     customers   |
-|                 |                 |     Application | -   Attachments |
-|                 |                 |     for a       |     from        |
-|                 |                 |     Safety Net  |     customers   |
-|                 |                 |     card        |     listed may  |
-|                 |                 |     (PB015)     |     consist of  |
-|                 |                 | -   PBS Safety  |     'Pharmacy   |
-|                 |                 |     Net Claim   |                 |
-|                 |                 |     for Payment |    Prescription |
-|                 |                 |     (PB241)     |     Record      |
-|                 |                 | -   Pharmacy    |     Forms' and  |
+|                 |     Index:      |     for a       |     more than   |
+|                 |     APPROVED    |     Safety Net  |     one claim   |
+|                 |     SUPPLIER    |     card        |     page from   |
+|                 |     NUMBER      |     (PB015)     |     the same    |
+|                 | -   Secondary   | -   PBS Safety  |     pharmacy as |
+|                 |     Index:      |     Net Claim   |     form only   |
+|                 |     PHARMACY    |     for Payment |     has room    |
+|                 |     NAME        |     (PB241)     |     for 12      |
+|                 |                 | -   Pharmacy    |     customers   |
+|                 |                 |                 | -   Attachments |
+|                 |                 |    Prescription |     from        |
+|                 |                 |     Record      |     customers   |
+|                 |                 |     form, see   |     listed may  |
+|                 |                 |     screenshot  |     consist of  |
+|                 |                 |                 |     'Pharmacy   |
+|                 |                 |                 |                 |
+|                 |                 |                 |    Prescription |
+|                 |                 |                 |     Record      |
+|                 |                 |                 |     Forms' and  |
 |                 |                 |                 |     'PBS        |
-|                 |                 |    Prescription |                 |
-|                 |                 |     Record      |    Prescription |
-|                 |                 |     form, see   |     Record form |
-|                 |                 |     screenshot  |     and         |
+|                 |                 |                 |                 |
+|                 |                 |                 |    Prescription |
+|                 |                 |                 |     Record form |
+|                 |                 |                 |     and         |
 |                 |                 |                 |     Application |
 |                 |                 |                 |     for a       |
 |                 |                 |                 |     Safety Net  |
@@ -4216,46 +4235,51 @@ Secondary Index - Leave blank
 |                 | form, key       |     Number      |                 |
 |                 | 'UNABLETONAME'  |     form. See   |                 |
 |                 | in Primary      |     screenshot  |                 |
-|                 | Index.          |                 |                 |
+|                 | Index.          | -   Position    |                 |
+|                 |                 |     Emission    |                 |
+|                 |                 |     Tomography  |                 |
+|                 |                 |     Statutory   |                 |
+|                 |                 |     Declaration |                 |
+|                 |                 |     (HW064)     |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Provider        | -   Program:    | -   Application | -   Form with   |
 | Registration |  |     Provider    |     for         |     'Approved   |
 | PATH | MED1     |                 |     approval,   |     Collection  |
 |                 |    Registration |     renewal or  |     Centre' in  |
-|                 | -   Work Type:  |     amendment   |     title, e.g. |
-|                 |     PATH        |     of premises |     Approved    |
-|                 | -   Primary     |     as an       |     Collection  |
-|                 |     Index:      |     Accredited  |     Centre(s)   |
-|                 |     BUSINESS    |     Pathology   |     renewal     |
-|                 |     NAME/APA    |     Laboratory  |     form        |
-|                 |     NAME        |     (HW010)     | -   Forms have  |
-|                 | -   Secondary   | -   Application |     return      |
-|                 |     Index: APA  |     for new,    |     mailing     |
-|                 |                 |     renewal or  |     address of  |
-|                 |    SURNAMEFIRST |                 |     'Pathology  |
-|                 |     NAME        |    cancellation |                 |
-|                 |                 |     of an       |   Registration' |
-|                 | For Pathology   |     Approved    | -   Do not      |
-|                 | Remittance      |     Collection  |     split where |
-|                 | Advice          |     Centre      |     multiple    |
-|                 | documents, add  |     (HW035)     |     application |
-|                 | 'remittance' to | -   Approved    |     forms       |
-|                 | end of          |     Collection  |     received    |
-|                 | business/APA    |     Centre(s)   |     for the     |
-|                 | name.           |     renewal     |     same        |
-|                 |                 |     form        |                 |
-|                 |                 | -   Approved    |    APA/BUSINESS |
-|                 |                 |     Pathology   |     NAME        |
-|                 |                 |                 | -   For         |
-|                 |                 |    Practitioner |     Pathology   |
-|                 |                 |     Appl        |     Remittance  |
-|                 |                 | ication/Renewal |     Advice      |
-|                 |                 |     (HW009)     |     documents,  |
-|                 |                 | -   Approved    |     document    |
-|                 |                 |     Pathology   |     includes    |
-|                 |                 |     Authority   |     'REMITTANCE |
-|                 |                 |     Appl        |     ADVICE'     |
-|                 |                 | ication/Renewal |                 |
+|                 | -   Work Type:  |     amendment   |     title, for  |
+|                 |     PATH        |     of premises |     example,    |
+|                 | -   Primary     |     as an       |     Approved    |
+|                 |     Index:      |     Accredited  |     Collection  |
+|                 |     BUSINESS    |     Pathology   |     Centre(s)   |
+|                 |     NAME/APA    |     Laboratory  |     renewal     |
+|                 |     NAME        |     (HW010)     |     form        |
+|                 | -   Secondary   | -   Application | -   Forms have  |
+|                 |     Index: APA  |     for new,    |     return      |
+|                 |                 |     renewal or  |     mailing     |
+|                 |    SURNAMEFIRST |                 |     address of  |
+|                 |     NAME        |    cancellation |     'Pathology  |
+|                 |                 |     of an       |                 |
+|                 | For Pathology   |     Approved    |   Registration' |
+|                 | Remittance      |     Collection  | -   Do not      |
+|                 | Advice          |     Centre      |     split where |
+|                 | documents, add  |     (HW035)     |     multiple    |
+|                 | 'remittance' to | -   Approved    |     application |
+|                 | end of          |     Collection  |     forms       |
+|                 | business/APA    |     Centre(s)   |     received    |
+|                 | name.           |     renewal     |     for the     |
+|                 |                 |     form        |     same        |
+|                 |                 | -   Approved    |                 |
+|                 |                 |     Pathology   |    APA/BUSINESS |
+|                 |                 |                 |     NAME        |
+|                 |                 |    Practitioner | -   For         |
+|                 |                 |     Appl        |     Pathology   |
+|                 |                 | ication/Renewal |     Remittance  |
+|                 |                 |     (HW009)     |     Advice      |
+|                 |                 | -   Approved    |     documents,  |
+|                 |                 |     Pathology   |     document    |
+|                 |                 |     Authority   |     includes    |
+|                 |                 |     Appl        |     'REMITTANCE |
+|                 |                 | ication/Renewal |     ADVICE'     |
 |                 |                 |     (HW011)     |                 |
 |                 |                 | -   Pathology   |                 |
 |                 |                 |     remittance  |                 |
@@ -4369,7 +4393,9 @@ Secondary Index - Leave blank
 |                 |                 |                 |     with a note |
 |                 |                 |                 |     or          |
 |                 |                 |                 |     attachment. |
-|                 |                 |                 |     e.g. RTS -  |
+|                 |                 |                 |     For         |
+|                 |                 |                 |     example,    |
+|                 |                 |                 |     RTS -       |
 |                 |                 |                 |     Medicare    |
 |                 |                 |                 |     interim     |
 |                 |                 |                 |     card        |
@@ -4530,7 +4556,7 @@ Secondary Index - Leave blank
 | Veterans'       | -   Program:    | -   Overpayment | -   Overpayment |
 | Affairs         |     VAP         |     letter (via |     forms may   |
 | Processing      | -   Work Type:  |     post or     |     be received |
-| (VAP) |         |                 |     email). See |     via post or |
+| (VAP) |         |                 |     email). See |     by post or  |
 | Adjustment -    |    Adjustment - |     screenshot  |     email       |
 | Overpayment |   |     Overpayment | -   Voluntary   |                 |
 | MED3            | -   Primary     |                 |                 |
@@ -4799,8 +4825,9 @@ Secondary Index - Leave blank
 |                 |     Document    |                 |                 |
 |                 |                 |                 |                 |
 |                 |  Classification |                 |                 |
-|                 |     TPS, see    |                 |                 |
-|                 |     Process     |                 |                 |
+|                 |     Support     |                 |                 |
+|                 |     Officer,    |                 |                 |
+|                 |     see Process |                 |                 |
 |                 |     Table 3 to  |                 |                 |
 |                 |     help with   |                 |                 |
 |                 |     processing  |                 |                 |
@@ -4918,10 +4945,11 @@ Table 1
 |                                   |     (batch file details) in the   |
 |                                   |     Batch Content section         |
 |                                   |                                   |
-|                                   | TPS to escalate BATCH ISSUE to    |
-|                                   | the Scanning and Digitisation     |
-|                                   | team for reporting to IT as batch |
-|                                   | will need to be resubmitted.      |
+|                                   | Classification Support Officer to |
+|                                   | escalate BATCH ISSUE to the       |
+|                                   | Scanning and Digitisation team    |
+|                                   | for reporting to IT as batch will |
+|                                   | need to be resubmitted.           |
 +-----------------------------------+-----------------------------------+
 | BLANKFORM                         | Form received without attachments |
 |                                   | that is entirely blank.           |
@@ -4953,7 +4981,8 @@ Table 1
 |                                   | document are to be actioned by    |
 |                                   | Processing and National Demand    |
 |                                   | Allocation (PaNDA) staff using    |
-|                                   | the image alone. TPS will send to |
+|                                   | the image alone. Classification   |
+|                                   | Support Officer will send to      |
 |                                   | system folder. (Non RBA cheques   |
 |                                   | need a PaNDA rescan request to    |
 |                                   | have the cheque and the document  |
@@ -5058,17 +5087,19 @@ Table 1
 |                                   | look for similar titles as may be |
 |                                   | a previous print version.         |
 +-----------------------------------+-----------------------------------+
-| NoTPS                             | No TPS available to assist        |
-|                                   | Service Officer with Medicare     |
-|                                   | Kofax query. TPS will check and   |
-|                                   | provide feedback to Service       |
-|                                   | Officer.                          |
+| No Classification Support Officer | No Classification Support Officer |
+|                                   | available to assist Service       |
+|                                   | Officer with Medicare Kofax       |
+|                                   | query. Classification Support     |
+|                                   | Officer will check and provide    |
+|                                   | feedback to Service Officer.      |
 +-----------------------------------+-----------------------------------+
 | OUTOFSCOPE                        | Examples include:                 |
 |                                   |                                   |
 |                                   | -   Non agency return to sender   |
 |                                   | -   Subpoena                      |
-|                                   | -   For TPS staff only, Medicare  |
+|                                   | -   For Classification Support    |
+|                                   |     Officer staff only, Medicare  |
 |                                   |     forms not included in this    |
 |                                   |     blueprint file                |
 |                                   | -   Centrelink forms not included |
@@ -5098,7 +5129,8 @@ Table 1
 |                                   | -   Yes, suspend with reason      |
 |                                   |     'PROGRAM?' see Process Table  |
 |                                   |     3 to help with processing.    |
-|                                   |     TPS will send to SYSTEM       |
+|                                   |     Classification Support        |
+|                                   |     Officer will send to SYSTEM   |
 |                                   |     folder for                    |
 |                                   |     identification/action         |
 |                                   | -   No, and invoice only          |
@@ -5108,7 +5140,8 @@ Table 1
 |                                   |     SPEC, suspend with reason     |
 |                                   |     'PROGRAM?' see Process Table  |
 |                                   |     3 to help with processing.    |
-|                                   |     TPS will send to SYSTEM       |
+|                                   |     Classification Support        |
+|                                   |     Officer will send to SYSTEM   |
 |                                   |     folder for                    |
 |                                   |     identification/action         |
 +-----------------------------------+-----------------------------------+
@@ -5151,19 +5184,20 @@ Table 1
 |                                   | classified due to poor scanning   |
 |                                   | and requires a *Rescan Request.   |
 |                                   |                                   |
-|                                   | TPS staff are to always try to    |
-|                                   | classify any poor image document  |
-|                                   | in Kofax. Processing and National |
-|                                   | Demand Allocation (PaNDA)         |
-|                                   | Processing staff will then decide |
-|                                   | if a Rescan Request is required   |
-|                                   | after classification. TPS staff   |
-|                                   | will only send a Rescan request   |
-|                                   | when Decipha scan prevents        |
-|                                   | classification at all, for        |
-|                                   | example back page only scanned,   |
-|                                   | or fold is hiding required        |
-|                                   | classification data.              |
+|                                   | Classification Support Officers   |
+|                                   | are to always try to classify any |
+|                                   | poor image document in Kofax.     |
+|                                   | Processing and National Demand    |
+|                                   | Allocation (PaNDA) Processing     |
+|                                   | staff will then decide if a       |
+|                                   | Rescan Request is required after  |
+|                                   | classification. Classification    |
+|                                   | Support Officers will only send a |
+|                                   | Rescan request when Decipha scan  |
+|                                   | prevents classification at all,   |
+|                                   | for example back page only        |
+|                                   | scanned, or fold is hiding        |
+|                                   | required classification data.     |
 +-----------------------------------+-----------------------------------+
 | SCRIPT                            | Pharmaceutical Benefits Scheme    |
 |                                   | (PBS) medication script without   |
@@ -5197,7 +5231,8 @@ Table 1
 |                                   | unsure of program, and has not    |
 |                                   | found an Operational Blueprint    |
 |                                   | reference to aid in               |
-|                                   | classification. TPS will provide  |
+|                                   | classification. Classification    |
+|                                   | Support Officer will provide      |
 |                                   | feedback to the Service Officer.  |
 +-----------------------------------+-----------------------------------+
 | WEEKLY CUSTOMER FEEDBACK          | This is a Services Australia      |
@@ -5269,7 +5304,7 @@ Table 2
 
 Contact details
 
-Technical Peer Support (TPS)
+Emergency Management Helpdesks
 
 Scanning and Digitisation team
 
