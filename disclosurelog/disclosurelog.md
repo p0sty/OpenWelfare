@@ -202,6 +202,21 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 28 September 2023                 | Various emails between members of |
+|                                   | the FOI team between 1 December   |
+|                                   | 2022 and 28 August 2023 (LEX      |
+|                                   | 75704).                           |
+|                                   |                                   |
+|                                   | 30 documents released in part.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47C, 47E(c), 47E(d) 47F(1)\       |
+|                                   | **Exemptions**: Sections 47C,     |
+|                                   | 47E(c), 47E(d), 47F(1)            |
++-----------------------------------+-----------------------------------+
 | 20 September 2023                 | Operational Blueprint documents   |
 |                                   | (LEX 75345):                      |
 |                                   |                                   |
@@ -221,7 +236,7 @@ after 12 months unless the information has enduring public value.
 |                                   | request](#contactus){lit-origina  |
 |                                   | l-text="available upon request"}. |
 |                                   |                                   |
-|                                   | **Sections of the Act**: Section  |
+|                                   | **Sections of the Act**: Sections |
 |                                   | 22, 47E(d)\                       |
 |                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
@@ -3196,12 +3211,12 @@ after 12 months unless the information has enduring public value.
 | 27 March 2019                     | -   Deed of Standing Offer for    |
 |                                   |     the Provision of ICT          |
 |                                   |     Contractor Services, Services |
-|                                   |     number 11/1000006268; and     |
+|                                   |     number 11/1000006268          |
 |                                   | -   Request for Tender ("RFT")    |
 |                                   |     for the Provision of ICT      |
 |                                   |     Contractor Services, Services |
-|                                   |     number 11/1000006268          |
-|                                   |     (LEX40762)                    |
+|                                   |     number 11/1000006268 (LEX     |
+|                                   |     40762)                        |
 |                                   |                                   |
 |                                   | 2 documents, released in full.    |
 |                                   | The documents are [available upon |
@@ -3578,7 +3593,7 @@ after 12 months unless the information has enduring public value.
 |                                   | cancellations because the         |
 |                                   | recipient was 'in gaol', for each |
 |                                   | of the last three full financial  |
-|                                   | years (2014-15; 2015-16; and      |
+|                                   | years (2014-15, 2015-16 and       |
 |                                   | 2016-17)                          |
 |                                   |                                   |
 |                                   | 1 document released in full. The  |
@@ -3721,7 +3736,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 28 September 2023.
+Page last updated: 6 October 2023.
 :::
 :::
 
@@ -3738,7 +3753,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 5 October 2023 from
+This information was printed 6 October 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
