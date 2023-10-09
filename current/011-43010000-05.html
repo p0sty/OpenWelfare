@@ -224,7 +224,7 @@ $(document).ready(function() {
 
 <p>Medicare EFT manual payments</p>
 
-<p>Medicare Health Programme Support Officers (PSO)</p>
+<p>Medicare and Aged Care - Local Peer Support (LPS)</p>
 		</div>
 	</div>
 </div>
@@ -455,6 +455,17 @@ $(document).ready(function() {
 </tr>
 <tr>
 <td>
+<a class="anchor" name="bp05_tbl_Control_lines_f02_MQAI"></a>
+<p>MQAI</p></td>
+<td>
+
+<p>Online PC or BB</p></td>
+<td>
+
+<p>Online patient claims or bulk bill claims lodged by the health professional</p></td>
+</tr>
+<tr>
+<td>
 <a class="anchor" name="bp05_tbl_Control_lines_f02_NABI"></a>
 <p>NABI</p></td>
 <td>
@@ -477,7 +488,7 @@ $(document).ready(function() {
 <p>Same day adjustment</p></td>
 <td>
 
-<p>Used to do the same day reversal of claims. Returns up to 10 item lines processed on the day.</p>
+<p>Used to do the same day reversal of claims. Returns up to 10 item lines processed on the day. <strong>SDL</strong> to delete <strong>SDR</strong> to reverse.</p>
 		<ul>		<li>
 <strong>NAOI,cardnumber</strong></li>		</ul></td>
 </tr>
@@ -527,6 +538,19 @@ $(document).ready(function() {
 </tr>
 <tr>
 <td>
+<a class="anchor" name="bp05_tbl_Control_lines_f02_NDFI"></a>
+<p>NDFI</p></td>
+<td>
+
+<p>Statement of benefit</p></td>
+<td>
+
+<p>Request statement of benefit for same day claim</p>
+		<ul>		<li>
+<strong>NDFI,cardnumber</strong></li>		</ul></td>
+</tr>
+<tr>
+<td>
 <a class="anchor" name="bp05_tbl_Control_lines_f02_NDSI"></a>
 <p>NDSI</p></td>
 <td>
@@ -534,7 +558,7 @@ $(document).ready(function() {
 <p>Statement enquiry</p></td>
 <td>
 
-<p>Duplicate statement screen</p>
+<p>Duplicate statement screen. Issue duplicate statement. DDMMYY is DOP. <strong>P</strong> to request print, or <strong>M</strong> to print manually.</p>
 		<ul>		<li>
 <strong>NDSI,cardnumber,ddmmy</strong></li>
 		<li>
@@ -694,7 +718,9 @@ EFTPOS</li>			</ul>			</ul>
 <p>Pend</p></td>
 <td>
 
-<p>Delete pended claims</p></td>
+<p>Delete pended claims or view operator that pended the claim.</p>
+		<ul>		<li>
+<strong>NPDI,cardnumber</strong></li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -705,7 +731,7 @@ EFTPOS</li>			</ul>			</ul>
 <p>Pend</p></td>
 <td>
 
-<p>Delete Pend screen</p></td>
+<p>Delete pend screen</p></td>
 </tr>
 <tr>
 <td>
@@ -751,9 +777,9 @@ EFTPOS</li>			</ul>			</ul>
 
 <p>Pend claims according to the modifiers&#58;</p>
 		<ul>		<li>
-<strong>NPND,RSN </strong>- overkey NPOC or NPFC with NPND and RSN, then press <strong>Enter</strong> to pend the entire claim with the reason code</li>
+<strong>NPND,RSN </strong>- over key NPOC or NPFC with NPND and RSN, then press <strong>Enter</strong> to pend the entire claim with the reason code</li>
 		<li>
-<strong>NPND,cardnumber</strong> - overkey NPOC or NPFC with NPND, then press <strong>Enter</strong> to pend the entire claims screen</li>		</ul></td>
+<strong>NPND,cardnumber</strong> - over key NPOC or NPFC with NPND, then press <strong>Enter</strong> to pend the entire claims screen</li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -764,7 +790,9 @@ EFTPOS</li>			</ul>			</ul>
 <p>Claims payments</p></td>
 <td>
 
-<p>payment screen</p></td>
+<p>payment screen</p>
+		<ul>		<li>
+<strong>NPOI,cardnumber</strong></li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -836,7 +864,19 @@ DOP</li>			</ul>			</ul>
 <p>PC Electronic Claiming</p></td>
 <td>
 
-<p>Action mode</p></td>
+<p>Action mode</p>
+
+<p>Review online claim</p>
+		<ul>		<li>
+<strong>NQEI,Claim ID,Oper/Pnumber,DOP/DDMMYY</strong></li>
+		</ul>
+<p>Review online claims – F11 on column to sort</p>
+		<ul>		<li>
+<strong>NQEI,claim ID,SORC/sourcecode,paid</strong></li>
+		</ul>
+<p>Same day reversal of Online claims</p>
+		<ul>		<li>
+<strong>NQEI,claim id,cardnumber</strong> - (type R to select, then R. Claim ID is DA for Provider Online claims, HC for MOA claims and AC for APP claims)</li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -892,13 +932,99 @@ DOP</li>			</ul>			</ul>
 <p></p>
 <div class="twisty">
 	
+<a class="anchor" name="bp05_L3TT_Control_lines_f01"></a>
+<h3 class="collapsible" id="bp05_L3TT_Control_lines_f01">Control lines for processing cheque enquiries</h3>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Table 3&#58; control lines for processing cheque enquiries in Mainframe. Search the list using <strong>Ctrl+F</strong>.</p><table caption="Table 3&#58; control lines for processing cheque enquiries in Mainframe. Search the list using Ctrl+F." width="100%">
+<tr>
+<td width="12%">
+<a class="anchor" name="bp05_tbl_Control_lines_f01_Control_"></a>
+<p><strong>Control line</strong></p></td>
+<td width="20%">
+
+<p><strong>Topic</strong></p></td>
+<td>
+
+<p><strong>Function</strong></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f01_BATI"></a>
+<p>BATI</p></td>
+<td>
+
+<p>Cheque enquiry</p></td>
+<td>
+
+<p>Used to obtain Medicare number</p>
+		<ul>		<li>
+<strong>BATI,NB?R,chequenumber</strong></li>
+		</ul>
+<p>Replace ? With <a href="../your-health/011-43090000-05.html#bp05_L3TT_State_codes_for">state of issue</a></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f01_BBCI"></a>
+<p>BBCI</p></td>
+<td>
+
+<p>Cheque status enquiry</p></td>
+<td>
+
+<p>Cheque information screen – check status or STOP a cheque with S or lift a STOP with L (same day only)</p>
+		<ul>		<li>
+<strong>BBCI,NB?R,chequenumber</strong></li>
+		</ul>
+<p>Replace ? With <a href="../your-health/011-43090000-05.html#bp05_L3TT_State_codes_for">state of issue</a></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f01_BBEI"></a>
+<p>BBEI</p></td>
+<td>
+
+<p>Cheque enquiry</p></td>
+<td>
+
+<p>Cheque enquiry screen</p>
+		<ul>		<li>
+<strong>BBEI,cardnumber</strong></li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f01_BILI"></a>
+<p>BILI</p></td>
+<td>
+
+<p>Stop Cheque Status</p></td>
+<td>
+
+<p>Check a STOP cheque status</p>
+		<ul>		<li>
+<strong>BILI,NB?R,STOP</strong></li>
+		</ul>
+<p>Replace ? With <a href="../your-health/011-43090000-05.html#bp05_L3TT_State_codes_for">state of issue</a></p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
 <a class="anchor" name="bp05_L3TT_Control_lines_f"></a>
 <h3 class="collapsible" id="bp05_L3TT_Control_lines_f">Control lines for general processing and enquiries</h3>
 
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 3&#58; control lines for general processing and enquiries in Mainframe. Search the list using <strong>Ctrl+F</strong>.</p><table caption="Table 3&#58; This table lists control lines for general processing and enquiries in CICS. Search the list using Ctrl+F. " width="100%">
+<p>Table 4&#58; control lines for general processing and enquiries in Mainframe. Search the list using <strong>Ctrl+F</strong>.</p><table caption="Table 4&#58; This table lists control lines for general processing and enquiries in CICS. Search the list using Ctrl+F. " width="100%">
 <tr>
 <td width="13%">
 <a class="anchor" name="bp05_tbl_Control_lines_f_Control_"></a>
@@ -912,25 +1038,42 @@ DOP</li>			</ul>			</ul>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f_BBCI"></a>
-<p>BBCI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_BRNA"></a>
+<p>BRNA</p></td>
 <td>
 
-<p>Cheque cancellation enquiry</p></td>
+<p>EFT details</p></td>
 <td>
 
-<p>Cheque information screen</p></td>
+<p>Check or change EFT details</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f_BBEI"></a>
-<p>BBEI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_CESN_and"></a>
+<p>CESN and CESF</p></td>
 <td>
 
-<p>Cheque cancellation enquiry</p></td>
+<p>Mainframe</p></td>
 <td>
 
-<p>Cheque enquiry screen</p></td>
+<p>Login/Logout</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_EPCI"></a>
+<p>EPCI</p></td>
+<td>
+
+<p>Postcodes/locations</p></td>
+<td>
+
+<p>Returns locations with that postcode</p>
+		<ul>		<li>
+<strong>EPCI,postcode</strong></li>
+		</ul>
+<p>Returns locations with the postcode</p>
+		<ul>		<li>
+<strong>EPCI,locale,state initial</strong></li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -967,6 +1110,87 @@ DOP</li>			</ul>			</ul>
 </tr>
 <tr>
 <td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_FRSI"></a>
+<p>FRSI</p></td>
+<td>
+
+<p>Source Office Enquiry</p></td>
+<td>
+
+<p>Used to define and display source office code information</p>
+		<ul>		<li>
+<strong>FRSI,sourcecode</strong></li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_INSERT"></a>
+<p>INSERT</p></td>
+<td>
+
+<p>Mainframe</p></td>
+<td>
+
+<p>Use to insert into a control line</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_MCDS"></a>
+<p>MCDS</p></td>
+<td>
+
+<p>Report</p></td>
+<td>
+
+<p>Online claims processing report</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_MQSI"></a>
+<p>MQSI</p></td>
+<td>
+
+<p>Supervisor screen</p></td>
+<td>
+
+<p>Supervisor screen for online claims processing</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_OPOQ"></a>
+<p>OPOQ</p></td>
+<td>
+
+<p>Mainframe</p></td>
+<td>
+
+<p>Used to login to source office code</p>
+		<ul>		<li>
+<strong>OPOQ,sourcecode</strong></li>		</ul></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_PAGE_UP"></a>
+<p>PAGE UP</p></td>
+<td>
+
+<p>Mainframe</p></td>
+<td>
+
+<p>Use to change screens on Mainframe</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_PHEB"></a>
+<p>PHEB</p></td>
+<td>
+
+<p>Two way claim</p></td>
+<td>
+
+<p>Process a Two-way claim - F3 to transmit</p></td>
+</tr>
+<tr>
+<td>
 <a class="anchor" name="bp05_tbl_Control_lines_f_QITH"></a>
 <p>QITH</p></td>
 <td>
@@ -985,7 +1209,9 @@ DOP</li>			</ul>			</ul>
 <p>Item enquiry</p></td>
 <td>
 
-<p>Medicare item information</p></td>
+<p>Medicare item information</p>
+		<ul>		<li>
+<strong>QITI,item,DOS</strong></li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -1018,7 +1244,9 @@ DOP</li>			</ul>			</ul>
 <p>Provider enquiry</p></td>
 <td>
 
-<p>Displays details for the provider requested. Can be used with search key if the provider number is not known</p></td>
+<p>Displays details for the provider requested. Can be used with search key if the provider number is not known</p>
+		<ul>		<li>
+<strong>QPVI,State</strong> code 4 letters of last name First initial of name First three letters of the street name</li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -1057,6 +1285,17 @@ DOP</li>			</ul>			</ul>
 		<li>
 <strong>RHMI,ON</strong> - Access header mode</li>		</ul></td>
 </tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_Control_lines_f_ROMI"></a>
+<p>ROMI</p></td>
+<td>
+
+<p>Claims list</p></td>
+<td>
+
+<p>List all claims submitted that day</p></td>
+</tr>
 
 </table>
 		</div>
@@ -1067,18 +1306,18 @@ DOP</li>			</ul>			</ul>
 <p></p>
 <div class="twisty">
 	
-<a class="anchor" name="bp05_L3TT_Control_lines_f01"></a>
-<h3 class="collapsible" id="bp05_L3TT_Control_lines_f01">Control lines for miscellaneous processing</h3>
+<a class="anchor" name="bp05_L3TT_Control_lines_f03"></a>
+<h3 class="collapsible" id="bp05_L3TT_Control_lines_f03">Control lines for common patient history searches</h3>
 
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 4&#58; control lines for miscellaneous processing in Mainframe. Search the list using <strong>Ctrl+F</strong>.</p><table caption="Table 4&#58; This table lists control lines for miscellaneous processing in CICS. Search the list using Ctrl+F. " width="100%">
+<p>Table 5&#58; control lines for common patient history searches in Mainframe. Search the list using <strong>Ctrl+F</strong>.</p><table caption="Table 5&#58; control lines for common patient history searches in Mainframe. Search the list using Ctrl+F." width="100%">
 <tr>
-<td width="13%">
-<a class="anchor" name="bp05_tbl_Control_lines_f01_Control_"></a>
+<td width="23%">
+<a class="anchor" name="bp05_tbl_Control_lines_f03_Control_"></a>
 <p><strong>Control line</strong></p></td>
-<td width="37%">
+<td width="31%">
 
 <p><strong>Topic</strong></p></td>
 <td>
@@ -1087,289 +1326,391 @@ DOP</li>			</ul>			</ul>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDAI"></a>
-<p>FDAI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NHSICar"></a>
+<p>NHSI,Card No,Patient Name</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>View history</p></td>
 <td>
 
-<p>New device registration</p></td>
+<p>View Claims History, <strong>F9</strong> to obtain PIN number</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDCI"></a>
-<p>FDCI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NHSICar01"></a>
+<p>NHSI,Card No,patient,DENT/ALL</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>CDBS</p></td>
 <td>
 
-<p>Amend a device</p></td>
+<p>For all CDBS Items</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDCU"></a>
-<p>FDCU</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NHSICar02"></a>
+<p>NHSI,Card No,patient,DENT</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>CDBS Caps</p></td>
 <td>
 
-<p>Amend a device update transaction</p></td>
+<p>Shows cap amount, benefit paid and remaining balance</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDEI"></a>
-<p>FDEI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NHSICar03"></a>
+<p>NHSI,Card No,patient,DENT/YY</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>CDBS eligibility period</p></td>
 <td>
 
-<p>Device enquiry</p></td>
+<p>YY for year of enquiry, 2 years of eligibility period info</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDMN"></a>
-<p>FDMN</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NHSICar04"></a>
+<p>NHSI,Card No,PEND/ONLY</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>Pends</p></td>
 <td>
 
-<p>DEVICE/SITE MAINTENANCE Main menu</p></td>
+<p>Lists all Pended claims under the Card</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDRI"></a>
-<p>FDRI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NHSICar05"></a>
+<p>NHSI,Card No</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>Safety Net</p></td>
 <td>
 
-<p>Delete a device</p></td>
+<p><strong>F6</strong> for EGSN and <strong>SHIFT F6</strong> for MSN and shows verified/unverified amounts for individuals</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDRU"></a>
-<p>FDRU</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NSCICar"></a>
+<p>NSCI,Card No,YY</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>Safety Net</p></td>
 <td>
 
-<p>Delete a device update transaction</p></td>
+<p>Substantiation for current year</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDTI"></a>
-<p>FDTI</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NSCICar01"></a>
+<p>NSCI,Card No,to/3112YY</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>Safety Net</p></td>
 <td>
 
-<p>Transfer a device</p></td>
+<p>Substantiation for previous year</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FDTU"></a>
-<p>FDTU</p></td>
+<a class="anchor" name="bp05_tbl_Control_lines_f03_NLTICar"></a>
+<p>NLTI,Card No,YY</p></td>
 <td>
 
-<p>Device/Site maintenance</p></td>
+<p>Safety Net</p></td>
 <td>
 
-<p>Transfer a device update transaction</p></td>
+<p>Individual Safety Net eligibility</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05_L3TT_Patient_claim_h"></a>
+<h3 class="collapsible" id="bp05_L3TT_Patient_claim_h">Patient claim history (NHSI/NHOI) shortcut keys</h3>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Table 6</p><table caption="Table 6&#58; this table describes the shortcut keys for patient claim history (NHSI/NHOI)" width="100%">
+<tr>
+<td width="24%">
+<a class="anchor" name="bp05_tbl_Patient_claim_h_Key"></a>
+<p><strong>Key</strong></p></td>
+<td>
+
+<p><strong>Function</strong></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_FRSI"></a>
-<p>FRSI</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F1"></a>
+<p><strong>F1</strong></p></td>
 <td>
 
-<p>Source Office Enquiry</p></td>
-<td>
-
-<p>Used to define and display source office code information</p></td>
+<p>Help screen</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_PPAI"></a>
-<p>PPAI</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F2"></a>
+<p><strong>F2</strong></p></td>
 <td>
 
-<p>Electronic data interchange (EDI)/electronic funds transfer (EFT) Registration</p></td>
-<td>
-
-<p>Billing Agent payment details enquiry</p></td>
+<p>Claim ID and operator number</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_PPAU"></a>
-<p>PPAU</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_SHIFTF2"></a>
+<p><strong>SHIFT+F2</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
+<p>Claim type</p>
+		<ul>		<li>
+PCM -Manual Claim</li>
+		<li>
+PCO - Online or Easyclaim lodged by provider</li>
+		<li>
+PCW - Webclaim</li>
+		<li>
+APP - Online claim through the APP</li>
+		<li>
+D* - Bulk Bill Claims</li>
+		<li>
+V* - Veterans’ claims</li>
+		<li>
+SB* - Simplified Billing claims</li>
+		<li>
+MOA - Online claim through MyGov</li>
+		</ul>
+<p></p>
 
-<p>Billing Agent payment details</p></td>
+<p>‘*’ will have additional letter e.g. ‘E’ for electronic claim</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_PPDI"></a>
-<p>PPDI</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_SHIFTF1"></a>
+<p><strong>SHIFT+F1</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>Provider payment details (EFT) enquiry screen</p></td>
+<p>Provider classification</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_PPHI"></a>
-<p>PPHI</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F3ESC_K"></a>
+<p><strong>F3/ESC Key</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>Fund payments details enquiry screen</p></td>
+<p>Exit/clear screen</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_PPHU"></a>
-<p>PPHU</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F4"></a>
+<p><strong>F4</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>Fund payment details screen</p></td>
+<p>Schedule fee, Office source code</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REDI"></a>
-<p>REDI</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_SHIFTF4"></a>
+<p><strong>SHIFT+F4</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>EDI Customer details enquiry screen</p></td>
+<p>Processing Rule applied</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REHC"></a>
-<p>REHC</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F6"></a>
+<p><strong>F6</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>EDI Major customer screen</p></td>
+<p>Substantiation &amp; EMSN information</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REHE"></a>
-<p>REHE</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_SHIFTF6"></a>
+<p><strong>SHIFT+F6</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>EDI customer details screen</p></td>
+<p>OMSN information</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REHF"></a>
-<p>REHF</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F7"></a>
+<p><strong>F7</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>Fund payment details screen</p></td>
+<p>Page backward</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REHL"></a>
-<p>REHL</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F8"></a>
+<p><strong>F8</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>EDI History summary details screen</p></td>
+<p>Page forwards</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REHM"></a>
-<p>REHM</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F9"></a>
+<p><strong>F9</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>History details menu screen</p></td>
+<p>PIN number</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REHP"></a>
-<p>REHP</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F10"></a>
+<p><strong>F10</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>Provider payment details screen</p></td>
+<p>CHQ/EFT details</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REMA"></a>
-<p>REMA</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F11"></a>
+<p><strong>F11</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>EDI Major customer ID registration screen - Address change</p></td>
+<p>Specimen Collection Point (SCP)</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REMI"></a>
-<p>REMI</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_SHIFTF101"></a>
+<p><strong>SHIFT+F11</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
-<td>
-
-<p>EDI Major customer ID enquiry screen</p></td>
+<p>Location specific practice number (LSPN)</p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REML"></a>
-<p>REML</p></td>
+<a class="anchor" name="bp05_tbl_Patient_claim_h_F12"></a>
+<p><strong>F12</strong></p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
+<p>Cancel</p></td>
+</tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05_L3TT_GPO_box_capital"></a>
+<h3 class="collapsible" id="bp05_L3TT_GPO_box_capital">GPO box capital city postcodes</h3>
+
+	<div class="collapsible_container">
+		<div class="block">
+
+<p>Table 7</p><table caption="Table 7&#58; this table provides a list of postcodes for each capital city" width="100%">
+<tr>
+<td width="14%">
+<a class="anchor" name="bp05_tbl_GPO_box_capital_Postcode"></a>
+<p><strong>Postcode</strong></p></td>
+<td width="43%">
+
+<p><strong>City</strong></p></td>
 <td>
 
-<p>EDI State office details screen</p></td>
+<p><strong>State</strong></p></td>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Control_lines_f01_REMS"></a>
-<p>REMS</p></td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_0801"></a>
+<p>0801</p></td>
 <td>
 
-<p>EDI/EFT Registration</p></td>
+<p>Darwin</p></td>
 <td>
 
-<p>Supplier details screen</p></td>
+<p>NT</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_2001"></a>
+<p>2001</p></td>
+<td>
+
+<p>Sydney</p></td>
+<td>
+
+<p>NSW</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_2601"></a>
+<p>2601</p></td>
+<td>
+
+<p>Canberra</p></td>
+<td>
+
+<p>ACT</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_3001"></a>
+<p>3001</p></td>
+<td>
+
+<p>Melbourne</p></td>
+<td>
+
+<p>VIC</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_4001"></a>
+<p>4001</p></td>
+<td>
+
+<p>Brisbane</p></td>
+<td>
+
+<p>QLD</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_5001"></a>
+<p>5001</p></td>
+<td>
+
+<p>Adelaide</p></td>
+<td>
+
+<p>SA</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_6000"></a>
+<p>6000</p></td>
+<td>
+
+<p>Perth</p></td>
+<td>
+
+<p>WA</p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp05_tbl_GPO_box_capital_7001"></a>
+<p>7001</p></td>
+<td>
+
+<p>Hobart</p></td>
+<td>
+
+<p>TAS</p></td>
 </tr>
 
 </table>
@@ -1387,7 +1728,7 @@ DOP</li>			</ul>			</ul>
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 5&#58; when patient claims submitted for payment are over 2 years old from the date of services.</p><table caption="Table 5&#58; This table describes situations where patient claims submitted for payment are over 2 years old from the date of services. " width="100%">
+<p>Table 8&#58; when patient claims submitted for payment are over 2 years old from the date of services.</p><table caption="Table 8&#58; This table describes situations where patient claims submitted for payment are over 2 years old from the date of services. " width="100%">
 <tr>
 <td width="29%">
 <a class="anchor" name="bp05_tbl_Date_of_service_Patient_"></a>
@@ -1408,7 +1749,7 @@ DOP</li>			</ul>			</ul>
 
 <p><strong>Medicare benefit less than $100</strong></p>
 
-<p>Claim must be supported by an original or duplicate account or receipt for payment.</p>
+<p>Claim must be supported by an original or duplicate account/invoice or receipt for payment.</p>
 
 <p>The claim can then be processed and paid without reference to culled history.</p>
 
@@ -1474,7 +1815,7 @@ were <strong>lodged manually at a Service Centre </strong>- the claim documents 
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 6</p><table caption="Table 6" width="100%">
+<p>Table 9</p><table caption="Table 9&#58; this table provides the Column ID, Name of Fields and Details for the vendor request spreadsheet." width="100%">
 <tr>
 <td width="32%">
 <a class="anchor" name="bp05_tbl_How_to_update_v_Column_I"></a>
@@ -1928,7 +2269,7 @@ were <strong>lodged manually at a Service Centre </strong>- the claim documents 
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 7</p><table caption="Table 7" width="100%">
+<p>Table 10</p><table caption="Table 10&#58; this table provides the Column ID, Field name and Details required when updating the payment run request spreadsheet for creation of MBS payments. " width="100%">
 <tr>
 <td width="33%">
 <a class="anchor" name="bp05_tbl_How_to_update_p_Column_I"></a>
@@ -2136,9 +2477,9 @@ WA - W0279</li>		</ul>
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 8&#58; MCCs in order of newest to oldest. These provide details of historical system changes.</p>
+<p class="info-box warning">Do not share these attachments externally. See <a target="_blank" href="https&#58;//88043133p.sharepoint.com/sites/Intranet/SitePages/about/foi.html">Freedom of Information - Information Publication Scheme</a>.</p>
 
-<p class="info-box warning">Do not share these attachments externally. See <a target="_blank" href="https&#58;//88043133p.sharepoint.com/sites/Intranet/SitePages/about/foi.html">Freedom of Information - Information Publication Scheme</a>.</p><table caption="Table 8&#58; This table contains a list of MCCs in order of newest to oldest. " width="100%">
+<p>Table 11&#58; MCCs in order of newest to oldest. These provide details of historical system changes.</p><table caption="Table 11&#58; MCCs in order of newest to oldest. These provide details of historical system changes. Do not share these attachments externally. See Freedom of Information - Information Publication Scheme.  " width="100%">
 <tr>
 <td width="25%">
 <a class="anchor" name="bp05_tbl_Medicare_circul_Circular"></a>
@@ -4566,15 +4907,15 @@ WA - W0279</li>		</ul>
 
 <p><a target="_blank" class="extwebsitelink" href="https&#58;//www.servicesaustralia.gov.au/hw029">Provider registration for Electronic Funds Transfer payments form (HW029)</a></p>
 
-<p class="info-box warning">Do not share these attachments externally. See <a target="_blank" href="https&#58;//88043133p.sharepoint.com/sites/Intranet/SitePages/about/foi.html">Freedom of Information - Information Publication Scheme</a>.<br>Use 'Save As' workaround to download/use attachments.<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />VG4 form<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />Assessing and Benefits Team Escalation header<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />Medicare Claims Enquires Escalation form<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />Medicare Claims File Fix Escalation form<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" /><a class="pdflink" href="https&#58;//88043133p.sharepoint.com/sites/Intranet/forms/pp048.pdf">Manual EFT payment request form</a></p>
+<p></p>
+
+<p class="info-box warning">Do not share these attachments externally. See <a target="_blank" href="https&#58;//88043133p.sharepoint.com/sites/Intranet/SitePages/about/foi.html">Freedom of Information - Information Publication Scheme</a>.<br>Use 'Save As' workaround to download/use attachments.</p>
+
+<p><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />VG4 form<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />Assessing and Benefits Team Escalation header<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />Medicare Claims Enquires Escalation form<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" />Medicare Claims File Fix Escalation form<br><img src="../resources/images/icon-hidden-attachment.png" alt="\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png" title="A linked attachment is available for staff only (i.e. under IPS/FOI)" /><a class="pdflink" href="https&#58;//88043133p.sharepoint.com/sites/Intranet/forms/pp048.pdf">Manual EFT payment request form</a></p>
 		</div>
 	</div>
 </div>
 
-
-<p></p>
-
-<p></p>
 
 <p></p>
 
