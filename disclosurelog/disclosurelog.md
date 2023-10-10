@@ -213,9 +213,22 @@ after 12 months unless the information has enduring public value.
 |                                   | l-text="available upon request"}. |
 |                                   |                                   |
 |                                   | **Sections of the Act**: Sections |
-|                                   | 47C, 47E(c), 47E(d) 47F(1)\       |
+|                                   | 47C, 47E(c), 47E(d), 47F(1)\      |
 |                                   | **Exemptions**: Sections 47C,     |
 |                                   | 47E(c), 47E(d), 47F(1)            |
++-----------------------------------+-----------------------------------+
+| 26 September 2023                 | Child Support Customer Referral   |
+|                                   | Guidelines in regards to          |
+|                                   | Indigenous customers (LEX 75473). |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47E(d)\                           |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 20 September 2023                 | Operational Blueprint documents   |
 |                                   | (LEX 75345):                      |
@@ -3736,7 +3749,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 6 October 2023.
+Page last updated: 10 October 2023.
 :::
 :::
 
@@ -3753,7 +3766,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 9 October 2023 from
+This information was printed 10 October 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at

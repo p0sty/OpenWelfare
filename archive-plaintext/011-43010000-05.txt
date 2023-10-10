@@ -23,7 +23,7 @@ Medicare claims helpdesk
 
 Medicare EFT manual payments
 
-Medicare Health Programme Support Officers (PSO)
+Medicare and Aged Care - Local Peer Support (LPS)
 
 Services Australia website
 
@@ -111,6 +111,11 @@ Search the list using Ctrl+F.
 +-----------------------+-----------------------+-----------------------+
 | Control line          | Topic                 | Function              |
 +-----------------------+-----------------------+-----------------------+
+| MQAI                  | Online PC or BB       | Online patient claims |
+|                       |                       | or bulk bill claims   |
+|                       |                       | lodged by the health  |
+|                       |                       | professional          |
++-----------------------+-----------------------+-----------------------+
 | NABI                  | Patient claims        | Returns all failed    |
 |                       | electronic funds      | EFT payments with a   |
 |                       | transfer (EFT)        | status of REJECT:     |
@@ -125,6 +130,8 @@ Search the list using Ctrl+F.
 |                       |                       | claims. Returns up to |
 |                       |                       | 10 item lines         |
 |                       |                       | processed on the day. |
+|                       |                       | SDL to delete SDR to  |
+|                       |                       | reverse.              |
 |                       |                       |                       |
 |                       |                       | -   NAOI,cardnumber   |
 +-----------------------+-----------------------+-----------------------+
@@ -140,8 +147,18 @@ Search the list using Ctrl+F.
 | NDCI                  | Statement enquiry     | Supervisor duplicate  |
 |                       |                       | statement screen      |
 +-----------------------+-----------------------+-----------------------+
+| NDFI                  | Statement of benefit  | Request statement of  |
+|                       |                       | benefit for same day  |
+|                       |                       | claim                 |
+|                       |                       |                       |
+|                       |                       | -   NDFI,cardnumber   |
++-----------------------+-----------------------+-----------------------+
 | NDSI                  | Statement enquiry     | Duplicate statement   |
-|                       |                       | screen                |
+|                       |                       | screen. Issue         |
+|                       |                       | duplicate statement.  |
+|                       |                       | DDMMYY is DOP. P to   |
+|                       |                       | request print, or M   |
+|                       |                       | to print manually.    |
 |                       |                       |                       |
 |                       |                       | NDSI,cardnumber,ddmmy |
 |                       |                       |                       |
@@ -204,8 +221,12 @@ Search the list using Ctrl+F.
 | NPBI                  | Claims payments       | EFT mode              |
 +-----------------------+-----------------------+-----------------------+
 | NPDI                  | Pend                  | Delete pended claims  |
+|                       |                       | or view operator that |
+|                       |                       | pended the claim.     |
+|                       |                       |                       |
+|                       |                       | -   NPDI,cardnumber   |
 +-----------------------+-----------------------+-----------------------+
-| NPEI                  | Pend                  | Delete Pend screen    |
+| NPEI                  | Pend                  | Delete pend screen    |
 +-----------------------+-----------------------+-----------------------+
 | NPFI                  | Claims payments       | Full-format Medical   |
 |                       |                       | claims payment screen |
@@ -220,16 +241,15 @@ Search the list using Ctrl+F.
 | NPND                  | Pend                  | Pend claims according |
 |                       |                       | to the modifiers:     |
 |                       |                       |                       |
-|                       |                       | -   NPND,RSN -        |
-|                       |                       |     overkey NPOC or   |
-|                       |                       |     NPFC with NPND    |
-|                       |                       |     and RSN, then     |
-|                       |                       |     press Enter to    |
-|                       |                       |     pend the entire   |
-|                       |                       |     claim with the    |
-|                       |                       |     reason code       |
+|                       |                       | -   NPND,RSN - over   |
+|                       |                       |     key NPOC or NPFC  |
+|                       |                       |     with NPND and     |
+|                       |                       |     RSN, then press   |
+|                       |                       |     Enter to pend the |
+|                       |                       |     entire claim with |
+|                       |                       |     the reason code   |
 |                       |                       | -   NPND,cardnumber - |
-|                       |                       |     overkey NPOC or   |
+|                       |                       |     over key NPOC or  |
 |                       |                       |     NPFC with NPND,   |
 |                       |                       |     then press Enter  |
 |                       |                       |     to pend the       |
@@ -237,6 +257,8 @@ Search the list using Ctrl+F.
 |                       |                       |     screen            |
 +-----------------------+-----------------------+-----------------------+
 | NPOI                  | Claims payments       | payment screen        |
+|                       |                       |                       |
+|                       |                       | -   NPOI,cardnumber   |
 +-----------------------+-----------------------+-----------------------+
 | NPRI                  | Pend                  | Recalls item lines    |
 |                       |                       | that have been        |
@@ -271,6 +293,33 @@ Search the list using Ctrl+F.
 +-----------------------+-----------------------+-----------------------+
 | NQEI                  | PC Electronic         | Action mode           |
 |                       | Claiming              |                       |
+|                       |                       | Review online claim   |
+|                       |                       |                       |
+|                       |                       | -   NQEI,Claim        |
+|                       |                       |     ID,Op             |
+|                       |                       | er/Pnumber,DOP/DDMMYY |
+|                       |                       |                       |
+|                       |                       | Review online claims  |
+|                       |                       | – F11 on column to    |
+|                       |                       | sort                  |
+|                       |                       |                       |
+|                       |                       | -   NQEI,claim        |
+|                       |                       |     ID                |
+|                       |                       | ,SORC/sourcecode,paid |
+|                       |                       |                       |
+|                       |                       | Same day reversal of  |
+|                       |                       | Online claims         |
+|                       |                       |                       |
+|                       |                       | -   NQEI,claim        |
+|                       |                       |     id,cardnumber -   |
+|                       |                       |     (type R to        |
+|                       |                       |     select, then R.   |
+|                       |                       |     Claim ID is DA    |
+|                       |                       |     for Provider      |
+|                       |                       |     Online claims, HC |
+|                       |                       |     for MOA claims    |
+|                       |                       |     and AC for APP    |
+|                       |                       |     claims)           |
 +-----------------------+-----------------------+-----------------------+
 | N-R                   | Claims payments       | Use R on the end of a |
 |                       |                       | control line after    |
@@ -289,19 +338,71 @@ Search the list using Ctrl+F.
 |                       |                       | Supervisor            |
 +-----------------------+-----------------------+-----------------------+
 
+Control lines for processing cheque enquiries
+
+Table 3: control lines for processing cheque enquiries in Mainframe.
+Search the list using Ctrl+F.
+
++-----------------------+-----------------------+-----------------------+
+| Control line          | Topic                 | Function              |
++-----------------------+-----------------------+-----------------------+
+| BATI                  | Cheque enquiry        | Used to obtain        |
+|                       |                       | Medicare number       |
+|                       |                       |                       |
+|                       |                       | -   B                 |
+|                       |                       | ATI,NB?R,chequenumber |
+|                       |                       |                       |
+|                       |                       | Replace ? With state  |
+|                       |                       | of issue              |
++-----------------------+-----------------------+-----------------------+
+| BBCI                  | Cheque status enquiry | Cheque information    |
+|                       |                       | screen – check status |
+|                       |                       | or STOP a cheque with |
+|                       |                       | S or lift a STOP with |
+|                       |                       | L (same day only)     |
+|                       |                       |                       |
+|                       |                       | -   B                 |
+|                       |                       | BCI,NB?R,chequenumber |
+|                       |                       |                       |
+|                       |                       | Replace ? With state  |
+|                       |                       | of issue              |
++-----------------------+-----------------------+-----------------------+
+| BBEI                  | Cheque enquiry        | Cheque enquiry screen |
+|                       |                       |                       |
+|                       |                       | -   BBEI,cardnumber   |
++-----------------------+-----------------------+-----------------------+
+| BILI                  | Stop Cheque Status    | Check a STOP cheque   |
+|                       |                       | status                |
+|                       |                       |                       |
+|                       |                       | -   BILI,NB?R,STOP    |
+|                       |                       |                       |
+|                       |                       | Replace ? With state  |
+|                       |                       | of issue              |
++-----------------------+-----------------------+-----------------------+
+
 Control lines for general processing and enquiries
 
-Table 3: control lines for general processing and enquiries in
+Table 4: control lines for general processing and enquiries in
 Mainframe. Search the list using Ctrl+F.
 
 +-----------------------+-----------------------+-----------------------+
 | Control line          | Topic                 | Function              |
 +-----------------------+-----------------------+-----------------------+
-| BBCI                  | Cheque cancellation   | Cheque information    |
-|                       | enquiry               | screen                |
+| BRNA                  | EFT details           | Check or change EFT   |
+|                       |                       | details               |
 +-----------------------+-----------------------+-----------------------+
-| BBEI                  | Cheque cancellation   | Cheque enquiry screen |
-|                       | enquiry               |                       |
+| CESN and CESF         | Mainframe             | Login/Logout          |
++-----------------------+-----------------------+-----------------------+
+| EPCI                  | Postcodes/locations   | Returns locations     |
+|                       |                       | with that postcode    |
+|                       |                       |                       |
+|                       |                       | -   EPCI,postcode     |
+|                       |                       |                       |
+|                       |                       | Returns locations     |
+|                       |                       | with the postcode     |
+|                       |                       |                       |
+|                       |                       | -   EPCI,locale,state |
+|                       |                       |     initial           |
 +-----------------------+-----------------------+-----------------------+
 | FPGI                  | Provider enquiry      | Shows all doctors for |
 |                       |                       | that provider group   |
@@ -316,11 +417,41 @@ Mainframe. Search the list using Ctrl+F.
 | FPVI                  | Provider enquiry      | Shows provider        |
 |                       |                       | details               |
 +-----------------------+-----------------------+-----------------------+
+| FRSI                  | Source Office Enquiry | Used to define and    |
+|                       |                       | display source office |
+|                       |                       | code information      |
+|                       |                       |                       |
+|                       |                       | -   FRSI,sourcecode   |
++-----------------------+-----------------------+-----------------------+
+| INSERT                | Mainframe             | Use to insert into a  |
+|                       |                       | control line          |
++-----------------------+-----------------------+-----------------------+
+| MCDS                  | Report                | Online claims         |
+|                       |                       | processing report     |
++-----------------------+-----------------------+-----------------------+
+| MQSI                  | Supervisor screen     | Supervisor screen for |
+|                       |                       | online claims         |
+|                       |                       | processing            |
++-----------------------+-----------------------+-----------------------+
+| OPOQ                  | Mainframe             | Used to login to      |
+|                       |                       | source office code    |
+|                       |                       |                       |
+|                       |                       | -   OPOQ,sourcecode   |
++-----------------------+-----------------------+-----------------------+
+| PAGE UP               | Mainframe             | Use to change screens |
+|                       |                       | on Mainframe          |
++-----------------------+-----------------------+-----------------------+
+| PHEB                  | Two way claim         | Process a Two-way     |
+|                       |                       | claim - F3 to         |
+|                       |                       | transmit              |
++-----------------------+-----------------------+-----------------------+
 | QITH                  | Item enquiry          | Medicare item history |
 |                       |                       | information           |
 +-----------------------+-----------------------+-----------------------+
 | QITI                  | Item enquiry          | Medicare item         |
 |                       |                       | information           |
+|                       |                       |                       |
+|                       |                       | -   QITI,item,DOS     |
 +-----------------------+-----------------------+-----------------------+
 | QPLI                  | Provider enquiry      | Accesses the          |
 |                       |                       | qualification file    |
@@ -336,6 +467,14 @@ Mainframe. Search the list using Ctrl+F.
 |                       |                       | used with search key  |
 |                       |                       | if the provider       |
 |                       |                       | number is not known   |
+|                       |                       |                       |
+|                       |                       | -   QPVI,State code 4 |
+|                       |                       |     letters of last   |
+|                       |                       |     name First        |
+|                       |                       |     initial of name   |
+|                       |                       |     First three       |
+|                       |                       |     letters of the    |
+|                       |                       |     street name       |
 +-----------------------+-----------------------+-----------------------+
 | QVRE                  | Provider enquiry      | Vocationally          |
 |                       |                       | registered provider   |
@@ -353,103 +492,137 @@ Mainframe. Search the list using Ctrl+F.
 |                       |                       | -   RHMI,ON - Access  |
 |                       |                       |     header mode       |
 +-----------------------+-----------------------+-----------------------+
+| ROMI                  | Claims list           | List all claims       |
+|                       |                       | submitted that day    |
++-----------------------+-----------------------+-----------------------+
 
-Control lines for miscellaneous processing
+Control lines for common patient history searches
 
-Table 4: control lines for miscellaneous processing in Mainframe. Search
-the list using Ctrl+F.
+Table 5: control lines for common patient history searches in Mainframe.
+Search the list using Ctrl+F.
 
 +-----------------------+-----------------------+-----------------------+
 | Control line          | Topic                 | Function              |
 +-----------------------+-----------------------+-----------------------+
-| FDAI                  | Device/Site           | New device            |
-|                       | maintenance           | registration          |
+| NHSI,Card No,Patient  | View history          | View Claims History,  |
+| Name                  |                       | F9 to obtain PIN      |
+|                       |                       | number                |
 +-----------------------+-----------------------+-----------------------+
-| FDCI                  | Device/Site           | Amend a device        |
-|                       | maintenance           |                       |
+| NHSI,Card             | CDBS                  | For all CDBS Items    |
+| No,patient,DENT/ALL   |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| FDCU                  | Device/Site           | Amend a device update |
-|                       | maintenance           | transaction           |
+| NHSI,Card             | CDBS Caps             | Shows cap amount,     |
+| No,patient,DENT       |                       | benefit paid and      |
+|                       |                       | remaining balance     |
 +-----------------------+-----------------------+-----------------------+
-| FDEI                  | Device/Site           | Device enquiry        |
-|                       | maintenance           |                       |
+| NHSI,Card             | CDBS eligibility      | YY for year of        |
+| No,patient,DENT/YY    | period                | enquiry, 2 years of   |
+|                       |                       | eligibility period    |
+|                       |                       | info                  |
 +-----------------------+-----------------------+-----------------------+
-| FDMN                  | Device/Site           | DEVICE/SITE           |
-|                       | maintenance           | MAINTENANCE Main menu |
+| NHSI,Card             | Pends                 | Lists all Pended      |
+| No,PEND/ONLY          |                       | claims under the Card |
 +-----------------------+-----------------------+-----------------------+
-| FDRI                  | Device/Site           | Delete a device       |
-|                       | maintenance           |                       |
+| NHSI,Card No          | Safety Net            | F6 for EGSN and SHIFT |
+|                       |                       | F6 for MSN and shows  |
+|                       |                       | verified/unverified   |
+|                       |                       | amounts for           |
+|                       |                       | individuals           |
 +-----------------------+-----------------------+-----------------------+
-| FDRU                  | Device/Site           | Delete a device       |
-|                       | maintenance           | update transaction    |
+| NSCI,Card No,YY       | Safety Net            | Substantiation for    |
+|                       |                       | current year          |
 +-----------------------+-----------------------+-----------------------+
-| FDTI                  | Device/Site           | Transfer a device     |
-|                       | maintenance           |                       |
+| NSCI,Card             | Safety Net            | Substantiation for    |
+| No,to/3112YY          |                       | previous year         |
 +-----------------------+-----------------------+-----------------------+
-| FDTU                  | Device/Site           | Transfer a device     |
-|                       | maintenance           | update transaction    |
+| NLTI,Card No,YY       | Safety Net            | Individual Safety Net |
+|                       |                       | eligibility           |
 +-----------------------+-----------------------+-----------------------+
-| FRSI                  | Source Office Enquiry | Used to define and    |
-|                       |                       | display source office |
-|                       |                       | code information      |
+
+Patient claim history (NHSI/NHOI) shortcut keys
+
+Table 6
+
++-----------------------------------+-----------------------------------+
+| Key                               | Function                          |
++-----------------------------------+-----------------------------------+
+| F1                                | Help screen                       |
++-----------------------------------+-----------------------------------+
+| F2                                | Claim ID and operator number      |
++-----------------------------------+-----------------------------------+
+| SHIFT+F2                          | Claim type                        |
+|                                   |                                   |
+|                                   | -   PCM -Manual Claim             |
+|                                   | -   PCO - Online or Easyclaim     |
+|                                   |     lodged by provider            |
+|                                   | -   PCW - Webclaim                |
+|                                   | -   APP - Online claim through    |
+|                                   |     the APP                       |
+|                                   | -   D* - Bulk Bill Claims         |
+|                                   | -   V* - Veterans’ claims         |
+|                                   | -   SB* - Simplified Billing      |
+|                                   |     claims                        |
+|                                   | -   MOA - Online claim through    |
+|                                   |     MyGov                         |
+|                                   |                                   |
+|                                   | ‘*’ will have additional letter   |
+|                                   | e.g. ‘E’ for electronic claim     |
++-----------------------------------+-----------------------------------+
+| SHIFT+F1                          | Provider classification           |
++-----------------------------------+-----------------------------------+
+| F3/ESC Key                        | Exit/clear screen                 |
++-----------------------------------+-----------------------------------+
+| F4                                | Schedule fee, Office source code  |
++-----------------------------------+-----------------------------------+
+| SHIFT+F4                          | Processing Rule applied           |
++-----------------------------------+-----------------------------------+
+| F6                                | Substantiation & EMSN information |
++-----------------------------------+-----------------------------------+
+| SHIFT+F6                          | OMSN information                  |
++-----------------------------------+-----------------------------------+
+| F7                                | Page backward                     |
++-----------------------------------+-----------------------------------+
+| F8                                | Page forwards                     |
++-----------------------------------+-----------------------------------+
+| F9                                | PIN number                        |
++-----------------------------------+-----------------------------------+
+| F10                               | CHQ/EFT details                   |
++-----------------------------------+-----------------------------------+
+| F11                               | Specimen Collection Point (SCP)   |
++-----------------------------------+-----------------------------------+
+| SHIFT+F11                         | Location specific practice number |
+|                                   | (LSPN)                            |
++-----------------------------------+-----------------------------------+
+| F12                               | Cancel                            |
++-----------------------------------+-----------------------------------+
+
+GPO box capital city postcodes
+
+Table 7
+
 +-----------------------+-----------------------+-----------------------+
-| PPAI                  | Electronic data       | Billing Agent payment |
-|                       | interchange           | details enquiry       |
-|                       | (EDI)/electronic      |                       |
-|                       | funds transfer (EFT)  |                       |
-|                       | Registration          |                       |
+| Postcode              | City                  | State                 |
 +-----------------------+-----------------------+-----------------------+
-| PPAU                  | EDI/EFT Registration  | Billing Agent payment |
-|                       |                       | details               |
+| 0801                  | Darwin                | NT                    |
 +-----------------------+-----------------------+-----------------------+
-| PPDI                  | EDI/EFT Registration  | Provider payment      |
-|                       |                       | details (EFT) enquiry |
-|                       |                       | screen                |
+| 2001                  | Sydney                | NSW                   |
 +-----------------------+-----------------------+-----------------------+
-| PPHI                  | EDI/EFT Registration  | Fund payments details |
-|                       |                       | enquiry screen        |
+| 2601                  | Canberra              | ACT                   |
 +-----------------------+-----------------------+-----------------------+
-| PPHU                  | EDI/EFT Registration  | Fund payment details  |
-|                       |                       | screen                |
+| 3001                  | Melbourne             | VIC                   |
 +-----------------------+-----------------------+-----------------------+
-| REDI                  | EDI/EFT Registration  | EDI Customer details  |
-|                       |                       | enquiry screen        |
+| 4001                  | Brisbane              | QLD                   |
 +-----------------------+-----------------------+-----------------------+
-| REHC                  | EDI/EFT Registration  | EDI Major customer    |
-|                       |                       | screen                |
+| 5001                  | Adelaide              | SA                    |
 +-----------------------+-----------------------+-----------------------+
-| REHE                  | EDI/EFT Registration  | EDI customer details  |
-|                       |                       | screen                |
+| 6000                  | Perth                 | WA                    |
 +-----------------------+-----------------------+-----------------------+
-| REHF                  | EDI/EFT Registration  | Fund payment details  |
-|                       |                       | screen                |
-+-----------------------+-----------------------+-----------------------+
-| REHL                  | EDI/EFT Registration  | EDI History summary   |
-|                       |                       | details screen        |
-+-----------------------+-----------------------+-----------------------+
-| REHM                  | EDI/EFT Registration  | History details menu  |
-|                       |                       | screen                |
-+-----------------------+-----------------------+-----------------------+
-| REHP                  | EDI/EFT Registration  | Provider payment      |
-|                       |                       | details screen        |
-+-----------------------+-----------------------+-----------------------+
-| REMA                  | EDI/EFT Registration  | EDI Major customer ID |
-|                       |                       | registration screen - |
-|                       |                       | Address change        |
-+-----------------------+-----------------------+-----------------------+
-| REMI                  | EDI/EFT Registration  | EDI Major customer ID |
-|                       |                       | enquiry screen        |
-+-----------------------+-----------------------+-----------------------+
-| REML                  | EDI/EFT Registration  | EDI State office      |
-|                       |                       | details screen        |
-+-----------------------+-----------------------+-----------------------+
-| REMS                  | EDI/EFT Registration  | Supplier details      |
-|                       |                       | screen                |
+| 7001                  | Hobart                | TAS                   |
 +-----------------------+-----------------------+-----------------------+
 
 Date of service more than 2 years old
 
-Table 5: when patient claims submitted for payment are over 2 years old
+Table 8: when patient claims submitted for payment are over 2 years old
 from the date of services.
 
 +-----------------------------------+-----------------------------------+
@@ -458,9 +631,10 @@ from the date of services.
 | over 2 years old (less than 5     | Medicare benefit less than $100   |
 | years old)                        |                                   |
 |                                   | Claim must be supported by an     |
-| Medicare benefits less than $100  | original or duplicate account or  |
-| (paid for 1 claim for 1 Medicare  | receipt for payment.              |
-| card number)                      |                                   |
+| Medicare benefits less than $100  | original or duplicate             |
+| (paid for 1 claim for 1 Medicare  | account/invoice or receipt for    |
+| card number)                      | payment.                          |
+|                                   |                                   |
 |                                   | The claim can then be processed   |
 |                                   | and paid without reference to     |
 |                                   | culled history.                   |
@@ -520,7 +694,7 @@ from the date of services.
 
 How to update vendor request spreadsheet for creation of MBS vendors
 
-Table 6
+Table 9
 
 +-----------------------+-----------------------+-----------------------+
 | Column ID             | Name of Field         | Details               |
@@ -692,7 +866,7 @@ Table 6
 
 How to update payment run request spreadsheet for creation of MBS payments
 
-Table 7
+Table 10
 
 +-----------------------+-----------------------+-----------------------+
 | Column ID             | Name of Field         | Details               |
@@ -778,11 +952,11 @@ Table 7
 
 Medicare claims circulars (MCC) – historical information
 
-Table 8: MCCs in order of newest to oldest. These provide details of
-historical system changes.
-
 Do not share these attachments externally. See Freedom of Information -
 Information Publication Scheme.
+
+Table 11: MCCs in order of newest to oldest. These provide details of
+historical system changes.
 
 +-----------------------+-----------------------+-----------------------+
 | Circular              | Topic                 | Issue date            |
@@ -2976,6 +3150,7 @@ Provider registration for Electronic Funds Transfer payments form
 Do not share these attachments externally. See Freedom of Information -
 Information Publication Scheme.
 Use 'Save As' workaround to download/use attachments.
+
 [\\INTERNAL.DEPT.LOCAL\Shared\NAT\SERDELEXCEL\WORKPRODIMP\Operation
 Blueprint Migration\RDT Release Icons\32w\icon-hidden-attachment.png]VG4
 form
