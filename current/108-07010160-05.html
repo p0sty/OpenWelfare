@@ -238,6 +238,8 @@ they will be on a nil rate of payment from day 6 of the first entitlement period
 
 <p>Customer is no longer entitled to DSP as they are employed for 30 hours or more per week at or above the relevant minimum wage. There is no entitlement to the employment income nil rate period. Payment is suspended for 2 years when the Working Credit balance has depleted to zero.</p>
 
+<p>See <a href="../people-with-disability/008-03100010-01.html">Commencing or returning to work or self-employment Disability Support Pension (DSP)</a>.</p>
+
 <p></p></td>
 </tr>
 <tr>
@@ -252,9 +254,7 @@ they will be on a nil rate of payment from day 6 of the first entitlement period
 
 <p>Once the employment income nil rate period has finished, both pensions will be suspended for up to 2 years or until the income goes down and they are entitled to some payment again.</p>
 
-<p>If the customer/partner has income coded as income in one period (IOP), and reports their last fortnight income late, the payment will not suspend due to system limitation.</p>
-
-<p>Check the Payment Summary (<strong>PS</strong>) screen, to see if the customer has had 6 consecutive fortnights of nil payment. If so, code the income from the 7th fortnight and, if payment has not suspended automatically, follow current procedures to suspend payment manually from the EPSD of the 7th fortnight.</p>
+<p>See <a href="../people-with-disability/008-03100010-01.html">Commencing or returning to work or self-employment Disability Support Pension (DSP)</a> and <a href="../ongoing-contact/102-22121442-01.html">Extended suspension periods for pension payments</a>.</p>
 
 <p></p></td>
 </tr>
@@ -290,11 +290,11 @@ Customers are no longer entitled to PP and therefore their entitlement to the em
 			<ul>			<li>
 6 years if the customer gets PP partnered</li>
 			<li>
-8 years if the customer gets PP single</li>		</ul>
+14 years if the customer gets PP single</li>		</ul>
 		<li>
 For PP customers, an employment income nil rate period can continue if their relationship status changes (transfers between PP single and PP partnered and vice versa)</li>
 		<li>
-However, an employment income nil rate period ends if the customer loses qualification for their payment and transfers to another income support payment, for example, a PP single customer's youngest child turns 8 and they transfer to JobSeeker Payment (JSP)</li>
+However, an employment income nil rate period ends if the customer loses qualification for their payment and transfers to another income support payment, for example, a PP single customer's youngest child turns 14 and they transfer to JobSeeker Payment (JSP)</li>
 		</ul>
 <p><strong>Note&#58;</strong> PPP customers of Age Pension age are not entitled to employment income nil rate period.</p>
 
@@ -346,13 +346,11 @@ However, an employment income nil rate period ends if the customer loses qualifi
 
 <p>A pension customer's payment on an employment nil rate period will be deemed as suspended. Their pension payment will restore automatically when the employment income is updated and it is below the thresholds. There is no need to manually restore the payment.</p>
 
-<p>If the customer is currently on the 13 week nil rate suspension period when they transfer to Age Pension this continues&#58;</p>
+<p>If the customer is currently on the 13 week nil rate suspension period when they transfer to Age Pension this continues until&#58;</p>
 		<ul>		<li>
-until the customer's payment is restored, or</li>
+the customer's payment is restored, or</li>
 		<li>
-when cancellation occurs at the end of the 13 week period</li>		</ul>
-
-<p></p></td>
+once the maximum suspension period has been reached for customers eligible for an <a href="../ongoing-contact/102-22121442-01.html">extended employment suspension period</a></li>		</ul></td>
 </tr>
 <tr>
 <td>
@@ -400,7 +398,7 @@ they will still get a payment that only includes one of the above supplementary 
 	<div class="collapsible_container">
 		<div class="block">
 
-<p>Table 2&#58; This table describes the action needed to overcome system limitations about the employment income nil rate period for DSP, Age Pension or PP customers when payments are not automatically suspending/cancelling after the employment income nil rate period.</p><table caption="Table 2&#58; This table describes the action required to overcome system limitations about the employment income nil rate period for Disability Support Pension (DSP), Age Pension or Parenting Payment (PP) customers when payments are not automatically suspending/cancelling after the employment income nil rate period. " width="100%">
+<p>Table 2&#58; This table describes the action needed to overcome system limitations about the employment income nil rate period for PP customers when payments are not automatically suspending/cancelling after the employment income nil rate period.</p><table caption="Table 2&#58; This table describes the action required to overcome system limitations about the employment income nil rate period for Disability Support Pension (DSP), Age Pension or Parenting Payment (PP) customers when payments are not automatically suspending/cancelling after the employment income nil rate period. " width="100%">
 <tr>
 <td width="11%">
 <a class="anchor" name="bp05_tbl_Action_needed_d_Item"></a>
@@ -417,7 +415,35 @@ they will still get a payment that only includes one of the above supplementary 
 
 <p><strong>System limitations</strong></p>
 
-<p>Currently there is a system limitation which means that when a DSP, AGE or PP customer/partner is due to suspend/cancel due to employment income precluded for 6 consecutive fortnights and they have income coded as income in one period (IOP), the payment will not be suspended/cancelled if the customer/partner reports their income late.</p>
+<p>Currently there is a system limitation which means that when a PP customer/partner is due to suspend/cancel due to employment income precluded for 6 consecutive fortnights and they have income coded as income in one period (IOP), the payment will not be suspended/cancelled if the customer/partner reports their income late.</p>
+
+<p>For Parenting Payment Partnered (PPP) customers, check the Payment Summary (PS) screen to see if the customer&#58;</p>
+		<ul>		<li>
+is on 6 consecutive fortnights of nil payment, and</li>
+		<li>
+has employment income of IOP</li>
+		</ul>
+<p>A display on access <strong>DOC</strong> must be created in this instance– see Item 2 for details.</p>
+
+<p>If the customer/partner reports late for the 7th fortnight (the income is too high for payment), do not code employment income as IOP. Code a frequency of 'DAY' using the Entitlement Period Start Day (EPSD) of the period in which the income was paid as the event date. </p>
+
+<p>The amount to code is the declared employment income amount, represented as a daily figure. </p>
+
+<p>Example&#58; In the 7th fortnight where customer has been PPP/CZR for the previous 6 fortnights, and the customer/partner reports late. Customer/partner advises of earned income of $2800 paid for a 14 day period with a paid date of 14.08.2023. Customer’s Entitlement Period Start Day (EPSD) for the relevant period is 01.08.2023. The coding will be as follows&#58; </p>
+		<ul>		<li>
+Date of Event&#58; 01.08.2023</li>
+		<li>
+Amount&#58; $200</li>
+		<li>
+Frequency&#58; DAY</li>
+		</ul>
+<p>This coding will also allow the extension of Health Care Card and/or Pensioner Concession Card and Telephone Allowance entitlement to employment income affected customers.</p>
+
+<p>For help to action a cancellation, see Cancellation of Parenting Payment (PP).</p>
+
+<p>If any AGE instances are identified , staff should report this to ICT. This is because a manual SUS/CAN should not be applied from EPSD of the 7th fortnight, if customers are eligible to enter the <a href="../ongoing-contact/102-22121442-01.html">Extended suspension periods for pension payments</a>.</p>
+
+<p></p>
 
 <p>In all instances, follow current procedures to suspend/cancel payment manually from the EPSD of the 7th fortnight.</p>
 
@@ -429,97 +455,35 @@ they will still get a payment that only includes one of the above supplementary 
 <p>2</p></td>
 <td>
 
-<p><strong>DSP or Age Pension due to suspend after 6 consecutive fortnights at nil rate</strong></p>
-
-<p>Check the Payment Summary (<strong>PS</strong>) screen to see if the customer has had 6 fortnights of nil payment. If so, and payment has not suspended/cancelled automatically, follow current procedures to suspend/cancel payment manually from the EPSD of the 7th fortnight.</p>
-
-<p>A display on access (DOA) <strong>DOC</strong> should be created warning Service Officers of the system limitation of DSP or AGE not cancelling correctly with reason '<strong>E6F</strong>' when income precludes payment on their 6th and final fortnight of the 'nil rate period'.</p>
-
-<p>To action a DSP cancellation, see&#58;</p>
-		<ul>		<li>
-<a href="../people-with-disability/008-03130030-01.html">Cancellation of payments - Disability Support Pension</a>, and/or</li>
-		<li>
-<a href="../people-with-disability/008-03130040-01.html">Cancellation, suspension and rejection codes for Disability Support Pension</a></li>
-		</ul>
-<p>To action an Age Pension cancellation, see&#58;</p>
-		<ul>		<li>
-<a href="../older-australians/065-03080040-01.html">Cancellation of Age Pension</a>, and/or</li>
-		<li>
-<a href="../older-australians/065-03080010-01.html">Cancellation, suspension and rejection codes for Age Pension</a></li>		</ul>
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Action_needed_d_3"></a>
-<p>3</p></td>
-<td>
-
-<p><strong>Parenting Payment due to cancel after 6 consecutive fortnights at nil rate</strong></p>
-
-<p>For Parenting Partnered (PPP) customers, check the Payment Summary (<strong>PS</strong>) screen to see if the customer&#58;</p>
-		<ul>		<li>
-is on 6 consecutive fortnights of nil payment, and</li>
-		<li>
-has employment income of <strong>IOP</strong></li>
-		</ul>
-<p>A <a href="../income-assests-and-rates-of-payment/108-07010160-05.html#bp05_tbl_Action_required_4">display on access DOC</a> should be created warning Service Officers of the system limitation of Parenting Payment (PP) not cancelling correctly with reason 'E6F' when income precludes payment after their 6th and final fortnight of the 'nil rate period' and the customer has not reported on time for the 7th fortnight.</p>
-
-<p>If the customer/partner reports late for the 7th fortnight (the income is too high for payment), do <strong>not</strong> code employment income as IOP. Code a frequency of '<strong>DAY</strong>' using the Entitlement Period Start Day (EPSD) of the period in which the income was paid as the event date. The amount to code is the declared employment income amount, represented as a daily figure. This will also allow the extension of Health Care Card and/or Pensioner Concession Card and Telephone Allowance entitlement to employment income affected customers.</p>
-
-<p>For help to action a cancellation, see&#58;</p>
-		<ul>		<li>
-<a href="../ongoing-contact/102-10020210-01.html">Cancellation of payments Parenting Payment (PP)</a>, and/or</li>
-		<li>
-<a href="../families/007-02220080-01.html">Cancellation, suspension and rejection codes for Parenting Payment</a></li>		</ul>
-
-<p></p></td>
-</tr>
-<tr>
-<td>
-<a class="anchor" name="bp05_tbl_Action_needed_d_4"></a>
-<p>4</p></td>
-<td>
-
 <p><strong>Example&#58; DOA DOC</strong></p>
 
-<p>Who&#58; CSO Source&#58; INT__Receipt Date&#58; 21 AUG 2021</p>
+<p>A Display on Access (DOA) <strong>DOC</strong> must be created warning Service Officers of the system limitation of Parenting Payment (PP) not cancelling correctly with reason 'E6F' when income precludes payment after their 6th and final fortnight of the 'nil rate period' and the customer has not reported on time for the 7th fortnight.</p>
 
-<p>Channel Type&#58; INT DOA DOC&#58; OTH Expiry&#58; 20 SEP 2021</p>
+<p>See Display on Access <strong>DOCs</strong> for assistance with adding a DOA <strong>DOC</strong>&#58;</p>
+		<ul>		<li>
+Reason&#58; field - OTH</li>
+		<li>
+Expiry date&#58; field - the expiry date in the <strong>DOC</strong> should be two weeks after the Entitlement Period End Day (EPED) of the seventh and final fortnight of the nil rate period (97 days)</li>
+		</ul>
+<p>SUM&#58; System fault preventing PPP CAN-E6F at end of 6 f/n @ nil rate._______ _</p>
 
-<p>Tfr To&#58; ___ Storage&#58; NIL Storage Date&#58; ___________</p>
+<p>TXT&#58;</p>
 
-<p>Workgroup&#58; WAITING_ Position&#58; WAITING_ Resub To&#58; ___________</p>
+<p>Record actioned on &lt;date&gt; regarding Parenting Payment</p>
 
-<p>Keywords&#58; ________ ________ ________ Auth&#58; ABC_______</p>
+<p>System fault preventing PPP CAN-E6F at end of 6 f/n @nil rate</p>
 
-<p>Complete Act&#58; N Annotate&#58; N Office&#58; MIT</p>
-
-<p>Sum&#58; CSO OTH PPP/DSP/AGE Ext Detail&#58; Urgent free text message exists</p>
-
-<p>Txt&#58; Urgent free text message exists until 20 SEP 2021. Customer Service _ _</p>
-
-<p>Adviser actioned record on 21 AUG 2021 regarding Parenting Payment/Disability Support Pension/AGE pension. __ _</p>
-
-<p>Information was obtained via Internal. Document created by ABC on 21 _ _</p>
-
-<p>AUG 2021. _</p>
-
-<p>System fault preventing PPP/DSP/AGE CAN-E6F at end of 6 f/n @ nil rate._______ _</p>
-
-<p>Please check payment for EPED 6/8/21 to ensure correctly CAN-E6F. If__ _</p>
+<p>Please check payment for EPED &lt;date&gt;to ensure correctly CAN-E6F. If__ _</p>
 
 <p>cus/ptr reported this f/n &amp; income is precluding and payment does not CAN-E6F, escalate through mySupport - _</p>
 
 <p><strong>Note&#58;</strong> the free text can be copied and dates changed.</p>
 		<ul>		<li>
-For eligible DSP customers, text should refer to suspension process, e.g. 'System limitation preventing automatic suspension of DSP at end of 6 consecutive f/n at nil rate'</li>
+System limitation may prevent automatic suspension of PPP at end of 6 consecutive f/n at nil rate</li>
 		<li>
-The expiry date in the <strong>DOC</strong> should be two weeks after the Entitlement Period End Day (EPED) of the seventh and final fortnight of the nil rate period</li>
+Staff must check the Entitlement Period End Day (EPED) of the seventh and final fortnight of the nil rate period to determine if manual workaround is required - see <a href="../income-assests-and-rates-of-payment/108-07010160-05.html#bp05_L3TT_Action_needed_d">Resources - action needed due to system limitations</a></li>
 		<li>
-If the rate of PP is more than $0 due to reduced income or cessation of employment, the standard IOP coding will correctly cancel E6F, or restart payment as needed</li>
-		<li>
-Date of effect (DOE) of cancellation will be after the 6 consecutive <strong>full</strong> fortnights at nil rate from the first affected entitlement period. (It can be between 85 to 97 days due to income that is partly or fully from employment)</li>		</ul>
+If the rate of PP is more than $0 due to reduced income or cessation of employment, the standard IOP coding will correctly cancel E6F, or restart payment as needed</li>		</ul>
 
 <p></p></td>
 </tr>
