@@ -157,6 +157,10 @@ form (HW093) is received.
 |                                   | has been supplied with the        |
 |                                   | application).                     |
 |                                   |                                   |
+|                                   | Note: Representative Public       |
+|                                   | Dentists (RPDs) are not eligible  |
+|                                   | for a prescriber number.          |
+|                                   |                                   |
 |                                   | If an application cannot be       |
 |                                   | processed or if the request is    |
 |                                   | incomplete, see Table 6.          |
@@ -173,8 +177,8 @@ form (HW093) is received.
 |                                   | -   Select Processing Notes       |
 |                                   | -   Select Add Processing Note    |
 |                                   | -   Add a processing note stating |
-|                                   |     “delegate approval required   |
-|                                   |     for prescriber number”        |
+|                                   |     ‘delegate approval required   |
+|                                   |     for prescriber number’        |
 |                                   | -   Select Confirm                |
 |                                   | -   Select Details                |
 |                                   | -   Select Send for Delegation    |
@@ -299,8 +303,8 @@ form (HW093) is received.
 |                                   | -   Select Processing Notes       |
 |                                   | -   Select Add Processing Note    |
 |                                   | -   Add a processing note stating |
-|                                   |     “delegate approval required   |
-|                                   |     for prescriber number”        |
+|                                   |     ‘delegate approval required   |
+|                                   |     for prescriber number’        |
 |                                   | -   Select Confirm                |
 |                                   | -   Select Details                |
 |                                   | -   Select Send for Delegation    |
@@ -395,8 +399,8 @@ midwife or nurse practitioner form (2960) is received.
 |                                   |                                   |
 |                                   | Note: make sure the Application   |
 |                                   | for a Medicare provider number    |
-|                                   | and/or prescriber number for a    |
-|                                   | midwife or nurse practitioner     |
+|                                   | and/or PBS prescriber number for  |
+|                                   | a midwife or nurse practitioner   |
 |                                   | form (HW088) has been completed.  |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Check nurse practitioner's        |
@@ -488,12 +492,14 @@ midwife or nurse practitioner form (2960) is received.
 |                                   |     practitioner or appropriate   |
 |                                   |     third party                   |
 |                                   | -   In public hospital with refer |
-|                                   |     and request rights - a        |
-|                                   |     provider number is issued for |
-|                                   |     refer and request only. The   |
-|                                   |     specialty code 651 is added   |
-|                                   |     to the stem and location with |
-|                                   |     the location service ruled to |
+|                                   |     and request rights, or where  |
+|                                   |     only prescribing access is    |
+|                                   |     required - a provider number  |
+|                                   |     is issued for refer and       |
+|                                   |     request only. The specialty   |
+|                                   |     code 651 is added to the stem |
+|                                   |     and location with the         |
+|                                   |     location service ruled to     |
 |                                   |     prevent claiming of Medicare  |
 |                                   |     benefits when not eligible to |
 |                                   |     claim Medicare benefits. The  |
@@ -501,21 +507,6 @@ midwife or nurse practitioner form (2960) is received.
 |                                   |     be released to the nurse      |
 |                                   |     practitioner or appropriate   |
 |                                   |     third party                   |
-|                                   | -   In public hospital where only |
-|                                   |     a prescriber number is        |
-|                                   |     required - a 'silent'         |
-|                                   |     provider number is issued to  |
-|                                   |     activate the prescriber       |
-|                                   |     number. The specialty code    |
-|                                   |     651 is added to the stem and  |
-|                                   |     location with the location    |
-|                                   |     service ruled to prevent      |
-|                                   |     claiming of Medicare benefits |
-|                                   |     when not eligible. The        |
-|                                   |     location provider number is   |
-|                                   |     not to be released as it is   |
-|                                   |     for internal PBS purposes     |
-|                                   |     only                          |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Allocate a prescriber number +    |
 |                                   | Read more ...                     |
@@ -533,59 +524,12 @@ midwife or nurse practitioner form (2960) is received.
 |                                   | practitioner has asked for a      |
 |                                   | prescriber number only and a      |
 |                                   | provider record has not           |
-|                                   | previously been created see Step  |
+|                                   | previously been created, see Step |
 |                                   | 13 in the Specialty Code field    |
 |                                   | table in Provider Directory       |
 |                                   | System (PDS) specialty codes for  |
 |                                   | allied health and non-medical     |
 |                                   | health professionals              |
-|                                   |                                   |
-|                                   | Creating a 'silent' provider      |
-|                                   | number                            |
-|                                   |                                   |
-|                                   | In the Provider Location - Create |
-|                                   |                                   |
-|                                   | Address tab                       |
-|                                   |                                   |
-|                                   | -   Select Manual Entry           |
-|                                   | -   Key Office Use Only in        |
-|                                   |     Building or Department        |
-|                                   | -   The hospital/health service   |
-|                                   |     or practice name in Street    |
-|                                   |     Name                          |
-|                                   | -   Key Suburb and Postcode as    |
-|                                   |     per provider application      |
-|                                   |                                   |
-|                                   | Contact tab                       |
-|                                   |                                   |
-|                                   | -   Location Start Date to be     |
-|                                   |     date of processing            |
-|                                   |                                   |
-|                                   | Loc-Spec codes tab                |
-|                                   |                                   |
-|                                   | -   Select Add New                |
-|                                   | -   Key 651 in the Specialty Code |
-|                                   |     Descriptor                    |
-|                                   | -   Key date of processing in     |
-|                                   |     Start Date                    |
-|                                   | -   Select Add                    |
-|                                   | -   Select Cancel                 |
-|                                   |                                   |
-|                                   | Add Service Rule                  |
-|                                   |                                   |
-|                                   | Loc Service Rules tab             |
-|                                   |                                   |
-|                                   | -   Select Add Service Rule       |
-|                                   | -   Key 618 in the Service Rule   |
-|                                   |     Number                        |
-|                                   | -   Select Yes from the Activity  |
-|                                   |     Code dropdown menu            |
-|                                   | -   Key date of processing in     |
-|                                   |     Start Date                    |
-|                                   | -   Select Add New                |
-|                                   | -   Select Cancel                 |
-|                                   |                                   |
-|                                   | Select Save                       |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Issue confirmation letter and     |
 |                                   | finalise + Read more ...          |
@@ -746,33 +690,20 @@ nurse practitioner form (2960) is received.
 |                                   |     practitioner or appropriate   |
 |                                   |     third party                   |
 |                                   | -   In public hospital with refer |
-|                                   |     and request rights - a        |
-|                                   |     provider number is issued for |
-|                                   |     refer and request only. The   |
-|                                   |     specialty code 652 is added   |
-|                                   |     to the stem and location with |
-|                                   |     the location service ruled to |
+|                                   |     and request rights, or where  |
+|                                   |     only prescribing access is    |
+|                                   |     required - a provider number  |
+|                                   |     is issued for refer and       |
+|                                   |     request only. The specialty   |
+|                                   |     code 652 is added to the stem |
+|                                   |     and location with the         |
+|                                   |     location service ruled to     |
 |                                   |     prevent claiming of Medicare  |
 |                                   |     benefits when not eligible to |
 |                                   |     claim Medicare benefits. The  |
 |                                   |     location provider number may  |
 |                                   |     be released to the midwife or |
 |                                   |     appropriate third party       |
-|                                   | -   In public hospital where only |
-|                                   |     a prescriber number is        |
-|                                   |     required - a 'silent'         |
-|                                   |     provider number is issued to  |
-|                                   |     activate the prescriber       |
-|                                   |     number. The specialty code    |
-|                                   |     652 is added to the stem and  |
-|                                   |     location with the location    |
-|                                   |     service ruled to prevent      |
-|                                   |     claiming of Medicare benefits |
-|                                   |     when not eligible. The        |
-|                                   |     location provider number is   |
-|                                   |     not to be released as it is   |
-|                                   |     for internal PBS purposes     |
-|                                   |     only                          |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Allocate a prescriber number +    |
 |                                   | Read more ...                     |
@@ -789,60 +720,12 @@ nurse practitioner form (2960) is received.
 |                                   | Note: where the midwife has asked |
 |                                   | for a prescriber number only and  |
 |                                   | a provider record has not         |
-|                                   | previously been created see Step  |
+|                                   | previously been created, see Step |
 |                                   | 12 in the Specialty Code field    |
 |                                   | table in Provider Directory       |
 |                                   | System (PDS) specialty codes for  |
 |                                   | allied health and non-medical     |
 |                                   | health professionals.             |
-|                                   |                                   |
-|                                   | Creating a 'silent' provider      |
-|                                   | number                            |
-|                                   |                                   |
-|                                   | In the Provider Location - Create |
-|                                   |                                   |
-|                                   | Address tab:                      |
-|                                   |                                   |
-|                                   | -   Select Manual Entry           |
-|                                   | -   Key Office Use Only in        |
-|                                   |     Building or Department        |
-|                                   | -   The hospital/health service   |
-|                                   |     or practice name in Street    |
-|                                   |     Name                          |
-|                                   | -   Key Suburb and Postcode as    |
-|                                   |     per provider number           |
-|                                   |     application                   |
-|                                   |                                   |
-|                                   | Contact tab:                      |
-|                                   |                                   |
-|                                   | -   Location Start Date to be     |
-|                                   |     date of processing            |
-|                                   |                                   |
-|                                   | Loc-Spec Codes tab:               |
-|                                   |                                   |
-|                                   | -   Select Add New                |
-|                                   | -   Key 652 in the Specialty Code |
-|                                   |     Descriptor                    |
-|                                   | -   Key date of processing in     |
-|                                   |     Start Date                    |
-|                                   | -   Select Add                    |
-|                                   | -   Select Cancel                 |
-|                                   |                                   |
-|                                   | Add Service Rule                  |
-|                                   |                                   |
-|                                   | Loc-Service Rules tab:            |
-|                                   |                                   |
-|                                   | -   Select Add Service Rule       |
-|                                   | -   Key 618 in the Service Rule   |
-|                                   |     Number                        |
-|                                   | -   Select Yes from the Activity  |
-|                                   |     Code dropdown menu            |
-|                                   | -   Key date of processing in     |
-|                                   |     Start Date                    |
-|                                   | -   Select Add New                |
-|                                   | -   Select Cancel                 |
-|                                   |                                   |
-|                                   | Select Save                       |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Issue confirmation letter and     |
 |                                   | advise + Read more ...            |

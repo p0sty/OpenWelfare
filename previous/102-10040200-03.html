@@ -474,13 +474,17 @@ An ABSTUDY action request <strong>Fast Note</strong> including any relevant docu
 
 <p>Can the payment be restored or do system limitations prevent restoration from occurring?</p>
 		<ul>		<li>
-Payment can be restored, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step06">go to Step 6</a></li>
+Payment can be restored, for&#58;</li>
+			<ul>			<li>
+EPA, entitled to ABSTUDY School Fees Allowance (Group 2) as a boarding student and commenced studies after the third Friday of the term, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step06">go to Step 6</a></li>
+			<li>
+All other scenarios, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step07">go to Step 7</a></li>		</ul>
 		<li>
 System limitations prevent restoration&#58;</li>
 			<ul>			<li>
-for EPF, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step07">go to Step 7</a></li>
+for EPF, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step08">go to Step 8</a></li>
 			<li>
-for EPA, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step08">go to Step 8</a></li>			</ul>			</ul>
+for EPA, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step09">go to Step 9</a></li>			</ul>			</ul>
 </div>
 
 
@@ -492,7 +496,67 @@ for EPA, <a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restorati
 <p>6</p></td>
 <td>
 
-<p><strong>Restore payments</strong> <a title="Read more 10" class="showhead bp03_tbl_PES_restoration_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Coding gap in entitlement</strong> <a title="Read more 10" class="showhead bp03_tbl_PES_restoration_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>EPA boarding students who have commenced studies after the third Friday in the new term, are not entitled to payment between the start of the term entitlement period and their commencement date.</p>
+
+<p>Course details must be updated to make sure the correct gap in entitlement occurs as follows&#58;</p>
+
+<p>Code the following&#58;</p>
+		<ul>		<li>
+'<strong>SVPES</strong>' in <strong>Nxt</strong>&#58; field</li>
+		<li>
+'<strong>ISS</strong>' in <strong>System</strong>&#58; field</li>
+		<li>
+Select [<strong>Enter</strong>]</li>
+		</ul>
+<p>Coding required for Study starting in <strong>Term 1</strong>&#58;</p>
+		<ul>		<li>
+on the Education Details History (<strong>EDCH</strong>) screen, code the current year course&#58;</li>
+			<ul>			<li>
+with the <strong>Student Start Date</strong> field as the student's date of commencement</li>
+			<li>
+all remaining fields as per <a href="../students-and-trainees/010-07010180-01.html">Coding new study details</a></li>
+			</ul>			</ul>
+<p>Coding required for Study starting <strong>in Term 2, 3</strong> or <strong>4</strong>&#58;</p>
+		<ul>		<li>
+on the Education Details History (<strong>EDCH</strong>) screen select the current course&#58;</li>
+			<ul>			<li>
+update the <strong>Student End Date</strong> field to the last day of the previous term entitlement period</li>
+			<li>
+enter the <strong>Source</strong> and <strong>DOR</strong> fields</li>
+			<li>
+select '<strong>Change</strong>' in the <strong>Action</strong> field, and press [<strong>Enter</strong>]</li>		</ul>
+		<li>
+from the <strong>EDCH</strong> screen reselect the current course&#58;</li>
+			<ul>			<li>
+change the <strong>Participation Status Event Date</strong> field to the first day of the new term entitlement period</li>
+			<li>
+select '<strong>Insert</strong>' in the <strong>Action</strong> field, and press [<strong>Enter</strong>]</li>		</ul>
+		<li>
+from the <strong>EDCH</strong> screen reselect the newly inserted course&#58;</li>
+			<ul>			<li>
+update the <strong>Student Start Date</strong> field to the student's date of commencement</li>
+			<li>
+correct the <strong>Student End Date</strong> field to match the <strong>Inst Course End Date</strong></li>
+			<li>
+select '<strong>Change</strong>' in the <strong>Action </strong>field, and press [<strong>Enter</strong>]</li>
+			</ul>			</ul>
+<p><a href="../ongoing-contact/102-10040200-03.html#bp03_tbl_PES_restoration_Step07">Go to Step 7</a>.</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_PES_restoration_Step07"></a>
+<p>7</p></td>
+<td>
+
+<p><strong>Restore payments</strong> <a title="Read more 11" class="showhead bp03_tbl_PES_restoration_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -542,11 +606,11 @@ Press [<strong>Enter</strong>]</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_PES_restoration_Step07"></a>
-<p>7</p></td>
+<a class="anchor" name="bp03_tbl_PES_restoration_Step08"></a>
+<p>8</p></td>
 <td>
 
-<p><strong>Reinstate payments via Social Online Application (SOA) shell</strong> <a title="Read more 11" class="showhead bp03_tbl_PES_restoration_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Reinstate payments via Social Online Application (SOA) shell</strong> <a title="Read more 12" class="showhead bp03_tbl_PES_restoration_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -576,11 +640,11 @@ Select <strong>Create Claim</strong></li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_PES_restoration_Step08"></a>
-<p>8</p></td>
+<a class="anchor" name="bp03_tbl_PES_restoration_Step09"></a>
+<p>9</p></td>
 <td>
 
-<p><strong>Reinstate payments via NCL activity</strong> <a title="Read more 12" class="showhead bp03_tbl_PES_restoration_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Reinstate payments via NCL activity</strong> <a title="Read more 13" class="showhead bp03_tbl_PES_restoration_Step09" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_PES_restoration_Step09" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 

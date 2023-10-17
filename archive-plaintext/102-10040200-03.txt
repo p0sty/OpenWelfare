@@ -317,16 +317,98 @@ Table 2
 |                                   | system limitations prevent        |
 |                                   | restoration from occurring?       |
 |                                   |                                   |
-|                                   | Payment can be restored, go to    |
-|                                   | Step 6                            |
+|                                   | Payment can be restored, for:     |
+|                                   |                                   |
+|                                   | -   EPA, entitled to ABSTUDY      |
+|                                   |     School Fees Allowance         |
+|                                   |     (Group 2) as a boarding       |
+|                                   |     student and commenced studies |
+|                                   |     after the third Friday of the |
+|                                   |     term, go to Step 6            |
+|                                   | -   All other scenarios, go to    |
+|                                   |     Step 7                        |
 |                                   |                                   |
 |                                   | System limitations prevent        |
 |                                   | restoration:                      |
 |                                   |                                   |
-|                                   | -   for EPF, go to Step 7         |
-|                                   | -   for EPA, go to Step 8         |
+|                                   | -   for EPF, go to Step 8         |
+|                                   | -   for EPA, go to Step 9         |
 +-----------------------------------+-----------------------------------+
-| 6                                 | Restore payments + Read more ...  |
+| 6                                 | Coding gap in entitlement + Read  |
+|                                   | more ...                          |
+|                                   |                                   |
+|                                   | EPA boarding students who have    |
+|                                   | commenced studies after the third |
+|                                   | Friday in the new term, are not   |
+|                                   | entitled to payment between the   |
+|                                   | start of the term entitlement     |
+|                                   | period and their commencement     |
+|                                   | date.                             |
+|                                   |                                   |
+|                                   | Course details must be updated to |
+|                                   | make sure the correct gap in      |
+|                                   | entitlement occurs as follows:    |
+|                                   |                                   |
+|                                   | Code the following:               |
+|                                   |                                   |
+|                                   | -   'SVPES' in Nxt: field         |
+|                                   | -   'ISS' in System: field        |
+|                                   | -   Select [Enter]                |
+|                                   |                                   |
+|                                   | Coding required for Study         |
+|                                   | starting in Term 1:               |
+|                                   |                                   |
+|                                   | on the Education Details History  |
+|                                   | (EDCH) screen, code the current   |
+|                                   | year course:                      |
+|                                   |                                   |
+|                                   | -   with the Student Start Date   |
+|                                   |     field as the student's date   |
+|                                   |     of commencement               |
+|                                   | -   all remaining fields as per   |
+|                                   |     Coding new study details      |
+|                                   |                                   |
+|                                   | Coding required for Study         |
+|                                   | starting in Term 2, 3 or 4:       |
+|                                   |                                   |
+|                                   | on the Education Details History  |
+|                                   | (EDCH) screen select the current  |
+|                                   | course:                           |
+|                                   |                                   |
+|                                   | -   update the Student End Date   |
+|                                   |     field to the last day of the  |
+|                                   |     previous term entitlement     |
+|                                   |     period                        |
+|                                   | -   enter the Source and DOR      |
+|                                   |     fields                        |
+|                                   | -   select 'Change' in the Action |
+|                                   |     field, and press [Enter]      |
+|                                   |                                   |
+|                                   | from the EDCH screen reselect the |
+|                                   | current course:                   |
+|                                   |                                   |
+|                                   | -   change the Participation      |
+|                                   |     Status Event Date field to    |
+|                                   |     the first day of the new term |
+|                                   |     entitlement period            |
+|                                   | -   select 'Insert' in the Action |
+|                                   |     field, and press [Enter]      |
+|                                   |                                   |
+|                                   | from the EDCH screen reselect the |
+|                                   | newly inserted course:            |
+|                                   |                                   |
+|                                   | -   update the Student Start Date |
+|                                   |     field to the student's date   |
+|                                   |     of commencement               |
+|                                   | -   correct the Student End Date  |
+|                                   |     field to match the Inst       |
+|                                   |     Course End Date               |
+|                                   | -   select 'Change' in the Action |
+|                                   |     field, and press [Enter]      |
+|                                   |                                   |
+|                                   | Go to Step 7.                     |
++-----------------------------------+-----------------------------------+
+| 7                                 | Restore payments + Read more ...  |
 |                                   |                                   |
 |                                   | Code the following:               |
 |                                   |                                   |
@@ -394,7 +476,7 @@ Table 2
 |                                   | Record details of contact and     |
 |                                   | restoration on a DOC.             |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Reinstate payments via Social     |
+| 8                                 | Reinstate payments via Social     |
 |                                   | Online Application (SOA) shell +  |
 |                                   | Read more ...                     |
 |                                   |                                   |
@@ -426,7 +508,7 @@ Table 2
 |                                   |                                   |
 |                                   | Record details on a DOC.          |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Reinstate payments via NCL        |
+| 9                                 | Reinstate payments via NCL        |
 |                                   | activity + Read more ...          |
 |                                   |                                   |
 |                                   | If the customer is eligible to be |

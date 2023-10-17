@@ -202,6 +202,42 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 4 October 2023                    | Document relating to (LEX 75811): |
+|                                   |                                   |
+|                                   | -   Minister's Office: Office of  |
+|                                   |     the Hon Bill Shorten MP,      |
+|                                   |     Minister for the National     |
+|                                   |     Disability Insurance Scheme   |
+|                                   |     and Minister for Government   |
+|                                   |     Services.                     |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 47C\                              |
+|                                   | **Exemptions**: Section 47C       |
++-----------------------------------+-----------------------------------+
+| 4 October 2023                    | Document relating to (LEX 75790): |
+|                                   |                                   |
+|                                   | -   Minister's Office: Office of  |
+|                                   |     the Hon Bill Shorten MP,      |
+|                                   |     Minister for the National     |
+|                                   |     Disability Insurance Scheme   |
+|                                   |     and Minister for Government   |
+|                                   |     Services.                     |
+|                                   |                                   |
+|                                   | 1 document released in full. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: N/A               |
++-----------------------------------+-----------------------------------+
 | 28 September 2023                 | Various emails between members of |
 |                                   | the FOI team between 1 December   |
 |                                   | 2022 and 28 August 2023 (LEX      |
@@ -3749,7 +3785,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 10 October 2023.
+Page last updated: 17 October 2023.
 :::
 :::
 
@@ -3766,7 +3802,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 16 October 2023 from
+This information was printed 17 October 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
