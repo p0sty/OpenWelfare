@@ -1231,7 +1231,7 @@ Table 3
 |                                   | If the claim is to be:            |
 |                                   |                                   |
 |                                   | -   Granted, go to Step 2         |
-|                                   | -    Rejected, go to Table 4      |
+|                                   | -   Rejected, go to Table 4       |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Granting of a claim + Read more   |
 |                                   | ...                               |
@@ -1363,7 +1363,7 @@ Table 4
 |                                   | Support (AoS) recoverable payment |
 |                                   |                                   |
 |                                   | Rejected ATR – Allowable Time     |
-|                                   | Reached, go to Table 5            |
+|                                   | Reached, see Table 5              |
 |                                   |                                   |
 |                                   | Rejected for any other reason,    |
 |                                   |  go to Step 5                     |
@@ -1697,17 +1697,22 @@ Table 5
 |                                   | study at this level.              |
 |                                   |                                   |
 |                                   | Reject the claim - Allowable Time |
-|                                   | Reached REJ/ATR                   |
+|                                   | Reached REJ/ATR:                  |
 |                                   |                                   |
-|                                   | -   Key the Course Start Date:    |
-|                                   |     and Allowable Time End Date:  |
-|                                   |     fields as the day before the  |
-|                                   |     Student Start Date. Go to     |
-|                                   |     Step 4                        |
-|                                   | -   If the error E949NS -         |
-|                                   |     Allowable Time can't be       |
-|                                   |     before Inst Course Start Date |
-|                                   |     presents, go to Step 2        |
+|                                   | Key the Allowable Time End Date:  |
+|                                   | field as the day:                 |
+|                                   |                                   |
+|                                   | -   Before the Course Start Date  |
+|                                   |     if the student is starting a  |
+|                                   |     new course                    |
+|                                   | -   Before the First day of the   |
+|                                   |     next study period if the      |
+|                                   |     student is a continuing       |
+|                                   |     student.  Go to Step 4        |
+|                                   |                                   |
+|                                   | If the error E949NS - Allowable   |
+|                                   | Time can't be before Inst Course  |
+|                                   | Start Date presents, go to Step 2 |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Rejecting the claim when the      |
 |                                   | Allowable Time End Date is before |

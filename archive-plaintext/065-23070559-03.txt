@@ -115,13 +115,16 @@ Table 1
 |                                   | the relevant option in the Work   |
 |                                   | item type dropdown menu:          |
 |                                   |                                   |
-|                                   | -   Defaults to Auto advance      |
-|                                   |     approval and displays         |
+|                                   | -   Activity – Overlapping        |
+|                                   |     RAD/DAP hardship              |
+|                                   | -   Activity – Retrospective Clam |
+|                                   | -   Auto advance approval         |
 |                                   | -   Bank details change           |
 |                                   | -   Care Recipient matching       |
 |                                   |     through NSAF                  |
 |                                   | -   Claim approval                |
 |                                   | -   Claim re-finalise             |
+|                                   | -   Dementia supplement           |
 |                                   | -   Enteral feeding supplement    |
 |                                   |     claim                         |
 |                                   | -   Entry event                   |
@@ -585,21 +588,31 @@ depends on the skill tags assigned to the user.
 |                                   |     through NSAF go to Step 4     |
 |                                   | -   Claim Approval go to Step 5   |
 |                                   | -   Claim refinalise go to Step 6 |
+|                                   | -   Dementia Supplement go to     |
+|                                   |     Step 7                        |
 |                                   | -   Enteral Feeding Supplement    |
-|                                   |     Claim go to Step 7            |
-|                                   | -   Entry Event go to Step 8      |
-|                                   | -   Leave Event go to Step 9      |
+|                                   |     Claim go to Step 8            |
+|                                   | -   Enteral Feeding Supplement    |
+|                                   |     for Home Care go to Step 9    |
+|                                   | -   Entry Event go to Step 10     |
+|                                   | -   Leave Event go to Step 11     |
 |                                   | -   Manual Adjustment Approval go |
-|                                   |     to Step 10                    |
+|                                   |     to Step 12                    |
+|                                   | -   Manual Adjustment Approval    |
+|                                   |     Home Care go to Step 13       |
 |                                   | -   Manual Advance Approval go to |
-|                                   |     Step 11                       |
+|                                   |     Step 14                       |
 |                                   | -   Name Change Approval go to    |
-|                                   |     Step 12                       |
+|                                   |     Step 15                       |
 |                                   | -   Oxygen Supplement Claim go to |
-|                                   |     Step 13                       |
-|                                   | -   Refund Decision go to Step 14 |
+|                                   |     Step 16                       |
+|                                   | -   Oxygen Supplement for Home    |
+|                                   |     care go to Step 17            |
+|                                   | -   Rad/Dap Hardship change of    |
+|                                   |     circumstances go to Step 18   |
+|                                   | -   Refund Decision go to Step 19 |
 |                                   | -   External Organisation User    |
-|                                   |     Access Request go to Step 15  |
+|                                   |     Access Request go to Step 20  |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Auto-advance Approval   + Read    |
 |                                   | more ...                          |
@@ -658,7 +671,17 @@ depends on the skill tags assigned to the user.
 |                                   | Aged Care Staff Portal home page  |
 |                                   | table.                            |
 +-----------------------------------+-----------------------------------+
-| 7                                 | Enteral Feeding Supplement        |
+| 7                                 | Dementia Supplement + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | When allocated Dementia           |
+|                                   | Supplement for processing, see    |
+|                                   | the View and maintain Dementia    |
+|                                   | and Cognition Supplement details  |
+|                                   | for care recipients in ACSP       |
+|                                   | table.                            |
++-----------------------------------+-----------------------------------+
+| 8                                 | Enteral Feeding Supplement        |
 |                                   | Claim + Read more ...             |
 |                                   |                                   |
 |                                   | When allocated Enteral Feeding    |
@@ -666,7 +689,16 @@ depends on the skill tags assigned to the user.
 |                                   | see the Manage enteral feeding    |
 |                                   | events in ACSP table.             |
 +-----------------------------------+-----------------------------------+
-| 8                                 | Entry Event + Read more ...       |
+| 9                                 | Enteral Feeding Supplement Claim  |
+|                                   | for Home Care + Read more ...     |
+|                                   |                                   |
+|                                   | When allocated Enteral Feeding    |
+|                                   | Supplement Claim for Home Care    |
+|                                   | for processing, see the Manage    |
+|                                   | enteral feeding events in ACSP    |
+|                                   | table.                            |
++-----------------------------------+-----------------------------------+
+| 10                                | Entry Event + Read more ...       |
 |                                   |                                   |
 |                                   | When allocated Entry Event for    |
 |                                   | processing, see the Using the     |
@@ -675,14 +707,14 @@ depends on the skill tags assigned to the user.
 |                                   | events - (Service in Context)     |
 |                                   | table.                            |
 +-----------------------------------+-----------------------------------+
-| 9                                 | Leave Event + Read more ...       |
+| 11                                | Leave Event + Read more ...       |
 |                                   |                                   |
 |                                   | When allocated Leave Event for    |
 |                                   | processing, see the Resolve       |
 |                                   | excess residential care recipient |
 |                                   | social leave issues table.        |
 +-----------------------------------+-----------------------------------+
-| 10                                | Manual Adjustment Approval + Read |
+| 12                                | Manual Adjustment Approval + Read |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Note: Locating Manual Adjustment  |
@@ -715,7 +747,40 @@ depends on the skill tags assigned to the user.
 |                                   | adjustment for residential care   |
 |                                   | table.                            |
 +-----------------------------------+-----------------------------------+
-| 11                                | Manual Advance Approval + Read    |
+| 13                                | Manual Adjustment Approval for    |
+|                                   | Home Care + Read more ...         |
+|                                   |                                   |
+|                                   | Note: Locating Manual Adjustment  |
+|                                   | request from PaNDA.               |
+|                                   |                                   |
+|                                   | -   Staff will upload all the     |
+|                                   |     relevant calculations,        |
+|                                   |     supporting documentation and  |
+|                                   |     email trails into PaNDA       |
+|                                   | -   Staff will assign the PaNDA   |
+|                                   |     work item for delegation      |
+|                                   |     approval                      |
+|                                   | -   Subject matter expert who is  |
+|                                   |     allocated the manual          |
+|                                   |     adjustment approval will go   |
+|                                   |     to AC Adjustment folder in    |
+|                                   |     PaNDA and locate the manual   |
+|                                   |     adjustment request by         |
+|                                   |     searching for care recipient  |
+|                                   |     name or NAPS ID               |
+|                                   | -   When approved, add a PaNDA    |
+|                                   |     note and Reassign to the      |
+|                                   |     services office who processed |
+|                                   |     the Manual adjustment request |
+|                                   |     that it was approved          |
+|                                   |                                   |
+|                                   | When allocated Manual Adjustment  |
+|                                   | Approval for processing, see the  |
+|                                   | Approve or reject manual          |
+|                                   | adjustment for residential care   |
+|                                   | table.                            |
++-----------------------------------+-----------------------------------+
+| 14                                | Manual Advance Approval + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | When allocated Manual Advance     |
@@ -726,7 +791,7 @@ depends on the skill tags assigned to the user.
 |                                   | services (Service in Context)     |
 |                                   | table.                            |
 +-----------------------------------+-----------------------------------+
-| 12                                | Name Change Approval + Read more  |
+| 15                                | Name Change Approval + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | When allocated Name Change        |
@@ -734,7 +799,7 @@ depends on the skill tags assigned to the user.
 |                                   | 2 in the Approve Name Changes in  |
 |                                   | the Aged Care Staff Portal table. |
 +-----------------------------------+-----------------------------------+
-| 13                                | Oxygen Supplement Claim + Read    |
+| 16                                | Oxygen Supplement Claim + Read    |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | When allocated Oxygen Supplement  |
@@ -742,14 +807,32 @@ depends on the skill tags assigned to the user.
 |                                   | Manage oxygen events in ACSP      |
 |                                   | table.                            |
 +-----------------------------------+-----------------------------------+
-| 14                                | Refund Decision + Read more ...   |
+| 17                                | Oxygen Supplement Claim for Home  |
+|                                   | Care + Read more ...              |
+|                                   |                                   |
+|                                   | When allocated Oxygen Supplement  |
+|                                   | Claim for processing, see the     |
+|                                   | Manage oxygen events in ACSP      |
+|                                   | table.                            |
++-----------------------------------+-----------------------------------+
+| 18                                | Rad/Dap Hardship change of        |
+|                                   | circumstances + Read more ...     |
+|                                   |                                   |
+|                                   | When allocated Rad/Dap Hardship   |
+|                                   | change of circumstances for       |
+|                                   | processing. See Overlapping       |
+|                                   | RAD/DAP Hardship Activities in    |
+|                                   | the Aged Care Staff Portal        |
+|                                   | (ACSP).                           |
++-----------------------------------+-----------------------------------+
+| 19                                | Refund Decision + Read more ...   |
 |                                   |                                   |
 |                                   | When allocated Refund Decision    |
 |                                   | for processing, see the Using the |
 |                                   | Aged Care Staff Portal for the    |
 |                                   | Reviews menu tab table.           |
 +-----------------------------------+-----------------------------------+
-| 15                                | External Organisation User Access |
+| 20                                | External Organisation User Access |
 |                                   | Request + Read more ...           |
 |                                   |                                   |
 |                                   | When allocated External           |
