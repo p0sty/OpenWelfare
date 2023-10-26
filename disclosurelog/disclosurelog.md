@@ -202,6 +202,27 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 12 October 2023                   | Documents relating to (LEX        |
+|                                   | 75591):                           |
+|                                   |                                   |
+|                                   | -   Listing identified risk,      |
+|                                   |     categorisations, and          |
+|                                   |     treatments in regards to the  |
+|                                   |     Centrelink income matching    |
+|                                   |     with the Australian Tax       |
+|                                   |     office data                   |
+|                                   |                                   |
+|                                   | 2 documents released in full and  |
+|                                   | 11 documents released in part.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 47F(1) and 47E(d)\                |
+|                                   | **Exemptions**: Sections 47F(1)   |
+|                                   | and 47E(d)                        |
++-----------------------------------+-----------------------------------+
 | 11 October 2023                   | Document relating to (LEX 75669): |
 |                                   |                                   |
 |                                   | -   The COVID-19 Vaccine Claims   |
@@ -3816,7 +3837,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 25 October 2023.
+Page last updated: 26 October 2023.
 :::
 :::
 
@@ -3833,7 +3854,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 25 October 2023 from
+This information was printed 26 October 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
@@ -4078,12 +4099,12 @@ Aboriginal and Torres Strait Islander nations.
 
 ![](data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIGhlaWdodD0iNTYiIHdpZHRoPSI1MCIgdmlld2JveD0iMCAwIDUwIDU2Ij48dGl0bGU+U2VydmljZXMgQXVzdHJhbGlhPC90aXRsZT4KCiAgPHBhdGggZD0iTTE2LjY1LDExLjY5VjQ0LjMxTDUuNyw1NWEzLjM4LDMuMzgsMCwwLDEtMi4zNywxQTMuMzEsMy4zMSwwLDAsMSwwLDUyLjczVjMuMjZBMy4yOSwzLjI5LDAsMCwxLDMuMzMsMGgwQTMuMjcsMy4yNywwLDAsMSw1LjY2Ljk0Wk0yMi4zNSwxQTMuMzUsMy4zNSwwLDAsMCwyMCwwYTMuMjksMy4yOSwwLDAsMC0zLjMzLDMuMjVoMHY4LjQzTDMzLjMzLDI4LDE2LjY3LDQ0LjI5djguNDRBMy4yOSwzLjI5LDAsMCwwLDIwLDU2LDMuMzMsMy4zMywwLDAsMCwyMi4zNSw1NUw1MCwyOFoiPjwvcGF0aD4KPC9zdmc+)
 
-::: {.ml-5 .py-2 .hidden .sm:block .print:block}
+::: {.ml-5 .py-2 .print:block}
 ![](data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgaGVpZ2h0PSI1MCIgd2lkdGg9Ijg5IiB2aWV3Ym94PSIwIC0xMCAyMzAgMTMwIj4KICA8cGF0aCBkPSJNNDguMDYsOTAuOTJhMTYuMDcsMTYuMDcsMCwwLDEtMTAtMy40NEwzNS40LDkyLjFhMjEsMjEsMCwwLDAsMTIuMjksMy43NmM3LjcyLDAsMTIuOTMtNCwxMi45My0xMS4xNywwLTYuNzYtNC43OC05LjI4LTEwLjczLTExLjUzLTQuNjctMS43Mi03LjczLTMuMDYtNy43My02LjU1LDAtMy4wNiwyLjU4LTUsNi4xMi01YTgsOCwwLDAsMSw3LjM1LDMuOTFMNjAsNjIuOGMtMS42Ni0zLjQzLTUuNTgtNi4xMi0xMS42OS02LjEyLTYuNzEsMC0xMS41OSw0LTExLjU5LDEwLjMxUzQxLjMsNzUuNzksNDcsNzcuODhjNS4xLDEuOTMsOC4xLDMuMjcsOC4xLDcuMTlzLTIuNjMsNS44NS03LDUuODVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik05MC41Niw5My43MWwtMS4yMy00LjI0YTE4Ljg5LDE4Ljg5LDAsMCwxLTguNjQsMS45M2MtNS42NCwwLTktMy4wNi05LjQ1LTguMTZoMjAuNHYtLjY5YzAtOS4zNC01LjMyLTE0LjgxLTEyLjUxLTE0LjgxQzcxLjYyLDY3Ljc0LDY2LDczLjQyLDY2LDgxLjg1YzAsNy44OSw1LjQ4LDE0LDE0LjQ0LDE0YTIyLjI1LDIyLjI1LDAsMCwwLDEwLjE0LTIuMDlaTTc5LjEzLDcxLjkyYzMuODEsMCw2LjcxLDIuNzQsNy4xOSw3LjUxSDcxLjI0Yy42NS00LjcyLDMuOTItNy41MSw3Ljg5LTcuNTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik0xMDMuMjksNzdjMS42MS0yLjI2LDQtNC4xMyw4Ljg1LTQuMTNoMWwtLjgxLTQuNjdoLTFjLTMuNDksMC02LjMzLDEuMzQtOCw0LjV2LTQuNGgtNVY5NS4zMmg1Vjc3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyLjc3IC01Ni4wOSkiPjwvcGF0aD4KICA8cG9seWdvbiBwb2ludHM9Ijk4Ljc1IDM5LjIzIDExMC4wMiAxMi4xOCAxMDQuNyAxMi4xOCA5Ni41NSAzMi41MiA4OC41IDEyLjE4IDgyLjkyIDEyLjE4IDk0LjI0IDM5LjIzIDk4Ljc1IDM5LjIzIDk4Ljc1IDM5LjIzIj48L3BvbHlnb24+CiAgPHBvbHlnb24gcG9pbnRzPSIxMTkuNTcgMTIuMTggMTE0LjU4IDEyLjE4IDExNC41OCAzOS4yMyAxMTkuNTcgMzkuMjMgMTE5LjU3IDEyLjE4IDExOS41NyAxMi4xOCI+PC9wb2x5Z29uPgogIDxwYXRoIGQ9Ik0xNTAsNjIuOTFhMy40MSwzLjQxLDAsMSwwLTMuNDMtMy4zOEEzLjM4LDMuMzgsMCwwLDAsMTUwLDYyLjkxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyLjc3IC01Ni4wOSkiPjwvcGF0aD4KICA8cGF0aCBkPSJNMTczLjQ4LDk1Ljg2YTE5LjIyLDE5LjIyLDAsMCwwLDEwLjE1LTIuNjNsLTEuNTEtNC40NmExNS42OCwxNS42OCwwLDAsMS04LjMxLDIuMzFjLTUuNjksMC05LjUtMy43LTkuNS05LjI4LDAtNS43NSwzLjc1LTkuMzksOC40OC05LjM5YTguNTUsOC41NSwwLDAsMSw3LjQsNC4zNGwzLjU0LTMuMTZhMTMuMiwxMy4yLDAsMCwwLTExLTUuODVjLTguMDUsMC0xMy42OCw1Ljc0LTEzLjY4LDE0LDAsOC40OCw1Ljg0LDE0LjEyLDE0LjQ4LDE0LjEyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyLjc3IC01Ni4wOSkiPjwvcGF0aD4KICA8cGF0aCBkPSJNMjAxLDY3Ljc0Yy03LjUyLDAtMTMuMTUsNS42OC0xMy4xNSwxNC4xMSwwLDcuODksNS40NywxNCwxNC40MywxNGEyMi4yNiwyMi4yNiwwLDAsMCwxMC4xNS0yLjA5bC0xLjI0LTQuMjRhMTguODYsMTguODYsMCwwLDEtOC42NCwxLjkzYy01LjYzLDAtOS0zLjA2LTkuNDQtOC4xNmgyMC4zOXYtLjY5YzAtOS4zNC01LjMxLTE0LjgxLTEyLjUtMTQuODFabS03Ljg5LDExLjdjLjY0LTQuNzMsMy45Mi03LjUyLDcuODktNy41MiwzLjgxLDAsNi43MSwyLjc0LDcuMTksNy41MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi43NyAtNTYuMDkpIj48L3BhdGg+CiAgPHBhdGggZD0iTTIzOC4zNyw4Ny42NWMwLTQuODktMy41NC02LjUtOC4zMi04LjA1LTQtMS4yOS02LjI4LTIuMS02LjI4LTQuNTEsMC0yLjE1LDEuODgtMy4zMyw0LjE5LTMuMzNhNy4zNSw3LjM1LDAsMCwxLDYsMi43OWwzLjMyLTIuNzNjLTEuNjYtMi4zNy00Ljc3LTQuMDgtOS4yOC00LjA4LTUuMjYsMC05LjIzLDMtOS4yMyw3Ljc4czMuODYsNi43Niw4LjIxLDgsNi4zOCwyLjA5LDYuMzgsNC40LTIuMDksMy43LTUuMzEsMy43YTE2LDE2LDAsMCwxLTguNTMtMi40N2wtMS45Myw0YTE5LjQ3LDE5LjQ3LDAsMCwwLDEwLjUyLDIuNjljNi4zOCwwLDEwLjMtMy4yMiwxMC4zLTguMjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik00Ny4yNiwxMTQuNDJsLTE0LjQ5LDM4LjFoNS41OEw0MiwxNDIuN2gxNi4ybDMuNiw5LjgyaDUuNzRsLTE0LjQ0LTM4LjFabS0zLjY1LDIzLjcyLDYuNDktMTcuNiw2LjM5LDE3LjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik05MC4xOSwxNDQuMzZhMTAuMywxMC4zLDAsMCwxLTcuNzMsNC4wOGMtNC4xOCwwLTYuNTQtMi42My02LjU0LTcuNDZWMTI1LjQ3aC01LjF2MTYuMjFjMCw3LjE5LDMuODEsMTEuMzcsMTAuMywxMS4zN0ExMS43OSwxMS43OSwwLDAsMCw5MC4xOSwxNDl2My41NGg1LjFWMTI1LjQ3aC01LjF2MTguODlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik0xMTQuMTgsMTM2Ljc5Yy00LTEuMjgtNi4yOC0yLjA5LTYuMjgtNC41LDAtMi4xNSwxLjg4LTMuMzMsNC4xOS0zLjMzYTcuMzQsNy4zNCwwLDAsMSw2LDIuNzlsMy4zMi0yLjc0Yy0xLjY2LTIuMzYtNC43Ny00LjA3LTkuMjgtNC4wNy01LjI2LDAtOS4yMywzLTkuMjMsNy43OHMzLjg2LDYuNzYsOC4yMSw4LjA1LDYuMzksMi4wOSw2LjM5LDQuNC0yLjEsMy43LTUuMzIsMy43YTE2LDE2LDAsMCwxLTguNTMtMi40N2wtMS45Myw0YTE5LjQ3LDE5LjQ3LDAsMCwwLDEwLjUyLDIuNjhjNi4zOCwwLDEwLjMtMy4yMSwxMC4zLTguMjFzLTMuNTQtNi40OS04LjMyLTguMDVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik0xMzUuMzMsMTE4LjZoLTUuMWwuMDYsNi44N2gtNXY0LjYyaDV2MTIuMTNjMCw3LjQsMy43LDEwLjczLDExLjMyLDEwLjczSDE0MmwuODEtNC43OGgtLjQzYy00Ljc4LDAtNy0yLTctNi42NVYxMzAuMDloNy44OXYtNC42MmgtNy44OVYxMTguNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi43NyAtNTYuMDkpIj48L3BhdGg+CiAgPHBhdGggZD0iTTE2MS44NCwxMjUuMzdjLTMuNDksMC02LjMzLDEuMzQtOC4wNSw0LjV2LTQuNGgtNXYyNy4wNWg1VjEzNC4xN2MxLjYxLTIuMjYsNC00LjE0LDguODUtNC4xNGgxbC0uODEtNC42NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi43NyAtNTYuMDkpIj48L3BhdGg+CiAgPHBhdGggZD0iTTE5MywxNDN2LTE3LjVIMTg4LjNsLS4xMSwxLjU2YTE5LjEyLDE5LjEyLDAsMCwwLTguNTktMi4wOWMtOCwwLTEzLjg5LDUuOS0xMy44OSwxNC4zMlMxNzAuODYsMTUzLDE3OC4yNiwxNTNhMTEsMTEsMCwwLDAsMTAtNS43NCw3LjczLDcuNzMsMCwwLDAsNS4xLDUuNThsMi40Ny00LjRjLTIuMjUtMS4wNy0yLjg0LTMtMi44NC01LjQ3Wm0tNS4wNS00LjQ2Yy4xNiw1LjM3LTMuMzgsOS44Mi04LjY5LDkuODItNC45NCwwLTguMjctMy41OS04LjI3LTkuMDdzMy40OS05LjYsOS4zNC05LjZhMTcuNTQsMTcuNTQsMCwwLDEsNy42MiwxLjc3djcuMDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIuNzcgLTU2LjA5KSI+PC9wYXRoPgogIDxwYXRoIGQ9Ik0yMDYuODEsMTQxLjU3di0yOS40aC01LjA5djMwLjA1YzAsNy40LDMuNTQsMTAuNzMsMTAuODQsMTAuNzNoLjE2bC41OS00Ljc4Yy00LjM1LDAtNi41LTItNi41LTYuNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi43NyAtNTYuMDkpIj48L3BhdGg+CiAgPHBhdGggZD0iTTIyMSwxMTMuMjlhMy40MSwzLjQxLDAsMSwwLDMuNDQsMy40NCwzLjM5LDMuMzksMCwwLDAtMy40NC0zLjQ0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyLjc3IC01Ni4wOSkiPjwvcGF0aD4KICA8cG9seWdvbiBwb2ludHM9IjE4NS41OCA5Ni40MyAxOTAuNTcgOTYuNDMgMTkwLjU3IDY5LjM4IDE4NS41OCA2OS4zOCAxODUuNTggOTYuNDMgMTg1LjU4IDk2LjQzIj48L3BvbHlnb24+CiAgPHBhdGggZD0iTTI1Ny4yNiwxNDN2LTE3LjVoLTQuNjdsLS4xMSwxLjU2YTE5LjExLDE5LjExLDAsMCwwLTguNTgtMi4wOWMtOC4wNSwwLTEzLjksNS45LTEzLjksMTQuMzJTMjM1LjE1LDE1MywyNDIuNTYsMTUzYTExLDExLDAsMCwwLDEwLTUuNzQsNy43Myw3LjczLDAsMCwwLDUuMSw1LjU4bDIuNDYtNC40Yy0yLjI1LTEuMDctMi44NC0zLTIuODQtNS40N1ptLTUtNC40NmMuMTcsNS4zNy0zLjM4LDkuODItOC42OSw5LjgyLTQuOTMsMC04LjI2LTMuNTktOC4yNi05LjA3czMuNDktOS42LDkuMzQtOS42YTE3LjQ2LDE3LjQ2LDAsMCwxLDcuNjEsMS43N3Y3LjA4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyLjc3IC01Ni4wOSkiPjwvcGF0aD4KPC9zdmc+)
 :::
 :::
 
-::: {.font-thin .text-sm .text-center .mt-6 .md:text-right}
+::: {.font-thin .text-sm .text-center .mb-6 .md:mb-0 .mt-6 .md:text-right}
 ABN - 90‍ ‍794‍ ‍605‍ ‍008
 :::
 
