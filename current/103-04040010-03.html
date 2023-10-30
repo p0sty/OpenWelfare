@@ -421,13 +421,9 @@ Record the details on a <strong>DOC</strong></li>
 
 
 <p>Customer has been victim of unauthorised access to their online account and payment destination has been altered.</p>
+
+<p>Before reissuing the customer’s payment&#58;</p>
 		<ul>		<li>
-Correct customer's payment destination</li>
-		<li>
-Make sure the customer is entitled to the payments (before reissuing any Advance payment, make sure the customer wants the advance. See <a href="../payment-delivery/103-05040090-01.html">Advance payments obtained fraudulently without customer consent</a> for more details)</li>
-		<li>
-Reissue the payments to the customer’s correct account. See the <a href="../payment-delivery/103-04040010-03.html#bp03_L3TT_System_coding_w">System coding when issuing a replacement payment</a> table</li>
-		<li>
 Tell the customer that an investigation will occur and if it is found out that the customer received the payment, an overpayment will be raised</li>
 		<li>
 Tell the customer that their online access will be suspended pending resolution of the security breach. See <a href="../self-service/133-19061400-03.html">Checking, locking and unlocking Centrelink self service access</a> for more details</li>
@@ -460,7 +456,7 @@ If the customer is not present, two attempts should be made to contact the custo
 </div>
 
 
-<p></p></td>
+<p><a href="../payment-delivery/103-04040010-03.html#bp03_tbl_Check_customer_Step01">Go to Table 2, step 1</a> </p></td>
 </tr>
 
 </table>
@@ -491,6 +487,8 @@ If the customer is not present, two attempts should be made to contact the custo
 
 
 <p>Investigate the customer's record for any reason as to why the customer may not be entitled immediately to a replacement payment.</p>
+
+<p>Before reissuing any Advance payment make sure the customer wants the advance. See <a href="../payment-delivery/103-05040090-01.html">Advance payments obtained fraudulently without customer consent</a> </p>
 		<ul>		<li>
 If the customer has a debt history of requesting replacement payments, request customer to provide a letter from their financial institution to confirm they do not have access to this payment. To confirm debt history, check the <strong>DL </strong>screen and <strong>OPDL</strong> screen for debt reason code ‘DUP’ or ‘DRA’. Procedure ends here</li>
 		<li>
@@ -508,25 +506,43 @@ If the customer is entitled to the payment or entitled to a part payment of Fami
 <p>2</p></td>
 <td>
 
-<p><strong>Contact mySupport to block the payment</strong> <a title="Read more 10" class="showhead bp03_tbl_Check_customer_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Check_customer_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Request for block to be placed on the payment via mySupport</strong> <a title="Read more 10" class="showhead bp03_tbl_Check_customer_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Check_customer_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
-<p>Requesting a block to be placed on the payment to prevent it from being reissued&#58;</p>
+<p><strong>'Stop Payment'</strong> <strong>DOC</strong></p>
+
+<p>Create a 'Stop Payment' <strong>DOC</strong> on the customer's record explaining why they are not entitled to the arrears payment. The ICT Service Desk needs this <strong>DOC </strong>for audit purposes.</p>
+
+<p>It <strong>must </strong>include the following details&#58;</p>
 		<ul>		<li>
-go to mySupport</li>
+payment type/component</li>
 		<li>
-search for 'Stop Payment Request' webform</li>
+amount to be removed/stopped</li>
 		<li>
-complete and submit the webform</li>
+period of the payment to be removed/stopped</li>
 		<li>
-For <strong>Child Care Subsidy</strong> (CCS) use the mySupport 'Child Care Subsidy Issues' webform. Enter 'BLOCK PAYMENT' under the 'Please input personalised message' and 'What function is being attempted when the issue occurred?' fields</li>
+the reason the stop payment is needed. <strong>Note</strong>&#58; recording 'customer not entitled' as the stop payment reason is not sufficient. The <strong>DOC</strong> must specify why the customer is not entitled</li>
 		</ul>
-<p>Record details on a <strong>DOC</strong>, stating the reason why the payment has been blocked.</p>
+<p>If the payment is FTB/CCS, the payment must be excluded from the reconciliation result. See <a href="../families/007-11040000-01.html">Returned payments and their effect on family assistance reconciliation</a>.</p>
 
-<p>If the payment is FTB/CCB, the payment must be excluded from the reconciliation result. See <a href="../families/007-11040000-01.html">Returned payments and their effect on family assistance reconciliation</a>.</p>
+<p><strong>Escalate to ICT Service Desk</strong></p>
 
-<p>The <a href="../payment-delivery/103-04040010-05.html">Resources</a> page has a link to mySupport. Procedure ends here.</p>
+<p>Once the ‘Stop Payment’ <strong>DOC</strong> has been completed, escalate to ICT Service Desk via mySupport.</p>
+		<ul>		<li>
+For <strong>Child Care Subsidy</strong>, use the ‘Child Care Subsidy and Additional Child Care Subsidy Issues’ webform. Enter ‘BLOCK PAYMENT’ under the ‘Please input personalised message’ and 'What function is being attempted when the issue occurred?’ fields.</li>
+		<li>
+For <strong>Farm Household Allowance</strong>, use the ‘Farm Household Allowance (FHA) Issues webform and select 'Block Payment' option under 'What is the issue?' If the arrears are under the system arrears limit&#58;</li>
+			<ul>			<li>
+Use the ‘Customer Hardship, Aggression and External Customer Complaints’ option to contact the ‘ICT Service Desk – Urgent Escalation only’ team. This will activate processing before the payment strip</li>
+			</ul>			</ul>
+<p>For all other payment types, use the ‘Stop Customer Payment’ webform.</p>
+
+<p>Record the relevant Service Desk (SD) number in the 'Stop Payment' DOC.</p>
+
+<p>Procedure ends here.</p>
+
+<p>The Resources page contains a link to mySupport.</p>
 </div>
 
 

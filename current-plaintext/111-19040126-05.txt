@@ -146,36 +146,36 @@ Secondary Index - Leave blank
 |                 |     Enquiry     |                 | are multiple    |
 |                 |     For Aged    |    (Application | c               |
 |                 |     Care emails |     Form)       | ustomers/forms. |
-|                 |     only, if    | -   Aged Care   | Multiple        |
-|                 |     the subject |     email only  | customers in a  |
-|                 |     line does   |     (email is   | single document |
-|                 |     not contain |     not for any | can be split.   |
-|                 |     any other   |     other work  | See Process     |
-|                 |     Work Type,  |     type, for   | Table 2         |
-|                 |     for         |     example,    |                 |
-|                 |     example,    |     extensions, | Form            |
-|                 |     Extension   |                 | abbreviation:   |
-|                 |     or          |    unapproved). | ACCR (for Aged  |
-|                 |     Unapproved  |     See         | Care Client     |
+|                 |     only, if    | -   All other   | Multiple        |
+|                 |     the subject |     Aged Care   | customers in a  |
+|                 |     line does   |     emails not  | single document |
+|                 |     not contain |     mentioned   | can be split.   |
+|                 |     any other   |     under any   | See Process     |
+|                 |     Work Type,  |     other Aged  | Table 2         |
+|                 |     for         |     Care work   |                 |
+|                 |     example,    |     type        | Form            |
+|                 |     Extension   | -   Provider    | abbreviation:   |
+|                 |     or          |     Transaction | ACCR (for Aged  |
+|                 |     Unapproved  |     Report. See | Care Client     |
 |                 | -   Primary     |     screenshot  | Record          |
-|                 |     Index:      | -   Provider    | application     |
-|                 |     APPLICANT   |     Transaction | form only)      |
-|                 |     SU          |     Report. See |                 |
-|                 | RNAMEFIRSTNAME: |     screenshot  | Form type:      |
-|                 |     Use sender  | -   Requests    |                 |
-|                 |     name only   |     for         | -   no form     |
-|                 |     when no     |     combined    |     number (for |
-|                 |     name or     |     Assets and  |     Aged Care   |
-|                 |     service ID  |     Income      |     Client      |
-|                 | -   Secondary   |     Assessment  |     Record      |
-|                 |     Index:      |     forms       |     application |
-|                 |                 | -   Aged care   |     form only)  |
-|                 |  RACSID/SERVICE |     means       | -   email (for  |
-|                 |     ID          |     testing     |     Provider    |
-|                 |     Use service |     enquiry     |     Transaction |
-|                 |     ID if       |     template    |     Report and  |
-|                 |     multiple    |     (internal   |     Request for |
-|                 |     customers   |     template)   |     combined    |
+|                 |     Index:      | -   Requests    | application     |
+|                 |     APPLICANT   |     for         | form only)      |
+|                 |     SU          |     combined    |                 |
+|                 | RNAMEFIRSTNAME: |     Assets and  | Form type:      |
+|                 |     Use sender  |     Income      |                 |
+|                 |     name only   |     Assessment  | -   no form     |
+|                 |     when no     |     forms       |     number (for |
+|                 |     name or     | -   Aged care   |     Aged Care   |
+|                 |     service ID  |     means       |     Client      |
+|                 | -   Secondary   |     testing     |     Record      |
+|                 |     Index:      |     enquiry     |     application |
+|                 |                 |     template    |     form only)  |
+|                 |  RACSID/SERVICE |     (internal   | -   email (for  |
+|                 |     ID          |     template)   |     Provider    |
+|                 |     Use service | -   Aged Care   |     Transaction |
+|                 |     ID if       |     return to   |     Report and  |
+|                 |     multiple    |     sender      |     Request for |
+|                 |     customers   |     email       |     combined    |
 |                 |     and unable  |                 |     Assets and  |
 |                 |     to split    |                 |     income      |
 |                 |                 |                 |     forms only) |
@@ -281,12 +281,12 @@ Secondary Index - Leave blank
 |                 |     and/or      |     Care Claim. | See Process     |
 |                 |     RACSIDs in  |     See         | Table 2         |
 |                 |     a single    |     screenshot  |                 |
-|                 |     document,   |                 | -   'flex       |
-|                 |     e.g.        |                 |     claim' in   |
-|                 |     1607-17328, |                 |     email       |
-|                 |     select send |                 |     subject     |
-|                 |     for         |                 |     line        |
-|                 |     splitting   |                 | -   Form        |
+|                 |     document,   | -   Claim for   | -   'flex       |
+|                 |     e.g.        |     Residential |     claim' in   |
+|                 |     1607-17328, |     Aged Care   |     email       |
+|                 |     select send |     Services.   |     subject     |
+|                 |     for         |     See         |     line        |
+|                 |     splitting   |     screenshot  | -   Form        |
 |                 |     check box   |                 |                 |
 |                 | -   Secondary   |                 |   abbreviation: |
 |                 |     Index:      |                 |     TCC         |
@@ -296,28 +296,16 @@ Secondary Index - Leave blank
 |                 |                 |                 |     emails      |
 |                 |                 |                 | -   Transition  |
 |                 |                 |                 |     Care Claim  |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care |     | -   Program:    |                 | -   Emails from |
-| Hardship | MED1 |     AGED-CARE   |                 |     AC.OADC     |
-|                 | -   Work Type:  |                 |     that        |
-|                 |     Hardship    |                 |     contain     |
-|                 | -   Primary     |                 |     'aged care  |
-|                 |     Index:      |                 |     hardship'   |
-|                 |     Report date |                 |     in the      |
+|                 |                 |                 | -               |
+|                 |                 |                 |    ‘Residential |
+|                 |                 |                 |     Aged Care’  |
+|                 |                 |                 |     in email    |
 |                 |                 |                 |     subject     |
-|                 |    (dd/mm/yyyy) |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care |     | -   Program:    |                 | -   Emails from |
-| Held Events |   |     AGED CARE   |                 |     Aged Care - |
-| MED1            | -   Work Type:  |                 |     Payments    |
-|                 |     Held Events |                 |     Team that   |
-|                 | -   Primary     |                 |     contain     |
-|                 |     Index:      |                 |     'job aged   |
-|                 |     Unique      |                 |     care        |
-|                 |     Identifier  |                 | _NSF_HLD_EVENT' |
-|                 |                 |                 |     in the      |
-|                 |                 |                 |     subject     |
-|                 |                 |                 | -   QMF reports |
+|                 |                 |                 |     line        |
+|                 |                 |                 | -   Form type:  |
+|                 |                 |                 |     no form     |
+|                 |                 |                 |     number,     |
+|                 |                 |                 |     emails      |
 +-----------------+-----------------+-----------------+-----------------+
 | Aged Care |     | -   Program:    | -   Home Care   | Always check in |
 | Home Care |     |     AGED CARE   |     Packages    | Aged Care       |
@@ -344,20 +332,6 @@ Secondary Index - Leave blank
 |                 |     YYMM-       |                 |                 |
 |                 |     SERVICE     |                 |                 |
 |                 |     NAME        |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care | MTA | -   Program:    |                 | -   Aged care   |
-| Escalations |   |     AGED CARE   |                 |     means       |
-| MED1            | -   Work Type:  |                 |     testing     |
-|                 |     MTA         |                 |     enquiry     |
-|                 |     Escalations |                 |     template    |
-|                 | -   Primary     |                 |                 |
-|                 |     Index:      |                 |                 |
-|                 |     S           |                 |                 |
-|                 | URNAMEFIRSTNAME |                 |                 |
-|                 | -   Secondary   |                 |                 |
-|                 |     Index: RACS |                 |                 |
-|                 |     ID/Service  |                 |                 |
-|                 |     ID          |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Aged Care |     | -   Program:    | -   Aged Care   | -   Nominee     |
 | Nominee | MED1  |     AGED CARE   |     Request for |     forms, POAs |
@@ -409,92 +383,54 @@ Secondary Index - Leave blank
 |                 |    Notification |                 |                 |
 |                 |     form        |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
-| Aged Care |     | -   Program:    |                 | -   Internal    |
-| Quarterly       |     AGED CARE   |                 |     escalations |
-| Reviews | MED1  | -   Work Type:  |                 |     to SMEs     |
-|                 |     Quarterly   |                 |                 |
-|                 |     Review      |                 |                 |
-|                 | -   Primary     |                 |                 |
-|                 |     Index:      |                 |                 |
-|                 |     Report date |                 |                 |
-|                 |                 |                 |                 |
-|                 |    (DD/MM/YYYY) |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care |     | -   Program:    | -   Aged Care   | If these forms  |
-| Registrations | |     AGED CARE   |     online      | are received    |
-| MED1            | -   Work Type:  |     claiming –  | together and:   |
-|                 |                 |     Register to |                 |
-|                 |    Registration |     transmit    | -   relate to   |
-|                 | -   Primary     |     online or   |     different   |
-|                 |     Index:      |     change      |     customers,  |
-|                 |     APPLICANT   |     nominated   |     split. See  |
-|                 |     S           |     user's      |     Process     |
-|                 | URNAMEFIRSTNAME |     details     |     Table 2     |
-|                 | -   Secondary   |     form        | -   do not      |
-|                 |     Index:      |     (AC006).    |     split       |
-|                 |     APPLICANT   |     See         |     indigenous  |
-|                 |     RAC         |     screenshot  |     and other   |
-|                 | SID/SERVICENAME | -   Change of   |     homeless    |
-|                 |     (for AC004  |     nominated   |     forms       |
-|                 |     form, refer |     user's      |                 |
-|                 |     to question |     details for | Form            |
-|                 |     2)          |     Aged Care   | abbreviation:   |
-|                 |     Enter both  |     Online      | Web/B2B         |
-|                 |     Primary and |     Claiming    |                 |
-|                 |     Secondary   |     form        | Form type:      |
-|                 |     Index       | -               | AC004, AC006,   |
-|                 |                 |    Homelessness | AC024, email    |
-|                 |                 |     and         |                 |
-|                 |                 |     Indigenous  | AC010 (for      |
-|                 |                 |     Australian  | consent to      |
-|                 |                 |     care        | release an      |
-|                 |                 |     recipient   | electronic Aged |
-|                 |                 |                 | Care Client     |
-|                 |                 |    Notification | Record form     |
-|                 |                 |     for         | only)           |
-|                 |                 |     permanent   |                 |
-|                 |                 |     care –      | Emails received |
-|                 |                 |                 | with subject:   |
-|                 |                 |    Confirmation | ACPP_U          |
-|                 |                 |     form        | ser_Reg_Request |
-|                 |                 | -               | and received    |
-|                 |                 |    Homelessness | from            |
-|                 |                 |     and         | WF-             |
-|                 |                 |     Indigenous  | Batch@servicesa |
-|                 |                 |     Australian  | ustralia.gov.au |
-|                 |                 |     care        |                 |
-|                 |                 |     recipient   |                 |
-|                 |                 |                 |                 |
-|                 |                 |    Notification |                 |
+| Aged Care |     | -   Program:    | -   Change of   | If these forms  |
+| Registrations | |     AGED CARE   |     nominated   | are received    |
+| MED1            | -   Work Type:  |     user's      | together and:   |
+|                 |                 |     details for |                 |
+|                 |    Registration |     Aged Care   | -   relate to   |
+|                 | -   Primary     |     Online      |     different   |
+|                 |     Index:      |     Claiming    |     customers,  |
+|                 |     APPLICANT   |     form        |     split. See  |
+|                 |     S           | -               |     Process     |
+|                 | URNAMEFIRSTNAME |    Homelessness |     Table 2     |
+|                 | -   Secondary   |     and         | -   do not      |
+|                 |     Index:      |     Indigenous  |     split       |
+|                 |     APPLICANT   |     Australian  |     indigenous  |
+|                 |     RAC         |     care        |     and other   |
+|                 | SID/SERVICENAME |     recipient   |     homeless    |
+|                 |     (for AC004  |                 |     forms       |
+|                 |     form, refer |    Notification |                 |
+|                 |     to question |     for         | Form            |
+|                 |     2)          |     permanent   | abbreviation:   |
+|                 |     Enter both  |     care –      | Web/B2B         |
+|                 |     Primary and |                 |                 |
+|                 |     Secondary   |    Confirmation | Form type:      |
+|                 |     Index       |     form        | AC004, AC006,   |
+|                 |                 | -               | AC024, email    |
+|                 |                 |    Homelessness |                 |
+|                 |                 |     and         | AC010 (for      |
+|                 |                 |     Indigenous  | consent to      |
+|                 |                 |     Australian  | release an      |
+|                 |                 |     care        | electronic Aged |
+|                 |                 |     recipient   | Care Client     |
+|                 |                 |                 | Record form     |
+|                 |                 |    Notification | only)           |
 |                 |                 |     for         |                 |
-|                 |                 |     permanent   |                 |
-|                 |                 |     care form.  |                 |
-|                 |                 |     See         |                 |
-|                 |                 |     screenshot  |                 |
-|                 |                 | -   Register or |                 |
-|                 |                 |     updated for |                 |
-|                 |                 |     Aged Care   |                 |
-|                 |                 |     Web         |                 |
-|                 |                 |     Services    |                 |
+|                 |                 |     permanent   | Emails received |
+|                 |                 |     care form.  | with subject:   |
+|                 |                 |     See         | ACPP_U          |
+|                 |                 |     screenshot  | ser_Reg_Request |
+|                 |                 | -   Register or | and received    |
+|                 |                 |     updated for | from            |
+|                 |                 |     Aged Care   | WF-             |
+|                 |                 |     Web         | Batch@servicesa |
+|                 |                 |     Services    | ustralia.gov.au |
 |                 |                 |     (AC027)     |                 |
 |                 |                 | -   Register,   |                 |
 |                 |                 |     amend or    |                 |
 |                 |                 |     remove      |                 |
 |                 |                 |     users       |                 |
 |                 |                 |     (AC004)     |                 |
-|                 |                 | -   Register or |                 |
-|                 |                 |     amend for   |                 |
-|                 |                 |     Aged Care   |                 |
-|                 |                 |     Online      |                 |
-|                 |                 |     Claiming    |                 |
-|                 |                 |     using File  |                 |
-|                 |                 |     Upload or   |                 |
-|                 |                 |     Business to |                 |
-|                 |                 |     Business    |                 |
-|                 |                 |     form        |                 |
-|                 |                 |     (AC006).    |                 |
-|                 |                 |     See         |                 |
-|                 |                 |     screenshot  |                 |
 |                 |                 | -   Consent to  |                 |
 |                 |                 |     release an  |                 |
 |                 |                 |     electronic  |                 |
@@ -502,34 +438,6 @@ Secondary Index - Leave blank
 |                 |                 |     Client      |                 |
 |                 |                 |     Record      |                 |
 |                 |                 |     (AC010)     |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care |     | -   Program:    | -   Claim for   | Always check in |
-| Residential     |     AGED CARE   |     Residential | Aged Care       |
-| Claim | MED1    | -   Work Type:  |     Aged Care   | emails if there |
-|                 |     Residential |     Services.   | are multiple    |
-|                 |     Claim       |     See         | c               |
-|                 | -   Primary     |     screenshot  | ustomers/forms. |
-|                 |     Index:      |                 | Multiple        |
-|                 |     YYMM-       |                 | customers in a  |
-|                 |     SERVICE ID  |                 | single document |
-|                 |     If multiple |                 | can be split.   |
-|                 |     months      |                 | See Process     |
-|                 |     and/or      |                 | Table 2         |
-|                 |     RACSIDs in  |                 |                 |
-|                 |     a single    |                 | -               |
-|                 |     document,   |                 |    'residential |
-|                 |     for         |                 |     aged care'  |
-|                 |     example,    |                 |     in email    |
-|                 |     1607-17328, |                 |     subject     |
-|                 |     select send |                 |     line        |
-|                 |     for         |                 | -   Form type:  |
-|                 |     splitting   |                 |     no form     |
-|                 |     check box   |                 |     number,     |
-|                 | -   Secondary   |                 |     emails      |
-|                 |     Index:      |                 |                 |
-|                 |     YYMM-       |                 |                 |
-|                 |     SERVICE     |                 |                 |
-|                 |     NAME        |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Aged Care |     | -   Program:    | -   Aged Care   | Always check in |
 | Supplements |   |     AGED CARE   |     Application | Aged Care       |
@@ -566,47 +474,6 @@ Secondary Index - Leave blank
 |                 |                 |     Aged Care   |                 |
 |                 |                 |     recipients  |                 |
 |                 |                 |     form        |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care |     | -   Program:    | -   Unapproved  | Always check in |
-| Unapproved |    |     AGED CARE   |     claim       | Aged Care       |
-| MED1            | -   Work Type:  |     email. See  | emails if there |
-|                 |     Unapproved  |     screenshot  | are multiple    |
-|                 | -   Primary     | -   Unapproved  | c               |
-|                 |     Index:      |     retro       | ustomers/forms. |
-|                 |     SERVICE ID  |     claim. See  | Multiple        |
-|                 |     If no       |     screenshot  | customers in a  |
-|                 |     service ID, |                 | single document |
-|                 |     use         |                 | can be split.   |
-|                 |     sender's    |                 | See Process     |
-|                 |     S           |                 | Table 2         |
-|                 | URNAMEFIRSTNAME |                 |                 |
-|                 |                 |                 | -               |
-|                 |                 |                 |    'unapproved' |
-|                 |                 |                 |     in email    |
-|                 |                 |                 |     subject     |
-|                 |                 |                 |     line or     |
-|                 |                 |                 |     content     |
-|                 |                 |                 | -   'retro      |
-|                 |                 |                 |     claim' in   |
-|                 |                 |                 |     email       |
-|                 |                 |                 |     subject     |
-|                 |                 |                 |     line        |
-|                 |                 |                 | -   Form type:  |
-|                 |                 |                 |     email       |
-+-----------------+-----------------+-----------------+-----------------+
-| Aged Care       | -   Program:    | -   ACETI       | -   Processing  |
-| Education and   |     ACETI       |     programme   |     of claims   |
-| Training        | -   Work Type:  |                 |     for payment |
-| Incentive       |     ACETI       |    Commencement |     of an       |
-| (ACETI) | ACETI | -   Primary     |     Payment.    |     incentive   |
-| | MED4          |     Index:      |     See         |     upon        |
-|                 |     S           |     screenshot  |                 |
-|                 | URNAMEFIRSTNAME |                 |    commencement |
-|                 |                 |                 |     or          |
-|                 |                 |                 |     completion  |
-|                 |                 |                 |     of a        |
-|                 |                 |                 |     recognised  |
-|                 |                 |                 |     course      |
 +-----------------+-----------------+-----------------+-----------------+
 | Australian      | -   Program:    | -   AIR Bank    | Each AIR        |
 | Immunisation    |     AIR         |     account     | document must   |
@@ -3795,24 +3662,24 @@ Secondary Index - Leave blank
 |                 |     Prescriber  |                 |                 |
 |                 |     Number      |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
-| Pharmaceutical  | -   Program:    | -   PBS Safety  |                 |
-| Benefits Scheme |     PBS         |     Net         |                 |
-| (PBS) | Safety  | -   Work Type:  |     replacement |                 |
+| Pharmaceutical  | -   Program:    | -   PBS Safety  | -   For         |
+| Benefits Scheme |     PBS         |     Net         |     PBS/RPBS    |
+| (PBS) | Safety  | -   Work Type:  |     replacement |     Safety Net  |
 | Net Card | MED3 |     Safety Net  |     or          |                 |
-|                 |     Card        |                 |                 |
-|                 | -   Primary     |   supplementary |                 |
-|                 |     Index:      |     card        |                 |
-|                 |     MEDICARE    |     application |                 |
-|                 |     CARD NUMBER |     (PB018)     |                 |
-|                 | -   Secondary   | -   PBS/RPBS    |                 |
-|                 |     Index:      |     Safety Net  |                 |
-|                 |     SURNAME     |                 |                 |
-|                 |     FIRST NAME  |    prescription |                 |
-|                 |                 |     record and  |                 |
-|                 |                 |     Application |                 |
-|                 |                 |     for a       |                 |
-|                 |                 |     Safety Net  |                 |
-|                 |                 |     card        |                 |
+|                 |     Card        |                 |    prescription |
+|                 | -   Primary     |   supplementary |     record and  |
+|                 |     Index:      |     card        |     Application |
+|                 |     MEDICARE    |     application |     for a       |
+|                 |     CARD NUMBER |     (PB018)     |     Safety Net  |
+|                 | -   Secondary   | -   PBS/RPBS    |     card        |
+|                 |     Index:      |     Safety Net  |     (PB240)     |
+|                 |     SURNAME     |                 |     forms       |
+|                 |     FIRST NAME  |    prescription |     received on |
+|                 |                 |     record and  |     their own,  |
+|                 |                 |     Application |     classify    |
+|                 |                 |     for a       |     under       |
+|                 |                 |     Safety Net  |     Safety Net  |
+|                 |                 |     card        |     Card        |
 |                 |                 |     (PB240)     |                 |
 +-----------------+-----------------+-----------------+-----------------+
 | Pharmaceutical  | -   Program:    | -   PBS         | -   PB017 or    |
@@ -3848,7 +3715,14 @@ Secondary Index - Leave blank
 |                 |                 |                 |     Application |
 |                 |                 |                 |     for a       |
 |                 |                 |                 |     Safety Net  |
-|                 |                 |                 |     Cards'      |
+|                 |                 |                 |     Cards'.     |
+|                 |                 |                 |     Classify    |
+|                 |                 |                 |     this as     |
+|                 |                 |                 |     Safety Net  |
+|                 |                 |                 |     Claim. Do   |
+|                 |                 |                 |     not send    |
+|                 |                 |                 |     for         |
+|                 |                 |                 |     splitting   |
 |                 |                 |                 |     Note:       |
 |                 |                 |                 |     pharmacists |
 |                 |                 |                 |     manually    |

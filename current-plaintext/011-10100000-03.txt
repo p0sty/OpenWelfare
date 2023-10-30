@@ -56,16 +56,15 @@ Table 1
 |                                   | Select Open in HPOS in top right  |
 |                                   | corner of work item               |
 |                                   |                                   |
-|                                   | Check details in Text to see who  |
-|                                   | sent the form:                    |
+|                                   | Check Sent for details in Text to |
+|                                   | see who sent the form:            |
 |                                   |                                   |
 |                                   | -   Doctor - doctor's name shows  |
-|                                   |     in ‘Sent by’                  |
-|                                   | -   Delegate – shows as ‘Sent     |
-|                                   |     for’ doctor's name, ‘by’      |
-|                                   |     delegate's name               |
-|                                   | -   Organisation – shows as ‘Sent |
-|                                   |     for’ organisation's name      |
+|                                   | -   Delegate – shows as Sent for  |
+|                                   |     doctor's name, by delegate's  |
+|                                   |     name                          |
+|                                   | -   Organisation – shows as       |
+|                                   |     organisation's name           |
 |                                   |                                   |
 |                                   | If the form was sent by:          |
 |                                   |                                   |
@@ -76,8 +75,8 @@ Table 1
 | 3                                 | HPOS form sent by unidentified    |
 |                                   | source + Read more ...            |
 |                                   |                                   |
-|                                   | Try to contact the practice once  |
-|                                   | to confirm they sent the form.    |
+|                                   | Try once to contact the practice  |
+|                                   | to find out who sent the form.    |
 |                                   |                                   |
 |                                   | For outbound calls, Service       |
 |                                   | Officers must use the script in   |
@@ -85,24 +84,22 @@ Table 1
 |                                   | recognised vaccination providers  |
 |                                   | for AIR enquiries table.          |
 |                                   |                                   |
-|                                   | If the practice confirms that     |
-|                                   | they:                             |
-|                                   |                                   |
+|                                   | If the practice confirms they     |
 |                                   | sent the form:                    |
 |                                   |                                   |
 |                                   | -   tell them to transmit via     |
-|                                   |     Doctor/Delegate/Organisation  |
+|                                   |     doctor/delegate/organisation  |
 |                                   |     in future                     |
 |                                   | -   add comments in PaNDA and     |
-|                                   |     Mainframe, i.e. 'Confirmed    |
-|                                   |     with                          |
-|                                   |     <doctor/nurse/receptionist>   |
+|                                   |     mainframe - Confirmed with    |
+|                                   |     (doctor/nurse/receptionist)   |
 |                                   |     that a staff member sent form |
 |                                   |     via HPOS                      |
-|                                   | -   see Table 2                   |
+|                                   | -   go to Table 2                 |
 |                                   |                                   |
-|                                   | did not send the form or they     |
-|                                   | cannot be contacted, go to Step 4 |
+|                                   | If the practice did not send the  |
+|                                   | form or they cannot be contacted, |
+|                                   | go to Step 4.                     |
 +-----------------------------------+-----------------------------------+
 | 4                                 | HPOS form sent by patient, other  |
 |                                   | or unable to contact practice +   |
@@ -112,24 +109,21 @@ Table 1
 |                                   |     patient with Z2334 standard   |
 |                                   |     letter. Do not action         |
 |                                   | -   Add comments in PaNDA and     |
-|                                   |     Mainframe i.e. 'Form          |
-|                                   |     submitted by <patient/unknown |
-|                                   |     person>, returned with        |
-|                                   |     letter'                       |
+|                                   |     mainframe - Form submitted by |
+|                                   |     (patient/unknown person),     |
+|                                   |     returned with letter'         |
 |                                   | -   Check the correct Medicare    |
 |                                   |     number and provider number    |
 |                                   |     have been saved on the work   |
 |                                   |     item                          |
 |                                   | -   Complete the work item in     |
 |                                   |     PaNDA                         |
-|                                   |                                   |
-|                                   | Procedure ends here.              |
+|                                   | -   Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Form received via email or SOC +  |
 |                                   | Read more ...                     |
 |                                   |                                   |
-|                                   | Make one attempt to contact the   |
-|                                   | practice.                         |
+|                                   | Try once to contact the practice. |
 |                                   |                                   |
 |                                   | For outbound calls, Service       |
 |                                   | Officers must use the script in   |
@@ -139,23 +133,47 @@ Table 1
 |                                   |                                   |
 |                                   | If contact is:                    |
 |                                   |                                   |
-|                                   | -   made, go to Step 6            |
-|                                   | -   not made, go to Step 8        |
+|                                   | -   successful, go to Step 6      |
+|                                   | -   unsuccessful, go to Step 8    |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Confirm practice sent the form +  |
 |                                   | Read more ...                     |
 |                                   |                                   |
 |                                   | Tell the practice contact that    |
-|                                   | when forms are received manually  |
+|                                   | when forms are received manually, |
 |                                   | Services Australia will contact   |
 |                                   | them to confirm they sent the     |
 |                                   | form.                             |
 |                                   |                                   |
-|                                   | Promote digital options. If the   |
-|                                   | Service officer is:               |
+|                                   | Promote digital options           |
+|                                   |                                   |
+|                                   | If the promotion of digital       |
+|                                   | options generates a negative      |
+|                                   | response from the practice, email |
+|                                   | Air Support and request a         |
+|                                   | Business Development Officer      |
+|                                   | (BDO) referral.                   |
+|                                   |                                   |
+|                                   | Include in email:                 |
+|                                   |                                   |
+|                                   | Subject heading – Manual          |
+|                                   | Lodgement, Provider Number        |
+|                                   |                                   |
+|                                   | Attach a copy of the form that    |
+|                                   | prompted the call                 |
+|                                   |                                   |
+|                                   | Details of:                       |
+|                                   |                                   |
+|                                   | -   who the conversation was with |
+|                                   | -   the initial                   |
+|                                   |     conversation/outcome          |
+|                                   | -   the reason for not submitting |
+|                                   |     digitally                     |
+|                                   |                                   |
+|                                   | If the Service officer is:        |
 |                                   |                                   |
 |                                   | -   internet trained, help the    |
-|                                   |     practice contact or organise  |
+|                                   |     practice contact to organise  |
 |                                   |     another time to call back     |
 |                                   | -   not internet trained, offer   |
 |                                   |     to transfer the practice      |
@@ -168,23 +186,6 @@ Table 1
 |                                   |                                   |
 |                                   | -   Yes, go to Step 7             |
 |                                   | -   No, go to Step 8              |
-|                                   |                                   |
-|                                   | Note: if promotion of digital     |
-|                                   | options generates a negative      |
-|                                   | response from the practice, email |
-|                                   | AIR SUPPORT and request an AIR    |
-|                                   | Business Development Officer (AIR |
-|                                   | BDO) referral. Include in email:  |
-|                                   |                                   |
-|                                   | -   Subject heading – Manual      |
-|                                   |     Lodgement, Provider Number    |
-|                                   | -   Attach a copy of the form     |
-|                                   |     that prompted the call        |
-|                                   | -   Details of who the Service    |
-|                                   |     Officer spoke to, the initial |
-|                                   |     conversation/outcome and      |
-|                                   |     reason for not submitting     |
-|                                   |     digitally                     |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Confirm provider signed the       |
 |                                   | form + Read more ...              |
@@ -195,9 +196,8 @@ Table 1
 |                                   |                                   |
 |                                   | -   Confirm it was sent manually  |
 |                                   | -   Add comments in PaNDA and     |
-|                                   |     Mainframe i.e. 'Confirmed     |
-|                                   |     with                          |
-|                                   |     <doctor/nurse/receptionist>   |
+|                                   |     mainframe - Confirmed with    |
+|                                   |     (doctor/nurse/receptionist)   |
 |                                   |     form sent by practice'        |
 |                                   | -   Process the form, see Table 2 |
 |                                   |                                   |
@@ -206,10 +206,10 @@ Table 1
 |                                   | -   Confirm it was completed by a |
 |                                   |     provider and sent manually    |
 |                                   | -   Add comments in PaNDA and     |
-|                                   |     Mainframe i.e. 'Spoke to      |
-|                                   |     <doctor/nurse/receptionist>   |
+|                                   |     mainframe - Spoke to          |
+|                                   |     (doctor/nurse/receptionist)   |
 |                                   |     and confirmed form completed  |
-|                                   |     and sent by practice'         |
+|                                   |     and sent by practice          |
 |                                   | -   Process the form, see Table 2 |
 |                                   |                                   |
 |                                   | Note: if the form is received via |
@@ -226,17 +226,16 @@ Table 1
 |                                   |     patient with Z2334 standard   |
 |                                   |     letter                        |
 |                                   | -   add comment in PaNDA and      |
-|                                   |     Mainframe - 'Unable to        |
-|                                   |     confirm who sent the form,    |
-|                                   |     returned with letter'         |
+|                                   |     mainframe - Unable to confirm |
+|                                   |     who sent the form, returned   |
+|                                   |     with letter                   |
 |                                   | -   check the correct Medicare    |
 |                                   |     number and provider number    |
 |                                   |     have been saved on the work   |
 |                                   |     item                          |
 |                                   | -   complete work item in PaNDA.  |
 |                                   |     See Work Optimiser for staff  |
-|                                   |                                   |
-|                                   | Procedure ends here.              |
+|                                   | -   procedure ends here           |
 +-----------------------------------+-----------------------------------+
 
 Process notification of a hepatitis B birth dose based on form type Services
@@ -259,38 +258,40 @@ Table 2
 | 2                                 | Process history form + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | In AIR Mainframe:                 |
+|                                   | In AIR mainframe:                 |
 |                                   |                                   |
-|                                   | -   key ‘YIAF’. The YIAF –        |
-|                                   |     Create/Amend Header Register  |
-|                                   |     History From screen displays  |
-|                                   | -   enter the Information         |
-|                                   |     Provider Number, Claim ID,    |
-|                                   |     Quoted Number and Receipt     |
-|                                   |     Date (date form signed)       |
-|                                   | -   press [Enter]. The message    |
-|                                   |     ‘PF9 to update’ displays      |
-|                                   | -   press [PF9 – UPDATE]. The     |
-|                                   |     YXCB – Individual Selection   |
+|                                   | -   key YIAF                      |
+|                                   | -   the YIAF – Create/Amend       |
+|                                   |     Header Register History From  |
 |                                   |     screen displays               |
+|                                   | -   key the Information Provider  |
+|                                   |     Number, Claim ID, Quoted      |
+|                                   |     Number and Receipt ate (date  |
+|                                   |     form signed)                  |
+|                                   | -   press [Enter]                 |
+|                                   | -   the message PF9 to update     |
+|                                   |     displays                      |
+|                                   | -   press [PF9 – UPDATE]          |
+|                                   | -   the YXCB – Individual         |
+|                                   |     Selection screen displays     |
 |                                   | -   search for the individual,    |
 |                                   |     using Medicare number or      |
 |                                   |     individuals details from the  |
-|                                   |     top of the form/. The YIAE –  |
-|                                   |     Encounter Details screen      |
+|                                   |     top of the form               |
+|                                   | -   the YIAE – Encounter Details  |
+|                                   |     screen displays               |
+|                                   | -   press [Enter]                 |
+|                                   | -   the message PF9 to update     |
 |                                   |     displays                      |
-|                                   | -   press [Enter]. The message    |
-|                                   |     ‘PF9 to update’ displays      |
-|                                   | -   press [PF9 – UPDATE]. The     |
-|                                   |     YIAN – Antigen Details screen |
-|                                   |     displays                      |
-|                                   | -   enter the vaccine code in the |
+|                                   | -   press [PF9 – UPDATE]          |
+|                                   | -   the YIAN – Antigen Details    |
+|                                   |     screen displays               |
+|                                   | -   key the vaccine code in the   |
 |                                   |     vaccine code field            |
-|                                   | -   enter ‘B’ in the dose field   |
+|                                   | -   key B in the dose field       |
 |                                   | -   press [Enter] and [PF9] to    |
 |                                   |     update                        |
-|                                   |                                   |
-|                                   | Procedure ends here.              |
+|                                   | -   procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Process encounter form + Read     |
 |                                   | more ...                          |
@@ -300,42 +301,44 @@ Table 2
 |                                   | encounter form (IM018) form in 2  |
 |                                   | ways:                             |
 |                                   |                                   |
-|                                   | -   notified as 'documentation    |
-|                                   |     sighted' at question 7,       |
-|                                   |     update a history (as in Step  |
-|                                   |     2)                            |
+|                                   | -   notified as documentation     |
+|                                   |     sighted at question 7, update |
+|                                   |     a history (as in Step 2)      |
 |                                   | -   a vaccination given by the    |
 |                                   |     provider that is notified in  |
-|                                   |     the 'Other' box at question 8 |
+|                                   |     the Other box at question 8   |
 |                                   |                                   |
-|                                   | In AIR Mainframe:                 |
+|                                   | In AIR mainframe:                 |
 |                                   |                                   |
-|                                   | -   key ‘YIAM’. The YIAM –        |
-|                                   |     Create/Amend Header Register  |
-|                                   |     Manual Claim screen displays  |
-|                                   | -   enter the Information         |
-|                                   |     Provider Number, Claim ID,    |
-|                                   |     Quoted Number and Receipt     |
-|                                   |     Date (date form signed)       |
-|                                   | -   press [Enter]. The message    |
-|                                   |     ‘PF9 to update’ displays      |
-|                                   | -   press [PF9 – UPDATE]. The     |
-|                                   |     YXCB – Individual Selection   |
+|                                   | -   key YIAM                      |
+|                                   | -   he YIAM – Create/Amend Header |
+|                                   |     Register Manual Claim screen  |
+|                                   |     displays                      |
+|                                   | -   key the Information Provider  |
+|                                   |     Number, Claim ID, Quoted      |
+|                                   |     Number and Receipt Date (date |
+|                                   |     form signed)                  |
+|                                   | -   press [Enter]                 |
+|                                   | -   the message PF9 to update     |
+|                                   |     displays                      |
+|                                   | -   press [PF9 – UPDATE].         |
+|                                   | -   The YXCB – Individual         |
+|                                   |     Selection screen displays     |
+|                                   | -   search for the individual     |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YIAE – Encounter Details  |
 |                                   |     screen displays               |
-|                                   | -   search for the individual.    |
-|                                   |     Press [Enter]. The YIAE –     |
-|                                   |     Encounter Details screen      |
+|                                   | -   press [Enter]                 |
+|                                   | -   the message PF9 to update     |
 |                                   |     displays                      |
-|                                   | -   press [Enter]. The message    |
-|                                   |     ‘PF9 to update’ displays      |
-|                                   | -   press [PF9 – UPDATE]. The     |
-|                                   |     YIAN – Antigen Details screen |
-|                                   |     displays                      |
-|                                   | -   enter the vaccine code in the |
+|                                   | -   press [PF9 – UPDATE]          |
+|                                   | -   the YIAN – Antigen Details    |
+|                                   |     screen displays               |
+|                                   | -   key the vaccine code in the   |
 |                                   |     vaccine code field            |
-|                                   | -   enter ‘B’ in the dose field   |
-|                                   |     if given in first 7 days      |
-|                                   |     after birth                   |
+|                                   | -   key B in the dose field if    |
+|                                   |     given in first 7 days after   |
+|                                   |     birth                         |
 |                                   | -   press [Enter] and [PF9] to    |
 |                                   |     update                        |
 +-----------------------------------+-----------------------------------+
@@ -354,7 +357,7 @@ Table 3
 |                                   | the vaccination be shown on an    |
 |                                   | immunisation history statement    |
 |                                   | and the hepatitis B birth dose    |
-|                                   | flag on AIR Mainframe is:         |
+|                                   | flag on AIR mainframe is:         |
 |                                   |                                   |
 |                                   | -   already recorded, Service     |
 |                                   |     Officers can use the          |
@@ -379,17 +382,18 @@ Table 4
 |                                   |                                   |
 |                                   | To display previously recorded    |
 |                                   | vaccinations, log on to AIR       |
-|                                   | Mainframe then:                   |
+|                                   | mainframe then:                   |
 |                                   |                                   |
-|                                   | -   key ‘YCUI’ anywhere on a      |
-|                                   |     blank screen. The YCUI –      |
-|                                   |     Registration Amendment Search |
-|                                   |     screen displays               |
-|                                   | -   key Medicare number or        |
-|                                   |     individual’s details and      |
-|                                   |     press [Enter]. The YCUA -     |
-|                                   |     Amendment Registration screen |
+|                                   | -   key YCUI anywhere on a blank  |
+|                                   |     screen                        |
+|                                   | -   the YCUI – Registration       |
+|                                   |     Amendment Search screen       |
 |                                   |     displays                      |
+|                                   | -   key Medicare number or        |
+|                                   |     individual’s details          |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YCUA - Amendment          |
+|                                   |     Registration screen displays  |
 |                                   | -   press [PF14] to navigate to   |
 |                                   |     the YIRD - Episode            |
 |                                   |     History-Basic screen          |
@@ -408,12 +412,11 @@ Table 4
 |                                   |     immunising provider number as |
 |                                   |     the one already recorded, do  |
 |                                   |     not process. Record a comment |
-|                                   |     in notes 'Duplicate           |
-|                                   |     encounter - not processed'    |
-|                                   |     and finalise the document as  |
-|                                   |     per WLM processing            |
-|                                   |     guidelines. See Work          |
-|                                   |     Optimiser for staff.          |
+|                                   |     in notes - Duplicate          |
+|                                   |     encounter - not processed.    |
+|                                   |     Finalise the document as per  |
+|                                   |     WLM processing guidelines.    |
+|                                   |     See Work Optimiser for staff. |
 |                                   |     Procedure ends here           |
 |                                   | -   a different claim ID or       |
 |                                   |     immunising provider number,   |
@@ -425,41 +428,49 @@ Table 4
 | 3                                 | Create immunisation encounter     |
 |                                   | header + Read more ...            |
 |                                   |                                   |
-|                                   | In AIR Mainframe:                 |
+|                                   | In AIR mainframe:                 |
 |                                   |                                   |
-|                                   | key ‘YIAM’. The YIAM –            |
-|                                   | Create/Amend Header Register      |
-|                                   | Manual Claim screen displays      |
+|                                   | key YIAM                          |
 |                                   |                                   |
-|                                   | enter the Information Provider    |
+|                                   | the YIAM – Create/Amend Header    |
+|                                   | Register Manual Claim screen      |
+|                                   | displays                          |
+|                                   |                                   |
+|                                   | key the Information Provider      |
 |                                   | Number, Claim ID, Quoted Number   |
 |                                   | and Receipt Date (date form       |
 |                                   | signed)                           |
 |                                   |                                   |
-|                                   | press [Enter]. The message ‘PF9   |
-|                                   | to update’ displays               |
+|                                   | press [Enter]                     |
+|                                   |                                   |
+|                                   | the message PF9 to update         |
+|                                   | displays                          |
 |                                   |                                   |
 |                                   | press [PF9 – UPDATE]. The YXCB –  |
 |                                   | Individual Selection screen       |
 |                                   | displays                          |
 |                                   |                                   |
-|                                   | search for the individual. Press  |
-|                                   | [Enter]. The YIAE – Encounter     |
-|                                   | Details screen displays           |
+|                                   | search for the individual         |
+|                                   |                                   |
+|                                   | press [Enter]                     |
+|                                   |                                   |
+|                                   | the YIAE – Encounter Details      |
+|                                   | screen displays                   |
 |                                   |                                   |
 |                                   | press [Enter]. The message ‘PF9   |
 |                                   | to update’ displays               |
 |                                   |                                   |
-|                                   | press [PF9 – UPDATE]. The YIAN –  |
-|                                   | Antigen Details screen displays   |
+|                                   | press [PF9 – UPDATE]              |
 |                                   |                                   |
-|                                   | enter the vaccine code in the     |
+|                                   | the YIAN – Antigen Details screen |
+|                                   | displays                          |
+|                                   |                                   |
+|                                   | key the vaccine code in the       |
 |                                   | vaccine code field                |
 |                                   |                                   |
-|                                   | enter dose number in the dose     |
-|                                   | field                             |
+|                                   | key dose number in the dose field |
 |                                   |                                   |
-|                                   | enter the batch number            |
+|                                   | key the batch number              |
 |                                   |                                   |
 |                                   | -   Astra Zeneca and Pfizer       |
 |                                   |     vaccines have a lot number    |
@@ -489,8 +500,8 @@ Table 4
 |                                   | form:                             |
 |                                   |                                   |
 |                                   | -   Service Officer must complete |
-|                                   |     the PSO referral form         |
-|                                   | -   PSO will add the country of   |
+|                                   |     the LPS referral form         |
+|                                   | -   LPS will add the country of   |
 |                                   |     administration                |
 |                                   |                                   |
 |                                   | Note:                             |
@@ -512,9 +523,10 @@ Table 4
 |                                   |                                   |
 |                                   | To locate individual:             |
 |                                   |                                   |
-|                                   | press [PF15]. The YXCB -          |
-|                                   | Individual Selection screen will  |
-|                                   | display                           |
+|                                   | press [PF15]                      |
+|                                   |                                   |
+|                                   | the YXCB - Individual Selection   |
+|                                   | screen will display               |
 |                                   |                                   |
 |                                   | key Medicare card number (if      |
 |                                   | available), or                    |
@@ -527,12 +539,15 @@ Table 4
 |                                   | -   date of birth                 |
 |                                   | -   postcode (optional)           |
 |                                   |                                   |
-|                                   | press [Enter]. The YIAE -         |
-|                                   | Encounter Details screen displays |
-|                                   | when a unique match or list of    |
-|                                   | possible matches is displayed on  |
-|                                   | the YXCB - Selection screen.      |
-|                                   | Select the match from the list to |
+|                                   | press [Enter]                     |
+|                                   |                                   |
+|                                   | the YIAE - Encounter Details      |
+|                                   | screen displays when a unique     |
+|                                   | match or list of possible matches |
+|                                   | is displayed on the YXCB -        |
+|                                   | Selection screen                  |
+|                                   |                                   |
+|                                   | select the match from the list to |
 |                                   | display the YIAE - Encounter      |
 |                                   | Details screen                    |
 |                                   |                                   |
@@ -543,8 +558,8 @@ Table 4
 |                                   | form:                             |
 |                                   |                                   |
 |                                   | -   Service Officer must complete |
-|                                   |     the PSO referral form         |
-|                                   | -   PSO will add the country of   |
+|                                   |     the LPS referral form         |
+|                                   | -   LPS will add the country of   |
 |                                   |     administration                |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Determine if the matching         |
@@ -558,8 +573,8 @@ Table 4
 |                                   |                                   |
 |                                   | No, go to Step 6                  |
 |                                   |                                   |
-|                                   | -   The message 'Amend search     |
-|                                   |     details or PF10 to add child' |
+|                                   | -   The message Amend search      |
+|                                   |     details or PF10 to add child  |
 |                                   |     is displayed, or              |
 |                                   | -   List of possible matches      |
 |                                   |     found, scroll list to check   |
@@ -604,21 +619,21 @@ Table 4
 |                                   |     YIAN - Antigen Details screen |
 |                                   | -   press [Enter]                 |
 |                                   | -   check that there are no pends |
-|                                   |     by looking for an ‘A’ in the  |
-|                                   |     ST field and ‘00’ in the Pend |
+|                                   |     by looking for an A in the ST |
+|                                   |     field and 00 in the Pend      |
 |                                   |     Count field. If there are     |
 |                                   |     pends, action pended antigen  |
 |                                   |     with appropriate action code  |
-|                                   | -   if all vaccines are at an ‘A’ |
-|                                   |     status, press [PF9 – UPDATE]. |
-|                                   |     The YIAE – Encounter Details  |
+|                                   | -   if all vaccines have an A     |
+|                                   |     status, press [PF9 – UPDATE]  |
+|                                   | -   the YIAE – Encounter Details  |
 |                                   |     screen displays               |
 |                                   | -   finalise the document as per  |
 |                                   |     processing guidelines         |
 |                                   |                                   |
 |                                   | Note: if recording a hepatitis B  |
 |                                   | birth dose from the immunisation  |
-|                                   | encounter form, enter ‘B’ in the  |
+|                                   | encounter form, enter B in the    |
 |                                   | Dose field if given to a child up |
 |                                   | to 7 days of age.                 |
 |                                   |                                   |
@@ -641,22 +656,24 @@ Table 4
 |                                   |                                   |
 |                                   | No,                               |
 |                                   |                                   |
-|                                   | -   key ‘YCUI’ anywhere on a      |
-|                                   |     blank screen. The YCUI –      |
-|                                   |     Registration Amendment Search |
-|                                   |     screen displays               |
+|                                   | -   key YCUI anywhere on a blank  |
+|                                   |     screen                        |
+|                                   | -   the YCUI – Registration       |
+|                                   |     Amendment Search screen       |
+|                                   |     displays                      |
 |                                   | -   key Medicare number or        |
-|                                   |     individual’s details and      |
-|                                   |     press [Enter]. The YCUA -     |
-|                                   |     Amendment Registration screen |
+|                                   |     individual’s details          |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YCUA - Amendment          |
+|                                   |     Registration screen displays  |
+|                                   | -   key Y in the Indigenous field |
+|                                   | -   press [Enter]                 |
+|                                   | -   the message PF9 to update     |
 |                                   |     displays                      |
-|                                   | -   key ‘Y’ in the Indigenous     |
-|                                   |     field and press [Enter]. The  |
-|                                   |     message ‘PF9 to update’       |
-|                                   |     displays                      |
-|                                   | -   press [PF9 – UPDATE] and      |
-|                                   |     ‘update successful’ will      |
-|                                   |     display. Procedure ends here  |
+|                                   | -   press [PF9 – UPDATE]          |
+|                                   | -   the message update successful |
+|                                   |     will display.                 |
+|                                   | -   procedure ends here           |
 +-----------------------------------+-----------------------------------+
 
 Add an encounter to an immunisation encounter claim
@@ -692,16 +709,18 @@ IDI, API or WEB (online) claims.
 |                                   | To access the Immunisation        |
 |                                   | Encounters screen:                |
 |                                   |                                   |
-|                                   | -   Key ‘YIEM’ and press [Enter]. |
-|                                   |     The YIEM - Immunisation       |
-|                                   |     Encounters Menu screen is     |
-|                                   |     displayed                     |
-|                                   | -   Key option 2 - Claim          |
+|                                   | -   Key YIEM                      |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YIEM - Immunisation       |
+|                                   |     Encounters Menu screen        |
+|                                   |     displays                      |
+|                                   | -   key option 2 - Claim          |
 |                                   |     Selection (Encounter          |
 |                                   |     Processing) (YICE)            |
-|                                   | -   Press [Enter]. The YICE -     |
-|                                   |     Claim Selection (Encounter    |
-|                                   |     Processing) screen displays   |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YICE - Claim Selection    |
+|                                   |     (Encounter Processing) screen |
+|                                   |     displays                      |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Enter claim details + Read more   |
 |                                   | ...                               |
@@ -709,7 +728,7 @@ IDI, API or WEB (online) claims.
 |                                   | To search for claim details:      |
 |                                   |                                   |
 |                                   | -   key provider number           |
-|                                   | -   key 'Claim ID'                |
+|                                   | -   key Claim ID                  |
 |                                   | -   press [Enter]. Claims entered |
 |                                   |     previously with these search  |
 |                                   |     criteria will display         |
@@ -723,8 +742,8 @@ IDI, API or WEB (online) claims.
 |                                   |                                   |
 |                                   | -   key (/) in the cursor field   |
 |                                   |     to select correct claim       |
-|                                   | -   select [PF15 – ADD ENCTR].    |
-|                                   |     The YXCB - Selection screen   |
+|                                   | -   select [PF15 – ADD ENCTR]     |
+|                                   | -   the YXCB - Selection screen   |
 |                                   |     will display                  |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Record encounter and finalise +   |
@@ -767,11 +786,11 @@ Table 6
 |                                   | -   press [PF4 – Claim]           |
 |                                   | -   select (/) claim to be        |
 |                                   |     amended                       |
-|                                   | -   press [PF17 – Upd Header] -   |
-|                                   |     Upd header. The Create/Amend  |
-|                                   |     Header Update Header Details  |
-|                                   |     screen and message 'Key/amend |
-|                                   |     header details' displays      |
+|                                   | -   press [PF17 – Upd Header]     |
+|                                   | -   the Create/Amend Header       |
+|                                   |     Update Header Details screen  |
+|                                   |     and message Key/amend header  |
+|                                   |     details displays              |
 |                                   |                                   |
 |                                   | The claim type selected for       |
 |                                   | amendment will determine last     |
@@ -784,11 +803,12 @@ Table 6
 |                                   | -   amend applicable unprotected  |
 |                                   |     fields (immunising provider   |
 |                                   |     number and immunisation       |
-|                                   |     date). Press [Enter]. The     |
-|                                   |     message 'PF9 to update'       |
+|                                   |     date).                        |
+|                                   | -   Press [Enter]                 |
+|                                   | -   the message PF9 to update     |
 |                                   |     displays                      |
-|                                   | -   press [PF9] to update - the   |
-|                                   |     YICE - Claim Selection        |
+|                                   | -   press [PF9] to update         |
+|                                   | -   the YICE - Claim Selection    |
 |                                   |     Encounter Processing screen   |
 |                                   |     is displayed and details are  |
 |                                   |     updated                       |
@@ -807,13 +827,13 @@ Table 7
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | Check individual's Medicare       |
-|                                   | history in AIR Mainframe to see   |
+|                                   | history in AIR mainframe to see   |
 |                                   | if a date of service that         |
 |                                   | corresponds to the vaccination    |
 |                                   | date can be found:                |
 |                                   |                                   |
-|                                   | Anywhere on blank AIR Mainframe   |
-|                                   | screen type                       |
+|                                   | Key anywhere on blank AIR         |
+|                                   | mainframe screen type             |
 |                                   |                                   |
 |                                   | -   NHSI                          |
 |                                   | -   (,) comma                     |
@@ -821,9 +841,9 @@ Table 7
 |                                   | -   (,) comma                     |
 |                                   | -   Medicare individual reference |
 |                                   |     number                        |
-|                                   | -   press [Enter], the Medicare – |
-|                                   |     Patient History screen        |
-|                                   |     appears                       |
+|                                   | -   press [Enter]                 |
+|                                   | -   the Medicare – Patient        |
+|                                   |     History screen appears        |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Determine if corresponding + Read |
 |                                   | more ...                          |
@@ -859,15 +879,15 @@ Table 7
 |                                   | received and ask if provided      |
 |                                   | immunisations + Read more ...     |
 |                                   |                                   |
-|                                   | Advise provider that more         |
-|                                   | information is required to        |
-|                                   | process the immunisation data.    |
-|                                   | Did they provide the              |
-|                                   | immunisations in question?        |
+|                                   | Tell the provider more            |
+|                                   | information is needed to process  |
+|                                   | the immunisation data. Did they   |
+|                                   | provide the immunisations in      |
+|                                   | question?                         |
 |                                   |                                   |
 |                                   | Yes,                              |
 |                                   |                                   |
-|                                   | -   obtain their provider number  |
+|                                   | -   ask for their provider number |
 |                                   | -   key into header as immunising |
 |                                   |     and information provider      |
 |                                   | -   include confirmation in a     |
@@ -888,14 +908,14 @@ Table 7
 |                                   |     and processing history forms  |
 |                                   |     in the Australian             |
 |                                   |     Immunisation Register (AIR)   |
-|                                   | -   Record note in AIR Mainframe  |
+|                                   | -   Record note in AIR mainframe  |
 |                                   | -   Record comment in notes as    |
 |                                   |     per processing guidelines     |
 +-----------------------------------+-----------------------------------+
 | 6                                 | Unable to determine provider      |
 |                                   | number + Read more ...            |
 |                                   |                                   |
-|                                   | Record note in AIR Mainframe.     |
+|                                   | Record note in AIR mainframe.     |
 |                                   |                                   |
 |                                   | Record comment in notes as per    |
 |                                   | WLM processing guidelines         |
@@ -918,15 +938,16 @@ identifying a claim as being keyed twice, the claim sequence number is
 | 1                                 | Access Immunisation Encounters    |
 |                                   | menu + Read more ...              |
 |                                   |                                   |
-|                                   | Log into AIR Mainframe            |
+|                                   | Log into AIR mainframe            |
 |                                   |                                   |
 |                                   | To access the Immunisation        |
 |                                   | Encounters menu:                  |
 |                                   |                                   |
-|                                   | -   key ‘YIEM’                    |
-|                                   | -   press [Enter]. The YIEM -     |
-|                                   |     Immunisation Encounters Menu  |
-|                                   |     screen will display           |
+|                                   | -   key YIEM                      |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YIEM - Immunisation       |
+|                                   |     Encounters Menu screen        |
+|                                   |     displays                      |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Access processing screen + Read   |
 |                                   | more ...                          |
@@ -934,9 +955,9 @@ identifying a claim as being keyed twice, the claim sequence number is
 |                                   | To access Abandon Claim screen:   |
 |                                   |                                   |
 |                                   | -   press [PF6] - Abandon claim   |
-|                                   | -   press [Enter]. The YICA -     |
-|                                   |     Abandon Claim Processing      |
-|                                   |     screen will display           |
+|                                   | -   press [Enter]                 |
+|                                   | -   the YICA - Abandon Claim      |
+|                                   |     Processing screen displays    |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Locate list of claims + Read more |
 |                                   | ...                               |
@@ -948,29 +969,26 @@ identifying a claim as being keyed twice, the claim sequence number is
 |                                   |     is required after claim ID if |
 |                                   |     abandoning a history form     |
 |                                   |     claim)                        |
-|                                   | -   press [Enter]. A list of      |
-|                                   |     claims matching the search    |
-|                                   |     criteria will display         |
+|                                   | -   press [Enter]                 |
+|                                   | -   a list of claims matching the |
+|                                   |     search criteria displays      |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Select claim(s) to abandon + Read |
 |                                   | more ...                          |
 |                                   |                                   |
 |                                   | To select claim to abandon:       |
 |                                   |                                   |
-|                                   | select (/) claim to be deleted    |
-|                                   |                                   |
-|                                   | press [PF21] – Abandon            |
-|                                   |                                   |
-|                                   | -   The message 'Press PF23 to    |
-|                                   |     confirm abandon' will display |
-|                                   |                                   |
-|                                   | press [PF23] - CONF ABDN to       |
-|                                   | complete the process              |
-|                                   |                                   |
-|                                   | -   The message 'Claim abandoned  |
-|                                   |     successfully' is displayed    |
-|                                   |     and the claim disappears from |
-|                                   |     the screen                    |
+|                                   | -   select (/) claim to be        |
+|                                   |     deleted                       |
+|                                   | -   press [PF21] – Abandon        |
+|                                   | -   the message press PF23 to     |
+|                                   |     confirm abandon displays      |
+|                                   | -   press [PF23] - CONF ABDN to   |
+|                                   |     complete the process          |
+|                                   | -   the message claim abandoned   |
+|                                   |     successfully displays and the |
+|                                   |     claim disappears from the     |
+|                                   |     screen                        |
 |                                   |                                   |
 |                                   | More than one claim may be        |
 |                                   | abandoned at the same time.       |
@@ -996,9 +1014,9 @@ Table 9
 |                                   |                                   |
 |                                   | -   select (/) the relevant       |
 |                                   |     episode                       |
-|                                   | -   press [PF6] – Antigen. The    |
-|                                   |     YIAN - Antigen details screen |
-|                                   |     displays                      |
+|                                   | -   press [PF6] – Antigen         |
+|                                   | -   the YIAN - Antigen details    |
+|                                   |     screen displays               |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Reject or accept an episode +     |
 |                                   | Read more ...                     |
@@ -1019,33 +1037,27 @@ Table 9
 |                                   |     relevant antigen. Do not      |
 |                                   |     delete the vaccine code       |
 |                                   | -   press [Enter]                 |
-|                                   |                                   |
-|                                   | The message 'Vaccine code and     |
-|                                   | vaccine sequence number must be   |
-|                                   | present' is displayed and the     |
-|                                   | Status field displays ‘P’.        |
+|                                   | -   the message Vaccine code and  |
+|                                   |     vaccine sequence number must  |
+|                                   |     be present displays and the   |
+|                                   |     Status field displays as P    |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Update the Status field and       |
 |                                   | finalise processing + Read more   |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | To process a ‘P’ status episode:  |
+|                                   | To process a P status episode:    |
 |                                   |                                   |
-|                                   | key ‘R’ to replace the ‘P’        |
-|                                   |                                   |
-|                                   | press [Enter]                     |
-|                                   |                                   |
-|                                   | key ‘Z’ to replace the ‘R’        |
-|                                   |                                   |
-|                                   | press [Enter]                     |
-|                                   |                                   |
-|                                   | press [PF9] to update             |
-|                                   |                                   |
-|                                   | -   The message 'Update           |
-|                                   |     processing complete' displays |
+|                                   | -   key R to replace the P        |
+|                                   | -   press [Enter]                 |
+|                                   | -   key Z to replace the R        |
+|                                   | -   press [Enter]                 |
+|                                   | -   press [PF9] to update         |
+|                                   | -   the message Update processing |
+|                                   |     complete displays             |
 |                                   |                                   |
 |                                   | Episodes at Z status appear on    |
-|                                   | AIR Mainframe but do not display  |
+|                                   | AIR mainframe but do not display  |
 |                                   | on immunisation history           |
 |                                   | statements.                       |
 |                                   |                                   |
@@ -1057,10 +1069,10 @@ Table 9
 |                                   |                                   |
 |                                   | To accept an episode:             |
 |                                   |                                   |
-|                                   | -   key ‘C’ to replace the        |
-|                                   |     current status                |
+|                                   | -   key C to replace the current  |
+|                                   |     status                        |
 |                                   | -   press [Enter]                 |
-|                                   | -   key ‘Y’ to replace the C      |
+|                                   | -   key Y to replace the C        |
 |                                   | -   press [Enter]                 |
 |                                   | -   press [PF9] to update         |
 |                                   |                                   |
@@ -1083,8 +1095,8 @@ requests from the public, removal of ceasing correspondence instruction.
 +-----------------------------------+-----------------------------------+
 | 1                                 | Assess document + Read more ...   |
 |                                   |                                   |
-|                                   | Use the ‘AIR work types quick     |
-|                                   | reference guide’ on the Resources |
+|                                   | Use the AIR work types quick      |
+|                                   | reference guide on the Resources  |
 |                                   | page to determine if the data can |
 |                                   | be lodged online:                 |
 |                                   |                                   |
@@ -1114,7 +1126,7 @@ requests from the public, removal of ceasing correspondence instruction.
 |                                   |     provider number, if           |
 |                                   |     available)                    |
 |                                   | -   View the Claim history        |
-|                                   |     screens in AIR Mainframe and  |
+|                                   |     screens in AIR mainframe and  |
 |                                   |     see if provider has           |
 |                                   |     previously lodged a claim     |
 |                                   |     using online channels (see    |
@@ -1176,7 +1188,7 @@ requests from the public, removal of ceasing correspondence instruction.
 |                                   | through the AIR website, Practice |
 |                                   | Management Software or an         |
 |                                   | authorised form, go to Step 4     |
-|                                   | (Refer to a PSO for forwarding to |
+|                                   | (Refer to a LPS for forwarding to |
 |                                   | an AIR BDO to contact provider)   |
 +-----------------------------------+-----------------------------------+
 | 4                                 | Recording a standard comment in   |
@@ -1188,10 +1200,10 @@ requests from the public, removal of ceasing correspondence instruction.
 |                                   | on the providers AIR Program      |
 |                                   | Registration page in PDS to alert |
 |                                   | other Service Officers. Refer     |
-|                                   | ODDS work items to a Programme    |
-|                                   | Support Officer (PSO) if the      |
-|                                   | provider has continuing multiple  |
-|                                   | notes on record.                  |
+|                                   | ODDS work items to Local Peer     |
+|                                   | Support if the provider has       |
+|                                   | continuing multiple notes on      |
+|                                   | record.                           |
 |                                   |                                   |
 |                                   | Referral to a PSO                 |
 |                                   |                                   |
@@ -1200,14 +1212,14 @@ requests from the public, removal of ceasing correspondence instruction.
 |                                   | or more intensive assistance is   |
 |                                   | required:                         |
 |                                   |                                   |
-|                                   | -   complete the PSO Referral     |
+|                                   | -   complete the LPS Referral     |
 |                                   |     form                          |
 |                                   | -   attach the ODDs               |
 |                                   |     documentation, and            |
-|                                   | -   escalate to PSO with a brief  |
+|                                   | -   escalate to LPS with a brief  |
 |                                   |     explanation of steps taken    |
 |                                   |                                   |
-|                                   | The PSO will make a determination |
+|                                   | The LPS will make a determination |
 |                                   | to:                               |
 |                                   |                                   |
 |                                   | -   process the data (re-allocate |
@@ -1219,7 +1231,7 @@ requests from the public, removal of ceasing correspondence instruction.
 |                                   |     Business Development Officer  |
 |                                   |     is required                   |
 |                                   |                                   |
-|                                   | The PSO will record a comment on  |
+|                                   | The LPS will record a comment on  |
 |                                   | the provider's AIR Program        |
 |                                   | Registration page in PDS to alert |
 |                                   | staff to the escalation.          |

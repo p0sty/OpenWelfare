@@ -206,7 +206,7 @@ after 12 months unless the information has enduring public value.
 |                                   | Department of Social Services to  |
 |                                   | Services Australia on payslips    |
 |                                   | and apportionment of employment   |
-|                                   | income (LEX 76259):               |
+|                                   | income (LEX 76259).               |
 |                                   |                                   |
 |                                   | 2 documents released in part. The |
 |                                   | documents are [available upon     |
@@ -217,6 +217,81 @@ after 12 months unless the information has enduring public value.
 |                                   | 47C, 47E(d)\                      |
 |                                   | **Exemptions**: Sections 47C,     |
 |                                   | 47E(d)                            |
++-----------------------------------+-----------------------------------+
+| 20 October 2023                   | Correspondence between General    |
+|                                   | Counsel, FOI and Ombudsman Branch |
+|                                   | and the Minister's Office         |
+|                                   | relating to Synergy360 (LEX       |
+|                                   | 75771):                           |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 42, 47C, 47E(d), and 47F(1)\      |
+|                                   | **Exemptions**: Sections 42, 47C, |
+|                                   | 47E(d), and 47F(1)                |
++-----------------------------------+-----------------------------------+
+| 20 October 2023                   | Documents sent between Services   |
+|                                   | Australia and the Office of       |
+|                                   | Minister Shorten concerning the   |
+|                                   | Minister for Government Service's |
+|                                   | visits to the Robina Services     |
+|                                   | Australia service centre on 11    |
+|                                   | July 2023 and the Marion Services |
+|                                   | Australia service centre on 29    |
+|                                   | June 2023 (LEX 75582).            |
+|                                   |                                   |
+|                                   | 2 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47C, 47E(d), 47F(1)\          |
+|                                   | **Exemptions**: Sections 47C,     |
+|                                   | 47E(d), 47F(1)                    |
++-----------------------------------+-----------------------------------+
+| 20 October 2023                   | Operational Blueprint document    |
+|                                   | (LEX 76095):                      |
+|                                   |                                   |
+|                                   | -   Death of a customer whose     |
+|                                   |     partner is not getting an     |
+|                                   |     income support payment from   |
+|                                   |     Centrelink for DVA            |
+|                                   |     099-02020090.                 |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 47E(d)\                       |
+|                                   | **Exemptions**: Section 47E(d)    |
++-----------------------------------+-----------------------------------+
+| 16 October 2023                   | Documents relating to (LEX        |
+|                                   | 75779):                           |
+|                                   |                                   |
+|                                   | -   Minister's Office: Office of  |
+|                                   |     the Hon Bill Shorten MP,      |
+|                                   |     Minister for the National     |
+|                                   |     Disability Insurance Scheme   |
+|                                   |     and Minister for Government   |
+|                                   |     Services.                     |
+|                                   |                                   |
+|                                   | 13 documents released in full and |
+|                                   | 2 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, 42, 47F(1) and 47C\           |
+|                                   | **Exemptions**: Sections 42,      |
+|                                   | 47F(1) and 47C                    |
 +-----------------------------------+-----------------------------------+
 | 13 October 2023                   | Operational Blueprint document    |
 |                                   | (LEX 75725):                      |
@@ -3869,7 +3944,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 27 October 2023.
+Page last updated: 30 October 2023.
 :::
 :::
 
@@ -3886,7 +3961,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 29 October 2023 from
+This information was printed 30 October 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
