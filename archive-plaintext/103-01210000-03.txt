@@ -1713,16 +1713,32 @@ Table 2
 |                                   | In Customer First, click on       |
 |                                   | CRN/BP and check that the Benefit |
 |                                   | Status Line to confirm the        |
-|                                   | customer has a current payment    |
-|                                   | (CUR) not (CAN/SUS/CZR).          |
+|                                   | customer has a current (CUR) or   |
+|                                   | suspended (SUS) Payment not       |
+|                                   | (CAN/CZR).                        |
 |                                   |                                   |
-|                                   | Does the customer have a current  |
+|                                   | Does the customer have a CUR/SUS  |
 |                                   | payment?                          |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 5             |
-|                                   | -   No, advise the customer they  |
-|                                   |     are not eligible to move to   |
-|                                   |     enhanced IM.                  |
+|                                   | Yes, go to Step 5                 |
+|                                   |                                   |
+|                                   | -   Note: if the customer's       |
+|                                   |     payment is suspended, advise  |
+|                                   |     the customer they will be put |
+|                                   |     through to their payment line |
+|                                   |     to resolve the suspension at  |
+|                                   |     the end of the call           |
+|                                   |                                   |
+|                                   | No, advise the customer they are  |
+|                                   | not eligible to move to enhanced  |
+|                                   | IM at this point in time Offer to |
+|                                   | transfer the customer to their    |
+|                                   | payment line to resolve the issue |
+|                                   | and advise the customer to        |
+|                                   | recontact once their payments are |
+|                                   | current                           |
+|                                   |                                   |
+|                                   | -   Procedure ends here           |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Basic eligibility check           |
 |                                   | (Address) + Read more ...         |
@@ -2449,7 +2465,63 @@ Table 1: For Manual Processing staff only
 |                                   | needed to review the customer’s   |
 |                                   | circumstances.                    |
 +-----------------------------------+-----------------------------------+
-| 3                                 | Basic system check + Read more    |
+| 3                                 | ‘Switch on’ eligibility check     |
+|                                   | (Benefit Status) + Read more ...  |
+|                                   |                                   |
+|                                   | In  Customer First, click on      |
+|                                   | CRN/BP and check the Benefit      |
+|                                   | Status Line to confirm the        |
+|                                   | customer has a current (CUR),     |
+|                                   | suspended (SUS) or assessed (ASS) |
+|                                   | payment, not (CAN/CZR).           |
+|                                   |                                   |
+|                                   | Does the customer have a current  |
+|                                   | CUR/SUS payment?                  |
+|                                   |                                   |
+|                                   | Yes, go to Step 4.                |
+|                                   |                                   |
+|                                   | No, set a deferral MFU to review  |
+|                                   | the customer’s circumstances.     |
+|                                   |                                   |
+|                                   | -   In Customer First, go to the  |
+|                                   |     Review Registration (RVR)     |
+|                                   |     screen:                       |
+|                                   | -   Service Reason: Only use JSP  |
+|                                   |     (regardless of which payment  |
+|                                   |     the customer is on)           |
+|                                   | -   Review Reason: INC - General  |
+|                                   |     Income Review                 |
+|                                   | -   Due Date: If CAN/CZR – set 13 |
+|                                   |     weeks, If ASS* set date when  |
+|                                   |     payment due to start          |
+|                                   | -   Source: Enter ‘Internal’      |
+|                                   | -   Date of Receipt: Enter the    |
+|                                   |     date that the review is being |
+|                                   |     created (ie. today’s date)    |
+|                                   | -   Notes: ’Unable to switch      |
+|                                   |     customer ON due to: (delete   |
+|                                   |     not applicable) no home       |
+|                                   |     address / their payments are  |
+|                                   |     cancelled or at a zero rate,  |
+|                                   |     they have an excluded Payment |
+|                                   |     Nominee or are a full-time    |
+|                                   |     student or apprentice,        |
+|                                   |     trigger payment has been      |
+|                                   |     assessed but not current.     |
+|                                   |     Check if the customer’s       |
+|                                   |     circumstances have changed.’  |
+|                                   |                                   |
+|                                   | Keywords: EIMDEF and EIMCEIM.     |
+|                                   |                                   |
+|                                   | Do Not use: ‘hold to user’        |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
+|                                   |                                   |
+|                                   | *check the XBS screen in Customer |
+|                                   | First to locate the CUR date when |
+|                                   | payment is due to start           |
++-----------------------------------+-----------------------------------+
+| 4                                 | Basic system check + Read more    |
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | Check (and update, if required):  |
@@ -2561,10 +2633,7 @@ Table 2: For Manual Processing staff only
 |                                   | Accepted Service Reason (OASR)    |
 |                                   | screen and enter:                 |
 |                                   |                                   |
-|                                   | -   Required Service Reason:      |
-|                                   |     enter the customer’s payment  |
-|                                   |     type (for example, YAL, JSP,  |
-|                                   |     or PPP)                       |
+|                                   | -   Required Service Reason: IQN  |
 |                                   | -   Advice letter code: enter     |
 |                                   |     Q888                          |
 |                                   | -   Find the template in Payment  |

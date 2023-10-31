@@ -1569,13 +1569,17 @@ Transfer the customer to the Manual processing trained staff. See <a href="../pa
 <div class="showcont">
 
 
-<p>In Customer First, click on <strong>CRN/BP</strong> and check that the <strong>Benefit Status Line</strong> to confirm the customer has a current payment (CUR) not (CAN/SUS/CZR).</p>
+<p>In Customer First, click on <strong>CRN/BP</strong> and check that the <strong>Benefit Status Line</strong> to confirm the customer has a current (CUR) or suspended (SUS) Payment not (CAN/CZR).</p>
 
-<p>Does the customer have a current payment?</p>
+<p>Does the customer have a CUR/SUS payment?</p>
 		<ul>		<li>
 <strong>Yes,</strong> <a href="../payment-delivery/103-01210000-03.html#bp03_tbl_Nominee_IM_cust_Step05">go to Step 5</a></li>
+			<ul>			<li>
+<strong>Note&#58;</strong> if the customer's payment is suspended, advise the customer they will be put through to their payment line to resolve the suspension at the end of the call</li>		</ul>
 		<li>
-<strong>No,</strong> advise the customer they are not eligible to move to enhanced IM.</li>		</ul>
+<strong>No,</strong> advise the customer they are not eligible to move to enhanced IM at this point in time Offer to transfer the customer to their payment line to resolve the issue and advise the customer to recontact once their payments are current</li>
+			<ul>			<li>
+Procedure ends here</li>			</ul>			</ul>
 </div>
 
 
@@ -2330,11 +2334,55 @@ Procedure ends here</li>
 </tr>
 <tr>
 <td>
-<a class="anchor" name="bp03_tbl_New_customers_N_Step03"></a>
+
 <p>3</p></td>
 <td>
 
-<p><strong>Basic system check</strong> <a title="Read more 59" class="showhead bp03_tbl_New_customers_N_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_New_customers_N_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>‘Switch on’ eligibility check (Benefit Status)</strong> <a title="Read more 59" class="showhead bp03_tbl_New_customers_N_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_New_customers_N_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<div class="showcont">
+
+
+<p>In &#160;Customer First, click on <strong>CRN/BP</strong> and check the <strong>Benefit Status</strong> <strong>Line</strong> to confirm the customer has a current (CUR), suspended (SUS) or assessed (ASS) payment, not (CAN/CZR).</p>
+
+<p>Does the customer have a current CUR/SUS payment?</p>
+		<ul>		<li>
+<strong>Yes</strong>, <a href="../payment-delivery/103-01210000-03.html#bp03_tbl_New_customers_N_Step04">go to Step 4</a>.</li>
+		<li>
+<strong>No</strong>, set a deferral MFU to review the customer’s circumstances.</li>
+			<ul>			<li>
+In <strong>Customer First</strong>, go to the Review Registration (<strong>RVR</strong>) screen&#58; </li>
+			<li>
+<strong>Service Reason&#58;</strong> Only use JSP (regardless of which payment the customer is on)</li>
+			<li>
+<strong>Review Reason&#58;</strong> INC - General Income Review</li>
+			<li>
+<strong>Due Date&#58; </strong>If CAN/CZR – set 13 weeks, If ASS* set date when payment due to start</li>
+			<li>
+<strong>Source&#58; </strong>Enter ‘Internal’</li>
+			<li>
+<strong>Date of Receipt&#58;</strong> Enter the date that the review is being created (ie. today’s date)</li>
+			<li>
+<strong>Notes&#58;</strong> ’Unable to switch customer ON due to&#58; (delete not applicable) no home address / their payments are cancelled or at a zero rate, they have an excluded Payment Nominee or are a full-time student or apprentice, trigger payment has been assessed but not current. Check if the customer’s circumstances have changed.’</li>		</ul>
+		<li>
+<strong>Keywords&#58; </strong>EIMDEF and EIMCEIM.</li>
+		<li>
+Do Not use&#58; <strong>‘hold to user</strong>’</li>
+		<li>
+Procedure ends here.</li>
+		</ul>
+<p>*check the <strong>XBS</strong> screen in <strong>Customer First </strong>to locate the CUR date when payment is due to start</p>
+</div>
+
+
+<p></p></td>
+</tr>
+<tr>
+<td>
+<a class="anchor" name="bp03_tbl_New_customers_N_Step03"></a>
+<p>4</p></td>
+<td>
+
+<p><strong>Basic system check</strong> <a title="Read more 60" class="showhead bp03_tbl_New_customers_N_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_New_customers_N_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2376,7 +2424,7 @@ Numerical character in the customer’s name (the names must be changed to alpha
 <p>1</p></td>
 <td>
 
-<p><strong>Enhanced IM workflow</strong> <a title="Read more 60" class="showhead bp03_tbl_Placing_a_new_c_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Enhanced IM workflow</strong> <a title="Read more 61" class="showhead bp03_tbl_Placing_a_new_c_Step01" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step01" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 		<ul>		<li>
@@ -2398,7 +2446,7 @@ Follow the prompts within the workflow</li>
 <p>2</p></td>
 <td>
 
-<p><strong>Enhanced IM workflow (Voluntary agreement)</strong> <a title="Read more 61" class="showhead bp03_tbl_Placing_a_new_c_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Enhanced IM workflow (Voluntary agreement)</strong> <a title="Read more 62" class="showhead bp03_tbl_Placing_a_new_c_Step02" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step02" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2422,7 +2470,7 @@ Select the applicable measure from the drop-down menu</li>		</ul>
 <p>3</p></td>
 <td>
 
-<p><strong>Enhanced IM workflow (Initial waiting period)</strong> <a title="Read more 62" class="showhead bp03_tbl_Placing_a_new_c_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Enhanced IM workflow (Initial waiting period)</strong> <a title="Read more 63" class="showhead bp03_tbl_Placing_a_new_c_Step03" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step03" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2442,7 +2490,7 @@ Select the applicable measure from the drop-down menu</li>		</ul>
 <p>4</p></td>
 <td>
 
-<p><strong>Enhanced IM workflow (Card issuer)</strong> <a title="Read more 63" class="showhead bp03_tbl_Placing_a_new_c_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Enhanced IM workflow (Card issuer)</strong> <a title="Read more 64" class="showhead bp03_tbl_Placing_a_new_c_Step04" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step04" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2466,7 +2514,7 @@ Select the applicable measure from the drop-down menu</li>		</ul>
 <p>5</p></td>
 <td>
 
-<p><strong>Enhanced IM workflow (Finalise)</strong> <a title="Read more 64" class="showhead bp03_tbl_Placing_a_new_c_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Enhanced IM workflow (Finalise)</strong> <a title="Read more 65" class="showhead bp03_tbl_Placing_a_new_c_Step05" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step05" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2488,13 +2536,13 @@ Exit Process Direct</li>		</ul>
 <p>6</p></td>
 <td>
 
-<p><strong>Manual letter</strong> <a title="Read more 65" class="showhead bp03_tbl_Placing_a_new_c_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Manual letter</strong> <a title="Read more 66" class="showhead bp03_tbl_Placing_a_new_c_Step06" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step06" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
 <p>In Customer First, go to the OLA Accepted Service Reason (<strong>OASR</strong>) screen and enter&#58;</p>
 		<ul>		<li>
-<strong>Required Service Reason&#58;</strong> enter the customer’s payment type (for example, YAL, JSP, or PPP)</li>
+<strong>Required Service Reason&#58;</strong> IQN</li>
 		<li>
 <strong>Advice letter code&#58;</strong> enter Q888</li>
 		<li>
@@ -2514,7 +2562,7 @@ Complete the letter by following the instructions at the start of the template</
 <p>7</p></td>
 <td>
 
-<p><strong>Quality checking</strong> <a title="Read more 66" class="showhead bp03_tbl_Placing_a_new_c_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Quality checking</strong> <a title="Read more 67" class="showhead bp03_tbl_Placing_a_new_c_Step07" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step07" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
@@ -2534,7 +2582,7 @@ Complete the letter by following the instructions at the start of the template</
 <p>8</p></td>
 <td>
 
-<p><strong>Work Item</strong> <a title="Read more 67" class="showhead bp03_tbl_Placing_a_new_c_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
+<p><strong>Work Item</strong> <a title="Read more 68" class="showhead bp03_tbl_Placing_a_new_c_Step08" onclick="erefshow(this)" href="javascript:;"><span class="showhead bp03_tbl_Placing_a_new_c_Step08" onclick="erefshow(this)" href="javascript:;">+</span> Read more ...</a></p>
 <div class="showcont">
 
 
