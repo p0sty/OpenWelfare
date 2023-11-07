@@ -1,6 +1,3 @@
-    ::: pointer-events-none
-    Child Support Business Online
-    :::
 :::
 :::
 
