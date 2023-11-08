@@ -1,3 +1,6 @@
+    ::: pointer-events-none
+    Child Support Business Online
+    :::
 :::
 :::
 
@@ -199,6 +202,53 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 3 November 2023                   | Correspondence between the CEO,   |
+|                                   | Services Australia and the        |
+|                                   | Secretary, Department of the      |
+|                                   | Prime Minister and Cabinet        |
+|                                   | regarding Synergy 360 and/or a    |
+|                                   | review into contracts associated  |
+|                                   | with Synergy 360 (LEX 75843).     |
+|                                   |                                   |
+|                                   | 3 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 37, 47C, 47E(d), 47F(1)\          |
+|                                   | **Exemptions**: Sections 37, 47C, |
+|                                   | 47E(d), 47F(1)                    |
++-----------------------------------+-----------------------------------+
+| 2 November 2023                   | Media enquiry regarding           |
+|                                   | Synergy360 (LEX 75772).           |
+|                                   |                                   |
+|                                   | 2 documents released in part. The |
+|                                   | documents are [available upon     |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 37, 47F(1)\                       |
+|                                   | **Exemptions**: 37, 47F(1)        |
++-----------------------------------+-----------------------------------+
+| 30 October 2023                   | Disclosure log approval form      |
+|                                   | (signed and dated by a delegate)  |
+|                                   | that approved the upload on 28    |
+|                                   | September 2023 for "various       |
+|                                   | emails between members of the FOI |
+|                                   | team between 1 December 2022 and  |
+|                                   | 28 August 2023\" (LEX 75704).     |
+|                                   |                                   |
+|                                   | 1 document released in full. The  |
+|                                   | documents is [available upon      |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: Section 22        |
++-----------------------------------+-----------------------------------+
 | 26 October 2023                   | Draft General Instructions from   |
 |                                   | Department of Social Services to  |
 |                                   | Services Australia on payslips    |
@@ -214,6 +264,22 @@ after 12 months unless the information has enduring public value.
 |                                   | 47C, 47E(d)\                      |
 |                                   | **Exemptions**: Sections 47C,     |
 |                                   | 47E(d)                            |
++-----------------------------------+-----------------------------------+
+| 23 October 2023                   | Operational Blueprint document    |
+|                                   | (LEX 75875):                      |
+|                                   |                                   |
+|                                   | -   Operational Blueprint         |
+|                                   |     Reviewing nominee             |
+|                                   |     arrangements 110-06090160.    |
+|                                   |                                   |
+|                                   | 1 document released in part. The  |
+|                                   | document is [available upon       |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Sections |
+|                                   | 22, s47E(d).\                     |
+|                                   | **Exemptions**: Section 47E(d)    |
 +-----------------------------------+-----------------------------------+
 | 20 October 2023                   | PAYG Assumptions Summary,         |
 |                                   | Extension PAYG New Measure -      |
@@ -3978,7 +4044,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 2 November 2023.
+Page last updated: 8 November 2023.
 :::
 :::
 
@@ -3995,7 +4061,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 6 November 2023 from
+This information was printed 8 November 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at
