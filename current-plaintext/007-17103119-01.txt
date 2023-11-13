@@ -64,8 +64,8 @@ income tested rate of CCS for the family. This is regardless if children
 are considered a higher rate child under higher CCS (Multiple Child
 Subsidy).
 
-Unlike other types of approved child care, IHC is paid per family, not
-per child. If a customer has more than one child attending IHC, they
+Unlike other types of approved child care, IHC is paid per family unit,
+not per child. If a customer has more than one child attending IHC, they
 should apply and be assessed for CCS or ACCS for all of the children
 attending care.
 
@@ -76,17 +76,127 @@ customers can access up to 120% of the IHC hourly rate cap. More than
 The Resources page has an example of how the CCS percentage is applied
 to the IHC hourly rate cap.
 
+IHC terms
+
+There are three key IHC terms used in the system:
+
+Family unit:
+
+-   Family units are in context of a service
+-   Parent and educator IDs on enrolments are used to identify IHC
+    family units
+-   The main purpose of family units are to identify family sessions
+
+Family session:
+
+-   A family session is defined as ‘one session of care’ for the family
+    unit
+-   Not all children under the family unit have to be present at the
+    family session
+
+Nominated child:
+
+-   For each family session, only one child in the family unit can be
+    the nominated child
+-   The nominated child is identified by having the fee against the
+    family session in their session report for the IHC service
+-   A nominated child is the child that the determination (payment
+    calculation) is performed against based on their eligibility and
+    entitlement
+-   If the child is not nominated, they can have either $0 fee (incl. $0
+    fee absence) or no session recorded (i.e. no care provided to the
+    child if they do not normally attend the session of care)
+
 Enrolment and session information
 
 Customers accessing care through IHC are required to enter into a
 Complying Written Arrangement (CWA) with their IHC service.
 
 The IHC service will then lodge an enrolment notice which the customer
-will need to confirm. However, where a customer has multiple children
-using the IHC, the enrolment notice will only be for one of the children
-(the IHC nominated child) as IHC is paid at the family level. The child
-nominated on the enrolment will be as agreed between the family and the
-IHC service
+will need to confirm.
+
+If a customer has multiple children using IHC, one child in an IHC
+family unit must be identified as the ‘IHC nominated child’ for each
+session of care. This is because IHC is paid at the family level and has
+a family CCS hourly rate cap.
+
+An IHC family unit is determined where the Service CRN, Parent CRN, and
+Educator ID on an enrolment are the same.
+
+Note: though not common, there may be more than one IHC family unit for
+sessions of care submitted. For example, Lewis, Jamie and Joe are in the
+care of Elaine and attend the same IHC service where:
+
+-   educator Alex provides care for Jamie and Joe, and
+-   educator Mark provides care for Lewis
+
+The Service CRN and Parent CRN on all the sessions of care are the same,
+but there are two IHC family units as there are two different Educator
+IDs on the combined sessions of care for that particular week.
+
+An IHC family session is determined using the session day, start and end
+times for each child in a family unit. For each family session, only one
+child in the family unit can be the nominated child. The nominated child
+on the enrolment will be:
+
+-   as agreed between the family and the IHC service, and
+-   the only child in the session of care against which the fee is
+    recorded for the family session
+
+When a session report is submitted, the system checks:
+
+-   if a family session already exists, and
+-   if there is a child already nominated (fee recorded) for that family
+    session in the family unit
+
+As long as the nominated child in the family unit is eligible, the
+family session is eligible.
+
+When a nominated child is present, their eligibility and entitlements
+are used to determine CCS payment.
+
+The fee charged by the service for the session of care must be reported:
+
+-   in full against the nominated child, and
+-   as a $0 rate against the other eligible children receiving care in
+    that session
+
+Hours of care will be recorded against both the IHC nominated child and
+‘other children’ and all the children in the family session will have
+their activity test hours reduced by the total hours for the session.
+
+When a IHC session has no fees recorded or no session recorded for
+either of the children in the family unit, that session does not have a
+nominated child. This means:
+
+-   there will be no usage draw down (no activity hours and absences are
+    used), and
+-   both children will have the 'session of care amt is $0' reason
+    applied
+
+In Process Direct, under the Weekly Subsidy table on the CCS Summary,
+this displays as:
+
+-   the full fee amount for the family session against the nominated
+    child only
+-   a zero ($0) fee against all other children (non-IHC nominated
+    children) receiving care in that family session
+-   hours of care amount under Hours Subsidised column, which will draw
+    down the customer’s fortnightly CCS Eligible hours for all children,
+    including non-IHC nominated children
+
+If the nominated child's entitlement is zero (i.e. no remaining activity
+test balance, annual cap or absences limit reached and no valid reason)
+payment will not be made. The system does not use / drop back to the
+other child’s entitlements.
+
+Where other children have remaining activity test balance, their balance
+will be reduced by the session duration regardless if payment is made
+based on the nominated child’s entitlement.
+
+Absences recorded for non-IHC nominated children will be counted as
+unpaid absences and will not reduce the child’s allowable absence
+balance.
 
 For more information see Enrolment Requirements for Child Care Subsidy
 (CCS).
@@ -117,6 +227,9 @@ Exceptional circumstances
 If a customer requests an increased Activity Test result, the process
 and criteria for applying for Exceptional Circumstances are the same for
 In Home Care (IHC) as they are for other types of child care.
+
+See Exceptional circumstances for Child Care Subsidy (CCS) and
+Additional Child Care Subsidy (ACCS) for more information..
 
 The Resources page contains Department of Education links to In Home
 Care resources, entitlement scenarios for families using In Home Care,
