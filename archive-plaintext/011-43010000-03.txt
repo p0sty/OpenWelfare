@@ -162,13 +162,8 @@ Table 1
 +-----------------------------------+-----------------------------------+
 | 7                                 | EFT statement + Read more ...     |
 |                                   |                                   |
-|                                   | Is EFT Statement required?        |
-|                                   |                                   |
-|                                   | -   Yes, key 'P' in the STM field |
-|                                   |     to issue a statement to the   |
-|                                   |     claimant                      |
-|                                   | -   No, key 'N' in the STM field  |
-|                                   |     if no statement is required   |
+|                                   | Key 'P' in the STM field to issue |
+|                                   | a statement to the claimant.      |
 |                                   |                                   |
 |                                   | For claims processed in a Service |
 |                                   | Centre, key ‘R’ in the STM field  |
@@ -479,13 +474,8 @@ Table 2
 +-----------------------------------+-----------------------------------+
 | 7                                 | EFT statement + Read more ...     |
 |                                   |                                   |
-|                                   | Is EFT Statement required?        |
-|                                   |                                   |
-|                                   | -   Yes, key 'P' in the STM field |
-|                                   |     to issue a statement to the   |
-|                                   |     claimant                      |
-|                                   | -   No, key 'N' in the STM field  |
-|                                   |     if no statement is required   |
+|                                   | Key 'P' in the STM field to issue |
+|                                   | a statement to the claimant.      |
 |                                   |                                   |
 |                                   | For claims processed in a Service |
 |                                   | Centre, key ‘R’ in the STM field  |
@@ -704,7 +694,7 @@ Table 3
 |                                   | provided bank account details on  |
 |                                   | the claim form?                   |
 |                                   |                                   |
-|                                   | -   Yes, go to Step 5             |
+|                                   | -    Yes, go to Step 5            |
 |                                   | -   No, go to Step 6              |
 +-----------------------------------+-----------------------------------+
 | 5                                 | Add temporary bank account        |
@@ -730,13 +720,21 @@ Table 3
 |                                   | -   if the bank account details   |
 |                                   |     have not been provided on the |
 |                                   |     claim form, Service Officers  |
-|                                   |     are to return the claim form  |
-|                                   |     with the Medicare claim needs |
-|                                   |     more information (Z0828)      |
-|                                   |     letter requesting bank        |
-|                                   |     account details to be         |
-|                                   |     completed                     |
-|                                   | -   Procedure ends here           |
+|                                   |     must key N - EFT details      |
+|                                   |     unavailable. If the claimant  |
+|                                   |     cannot provide bank account   |
+|                                   |     details at time of lodgement  |
+|                                   |     this allows validation of the |
+|                                   |     EFT details to be bypassed,   |
+|                                   |     and for the assessment of the |
+|                                   |     claim to continue. The        |
+|                                   |     Medicare benefit is held      |
+|                                   |     until bank account details    |
+|                                   |     are provided. Once bank       |
+|                                   |     account details are provided, |
+|                                   |     the payment releases          |
+|                                   |     automatically overnight       |
+|                                   | -   procedure ends here           |
 |                                   |                                   |
 |                                   | No, as the claim is unpaid, a     |
 |                                   | cheque will be issued to the      |
@@ -796,7 +794,7 @@ Table 3
 |                                   | any restriction or warning        |
 |                                   | messages?                         |
 |                                   |                                   |
-|                                   | -   Yes, see Step 11 in Table 1   |
+|                                   | -    Yes, see Step 11 in Table 1  |
 |                                   | -   No, go to Step 10             |
 |                                   |                                   |
 |                                   | Note: for Locum-tenens see        |
@@ -847,25 +845,42 @@ Table 4
 | 2                                 | Processing the claim + Read more  |
 |                                   | ...                               |
 |                                   |                                   |
-|                                   | -   Advise the customer of our    |
-|                                   |     minimum standards processing  |
-|                                   |     times                         |
-|                                   | -   If the customer states that   |
-|                                   |     they require their money      |
-|                                   |     immediately and are           |
-|                                   |     experiencing hardship -       |
-|                                   |     process the claim             |
-|                                   |     immediately, see Table 1.     |
-|                                   |     Confirm with the customer     |
-|                                   |     that their claim has been     |
-|                                   |     processed and that they       |
-|                                   |     should receive their money in |
-|                                   |     3 business days (EFT transfer |
-|                                   |     time)                         |
-|                                   | -   If the customer identifies as |
-|                                   |     at risk of family or domestic |
-|                                   |     violence see Family and       |
-|                                   |     domestic violence             |
+|                                   | Tell the customer the agency      |
+|                                   | minimum standard processing       |
+|                                   | times.                            |
+|                                   |                                   |
+|                                   | If the customer states that they  |
+|                                   | require their money immediately,  |
+|                                   | are experiencing hardship and the |
+|                                   | benefit amount of the claim is:   |
+|                                   |                                   |
+|                                   | under $100, process the claim     |
+|                                   | regardless of the date of         |
+|                                   | lodgement                         |
+|                                   |                                   |
+|                                   | greater than or equal to $100 and |
+|                                   | on day zero:                      |
+|                                   |                                   |
+|                                   | -   staff must call the clinic to |
+|                                   |     confirm the account is valid. |
+|                                   |     See Suspected Medicare fraud  |
+|                                   |     and Business Integrity (BI)   |
+|                                   |     flags                         |
+|                                   | -   if after hours, tell the      |
+|                                   |     customer that due to the      |
+|                                   |     claim being lodged at a       |
+|                                   |     service centre it will not    |
+|                                   |     show in the system until      |
+|                                   |     overnight. Tell the customer  |
+|                                   |     to call back during business  |
+|                                   |     hours the following business  |
+|                                   |     day                           |
+|                                   |                                   |
+|                                   | If the customer identifies as at  |
+|                                   | risk of family or domestic        |
+|                                   | violence see Family and domestic  |
+|                                   | violence.                         |
+|                                   |                                   |
 |                                   | -   Add a Sensitive Information   |
 |                                   |     Indicator for an Urgent       |
 |                                   |     Medicare benefit paid in the  |
@@ -875,10 +890,9 @@ Table 4
 |                                   |     add a Sensitive Information   |
 |                                   |     Indicator for Family and      |
 |                                   |     Domestic Violence             |
-|                                   |                                   |
-|                                   | See Sensitive information         |
-|                                   | indicators in the CDMS for more   |
-|                                   | details.                          |
+|                                   | -   See Sensitive information     |
+|                                   |     indicators in the CDMS for    |
+|                                   |     more details.                 |
 |                                   |                                   |
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
@@ -1033,7 +1047,7 @@ Table 6
 |                                   | less than $100?                   |
 |                                   |                                   |
 |                                   | -   Yes, go to Step 3             |
-|                                   | -   No, see Step 2 in Table 7     |
+|                                   | -    No, see Step 2 in Table 7    |
 +-----------------------------------+-----------------------------------+
 | 3                                 | Process claim + Read more ...     |
 |                                   |                                   |
@@ -1102,7 +1116,19 @@ Table 7
 |                                   | provided or stored in CDMS for    |
 |                                   | the claimant, the payment will be |
 |                                   | ‘held’ until EFT details are      |
-|                                   | provided.                         |
+|                                   | provided                          |
+|                                   |                                   |
+|                                   | Check the patient history to      |
+|                                   | determine if the claim has been   |
+|                                   | processed after the cull history  |
+|                                   | date.                             |
+|                                   |                                   |
+|                                   | Is there evidence of a duplicate  |
+|                                   | payment on the history?           |
+|                                   |                                   |
+|                                   | -   Yes, reject the claim with    |
+|                                   |     RSN 162                       |
+|                                   | -   No, go to Step 2              |
 +-----------------------------------+-----------------------------------+
 | 2                                 | Culled history date + Read more   |
 |                                   | ...                               |
@@ -1196,7 +1222,7 @@ Table 7
 |                                   | and have access to use SAS        |
 |                                   | Portal?                           |
 |                                   |                                   |
-|                                   | -   Yes, see Table 8              |
+|                                   | -    Yes, see Table 8             |
 |                                   | -   No, go to Step 7              |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Changing proficiency level on a   |
@@ -1370,13 +1396,8 @@ Information Delivery Portal
 |                                   |     automatically released        |
 |                                   |     overnight                     |
 |                                   |                                   |
-|                                   | Is an EFT statement required?     |
-|                                   |                                   |
-|                                   | -   Yes, key ‘P’ in the STM field |
-|                                   |     to issue a statement to the   |
-|                                   |     claimant                      |
-|                                   | -   No, key ‘N’ in the STM field  |
-|                                   |     if no statement is required   |
+|                                   | Key ‘P’ in the STM field to issue |
+|                                   | a statement to the claimant.      |
 +-----------------------------------+-----------------------------------+
 | 7                                 | Date of lodgement + Read more ... |
 |                                   |                                   |
@@ -1800,7 +1821,7 @@ Table 10
 |                                   |     under 7 years old, these can  |
 |                                   |     be paid via mainframe, go to  |
 |                                   |     Step 11                       |
-|                                   | -   For claims over 7 years old,  |
+|                                   | -    For claims over 7 years old, |
 |                                   |     See Table 11                  |
 +-----------------------------------+-----------------------------------+
 | 11                                | Assessing and finalising the      |
