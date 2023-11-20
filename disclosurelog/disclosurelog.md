@@ -202,6 +202,20 @@ after 12 months unless the information has enduring public value.
 +-----------------------------------+-----------------------------------+
 | Date                              | Detail                            |
 +===================================+===================================+
+| 7 November 2023                   | Copy of every decision letter     |
+|                                   | template used by the Agency's     |
+|                                   | Freedom of Information team (LEX  |
+|                                   | 76340).                           |
+|                                   |                                   |
+|                                   | 15 documents released in full.    |
+|                                   | The documents are [available upon |
+|                                   | request](#contactus){lit-origina  |
+|                                   | l-text="available upon request"}. |
+|                                   |                                   |
+|                                   | **Sections of the Act**: Section  |
+|                                   | 22\                               |
+|                                   | **Exemptions**: N/A               |
++-----------------------------------+-----------------------------------+
 | 3 November 2023                   | Correspondence between the CEO,   |
 |                                   | Services Australia and the        |
 |                                   | Secretary, Department of the      |
@@ -4038,7 +4052,9 @@ us by:
 
 -   sending an email to the [FOI legal
     Team](mailto:foi.legal.team@servicesaustralia.gov.au){lit-original-text="FOI legal Team"}
+
 -   writing to us at:
+
     FOI Legal Team\
     Services Australia\
     PO Box 7820\
@@ -4057,7 +4073,7 @@ us by:
 ::: {.mt-6 .md:mt-0 .md:text-right .text-grey-dark .dark:text-grey-seashell}
 ::: lg:flex
 ::: {#lit-page-updated .body .text-md}
-Page last updated: 10 November 2023.
+Page last updated: 20 November 2023.
 :::
 :::
 
@@ -4074,7 +4090,7 @@ QC 25566
 code](https://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=L%7C0&chl=https%3A%2F%2Fwww.servicesaustralia.gov.au%2Ffreedom-information-disclosure-log%3Futm_source%3Dprint-package%26utm_medium%3Dqr-code%26utm_campaign%3Dprint-package "QR code"){.break-auto
 .float-left .mb-5 .mr-5}
 
-This information was printed 19 November 2023 from
+This information was printed 20 November 2023 from
 **https://www.servicesaustralia.gov.au/freedom-information-disclosure-log**.
 It may not include all of the relevant information on this topic. Please
 consider any relevant site notices at

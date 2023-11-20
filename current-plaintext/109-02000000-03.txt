@@ -27,6 +27,9 @@ Customer has lodged an explanation or formal review of a decision form
 ZDMS AROACT or ZDMS AROREF work item has been allocated for action via
 Workload Manager (WLM)
 
+Open Explanation of decision DOC preventing updates to a customer’s
+record
+
 Customer requests an explanation or applies for a formal review of a decision
 
 Table 1
@@ -170,7 +173,7 @@ Table 1
 |                                   |     a formal review, go to Step 6 |
 |                                   |                                   |
 |                                   | has not requested an explanation  |
-|                                   | or applied for a formal review,   |
+|                                   | or applied for a formal review    |
 |                                   | and does not want to request an   |
 |                                   | explanation or apply for a formal |
 |                                   | review of the decision, staff     |
@@ -362,7 +365,7 @@ Table 1
 |                                   | ...                               |
 |                                   |                                   |
 |                                   | The request for an explanation    |
-|                                   | has to be finalised before        |
+|                                   | must be finalised before          |
 |                                   | recording the application for a   |
 |                                   | formal review.                    |
 |                                   |                                   |
@@ -686,13 +689,15 @@ Table 2
 |                                   |     If the customer wants a       |
 |                                   |     formal review, see Step 9 in  |
 |                                   |     Table 1                       |
-|                                   | -   does not have an outcome, the |
-|                                   |     request for explanation has   |
-|                                   |     not been finalised. Recreate  |
-|                                   |     the explanation DOC, see      |
-|                                   |     Using the Internal            |
-|                                   |     Review/Explanation script.    |
-|                                   |     Tell the customer that their  |
+|                                   | -    does not have an outcome,    |
+|                                   |     the request for explanation   |
+|                                   |     has not been finalised.       |
+|                                   |     Recreate the explanation DOC, |
+|                                   |     see the Creating or           |
+|                                   |     recreating a request for      |
+|                                   |     explanation DOC table on the  |
+|                                   |     Troubleshooting tab           |
+|                                   | -   Tell the customer that their  |
 |                                   |     request for an explanation    |
 |                                   |     will be allocated to the next |
 |                                   |     available skilled officer who |
@@ -1422,6 +1427,51 @@ Table 7
 |                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
+Open Explanation of decision DOC preventing updates to a customer’s record
+
+Table 8
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Open Explanation of decision DOC  |
+|                                   | preventing updates being made to  |
+|                                   | a customer’s record + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | An open Explanation of Decision   |
+|                                   | DOC may prevent some activities   |
+|                                   | from being finalised on a         |
+|                                   | customer’s record, for example,   |
+|                                   | death action.                     |
+|                                   |                                   |
+|                                   | Check the MR screen in the APL    |
+|                                   | system in Customer Record. If the |
+|                                   | Outcome field:                    |
+|                                   |                                   |
+|                                   | has an outcome, the explanation   |
+|                                   | of decision has been finalised.   |
+|                                   | Complete the DOC and finalise the |
+|                                   | required action on the customer’s |
+|                                   | record                            |
+|                                   |                                   |
+|                                   | does not have an outcome, the     |
+|                                   | explanation of decision has not   |
+|                                   | been finalised:                   |
+|                                   |                                   |
+|                                   | -   Complete the DOC              |
+|                                   | -   Finalise the required action  |
+|                                   |     on the customer’s record      |
+|                                   | -   Re-create the Explanation of  |
+|                                   |     Decision DOC. See the         |
+|                                   |     Creating or recreating a      |
+|                                   |     request for explanation DOC   |
+|                                   |     table on the Troubleshooting  |
+|                                   |     tab                           |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
++-----------------------------------+-----------------------------------+
+
 Customer requested an explanation, quality check or review before 15 May 2021
 
 On this page:
@@ -1433,6 +1483,8 @@ Customer contacts about the progress of a quality check or ARO review
 
 Withdrawing a request for a quality check or ARO review made before 15
 May 2021
+
+Open SME quality check DOC preventing updates to a customer’s record
 
 Request for an explanation, quality check or ARO review made before 15 May 2021
 
@@ -1861,24 +1913,23 @@ Table 2
 |                                   | XNNNNN - Request Pending or APL   |
 |                                   | XNNNNN - Priority Review?         |
 |                                   |                                   |
-|                                   | Yes, tell the customer that their |
-|                                   | request will be allocated to the  |
-|                                   | next available skilled officer    |
-|                                   | who will try to contact them as   |
-|                                   | soon as possible. Do not commit   |
-|                                   | to a timeframe for this contact.  |
-|                                   | Procedure ends here               |
-|                                   |                                   |
-|                                   | No, recreate the quality check    |
-|                                   | DOC by running the Internal       |
-|                                   | Review/Explanation script         |
-|                                   |                                   |
-|                                   | -   select the existing case, and |
-|                                   |     select Create DOC on the      |
-|                                   |     Progress dialog box. For      |
-|                                   |     help, see Using the Internal  |
-|                                   |     Review/Explanation script     |
-|                                   | -   tell the customer that their  |
+|                                   | -   Yes, tell the customer that   |
+|                                   |     their request will be         |
+|                                   |     allocated to the next         |
+|                                   |     available skilled officer who |
+|                                   |     will try to contact them as   |
+|                                   |     soon as possible. Do not      |
+|                                   |     commit to a timeframe for     |
+|                                   |     this contact. Procedure ends  |
+|                                   |     here                          |
+|                                   | -   No, recreate the quality      |
+|                                   |     check DOC. See the Creating   |
+|                                   |     or recreating a request for   |
+|                                   |     quality check DOC (requests   |
+|                                   |     made before 15 May 2021)      |
+|                                   |     table on the Troubleshooting  |
+|                                   |     tab                           |
+|                                   |     Tell the customer that their  |
 |                                   |     request for a quality check   |
 |                                   |     will be allocated to the next |
 |                                   |     available skilled officer who |
@@ -2207,6 +2258,52 @@ Table 3
 |                                   | Tell the customer to contact the  |
 |                                   | AAT. See the Resources page for   |
 |                                   | contact information.              |
++-----------------------------------+-----------------------------------+
+
+Open SME quality check DOC preventing updates to a customer’s record
+
+Table 4
+
++-----------------------------------+-----------------------------------+
+| Step                              | Action                            |
++-----------------------------------+-----------------------------------+
+| 1                                 | Open SME quality check DOC        |
+|                                   | preventing updates being made to  |
+|                                   | a customer’s record + Read more   |
+|                                   | ...                               |
+|                                   |                                   |
+|                                   | An open SME quality check DOC may |
+|                                   | prevent some activities from      |
+|                                   | being finalised on a customer’s   |
+|                                   | record, for example, death        |
+|                                   | action.                           |
+|                                   |                                   |
+|                                   | Check the MR screen in the APL    |
+|                                   | system in Customer Record. If the |
+|                                   | Outcome field:                    |
+|                                   |                                   |
+|                                   | has an outcome, the SME quality   |
+|                                   | check has been finalised.         |
+|                                   | Complete the DOC and finalise the |
+|                                   | required action on the customer’s |
+|                                   | record                            |
+|                                   |                                   |
+|                                   | does not have an outcome, the SME |
+|                                   | quality check has not been        |
+|                                   | finalised:                        |
+|                                   |                                   |
+|                                   | -   Complete the DOC              |
+|                                   | -   Finalise the required action  |
+|                                   |     on the customer’s record      |
+|                                   | -   Re-create the SME quality     |
+|                                   |     check DOC. See the Creating   |
+|                                   |     or recreating a request for   |
+|                                   |     quality check DOC (requests   |
+|                                   |     made before 15 May 2021)      |
+|                                   |     table on the Troubleshooting  |
+|                                   |     tab                           |
+|                                   |                                   |
+|                                   | Procedure ends here.              |
 +-----------------------------------+-----------------------------------+
 
                                    

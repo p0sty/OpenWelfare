@@ -45,42 +45,40 @@ Calculating income examples
 |                                   | = $280                            |
 |                                   | $280/14 = $20 per day             |
 +-----------------------------------+-----------------------------------+
-| 2                                 | Continuous income with annual     |
-|                                   | frequency (ANN)                   |
+
+Error E705CQ
+
++-----------------------------------+-----------------------------------+
+| Item                              | Description                       |
++-----------------------------------+-----------------------------------+
+| 1                                 | Resolving error E705CQ            |
 |                                   |                                   |
-|                                   | The system takes employment       |
-|                                   | income recorded with a frequency  |
-|                                   | of ANN to be the amount earned    |
-|                                   | every 364 days. For example, a    |
-|                                   | wage of $36,400 ANN will be       |
-|                                   | assessed as $1,400 per fortnight. |
-|                                   | Over 365 days, the system         |
-|                                   | actually assesses $36,500 and in  |
-|                                   | a leap year $36,600. However,     |
-|                                   | this may be correct as it depends |
-|                                   | on how the employer converts the  |
-|                                   | annual rate into fortnightly pay, |
-|                                   | for example, Australian Public    |
-|                                   | Service (APS) fortnightly pay is  |
-|                                   | annual salary x 12/313.           |
+|                                   | If error 'E705CQ - use EAN to     |
+|                                   | update AUT data. F2 for help' is  |
+|                                   | presented, further investigation  |
+|                                   | is required.                      |
 |                                   |                                   |
-|                                   | Where possible, customers who     |
-|                                   | advise an annual rate must be     |
-|                                   | advised how Services Australia    |
-|                                   | assess this. For customers who    |
-|                                   | confirm they receive exactly      |
-|                                   | their annual salary every year    |
-|                                   | regardless of leap years etc.     |
-|                                   | (usually principals of trusts or  |
-|                                   | companies who arrange this via an |
-|                                   | accounting process), record this  |
-|                                   | amount x 364/365. However, for    |
-|                                   | all the employees whose gross     |
-|                                   | fortnightly pay is determined by  |
-|                                   | their employment agreement,       |
-|                                   | customers must be advised they    |
-|                                   | may be disadvantaged if they do   |
-|                                   | not advise this amount instead.   |
+|                                   | -   To do this, service officers  |
+|                                   |     must check the EAN screen for |
+|                                   |     previous 'Full-Time On-going  |
+|                                   |     (FTO) status coding.          |
+|                                   |                                   |
+|                                   | If an FTO status was previously   |
+|                                   | coded on the EAN screen and       |
+|                                   | another employer has since been   |
+|                                   | coded, within that action the     |
+|                                   | system may have recognised the    |
+|                                   | FTO coding on the previous        |
+|                                   | employer and updated the Customer |
+|                                   | Employment Status Update (EAES).  |
+|                                   | Code the following on EAN for the |
+|                                   | previous employer:                |
+|                                   |                                   |
+|                                   | -   Event Date: EAES FTO date + 1 |
+|                                   | -   Amount: Zero                  |
+|                                   | -   Employment Reason: Full-time  |
+|                                   |     Non-Ongoing (FTN)             |
+|                                   | -   Verification: NVE             |
 +-----------------------------------+-----------------------------------+
 
                                    
