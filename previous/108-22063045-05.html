@@ -189,10 +189,13 @@ $(document).ready(function() {
 
 
 <p></p>
+<div class="twisty">
+	
 <a class="anchor" name="bp05_L3TT_Calculating_inc"></a>
-<h3>Calculating income examples</h3>
+<h3 class="collapsible" id="bp05_L3TT_Calculating_inc">Calculating income examples</h3>
 
-<table caption="" width="100%">
+	<div class="collapsible_container">
+		<div class="block"><table caption="" width="100%">
 <tr>
 <td width="11%">
 <a class="anchor" name="bp05_tbl_Calculating_inc_Item"></a>
@@ -223,22 +226,59 @@ $(document).ready(function() {
 
 <p></p></td>
 </tr>
+
+</table>
+		</div>
+	</div>
+</div>
+
+
+<p></p>
+<div class="twisty">
+	
+<a class="anchor" name="bp05_L3TT_Error_E705CQ"></a>
+<h3 class="collapsible" id="bp05_L3TT_Error_E705CQ">Error E705CQ</h3>
+
+	<div class="collapsible_container">
+		<div class="block"><table caption="" width="100%">
+<tr>
+<td width="11%">
+<a class="anchor" name="bp05_tbl_Error_E705CQ_Item"></a>
+<p><strong>Item</strong></p></td>
+<td>
+
+<p><strong>Description</strong></p></td>
+</tr>
 <tr>
 <td>
-<a class="anchor" name="bp05_tbl_Calculating_inc_2"></a>
-<p>2</p></td>
+<a class="anchor" name="bp05_tbl_Error_E705CQ_1"></a>
+<p>1</p></td>
 <td>
 
-<p><strong>Continuous income with annual frequency (ANN)</strong></p>
+<p><strong>Resolving error E705CQ</strong></p>
 
-<p>The system takes employment income recorded with a frequency of ANN to be the amount earned every 364 days. For example, a wage of $36,400 ANN will be assessed as $1,400 per fortnight. Over 365 days, the system actually assesses $36,500 and in a leap year $36,600. However, this may be correct as it depends on how the employer converts the annual rate into fortnightly pay, for example, Australian Public Service (APS) fortnightly pay is annual salary x 12/313.</p>
-
-<p>Where possible, customers who advise an annual rate must be advised how Services Australia assess this. For customers who confirm they receive exactly their annual salary every year regardless of leap years etc. (usually principals of trusts or companies who arrange this via an accounting process), record this amount x 364/365. However, for all the employees whose gross fortnightly pay is determined by their employment agreement, customers must be advised they may be disadvantaged if they do not advise this amount instead.</p>
+<p>If error '<strong>E705CQ - use EAN to update AUT data. F2 for hel</strong>p' is presented, further investigation is required.</p>
+		<ul>		<li>
+To do this, service officers must check the <strong>EAN</strong> screen for previous 'Full-Time On-going (<strong>FTO</strong>) status coding.</li>
+		</ul>
+<p>If an <strong>FTO</strong> status was previously coded on the <strong>EAN</strong> screen and another employer has since been coded, within that action the system may have recognised the <strong>FTO</strong> coding on the previous employer and updated the Customer Employment Status Update (<strong>EAES</strong>). Code the following on <strong>EAN</strong> for the previous employer&#58;</p>
+		<ul>		<li>
+<strong>Event Date&#58;</strong> EAES FTO date + 1</li>
+		<li>
+<strong>Amount&#58;</strong> Zero</li>
+		<li>
+<strong>Employment Reason&#58;</strong> Full-time Non-Ongoing (FTN)</li>
+		<li>
+<strong>Verification&#58;</strong> NVE</li>		</ul>
 
 <p></p></td>
 </tr>
 
 </table>
+		</div>
+	</div>
+</div>
+
 
 <p></p>
 

@@ -33,9 +33,9 @@ Contact details
 Health Service Delivery Division - Quality Operations & Technical
 Support
 
-Pharmaceutical Benefits Scheme (PBS) - Tier 3 Claiming Support
+Pharmaceutical Benefits Scheme (PBS) - Claiming Support
 
-Medicare Health Programme Support Officers (PSO)
+Medicare and Aged Care - Local Peer Support (LPS)
 
 Error codes - error free
 
@@ -59,7 +59,7 @@ Safety Net Processing and enquiries.
 | Error codes                       | Error definition                  |
 +-----------------------------------+-----------------------------------+
 | B01S                              | SYSTEM Safety Net registration    |
-|                                   | error                             |
+|                                   | error.                            |
 | Critical                          |                                   |
 |                                   | Incorrect Safety Net number, card |
 |                                   | type or Supplement Card not       |
@@ -72,22 +72,43 @@ Safety Net Processing and enquiries.
 |                                   | member is incorrect; not added or |
 |                                   | removed correctly.                |
 |                                   |                                   |
-|                                   | Records not linked.               |
+|                                   | Family member has been omitted    |
+|                                   | from the Safety Net Card.         |
+|                                   |                                   |
+|                                   | An incorrect person has been      |
+|                                   | added to the Safety Net Card.     |
+|                                   |                                   |
+|                                   | A dependant with concession       |
+|                                   | entitlement was incorrectly       |
+|                                   | recorded as card holder (CH) and  |
+|                                   | the parent/s with no concessional |
+|                                   | status was recorded as the        |
+|                                   | dependant/s.                      |
+|                                   |                                   |
+|                                   | Dependant Student (DS) with a     |
+|                                   | safety net age of 25 or over has  |
+|                                   | been added to the card.           |
 +-----------------------------------+-----------------------------------+
 | B03S                              | Relationship code error.          |
 |                                   |                                   |
-| Non Critical                      | Family dependant (dependent child |
+| Non Critical                      | Family dependant (dependant child |
 |                                   | or student) incorrectly added as  |
-|                                   | Card Holder or Spouse.            |
+|                                   | card holder (CH) or spouse (SP).  |
 |                                   |                                   |
-|                                   | Card Holder or Spouse incorrectly |
-|                                   | added as a Dependant              |
+|                                   | CH or SP incorrectly added as a   |
+|                                   | dependant.                        |
 |                                   |                                   |
-|                                   | Note: it is not an error if the   |
-|                                   | card holder (CH) and spouse (SP)  |
-|                                   | are added to the Safety Net       |
-|                                   | Claims system (SNCS) opposite the |
-|                                   | information contained on the      |
+|                                   | Note: Relationship code errors    |
+|                                   | are only non-critical if there    |
+|                                   | has been no effect on the         |
+|                                   | eligibility of the family. For    |
+|                                   | critical errors refer to error    |
+|                                   | B02S.                             |
+|                                   |                                   |
+|                                   | It is not an error if the CH and  |
+|                                   | SP are added to the Safety Net    |
+|                                   | Claims System (SNCS) opposite to  |
+|                                   | the information contained on the  |
 |                                   | prescription record form (PRF).   |
 +-----------------------------------+-----------------------------------+
 | B05S                              | Pharmacy approval number error.   |
@@ -183,7 +204,7 @@ Error codes - D status codes - letters
 Table 4: describes the error codes for letters. The processes can be
 found in:
 
--   Quality assurance for external mail in Medicare
+-   Quality assurance and quality checking for external mail in Medicare
 -   Pharmaceutical Benefits Scheme (PBS) letters
 
 +-----------------------------------+-----------------------------------+
@@ -192,7 +213,7 @@ found in:
 | D01S                              | Address error.                    |
 |                                   |                                   |
 | Critical                          | Letter sent to the correct        |
-|                                   | recipient, but used an incorrect  |
+|                                   | recipient but used an incorrect   |
 |                                   | address.                          |
 +-----------------------------------+-----------------------------------+
 | D02S                              | Attachment error.                 |
